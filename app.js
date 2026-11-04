@@ -846,6 +846,119 @@ async function loadEvents() {
   }
 }
 
+/* ---------- at a glance (synthesis strip) ---------- */
+function todayStrPT() {
+  return new Intl.DateTimeFormat('en-CA',
+    { timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+}
+async function loadGlance() {
+  // Bridge tile — from the roads snapshot
+  try {
+    const roads = await getSnapshot('roads.json');
+    const b = roads.bridge || {};
+    const el = $('glance-bridge-val');
+    el.textContent = { clear: 'Clear', work: 'Work scheduled', alert: 'ALERT posted', unknown: 'Status unknown' }[b.status] || 'Status unknown';
+    el.className = 'glance-val ' + (b.status === 'clear' ? 'ok' : b.status === 'alert' ? 'bad' : b.status === 'work' ? 'warn' : '');
+  } catch (e) { /* tile keeps its placeholder */ }
+  // Alerts tile — live from NWS
+  try {
+    const d = await getJSON(NWS_ALERTS_URL, { 'Accept': 'application/geo+json' });
+    const feats = d.features || [];
+    const el = $('glance-alerts-val');
+    if (!feats.length) { el.textContent = 'All clear'; el.className = 'glance-val ok'; }
+    else {
+      const ev = (feats[0].properties || {}).event || 'Alert';
+      el.textContent = feats.length + (feats.length === 1 ? ' alert' : ' alerts') + ' · ' + ev;
+      el.className = 'glance-val ' + (/warning/i.test(ev) ? 'bad' : 'warn');
+    }
+  } catch (e) { /* keep placeholder */ }
+  // River tile — Columbia at Port Westward, live from USGS
+  try {
+    const d = await getJSON(USGS_IV_URL);
+    const ts = (d.value.timeSeries || []).find(t =>
+      t.sourceInfo.siteCode[0].value === GAUGES[0].site && t.variable.variableCode[0].value === '00065');
+    const clean = ((ts.values[0] && ts.values[0].value) || []).filter(v => v.value !== '-999999');
+    if (clean.length) {
+      const last = clean[clean.length - 1];
+      const h = parseFloat(last.value);
+      const target = new Date(last.dateTime).getTime() - 24 * 3600 * 1000;
+      let best = clean[0], bd = Infinity;
+      clean.forEach(v => { const dd = Math.abs(new Date(v.dateTime).getTime() - target); if (dd < bd) { bd = dd; best = v; } });
+      const delta = h - parseFloat(best.value);
+      const arrow = delta > 0.05 ? ' ▲ rising' : delta < -0.05 ? ' ▼ falling' : ' → steady';
+      $('glance-river-val').textContent = num(h, 2) + ' ft' + arrow;
+    }
+  } catch (e) { /* keep placeholder */ }
+  // Next event tile — from the events snapshot
+  try {
+    const snap = await getSnapshot('events.json');
+    const today = todayStrPT();
+    const evs = (snap.events || []).filter(ev => ev.date >= today).slice().sort((a, b) =>
+      a.date === b.date ? parseTimeToMinutes(a.time) - parseTimeToMinutes(b.time)
+                        : (a.date < b.date ? -1 : 1));
+    const el = $('glance-events-val');
+    if (evs.length) {
+      const ev = evs[0];
+      const when = ev.date === today ? 'Today ' + (ev.time || '')
+        : fmtDay(new Date(ev.date + 'T12:00:00')) + ' ' + (ev.time || '');
+      el.textContent = ev.title;
+      el.title = ev.title;
+      el.closest('.glance-tile').querySelector('.glance-sub').textContent = when + (ev.source ? ' · ' + ev.source : '');
+    } else {
+      el.textContent = 'None scheduled';
+    }
+  } catch (e) { /* keep placeholder */ }
+}
+
+/* ---------- share + home-screen install ---------- */
+let deferredInstallPrompt = null;
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  deferredInstallPrompt = e;
+});
+function initShare() {
+  const shareBtn = $('share-btn');
+  if (shareBtn) {
+    shareBtn.addEventListener('click', async () => {
+      const payload = {
+        title: 'Columbia County Live',
+        text: 'Roads, rivers, weather & the Oscar B ferry for Columbia County, Oregon — one live look:',
+        url: 'https://travweber67.github.io/columbia-county-live/'
+      };
+      if (navigator.share) {
+        try { await navigator.share(payload); } catch (e) { /* user dismissed */ }
+      } else if (navigator.clipboard) {
+        try {
+          await navigator.clipboard.writeText(payload.url);
+          shareBtn.textContent = '✅ Link copied — paste it anywhere';
+          setTimeout(() => { shareBtn.textContent = '📤 Share this page'; }, 3500);
+        } catch (e) { /* clipboard unavailable */ }
+      }
+    });
+  }
+  const installBtn = $('install-btn');
+  const help = $('install-help');
+  if (installBtn && help) {
+    installBtn.addEventListener('click', async () => {
+      if (deferredInstallPrompt) {
+        deferredInstallPrompt.prompt();
+        try { await deferredInstallPrompt.userChoice; } catch (e) { /* ignore */ }
+        deferredInstallPrompt = null;
+        return;
+      }
+      const ua = navigator.userAgent || '';
+      if (/iphone|ipad|ipod/i.test(ua)) {
+        help.textContent = 'On iPhone/iPad: tap the Share button in Safari (the square with an arrow), then choose "Add to Home Screen".';
+      } else if (/android/i.test(ua)) {
+        help.textContent = 'On Android: open your browser menu (⋮) and choose "Add to Home screen" or "Install app".';
+      } else {
+        help.textContent = 'On a computer: look for the install icon at the right of the address bar in Chrome or Edge, or just bookmark this page (Ctrl/Cmd + D) — it updates itself.';
+      }
+      help.hidden = false;
+    });
+  }
+}
+
 /* ---------- freshness board ---------- */
 const FRESH_ROWS = [
   ['National Weather Service — alerts', 'alerts-updated', 'live'],
@@ -911,3 +1024,90 @@ setInterval(tickFerryNext, 20 * 1000);
 setInterval(loadEvents, 30 * 60 * 1000);
 setTimeout(renderFreshness, 2500);
 setInterval(renderFreshness, 30 * 1000);
+
+/* ---------- since you were away (return-visit briefing) ---------- */
+const SINCE_KEY = 'ccl-since-v1';
+function sinceLoad() {
+  try { return JSON.parse(localStorage.getItem(SINCE_KEY) || 'null'); } catch (e) { return null; }
+}
+function sinceSave(state) {
+  try { localStorage.setItem(SINCE_KEY, JSON.stringify(state)); } catch (e) { /* storage unavailable */ }
+}
+async function initSince() {
+  const card = $('since-card');
+  const body = $('since-body');
+  if (!card || !body) return;
+  const dismiss = $('since-dismiss');
+  if (dismiss) dismiss.addEventListener('click', () => { card.hidden = true; });
+  const prev = sinceLoad();
+  const cur = { t: Date.now(), alerts: null, riverFt: null, evKeys: null, evList: null };
+  // Weather alerts — live from NWS, the same feed the alerts card uses
+  try {
+    const d = await getJSON(NWS_ALERTS_URL, { 'Accept': 'application/geo+json' });
+    cur.alerts = (d.features || []).map(f => (f.properties || {}).event || 'Alert');
+  } catch (e) { /* signal unavailable this visit */ }
+  // Columbia River at Port Westward — live from USGS, the same series as the river tile
+  try {
+    const d = await getJSON(USGS_IV_URL);
+    const ts = (d.value.timeSeries || []).find(t =>
+      t.sourceInfo.siteCode[0].value === GAUGES[0].site && t.variable.variableCode[0].value === '00065');
+    const clean = ((ts.values[0] && ts.values[0].value) || []).filter(v => v.value !== '-999999');
+    if (clean.length) cur.riverFt = parseFloat(clean[clean.length - 1].value);
+  } catch (e) { /* signal unavailable this visit */ }
+  // Events — the same calendar snapshot the events card renders
+  try {
+    const snap = await getSnapshot('events.json');
+    const today = todayStrPT();
+    const evs = (snap.events || []).filter(ev => ev.date >= today).slice().sort((a, b) =>
+      a.date === b.date ? parseTimeToMinutes(a.time) - parseTimeToMinutes(b.time)
+                        : (a.date < b.date ? -1 : 1));
+    cur.evList = evs.map(ev => ({ key: ev.date + '|' + ev.title, title: ev.title, date: ev.date, time: ev.time || '' }));
+    cur.evKeys = cur.evList.map(e => e.key);
+  } catch (e) { /* signal unavailable this visit */ }
+
+  if (!prev) {
+    body.innerHTML = '<p class="since-welcome">👋 <strong>First visit?</strong> This spot keeps watch between your visits. Come back later and it will tell you what changed while you were away — new weather alerts, river movement, and new events on the calendar.</p>';
+    card.hidden = false;
+  } else if (cur.alerts || cur.riverFt != null || cur.evKeys) {
+    const when = fmtDayTime(new Date(prev.t));
+    const items = [];
+    if (prev.alerts && cur.alerts) {
+      const fresh = cur.alerts.filter(a => !prev.alerts.includes(a));
+      const cleared = prev.alerts.filter(a => !cur.alerts.includes(a));
+      fresh.slice(0, 2).forEach(a => items.push('⚠️ <strong>New alert:</strong> ' + esc(a)));
+      if (fresh.length > 2) items.push('⚠️ …and ' + (fresh.length - 2) + ' more new alerts — see Weather Alerts below.');
+      if (!fresh.length && cleared.length) {
+        items.push('✅ Cleared since then: ' + esc(cleared[0]) + (cleared.length > 1 ? ' and ' + (cleared.length - 1) + ' more' : '') + '.');
+      }
+    }
+    if (prev.riverFt != null && cur.riverFt != null) {
+      const delta = cur.riverFt - prev.riverFt;
+      if (Math.abs(delta) >= 0.3) {
+        items.push('🌊 The Columbia at Port Westward is <strong>' + (delta > 0 ? 'up ' : 'down ')
+          + num(Math.abs(delta), 1) + ' ft</strong> since your last visit — now ' + num(cur.riverFt, 2) + ' ft.');
+      }
+    }
+    if (prev.evKeys && cur.evKeys) {
+      const freshKeys = cur.evKeys.filter(k => !prev.evKeys.includes(k));
+      if (freshKeys.length) {
+        const first = (cur.evList || []).find(e => freshKeys.includes(e.key));
+        items.push('📅 <strong>' + freshKeys.length + (freshKeys.length === 1 ? ' new event' : ' new events')
+          + '</strong> added to the calendar' + (first
+            ? ' — soonest: ' + esc(first.title) + ' (' + esc(fmtDay(new Date(first.date + 'T12:00:00'))) + (first.time ? ' ' + esc(first.time) : '') + ')'
+            : '') + '.');
+      }
+    }
+    body.innerHTML = '<p class="since-when">Since your last visit · ' + esc(when) + '</p>'
+      + (items.length
+        ? '<ul class="since-list">' + items.map(i => '<li>' + i + '</li>').join('') + '</ul>'
+        : '<p class="since-quiet">All quiet — no new alerts, the river is holding, and nothing new on the calendar. The good kind of boring.</p>');
+    card.hidden = false;
+  }
+  // This visit becomes the new baseline — per signal, so a feed that failed
+  // today never erases a good older reading for that signal.
+  sinceSave({ t: cur.t,
+    alerts: cur.alerts || (prev && prev.alerts) || null,
+    riverFt: cur.riverFt != null ? cur.riverFt : (prev && prev.riverFt != null ? prev.riverFt : null),
+    evKeys: cur.evKeys || (prev && prev.evKeys) || null });
+}
+initSince();

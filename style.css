@@ -450,3 +450,12 @@ h2{font-family:var(--display);font-weight:600;letter-spacing:.01em}
   .event-src{display:none}
   .leaflet-control-layers{font-size:.72rem}
 }
+
+/* Since you were away — return-visit briefing */
+.since-card{max-width:1280px;margin:18px auto 0;width:calc(100% - 40px);border-left:4px solid var(--warm)}
+.since-dismiss{background:none;border:1px solid var(--line,#2a3f57);color:var(--muted);border-radius:8px;width:30px;height:30px;font-size:.8rem;cursor:pointer;flex:none}
+.since-dismiss:hover{color:var(--warm);border-color:var(--warm)}
+.since-when{font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:700;margin:2px 0 8px}
+.since-list{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.since-list li{font-size:.95rem;line-height:1.45}
+.since-quiet,.since-welcome{font-size:.95rem;line-height:1.5;margin:0}
