@@ -3053,7 +3053,8 @@ const FINDER_SECTIONS = [
   { id: 'events-card',   title: 'Events — Next Two Weeks',   sub: 'City and county calendars, with add-to-calendar', keys: 'events calendar meeting meetings library storytime tonight weekend happening' },
   { id: 'alerts-card',   title: 'Weather Alerts',            sub: 'National Weather Service warnings and watches', keys: 'alert alerts warning warnings watch storm flood weather severe' },
   { id: 'forecast-card', title: 'Forecast',                  sub: 'Town forecasts from the National Weather Service', keys: 'forecast weather rain snow temperature wind weekend' },
-  { id: 'sky-card',      title: 'In the Sky Right Now',      sub: 'Aircraft overhead, the ISS, and when to see the station', keys: 'plane planes aircraft flight flights iss station satellite sky overhead look up' },
+  { id: 'aircraft-card', title: 'Aircraft Overhead',         sub: 'Planes over the county right now, from community ADS-B receivers', keys: 'plane planes aircraft flight flights overhead adsb low local ground traffic' },
+  { id: 'sky-card',      title: 'In the Sky Right Now',      sub: 'The ISS, and when to see the station pass', keys: 'iss station satellite sky look up passes pass' },
   { id: 'dark-card',     title: 'After Dark — Tonight\u2019s Sky', sub: 'Clouds, moonlight, aurora odds and meteor showers — is tonight worth looking up?', keys: 'stars stargazing night sky dark aurora northern lights meteor meteors shooting star telescope astronomy milky way bundle up tonight' },
   { id: 'rivers-card',   title: 'River Levels',              sub: 'USGS gauges on the Columbia and Nehalem', keys: 'river rivers level levels gauge gauges flood height columbia nehalem' },
   { id: 'tides-card',    title: 'River Tides',               sub: 'Next high and low tide at St. Helens and Wauna', keys: 'tide tides high low slack fishing dock ramp' },
@@ -3134,6 +3135,7 @@ function finderFlashEl(el, rowClass) {
 }
 function finderJump(el) {
   if (!el) return;
+  cclReveal(el); // Redesign 2026-11-04: switch to the view holding the target first
   try { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
   catch (e) { el.scrollIntoView(); }
   finderFlashEl(el, false);
@@ -3403,6 +3405,14 @@ initAir();
 const LANG_KEY = 'ccl-lang-v1';
 const LANG_ES = {
   __title: 'Columbia County Live — Carreteras, ríos, clima y ferry para el condado de Columbia, Oregón',
+  tabtoday: 'Hoy',
+  tabtravel: 'Viajes',
+  taboutdoors: 'Aire libre',
+  tabmore: 'Eventos y más',
+  commuteh2: '🚗 El veredicto del viaje',
+  commutenote: 'La respuesta en una línea para manejar ahora mismo. El panorama completo del corredor — puente, incidentes y cámaras — está en la pestaña Viajes.',
+  aircrafth2: '✈️ Aviones sobre el condado',
+  aircraftnote: 'Aviones: receptores ADS-B de la comunidad vía adsb.fi. Se actualiza automáticamente.',
   __finderPh: 'Busca lo que sea — prueba «ferry», «marea alta», «hora de cuentos», un pueblo…',
   tagline: 'Carreteras · Ríos · El clima · El ferry — Condado de Columbia, Oregón',
   clocklabel: 'Hora del Pacífico',
@@ -4462,3 +4472,117 @@ function initDark() {
   setInterval(tickDark, 60 * 1000);
 }
 initDark();
+
+/* ---------- view navigation (Redesign 2026-11-04) ----------
+   Twenty rounds of features made the page a mile long; this module gives
+   it rooms. Every card now lives in exactly one of four views — Today,
+   Travel, Outdoors, Events & More — switched by the tab bar (bottom bar
+   on phones, top bar on desktop). Nothing was removed: every loader above
+   still runs at boot, and hidden views keep updating on their timers; a
+   view is a lens, not a shutdown. Cross-view jumps route through
+   cclReveal: the finder, the glance tiles, the sticky bar and the hero
+   chips all name cards, and the page first switches to the view that
+   holds the card, then scrolls and flashes as it always did. The Leaflet
+   gotcha is handled here too: the map is built while its view may be
+   hidden, so every switch to Travel calls invalidateSize(). The last
+   view is remembered in this browser only (ccl-view-v1). */
+const VIEW_KEY = 'ccl-view-v1';
+const VIEW_IDS = ['today', 'travel', 'outdoors', 'more'];
+let cclViewCur = 'today';
+
+function cclParentOf(el) { return el ? (el.parentNode || el.parent || null) : null; }
+function cclViewOf(el) {
+  let n = el;
+  while (n && n.tag !== '#document') {
+    if (n.classList && n.classList.contains('view')) return n;
+    n = cclParentOf(n);
+  }
+  return null;
+}
+function cclShowView(name) {
+  if (VIEW_IDS.indexOf(name) === -1) name = 'today';
+  cclViewCur = name;
+  VIEW_IDS.forEach(v => {
+    const sec = $('view-' + v);
+    if (!sec) return;
+    const on = v === name;
+    sec.hidden = !on;
+    sec.classList.toggle('view-active', on);
+  });
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    const on = !!(b.dataset && b.dataset.viewBtn === name);
+    b.classList.toggle('active', on);
+    if (b.setAttribute) b.setAttribute('aria-pressed', on ? 'true' : 'false');
+  });
+  try { window.localStorage.setItem(VIEW_KEY, name); } catch (e) { /* storage unavailable — choice is session-only */ }
+  if (name === 'travel' && typeof map !== 'undefined' && map && map.invalidateSize) {
+    setTimeout(() => { try { map.invalidateSize(); } catch (e) { /* map still booting */ } }, 60);
+  }
+}
+function cclReveal(el) {
+  if (!el) return;
+  const v = cclViewOf(el);
+  if (v && v.id && v.id !== 'view-' + cclViewCur) cclShowView(v.id.replace('view-', ''));
+}
+function cclRouteAnchor(a) {
+  const href = a && a.getAttribute ? a.getAttribute('href') : (a && a.attrs ? a.attrs.href : null);
+  if (!href || href.charAt(0) !== '#' || href.length < 2) return;
+  const target = $(href.slice(1));
+  if (!target) return;
+  cclReveal(target);
+  setTimeout(() => {
+    try { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    catch (e) { try { target.scrollIntoView(); } catch (e2) { /* older browser */ } }
+    finderFlashEl(target, false);
+  }, 30);
+}
+function initViews() {
+  let start = 'today';
+  try {
+    const p = window.localStorage.getItem(VIEW_KEY);
+    if (p && VIEW_IDS.indexOf(p) !== -1) start = p;
+  } catch (e) { /* storage unavailable */ }
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    b.addEventListener('click', () => {
+      cclShowView(b.dataset ? b.dataset.viewBtn : null);
+      if (window.scrollTo) { try { window.scrollTo(0, 0); } catch (e) { /* noop */ } }
+    });
+  });
+  // Route every in-page card anchor (glance tiles, sticky bar, hero chips,
+  // the offline note) through the views, so a tap lands in the right room.
+  try {
+    document.querySelectorAll('a').forEach(a => {
+      const href = a.getAttribute ? a.getAttribute('href') : null;
+      if (href && href.charAt(0) === '#' && href.length > 1) {
+        a.addEventListener('click', ev => { if (ev && ev.preventDefault) ev.preventDefault(); cclRouteAnchor(a); });
+      }
+    });
+  } catch (e) { /* anchors keep their default jump as a fallback */ }
+  cclShowView(start);
+}
+initViews();
+
+/* ---------- reveal-on-first-sight (Redesign 2026-11-04) ----------
+   Cards rise and fade in the first time they scroll into view — motion
+   that helps the eye land, nothing more. The hidden start state is added
+   by this script only when IntersectionObserver exists, so with JS off
+   or an old browser every card is simply visible: content is never gated
+   on animation. Reduced-motion readers get no reveal at all. */
+function initReveal() {
+  let reduced = false;
+  try { reduced = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches); } catch (e) { /* assume motion ok */ }
+  if (reduced) return;
+  if (typeof IntersectionObserver === 'undefined') return;
+  const els = [];
+  document.querySelectorAll('.view .card').forEach(el => els.push(el));
+  document.querySelectorAll('.glance').forEach(el => els.push(el));
+  document.querySelectorAll('.finder').forEach(el => els.push(el));
+  if (!els.length) return;
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (en.isIntersecting) { en.target.classList.add('inview'); io.unobserve(en.target); }
+    });
+  }, { rootMargin: '0px 0px -6% 0px', threshold: 0.04 });
+  els.forEach(el => { el.classList.add('reveal'); io.observe(el); });
+}
+initReveal();

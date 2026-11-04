@@ -18,7 +18,7 @@
  */
 'use strict';
 
-var VERSION = 'ccl-v1';
+var VERSION = 'ccl-v2'; // v2 = Redesign 2026-11-04 (view navigation + light modern theme)
 var STATIC_CACHE = VERSION + '-static';
 var DATA_CACHE = VERSION + '-data';
 var LIB_CACHE = VERSION + '-lib';
