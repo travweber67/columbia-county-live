@@ -451,6 +451,19 @@ h2{font-family:var(--display);font-weight:600;letter-spacing:.01em}
   .leaflet-control-layers{font-size:.72rem}
 }
 
+/* The County Briefing — today's answers, ready to take with you */
+.briefing-card{max-width:1280px;margin:18px auto 0;width:calc(100% - 40px);border-left:4px solid var(--accent)}
+.briefing-preview{
+  margin:0 0 12px;padding:13px 15px;white-space:pre-wrap;word-break:break-word;
+  background:#0a1626;border:1px dashed var(--border);border-radius:12px;
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  font-size:.86rem;line-height:1.55;color:var(--text);
+  max-height:300px;overflow:auto;
+}
+.briefing-actions{display:flex;flex-wrap:wrap;gap:10px}
+.briefing-card .install-help{margin-top:12px}
+@media (max-width:920px){.briefing-card{width:calc(100% - 24px)}}
+
 /* Since you were away — return-visit briefing */
 .since-card{max-width:1280px;margin:18px auto 0;width:calc(100% - 40px);border-left:4px solid var(--warm)}
 .since-dismiss{background:none;border:1px solid var(--line,#2a3f57);color:var(--muted);border-radius:8px;width:30px;height:30px;font-size:.8rem;cursor:pointer;flex:none}
@@ -459,3 +472,348 @@ h2{font-family:var(--display);font-weight:600;letter-spacing:.01em}
 .since-list{list-style:none;margin:0;padding:0;display:grid;gap:7px}
 .since-list li{font-size:.95rem;line-height:1.45}
 .since-quiet,.since-welcome{font-size:.95rem;line-height:1.5;margin:0}
+
+/* My town — the page tunes itself around home (X20 R3) */
+.home-chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 6px}
+.home-chip{
+  background:var(--panel-2);color:var(--muted);border:1px solid var(--border);
+  border-radius:999px;padding:6px 14px;font-size:.85rem;cursor:pointer;
+}
+.home-chip:hover{color:var(--text);border-color:var(--accent)}
+.home-chip.active{background:var(--accent);border-color:var(--accent);color:#06283d;font-weight:700}
+.home-status{font-size:.95rem;line-height:1.5;margin:4px 0 10px}
+.home-actions{display:flex;flex-wrap:wrap;gap:8px}
+.home-visit{margin:8px 0 0}
+.home-linkbtn{background:none;border:none;color:var(--accent);cursor:pointer;font-size:.85rem;padding:0;text-decoration:underline}
+.event-row-home{border-left:3px solid var(--warm);padding-left:8px}
+.event-home-badge{
+  flex:0 0 auto;background:var(--warm);color:#23160a;font-size:.68rem;font-weight:700;
+  border-radius:999px;padding:2px 8px;white-space:nowrap;align-self:center;
+}
+
+/* Offline note (X20 R4) — shown only while the phone has no signal; the
+   readings below stay stamped with their true ages on the freshness board. */
+.offline-note{
+  max-width:1280px;margin:14px auto 0;padding:12px 18px;
+  background:#2a2008;border:1px solid var(--warm);border-radius:var(--radius);
+  color:#fde9c8;font-size:.95rem;
+}
+.offline-note a{color:#fff;text-decoration:underline}
+
+/* Tonight & tomorrow — the evening planning brief (X20 R5) */
+.plan-card{max-width:1280px;margin:18px auto 0;width:calc(100% - 40px);border-left:4px solid #8b7fd4}
+@media (max-width:920px){.plan-card{width:calc(100% - 24px)}}
+.plan-lines{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.plan-lines li{font-size:.95rem;line-height:1.5;display:flex;gap:9px;align-items:baseline}
+.plan-ico{flex:0 0 1.35em;text-align:center}
+.plan-warn{color:var(--warm);font-weight:600}
+.plan-src{color:var(--muted);font-size:.78rem;margin:10px 0 0}
+
+/* X20 R6 — events: take it with you (add to your own calendar) */
+.evcal-note{margin:0 0 8px}
+.evcal-btn{
+  flex:0 0 auto;align-self:center;
+  font:inherit;font-size:.74rem;font-weight:700;white-space:nowrap;
+  color:var(--warm);background:transparent;border:1px solid var(--warm);
+  border-radius:999px;padding:3px 10px;cursor:pointer;
+}
+.evcal-btn:hover,.evcal-btn:focus-visible{background:var(--warm);color:#23160a}
+.evcal-btn.evcal-added{background:var(--accent);border-color:var(--accent);color:#08111d}
+
+/* X20 Round 7 — hear the briefing: the listen button's speaking state */
+.share-btn.speaking{background:var(--warm);border-color:var(--warm);color:#23160a;animation:voicePulse 1.6s ease-in-out infinite}
+@keyframes voicePulse{0%,100%{box-shadow:0 0 0 0 rgba(242,178,92,.45)}50%{box-shadow:0 0 0 7px rgba(242,178,92,0)}}
+@media (prefers-reduced-motion:reduce){.share-btn.speaking{animation:none}}
+
+/* X20 Round 8 — river tides: the day's other schedule */
+.tide-station{padding:10px 0;border-bottom:1px solid var(--border)}
+.tide-station:last-child{border-bottom:none}
+.tide-line{font-size:.95rem;line-height:1.5;margin:6px 0 8px}
+.tide-turns{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.tide-turns li{display:flex;justify-content:space-between;gap:12px;font-size:.88rem}
+.tide-turn-v{color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* ---------- ISS pass predictions (X20 Round 9) ---------- */
+.iss-passes{margin-top:10px;border-top:1px solid var(--border);padding-top:10px}
+.iss-passes-head{font-size:.95rem;margin-bottom:6px}
+.iss-pass-hero{font-size:.95rem;line-height:1.55;margin:6px 0 10px;padding:10px 12px;
+  background:var(--panel-2);border:1px solid var(--border);border-left:3px solid var(--warm);border-radius:10px}
+.iss-pass-list{list-style:none;margin:0 0 8px;padding:0;display:grid;gap:8px}
+.iss-pass-list li{display:grid;gap:2px;padding:8px 0;border-bottom:1px solid var(--border)}
+.iss-pass-list li:last-child{border-bottom:none}
+.iss-pass-t{font-weight:600;font-size:.92rem}
+.iss-pass-d{font-size:.88rem;color:var(--muted)}
+.iss-pass-k{font-size:.85rem;color:var(--warm)}
+
+/* Catch the boat — the ferry leave-by planner (X20 R10). Answers the
+   kitchen-table question ("when do I walk out the door?") instead of
+   only the dock question ("when does the boat leave?"). */
+.ferry-plan{margin:2px 0 14px}
+.fp-dirs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.fp-dir-btn{
+  background:var(--panel-2);color:var(--muted);border:1px solid var(--border);
+  border-radius:999px;padding:5px 12px;font-size:.82rem;cursor:pointer;
+}
+.fp-dir-btn:hover{color:var(--text);border-color:var(--accent)}
+.fp-dir-btn.active{background:var(--warm);border-color:var(--warm);color:#23160a;font-weight:700}
+.fp-towns{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}
+.fp-towns[hidden]{display:none}
+.fp-from{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
+.fp-town-chip{
+  background:var(--panel-2);color:var(--muted);border:1px solid var(--border);
+  border-radius:999px;padding:6px 14px;font-size:.85rem;cursor:pointer;
+}
+.fp-town-chip:hover{color:var(--text);border-color:var(--accent)}
+.fp-town-chip.active{background:var(--accent);border-color:var(--accent);color:#06283d;font-weight:700}
+.fp-verdict{background:var(--panel-2);border:1px solid var(--border);border-radius:12px;padding:12px 14px}
+.fp-verdict.fp-tight{border-color:var(--warn)}
+.fp-verdict.fp-done{font-weight:700}
+.fp-verdict.fp-alert{border-color:var(--danger);font-size:.95rem;line-height:1.5}
+.fp-leave{font-family:var(--display);font-size:1.2rem;font-weight:800;line-height:1.25}
+.fp-leave .fp-time{color:var(--warm);font-variant-numeric:tabular-nums}
+.fp-leave .fp-away{font-family:inherit;font-size:.85rem;font-weight:600;color:var(--muted)}
+.fp-sub{color:var(--muted);font-size:.9rem;line-height:1.5;margin-top:4px}
+.fp-sub strong{color:var(--text)}
+.fp-next{font-size:.92rem;line-height:1.5;margin:10px 0 4px}
+.fp-next.fp-last{color:var(--warn)}
+
+/* The County Almanac (X20 R11) — how much light is left, and what the
+   moon is doing. Computed on the page; the sun-arc is its signature. */
+.almanac-card{max-width:1280px;margin:18px auto 0;width:calc(100% - 40px);border-left:4px solid var(--warm)}
+@media (max-width:920px){.almanac-card{width:calc(100% - 24px)}}
+.alm-verdict{background:var(--panel-2);border:1px solid var(--border);border-radius:12px;padding:12px 14px}
+.alm-head{font-family:var(--display);font-size:1.18rem;font-weight:800;line-height:1.3}
+.alm-head .alm-away{color:var(--warm);font-variant-numeric:tabular-nums}
+.alm-sub{color:var(--muted);font-size:.92rem;line-height:1.5;margin-top:4px}
+.alm-sub strong{color:var(--text)}
+.alm-arc{display:block;width:100%;max-width:560px;height:auto;margin:4px auto 0}
+.alm-arc-day{fill:none;stroke:var(--warm);stroke-width:2;opacity:.55}
+.alm-arc-night{fill:none;stroke:var(--border);stroke-width:1.5;stroke-dasharray:4 5}
+.alm-horizon{stroke:var(--border);stroke-width:1}
+.alm-sun{fill:#f7c948;stroke:#ffe9a8;stroke-width:2}
+.alm-sun-down{fill:var(--muted);stroke:var(--border);opacity:.55}
+.alm-arc-lab{fill:var(--muted);font-size:11px;font-variant-numeric:tabular-nums}
+.alm-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+@media (max-width:560px){.alm-facts{grid-template-columns:1fr 1fr}}
+.alm-fact{background:var(--panel-2);border:1px solid var(--border);border-radius:12px;padding:10px 12px}
+.alm-k{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
+.alm-v{font-size:1.04rem;font-weight:700;margin-top:2px;font-variant-numeric:tabular-nums;line-height:1.25}
+.alm-s{font-size:.8rem;color:var(--muted);margin-top:1px;line-height:1.4}
+.alm-moon-fact{display:flex;gap:12px;align-items:center}
+.alm-moon{flex:0 0 auto}
+.alm-moon-dark{fill:#22344c;stroke:var(--border)}
+.alm-moon-lit{fill:#f5d98b}
+
+/* ---------- the county wall: ambient display mode ---------- */
+.wall-overlay{position:fixed;inset:0;z-index:1500;background:radial-gradient(120% 100% at 50% 0%,#10233d 0%,#08111d 58%,#050a13 100%);color:#eef4fb;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:5vh 6vw;box-sizing:border-box;text-align:center;cursor:pointer}
+.wall-overlay[hidden]{display:none}
+.wall-exit{position:absolute;top:14px;right:16px;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);color:#fff;font-size:1.25rem;line-height:1;cursor:pointer;z-index:2}
+.wall-exit:hover{background:rgba(255,255,255,.18)}
+.wall-scene{max-width:1150px}
+.wall-kicker{font-size:clamp(.95rem,2.6vw,1.5rem);letter-spacing:.14em;text-transform:uppercase;color:#f2b25c;font-weight:700;margin-bottom:2.4vh}
+.wall-head{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:clamp(2.3rem,8.2vw,6rem);line-height:1.1}
+.wall-kind-now .wall-head{font-size:clamp(3.4rem,13vw,9.5rem)}
+.wall-sub{margin-top:2.6vh;font-size:clamp(1.15rem,3.4vw,2.05rem);line-height:1.4;color:#c9d8ea}
+.wall-kind-alert.wall-warn .wall-head{color:#ffd166}
+.wall-kind-alert.wall-severe .wall-head{color:#ff9a8a}
+.wall-in{animation:wallfade .6s ease both}
+@keyframes wallfade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.wall-foot{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;font-size:.95rem;color:#9fb4cc}
+.wall-live{display:inline-flex;align-items:center;gap:8px;font-weight:700;letter-spacing:.12em;color:#7ee2a0;white-space:nowrap}
+.wall-dots{display:inline-flex;gap:7px}
+.wall-dot{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.25);display:block}
+.wall-dot.on{background:#f2b25c}
+.wall-src{text-align:right}
+@media (prefers-reduced-motion: reduce){.wall-in{animation:none}}
+.watch-status{margin:2px 0 12px;font-size:.97rem;line-height:1.5}
+.watch-status p{margin:0}
+.watch-live-line{display:flex;align-items:center;gap:8px}
+.watch-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:0 0 12px}
+.watch-voice{display:inline-flex;align-items:center;gap:7px;font-size:.93rem;cursor:pointer}
+.watch-voice input{width:17px;height:17px;accent-color:var(--warm)}
+.watch-log{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.watch-log li{font-size:.93rem;line-height:1.45;border-left:3px solid rgba(255,255,255,.14);padding:2px 0 2px 10px}
+.watch-log li.watch-hit{border-left-color:var(--warm)}
+.watch-log-time{opacity:.65;font-size:.85em;margin-right:4px}
+.watch-card.watch-flash{animation:watchFlash 1.6s ease-in-out 2}
+@keyframes watchFlash{0%,100%{box-shadow:none}50%{box-shadow:0 0 0 3px var(--warm)}}
+@media (prefers-reduced-motion: reduce){.watch-card.watch-flash{animation:none}}
+
+/* ---------- Finder (X20 R14): one search across the whole page ---------- */
+.finder{max-width:1280px;margin:0 auto;padding:14px 20px 2px}
+.finder-box{
+  display:flex;align-items:center;gap:10px;
+  background:var(--panel);border:1px solid var(--border);border-radius:999px;
+  padding:10px 18px;box-shadow:var(--shadow);
+}
+.finder-box:focus-within{border-color:var(--warm)}
+.finder-icon{font-size:1.15rem;line-height:1}
+#finder-input{
+  flex:1;min-width:0;background:none;border:none;outline:none;
+  color:var(--text);font:inherit;font-size:1.05rem;
+}
+#finder-input::placeholder{color:var(--muted)}
+#finder-input::-webkit-search-cancel-button{display:none}
+.finder-hint{margin:8px 6px 0;font-size:.82rem;color:var(--muted)}
+.finder-results{
+  margin-top:10px;background:var(--panel);border:1px solid var(--border);
+  border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;
+}
+.finder-result{
+  display:flex;align-items:baseline;gap:10px;width:100%;text-align:left;
+  background:none;border:none;border-bottom:1px solid rgba(255,255,255,.06);
+  padding:12px 16px;color:var(--text);font:inherit;cursor:pointer;
+}
+.finder-result:last-child{border-bottom:none}
+.finder-result:hover,.finder-result.active{background:var(--panel-2)}
+.finder-kind{
+  flex:none;font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--bg);background:var(--accent);border-radius:999px;padding:2px 8px;
+}
+.finder-kind.kind-town{background:var(--accent-2)}
+.finder-kind.kind-event{background:var(--warm)}
+.finder-result-main{flex:1;min-width:0}
+.finder-result-title{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.finder-result-sub{display:block;font-size:.82rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.finder-empty{padding:14px 16px;color:var(--muted);font-size:.95rem;line-height:1.5}
+.finder-flash{animation:finderFlash 1.3s ease-in-out 2;border-radius:var(--radius)}
+@keyframes finderFlash{0%,100%{box-shadow:var(--shadow)}50%{box-shadow:0 0 0 3px var(--warm),var(--shadow)}}
+.event-row.finder-flash-row{animation:finderFlashRow 1.3s ease-in-out 2;border-radius:8px}
+@keyframes finderFlashRow{0%,100%{background:transparent}50%{background:rgba(242,178,92,.28)}}
+@media (prefers-reduced-motion: reduce){
+  .finder-flash{animation:none;box-shadow:0 0 0 3px var(--warm),var(--shadow)}
+  .event-row.finder-flash-row{animation:none;background:rgba(242,178,92,.28)}
+}
+
+/* ---------- X20 R15: air & smoke ---------- */
+.air-verdict{display:flex;align-items:center;gap:14px;background:var(--panel-2);border:1px solid var(--border);border-left:5px solid var(--muted);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+.air-big{font-family:var(--display);font-size:2.6rem;font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
+.air-cat-name{font-family:var(--display);font-size:1.12rem;font-weight:700;line-height:1.25}
+.air-cat-sub{color:var(--muted);font-size:.8rem;margin-top:2px}
+.air-advice{font-size:.95rem;line-height:1.5;margin:8px 0 4px}
+.air-scale{position:relative;height:12px;display:flex;margin:18px 0 4px}
+.air-seg{height:100%;opacity:.55}
+.air-seg:first-child{border-radius:6px 0 0 6px}
+.air-seg:last-child{border-radius:0 6px 6px 0}
+.air-marker{position:absolute;top:-5px;width:3px;height:22px;background:#fff;border-radius:2px;transform:translateX(-50%);box-shadow:0 0 0 2px rgba(0,0,0,.45)}
+.air-scale-labels{display:flex;justify-content:space-between;color:var(--muted);font-size:.72rem;font-variant-numeric:tabular-nums;margin-bottom:10px}
+.air-day{font-size:.92rem;line-height:1.5;margin:6px 0 10px}
+.air-readings{display:grid;gap:4px;font-size:.88rem;color:var(--muted)}
+.air-readings strong{color:var(--text);font-variant-numeric:tabular-nums}
+
+/* X20 Round 16 — language toggle (hero pill) + bilingual note in the share bar */
+.status-strip .lang-pill{
+  display:inline-flex;align-items:center;gap:7px;
+  background:rgba(9,22,36,.66);border:1px solid rgba(255,255,255,.22);
+  color:var(--text);font:inherit;font-size:.85rem;font-weight:600;
+  padding:7px 13px;border-radius:999px;cursor:pointer;
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  transition:border-color .15s ease,transform .15s ease;
+}
+.status-strip .lang-pill:hover{border-color:var(--warm);transform:translateY(-1px)}
+.lang-note{flex-basis:100%;margin:0;color:var(--muted);font-size:.88rem;background:var(--panel-2);border:1px dashed var(--border);border-radius:12px;padding:10px 12px}
+
+/* ---------- X20 R17: before you go — trip check ---------- */
+.go-trips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}
+.go-trip-btn{
+  font:inherit;font-size:.92rem;font-weight:600;color:var(--muted);
+  background:var(--panel-2);border:1px solid var(--border);border-radius:999px;
+  padding:8px 14px;cursor:pointer;transition:border-color .15s ease,color .15s ease;
+}
+.go-trip-btn:hover{color:var(--text);border-color:var(--accent)}
+.go-trip-btn.active{background:var(--warm);border-color:var(--warm);color:#23160a;font-weight:700}
+.go-whenrow{display:flex;flex-wrap:wrap;gap:10px 18px;margin:8px 0 12px}
+.go-field{display:inline-flex;align-items:center;gap:8px;font-size:.9rem;font-weight:600;color:var(--muted)}
+.go-field select{
+  font:inherit;font-size:.92rem;font-weight:600;color:var(--text);
+  background:var(--panel-2);border:1px solid var(--border);border-radius:10px;
+  padding:7px 10px;cursor:pointer;
+}
+.go-field select:focus-visible{outline:2px solid var(--warm);outline-offset:1px}
+.go-verdict{border-radius:12px;padding:13px 15px;margin-bottom:12px;border:1px solid var(--border);background:var(--panel-2)}
+.go-verdict-head{font-family:var(--display);font-size:1.3rem;font-weight:800;line-height:1.2}
+.go-verdict-sub{color:var(--muted);font-size:.88rem;margin-top:3px;line-height:1.45}
+.go-verdict.go-ok{border-left:5px solid var(--accent-2)}
+.go-verdict.go-ok .go-verdict-head{color:var(--accent-2)}
+.go-verdict.go-warn{border-left:5px solid var(--warn)}
+.go-verdict.go-warn .go-verdict-head{color:var(--warn)}
+.go-verdict.go-bad{border-left:5px solid var(--danger);background:#2a1215}
+.go-verdict.go-bad .go-verdict-head{color:#fecaca}
+.go-rows{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:8px}
+.go-row{display:flex;gap:10px;align-items:flex-start;background:var(--panel-2);border:1px solid var(--border);border-radius:10px;padding:10px 12px}
+.go-row-ico{font-size:1.05rem;line-height:1.35;flex:none}
+.go-row-main{display:block;min-width:0}
+.go-row-main strong{display:block;font-size:.95rem;line-height:1.35}
+.go-row-detail{display:block;color:var(--muted);font-size:.86rem;line-height:1.45;margin-top:2px}
+.go-row-bad{border-color:var(--danger)}
+.go-row-warn{border-left:4px solid var(--warn)}
+.go-row-na{border-style:dashed}
+.go-actions{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 8px}
+
+/* ---------- Your front page (X20 R18) ---------- */
+.frontpage{max-width:1280px;margin:18px auto 0;width:calc(100% - 40px)}
+.frontpage-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.frontpage-head h2{font-size:1.3rem}
+.frontpage-note{margin:4px 0 12px}
+.frontpage-list{display:flex;flex-direction:column;gap:18px}
+.frontpage-list>.card{margin:0;width:100%;max-width:none}
+.pin-clear{
+  flex:none;font-size:.82rem;font-weight:600;color:var(--muted);
+  background:var(--panel-2);border:1px solid var(--border);border-radius:999px;
+  padding:6px 12px;cursor:pointer;
+}
+.pin-clear:hover{color:var(--text);border-color:var(--warm)}
+.card-head.has-pin{position:relative;padding-right:96px}
+.pin-btn{
+  position:absolute;top:0;right:0;flex:none;
+  font-size:.78rem;font-weight:600;color:var(--muted);
+  background:var(--panel-2);border:1px solid var(--border);border-radius:999px;
+  padding:4px 10px;cursor:pointer;white-space:nowrap;
+}
+.pin-btn:hover{color:var(--text);border-color:var(--warm)}
+.pin-btn.active{color:#08111d;background:var(--warm);border-color:var(--warm)}
+
+/* ===== X20 Round 19 — the county sheet: the page learns to print =====
+   The sheet itself is print-only: on screen it never renders; in print
+   it is the ONLY thing that renders — the whole app steps aside for one
+   clean paper page. The note in the share bar wears the lang-note's
+   dashed-box pattern so it sits naturally beside it. */
+.print-note{flex-basis:100%;margin:0;color:var(--muted);font-size:.88rem;background:var(--panel-2);border:1px dashed var(--border);border-radius:12px;padding:10px 12px}
+#print-sheet{display:none}
+@page{margin:.55in .5in}
+@media print{
+  body>*{display:none!important}
+  #print-sheet{display:block!important;color:#111;background:#fff;font-size:10.5pt;line-height:1.35}
+  #print-sheet .ps-mast{border-bottom:3px double #111;padding-bottom:6pt;margin-bottom:8pt}
+  #print-sheet .ps-title{font-family:Fraunces,Georgia,'Times New Roman',serif;font-size:23pt;font-weight:700;letter-spacing:.2pt}
+  #print-sheet .ps-sub{font-size:10.5pt;color:#333;margin-top:2pt}
+  #print-sheet .ps-alert{border:1.5px solid #111;border-radius:6pt;padding:6pt 9pt;margin-bottom:9pt;font-weight:600}
+  #print-sheet .ps-alert.warn{border-width:2.5px;background:#f3f3f3}
+  #print-sheet .ps-alert.ok{font-weight:400}
+  #print-sheet .ps-grid{display:grid;grid-template-columns:1fr 1fr;gap:7pt 16pt;margin-bottom:2pt}
+  #print-sheet .ps-block{break-inside:avoid;margin-bottom:7pt}
+  #print-sheet .ps-block h3{font-size:10pt;text-transform:uppercase;letter-spacing:.6pt;border-bottom:1px solid #999;padding-bottom:2pt;margin:0 0 4pt}
+  #print-sheet .ps-row{display:flex;gap:8pt;margin-bottom:2.5pt}
+  #print-sheet .ps-k{flex:0 0 27%;font-weight:600}
+  #print-sheet .ps-v{flex:1}
+  #print-sheet .ps-big{font-size:12.5pt;font-weight:700;margin-bottom:2pt}
+  #print-sheet .ps-note{font-size:9pt;color:#444;margin-top:2pt}
+  #print-sheet .ps-foot{border-top:1.5px solid #111;margin-top:8pt;padding-top:5pt;font-size:8.8pt;color:#333;line-height:1.45}
+}
+
+/* X20 Round 20 — After Dark: tonight's-sky verdict band + check rows (modeled on the trip checker's verdict) */
+.dark-verdict{border-radius:12px;padding:13px 15px;margin-bottom:12px;border:1px solid var(--border);background:var(--panel-2)}
+.dark-verdict-head{font-family:var(--display);font-size:1.3rem;font-weight:800;line-height:1.2}
+.dark-verdict-sub{color:var(--muted);font-size:.88rem;margin-top:3px;line-height:1.45}
+.dark-verdict.dark-ok{border-left:5px solid var(--accent-2)}
+.dark-verdict.dark-ok .dark-verdict-head{color:var(--accent-2)}
+.dark-verdict.dark-warn{border-left:5px solid var(--warn)}
+.dark-verdict.dark-warn .dark-verdict-head{color:var(--warn)}
+.dark-verdict.dark-bad{border-left:5px solid var(--danger);background:#2a1215}
+.dark-verdict.dark-bad .dark-verdict-head{color:#fecaca}
+.dark-rows{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.dark-rows li{display:grid;gap:2px;padding:8px 0;border-bottom:1px solid var(--border)}
+.dark-rows li:last-child{border-bottom:none}
+.dark-row-k{font-weight:600;font-size:.92rem}
+.dark-row-v{font-size:.92rem;line-height:1.45;color:var(--muted)}
+.dark-row-v strong{color:var(--text);font-variant-numeric:tabular-nums}
