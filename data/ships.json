@@ -1,6 +1,93 @@
 {
- "fetched_at": "2026-11-04T23:22:54Z",
- "status": "key_needed",
- "note": "No keyless live AIS feed for US waters could be verified from here: MarineTraffic's data endpoint returns a 403 bot wall from this network, AISHub/VesselFinder/Global Fishing Watch all require accounts, and the free public AIS APIs that exist (e.g. Finland's Digitraffic) cover other seas. AISStream.io's free tier IS the route: set AISSTREAM_API_KEY (free signup at aisstream.io) and this fetcher collects live Columbia River positions over their websocket.",
- "ships": []
+ "fetched_at": "2026-11-04T23:36:25Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10791,
+   "lon": -122.95903,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-04 23:36:59.182109307 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64536,
+   "lon": -122.73506,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-04 23:37:02.145309459 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.59469,
+   "lon": -122.77821,
+   "sog_kn": 0.1,
+   "cog": 337.9,
+   "heading": 154,
+   "nav_status": 12,
+   "updated": "2026-11-04 23:37:10.479754204 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.0762,
+   "lon": -122.89636,
+   "sog_kn": 0.2,
+   "cog": 38.2,
+   "heading": 133,
+   "nav_status": 0,
+   "updated": "2026-11-04 23:37:10.528649089 +0000 UTC"
+  },
+  {
+   "mmsi": 352986134,
+   "name": "TAC SUZUKA",
+   "lat": 45.63919,
+   "lon": -122.77793,
+   "sog_kn": 0,
+   "cog": 346.6,
+   "heading": 230,
+   "nav_status": 5,
+   "updated": "2026-11-04 23:37:14.793178698 +0000 UTC"
+  },
+  {
+   "mmsi": 538006508,
+   "name": "RED COSMOS",
+   "lat": 45.62663,
+   "lon": -122.78806,
+   "sog_kn": 0,
+   "cog": 350.1,
+   "heading": 187,
+   "nav_status": 5,
+   "updated": "2026-11-04 23:37:17.269716539 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.08693,
+   "lon": -122.9105,
+   "sog_kn": 8.2,
+   "cog": 307.1,
+   "heading": 305,
+   "nav_status": 3,
+   "updated": "2026-11-04 23:37:20.684497645 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 210.2,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-04 23:37:26.799782967 +0000 UTC"
+  }
+ ]
 }
