@@ -5,6 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Columbia County Live — Roads, Rivers, Weather &amp; Ferry for Columbia County, Oregon</title>
 <meta name="description" content="One live map for Columbia County, Oregon: US-30 and Lewis & Clark Bridge status, Columbia & Nehalem river levels, weather alerts, earthquakes, wildfires, aircraft and river traffic overhead and under way, the Oscar B ferry, events, and town forecasts. Free, from official public sources.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Columbia County Live">
+<meta property="og:title" content="Columbia County Live — Roads, Rivers, Weather & Ferry">
+<meta property="og:description" content="Everything happening in Columbia County, Oregon, one live look: bridge status, river levels, weather alerts, the Oscar B ferry countdown, and this week's events. Free, from official public sources.">
+<meta property="og:url" content="https://travweber67.github.io/columbia-county-live/">
+<meta property="og:image" content="https://travweber67.github.io/columbia-county-live/img/hero-bridge.jpg">
+<meta property="og:image:alt" content="The Lewis and Clark Bridge over the Columbia River with Mount St. Helens behind it">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Columbia County Live — Roads, Rivers, Weather & Ferry">
+<meta name="twitter:description" content="Bridge status, river levels, weather alerts, the Oscar B ferry countdown, and local events for Columbia County, Oregon — one live look.">
+<meta name="twitter:image" content="https://travweber67.github.io/columbia-county-live/img/hero-bridge.jpg">
+<meta name="theme-color" content="#08111d">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,12 +57,36 @@
   </div>
 </header>
 
+<div class="sticky-bar" id="sticky-bar">
+  <span class="sticky-brand">🌲 County Live</span>
+  <a class="sticky-pill" id="sticky-weather" href="#alerts-card">⚠️ Weather —</a>
+  <a class="sticky-pill" id="sticky-bridge" href="#roads-card">🌉 Bridge —</a>
+  <nav class="sticky-links" aria-label="Jump to a section">
+    <a href="#rivers-card">River</a>
+    <a href="#ferry-card">Ferry</a>
+    <a href="#events-card">Events</a>
+    <a href="#sky-card">Sky</a>
+  </nav>
+</div>
+
 <div id="alert-banner" class="alert-banner" hidden></div>
+
+<section class="glance" id="glance-card" aria-label="Columbia County at a glance">
+  <a class="glance-tile" href="#roads-card"><span class="glance-label">🌉 Bridge</span><span class="glance-val" id="glance-bridge-val">Checking…</span><span class="glance-sub">Lewis &amp; Clark Bridge</span></a>
+  <a class="glance-tile" href="#alerts-card"><span class="glance-label">⚠️ Weather alerts</span><span class="glance-val" id="glance-alerts-val">Checking…</span><span class="glance-sub">National Weather Service</span></a>
+  <a class="glance-tile" href="#rivers-card"><span class="glance-label">🌊 Columbia River</span><span class="glance-val" id="glance-river-val">Checking…</span><span class="glance-sub">Port Westward gauge · USGS</span></a>
+  <a class="glance-tile" href="#events-card"><span class="glance-label">📅 Next event</span><span class="glance-val" id="glance-events-val">Checking…</span><span class="glance-sub">From the local calendars</span></a>
+</section>
 
 <main class="layout">
 
   <section class="col-main">
     <div class="card map-card">
+      <div class="map-toolbar" id="map-toolbar">
+        <button class="map-tool-btn" id="map-near-btn" type="button">📍 Near me</button>
+        <span class="map-towns" id="map-towns" aria-label="Fly the map to a town"></span>
+        <button class="map-tool-btn" id="map-full-btn" type="button">⛶ Full screen</button>
+      </div>
       <div id="map" role="application" aria-label="Map of Columbia County, Oregon"></div>
       <div class="map-legend">
         <span><i class="dot dot-town"></i> Town</span>
@@ -68,6 +106,7 @@
         <h2>🚗 US-30, the Bridge &amp; Roads</h2>
         <span class="updated" id="roads-updated"></span>
       </div>
+      <div id="commute-verdict" class="commute-verdict"><p class="loading">Checking the corridor…</p></div>
       <div id="bridge-body" class="panel-body"><p class="loading">Loading Lewis &amp; Clark Bridge status…</p></div>
       <h3 class="subhead">Highway incidents — ODOT TripCheck</h3>
       <div id="incidents-body" class="panel-body"><p class="loading">Loading incidents…</p></div>
@@ -92,6 +131,7 @@
         <span class="updated" id="ferry-updated"></span>
       </div>
       <div id="ferry-alert-body" class="panel-body"><p class="loading">Checking the county page for ferry closure alerts…</p></div>
+      <div id="ferry-next" class="ferry-next"><p class="loading">Working out the next sailing…</p></div>
       <p class="card-note">The last ferry on the Lower Columbia, run by Wahkiakum County. It sails on a fixed schedule — there's no live tracker, so the timetable below <em>is</em> the status, every day of the year. The alert line above is read from the county's official ferry page by our fetcher.</p>
       <div class="ferry-grid">
         <div class="ferry-box">
@@ -116,6 +156,12 @@
       <div class="card-head">
         <h2>📅 Events — Next Two Weeks</h2>
         <span class="updated" id="events-updated"></span>
+      </div>
+      <div class="event-filters" id="event-filters" role="tablist" aria-label="Filter events by when">
+        <button class="event-filter-btn active" type="button" data-filter="all">All</button>
+        <button class="event-filter-btn" type="button" data-filter="today">Today</button>
+        <button class="event-filter-btn" type="button" data-filter="weekend">This weekend</button>
+        <button class="event-filter-btn" type="button" data-filter="week">Next 7 days</button>
       </div>
       <div id="events-body" class="panel-body"><p class="loading">Loading events from the city calendars…</p></div>
       <p class="card-note small">Collected by our fetcher from the official city calendars. Official sources: <a href="https://www.sthelensoregon.gov/calendar.aspx" target="_blank" rel="noopener">St. Helens</a> · <a href="https://www.scappoose.gov/calendar.aspx" target="_blank" rel="noopener">Scappoose</a> · <a href="https://www.columbiacountyor.gov/calendar" target="_blank" rel="noopener">Columbia County</a></p>
@@ -146,6 +192,11 @@
       <div class="card-head">
         <h2>✈️ In the Sky Right Now</h2>
         <span class="updated" id="sky-updated"></span>
+      </div>
+      <div class="sky-filters" id="sky-filters" role="tablist" aria-label="Filter aircraft">
+        <button class="sky-filter-btn active" type="button" data-skyfilter="all">All traffic</button>
+        <button class="sky-filter-btn" type="button" data-skyfilter="low">Low &amp; local</button>
+        <button class="sky-filter-btn" type="button" data-skyfilter="ground">On the ground</button>
       </div>
       <div id="sky-body" class="panel-body"><p class="loading">Loading aircraft overhead…</p></div>
       <div id="iss-body" class="panel-body iss-line"><p class="loading">Locating the space station…</p></div>
@@ -181,6 +232,27 @@
 
   </aside>
 </main>
+
+<section class="card freshness-card" id="freshness-card">
+  <div class="card-head">
+    <h2>🕐 How fresh is this page?</h2>
+    <span class="updated">ages update every 30 sec</span>
+  </div>
+  <p class="card-note">Every number here names its source and its age. Green is fresh, amber is aging, red means treat the panel as stale and check the official source. If a feed ever goes quiet, this board shows it instead of hiding it.</p>
+  <div id="freshness-body" class="panel-body"><p class="loading">Checking source ages…</p></div>
+</section>
+
+<section class="share-bar" id="share-card" aria-label="Keep and share this page">
+  <div class="share-copy">
+    <h2>Keep Columbia County Live handy</h2>
+    <p>Free, no ads, no sign-up. Put it on your home screen like an app, or send it to a neighbor who drives US-30.</p>
+  </div>
+  <div class="share-actions">
+    <button class="share-btn primary" id="share-btn" type="button">📤 Share this page</button>
+    <button class="share-btn" id="install-btn" type="button">📱 Add to home screen</button>
+  </div>
+  <p class="install-help" id="install-help" hidden></p>
+</section>
 
 <footer class="site-footer">
   <p><strong>Columbia County Live</strong> — by <strong>Nomad Development Group</strong></p>

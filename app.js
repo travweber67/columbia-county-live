@@ -81,15 +81,18 @@ async function getSnapshot(name) {
   if (!r.ok) throw new Error('HTTP ' + r.status);
   return r.json();
 }
+const FRESH = {};
 function setUpdated(id) {
   const el = $(id);
   if (el) el.textContent = 'Updated ' + fmtTime(new Date());
+  FRESH[id] = Date.now();
 }
 function setSnapUpdated(id, fetchedAtIso) {
   const el = $(id);
   if (!el) return;
   const d = new Date(fetchedAtIso);
   el.textContent = isNaN(d) ? '' : 'Snapshot · collected ' + fmtDayTime(d);
+  if (!isNaN(d)) FRESH[id] = d.getTime();
 }
 function ago(date) {
   const mins = Math.max(0, Math.round((Date.now() - date.getTime()) / 60000));
@@ -174,6 +177,60 @@ function initMap() {
   }, { collapsed: false }).addTo(map);
 }
 
+/* ---------- map toolbar: near me, town jumps, full screen ---------- */
+let meMarker = null;
+function initMapTools() {
+  const townsWrap = $('map-towns');
+  if (townsWrap) {
+    TOWNS.forEach(t => {
+      const b = document.createElement('button');
+      b.className = 'map-town-chip';
+      b.type = 'button';
+      b.textContent = t.name;
+      b.addEventListener('click', () => { if (map) map.flyTo([t.lat, t.lon], 12, { duration: 0.8 }); });
+      townsWrap.appendChild(b);
+    });
+  }
+  const nearBtn = $('map-near-btn');
+  if (nearBtn) {
+    nearBtn.addEventListener('click', () => {
+      if (!map || !navigator.geolocation) return;
+      nearBtn.textContent = '📍 Locating…';
+      navigator.geolocation.getCurrentPosition(pos => {
+        const lat = pos.coords.latitude, lon = pos.coords.longitude;
+        if (meMarker) meMarker.remove();
+        meMarker = L.marker([lat, lon], { icon: emojiIcon('📍', 24) }).addTo(map)
+          .bindPopup(inBox(lat, lon)
+            ? '<strong>You are here</strong><br>Inside the Columbia County box.'
+            : '<strong>You are here</strong><br>Outside the Columbia County box — the county is the blue outline.');
+        map.flyTo([lat, lon], 12, { duration: 0.8 });
+        nearBtn.textContent = '📍 Near me';
+      }, () => {
+        nearBtn.textContent = '📍 Location unavailable';
+        setTimeout(() => { nearBtn.textContent = '📍 Near me'; }, 3000);
+      }, { timeout: 8000 });
+    });
+  }
+  const fullBtn = $('map-full-btn');
+  if (fullBtn) {
+    fullBtn.addEventListener('click', () => {
+      const el = $('map');
+      if (el && el.requestFullscreen) el.requestFullscreen().catch(() => {});
+    });
+  }
+  document.addEventListener('fullscreenchange', () => {
+    setTimeout(() => { if (map) map.invalidateSize(); }, 250);
+  });
+}
+
+/* ---------- sticky bar status pills ---------- */
+function setPill(id, text, cls) {
+  const el = $(id);
+  if (!el) return;
+  el.textContent = text;
+  el.className = 'sticky-pill' + (cls ? ' ' + cls : '');
+}
+
 /* ---------- weather alerts (NWS) ---------- */
 async function loadAlerts() {
   const body = $('alerts-body');
@@ -184,7 +241,10 @@ async function loadAlerts() {
     if (!feats.length) {
       body.innerHTML = '<p class="no-alerts">✅ No active watches, warnings, or advisories for Columbia County right now.</p>';
       banner.hidden = true;
+      setPill('sticky-weather', '✅ Weather clear', 'ok');
     } else {
+      const anyWarning = feats.some(f => /warning/i.test((f.properties || {}).event || ''));
+      setPill('sticky-weather', '⚠️ ' + feats.length + (feats.length === 1 ? ' alert' : ' alerts'), anyWarning ? 'bad' : 'warn');
       body.innerHTML = feats.map(f => {
         const p = f.properties || {};
         const sev = /warning/i.test(p.event || '') ? ' severe' : '';
@@ -200,6 +260,7 @@ async function loadAlerts() {
   } catch (e) {
     body.innerHTML = '<p class="fallback">⚠️ Couldn\'t load alerts just now. Check the '
       + '<a href="https://www.weather.gov/pqr/" target="_blank" rel="noopener">National Weather Service</a> directly — and treat any severe weather as in effect until you confirm otherwise.</p>';
+    setPill('sticky-weather', '⚠️ Weather — check NWS', 'warn');
   }
 }
 
@@ -273,6 +334,9 @@ async function loadRivers() {
           if (dd < bd) { bd = dd; best = v; }
         });
         bySite[code].height24 = parseFloat(best.value);
+        bySite[code].series = clean
+          .filter((v, i) => i % 4 === 0 || i === clean.length - 1)
+          .map(v => ({ t: new Date(v.dateTime).getTime(), v: parseFloat(v.value) }));
       }
       if (varCode === '00060') bySite[code].flow = parseFloat(last.value);
     });
@@ -289,11 +353,28 @@ async function loadRivers() {
         if (delta > 0.05) trend = '<span class="trend-up">▲ ' + num(delta, 2) + ' ft vs 24 hrs ago</span>';
         else if (delta < -0.05) trend = '<span class="trend-down">▼ ' + num(Math.abs(delta), 2) + ' ft vs 24 hrs ago</span>';
       }
+      let spark = '';
+      if (s.series && s.series.length > 3) {
+        const vals = s.series.map(p => p.v);
+        const lo = Math.min.apply(null, vals), hi = Math.max.apply(null, vals);
+        const range = (hi - lo) || 1;
+        const pts = s.series.map((p, i) =>
+          (i / (s.series.length - 1) * 260).toFixed(1) + ',' + (42 - ((p.v - lo) / range) * 38).toFixed(1)
+        ).join(' ');
+        const rising = (vals[vals.length - 1] - vals[0]) > 0.5;
+        const stroke = rising ? '#fbbf24' : '#53c7de';
+        spark = '<div class="river-spark"><svg viewBox="0 0 260 46" preserveAspectRatio="none" role="img" aria-label="River height, last 48 hours">'
+          + '<polygon points="0,46 ' + pts + ' 260,46" fill="' + stroke + '" opacity="0.13"></polygon>'
+          + '<polyline points="' + pts + '" fill="none" stroke="' + stroke + '" stroke-width="1.8" stroke-linejoin="round"></polyline></svg>'
+          + '<div class="river-spark-cap">Last 48 hrs · low ' + num(lo, 2) + ' ft · high ' + num(hi, 2) + ' ft'
+          + (rising ? ' · <span class="trend-up">rising over the window</span>' : '') + '</div></div>';
+      }
       return '<div class="river-row"><div><div class="river-name">' + esc(g.label) + '</div>'
         + '<div class="river-sub">' + esc(g.sub) + ' · read ' + ago(s.time) + '</div>'
         + '<div class="river-sub">' + trend + '</div></div>'
         + '<div class="river-nums"><div class="big">' + num(s.height, 2) + ' ft</div>'
-        + '<div class="river-sub">' + (s.flow != null ? num(s.flow, s.flow < 100 ? 1 : 0) + ' cfs flow' : '') + '</div></div></div>';
+        + '<div class="river-sub">' + (s.flow != null ? num(s.flow, s.flow < 100 ? 1 : 0) + ' cfs flow' : '') + '</div></div>'
+        + spark + '</div>';
     }).join('');
     body.innerHTML = rows;
     setUpdated('rivers-updated');
@@ -363,32 +444,72 @@ async function loadFires() {
 }
 
 /* ---------- sky: aircraft (direct ADS-B, snapshot fallback) + ISS ---------- */
-function renderAircraft(list, sourceLabel) {
+let skyCache = null;
+let currentSkyFilter = 'all';
+function drawSkyMarkers(list) {
+  if (!aircraftLayer) return;
+  aircraftLayer.clearLayers();
+  list.forEach(a => {
+    if (a.lat == null || a.lon == null) return;
+    const rot = a.track != null ? ' style="display:inline-block;transform:rotate(' + (Number(a.track) - 45) + 'deg)"' : '';
+    L.marker([a.lat, a.lon], {
+      icon: L.divIcon({ className: 'emoji-pin plane-pin', html: '<span' + rot + '>✈️</span>', iconSize: [20, 20], iconAnchor: [10, 10] })
+    }).addTo(aircraftLayer).bindPopup('<strong>' + esc(a.callsign || a.hex || 'Aircraft') + '</strong>'
+      + (a.type ? '<br>Type ' + esc(a.type) : '')
+      + (a.alt_ft != null && a.alt_ft !== 'ground' ? '<br>' + num(a.alt_ft, 0) + ' ft' : '<br>On the ground')
+      + (a.gs_kn != null ? ' · ' + num(a.gs_kn, 0) + ' kt' : ''));
+  });
+}
+function renderSkyList() {
   const body = $('sky-body');
-  if (aircraftLayer) {
-    aircraftLayer.clearLayers();
-    list.forEach(a => {
-      if (a.lat == null || a.lon == null) return;
-      const rot = a.track != null ? ' style="display:inline-block;transform:rotate(' + (Number(a.track) - 45) + 'deg)"' : '';
-      L.marker([a.lat, a.lon], {
-        icon: L.divIcon({ className: 'emoji-pin plane-pin', html: '<span' + rot + '>✈️</span>', iconSize: [20, 20], iconAnchor: [10, 10] })
-      }).addTo(aircraftLayer).bindPopup('<strong>' + esc(a.callsign || a.hex || 'Aircraft') + '</strong>'
-        + (a.type ? '<br>Type ' + esc(a.type) : '')
-        + (a.alt_ft != null && a.alt_ft !== 'ground' ? '<br>' + num(a.alt_ft, 0) + ' ft' : '<br>On the ground')
-        + (a.gs_kn != null ? ' · ' + num(a.gs_kn, 0) + ' kt' : ''));
-    });
-  }
+  if (!skyCache) return;
+  const list = skyCache.list, sourceLabel = skyCache.sourceLabel;
   if (!list.length) {
     body.innerHTML = '<p class="no-alerts">No aircraft inside the county box at the last reading — normal for a rural county; Portland traffic passes just south and east.</p>';
     return;
   }
-  const sorted = list.slice().sort((x, y) => (Number(y.alt_ft) || 0) - (Number(x.alt_ft) || 0));
-  body.innerHTML = '<p class="sky-count"><strong>' + list.length + '</strong> aircraft over the county <span class="river-sub">(' + esc(sourceLabel) + ')</span></p>'
+  let shown, sortFn;
+  if (currentSkyFilter === 'low') {
+    shown = list.filter(a => a.alt_ft !== 'ground' && a.alt_ft != null && Number(a.alt_ft) < 10000);
+    sortFn = (x, y) => (Number(x.alt_ft) || 0) - (Number(y.alt_ft) || 0);
+  } else if (currentSkyFilter === 'ground') {
+    shown = list.filter(a => a.alt_ft === 'ground');
+    sortFn = () => 0;
+  } else {
+    shown = list.slice();
+    sortFn = (x, y) => (Number(y.alt_ft) || 0) - (Number(x.alt_ft) || 0);
+  }
+  if (!shown.length) {
+    body.innerHTML = '<p class="sky-count"><strong>' + list.length + '</strong> aircraft over the county <span class="river-sub">(' + esc(sourceLabel) + ')</span></p>'
+      + '<p class="no-alerts">' + (currentSkyFilter === 'low'
+        ? 'Nothing low and local right now — everything overhead is cruise traffic passing through.'
+        : 'Nothing on the ground at a county strip right now.') + '</p>';
+    return;
+  }
+  const sorted = shown.sort(sortFn);
+  body.innerHTML = '<p class="sky-count"><strong>' + list.length + '</strong> aircraft over the county <span class="river-sub">(' + esc(sourceLabel) + ' · refreshes every 45 sec)</span></p>'
     + sorted.slice(0, 8).map(a =>
       '<div class="sky-row"><span class="sky-cs">' + esc(a.callsign || a.hex || '—') + '</span>'
       + '<span class="sky-meta">' + esc(a.type || '') + '</span>'
       + '<span class="sky-alt">' + (a.alt_ft === 'ground' ? 'ground' : (a.alt_ft != null ? num(a.alt_ft, 0) + ' ft' : '')) + '</span></div>'
     ).join('');
+}
+function renderAircraft(list, sourceLabel) {
+  skyCache = { list: list, sourceLabel: sourceLabel };
+  drawSkyMarkers(list);
+  renderSkyList();
+}
+function initSkyFilters() {
+  const wrap = $('sky-filters');
+  if (!wrap) return;
+  wrap.querySelectorAll('.sky-filter-btn').forEach(b => {
+    b.addEventListener('click', () => {
+      currentSkyFilter = b.dataset.skyfilter;
+      wrap.querySelectorAll('.sky-filter-btn').forEach(x =>
+        x.classList.toggle('active', x === b));
+      renderSkyList();
+    });
+  });
 }
 async function loadAircraft() {
   // Preferred: straight from adsb.fi (works the day their CORS opens up).
@@ -439,6 +560,32 @@ function renderRoads(roads, camerasSnap) {
   setSnapUpdated('roads-updated', roads.fetched_at);
   // Bridge block
   const b = roads.bridge || {};
+  // Commute verdict — one synthesized sentence from everything the snapshot knows
+  const vEl = $('commute-verdict');
+  if (vEl) {
+    const incCount = (roads.incidents || []).length;
+    const wzCount = (b.work_zones || []).length;
+    const alertCount = (b.alerts || []).length;
+    const odotPending = (((roads.sources || [])[0]) || {}).status !== 'ok';
+    let level, head;
+    if (b.status === 'alert' || alertCount > 0) {
+      level = 'bad'; head = '⛔ Trouble on the corridor — read the bridge alert before you leave';
+    } else if (incCount > 0 || wzCount > 0) {
+      const n = incCount + wzCount;
+      level = 'warn'; head = '⚠️ Mostly clear — ' + n + (n === 1 ? ' thing' : ' things') + ' to know below';
+    } else if (b.status === 'work') {
+      level = 'warn'; head = '⚠️ Bridge work scheduled — expect possible delays';
+    } else {
+      level = 'ok'; head = '✅ Clear run right now';
+    }
+    const parts = [];
+    parts.push('Lewis & Clark Bridge: ' + (alertCount ? alertCount + ' alert(s) posted' : wzCount ? 'work zones posted' : 'no alerts'));
+    if (incCount) parts.push(incCount + ' ODOT incident(s) on county highways');
+    if (odotPending) parts.push('ODOT incident feed still pending its free key — verdict is from bridge + WSDOT sources');
+    if (level !== 'ok') parts.push('US-30 blocked? Cornelius Pass or the St. Johns Bridge are the usual detours');
+    vEl.className = 'commute-verdict cv-' + level;
+    vEl.innerHTML = '<div class="cv-head">' + esc(head) + '</div><div class="cv-sub">' + esc(parts.join(' · ')) + '</div>';
+  }
   const bEl = $('bridge-body');
   const icon = { clear: '✅', work: '🚧', alert: '⛔', unknown: '❔' }[b.status] || '❔';
   let bh = '<div class="bridge-box bridge-' + esc(b.status || 'unknown') + '">'
@@ -454,6 +601,9 @@ function renderRoads(roads, camerasSnap) {
   });
   bh += '</div>';
   bEl.innerHTML = bh;
+  setPill('sticky-bridge',
+    '🌉 Bridge ' + ({ clear: 'clear', work: 'work posted', alert: 'ALERT', unknown: 'unknown' }[b.status] || 'unknown'),
+    b.status === 'clear' ? 'ok' : b.status === 'alert' ? 'bad' : 'warn');
   // ODOT incidents
   const iEl = $('incidents-body');
   const tc = (roads.sources || [])[0] || {};
@@ -497,6 +647,8 @@ async function loadRoads() {
     ]);
     renderRoads(roads, cams);
   } catch (e) {
+    const vEl2 = $('commute-verdict');
+    if (vEl2) { vEl2.className = 'commute-verdict cv-warn'; vEl2.innerHTML = '<div class="cv-head">❔ Corridor status unavailable</div><div class="cv-sub">The road snapshot didn\'t load — check TripCheck or WSDOT directly before you drive.</div>'; }
     $('bridge-body').innerHTML = '<p class="fallback">⚠️ Road snapshot unavailable right now — check <a href="https://www.tripcheck.com/" target="_blank" rel="noopener">TripCheck</a> and <a href="https://wsdot.com/traffic/" target="_blank" rel="noopener">WSDOT</a> directly before you drive.</p>';
     $('incidents-body').innerHTML = '';
     $('cameras-body').innerHTML = '';
@@ -541,6 +693,8 @@ async function loadFerry() {
   try {
     const snap = await getSnapshot('ferry.json');
     setSnapUpdated('ferry-updated', snap.fetched_at);
+    ferryAlertActive = (snap.status === 'ok' && !!snap.alert);
+    tickFerryNext();
     const el = $('ferry-alert-body');
     if (snap.status === 'ok' && snap.alert) {
       el.innerHTML = '<div class="alert-item severe"><h3>⚠️ Ferry closure alert posted</h3><p>' + esc(snap.alert) + '</p></div>';
@@ -554,6 +708,61 @@ async function loadFerry() {
   }
 }
 
+/* ---------- ferry: next-boat countdown (from the fixed timetable) ---------- */
+let ferryAlertActive = false;
+const FERRY_SIDES = [
+  { key: 'or', label: 'Westport, OR side', to: 'Puget Island', minute: 15, firstHour: 5, lastHour: 22 },
+  { key: 'wa', label: 'Puget Island, WA side', to: 'Westport', minute: 0, firstHour: 5, lastHour: 22 }
+];
+function ptNowParts() {
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/Los_Angeles', hour12: false,
+    hour: '2-digit', minute: '2-digit', weekday: 'short'
+  }).formatToParts(new Date());
+  const get = t => (parts.find(p => p.type === t) || {}).value;
+  return { h: parseInt(get('hour'), 10) % 24, m: parseInt(get('minute'), 10) };
+}
+function nextSailing(side, now) {
+  const nowMin = now.h * 60 + now.m;
+  for (let h = side.firstHour; h <= side.lastHour; h++) {
+    const dep = h * 60 + side.minute;
+    if (dep > nowMin) return { minsAway: dep - nowMin, hour: h, minute: side.minute, tomorrow: false, isLast: h === side.lastHour };
+  }
+  const first = side.firstHour * 60 + side.minute;
+  return { minsAway: (24 * 60 - nowMin) + first, hour: side.firstHour, minute: side.minute, tomorrow: true, isLast: false };
+}
+function fmtClock(h, m) {
+  const hr12 = ((h + 11) % 12) + 1;
+  return hr12 + ':' + String(m).padStart(2, '0') + ' ' + (h >= 12 ? 'PM' : 'AM');
+}
+function fmtAway(mins) {
+  if (mins < 1) return 'now';
+  if (mins < 60) return 'in ' + mins + ' min';
+  return 'in ' + Math.floor(mins / 60) + ' hr ' + (mins % 60 ? (mins % 60) + ' min' : '').trim();
+}
+function tickFerryNext() {
+  const el = $('ferry-next');
+  if (!el) return;
+  if (ferryAlertActive) {
+    el.innerHTML = '<div class="ferry-next-head">⏱️ Sailings may be disrupted — see the closure alert above before heading to the landing.</div>';
+    return;
+  }
+  const now = ptNowParts();
+  const nexts = FERRY_SIDES.map(s => ({ side: s, n: nextSailing(s, now) }));
+  const soonest = nexts.slice().sort((a, b) => a.n.minsAway - b.n.minsAway)[0];
+  el.innerHTML = '<div class="ferry-next-head">⏱️ Next Oscar B sailing: '
+    + esc(soonest.side.label.replace(' side', '')) + ' → ' + esc(soonest.side.to)
+    + ' <span class="fn-when">' + esc(fmtAway(soonest.n.minsAway)) + '</span>'
+    + (soonest.n.tomorrow ? ' (tomorrow, ' + fmtClock(soonest.n.hour, soonest.n.minute) + ')' : ' (' + fmtClock(soonest.n.hour, soonest.n.minute) + ')')
+    + '</div>'
+    + '<div class="ferry-next-grid">' + nexts.map(({ side, n }) =>
+        '<div class="ferry-next-box' + (n.isLast ? ' last-boat' : '') + '">'
+        + '<div class="fn-side">From ' + esc(side.label) + (n.isLast ? '<span class="fn-last">Last boat today</span>' : '') + '</div>'
+        + '<div class="fn-count">' + esc(fmtAway(n.minsAway)) + '</div>'
+        + '<div class="fn-time">Departs ' + fmtClock(n.hour, n.minute) + (n.tomorrow ? ' tomorrow' : '') + ' · cash/check fares</div>'
+        + '</div>').join('') + '</div>';
+}
+
 /* ---------- snapshot: events ---------- */
 function parseTimeToMinutes(t) {
   const m = /(\d{1,2})(?::(\d{2}))?\s*(AM|PM)/i.exec(t || '');
@@ -562,41 +771,120 @@ function parseTimeToMinutes(t) {
   if (/PM/i.test(m[3])) h += 12;
   return h * 60 + parseInt(m[2] || '0', 10);
 }
+let eventsCache = null;
+let currentEventFilter = 'all';
+function eventDayDiff(dateStr) {
+  const [y, m, d] = dateStr.split('-').map(Number);
+  const [ty, tm, td] = todayStrPT().split('-').map(Number);
+  return Math.round((Date.UTC(y, m - 1, d) - Date.UTC(ty, tm - 1, td)) / 86400000);
+}
+function eventMatchesFilter(ev, filter) {
+  const diff = eventDayDiff(ev.date);
+  if (filter === 'today') return diff === 0;
+  if (filter === 'week') return diff >= 0 && diff <= 6;
+  if (filter === 'weekend') {
+    if (diff < 0 || diff > 7) return false;
+    const dow = new Date(ev.date + 'T12:00:00').getDay();
+    return dow === 0 || dow === 6;
+  }
+  return diff >= -0; // 'all' = today onward within the snapshot window
+}
+function renderEvents() {
+  const body = $('events-body');
+  if (!eventsCache) return;
+  const snap = eventsCache;
+  const evs = (snap.events || []).slice().sort((a, b) =>
+    a.date === b.date ? parseTimeToMinutes(a.time) - parseTimeToMinutes(b.time)
+                      : (a.date < b.date ? -1 : 1));
+  const shown = evs.filter(ev => eventMatchesFilter(ev, currentEventFilter)).slice(0, 16);
+  const today = todayStrPT();
+  let html = '';
+  if (shown.length) {
+    let lastDate = '';
+    html = shown.map(ev => {
+      const head = ev.date !== lastDate
+        ? '<div class="event-date">' + esc(fmtDay(new Date(ev.date + 'T12:00:00'))) + (ev.date === today ? ' <span class="event-today-badge">Today</span>' : '') + '</div>' : '';
+      lastDate = ev.date;
+      return head + '<div class="event-row"><span class="event-time">' + esc(ev.time || '') + '</span>'
+        + '<span class="event-title">' + (ev.url ? '<a href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(ev.title) + '</a>' : esc(ev.title)) + '</span>'
+        + '<span class="event-src">' + esc(ev.source || '') + '</span></div>';
+    }).join('');
+  } else {
+    html = '<p class="no-alerts">' + ({
+      today: 'Nothing left on the calendars for today — the full two weeks are under "All".',
+      weekend: 'Nothing on the calendars this weekend in the current snapshot — try "Next 7 days".',
+      week: 'Nothing on the calendars in the next 7 days in the current snapshot.'
+    }[currentEventFilter] || 'No upcoming events found on the city calendars for the next two weeks.') + '</p>';
+  }
+  const county = (snap.sources || []).find(s => /Columbia County/.test(s.name));
+  if (county && county.status === 'blocked_needs_browser') {
+    html += '<p class="status-note">🏛️ Columbia County\'s own calendar is the one holdout: their website only reveals events inside a full web browser (no readable feed exists). Capturing it from Travis\'s computer is the next fetcher step — the city calendars above are already flowing.</p>';
+  }
+  body.innerHTML = html;
+}
+function initEventFilters() {
+  const wrap = $('event-filters');
+  if (!wrap) return;
+  wrap.querySelectorAll('.event-filter-btn').forEach(b => {
+    b.addEventListener('click', () => {
+      currentEventFilter = b.dataset.filter;
+      wrap.querySelectorAll('.event-filter-btn').forEach(x =>
+        x.classList.toggle('active', x === b));
+      renderEvents();
+    });
+  });
+}
 async function loadEvents() {
   const body = $('events-body');
   try {
     const snap = await getSnapshot('events.json');
     setSnapUpdated('events-updated', snap.fetched_at);
-    const evs = (snap.events || []).slice().sort((a, b) =>
-      a.date === b.date ? parseTimeToMinutes(a.time) - parseTimeToMinutes(b.time)
-                        : (a.date < b.date ? -1 : 1));
-    let html = '';
-    if (evs.length) {
-      let lastDate = '';
-      html = evs.slice(0, 16).map(ev => {
-        const head = ev.date !== lastDate
-          ? '<div class="event-date">' + esc(fmtDay(new Date(ev.date + 'T12:00:00'))) + '</div>' : '';
-        lastDate = ev.date;
-        return head + '<div class="event-row"><span class="event-time">' + esc(ev.time || '') + '</span>'
-          + '<span class="event-title">' + (ev.url ? '<a href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(ev.title) + '</a>' : esc(ev.title)) + '</span>'
-          + '<span class="event-src">' + esc(ev.source || '') + '</span></div>';
-      }).join('');
-    } else {
-      html = '<p class="no-alerts">No upcoming events found on the city calendars for the next two weeks.</p>';
-    }
-    const county = (snap.sources || []).find(s => /Columbia County/.test(s.name));
-    if (county && county.status === 'blocked_needs_browser') {
-      html += '<p class="status-note">🏛️ Columbia County\'s own calendar is the one holdout: their website only reveals events inside a full web browser (no readable feed exists). Capturing it from Travis\'s computer is the next fetcher step — the city calendars above are already flowing.</p>';
-    }
-    body.innerHTML = html;
+    eventsCache = snap;
+    renderEvents();
   } catch (e) {
     body.innerHTML = '<p class="fallback">⚠️ Events snapshot unavailable right now.</p>';
   }
 }
 
+/* ---------- freshness board ---------- */
+const FRESH_ROWS = [
+  ['National Weather Service — alerts', 'alerts-updated', 'live'],
+  ['National Weather Service — town forecasts', 'forecast-updated', 'live'],
+  ['USGS — river gauges', 'rivers-updated', 'live'],
+  ['USGS — earthquakes', 'quakes-updated', 'live'],
+  ['NIFC WFIGS — wildfires', 'fires-updated', 'live'],
+  ['ADS-B — aircraft overhead', 'sky-updated', 'mixed'],
+  ['Fetcher — roads, bridge & cameras (ODOT/WSDOT)', 'roads-updated', 'snapshot'],
+  ['Fetcher — Oscar B ferry alerts (Wahkiakum Co.)', 'ferry-updated', 'snapshot'],
+  ['Fetcher — events (city & county calendars)', 'events-updated', 'snapshot'],
+  ['Fetcher — river traffic (AIS)', 'ships-updated', 'snapshot']
+];
+function renderFreshness() {
+  const body = $('freshness-body');
+  if (!body) return;
+  body.innerHTML = FRESH_ROWS.map(([label, id, kind]) => {
+    const t = FRESH[id];
+    if (!t) {
+      return '<div class="fresh-row"><span class="fresh-dot dot-none"></span><span class="fresh-label">'
+        + esc(label) + '</span><span class="fresh-age">not loaded yet</span></div>';
+    }
+    const mins = Math.max(0, Math.round((Date.now() - t) / 60000));
+    const cls = mins < 25 ? 'dot-ok' : mins < 75 ? 'dot-warn' : 'dot-bad';
+    const age = mins < 1 ? 'just now' : mins < 60 ? mins + ' min old' : Math.round(mins / 60) + ' hr old';
+    const verb = kind === 'snapshot' ? 'collected ' : 'updated ';
+    return '<div class="fresh-row"><span class="fresh-dot ' + cls + '"></span><span class="fresh-label">'
+      + esc(label) + '</span><span class="fresh-age">' + verb + age + '</span></div>';
+  }).join('');
+}
+
 /* ---------- go ---------- */
 initMap();
+initMapTools();
 initTownPicker();
+initShare();
+initEventFilters();
+initSkyFilters();
+loadGlance();
 loadAlerts();
 loadForecast(currentTown);
 loadRivers();
@@ -607,7 +895,9 @@ loadISS();
 loadRoads();
 loadShips();
 loadFerry();
+tickFerryNext();
 loadEvents();
+setInterval(loadGlance, 10 * 60 * 1000);
 setInterval(loadAlerts, 10 * 60 * 1000);
 setInterval(loadRivers, 10 * 60 * 1000);
 setInterval(loadQuakes, 30 * 60 * 1000);
@@ -617,4 +907,7 @@ setInterval(loadISS, 15 * 1000);
 setInterval(loadRoads, 10 * 60 * 1000);
 setInterval(loadShips, 10 * 60 * 1000);
 setInterval(loadFerry, 10 * 60 * 1000);
+setInterval(tickFerryNext, 20 * 1000);
 setInterval(loadEvents, 30 * 60 * 1000);
+setTimeout(renderFreshness, 2500);
+setInterval(renderFreshness, 30 * 1000);
