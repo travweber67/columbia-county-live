@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-04T00:37:11Z",
+ "fetched_at": "2026-11-04T16:01:37Z",
  "status": "key_needed",
  "note": "No keyless live AIS feed for US waters could be verified from here: MarineTraffic's data endpoint returns a 403 bot wall from this network, AISHub/VesselFinder/Global Fishing Watch all require accounts, and the free public AIS APIs that exist (e.g. Finland's Digitraffic) cover other seas. AISStream.io's free tier IS the route: set AISSTREAM_API_KEY (free signup at aisstream.io) and this fetcher collects live Columbia River positions over their websocket.",
  "ships": []
