@@ -1,0 +1,27 @@
+{
+ "fetched_at": "2026-11-04T00:27:15Z",
+ "sources": [
+  {
+   "name": "ODOT TripCheck API",
+   "status": "key_needed",
+   "note": "ODOT TripCheck data is free but key-gated. Endpoints verified from here (401 'missing subscription key' proves they exist): /tripcheck/Incidents and /tripcheck/Routes on api.odot.state.or.us. Set TRIPCHECK_API_KEY (free signup at apiportal.odot.state.or.us) and this snapshot fills in."
+  },
+  {
+   "name": "WSDOT WZDx work zones (keyless)",
+   "status": "ok"
+  },
+  {
+   "name": "WSDOT Highway Alerts (free code)",
+   "status": "key_needed",
+   "note": "Crash/closure alerts for SR 433 need WSDOT's free Traveler API access code (request form on wsdot.wa.gov/traffic/api). Set WSDOT_ACCESS_CODE."
+  }
+ ],
+ "incidents": [],
+ "bridge": {
+  "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
+  "alerts": [],
+  "work_zones": [],
+  "status": "clear",
+  "note": "No WSDOT alerts or work zones found for the bridge in the latest snapshot."
+ }
+}

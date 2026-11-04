@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Columbia County Live — Roads, Rivers, Weather &amp; Ferry for Columbia County, Oregon</title>
-<meta name="description" content="One live map for Columbia County, Oregon: US-30 and Lewis & Clark Bridge status links, Columbia & Nehalem river levels, weather alerts, earthquakes, the Oscar B ferry, and town forecasts. Free, from official public sources.">
+<meta name="description" content="One live map for Columbia County, Oregon: US-30 and Lewis & Clark Bridge status, Columbia & Nehalem river levels, weather alerts, earthquakes, wildfires, aircraft and river traffic overhead and under way, the Oscar B ferry, events, and town forecasts. Free, from official public sources.">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌲</text></svg>">
@@ -39,32 +39,41 @@
         <span><i class="dot dot-gauge"></i> River gauge</span>
         <span><i class="dot dot-quake"></i> Earthquake (30 days)</span>
         <span><i class="dot dot-landmark"></i> Bridge / ferry</span>
+        <span><i class="dot dot-plane"></i> Aircraft</span>
+        <span><i class="dot dot-ship"></i> Ship (AIS)</span>
+        <span><i class="dot dot-fire"></i> Wildfire</span>
+        <span class="legend-note">Use the layer button (top-right of the map) to toggle radar, aircraft, ships, fires, and the ISS.</span>
       </div>
     </div>
 
     <div class="card" id="roads-card">
       <div class="card-head">
         <h2>🚗 US-30, the Bridge &amp; Roads</h2>
+        <span class="updated" id="roads-updated"></span>
       </div>
-      <p class="card-note">Live camera and incident data for Oregon highways sits inside ODOT's TripCheck system — these links go straight to the official sources.</p>
-      <div class="link-grid">
-        <a class="link-tile" href="https://www.tripcheck.com/" target="_blank" rel="noopener">
-          <strong>TripCheck — US-30 cameras &amp; conditions</strong>
-          <span>ODOT live cameras, incidents, road &amp; weather reports</span>
-        </a>
-        <a class="link-tile" href="https://wsdot.com/traffic/" target="_blank" rel="noopener">
-          <strong>WSDOT — Lewis &amp; Clark Bridge (SR 433)</strong>
-          <span>Rainier ↔ Longview bridge alerts and SW Washington traffic</span>
-        </a>
+      <div id="bridge-body" class="panel-body"><p class="loading">Loading Lewis &amp; Clark Bridge status…</p></div>
+      <h3 class="subhead">Highway incidents — ODOT TripCheck</h3>
+      <div id="incidents-body" class="panel-body"><p class="loading">Loading incidents…</p></div>
+      <h3 class="subhead">Road cameras</h3>
+      <div id="cameras-body" class="panel-body"><p class="loading">Loading camera list…</p></div>
+      <p class="card-note small">Road data is collected by our fetcher from ODOT TripCheck and WSDOT every few minutes and shown with its snapshot time — it never pretends to be fresher than it is. Full official detail: <a href="https://www.tripcheck.com/" target="_blank" rel="noopener">TripCheck</a> · <a href="https://wsdot.com/traffic/" target="_blank" rel="noopener">WSDOT traffic</a>. Commuting to Portland? A US-30 closure usually means Cornelius Pass or the St. Johns Bridge — check before you leave, not after.</p>
+    </div>
+
+    <div class="card" id="ships-card">
+      <div class="card-head">
+        <h2>🚢 Columbia River Traffic</h2>
+        <span class="updated" id="ships-updated"></span>
       </div>
-      <p class="card-note small">Commuting to Portland? A US-30 closure usually means Cornelius Pass or the St. Johns Bridge — check TripCheck before you leave, not after.</p>
+      <div id="ships-body" class="panel-body"><p class="loading">Loading river traffic…</p></div>
     </div>
 
     <div class="card" id="ferry-card">
       <div class="card-head">
         <h2>⛴️ Oscar B Ferry — Westport, OR ↔ Cathlamet, WA</h2>
+        <span class="updated" id="ferry-updated"></span>
       </div>
-      <p class="card-note">The last ferry on the Lower Columbia, run by Wahkiakum County. It sails on a fixed schedule — there's no live tracker, so the timetable below <em>is</em> the status, every day of the year.</p>
+      <div id="ferry-alert-body" class="panel-body"><p class="loading">Checking the county page for ferry closure alerts…</p></div>
+      <p class="card-note">The last ferry on the Lower Columbia, run by Wahkiakum County. It sails on a fixed schedule — there's no live tracker, so the timetable below <em>is</em> the status, every day of the year. The alert line above is read from the county's official ferry page by our fetcher.</p>
       <div class="ferry-grid">
         <div class="ferry-box">
           <h3>From Puget Island (WA side)</h3>
@@ -85,26 +94,11 @@
 
     <div class="card" id="events-card">
       <div class="card-head">
-        <h2>📅 Events &amp; Official Calendars</h2>
+        <h2>📅 Events — Next Two Weeks</h2>
+        <span class="updated" id="events-updated"></span>
       </div>
-      <div class="link-grid">
-        <a class="link-tile" href="https://www.columbiacountyor.gov/calendar" target="_blank" rel="noopener">
-          <strong>Columbia County calendar</strong>
-          <span>County meetings, events, and notices</span>
-        </a>
-        <a class="link-tile" href="https://sthelensoregon.gov/calendar.aspx" target="_blank" rel="noopener">
-          <strong>City of St. Helens calendar</strong>
-          <span>City events, council, and community listings</span>
-        </a>
-        <a class="link-tile" href="https://www.ci.scappoose.or.us/" target="_blank" rel="noopener">
-          <strong>City of Scappoose</strong>
-          <span>City news, meetings, and events</span>
-        </a>
-        <a class="link-tile" href="https://www.columbiacountyor.gov/" target="_blank" rel="noopener">
-          <strong>Columbia County — news &amp; notices</strong>
-          <span>County announcements, road notices, and emergency information</span>
-        </a>
-      </div>
+      <div id="events-body" class="panel-body"><p class="loading">Loading events from the city calendars…</p></div>
+      <p class="card-note small">Collected by our fetcher from the official city calendars. Official sources: <a href="https://www.sthelensoregon.gov/calendar.aspx" target="_blank" rel="noopener">St. Helens</a> · <a href="https://www.scappoose.gov/calendar.aspx" target="_blank" rel="noopener">Scappoose</a> · <a href="https://www.columbiacountyor.gov/calendar" target="_blank" rel="noopener">Columbia County</a></p>
     </div>
   </section>
 
@@ -128,6 +122,16 @@
       <div id="forecast-body" class="panel-body"><p class="loading">Loading forecast…</p></div>
     </div>
 
+    <div class="card" id="sky-card">
+      <div class="card-head">
+        <h2>✈️ In the Sky Right Now</h2>
+        <span class="updated" id="sky-updated"></span>
+      </div>
+      <div id="sky-body" class="panel-body"><p class="loading">Loading aircraft overhead…</p></div>
+      <div id="iss-body" class="panel-body iss-line"><p class="loading">Locating the space station…</p></div>
+      <p class="card-note small">Aircraft: community ADS-B receivers via adsb.fi. ISS position: wheretheiss.at. Both refresh automatically.</p>
+    </div>
+
     <div class="card" id="rivers-card">
       <div class="card-head">
         <h2>🌊 River Levels</h2>
@@ -145,12 +149,21 @@
       <div id="quakes-body" class="panel-body"><p class="loading">Loading USGS earthquake data…</p></div>
     </div>
 
+    <div class="card" id="fires-card">
+      <div class="card-head">
+        <h2>🔥 Wildfires</h2>
+        <span class="updated" id="fires-updated"></span>
+      </div>
+      <div id="fires-body" class="panel-body"><p class="loading">Loading interagency wildfire data (NIFC WFIGS)…</p></div>
+      <p class="card-note small">Official incident data from the National Interagency Fire Center (WFIGS). For evacuation notices, always follow Columbia County Emergency Management and InciWeb.</p>
+    </div>
+
   </aside>
 </main>
 
 <footer class="site-footer">
   <p><strong>Columbia County Live</strong> — by <strong>Nomad Development Group</strong></p>
-  <p class="small">Data: National Weather Service · U.S. Geological Survey · OpenStreetMap contributors. Road, bridge, ferry, and event links go to the official operators (ODOT TripCheck, WSDOT, Wahkiakum County, cities &amp; county).</p>
+  <p class="small">Data: National Weather Service · U.S. Geological Survey · NOAA nowCOAST (radar) · NIFC WFIGS (wildfires) · adsb.fi contributors (aircraft, ODbL) · wheretheiss.at (ISS) · OpenStreetMap contributors. Snapshot data (roads, cameras, bridge, ferry alerts, events, river traffic) is collected from the official operators — ODOT TripCheck, WSDOT, Wahkiakum County, and the city/county calendars — by a small fetcher program and labeled with the time it was collected. Live-tracking layer model inspired by God's Eye View (open source, by Bilawal Sidhu), whose DATA_SOURCES.md pointed us to several of these public feeds.</p>
   <p class="small">This page assembles public data for convenience. Before traveling in severe weather or high water, confirm conditions with the official sources linked above.</p>
 </footer>
 
