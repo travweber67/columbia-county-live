@@ -1,0 +1,167 @@
+/* Columbia County Live — v1 styles. Dark UI, no framework. */
+:root{
+  --bg:#0b1220;
+  --panel:#121c2e;
+  --panel-2:#16233a;
+  --border:#22334f;
+  --text:#e6eef8;
+  --muted:#93a7c2;
+  --accent:#38bdf8;
+  --accent-2:#34d399;
+  --warn:#fbbf24;
+  --danger:#f87171;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent)}
+h1,h2,h3{margin:0;line-height:1.2}
+.small{font-size:.82rem;color:var(--muted)}
+
+/* Header */
+.site-header{
+  background:linear-gradient(180deg,#0e1830,#0b1220);
+  border-bottom:1px solid var(--border);
+}
+.header-inner{
+  max-width:1280px;margin:0 auto;padding:16px 20px;
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+}
+.brand{display:flex;align-items:center;gap:14px}
+.brand-mark{font-size:2.2rem;line-height:1}
+.brand h1{font-size:1.55rem;font-weight:800;letter-spacing:.2px}
+.live-word{color:var(--accent)}
+.tagline{margin:2px 0 0;color:var(--muted);font-size:.9rem}
+.header-clock{text-align:right}
+.clock{font-size:1.35rem;font-weight:700;font-variant-numeric:tabular-nums}
+.clock-label{color:var(--muted);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em}
+
+/* Alert banner */
+.alert-banner{
+  max-width:1280px;margin:14px auto 0;padding:12px 18px;
+  background:#3a1414;border:1px solid var(--danger);border-radius:var(--radius);
+  color:#fecaca;font-size:.95rem;
+}
+.alert-banner strong{color:#fff}
+
+/* Layout */
+.layout{
+  max-width:1280px;margin:0 auto;padding:18px 20px 8px;
+  display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:18px;
+  align-items:start;
+}
+.col-main,.col-side{display:flex;flex-direction:column;gap:18px;min-width:0}
+
+.card{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:16px 18px;
+}
+.card-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:10px}
+.card-head h2{font-size:1.05rem;font-weight:700}
+.updated{font-size:.72rem;color:var(--muted);white-space:nowrap}
+.card-note{color:var(--muted);font-size:.9rem;margin:6px 0 12px}
+.panel-body{min-height:40px}
+.loading{color:var(--muted);font-size:.9rem}
+.fallback{color:var(--muted);font-size:.9rem}
+.text-link{font-size:.88rem;text-decoration:none}
+.text-link:hover{text-decoration:underline}
+
+/* Map */
+.map-card{padding:10px}
+#map{height:440px;border-radius:10px;background:#0a0f1c;z-index:0}
+.map-legend{display:flex;flex-wrap:wrap;gap:14px;padding:10px 6px 2px;color:var(--muted);font-size:.8rem}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle}
+.dot-town{background:#38bdf8}
+.dot-gauge{background:#34d399}
+.dot-quake{background:#f87171}
+.dot-landmark{background:#fbbf24}
+.leaflet-popup-content{font-size:.85rem;line-height:1.4}
+.emoji-pin{background:none;border:none;font-size:20px;line-height:1;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+
+/* Link tiles */
+.link-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.link-tile{
+  display:block;text-decoration:none;color:var(--text);
+  background:var(--panel-2);border:1px solid var(--border);border-radius:10px;
+  padding:12px 14px;transition:border-color .15s ease, transform .15s ease;
+}
+.link-tile:hover{border-color:var(--accent);transform:translateY(-1px)}
+.link-tile strong{display:block;font-size:.95rem;margin-bottom:3px}
+.link-tile span{color:var(--muted);font-size:.82rem}
+
+/* Ferry */
+.ferry-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:10px}
+.ferry-box{background:var(--panel-2);border:1px solid var(--border);border-radius:10px;padding:10px 12px}
+.ferry-box h3{font-size:.85rem;color:var(--accent);margin-bottom:4px}
+.ferry-box p{margin:0;font-size:.9rem}
+
+/* Alerts */
+.alert-item{border-left:4px solid var(--warn);background:var(--panel-2);border-radius:8px;padding:10px 12px;margin-bottom:10px}
+.alert-item.severe{border-left-color:var(--danger)}
+.alert-item h3{font-size:.95rem;margin-bottom:3px}
+.alert-item p{margin:0;color:var(--muted);font-size:.85rem}
+.no-alerts{color:var(--accent-2);font-size:.92rem}
+
+/* Forecast */
+.town-picker{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.town-btn{
+  background:var(--panel-2);color:var(--muted);border:1px solid var(--border);
+  border-radius:999px;padding:5px 12px;font-size:.82rem;cursor:pointer;
+}
+.town-btn:hover{color:var(--text);border-color:var(--accent)}
+.town-btn.active{background:var(--accent);border-color:var(--accent);color:#06283d;font-weight:700}
+.forecast-periods{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.period{background:var(--panel-2);border:1px solid var(--border);border-radius:10px;padding:9px 11px}
+.period h4{margin:0 0 2px;font-size:.83rem;color:var(--accent)}
+.period .temp{font-size:1.15rem;font-weight:800}
+.period p{margin:2px 0 0;color:var(--muted);font-size:.8rem}
+
+/* Rivers */
+.river-row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--border)}
+.river-row:last-child{border-bottom:none}
+.river-name{font-weight:700;font-size:.93rem}
+.river-sub{color:var(--muted);font-size:.78rem}
+.river-nums{text-align:right;white-space:nowrap}
+.river-nums .big{font-size:1.05rem;font-weight:800;font-variant-numeric:tabular-nums}
+.trend-up{color:var(--warn)}
+.trend-down{color:var(--accent-2)}
+.trend-flat{color:var(--muted)}
+
+/* Quakes */
+.quake-row{display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid var(--border)}
+.quake-row:last-child{border-bottom:none}
+.quake-mag{
+  flex:0 0 auto;min-width:44px;text-align:center;font-weight:800;font-size:.95rem;
+  background:var(--panel-2);border:1px solid var(--border);border-radius:8px;padding:6px 4px;
+}
+.quake-mag.hot{border-color:var(--danger);color:#fecaca}
+.quake-place{font-size:.9rem}
+.quake-time{color:var(--muted);font-size:.78rem}
+
+/* Footer */
+.site-footer{
+  max-width:1280px;margin:10px auto 0;padding:18px 20px 30px;
+  border-top:1px solid var(--border);color:var(--muted);font-size:.9rem;
+}
+.site-footer strong{color:var(--text)}
+
+/* Mobile */
+@media (max-width:920px){
+  .layout{grid-template-columns:1fr;padding:14px 12px 4px}
+  #map{height:320px}
+  .brand h1{font-size:1.25rem}
+  .header-inner{padding:12px}
+}
+@media (max-width:560px){
+  .link-grid,.ferry-grid,.forecast-periods{grid-template-columns:1fr}
+  .header-clock{display:none}
+}
