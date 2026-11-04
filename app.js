@@ -204,6 +204,10 @@ function initMapTools() {
             ? '<strong>You are here</strong><br>Inside the Columbia County box.'
             : '<strong>You are here</strong><br>Outside the Columbia County box — the county is the blue outline.');
         map.flyTo([lat, lon], 12, { duration: 0.8 });
+        // Open the popup once the flight lands — bindPopup alone leaves the
+        // "You are here" answer hidden behind a second tap on the pin
+        // (feature audit 2026-11-04: marker placed, popup never opened).
+        setTimeout(() => { if (meMarker) { try { meMarker.openPopup(); } catch (e) { /* popup is a bonus */ } } }, 900);
         nearBtn.textContent = '📍 Near me';
       }, () => {
         nearBtn.textContent = '📍 Location unavailable';
