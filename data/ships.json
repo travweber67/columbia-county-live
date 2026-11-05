@@ -1,62 +1,128 @@
 {
- "fetched_at": "2026-11-05T20:48:41Z",
+ "fetched_at": "2026-11-05T20:50:50Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15705,
-   "lon": -123.40233,
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.80453,
+   "lon": -122.81984,
+   "sog_kn": 5.4,
+   "cog": 298.7,
+   "heading": 299,
+   "nav_status": 0,
+   "updated": "2026-11-05 20:51:21.13262799 +0000 UTC",
+   "type_code": 52,
+   "destination": ""
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 304.8,
+   "heading": 129,
+   "nav_status": 15,
+   "updated": "2026-11-05 20:50:57.598361475 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65009,
+   "lon": -122.74752,
+   "sog_kn": 0,
+   "cog": 253.3,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-05 20:50:59.21505143 +0000 UTC"
+  },
+  {
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 45.63959,
+   "lon": -122.77753,
+   "sog_kn": 0.4,
+   "cog": 246.9,
+   "heading": 229,
+   "nav_status": 0,
+   "updated": "2026-11-05 20:51:05.188749883 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.63983,
+   "lon": -122.77769,
+   "sog_kn": 0.5,
+   "cog": 184.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-05 20:51:05.543708576 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00883,
+   "lon": -122.8483,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 133,
-   "nav_status": 0,
-   "updated": "2026-11-05 20:49:33.967739244 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.64384,
-   "lon": -122.72579,
-   "sog_kn": 0,
-   "cog": 221.2,
-   "heading": 117,
-   "nav_status": 12,
-   "updated": "2026-11-05 20:49:34.309651814 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.63898,
-   "lon": -122.77927,
-   "sog_kn": 1.6,
-   "cog": 248.8,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-05 20:49:35.291865139 +0000 UTC"
+   "updated": "2026-11-05 20:51:11.369556203 +0000 UTC"
   },
   {
-   "mmsi": 352986134,
-   "name": "TAC SUZUKA",
-   "lat": 45.73527,
-   "lon": -122.76041,
-   "sog_kn": 10.3,
-   "cog": 359.5,
+   "mmsi": 367419960,
+   "name": "PALOUSE",
+   "lat": 45.69703,
+   "lon": -122.77188,
+   "sog_kn": 8.5,
+   "cog": 190.8,
+   "heading": 191,
+   "nav_status": 0,
+   "updated": "2026-11-05 20:51:14.73902086 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.74738,
+   "lon": -122.76304,
+   "sog_kn": 7.1,
+   "cog": 356,
    "heading": 0,
    "nav_status": 0,
-   "updated": "2026-11-05 20:49:43.744095609 +0000 UTC"
+   "updated": "2026-11-05 20:51:16.329266014 +0000 UTC"
   },
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.0787,
-   "lon": -122.90046,
-   "sog_kn": 0.3,
-   "cog": 88.6,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07861,
+   "lon": -122.9002,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-05 20:51:19.524579301 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.64715,
+   "lon": -122.73961,
+   "sog_kn": 0,
+   "cog": 259,
+   "heading": 286,
+   "nav_status": 5,
+   "updated": "2026-11-05 20:51:23.453251987 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20004,
+   "lon": -123.38543,
+   "sog_kn": 0,
+   "cog": 8.4,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-05 20:49:54.703785541 +0000 UTC"
+   "nav_status": 8,
+   "updated": "2026-11-05 20:51:24.79317376 +0000 UTC"
   }
  ]
 }
