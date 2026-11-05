@@ -1,77 +1,47 @@
 {
- "fetched_at": "2026-11-05T19:20:42Z",
+ "fetched_at": "2026-11-05T19:25:42Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
+   "hex": "a3c51a",
+   "callsign": "DAL1412",
+   "type": "A333",
+   "alt_ft": 28475,
+   "gs_kn": 496.1,
+   "track": 178.73,
+   "lat": 46.001665,
+   "lon": -123.373512
+  },
+  {
    "hex": "a5241e",
    "callsign": "N430LF",
    "type": "B429",
-   "alt_ft": 3325,
-   "gs_kn": 105.2,
-   "track": 114.13,
-   "lat": 46.234426,
-   "lon": -123.100639
-  },
-  {
-   "hex": "ac82bb",
-   "callsign": "XSN90",
-   "type": "PC12",
-   "alt_ft": 1225,
-   "gs_kn": 100.0,
-   "track": 143.13,
-   "lat": 45.604015,
-   "lon": -123.017075
+   "alt_ft": 650,
+   "gs_kn": 88.7,
+   "track": 140.03,
+   "lat": 46.150497,
+   "lon": -122.93728
   },
   {
    "hex": "a045d8",
    "callsign": "N1167P",
    "type": "PA23",
-   "alt_ft": 500,
-   "gs_kn": 87.2,
-   "track": 176.05,
-   "lat": 46.001525,
-   "lon": -122.868759
+   "alt_ft": 650,
+   "gs_kn": 96.2,
+   "track": 176.42,
+   "lat": 45.86252,
+   "lon": -122.876793
   },
   {
-   "hex": "aaf006",
-   "callsign": "N80347",
-   "type": "C172",
-   "alt_ft": "ground",
-   "gs_kn": 7.2,
-   "track": 270.0,
-   "lat": 45.621197,
-   "lon": -122.652121
-  },
-  {
-   "hex": "a5521c",
-   "callsign": "ASA18",
-   "type": "B739",
-   "alt_ft": "ground",
-   "gs_kn": 0.0,
-   "track": null,
-   "lat": 45.59594,
-   "lon": -122.620652
-  },
-  {
-   "hex": "aad22d",
-   "callsign": "N797BP",
-   "type": "B407",
-   "alt_ft": "ground",
-   "gs_kn": 0.0,
-   "track": null,
-   "lat": 45.589142,
-   "lon": -122.613876
-  },
-  {
-   "hex": "ac712d",
-   "callsign": "SWA948",
-   "type": "B737",
-   "alt_ft": 39475,
-   "gs_kn": 394.1,
-   "track": 349.92,
-   "lat": 45.825232,
-   "lon": -122.610512
+   "hex": "a6d7e3",
+   "callsign": "TWY541",
+   "type": "CL35",
+   "alt_ft": 36075,
+   "gs_kn": 416.8,
+   "track": 356.42,
+   "lat": 45.959674,
+   "lon": -122.80854
   }
  ]
 }
