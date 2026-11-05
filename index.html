@@ -50,7 +50,7 @@
       <a href="#sky-card" data-i18n="stripsky">✈️ Sky &amp; the ISS</a>
       <a href="#ferry-card" data-i18n="stripferry">⛴️ Oscar B ferry</a>
       <a href="#events-card" data-i18n="stripevents">📅 Events</a>
-      <button class="lang-pill" id="lang-btn" type="button" aria-label="Cambiar esta página a español">🌎 En español</button>
+      <button class="lang-pill" id="lang-btn" type="button">🌎 En español</button>
     </nav>
   </div>
 </header>
@@ -138,10 +138,10 @@
     <span class="updated" id="go-updated"></span>
   </div>
   <p class="card-note">The last look before the keys. Pick the trip and when you're leaving, and this card runs the page's own live checks — weather alerts, the corridor, the forecast for that hour, the boat math or the tide window, and how much light you'll have — then answers with one verdict. Take the answer with you: copy it, or drop the trip in your calendar.</p>
-  <div class="go-trips" id="go-trips" role="tablist" aria-label="What kind of trip">
-    <button class="go-trip-btn active" type="button" data-go-trip="commute">🚗 The drive</button>
-    <button class="go-trip-btn" type="button" data-go-trip="ferry">⛴️ Catch the ferry</button>
-    <button class="go-trip-btn" type="button" data-go-trip="river">🎣 On the river</button>
+  <div class="go-trips" id="go-trips" role="group" aria-label="What kind of trip">
+    <button class="go-trip-btn active" type="button" data-go-trip="commute" aria-pressed="true">🚗 The drive</button>
+    <button class="go-trip-btn" type="button" data-go-trip="ferry" aria-pressed="false">⛴️ Catch the ferry</button>
+    <button class="go-trip-btn" type="button" data-go-trip="river" aria-pressed="false">🎣 On the river</button>
   </div>
   <div class="go-whenrow">
     <label class="go-field">Leaving
@@ -181,6 +181,26 @@
   </div>
   <p class="card-note" data-i18n="plannote">The evening check — what to sort out before bed: tonight's weather, tomorrow morning's drive, the first Oscar B sailings, and what's on tomorrow. Assembled from the same official sources as the rest of this page.</p>
   <div id="plan-body" class="panel-body"><p class="loading">Looking ahead to tonight and tomorrow…</p></div>
+</section>
+
+<section class="card schools-card" id="schools-card" aria-label="School closures and delays — the Columbia County districts">
+  <div class="card-head">
+    <h2 data-i18n="schoolsh2">🎒 Schools — Closures &amp; Delays</h2>
+    <span class="updated" id="schools-updated"></span>
+  </div>
+  <p class="card-note" data-i18n="schoolsnote">On storm mornings the districts decide early — St. Helens aims to decide by 6:00 AM — and post first on their own sites and apps. This card is a hand-updated storm-day board: in quiet weather it stands by and shows where each district posts; on a storm morning it carries that morning&rsquo;s report for every district, checked against the district&rsquo;s own posting before it goes up here.</p>
+  <div id="schools-body" class="panel-body">
+    <p class="schools-dormant">✅ No closure or delay report is posted for today — this board is standing by for the next storm morning. Regular school days need no report.</p>
+    <ul class="schools-list">
+      <li class="school-row"><span class="school-main"><span class="school-name">St. Helens School District</span></span><span class="school-pill school-none">No report yet</span><a class="school-link" href="https://www.sthelens.k12.or.us/parent-info/school-closure-information" target="_blank" rel="noopener">Closure info →</a></li>
+      <li class="school-row"><span class="school-main"><span class="school-name">Scappoose School District</span></span><span class="school-pill school-none">No report yet</span><a class="school-link" href="https://www.scappoosek12.org/" target="_blank" rel="noopener">District site →</a></li>
+      <li class="school-row"><span class="school-main"><span class="school-name">Rainier School District</span></span><span class="school-pill school-none">No report yet</span><a class="school-link" href="https://www.rainier.k12.or.us/" target="_blank" rel="noopener">District site →</a></li>
+      <li class="school-row"><span class="school-main"><span class="school-name">Clatskanie School District</span></span><span class="school-pill school-none">No report yet</span><a class="school-link" href="https://www.csd.k12.or.us/" target="_blank" rel="noopener">District site →</a></li>
+      <li class="school-row"><span class="school-main"><span class="school-name">Vernonia School District</span></span><span class="school-pill school-none">No report yet</span><a class="school-link" href="https://www.vernoniak12.org/" target="_blank" rel="noopener">District site →</a></li>
+      <li class="school-row"><span class="school-main"><span class="school-name">Northwest Regional ESD (NWRESD)</span><span class="school-sub">Regional programs follow NWRESD&rsquo;s own notices</span></span><span class="school-pill school-none">No report yet</span><a class="school-link" href="https://www.nwresd.org/" target="_blank" rel="noopener">NWRESD site →</a></li>
+    </ul>
+  </div>
+  <p class="card-note small" data-i18n="schoolsnote2">No automated closure feed exists for these districts, so this board is updated by hand on storm mornings — and a district&rsquo;s own site is always the final word for your family.</p>
 </section>
 
 <section class="card briefing-card" id="briefing-card" aria-label="The county briefing — today's summary, ready to copy and share">
@@ -270,9 +290,9 @@
       <div id="ferry-next" class="ferry-next"><p class="loading">Working out the next sailing…</p></div>
       <div class="ferry-plan" id="ferry-plan">
         <h3 class="subhead" data-i18n="ferryplanh3">🧭 Catch the boat — when do you need to leave?</h3>
-        <div class="fp-dirs" role="tablist" aria-label="Which way are you crossing">
-          <button class="fp-dir-btn active" type="button" data-fp-dir="or" data-i18n="fpdiror">Heading to Washington</button>
-          <button class="fp-dir-btn" type="button" data-fp-dir="wa" data-i18n="fpdirwa">Coming back to Oregon</button>
+        <div class="fp-dirs" role="group" aria-label="Which way are you crossing">
+          <button class="fp-dir-btn active" type="button" data-fp-dir="or" aria-pressed="true" data-i18n="fpdiror">Heading to Washington</button>
+          <button class="fp-dir-btn" type="button" data-fp-dir="wa" aria-pressed="false" data-i18n="fpdirwa">Coming back to Oregon</button>
         </div>
         <div class="fp-towns" id="fp-towns" aria-label="Where are you leaving from"></div>
         <div id="fp-body" class="fp-body"><p class="loading">Working out when you'd need to leave…</p></div>
@@ -312,10 +332,10 @@
         <h2 data-i18n="aircrafth2">✈️ Aircraft Overhead</h2>
         <span class="updated" id="sky-updated"></span>
       </div>
-      <div class="sky-filters" id="sky-filters" role="tablist" aria-label="Filter aircraft">
-        <button class="sky-filter-btn active" type="button" data-skyfilter="all" data-i18n="skyall">All traffic</button>
-        <button class="sky-filter-btn" type="button" data-skyfilter="low" data-i18n="skylow">Low &amp; local</button>
-        <button class="sky-filter-btn" type="button" data-skyfilter="ground" data-i18n="skyground">On the ground</button>
+      <div class="sky-filters" id="sky-filters" role="group" aria-label="Filter aircraft">
+        <button class="sky-filter-btn active" type="button" data-skyfilter="all" aria-pressed="true" data-i18n="skyall">All traffic</button>
+        <button class="sky-filter-btn" type="button" data-skyfilter="low" aria-pressed="false" data-i18n="skylow">Low &amp; local</button>
+        <button class="sky-filter-btn" type="button" data-skyfilter="ground" aria-pressed="false" data-i18n="skyground">On the ground</button>
       </div>
       <div id="sky-body" class="panel-body"><p class="loading">Loading aircraft overhead…</p></div>
       <p class="card-note small" data-i18n="aircraftnote">Aircraft: community ADS-B receivers via adsb.fi. Refreshes automatically.</p>
@@ -349,7 +369,7 @@
         <h2 data-i18n="forecasth2">🌦️ Forecast</h2>
         <span class="updated" id="forecast-updated"></span>
       </div>
-      <div class="town-picker" id="town-picker" role="tablist" aria-label="Choose a town"></div>
+      <div class="town-picker" id="town-picker" role="group" aria-label="Choose a town"></div>
       <div id="forecast-body" class="panel-body"><p class="loading">Loading forecast…</p></div>
     </div>
 
@@ -486,11 +506,11 @@
         <h2 data-i18n="eventsh2">📅 Events — Next Two Weeks</h2>
         <span class="updated" id="events-updated"></span>
       </div>
-      <div class="event-filters" id="event-filters" role="tablist" aria-label="Filter events by when">
-        <button class="event-filter-btn active" type="button" data-filter="all" data-i18n="evall">All</button>
-        <button class="event-filter-btn" type="button" data-filter="today" data-i18n="evtoday">Today</button>
-        <button class="event-filter-btn" type="button" data-filter="weekend" data-i18n="evweekend">This weekend</button>
-        <button class="event-filter-btn" type="button" data-filter="week" data-i18n="evweek">Next 7 days</button>
+      <div class="event-filters" id="event-filters" role="group" aria-label="Filter events by when">
+        <button class="event-filter-btn active" type="button" data-filter="all" aria-pressed="true" data-i18n="evall">All</button>
+        <button class="event-filter-btn" type="button" data-filter="today" aria-pressed="false" data-i18n="evtoday">Today</button>
+        <button class="event-filter-btn" type="button" data-filter="weekend" aria-pressed="false" data-i18n="evweekend">This weekend</button>
+        <button class="event-filter-btn" type="button" data-filter="week" aria-pressed="false" data-i18n="evweek">Next 7 days</button>
       </div>
       <p class="card-note evcal-note" data-i18n="evcalnote">Going? Tap <strong>＋ Add</strong> on any event and it lands in your own calendar — time converted, official page attached — so your phone reminds you the day it happens.</p>
       <div id="events-body" class="panel-body"><p class="loading">Loading events from the city calendars…</p></div>
@@ -540,6 +560,20 @@
 
 
 
+
+<section class="card about-card" id="about-card" aria-label="About Columbia County Live — what it is, why it is free, and supporting it">
+  <div class="card-head">
+    <h2 data-i18n="abouth2">🌲 About Columbia County Live</h2>
+  </div>
+  <p class="card-note" data-i18n="aboutp1">Columbia County Live is one live look at Columbia County, Oregon — US-30 and the Lewis &amp; Clark Bridge, the Columbia and Nehalem rivers, weather alerts, the Oscar B ferry, and what&rsquo;s on around the county — assembled from official public sources and refreshed all day. It is built and run by <strong>Nomad Development Group</strong>, a small local studio, on free public data and free hosting, which is how a page like this can exist for a county of 54,000 at all.</p>
+  <p class="card-note" data-i18n="aboutp2"><strong>Why it&rsquo;s free — and what stays free.</strong> The core of this page is public-safety data: weather alerts, river levels, bridge and ferry status, road conditions. That core is free, carries no sponsor, and stays that way — it will never sit behind a paywall. That promise is the reason the page exists.</p>
+  <h3 class="subhead" data-i18n="aboutsupporth">Support this service — founding sponsors</h3>
+  <p class="card-note" data-i18n="aboutp3">Down the road, a small number of local businesses will be able to support the service as founding sponsors — a named spot on this page at small-town prices, once there is a real audience to show them. <strong>Nothing is for sale today.</strong> If your business or organization would want first word when founding sponsorship opens, tell us — the interest list we build now is who hears first.</p>
+  <div class="about-actions">
+    <a class="share-btn primary" id="sponsor-interest-link" data-i18n="aboutbtn" href="mailto:nomadov3rland@gmail.com?subject=Columbia%20County%20Live%20—%20founding%20sponsor%20interest">✉️ Email Nomad about founding sponsorship</a>
+  </div>
+  <p class="card-note small" data-i18n="aboutnote">That button opens an email to nomadov3rland@gmail.com. Include your business or organization name, a contact name, your town, and what you&rsquo;re interested in — founding sponsor, listing a business, or something else — and we&rsquo;ll write back. Interest only: no payment, no commitment, nothing to buy yet.</p>
+</section>
 
 <footer class="site-footer">
   <p data-i18n="footerbyline"><strong>Columbia County Live</strong> — by <strong>Nomad Development Group</strong></p>

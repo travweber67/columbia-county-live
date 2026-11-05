@@ -168,7 +168,7 @@ function initMap() {
       transparent: true, version: '1.1.1', opacity: 0.65,
       attribution: 'NOAA nowCOAST · MRMS radar'
     });
-  L.control.layers(null, {
+  const layersCtl = L.control.layers(null, {
     '🌧️ Weather radar (NOAA)': radarLayer,
     '✈️ Aircraft (ADS-B)': aircraftLayer,
     '🚢 Ships (AIS)': shipLayer,
@@ -176,7 +176,34 @@ function initMap() {
     '🔥 Wildfire perimeters': fireLayer,
     '🛰️ Space station (ISS)': issLayer,
     '🫨 Earthquakes': quakeLayer
-  }, { collapsed: false }).addTo(map);
+  }, { collapsed: true }).addTo(map);
+  /* WS-1d 2026-11-04 (Travis, from his phone): the layers panel used to
+     sit permanently open over the map (collapsed:false) — on a phone it
+     covered most of the map with no way to shrink it away. Now the panel
+     starts collapsed everywhere: on desktop it expands on hover
+     (Leaflet's standard pattern), on touch a tap on the layer button
+     opens it, tapping the map closes it, and tapping the button while
+     it is open closes it too (Leaflet's own touch handler only ever
+     expands, so the close half is wired here, capture-phase, and keeps
+     the event from re-opening it). Mobile sizing caps are in style.css:
+     ≤70vw wide, max-height with internal scroll, compact rows. */
+  try {
+    map.on('click', () => { if (layersCtl && layersCtl.collapse) layersCtl.collapse(); });
+    const ctlBox = layersCtl && layersCtl.getContainer ? layersCtl.getContainer() : null;
+    const ctlLink = ctlBox && ctlBox.querySelector
+      ? ctlBox.querySelector('.leaflet-control-layers-toggle') : null;
+    if (ctlBox && ctlLink) {
+      ctlLink.setAttribute('aria-label', 'Map layers — show or hide the layer list');
+      ctlBox.addEventListener('click', e => {
+        if (e.target === ctlLink
+            && ctlBox.classList.contains('leaflet-control-layers-expanded')) {
+          e.preventDefault();
+          e.stopPropagation();
+          layersCtl.collapse();
+        }
+      }, true);
+    }
+  } catch (e) { /* the panel still works Leaflet's way without the close wiring */ }
 }
 
 /* ---------- map toolbar: near me, town jumps, full screen ---------- */
@@ -275,8 +302,10 @@ const forecastUrlCache = {};
 let currentTown = TOWNS[0];
 async function loadForecast(town) {
   currentTown = town;
-  document.querySelectorAll('.town-btn').forEach(b =>
-    b.classList.toggle('active', b.dataset.town === town.name));
+  document.querySelectorAll('.town-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.town === town.name);
+    if (b.setAttribute) b.setAttribute('aria-pressed', b.dataset.town === town.name ? 'true' : 'false');
+  });
   const body = $('forecast-body');
   body.innerHTML = '<p class="loading">Loading forecast for ' + esc(town.name) + '…</p>';
   try {
@@ -308,6 +337,7 @@ function initTownPicker() {
     const b = document.createElement('button');
     b.className = 'town-btn' + (t === currentTown ? ' active' : '');
     b.textContent = t.name;
+    if (b.setAttribute) b.setAttribute('aria-pressed', t === currentTown ? 'true' : 'false');
     b.dataset.town = t.name;
     b.addEventListener('click', () => loadForecast(t));
     wrap.appendChild(b);
@@ -511,8 +541,10 @@ function initSkyFilters() {
   wrap.querySelectorAll('.sky-filter-btn').forEach(b => {
     b.addEventListener('click', () => {
       currentSkyFilter = b.dataset.skyfilter;
-      wrap.querySelectorAll('.sky-filter-btn').forEach(x =>
-        x.classList.toggle('active', x === b));
+      wrap.querySelectorAll('.sky-filter-btn').forEach(x => {
+        x.classList.toggle('active', x === b);
+        if (x.setAttribute) x.setAttribute('aria-pressed', x === b ? 'true' : 'false');
+      });
       renderSkyList();
     });
   });
@@ -2830,8 +2862,10 @@ function initEventFilters() {
   wrap.querySelectorAll('.event-filter-btn').forEach(b => {
     b.addEventListener('click', () => {
       currentEventFilter = b.dataset.filter;
-      wrap.querySelectorAll('.event-filter-btn').forEach(x =>
-        x.classList.toggle('active', x === b));
+      wrap.querySelectorAll('.event-filter-btn').forEach(x => {
+        x.classList.toggle('active', x === b);
+        if (x.setAttribute) x.setAttribute('aria-pressed', x === b ? 'true' : 'false');
+      });
       renderEvents();
     });
   });
@@ -4420,8 +4454,10 @@ function renderFerryPlan(force) {
   const sig = fpDir + '|' + fpTownName + '|' + nowMin + '|' + (ferryAlertActive ? 1 : 0);
   if (!force && sig === fpLastSig) return;
   fpLastSig = sig;
-  document.querySelectorAll('.fp-dir-btn').forEach(b =>
-    b.classList.toggle('active', b.dataset.fpDir === fpDir));
+  document.querySelectorAll('.fp-dir-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.fpDir === fpDir);
+    if (b.setAttribute) b.setAttribute('aria-pressed', b.dataset.fpDir === fpDir ? 'true' : 'false');
+  });
   fpRenderTowns();
   if (ferryAlertActive) {
     body.innerHTML = '<div class="fp-verdict fp-alert">⛔ The county is reporting a ferry alert — read the closure notice above before planning around the boat. No leave-by math while sailings are in doubt.</div>';
@@ -5589,6 +5625,16 @@ const LANG_ES = {
   airh2: '🌫️ Aire y humo',
   airnote: 'La otra cosa invisible sobre el condado — lo que lleva el aire que respiras. Humo de estufas de leña en las noches quietas de invierno, humo de incendios en verano. Aquí está el Índice de Calidad del Aire para el pueblo de la tarjeta de Pronóstico de arriba, y hacia dónde dice el modelo que va.',
   airnote2: "Una estimación modelada del modelo atmosférico de Open-Meteo (Copernicus CAMS) — no hay un monitor oficial de calidad del aire en el condado, así que léelo como una buena guía, no como un medidor en un poste. Lecturas y alertas oficiales: <a href=\"https://www.airnow.gov/\" target=\"_blank\" rel=\"noopener\">AirNow</a>.",
+  schoolsh2: '🎒 Escuelas — Cierres y retrasos',
+  schoolsnote: 'En las mañanas de tormenta, los distritos deciden temprano — St. Helens procura decidir antes de las 6:00 AM — y publican primero en sus propios sitios y aplicaciones. Esta tarjeta es un tablero de tormenta actualizado a mano: con clima tranquilo está en espera y muestra dónde publica cada distrito; en una mañana de tormenta lleva el reporte de ese día para cada distrito, verificado contra la publicación del propio distrito antes de subirlo aquí.',
+  schoolsnote2: 'No existe ninguna fuente automática de cierres para estos distritos, así que este tablero se actualiza a mano en las mañanas de tormenta — y el sitio del propio distrito es siempre la última palabra para tu familia.',
+  abouth2: '🌲 Acerca de Columbia County Live',
+  aboutp1: 'Columbia County Live es una sola mirada en vivo al condado de Columbia, Oregón — la US-30 y el puente Lewis &amp; Clark, los ríos Columbia y Nehalem, las alertas del clima, el ferry Oscar B y lo que hay en el condado — reunido de fuentes públicas oficiales y actualizado todo el día. Lo construye y lo opera <strong>Nomad Development Group</strong>, un pequeño estudio local, con datos públicos gratuitos y alojamiento gratuito — así es como una página como esta puede existir para un condado de 54,000 personas.',
+  aboutp2: '<strong>Por qué es gratis — y qué se queda gratis.</strong> El centro de esta página son datos de seguridad pública: alertas del clima, niveles de los ríos, estado del puente y del ferry, condiciones de las carreteras. Ese centro es gratis, no lleva patrocinadores, y así se queda — nunca estará detrás de un muro de pago. Esa promesa es la razón de ser de esta página.',
+  aboutsupporth: 'Apoya este servicio — patrocinadores fundadores',
+  aboutp3: 'Más adelante, un pequeño número de negocios locales podrá apoyar el servicio como patrocinadores fundadores — un lugar con su nombre en esta página, a precios de pueblo pequeño, cuando haya una audiencia real que mostrarles. <strong>Hoy no hay nada en venta.</strong> Si tu negocio u organización quiere ser el primero en enterarse cuando abra el patrocinio fundador, cuéntanos — la lista de interesados que armemos ahora es quien se entera primero.',
+  aboutbtn: '✉️ Escribe a Nomad sobre el patrocinio fundador',
+  aboutnote: 'Ese botón abre un correo a nomadov3rland@gmail.com. Incluye el nombre de tu negocio u organización, un nombre de contacto, tu pueblo y lo que te interesa — patrocinador fundador, anunciar un negocio u otra cosa — y te responderemos. Solo interés: sin pago, sin compromiso, nada que comprar todavía.',
   freshh2: '🕐 ¿Qué tan fresca es esta página?',
   freshspan: 'las edades se actualizan cada 30 s',
   freshnote: 'Cada número aquí nombra su fuente y su edad. Verde es fresco, ámbar está envejeciendo, rojo significa tratar el panel como viejo y revisar la fuente oficial. Si una fuente se queda callada, este tablero lo muestra en vez de esconderlo.',
@@ -6042,10 +6088,16 @@ function initGo() {
   const tripsEl = $("go-trips");
   if (tripsEl) {
     const btns = tripsEl.querySelectorAll(".go-trip-btn");
-    btns.forEach(b => b.classList.toggle("active", b.dataset.goTrip === goTrip));
+    btns.forEach(b => {
+      b.classList.toggle("active", b.dataset.goTrip === goTrip);
+      if (b.setAttribute) b.setAttribute("aria-pressed", b.dataset.goTrip === goTrip ? "true" : "false");
+    });
     btns.forEach(b => b.addEventListener("click", () => {
       goTrip = b.dataset.goTrip;
-      btns.forEach(x => x.classList.toggle("active", x === b));
+      btns.forEach(x => {
+        x.classList.toggle("active", x === b);
+        if (x.setAttribute) x.setAttribute("aria-pressed", x === b ? "true" : "false");
+      });
       goSavePref();
       renderGo(false);
     }));
@@ -6688,3 +6740,129 @@ initFishPick();
 loadFish();
 loadCurrents();
 loadSteelhead();
+
+/* ---------- WS-1 2026-11-04: schools board + founding-sponsor interest ----------
+   Two Phase-1 additions from the 2026-11-04 audit (2.2 + 3.4):
+
+   (a) SCHOOLS — closures & delays. There is no automated closure feed
+   for the county's districts anywhere (the business plan named this the
+   likeliest resident request), so the board is CURATED: the statuses
+   live in data/schools.json, one entry per district serving the county
+   (St. Helens, Scappoose, Rainier, Clatskanie, Vernonia, NWRESD), each
+   open / closed / delayed / no_report with a free-text note, a report
+   date and an updated_at stamp. In quiet weather every district reads
+   "No report yet" and the card says plainly that it is standing by —
+   dormant-ready, never dressed up as live data. On a storm morning the
+   file is flipped by hand against each district's own posting and the
+   code paths publish it in minutes; the full routine is written down in
+   files/school-closures-routine.md in the goal workspace. The static
+   list in index.html mirrors the dormant state, so the card is honest
+   even before (or without) the fetch. Status labels are this page's own
+   chrome, so they render in Spanish too — and langSet is wrapped below
+   so the toggle re-renders them live.
+
+   (b) ABOUT / SUPPORT — the Phase-2 interest surface. Nothing is for
+   sale; the section states what CCL is, why it is free, and the promise
+   that the public-safety core stays free and unsponsored, and captures
+   founding-sponsor interest only. The capture target is ONE config
+   value: paste a Google Form URL into SPONSOR_FORM_URL and the button
+   becomes the form (new tab); while it is empty the button is a plainly
+   labeled mailto to the studio inbox. Form creation is parked on
+   Travis's Google sign-in — instructions in the goal docs. */
+const SPONSOR_FORM_URL = ''; // <-- PARKED SWAP: paste the founding-sponsor Google Form URL here (see files/sponsor-form-parked.md); '' = interim mailto capture
+const SPONSOR_EMAIL = 'nomadov3rland@gmail.com';
+function initSponsorLink() {
+  const a = $('sponsor-interest-link');
+  if (!a || !SPONSOR_FORM_URL) return; // mailto in the HTML is the interim capture
+  a.href = SPONSOR_FORM_URL;
+  a.target = '_blank';
+  a.rel = 'noopener';
+  a.textContent = '📋 Founding sponsor interest form';
+}
+initSponsorLink();
+
+const SCHOOL_STATUS = {
+  open:      { en: 'Open',          es: 'Abierto',       cls: 'school-open' },
+  closed:    { en: 'Closed',        es: 'Cerrado',       cls: 'school-closed' },
+  delayed:   { en: 'Delayed',       es: 'Con retraso',   cls: 'school-delayed' },
+  no_report: { en: 'No report yet', es: 'Sin reporte aún', cls: 'school-none' }
+};
+const SCHOOL_TXT = {
+  en: {
+    dormant: '✅ No closure or delay report is posted for today — this board is standing by for the next storm morning. Regular school days need no report.',
+    reportFor: 'Storm report for ',
+    updated: ' · checked against the districts’ own postings',
+    standingBy: 'Standing by — no storm report posted',
+    site: 'Official site →'
+  },
+  es: {
+    dormant: '✅ Hoy no hay ningún reporte de cierre o retraso publicado — este tablero está en espera hasta la próxima mañana de tormenta. Los días normales de clases no necesitan reporte.',
+    reportFor: 'Reporte de tormenta para el ',
+    updated: ' · verificado contra las publicaciones de los propios distritos',
+    standingBy: 'En espera — sin reporte de tormenta',
+    site: 'Sitio oficial →'
+  }
+};
+let schoolsSnapCache = null;
+function renderSchools() {
+  const body = $('schools-body');
+  if (!body || !schoolsSnapCache) return;
+  const L = SCHOOL_TXT[langCur === 'es' ? 'es' : 'en'];
+  const districts = schoolsSnapCache.districts || [];
+  const anyReport = districts.some(d => d && d.status && d.status !== 'no_report');
+  let html = '';
+  if (anyReport) {
+    const when = schoolsSnapCache.report_date
+      ? fmtDay(new Date(schoolsSnapCache.report_date + 'T12:00:00')) : '';
+    html += '<p class="schools-report">🌨️ <strong>' + esc(L.reportFor + when) + '</strong>'
+      + (schoolsSnapCache.updated_at
+          ? ' · ' + esc(fmtDayTime(new Date(schoolsSnapCache.updated_at))) : '')
+      + esc(L.updated) + '.</p>';
+  } else {
+    html += '<p class="schools-dormant">' + esc(L.dormant) + '</p>';
+  }
+  html += '<ul class="schools-list">' + districts.map(d => {
+    const st = SCHOOL_STATUS[d.status] || SCHOOL_STATUS.no_report;
+    return '<li class="school-row"><span class="school-main">'
+      + '<span class="school-name">' + esc(d.name) + '</span>'
+      + (d.sub ? '<span class="school-sub">' + esc(d.sub) + '</span>' : '')
+      + '</span>'
+      + '<span class="school-pill ' + st.cls + '">' + esc(langCur === 'es' ? st.es : st.en) + '</span>'
+      + (d.url ? '<a class="school-link" href="' + esc(d.url) + '" target="_blank" rel="noopener">'
+          + esc(d.link_label ? (langCur === 'es' ? L.site : d.link_label + ' →') : L.site) + '</a>' : '')
+      + (d.note ? '<span class="school-note">' + esc(d.note) + '</span>' : '')
+      + '</li>';
+  }).join('') + '</ul>';
+  body.innerHTML = html;
+  const stamp = $('schools-updated');
+  if (stamp) {
+    stamp.textContent = anyReport && schoolsSnapCache.updated_at
+      ? 'Storm report · updated ' + fmtDayTime(new Date(schoolsSnapCache.updated_at))
+      : L.standingBy;
+  }
+}
+async function loadSchools() {
+  if (!$('schools-body')) return;
+  try {
+    schoolsSnapCache = await getSnapshot('schools.json');
+    renderSchools();
+  } catch (e) {
+    // The static dormant list in the HTML stays on the page — it is the
+    // honest fallback, and the district links on it are the final word.
+    const stamp = $('schools-updated');
+    if (stamp) stamp.textContent = SCHOOL_TXT[langCur === 'es' ? 'es' : 'en'].standingBy;
+  }
+}
+loadSchools();
+setInterval(loadSchools, 30 * 60 * 1000);
+
+/* The language toggle re-renders this module's dynamic strings too —
+   the schools board's statuses are rendered by JS, so the static-chrome
+   dictionary alone would leave them in English. (Same pattern as the
+   fish pick card's re-render inside langSet; appended as a wrap so the
+   original toggle code is untouched.) */
+const langSetSchoolsPrev = langSet;
+langSet = function (lang) {
+  langSetSchoolsPrev(lang);
+  renderSchools();
+};
