@@ -1,64 +1,87 @@
 {
- "fetched_at": "2026-11-05T23:11:01Z",
+ "fetched_at": "2026-11-05T23:16:03Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.98709,
-   "lon": -122.83769,
-   "sog_kn": 0.3,
-   "cog": 47.5,
-   "heading": 142,
-   "nav_status": 0,
-   "updated": "2026-11-05 23:11:06.293017038 +0000 UTC"
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09086,
+   "lon": -122.93203,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-05 23:16:08.767772424 +0000 UTC"
   },
   {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.60742,
-   "lon": -122.62571,
-   "sog_kn": 6.6,
-   "cog": 101.7,
-   "heading": 100,
-   "nav_status": 0,
-   "updated": "2026-11-05 23:11:07.050715357 +0000 UTC"
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.612,
+   "lon": -122.64536,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-05 23:16:19.773879779 +0000 UTC"
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19995,
-   "lon": -123.38556,
+   "mmsi": 477133900,
+   "name": "SHAO SHAN 8",
+   "lat": 45.63029,
+   "lon": -122.69543,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-05 23:16:21.350555791 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58417,
+   "lon": -122.76615,
    "sog_kn": 0,
-   "cog": 329.2,
+   "cog": 344.1,
+   "heading": 145,
+   "nav_status": 5,
+   "updated": "2026-11-05 23:16:22.172394835 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.72639,
+   "lon": -122.76312,
+   "sog_kn": 8.4,
+   "cog": 3.2,
+   "heading": 2,
+   "nav_status": 12,
+   "updated": "2026-11-05 23:16:24.129297186 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64791,
+   "lon": -122.74097,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-05 23:16:26.774462272 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.6375,
+   "lon": -122.71372,
+   "sog_kn": 0.1,
+   "cog": 308.2,
+   "heading": 161,
+   "nav_status": 12,
+   "updated": "2026-11-05 23:16:29.195054402 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00886,
+   "lon": -122.84882,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-05 23:11:21.368044285 +0000 UTC",
-   "type_code": 30,
-   "destination": "FISHMN TMNL"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58082,
-   "lon": -122.76005,
-   "sog_kn": 0,
-   "cog": 355.3,
-   "heading": 122,
    "nav_status": 0,
-   "updated": "2026-11-05 23:11:21.115454312 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10358,
-   "lon": -122.91015,
-   "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 75,
-   "nav_status": 3,
-   "updated": "2026-11-05 23:11:24.375829865 +0000 UTC"
+   "updated": "2026-11-05 23:16:33.419617684 +0000 UTC"
   }
  ]
 }
