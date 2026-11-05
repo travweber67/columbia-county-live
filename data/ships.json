@@ -1,115 +1,90 @@
 {
- "fetched_at": "2026-11-05T14:40:16Z",
+ "fetched_at": "2026-11-05T14:45:16Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64788,
-   "lon": -122.741,
-   "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-05 14:40:26.029903668 +0000 UTC"
-  },
   {
    "mmsi": 311000824,
    "name": "AFRICAN AVOCET",
-   "lat": 46.09838,
-   "lon": -122.94878,
-   "sog_kn": 0.4,
-   "cog": 294.5,
-   "heading": 124,
+   "lat": 46.09858,
+   "lon": -122.94955,
+   "sog_kn": 0.2,
+   "cog": 287.4,
+   "heading": 120,
    "nav_status": 0,
-   "updated": "2026-11-05 14:40:33.369374946 +0000 UTC"
+   "updated": "2026-11-05 14:45:22.287753984 +0000 UTC"
   },
   {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.07834,
-   "lon": -122.9003,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.18323,
+   "lon": -123.18977,
+   "sog_kn": 0.3,
+   "cog": 21.1,
+   "heading": 57,
+   "nav_status": 3,
+   "updated": "2026-11-05 14:45:24.427287368 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61289,
+   "type_code": 0,
+   "updated": "2026-11-05 14:45:49.354379997 +0000 UTC",
    "sog_kn": 0,
-   "cog": 9.4,
-   "heading": 175,
-   "nav_status": 5,
-   "updated": "2026-11-05 14:40:33.965793161 +0000 UTC"
+   "cog": 302.6,
+   "heading": 126,
+   "nav_status": 15
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64244,
+   "lon": -122.77155,
+   "sog_kn": 0,
+   "cog": 4.8,
+   "heading": 226,
+   "nav_status": 0,
+   "updated": "2026-11-05 14:45:33.301753164 +0000 UTC"
+  },
+  {
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09414,
+   "lon": -122.93747,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-05 14:45:33.401816203 +0000 UTC"
   },
   {
    "mmsi": 563116100,
    "name": "OCEAN GOLD",
-   "lat": 45.98415,
-   "lon": -122.83549,
+   "lat": 45.98413,
+   "lon": -122.83552,
+   "type_code": 70,
+   "destination": "US KAL",
+   "updated": "2026-11-05 14:45:37.923463741 +0000 UTC"
+  },
+  {
+   "mmsi": 352003818,
+   "name": "PAN CONCORD",
+   "lat": 46.09909,
+   "lon": -122.93949,
+   "type_code": 70,
+   "destination": "KRYOS",
+   "updated": "2026-11-05 14:45:40.828851814 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00888,
+   "lon": -122.84886,
    "sog_kn": 0,
-   "cog": 121.4,
-   "heading": 151,
-   "nav_status": 5,
-   "updated": "2026-11-05 14:40:35.587669545 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07876,
-   "lon": -122.90018,
-   "sog_kn": 0.3,
-   "cog": 78.8,
-   "heading": 356,
-   "nav_status": 3,
-   "updated": "2026-11-05 14:40:47.432888663 +0000 UTC"
-  },
-  {
-   "mmsi": 368136580,
-   "name": "ORIN L GREEN",
-   "lat": 46.08167,
-   "lon": -122.90493,
-   "sog_kn": 5.4,
-   "cog": 125.5,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-05 14:40:37.722448386 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07842,
-   "lon": -122.90039,
-   "sog_kn": 0.1,
-   "cog": 29.7,
-   "heading": 173,
-   "nav_status": 0,
-   "updated": "2026-11-05 14:40:37.808093356 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07847,
-   "lon": -122.89999,
-   "sog_kn": 0,
-   "cog": 107.3,
-   "heading": 171,
-   "nav_status": 0,
-   "updated": "2026-11-05 14:40:43.950235704 +0000 UTC"
-  },
-  {
-   "mmsi": 636020486,
-   "name": "BBG GUILIN",
-   "lat": 46.10608,
-   "lon": -122.95591,
-   "sog_kn": 0,
-   "cog": 120.6,
-   "heading": 124,
-   "nav_status": 5,
-   "updated": "2026-11-05 14:40:46.336992702 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.64206,
-   "lon": -122.74094,
-   "sog_kn": 0,
-   "cog": 251.8,
-   "heading": 119,
-   "nav_status": 12,
-   "updated": "2026-11-05 14:40:50.945398177 +0000 UTC"
+   "updated": "2026-11-05 14:45:47.295794818 +0000 UTC"
   }
  ]
 }
