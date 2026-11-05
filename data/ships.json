@@ -1,67 +1,106 @@
 {
- "fetched_at": "2026-11-05T19:40:44Z",
+ "fetched_at": "2026-11-05T19:45:44Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 338205428,
-   "name": "CLAIRE B",
-   "lat": 45.72361,
-   "lon": -122.86163,
-   "type_code": 52,
-   "destination": "",
-   "updated": "2026-11-05 19:41:02.28773643 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.17849,
+   "lon": -123.20046,
+   "sog_kn": 10.2,
+   "cog": 242.2,
+   "heading": 242,
+   "nav_status": 3,
+   "updated": "2026-11-05 19:45:52.310887211 +0000 UTC"
   },
   {
-   "mmsi": 563116100,
-   "name": "OCEAN GOLD",
-   "lat": 45.98413,
-   "lon": -122.83553,
-   "type_code": 70,
-   "destination": "US KAL",
-   "updated": "2026-11-05 19:41:05.702316806 +0000 UTC"
-  },
-  {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 46.09051,
-   "lon": -122.93231,
-   "sog_kn": 0,
-   "cog": 231.7,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.07847,
+   "lon": -122.90056,
+   "sog_kn": 0.2,
+   "cog": 354.6,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-05 19:41:06.36082397 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-05 19:45:53.165722715 +0000 UTC"
   },
   {
    "mmsi": 368450870,
    "name": "AMERICAN ENCORE",
-   "lat": 46.00363,
-   "lon": -122.84762,
-   "type_code": 60,
-   "destination": "ASTORIA",
-   "updated": "2026-11-05 19:41:12.759433733 +0000 UTC"
+   "lat": 46.00362,
+   "lon": -122.84763,
+   "sog_kn": 0,
+   "cog": 159.6,
+   "heading": 159,
+   "nav_status": 5,
+   "updated": "2026-11-05 19:46:04.807646621 +0000 UTC"
   },
   {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.90898,
-   "lon": -122.81431,
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60755,
+   "lon": -122.67755,
    "sog_kn": 0,
-   "cog": 203.5,
-   "heading": 341,
+   "cog": 360,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-05 19:41:17.175618935 +0000 UTC"
+   "updated": "2026-11-05 19:46:05.272593922 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.6129,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10354,
+   "lon": -122.91013,
    "sog_kn": 0,
-   "cog": 154.7,
-   "heading": 124,
-   "nav_status": 15,
-   "updated": "2026-11-05 19:41:19.163899005 +0000 UTC"
+   "cog": 83.5,
+   "heading": 77,
+   "nav_status": 3,
+   "updated": "2026-11-05 19:46:05.883205362 +0000 UTC"
+  },
+  {
+   "mmsi": 477133900,
+   "name": "SHAO SHAN 8",
+   "lat": 45.63027,
+   "lon": -122.69549,
+   "sog_kn": 0,
+   "cog": 22,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-05 19:46:05.911087943 +0000 UTC"
+  },
+  {
+   "mmsi": 367419960,
+   "name": "PALOUSE",
+   "lat": 45.8422,
+   "lon": -122.78747,
+   "sog_kn": 8.2,
+   "cog": 193,
+   "heading": 194,
+   "nav_status": 0,
+   "updated": "2026-11-05 19:46:06.482032033 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 46.02697,
+   "lon": -122.8733,
+   "sog_kn": 9.8,
+   "cog": 147,
+   "heading": 146,
+   "nav_status": 0,
+   "updated": "2026-11-05 19:46:06.692835691 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09082,
+   "lon": -122.93202,
+   "sog_kn": 0,
+   "cog": 248.1,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-05 19:46:07.588192865 +0000 UTC"
   }
  ]
 }
