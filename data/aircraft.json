@@ -1,47 +1,67 @@
 {
- "fetched_at": "2026-11-05T05:54:29Z",
+ "fetched_at": "2026-11-05T05:59:29Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
+   "hex": "a14d78",
+   "callsign": "SKW3358",
+   "type": "E75L",
+   "alt_ft": 29000,
+   "gs_kn": 420.1,
+   "track": 178.77,
+   "lat": 46.298721,
+   "lon": -123.382762
+  },
+  {
+   "hex": "a44262",
+   "callsign": "DAL2457",
+   "type": "B738",
+   "alt_ft": 4400,
+   "gs_kn": 210.0,
+   "track": 304.52,
+   "lat": 45.583858,
+   "lon": -122.837448
+  },
+  {
+   "hex": "a797b4",
+   "callsign": "DAL1373",
+   "type": "A21N",
+   "alt_ft": 3775,
+   "gs_kn": 215.4,
+   "track": 291.8,
+   "lat": 45.748094,
+   "lon": -122.757935
+  },
+  {
+   "hex": "a8268d",
+   "callsign": "QXE2116",
+   "type": "E75L",
+   "alt_ft": 28750,
+   "gs_kn": 486.6,
+   "track": 348.62,
+   "lat": 46.206665,
+   "lon": -122.677024
+  },
+  {
    "hex": "a6c88e",
    "callsign": "AAL3163",
    "type": "A321",
-   "alt_ft": 3650,
-   "gs_kn": 215.1,
-   "track": 271.86,
-   "lat": 45.754519,
-   "lon": -122.784988
+   "alt_ft": 150,
+   "gs_kn": 146.9,
+   "track": 119.36,
+   "lat": 45.602417,
+   "lon": -122.640314
   },
   {
-   "hex": "a6f96c",
-   "callsign": "ASA1356",
-   "type": "B738",
-   "alt_ft": "ground",
-   "gs_kn": 10.2,
-   "track": null,
-   "lat": 45.595928,
-   "lon": -122.620686
-  },
-  {
-   "hex": "a85ce8",
-   "callsign": "QXE2057",
+   "hex": "a81f1f",
+   "callsign": "QXE2192",
    "type": "E75L",
    "alt_ft": "ground",
-   "gs_kn": 13.8,
+   "gs_kn": 0.0,
    "track": null,
-   "lat": 45.59618,
-   "lon": -122.619279
-  },
-  {
-   "hex": "a06bb6",
-   "callsign": "N126TS",
-   "type": "PC12",
-   "alt_ft": 3825,
-   "gs_kn": 195.5,
-   "track": 196.95,
-   "lat": 45.595184,
-   "lon": -122.610704
+   "lat": 45.596043,
+   "lon": -122.620605
   }
  ]
 }
