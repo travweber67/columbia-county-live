@@ -1,91 +1,123 @@
 {
- "fetched_at": "2026-11-05T13:10:07Z",
+ "fetched_at": "2026-11-05T13:15:08Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 636020486,
-   "name": "BBG GUILIN",
-   "lat": 46.1061,
-   "lon": -122.95591,
-   "type_code": 70,
-   "destination": "US LON",
-   "updated": "2026-11-05 13:10:15.126733068 +0000 UTC"
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58737,
+   "lon": -122.77054,
+   "sog_kn": 0,
+   "cog": 204.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-05 13:15:13.540483207 +0000 UTC"
   },
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.07838,
-   "lon": -122.90033,
+   "mmsi": 352006943,
+   "name": "GLOVIS LEGEND",
+   "lat": 45.64613,
+   "lon": -122.75549,
+   "sog_kn": 0,
+   "cog": 140.3,
+   "heading": 136,
+   "nav_status": 5,
+   "updated": "2026-11-05 13:15:15.587624295 +0000 UTC"
+  },
+  {
+   "mmsi": 636019200,
+   "name": "CHEM GALLIUM",
+   "lat": 46.17654,
+   "lon": -123.20512,
+   "sog_kn": 10.3,
+   "cog": 244.4,
+   "heading": 243,
+   "nav_status": 0,
+   "updated": "2026-11-05 13:15:15.895657744 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07845,
+   "lon": -122.89997,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-05 13:15:20.01611385 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.17912,
+   "lon": -123.19825,
+   "sog_kn": 9.3,
+   "cog": 246.9,
+   "heading": 245,
+   "nav_status": 3,
+   "updated": "2026-11-05 13:15:22.070970764 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64248,
+   "lon": -122.77152,
    "sog_kn": 0.1,
-   "cog": 59.5,
+   "cog": 191.7,
+   "heading": 228,
+   "nav_status": 0,
+   "updated": "2026-11-05 13:15:26.161028201 +0000 UTC",
+   "type_code": 52,
+   "destination": "US^0UUT>0UW8"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.66152,
+   "lon": -122.76065,
+   "sog_kn": 0.3,
+   "cog": 117.5,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-05 13:10:20.288636251 +0000 UTC"
+   "updated": "2026-11-05 13:15:24.760320941 +0000 UTC"
   },
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.6076,
-   "lon": -122.67761,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.61289,
+   "type_code": 0,
+   "updated": "2026-11-05 13:15:29.148016682 +0000 UTC"
+  },
+  {
+   "mmsi": 352006380,
+   "name": "CL KIBOU",
+   "lat": 45.71004,
+   "lon": -122.76823,
+   "sog_kn": 10.8,
+   "cog": 13,
+   "heading": 13,
+   "nav_status": 5,
+   "updated": "2026-11-05 13:15:29.891874796 +0000 UTC"
+  },
+  {
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 45.96289,
+   "lon": -122.81583,
+   "sog_kn": 10.3,
+   "cog": 134.7,
+   "heading": 141,
    "nav_status": 0,
-   "updated": "2026-11-05 13:10:25.707802515 +0000 UTC"
+   "updated": "2026-11-05 13:15:35.295725262 +0000 UTC"
   },
   {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.79318,
-   "lon": -122.84319,
-   "sog_kn": 0,
-   "cog": 318.2,
-   "heading": 214,
-   "nav_status": 12,
-   "updated": "2026-11-05 13:10:32.074111246 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00878,
-   "lon": -122.84845,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-05 13:10:33.903647839 +0000 UTC"
-  },
-  {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.5873,
-   "lon": -122.77005,
-   "type_code": 31,
-   "destination": "US^02SY>0UJ9",
-   "updated": "2026-11-05 13:10:34.328568262 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15705,
-   "lon": -123.40231,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 134,
-   "nav_status": 0,
-   "updated": "2026-11-05 13:10:35.865625826 +0000 UTC"
-  },
-  {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.63917,
-   "lon": -122.71853,
-   "sog_kn": 9.7,
-   "cog": 293.8,
-   "heading": 292,
-   "nav_status": 0,
-   "updated": "2026-11-05 13:10:37.357540819 +0000 UTC"
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.80373,
+   "lon": -122.78772,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-05 13:15:40.408863886 +0000 UTC"
   }
  ]
 }
