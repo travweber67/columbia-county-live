@@ -1,91 +1,100 @@
 {
- "fetched_at": "2026-11-05T05:04:24Z",
+ "fetched_at": "2026-11-05T05:09:24Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.1554,
+   "lon": -123.05627,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-05 05:09:39.012716207 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.79236,
+   "lon": -122.78093,
+   "sog_kn": 10.1,
+   "cog": 329.4,
+   "heading": 326,
+   "nav_status": 0,
+   "updated": "2026-11-05 05:09:41.135360207 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64843,
+   "lon": -122.75661,
+   "type_code": 52,
+   "destination": "US^0UU4>02MR",
+   "updated": "2026-11-05 05:09:42.523095849 +0000 UTC"
+  },
+  {
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09413,
+   "lon": -122.93748,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-05 05:09:43.335741234 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.07809,
+   "lon": -122.90009,
+   "sog_kn": 0.1,
+   "cog": 201,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-05 05:09:48.957244634 +0000 UTC"
+  },
+  {
+   "mmsi": 477133900,
+   "name": "SHAO SHAN 8",
+   "lat": 45.63662,
+   "lon": -122.7162,
+   "sog_kn": 0.1,
+   "cog": 230.1,
+   "heading": 127,
+   "nav_status": 1,
+   "updated": "2026-11-05 05:09:57.23685312 +0000 UTC",
+   "type_code": 70,
+   "destination": "USVAN"
+  },
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
-   "lat": 46.07824,
-   "lon": -122.89976,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-05 05:04:32.143809369 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58737,
-   "lon": -122.77049,
+   "lat": 46.07823,
+   "lon": -122.89985,
    "sog_kn": 0,
-   "cog": 111.3,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-05 05:04:32.739156002 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.63692,
-   "lon": -122.71693,
-   "sog_kn": 0,
-   "cog": 24.3,
-   "heading": 511,
+   "cog": 254,
+   "heading": 118,
    "nav_status": 0,
-   "updated": "2026-11-05 05:04:35.306626961 +0000 UTC"
-  },
-  {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 46.09397,
-   "lon": -122.93187,
-   "sog_kn": 9.1,
-   "cog": 300.6,
-   "heading": 301,
-   "nav_status": 12,
-   "updated": "2026-11-05 05:04:38.886047751 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.64855,
-   "lon": -122.74546,
-   "sog_kn": 1.7,
-   "cog": 291.7,
-   "heading": 90,
-   "nav_status": 12,
-   "updated": "2026-11-05 05:04:42.217836758 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 181.2,
-   "heading": 127,
-   "nav_status": 15,
-   "updated": "2026-11-05 05:04:48.18329759 +0000 UTC"
+   "updated": "2026-11-05 05:09:53.680881914 +0000 UTC"
   },
   {
    "mmsi": 352006380,
    "name": "CL KIBOU",
-   "lat": 45.60093,
-   "lon": -122.77382,
-   "sog_kn": 0,
-   "cog": 150.6,
-   "heading": 276,
-   "nav_status": 5,
-   "updated": "2026-11-05 05:04:48.938403886 +0000 UTC"
+   "lat": 45.60094,
+   "lon": -122.77377,
+   "type_code": 70,
+   "destination": "US PBG > US PDX",
+   "updated": "2026-11-05 05:09:57.944576373 +0000 UTC"
   },
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 46.1594,
-   "lon": -123.06829,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-05 05:04:48.952749537 +0000 UTC"
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.13783,
+   "lon": -123.38009,
+   "sog_kn": 4.2,
+   "cog": 128.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-05 05:09:57.94649943 +0000 UTC"
   }
  ]
 }
