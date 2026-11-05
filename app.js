@@ -8,7 +8,7 @@
        — ODOT TripCheck, WSDOT, the Wahkiakum ferry page, CivicPlus city
        calendars, AISStream — plus aircraft, because every keyless ADS-B API
        blocks browser CORS. Snapshot panels always show their fetched time.
-   Every panel fails independently. No tracking, no backend. */
+   Every panel fails independently. No backend. */
 'use strict';
 
 /* ---------- config ---------- */
@@ -1263,7 +1263,7 @@ initBriefing();
 
 /* ---------- my town: the page tunes itself around where you live ----------
    Phase 1 is a daily habit, and habits are personal. Pick a home town once
-   (stored only in this browser — no account, nothing sent anywhere) and the
+   (kept in this browser's local storage) and the
    forecast opens on it, the map starts there, that town's calendar events
    wear a 📍 badge, and the at-a-glance strip prefers its next event. */
 const HOME_KEY = 'ccl-home-town-v1';
@@ -1316,7 +1316,7 @@ function renderHome() {
 function renderHomePicker() {
   const body = $('home-body');
   if (!body) return;
-  body.innerHTML = '<p class="card-note">Where\'s home? Pick your town once and this page remembers — only in your browser, nothing sent anywhere — and tunes itself around you: your forecast first, your town on the map, your town\'s events badged, its next event preferred up top.</p>'
+  body.innerHTML = '<p class="card-note">Where\'s home? Pick your town once and this page remembers, and tunes itself around you: your forecast first, your town on the map, your town\'s events badged, its next event preferred up top.</p>'
     + '<div class="home-chips">' + TOWNS.map(t =>
         '<button class="home-chip' + (homeTown && homeTown.name === t.name ? ' active' : '')
         + '" type="button" data-home-town="' + esc(t.name) + '">' + esc(t.name) + '</button>').join('') + '</div>'
@@ -1613,8 +1613,8 @@ initPlan();
 // the official event page — so the visitor's own phone calendar becomes
 // the reminder system: it pings them the day of the library storytime or
 // the council meeting, and every ping is a reason this page exists.
-// Nothing is uploaded, tracked, or stored anywhere; the file is generated
-// in the browser from the same snapshot the card renders. Cancelled
+// The file is generated in the browser from the same snapshot the card
+// renders. Cancelled
 // events get no button — adding a cancelled meeting to your calendar is
 // a trap, not a feature. The calendar block is set to one hour and the
 // file says so honestly, pointing at the official page for the real end
@@ -1797,10 +1797,9 @@ initEvCal();
    same rendered panel state the text briefing reads — weather alerts
    first, by name; anything not yet loaded is skipped, never invented; a
    failed alerts feed is announced out loud, not hidden. Speech uses the
-   phone's own built-in voice (SpeechSynthesis): free, on-device, nothing
-   recorded and nothing sent anywhere. Each composed line is its own short
-   utterance, which also dodges the long-utterance cutoffs some browsers
-   impose. The button only appears where the browser can actually speak —
+   phone's own built-in voice (SpeechSynthesis). Each composed line is
+   its own short utterance, which also dodges the long-utterance cutoffs
+   some browsers impose. The button only appears where the browser can actually speak —
    the same progressive-enhancement rule as the share button. */
 let voiceOn = false;
 let voiceSession = 0;
@@ -2094,7 +2093,7 @@ initTides();
    crossings peaking at 20° or higher are listed — high enough to clear
    a forested county's treeline. Everything degrades honestly: no
    library or no orbit data means a plain fallback line and the live
-   position above keeps working. $0, keyless, nothing tracked. */
+   position above keeps working. $0, keyless. */
 const PASS_TLE_KEY = 'ccl-iss-tle-v1';
 const PASS_TLE_JSON = 'https://tle.ivanstanojevic.me/api/tle/25544';
 const PASS_TLE_TEXT = 'https://celestrak.org/NORAD/elements/gp.php?CATNR=25544&FORMAT=TLE';
@@ -2317,7 +2316,7 @@ initPasses();
    Z — with the miss-it boat after it, an honest tight/no-more-boats
    state, and full deference to a posted closure alert, the countdown's
    own rule. Drive times are labeled typicals and the cushion is stated
-   in the open on the card. Choices live only in this browser. */
+   in the open on the card. */
 const FP_KEY = 'ccl-ferry-plan-v1';
 const FP_BUFFER = 10;   // minutes at the dock: parking, fares, loading
 const FP_CROSS = 15;    // the crossing itself, roughly
@@ -2874,8 +2873,8 @@ initWall();
    device notification where the browser offers one, a spoken line if the
    visitor opted in, and a permanent line in the on-page log. Clearances
    are logged, never announced. Failed polls skip their signal and keep
-   the older baseline — the R1 per-signal rule. Nothing leaves the
-   browser; the only state is the on/off + voice choice in localStorage. */
+   the older baseline — the R1 per-signal rule. The only state is the
+   on/off + voice choice in localStorage. */
 const WATCH_KEY = 'ccl-watch-v1';
 const WATCH_POLL_MS = 2 * 60 * 1000;
 let watchTimer = null;
@@ -3054,7 +3053,7 @@ initWatch();
    Twenty-three rounds made the page deep; this makes the depth findable.
    Indexes every card (plain-language keywords), all seven towns (jump +
    switch the forecast), and every event on the calendars (jump + flash the
-   exact row). Client-side only — nothing typed leaves the device. */
+   exact row). The index is built client-side. */
 const FINDER_SECTIONS = [
   { id: 'map',           title: 'Live map',                  sub: 'Radar, planes, ships, fires, the ISS — on one map', keys: 'map radar layers explore' },
   { id: 'roads-card',    title: 'US-30, the Bridge & Roads', sub: 'Commute verdict, bridge status, incidents, cameras', keys: 'bridge road highway us-30 commute drive driving closure closed traffic longview cameras detour cornelius pass' },
@@ -3411,7 +3410,7 @@ initAir();
    their official sources — what translates is everything this page itself
    says. Dynamic labels a module rewrites as state changes (the watch
    button, the listen button mid-speech) may land back in English; the
-   static chrome never does. No feed, no key, no library, no tracking. */
+   static chrome never does. No feed, no key, no library. */
 const LANG_KEY = 'ccl-lang-v1';
 const LANG_ES = {
   __title: 'Columbia County Live — Carreteras, ríos, clima y ferry para el condado de Columbia, Oregón',
@@ -3446,13 +3445,13 @@ const LANG_ES = {
   glriver: '🌊 Río Columbia',
   glriversub: 'Medidor de Port Westward · USGS',
   glevents: '📅 Próximo evento',
-  finderhint: 'Una sola búsqueda en todas las tarjetas de esta página, los siete pueblos y los calendarios de eventos — toca un resultado y la página te lleva directo. Nada de lo que escribes sale de tu teléfono.',
+  finderhint: 'Una sola búsqueda en todas las tarjetas de esta página, los siete pueblos y los calendarios de eventos — toca un resultado y la página te lleva directo.',
   homeh2: '🏠 Hazlo tuyo',
   sinceh2: '🧭 Mientras no estabas',
   watchh2: '🔔 La Vigilancia del Condado',
   watchnote: 'Todo lo demás en esta página espera a que vengas a mirar. La vigilancia no. Deja esta página abierta — en una pestaña, instalada en tu pantalla de inicio o en la pared — y revisa el Servicio Meteorológico Nacional, el puente y el ferry cada dos minutos. Si se publica una alerta nueva, el puente cierra o el ferry anuncia algo mientras no estás mirando, te avisa: una notificación en este dispositivo donde el navegador las ofrece, una línea en el registro de abajo y — si marcas la casilla — dice las alertas nuevas en voz alta.',
   watchbtn: '🔔 Empezar a vigilar',
-  watchlimits: 'Límites honestos: la vigilancia solo funciona mientras esta página está abierta en este dispositivo — cerrar la pestaña la detiene, y un teléfono puede pausar una pestaña en segundo plano. Es una ayuda, nunca un reemplazo del Servicio Meteorológico Nacional, la Radio Meteorológica de NOAA ni las alertas de emergencia del condado de Columbia. Nada se rastrea ni se envía a ninguna parte; tus opciones viven solo en este navegador.',
+  watchlimits: 'Límites honestos: la vigilancia solo funciona mientras esta página está abierta en este dispositivo — cerrar la pestaña la detiene, y un teléfono puede pausar una pestaña en segundo plano. Es una ayuda, nunca un reemplazo del Servicio Meteorológico Nacional, la Radio Meteorológica de NOAA ni las alertas de emergencia del condado de Columbia.',
   briefh2: '📋 El Resumen del Condado',
   briefnote: 'Las respuestas de hoy en una sola nota lista para copiar — armada desde los paneles en vivo de esta página y marcada con la hora en que se preparó. Pégala en un mensaje familiar, en el grupo del vecindario, donde se reúna el condado. ¿Vas a manejar? Toca <strong>🔊 Escuchar el resumen</strong> y tu teléfono te lo lee en voz alta — primero las alertas del clima.',
   briefcopy: '📋 Copiar el resumen',
@@ -3496,7 +3495,7 @@ const LANG_ES = {
   evtoday: 'Hoy',
   evweekend: 'Este fin de semana',
   evweek: 'Próximos 7 días',
-  evcalnote: '¿Vas a ir? Toca <strong>＋ Agregar</strong> en cualquier evento y llega a tu propio calendario — con la hora convertida y la página oficial adjunta — para que tu teléfono te lo recuerde el mismo día. Nada se guarda aquí.',
+  evcalnote: '¿Vas a ir? Toca <strong>＋ Agregar</strong> en cualquier evento y llega a tu propio calendario — con la hora convertida y la página oficial adjunta — para que tu teléfono te lo recuerde el mismo día.',
   eventsnote: "Recogido por nuestro recolector de los calendarios oficiales de las ciudades. Fuentes oficiales: <a href=\"https://www.sthelensoregon.gov/calendar.aspx\" target=\"_blank\" rel=\"noopener\">St. Helens</a> · <a href=\"https://www.scappoose.gov/calendar.aspx\" target=\"_blank\" rel=\"noopener\">Scappoose</a> · <a href=\"https://www.columbiacountyor.gov/calendar\" target=\"_blank\" rel=\"noopener\">Condado de Columbia</a>",
   alertsh2: '⚠️ Alertas del clima',
   alertslink: 'Servicio Meteorológico Nacional — oficina de Portland →',
@@ -4259,7 +4258,7 @@ initPrint();
    checked the verdict caps below its best band and the row says why;
    every bonus source declines in its own row rather than dressing up.
    Refreshes every 30 minutes, re-renders every minute, follows the
-   home town like the passes do. No key, no images, no tracking. */
+   home town like the passes do. No key, no images. */
 const DARK_KP_URL = 'https://services.swpc.noaa.gov/products/noaa-planetary-k-index-forecast.json';
 const DARK_SHOWERS = [
   { name: 'Quadrantids',    m: 1,  d: 3,  zhr: 60 },
@@ -4495,7 +4494,7 @@ initDark();
    holds the card, then scrolls and flashes as it always did. The Leaflet
    gotcha is handled here too: the map is built while its view may be
    hidden, so every switch to Travel calls invalidateSize(). The last
-   view is remembered in this browser only (ccl-view-v1). */
+   view is remembered (ccl-view-v1). */
 const VIEW_KEY = 'ccl-view-v1';
 const VIEW_IDS = ['today', 'travel', 'outdoors', 'more'];
 let cclViewCur = 'today';
