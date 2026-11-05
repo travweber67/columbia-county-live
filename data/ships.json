@@ -1,49 +1,18 @@
 {
- "fetched_at": "2026-11-05T08:09:41Z",
+ "fetched_at": "2026-11-05T08:14:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.07528,
-   "lon": -122.89724,
-   "sog_kn": 0.2,
-   "cog": 112.1,
-   "heading": 204,
+   "lat": 46.0791,
+   "lon": -122.89438,
+   "sog_kn": 5.9,
+   "cog": 318.6,
+   "heading": 316,
    "nav_status": 0,
-   "updated": "2026-11-05 08:09:48.740697975 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.38549,
-   "sog_kn": 0,
-   "cog": 0.8,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-05 08:09:49.613917657 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 46.09084,
-   "lon": -122.93202,
-   "sog_kn": 0,
-   "cog": 238.3,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-05 08:09:56.777873529 +0000 UTC"
-  },
-  {
-   "mmsi": 352006380,
-   "name": "CL KIBOU",
-   "lat": 45.60105,
-   "lon": -122.77511,
-   "type_code": 70,
-   "destination": "US PBG > US PDX",
-   "updated": "2026-11-05 08:09:56.810799212 +0000 UTC"
+   "updated": "2026-11-05 08:14:48.392354622 +0000 UTC"
   },
   {
    "mmsi": 367669550,
@@ -51,38 +20,102 @@
    "lat": 46.17719,
    "lon": -123.35743,
    "type_code": 30,
-   "updated": "2026-11-05 08:10:03.85241534 +0000 UTC"
-  },
-  {
-   "mmsi": 538006508,
-   "name": "RED COSMOS",
-   "lat": 45.62664,
-   "lon": -122.78804,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-05 08:10:11.116232359 +0000 UTC"
+   "updated": "2026-11-05 08:14:49.590157697 +0000 UTC"
   },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 46.1697,
-   "lon": -123.22152,
-   "sog_kn": 1.7,
-   "cog": 50.5,
-   "heading": 59,
-   "nav_status": 3,
-   "updated": "2026-11-05 08:10:12.310374877 +0000 UTC"
+   "lat": 46.17138,
+   "lon": -123.21852,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-05 08:14:51.210091881 +0000 UTC"
   },
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00911,
-   "lon": -122.84814,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40233,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 134,
+   "nav_status": 0,
+   "updated": "2026-11-05 08:14:54.370465348 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10357,
+   "lon": -122.91014,
+   "sog_kn": 0,
+   "cog": 83.5,
+   "heading": 76,
+   "nav_status": 3,
+   "updated": "2026-11-05 08:14:54.53812887 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64348,
+   "lon": -122.7528,
+   "sog_kn": 0,
+   "cog": 253.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-05 08:14:55.735127953 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.044,
+   "lon": -122.87692,
+   "sog_kn": 0,
+   "cog": 125.2,
+   "heading": 180,
+   "nav_status": 5,
+   "updated": "2026-11-05 08:14:57.951167995 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.09994,
+   "lon": -122.94932,
+   "sog_kn": 2,
+   "cog": 112.5,
+   "heading": 118,
+   "nav_status": 3,
+   "updated": "2026-11-05 08:15:00.369388696 +0000 UTC"
+  },
+  {
+   "mmsi": 352986134,
+   "name": "TAC SUZUKA",
+   "lat": 45.6392,
+   "lon": -122.7779,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-05 08:15:01.709763858 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00884,
+   "lon": -122.84879,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-05 08:10:14.731857739 +0000 UTC"
+   "updated": "2026-11-05 08:15:06.596890561 +0000 UTC"
+  },
+  {
+   "mmsi": 367719170,
+   "name": "RYAN POINT",
+   "lat": 45.65095,
+   "lon": -122.76607,
+   "sog_kn": 6.1,
+   "cog": 212.2,
+   "heading": 210,
+   "nav_status": 12,
+   "updated": "2026-11-05 08:15:14.532403258 +0000 UTC"
   }
  ]
 }
