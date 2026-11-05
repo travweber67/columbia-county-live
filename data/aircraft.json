@@ -1,37 +1,67 @@
 {
- "fetched_at": "2026-11-05T02:36:27Z",
+ "fetched_at": "2026-11-05T03:06:28Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
-   "hex": "aa5691",
-   "callsign": "UAL1799",
+   "hex": "a72e69",
+   "callsign": "ASA1386",
    "type": "B738",
-   "alt_ft": 3075,
-   "gs_kn": 217.1,
-   "track": 12.5,
-   "lat": 45.634367,
-   "lon": -122.899796
+   "alt_ft": 36175,
+   "gs_kn": 421.1,
+   "track": 178.78,
+   "lat": 46.103148,
+   "lon": -123.376534
   },
   {
-   "hex": "a48307",
-   "callsign": "ABX414",
-   "type": "B763",
-   "alt_ft": 17825,
-   "gs_kn": 404.5,
-   "track": 352.47,
-   "lat": 46.234406,
-   "lon": -122.705294
+   "hex": "a6157b",
+   "callsign": "N491TC",
+   "type": "DA40",
+   "alt_ft": 1200,
+   "gs_kn": 89.9,
+   "track": 81.69,
+   "lat": 45.757777,
+   "lon": -122.837517
   },
   {
-   "hex": "a28336",
-   "callsign": "FDX1216",
-   "type": "B763",
-   "alt_ft": "ground",
-   "gs_kn": 8.8,
-   "track": null,
-   "lat": 45.594864,
-   "lon": -122.621523
+   "hex": "a35649",
+   "callsign": "N314GF",
+   "type": "P46T",
+   "alt_ft": 5325,
+   "gs_kn": 203.3,
+   "track": 356.9,
+   "lat": 45.90977,
+   "lon": -122.817604
+  },
+  {
+   "hex": "a9b70e",
+   "callsign": "TDY1288",
+   "type": "PC12",
+   "alt_ft": 15800,
+   "gs_kn": 253.8,
+   "track": 350.02,
+   "lat": 46.187641,
+   "lon": -122.70211
+  },
+  {
+   "hex": "ad237c",
+   "callsign": "ASA1340",
+   "type": "B39M",
+   "alt_ft": 28225,
+   "gs_kn": 469.9,
+   "track": 350.2,
+   "lat": 46.085724,
+   "lon": -122.674948
+  },
+  {
+   "hex": "a8a82f",
+   "callsign": "QXE2316",
+   "type": "E75L",
+   "alt_ft": 22000,
+   "gs_kn": 390.8,
+   "track": 350.13,
+   "lat": 46.047363,
+   "lon": -122.665837
   },
   {
    "hex": "a1087a",
@@ -40,8 +70,8 @@
    "alt_ft": "ground",
    "gs_kn": 0.0,
    "track": null,
-   "lat": 45.5793,
-   "lon": -122.610252
+   "lat": 45.579296,
+   "lon": -122.610254
   }
  ]
 }
