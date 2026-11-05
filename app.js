@@ -1382,7 +1382,7 @@ function currentsUrl() {
   const base = Date.UTC(parts[0], parts[1] - 1, parts[2]);
   return 'https://api.tidesandcurrents.noaa.gov/api/prod/datagetter'
     + '?begin_date=' + tideYmd(base - DAY_MS)
-    + '&end_date=' + tideYmd(base + 3 * DAY_MS)
+    + '&end_date=' + tideYmd(base + 6 * DAY_MS)
     + '&station=' + CURRENT_STATION.id
     + '&product=currents_predictions&datum=MLLW&time_zone=lst_ldt'
     + '&interval=MAX_SLACK&units=english'
@@ -1859,6 +1859,32 @@ async function shForecastPeriods(anchor) {
   return periods;
 }
 
+/* Forecast rain for a future day, shaped like the fetcher's measured
+   basin read: p24 = the QPF total for the target Pacific day itself,
+   p72 = the target day plus the two before it (the windows END with
+   the target day, so the rain expected ON that day counts toward its
+   state — by midday it is part of the river). Returns null when the
+   hourly forecast carries no QPF values in the window at all, so the
+   caller can decline honestly instead of inventing rain. */
+function shForecastRain(periods, keys) {
+  if (!periods || !periods.length) return null;
+  let p24 = 0, p72 = 0, cov = 0, inWindow = 0;
+  periods.forEach(p => {
+    const pp = shPtParts(new Date(p.startTime));
+    const idx = keys.indexOf(pp.year + '-' + pp.month + '-' + pp.day);
+    if (idx < 0) return;
+    inWindow++;
+    const q = p.quantitativePrecipitation
+      && p.quantitativePrecipitation.value;
+    if (q == null) return;
+    cov++;
+    p72 += q / 25.4;
+    if (idx === 2) p24 += q / 25.4;
+  });
+  if (!inWindow || !cov) return null;
+  return { p24_in: p24, p72_in: p72 };
+}
+
 function shDayWeather(periods, targetKey) {
   const day = periods.filter(p => {
     const pp = shPtParts(new Date(p.startTime));
@@ -1896,11 +1922,29 @@ function shStatFor(stats, site, md) {
   return (stats && stats[site]) ? stats[site][md] : null;
 }
 function shRiverResult(river, ctx, env, fossAnalysis) {
+  const fc = !!ctx.forecast;
   const basin = env.snap && env.snap.basins ? env.snap.basins[river.basin] : null;
   const rainFlow = shRainFlow(basin);
   const timing = shTiming(river, ctx.md);
   let flow = null, flowLine = '', daysSincePeak = rainFlow ? rainFlow.daysSincePeak : 3;
-  if (river.kind === 'gauge') {
+  if (fc) {
+    /* Forecast mode (the answer card's days +2..+4): nothing about
+       that day is measured, so flow for EVERY river kind — gauged
+       included, there is no measured future flow — comes from the
+       synthetic forecast basin through the same shRainFlow mapping
+       the ungauged creeks use. The weights below (clarity, freeze,
+       weather, timing, the base formula) are the index's own,
+       untouched; only the inputs are forecast, and the lines say so. */
+    if (rainFlow) {
+      flow = { state: rainFlow.state, score: rainFlow.score };
+      flowLine = 'Flow \u2014 forecast read: no gauge can measure a day that has not happened, so the rain expected over the basin runs through the same rain-to-river read the ungauged creeks use \u2014 '
+        + rainFlow.p24.toFixed(2) + ' in in 24 h, ' + rainFlow.p72.toFixed(2)
+        + ' in in 72 h through that day: ' + rainFlow.state + '. Forecast estimate.';
+    } else {
+      flow = { state: 'unknown', score: 12 };
+      flowLine = 'Flow \u2014 the forecast feed carried no rain amounts for that day, so the river part of this call leans on timing and weather alone.';
+    }
+  } else if (river.kind === 'gauge') {
     const g = env.gauges[river.gauge] ? shAnalyzeGauge(
       env.gauges[river.gauge]['00060'], shStatFor(env.stats, river.gauge, ctx.md),
       river.hardLowQ || null) : null;
@@ -1951,10 +1995,17 @@ function shRiverResult(river, ctx, env, fossAnalysis) {
   if (flow.score <= 17) clarityScore = Math.min(clarityScore, 16); /* low water: even green water fishes hard */
   if (flow.state === 'rising') clarityScore = Math.min(clarityScore, 20);
   const clarityLine = clarity
-    ? 'Clarity \u2014 ' + clarity.band + ' (estimate). Modeled from basin rain, how long since the river peaked, '
-      + 'and this creek\u2019s clearing speed' + (basin && basin.first_flush
-        ? '; this is the season\u2019s first big rain after a dry spell, which dirties the water longest' : '') + '.'
-    : 'Clarity \u2014 no basin-rain data this time, so clarity is not scored.';
+    ? (fc
+      ? 'Clarity \u2014 forecast ' + clarity.band + ' (estimate). Modeled from the rain expected over the basin '
+        + 'and this creek\u2019s clearing speed \u2014 a forecast read, not measured water'
+        + (basin && basin.first_flush
+          ? '; this is the season\u2019s first big rain after a dry spell, which dirties the water longest' : '') + '.'
+      : 'Clarity \u2014 ' + clarity.band + ' (estimate). Modeled from basin rain, how long since the river peaked, '
+        + 'and this creek\u2019s clearing speed' + (basin && basin.first_flush
+          ? '; this is the season\u2019s first big rain after a dry spell, which dirties the water longest' : '') + '.')
+    : (fc
+      ? 'Clarity \u2014 no forecast rain data for that day, so clarity is not scored.'
+      : 'Clarity \u2014 no basin-rain data this time, so clarity is not scored.');
 
   const periods = env.forecasts[river.anchor.key];
   const wx = periods ? shDayWeather(periods, ctx.key) : null;
@@ -2055,6 +2106,30 @@ function shRiverResult(river, ctx, env, fossAnalysis) {
   return { html, verdict, why, dawnTxt };
 }
 
+/* The forecast-mode env for one river and one future day: a copy of
+   env whose basin entry for this river is synthetic — p24/p72 built
+   from the NWS hourly QPF at the river's anchor over the three
+   Pacific days ending with the target day (shForecastRain). Gauges,
+   stats and forecasts pass through, but shRiverResult's forecast
+   branch never reads the measured gauges. first_flush carries over
+   from the measured basin: it is a property of the rain EVENT — if
+   the season's first-flush storm is the one in the forecast window,
+   its extra dirtiness belongs in the future call too. */
+function shForecastEnv(river, off, env, ctxFor) {
+  const periods = env.forecasts[river.anchor.key];
+  const keys = [off - 2, off - 1, off].map(o => ctxFor(o).key);
+  const rain = shForecastRain(periods, keys);
+  const ob = env.snap && env.snap.basins
+    ? env.snap.basins[river.basin] : null;
+  const basins = Object.assign({}, env.snap && env.snap.basins);
+  basins[river.basin] = rain
+    ? { p24_in: rain.p24_in, p72_in: rain.p72_in,
+        first_flush: !!(ob && ob.first_flush) }
+    : null;
+  return { snap: Object.assign({}, env.snap, { basins }),
+    gauges: env.gauges, stats: env.stats, forecasts: env.forecasts };
+}
+
 async function loadSteelhead() {
   const rowsEl = $('steelhead-rows');
   if (!rowsEl) return;
@@ -2112,6 +2187,20 @@ async function loadSteelhead() {
       byDay[off][river.id] = shRiverResult(river, ctx, env, foss);
     });
   });
+  /* Days +2..+4 exist only as forecast calls, for the answer card:
+     the same index, run in forecast mode (ctx.forecast) on forecast
+     inputs — NWS rain amounts through the rain-to-river mapping for
+     flow and clarity, the same day's forecast for cold and weather,
+     the calendar for timing. The index card itself keeps rendering
+     its own measured day (today/tomorrow), exactly as before. */
+  [2, 3, 4].forEach(off => {
+    const ctx = Object.assign(ctxFor(off), { forecast: true });
+    byDay[off] = {};
+    SH_RIVERS.forEach(river => {
+      byDay[off][river.id] = shRiverResult(river, ctx,
+        shForecastEnv(river, off, env, ctxFor), null);
+    });
+  });
   shByDay = byDay;
   const cards = SH_RIVERS.map(r => byDay[targetOffset][r.id].html);
 
@@ -2150,7 +2239,23 @@ async function loadSteelhead() {
    day index's own verdict + why, verbatim. It is a summary of the
    evidence, never a new opinion, and never more optimistic than the
    cards it summarizes. Choices persist beside the home-town and
-   method prefs. */
+   method prefs.
+   5-DAY EXTENSION (2026-11-04, Travis: "there should be more than
+   just today or tomorrow — at least a 5 day pick"): WHEN now runs
+   Today..+4. Days +2..+4 are labeled outlooks, never measured fact.
+   Salmon: the same heatModel evaluated at the future date — counted
+   waves travel at the model's own measured pace, run bodies persist
+   while their Bonneville trend does — then the stretch score is
+   decayed ×0.8 per day beyond tomorrow (+2: 0.80, +3: 0.64, +4: 0.51)
+   before the same GOOD/FAIR/POOR thresholds, so a future verdict can
+   only ever be softer than today's evidence, never rosier. Steelhead:
+   the same index in forecast mode (shRiverResult ctx.forecast) —
+   forecast rain through the rain-to-river mapping for flow/clarity,
+   that day's NWS forecast for cold/weather, the calendar for timing.
+   Both wear a Forecast/Outlook tag beside the pill, and their why
+   sentences carry the framing in words. Best windows for +2..+4 come
+   from the same day plan (NOAA current predictions are fetched six
+   days out for exactly this). */
 const PICK_KEY = 'ccl-fish-pick-v1';
 const SALMON_STRETCHES = [
   { id: 'downriver', label: 'Downriver — Rainier to the mouth', lo: 30, hi: 75 },
@@ -2170,7 +2275,7 @@ try {
     if (saved.sp === 'salmon' || saved.sp === 'steelhead') fishPick.sp = saved.sp;
     if (SALMON_STRETCHES.some(s => s.id === saved.stretch)) fishPick.stretch = saved.stretch;
     if (SH_RIVERS.some(r => r.id === saved.river)) fishPick.river = saved.river;
-    if (saved.day === 0 || saved.day === 1) fishPick.day = saved.day;
+    if (Number.isInteger(saved.day) && saved.day >= 0 && saved.day <= 4) fishPick.day = saved.day;
   }
 } catch (e) { /* private mode: defaults */ }
 function saveFishPick() {
@@ -2191,6 +2296,24 @@ function pickRiver() {
     || SH_RIVERS.find(r => r.id === home)
     || SH_RIVERS[1];
 }
+const PICK_WD_EN = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const PICK_WD_ES = ['dom', 'lun', 'mar', 'mi\u00e9', 'jue', 'vie', 's\u00e1b'];
+const PICK_WD_FULL = ['Sunday', 'Monday', 'Tuesday', 'Wednesday',
+  'Thursday', 'Friday', 'Saturday'];
+function pickDayParts(k) {
+  const p = almPtDate(k);   /* Pacific {y, m (0-based), d} for today+k */
+  return { p, wd: new Date(Date.UTC(p.y, p.m, p.d)).getUTCDay() };
+}
+function pickDayLabel(k) {
+  const es = langCur === 'es';
+  if (k === 0) return es ? 'Hoy' : 'Today';
+  if (k === 1) return es ? 'Ma\u00f1ana' : 'Tomorrow';
+  const { p, wd } = pickDayParts(k);
+  return (es ? PICK_WD_ES : PICK_WD_EN)[wd] + ' ' + p.d;
+}
+function pickDayName(k) {
+  return PICK_WD_FULL[pickDayParts(k).wd];
+}
 function pickChip(kind, val, label, active) {
   return '<button type="button" class="plan-chip pick-chip'
     + (active ? ' active' : '') + '" data-pick="' + kind
@@ -2206,8 +2329,9 @@ function renderPickChips() {
         pickStretch().id === s.id)).join('')
     : SH_RIVERS.map(r => pickChip('where', r.id, esc(r.name),
         pickRiver().id === r.id)).join('');
-  dy.innerHTML = pickChip('day', '0', 'Today', fishPick.day === 0)
-    + pickChip('day', '1', 'Tomorrow', fishPick.day === 1);
+  dy.innerHTML = [0, 1, 2, 3, 4].map(k =>
+    pickChip('day', String(k), pickDayLabel(k), fishPick.day === k)
+  ).join('');
   [sp, wh, dy].forEach(wrap => {
     wrap.querySelectorAll('.pick-chip').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -2230,6 +2354,58 @@ function stretchScore(model, stretch) {
     if (c >= stretch.lo && c <= stretch.hi) { sum += s; n++; }
   });
   return n ? sum / n : 0;
+}
+/* The +2..+4 salmon why: an outlook built only from today's counts.
+   A counted wave whose projected band — the model's own kernel,
+   Bonneville + the measured pace, widening as it travels — overlaps
+   the stretch that day names the fish to plan on. Otherwise the run
+   body is the story: the driver run still passing Bonneville, whose
+   trailing fish keep moving through the lower river for days. If
+   neither adds up, the sentence says so plainly. */
+function salmonOutlookWhy(model, stretch, rating) {
+  const dayName = pickDayName(fishPick.day);
+  const target = new Date(ptTodayDate().getTime()
+    + fishPick.day * DAY_MS);
+  const pace = (fishData.model || {}).pace_mi_per_day || [13, 26];
+  const mid = (pace[0] + pace[1]) / 2, spread = (pace[1] - pace[0]) / 2;
+  let waveHit = null;
+  (fishData.waves || []).forEach(w => {
+    const dt = Math.round((target - isoDay(w.date)) / DAY_MS);
+    if (dt < 0) return;
+    const center = 146 + mid * dt, halfW = Math.max(9, spread * dt);
+    if (center - halfW <= stretch.hi && center + halfW >= stretch.lo
+        && (!waveHit || w.count > waveHit.count)) waveHit = w;
+  });
+  const d = model.driver;
+  if (waveHit && rating !== 'POOR') {
+    return 'From today\u2019s counts, the ' + spLabel(waveHit.species)
+      + ' surge counted at Bonneville on ' + fmtMD(isoDay(waveHit.date))
+      + ' is moving up at the measured pace and reaches your stretch'
+      + ' around ' + dayName + ' \u2014 that\u2019s the fish to plan on.'
+      + ' The further out the call, the softer it gets.';
+  }
+  if (d && rating !== 'POOR') {
+    return 'Outlook from today\u2019s counts: the ' + d.label
+      + ' run is passing Bonneville at about '
+      + num(Math.round(d.trend.avg3)) + ' a day lately, ' + d.trend.word
+      + ' \u2014 the body of that run should still be moving through your'
+      + ' stretch on ' + dayName
+      + (d.timing && d.timing.pct_past_typical >= 90
+        ? ', though it\u2019s late in the run \u2014 about '
+          + d.timing.pct_past_typical + '% has passed Bonneville by'
+          + ' now in a typical year' : '')
+      + '. The further out the call, the softer it gets.';
+  }
+  if (d) {
+    return 'Outlook from today\u2019s counts: nothing in the pipe adds'
+      + ' up for your stretch by ' + dayName + ' \u2014 the latest '
+      + d.label + ' count was ' + num(d.trend.latest)
+      + ' at Bonneville on ' + fmtMD(d.trend.latestDate) + ', '
+      + d.trend.word + '.';
+  }
+  return 'Outlook from today\u2019s counts: no run is moving that the'
+    + ' dam counts can see \u2014 nothing reaches your stretch by '
+    + dayName + '.';
 }
 /* The day's best window, straight off the day plan's own segments:
    the saved method's strongest water when the angler has picked one,
@@ -2260,13 +2436,22 @@ function renderFishAnswer() {
       return;
     }
     const model = heatModel(fishData, fishPick.day);
-    const rating0 = stretchScore(model, pickStretch());
+    let rating0 = stretchScore(model, pickStretch());
+    if (fishPick.day >= 2) {
+      /* Outlook decay: ×0.8 per day beyond tomorrow (+2: 0.80,
+         +3: 0.64, +4: 0.51), applied to the stretch score BEFORE the
+         tracker's own GOOD/FAIR thresholds — distance can only
+         soften the call, never sharpen it. */
+      rating0 *= Math.pow(0.8, fishPick.day - 1);
+    }
     const rating = rating0 >= 0.45 ? 'GOOD' : rating0 >= 0.18 ? 'FAIR' : 'POOR';
     pill = rating;
     pillCls = rating === 'GOOD' ? 'pill-good'
       : rating === 'FAIR' ? 'pill-fair' : 'pill-poor';
     const d = model.driver;
-    if (d && rating !== 'POOR') {
+    if (fishPick.day >= 2) {
+      why = salmonOutlookWhy(model, pickStretch(), rating);
+    } else if (d && rating !== 'POOR') {
       why = 'The ' + d.label + ' run is the story — '
         + num(d.trend.latest) + ' counted at Bonneville on '
         + fmtMD(d.trend.latestDate) + ', about '
@@ -2303,13 +2488,22 @@ function renderFishAnswer() {
       : res.verdict === 'Fair day' ? 'FAIR' : 'POOR';
     pillCls = pill === 'GOOD' ? 'pill-good'
       : pill === 'FAIR' ? 'pill-fair' : 'pill-poor';
-    why = res.why;
+    why = fishPick.day >= 2
+      ? 'Early call from the forecast \u2014 '
+        + res.why.charAt(0).toLowerCase() + res.why.slice(1)
+      : res.why;
     if (res.dawnTxt && pill !== 'POOR') {
       windowTxt = 'Best shot: first light · ' + res.dawnTxt;
     }
   }
+  const fcTag = fishPick.day >= 2
+    ? '<span class="pick-fc-tag">' + (fishPick.sp === 'salmon'
+      ? (langCur === 'es' ? 'Perspectiva' : 'Outlook')
+      : (langCur === 'es' ? 'Pron\u00f3stico' : 'Forecast')) + '</span>'
+    : '';
   body.innerHTML = '<div class="pick-answer"><span class="verdict-pill '
     + pillCls + '">' + pill + '</span><div class="pick-answer-main">'
+    + fcTag
     + '<p class="pick-why">' + esc(why) + '</p>'
     + (windowTxt
       ? '<p class="pick-window">' + esc(windowTxt) + '</p>' : '')
@@ -5459,6 +5653,12 @@ function langApply(lang) {
 function langSet(lang) {
   langApply(lang);
   try { window.localStorage.setItem(LANG_KEY, lang); } catch (e) { /* private mode: choice is session-only */ }
+  /* The answer card's day chips and forecast tag are localized chrome
+     rendered by JS — re-render them so the toggle reaches them too. */
+  if (typeof renderPickChips === 'function') {
+    renderPickChips();
+    renderFishAnswer();
+  }
 }
 function initLang() {
   let pref = null;

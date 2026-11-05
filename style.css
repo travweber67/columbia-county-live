@@ -994,6 +994,12 @@ h2{font-weight:700;letter-spacing:-.01em}
 #fishpick-body{padding-top:14px}
 .pick-answer{display:flex;gap:14px;align-items:flex-start}
 .pick-answer-main{flex:1;min-width:0}
+.pick-fc-tag{
+  display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--accent-2);
+  border:1px solid var(--accent-2);border-radius:999px;padding:2px 8px;
+  margin:2px 0 7px;
+}
 .pick-why{font-size:1.14rem;line-height:1.45;margin:0}
 .pick-window{font-size:1rem;font-weight:700;color:var(--accent-2);margin:7px 0 0}
 .pick-seewhy{
