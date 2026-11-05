@@ -1,62 +1,86 @@
 {
- "fetched_at": "2026-11-05T15:15:19Z",
+ "fetched_at": "2026-11-05T15:18:35Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.6129,
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.64301,
+   "lon": -122.77142,
    "sog_kn": 0,
-   "cog": 156.9,
-   "heading": 127,
-   "nav_status": 15,
-   "updated": "2026-11-05 15:15:28.16191586 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19996,
-   "lon": -123.3855,
-   "sog_kn": 0,
-   "cog": 292.6,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-05 15:15:30.718766606 +0000 UTC"
-  },
-  {
-   "mmsi": 311000824,
-   "name": "AFRICAN AVOCET",
-   "lat": 46.0986,
-   "lon": -122.94947,
-   "sog_kn": 0.2,
-   "cog": 170.4,
-   "heading": 125,
-   "nav_status": 0,
-   "updated": "2026-11-05 15:15:33.298839463 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00909,
-   "lon": -122.84831,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-05 15:15:34.078903525 +0000 UTC"
+   "cog": 103.3,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-05 15:19:12.819851933 +0000 UTC"
   },
   {
    "mmsi": 367496010,
    "name": "DELIVERANCE",
-   "lat": 46.07518,
-   "lon": -122.89064,
-   "sog_kn": 12.1,
-   "cog": 138.1,
+   "lat": 46.07533,
+   "lon": -122.89146,
+   "type_code": 69,
+   "updated": "2026-11-05 15:19:19.645543323 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 46.0962,
+   "lon": -122.93641,
+   "sog_kn": 11.3,
+   "cog": 305.4,
+   "heading": 309,
+   "nav_status": 12,
+   "updated": "2026-11-05 15:19:25.932207713 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10357,
+   "lon": -122.91014,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-05 15:19:30.552025973 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.10018,
+   "lon": -122.94077,
+   "sog_kn": 0,
+   "cog": 130.7,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-05 15:15:34.080152485 +0000 UTC"
+   "updated": "2026-11-05 15:19:35.73406353 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.38553,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-05 15:19:36.998178442 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.07831,
+   "lon": -122.9003,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-05 15:19:38.837086397 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.82106,
+   "lon": -122.82147,
+   "sog_kn": 7.4,
+   "cog": 57,
+   "heading": 52,
+   "nav_status": 12,
+   "updated": "2026-11-05 15:19:39.267446787 +0000 UTC"
   }
  ]
 }
