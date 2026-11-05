@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-05T17:00:29Z",
+ "fetched_at": "2026-11-05T17:05:28Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -17,6 +17,19 @@
  ],
  "incidents": [
   {
+   "title": "Traffic Impacts: Anticipate nighttime lane closures on the I-5 and I-205/OR217.",
+   "desc": "Project Description: This project improves system operations in the region by replacing and upgrading equipment that is beyond its service life. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=22867",
+   "impact": "No to Minimum Delay",
+   "place": "I-5, 1 mile South of Portland, Intersection with Victory Blvd",
+   "route": "I5",
+   "milepost": 306.0,
+   "lat": 45.58519,
+   "lon": -122.67975,
+   "start": "2026-09-09T13:52:01.003-07:00",
+   "updated": "2026-10-30T11:37:08-07:00",
+   "source": "ODOT TripCheck"
+  },
+  {
    "title": "Road construction is occurring. Prepare to slow. Watch for workers.",
    "desc": "This project will construct a roundabout at the intersection of OR 6 at Aerts Rd. Traffic is shifted to a diversion road during construction. Expect shoulder and lane closures as needed. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=OR6-Aerts",
    "impact": "Estimated delay under 20 minutes",
@@ -30,16 +43,16 @@
    "source": "ODOT TripCheck"
   },
   {
-   "title": "Traffic Impacts: Anticipate nighttime lane closures on the I-5 and I-205/OR217.",
-   "desc": "Project Description: This project improves system operations in the region by replacing and upgrading equipment that is beyond its service life. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=22867",
+   "title": "Road construction is occurring causing minimal delay to traffic. Use caution and watch for workers.",
+   "desc": "Timber felling is occurring, prepare to slow or stop. Watch for workers, use caution, and prepare to slow down in the work zone.",
    "impact": "No to Minimum Delay",
-   "place": "I-5, 1 mile South of Portland, Intersection with Victory Blvd",
-   "route": "I5",
-   "milepost": 306.0,
-   "lat": 45.58519,
-   "lon": -122.67975,
-   "start": "2026-09-09T13:52:01.003-07:00",
-   "updated": "2026-10-30T11:37:08-07:00",
+   "place": "ORE202, 5 miles North of Birkenfeld",
+   "route": "OR202",
+   "milepost": 36.0,
+   "lat": 45.98244,
+   "lon": -123.41492,
+   "start": "2026-11-03T15:57:01.297-08:00",
+   "updated": "2026-11-03T15:58:13-08:00",
    "source": "ODOT TripCheck"
   },
   {
@@ -119,22 +132,9 @@
    "start": "2026-08-14T05:14:54.54-07:00",
    "updated": "2026-10-30T08:36:57-07:00",
    "source": "ODOT TripCheck"
-  },
-  {
-   "title": "Road construction is occurring causing minimal delay to traffic. Use caution and watch for workers.",
-   "desc": "Timber felling is occurring, prepare to slow or stop. Watch for workers, use caution, and prepare to slow down in the work zone.",
-   "impact": "No to Minimum Delay",
-   "place": "ORE202, 5 miles North of Birkenfeld",
-   "route": "OR202",
-   "milepost": 36.0,
-   "lat": 45.98244,
-   "lon": -123.41492,
-   "start": "2026-11-03T15:57:01.297-08:00",
-   "updated": "2026-11-03T15:58:13-08:00",
-   "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 135,
+ "odot_active_statewide": 132,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
   "alerts": [
