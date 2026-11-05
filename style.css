@@ -944,41 +944,80 @@ h2{font-weight:700;letter-spacing:-.01em}
   .run-row{grid-template-columns:1fr}
   .run-state{grid-column:1}
 }
-.tracker-now{font-size:1.04rem;line-height:1.5;margin:2px 0 14px}
-.track-strip{
-  position:relative;height:86px;margin:26px 2px 4px;
-  background:linear-gradient(180deg,var(--panel-2),var(--panel-3));
-  border:1px solid var(--border);border-radius:12px;
+.verdict{display:flex;gap:14px;align-items:flex-start;margin:4px 0 14px}
+.verdict-pill{
+  flex:0 0 auto;font-weight:800;font-size:1.05rem;letter-spacing:.04em;
+  padding:8px 14px;border-radius:999px;margin-top:2px;
 }
-.track-county{
-  position:absolute;top:0;bottom:0;background:rgba(11,111,164,.10);
-  border-left:1px dashed rgba(11,111,164,.45);border-right:1px dashed rgba(11,111,164,.45);
+.pill-good{background:#c2540a;color:#fff}
+.pill-fair{background:var(--warm-fill);color:#15222f}
+.pill-slow{background:var(--panel-3);color:var(--muted)}
+.verdict-text{font-size:1.16rem;line-height:1.45;margin:0}
+.verdict-tomorrow{font-size:.98rem;margin:0 0 10px}
+.heat-wrap{position:relative;margin:10px 2px 0}
+.heat-row{display:flex;gap:1px;height:52px}
+.heat-bin{flex:1 1 0;border-radius:3px;min-width:0}
+.heat-county{
+  position:absolute;top:-5px;bottom:22px;pointer-events:none;z-index:2;
+  border:1.5px dashed rgba(11,111,164,.55);border-radius:8px;
 }
-.track-body{
-  position:absolute;top:32px;height:20px;border-radius:10px;
-  background:rgba(13,138,95,.20);border:1px solid rgba(13,138,95,.35);
+.heat-labels{position:relative;height:38px;margin-top:2px}
+.heat-legend{font-size:.84rem;color:var(--muted);margin:8px 0 0}
+.heat-legend .lg{
+  display:inline-block;width:12px;height:12px;border-radius:3px;
+  vertical-align:-1px;margin:0 3px 0 10px;border:1px solid rgba(21,34,47,.15);
 }
-.track-band{
-  position:absolute;top:30px;height:24px;border-radius:12px;min-width:14px;
-}
-.band-chinook{background:rgba(245,183,77,.65);border:1px solid rgba(180,83,9,.55)}
-.band-coho{background:rgba(11,111,164,.45);border:1px solid rgba(11,111,164,.6)}
+.heat-legend .lg:first-child{margin-left:0}
 .track-tick{
   position:absolute;top:0;bottom:0;width:1px;background:rgba(21,34,47,.28);
 }
 .track-tick span{
-  position:absolute;top:60px;left:50%;transform:translateX(-50%);
+  position:absolute;top:4px;left:50%;transform:translateX(-50%);
   white-space:nowrap;font-size:.68rem;color:var(--muted);
 }
-.track-tick.alt span{top:71px}
+.track-tick.alt span{top:19px}
 .track-tick.edge-l span{transform:translateX(-8%)}
 .track-tick.edge-r span{transform:translateX(-92%)}
 .track-dam{background:rgba(21,34,47,.55);width:2px}
 .track-dam span{font-weight:700;color:var(--text)}
 .track-mouth{background:transparent}
-.track-caption{font-size:.8rem;color:var(--muted);margin:16px 0 4px}
+.track-caption{font-size:.8rem;color:var(--muted);margin:6px 0 4px}
+.why-box,.wave-details{margin:12px 0 0}
+.why-box summary,.wave-details summary{
+  cursor:pointer;font-weight:700;font-size:.98rem;padding:10px 12px;
+  background:var(--panel-2);border:1px solid var(--border);border-radius:12px;
+  min-height:44px;
+}
+.why-box p{line-height:1.55;margin:10px 2px 0}
 .wave-list{margin:8px 0 0;padding-left:20px}
 .wave-list li{margin-bottom:10px;line-height:1.5}
+.plan-chips{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 10px}
+.plan-chip{
+  font:inherit;font-weight:600;padding:10px 16px;min-height:44px;
+  border-radius:999px;border:1.5px solid var(--border);
+  background:var(--panel);color:var(--text);cursor:pointer;
+}
+.plan-chip.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.plan-callout{font-size:1rem;margin:0 0 10px}
+.plan-strip{display:flex;gap:2px;height:46px;margin:4px 0 0}
+.plan-seg{
+  border-radius:8px;display:flex;align-items:center;justify-content:center;
+  overflow:hidden;min-width:0;
+}
+.plan-seg span{font-weight:700;font-size:.82rem;white-space:nowrap;padding:0 4px}
+.seg-strong{background:#c2540a;color:#fff}
+.seg-moderate{background:var(--warm-fill);color:#15222f}
+.seg-weak{background:#fdeeda;color:#7c4a12}
+.plan-seg.dim{opacity:.45}
+.plan-seg.mine{outline:3px solid var(--accent);outline-offset:1px}
+.plan-hours{
+  display:flex;justify-content:space-between;font-size:.72rem;
+  color:var(--muted);margin:3px 1px 8px;
+}
+.plan-now{font-size:1rem;margin:6px 0}
+.plan-list{margin:6px 0;padding-left:20px}
+.plan-list li{margin-bottom:8px;line-height:1.5}
+.plan-tomorrow{font-size:.94rem;margin:8px 0 0}
 
 /* ---------- Reduced motion: calm everything non-essential ---------- */
 @media (prefers-reduced-motion: reduce){
