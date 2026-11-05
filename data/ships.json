@@ -1,40 +1,122 @@
 {
- "fetched_at": "2026-11-05T20:20:47Z",
+ "fetched_at": "2026-11-05T20:25:48Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.69666,
+   "lon": -122.771,
+   "sog_kn": 7.3,
+   "cog": 7,
+   "heading": 5,
+   "nav_status": 0,
+   "updated": "2026-11-05 20:25:52.90782521 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61201,
+   "lon": -122.64535,
+   "sog_kn": 0,
+   "cog": 302.6,
+   "heading": 296,
+   "nav_status": 5,
+   "updated": "2026-11-05 20:25:53.082877043 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.07848,
+   "lon": -122.90056,
+   "sog_kn": 0.1,
+   "cog": 350.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-05 20:25:54.450334369 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.1079,
+   "lon": -122.95901,
+   "type_code": 50,
+   "destination": "CR HARBOR OPS",
+   "updated": "2026-11-05 20:25:55.981961905 +0000 UTC"
+  },
   {
    "mmsi": 368470580,
    "name": "ASSIST",
-   "lat": 46.06251,
-   "lon": -122.88664,
-   "sog_kn": 20.1,
-   "cog": 166.1,
+   "lat": 46.03511,
+   "lon": -122.87754,
+   "sog_kn": 20.4,
+   "cog": 163.6,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-05 20:20:57.969589107 +0000 UTC"
+   "updated": "2026-11-05 20:25:58.019017347 +0000 UTC"
   },
   {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58756,
-   "lon": -122.77039,
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64729,
+   "lon": -122.73952,
+   "type_code": 52,
+   "destination": "VANCOUER,WA",
+   "updated": "2026-11-05 20:25:59.571489174 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63864,
+   "lon": -122.7241,
    "sog_kn": 0,
-   "cog": 340.1,
-   "heading": 143,
+   "cog": 23.2,
+   "heading": 113,
+   "nav_status": 1,
+   "updated": "2026-11-05 20:26:03.921915012 +0000 UTC"
+  },
+  {
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09424,
+   "lon": -122.93741,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-05 20:26:08.779978735 +0000 UTC"
+  },
+  {
+   "mmsi": 352986134,
+   "name": "TAC SUZUKA",
+   "lat": 45.66799,
+   "lon": -122.77,
+   "sog_kn": 10.1,
+   "cog": 340.6,
+   "heading": 341,
    "nav_status": 0,
-   "updated": "2026-11-05 20:21:08.730950109 +0000 UTC"
+   "updated": "2026-11-05 20:26:12.412884053 +0000 UTC"
   },
   {
-   "mmsi": 352006943,
-   "name": "GLOVIS LEGEND",
-   "lat": 45.64611,
-   "lon": -122.75551,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07879,
+   "lon": -122.90068,
+   "sog_kn": 0.2,
+   "cog": 43.6,
+   "heading": 319,
+   "nav_status": 3,
+   "updated": "2026-11-05 20:26:17.573394734 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65017,
+   "lon": -122.74761,
    "sog_kn": 0,
-   "cog": 140.3,
-   "heading": 136,
-   "nav_status": 5,
-   "updated": "2026-11-05 20:21:17.356982227 +0000 UTC"
+   "cog": 272.6,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-05 20:26:19.916999252 +0000 UTC"
   }
  ]
 }
