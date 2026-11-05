@@ -1,67 +1,93 @@
 {
- "fetched_at": "2026-11-05T13:40:10Z",
+ "fetched_at": "2026-11-05T13:45:10Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 353081000,
-   "name": "ELEGANT SW",
-   "lat": 46.11821,
-   "lon": -122.98019,
-   "type_code": 70,
-   "destination": "USA LONGVIEW",
-   "updated": "2026-11-05 13:40:14.119485343 +0000 UTC"
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15705,
+   "lon": -123.40233,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 136,
+   "nav_status": 0,
+   "updated": "2026-11-05 13:45:14.020243536 +0000 UTC"
   },
   {
-   "mmsi": 368450870,
-   "name": "AMERICAN ENCORE",
-   "lat": 46.0036,
-   "lon": -122.84764,
-   "type_code": 60,
-   "destination": "KALAMA",
-   "updated": "2026-11-05 13:40:17.124995074 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.07848,
-   "lon": -122.90026,
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.17477,
+   "lon": -123.10799,
    "sog_kn": 0.1,
-   "cog": 44.2,
+   "cog": 229.6,
+   "heading": 129,
+   "nav_status": 1,
+   "updated": "2026-11-05 13:45:18.978671638 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07847,
+   "lon": -122.90002,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-05 13:45:19.847415068 +0000 UTC"
+  },
+  {
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 45.59509,
+   "lon": -122.77864,
+   "sog_kn": 0,
+   "cog": 237.5,
+   "heading": 148,
+   "nav_status": 5,
+   "updated": "2026-11-05 13:45:25.554935491 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.95532,
+   "lon": -122.81573,
+   "sog_kn": 7.5,
+   "cog": 341.3,
+   "heading": 338,
+   "nav_status": 12,
+   "updated": "2026-11-05 13:45:26.70220096 +0000 UTC"
+  },
+  {
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10891,
+   "lon": -122.96126,
+   "sog_kn": 0,
+   "cog": 221.9,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-05 13:45:32.192944968 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19994,
+   "lon": -123.3855,
+   "sog_kn": 0,
+   "cog": 219.5,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-05 13:45:40.52633356 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10786,
+   "lon": -122.95903,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-05 13:40:19.059760283 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.1736,
-   "lon": -123.21267,
-   "sog_kn": 0.8,
-   "cog": 78.5,
-   "heading": 67,
-   "nav_status": 3,
-   "updated": "2026-11-05 13:40:20.777920775 +0000 UTC"
-  },
-  {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.79401,
-   "lon": -122.84263,
-   "sog_kn": 0.6,
-   "cog": 218.2,
-   "heading": 222,
-   "nav_status": 0,
-   "updated": "2026-11-05 13:40:30.335716837 +0000 UTC"
-  },
-  {
-   "mmsi": 368136580,
-   "name": "ORIN L GREEN",
-   "lat": 46.00851,
-   "lon": -122.84767,
-   "type_code": 33,
-   "destination": "LOWER COLUMBIA RIVER",
-   "updated": "2026-11-05 13:40:35.710407454 +0000 UTC"
+   "updated": "2026-11-05 13:45:41.378485981 +0000 UTC"
   }
  ]
 }
