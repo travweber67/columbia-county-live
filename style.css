@@ -561,13 +561,22 @@ h2{font-weight:700;letter-spacing:-.01em}
 
 /* The County Briefing — today's answers, ready to take with you */
 .briefing-card{border-left:4px solid var(--accent)}
-.briefing-preview{
-  margin:0 0 12px;padding:13px 15px;white-space:pre-wrap;word-break:break-word;
-  background:#f4f8fb;border:1px dashed var(--border);border-radius:12px;
-  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
-  font-size:.86rem;line-height:1.55;color:var(--text);
-  max-height:300px;overflow:auto;
-}
+.briefing-view{margin:0 0 14px}
+.briefing-loading{margin:0;padding:6px 0 2px;color:var(--muted);font-size:.93rem}
+.briefing-row{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--border)}
+.briefing-row:first-child{padding-top:0}
+.briefing-row:last-child{border-bottom:none}
+.briefing-row-alert{background:var(--panel-2);border:1px solid var(--border);border-left:4px solid var(--warn);border-radius:10px;padding:10px 12px}
+.briefing-ico{flex:0 0 28px;font-size:1.15rem;line-height:1.35;text-align:center}
+.briefing-main{flex:1;min-width:0}
+.briefing-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700;margin-bottom:2px}
+.briefing-body{font-size:.98rem;line-height:1.45}
+.briefing-temp{font-weight:800}
+.briefing-items{list-style:none;margin:3px 0 0;padding:0;display:grid;gap:4px}
+.briefing-items li{font-size:.93rem;line-height:1.4;padding-left:14px;position:relative}
+.briefing-items li::before{content:"•";position:absolute;left:2px;color:var(--muted)}
+.briefing-more{font-size:.85rem;color:var(--muted);margin-top:4px}
+.briefing-foot{font-size:.74rem;color:var(--muted);margin:10px 0 0;line-height:1.5}
 .briefing-actions{display:flex;flex-wrap:wrap;gap:10px}
 .briefing-card .install-help{margin-top:12px}
 

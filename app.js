@@ -2169,21 +2169,30 @@ function briefingPending(txt) { return !txt || /Loading|Checking|Locating|Workin
 function buildBriefing() {
   const now = new Date();
   const lines = ['🌲 COLUMBIA COUNTY LIVE — ' + fmtDay(now) + ' · ' + fmtTime(now) + ' PT', ''];
+  // rows = the same gathered facts, structured for the card's visual front.
+  // One pass over the panels feeds both renderings — the designed summary a
+  // visitor reads and the plain-text note the Copy button produces — so the
+  // two can never drift apart.
+  const rows = [];
   let ready = 0;
   // Weather alerts — from the alerts panel's own rendered state
   const ab = $('alerts-body');
   if (ab) {
     if (ab.querySelector('.no-alerts')) {
       lines.push('⚠️ Weather: no active watches, warnings, or advisories for Columbia County.');
+      rows.push({ icon: '⚠️', label: 'Weather', body: 'No active watches, warnings, or advisories for Columbia County.' });
       ready++;
     } else {
       const heads = ab.querySelectorAll('.alert-item h3');
       if (heads.length) {
         lines.push('⚠️ WEATHER ALERTS IN EFFECT:');
-        heads.forEach(h => lines.push('• ' + briefingClean(h.textContent)));
+        const items = [];
+        heads.forEach(h => { const t = briefingClean(h.textContent); lines.push('• ' + t); items.push(t); });
+        rows.push({ icon: '⚠️', label: 'Weather alerts in effect', items, alert: true });
         ready++;
       } else if (ab.querySelector('.fallback')) {
         lines.push('⚠️ Weather alerts couldn\'t load just now — check weather.gov before heading out.');
+        rows.push({ icon: '⚠️', label: 'Weather', body: 'Alerts couldn\'t load just now — check weather.gov before heading out.' });
       }
     }
   }
@@ -2199,6 +2208,8 @@ function buildBriefing() {
       const extra = paras.length > 1 ? briefingClean(paras[1].textContent) : '';
       lines.push('🌦️ ' + currentTown.name + (name ? ' · ' + name : '') + ': ' + temp
         + (short ? ' — ' + short : '') + (extra ? ' (' + extra + ')' : ''));
+      rows.push({ icon: '🌦️', label: currentTown.name + (name ? ' · ' + name : ''),
+        temp, body: (short ? ' — ' + short : '') + (extra ? ' (' + extra + ')' : '') });
       ready++;
     }
   }
@@ -2207,21 +2218,25 @@ function buildBriefing() {
   if (cv) {
     const head = cv.querySelector('.cv-head');
     if (head && !briefingPending(head.textContent)) {
-      lines.push('🚗 Commute: ' + briefingClean(head.textContent));
+      const t = briefingClean(head.textContent);
+      lines.push('🚗 Commute: ' + t);
+      rows.push({ icon: '🚗', label: 'Commute', body: t });
       ready++;
     }
   }
   // Bridge + river — the same glance tiles at the top of the page
   const bv = briefingClean(($('glance-bridge-val') || {}).textContent);
-  if (bv && !briefingPending(bv)) { lines.push('🌉 Lewis & Clark Bridge: ' + bv + '.'); ready++; }
+  if (bv && !briefingPending(bv)) { lines.push('🌉 Lewis & Clark Bridge: ' + bv + '.'); rows.push({ icon: '🌉', label: 'Lewis & Clark Bridge', body: bv + '.' }); ready++; }
   const rv = briefingClean(($('glance-river-val') || {}).textContent);
-  if (rv && !briefingPending(rv)) { lines.push('🌊 Columbia River at Port Westward: ' + rv + '.'); ready++; }
+  if (rv && !briefingPending(rv)) { lines.push('🌊 Columbia River at Port Westward: ' + rv + '.'); rows.push({ icon: '🌊', label: 'Columbia River at Port Westward', body: rv + '.' }); ready++; }
   // Ferry — the next-boat headline the ferry card is showing
   const fn = $('ferry-next');
   if (fn) {
     const head = fn.querySelector('.ferry-next-head');
     if (head && !briefingPending(head.textContent)) {
-      lines.push('⛴️ ' + briefingClean(head.textContent));
+      const t = briefingClean(head.textContent);
+      lines.push('⛴️ ' + t);
+      rows.push({ icon: '⛴️', body: t });
       ready++;
     }
   }
@@ -2232,10 +2247,17 @@ function buildBriefing() {
       .slice().sort((a, b) => parseTimeToMinutes(a.time) - parseTimeToMinutes(b.time));
     if (todays.length) {
       lines.push('📅 Today around the county (' + todays.length + (todays.length === 1 ? ' event' : ' events') + '):');
-      todays.slice(0, 4).forEach(ev => lines.push('• ' + (ev.time ? ev.time + ' — ' : '') + ev.title + (ev.source ? ' (' + ev.source + ')' : '')));
-      if (todays.length > 4) lines.push('• …and ' + (todays.length - 4) + ' more — the full list is on the page.');
+      const items = [];
+      todays.slice(0, 4).forEach(ev => {
+        const t = (ev.time ? ev.time + ' — ' : '') + ev.title + (ev.source ? ' (' + ev.source + ')' : '');
+        lines.push('• ' + t); items.push(t);
+      });
+      const row = { icon: '📅', label: 'Today around the county · ' + todays.length + (todays.length === 1 ? ' event' : ' events'), items };
+      if (todays.length > 4) { const more = '…and ' + (todays.length - 4) + ' more — the full list is on the page.'; lines.push('• ' + more); row.note = more; }
+      rows.push(row);
     } else {
       lines.push('📅 Nothing on the city/county calendars today.');
+      rows.push({ icon: '📅', body: 'Nothing on the city/county calendars today.' });
     }
     ready++;
   }
@@ -2243,15 +2265,37 @@ function buildBriefing() {
   lines.push('Live page (updates all day): https://travweber67.github.io/columbia-county-live/');
   lines.push('Sources: National Weather Service · USGS · ODOT/WSDOT snapshots · city & county calendars. Assembled '
     + fmtTime(now) + ' PT — the live page always has the newest numbers.');
-  return { text: lines.join('\n'), ready };
+  return { text: lines.join('\n'), ready, rows };
+}
+/* The card's visual front: the briefing rendered as designed rows, built
+   from the same structured pass (buildBriefing) that produces the copied
+   text — so what a visitor reads here and what they paste from the Copy
+   button are the same words from the same source. The raw note text is
+   never displayed; it is generated in the background for copy/share. */
+function briefingRowHtml(r) {
+  let h = '<div class="briefing-row' + (r.alert ? ' briefing-row-alert' : '') + '">'
+    + '<span class="briefing-ico" aria-hidden="true">' + r.icon + '</span>'
+    + '<div class="briefing-main">';
+  if (r.label) h += '<div class="briefing-label">' + esc(r.label) + '</div>';
+  if (r.temp || r.body) {
+    h += '<div class="briefing-body">'
+      + (r.temp ? '<span class="briefing-temp">' + esc(r.temp) + '</span>' : '')
+      + (r.body ? esc(r.body) : '') + '</div>';
+  }
+  if (r.items && r.items.length) {
+    h += '<ul class="briefing-items">' + r.items.map(i => '<li>' + esc(i) + '</li>').join('') + '</ul>';
+  }
+  if (r.note) h += '<div class="briefing-more">' + esc(r.note) + '</div>';
+  return h + '</div></div>';
 }
 function refreshBriefing() {
-  const prev = $('briefing-preview');
-  if (!prev) return;
+  const view = $('briefing-view');
+  if (!view) return;
   const b = buildBriefing();
-  prev.textContent = b.ready
-    ? b.text
-    : 'Still gathering today\'s answers — the panels on this page update first, and this note follows within the minute.';
+  view.innerHTML = b.ready
+    ? b.rows.map(briefingRowHtml).join('')
+      + '<p class="briefing-foot">Sources: National Weather Service · USGS · ODOT/WSDOT snapshots · city &amp; county calendars. The live page always has the newest numbers.</p>'
+    : '<p class="briefing-loading">Still gathering today\'s answers — the panels on this page update first, and this summary follows within the minute.</p>';
   const up = $('briefing-updated');
   if (up && b.ready) up.textContent = 'Assembled ' + fmtTime(new Date());
 }
@@ -2278,7 +2322,7 @@ function initBriefing() {
     }
     showNote(ok
       ? '✅ Copied — paste it into a text, a post, anywhere. It is stamped with the time it was assembled; the live page stays newer.'
-      : 'Copy didn\'t work in this browser — you can still select the briefing text above and copy it by hand.');
+      : 'Copy didn\'t work in this browser — try again, or use Share as text if that button shows above.');
   });
   const shareBtn = $('briefing-share-btn');
   if (shareBtn && navigator.share) {
@@ -4488,7 +4532,7 @@ const LANG_ES = {
   watchbtn: '🔔 Empezar a vigilar',
   watchlimits: 'Límites honestos: la vigilancia solo funciona mientras esta página está abierta en este dispositivo — cerrar la pestaña la detiene, y un teléfono puede pausar una pestaña en segundo plano. Es una ayuda, nunca un reemplazo del Servicio Meteorológico Nacional, la Radio Meteorológica de NOAA ni las alertas de emergencia del condado de Columbia.',
   briefh2: '📋 El Resumen del Condado',
-  briefnote: 'Las respuestas de hoy en una sola nota lista para copiar — armada desde los paneles en vivo de esta página y marcada con la hora en que se preparó. Pégala en un mensaje familiar, en el grupo del vecindario, donde se reúna el condado. ¿Vas a manejar? Toca <strong>🔊 Escuchar el resumen</strong> y tu teléfono te lo lee en voz alta — primero las alertas del clima.',
+  briefnote: 'Las respuestas de hoy en un solo lugar — armadas desde los paneles en vivo de esta página y marcadas con la hora en que se preparó. Cópialas como una nota para un mensaje familiar, el grupo del vecindario, donde se reúna el condado. ¿Vas a manejar? Toca <strong>🔊 Escuchar el resumen</strong> y tu teléfono te lo lee en voz alta — primero las alertas del clima.',
   briefcopy: '📋 Copiar el resumen',
   briefshare: '📤 Compartir como texto',
   brieflisten: '🔊 Escuchar el resumen',
