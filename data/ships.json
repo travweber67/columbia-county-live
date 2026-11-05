@@ -1,80 +1,88 @@
 {
- "fetched_at": "2026-11-05T19:05:40Z",
+ "fetched_at": "2026-11-05T19:10:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 46.16296,
-   "lon": -123.40914,
-   "sog_kn": 1.1,
-   "cog": 307.3,
-   "heading": 147,
-   "nav_status": 12,
-   "updated": "2026-11-05 19:05:53.077091122 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.60608,
-   "lon": -122.7828,
-   "sog_kn": 7.6,
-   "cog": 333.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-05 19:05:53.588951555 +0000 UTC"
-  },
-  {
-   "mmsi": 352003818,
-   "name": "PAN CONCORD",
-   "lat": 46.21347,
-   "lon": -123.42509,
-   "sog_kn": 10.3,
-   "cog": 8.2,
-   "heading": 7,
-   "nav_status": 0,
-   "updated": "2026-11-05 19:05:54.467100775 +0000 UTC"
-  },
-  {
-   "mmsi": 368328430,
-   "name": "MCR 8",
-   "lat": 45.58478,
-   "lon": -122.76618,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07881,
+   "lon": -122.90048,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 511,
+   "heading": 335,
    "nav_status": 3,
-   "updated": "2026-11-05 19:05:54.955110703 +0000 UTC"
+   "updated": "2026-11-05 19:10:46.517316867 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65009,
-   "lon": -122.74758,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.17464,
+   "lon": -123.21139,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-05 19:10:48.015306981 +0000 UTC"
+  },
+  {
+   "mmsi": 538006443,
+   "name": "RB JAKE",
+   "lat": 46.02715,
+   "lon": -122.86951,
+   "type_code": 70,
+   "destination": "US KAL",
+   "updated": "2026-11-05 19:10:50.036538993 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.13801,
+   "lon": -123.38037,
+   "type_code": 99,
+   "updated": "2026-11-05 19:10:55.925964103 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64384,
+   "lon": -122.7258,
    "sog_kn": 0,
-   "cog": 291.9,
+   "cog": 91.2,
+   "heading": 115,
+   "nav_status": 12,
+   "updated": "2026-11-05 19:10:58.741629423 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64725,
+   "lon": -122.73919,
+   "sog_kn": 1.7,
+   "cog": 290.5,
+   "heading": 289,
+   "nav_status": 12,
+   "updated": "2026-11-05 19:11:00.435571606 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63866,
+   "lon": -122.72402,
+   "sog_kn": 0,
+   "cog": 22.5,
+   "heading": 115,
+   "nav_status": 1,
+   "updated": "2026-11-05 19:11:03.785297478 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 46.09051,
+   "lon": -122.93231,
+   "sog_kn": 0,
+   "cog": 325.6,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-05 19:05:58.282617946 +0000 UTC"
-  },
-  {
-   "mmsi": 368450870,
-   "name": "AMERICAN ENCORE",
-   "lat": 46.00362,
-   "lon": -122.84762,
-   "type_code": 60,
-   "destination": "ASTORIA",
-   "updated": "2026-11-05 19:06:06.819565211 +0000 UTC"
-  },
-  {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.5842,
-   "lon": -122.76615,
-   "type_code": 52,
-   "destination": "US^00D5>0UHN",
-   "updated": "2026-11-05 19:06:12.965438928 +0000 UTC"
+   "nav_status": 5,
+   "updated": "2026-11-05 19:11:06.355844064 +0000 UTC"
   }
  ]
 }
