@@ -1,89 +1,121 @@
 {
- "fetched_at": "2026-11-05T08:54:45Z",
+ "fetched_at": "2026-11-05T08:59:45Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37713,
+   "sog_kn": 0,
+   "cog": 353.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-05 08:59:49.206390803 +0000 UTC"
+  },
   {
    "mmsi": 367047170,
    "name": "MAVERICK",
-   "lat": 45.7868,
-   "lon": -122.77788,
-   "sog_kn": 7.5,
-   "cog": 143.2,
-   "heading": 149,
+   "lat": 45.77789,
+   "lon": -122.7703,
+   "sog_kn": 7.4,
+   "cog": 152.8,
+   "heading": 159,
    "nav_status": 12,
-   "updated": "2026-11-05 08:54:53.178375264 +0000 UTC"
+   "updated": "2026-11-05 08:59:53.185107297 +0000 UTC"
   },
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 46.09086,
-   "lon": -122.93199,
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63869,
+   "lon": -122.72404,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-05 08:59:53.45808083 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59405,
+   "lon": -122.7721,
+   "type_code": 70,
+   "destination": "NOT AVAILABLE",
+   "updated": "2026-11-05 08:59:53.613140871 +0000 UTC"
+  },
+  {
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.61219,
+   "lon": -122.64516,
+   "type_code": 52,
+   "destination": "US^10M4>02MP",
+   "updated": "2026-11-05 08:59:58.58476564 +0000 UTC"
+  },
+  {
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.11658,
+   "lon": -122.97692,
+   "sog_kn": 0.1,
+   "cog": 29.8,
+   "heading": 294,
+   "nav_status": 1,
+   "updated": "2026-11-05 09:00:00.612363524 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64568,
+   "lon": -122.73485,
+   "type_code": 79,
+   "updated": "2026-11-05 09:00:03.141714043 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 46.1088,
+   "lon": -122.96164,
    "sog_kn": 0,
-   "cog": 238.3,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-05 08:54:59.501435857 +0000 UTC"
+   "cog": 332.5,
+   "heading": 42,
+   "nav_status": 0,
+   "updated": "2026-11-05 09:00:06.174859489 +0000 UTC"
+  },
+  {
+   "mmsi": 352006943,
+   "name": "GLOVIS LEGEND",
+   "lat": 45.64612,
+   "lon": -122.7555,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-05 09:00:14.30194084 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 140.3,
+   "heading": 136,
+   "nav_status": 5
   },
   {
    "mmsi": 367061930,
    "name": "TEBENKOF",
-   "lat": 46.19998,
-   "lon": -123.38547,
+   "lat": 46.2,
+   "lon": -123.38546,
    "sog_kn": 0,
-   "cog": 27.2,
+   "cog": 53.1,
    "heading": 511,
    "nav_status": 15,
-   "updated": "2026-11-05 08:55:02.731637947 +0000 UTC"
+   "updated": "2026-11-05 09:00:09.927838584 +0000 UTC"
   },
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.10289,
-   "lon": -122.95394,
-   "type_code": 33,
-   "destination": "LORD ISL. LONGVIEW",
-   "updated": "2026-11-05 08:55:03.348617515 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10358,
-   "lon": -122.91012,
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07423,
+   "lon": -122.89842,
    "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 74,
-   "nav_status": 3,
-   "updated": "2026-11-05 08:55:04.510152955 +0000 UTC"
-  },
-  {
-   "mmsi": 368442720,
-   "name": "RUSTLER",
-   "lat": 45.60836,
-   "lon": -122.6862,
-   "type_code": 52,
-   "destination": "AXIOS MARINE OPS",
-   "updated": "2026-11-05 08:55:05.509866484 +0000 UTC"
-  },
-  {
-   "mmsi": 338616000,
-   "name": "DUBLIN SEA",
-   "lat": 45.73765,
-   "lon": -122.76028,
-   "sog_kn": 11.1,
-   "cog": 184.4,
-   "heading": 185,
+   "cog": 125.8,
+   "heading": 330,
    "nav_status": 0,
-   "updated": "2026-11-05 08:55:05.977572111 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09076,
-   "lon": -122.93206,
-   "type_code": 52,
-   "destination": "COL RIVER",
-   "updated": "2026-11-05 08:55:13.091793664 +0000 UTC"
+   "updated": "2026-11-05 09:00:17.360226287 +0000 UTC"
   }
  ]
 }
