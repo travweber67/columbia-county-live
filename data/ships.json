@@ -1,51 +1,80 @@
 {
- "fetched_at": "2026-11-05T09:24:48Z",
+ "fetched_at": "2026-11-05T09:29:48Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59407,
+   "lon": -122.77208,
+   "type_code": 70,
+   "destination": "NOT AVAILABLE",
+   "updated": "2026-11-05 09:29:57.351611894 +0000 UTC"
+  },
+  {
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.11778,
+   "lon": -122.97693,
+   "sog_kn": 0.3,
+   "cog": 336.9,
+   "heading": 242,
+   "nav_status": 1,
+   "updated": "2026-11-05 09:29:57.326052755 +0000 UTC"
+  },
+  {
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.61219,
+   "lon": -122.6452,
+   "type_code": 52,
+   "destination": "US^10M4>02MP",
+   "updated": "2026-11-05 09:29:59.728600389 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.70778,
+   "lon": -122.76751,
+   "sog_kn": 9.6,
+   "cog": 195.5,
+   "heading": 190,
+   "nav_status": 12,
+   "updated": "2026-11-05 09:29:59.729232865 +0000 UTC"
+  },
   {
    "mmsi": 366998830,
    "name": "ROYAL MELBOURNE",
-   "lat": 45.58083,
+   "lat": 45.58081,
    "lon": -122.76007,
    "sog_kn": 0,
    "cog": 357.6,
-   "heading": 123,
+   "heading": 121,
    "nav_status": 0,
-   "updated": "2026-11-05 09:25:00.792100728 +0000 UTC"
+   "updated": "2026-11-05 09:30:00.399855443 +0000 UTC"
   },
   {
-   "mmsi": 477133900,
-   "name": "SHAO SHAN 8",
-   "lat": 45.63031,
-   "lon": -122.69541,
+   "mmsi": 352003818,
+   "name": "PAN CONCORD",
+   "lat": 46.09914,
+   "lon": -122.93972,
    "sog_kn": 0,
-   "cog": 68.3,
-   "heading": 129,
+   "cog": 110.5,
+   "heading": 110,
    "nav_status": 5,
-   "updated": "2026-11-05 09:25:04.952407288 +0000 UTC"
+   "updated": "2026-11-05 09:30:04.298431957 +0000 UTC"
   },
   {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64343,
-   "lon": -122.75282,
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09076,
+   "lon": -122.93206,
    "sog_kn": 0,
-   "cog": 279,
+   "cog": 267.6,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-05 09:25:05.229925714 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07856,
-   "lon": -122.90013,
-   "sog_kn": 0.3,
-   "cog": 244.1,
-   "heading": 335,
-   "nav_status": 3,
-   "updated": "2026-11-05 09:25:17.177902931 +0000 UTC"
+   "nav_status": 5,
+   "updated": "2026-11-05 09:30:05.603251171 +0000 UTC"
   }
  ]
 }
