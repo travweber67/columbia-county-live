@@ -922,6 +922,64 @@ h2{font-weight:700;letter-spacing:-.01em}
 .dark-row-v{font-size:.92rem;line-height:1.45;color:var(--muted)}
 .dark-row-v strong{color:var(--text);font-variant-numeric:tabular-nums}
 
+/* ---------- Fish counts + Salmon Tracker (2026-11-04) ---------- */
+.fish-rows{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 2px}
+.fish-sp{
+  flex:1 1 104px;background:var(--panel-2);border:1px solid var(--border);
+  border-radius:12px;padding:8px 12px;display:flex;flex-direction:column;gap:1px;
+}
+.fish-sp-name{font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.fish-sp-num{font-size:1.45rem;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.15}
+.fish-sp-jack{font-size:.78rem;color:var(--muted)}
+.fish-season,.fish-ladder{font-size:.92rem;margin:8px 0 0}
+.run-rows{display:flex;flex-direction:column}
+.run-row{
+  display:grid;grid-template-columns:128px 118px 1fr;gap:4px 12px;
+  padding:7px 0;border-top:1px solid var(--border);align-items:baseline;
+}
+.run-name{font-weight:700}
+.run-win{color:var(--muted);font-size:.86rem}
+.run-state{font-size:.92rem}
+@media (max-width:640px){
+  .run-row{grid-template-columns:1fr}
+  .run-state{grid-column:1}
+}
+.tracker-now{font-size:1.04rem;line-height:1.5;margin:2px 0 14px}
+.track-strip{
+  position:relative;height:86px;margin:26px 2px 4px;
+  background:linear-gradient(180deg,var(--panel-2),var(--panel-3));
+  border:1px solid var(--border);border-radius:12px;
+}
+.track-county{
+  position:absolute;top:0;bottom:0;background:rgba(11,111,164,.10);
+  border-left:1px dashed rgba(11,111,164,.45);border-right:1px dashed rgba(11,111,164,.45);
+}
+.track-body{
+  position:absolute;top:32px;height:20px;border-radius:10px;
+  background:rgba(13,138,95,.20);border:1px solid rgba(13,138,95,.35);
+}
+.track-band{
+  position:absolute;top:30px;height:24px;border-radius:12px;min-width:14px;
+}
+.band-chinook{background:rgba(245,183,77,.65);border:1px solid rgba(180,83,9,.55)}
+.band-coho{background:rgba(11,111,164,.45);border:1px solid rgba(11,111,164,.6)}
+.track-tick{
+  position:absolute;top:0;bottom:0;width:1px;background:rgba(21,34,47,.28);
+}
+.track-tick span{
+  position:absolute;top:60px;left:50%;transform:translateX(-50%);
+  white-space:nowrap;font-size:.68rem;color:var(--muted);
+}
+.track-tick.alt span{top:71px}
+.track-tick.edge-l span{transform:translateX(-8%)}
+.track-tick.edge-r span{transform:translateX(-92%)}
+.track-dam{background:rgba(21,34,47,.55);width:2px}
+.track-dam span{font-weight:700;color:var(--text)}
+.track-mouth{background:transparent}
+.track-caption{font-size:.8rem;color:var(--muted);margin:16px 0 4px}
+.wave-list{margin:8px 0 0;padding-left:20px}
+.wave-list li{margin-bottom:10px;line-height:1.5}
+
 /* ---------- Reduced motion: calm everything non-essential ---------- */
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}

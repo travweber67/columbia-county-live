@@ -392,6 +392,25 @@
       <p class="card-note small" data-i18n="tidesnote2">Tide <em>predictions</em> from NOAA Tides &amp; Currents (station 9439201 at St. Helens, station 9439099 at Wauna), in feet above mean lower low water. River flow pushes real water off the prediction — a high river runs higher and later — so treat the times as the plan, not a promise.</p>
     </div>
 
+    <div class="card" id="fish-card">
+      <div class="card-head">
+        <h2 data-i18n="fishh2">🐟 Fish Counts — the Dams</h2>
+        <span class="updated" id="fish-updated"></span>
+      </div>
+      <p class="card-note" data-i18n="fishnote">Every salmon bound for the upper Columbia passes Bonneville Dam, where the Army Corps counts them through the fish ladders. The newest posted day usually lags the calendar a day or two — the counts are tallied from video and checked before they post.</p>
+      <div id="fish-body" class="panel-body"><p class="loading">Loading the dam counts…</p></div>
+      <p class="card-note small" data-i18n="fishnote2">Counts: U.S. Army Corps of Engineers, published by the Fish Passage Center and Columbia Basin Research (DART). A zero is a real answer, not a gap — it means the counters saw none that day.</p>
+    </div>
+
+    <div class="card" id="tracker-card">
+      <div class="card-head">
+        <h2 data-i18n="trackerh2">🎣 Salmon Tracker</h2>
+        <span class="updated" id="tracker-updated"></span>
+      </div>
+      <p class="card-note" data-i18n="trackernote">Where the runs are — estimated from the dam counts. A surge counted at Bonneville is a wave of fish that passed this county a few days earlier and reaches the upriver dams a few days later. The windows below are measured from 2026&rsquo;s actual dam-to-dam counts, and everything projected is labeled an estimate: counted numbers are facts, positions are the honest math between them.</p>
+      <div id="tracker-body" class="panel-body"><p class="loading">Plotting the runs…</p></div>
+    </div>
+
     <section class="card almanac-card" id="almanac-card" aria-label="The county almanac — today's daylight and the moon">
   <div class="card-head">
     <h2 data-i18n="almanach2">🌅 The County Almanac</h2>
@@ -495,7 +514,7 @@
 
 <footer class="site-footer">
   <p data-i18n="footerbyline"><strong>Columbia County Live</strong> — by <strong>Nomad Development Group</strong></p>
-  <p class="small" data-i18n="footerdata">Data: National Weather Service · U.S. Geological Survey · NOAA Tides &amp; Currents (river tides) · NOAA nowCOAST (radar) · NIFC WFIGS (wildfires) · adsb.fi contributors (aircraft, ODbL) · wheretheiss.at (ISS position) · CelesTrak / NORAD (ISS orbit, for pass predictions) · Open-Meteo / Copernicus CAMS (air-quality model) · OpenStreetMap contributors. Snapshot data (roads, cameras, bridge, ferry alerts, events, river traffic) is collected from the official operators — ODOT TripCheck, WSDOT, Wahkiakum County, and the city/county calendars — by a small fetcher program and labeled with the time it was collected. Live-tracking layer model inspired by God's Eye View (open source, by Bilawal Sidhu), whose DATA_SOURCES.md pointed us to several of these public feeds.</p>
+  <p class="small" data-i18n="footerdata">Data: National Weather Service · U.S. Geological Survey · NOAA Tides &amp; Currents (river tides) · NOAA nowCOAST (radar) · NIFC WFIGS (wildfires) · adsb.fi contributors (aircraft, ODbL) · wheretheiss.at (ISS position) · CelesTrak / NORAD (ISS orbit, for pass predictions) · Open-Meteo / Copernicus CAMS (air-quality model) · Fish Passage Center &amp; Columbia Basin Research DART (dam fish counts — U.S. Army Corps of Engineers data) · OpenStreetMap contributors. Snapshot data (roads, cameras, bridge, ferry alerts, events, river traffic) is collected from the official operators — ODOT TripCheck, WSDOT, Wahkiakum County, and the city/county calendars — by a small fetcher program and labeled with the time it was collected. Live-tracking layer model inspired by God's Eye View (open source, by Bilawal Sidhu), whose DATA_SOURCES.md pointed us to several of these public feeds.</p>
   <p class="small" data-i18n="footerdisc">This page assembles public data for convenience. Before traveling in severe weather or high water, confirm conditions with the official sources linked above.</p>
   <p class="small">Photo credits (via Wikimedia Commons): “<a href="https://commons.wikimedia.org/wiki/File:Lewis_and_Clark_Bridge,_Rainier,_Mt._St._Helens_-_DPLA_-_9f9bd04615f045db5e1e0877c00ebaee.jpg" target="_blank" rel="noopener">Lewis and Clark Bridge, Rainier, Mt. St. Helens</a>” by Gary Halvorson, Oregon State Archives, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Lewis%26ClarkBridgeSP.jpg" target="_blank" rel="noopener">Lewis &amp; Clark Bridge panorama</a>” by Cacophony, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Car_carrier_vessel_passing_underneath_the_Lewis_and_Clark_Bridge.jpg" target="_blank" rel="noopener">Car carrier vessel passing underneath the Lewis and Clark Bridge</a>” by Quintin Soloviev, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:MV_Oscar_B_on_the_Wahkiakum_County_Ferry,_leaving_Puget_Island.jpg" target="_blank" rel="noopener">MV Oscar B on the Wahkiakum County Ferry, leaving Puget Island</a>” by SounderBruce, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Columbia_County_Courthouse,_St._Helens_-_DPLA_-_19e1a4c866aefeec828b9f4739ac770c.jpg" target="_blank" rel="noopener">Columbia County Courthouse, St. Helens</a>” by Gary Halvorson, Oregon State Archives, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Rainier,_Oregon_dock.jpg" target="_blank" rel="noopener">Rainier, Oregon dock</a>” by Kingofthedead, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Photos were resized and compressed for the web; no other changes.</p>
 </footer>

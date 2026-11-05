@@ -861,6 +861,370 @@ async function loadBend() {
   body.innerHTML = blocks.join('');
 }
 
+/* ---------- fish counts + salmon tracker (2026-11-04) ----------
+   Counts are facts: U.S. Army Corps of Engineers dam counts via the
+   Fish Passage Center (latest day + season totals) and DART (the daily
+   series), snapshotted by the fetcher into fish.json. The tracker is an
+   estimation model built on those counts and nothing else: wave windows
+   use the pace band the 2026 season itself measured (fish.json "model"
+   carries the basis text the card prints), steelhead are never
+   projected because their dam-to-dam travel failed that same check,
+   and every projected element is worded as the estimate it is. */
+const FISH_TOWNS = [
+  { name: 'Clatskanie', rm: 49 }, { name: 'Rainier', rm: 67 },
+  { name: 'Columbia City', rm: 82 }, { name: 'St. Helens', rm: 86 },
+  { name: 'Scappoose', rm: 96 }
+];
+const FISH_STRIP_MAX = 230; // river miles shown: ocean (0) to above John Day
+const DAY_MS = 86400000;
+function isoDay(isoStr) {
+  const p = String(isoStr).split('-');
+  return new Date(Date.UTC(+p[0], +p[1] - 1, +p[2], 12)); // UTC noon: PT-safe
+}
+function ptTodayDate() {
+  const s = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit',
+    day: '2-digit'
+  }).format(new Date());
+  return isoDay(s);
+}
+const fmtMD = d => new Intl.DateTimeFormat('en-US',
+  { timeZone: 'UTC', month: 'short', day: 'numeric' }).format(d);
+function winText(a, b) {
+  return fmtMD(a) === fmtMD(b) ? fmtMD(a) : fmtMD(a) + '–' + fmtMD(b);
+}
+const FISH_SP_LABEL = { chinook: 'Chinook', coho: 'Coho',
+  steelhead: 'Steelhead', sockeye: 'Sockeye', chum: 'Chum' };
+const spLabel = sp => sp === 'coho' ? 'coho' : 'Chinook';
+function fishSeries(fish, damId, sp) {
+  const daily = (fish.daily || {})[damId] || [];
+  let rows = daily.filter(r => r[sp] != null)
+    .map(r => [isoDay(r.date), r[sp]]);
+  if (!rows.length) {
+    const rec = ((fish.dams || {})[damId] || {}).recent_days || [];
+    rows = rec.filter(r => (r.counts || {})[sp] != null)
+      .map(r => [isoDay(r.date), r.counts[sp]]);
+  }
+  return rows.sort((a, b) => a[0] - b[0]);
+}
+function recentAvg(fish, sp, n) {
+  const rows = fishSeries(fish, 'BON', sp).slice(-(n || 3));
+  if (!rows.length) return null;
+  return rows.reduce((s, r) => s + r[1], 0) / rows.length;
+}
+
+/* ----- the counts card ----- */
+function fishCountRows(counts) {
+  const jackFor = { chinook: 'chinook_jack', coho: 'coho_jack' };
+  return ['chinook', 'coho', 'steelhead', 'sockeye', 'chum']
+    .filter(sp => counts && counts[sp] != null).map(sp => {
+      const j = jackFor[sp] ? counts[jackFor[sp]] : null;
+      return '<div class="fish-sp"><span class="fish-sp-name">'
+        + FISH_SP_LABEL[sp] + '</span><span class="fish-sp-num">'
+        + num(counts[sp]) + '</span>'
+        + (j != null && j > 0
+            ? '<span class="fish-sp-jack">+' + num(j) + ' jacks</span>' : '')
+        + '</div>';
+    }).join('');
+}
+function fishSeasonLine(ytd) {
+  if (!ytd) return '';
+  const parts = [];
+  if (ytd.chinook != null) {
+    let s = '<strong>' + num(ytd.chinook) + ' Chinook</strong>';
+    const subs = [['fall_chinook', 'fall'], ['spring_chinook', 'spring'],
+      ['summer_chinook', 'summer']]
+      .filter(([k]) => ytd[k] != null && ytd[k] > 0);
+    if (subs.length) {
+      s += ' (' + subs.map(([k, l]) => num(ytd[k]) + ' ' + l).join(' · ')
+        + ')';
+    }
+    parts.push(s);
+  }
+  if (ytd.coho != null) parts.push('<strong>' + num(ytd.coho) + ' coho</strong>');
+  if (ytd.steelhead != null) {
+    parts.push('<strong>' + num(ytd.steelhead) + ' steelhead</strong>');
+  }
+  if (ytd.sockeye != null) {
+    parts.push('<strong>' + num(ytd.sockeye) + ' sockeye</strong>');
+  }
+  return parts.length
+    ? '<p class="fish-season">Season so far at Bonneville: '
+      + parts.join(' · ') + '.</p>'
+    : '';
+}
+function fishLadderLine(fish) {
+  const dams = fish.dams || {};
+  const parts = [];
+  ['TDA', 'JDA'].forEach(id => {
+    const d = dams[id];
+    if (!d || !d.counts) return;
+    const bits = ['chinook', 'coho', 'steelhead']
+      .filter(sp => d.counts[sp] != null)
+      .map(sp => FISH_SP_LABEL[sp] + ' ' + num(d.counts[sp])).join(' · ');
+    parts.push('<strong>' + esc(d.name.replace(' Dam', '')) + '</strong> ('
+      + fmtMD(isoDay(d.latest_date)) + '): ' + bits);
+  });
+  if (!parts.length) return '';
+  let lag = '';
+  const bon = dams.BON || {}, tda = dams.TDA;
+  if (bon.latest_date && tda && tda.latest_date
+      && Math.round((isoDay(bon.latest_date) - isoDay(tda.latest_date))
+        / DAY_MS) >= 2) {
+    lag = ' The Dalles posts a few days behind Bonneville — its video'
+      + ' counts are reviewed before they publish.';
+  }
+  return '<p class="fish-ladder">Up the ladder — ' + parts.join(' &nbsp;·&nbsp; ')
+    + '.' + lag + '</p>';
+}
+const FISH_RUNS = [
+  { name: 'Spring Chinook', win: 'Mar – Jun', sp: 'spring_chinook', months: [3, 4, 5, 6] },
+  { name: 'Summer Chinook', win: 'mid-Jun – Jul', sp: 'summer_chinook', months: [6, 7] },
+  { name: 'Sockeye', win: 'Jun – Jul', sp: 'sockeye', months: [6, 7] },
+  { name: 'Fall Chinook', win: 'Aug – Oct', sp: 'fall_chinook', countSp: 'chinook', months: [8, 9, 10], timing: 'fall_chinook' },
+  { name: 'Coho', win: 'Aug – Nov', sp: 'coho', months: [8, 9, 10, 11], timing: 'coho' },
+  { name: 'Steelhead', win: 'summer + winter runs', sp: 'steelhead', months: [] }
+];
+function runState(run, fish, month) {
+  const bon = (fish.dams || {}).BON || {};
+  const ytd = bon.ytd || {};
+  const counts = bon.counts || {};
+  const latest = counts[run.countSp || run.sp];
+  const latestTxt = latest != null && bon.latest_date
+    ? num(latest) + ' counted ' + fmtMD(isoDay(bon.latest_date)) : null;
+  const timing = run.timing && fish.timing && fish.timing.by_species
+    ? fish.timing.by_species[run.timing] : null;
+  if (run.sp === 'steelhead') {
+    return 'Two runs a year (summer + winter) — counted, not wave-tracked:'
+      + ' their dam-to-dam travel was too erratic to project honestly'
+      + ' (see the Tracker).'
+      + (latestTxt ? ' Latest at Bonneville: ' + latestTxt + '.' : '');
+  }
+  if (run.months.indexOf(month) >= 0) {
+    let s = 'In its typical window now.';
+    if (timing) {
+      s += ' In a typical year ~' + timing.pct_past_typical
+        + '% of this run has passed Bonneville by now (' + timing.years + ').';
+    }
+    if (latestTxt) s += ' Latest at Bonneville: ' + latestTxt + '.';
+    return s;
+  }
+  if (timing && latest != null && latest > 0) {
+    return 'Winding down — in a typical year ~' + timing.pct_past_typical
+      + '% of this run has passed Bonneville by now (' + timing.years
+      + '), and the tail is still moving: ' + latestTxt + ' at Bonneville.';
+  }
+  if (ytd[run.sp] != null) {
+    return 'Done for this year — ' + num(ytd[run.sp])
+      + ' past Bonneville for the season.';
+  }
+  return 'Outside its typical window.';
+}
+
+/* ----- the tracker ----- */
+function waveTownWindow(waveDate, rm, slow, fast) {
+  const dist = 146 - rm;
+  return [new Date(waveDate.getTime() - Math.ceil(dist / slow) * DAY_MS),
+          new Date(waveDate.getTime() - Math.floor(dist / fast) * DAY_MS)];
+}
+function waveDamWindow(waveDate, damRm, slow, fast) {
+  const dist = damRm - 146;
+  return [new Date(waveDate.getTime() + Math.ceil(dist / fast) * DAY_MS),
+          new Date(waveDate.getTime() + Math.ceil(dist / slow) * DAY_MS)];
+}
+function countyNowLine(fish, slow, fast) {
+  const today = ptTodayDate();
+  const month = today.getUTCMonth() + 1;
+  const waves = fish.waves || [];
+  for (const w of waves) {
+    const wd = isoDay(w.date);
+    const win = waveTownWindow(wd, 86, slow, fast);
+    if (win[0] <= today && today <= win[1]) {
+      return { body: false, html: '🎣 <strong>In the county now'
+        + ' (estimate):</strong> a wave of about ' + num(w.count) + ' '
+        + spLabel(w.species) + ' counted at Bonneville on ' + fmtDay(wd)
+        + ' was passing St. Helens about now — its estimated county'
+        + ' window is ' + winText(win[0], win[1]) + '.' };
+    }
+  }
+  const timing = (fish.timing || {}).by_species || {};
+  const cands = [];
+  if (month >= 8 && month <= 12) cands.push(['coho', 'coho']);
+  if (month >= 8 && month <= 11) cands.push(['chinook', 'fall_chinook']);
+  for (const [sp, tkey] of cands) {
+    const avg = recentAvg(fish, sp, 3);
+    if (avg == null) continue;
+    const rows = fishSeries(fish, 'BON', sp);
+    const lastN = rows.length ? rows[rows.length - 1][1] : null;
+    const lastD = rows.length ? rows[rows.length - 1][0] : null;
+    if (avg >= 50) {
+      let s = '🎣 <strong>Fish are moving through the county now'
+        + ' (estimate):</strong> no single wave to point at, but the '
+        + spLabel(sp) + ' run is still coming — '
+        + (lastN != null
+            ? num(lastN) + ' counted at Bonneville on ' + fmtMD(lastD)
+            : 'steady counts at Bonneville')
+        + ', and fish counted there were in county water a few days'
+        + ' earlier, with more behind them.';
+      const t = timing[tkey];
+      if (t && t.pct_past_typical >= 95) {
+        s += ' It is nearly over, though — in a typical year ~'
+          + t.pct_past_typical + '% of this run has passed Bonneville'
+          + ' by now (' + t.years + ').';
+      }
+      return { body: true, html: s };
+    }
+    if (avg >= 10) {
+      return { body: false, html: '🎣 <strong>A trickle, not a wave'
+        + ' (estimate):</strong> the ' + spLabel(sp) + ' run is down to '
+        + (lastN != null
+            ? num(lastN) + ' counted at Bonneville on ' + fmtMD(lastD)
+            : 'a few fish a day')
+        + ' — individual fish are still passing the county, but the run'
+        + ' is at its tail.' };
+    }
+  }
+  let tail;
+  if (month === 11 || month === 12) {
+    tail = 'The next run to build is winter steelhead, from late'
+      + ' November — they are counted on the card above, not tracked.';
+  } else if (month <= 2) {
+    tail = 'Winter steelhead are the run in the river this time of'
+      + ' year — counted on the card above, not wave-tracked.';
+  } else {
+    tail = 'The counts above are the whole story right now.';
+  }
+  return { body: false, html: '🎣 <strong>No salmon wave is moving'
+    + ' through the county right now.</strong> ' + tail };
+}
+function trackStrip(fish, slow, fast, bodyActive) {
+  const max = FISH_STRIP_MAX;
+  const pct = rm => (rm / max * 100).toFixed(1) + '%';
+  let h = '<div class="track-strip" aria-hidden="true">';
+  if (bodyActive) {
+    h += '<div class="track-body" style="left:' + pct(15) + ';width:'
+      + pct(146 - 15) + '"></div>';
+  }
+  h += '<div class="track-county" style="left:' + pct(44) + ';width:'
+    + pct(100 - 44) + '"></div>';
+  const today = ptTodayDate();
+  (fish.waves || []).slice(0, 4).forEach(w => {
+    const dt = Math.round((today - isoDay(w.date)) / DAY_MS);
+    if (dt < 0) return;
+    const lo = 146 + slow * dt;
+    const hi = Math.min(max, 146 + fast * dt);
+    if (lo > max) return;
+    h += '<div class="track-band band-' + esc(w.species)
+      + '" style="left:' + pct(lo) + ';width:' + pct(hi - lo) + '"></div>';
+  });
+  FISH_TOWNS.forEach((t, i) => {
+    h += '<div class="track-tick' + (i % 2 ? ' alt' : '')
+      + '" style="left:' + pct(t.rm) + '"><span>' + esc(t.name) + ' · '
+      + t.rm + '</span></div>';
+  });
+  [['Bonneville Dam', 146], ['The Dalles', 192], ['John Day', 216]]
+    .forEach(([n, rm], i) => {
+      h += '<div class="track-tick track-dam' + (i % 2 ? ' alt' : '')
+        + (rm >= 216 ? ' edge-r' : '')
+        + '" style="left:' + pct(rm) + '"><span>' + n + ' · ' + rm
+        + '</span></div>';
+    });
+  h += '<div class="track-tick track-mouth edge-l" style="left:0"><span>Ocean</span></div>';
+  h += '</div>';
+  h += '<p class="track-caption">Schematic — river miles from the ocean,'
+    + ' not to geographic scale. The shaded stretch is Columbia County'
+    + ' (about RM 44–100). A band is where a counted wave is estimated'
+    + ' to be today, at the measured pace of ' + slow + '–' + fast
+    + ' miles a day.</p>';
+  return h;
+}
+function waveList(fish, slow, fast) {
+  const waves = (fish.waves || []).slice(0, 4);
+  if (!waves.length) {
+    return '<p class="status-note">No distinct surge in the last 45 days'
+      + ' of Bonneville counts — lately the runs have moved as a'
+      + ' trickle, not in waves. The next surge day (a count at least'
+      + ' twice the recent two-week median) will appear here with its'
+      + ' estimated windows.</p>';
+  }
+  const today = ptTodayDate();
+  const items = waves.map(w => {
+    const wd = isoDay(w.date);
+    const sh = waveTownWindow(wd, 86, slow, fast);
+    const ra = waveTownWindow(wd, 67, slow, fast);
+    const tda = waveDamWindow(wd, 192, slow, fast);
+    const jda = waveDamWindow(wd, 216, slow, fast);
+    const dt = Math.round((today - wd) / DAY_MS);
+    const lo = 146 + slow * dt, hi = 146 + fast * dt;
+    let nowTxt;
+    if (dt === 0) nowTxt = 'It is at Bonneville today.';
+    else if (hi < 192) nowTxt = 'Today it is estimated between Bonneville and The Dalles.';
+    else if (lo < 192) nowTxt = 'Today it is estimated around The Dalles.';
+    else if (hi < 216) nowTxt = 'Today it is estimated between The Dalles and John Day.';
+    else if (lo < 216) nowTxt = 'Today it is estimated around John Day.';
+    else nowTxt = 'By now it is estimated past John Day.';
+    return '<li><strong>' + spLabel(w.species) + ' wave — ' + num(w.count)
+      + ' counted at Bonneville on ' + fmtDay(wd) + '.</strong><br>'
+      + 'Estimated past St. Helens ' + winText(sh[0], sh[1])
+      + ' · past Rainier ' + winText(ra[0], ra[1]) + '<br>'
+      + 'At The Dalles about ' + winText(tda[0], tda[1])
+      + ' · John Day about ' + winText(jda[0], jda[1]) + '. ' + nowTxt
+      + '</li>';
+  });
+  return '<ul class="wave-list">' + items.join('') + '</ul>';
+}
+function trackerBasis(fish) {
+  const m = fish.model || {};
+  if (!m.basis) return '';
+  return '<p class="card-note small">How these estimates are made: a'
+    + ' “wave” is a day whose Bonneville count is at least twice the'
+    + ' median of the 14 days before it, and at least 100 fish. '
+    + esc(m.basis) + ' Positions are bands, never points — a real'
+    + ' school spreads over miles and days.</p>';
+}
+
+async function loadFish() {
+  const fbody = $('fish-body'), tbody = $('tracker-body');
+  if (!fbody && !tbody) return;
+  let fish = null;
+  try { fish = await getSnapshot('fish.json'); } catch (e) { /* below */ }
+  if (!fish || !fish.dams || !fish.dams.BON) {
+    const msg = '<p class="status-note">🐟 The dam counts didn\'t load'
+      + ' — the fish snapshot is missing from the latest collection.'
+      + ' The counters\' numbers will be back with the next one.</p>';
+    if (fbody) fbody.innerHTML = msg;
+    if (tbody) tbody.innerHTML = msg;
+    return;
+  }
+  setSnapUpdated('fish-updated', fish.fetched_at);
+  setSnapUpdated('tracker-updated', fish.fetched_at);
+  const month = ptTodayDate().getUTCMonth() + 1;
+  if (fbody) {
+    const bon = fish.dams.BON;
+    fbody.innerHTML =
+      '<h3 class="subhead">Bonneville Dam — counted '
+      + fmtDay(isoDay(bon.latest_date)) + '</h3>'
+      + '<div class="fish-rows">' + fishCountRows(bon.counts || {}) + '</div>'
+      + fishSeasonLine(bon.ytd)
+      + fishLadderLine(fish)
+      + '<h3 class="subhead">Run timing — what\'s moving, what\'s next</h3>'
+      + '<div class="run-rows">' + FISH_RUNS.map(r =>
+          '<div class="run-row"><span class="run-name">' + r.name
+          + '</span><span class="run-win">' + r.win
+          + '</span><span class="run-state">' + runState(r, fish, month)
+          + '</span></div>').join('') + '</div>';
+  }
+  if (tbody) {
+    const model = fish.model || { pace_mi_per_day: [13, 26] };
+    const slow = model.pace_mi_per_day[0], fast = model.pace_mi_per_day[1];
+    const now = countyNowLine(fish, slow, fast);
+    tbody.innerHTML = '<p class="tracker-now">' + now.html + '</p>'
+      + trackStrip(fish, slow, fast, now.body)
+      + waveList(fish, slow, fast)
+      + trackerBasis(fish);
+  }
+}
+
 /* ---------- ships "passing soon" (build batch 2026-11-04, ADD 4 / R2) ----------
    MarineTraffic's redesign is hated for burying the simple near-me list;
    this IS that list: vessels sorted by when they pass the visitor's home
@@ -1288,7 +1652,8 @@ const FRESH_ROWS = [
   ['Fetcher — Bend run passes (ODOT)', 'bend-updated', 'snapshot'],
   ['Fetcher — Oscar B ferry alerts (Wahkiakum Co.)', 'ferry-updated', 'snapshot'],
   ['Fetcher — events (city & county calendars)', 'events-updated', 'snapshot'],
-  ['Fetcher — river traffic (AIS)', 'ships-updated', 'snapshot']
+  ['Fetcher — river traffic (AIS)', 'ships-updated', 'snapshot'],
+  ['Fetcher — fish counts & salmon tracker (FPC / DART)', 'fish-updated', 'snapshot']
 ];
 function renderFreshness() {
   const body = $('freshness-body');
@@ -1326,6 +1691,7 @@ loadISS();
 loadRoads();
 loadRouteAhead();
 loadBend();
+loadFish();
 loadShips();
 loadFerry();
 tickFerryNext();
@@ -1339,6 +1705,7 @@ setInterval(loadAircraft, 45 * 1000);
 setInterval(loadISS, 15 * 1000);
 setInterval(loadRoads, 10 * 60 * 1000);
 setInterval(loadBend, 10 * 60 * 1000);
+setInterval(loadFish, 10 * 60 * 1000);
 setInterval(loadRouteAhead, 30 * 60 * 1000);
 setInterval(loadShips, 10 * 60 * 1000);
 setInterval(loadFerry, 10 * 60 * 1000);
@@ -3825,6 +4192,11 @@ const LANG_ES = {
   tidesh2: '🌊 Mareas del río',
   tidesnote: 'El Columbia es un río de mareas en todo su paso por St. Helens — el océano sube por el canal dos veces al día. Para la rampa de botes, el muelle, la playa del río o una hora de pesca, aquí está el próximo cambio de marea en las dos estaciones de NOAA del condado.',
   tidesnote2: 'Las <em>predicciones</em> de marea de NOAA Tides &amp; Currents (estación 9439201 en St. Helens, estación 9439099 en Wauna), en pies sobre el nivel medio de la bajamar. El caudal del río empuja el agua real fuera de la predicción — un río alto corre más alto y más tarde — así que toma las horas como el plan, no como una promesa.',
+  fishh2: '🐟 Conteos de peces — las presas',
+  fishnote: 'Cada salmón que va hacia el alto Columbia pasa por la presa Bonneville, donde el Cuerpo de Ingenieros los cuenta en las escalas de peces. El día publicado más reciente suele ir uno o dos días detrás del calendario — los conteos se registran en video y se revisan antes de publicarse.',
+  fishnote2: 'Conteos: Cuerpo de Ingenieros del Ejército de EE. UU., publicados por el Fish Passage Center y Columbia Basin Research (DART). Un cero es una respuesta real, no un vacío — significa que los contadores no vieron ninguno ese día.',
+  trackerh2: '🎣 Rastreador de salmones',
+  trackernote: 'Dónde están las migraciones — estimado a partir de los conteos en las presas. Un aumento contado en Bonneville es una ola de peces que pasó por este condado unos días antes y llega a las presas de arriba unos días después. Las ventanas de abajo se midieron con los conteos reales de presa a presa de 2026, y todo lo proyectado se etiqueta como estimación: los números contados son hechos; las posiciones son las matemáticas honestas entre ellos.',
   quakesh2: '🫨 Terremotos — últimos 30 días',
   firesh2: '🔥 Incendios forestales',
   firesnote: 'Datos oficiales de incidentes del Centro Nacional Interagencial de Incendios (WFIGS). Para avisos de evacuación, sigue siempre a la Oficina de Manejo de Emergencias del Condado de Columbia e InciWeb.',
@@ -3840,7 +4212,7 @@ const LANG_ES = {
   installbtn: '📱 Agregar a pantalla de inicio',
   wallbtn: '📺 Pantalla en pared',
   footerbyline: '<strong>Columbia County Live</strong> — por <strong>Nomad Development Group</strong>',
-  footerdata: 'Datos: Servicio Meteorológico Nacional · Servicio Geológico de EE. UU. (USGS) · NOAA Tides &amp; Currents (mareas del río) · NOAA nowCOAST (radar) · NIFC WFIGS (incendios forestales) · colaboradores de adsb.fi (aviones, ODbL) · wheretheiss.at (posición de la EEI) · CelesTrak / NORAD (órbita de la EEI, para predicciones de paso) · Open-Meteo / Copernicus CAMS (modelo de calidad del aire) · colaboradores de OpenStreetMap. Los datos de captura (carreteras, cámaras, puente, alertas del ferry, eventos, tráfico del río) los recoge un pequeño programa recolector de los operadores oficiales — ODOT TripCheck, WSDOT, el condado de Wahkiakum y los calendarios de las ciudades y el condado — y se etiquetan con la hora en que se recogieron. El modelo de capas de rastreo en vivo está inspirado en God&rsquo;s Eye View (código abierto, de Bilawal Sidhu), cuyo DATA_SOURCES.md nos señaló varias de estas fuentes públicas.',
+  footerdata: 'Datos: Servicio Meteorológico Nacional · Servicio Geológico de EE. UU. (USGS) · NOAA Tides &amp; Currents (mareas del río) · NOAA nowCOAST (radar) · NIFC WFIGS (incendios forestales) · colaboradores de adsb.fi (aviones, ODbL) · wheretheiss.at (posición de la EEI) · CelesTrak / NORAD (órbita de la EEI, para predicciones de paso) · Open-Meteo / Copernicus CAMS (modelo de calidad del aire) · Fish Passage Center y Columbia Basin Research DART (conteos de peces en las presas — datos del Cuerpo de Ingenieros del Ejército de EE. UU.) · colaboradores de OpenStreetMap. Los datos de captura (carreteras, cámaras, puente, alertas del ferry, eventos, tráfico del río) los recoge un pequeño programa recolector de los operadores oficiales — ODOT TripCheck, WSDOT, el condado de Wahkiakum y los calendarios de las ciudades y el condado — y se etiquetan con la hora en que se recogieron. El modelo de capas de rastreo en vivo está inspirado en God&rsquo;s Eye View (código abierto, de Bilawal Sidhu), cuyo DATA_SOURCES.md nos señaló varias de estas fuentes públicas.',
   footerdisc: 'Esta página reúne datos públicos por conveniencia. Antes de viajar con clima severo o agua alta, confirma las condiciones con las fuentes oficiales enlazadas arriba.',
   langnote: "🌎 This page is showing its headings, buttons and notes in Spanish — tap <strong>English</strong> up top, beside the clock, to switch back. Live readings, alerts and event listings keep arriving in English from their official sources."
 };
