@@ -1,44 +1,64 @@
 {
- "fetched_at": "2026-11-05T19:10:41Z",
+ "fetched_at": "2026-11-05T19:15:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07881,
-   "lon": -122.90048,
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 46.0908,
+   "lon": -122.93205,
+   "sog_kn": 0,
+   "cog": 103.9,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-05 19:15:46.146639425 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.09024,
+   "lon": -122.93164,
+   "type_code": 50,
+   "destination": "--",
+   "updated": "2026-11-05 19:15:55.707322253 +0000 UTC",
    "sog_kn": 0,
    "cog": 360,
-   "heading": 335,
-   "nav_status": 3,
-   "updated": "2026-11-05 19:10:46.517316867 +0000 UTC"
+   "heading": 511,
+   "nav_status": 0
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.17464,
-   "lon": -123.21139,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-05 19:10:48.015306981 +0000 UTC"
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07856,
+   "lon": -122.90021,
+   "sog_kn": 0,
+   "cog": 228.6,
+   "heading": 153,
+   "nav_status": 0,
+   "updated": "2026-11-05 19:15:52.492057813 +0000 UTC"
   },
   {
-   "mmsi": 538006443,
-   "name": "RB JAKE",
-   "lat": 46.02715,
-   "lon": -122.86951,
-   "type_code": 70,
-   "destination": "US KAL",
-   "updated": "2026-11-05 19:10:50.036538993 +0000 UTC"
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.90261,
+   "lon": -122.8111,
+   "sog_kn": 8.1,
+   "cog": 336.9,
+   "heading": 338,
+   "nav_status": 0,
+   "updated": "2026-11-05 19:15:57.41497451 +0000 UTC"
   },
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.13801,
-   "lon": -123.38037,
-   "type_code": 99,
-   "updated": "2026-11-05 19:10:55.925964103 +0000 UTC"
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 136,
+   "heading": 126,
+   "nav_status": 15,
+   "updated": "2026-11-05 19:15:57.58355808 +0000 UTC"
   },
   {
    "mmsi": 367727410,
@@ -46,43 +66,50 @@
    "lat": 45.64384,
    "lon": -122.7258,
    "sog_kn": 0,
-   "cog": 91.2,
+   "cog": 133.5,
    "heading": 115,
    "nav_status": 12,
-   "updated": "2026-11-05 19:10:58.741629423 +0000 UTC"
+   "updated": "2026-11-05 19:15:58.107264351 +0000 UTC"
   },
   {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.64725,
-   "lon": -122.73919,
-   "sog_kn": 1.7,
-   "cog": 290.5,
-   "heading": 289,
-   "nav_status": 12,
-   "updated": "2026-11-05 19:11:00.435571606 +0000 UTC"
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09078,
+   "lon": -122.93206,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-05 19:16:07.598725868 +0000 UTC"
   },
   {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63866,
-   "lon": -122.72402,
-   "sog_kn": 0,
-   "cog": 22.5,
-   "heading": 115,
-   "nav_status": 1,
-   "updated": "2026-11-05 19:11:03.785297478 +0000 UTC"
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20001,
+   "lon": -123.3854,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-05 19:16:13.026132498 +0000 UTC"
   },
   {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 46.09051,
-   "lon": -122.93231,
-   "sog_kn": 0,
-   "cog": 325.6,
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.62707,
+   "lon": -122.79003,
+   "sog_kn": 7.7,
+   "cog": 4.4,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-05 19:11:06.355844064 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-05 19:16:13.577452981 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.6414,
+   "lon": -122.77345,
+   "sog_kn": 0,
+   "cog": 43.8,
+   "heading": 254,
+   "nav_status": 0,
+   "updated": "2026-11-05 19:16:14.732505651 +0000 UTC"
   }
  ]
 }
