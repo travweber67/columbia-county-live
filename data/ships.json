@@ -1,71 +1,134 @@
 {
- "fetched_at": "2026-11-05T04:39:22Z",
+ "fetched_at": "2026-11-05T04:44:22Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60761,
-   "lon": -122.67767,
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58754,
+   "lon": -122.7704,
+   "sog_kn": 0,
+   "cog": 257.6,
+   "heading": 141,
+   "nav_status": 0,
+   "updated": "2026-11-05 04:44:29.191654806 +0000 UTC"
+  },
+  {
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.11012,
+   "lon": -122.96341,
+   "sog_kn": 0,
+   "cog": 176.8,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-05 04:44:33.890459546 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.0088,
+   "lon": -122.84884,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-05 04:39:27.292310931 +0000 UTC"
+   "updated": "2026-11-05 04:44:37.543177619 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60756,
+   "lon": -122.67769,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-05 04:44:37.889398402 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07829,
+   "lon": -122.89966,
+   "sog_kn": 0,
+   "cog": 36.9,
+   "heading": 152,
+   "nav_status": 0,
+   "updated": "2026-11-05 04:44:38.245450125 +0000 UTC"
+  },
+  {
+   "mmsi": 368450870,
+   "name": "AMERICAN ENCORE",
+   "lat": 45.95177,
+   "lon": -122.80782,
+   "type_code": 60,
+   "destination": "KALAMA",
+   "updated": "2026-11-05 04:44:41.228915224 +0000 UTC",
+   "sog_kn": 12.9,
+   "cog": 341,
+   "heading": 340,
+   "nav_status": 0
   },
   {
    "mmsi": 368083770,
    "name": "SUPPORT",
-   "lat": 46.00898,
+   "lat": 46.0089,
    "lon": -122.84837,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-05 04:39:35.708717742 +0000 UTC"
+   "updated": "2026-11-05 04:44:44.128673299 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07827,
-   "lon": -122.89984,
-   "sog_kn": 0.2,
-   "cog": 36.1,
-   "heading": 117,
-   "nav_status": 0,
-   "updated": "2026-11-05 04:39:37.81905235 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64255,
-   "lon": -122.77149,
-   "type_code": 52,
-   "destination": "US^0UU4>02MR",
-   "updated": "2026-11-05 04:39:42.777979102 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 45.71364,
-   "lon": -122.76699,
-   "sog_kn": 10,
-   "cog": 14.6,
-   "heading": 10,
-   "nav_status": 0,
-   "updated": "2026-11-05 04:39:52.124733117 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40232,
+   "mmsi": 352005064,
+   "name": "ANSAC RISING SUN",
+   "lat": 45.64075,
+   "lon": -122.7322,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 131,
-   "nav_status": 0,
-   "updated": "2026-11-05 04:39:53.142859162 +0000 UTC"
+   "cog": 109.2,
+   "heading": 110,
+   "nav_status": 1,
+   "updated": "2026-11-05 04:44:45.557615377 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.17282,
+   "lon": -123.21381,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-05 04:44:50.198376593 +0000 UTC"
+  },
+  {
+   "mmsi": 477133900,
+   "name": "SHAO SHAN 8",
+   "lat": 45.63664,
+   "lon": -122.71622,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-05 04:44:52.138853047 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10358,
+   "lon": -122.91015,
+   "sog_kn": 0,
+   "cog": 83.5,
+   "heading": 74,
+   "nav_status": 3,
+   "updated": "2026-11-05 04:44:53.678280495 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.87973,
+   "lon": -122.79467,
+   "type_code": 52,
+   "updated": "2026-11-05 04:44:56.14716396 +0000 UTC"
   }
  ]
 }
