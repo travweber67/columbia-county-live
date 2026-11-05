@@ -1129,15 +1129,11 @@ function verdictHTML(fish, model) {
   if (d && rating !== 'SLOW') {
     clause = 'the ' + d.label + ' run is the story — ' + num(d.trend.latest)
       + ' counted at Bonneville on ' + fmtMD(d.trend.latestDate)
-      + ', averaging about ' + num(Math.round(d.trend.avg3))
-      + ' a day lately and ' + d.trend.word + '.';
-    if (d.timing && d.timing.pct_past_typical >= 90) {
-      clause += ' It is late in the run, though — in a typical year ~'
-        + d.timing.pct_past_typical + '% has passed Bonneville by now.';
-    }
+      + ', about ' + num(Math.round(d.trend.avg3)) + ' a day lately, '
+      + d.trend.word + '.';
   } else if (d) {
-    clause = 'the counters are seeing very little now — the latest '
-      + d.label + ' day was ' + num(d.trend.latest) + ' at Bonneville on '
+    clause = 'very little is moving — the latest ' + d.label
+      + ' count was ' + num(d.trend.latest) + ' at Bonneville on '
       + fmtMD(d.trend.latestDate) + '.';
   } else {
     clause = 'no run is moving right now that the dam counts can see.';
@@ -1190,8 +1186,21 @@ function whyHTML(fish, model, slow, fast) {
     + ' surges took about 2 days from Bonneville to The Dalles and 3 to'
     + ' John Day — inside the published 13–26 miles a day for Columbia'
     + ' Chinook.');
+  let basis = '';
+  const bm = fish.model || {};
+  if (bm.basis) {
+    basis = '<p>How these estimates are made: a “wave” is a day whose'
+      + ' Bonneville count is at least twice the median of the 14 days'
+      + ' before it, and at least 100 fish. ' + esc(bm.basis)
+      + ' Positions are bands, never points — a real school spreads'
+      + ' over miles and days.</p>';
+  }
   return '<details class="why-box"><summary>Why this call? — the counts'
-    + ' behind it</summary><p>' + parts.join(' ') + '</p></details>';
+    + ' behind it</summary><p>This call is an estimate built from the'
+    + ' dam counts on the card above — where the runs are, at the pace'
+    + ' this year’s counts actually measured. Counted numbers are'
+    + ' facts; positions and ratings are the honest math between'
+    + ' them.</p><p>' + parts.join(' ') + '</p>' + basis + '</details>';
 }
 function renderSalmonLayer(model) {
   if (!salmonLayer || typeof L === 'undefined'
@@ -1221,37 +1230,75 @@ function heatStripHTML(model) {
     bins += '<span class="heat-bin" style="background:'
       + (b < 0 ? '#dde3ea' : HEAT_COLORS[b]) + '"></span>';
   });
+  /* Positions under the strip are bare ticks — the five towns and the
+     three dams. Text is limited to three anchors that cannot crowd
+     each other: Ocean (left edge), Bonneville Dam, John Day. The old
+     two-row town labels collided into mush at phone width; now the
+     county stretch carries the only other words, as one zone label
+     above the strip. fitHeatLabels() below enforces the no-overlap
+     rule mechanically after every render. */
   let ticks = '';
-  FISH_TOWNS.forEach((t, i) => {
-    ticks += '<div class="track-tick' + (i % 2 ? ' alt' : '')
-      + '" style="left:' + pct(t.rm) + '"><span>' + esc(t.name) + ' · '
-      + t.rm + '</span></div>';
+  FISH_TOWNS.forEach(t => {
+    ticks += '<span class="heat-tick" style="left:' + pct(t.rm)
+      + '"></span>';
   });
-  [['Bonneville Dam', 146], ['The Dalles', 192], ['John Day', 216]]
-    .forEach(([n, rm], i) => {
-      ticks += '<div class="track-tick track-dam' + (i % 2 ? ' alt' : '')
-        + (rm >= 216 ? ' edge-r' : '')
-        + '" style="left:' + pct(rm) + '"><span>' + n + ' · ' + rm
-        + '</span></div>';
-    });
-  ticks += '<div class="track-tick track-mouth edge-l" style="left:0">'
-    + '<span>Ocean</span></div>';
-  return '<div class="heat-wrap"><div class="heat-county" style="left:'
+  [146, 192, 216].forEach(rm => {
+    ticks += '<span class="heat-tick tick-dam" style="left:' + pct(rm)
+      + '"></span>';
+  });
+  const anchors =
+      '<span class="heat-anchor a-l" style="left:0">Ocean</span>'
+    + '<span class="heat-anchor a-c" style="left:' + pct(146)
+    + '">Bonneville Dam · 146</span>'
+    + '<span class="heat-anchor a-r" style="left:' + pct(216)
+    + '">John Day · 216</span>';
+  return '<div class="heat-wrap">'
+    + '<div class="heat-zone"><span style="left:' + pct(72)
+    + '">Columbia County · RM 44–100</span></div>'
+    + '<div class="heat-box"><div class="heat-county" style="left:'
     + pct(44) + ';width:' + pct(100 - 44) + '"></div>'
     + '<div class="heat-row">' + bins + '</div>'
-    + '<div class="heat-labels">' + ticks + '</div></div>'
+    + '<div class="heat-ticks">' + ticks + '</div></div>'
+    + '<div class="heat-anchors">' + anchors + '</div></div>'
     + '<p class="heat-legend"><span class="lg" style="background:#c2540a">'
-    + '</span> hot — fish likely here now'
-    + ' <span class="lg" style="background:#f5b74d"></span> some fish around'
-    + ' <span class="lg" style="background:#fdeeda"></span> a few'
-    + ' <span class="lg" style="background:#dde3ea"></span> no signal'
-    + ' from the counts</p>'
-    + '<p class="track-caption">Estimated fish likelihood today, by'
-    + ' river mile — the dashed stretch is Columbia County (about RM'
-    + ' 44–100). Deeper color = stronger signal from the dam counts;'
-    + ' gray means the counts say nothing there, not that the water is'
-    + ' empty.</p>';
+    + '</span>Strong · <span class="lg" style="background:#f5b74d">'
+    + '</span>Some · <span class="lg" style="background:#fdeeda"></span>'
+    + 'A few · <span class="lg" style="background:#dde3ea"></span>'
+    + 'No signal</p>'
+    + '<p class="track-caption">Estimated from today’s dam counts, by'
+    + ' river mile. Gray means no signal from the counts — not that'
+    + ' the water is empty.</p>';
 }
+/* The no-overlap rule, enforced mechanically: once the strip is in the
+   page, measure the three anchor labels; if any pair overlaps, drop
+   to ticks only (.no-labels hides the text). Re-checked on resize so
+   a rotation or a narrower window cannot resurrect a clash. In the
+   mini-DOM harness there is no layout — the guard simply returns. */
+function fitHeatLabels() {
+  const row = document.querySelector('.heat-anchors');
+  if (!row || typeof row.getBoundingClientRect !== 'function') return;
+  const labels = Array.prototype.slice.call(
+    row.querySelectorAll('.heat-anchor'));
+  if (labels.length < 2) return;
+  row.classList.remove('no-labels');
+  const rects = labels.map(el => el.getBoundingClientRect());
+  if (rects.some(r => !r.width)) return;
+  let overlap = false;
+  for (let i = 0; i < rects.length; i++) {
+    for (let j = i + 1; j < rects.length; j++) {
+      if (rects[i].left < rects[j].right - 2
+          && rects[j].left < rects[i].right - 2) overlap = true;
+    }
+  }
+  if (overlap) row.classList.add('no-labels');
+}
+let heatFitTimer = null;
+window.addEventListener('resize', () => {
+  if (heatFitTimer) return;
+  heatFitTimer = setTimeout(() => {
+    heatFitTimer = null; fitHeatLabels();
+  }, 150);
+});
 function waveList(fish, slow, fast) {
   const waves = (fish.waves || []).slice(0, 4);
   if (!waves.length) {
@@ -1287,16 +1334,6 @@ function waveList(fish, slow, fast) {
   });
   return '<ul class="wave-list">' + items.join('') + '</ul>';
 }
-function trackerBasis(fish) {
-  const m = fish.model || {};
-  if (!m.basis) return '';
-  return '<p class="card-note small">How these estimates are made: a'
-    + ' “wave” is a day whose Bonneville count is at least twice the'
-    + ' median of the 14 days before it, and at least 100 fish. '
-    + esc(m.basis) + ' Positions are bands, never points — a real'
-    + ' school spreads over miles and days.</p>';
-}
-
 /* ----- the day plan: fish the current -----
    Travis's correction, treated as ground truth: there is no single
    "best tide." Strong current is plunking/anchor water — a Spin-N-Glo
@@ -1478,15 +1515,13 @@ function renderDayPlan() {
     + tm.map(s => METHOD_META[s.method].short + ' '
       + fmtRange(s.start, s.end)).join(' · ') + '</p>';
   const src = currentMode === 'noaa'
-    ? 'Current predictions: NOAA Tides &amp; Currents for '
-      + CURRENT_STATION.label + ' — the county\'s lower-river'
-      + ' reference; no current station serves St. Helens. Upriver the'
-      + ' same pattern runs weaker and a bit later, so read this as'
-      + ' the shape of the day, not a stopwatch.'
-    : 'NOAA\'s current station didn\'t answer, so this plan is'
-      + ' estimated from the St. Helens tide curve — strongest push'
-      + ' mid-ebb, slack near the turns. Treat the times as'
-      + ' approximate.';
+    ? 'Current predictions: NOAA for Walker Island (RM ~64) — the'
+      + ' county’s lower-river reference. No station serves St.'
+      + ' Helens, so read this as the shape of the day, not a'
+      + ' stopwatch.'
+    : 'Estimated from the St. Helens tide curve — NOAA’s current'
+      + ' station didn’t answer. Strongest push mid-ebb, slack near'
+      + ' the turns; times are approximate.';
   body.innerHTML = '<div class="plan-chips">' + chips + '</div>' + callout
     + strip + hours + nowLine + list + tmLine
     + '<p class="card-note small">' + src + '</p>';
@@ -1502,6 +1537,7 @@ function renderDayPlan() {
       renderDayPlan();
     });
   });
+  renderFishAnswer();
 }
 async function loadCurrents() {
   const body = $('dayplan-body');
@@ -1537,6 +1573,7 @@ async function loadCurrents() {
   renderDayPlan();
 }
 
+let fishData = null; // the loaded fish.json, shared with the answer card
 async function loadFish() {
   const fbody = $('fish-body'), tbody = $('tracker-body');
   if (!fbody && !tbody) return;
@@ -1548,8 +1585,10 @@ async function loadFish() {
       + ' The counters\' numbers will be back with the next one.</p>';
     if (fbody) fbody.innerHTML = msg;
     if (tbody) tbody.innerHTML = msg;
+    renderFishAnswer();
     return;
   }
+  fishData = fish;
   setSnapUpdated('fish-updated', fish.fetched_at);
   setSnapUpdated('tracker-updated', fish.fetched_at);
   const month = ptTodayDate().getUTCMonth() + 1;
@@ -1577,10 +1616,13 @@ async function loadFish() {
       + whyHTML(fish, heat, slow, fast)
       + '<details class="wave-details"><summary>Wave detail — the'
       + ' counted surges and their windows</summary>'
-      + waveList(fish, slow, fast) + '</details>'
-      + trackerBasis(fish);
+      + waveList(fish, slow, fast) + '</details>';
     renderSalmonLayer(heat);
+    if (typeof requestAnimationFrame === 'function') {
+      requestAnimationFrame(fitHeatLabels);
+    }
   }
+  renderFishAnswer();
 }
 
 /* ---------- Steelhead Day Index (small rivers) ----------
@@ -1666,6 +1708,7 @@ const SH_RIVERS = [
 ];
 
 const shState = { fc: {} };
+let shByDay = null; // per-day index results, shared with the answer card
 
 function shPtParts(d) {
   const parts = {};
@@ -1826,6 +1869,176 @@ function shDayWeather(periods, targetKey) {
   return { tMin, qpfIn: qpf, hasQpf, pop, gust };
 }
 
+/* One river’s index computation, extracted verbatim from the card
+   renderer so the answer card can read the same verdicts for BOTH
+   target days (today and tomorrow). The math is unchanged: ctx
+   carries the target day (month-day, forecast key, Pacific date
+   parts), env the shared fetched inputs, fossAnalysis the Foss
+   gauge read for that day. Returns the card HTML plus the pieces
+   the answer card summarizes — verdict, why, first light. */
+function shStatFor(stats, site, md) {
+  return (stats && stats[site]) ? stats[site][md] : null;
+}
+function shRiverResult(river, ctx, env, fossAnalysis) {
+  const basin = env.snap && env.snap.basins ? env.snap.basins[river.basin] : null;
+  const rainFlow = shRainFlow(basin);
+  const timing = shTiming(river, ctx.md);
+  let flow = null, flowLine = '', daysSincePeak = rainFlow ? rainFlow.daysSincePeak : 3;
+  if (river.kind === 'gauge') {
+    const g = env.gauges[river.gauge] ? shAnalyzeGauge(
+      env.gauges[river.gauge]['00060'], shStatFor(env.stats, river.gauge, ctx.md),
+      river.hardLowQ || null) : null;
+    if (g) {
+      flow = { state: g.state, score: g.score };
+      daysSincePeak = g.hrsSincePeak / 24;
+      flowLine = 'Flow \u2014 ' + esc(river.gaugeLabel) + ': ' + Math.round(g.qNow)
+        + ' cfs right now, ' + g.state
+        + (g.level ? ', ' + g.level + ' for this date' : '')
+        + (g.peak > 0 && g.state === 'dropping'
+          ? ' (down from ' + Math.round(g.peak) + ' cfs in the last 3 days)' : '') + '.';
+      if (river.rainGauge && env.gauges[river.rainGauge] && env.gauges[river.rainGauge]['00060']) {
+        const v = env.gauges[river.rainGauge]['00060'];
+        flowLine += ' Higher up at Vernonia: ' + Math.round(v[v.length - 1].v) + ' cfs.';
+      }
+    } else if (rainFlow) {
+      flow = { state: rainFlow.state, score: Math.round(rainFlow.score * 0.8) };
+      flowLine = 'Flow \u2014 the gauge feed did not answer, so this falls back to basin rain: '
+        + rainFlow.p24.toFixed(2) + ' in in the last 24 hours over the basin \u2014 read as ' + rainFlow.state + '.';
+    }
+  } else if (river.kind === 'proxy') {
+    if (rainFlow) {
+      flow = { state: rainFlow.state, score: rainFlow.score };
+      if (fossAnalysis) {
+        flow.score = Math.round((rainFlow.score + fossAnalysis.score) / 2);
+        if (fossAnalysis.state === 'rising' && rainFlow.p24 >= 0.3) flow.state = 'rising';
+      }
+      flowLine = 'Flow \u2014 no gauge on this fork. Read from rain over its own basin ('
+        + rainFlow.p24.toFixed(2) + ' in in 24 h, ' + rainFlow.p72.toFixed(2) + ' in in 72 h \u2014 ' + rainFlow.state + ')'
+        + (fossAnalysis ? ' and the Foss gauge on the main Nehalem (' + fossAnalysis.state + ' at '
+          + Math.round(fossAnalysis.qNow) + ' cfs)' : '') + '. Estimate.';
+    }
+  } else if (rainFlow) {
+    flow = { state: rainFlow.state, score: rainFlow.score };
+    flowLine = 'Flow \u2014 ungauged creek: no gauge exists here, so flow is read from rain over its basin \u2014 '
+      + rainFlow.p24.toFixed(2) + ' in in the last 24 hours, ' + rainFlow.p72.toFixed(2)
+      + ' in in the last 72: ' + rainFlow.state + '. Rain-based estimate.';
+  }
+  if (!flow) {
+    flow = { state: 'unknown', score: 12 };
+    flowLine = 'Flow \u2014 neither the env.gauges nor the basin-rain snapshot answered this time; the call leans on timing and weather alone.';
+  }
+
+  const risingHard = flow.state === 'rising' && rainFlow && rainFlow.p24 >= 0.75;
+  const clarity = shClarity(rainFlow, daysSincePeak, river.tau,
+    !!(basin && basin.first_flush), risingHard);
+  let clarityScore = clarity ? clarity.score : 10;
+  if (flow.score <= 17) clarityScore = Math.min(clarityScore, 16); /* low water: even green water fishes hard */
+  if (flow.state === 'rising') clarityScore = Math.min(clarityScore, 20);
+  const clarityLine = clarity
+    ? 'Clarity \u2014 ' + clarity.band + ' (estimate). Modeled from basin rain, how long since the river peaked, '
+      + 'and this creek\u2019s clearing speed' + (basin && basin.first_flush
+        ? '; this is the season\u2019s first big rain after a dry spell, which dirties the water longest' : '') + '.'
+    : 'Clarity \u2014 no basin-rain data this time, so clarity is not scored.';
+
+  const periods = env.forecasts[river.anchor.key];
+  const wx = periods ? shDayWeather(periods, ctx.key) : null;
+  let freeze = 0, coldLine = 'Cold \u2014 forecast unavailable this time.';
+  if (wx && wx.tMin != null) {
+    if (wx.tMin < 28) freeze = -40;
+    else if (wx.tMin < 32) freeze = -15;
+    else if (wx.tMin < 34) freeze = -5;
+    coldLine = 'Cold \u2014 ' + wx.tMin + '\u00b0F around first light. ' + (wx.tMin < 28
+      ? 'Below about 28\u00b0F the line, the rod guides and the reel all freeze \u2014 most anglers stay home. (Local knowledge, not an agency number.)'
+      : wx.tMin < 32
+        ? 'Below freezing the rod guides and line ice up \u2014 fishable, but you will be picking ice out of the guides. (Local knowledge, not an agency number.)'
+        : wx.tMin < 34
+          ? 'Right at the edge of icing \u2014 guides may skim over early.'
+          : 'Above freezing \u2014 no icing problem.');
+  }
+  let weatherPen = 0, weatherLine = 'Weather \u2014 forecast unavailable this time.';
+  if (wx) {
+    if (wx.hasQpf && wx.qpfIn >= 0.3) weatherPen -= 10;
+    else if (wx.hasQpf && wx.qpfIn >= 0.15) weatherPen -= 6;
+    else if (wx.hasQpf && wx.qpfIn >= 0.05) weatherPen -= 3;
+    else if (!wx.hasQpf && wx.pop >= 80) weatherPen -= 6;
+    if (wx.gust >= 30) weatherPen -= 5; else if (wx.gust >= 22) weatherPen -= 2;
+    weatherPen = Math.max(weatherPen, -14);
+    weatherLine = 'Weather \u2014 ' + (wx.hasQpf
+      ? (wx.qpfIn >= 0.05
+        ? 'about ' + wx.qpfIn.toFixed(2) + ' in of rain expected in daylight hours \u2014 the river may rise again'
+        : 'little or no rain expected in daylight hours')
+      : (wx.pop >= 50 ? wx.pop + '% chance of rain in daylight hours' : 'rain not expected in daylight hours'))
+      + (wx.gust >= 22 ? '; gusts to ' + wx.gust + ' mph make casting work' : '') + '.';
+  }
+
+  let base = Math.round((flow.score + clarityScore) / 65 * 100) + freeze + weatherPen;
+  base = Math.max(0, Math.min(100, base));
+  const score = Math.round(base * timing.mult);
+  const blown = (clarity && clarity.band === 'blown out') || flow.state === 'blown high';
+  let verdict = score >= 65 ? 'Good day' : score >= 40 ? 'Fair day' : 'Poor day';
+  if (blown || !timing.inSeason) verdict = 'Poor day';
+
+  let why;
+  if (!timing.inSeason) {
+    /* Every season profile here starts in Nov–Dec and ends by
+       mid-April, so an out-of-season date from May on is BEFORE the
+       next run; one in Jan–Apr is past this year's. */
+    const before = ctx.md >= 501;
+    why = (before ? 'Too early for this river \u2014 ' : 'Past this river\u2019s run for the year \u2014 ') + river.window + '.'
+      + (base >= 55 ? ' The water itself is in decent shape.' : '');
+  } else if (clarity && clarity.band === 'blown out') {
+    why = 'Blown out \u2014 too much color in the water after the rain. Wait for the drop.';
+  } else if (freeze <= -40) {
+    why = 'Bitter cold at first light \u2014 line, guides and reel will freeze. Most anglers stay home.';
+  } else if (flow.state === 'dropping' && clarity && (clarity.band === 'steelhead green' || clarity.band === 'stained')) {
+    why = 'Dropping into ' + clarity.band + ' \u2014 the window every winter angler waits for'
+      + (timing.mult >= 1 ? ', and the run is on' : '') + '.';
+  } else if (flow.state === 'rising') {
+    why = 'On the rise \u2014 fresh fish push in on water like this; the fishing turns on as it starts to drop.';
+  } else if (flow.state === 'low') {
+    why = 'Low water \u2014 what fish are here will be spooky. Go small, quiet, and early.';
+  } else if (freeze === -15) {
+    why = 'Fishable water, but below freezing at first light \u2014 expect iced guides and stiff fingers.';
+  } else if (clarity && clarity.band === 'muddy') {
+    why = 'Still muddy from the last rain \u2014 it fishes better a day or two into the drop.';
+  } else {
+    why = 'A workable day \u2014 nothing blown out, nothing perfect. First light is your best shot.';
+  }
+
+  const sun = almDay(ctx.tp, river.sun);
+  let lightLine = 'First light \u2014 ';
+  if (sun.dawn && sun.rise && sun.set) {
+    const legalStart = new Date(sun.rise.getTime() - 3600e3);
+    const legalEnd = new Date(sun.set.getTime() + 3600e3);
+    lightLine += almClock(sun.dawn) + ' (sunrise ' + almClock(sun.rise) + '). General Oregon rule: steelhead '
+      + 'angling hours run ' + almClock(legalStart) + '\u2013' + almClock(legalEnd)
+      + ' here today \u2014 one hour before sunrise to one hour after sunset; check your river\u2019s regs for exceptions.';
+  } else {
+    lightLine += 'sun times unavailable this time.';
+  }
+  const timingLine = 'Timing \u2014 ' + (timing.inSeason
+    ? (timing.mult >= 1 ? 'heart of the run: ' : timing.mult >= 0.7 ? 'in season: ' : 'edge of the season: ')
+      + river.window + '.'
+    : 'outside the run: ' + river.window + '.');
+  const tag = river.kind === 'gauge' ? 'Gauged' : river.kind === 'proxy' ? 'Proxy gauge' : 'Ungauged \u00b7 rain estimate';
+  const pillClass = verdict === 'Good day' ? 'sh-good' : verdict === 'Fair day' ? 'sh-fair' : 'sh-poor';
+  const dawnTxt = (sun.dawn && sun.rise && sun.set) ? almClock(sun.dawn) : null;
+  const html = '<div class="sh-row">'
+    + '<button type="button" class="sh-head" data-sh="' + river.id + '" aria-expanded="false">'
+    + '<span class="sh-name">' + esc(river.name) + ' <span class="sh-tag">' + tag + '</span></span>'
+    + '<span class="sh-pill ' + pillClass + '">' + verdict + '</span></button>'
+    + '<p class="sh-why">' + esc(why) + '</p>'
+    + '<div class="sh-detail" hidden>'
+    + '<p>' + flowLine + '</p>'
+    + '<p>' + clarityLine + '</p>'
+    + '<p>' + esc(coldLine) + '</p>'
+    + '<p>' + esc(weatherLine) + '</p>'
+    + '<p>' + esc(timingLine) + '</p>'
+    + '<p>' + esc(lightLine) + '</p>'
+    + '</div></div>';
+  return { html, verdict, why, dawnTxt };
+}
+
 async function loadSteelhead() {
   const rowsEl = $('steelhead-rows');
   if (!rowsEl) return;
@@ -1853,10 +2066,6 @@ async function loadSteelhead() {
   ]);
   if (snap) setSnapUpdated('steelhead-updated', snap.fetched_at);
   const gauges = iv || {};
-  const statFor = site => (stats && stats[site]) ? stats[site][md] : null;
-  const fossAnalysis = gauges['14301000']
-    ? shAnalyzeGauge(gauges['14301000']['00060'], statFor('14301000'), null)
-    : null;
 
   const forecasts = {};
   await Promise.all([...new Set(SH_RIVERS.map(r => r.anchor.key))].map(async key => {
@@ -1865,163 +2074,30 @@ async function loadSteelhead() {
     catch (e) { forecasts[key] = null; }
   }));
 
-  const cards = SH_RIVERS.map(river => {
-    const basin = snap && snap.basins ? snap.basins[river.basin] : null;
-    const rainFlow = shRainFlow(basin);
-    const timing = shTiming(river, md);
-    let flow = null, flowLine = '', daysSincePeak = rainFlow ? rainFlow.daysSincePeak : 3;
-    if (river.kind === 'gauge') {
-      const g = gauges[river.gauge] ? shAnalyzeGauge(
-        gauges[river.gauge]['00060'], statFor(river.gauge),
-        river.hardLowQ || null) : null;
-      if (g) {
-        flow = { state: g.state, score: g.score };
-        daysSincePeak = g.hrsSincePeak / 24;
-        flowLine = 'Flow \u2014 ' + esc(river.gaugeLabel) + ': ' + Math.round(g.qNow)
-          + ' cfs right now, ' + g.state
-          + (g.level ? ', ' + g.level + ' for this date' : '')
-          + (g.peak > 0 && g.state === 'dropping'
-            ? ' (down from ' + Math.round(g.peak) + ' cfs in the last 3 days)' : '') + '.';
-        if (river.rainGauge && gauges[river.rainGauge] && gauges[river.rainGauge]['00060']) {
-          const v = gauges[river.rainGauge]['00060'];
-          flowLine += ' Higher up at Vernonia: ' + Math.round(v[v.length - 1].v) + ' cfs.';
-        }
-      } else if (rainFlow) {
-        flow = { state: rainFlow.state, score: Math.round(rainFlow.score * 0.8) };
-        flowLine = 'Flow \u2014 the gauge feed did not answer, so this falls back to basin rain: '
-          + rainFlow.p24.toFixed(2) + ' in in the last 24 hours over the basin \u2014 read as ' + rainFlow.state + '.';
-      }
-    } else if (river.kind === 'proxy') {
-      if (rainFlow) {
-        flow = { state: rainFlow.state, score: rainFlow.score };
-        if (fossAnalysis) {
-          flow.score = Math.round((rainFlow.score + fossAnalysis.score) / 2);
-          if (fossAnalysis.state === 'rising' && rainFlow.p24 >= 0.3) flow.state = 'rising';
-        }
-        flowLine = 'Flow \u2014 no gauge on this fork. Read from rain over its own basin ('
-          + rainFlow.p24.toFixed(2) + ' in in 24 h, ' + rainFlow.p72.toFixed(2) + ' in in 72 h \u2014 ' + rainFlow.state + ')'
-          + (fossAnalysis ? ' and the Foss gauge on the main Nehalem (' + fossAnalysis.state + ' at '
-            + Math.round(fossAnalysis.qNow) + ' cfs)' : '') + '. Estimate.';
-      }
-    } else if (rainFlow) {
-      flow = { state: rainFlow.state, score: rainFlow.score };
-      flowLine = 'Flow \u2014 ungauged creek: no gauge exists here, so flow is read from rain over its basin \u2014 '
-        + rainFlow.p24.toFixed(2) + ' in in the last 24 hours, ' + rainFlow.p72.toFixed(2)
-        + ' in in the last 72: ' + rainFlow.state + '. Rain-based estimate.';
-    }
-    if (!flow) {
-      flow = { state: 'unknown', score: 12 };
-      flowLine = 'Flow \u2014 neither the gauges nor the basin-rain snapshot answered this time; the call leans on timing and weather alone.';
-    }
-
-    const risingHard = flow.state === 'rising' && rainFlow && rainFlow.p24 >= 0.75;
-    const clarity = shClarity(rainFlow, daysSincePeak, river.tau,
-      !!(basin && basin.first_flush), risingHard);
-    let clarityScore = clarity ? clarity.score : 10;
-    if (flow.score <= 17) clarityScore = Math.min(clarityScore, 16); /* low water: even green water fishes hard */
-    if (flow.state === 'rising') clarityScore = Math.min(clarityScore, 20);
-    const clarityLine = clarity
-      ? 'Clarity \u2014 ' + clarity.band + ' (estimate). Modeled from basin rain, how long since the river peaked, '
-        + 'and this creek\u2019s clearing speed' + (basin && basin.first_flush
-          ? '; this is the season\u2019s first big rain after a dry spell, which dirties the water longest' : '') + '.'
-      : 'Clarity \u2014 no basin-rain data this time, so clarity is not scored.';
-
-    const periods = forecasts[river.anchor.key];
-    const wx = periods ? shDayWeather(periods, targetKey) : null;
-    let freeze = 0, coldLine = 'Cold \u2014 forecast unavailable this time.';
-    if (wx && wx.tMin != null) {
-      if (wx.tMin < 28) freeze = -40;
-      else if (wx.tMin < 32) freeze = -15;
-      else if (wx.tMin < 34) freeze = -5;
-      coldLine = 'Cold \u2014 ' + wx.tMin + '\u00b0F around first light. ' + (wx.tMin < 28
-        ? 'Below about 28\u00b0F the line, the rod guides and the reel all freeze \u2014 most anglers stay home. (Local knowledge, not an agency number.)'
-        : wx.tMin < 32
-          ? 'Below freezing the rod guides and line ice up \u2014 fishable, but you will be picking ice out of the guides. (Local knowledge, not an agency number.)'
-          : wx.tMin < 34
-            ? 'Right at the edge of icing \u2014 guides may skim over early.'
-            : 'Above freezing \u2014 no icing problem.');
-    }
-    let weatherPen = 0, weatherLine = 'Weather \u2014 forecast unavailable this time.';
-    if (wx) {
-      if (wx.hasQpf && wx.qpfIn >= 0.3) weatherPen -= 10;
-      else if (wx.hasQpf && wx.qpfIn >= 0.15) weatherPen -= 6;
-      else if (wx.hasQpf && wx.qpfIn >= 0.05) weatherPen -= 3;
-      else if (!wx.hasQpf && wx.pop >= 80) weatherPen -= 6;
-      if (wx.gust >= 30) weatherPen -= 5; else if (wx.gust >= 22) weatherPen -= 2;
-      weatherPen = Math.max(weatherPen, -14);
-      weatherLine = 'Weather \u2014 ' + (wx.hasQpf
-        ? (wx.qpfIn >= 0.05
-          ? 'about ' + wx.qpfIn.toFixed(2) + ' in of rain expected in daylight hours \u2014 the river may rise again'
-          : 'little or no rain expected in daylight hours')
-        : (wx.pop >= 50 ? wx.pop + '% chance of rain in daylight hours' : 'rain not expected in daylight hours'))
-        + (wx.gust >= 22 ? '; gusts to ' + wx.gust + ' mph make casting work' : '') + '.';
-    }
-
-    let base = Math.round((flow.score + clarityScore) / 65 * 100) + freeze + weatherPen;
-    base = Math.max(0, Math.min(100, base));
-    const score = Math.round(base * timing.mult);
-    const blown = (clarity && clarity.band === 'blown out') || flow.state === 'blown high';
-    let verdict = score >= 65 ? 'Good day' : score >= 40 ? 'Fair day' : 'Poor day';
-    if (blown || !timing.inSeason) verdict = 'Poor day';
-
-    let why;
-    if (!timing.inSeason) {
-      /* Every season profile here starts in Nov–Dec and ends by
-         mid-April, so an out-of-season date from May on is BEFORE the
-         next run; one in Jan–Apr is past this year's. */
-      const before = md >= 501;
-      why = (before ? 'Too early for this river \u2014 ' : 'Past this river\u2019s run for the year \u2014 ') + river.window + '.'
-        + (base >= 55 ? ' The water itself is in decent shape.' : '');
-    } else if (clarity && clarity.band === 'blown out') {
-      why = 'Blown out \u2014 too much color in the water after the rain. Wait for the drop.';
-    } else if (freeze <= -40) {
-      why = 'Bitter cold at first light \u2014 line, guides and reel will freeze. Most anglers stay home.';
-    } else if (flow.state === 'dropping' && clarity && (clarity.band === 'steelhead green' || clarity.band === 'stained')) {
-      why = 'Dropping into ' + clarity.band + ' \u2014 the window every winter angler waits for'
-        + (timing.mult >= 1 ? ', and the run is on' : '') + '.';
-    } else if (flow.state === 'rising') {
-      why = 'On the rise \u2014 fresh fish push in on water like this; the fishing turns on as it starts to drop.';
-    } else if (flow.state === 'low') {
-      why = 'Low water \u2014 what fish are here will be spooky. Go small, quiet, and early.';
-    } else if (freeze === -15) {
-      why = 'Fishable water, but below freezing at first light \u2014 expect iced guides and stiff fingers.';
-    } else if (clarity && clarity.band === 'muddy') {
-      why = 'Still muddy from the last rain \u2014 it fishes better a day or two into the drop.';
-    } else {
-      why = 'A workable day \u2014 nothing blown out, nothing perfect. First light is your best shot.';
-    }
-
-    const sun = almDay(tp, river.sun);
-    let lightLine = 'First light \u2014 ';
-    if (sun.dawn && sun.rise && sun.set) {
-      const legalStart = new Date(sun.rise.getTime() - 3600e3);
-      const legalEnd = new Date(sun.set.getTime() + 3600e3);
-      lightLine += almClock(sun.dawn) + ' (sunrise ' + almClock(sun.rise) + '). General Oregon rule: steelhead '
-        + 'angling hours run ' + almClock(legalStart) + '\u2013' + almClock(legalEnd)
-        + ' here today \u2014 one hour before sunrise to one hour after sunset; check your river\u2019s regs for exceptions.';
-    } else {
-      lightLine += 'sun times unavailable this time.';
-    }
-    const timingLine = 'Timing \u2014 ' + (timing.inSeason
-      ? (timing.mult >= 1 ? 'heart of the run: ' : timing.mult >= 0.7 ? 'in season: ' : 'edge of the season: ')
-        + river.window + '.'
-      : 'outside the run: ' + river.window + '.');
-    const tag = river.kind === 'gauge' ? 'Gauged' : river.kind === 'proxy' ? 'Proxy gauge' : 'Ungauged \u00b7 rain estimate';
-    const pillClass = verdict === 'Good day' ? 'sh-good' : verdict === 'Fair day' ? 'sh-fair' : 'sh-poor';
-    return '<div class="sh-row">'
-      + '<button type="button" class="sh-head" data-sh="' + river.id + '" aria-expanded="false">'
-      + '<span class="sh-name">' + esc(river.name) + ' <span class="sh-tag">' + tag + '</span></span>'
-      + '<span class="sh-pill ' + pillClass + '">' + verdict + '</span></button>'
-      + '<p class="sh-why">' + esc(why) + '</p>'
-      + '<div class="sh-detail" hidden>'
-      + '<p>' + flowLine + '</p>'
-      + '<p>' + clarityLine + '</p>'
-      + '<p>' + esc(coldLine) + '</p>'
-      + '<p>' + esc(weatherLine) + '</p>'
-      + '<p>' + esc(timingLine) + '</p>'
-      + '<p>' + esc(lightLine) + '</p>'
-      + '</div></div>';
+  /* Both target days are computed from the same fetched inputs —
+     the index card renders its own day (today before noon Pacific,
+     tomorrow after); the answer card reads either on demand. */
+  const env = { snap, gauges, stats, forecasts };
+  const ctxFor = offset => {
+    const p = almPtDate(offset);
+    return { tp: p, md: (p.m + 1) * 100 + p.d,
+      key: p.y + '-' + String(p.m + 1).padStart(2, '0') + '-'
+        + String(p.d).padStart(2, '0') };
+  };
+  const byDay = {};
+  [0, 1].forEach(off => {
+    const ctx = ctxFor(off);
+    const foss = gauges['14301000']
+      ? shAnalyzeGauge(gauges['14301000']['00060'],
+          shStatFor(stats, '14301000', ctx.md), null)
+      : null;
+    byDay[off] = {};
+    SH_RIVERS.forEach(river => {
+      byDay[off][river.id] = shRiverResult(river, ctx, env, foss);
+    });
   });
+  shByDay = byDay;
+  const cards = SH_RIVERS.map(r => byDay[targetOffset][r.id].html);
 
   rowsEl.innerHTML = cards.join('');
   rowsEl.querySelectorAll('.sh-head').forEach(btn => {
@@ -2039,6 +2115,194 @@ async function loadSteelhead() {
       + (snap && snap.valid_time ? ' (through ' + esc(almClock(new Date(snap.valid_time))) + ')' : '')
       + '. Clarity and ungauged flow are estimates, labeled as such.';
   }
+  renderFishAnswer();
+}
+
+/* ----- the answer card: say what you're after, get the call -----
+   Travis's ask (2026-11-04): "a simple way to tell the site what
+   you're trying to do — what you're fishing for, or where you want
+   to go — and it just tells you whether it's good or bad." So the
+   top of the fishing section is two taps and one glance: WHAT
+   (Salmon / Steelhead — the only two targets the data honestly
+   supports), WHERE (for salmon, a stretch of the big river taken
+   from the tracker's own geography; for steelhead, one of the eight
+   index creeks), WHEN (Today / Tomorrow). The answer is composed
+   ONLY from outputs the cards below already compute: the tracker's
+   heat surface scored over the chosen stretch with the tracker's own
+   verdict thresholds, the run state behind its driver, the day
+   plan's favored segment as the best window, and for steelhead the
+   day index's own verdict + why, verbatim. It is a summary of the
+   evidence, never a new opinion, and never more optimistic than the
+   cards it summarizes. Choices persist beside the home-town and
+   method prefs. */
+const PICK_KEY = 'ccl-fish-pick-v1';
+const SALMON_STRETCHES = [
+  { id: 'downriver', label: 'Downriver — Rainier to the mouth', lo: 30, hi: 75 },
+  { id: 'county', label: 'St. Helens & Scappoose', lo: 75, hi: 110 },
+  { id: 'upriver', label: 'Up toward Bonneville', lo: 110, hi: 146 }
+];
+const PICK_TOWN_RIVER = {
+  'St. Helens': 'scappoose', 'Columbia City': 'scappoose',
+  'Warren': 'scappoose', 'Scappoose': 'scappoose',
+  'Rainier': 'clatskanie', 'Clatskanie': 'clatskanie',
+  'Vernonia': 'nehalem'
+};
+let fishPick = { sp: 'salmon', stretch: null, river: null, day: 0 };
+try {
+  const saved = JSON.parse(window.localStorage.getItem(PICK_KEY) || '{}');
+  if (saved && typeof saved === 'object') {
+    if (saved.sp === 'salmon' || saved.sp === 'steelhead') fishPick.sp = saved.sp;
+    if (SALMON_STRETCHES.some(s => s.id === saved.stretch)) fishPick.stretch = saved.stretch;
+    if (SH_RIVERS.some(r => r.id === saved.river)) fishPick.river = saved.river;
+    if (saved.day === 0 || saved.day === 1) fishPick.day = saved.day;
+  }
+} catch (e) { /* private mode: defaults */ }
+function saveFishPick() {
+  try { window.localStorage.setItem(PICK_KEY, JSON.stringify(fishPick)); }
+  catch (e) { /* session-only */ }
+}
+function pickStretch() {
+  const tref = TOWN_RIVER[(homeTown && homeTown.name) || 'St. Helens']
+    || TOWN_RIVER['St. Helens'];
+  return SALMON_STRETCHES.find(s => s.id === fishPick.stretch)
+    || SALMON_STRETCHES.find(s => tref.rm >= s.lo && tref.rm < s.hi)
+    || SALMON_STRETCHES[1];
+}
+function pickRiver() {
+  const home = PICK_TOWN_RIVER[(homeTown && homeTown.name) || 'St. Helens']
+    || 'nehalem';
+  return SH_RIVERS.find(r => r.id === fishPick.river)
+    || SH_RIVERS.find(r => r.id === home)
+    || SH_RIVERS[1];
+}
+function pickChip(kind, val, label, active) {
+  return '<button type="button" class="plan-chip pick-chip'
+    + (active ? ' active' : '') + '" data-pick="' + kind
+    + '" data-val="' + val + '">' + label + '</button>';
+}
+function renderPickChips() {
+  const sp = $('pick-species'), wh = $('pick-where'), dy = $('pick-day');
+  if (!sp || !wh || !dy) return;
+  sp.innerHTML = pickChip('sp', 'salmon', 'Salmon', fishPick.sp === 'salmon')
+    + pickChip('sp', 'steelhead', 'Steelhead', fishPick.sp === 'steelhead');
+  wh.innerHTML = fishPick.sp === 'salmon'
+    ? SALMON_STRETCHES.map(s => pickChip('where', s.id, esc(s.label),
+        pickStretch().id === s.id)).join('')
+    : SH_RIVERS.map(r => pickChip('where', r.id, esc(r.name),
+        pickRiver().id === r.id)).join('');
+  dy.innerHTML = pickChip('day', '0', 'Today', fishPick.day === 0)
+    + pickChip('day', '1', 'Tomorrow', fishPick.day === 1);
+  [sp, wh, dy].forEach(wrap => {
+    wrap.querySelectorAll('.pick-chip').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const kind = btn.dataset.pick, val = btn.dataset.val;
+        if (kind === 'sp') fishPick.sp = val;
+        else if (kind === 'day') fishPick.day = +val;
+        else if (fishPick.sp === 'salmon') fishPick.stretch = val;
+        else fishPick.river = val;
+        saveFishPick();
+        renderPickChips();
+        renderFishAnswer();
+      });
+    });
+  });
+}
+function stretchScore(model, stretch) {
+  let sum = 0, n = 0;
+  model.scores.forEach((s, i) => {
+    const c = i * HEAT_BIN_MI + HEAT_BIN_MI / 2;
+    if (c >= stretch.lo && c <= stretch.hi) { sum += s; n++; }
+  });
+  return n ? sum / n : 0;
+}
+/* The day's best window, straight off the day plan's own segments:
+   the saved method's strongest water when the angler has picked one,
+   otherwise the plan's strongest segment of the day. */
+function pickBestSegment(dayOffset) {
+  if (!currentEvents || !currentEvents.length) return null;
+  const segs = dayPlanSegments(ptDayStr(dayOffset));
+  if (!segs.length) return null;
+  const rank = s => (s.cls === 'strong' ? 3 : s.cls === 'moderate' ? 2 : 1);
+  let pool = segs;
+  if (fishMethod) {
+    const mine = segs.filter(s => s.method === fishMethod);
+    if (mine.length) pool = mine;
+  }
+  return pool.slice().sort((a, b) =>
+    rank(b) - rank(a) || (b.end - b.start) - (a.end - a.start))[0];
+}
+function renderFishAnswer() {
+  const body = $('fishpick-body');
+  if (!body) return;
+  let pill, pillCls, why, windowTxt = '', seeWhy;
+  if (fishPick.sp === 'salmon') {
+    seeWhy = '#tracker-card';
+    if (!fishData) {
+      body.innerHTML = '<p class="status-note">🐟 The dam counts'
+        + ' didn’t load — no honest call until the next snapshot'
+        + ' lands.</p>';
+      return;
+    }
+    const model = heatModel(fishData, fishPick.day);
+    const rating0 = stretchScore(model, pickStretch());
+    const rating = rating0 >= 0.45 ? 'GOOD' : rating0 >= 0.18 ? 'FAIR' : 'POOR';
+    pill = rating;
+    pillCls = rating === 'GOOD' ? 'pill-good'
+      : rating === 'FAIR' ? 'pill-fair' : 'pill-poor';
+    const d = model.driver;
+    if (d && rating !== 'POOR') {
+      why = 'The ' + d.label + ' run is the story — '
+        + num(d.trend.latest) + ' counted at Bonneville on '
+        + fmtMD(d.trend.latestDate) + ', about '
+        + num(Math.round(d.trend.avg3)) + ' a day lately, '
+        + d.trend.word
+        + (d.timing && d.timing.pct_past_typical >= 90
+          ? ', though it’s late in the run — about '
+            + d.timing.pct_past_typical + '% has passed Bonneville'
+            + ' by now in a typical year'
+          : '') + '.';
+    } else if (d) {
+      why = 'Very little is moving on this stretch — the latest '
+        + d.label + ' count was ' + num(d.trend.latest)
+        + ' at Bonneville on ' + fmtMD(d.trend.latestDate) + '.';
+    } else {
+      why = 'No run is moving right now that the dam counts can see.';
+    }
+    const seg = pickBestSegment(fishPick.day);
+    if (seg && rating !== 'POOR') {
+      windowTxt = 'Best shot: ' + fmtRange(seg.start, seg.end) + ' — '
+        + METHOD_META[seg.method].name.toLowerCase() + ' water';
+    }
+  } else {
+    seeWhy = '#steelhead-card';
+    const res = shByDay && shByDay[fishPick.day]
+      ? shByDay[fishPick.day][pickRiver().id] : null;
+    if (!res) {
+      body.innerHTML = '<p class="status-note">🎣 Still checking the'
+        + ' creeks — the gauges, rain and forecast land in a'
+        + ' moment.</p>';
+      return;
+    }
+    pill = res.verdict === 'Good day' ? 'GOOD'
+      : res.verdict === 'Fair day' ? 'FAIR' : 'POOR';
+    pillCls = pill === 'GOOD' ? 'pill-good'
+      : pill === 'FAIR' ? 'pill-fair' : 'pill-poor';
+    why = res.why;
+    if (res.dawnTxt && pill !== 'POOR') {
+      windowTxt = 'Best shot: first light · ' + res.dawnTxt;
+    }
+  }
+  body.innerHTML = '<div class="pick-answer"><span class="verdict-pill '
+    + pillCls + '">' + pill + '</span><div class="pick-answer-main">'
+    + '<p class="pick-why">' + esc(why) + '</p>'
+    + (windowTxt
+      ? '<p class="pick-window">' + esc(windowTxt) + '</p>' : '')
+    + '<a class="pick-seewhy" href="' + seeWhy + '">See why ↓</a>'
+    + '</div></div>';
+}
+function initFishPick() {
+  renderPickChips();
+  renderFishAnswer();
 }
 
 /* ---------- ships "passing soon" (build batch 2026-11-04, ADD 4 / R2) ----------
@@ -5096,13 +5360,16 @@ const LANG_ES = {
   tidesh2: '🌊 Mareas del río',
   tidesnote: 'El Columbia es un río de mareas en todo su paso por St. Helens — el océano sube por el canal dos veces al día. Para la rampa de botes, el muelle, la playa del río o una hora de pesca, aquí está el próximo cambio de marea en las dos estaciones de NOAA del condado.',
   tidesnote2: 'Las <em>predicciones</em> de marea de NOAA Tides &amp; Currents (estación 9439201 en St. Helens, estación 9439099 en Wauna), en pies sobre el nivel medio de la bajamar. El caudal del río empuja el agua real fuera de la predicción — un río alto corre más alto y más tarde — así que toma las horas como el plan, no como una promesa.',
+  pickh2: '🎣 Pesca — ¿vale la pena ir?',
+  pickwhat: 'Qué pescar',
+  pickwhere: 'Dónde',
+  pickwhen: 'Cuándo',
   fishh2: '🐟 Conteos de peces — las presas',
   fishnote: 'Cada salmón que va hacia el alto Columbia pasa por la presa Bonneville, donde el Cuerpo de Ingenieros los cuenta en las escalas de peces. El día publicado más reciente suele ir uno o dos días detrás del calendario — los conteos se registran en video y se revisan antes de publicarse.',
   fishnote2: 'Conteos: Cuerpo de Ingenieros del Ejército de EE. UU., publicados por el Fish Passage Center y Columbia Basin Research (DART). Un cero es una respuesta real, no un vacío — significa que los contadores no vieron ninguno ese día.',
   trackerh2: '🎣 Rastreador de salmones',
-  trackernote: 'La valoración de abajo es una estimación construida con los conteos de la tarjeta anterior — dónde están las migraciones, al ritmo que los conteos de este año midieron de verdad. Los números contados son hechos; las posiciones y valoraciones son las matemáticas honestas entre ellos.',
   methodh3: 'El plan del día — pesca con la corriente',
-  methodnote: 'Un día en este río, leído de la corriente. Con agua fuerte es hora del plunking y del ancla — una cucharilla o un wobbler solo trabaja cuando el río lo empuja. Cuando la corriente muere, es hora del curricán (trolling). Elige tu método y el plan resalta tus horarios.',
+  methodnote: 'Con corriente fuerte es hora del plunking y del ancla; cuando la corriente muere, es hora del curricán (trolling). Elige tu método y el plan resalta tus horarios.',
   steelh2: '🎣 Steelhead — los ríos pequeños',
   steelnote: '¿Es hoy un buen día para pescar steelhead? No hay conteos para estos arroyos a mitad de temporada — las trampas de los criaderos se cuentan, pero los números se publican después — así que esto juzga el día, no los peces: temporada, caudal, claridad del agua, frío y clima. Toca un río para ver el desglose completo.',
   steelhours: 'Regla general de Oregón: la pesca de steelhead es legal desde una hora antes del amanecer hasta una hora después del atardecer — el reglamento de cada río puede añadir excepciones, así que revisa el tuyo.',
@@ -6195,6 +6462,7 @@ initReveal();
 /* Fish + day-plan boot LAST on purpose: the verdict reads homeTown and
    the day plan reads the tides module's helpers, both declared further
    down than the main go-section — calling them there hits TDZ errors. */
+initFishPick();
 loadFish();
 loadCurrents();
 loadSteelhead();

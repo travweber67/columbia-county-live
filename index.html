@@ -392,6 +392,25 @@
       <p class="card-note small" data-i18n="tidesnote2">Tide <em>predictions</em> from NOAA Tides &amp; Currents (station 9439201 at St. Helens, station 9439099 at Wauna), in feet above mean lower low water. River flow pushes real water off the prediction — a high river runs higher and later — so treat the times as the plan, not a promise.</p>
     </div>
 
+    <div class="card" id="fishpick-card">
+      <div class="card-head">
+        <h2 data-i18n="pickh2">🎣 Fishing — Worth Going?</h2>
+      </div>
+      <div class="pick-row">
+        <span class="pick-label" data-i18n="pickwhat">Fishing for</span>
+        <div class="pick-chips" id="pick-species"></div>
+      </div>
+      <div class="pick-row">
+        <span class="pick-label" data-i18n="pickwhere">Where</span>
+        <div class="pick-chips" id="pick-where"></div>
+      </div>
+      <div class="pick-row">
+        <span class="pick-label" data-i18n="pickwhen">When</span>
+        <div class="pick-chips" id="pick-day"></div>
+      </div>
+      <div id="fishpick-body" class="panel-body"><p class="loading">Reading the river…</p></div>
+    </div>
+
     <div class="card" id="fish-card">
       <div class="card-head">
         <h2 data-i18n="fishh2">🐟 Fish Counts — the Dams</h2>
@@ -407,10 +426,9 @@
         <h2 data-i18n="trackerh2">🎣 Salmon Tracker</h2>
         <span class="updated" id="tracker-updated"></span>
       </div>
-      <p class="card-note" data-i18n="trackernote">The call below is an estimate built from the dam counts on the card above — where the runs are, at the pace this year&rsquo;s counts actually measured. Counted numbers are facts; positions and ratings are the honest math between them.</p>
       <div id="tracker-body" class="panel-body"><p class="loading">Plotting the runs…</p></div>
       <h3 class="subhead" data-i18n="methodh3">The day plan — fish the current</h3>
-      <p class="card-note" data-i18n="methodnote">One day on this river, read off the current. Strong water is plunking and anchor time — a spinner or wobbler only works when the river pushes it. When the current dies, that&rsquo;s trolling time. Pick your method and the plan calls out your windows.</p>
+      <p class="card-note" data-i18n="methodnote">Strong current is plunking and anchor time; when the current dies, that&rsquo;s trolling time. Pick your method and the plan calls out your windows.</p>
       <div id="dayplan-body" class="panel-body"><p class="loading">Reading the river&rsquo;s current predictions…</p></div>
     </div>
 

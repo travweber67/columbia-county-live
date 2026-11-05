@@ -971,7 +971,7 @@ h2{font-weight:700;letter-spacing:-.01em}
   .run-row{grid-template-columns:1fr}
   .run-state{grid-column:1}
 }
-.verdict{display:flex;gap:14px;align-items:flex-start;margin:4px 0 14px}
+.verdict{display:flex;gap:14px;align-items:flex-start;margin:2px 0 18px}
 .verdict-pill{
   flex:0 0 auto;font-weight:800;font-size:1.05rem;letter-spacing:.04em;
   padding:8px 14px;border-radius:999px;margin-top:2px;
@@ -979,36 +979,68 @@ h2{font-weight:700;letter-spacing:-.01em}
 .pill-good{background:#c2540a;color:#fff}
 .pill-fair{background:var(--warm-fill);color:#15222f}
 .pill-slow{background:var(--panel-3);color:var(--muted)}
+.pill-poor{background:#eef1f4;color:#5b7186}
 .verdict-text{font-size:1.16rem;line-height:1.45;margin:0}
 .verdict-tomorrow{font-size:.98rem;margin:0 0 10px}
-.heat-wrap{position:relative;margin:10px 2px 0}
+/* The answer card (top of the fishing section): question rows in the
+   briefing's small-caps rhythm, then one glanceable answer. */
+.pick-row{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid var(--border)}
+.pick-label{
+  flex:0 0 84px;padding-top:9px;font-size:.72rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
+}
+.pick-chips{display:flex;flex-wrap:wrap;gap:7px;flex:1;min-width:0}
+.pick-chip{min-height:40px;padding:8px 14px;font-size:.92rem}
+#fishpick-body{padding-top:14px}
+.pick-answer{display:flex;gap:14px;align-items:flex-start}
+.pick-answer-main{flex:1;min-width:0}
+.pick-why{font-size:1.14rem;line-height:1.45;margin:0}
+.pick-window{font-size:1rem;font-weight:700;color:var(--accent-2);margin:7px 0 0}
+.pick-seewhy{
+  display:inline-block;margin-top:9px;font-size:.9rem;font-weight:600;
+  color:var(--accent);text-decoration:none;
+}
+.pick-seewhy:hover{text-decoration:underline}
+/* The tracker heat strip: three anchor labels only (Ocean / Bonneville
+   Dam / John Day), towns and The Dalles as bare ticks, the county
+   stretch named by one zone label above the strip. */
+.heat-wrap{margin:16px 2px 0}
+.heat-zone{position:relative;height:20px}
+.heat-zone span{
+  position:absolute;top:0;transform:translateX(-50%);white-space:nowrap;
+  font-size:.72rem;font-weight:700;text-transform:uppercase;
+  letter-spacing:.08em;color:var(--accent);
+}
+.heat-box{position:relative}
 .heat-row{display:flex;gap:1px;height:52px}
 .heat-bin{flex:1 1 0;border-radius:3px;min-width:0}
 .heat-county{
-  position:absolute;top:-5px;bottom:22px;pointer-events:none;z-index:2;
+  position:absolute;top:-5px;bottom:6px;pointer-events:none;z-index:2;
   border:1.5px dashed rgba(11,111,164,.55);border-radius:8px;
 }
-.heat-labels{position:relative;height:38px;margin-top:2px}
-.heat-legend{font-size:.84rem;color:var(--muted);margin:8px 0 0}
+.heat-ticks{position:relative;height:9px}
+.heat-tick{
+  position:absolute;top:2px;width:1px;height:6px;
+  background:rgba(21,34,47,.30);
+}
+.heat-tick.tick-dam{width:2px;height:8px;background:rgba(21,34,47,.55)}
+.heat-anchors{position:relative;height:20px;margin-top:1px}
+.heat-anchor{
+  position:absolute;top:2px;white-space:nowrap;
+  font-size:.74rem;color:var(--muted);
+}
+.heat-anchor.a-l{transform:translateX(0)}
+.heat-anchor.a-c{transform:translateX(-50%);font-weight:700;color:var(--text)}
+.heat-anchor.a-r{transform:translateX(-100%);font-weight:700;color:var(--text)}
+.heat-anchors.no-labels .heat-anchor{display:none}
+.heat-legend{font-size:.84rem;color:var(--muted);margin:10px 0 0}
 .heat-legend .lg{
   display:inline-block;width:12px;height:12px;border-radius:3px;
   vertical-align:-1px;margin:0 3px 0 10px;border:1px solid rgba(21,34,47,.15);
 }
 .heat-legend .lg:first-child{margin-left:0}
-.track-tick{
-  position:absolute;top:0;bottom:0;width:1px;background:rgba(21,34,47,.28);
-}
-.track-tick span{
-  position:absolute;top:4px;left:50%;transform:translateX(-50%);
-  white-space:nowrap;font-size:.68rem;color:var(--muted);
-}
-.track-tick.alt span{top:19px}
-.track-tick.edge-l span{transform:translateX(-8%)}
-.track-tick.edge-r span{transform:translateX(-92%)}
-.track-dam{background:rgba(21,34,47,.55);width:2px}
-.track-dam span{font-weight:700;color:var(--text)}
-.track-mouth{background:transparent}
-.track-caption{font-size:.8rem;color:var(--muted);margin:6px 0 4px}
+.track-caption{font-size:.8rem;color:var(--muted);margin:5px 0 4px}
+#tracker-card .subhead{margin-top:24px}
 .why-box,.wave-details{margin:12px 0 0}
 .why-box summary,.wave-details summary{
   cursor:pointer;font-weight:700;font-size:.98rem;padding:10px 12px;
