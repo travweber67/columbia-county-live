@@ -1,60 +1,124 @@
 {
- "fetched_at": "2026-11-05T07:44:39Z",
+ "fetched_at": "2026-11-05T07:48:27Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.6129,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07829,
+   "lon": -122.89977,
+   "sog_kn": 0.1,
+   "cog": 270.2,
+   "heading": 156,
+   "nav_status": 0,
+   "updated": "2026-11-05 07:49:05.766325595 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.07823,
+   "lon": -122.90012,
+   "sog_kn": 0.3,
+   "cog": 211.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-05 07:49:08.122090481 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
    "sog_kn": 0,
-   "cog": 273.4,
-   "heading": 128,
+   "cog": 246,
+   "heading": 135,
    "nav_status": 15,
-   "updated": "2026-11-05 07:44:49.223629585 +0000 UTC"
-  },
-  {
-   "mmsi": 477133900,
-   "name": "SHAO SHAN 8",
-   "lat": 45.63035,
-   "lon": -122.69547,
-   "type_code": 70,
-   "destination": "USVAN",
-   "updated": "2026-11-05 07:44:53.597880639 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07855,
-   "lon": -122.9,
-   "sog_kn": 0.4,
-   "cog": 68.8,
-   "heading": 345,
-   "nav_status": 3,
-   "updated": "2026-11-05 07:44:59.178541135 +0000 UTC"
+   "updated": "2026-11-05 07:49:08.305961133 +0000 UTC"
   },
   {
    "mmsi": 367767410,
    "name": "MULE",
-   "lat": 46.10802,
-   "lon": -122.95919,
-   "sog_kn": 1.9,
-   "cog": 111.2,
+   "lat": 46.1079,
+   "lon": -122.95896,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-05 07:45:05.15815082 +0000 UTC"
+   "updated": "2026-11-05 07:49:15.927401109 +0000 UTC"
+  },
+  {
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09414,
+   "lon": -122.93749,
+   "sog_kn": 0.1,
+   "cog": 27.1,
+   "heading": 115,
+   "nav_status": 1,
+   "updated": "2026-11-05 07:49:17.248964722 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60757,
+   "lon": -122.67756,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-05 07:49:25.014293324 +0000 UTC"
+  },
+  {
+   "mmsi": 538012818,
+   "name": "POAVOSA WISDOM III",
+   "lat": 45.83253,
+   "lon": -122.79182,
+   "sog_kn": 11.5,
+   "cog": 18.7,
+   "heading": 19,
+   "nav_status": 0,
+   "updated": "2026-11-05 07:49:28.17824505 +0000 UTC"
   },
   {
    "mmsi": 367310520,
    "name": "JAMES T",
-   "lat": 46.10356,
-   "lon": -122.91011,
+   "lat": 46.10358,
+   "lon": -122.9101,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-05 07:49:28.783161932 +0000 UTC"
+  },
+  {
+   "mmsi": 563116100,
+   "name": "OCEAN GOLD",
+   "lat": 45.98391,
+   "lon": -122.83532,
    "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 76,
-   "nav_status": 3,
-   "updated": "2026-11-05 07:45:13.915286599 +0000 UTC"
+   "cog": 121.4,
+   "heading": 151,
+   "nav_status": 5,
+   "updated": "2026-11-05 07:49:28.7927548 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 46.09048,
+   "lon": -122.93226,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-05 07:49:30.832610887 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40233,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 134,
+   "nav_status": 0,
+   "updated": "2026-11-05 07:49:33.985129828 +0000 UTC"
   }
  ]
 }
