@@ -1249,9 +1249,9 @@ function heatStripHTML(model) {
   const anchors =
       '<span class="heat-anchor a-l" style="left:0">Ocean</span>'
     + '<span class="heat-anchor a-c" style="left:' + pct(146)
-    + '">Bonneville Dam · 146</span>'
+    + '">Bonneville Dam <span class="a-rm">· 146</span></span>'
     + '<span class="heat-anchor a-r" style="left:' + pct(216)
-    + '">John Day · 216</span>';
+    + '">John Day <span class="a-rm">· 216</span></span>';
   return '<div class="heat-wrap">'
     + '<div class="heat-zone"><span style="left:' + pct(72)
     + '">Columbia County · RM 44–100</span></div>'
@@ -1269,28 +1269,37 @@ function heatStripHTML(model) {
     + ' river mile. Gray means no signal from the counts — not that'
     + ' the water is empty.</p>';
 }
-/* The no-overlap rule, enforced mechanically: once the strip is in the
-   page, measure the three anchor labels; if any pair overlaps, drop
-   to ticks only (.no-labels hides the text). Re-checked on resize so
-   a rotation or a narrower window cannot resurrect a clash. In the
-   mini-DOM harness there is no layout — the guard simply returns. */
+/* The no-overlap rule, enforced mechanically: once the strip is in
+   the page, measure the three anchor labels. If any pair overlaps,
+   first shed the river-mile suffixes (.no-rm); if they still clash,
+   drop to ticks only (.no-labels). At 360px the full labels collide
+   by ~55px and the bare names fit — measured on the live page. The
+   check re-runs on resize so a rotation or a narrower window cannot
+   resurrect a clash. In the mini-DOM harness there is no layout —
+   the guard simply returns. */
 function fitHeatLabels() {
   const row = document.querySelector('.heat-anchors');
   if (!row || typeof row.getBoundingClientRect !== 'function') return;
   const labels = Array.prototype.slice.call(
     row.querySelectorAll('.heat-anchor'));
   if (labels.length < 2) return;
-  row.classList.remove('no-labels');
-  const rects = labels.map(el => el.getBoundingClientRect());
-  if (rects.some(r => !r.width)) return;
-  let overlap = false;
-  for (let i = 0; i < rects.length; i++) {
-    for (let j = i + 1; j < rects.length; j++) {
-      if (rects[i].left < rects[j].right - 2
-          && rects[j].left < rects[i].right - 2) overlap = true;
+  const overlaps = () => {
+    const rects = labels.map(el => el.getBoundingClientRect());
+    if (rects.some(r => !r.width)) return null; // no layout — bail
+    for (let i = 0; i < rects.length; i++) {
+      for (let j = i + 1; j < rects.length; j++) {
+        if (rects[i].left < rects[j].right - 2
+            && rects[j].left < rects[i].right - 2) return true;
+      }
     }
-  }
-  if (overlap) row.classList.add('no-labels');
+    return false;
+  };
+  row.classList.remove('no-labels');
+  row.classList.remove('no-rm');
+  let o = overlaps();
+  if (o === null) return;
+  if (o) { row.classList.add('no-rm'); o = overlaps(); }
+  if (o) row.classList.add('no-labels');
 }
 let heatFitTimer = null;
 window.addEventListener('resize', () => {
