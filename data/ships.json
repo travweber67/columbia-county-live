@@ -1,71 +1,67 @@
 {
- "fetched_at": "2026-11-05T22:18:42Z",
+ "fetched_at": "2026-11-05T22:20:57Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.09845,
-   "lon": -122.94198,
-   "sog_kn": 0.1,
-   "cog": 197.6,
-   "heading": 270,
-   "nav_status": 3,
-   "updated": "2026-11-05 22:19:25.265733539 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07851,
-   "lon": -122.90065,
-   "sog_kn": 0.2,
-   "cog": 172.1,
-   "heading": 342,
-   "nav_status": 0,
-   "updated": "2026-11-05 22:19:28.007621716 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10787,
-   "lon": -122.95905,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-05 22:19:31.06838611 +0000 UTC"
-  },
   {
    "mmsi": 368442390,
    "name": "COWLITZ",
    "lat": 46.07851,
    "lon": -122.90055,
-   "sog_kn": 0.1,
-   "cog": 194.2,
-   "heading": 160,
-   "nav_status": 5,
-   "updated": "2026-11-05 22:19:36.510961644 +0000 UTC"
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-05 22:21:12.956170678 +0000 UTC"
   },
   {
-   "mmsi": 538006443,
-   "name": "RB JAKE",
-   "lat": 46.02715,
-   "lon": -122.86952,
-   "type_code": 70,
-   "destination": "US KAL",
-   "updated": "2026-11-05 22:19:39.192074449 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35744,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65017,
+   "lon": -122.74773,
    "sog_kn": 0,
-   "cog": 350.1,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-05 22:19:46.367473638 +0000 UTC"
+   "cog": 309.5,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-05 22:21:19.420562835 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07843,
+   "lon": -122.90062,
+   "sog_kn": 0.1,
+   "cog": 136.9,
+   "heading": 321,
+   "nav_status": 0,
+   "updated": "2026-11-05 22:21:28.008734118 +0000 UTC"
+  },
+  {
+   "mmsi": 367681630,
+   "name": "VICKI B",
+   "lat": 45.8475,
+   "lon": -122.79856,
+   "type_code": 52,
+   "destination": "US^0RFZ>?? ???",
+   "updated": "2026-11-05 22:21:30.427983092 +0000 UTC"
+  },
+  {
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09412,
+   "lon": -122.93747,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-05 22:21:32.451058114 +0000 UTC"
+  },
+  {
+   "mmsi": 538011495,
+   "name": "MTR JUPITER",
+   "lat": 46.12459,
+   "lon": -122.98867,
+   "sog_kn": 0.2,
+   "cog": 251.3,
+   "heading": 146,
+   "nav_status": 1,
+   "updated": "2026-11-05 22:21:35.101651965 +0000 UTC"
   }
  ]
 }
