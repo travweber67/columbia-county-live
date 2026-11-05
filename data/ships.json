@@ -1,117 +1,62 @@
 {
- "fetched_at": "2026-11-05T15:48:35Z",
+ "fetched_at": "2026-11-05T15:55:22Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 46.01053,
-   "lon": -122.85778,
-   "sog_kn": 8,
-   "cog": 152.3,
-   "heading": 153,
-   "nav_status": 0,
-   "updated": "2026-11-05 15:49:15.917597629 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15341,
-   "lon": -123.37712,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-05 15:49:19.037355665 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.09409,
-   "lon": -122.94277,
-   "type_code": 69,
-   "updated": "2026-11-05 15:49:20.949683871 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 46.10033,
-   "lon": -122.94129,
-   "sog_kn": 0.1,
-   "cog": 73,
-   "heading": 117,
-   "nav_status": 12,
-   "updated": "2026-11-05 15:49:25.590253407 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.8569,
-   "lon": -122.78778,
-   "type_code": 57,
-   "destination": "XX XXX>US^0ZBC",
-   "updated": "2026-11-05 15:49:29.754998431 +0000 UTC"
-  },
-  {
-   "mmsi": 563116100,
-   "name": "OCEAN GOLD",
-   "lat": 45.98415,
-   "lon": -122.83551,
-   "sog_kn": 0,
-   "cog": 121.4,
-   "heading": 151,
-   "nav_status": 5,
-   "updated": "2026-11-05 15:49:34.218367821 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07801,
-   "lon": -122.90102,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-05 15:49:36.951558599 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07865,
-   "lon": -122.90055,
-   "sog_kn": 0.4,
-   "cog": 224.6,
-   "heading": 316,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.1711,
+   "lon": -123.21741,
+   "sog_kn": 0.6,
+   "cog": 141.6,
+   "heading": 65,
    "nav_status": 3,
-   "updated": "2026-11-05 15:49:37.491403232 +0000 UTC"
-  },
-  {
-   "mmsi": 538006508,
-   "name": "RED COSMOS",
-   "lat": 46.18898,
-   "lon": -123.1515,
-   "sog_kn": 14.3,
-   "cog": 273.4,
-   "heading": 273,
-   "nav_status": 0,
-   "updated": "2026-11-05 15:49:37.560389736 +0000 UTC"
+   "updated": "2026-11-05 15:55:31.600822086 +0000 UTC"
   },
   {
    "mmsi": 368442390,
    "name": "COWLITZ",
-   "lat": 46.07827,
-   "lon": -122.90029,
+   "lat": 46.07839,
+   "lon": -122.90032,
+   "sog_kn": 0.1,
+   "cog": 12.6,
+   "heading": 181,
+   "nav_status": 5,
+   "updated": "2026-11-05 15:55:39.240213798 +0000 UTC",
    "type_code": 52,
-   "destination": "PORTLAND",
-   "updated": "2026-11-05 15:49:39.382513116 +0000 UTC"
+   "destination": "PORTLAND"
   },
   {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59403,
-   "lon": -122.77213,
-   "type_code": 70,
-   "destination": "NOT AVAILABLE",
-   "updated": "2026-11-05 15:49:42.319859927 +0000 UTC"
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64341,
+   "lon": -122.75275,
+   "sog_kn": 0,
+   "cog": 258.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-05 15:55:34.234233746 +0000 UTC"
+  },
+  {
+   "mmsi": 538006508,
+   "name": "RED COSMOS",
+   "lat": 46.18354,
+   "lon": -123.18421,
+   "sog_kn": 14.1,
+   "cog": 243.9,
+   "heading": 244,
+   "nav_status": 0,
+   "updated": "2026-11-05 15:55:44.141417835 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07591,
+   "lon": -122.90126,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-05 15:55:45.59177947 +0000 UTC"
   }
  ]
 }
