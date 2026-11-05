@@ -625,9 +625,15 @@ function renderRoads(roads, camerasSnap) {
   const cEl = $('cameras-body');
   const cams = (camerasSnap && camerasSnap.cameras) || [];
   if (cams.length) {
+    // TripCheck stills live at static URLs that update in place — without a
+    // per-snapshot cache-buster, browsers/CDNs keep serving the first frame
+    // they cached. Key the bust to this snapshot's fetched_at: a fresh
+    // snapshot yields fresh stills, an unchanged one stays cached.
+    const camBust = encodeURIComponent((camerasSnap && camerasSnap.fetched_at) || 'live');
+    const camSrc = u => esc(u + (u.indexOf('?') >= 0 ? '&' : '?') + 'snap=' + camBust);
     cEl.innerHTML = '<div class="camera-grid">' + cams.map(c =>
       '<figure class="camera-fig">'
-      + (c.image_url ? '<img loading="lazy" src="' + esc(c.image_url) + '" alt="Road camera: ' + esc(c.name) + '" onerror="this.parentNode.classList.add(\'cam-dead\');this.remove();">' : '')
+      + (c.image_url ? '<img loading="lazy" src="' + camSrc(c.image_url) + '" alt="Road camera: ' + esc(c.name) + '" onerror="this.parentNode.classList.add(\'cam-dead\');this.remove();">' : '')
       + '<figcaption>' + esc(c.name) + (c.route ? ' · ' + esc(c.route) : '') + '</figcaption></figure>').join('') + '</div>'
       + '<p class="card-note small">Camera stills are the latest snapshot frame; the fetcher refreshes the list every run.</p>';
     if (map && !renderRoads._camsDrawn) {
