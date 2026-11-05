@@ -480,6 +480,30 @@ h2{font-weight:700;letter-spacing:-.01em}
 .ship-row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--border)}
 .ship-row:last-child{border-bottom:none}
 
+/* Build batch 2026-11-04: My Route strips, incident meta, route-ahead, Bend run */
+.route-group{margin:0 0 12px}
+.route-group:last-child{margin-bottom:2px}
+.route-group-name{font-weight:700;font-size:.85rem;margin:0 0 6px}
+.route-strip{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px}
+.route-strip .camera-fig{flex:0 0 168px}
+.route-strip .camera-fig img{height:104px}
+.incident-meta{color:var(--muted);font-size:.76rem;margin-top:2px}
+.incident-scope{color:var(--muted);font-size:.8rem;margin:0 0 8px}
+.ra-town{padding:10px 0;border-bottom:1px solid var(--border)}
+.ra-town:first-child{padding-top:2px}
+.ra-town:last-child{border-bottom:none;padding-bottom:2px}
+.ra-town-name{font-weight:800;font-size:.95rem;margin-bottom:6px}
+.ra-strip{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px}
+.ra-chip{flex:0 0 108px;background:var(--panel-2);border:1px solid var(--border);border-radius:12px;padding:8px 9px}
+.ra-hour{font-size:.72rem;color:var(--muted);font-weight:700}
+.ra-temp{font-size:1.05rem;font-weight:800;font-variant-numeric:tabular-nums}
+.ra-wx{font-size:.74rem;color:var(--muted)}
+.ra-pop{font-size:.72rem;color:var(--muted)}
+.ra-flags{font-size:.82rem;font-weight:600;margin-top:2px}
+.ra-flags.ra-clear{color:var(--muted);font-weight:400}
+.bend-area{padding:2px 0 10px}
+.bend-wx{font-size:.9rem;margin:4px 0 8px}
+
 /* Sky (aircraft filters/list now live on the Travel tab's aircraft card) */
 .sky-filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
 .sky-filter-btn{

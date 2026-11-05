@@ -559,6 +559,68 @@ async function loadISS() {
   }
 }
 
+/* ---------- incident rows: what / why / since when / source ----------
+   (build batch 2026-11-04, research ADD 2: WSDOT's most-quoted complaint
+   is a red road with no reason why — every incident row here carries its
+   place, its impact, when ODOT first reported it, and its source.) */
+function incidentRow(i) {
+  const meta = [];
+  if (i.place) meta.push(i.place);
+  else if (i.route) meta.push(i.route);
+  if (i.impact) meta.push(i.impact);
+  if (i.start) {
+    const sd = new Date(i.start);
+    if (!isNaN(sd)) meta.push('since ' + fmtDayTime(sd));
+  }
+  meta.push('Source: ' + (i.source || 'ODOT TripCheck'));
+  return '<div class="incident-row"><strong>' + esc(i.title) + '</strong>'
+    + (i.route ? ' <span class="river-sub">' + esc(i.route) + '</span>' : '')
+    + (i.desc ? '<p>' + esc(i.desc) + '</p>' : '')
+    + '<div class="incident-meta">' + esc(meta.join(' · ')) + '</div></div>';
+}
+
+/* ---------- My Route camera strip (build batch 2026-11-04, ADD 1 / R3) ----------
+   The most-loved pattern in the DOT-app reviews is cameras grouped by
+   route; CCL already had them on the map and in one flat list — this
+   strip puts the commute corridors' stills in driving order, so the
+   morning check is one horizontal sweep instead of 37 thumbnails. */
+function renderMyRoute(camerasSnap) {
+  const el = $('myroute-body');
+  if (!el) return;
+  const cams = (camerasSnap && camerasSnap.cameras) || [];
+  if (!cams.length) {
+    el.innerHTML = '<p class="status-note">📷 Route cameras arrive with the ODOT camera snapshot.</p>';
+    return;
+  }
+  const bust = encodeURIComponent((camerasSnap && camerasSnap.fetched_at) || 'live');
+  const src = u => esc(u + (u.indexOf('?') >= 0 ? '&' : '?') + 'snap=' + bust);
+  const groups = [
+    { label: 'US-30 northwest — St. Helens → Rainier → the Lewis & Clark Bridge',
+      list: cams.filter(c => c.route === 'US30' && c.lon != null && c.lon <= -122.90)
+                .sort((a, b) => b.lon - a.lon) },
+    { label: 'US-30 southeast — St. Johns Bridge & the Portland end',
+      list: cams.filter(c => c.route === 'US30' && c.lon != null && c.lon > -122.90)
+                .sort((a, b) => b.lat - a.lat) },
+    { label: 'Cornelius Pass Rd (OR-127) — the ridge detour',
+      list: cams.filter(c => c.route === 'OR127')
+                .sort((a, b) => a.name.localeCompare(b.name)) },
+    { label: 'I-5 — the Columbia crossing',
+      list: cams.filter(c => c.route === 'I5')
+                .sort((a, b) => a.lat - b.lat) }
+  ].filter(g => g.list.length);
+  if (!groups.length) {
+    el.innerHTML = '<p class="status-note">No corridor cameras in the latest snapshot.</p>';
+    return;
+  }
+  el.innerHTML = groups.map(g =>
+    '<div class="route-group"><div class="route-group-name">' + esc(g.label) + '</div>'
+    + '<div class="route-strip">' + g.list.map(c =>
+        '<figure class="camera-fig">'
+        + (c.image_url ? '<img loading="lazy" src="' + src(c.image_url) + '" alt="Road camera: ' + esc(c.name) + '" onerror="this.parentNode.classList.add(\'cam-dead\');this.remove();">' : '')
+        + '<figcaption>' + esc(c.name) + '</figcaption></figure>').join('')
+    + '</div></div>').join('');
+}
+
 /* ---------- snapshot: roads + bridge + cameras ---------- */
 function renderRoads(roads, camerasSnap) {
   setSnapUpdated('roads-updated', roads.fetched_at);
@@ -584,7 +646,7 @@ function renderRoads(roads, camerasSnap) {
     }
     const parts = [];
     parts.push('Lewis & Clark Bridge: ' + (alertCount ? alertCount + ' alert(s) posted' : wzCount ? 'work zones posted' : 'no alerts'));
-    if (incCount) parts.push(incCount + ' ODOT incident(s) on county highways');
+    if (incCount) parts.push(incCount + ' ODOT incident(s) in the county area');
     if (odotPending) parts.push('ODOT incident feed still pending its free key — verdict is from bridge + WSDOT sources');
     if (level !== 'ok') parts.push('US-30 blocked? Cornelius Pass or the St. Johns Bridge are the usual detours');
     vEl.className = 'commute-verdict cv-' + level;
@@ -601,23 +663,28 @@ function renderRoads(roads, camerasSnap) {
   });
   (b.work_zones || []).forEach(z => {
     bh += '<div class="incident-row"><strong>🚧 Work zone</strong> — ' + esc(z.description || (z.roads || []).join(', '))
-      + (z.start ? '<p>' + esc(z.start) + (z.end ? ' → ' + esc(z.end) : '') + '</p>' : '') + '</div>';
+      + (z.start ? '<p>' + esc(z.start) + (z.end ? ' → ' + esc(z.end) : '') + '</p>' : '')
+      + '<div class="incident-meta">Source: WSDOT</div></div>';
   });
   bh += '</div>';
   bEl.innerHTML = bh;
   setPill('sticky-bridge',
     '🌉 Bridge ' + ({ clear: 'clear', work: 'work posted', alert: 'ALERT', unknown: 'unknown' }[b.status] || 'unknown'),
     b.status === 'clear' ? 'ok' : b.status === 'alert' ? 'bad' : 'warn');
-  // ODOT incidents
+  // ODOT incidents — scoped by the fetcher to the ones ODOT locates in
+  // the county area (build batch 2026-11-04, research ADD 2 / R1: the
+  // verdict and this list used to carry the whole statewide feed count).
   const iEl = $('incidents-body');
   const tc = (roads.sources || [])[0] || {};
   if ((roads.incidents || []).length) {
-    iEl.innerHTML = roads.incidents.map(i =>
-      '<div class="incident-row"><strong>' + esc(i.title) + '</strong>'
-      + (i.route ? ' <span class="river-sub">' + esc(i.route) + '</span>' : '')
-      + (i.desc ? '<p>' + esc(i.desc) + '</p>' : '') + '</div>').join('');
+    const scopeNote = (typeof roads.odot_active_statewide === 'number')
+      ? '<p class="incident-scope">ODOT lists ' + roads.odot_active_statewide
+        + ' active incidents across Oregon right now — these ' + roads.incidents.length
+        + ' are the ones it locates in the county &amp; commute corridors.</p>'
+      : '';
+    iEl.innerHTML = scopeNote + roads.incidents.map(incidentRow).join('');
   } else if (tc.status === 'ok') {
-    iEl.innerHTML = '<p class="no-alerts">✅ No ODOT incidents reported on county highways in the latest snapshot.</p>';
+    iEl.innerHTML = '<p class="no-alerts">✅ No ODOT incidents reported in the county area in the latest snapshot.</p>';
   } else {
     iEl.innerHTML = '<p class="status-note">🛠️ The bridge status above and event/ferry panels are live now. ODOT\'s incident feed itself needs ODOT\'s free developer key added to our fetcher — the plumbing is built and waiting on that one signup (it\'s free; it just has to be done by a person). Until then, the snapshot above is WSDOT + county sources only for roads.</p>';
   }
@@ -648,6 +715,7 @@ function renderRoads(roads, camerasSnap) {
   } else {
     cEl.innerHTML = '<p class="status-note">📷 Camera inventory arrives with the same free ODOT key as incidents — one signup unlocks both.</p>';
   }
+  renderMyRoute(camerasSnap);
 }
 async function loadRoads() {
   try {
@@ -662,7 +730,245 @@ async function loadRoads() {
     $('bridge-body').innerHTML = '<p class="fallback">⚠️ Road snapshot unavailable right now — check <a href="https://www.tripcheck.com/" target="_blank" rel="noopener">TripCheck</a> and <a href="https://wsdot.com/traffic/" target="_blank" rel="noopener">WSDOT</a> directly before you drive.</p>';
     $('incidents-body').innerHTML = '';
     $('cameras-body').innerHTML = '';
+    const mrEl = $('myroute-body');
+    if (mrEl) mrEl.innerHTML = '';
   }
+}
+
+/* ---------- route-ahead forecast (build batch 2026-11-04, ADD 3) ----------
+   An Oregon 511 reviewer asked for a route forecast to anticipate ice
+   and snow; this is the commute-window version: the next 8 hourly NWS
+   periods for the US-30 corridor towns plus the Portland end, with the
+   hazards flagged in plain words. Keyless NWS, same pattern (and the
+   same points->forecastHourly route) as the forecast card. */
+const CORRIDOR_POINTS = [
+  { name: 'Rainier', lat: 46.0890, lon: -122.9360 },
+  { name: 'St. Helens', lat: 45.8595, lon: -122.8210 },
+  { name: 'Scappoose', lat: 45.7407, lon: -122.8773 },
+  { name: 'Portland end — St. Johns', lat: 45.5897, lon: -122.7730 }
+];
+const routeHourlyCache = {};
+function wxFlags(periods) {
+  const flags = [], seen = {};
+  const push = t => { if (!seen[t]) { seen[t] = 1; flags.push(t); } };
+  periods.forEach(p => {
+    const s = (p.shortForecast || '').toLowerCase();
+    const pop = p.probabilityOfPrecipitation && p.probabilityOfPrecipitation.value;
+    if (/snow|flurr|squall/.test(s)) push('❄️ snow');
+    if (/freezing|sleet|\bice\b|icy/.test(s) || (p.temperature <= 32 && pop != null && pop >= 30)) push('🧊 ice risk');
+    if (/fog/.test(s)) push('🌫️ fog');
+    if (/heavy rain|downpour/.test(s) || (pop != null && pop >= 80 && /rain/.test(s))) push('🌧️ heavy rain');
+    if (/thunder/.test(s)) push('⛈️ thunderstorms');
+  });
+  return flags;
+}
+async function loadRouteAhead() {
+  const body = $('routeahead-body');
+  if (!body) return;
+  const blocks = await Promise.all(CORRIDOR_POINTS.map(async pt => {
+    try {
+      if (!routeHourlyCache[pt.name]) {
+        const pts = await getJSON('https://api.weather.gov/points/'
+          + pt.lat.toFixed(4) + ',' + pt.lon.toFixed(4));
+        routeHourlyCache[pt.name] = pts.properties.forecastHourly;
+      }
+      const fc = await getJSON(routeHourlyCache[pt.name]);
+      const now = Date.now();
+      const periods = (fc.properties.periods || [])
+        .filter(p => new Date(p.endTime) > now).slice(0, 8);
+      if (!periods.length) throw new Error('no hourly periods');
+      const flags = wxFlags(periods);
+      return '<div class="ra-town"><div class="ra-town-name">' + esc(pt.name) + '</div>'
+        + '<div class="ra-strip">' + periods.map(p =>
+            '<div class="ra-chip"><div class="ra-hour">' + esc(fmtTime(new Date(p.startTime))) + '</div>'
+            + '<div class="ra-temp">' + p.temperature + '°' + esc(p.temperatureUnit) + '</div>'
+            + '<div class="ra-wx">' + esc(p.shortForecast) + '</div>'
+            + (p.probabilityOfPrecipitation && p.probabilityOfPrecipitation.value != null
+                ? '<div class="ra-pop">💧 ' + p.probabilityOfPrecipitation.value + '%</div>' : '')
+            + '</div>').join('') + '</div>'
+        + (flags.length
+            ? '<div class="ra-flags">Watch for: ' + esc(flags.join(' · ')) + '</div>'
+            : '<div class="ra-flags ra-clear">Nothing flagged for ice, fog, or snow in this window.</div>')
+        + '</div>';
+    } catch (e) {
+      return '<div class="ra-town"><div class="ra-town-name">' + esc(pt.name) + '</div>'
+        + '<p class="fallback">Hourly forecast unavailable for this point right now.</p></div>';
+    }
+  }));
+  body.innerHTML = blocks.join('');
+}
+
+/* ---------- the Bend run (build batch 2026-11-04, Travis's add) ----------
+   Pass cameras + incidents come from the fetcher's passes.json (fast
+   lane); the summit weather is keyless NWS hourly, fetched client-side
+   like the rest of the page's weather. The card's one job, in Travis's
+   words: knowing if there's snow over the pass. */
+const PASS_POINTS = {
+  govcamp: { label: 'Government Camp', lat: 45.3492, lon: -121.7728 },
+  santiam: { label: 'Santiam Pass summit', lat: 44.4237, lon: -121.7868 }
+};
+const passHourlyCache = {};
+async function loadBend() {
+  const body = $('bend-body');
+  if (!body) return;
+  let snap = null;
+  try { snap = await getSnapshot('passes.json'); } catch (e) { /* handled below */ }
+  if (snap) setSnapUpdated('bend-updated', snap.fetched_at);
+  const areas = (snap && snap.areas) || [];
+  if (!areas.length) {
+    body.innerHTML = '<p class="status-note">🏔️ Pass conditions ride the fetcher\'s ODOT snapshot — if this note sticks around, that snapshot didn\'t load.</p>';
+    return;
+  }
+  const bust = encodeURIComponent((snap && snap.fetched_at) || 'live');
+  const src = u => esc(u + (u.indexOf('?') >= 0 ? '&' : '?') + 'snap=' + bust);
+  const blocks = await Promise.all(areas.map(async area => {
+    let wx = '';
+    const pt = PASS_POINTS[area.id];
+    if (pt) {
+      try {
+        if (!passHourlyCache[area.id]) {
+          const pts = await getJSON('https://api.weather.gov/points/'
+            + pt.lat.toFixed(4) + ',' + pt.lon.toFixed(4));
+          passHourlyCache[area.id] = pts.properties.forecastHourly;
+        }
+        const fc = await getJSON(passHourlyCache[area.id]);
+        const now = Date.now();
+        const periods = (fc.properties.periods || [])
+          .filter(p => new Date(p.endTime) > now).slice(0, 12);
+        if (periods.length) {
+          const cur = periods[0];
+          const flags = wxFlags(periods);
+          wx = '<p class="bend-wx">🌡️ At the pass now: <strong>' + cur.temperature + '°'
+            + esc(cur.temperatureUnit) + ', ' + esc(cur.shortForecast) + '</strong>'
+            + (flags.length
+                ? ' · Next 12 hours — watch for ' + esc(flags.join(' · '))
+                : ' · No snow or ice flagged in the next 12 hours')
+            + ' <span class="river-sub">(NWS forecast for ' + esc(pt.label) + ')</span></p>';
+        }
+      } catch (e) { /* the weather line is a bonus; cameras + incidents still render */ }
+    }
+    const inc = (area.incidents || []).map(incidentRow).join('');
+    const cams = (area.cameras || []).length
+      ? '<div class="route-strip">' + area.cameras.map(c =>
+          '<figure class="camera-fig">'
+          + (c.image_url ? '<img loading="lazy" src="' + src(c.image_url) + '" alt="Pass camera: ' + esc(c.name) + '" onerror="this.parentNode.classList.add(\'cam-dead\');this.remove();">' : '')
+          + '<figcaption>' + esc(c.name) + '</figcaption></figure>').join('') + '</div>'
+      : '';
+    return '<div class="bend-area"><h3 class="subhead">' + esc(area.name) + '</h3>' + wx
+      + (inc || '<p class="no-alerts">✅ No ODOT incidents reported on this stretch in the latest snapshot.</p>')
+      + cams + '</div>';
+  }));
+  body.innerHTML = blocks.join('');
+}
+
+/* ---------- ships "passing soon" (build batch 2026-11-04, ADD 4 / R2) ----------
+   MarineTraffic's redesign is hated for burying the simple near-me list;
+   this IS that list: vessels sorted by when they pass the visitor's home
+   town. The ETA projects each AIS position onto a Columbia River
+   reference line (river miles), reads direction off course vs. the
+   channel bearing, and divides the along-river distance by the
+   along-river speed. Honesty rules: no ETA when the position report is
+   stale (>20 min), the along-river speed is under a knot, or the ship is
+   heading away — the row says so instead of inventing a time. */
+// [lat, lon, river mile], Astoria -> Portland (RM from the USACE channel survey, approx.)
+const RIVER_LINE = [
+  [46.245, -123.795, 14], [46.190, -123.440, 44], [46.105, -123.250, 56],
+  [46.090, -122.954, 68], [45.965, -122.795, 80], [45.860, -122.820, 86],
+  [45.700, -122.800, 95], [45.620, -122.674, 106]
+];
+// Where each home town meets the river: river mile + the name to print.
+const TOWN_RIVER = {
+  'St. Helens': { rm: 86, at: 'St. Helens' },
+  'Columbia City': { rm: 84, at: 'Columbia City' },
+  'Warren': { rm: 88, at: 'Warren' },
+  'Scappoose': { rm: 90, at: 'Scappoose' },
+  'Rainier': { rm: 68, at: 'Rainier' },
+  'Clatskanie': { rm: 57, at: 'Clatskanie' },
+  'Vernonia': { rm: 86, at: 'St. Helens (nearest river point)' }
+};
+function riverProject(lat, lon) {
+  let best = null;
+  for (let i = 0; i < RIVER_LINE.length - 1; i++) {
+    const A = RIVER_LINE[i], B = RIVER_LINE[i + 1];
+    const dx = B[1] - A[1], dy = B[0] - A[0];
+    const L2 = dx * dx + dy * dy;
+    let t = L2 ? ((lon - A[1]) * dx + (lat - A[0]) * dy) / L2 : 0;
+    t = Math.max(0, Math.min(1, t));
+    const px = A[1] + t * dx, py = A[0] + t * dy;
+    const d2 = (lon - px) * (lon - px) + (lat - py) * (lat - py);
+    if (!best || d2 < best.d2) {
+      best = { d2, rm: A[2] + t * (B[2] - A[2]),
+               bearing: (Math.atan2(dx, dy) * 180 / Math.PI + 360) % 360 };
+    }
+  }
+  return best;
+}
+function parseAisTime(s) {
+  const m = String(s || '').match(/(\d{4})-(\d{2})-(\d{2})[T ](\d{2}):(\d{2}):(\d{2})/);
+  return m ? new Date(Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4], +m[5], +m[6])) : null;
+}
+function shipEtaInfo(s, townRef, snapMs) {
+  const out = { dir: null, etaMin: null, moving: false, rm: null, toward: false };
+  if (s.lat == null || s.lon == null) return out;
+  const proj = riverProject(s.lat, s.lon);
+  if (!proj) return out;
+  out.rm = proj.rm;
+  out.moving = s.sog_kn != null && s.sog_kn >= 0.5;
+  if (!out.moving || s.cog == null) return out;
+  const dot = Math.cos((s.cog - proj.bearing) * Math.PI / 180);
+  out.dir = dot > 0.35 ? 'up' : dot < -0.35 ? 'down' : null;
+  if (!out.dir) return out;
+  const dRm = townRef.rm - proj.rm;
+  out.toward = (out.dir === 'up' && dRm > 0.5) || (out.dir === 'down' && dRm < -0.5);
+  const reported = parseAisTime(s.updated);
+  const ageMin = reported ? (snapMs - reported.getTime()) / 60000 : null;
+  const alongKn = Math.abs(dot) * s.sog_kn;
+  if (out.toward && alongKn >= 1 && ageMin != null && ageMin <= 20) {
+    const eta = Math.abs(dRm) * 0.868976 / alongKn * 60; // river miles are statute
+    if (eta <= 12 * 60) out.etaMin = eta;
+  }
+  return out;
+}
+function renderShipEtas(ships, fetchedAt) {
+  const townName = (homeTown && homeTown.name) || 'St. Helens';
+  const townRef = TOWN_RIVER[townName] || TOWN_RIVER['St. Helens'];
+  const snapMs = fetchedAt ? new Date(fetchedAt).getTime() : Date.now();
+  const snapAgeMin = Math.max(0, (Date.now() - snapMs) / 60000);
+  const rows = ships.map(s => ({ s, info: shipEtaInfo(s, townRef, snapMs) }));
+  const rank = r => r.info.etaMin != null ? 0 : r.info.moving ? 1 : 2;
+  rows.sort((a, b) => {
+    const d = rank(a) - rank(b);
+    if (d) return d;
+    if (a.info.etaMin != null && b.info.etaMin != null) return a.info.etaMin - b.info.etaMin;
+    const da = a.info.rm == null ? 999 : Math.abs(a.info.rm - townRef.rm);
+    const db = b.info.rm == null ? 999 : Math.abs(b.info.rm - townRef.rm);
+    return da - db;
+  });
+  const head = snapAgeMin > 20
+    ? '<p class="incident-scope">This snapshot\'s positions are ' + Math.round(snapAgeMin)
+      + ' min old — too old for honest ETAs, so none are shown.</p>'
+    : '';
+  return head + rows.map(({ s, info }) => {
+    const dirTxt = info.dir === 'up' ? '▲ Upriver (toward Portland)'
+      : info.dir === 'down' ? '▼ Downriver (toward Astoria)'
+      : info.moving ? 'Underway' : 'Moored or anchored';
+    let etaTxt = '';
+    if (info.etaMin != null) {
+      etaTxt = info.etaMin < 2
+        ? 'Passing ' + townRef.at + ' right about now'
+        : 'Passes ' + townRef.at + ' ≈ ' + fmtTime(new Date(Date.now() + info.etaMin * 60000))
+          + ' — ' + fmtAway(Math.round(info.etaMin)) + ' at its current reported speed';
+    } else if (info.moving && info.dir) {
+      etaTxt = info.toward
+        ? 'Heading toward ' + townRef.at + ' — no ETA shown (position too old or speed too low to call)'
+        : 'Heading away from ' + townRef.at + ' for now';
+    }
+    return '<div class="ship-row"><div><div class="river-name">🚢 ' + esc(s.name || ('MMSI ' + s.mmsi)) + '</div>'
+      + '<div class="river-sub">' + esc(dirTxt) + (etaTxt ? ' · ' + esc(etaTxt) : '') + '</div>'
+      + '<div class="river-sub">' + (s.destination ? 'Bound for ' + esc(s.destination) : 'Destination not broadcast')
+      + '</div></div><div class="river-nums"><div class="big">' + (s.sog_kn != null ? num(s.sog_kn, 1) + ' kt' : '—') + '</div>'
+      + '<div class="river-sub">' + (s.cog != null ? 'course ' + num(s.cog, 0) + '°' : '') + '</div></div></div>';
+  }).join('');
 }
 
 /* ---------- snapshot: ships ---------- */
@@ -683,11 +989,7 @@ async function loadShips() {
       });
     }
     if (snap.status === 'ok' && ships.length) {
-      body.innerHTML = ships.map(s =>
-        '<div class="ship-row"><div><div class="river-name">🚢 ' + esc(s.name || ('MMSI ' + s.mmsi)) + '</div>'
-        + '<div class="river-sub">' + (s.destination ? 'Bound for ' + esc(s.destination) : 'Destination not broadcast')
-        + '</div></div><div class="river-nums"><div class="big">' + (s.sog_kn != null ? num(s.sog_kn, 1) + ' kt' : '—') + '</div>'
-        + '<div class="river-sub">' + (s.cog != null ? 'course ' + num(s.cog, 0) + '°' : '') + '</div></div></div>').join('');
+      body.innerHTML = renderShipEtas(ships, snap.fetched_at);
     } else if (snap.status === 'ok') {
       body.innerHTML = '<p class="no-alerts">No vessels broadcasting AIS inside the county box at the last collection — the river has quiet stretches, especially at night.</p>';
     } else {
@@ -983,6 +1285,7 @@ const FRESH_ROWS = [
   ['ISS orbit data — pass predictions (CelesTrak)', 'iss-passes-updated', 'live'],
   ['Tonight\u2019s sky — clouds & aurora (Open-Meteo / NOAA SWPC)', 'dark-updated', 'live'],
   ['Fetcher — roads, bridge & cameras (ODOT/WSDOT)', 'roads-updated', 'snapshot'],
+  ['Fetcher — Bend run passes (ODOT)', 'bend-updated', 'snapshot'],
   ['Fetcher — Oscar B ferry alerts (Wahkiakum Co.)', 'ferry-updated', 'snapshot'],
   ['Fetcher — events (city & county calendars)', 'events-updated', 'snapshot'],
   ['Fetcher — river traffic (AIS)', 'ships-updated', 'snapshot']
@@ -1021,6 +1324,8 @@ loadFires();
 loadAircraft();
 loadISS();
 loadRoads();
+loadRouteAhead();
+loadBend();
 loadShips();
 loadFerry();
 tickFerryNext();
@@ -1033,6 +1338,8 @@ setInterval(loadFires, 15 * 60 * 1000);
 setInterval(loadAircraft, 45 * 1000);
 setInterval(loadISS, 15 * 1000);
 setInterval(loadRoads, 10 * 60 * 1000);
+setInterval(loadBend, 10 * 60 * 1000);
+setInterval(loadRouteAhead, 30 * 60 * 1000);
 setInterval(loadShips, 10 * 60 * 1000);
 setInterval(loadFerry, 10 * 60 * 1000);
 setInterval(tickFerryNext, 20 * 1000);
@@ -1303,6 +1610,7 @@ function renderHome() {
       renderHomePicker();
       homeApplyBadges();
       loadGlance(); // restore the county-wide next-event tile
+      loadShips(); // ETAs fall back to the St. Helens river point
     });
     homeRefreshCalNote();
   } else if (homeVisitor) {
@@ -1416,6 +1724,7 @@ function homeApplyAll(flyMap) {
   if (flyMap && map) { try { map.flyTo([homeTown.lat, homeTown.lon], 12); } catch (e) { /* map is decorative here */ } }
   homeApplyBadges();
   homeGlancePass();
+  loadShips(); // the passing-soon ETAs are computed at the home town
 }
 function initHome() {
   homeLoadPref();
@@ -3473,9 +3782,15 @@ const LANG_ES = {
   legnote: 'Usa el botón de capas (arriba a la derecha del mapa) para activar el radar, los aviones, los barcos, los incendios y la estación espacial.',
   roadsh2: '🚗 La US-30, el puente y las carreteras',
   incidentsh3: 'Incidentes en la carretera — ODOT TripCheck',
+  myrouteh3: '📷 Mi ruta — las cámaras de tu viaje, en orden de manejo',
+  routeaheadh2: '🧭 Ruta por delante — el pronóstico del corredor',
+  routeaheadnote: 'Las próximas horas en el corredor de la US-30, pueblo por pueblo — para que el hielo, la niebla o la nieve del camino aparezcan aquí antes que en el parabrisas. Pronóstico por hora del Servicio Meteorológico Nacional.',
+  bendh2: '🏔️ El viaje a Bend — condiciones en los pasos',
+  bendnote: 'Fuera del condado, incluido porque el viaje empieza aquí: las dos rutas que usa este condado para ir a Bend — la US-26 sobre el monte Hood por Government Camp, y la US-20 por el paso Santiam. Cámaras e incidentes de ODOT TripCheck; pronósticos de los pasos del Servicio Meteorológico Nacional. La pregunta que responde esta tarjeta: ¿hay nieve en el paso?',
   camerash3: 'Cámaras de carretera',
   roadsnote: "Los datos de carreteras los recoge nuestro recolector de ODOT TripCheck y WSDOT cada pocos minutos y se muestran con su hora de captura — nunca fingen ser más frescos de lo que son. Detalle oficial completo: <a href=\"https://www.tripcheck.com/\" target=\"_blank\" rel=\"noopener\">TripCheck</a> · <a href=\"https://wsdot.com/traffic/\" target=\"_blank\" rel=\"noopener\">Tráfico de WSDOT</a>. ¿Viajas a Portland? Un cierre de la US-30 suele significar Cornelius Pass o el puente St. Johns — revisa antes de salir, no después.",
   shipsh2: '🚢 Tráfico del río Columbia',
+  shipsnote: 'Barcos ordenados por cuándo pasarán por tu pueblo de residencia — St. Helens hasta que elijas uno en «Hazlo tuyo» en la pestaña Hoy. Los tiempos estimados usan la velocidad actual reportada por cada barco, así que un barco que reduce la velocidad llega más tarde. Posiciones en vivo de AISStream, actualizadas más o menos cada cinco minutos.',
   ferryh2: '⛴️ El ferry Oscar B — Westport, OR ↔ Cathlamet, WA',
   ferryplanh3: '🧭 No pierdas el barco — ¿a qué hora tienes que salir?',
   fpdiror: 'Hacia Washington',

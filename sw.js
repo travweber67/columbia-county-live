@@ -18,7 +18,7 @@
  */
 'use strict';
 
-var VERSION = 'ccl-v4'; // v4 = Copy sweep 2026-11-04 (privacy-reassurance boilerplate removed, EN+ES); v3 = Feature audit 2026-11-04 (Near-me popup fix); v2 = Redesign (view navigation + light modern theme)
+var VERSION = 'ccl-v5'; // v5 = Build batch 2026-11-04 (My Route camera strip, incident honesty + verdict scope fix, route-ahead forecast, ships passing-soon ETAs, Bend run pass card; EN+ES); v4 = Copy sweep 2026-11-04 (privacy-reassurance boilerplate removed, EN+ES); v3 = Feature audit 2026-11-04 (Near-me popup fix); v2 = Redesign (view navigation + light modern theme)
 var STATIC_CACHE = VERSION + '-static';
 var DATA_CACHE = VERSION + '-data';
 var LIB_CACHE = VERSION + '-lib';

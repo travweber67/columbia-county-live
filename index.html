@@ -243,12 +243,22 @@
       <div id="bridge-body" class="panel-body"><p class="loading">Loading Lewis &amp; Clark Bridge status…</p></div>
       <h3 class="subhead" data-i18n="incidentsh3">Highway incidents — ODOT TripCheck</h3>
       <div id="incidents-body" class="panel-body"><p class="loading">Loading incidents…</p></div>
+      <h3 class="subhead" data-i18n="myrouteh3">📷 My Route — your commute cameras, in driving order</h3>
+      <div id="myroute-body" class="panel-body"><p class="loading">Loading route cameras…</p></div>
       <h3 class="subhead" data-i18n="camerash3">Road cameras</h3>
       <div id="cameras-body" class="panel-body"><p class="loading">Loading camera list…</p></div>
       <p class="card-note small" data-i18n="roadsnote">Road data is collected by our fetcher from ODOT TripCheck and WSDOT every few minutes and shown with its snapshot time — it never pretends to be fresher than it is. Full official detail: <a href="https://www.tripcheck.com/" target="_blank" rel="noopener">TripCheck</a> · <a href="https://wsdot.com/traffic/" target="_blank" rel="noopener">WSDOT traffic</a>. Commuting to Portland? A US-30 closure usually means Cornelius Pass or the St. Johns Bridge — check before you leave, not after.</p>
     </div>
 
     
+
+    <div class="card" id="routeahead-card">
+      <div class="card-head">
+        <h2 data-i18n="routeaheadh2">🧭 Route Ahead — the Corridor Forecast</h2>
+      </div>
+      <p class="card-note" data-i18n="routeaheadnote">The next stretch of hours on the US-30 corridor, town by town — so ice, fog, or snow on the drive shows up here before it shows up on the windshield. Hourly from the National Weather Service.</p>
+      <div id="routeahead-body" class="panel-body"><p class="loading">Loading the corridor forecast…</p></div>
+    </div>
 
     <div class="card photo-card" id="ferry-card">
       <div class="card-photo photo-ferry"><img src="img/card-ferry.jpg" alt="The Oscar B ferry crossing the Columbia River, leaving Puget Island" loading="lazy" decoding="async"></div>
@@ -294,6 +304,7 @@
         <span class="updated" id="ships-updated"></span>
       </div>
       <div id="ships-body" class="panel-body"><p class="loading">Loading river traffic…</p></div>
+      <p class="card-note small" data-i18n="shipsnote">Ships sorted by when they'll pass your home town — St. Helens until you pick one in “Make it yours” on the Today tab. ETAs use each ship's current reported speed, so a ship that slows down arrives later. Live positions from AISStream, refreshed about every five minutes.</p>
     </div>
 
     <div class="card" id="aircraft-card">
@@ -308,6 +319,15 @@
       </div>
       <div id="sky-body" class="panel-body"><p class="loading">Loading aircraft overhead…</p></div>
       <p class="card-note small" data-i18n="aircraftnote">Aircraft: community ADS-B receivers via adsb.fi. Refreshes automatically.</p>
+    </div>
+
+    <div class="card" id="bend-card">
+      <div class="card-head">
+        <h2 data-i18n="bendh2">🏔️ The Bend Run — Pass Conditions</h2>
+        <span class="updated" id="bend-updated"></span>
+      </div>
+      <p class="card-note" data-i18n="bendnote">Outside the county, included because the trip starts here: the two ways this county drives to Bend — US-26 over Mt. Hood at Government Camp, and US-20 over Santiam Pass. Cameras and incidents from ODOT TripCheck; pass forecasts from the National Weather Service. The question this card answers: is there snow over the pass?</p>
+      <div id="bend-body" class="panel-body"><p class="loading">Loading pass conditions…</p></div>
     </div>
 
     
