@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-05T14:35:15Z",
+ "fetched_at": "2026-11-05T14:40:16Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -16,6 +16,19 @@
   }
  ],
  "incidents": [
+  {
+   "title": "Road construction is occurring causing minimal delay to traffic. Use caution and watch for workers.",
+   "desc": "Barrier replacement operations and striping are scheduled from 7:00 p.m. Sunday, November 1st, through 12:00 p.m. Friday, November 6th. Work will predominantly occur Sunday nights through Friday mornings. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=21547",
+   "impact": "No to Minimum Delay",
+   "place": "US30, Rainier",
+   "route": "US30",
+   "milepost": 48.4,
+   "lat": 46.09499,
+   "lon": -122.96389,
+   "start": "2026-08-14T05:14:54.54-07:00",
+   "updated": "2026-10-30T08:36:57-07:00",
+   "source": "ODOT TripCheck"
+  },
   {
    "title": "Traffic Impacts: NE Lombard Street reduced to one lane in each direction",
    "desc": "Project Description: Closures are required for PBOT\u2019s NE 42nd Avenue Bridge Replacement, which will make a seismically safe crossing for an emergency route and provide better access for freight, pedestrians, and people biking on the bridge and NE Lombard Street below the span. Link to Additional Information: https://www.portland.gov/transportation/pbot-projects/construction/ne-42nd-avenue-bridge-replacement-over-lombard-street?utm_medium=email&utm_source=govdelivery",
@@ -95,19 +108,6 @@
    "source": "ODOT TripCheck"
   },
   {
-   "title": "Road construction is occurring causing minimal delay to traffic. Use caution and watch for workers.",
-   "desc": "Barrier replacement operations and striping are scheduled from 7:00 p.m. Sunday, November 1st, through 12:00 p.m. Friday, November 6th. Work will predominantly occur Sunday nights through Friday mornings. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=21547",
-   "impact": "No to Minimum Delay",
-   "place": "US30, Rainier",
-   "route": "US30",
-   "milepost": 48.4,
-   "lat": 46.09499,
-   "lon": -122.96389,
-   "start": "2026-08-14T05:14:54.54-07:00",
-   "updated": "2026-10-30T08:36:57-07:00",
-   "source": "ODOT TripCheck"
-  },
-  {
    "title": "Road construction is occurring. Prepare to slow. Watch for workers.",
    "desc": "This project will construct a roundabout at the intersection of OR 6 at Aerts Rd. Traffic is shifted to a diversion road during construction. Expect shoulder and lane closures as needed. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=OR6-Aerts",
    "impact": "Estimated delay under 20 minutes",
@@ -121,7 +121,7 @@
    "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 114,
+ "odot_active_statewide": 115,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
   "alerts": [
