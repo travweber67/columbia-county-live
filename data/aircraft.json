@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-05T15:45:22Z",
+ "fetched_at": "2026-11-05T15:48:35Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
@@ -7,51 +7,21 @@
    "hex": "a8557a",
    "callsign": "QXE2139",
    "type": "E75L",
-   "alt_ft": 33125,
-   "gs_kn": 466.1,
-   "track": 178.77,
-   "lat": 46.065628,
-   "lon": -123.375594
+   "alt_ft": 37000,
+   "gs_kn": 449.1,
+   "track": 178.85,
+   "lat": 45.595403,
+   "lon": -123.361427
   },
   {
-   "hex": "aa7abd",
-   "callsign": "UAL2328",
-   "type": "B739",
-   "alt_ft": 33100,
-   "gs_kn": 458.1,
-   "track": 178.87,
-   "lat": 45.800047,
-   "lon": -123.36747
-  },
-  {
-   "hex": "a90d85",
-   "callsign": "N68236",
-   "type": "C340",
-   "alt_ft": 1275,
-   "gs_kn": 137.8,
-   "track": 118.61,
-   "lat": 45.631388,
-   "lon": -122.689751
-  },
-  {
-   "hex": "a817b1",
-   "callsign": "QXE2074",
-   "type": "E75L",
-   "alt_ft": "ground",
-   "gs_kn": 0.0,
-   "track": null,
-   "lat": 45.59594,
-   "lon": -122.620669
-  },
-  {
-   "hex": "a3133c",
-   "callsign": "ASA784",
-   "type": "B739",
-   "alt_ft": "ground",
-   "gs_kn": 0.5,
-   "track": null,
-   "lat": 45.596317,
-   "lon": -122.620116
+   "hex": "a35254",
+   "callsign": "DAL2721",
+   "type": "BCS3",
+   "alt_ft": 31725,
+   "gs_kn": 411.0,
+   "track": 350.19,
+   "lat": 46.008368,
+   "lon": -122.656105
   },
   {
    "hex": "ad99f9",
@@ -60,18 +30,28 @@
    "alt_ft": "ground",
    "gs_kn": 0.0,
    "track": null,
-   "lat": 45.596078,
-   "lon": -122.619026
+   "lat": 45.595963,
+   "lon": -122.620636
   },
   {
    "hex": "a125f9",
    "callsign": "SKW3312",
    "type": "E75L",
    "alt_ft": "ground",
-   "gs_kn": 2.8,
+   "gs_kn": 0.0,
    "track": null,
-   "lat": 45.595482,
-   "lon": -122.617504
+   "lat": 45.596283,
+   "lon": -122.619564
+  },
+  {
+   "hex": "a60f84",
+   "callsign": "AMF1994",
+   "type": "B190",
+   "alt_ft": -275,
+   "gs_kn": 114.1,
+   "track": 118.81,
+   "lat": 45.592377,
+   "lon": -122.614426
   }
  ]
 }
