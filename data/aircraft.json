@@ -1,67 +1,57 @@
 {
- "fetched_at": "2026-11-05T18:25:36Z",
+ "fetched_at": "2026-11-05T18:30:37Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
+   "hex": "ab6828",
+   "callsign": "N834KX",
+   "type": "C172",
+   "alt_ft": 4725,
+   "gs_kn": 110.1,
+   "track": 114.7,
+   "lat": 46.045005,
+   "lon": -123.510567
+  },
+  {
    "hex": "a9f760",
    "callsign": "N741MM",
    "type": "C25C",
-   "alt_ft": 5675,
-   "gs_kn": 238.7,
-   "track": 344.45,
-   "lat": 45.724772,
-   "lon": -123.264885
+   "alt_ft": 5250,
+   "gs_kn": 216.7,
+   "track": 4.76,
+   "lat": 46.044027,
+   "lon": -123.334236
   },
   {
    "hex": "a979b3",
    "callsign": "FLC71",
    "type": "BE30",
-   "alt_ft": 3675,
-   "gs_kn": 192.5,
-   "track": 317.53,
-   "lat": 45.611277,
-   "lon": -122.903915
+   "alt_ft": 1250,
+   "gs_kn": 133.4,
+   "track": 118.68,
+   "lat": 45.630936,
+   "lon": -122.68848
   },
   {
-   "hex": "a4798f",
-   "callsign": "FFT2553",
-   "type": "A20N",
-   "alt_ft": 2650,
-   "gs_kn": 177.6,
-   "track": 170.27,
-   "lat": 45.703079,
-   "lon": -122.835723
-  },
-  {
-   "hex": "ad3c1f",
-   "callsign": "ASA1327",
-   "type": "B39M",
-   "alt_ft": 27000,
-   "gs_kn": 392.9,
-   "track": 356.21,
-   "lat": 46.333054,
-   "lon": -122.693906
-  },
-  {
-   "hex": "a85ce8",
-   "callsign": "QXE2114",
+   "hex": "a7d665",
+   "callsign": "SKW3953",
    "type": "E75L",
-   "alt_ft": 27625,
-   "gs_kn": 355.9,
-   "track": 352.74,
-   "lat": 46.142349,
-   "lon": -122.687475
+   "alt_ft": 16575,
+   "gs_kn": 344.9,
+   "track": 337.67,
+   "lat": 46.042557,
+   "lon": -122.648152
   },
   {
-   "hex": "abe892",
-   "callsign": "SWA3411",
-   "type": "B738",
-   "alt_ft": 975,
-   "gs_kn": 159.3,
-   "track": 118.5,
-   "lat": 45.625522,
-   "lon": -122.67485
+   "hex": "aad22d",
+   "callsign": "N797BP",
+   "type": "B407",
+   "alt_ft": "ground",
+   "gs_kn": 0.0,
+   "track": null,
+   "lat": 45.589235,
+   "lon": -122.614185
   }
  ]
 }
