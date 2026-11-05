@@ -1389,7 +1389,7 @@ function dayPlanSegments(dayStr) {
   });
   return segs;
 }
-function segWhy(seg) {
+function segWhy(seg, followsStrong) {
   const kn = seg.peak.toFixed(1);
   if (seg.method === 'plunk') {
     return 'The outgoing current is strong (about ' + kn
@@ -1397,11 +1397,14 @@ function segWhy(seg) {
       + ' only works when the river pushes it.';
   }
   if (seg.method === 'anchor') {
-    return seg.cls === 'strong'
-      ? 'The current is up again (about ' + kn + ' kn) — steady push'
-        + ' for a wobbler or a wrapped plug.'
-      : 'Steady current (about ' + kn + ' kn) — enough push to work a'
-        + ' wobbler without fighting the river.';
+    if (seg.cls !== 'strong') {
+      return 'Steady current (about ' + kn + ' kn) — enough push to'
+        + ' work a wobbler without fighting the river.';
+    }
+    return (followsStrong
+        ? 'The current stays strong (about ' + kn + ' kn)'
+        : 'The current is up again (about ' + kn + ' kn)')
+      + ' — steady push for a wobbler or a wrapped plug.';
   }
   return seg.cls === 'weak'
     ? 'The current goes slack (under 0.3 kn) — plunking and wobblers'
@@ -1459,11 +1462,18 @@ function renderDayPlan() {
     ? '<p class="plan-now">Right now it\'s <strong>'
       + METHOD_META[cur.method].name.toLowerCase()
       + '</strong> water.</p>' : '';
-  const list = '<ul class="plan-list">' + segs.map(s =>
+  const list = '<ul class="plan-list">' + segs.map((s, i) =>
     '<li><strong>' + fmtRange(s.start, s.end) + ' — '
-    + METHOD_META[s.method].name + '.</strong> ' + segWhy(s) + '</li>'
+    + METHOD_META[s.method].name + '.</strong> '
+    + segWhy(s, i > 0 && segs[i - 1].cls === 'strong') + '</li>'
   ).join('') + '</ul>';
-  const tm = dayPlanSegments(ptDayStr(1));
+  const tmRaw = dayPlanSegments(ptDayStr(1));
+  const tm = [];
+  tmRaw.forEach(s => {
+    const last = tm[tm.length - 1];
+    if (last && last.method === s.method) last.end = s.end;
+    else tm.push({ method: s.method, start: s.start, end: s.end });
+  });
   const tmLine = '<p class="plan-tomorrow"><strong>Tomorrow:</strong> '
     + tm.map(s => METHOD_META[s.method].short + ' '
       + fmtRange(s.start, s.end)).join(' · ') + '</p>';
