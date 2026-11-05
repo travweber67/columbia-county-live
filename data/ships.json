@@ -1,73 +1,124 @@
 {
- "fetched_at": "2026-11-05T17:20:30Z",
+ "fetched_at": "2026-11-05T17:25:30Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.0766,
+   "lon": -122.90118,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-05 17:25:38.101483138 +0000 UTC",
+   "sog_kn": 2.5,
+   "cog": 321.2,
+   "heading": 324,
+   "nav_status": 0
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65014,
+   "lon": -122.74762,
+   "sog_kn": 0,
+   "cog": 280.3,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-05 17:25:38.527337508 +0000 UTC"
+  },
   {
    "mmsi": 352003818,
    "name": "PAN CONCORD",
-   "lat": 46.16524,
-   "lon": -123.08167,
+   "lat": 46.17493,
+   "lon": -123.10035,
    "sog_kn": 11.6,
-   "cog": 305.9,
-   "heading": 305,
+   "cog": 312.3,
+   "heading": 311,
    "nav_status": 0,
-   "updated": "2026-11-05 17:20:43.61409607 +0000 UTC"
+   "updated": "2026-11-05 17:25:43.900916596 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64342,
+   "lon": -122.75282,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-05 17:25:44.753424823 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07662,
+   "lon": -122.90086,
+   "sog_kn": 2.8,
+   "cog": 315.5,
+   "heading": 149,
+   "nav_status": 0,
+   "updated": "2026-11-05 17:25:46.205411053 +0000 UTC"
   },
   {
    "mmsi": 367513230,
    "name": "WILLAMETTE",
    "lat": 46.09893,
    "lon": -122.93971,
-   "sog_kn": 0,
-   "cog": 298.2,
-   "heading": 21,
+   "sog_kn": 0.1,
+   "cog": 314.4,
+   "heading": 22,
    "nav_status": 12,
-   "updated": "2026-11-05 17:20:46.312958905 +0000 UTC"
+   "updated": "2026-11-05 17:25:47.074363997 +0000 UTC"
   },
   {
-   "mmsi": 538006508,
-   "name": "RED COSMOS",
-   "lat": 46.26209,
-   "lon": -123.45624,
-   "sog_kn": 11.3,
-   "cog": 320,
-   "heading": 321,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15214,
+   "lon": -123.37839,
+   "sog_kn": 6.8,
+   "cog": 34.8,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-05 17:20:53.355158123 +0000 UTC"
+   "updated": "2026-11-05 17:25:48.198250092 +0000 UTC"
   },
   {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 46.044,
-   "lon": -122.87693,
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64539,
+   "lon": -122.73504,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-05 17:25:48.202766587 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19954,
+   "lon": -123.38498,
    "sog_kn": 0,
-   "cog": 125.2,
-   "heading": 180,
+   "cog": 325,
+   "heading": 144,
    "nav_status": 5,
-   "updated": "2026-11-05 17:20:57.917938936 +0000 UTC"
+   "updated": "2026-11-05 17:25:54.337927899 +0000 UTC"
   },
   {
    "mmsi": 367363590,
    "name": "CLARKSTON",
-   "lat": 45.64736,
-   "lon": -122.73947,
-   "sog_kn": 0,
-   "cog": 303.7,
-   "heading": 290,
-   "nav_status": 12,
-   "updated": "2026-11-05 17:20:59.567563944 +0000 UTC"
+   "lat": 45.64734,
+   "lon": -122.73949,
+   "type_code": 52,
+   "destination": "VANCOUER,WA",
+   "updated": "2026-11-05 17:25:58.874432597 +0000 UTC"
   },
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.10259,
-   "lon": -122.95693,
-   "sog_kn": 1.5,
-   "cog": 331.7,
-   "heading": 26,
-   "nav_status": 3,
-   "updated": "2026-11-05 17:21:06.317133443 +0000 UTC"
+   "mmsi": 368268040,
+   "name": "PAPA T",
+   "lat": 46.08981,
+   "lon": -122.92955,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-05 17:26:00.467572481 +0000 UTC"
   }
  ]
 }
