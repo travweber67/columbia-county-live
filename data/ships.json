@@ -1,58 +1,102 @@
 {
- "fetched_at": "2026-11-05T15:30:20Z",
+ "fetched_at": "2026-11-05T15:35:21Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64538,
-   "lon": -122.73504,
+   "mmsi": 538006508,
+   "name": "RED COSMOS",
+   "lat": 46.16465,
+   "lon": -123.08219,
    "type_code": 70,
-   "destination": "PER ORDERS",
-   "updated": "2026-11-05 15:30:27.785150331 +0000 UTC"
+   "destination": "US GHR",
+   "updated": "2026-11-05 15:35:37.566482689 +0000 UTC",
+   "sog_kn": 14.4,
+   "cog": 305.8,
+   "heading": 308,
+   "nav_status": 0
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19997,
-   "lon": -123.38544,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-05 15:30:28.655201066 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07834,
-   "lon": -122.90043,
-   "sog_kn": 0.1,
-   "cog": 300.6,
-   "heading": 151,
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79383,
+   "lon": -122.84281,
+   "sog_kn": 2.9,
+   "cog": 219.7,
+   "heading": 215,
    "nav_status": 0,
-   "updated": "2026-11-05 15:30:29.170236643 +0000 UTC"
+   "updated": "2026-11-05 15:35:27.020993126 +0000 UTC"
   },
   {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.64619,
-   "lon": -122.73835,
-   "sog_kn": 5.6,
-   "cog": 15.1,
-   "heading": 23,
-   "nav_status": 12,
-   "updated": "2026-11-05 15:30:40.393963898 +0000 UTC"
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.10669,
+   "lon": -122.96505,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-05 15:35:29.374010334 +0000 UTC"
   },
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60752,
-   "lon": -122.67761,
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58735,
+   "lon": -122.77056,
+   "type_code": 52,
+   "destination": "US^0UJB>0UJB",
+   "updated": "2026-11-05 15:35:54.313064062 +0000 UTC",
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 277.5,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-05 15:30:54.34076747 +0000 UTC"
+   "nav_status": 0
+  },
+  {
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.11011,
+   "lon": -122.96341,
+   "sog_kn": 0,
+   "cog": 167.3,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-05 15:35:33.286119387 +0000 UTC"
+  },
+  {
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.64299,
+   "lon": -122.77141,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-05 15:35:33.35113293 +0000 UTC"
+  },
+  {
+   "mmsi": 368136580,
+   "name": "ORIN L GREEN",
+   "lat": 46.07855,
+   "lon": -122.9006,
+   "type_code": 33,
+   "destination": "LOWER COLUMBIA RIVER",
+   "updated": "2026-11-05 15:35:38.843726086 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.10297,
+   "lon": -122.95292,
+   "sog_kn": 0.9,
+   "cog": 126.3,
+   "heading": 126,
+   "nav_status": 3,
+   "updated": "2026-11-05 15:35:48.954734201 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63867,
+   "lon": -122.72407,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-05 15:35:53.521405678 +0000 UTC"
   }
  ]
 }
