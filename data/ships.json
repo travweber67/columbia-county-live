@@ -1,115 +1,56 @@
 {
- "fetched_at": "2026-11-05T12:00:00Z",
+ "fetched_at": "2026-11-05T12:05:01Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.1534,
-   "lon": -123.37713,
-   "sog_kn": 0,
-   "cog": 0,
+   "mmsi": 538006508,
+   "name": "RED COSMOS",
+   "lat": 45.62662,
+   "lon": -122.78805,
+   "type_code": 70,
+   "destination": "US GHR",
+   "updated": "2026-11-05 12:05:12.94248608 +0000 UTC"
+  },
+  {
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 46.10768,
+   "lon": -122.96875,
+   "sog_kn": 8.7,
+   "cog": 121,
+   "heading": 123,
+   "nav_status": 0,
+   "updated": "2026-11-05 12:05:15.279149147 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.38554,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-05 12:05:23.209064297 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.62669,
+   "lon": -122.78871,
+   "sog_kn": 0.4,
+   "cog": 342.4,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-05 12:00:08.592696408 +0000 UTC"
+   "updated": "2026-11-05 12:05:23.492836475 +0000 UTC"
   },
   {
-   "mmsi": 338205428,
-   "name": "CLAIRE B",
-   "lat": 45.6276,
-   "lon": -122.8162,
-   "sog_kn": 5.3,
-   "cog": 143.5,
-   "heading": 140,
-   "nav_status": 0,
-   "updated": "2026-11-05 12:00:08.913117091 +0000 UTC"
-  },
-  {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.64752,
-   "lon": -122.74226,
-   "sog_kn": 0,
-   "cog": 275.3,
-   "heading": 107,
-   "nav_status": 12,
-   "updated": "2026-11-05 12:00:09.644213633 +0000 UTC"
-  },
-  {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59408,
-   "lon": -122.77217,
-   "type_code": 70,
-   "destination": "NOT AVAILABLE",
-   "updated": "2026-11-05 12:00:10.380429054 +0000 UTC"
-  },
-  {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64538,
-   "lon": -122.73503,
-   "type_code": 70,
-   "destination": "PER ORDERS",
-   "updated": "2026-11-05 12:00:16.639619514 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.08131,
-   "lon": -122.90421,
-   "sog_kn": 0.3,
-   "cog": 284.5,
-   "heading": 134,
-   "nav_status": 3,
-   "updated": "2026-11-05 12:00:29.75976064 +0000 UTC",
-   "type_code": 33,
-   "destination": "LORD ISL. LONGVIEW"
-  },
-  {
-   "mmsi": 538011495,
-   "name": "MTR JUPITER",
-   "lat": 46.12447,
-   "lon": -122.98886,
-   "sog_kn": 0.1,
-   "cog": 238.6,
-   "heading": 138,
-   "nav_status": 1,
-   "updated": "2026-11-05 12:00:25.012881929 +0000 UTC"
-  },
-  {
-   "mmsi": 538012818,
-   "name": "POAVOSA WISDOM III",
-   "lat": 46.25546,
-   "lon": -123.44877,
-   "sog_kn": 13.8,
-   "cog": 318.4,
-   "heading": 322,
-   "nav_status": 0,
-   "updated": "2026-11-05 12:00:28.853880613 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.17216,
-   "lon": -123.21604,
-   "sog_kn": 1,
-   "cog": 240.2,
-   "heading": 241,
-   "nav_status": 3,
-   "updated": "2026-11-05 12:00:31.566604133 +0000 UTC"
-  },
-  {
-   "mmsi": 367719170,
-   "name": "RYAN POINT",
-   "lat": 45.62658,
-   "lon": -122.6897,
-   "sog_kn": 6.4,
-   "cog": 127.1,
-   "heading": 133,
-   "nav_status": 12,
-   "updated": "2026-11-05 12:00:33.047426494 +0000 UTC"
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58082,
+   "lon": -122.76008,
+   "type_code": 31,
+   "destination": "PTSI PDX",
+   "updated": "2026-11-05 12:05:25.760310558 +0000 UTC"
   }
  ]
 }
