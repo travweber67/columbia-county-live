@@ -1270,13 +1270,16 @@ function heatStripHTML(model) {
     + ' the water is empty.</p>';
 }
 /* The no-overlap rule, enforced mechanically: once the strip is in
-   the page, measure the three anchor labels. If any pair overlaps,
-   first shed the river-mile suffixes (.no-rm); if they still clash,
-   drop to ticks only (.no-labels). At 360px the full labels collide
-   by ~55px and the bare names fit — measured on the live page. The
-   check re-runs on resize so a rotation or a narrower window cannot
-   resurrect a clash. In the mini-DOM harness there is no layout —
-   the guard simply returns. */
+   the page, measure the three anchor labels (2D — labels on separate
+   lines cannot clash). If any pair overlaps, first drop John Day to
+   its own line (.split, suffixes kept); then shed the river-mile
+   suffixes (.no-rm); only then drop to ticks only (.no-labels). At
+   360px the one-line labels collide by ~55px and even the bare names
+   by ~11px — both measured on the live page — while the split layout
+   fits outright. The check runs after render, on resize, and when
+   the Outdoors view is shown (the strip renders inside a hidden view
+   on most visits, where there is no layout to measure). In the
+   mini-DOM harness there is no layout — the guard simply returns. */
 function fitHeatLabels() {
   const row = document.querySelector('.heat-anchors');
   if (!row || typeof row.getBoundingClientRect !== 'function') return;
@@ -1289,15 +1292,19 @@ function fitHeatLabels() {
     for (let i = 0; i < rects.length; i++) {
       for (let j = i + 1; j < rects.length; j++) {
         if (rects[i].left < rects[j].right - 2
-            && rects[j].left < rects[i].right - 2) return true;
+            && rects[j].left < rects[i].right - 2
+            && rects[i].top < rects[j].bottom - 2
+            && rects[j].top < rects[i].bottom - 2) return true;
       }
     }
     return false;
   };
   row.classList.remove('no-labels');
   row.classList.remove('no-rm');
+  row.classList.remove('split');
   let o = overlaps();
   if (o === null) return;
+  if (o) { row.classList.add('split'); o = overlaps(); }
   if (o) { row.classList.add('no-rm'); o = overlaps(); }
   if (o) row.classList.add('no-labels');
 }
@@ -6398,6 +6405,12 @@ function cclShowView(name) {
   try { window.localStorage.setItem(VIEW_KEY, name); } catch (e) { /* storage unavailable — choice is session-only */ }
   if (name === 'travel' && typeof map !== 'undefined' && map && map.invalidateSize) {
     setTimeout(() => { try { map.invalidateSize(); } catch (e) { /* map still booting */ } }, 60);
+  }
+  if (name === 'outdoors') {
+    /* The heat strip renders inside this (usually hidden) view, where
+       its labels can't be measured — re-run the fit check now that
+       the view has layout. */
+    setTimeout(() => { try { fitHeatLabels(); } catch (e) { /* strip not rendered yet */ } }, 60);
   }
 }
 function cclReveal(el) {
