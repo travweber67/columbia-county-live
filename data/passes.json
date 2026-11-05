@@ -1,18 +1,118 @@
 {
- "fetched_at": "2026-11-05T04:13:07Z",
- "status": "key_needed",
- "note": "ODOT TripCheck data is free but key-gated. Set TRIPCHECK_API_KEY (free signup at apiportal.odot.state.or.us) and this snapshot fills in.",
+ "fetched_at": "2026-11-05T04:14:20Z",
+ "status": "ok",
+ "note": "Live from the ODOT TripCheck API (free key).",
  "areas": [
   {
    "id": "govcamp",
    "name": "US-26 \u00b7 Government Camp (Mt. Hood)",
-   "cameras": [],
+   "cameras": [
+    {
+     "name": "Government Camp",
+     "lat": 45.30123,
+     "lon": -121.74129,
+     "route": "US26",
+     "image_url": "http://www.TripCheck.com/roadcams/cams/GovernmentCamp_pid624.jpg"
+    },
+    {
+     "name": "US26 at Govt Camp Lp Rd",
+     "lat": 45.30263,
+     "lon": -121.76868,
+     "route": "US26",
+     "image_url": "http://www.TripCheck.com/roadcams/cams/US26 at Govt Camp Lp Rd_pid1776.JPG"
+    },
+    {
+     "name": "US26 at Hwy35",
+     "lat": 45.28315,
+     "lon": -121.71364,
+     "route": "US26",
+     "image_url": "http://www.TripCheck.com/roadcams/cams/US26 at Hwy35_pid1881.JPG"
+    },
+    {
+     "name": "US26 at Trillium Lake EB",
+     "lat": 45.28413,
+     "lon": -121.72479,
+     "route": "US26",
+     "image_url": "http://www.TripCheck.com/roadcams/cams/US26 at Trillium Lake EB_pid1887.JPG"
+    },
+    {
+     "name": "US26 at Govn Camp Maint",
+     "lat": 45.30184,
+     "lon": -121.744,
+     "route": "US26",
+     "image_url": "http://www.TripCheck.com/roadcams/cams/US26 at Govn Camp Maint_pid1899.JPG"
+    },
+    {
+     "name": "OR35 at Meadows Dr SB",
+     "lat": 45.31122,
+     "lon": -121.64452,
+     "route": "OR35",
+     "image_url": "http://www.TripCheck.com/roadcams/cams/ORE35 at Meadows Dr SB_pid3874.jpg"
+    },
+    {
+     "name": "US26 at USFS Rd 35 EB",
+     "lat": 45.30694,
+     "lon": -121.85444,
+     "route": "US26",
+     "image_url": "http://www.TripCheck.com/roadcams/cams/US26 at USFS Rd EB_pid4105.jpg"
+    },
+    {
+     "name": "US26 at Run Away Truck Ramp WB",
+     "lat": 45.30502,
+     "lon": -121.81695,
+     "route": "US26",
+     "image_url": "http://www.TripCheck.com/roadcams/cams/US26 at Run Away Truck Ramp WB_pid4109.jpg"
+    },
+    {
+     "name": "US26 at West of Mirror Lake Trailhead WB",
+     "lat": 45.306,
+     "lon": -121.78977,
+     "route": "US26",
+     "image_url": "http://www.TripCheck.com/roadcams/cams/US26 at West of Mirror Lake Trailhead WB_pid4113.jpg"
+    },
+    {
+     "name": "US26 at Ski Bowl West EB",
+     "lat": 45.3029,
+     "lon": -121.7787,
+     "route": "US26",
+     "image_url": "http://www.TripCheck.com/roadcams/cams/US26 at Ski Bowl West EB_pid4117.jpg"
+    }
+   ],
    "incidents": []
   },
   {
    "id": "santiam",
    "name": "US-20 \u00b7 Santiam Pass",
-   "cameras": [],
+   "cameras": [
+    {
+     "name": "US20 at Santiam Jct EB",
+     "lat": 44.43628,
+     "lon": -121.93815,
+     "route": "US20",
+     "image_url": "http://www.TripCheck.com/roadcams/cams/US20 at Santiam Jct_pid1675.JPG"
+    },
+    {
+     "name": "Santiam Pass EB",
+     "lat": 44.422,
+     "lon": -121.85731,
+     "route": "US20",
+     "image_url": "http://www.TripCheck.com/roadcams/cams/Santiam Pass_pid2728.JPG"
+    },
+    {
+     "name": "US20 at Santiam Jct WB",
+     "lat": 44.43648,
+     "lon": -121.93806,
+     "route": "US20",
+     "image_url": "http://www.TripCheck.com/roadcams/cams/US20 at Santiam Jct WB_pid3342.JPG"
+    },
+    {
+     "name": "Santiam Pass WB",
+     "lat": 44.422,
+     "lon": -121.8573,
+     "route": "US20",
+     "image_url": "http://www.TripCheck.com/roadcams/cams/Santiam Pass WB_pid5258.jpg"
+    }
+   ],
    "incidents": []
   }
  ]

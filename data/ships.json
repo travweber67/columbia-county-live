@@ -1,6 +1,86 @@
 {
- "fetched_at": "2026-11-05T04:13:07Z",
- "status": "key_needed",
- "note": "No keyless live AIS feed for US waters could be verified from here: MarineTraffic's data endpoint returns a 403 bot wall from this network, AISHub/VesselFinder/Global Fishing Watch all require accounts, and the free public AIS APIs that exist (e.g. Finland's Digitraffic) cover other seas. AISStream.io's free tier IS the route: set AISSTREAM_API_KEY (free signup at aisstream.io) and this fetcher collects live Columbia River positions over their websocket.",
- "ships": []
+ "fetched_at": "2026-11-05T04:14:20Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20003,
+   "lon": -123.3854,
+   "sog_kn": 0,
+   "cog": 352.8,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-05 04:14:33.574741598 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.18331,
+   "lon": -123.18835,
+   "sog_kn": 0.8,
+   "cog": 73.5,
+   "heading": 141,
+   "nav_status": 3,
+   "updated": "2026-11-05 04:14:34.123806075 +0000 UTC"
+  },
+  {
+   "mmsi": 368450870,
+   "name": "AMERICAN ENCORE",
+   "lat": 45.84727,
+   "lon": -122.78509,
+   "type_code": 60,
+   "destination": "KALAMA",
+   "updated": "2026-11-05 04:14:41.203953738 +0000 UTC",
+   "sog_kn": 12.5,
+   "cog": 1.6,
+   "heading": 357,
+   "nav_status": 0
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58729,
+   "lon": -122.77007,
+   "sog_kn": 0,
+   "cog": 153.1,
+   "heading": 139,
+   "nav_status": 5,
+   "updated": "2026-11-05 04:14:41.345607787 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 46.08972,
+   "lon": -122.92933,
+   "sog_kn": 0,
+   "cog": 176.4,
+   "heading": 114,
+   "nav_status": 0,
+   "updated": "2026-11-05 04:14:44.106430735 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 165,
+   "heading": 126,
+   "nav_status": 15,
+   "updated": "2026-11-05 04:14:48.287112024 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.07804,
+   "lon": -122.90006,
+   "sog_kn": 0.2,
+   "cog": 347.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-05 04:14:48.969922096 +0000 UTC"
+  }
+ ]
 }
