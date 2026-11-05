@@ -1,97 +1,123 @@
 {
- "fetched_at": "2026-11-05T21:00:51Z",
+ "fetched_at": "2026-11-05T21:05:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07842,
+   "lon": -122.90058,
+   "sog_kn": 0.1,
+   "cog": 121.4,
+   "heading": 327,
+   "nav_status": 0,
+   "updated": "2026-11-05 21:06:00.813625893 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10356,
+   "lon": -122.91014,
+   "sog_kn": 0,
+   "cog": 83.5,
+   "heading": 76,
+   "nav_status": 3,
+   "updated": "2026-11-05 21:06:04.53299462 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.044,
+   "lon": -122.87692,
+   "sog_kn": 0,
+   "cog": 125.2,
+   "heading": 180,
+   "nav_status": 5,
+   "updated": "2026-11-05 21:06:05.372671242 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.61288,
+   "sog_kn": 0,
+   "cog": 27.6,
+   "heading": 127,
+   "nav_status": 15,
+   "updated": "2026-11-05 21:06:08.782782416 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.09113,
+   "lon": -122.92186,
+   "sog_kn": 2.8,
+   "cog": 297.2,
+   "heading": 296,
+   "nav_status": 3,
+   "updated": "2026-11-05 21:06:10.197702419 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.17091,
+   "lon": -123.22292,
+   "sog_kn": 2,
+   "cog": 215.2,
+   "heading": 144,
+   "nav_status": 3,
+   "updated": "2026-11-05 21:06:10.317708258 +0000 UTC"
+  },
+  {
+   "mmsi": 538006443,
+   "name": "RB JAKE",
+   "lat": 46.02718,
+   "lon": -122.86956,
+   "sog_kn": 0,
+   "cog": 236.2,
+   "heading": 138,
+   "nav_status": 5,
+   "updated": "2026-11-05 21:06:11.699730571 +0000 UTC"
+  },
   {
    "mmsi": 367496010,
    "name": "DELIVERANCE",
-   "lat": 46.09413,
-   "lon": -122.94288,
-   "sog_kn": 0.1,
-   "cog": 259.1,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-05 21:00:59.202822918 +0000 UTC"
+   "lat": 46.07958,
+   "lon": -122.90298,
+   "type_code": 69,
+   "updated": "2026-11-05 21:06:12.452436872 +0000 UTC"
   },
   {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.0907,
-   "lon": -122.93209,
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.80672,
+   "lon": -122.7924,
+   "sog_kn": 8.1,
+   "cog": 166.5,
+   "heading": 167,
+   "nav_status": 0,
+   "updated": "2026-11-05 21:06:16.008351179 +0000 UTC"
+  },
+  {
+   "mmsi": 368268040,
+   "name": "PAPA T",
+   "lat": 46.08984,
+   "lon": -122.92952,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-05 21:06:18.978236261 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.64716,
+   "lon": -122.7396,
    "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-05 21:01:21.023228962 +0000 UTC",
-   "sog_kn": 0,
-   "cog": 113.3,
-   "heading": 113,
-   "nav_status": 5
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00879,
-   "lon": -122.84891,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-05 21:01:03.589408871 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65018,
-   "lon": -122.74758,
-   "sog_kn": 0,
-   "cog": 288.8,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-05 21:01:10.124467161 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19996,
-   "lon": -123.38548,
-   "sog_kn": 0,
-   "cog": 23.4,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-05 21:01:11.433471735 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07862,
-   "lon": -122.90024,
-   "sog_kn": 0,
-   "cog": 294.9,
-   "heading": 161,
-   "nav_status": 0,
-   "updated": "2026-11-05 21:01:12.595042386 +0000 UTC"
-  },
-  {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60751,
-   "lon": -122.67762,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-05 21:01:15.97696093 +0000 UTC"
-  },
-  {
-   "mmsi": 352986134,
-   "name": "TAC SUZUKA",
-   "lat": 45.76683,
-   "lon": -122.76266,
-   "sog_kn": 9.4,
-   "cog": 346.9,
-   "heading": 347,
-   "nav_status": 0,
-   "updated": "2026-11-05 21:01:22.557648349 +0000 UTC"
+   "destination": "KALAMA",
+   "updated": "2026-11-05 21:06:27.172152732 +0000 UTC"
   }
  ]
 }
