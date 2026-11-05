@@ -1,27 +1,47 @@
 {
- "fetched_at": "2026-11-05T19:55:45Z",
+ "fetched_at": "2026-11-05T20:00:45Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59405,
+   "lon": -122.77213,
+   "type_code": 70,
+   "destination": "NOT AVAILABLE",
+   "updated": "2026-11-05 20:00:52.436947393 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19995,
+   "lon": -123.38553,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-05 20:00:57.35739237 +0000 UTC"
+  },
   {
    "mmsi": 367669550,
    "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
+   "lat": 46.17718,
    "lon": -123.35742,
    "sog_kn": 0,
-   "cog": 266.6,
+   "cog": 250.7,
    "heading": 135,
    "nav_status": 15,
-   "updated": "2026-11-05 19:55:56.436330878 +0000 UTC"
+   "updated": "2026-11-05 20:01:06.407177287 +0000 UTC"
   },
   {
-   "mmsi": 538012377,
-   "name": "UNION SAPPHIRE",
-   "lat": 46.11009,
-   "lon": -122.96343,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-05 19:55:57.329154728 +0000 UTC"
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09418,
+   "lon": -122.93744,
+   "sog_kn": 0,
+   "cog": 210,
+   "heading": 113,
+   "nav_status": 1,
+   "updated": "2026-11-05 20:01:17.496878437 +0000 UTC"
   },
   {
    "mmsi": 367363590,
@@ -29,32 +49,21 @@
    "lat": 45.6473,
    "lon": -122.7395,
    "sog_kn": 0,
-   "cog": 287.8,
+   "cog": 278.8,
    "heading": 290,
    "nav_status": 12,
-   "updated": "2026-11-05 19:56:00.435255252 +0000 UTC"
+   "updated": "2026-11-05 20:01:19.885906912 +0000 UTC"
   },
   {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63871,
-   "lon": -122.72401,
-   "sog_kn": 0.1,
-   "cog": 22.5,
-   "heading": 115,
-   "nav_status": 1,
-   "updated": "2026-11-05 19:56:03.783216389 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07832,
-   "lon": -122.9005,
-   "sog_kn": 0.1,
-   "cog": 161.6,
-   "heading": 305,
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.61244,
+   "lon": -122.64605,
+   "sog_kn": 1,
+   "cog": 59,
+   "heading": 182,
    "nav_status": 0,
-   "updated": "2026-11-05 19:56:17.357673519 +0000 UTC"
+   "updated": "2026-11-05 20:01:21.267586612 +0000 UTC"
   }
  ]
 }
