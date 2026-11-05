@@ -1,78 +1,93 @@
 {
- "fetched_at": "2026-11-05T14:25:14Z",
+ "fetched_at": "2026-11-05T14:30:15Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63868,
-   "lon": -122.72401,
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07822,
+   "lon": -122.90038,
+   "sog_kn": 0,
+   "cog": 16.6,
+   "heading": 124,
+   "nav_status": 0,
+   "updated": "2026-11-05 14:30:20.164753346 +0000 UTC",
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64539,
+   "lon": -122.73503,
    "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-05 14:25:23.127073585 +0000 UTC"
+   "destination": "PER ORDERS",
+   "updated": "2026-11-05 14:30:24.345710554 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00875,
+   "lon": -122.84886,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-05 14:30:28.136860923 +0000 UTC"
   },
   {
    "mmsi": 366972000,
    "name": "ESSAYONS",
-   "lat": 46.10133,
-   "lon": -122.94801,
-   "sog_kn": 1.1,
-   "cog": 106.1,
-   "heading": 114,
-   "nav_status": 3,
-   "updated": "2026-11-05 14:25:30.052240875 +0000 UTC"
+   "lat": 46.10163,
+   "lon": -122.9486,
+   "type_code": 33,
+   "destination": "LORD ISL. LONGVIEW",
+   "updated": "2026-11-05 14:30:29.12317646 +0000 UTC"
   },
   {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 46.09049,
-   "lon": -122.93231,
-   "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-05 14:25:31.906312419 +0000 UTC"
+   "mmsi": 538011495,
+   "name": "MTR JUPITER",
+   "lat": 46.12447,
+   "lon": -122.98897,
+   "sog_kn": 0,
+   "cog": 238.6,
+   "heading": 132,
+   "nav_status": 1,
+   "updated": "2026-11-05 14:30:30.490219678 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58744,
+   "lon": -122.77051,
+   "sog_kn": 0,
+   "cog": 186,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-05 14:30:32.79049901 +0000 UTC"
   },
   {
    "mmsi": 367380280,
    "name": "WESTERN STAR",
-   "lat": 46.15707,
+   "lat": 46.15706,
    "lon": -123.40232,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 134,
+   "heading": 133,
    "nav_status": 0,
-   "updated": "2026-11-05 14:25:32.757113823 +0000 UTC"
+   "updated": "2026-11-05 14:30:33.937970732 +0000 UTC"
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19998,
-   "lon": -123.38552,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-05 14:25:33.486237209 +0000 UTC"
-  },
-  {
-   "mmsi": 352006380,
-   "name": "CL KIBOU",
-   "lat": 45.91719,
-   "lon": -122.80841,
-   "sog_kn": 11.8,
-   "cog": 10.2,
-   "heading": 11,
-   "nav_status": 5,
-   "updated": "2026-11-05 14:25:41.124721706 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.79315,
-   "lon": -122.84322,
-   "sog_kn": 0,
-   "cog": 342.1,
-   "heading": 213,
-   "nav_status": 12,
-   "updated": "2026-11-05 14:25:41.239009368 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.17273,
+   "lon": -123.21493,
+   "sog_kn": 6.5,
+   "cog": 64.2,
+   "heading": 65,
+   "nav_status": 3,
+   "updated": "2026-11-05 14:30:41.272204199 +0000 UTC"
   }
  ]
 }
