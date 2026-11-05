@@ -191,16 +191,19 @@ function initMap() {
     map.on('click', () => { if (layersCtl && layersCtl.collapse) layersCtl.collapse(); });
     const ctlBox = layersCtl && layersCtl.getContainer ? layersCtl.getContainer() : null;
     /* The Leaflet map click above does not fire when the tap lands on a
-       marker (markers don't bubble their click to the map by default) —
-       so the same close also listens at DOM level on the map container:
-       any tap inside the map that isn't on the layers control itself
-       collapses the panel. */
+       marker (markers don't bubble their click to the map by default,
+       and Leaflet stops marker click events from bubbling in the DOM
+       too — a bubble-phase listener on the container never sees them;
+       both failure modes were measured live). So the same close also
+       listens on the map container in the CAPTURE phase: any tap inside
+       the map that isn't on the layers control itself collapses the
+       panel, whatever it lands on. */
     const mapEl = $('map');
     if (mapEl && mapEl.addEventListener) {
       mapEl.addEventListener('click', e => {
         if (ctlBox && ctlBox.contains && e.target && ctlBox.contains(e.target)) return;
         if (layersCtl && layersCtl.collapse) layersCtl.collapse();
-      });
+      }, true);
     }
     const ctlLink = ctlBox && ctlBox.querySelector
       ? ctlBox.querySelector('.leaflet-control-layers-toggle') : null;
