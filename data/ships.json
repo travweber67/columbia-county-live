@@ -1,57 +1,93 @@
 {
- "fetched_at": "2026-11-05T05:24:26Z",
+ "fetched_at": "2026-11-05T05:29:26Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40233,
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 46.17131,
+   "lon": -123.21997,
+   "sog_kn": 11,
+   "cog": 61,
+   "heading": 61,
+   "nav_status": 0,
+   "updated": "2026-11-05 05:29:36.494024224 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.09432,
+   "lon": -122.93344,
+   "sog_kn": 3,
+   "cog": 115.7,
+   "heading": 114,
+   "nav_status": 3,
+   "updated": "2026-11-05 05:29:40.329811907 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.5808,
+   "lon": -122.76009,
+   "sog_kn": 0,
+   "cog": 357.6,
+   "heading": 124,
+   "nav_status": 0,
+   "updated": "2026-11-05 05:29:40.408823393 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59408,
+   "lon": -122.77213,
+   "sog_kn": 0,
+   "cog": 338.3,
+   "heading": 149,
+   "nav_status": 5,
+   "updated": "2026-11-05 05:29:42.626817766 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.6076,
+   "lon": -122.67758,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 131,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-05 05:24:32.698560771 +0000 UTC"
+   "updated": "2026-11-05 05:29:46.55369926 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10359,
-   "lon": -122.9101,
-   "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 75,
-   "nav_status": 3,
-   "updated": "2026-11-05 05:24:43.515926858 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07847,
-   "lon": -122.90007,
-   "type_code": 33,
-   "updated": "2026-11-05 05:24:52.609685883 +0000 UTC"
-  },
-  {
-   "mmsi": 477133900,
-   "name": "SHAO SHAN 8",
-   "lat": 45.63662,
-   "lon": -122.71622,
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07826,
+   "lon": -122.89956,
    "sog_kn": 0.1,
-   "cog": 359,
-   "heading": 124,
-   "nav_status": 1,
-   "updated": "2026-11-05 05:24:52.922705183 +0000 UTC"
+   "cog": 97.7,
+   "heading": 179,
+   "nav_status": 0,
+   "updated": "2026-11-05 05:29:47.15065636 +0000 UTC"
   },
   {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.79316,
-   "lon": -122.84322,
-   "type_code": 57,
-   "destination": "XX XXX>?? ???",
-   "updated": "2026-11-05 05:24:54.487560095 +0000 UTC"
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.6454,
+   "lon": -122.73503,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-05 05:29:52.112615389 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65017,
+   "lon": -122.74748,
+   "sog_kn": 0,
+   "cog": 242.9,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-05 05:29:58.329817932 +0000 UTC"
   }
  ]
 }
