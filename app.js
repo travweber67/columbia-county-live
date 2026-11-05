@@ -1851,7 +1851,7 @@ async function loadSteelhead() {
       .then(shParseIv).catch(() => null),
     shFetchStats().catch(() => null),
   ]);
-  if (snap) setSnapUpdated('steelhead-updated', snap);
+  if (snap) setSnapUpdated('steelhead-updated', snap.fetched_at);
   const gauges = iv || {};
   const statFor = site => (stats && stats[site]) ? stats[site][md] : null;
   const fossAnalysis = gauges['14301000']
@@ -2508,7 +2508,8 @@ const FRESH_ROWS = [
   ['Fetcher — Oscar B ferry alerts (Wahkiakum Co.)', 'ferry-updated', 'snapshot'],
   ['Fetcher — events (city & county calendars)', 'events-updated', 'snapshot'],
   ['Fetcher — river traffic (AIS)', 'ships-updated', 'snapshot'],
-  ['Fetcher — fish counts & salmon tracker (FPC / DART)', 'fish-updated', 'snapshot']
+  ['Fetcher — fish counts & salmon tracker (FPC / DART)', 'fish-updated', 'snapshot'],
+  ['Fetcher — steelhead basin rain (NOAA MRMS)', 'steelhead-updated', 'snapshot']
 ];
 function renderFreshness() {
   const body = $('freshness-body');
