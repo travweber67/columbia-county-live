@@ -1,62 +1,89 @@
 {
- "fetched_at": "2026-11-05T05:59:29Z",
+ "fetched_at": "2026-11-05T06:04:30Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.07804,
+   "lon": -122.89996,
+   "sog_kn": 0,
+   "cog": 46.7,
+   "heading": 136,
+   "nav_status": 5,
+   "updated": "2026-11-05 06:04:34.321509033 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58728,
+   "lon": -122.77006,
+   "type_code": 31,
+   "destination": "US^02SY>0UJ9",
+   "updated": "2026-11-05 06:04:34.58821292 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58738,
+   "lon": -122.77053,
+   "sog_kn": 0,
+   "cog": 111.3,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-05 06:04:36.700904983 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 286.7,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-05 06:04:37.227181449 +0000 UTC"
+  },
+  {
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 46.16535,
+   "lon": -123.08272,
+   "type_code": 57,
+   "destination": "US PDX",
+   "updated": "2026-11-05 06:04:41.746404387 +0000 UTC"
+  },
+  {
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.17378,
+   "lon": -123.10817,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-05 06:04:48.039111744 +0000 UTC"
+  },
+  {
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.17094,
+   "lon": -123.10064,
+   "sog_kn": 0,
+   "cog": 315.7,
+   "heading": 109,
+   "nav_status": 1,
+   "updated": "2026-11-05 06:04:52.365884485 +0000 UTC"
+  },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.07825,
-   "lon": -122.9,
+   "lat": 46.07832,
+   "lon": -122.89978,
    "sog_kn": 0.1,
-   "cog": 288.3,
-   "heading": 89,
+   "cog": 94.4,
+   "heading": 137,
    "nav_status": 0,
-   "updated": "2026-11-05 05:59:36.938995027 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58752,
-   "lon": -122.77045,
-   "sog_kn": 0,
-   "cog": 283.7,
-   "heading": 141,
-   "nav_status": 0,
-   "updated": "2026-11-05 05:59:48.710116538 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.38551,
-   "sog_kn": 0,
-   "cog": 1.7,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-05 05:59:49.636558237 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.08076,
-   "lon": -122.90355,
-   "sog_kn": 1.4,
-   "cog": 330.8,
-   "heading": 149,
-   "nav_status": 3,
-   "updated": "2026-11-05 05:59:49.782936978 +0000 UTC"
-  },
-  {
-   "mmsi": 367719170,
-   "name": "RYAN POINT",
-   "lat": 45.65292,
-   "lon": -122.75248,
-   "sog_kn": 0,
-   "cog": 230.9,
-   "heading": 138,
-   "nav_status": 12,
-   "updated": "2026-11-05 05:59:50.072920567 +0000 UTC"
+   "updated": "2026-11-05 06:04:57.088274217 +0000 UTC"
   }
  ]
 }
