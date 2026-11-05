@@ -1,60 +1,117 @@
 {
- "fetched_at": "2026-11-05T13:20:08Z",
+ "fetched_at": "2026-11-05T13:25:08Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 311000824,
-   "name": "AFRICAN AVOCET",
-   "lat": 46.18422,
-   "lon": -123.18011,
-   "sog_kn": 10.9,
-   "cog": 60,
-   "heading": 61,
-   "nav_status": 0,
-   "updated": "2026-11-05 13:20:13.008276795 +0000 UTC"
-  },
-  {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.1089,
-   "lon": -122.96127,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-05 13:20:23.299745518 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.66152,
-   "lon": -122.76066,
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.09071,
+   "lon": -122.93209,
    "sog_kn": 0,
-   "cog": 13.4,
+   "cog": 348.6,
+   "heading": 109,
+   "nav_status": 5,
+   "updated": "2026-11-05 13:25:15.27488977 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.0088,
+   "lon": -122.8488,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-05 13:20:24.32125913 +0000 UTC"
+   "updated": "2026-11-05 13:25:17.500271778 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20001,
+   "lon": -123.38553,
+   "sog_kn": 0,
+   "cog": 327.5,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-05 13:25:20.205795059 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64205,
+   "lon": -122.74093,
+   "sog_kn": 0,
+   "cog": 208,
+   "heading": 119,
+   "nav_status": 12,
+   "updated": "2026-11-05 13:25:20.748079499 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.09859,
+   "lon": -122.94486,
+   "sog_kn": 2.3,
+   "cog": 306.1,
+   "heading": 307,
+   "nav_status": 3,
+   "updated": "2026-11-05 13:25:21.951308691 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.82427,
+   "lon": -122.79361,
+   "sog_kn": 8.2,
+   "cog": 5.8,
+   "heading": 3,
+   "nav_status": 12,
+   "updated": "2026-11-05 13:25:22.186692274 +0000 UTC"
   },
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
-   "lat": 46.07846,
-   "lon": -122.89999,
+   "lat": 46.07842,
+   "lon": -122.90017,
    "sog_kn": 0,
-   "cog": 330.3,
-   "heading": 149,
+   "cog": 229.7,
+   "heading": 107,
    "nav_status": 0,
-   "updated": "2026-11-05 13:20:33.28256304 +0000 UTC"
+   "updated": "2026-11-05 13:25:23.197591106 +0000 UTC"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15705,
-   "lon": -123.40232,
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58079,
+   "lon": -122.76008,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 134,
+   "cog": 357.6,
+   "heading": 123,
    "nav_status": 0,
-   "updated": "2026-11-05 13:20:33.920548164 +0000 UTC"
+   "updated": "2026-11-05 13:25:31.76886428 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 46.09057,
+   "lon": -122.93227,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-05 13:25:31.929144615 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.07819,
+   "lon": -122.90015,
+   "sog_kn": 0.1,
+   "cog": 115.1,
+   "heading": 109,
+   "nav_status": 5,
+   "updated": "2026-11-05 13:25:38.916289442 +0000 UTC",
+   "type_code": 52,
+   "destination": "PORTLAND"
   }
  ]
 }
