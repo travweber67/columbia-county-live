@@ -1,104 +1,111 @@
 {
- "fetched_at": "2026-11-05T11:34:58Z",
+ "fetched_at": "2026-11-05T11:39:59Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63865,
-   "lon": -122.72405,
-   "sog_kn": 0,
-   "cog": 225.5,
-   "heading": 114,
-   "nav_status": 1,
-   "updated": "2026-11-05 11:35:03.777056955 +0000 UTC"
-  },
-  {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 46.09049,
-   "lon": -122.93232,
-   "sog_kn": 0,
-   "cog": 239.9,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-05 11:35:05.865222852 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.07821,
-   "lon": -122.90028,
-   "sog_kn": 0.3,
-   "cog": 187.5,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-05 11:35:08.172062225 +0000 UTC"
-  },
-  {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.64704,
-   "lon": -122.74094,
-   "sog_kn": 0,
-   "cog": 239.4,
-   "heading": 19,
-   "nav_status": 12,
-   "updated": "2026-11-05 11:35:29.615982648 +0000 UTC",
-   "type_code": 57,
-   "destination": "KALAMA"
-  },
-  {
-   "mmsi": 311000824,
-   "name": "AFRICAN AVOCET",
-   "lat": 46.27214,
-   "lon": -123.48529,
-   "type_code": 79,
-   "destination": "US LOG",
-   "updated": "2026-11-05 11:35:13.920642744 +0000 UTC"
+   "mmsi": 636020486,
+   "name": "BBG GUILIN",
+   "lat": 46.10611,
+   "lon": -122.95587,
+   "type_code": 70,
+   "destination": "US LON",
+   "updated": "2026-11-05 11:40:14.905047896 +0000 UTC"
   },
   {
    "mmsi": 368440320,
    "name": "HEATHER S",
-   "lat": 45.60114,
-   "lon": -122.77687,
+   "lat": 45.6011,
+   "lon": -122.77686,
    "sog_kn": 0,
-   "cog": 289.7,
+   "cog": 343.7,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-05 11:35:14.928231363 +0000 UTC"
+   "updated": "2026-11-05 11:40:15.064053282 +0000 UTC"
   },
   {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 46.18121,
-   "lon": -123.18442,
-   "type_code": 31,
-   "destination": "PORTLAND",
-   "updated": "2026-11-05 11:35:24.884142717 +0000 UTC"
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.67421,
+   "lon": -122.77164,
+   "sog_kn": 8.2,
+   "cog": 346.1,
+   "heading": 347,
+   "nav_status": 12,
+   "updated": "2026-11-05 11:40:16.024827074 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07838,
-   "lon": -122.90054,
-   "sog_kn": 0.6,
-   "cog": 200,
-   "heading": 291,
-   "nav_status": 3,
-   "updated": "2026-11-05 11:35:26.968592563 +0000 UTC"
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09415,
+   "lon": -122.93746,
+   "sog_kn": 0.1,
+   "cog": 212,
+   "heading": 122,
+   "nav_status": 1,
+   "updated": "2026-11-05 11:40:17.368465905 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.07829,
+   "lon": -122.90029,
+   "sog_kn": 0,
+   "cog": 50.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-05 11:40:18.416830786 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61199,
+   "lon": -122.64537,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-05 11:40:19.609022263 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64351,
+   "lon": -122.75244,
+   "sog_kn": 0.2,
+   "cog": 177.4,
+   "heading": 133,
+   "nav_status": 5,
+   "updated": "2026-11-05 11:40:23.595174262 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64789,
+   "lon": -122.741,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-05 11:40:26.046128088 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37712,
+   "sog_kn": 0,
+   "cog": 183.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-05 11:40:28.125650799 +0000 UTC"
   },
   {
    "mmsi": 366972000,
    "name": "ESSAYONS",
-   "lat": 46.09074,
-   "lon": -122.92065,
-   "sog_kn": 9.9,
-   "cog": 115.9,
-   "heading": 114,
+   "lat": 46.08435,
+   "lon": -122.90663,
+   "sog_kn": 5.1,
+   "cog": 131.4,
+   "heading": 131,
    "nav_status": 3,
-   "updated": "2026-11-05 11:35:30.518203783 +0000 UTC"
+   "updated": "2026-11-05 11:40:30.631177948 +0000 UTC"
   }
  ]
 }
