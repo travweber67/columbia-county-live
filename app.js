@@ -1966,8 +1966,10 @@ async function loadSteelhead() {
 
     let why;
     if (!timing.inSeason) {
-      const minStart = Math.min(...river.season.map(s => s[0]));
-      const before = md >= 501 && md < minStart;
+      /* Every season profile here starts in Nov–Dec and ends by
+         mid-April, so an out-of-season date from May on is BEFORE the
+         next run; one in Jan–Apr is past this year's. */
+      const before = md >= 501;
       why = (before ? 'Too early for this river \u2014 ' : 'Past this river\u2019s run for the year \u2014 ') + river.window + '.'
         + (base >= 55 ? ' The water itself is in decent shape.' : '');
     } else if (clarity && clarity.band === 'blown out') {
