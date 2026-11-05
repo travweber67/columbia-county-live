@@ -553,6 +553,7 @@ h2{font-weight:700;letter-spacing:-.01em}
 .event-title a{color:var(--text);text-decoration:none}
 .event-title a:hover{color:var(--accent);text-decoration:underline}
 .event-src{color:var(--muted);font-size:.74rem;white-space:nowrap}
+.event-fb-tag{flex:0 0 auto;background:#1877f2;color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.02em;padding:2px 7px;border-radius:999px;white-space:nowrap;align-self:center}
 #events-body .status-note{margin-top:12px}
 @media (max-width:560px){
   .event-src{display:none}
@@ -694,6 +695,23 @@ h2{font-weight:700;letter-spacing:-.01em}
 .fp-next.fp-last{color:var(--warn)}
 
 /* The County Almanac (X20 R11) */
+/* Steelhead Day Index: one row per river — pill + why up front, the
+   factor breakdown one tap down. */
+.sh-target{font-weight:700;margin:2px 0 8px}
+.sh-row{border-top:1px solid var(--border);padding:9px 0 7px}
+.sh-row:first-child{border-top:0}
+.sh-head{display:flex;justify-content:space-between;align-items:center;gap:10px;
+  width:100%;background:none;border:0;padding:2px 0;cursor:pointer;
+  font:inherit;color:inherit;text-align:left}
+.sh-name{font-weight:700;font-size:1.02rem}
+.sh-tag{display:block;font-weight:600;font-size:.74rem;color:var(--muted);margin-top:1px}
+.sh-pill{flex:none;border-radius:999px;padding:4px 12px;font-weight:700;font-size:.85rem}
+.sh-good{background:#dff2e2;color:#1d5c2e}
+.sh-fair{background:#fdf0d5;color:#7a5410}
+.sh-poor{background:#eef1f4;color:#5b7186}
+.sh-why{margin:4px 0 2px;font-size:.95rem}
+.sh-detail{margin:6px 0 2px;padding:8px 10px;background:var(--panel-2);border-radius:10px}
+.sh-detail p{margin:4px 0;font-size:.88rem}
 .almanac-card{border-left:4px solid var(--warm-fill)}
 .alm-verdict{background:var(--panel-2);border:1px solid var(--border);border-radius:12px;padding:12px 14px}
 .alm-head{font-size:1.16rem;font-weight:800;letter-spacing:-.01em;line-height:1.3}
