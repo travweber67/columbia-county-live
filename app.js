@@ -6784,7 +6784,7 @@ loadSteelhead();
    becomes the form (new tab); while it is empty the button is a plainly
    labeled mailto to the studio inbox. Form creation is parked on
    Travis's Google sign-in — instructions in the goal docs. */
-const SPONSOR_FORM_URL = ''; // <-- PARKED SWAP: paste the founding-sponsor Google Form URL here (see files/sponsor-form-parked.md); '' = interim mailto capture
+const SPONSOR_FORM_URL = 'https://forms.gle/D4poEqfu1ogoMr4r6'; // LIVE 2026-11-05: founding-sponsor Google Form (created in Travis's Google account; full URL https://docs.google.com/forms/d/e/1FAIpQLSe21yqkUMx6OAdoTdoj6_V9rwdYhIvnOFIygaiOD7ciuJCfbg/viewform); '' would fall back to the interim mailto capture
 const SPONSOR_EMAIL = 'nomadov3rland@gmail.com';
 function initSponsorLink() {
   const a = $('sponsor-interest-link');
