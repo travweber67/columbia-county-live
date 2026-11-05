@@ -1,82 +1,95 @@
 {
- "fetched_at": "2026-11-05T21:30:55Z",
+ "fetched_at": "2026-11-05T21:35:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09086,
-   "lon": -122.93202,
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.64773,
+   "lon": -122.76956,
+   "sog_kn": 9.8,
+   "cog": 204.6,
+   "heading": 203,
+   "nav_status": 5,
+   "updated": "2026-11-05 21:35:58.553214814 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65012,
+   "lon": -122.74772,
    "sog_kn": 0,
-   "cog": 282.8,
+   "cog": 304.6,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-05 21:31:07.712883227 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10357,
-   "lon": -122.91012,
-   "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 75,
    "nav_status": 3,
-   "updated": "2026-11-05 21:31:14.112787378 +0000 UTC"
+   "updated": "2026-11-05 21:35:59.164143604 +0000 UTC"
   },
   {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.64385,
-   "lon": -122.72577,
-   "sog_kn": 0,
-   "cog": 212.4,
-   "heading": 114,
-   "nav_status": 12,
-   "updated": "2026-11-05 21:31:15.092737146 +0000 UTC"
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.11673,
+   "lon": -122.97677,
+   "sog_kn": 0.1,
+   "cog": 321.4,
+   "heading": 276,
+   "nav_status": 1,
+   "updated": "2026-11-05 21:35:59.288762883 +0000 UTC"
   },
   {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.09068,
-   "lon": -122.93211,
-   "sog_kn": 0,
-   "cog": 113.3,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-05 21:31:17.703137395 +0000 UTC"
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.05127,
+   "lon": -122.88148,
+   "sog_kn": 8.2,
+   "cog": 175.9,
+   "heading": 173,
+   "nav_status": 0,
+   "updated": "2026-11-05 21:36:15.338061558 +0000 UTC"
   },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.07855,
-   "lon": -122.90062,
+   "lat": 46.07838,
+   "lon": -122.90057,
    "type_code": 52,
    "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-05 21:31:19.253576457 +0000 UTC"
+   "updated": "2026-11-05 21:36:27.926162303 +0000 UTC",
+   "sog_kn": 0.3,
+   "cog": 141.3,
+   "heading": 311,
+   "nav_status": 0
   },
   {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61185,
-   "lon": -122.64641,
-   "sog_kn": 4.3,
-   "cog": 118.6,
-   "heading": 110,
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.17338,
+   "lon": -123.10841,
+   "sog_kn": 0.2,
+   "cog": 341,
+   "heading": 80,
+   "nav_status": 1,
+   "updated": "2026-11-05 21:36:20.756975031 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.2,
+   "lon": -123.38551,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-05 21:36:25.705081044 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.74388,
+   "lon": -122.76261,
+   "sog_kn": 8,
+   "cog": 174.5,
+   "heading": 175,
    "nav_status": 0,
-   "updated": "2026-11-05 21:31:21.408023725 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20001,
-   "lon": -123.38544,
-   "sog_kn": 0,
-   "cog": 168.3,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-05 21:31:23.497347621 +0000 UTC"
+   "updated": "2026-11-05 21:36:26.092180376 +0000 UTC"
   }
  ]
 }
