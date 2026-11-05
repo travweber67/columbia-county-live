@@ -1,80 +1,135 @@
 {
- "fetched_at": "2026-11-05T14:18:34Z",
+ "fetched_at": "2026-11-05T14:20:14Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.64204,
-   "lon": -122.74094,
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10891,
+   "lon": -122.96127,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-05 14:20:23.167245482 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.5874,
+   "lon": -122.77059,
    "sog_kn": 0,
-   "cog": 119.9,
-   "heading": 120,
-   "nav_status": 12,
-   "updated": "2026-11-05 14:19:10.169921471 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.0784,
-   "lon": -122.90068,
-   "sog_kn": 0.8,
-   "cog": 3.8,
-   "heading": 283,
-   "nav_status": 3,
-   "updated": "2026-11-05 14:19:13.800181323 +0000 UTC"
-  },
-  {
-   "mmsi": 636019200,
-   "name": "CHEM GALLIUM",
-   "lat": 46.21209,
-   "lon": -123.42497,
-   "type_code": 89,
-   "destination": "KRUSN",
-   "updated": "2026-11-05 14:19:18.318098458 +0000 UTC"
-  },
-  {
-   "mmsi": 311000824,
-   "name": "AFRICAN AVOCET",
-   "lat": 46.10855,
-   "lon": -122.97113,
-   "sog_kn": 8.8,
-   "cog": 122.5,
-   "heading": 123,
-   "nav_status": 0,
-   "updated": "2026-11-05 14:19:22.046723871 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64334,
-   "lon": -122.75255,
-   "sog_kn": 0,
-   "cog": 128,
+   "cog": 186,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-05 14:19:24.29038129 +0000 UTC"
+   "updated": "2026-11-05 14:20:23.681201167 +0000 UTC"
   },
   {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58752,
-   "lon": -122.77042,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65013,
+   "lon": -122.74779,
    "sog_kn": 0,
-   "cog": 196.6,
-   "heading": 143,
-   "nav_status": 0,
-   "updated": "2026-11-05 14:19:29.130317076 +0000 UTC"
+   "cog": 105.8,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-05 14:20:29.67525133 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10357,
-   "lon": -122.91014,
-   "type_code": 52,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-05 14:19:30.572034543 +0000 UTC"
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.11011,
+   "lon": -122.96343,
+   "sog_kn": 0,
+   "cog": 167.3,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-05 14:20:33.897050118 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07846,
+   "lon": -122.90016,
+   "sog_kn": 0.1,
+   "cog": 56.8,
+   "heading": 122,
+   "nav_status": 0,
+   "updated": "2026-11-05 14:20:34.095689594 +0000 UTC"
+  },
+  {
+   "mmsi": 352006380,
+   "name": "CL KIBOU",
+   "lat": 45.90069,
+   "lon": -122.80631,
+   "sog_kn": 12.2,
+   "cog": 347.2,
+   "heading": 348,
+   "nav_status": 5,
+   "updated": "2026-11-05 14:20:39.041234871 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58728,
+   "lon": -122.77006,
+   "sog_kn": 0,
+   "cog": 328.1,
+   "heading": 139,
+   "nav_status": 5,
+   "updated": "2026-11-05 14:20:40.128674489 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07823,
+   "lon": -122.90038,
+   "sog_kn": 0.3,
+   "cog": 327.2,
+   "heading": 126,
+   "nav_status": 0,
+   "updated": "2026-11-05 14:20:41.090773327 +0000 UTC"
+  },
+  {
+   "mmsi": 538006508,
+   "name": "RED COSMOS",
+   "lat": 46.00182,
+   "lon": -122.85017,
+   "sog_kn": 10.4,
+   "cog": 345.7,
+   "heading": 347,
+   "nav_status": 0,
+   "updated": "2026-11-05 14:20:44.183226494 +0000 UTC"
+  },
+  {
+   "mmsi": 352005064,
+   "name": "ANSAC RISING SUN",
+   "lat": 45.64062,
+   "lon": -122.73212,
+   "sog_kn": 0,
+   "cog": 55.1,
+   "heading": 104,
+   "nav_status": 1,
+   "updated": "2026-11-05 14:20:45.430622814 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.2,
+   "lon": -123.38551,
+   "sog_kn": 0,
+   "cog": 272.5,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-05 14:20:49.877737409 +0000 UTC"
+  },
+  {
+   "mmsi": 477133900,
+   "name": "SHAO SHAN 8",
+   "lat": 45.63031,
+   "lon": -122.69543,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-05 14:20:50.794786269 +0000 UTC"
   }
  ]
 }
