@@ -1,56 +1,75 @@
 {
- "fetched_at": "2026-11-06T11:45:24Z",
+ "fetched_at": "2026-11-06T11:50:24Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.61291,
-   "type_code": 0,
-   "updated": "2026-11-06 11:45:30.160008993 +0000 UTC"
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.07877,
+   "lon": -122.90098,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-06 11:50:30.596791804 +0000 UTC"
   },
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.10629,
-   "lon": -122.96456,
-   "sog_kn": 8.2,
-   "cog": 126.1,
-   "heading": 123,
-   "nav_status": 3,
-   "updated": "2026-11-06 11:45:30.930988301 +0000 UTC"
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 46.0908,
+   "lon": -122.93209,
+   "type_code": 52,
+   "updated": "2026-11-06 11:50:31.701740829 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07873,
-   "lon": -122.90108,
-   "sog_kn": 0.3,
-   "cog": 315.1,
-   "heading": 119,
-   "nav_status": 0,
-   "updated": "2026-11-06 11:45:34.073328625 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15342,
-   "lon": -123.37715,
-   "type_code": 99,
-   "updated": "2026-11-06 11:45:46.314262104 +0000 UTC"
-  },
-  {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.5813,
-   "lon": -122.76065,
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00909,
+   "lon": -122.84829,
    "sog_kn": 0,
-   "cog": 100.2,
-   "heading": 122,
+   "cog": 360,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-06 11:45:49.531924348 +0000 UTC"
+   "updated": "2026-11-06 11:50:39.065757374 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64789,
+   "lon": -122.74104,
+   "sog_kn": 0,
+   "cog": 112,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-06 11:50:39.066660124 +0000 UTC"
+  },
+  {
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.1089,
+   "lon": -122.96125,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-06 11:50:48.964733203 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58729,
+   "lon": -122.77009,
+   "sog_kn": 0,
+   "cog": 328.1,
+   "heading": 139,
+   "nav_status": 5,
+   "updated": "2026-11-06 11:50:50.074870112 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.7616,
+   "lon": -122.76478,
+   "type_code": 57,
+   "destination": "KALAMA",
+   "updated": "2026-11-06 11:50:54.013832351 +0000 UTC"
   }
  ]
 }
