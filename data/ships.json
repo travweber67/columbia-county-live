@@ -1,8 +1,19 @@
 {
- "fetched_at": "2026-11-06T20:16:02Z",
+ "fetched_at": "2026-11-06T20:21:03Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58076,
+   "lon": -122.7601,
+   "sog_kn": 0,
+   "cog": 120.7,
+   "heading": 122,
+   "nav_status": 0,
+   "updated": "2026-11-06 20:21:10.250265461 +0000 UTC"
+  },
   {
    "mmsi": 367380280,
    "name": "WESTERN STAR",
@@ -10,82 +21,84 @@
    "lon": -123.40232,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 132,
+   "heading": 131,
    "nav_status": 0,
-   "updated": "2026-11-06 20:16:13.555110622 +0000 UTC"
+   "updated": "2026-11-06 20:21:13.589244996 +0000 UTC"
   },
   {
-   "mmsi": 354425000,
-   "name": "PAN QUEEN",
-   "lat": 46.09433,
-   "lon": -122.93736,
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.64344,
+   "lon": -122.75184,
    "sog_kn": 0,
-   "cog": 13.4,
-   "heading": 117,
-   "nav_status": 1,
-   "updated": "2026-11-06 20:16:17.894758532 +0000 UTC"
-  },
-  {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.61202,
-   "lon": -122.64533,
-   "type_code": 52,
-   "destination": "US^0UUT>0T9D",
-   "updated": "2026-11-06 20:16:20.338054355 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64789,
-   "lon": -122.74098,
-   "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-06 20:16:26.866350621 +0000 UTC"
-  },
-  {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.8601,
-   "lon": -122.79023,
-   "sog_kn": 4.9,
-   "cog": 75.8,
-   "heading": 91,
+   "cog": 359.1,
+   "heading": 139,
    "nav_status": 0,
-   "updated": "2026-11-06 20:16:28.164686727 +0000 UTC"
+   "updated": "2026-11-06 20:21:16.382795552 +0000 UTC"
   },
   {
-   "mmsi": 367667060,
-   "name": "GRANITE POINT",
-   "lat": 45.6473,
-   "lon": -122.73987,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
    "sog_kn": 0,
-   "cog": 267,
+   "cog": 318.2,
+   "heading": 127,
+   "nav_status": 15,
+   "updated": "2026-11-06 20:21:17.942871754 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07919,
+   "lon": -122.9011,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-06 20:21:23.456075015 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64302,
+   "lon": -122.75241,
+   "sog_kn": 0,
+   "cog": 311.6,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-06 20:16:30.874932341 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.95754,
-   "lon": -122.81201,
-   "sog_kn": 0.7,
-   "cog": 188.9,
-   "heading": 167,
-   "nav_status": 3,
-   "updated": "2026-11-06 20:16:35.305390233 +0000 UTC"
-  },
-  {
-   "mmsi": 367747140,
-   "name": "TRIUMPH VIII",
-   "lat": 45.61604,
-   "lon": -122.70346,
-   "sog_kn": 4.7,
-   "cog": 133,
-   "heading": 133,
    "nav_status": 0,
-   "updated": "2026-11-06 20:16:32.389916336 +0000 UTC"
+   "updated": "2026-11-06 20:21:25.5051988 +0000 UTC"
+  },
+  {
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.17235,
+   "lon": -123.10538,
+   "sog_kn": 0,
+   "cog": 122.8,
+   "heading": 1,
+   "nav_status": 1,
+   "updated": "2026-11-06 20:21:29.678879819 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.61832,
+   "lon": -122.78753,
+   "sog_kn": 0,
+   "cog": 277.2,
+   "heading": 350,
+   "nav_status": 12,
+   "updated": "2026-11-06 20:21:30.585791833 +0000 UTC"
+  },
+  {
+   "mmsi": 367516730,
+   "name": "CRISTY T",
+   "lat": 45.61886,
+   "lon": -122.71208,
+   "sog_kn": 6.3,
+   "cog": 301.1,
+   "heading": 302,
+   "nav_status": 0,
+   "updated": "2026-11-06 20:21:32.770755983 +0000 UTC"
   }
  ]
 }
