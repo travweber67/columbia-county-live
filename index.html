@@ -94,6 +94,12 @@ document.documentElement.setAttribute("data-theme",t);})();
           <div id="clock" class="clock">—</div>
           <div class="clock-label" data-i18n="clocklabel">Pacific Time</div>
         </div>
+        <!-- v40: the install door moves to the masthead — one tap from
+             the landing view, not buried in Events & More. Opens the
+             Get-the-app sheet (app.js initGetApp): device-detected
+             numbered steps, with the Facebook-browser escape first
+             when the visitor is inside an app's webview. -->
+        <button class="hero-theme-btn getapp-btn" id="getapp-btn" type="button" aria-haspopup="dialog" aria-controls="getapp-sheet" aria-expanded="false" aria-label="Get the app — put Columbia County Live on your home screen" title="Get the app — home-screen install steps"><span class="getapp-ico" aria-hidden="true">📱</span><span data-i18n="getappbtn">Get the app</span></button>
         <!-- v4: the theme toggle lives HERE now — top-right, beside the
              clock, labelled and amber-ringed. In v3 it was the first
              pill in the chip row below and Travis had to hunt for it. -->
@@ -363,6 +369,19 @@ document.documentElement.setAttribute("data-theme",t);})();
   </div>
   <p class="install-help" id="briefing-note" hidden></p>
 </section>
+
+<!-- v40: end-of-Today signpost. The briefing is the LAST card on Today;
+     a visitor who scrolled to it (Lety, via the 4C's group) had hit a
+     dead end and never found the ferry. This points onward, in words,
+     at the exact spot she got stuck. -->
+<div class="today-signpost" id="today-signpost">
+  <p class="signpost-line" data-i18n="signpostline">That's everything for Today — the rest of the county is one tap away:</p>
+  <div class="signpost-chips">
+    <button class="signpost-chip" type="button" data-signpost-view="travel" data-i18n="signposttravel">🚢 Ferry &amp; roads in Travel</button>
+    <button class="signpost-chip" type="button" data-signpost-view="outdoors" data-i18n="signpostoutdoors">🎣 Outdoors</button>
+    <button class="signpost-chip" type="button" data-signpost-view="more" data-i18n="signpostmore">📅 Events &amp; More</button>
+  </div>
+</div>
 
 
 
@@ -1006,6 +1025,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     </div>
   </nav>
   <div class="drawer-actions">
+    <button class="drawer-action" id="drawer-getapp-btn" type="button"><span class="drawer-action-ico" aria-hidden="true">📱</span><span data-i18n="getappbtn">Get the app</span></button>
     <button class="drawer-action" id="drawer-saver-btn" type="button"><span class="drawer-action-ico" aria-hidden="true">🖥️</span><span data-i18n="saverstart">Start the screensaver</span></button>
     <a class="drawer-action" href="sponsor.html"><img class="drawer-action-img" src="img/icons/icon-sponsor.png" alt="" aria-hidden="true"><span data-i18n="dwbecome">Become a sponsor</span></a>
     <a class="drawer-action drawer-photo" href="#photo-form">
@@ -1016,6 +1036,58 @@ document.documentElement.setAttribute("data-theme",t);})();
       </span>
     </a>
     <button class="drawer-action lang-pill" id="lang-btn" type="button">🌎 En español</button>
+  </div>
+</aside>
+
+<!-- v40: the Get-the-app sheet. One door (masthead button + drawer
+     entry), device-detected numbered steps in plain language. app.js
+     (initGetApp) decides what shows: a step-0 escape when the visitor
+     is inside Facebook's / Instagram's browser or a non-Safari iOS
+     browser (where Add to Home Screen silently does nothing), the
+     detected platform's steps, the rest under "other instructions",
+     and a real Install button when the browser has offered one. -->
+<div class="sheet-backdrop" id="getapp-backdrop" hidden></div>
+<aside class="getapp-sheet" id="getapp-sheet" hidden role="dialog" aria-modal="true" aria-labelledby="getapp-title">
+  <div class="getapp-head">
+    <span class="getapp-title" id="getapp-title" data-i18n="getapptitle">📱 Put Columbia County Live on your home screen</span>
+    <button class="drawer-close" id="getapp-close" type="button" aria-label="Close the install steps">✕</button>
+  </div>
+  <div class="getapp-body">
+    <button class="share-btn primary getapp-install" id="getapp-install" type="button" hidden data-i18n="getappinstall">📱 Install now — one tap</button>
+    <div class="getapp-step0" id="getapp-step0-fb" hidden>
+      <p data-i18n="gastep0fb"><strong>First — you're inside Facebook's browser, and it can't add home-screen apps.</strong> Tap the three dots at the top corner and choose <strong>Open in external browser</strong> or <strong>Open in Chrome</strong>. Then follow the steps below.</p>
+    </div>
+    <div class="getapp-step0" id="getapp-step0-ios" hidden>
+      <p data-i18n="gastep0ios"><strong>First — open this page in Safari.</strong> You're inside another app's browser, and adding it from here looks like it worked, but the icon never appears — that's an Apple rule, not you doing it wrong. Tap the share icon and choose <strong>Open in Safari</strong>, then follow the steps below.</p>
+    </div>
+    <section class="getapp-plat" id="getapp-ios" hidden aria-label="Install steps for iPhone and iPad">
+      <h3 data-i18n="gaiosh">On iPhone &amp; iPad (in Safari)</h3>
+      <ol>
+        <li data-i18n="gaios1">Tap the <strong>Share</strong> button — the square with an arrow pointing up, at the bottom of the screen.</li>
+        <li data-i18n="gaios2">Scroll the list that pops up and tap <strong>Add to Home Screen</strong>.</li>
+        <li data-i18n="gaios3">Tap <strong>Add</strong> in the top corner. Done — the county is now one tap away.</li>
+      </ol>
+    </section>
+    <section class="getapp-plat" id="getapp-android" hidden aria-label="Install steps for Android">
+      <h3 data-i18n="gaandh">On Android</h3>
+      <p class="getapp-sub" data-i18n="gaandchrome"><strong>In Chrome:</strong></p>
+      <ol>
+        <li data-i18n="gaand1">Tap <strong>⋮</strong> at the top-right corner.</li>
+        <li data-i18n="gaand2">Tap <strong>Install app</strong> (some phones say <strong>Add to Home screen</strong>).</li>
+        <li data-i18n="gaand3">Tap <strong>Install</strong> or <strong>Add</strong> to confirm.</li>
+      </ol>
+      <p class="getapp-sub" data-i18n="gaandsam"><strong>In Samsung Internet:</strong> tap the menu (☰), then <strong>Add page to</strong> → <strong>Home screen</strong>.</p>
+      <p class="getapp-sub" data-i18n="gaandff"><strong>In Firefox:</strong> tap <strong>⋮</strong>, then <strong>Add to Home screen</strong>.</p>
+    </section>
+    <section class="getapp-plat" id="getapp-desktop" hidden aria-label="Install steps for a computer">
+      <h3 data-i18n="gadeskh">On a computer</h3>
+      <p data-i18n="gadesk1">In Chrome or Edge, click the install icon at the right end of the address bar — or just bookmark this page (Ctrl/Cmd + D). It updates itself all day.</p>
+    </section>
+    <details class="getapp-other" id="getapp-other" hidden>
+      <summary data-i18n="gaother">Different phone or browser? See the other instructions</summary>
+      <div class="getapp-other-body" id="getapp-other-body"></div>
+    </details>
+    <p class="getapp-nosee" data-i18n="ganosee"><strong>Don't see the icon?</strong> Check your last home screen page — new icons often land there. On iPhone, you can also swipe left to the App Library and search “Columbia”.</p>
   </div>
 </aside>
 

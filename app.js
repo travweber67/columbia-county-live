@@ -3097,11 +3097,21 @@ function initShare() {
    localStorage). The share bar's Add-to-home-screen button keeps its
    manual instructions for browsers that never fire the event. */
 const INSTALL_DISMISS_KEY = 'ccl-install-dismissed-v1';
+/* v40: the dismissal is a timestamp that EXPIRES after 30 days — the
+   v5 code stored a bare flag, so one accidental ✕ tap in week one hid
+   the card forever. (Values written by the old code don't parse as a
+   recent timestamp, so they read as already-expired — intended.) */
+const INSTALL_DISMISS_MS = 30 * 24 * 60 * 60 * 1000;
+function installDismissed() {
+  try {
+    const ts = parseInt(window.localStorage.getItem(INSTALL_DISMISS_KEY) || '', 10);
+    return !!ts && (Date.now() - ts) < INSTALL_DISMISS_MS;
+  } catch (e) { return false; }
+}
 function initInstallCard() {
   const card = $('install-card');
   if (!card) return;
-  let dismissed = false;
-  try { dismissed = !!window.localStorage.getItem(INSTALL_DISMISS_KEY); } catch (e) { /* session-only */ }
+  let dismissed = installDismissed();
   const standalone = !!(window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) || window.navigator.standalone === true;
   function maybeShow() {
     if (dismissed || standalone || !deferredInstallPrompt) return;
@@ -3120,9 +3130,109 @@ function initInstallCard() {
   const dis = $('install-card-dismiss');
   if (dis) dis.addEventListener('click', () => {
     card.hidden = true;
-    try { window.localStorage.setItem(INSTALL_DISMISS_KEY, '1'); } catch (e) { /* session-only */ }
+    try { window.localStorage.setItem(INSTALL_DISMISS_KEY, String(Date.now())); } catch (e) { /* session-only */ }
   });
   maybeShow();
+}
+
+/* ---------- get the app: the install sheet (v40) ----------
+   The diagnosis (~/workspace/ccl-install-fix/DIAGNOSIS.md): the only
+   install doors lived in Events & More, and the proactive card only
+   appears when beforeinstallprompt fires — never inside Facebook's
+   browser, never on iOS. Three neighbours told the 4C's group they
+   "cannot see a button anywhere", and they were right. This sheet is
+   the fix: a masthead button + drawer entry open it from anywhere;
+   inside, the visitor gets STEP 0 first when they're trapped in an
+   app webview (Facebook/Instagram, or a non-Safari iOS browser —
+   where Add to Home Screen silently no-ops, per Travis's field
+   report), then numbered steps for the device they're actually on,
+   the other devices' steps folded below, and a real Install button
+   whenever the browser has offered one. All copy is static chrome in
+   index.html (data-i18n / LANG_ES); this module only decides what
+   shows and wires the prompt. */
+function initGetApp() {
+  const sheet = $('getapp-sheet'), backdrop = $('getapp-backdrop');
+  if (!sheet) return;
+  const openBtns = [$('getapp-btn'), $('drawer-getapp-btn')].filter(Boolean);
+  const closeBtn = $('getapp-close');
+  const installBtn = $('getapp-install');
+  const step0fb = $('getapp-step0-fb'), step0ios = $('getapp-step0-ios');
+  const plats = { ios: $('getapp-ios'), android: $('getapp-android'), desktop: $('getapp-desktop') };
+  const other = $('getapp-other'), otherBody = $('getapp-other-body');
+  const ua = navigator.userAgent || '';
+  const isIOS = /iphone|ipad|ipod/i.test(ua)
+    || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const isAndroid = /android/i.test(ua);
+  const inAppBrowser = /FBAN|FBAV|FB_IAB|Instagram/i.test(ua);
+  const iosNonSafari = isIOS && /CriOS|FxiOS|EdgiOS|OPiOS/i.test(ua);
+  const platform = isIOS ? 'ios' : isAndroid ? 'android' : 'desktop';
+  /* Show the detected platform; fold the others into the details. */
+  Object.keys(plats).forEach(k => {
+    const el = plats[k];
+    if (!el) return;
+    if (k === platform) { el.hidden = false; }
+    else if (otherBody) { el.hidden = false; otherBody.appendChild(el); }
+  });
+  if (other && otherBody && otherBody.children.length) other.hidden = false;
+  function render() {
+    if (step0fb) step0fb.hidden = !(inAppBrowser && !isIOS);
+    if (step0ios) step0ios.hidden = !(isIOS && (inAppBrowser || iosNonSafari));
+    if (installBtn) installBtn.hidden = !deferredInstallPrompt;
+  }
+  window.addEventListener('beforeinstallprompt', render);
+  window.addEventListener('appinstalled', () => { if (installBtn) installBtn.hidden = true; });
+  let lastFocus = null;
+  function openSheet() {
+    render();
+    lastFocus = document.activeElement;
+    sheet.hidden = false;
+    if (backdrop) backdrop.hidden = false;
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      sheet.classList.add('open');
+      if (backdrop) backdrop.classList.add('open');
+    }));
+    document.body.classList.add('getapp-on');
+    openBtns.forEach(b => b.setAttribute('aria-expanded', 'true'));
+    if (closeBtn) closeBtn.focus();
+  }
+  function closeSheet() {
+    if (sheet.hidden) return;
+    sheet.classList.remove('open');
+    if (backdrop) backdrop.classList.remove('open');
+    document.body.classList.remove('getapp-on');
+    openBtns.forEach(b => b.setAttribute('aria-expanded', 'false'));
+    setTimeout(() => { sheet.hidden = true; if (backdrop) backdrop.hidden = true; }, 320);
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  openBtns.forEach(b => b.addEventListener('click', () => {
+    /* The drawer entry: close the drawer first, then open the sheet. */
+    if (b.id === 'drawer-getapp-btn') {
+      const dc = $('drawer-close');
+      if (dc && !$('drawer').hidden) { dc.click(); setTimeout(openSheet, 340); return; }
+    }
+    openSheet();
+  }));
+  if (closeBtn) closeBtn.addEventListener('click', closeSheet);
+  if (backdrop) backdrop.addEventListener('click', closeSheet);
+  document.addEventListener('keydown', ev => { if (ev.key === 'Escape') closeSheet(); });
+  if (installBtn) installBtn.addEventListener('click', async () => {
+    if (!deferredInstallPrompt) return;
+    deferredInstallPrompt.prompt();
+    try { await deferredInstallPrompt.userChoice; } catch (e) { /* ignore */ }
+    deferredInstallPrompt = null;
+    installBtn.hidden = true;
+    closeSheet();
+  });
+  window.CCLOpenGetApp = openSheet;
+}
+
+/* ---------- end-of-Today signpost (v40) ---------- */
+function initSignpost() {
+  document.querySelectorAll('[data-signpost-view]').forEach(b =>
+    b.addEventListener('click', () => {
+      cclShowView(b.dataset ? b.dataset.signpostView : null);
+      if (window.scrollTo) { try { window.scrollTo(0, 0); } catch (e) { /* noop */ } }
+    }));
 }
 
 /* ---------- freshness board ---------- */
@@ -3170,6 +3280,8 @@ initMapTools();
 initTownPicker();
 initShare();
 initInstallCard();
+initGetApp();
+initSignpost();
 initEventFilters();
 initSkyFilters();
 loadGlance();
@@ -3422,14 +3534,25 @@ function briefingRowHtml(r) {
   if (r.note) h += '<div class="briefing-more">' + esc(r.note) + '</div>';
   return h + '</div></div>';
 }
+/* v40: the composed HTML is cached and the DOM is only replaced when
+   it actually changed. The old code rebuilt #briefing-view from
+   scratch every 30 s; on browsers without scroll anchoring (iOS
+   Safari, app webviews) each rebuild could yank the page back to the
+   card — the "it bounces back to the briefing" report. Identical
+   rebuilds, the common case, are now no-ops: the node is untouched. */
+let lastBriefingHtml = null;
 function refreshBriefing() {
   const view = $('briefing-view');
   if (!view) return;
   const b = buildBriefing();
-  view.innerHTML = b.ready
+  const html = b.ready
     ? b.rows.map(briefingRowHtml).join('')
       + '<p class="briefing-foot">Sources: National Weather Service · USGS · ODOT/WSDOT snapshots · city &amp; county calendars. The live page always has the newest numbers.</p>'
     : '<p class="briefing-loading">Still gathering today\'s answers — the panels on this page update first, and this summary follows within the minute.</p>';
+  if (html !== lastBriefingHtml) {
+    lastBriefingHtml = html;
+    view.innerHTML = html;
+  }
   const up = $('briefing-updated');
   if (up && b.ready) up.textContent = 'Assembled ' + fmtTime(new Date());
 }
@@ -5823,6 +5946,30 @@ const LANG_ES = {
   installh2: 'Pon Columbia County Live en tu pantalla de inicio',
   installp: 'Instalada, se abre en pantalla completa como una app — sin barra de direcciones, con su propio ícono y el condado a un toque. Gratis, y se sigue actualizando todo el día.',
   installcardbtn: '📱 Instalar la app',
+  getappbtn: 'Obtén la app',
+  getapptitle: '📱 Pon Columbia County Live en tu pantalla de inicio',
+  getappinstall: '📱 Instalar ahora — un toque',
+  gastep0fb: '<strong>Primero — estás dentro del navegador de Facebook, y ese no puede agregar apps a la pantalla de inicio.</strong> Toca los <strong>tres puntos</strong> en la esquina superior y elige <strong>Abrir en el navegador externo</strong> o <strong>Abrir en Chrome</strong>. Luego sigue los pasos de abajo.',
+  gastep0ios: '<strong>Primero — abre esta página en Safari.</strong> Estás dentro del navegador de otra app, y agregar desde ahí parece que funcionó, pero el ícono nunca aparece — es una regla de Apple, no un error tuyo. Toca el ícono de compartir y elige <strong>Abrir en Safari</strong>, luego sigue los pasos de abajo.',
+  gaiosh: 'En iPhone y iPad (en Safari)',
+  gaios1: 'Toca el botón <strong>Compartir</strong> — el cuadrado con una flecha hacia arriba, en la parte inferior de la pantalla.',
+  gaios2: 'Desplázate por la lista que aparece y toca <strong>Agregar a pantalla de inicio</strong>.',
+  gaios3: 'Toca <strong>Agregar</strong> en la esquina superior. Listo — el condado queda a un toque.',
+  gaandh: 'En Android',
+  gaandchrome: '<strong>En Chrome:</strong>',
+  gaand1: 'Toca <strong>⋮</strong> en la esquina superior derecha.',
+  gaand2: 'Toca <strong>Instalar app</strong> (algunos teléfonos dicen <strong>Agregar a pantalla de inicio</strong>).',
+  gaand3: 'Toca <strong>Instalar</strong> o <strong>Agregar</strong> para confirmar.',
+  gaandsam: '<strong>En Samsung Internet:</strong> toca el menú (☰), luego <strong>Agregar página a</strong> → <strong>Pantalla de inicio</strong>.',
+  gaandff: '<strong>En Firefox:</strong> toca <strong>⋮</strong>, luego <strong>Agregar a pantalla de inicio</strong>.',
+  gadeskh: 'En una computadora',
+  gadesk1: 'En Chrome o Edge, haz clic en el ícono de instalar al final de la barra de direcciones — o simplemente guarda esta página en favoritos (Ctrl/Cmd + D). Se actualiza sola todo el día.',
+  gaother: '¿Otro teléfono o navegador? Mira las demás instrucciones',
+  ganosee: '<strong>¿No ves el ícono?</strong> Revisa tu última página de inicio — los íconos nuevos suelen caer ahí. En iPhone también puedes deslizar hasta la Biblioteca de apps y buscar «Columbia».',
+  signpostline: 'Eso es todo por Hoy — el resto del condado está a un toque:',
+  signposttravel: '🚢 Ferry y carreteras en Viajes',
+  signpostoutdoors: '🎣 Aire libre',
+  signpostmore: '📅 Eventos y más',
   dwcommute: 'El veredicto del viaje',
   dwdrive: 'Tu viaje — tiempos de manejo',
   dwgo: 'Antes de salir',
