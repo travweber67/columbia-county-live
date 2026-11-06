@@ -1,49 +1,56 @@
 {
- "fetched_at": "2026-11-06T04:14:50Z",
+ "fetched_at": "2026-11-06T04:34:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 366972000,
    "name": "ESSAYONS",
-   "lat": 46.11276,
-   "lon": -122.97584,
-   "sog_kn": 2.1,
-   "cog": 316.2,
-   "heading": 308,
+   "lat": 46.12452,
+   "lon": -122.99244,
+   "sog_kn": 2.7,
+   "cog": 317.7,
+   "heading": 323,
    "nav_status": 3,
-   "updated": "2026-11-06 04:14:59.817280376 +0000 UTC"
+   "updated": "2026-11-06 04:35:00.37098596 +0000 UTC"
   },
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.63954,
-   "lon": -122.77763,
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63867,
+   "lon": -122.72402,
    "sog_kn": 0,
-   "cog": 174.3,
-   "heading": 229,
-   "nav_status": 0,
-   "updated": "2026-11-06 04:15:10.54417986 +0000 UTC"
+   "cog": 348,
+   "heading": 116,
+   "nav_status": 1,
+   "updated": "2026-11-06 04:35:03.783348193 +0000 UTC"
+  },
+  {
+   "mmsi": 368450870,
+   "name": "AMERICAN ENCORE",
+   "lat": 46.00362,
+   "lon": -122.84764,
+   "type_code": 60,
+   "destination": "ASTORIA",
+   "updated": "2026-11-06 04:35:14.25348748 +0000 UTC"
   },
   {
    "mmsi": 367645170,
    "name": "CROWN POINT",
-   "lat": 45.60263,
-   "lon": -122.78132,
-   "sog_kn": 6.7,
-   "cog": 155.7,
-   "heading": 154,
-   "nav_status": 12,
-   "updated": "2026-11-06 04:15:14.720086616 +0000 UTC"
+   "lat": 45.57635,
+   "lon": -122.74677,
+   "type_code": 52,
+   "destination": "TBL VANCOUVER",
+   "updated": "2026-11-06 04:35:25.642225912 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07876,
-   "lon": -122.90068,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-06 04:15:19.926650235 +0000 UTC"
+   "mmsi": 636020486,
+   "name": "BBG GUILIN",
+   "lat": 46.10606,
+   "lon": -122.95589,
+   "type_code": 70,
+   "destination": "US LON",
+   "updated": "2026-11-06 04:35:26.712066235 +0000 UTC"
   }
  ]
 }
