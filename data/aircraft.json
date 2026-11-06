@@ -1,127 +1,117 @@
 {
- "fetched_at": "2026-11-06T21:46:09Z",
+ "fetched_at": "2026-11-06T21:51:09Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
+   "hex": "a71203",
+   "callsign": "N555AE",
+   "type": "S22T",
+   "alt_ft": 8825,
+   "gs_kn": 155.6,
+   "track": 174.84,
+   "lat": 46.161432,
+   "lon": -123.079971
+  },
+  {
+   "hex": "a68240",
+   "callsign": "N5185T",
+   "type": "CH7A",
+   "alt_ft": 1000,
+   "gs_kn": 67.1,
+   "track": 176.58,
+   "lat": 45.623749,
+   "lon": -123.0245
+  },
+  {
+   "hex": "ab6471",
+   "callsign": "N833KX",
+   "type": "C172",
+   "alt_ft": 4025,
+   "gs_kn": 127.1,
+   "track": 7.68,
+   "lat": 45.649017,
+   "lon": -123.015323
+  },
+  {
    "hex": "a2421b",
    "callsign": "N2446X",
    "type": "C206",
-   "alt_ft": 2300,
-   "gs_kn": 97.0,
-   "track": 181.18,
-   "lat": 45.814525,
-   "lon": -122.940445
+   "alt_ft": 2400,
+   "gs_kn": 101.6,
+   "track": 147.88,
+   "lat": 45.678085,
+   "lon": -122.925222
   },
   {
    "hex": "a5bae5",
    "callsign": "N46889",
    "type": "C152",
    "alt_ft": 1075,
-   "gs_kn": 99.5,
-   "track": 39.29,
-   "lat": 45.577108,
-   "lon": -122.928085
+   "gs_kn": 66.0,
+   "track": 220.7,
+   "lat": 45.582136,
+   "lon": -122.895126
   },
   {
    "hex": "a86ff5",
    "callsign": "N64269",
    "type": "C172",
-   "alt_ft": 3675,
-   "gs_kn": 82.2,
-   "track": 170.19,
-   "lat": 45.965866,
-   "lon": -122.917854
-  },
-  {
-   "hex": "a8f84d",
-   "callsign": "N67710",
-   "type": "C152",
-   "alt_ft": 925,
-   "gs_kn": 76.7,
-   "track": 219.71,
-   "lat": 45.574315,
-   "lon": -122.905769
-  },
-  {
-   "hex": "ad4a1d",
-   "callsign": "N95539",
-   "type": "C152",
-   "alt_ft": 1400,
-   "gs_kn": 91.4,
-   "track": 41.89,
-   "lat": 45.594798,
-   "lon": -122.902473
-  },
-  {
-   "hex": "a68240",
-   "callsign": "N5185T",
-   "type": "CH7A",
-   "alt_ft": 1700,
-   "gs_kn": 72.4,
-   "track": 263.66,
-   "lat": 45.6562,
-   "lon": -122.901443
+   "alt_ft": 1800,
+   "gs_kn": 68.7,
+   "track": 167.38,
+   "lat": 45.880024,
+   "lon": -122.893135
   },
   {
    "hex": "a034d4",
    "callsign": "GFY1124",
    "type": "DA42",
-   "alt_ft": 2425,
-   "gs_kn": 86.4,
-   "track": 156.1,
-   "lat": 46.01279,
-   "lon": -122.857773
-  },
-  {
-   "hex": "a8a478",
-   "callsign": "QXE2142",
-   "type": "E75L",
-   "alt_ft": 2875,
-   "gs_kn": 188.9,
-   "track": 209.14,
-   "lat": 45.745331,
-   "lon": -122.823799
-  },
-  {
-   "hex": "a871d4",
-   "callsign": "QXE2269",
-   "type": "E75L",
-   "alt_ft": 2100,
-   "gs_kn": 166.1,
-   "track": 119.19,
-   "lat": 45.649979,
-   "lon": -122.76257
+   "alt_ft": 2625,
+   "gs_kn": 178.1,
+   "track": 331.85,
+   "lat": 46.053131,
+   "lon": -122.849054
   },
   {
    "hex": "a8042c",
    "callsign": "N61531",
    "type": "C172",
-   "alt_ft": 1425,
-   "gs_kn": 115.5,
-   "track": 339.21,
-   "lat": 45.741391,
-   "lon": -122.691536
+   "alt_ft": 2250,
+   "gs_kn": 117.4,
+   "track": 336.93,
+   "lat": 45.890579,
+   "lon": -122.759489
   },
   {
-   "hex": "a55dc3",
-   "callsign": "LXJ445",
-   "type": "E545",
-   "alt_ft": 800,
-   "gs_kn": 106.4,
-   "track": 116.81,
-   "lat": 45.622192,
-   "lon": -122.66644
+   "hex": "a5b805",
+   "callsign": "N468HC",
+   "type": "RV8",
+   "alt_ft": "ground",
+   "gs_kn": 7.8,
+   "track": 2.81,
+   "lat": 45.621915,
+   "lon": -122.651573
   },
   {
-   "hex": "a70aa1",
-   "callsign": "ASA1355",
-   "type": "B738",
-   "alt_ft": -200,
-   "gs_kn": 139.2,
-   "track": 118.77,
-   "lat": 45.591679,
-   "lon": -122.61264
+   "hex": "ac733b",
+   "callsign": "DAL9960",
+   "type": "B739",
+   "alt_ft": 33425,
+   "gs_kn": 438.0,
+   "track": 354.5,
+   "lat": 46.042831,
+   "lon": -122.638572
+  },
+  {
+   "hex": "a8a478",
+   "callsign": "QXE2142",
+   "type": "E75L",
+   "alt_ft": -25,
+   "gs_kn": 126.3,
+   "track": 119.41,
+   "lat": 45.597382,
+   "lon": -122.627251
   }
  ]
 }

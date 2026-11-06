@@ -1,40 +1,58 @@
 {
- "fetched_at": "2026-11-06T21:46:09Z",
+ "fetched_at": "2026-11-06T21:51:09Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.11078,
-   "lon": -122.97446,
-   "sog_kn": 1.7,
-   "cog": 319.5,
-   "heading": 321,
-   "nav_status": 3,
-   "updated": "2026-11-06 21:46:19.932077408 +0000 UTC"
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.11011,
+   "lon": -122.96343,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-06 21:51:21.391862106 +0000 UTC"
   },
   {
-   "mmsi": 370363000,
-   "name": "SEVEN SEAS HIGHWAY",
-   "lat": 45.63299,
-   "lon": -122.7379,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
    "sog_kn": 0,
-   "cog": 338.3,
-   "heading": 137,
-   "nav_status": 5,
-   "updated": "2026-11-06 21:46:23.26584462 +0000 UTC"
+   "cog": 23.5,
+   "heading": 129,
+   "nav_status": 15,
+   "updated": "2026-11-06 21:51:28.24559039 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07907,
-   "lon": -122.90173,
-   "sog_kn": 0.3,
-   "cog": 183.6,
-   "heading": 270,
-   "nav_status": 3,
-   "updated": "2026-11-06 21:46:27.299018761 +0000 UTC"
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58129,
+   "lon": -122.76064,
+   "type_code": 57,
+   "destination": "GASCO",
+   "updated": "2026-11-06 21:51:38.107451503 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 27.9,
+   "heading": 123,
+   "nav_status": 0
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.64346,
+   "lon": -122.75185,
+   "type_code": 52,
+   "destination": "HME",
+   "updated": "2026-11-06 21:51:34.546945646 +0000 UTC"
+  },
+  {
+   "mmsi": 563116100,
+   "name": "OCEAN GOLD",
+   "lat": 45.98415,
+   "lon": -122.83549,
+   "type_code": 70,
+   "destination": "US KAL",
+   "updated": "2026-11-06 21:51:38.191236194 +0000 UTC"
   }
  ]
 }
