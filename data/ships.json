@@ -1,113 +1,65 @@
 {
- "fetched_at": "2026-11-06T22:16:12Z",
+ "fetched_at": "2026-11-06T22:21:12Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07907,
-   "lon": -122.90143,
-   "sog_kn": 0.1,
-   "cog": 338.3,
-   "heading": 343,
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.6302,
+   "lon": -122.70443,
+   "type_code": 57,
+   "destination": "KALAMA",
+   "updated": "2026-11-06 22:21:15.348407555 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07924,
+   "lon": -122.90107,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-06 22:21:31.80877375 +0000 UTC"
+  },
+  {
+   "mmsi": 367681630,
+   "name": "VICKI B",
+   "lat": 45.84839,
+   "lon": -122.79779,
+   "sog_kn": 7.4,
+   "cog": 196.8,
+   "heading": 200,
    "nav_status": 0,
-   "updated": "2026-11-06 22:16:18.085014481 +0000 UTC"
+   "updated": "2026-11-06 22:21:31.729898915 +0000 UTC"
   },
   {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.6439,
-   "lon": -122.73489,
-   "sog_kn": 6,
-   "cog": 112.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 22:16:22.063440731 +0000 UTC"
-  },
-  {
-   "mmsi": 370363000,
-   "name": "SEVEN SEAS HIGHWAY",
-   "lat": 45.63998,
-   "lon": -122.74542,
-   "sog_kn": 2.8,
-   "cog": 317,
-   "heading": 139,
-   "nav_status": 0,
-   "updated": "2026-11-06 22:16:26.078089357 +0000 UTC"
-  },
-  {
-   "mmsi": 538006097,
-   "name": "AD ASTRA",
-   "lat": 45.64299,
-   "lon": -122.77141,
-   "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-06 22:16:26.196926676 +0000 UTC"
-  },
-  {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58728,
-   "lon": -122.77007,
-   "type_code": 31,
-   "destination": "US^02SY>0UJ9",
-   "updated": "2026-11-06 22:16:34.607860209 +0000 UTC"
+   "mmsi": 538011495,
+   "name": "MTR JUPITER",
+   "lat": 46.12509,
+   "lon": -122.98673,
+   "sog_kn": 0,
+   "cog": 343.6,
+   "heading": 196,
+   "nav_status": 1,
+   "updated": "2026-11-06 22:21:38.718030559 +0000 UTC"
   },
   {
    "mmsi": 368121540,
    "name": "RANDY S",
-   "lat": 45.64351,
+   "lat": 45.64349,
    "lon": -122.75242,
-   "sog_kn": 0,
-   "cog": 310,
-   "heading": 134,
-   "nav_status": 5,
-   "updated": "2026-11-06 22:16:35.340878461 +0000 UTC"
+   "type_code": 52,
+   "destination": "US^0UUT>0UW8",
+   "updated": "2026-11-06 22:21:38.818516113 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07949,
-   "lon": -122.90132,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 343,
-   "nav_status": 3,
-   "updated": "2026-11-06 22:16:36.813474986 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 23.2,
-   "heading": 128,
-   "nav_status": 15,
-   "updated": "2026-11-06 22:16:37.624890757 +0000 UTC"
-  },
-  {
-   "mmsi": 563116100,
-   "name": "OCEAN GOLD",
-   "lat": 45.98414,
-   "lon": -122.83547,
-   "sog_kn": 0,
-   "cog": 121.4,
-   "heading": 151,
-   "nav_status": 5,
-   "updated": "2026-11-06 22:16:39.888273713 +0000 UTC"
-  },
-  {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60758,
-   "lon": -122.67762,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 22:16:44.134353515 +0000 UTC"
+   "mmsi": 477133900,
+   "name": "SHAO SHAN 8",
+   "lat": 45.63031,
+   "lon": -122.69545,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-06 22:21:39.35908813 +0000 UTC"
   }
  ]
 }
