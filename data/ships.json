@@ -1,58 +1,91 @@
 {
- "fetched_at": "2026-11-05T23:56:06Z",
+ "fetched_at": "2026-11-06T00:01:06Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15342,
-   "lon": -123.37713,
-   "sog_kn": 0,
-   "cog": 17.5,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-05 23:56:16.226483763 +0000 UTC"
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.83011,
+   "lon": -122.79077,
+   "type_code": 57,
+   "destination": "XX XXX>?? ???",
+   "updated": "2026-11-06 00:01:11.530898816 +0000 UTC"
   },
   {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 46.09046,
-   "lon": -122.93228,
-   "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-05 23:56:25.212393319 +0000 UTC"
-  },
-  {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58131,
-   "lon": -122.76067,
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09419,
+   "lon": -122.93748,
    "sog_kn": 0,
-   "cog": 224.4,
+   "cog": 118.1,
    "heading": 122,
+   "nav_status": 1,
+   "updated": "2026-11-06 00:01:17.699248227 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40232,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 137,
    "nav_status": 0,
-   "updated": "2026-11-05 23:56:30.718423823 +0000 UTC"
+   "updated": "2026-11-06 00:01:20.008443655 +0000 UTC"
   },
   {
    "mmsi": 368083770,
    "name": "SUPPORT",
-   "lat": 46.02747,
-   "lon": -122.86946,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-05 23:56:39.088801803 +0000 UTC"
+   "lat": 46.02748,
+   "lon": -122.86943,
+   "type_code": 31,
+   "destination": "HARBOROPPS-",
+   "updated": "2026-11-06 00:01:21.971731582 +0000 UTC"
   },
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 46.17759,
-   "lon": -123.10848,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-05 23:56:39.573373426 +0000 UTC"
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.0907,
+   "lon": -122.93211,
+   "sog_kn": 0,
+   "cog": 113.3,
+   "heading": 110,
+   "nav_status": 5,
+   "updated": "2026-11-06 00:01:23.39231829 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10359,
+   "lon": -122.91013,
+   "sog_kn": 0,
+   "cog": 83.5,
+   "heading": 75,
+   "nav_status": 3,
+   "updated": "2026-11-06 00:01:34.187126257 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58759,
+   "lon": -122.77041,
+   "sog_kn": 0,
+   "cog": 268.9,
+   "heading": 141,
+   "nav_status": 0,
+   "updated": "2026-11-06 00:01:38.067077754 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.15927,
+   "lon": -123.06756,
+   "sog_kn": 9.2,
+   "cog": 115.2,
+   "heading": 117,
+   "nav_status": 3,
+   "updated": "2026-11-06 00:01:38.802080899 +0000 UTC"
   }
  ]
 }
