@@ -1,95 +1,77 @@
 {
- "fetched_at": "2026-11-06T14:05:34Z",
+ "fetched_at": "2026-11-06T14:10:34Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 352005064,
-   "name": "ANSAC RISING SUN",
-   "lat": 45.64084,
-   "lon": -122.73217,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07934,
+   "lon": -122.90081,
+   "sog_kn": 0.6,
+   "cog": 273,
+   "heading": 9,
+   "nav_status": 3,
+   "updated": "2026-11-06 14:10:37.591186638 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.07898,
+   "lon": -122.90107,
+   "sog_kn": 0.4,
+   "cog": 203.6,
+   "heading": 190,
+   "nav_status": 5,
+   "updated": "2026-11-06 14:10:40.057079025 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64348,
+   "lon": -122.75294,
    "sog_kn": 0,
-   "cog": 200.8,
-   "heading": 120,
-   "nav_status": 1,
-   "updated": "2026-11-06 14:05:45.483320492 +0000 UTC"
+   "cog": 220.5,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-06 14:10:47.480124982 +0000 UTC"
   },
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 46.04898,
-   "lon": -122.88323,
-   "sog_kn": 3,
-   "cog": 355.5,
-   "heading": 359,
-   "nav_status": 0,
-   "updated": "2026-11-06 14:05:47.106697231 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.1772,
-   "lon": -123.35743,
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10789,
+   "lon": -122.95902,
    "sog_kn": 0,
-   "cog": 282.5,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-06 14:05:47.88697644 +0000 UTC"
-  },
-  {
-   "mmsi": 368082970,
-   "name": "AMERICAN.HARMONY",
-   "lat": 46.22713,
-   "lon": -123.42639,
-   "sog_kn": 10.1,
-   "cog": 169.6,
-   "heading": 167,
-   "nav_status": 0,
-   "updated": "2026-11-06 14:05:54.533241347 +0000 UTC"
-  },
-  {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.77968,
-   "lon": -122.77141,
-   "sog_kn": 9.8,
-   "cog": 333.8,
-   "heading": 333,
-   "nav_status": 0,
-   "updated": "2026-11-06 14:05:56.750181829 +0000 UTC"
-  },
-  {
-   "mmsi": 367645170,
-   "name": "CROWN POINT",
-   "lat": 45.61287,
-   "lon": -122.65388,
-   "sog_kn": 6.4,
-   "cog": 111.1,
-   "heading": 108,
-   "nav_status": 12,
-   "updated": "2026-11-06 14:05:58.465332011 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 45.99564,
-   "lon": -122.84695,
-   "sog_kn": 29.4,
-   "cog": 338.7,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-06 14:06:00.163096845 +0000 UTC"
+   "updated": "2026-11-06 14:10:51.915922388 +0000 UTC"
   },
   {
-   "mmsi": 368327640,
-   "name": "CAPT. STEVE",
-   "lat": 45.99177,
-   "lon": -122.84223,
-   "sog_kn": 2.1,
-   "cog": 79.8,
-   "heading": 133,
-   "nav_status": 12,
-   "updated": "2026-11-06 14:06:05.371073999 +0000 UTC"
+   "mmsi": 367681630,
+   "name": "VICKI B",
+   "lat": 45.85685,
+   "lon": -122.79424,
+   "type_code": 52,
+   "destination": "US^0RFZ>?? ???",
+   "updated": "2026-11-06 14:11:00.051500786 +0000 UTC"
+  },
+  {
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.17455,
+   "lon": -123.10827,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-06 14:11:00.946842443 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.13728,
+   "lon": -123.37902,
+   "type_code": 99,
+   "updated": "2026-11-06 14:11:04.641405104 +0000 UTC"
   }
  ]
 }
