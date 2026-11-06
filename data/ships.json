@@ -1,58 +1,86 @@
 {
- "fetched_at": "2026-11-06T06:26:41Z",
+ "fetched_at": "2026-11-06T06:29:59Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.04401,
+   "lon": -122.87692,
+   "sog_kn": 0,
+   "cog": 125.2,
+   "heading": 180,
+   "nav_status": 5,
+   "updated": "2026-11-06 06:30:04.808271189 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40233,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 130,
+   "nav_status": 0,
+   "updated": "2026-11-06 06:30:12.692897638 +0000 UTC"
+  },
   {
    "mmsi": 367496010,
    "name": "DELIVERANCE",
-   "lat": 46.09409,
-   "lon": -122.94275,
-   "sog_kn": 0,
-   "cog": 313.6,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 06:27:48.237121651 +0000 UTC"
+   "lat": 46.09408,
+   "lon": -122.94277,
+   "type_code": 69,
+   "updated": "2026-11-06 06:30:14.820798222 +0000 UTC"
   },
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.69051,
-   "lon": -122.7751,
-   "sog_kn": 6.7,
-   "cog": 184.9,
-   "heading": 182,
-   "nav_status": 12,
-   "updated": "2026-11-06 06:27:54.447655278 +0000 UTC"
+   "mmsi": 352005064,
+   "name": "ANSAC RISING SUN",
+   "lat": 45.64077,
+   "lon": -122.73214,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-06 06:30:18.659049001 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07887,
-   "lon": -122.90058,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07907,
+   "lon": -122.901,
+   "sog_kn": 1,
+   "cog": 44.6,
+   "heading": 324,
+   "nav_status": 3,
+   "updated": "2026-11-06 06:30:27.021496976 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.08959,
+   "lon": -122.92887,
    "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-06 06:28:02.148327799 +0000 UTC"
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-06 06:30:28.390269781 +0000 UTC"
   },
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19999,
-   "lon": -123.38539,
-   "type_code": 99,
-   "destination": "NAKNEK",
-   "updated": "2026-11-06 06:28:03.611066602 +0000 UTC"
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19953,
+   "lon": -123.385,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-06 06:30:31.065350898 +0000 UTC"
   },
   {
-   "mmsi": 477133900,
-   "name": "SHAO SHAN 8",
-   "lat": 45.63033,
-   "lon": -122.69546,
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.1089,
+   "lon": -122.96127,
    "sog_kn": 0,
-   "cog": 186,
+   "cog": 24.8,
    "heading": 129,
    "nav_status": 5,
-   "updated": "2026-11-06 06:28:07.248377773 +0000 UTC"
+   "updated": "2026-11-06 06:30:31.88815465 +0000 UTC"
   }
  ]
 }
