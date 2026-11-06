@@ -1,62 +1,112 @@
 {
- "fetched_at": "2026-11-06T18:56:51Z",
+ "fetched_at": "2026-11-06T19:00:56Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10892,
-   "lon": -122.96126,
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.09069,
+   "lon": -122.93212,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-06 19:01:01.542592895 +0000 UTC"
+  },
+  {
+   "mmsi": 368268040,
+   "name": "PAPA T",
+   "lat": 46.09015,
+   "lon": -122.92957,
+   "sog_kn": 1.2,
+   "cog": 295.3,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 19:01:01.635512102 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.64351,
+   "lon": -122.75246,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-06 19:01:08.120164968 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.66135,
+   "lon": -122.76754,
+   "sog_kn": 8.4,
+   "cog": 164.4,
+   "heading": 164,
+   "nav_status": 0,
+   "updated": "2026-11-06 19:01:12.390622672 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07695,
+   "lon": -122.90029,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-06 19:01:14.182613179 +0000 UTC"
+  },
+  {
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09437,
+   "lon": -122.93736,
    "sog_kn": 0.1,
-   "cog": 37.2,
-   "heading": 129,
-   "nav_status": 5,
-   "updated": "2026-11-06 18:57:32.106209715 +0000 UTC"
+   "cog": 177.5,
+   "heading": 116,
+   "nav_status": 1,
+   "updated": "2026-11-06 19:01:17.554874156 +0000 UTC"
   },
   {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 46.08962,
-   "lon": -122.92886,
-   "sog_kn": 0,
-   "cog": 110.5,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 18:57:35.085214667 +0000 UTC"
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.57835,
+   "lon": -122.75032,
+   "sog_kn": 6.5,
+   "cog": 124.6,
+   "heading": 124,
+   "nav_status": 12,
+   "updated": "2026-11-06 19:01:19.638164353 +0000 UTC"
   },
   {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64283,
-   "lon": -122.75267,
-   "sog_kn": 0,
-   "cog": 317.8,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 18:57:35.29770412 +0000 UTC"
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64566,
+   "lon": -122.73487,
+   "type_code": 79,
+   "updated": "2026-11-06 19:01:20.15631185 +0000 UTC"
   },
   {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58131,
-   "lon": -122.76067,
-   "sog_kn": 0,
-   "cog": 120.9,
-   "heading": 122,
-   "nav_status": 0,
-   "updated": "2026-11-06 18:57:40.281162233 +0000 UTC"
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 45.66701,
+   "lon": -122.76735,
+   "type_code": 57,
+   "destination": "US PDX",
+   "updated": "2026-11-06 19:01:20.92274456 +0000 UTC"
   },
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58077,
-   "lon": -122.76006,
-   "sog_kn": 0,
-   "cog": 120.7,
-   "heading": 123,
-   "nav_status": 0,
-   "updated": "2026-11-06 18:57:41.153203049 +0000 UTC"
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.0934,
+   "lon": -122.93806,
+   "type_code": 69,
+   "updated": "2026-11-06 19:01:27.770781171 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10356,
+   "lon": -122.9101,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-06 19:01:29.641756358 +0000 UTC"
   }
  ]
 }
