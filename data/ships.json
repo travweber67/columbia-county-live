@@ -1,56 +1,155 @@
 {
- "fetched_at": "2026-11-06T12:20:26Z",
+ "fetched_at": "2026-11-06T12:25:27Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 14 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64787,
-   "lon": -122.74104,
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 46.09052,
+   "lon": -122.93231,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-06 12:25:33.149889087 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19955,
+   "lon": -123.38501,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-06 12:25:42.642381883 +0000 UTC",
    "sog_kn": 0,
-   "cog": 112,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-06 12:20:40.472476268 +0000 UTC"
+   "cog": 325,
+   "heading": 143,
+   "nav_status": 5
   },
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20002,
-   "lon": -123.38536,
-   "type_code": 99,
-   "destination": "NAKNEK",
-   "updated": "2026-11-06 12:20:41.569225239 +0000 UTC"
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.84301,
+   "lon": -122.78662,
+   "type_code": 52,
+   "destination": "US^0UYR>0UYR",
+   "updated": "2026-11-06 12:25:47.383505834 +0000 UTC",
+   "sog_kn": 5.4,
+   "cog": 195.3,
+   "heading": 197,
+   "nav_status": 0
   },
   {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 46.08955,
-   "lon": -122.92881,
-   "sog_kn": 0.1,
-   "cog": 32.9,
-   "heading": 196,
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.6793,
+   "lon": -122.77228,
+   "sog_kn": 8.5,
+   "cog": 177.1,
+   "heading": 170,
+   "nav_status": 12,
+   "updated": "2026-11-06 12:25:38.703137492 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64345,
+   "lon": -122.75281,
+   "sog_kn": 0,
+   "cog": 283.8,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-06 12:20:42.593162283 +0000 UTC"
+   "updated": "2026-11-06 12:25:44.85143623 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60757,
+   "lon": -122.67774,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 12:25:52.611804356 +0000 UTC",
+   "type_code": 50
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64538,
+   "lon": -122.73502,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-06 12:25:45.993481306 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 46.09082,
+   "lon": -122.93209,
+   "type_code": 52,
+   "updated": "2026-11-06 12:25:46.889390588 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 46.02517,
+   "lon": -122.87327,
+   "sog_kn": 1.7,
+   "cog": 14.1,
+   "heading": 68,
+   "nav_status": 0,
+   "updated": "2026-11-06 12:25:47.142049849 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58133,
+   "lon": -122.76067,
+   "sog_kn": 0,
+   "cog": 100.2,
+   "heading": 122,
+   "nav_status": 0,
+   "updated": "2026-11-06 12:25:50.812899713 +0000 UTC"
+  },
+  {
+   "mmsi": 538007029,
+   "name": "ZEPHYROS",
+   "lat": 46.16273,
+   "lon": -123.23861,
+   "sog_kn": 11.8,
+   "cog": 54.7,
+   "heading": 55,
+   "nav_status": 0,
+   "updated": "2026-11-06 12:25:52.349712826 +0000 UTC"
   },
   {
    "mmsi": 367645170,
    "name": "CROWN POINT",
-   "lat": 45.6524,
+   "lat": 45.65239,
    "lon": -122.75198,
-   "type_code": 52,
+   "type_code": 57,
    "destination": "TBL VANCOUVER",
-   "updated": "2026-11-06 12:20:44.469295547 +0000 UTC"
+   "updated": "2026-11-06 12:25:53.886371399 +0000 UTC"
   },
   {
-   "mmsi": 477133900,
-   "name": "SHAO SHAN 8",
-   "lat": 45.63032,
-   "lon": -122.69546,
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.11011,
+   "lon": -122.96342,
    "type_code": 70,
-   "destination": "USVAN",
-   "updated": "2026-11-06 12:20:52.542480684 +0000 UTC"
+   "destination": "US LOG",
+   "updated": "2026-11-06 12:25:57.979374765 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65019,
+   "lon": -122.74765,
+   "sog_kn": 0,
+   "cog": 262.7,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-06 12:25:59.166492291 +0000 UTC"
   }
  ]
 }
