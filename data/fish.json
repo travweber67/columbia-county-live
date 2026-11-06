@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-06T14:56:49Z",
+ "fetched_at": "2026-11-06T15:26:49Z",
  "status": "ok",
  "sources": [
   {
@@ -1189,10 +1189,17 @@
    },
    {
     "date": "2026-11-04",
-    "chinook": null,
-    "steelhead": null,
+    "chinook": 148,
+    "steelhead": 19,
     "sockeye": null,
-    "coho": null
+    "coho": 341
+   },
+   {
+    "date": "2026-11-05",
+    "chinook": 351,
+    "steelhead": 6,
+    "sockeye": null,
+    "coho": 338
    }
   ],
   "TDA": [
@@ -1778,10 +1785,24 @@
     "steelhead": 42,
     "sockeye": null,
     "coho": 57
+   },
+   {
+    "date": "2026-11-04",
+    "chinook": 52,
+    "steelhead": 45,
+    "sockeye": null,
+    "coho": 44
    }
   ]
  },
  "waves": [
+  {
+   "date": "2026-11-05",
+   "count": 351,
+   "trailing_median": 104,
+   "species": "chinook",
+   "dam": "BON"
+  },
   {
    "date": "2026-09-26",
    "count": 2809,
