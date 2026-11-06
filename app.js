@@ -5858,6 +5858,13 @@ const LANG_ES = {
   dwfresh: '¿Qué tan fresca es esta página?',
   dwabout: 'Acerca de',
   dwbecome: 'Hazte patrocinador',
+  cascEyebrow: 'De Nomad Development Group — nuestro otro proyecto',
+  cascTitle: 'Cascade Controls Jobs',
+  cascCopy: '¿Contratas técnicos de controles — o buscas ese trabajo? Una bolsa de trabajo del Pacífico Noroeste para técnicos de controles y mantenimiento industrial.',
+  cascCta: 'Ver los empleos y anuncios &rarr;',
+  cascFooter: 'También de Nomad: Cascade Controls Jobs — ¿contratas técnicos de controles, o buscas ese trabajo? &rarr;',
+  cascDrawerHead: 'Más de Nomad',
+  cascDrawerLink: 'Cascade Controls Jobs — trabajo de controles y mantenimiento',
   dwphototitle: 'Comparte tu foto del condado',
   dwphotoline: '¿Tienes una foto del condado que te encanta? Envíala — las buenas se unen al protector de pantalla de la comunidad, con tu nombre firmado como en una pintura.',
   langnote: "🌎 This page is showing its headings, buttons and notes in Spanish — tap the courthouse logo up top to open the menu, then tap <strong>English</strong> to switch back. Live readings, alerts and event listings keep arriving in English from their official sources."

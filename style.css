@@ -2451,3 +2451,31 @@ html[data-theme="dark"] .featured-local.photo-behind .featured-card{background:r
 /* --- 2 · marquee: hold the track on the compositor ---------------- */
 @keyframes stripScroll{to{transform:translate3d(-50%,0,0)}}
 .strip-track{backface-visibility:hidden;-webkit-backface-visibility:hidden}
+
+/* =====================================================================
+   ===== V36 (2026-11-05 — Travis's directive) =====
+   Cross-promo for Cascade Controls Jobs, Nomad's other project.
+   Deliberately NOT sponsor styling: no founding/featured glass, no
+   sponsor language — a plain house card in the site's bone/forest/rust
+   palette, honestly labelled "our other project". Three spots: the
+   card in Events & More (with a real screenshot of the Cascade
+   homepage), a drawer entry under "More from Nomad", and a slim
+   footer link. Paid sponsor inventory is untouched.
+   ===================================================================== */
+.cascade-card{padding:0;overflow:hidden}
+.cascade-promo{display:block;text-decoration:none;color:var(--text)}
+.cascade-promo:hover .cascade-title{text-decoration:underline}
+.cascade-promo:focus-visible{outline:3px solid var(--warm);outline-offset:3px;border-radius:14px}
+.cascade-shot{display:block;width:100%;height:auto;border-bottom:3px solid var(--warm,#b0511c)}
+.cascade-body{display:block;padding:16px 18px 18px}
+.cascade-eyebrow{display:block;font-size:.74rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--warm,#b0511c);margin-bottom:6px}
+.cascade-title{display:block;font-family:var(--display);font-size:1.45rem;font-weight:700;line-height:1.15;margin-bottom:6px}
+.cascade-copy{display:block;font-size:.98rem;line-height:1.45;color:var(--muted);margin-bottom:10px}
+.cascade-cta{display:inline-block;font-weight:800;color:var(--accent-dark,#1e4228)}
+html[data-theme="dark"] .cascade-cta{color:#bfe3c8}
+.drawer-nomad-head{margin:0;padding:8px 8px 2px;font-size:.78rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--warm,#b0511c)}
+.cascade-drawer-link{font-weight:600}
+.cascade-footer{margin:10px 0 4px}
+.cascade-footer-link{display:inline-block;padding:9px 14px;border:1px solid var(--border);border-radius:999px;color:var(--accent-dark,#1e4228);text-decoration:none;font-weight:700;font-size:.92rem;background:rgba(46,93,58,.08)}
+.cascade-footer-link:hover{border-color:var(--warm,#b0511c);text-decoration:underline}
+html[data-theme="dark"] .cascade-footer-link{color:#bfe3c8;background:rgba(244,241,228,.06)}
