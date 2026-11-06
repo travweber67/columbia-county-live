@@ -1,90 +1,74 @@
 {
- "fetched_at": "2026-11-06T09:50:14Z",
+ "fetched_at": "2026-11-06T09:55:14Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10891,
-   "lon": -122.96125,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-06 09:50:23.306042513 +0000 UTC"
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 45.65364,
+   "lon": -122.76522,
+   "type_code": 57,
+   "destination": "US PDX",
+   "updated": "2026-11-06 09:55:23.109133997 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10354,
+   "lon": -122.91009,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-06 09:55:28.501016808 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07918,
+   "lon": -122.90101,
+   "type_code": 33,
+   "updated": "2026-11-06 09:55:28.695183759 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.64356,
+   "lon": -122.75252,
+   "sog_kn": 0,
+   "cog": 292.8,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-06 09:55:38.162190911 +0000 UTC"
   },
   {
    "mmsi": 367602150,
    "name": "LUNA",
    "lat": 45.6111,
-   "lon": -122.61291,
+   "lon": -122.61292,
    "sog_kn": 0,
-   "cog": 8.2,
-   "heading": 127,
+   "cog": 248.4,
+   "heading": 129,
    "nav_status": 15,
-   "updated": "2026-11-06 09:50:28.784011108 +0000 UTC"
+   "updated": "2026-11-06 09:55:39.271840053 +0000 UTC"
   },
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58083,
-   "lon": -122.76006,
-   "sog_kn": 0,
-   "cog": 120.7,
-   "heading": 122,
-   "nav_status": 0,
-   "updated": "2026-11-06 09:50:31.684116718 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10358,
-   "lon": -122.91012,
-   "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 74,
-   "nav_status": 3,
-   "updated": "2026-11-06 09:50:34.553840951 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64793,
-   "lon": -122.74099,
-   "sog_kn": 0,
-   "cog": 111.2,
-   "heading": 111,
-   "nav_status": 5,
-   "updated": "2026-11-06 09:50:36.581349605 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.1079,
-   "lon": -122.95903,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 09:50:40.184277494 +0000 UTC"
-  },
-  {
-   "mmsi": 352005064,
-   "name": "ANSAC RISING SUN",
-   "lat": 45.64104,
-   "lon": -122.73198,
-   "sog_kn": 0,
-   "cog": 182.6,
-   "heading": 124,
-   "nav_status": 1,
-   "updated": "2026-11-06 09:50:45.439687385 +0000 UTC"
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 46.0908,
+   "lon": -122.93208,
+   "type_code": 52,
+   "updated": "2026-11-06 09:55:46.010083242 +0000 UTC"
   },
   {
    "mmsi": 367669550,
    "name": "ALASKA CHALLENGER",
-   "lat": 46.1772,
-   "lon": -123.35743,
-   "type_code": 30,
-   "updated": "2026-11-06 09:50:47.289196001 +0000 UTC"
+   "lat": 46.17719,
+   "lon": -123.35742,
+   "sog_kn": 0,
+   "cog": 339.8,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-06 09:55:46.300241367 +0000 UTC"
   }
  ]
 }
