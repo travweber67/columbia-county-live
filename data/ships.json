@@ -1,109 +1,93 @@
 {
- "fetched_at": "2026-11-06T23:06:16Z",
+ "fetched_at": "2026-11-06T23:11:17Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07892,
-   "lon": -122.9013,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-06 23:06:20.249772227 +0000 UTC"
-  },
-  {
-   "mmsi": 352006943,
-   "name": "GLOVIS LEGEND",
-   "lat": 45.64609,
-   "lon": -122.75551,
-   "sog_kn": 0,
-   "cog": 140.3,
-   "heading": 136,
-   "nav_status": 5,
-   "updated": "2026-11-06 23:06:24.806945099 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.09591,
-   "lon": -122.93838,
-   "sog_kn": 7.5,
-   "cog": 306,
-   "heading": 317,
-   "nav_status": 0,
-   "updated": "2026-11-06 23:06:27.2728248 +0000 UTC"
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19997,
+   "lon": -123.38552,
+   "sog_kn": 0.1,
+   "cog": 343.7,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-06 23:11:42.531476478 +0000 UTC",
+   "type_code": 30,
+   "destination": "FISHMN TMNL"
   },
   {
    "mmsi": 367727410,
    "name": "AMY B",
-   "lat": 45.58946,
-   "lon": -122.76953,
+   "lat": 45.59803,
+   "lon": -122.77952,
    "sog_kn": 7.9,
-   "cog": 325.1,
-   "heading": 327,
+   "cog": 325.7,
+   "heading": 331,
    "nav_status": 12,
-   "updated": "2026-11-06 23:06:30.904691033 +0000 UTC"
+   "updated": "2026-11-06 23:11:33.912031919 +0000 UTC"
   },
   {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.1089,
-   "lon": -122.96129,
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.0088,
+   "lon": -122.84886,
    "sog_kn": 0,
-   "cog": 254,
-   "heading": 129,
-   "nav_status": 5,
-   "updated": "2026-11-06 23:06:31.885966936 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.61379,
-   "lon": -122.78813,
-   "type_code": 52,
-   "destination": "PORTLAND,OR",
-   "updated": "2026-11-06 23:06:32.094829302 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19996,
-   "lon": -123.38553,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-06 23:06:35.961814503 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.9608,
-   "lon": -122.81406,
-   "sog_kn": 10.7,
-   "cog": 146.8,
-   "heading": 150,
-   "nav_status": 3,
-   "updated": "2026-11-06 23:06:41.669403783 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.14333,
-   "lon": -123.38402,
-   "sog_kn": 7,
-   "cog": 162.7,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-06 23:06:47.828355092 +0000 UTC"
+   "updated": "2026-11-06 23:11:37.894638336 +0000 UTC"
   },
   {
-   "mmsi": 367347000,
-   "name": "WENDY SEAA",
-   "lat": 46.1995,
-   "lon": -123.385,
-   "type_code": 30,
-   "destination": "CATHLAMET,WA",
-   "updated": "2026-11-06 23:06:49.125689249 +0000 UTC"
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 171.1,
+   "heading": 125,
+   "nav_status": 15,
+   "updated": "2026-11-06 23:11:39.177468567 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64537,
+   "lon": -122.73502,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-06 23:11:41.778019436 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64345,
+   "lon": -122.75283,
+   "sog_kn": 0,
+   "cog": 223.8,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 23:11:45.141167072 +0000 UTC"
+  },
+  {
+   "mmsi": 311000824,
+   "name": "AFRICAN AVOCET",
+   "lat": 46.09912,
+   "lon": -122.93935,
+   "type_code": 79,
+   "destination": "US LOG",
+   "updated": "2026-11-06 23:11:45.426485235 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.98551,
+   "lon": -122.83612,
+   "sog_kn": 0.1,
+   "cog": 237,
+   "heading": 331,
+   "nav_status": 0,
+   "updated": "2026-11-06 23:11:46.338769295 +0000 UTC"
   }
  ]
 }
