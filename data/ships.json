@@ -1,40 +1,68 @@
 {
- "fetched_at": "2026-11-06T18:10:53Z",
+ "fetched_at": "2026-11-06T18:15:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.61201,
-   "lon": -122.64535,
-   "sog_kn": 0,
-   "cog": 317.3,
-   "heading": 297,
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64669,
+   "lon": -122.77189,
+   "sog_kn": 6.6,
+   "cog": 212.3,
+   "heading": 214,
+   "nav_status": 12,
+   "updated": "2026-11-06 18:15:59.298897773 +0000 UTC"
+  },
+  {
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.19965,
+   "lon": -123.38524,
+   "type_code": 30,
+   "destination": "",
+   "updated": "2026-11-06 18:15:59.729070789 +0000 UTC"
+  },
+  {
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.64298,
+   "lon": -122.77141,
+   "sog_kn": 0.1,
+   "cog": 59,
+   "heading": 229,
    "nav_status": 5,
-   "updated": "2026-11-06 18:10:55.938913599 +0000 UTC"
+   "updated": "2026-11-06 18:16:12.783724347 +0000 UTC"
   },
   {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63869,
-   "lon": -122.72402,
-   "sog_kn": 0,
-   "cog": 191.7,
-   "heading": 114,
-   "nav_status": 1,
-   "updated": "2026-11-06 18:11:03.773587554 +0000 UTC"
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65011,
+   "lon": -122.74757,
+   "type_code": 33,
+   "updated": "2026-11-06 18:16:15.535356049 +0000 UTC"
   },
   {
-   "mmsi": 368082970,
-   "name": "AMERICAN.HARMONY",
-   "lat": 45.93306,
-   "lon": -122.8049,
-   "sog_kn": 9.7,
-   "cog": 179,
-   "heading": 177,
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08174,
+   "lon": -122.89836,
+   "sog_kn": 6,
+   "cog": 317.3,
+   "heading": 313,
    "nav_status": 0,
-   "updated": "2026-11-06 18:11:11.24959834 +0000 UTC"
+   "updated": "2026-11-06 18:16:17.445272145 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00886,
+   "lon": -122.8484,
+   "sog_kn": 0.4,
+   "cog": 278.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 18:16:19.012898614 +0000 UTC"
   }
  ]
 }
