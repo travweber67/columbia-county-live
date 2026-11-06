@@ -1,38 +1,49 @@
 {
- "fetched_at": "2026-11-06T05:34:55Z",
+ "fetched_at": "2026-11-06T05:39:55Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63865,
-   "lon": -122.72403,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.38543,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-06 05:40:02.501403868 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09086,
+   "lon": -122.93208,
    "sog_kn": 0,
-   "cog": 351,
-   "heading": 115,
-   "nav_status": 1,
-   "updated": "2026-11-06 05:35:03.78669938 +0000 UTC"
+   "cog": 251.3,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-06 05:40:06.393146848 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07876,
-   "lon": -122.90092,
-   "sog_kn": 0.1,
-   "cog": 355.3,
-   "heading": 164,
-   "nav_status": 0,
-   "updated": "2026-11-06 05:35:06.701191727 +0000 UTC"
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 185.3,
+   "heading": 128,
+   "nav_status": 15,
+   "updated": "2026-11-06 05:40:08.003541396 +0000 UTC"
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19993,
-   "lon": -123.38551,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-06 05:35:21.292918017 +0000 UTC"
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.64299,
+   "lon": -122.77139,
+   "sog_kn": 0,
+   "cog": 250.4,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-06 05:40:12.632862236 +0000 UTC"
   }
  ]
 }
