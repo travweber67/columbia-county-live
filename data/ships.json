@@ -1,75 +1,91 @@
 {
- "fetched_at": "2026-11-06T05:09:53Z",
+ "fetched_at": "2026-11-06T05:14:58Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368450870,
-   "name": "AMERICAN ENCORE",
-   "lat": 46.00361,
-   "lon": -122.84764,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17717,
+   "lon": -123.35744,
    "sog_kn": 0,
-   "cog": 27.5,
-   "heading": 160,
-   "nav_status": 5,
-   "updated": "2026-11-06 05:10:08.0687519 +0000 UTC"
+   "cog": 239.9,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-06 05:15:06.319756028 +0000 UTC"
   },
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00891,
-   "lon": -122.84829,
-   "sog_kn": 0.2,
-   "cog": 98.8,
-   "heading": 511,
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.07855,
+   "lon": -122.90062,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-06 05:15:06.497978007 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07851,
+   "lon": -122.9008,
+   "sog_kn": 0.1,
+   "cog": 29.1,
+   "heading": 98,
    "nav_status": 0,
-   "updated": "2026-11-06 05:10:09.018161842 +0000 UTC"
+   "updated": "2026-11-06 05:15:21.133623118 +0000 UTC"
   },
   {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58132,
-   "lon": -122.76067,
-   "sog_kn": 0,
-   "cog": 100.2,
-   "heading": 123,
-   "nav_status": 0,
-   "updated": "2026-11-06 05:10:11.511388599 +0000 UTC"
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07878,
+   "lon": -122.90075,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-06 05:15:21.249983922 +0000 UTC"
   },
   {
-   "mmsi": 538006097,
-   "name": "AD ASTRA",
-   "lat": 45.643,
-   "lon": -122.77141,
-   "sog_kn": 0,
-   "cog": 250.4,
-   "heading": 229,
-   "nav_status": 5,
-   "updated": "2026-11-06 05:10:25.913104646 +0000 UTC",
-   "type_code": 70,
-   "destination": "USPDX"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40233,
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00887,
+   "lon": -122.84882,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 133,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-06 05:10:13.510796616 +0000 UTC"
+   "updated": "2026-11-06 05:15:23.213998021 +0000 UTC"
   },
   {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.09001,
-   "lon": -122.92953,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10355,
+   "lon": -122.91014,
    "sog_kn": 0,
-   "cog": 294.7,
-   "heading": 115,
+   "cog": 83.5,
+   "heading": 75,
+   "nav_status": 3,
+   "updated": "2026-11-06 05:15:24.69100669 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64288,
+   "lon": -122.77095,
+   "sog_kn": 0,
+   "cog": 225,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-06 05:10:19.765943232 +0000 UTC"
+   "updated": "2026-11-06 05:15:25.569613348 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.9908,
+   "lon": -122.84134,
+   "sog_kn": 0,
+   "cog": 296.1,
+   "heading": 151,
+   "nav_status": 0,
+   "updated": "2026-11-06 05:15:26.795933139 +0000 UTC"
   }
  ]
 }
