@@ -1,78 +1,113 @@
 {
- "fetched_at": "2026-11-06T13:30:32Z",
+ "fetched_at": "2026-11-06T13:35:32Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538011495,
-   "name": "MTR JUPITER",
-   "lat": 46.12451,
-   "lon": -122.989,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07912,
+   "lon": -122.90138,
+   "sog_kn": 0.2,
+   "cog": 34.4,
+   "heading": 303,
+   "nav_status": 3,
+   "updated": "2026-11-06 13:35:36.846697527 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.08949,
+   "lon": -122.92887,
+   "sog_kn": 0,
+   "cog": 122.4,
+   "heading": 196,
+   "nav_status": 0,
+   "updated": "2026-11-06 13:35:44.102553557 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 257.5,
+   "heading": 128,
+   "nav_status": 15,
+   "updated": "2026-11-06 13:35:48.918838502 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.6529,
+   "lon": -122.75223,
+   "sog_kn": 0,
+   "cog": 210.1,
+   "heading": 139,
+   "nav_status": 12,
+   "updated": "2026-11-06 13:35:50.13078594 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63875,
+   "lon": -122.724,
    "type_code": 70,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-06 13:30:41.422432246 +0000 UTC"
+   "destination": "US PDX",
+   "updated": "2026-11-06 13:35:53.483824 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.96595,
+   "lon": -122.82179,
+   "sog_kn": 8.7,
+   "cog": 332,
+   "heading": 321,
+   "nav_status": 12,
+   "updated": "2026-11-06 13:35:55.95708192 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19952,
+   "lon": -123.38497,
+   "sog_kn": 0,
+   "cog": 325,
+   "heading": 143,
+   "nav_status": 5,
+   "updated": "2026-11-06 13:35:55.958384874 +0000 UTC"
+  },
+  {
+   "mmsi": 368327640,
+   "name": "CAPT. STEVE",
+   "lat": 45.98709,
+   "lon": -122.83841,
+   "sog_kn": 2.3,
+   "cog": 41,
+   "heading": 100,
+   "nav_status": 12,
+   "updated": "2026-11-06 13:35:59.430469829 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.10206,
+   "lon": -122.9495,
+   "sog_kn": 1.3,
+   "cog": 131.2,
+   "heading": 122,
+   "nav_status": 3,
+   "updated": "2026-11-06 13:36:00.308715096 +0000 UTC"
   },
   {
    "mmsi": 367384780,
    "name": "CAROLYN DOROTHY",
-   "lat": 46.02845,
-   "lon": -122.87603,
-   "sog_kn": 0.1,
-   "cog": 240.5,
-   "heading": 143,
-   "nav_status": 0,
-   "updated": "2026-11-06 13:30:41.701744968 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19997,
-   "lon": -123.38543,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-06 13:30:43.558397823 +0000 UTC"
-  },
-  {
-   "mmsi": 370363000,
-   "name": "SEVEN SEAS HIGHWAY",
-   "lat": 45.63302,
-   "lon": -122.73789,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-06 13:30:50.549995999 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.05219,
-   "lon": -122.88301,
-   "sog_kn": 8,
-   "cog": 167.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 13:30:51.461814487 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64341,
-   "lon": -122.75286,
-   "sog_kn": 0,
-   "cog": 214.1,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 13:30:54.900843922 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.20002,
-   "lon": -123.38553,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-06 13:31:01.101932329 +0000 UTC"
+   "lat": 46.02844,
+   "lon": -122.87597,
+   "type_code": 52,
+   "destination": "CSR OPS",
+   "updated": "2026-11-06 13:36:00.820606998 +0000 UTC"
   }
  ]
 }
