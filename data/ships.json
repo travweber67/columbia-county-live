@@ -1,82 +1,106 @@
 {
- "fetched_at": "2026-11-06T00:59:37Z",
+ "fetched_at": "2026-11-06T01:04:37Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.5941,
-   "lon": -122.77208,
-   "sog_kn": 0,
-   "cog": 338.3,
-   "heading": 149,
-   "nav_status": 5,
-   "updated": "2026-11-06 00:59:41.715457459 +0000 UTC"
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 45.5951,
+   "lon": -122.77861,
+   "type_code": 57,
+   "destination": "US PDX",
+   "updated": "2026-11-06 01:04:41.346100412 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08337,
+   "lon": -122.90217,
+   "type_code": 52,
+   "destination": "CSR OPS",
+   "updated": "2026-11-06 01:05:03.462488562 +0000 UTC",
+   "sog_kn": 12.3,
+   "cog": 308.5,
+   "heading": 300,
+   "nav_status": 0
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79301,
+   "lon": -122.84375,
+   "sog_kn": 1.4,
+   "cog": 188.4,
+   "heading": 213,
+   "nav_status": 12,
+   "updated": "2026-11-06 01:04:45.281929369 +0000 UTC"
   },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
    "lat": 46.07637,
-   "lon": -122.90083,
-   "sog_kn": 0.2,
-   "cog": 81.8,
-   "heading": 111,
+   "lon": -122.90086,
+   "sog_kn": 0.1,
+   "cog": 215.2,
+   "heading": 113,
    "nav_status": 0,
-   "updated": "2026-11-06 00:59:47.50364872 +0000 UTC"
+   "updated": "2026-11-06 01:04:47.492873003 +0000 UTC"
   },
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.10514,
-   "lon": -122.96439,
-   "sog_kn": 1.5,
-   "cog": 143,
-   "heading": 126,
-   "nav_status": 3,
-   "updated": "2026-11-06 00:59:50.077898603 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58758,
-   "lon": -122.77051,
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61201,
+   "lon": -122.64535,
    "sog_kn": 0,
-   "cog": 324.5,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 00:59:53.598762839 +0000 UTC"
+   "cog": 170.9,
+   "heading": 296,
+   "nav_status": 5,
+   "updated": "2026-11-06 01:04:50.279799859 +0000 UTC"
   },
   {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.07171,
-   "lon": -122.88801,
-   "type_code": 52,
-   "destination": "CSR OPS",
-   "updated": "2026-11-06 00:59:58.328987176 +0000 UTC"
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10357,
+   "lon": -122.9101,
+   "sog_kn": 0,
+   "cog": 83.5,
+   "heading": 74,
+   "nav_status": 3,
+   "updated": "2026-11-06 01:04:53.72244736 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07894,
+   "lon": -122.90083,
+   "sog_kn": 0.1,
+   "cog": 34.9,
+   "heading": 324,
+   "nav_status": 3,
+   "updated": "2026-11-06 01:04:57.875574625 +0000 UTC"
   },
   {
    "mmsi": 367702780,
    "name": "SARAH",
-   "lat": 45.60512,
-   "lon": -122.78251,
-   "sog_kn": 9.8,
-   "cog": 335.3,
-   "heading": 334,
+   "lat": 45.61775,
+   "lon": -122.78973,
+   "sog_kn": 9.7,
+   "cog": 346.3,
+   "heading": 348,
    "nav_status": 0,
-   "updated": "2026-11-06 00:59:59.702414504 +0000 UTC"
+   "updated": "2026-11-06 01:04:59.693392902 +0000 UTC"
   },
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15334,
-   "lon": -123.37718,
-   "sog_kn": 0.1,
-   "cog": 190.1,
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64341,
+   "lon": -122.75286,
+   "sog_kn": 0,
+   "cog": 235.5,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-06 01:00:07.102184114 +0000 UTC"
+   "updated": "2026-11-06 01:05:05.589995481 +0000 UTC"
   }
  ]
 }
