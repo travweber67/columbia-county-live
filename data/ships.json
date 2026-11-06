@@ -1,66 +1,128 @@
 {
- "fetched_at": "2026-11-06T19:51:00Z",
+ "fetched_at": "2026-11-06T19:56:00Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368442720,
-   "name": "RUSTLER",
-   "lat": 45.58725,
-   "lon": -122.76474,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.98551,
+   "lon": -122.8361,
    "type_code": 52,
-   "destination": "AXIOS MARINE OPS",
-   "updated": "2026-11-06 19:51:12.020304241 +0000 UTC"
+   "destination": "US^029T>0UW8",
+   "updated": "2026-11-06 19:56:10.169251181 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07942,
-   "lon": -122.90126,
-   "sog_kn": 0.1,
-   "cog": 57.6,
-   "heading": 341,
-   "nav_status": 3,
-   "updated": "2026-11-06 19:51:17.572225647 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.0739,
-   "lon": -122.89738,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-06 19:51:20.190580065 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "lat": 46.09079,
-   "lon": -122.93211,
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.61832,
+   "lon": -122.78751,
    "sog_kn": 0,
-   "cog": 226.1,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-06 19:51:21.327838204 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 46.15982,
-   "lon": -123.40532,
-   "sog_kn": 0,
-   "cog": 136.1,
-   "heading": 136,
+   "cog": 227,
+   "heading": 350,
    "nav_status": 12,
-   "updated": "2026-11-06 19:51:26.108662726 +0000 UTC"
+   "updated": "2026-11-06 19:56:10.518194259 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64537,
+   "lon": -122.73503,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-06 19:56:15.245979262 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58762,
+   "lon": -122.77034,
+   "sog_kn": 0,
+   "cog": 311,
+   "heading": 145,
+   "nav_status": 0,
+   "updated": "2026-11-06 19:56:13.028844657 +0000 UTC"
   },
   {
    "mmsi": 367425870,
    "name": "HUSKY",
-   "lat": 45.64343,
-   "lon": -122.75184,
-   "type_code": 52,
-   "destination": "HME",
-   "updated": "2026-11-06 19:51:26.20173971 +0000 UTC"
+   "lat": 45.64344,
+   "lon": -122.75185,
+   "sog_kn": 0,
+   "cog": 210.6,
+   "heading": 136,
+   "nav_status": 0,
+   "updated": "2026-11-06 19:56:17.5152823 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58133,
+   "lon": -122.76064,
+   "sog_kn": 0,
+   "cog": 27.9,
+   "heading": 122,
+   "nav_status": 0,
+   "updated": "2026-11-06 19:56:17.672146825 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37715,
+   "sog_kn": 0,
+   "cog": 7.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 19:56:18.292965046 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64567,
+   "lon": -122.73487,
+   "sog_kn": 0.4,
+   "cog": 45.6,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-06 19:56:19.025454396 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.64715,
+   "lon": -122.7396,
+   "sog_kn": 0,
+   "cog": 256.8,
+   "heading": 285,
+   "nav_status": 12,
+   "updated": "2026-11-06 19:56:19.812371129 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.11356,
+   "lon": -122.97754,
+   "sog_kn": 2.2,
+   "cog": 311.2,
+   "heading": 309,
+   "nav_status": 3,
+   "updated": "2026-11-06 19:56:20.764434819 +0000 UTC"
+  },
+  {
+   "mmsi": 368136580,
+   "name": "ORIN L GREEN",
+   "lat": 46.07944,
+   "lon": -122.90127,
+   "sog_kn": 0.3,
+   "cog": 333.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 19:56:21.094171213 +0000 UTC"
   }
  ]
 }
