@@ -1,47 +1,58 @@
 {
- "fetched_at": "2026-11-06T20:06:01Z",
+ "fetched_at": "2026-11-06T20:11:01Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.58415,
-   "lon": -122.76617,
-   "type_code": 52,
-   "destination": "US^00D5>0UHN",
-   "updated": "2026-11-06 20:06:14.180834697 +0000 UTC"
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07923,
+   "lon": -122.9016,
+   "sog_kn": 0.3,
+   "cog": 204.3,
+   "heading": 297,
+   "nav_status": 3,
+   "updated": "2026-11-06 20:11:08.163784867 +0000 UTC"
   },
   {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 45.64349,
-   "lon": -122.75238,
-   "sog_kn": 0.1,
-   "cog": 279.5,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-06 20:06:17.155785215 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.11665,
-   "lon": -122.98281,
-   "type_code": 33,
-   "destination": "LORD ISL. LONGVIEW",
-   "updated": "2026-11-06 20:06:29.210126947 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64345,
-   "lon": -122.75278,
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64538,
+   "lon": -122.73504,
    "sog_kn": 0,
-   "cog": 271.6,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 20:06:34.145768006 +0000 UTC"
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-06 20:11:14.203831364 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10353,
+   "lon": -122.91019,
+   "sog_kn": 0,
+   "cog": 83.5,
+   "heading": 76,
+   "nav_status": 3,
+   "updated": "2026-11-06 20:11:24.352013421 +0000 UTC"
+  },
+  {
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.1186,
+   "lon": -122.97819,
+   "type_code": 70,
+   "destination": "USA LONGVIEW",
+   "updated": "2026-11-06 20:11:28.637798026 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19997,
+   "lon": -123.38551,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-06 20:11:31.87663909 +0000 UTC"
   }
  ]
 }
