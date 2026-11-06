@@ -1,77 +1,58 @@
 {
- "fetched_at": "2026-11-06T14:10:34Z",
+ "fetched_at": "2026-11-06T14:15:34Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07934,
-   "lon": -122.90081,
-   "sog_kn": 0.6,
-   "cog": 273,
-   "heading": 9,
-   "nav_status": 3,
-   "updated": "2026-11-06 14:10:37.591186638 +0000 UTC"
+   "mmsi": 538007029,
+   "name": "ZEPHYROS",
+   "lat": 46.03428,
+   "lon": -122.87798,
+   "type_code": 70,
+   "destination": "KALAMA,USA",
+   "updated": "2026-11-06 14:15:40.180866565 +0000 UTC"
   },
   {
    "mmsi": 368442390,
    "name": "COWLITZ",
-   "lat": 46.07898,
+   "lat": 46.07885,
    "lon": -122.90107,
-   "sog_kn": 0.4,
-   "cog": 203.6,
-   "heading": 190,
-   "nav_status": 5,
-   "updated": "2026-11-06 14:10:40.057079025 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64348,
-   "lon": -122.75294,
-   "sog_kn": 0,
-   "cog": 220.5,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-06 14:10:47.480124982 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10789,
-   "lon": -122.95902,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 14:10:51.915922388 +0000 UTC"
-  },
-  {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.85685,
-   "lon": -122.79424,
    "type_code": 52,
-   "destination": "US^0RFZ>?? ???",
-   "updated": "2026-11-06 14:11:00.051500786 +0000 UTC"
+   "destination": "PORTLAND",
+   "updated": "2026-11-06 14:15:40.772182384 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79316,
+   "lon": -122.84321,
+   "sog_kn": 0,
+   "cog": 95.8,
+   "heading": 213,
+   "nav_status": 12,
+   "updated": "2026-11-06 14:15:44.105028613 +0000 UTC"
   },
   {
    "mmsi": 538012415,
    "name": "TOMINI PINE",
-   "lat": 46.17455,
-   "lon": -123.10827,
+   "lat": 46.17469,
+   "lon": -123.10816,
    "type_code": 70,
    "destination": "USVAN",
-   "updated": "2026-11-06 14:11:00.946842443 +0000 UTC"
+   "updated": "2026-11-06 14:15:47.769835857 +0000 UTC"
   },
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.13728,
-   "lon": -123.37902,
-   "type_code": 99,
-   "updated": "2026-11-06 14:11:04.641405104 +0000 UTC"
+   "mmsi": 477133900,
+   "name": "SHAO SHAN 8",
+   "lat": 45.6303,
+   "lon": -122.69542,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-06 14:16:03.548778316 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 185.9,
+   "heading": 129,
+   "nav_status": 5
   }
  ]
 }
