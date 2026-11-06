@@ -1,104 +1,155 @@
 {
- "fetched_at": "2026-11-06T10:30:18Z",
+ "fetched_at": "2026-11-06T10:35:18Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 14 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 46.17413,
-   "lon": -123.10842,
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.93238,
+   "lon": -122.8049,
+   "sog_kn": 9.5,
+   "cog": 0.1,
+   "heading": 359,
+   "nav_status": 0,
+   "updated": "2026-11-06 10:35:32.78606533 +0000 UTC",
+   "type_code": 31,
+   "destination": "PORTLAND"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20002,
+   "lon": -123.38549,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-06 10:35:46.525108689 +0000 UTC"
+  },
+  {
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.1101,
+   "lon": -122.96341,
    "sog_kn": 0,
-   "cog": 358.3,
-   "heading": 110,
-   "nav_status": 1,
-   "updated": "2026-11-06 10:30:26.68808269 +0000 UTC"
+   "cog": 167.3,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-06 10:35:33.383568379 +0000 UTC"
+  },
+  {
+   "mmsi": 636020486,
+   "name": "BBG GUILIN",
+   "lat": 46.10607,
+   "lon": -122.95591,
+   "type_code": 70,
+   "destination": "US LON",
+   "updated": "2026-11-06 10:35:36.373765819 +0000 UTC"
   },
   {
    "mmsi": 366986380,
    "name": "DREDGE OREGON",
-   "lat": 46.07915,
-   "lon": -122.90114,
-   "sog_kn": 0.7,
-   "cog": 235.9,
-   "heading": 320,
+   "lat": 46.07894,
+   "lon": -122.90132,
+   "sog_kn": 0.3,
+   "cog": 21.4,
+   "heading": 286,
    "nav_status": 3,
-   "updated": "2026-11-06 10:30:43.934093699 +0000 UTC"
+   "updated": "2026-11-06 10:35:36.802403895 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07776,
-   "lon": -122.90082,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65012,
+   "lon": -122.74761,
    "sog_kn": 0,
-   "cog": 24.5,
-   "heading": 119,
+   "cog": 183.1,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-06 10:35:38.635078526 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.0941,
+   "lon": -122.94274,
+   "sog_kn": 0.1,
+   "cog": 141.3,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-06 10:30:28.235039092 +0000 UTC"
+   "updated": "2026-11-06 10:35:40.098957907 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.0896,
+   "lon": -122.92888,
+   "sog_kn": 0,
+   "cog": 217.4,
+   "heading": 198,
+   "nav_status": 0,
+   "updated": "2026-11-06 10:35:42.915150555 +0000 UTC"
   },
   {
    "mmsi": 368171270,
    "name": "DR. RAY",
-   "lat": 45.58131,
+   "lat": 45.5813,
    "lon": -122.76065,
-   "sog_kn": 0,
-   "cog": 100.2,
-   "heading": 123,
-   "nav_status": 0,
-   "updated": "2026-11-06 10:30:30.337852584 +0000 UTC"
+   "type_code": 57,
+   "destination": "GASCO",
+   "updated": "2026-11-06 10:35:44.636139137 +0000 UTC"
   },
   {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10888,
-   "lon": -122.96125,
+   "mmsi": 352005064,
+   "name": "ANSAC RISING SUN",
+   "lat": 45.6411,
+   "lon": -122.73193,
    "sog_kn": 0,
-   "cog": 354.7,
+   "cog": 48,
    "heading": 129,
-   "nav_status": 5,
-   "updated": "2026-11-06 10:30:31.99125206 +0000 UTC"
+   "nav_status": 1,
+   "updated": "2026-11-06 10:35:45.429002396 +0000 UTC"
   },
   {
-   "mmsi": 368450870,
-   "name": "AMERICAN ENCORE",
-   "lat": 46.17984,
-   "lon": -123.42593,
-   "type_code": 60,
-   "destination": "ASTORIA",
-   "updated": "2026-11-06 10:30:34.76319837 +0000 UTC"
-  },
-  {
-   "mmsi": 367347000,
-   "name": "WENDY SEAA",
-   "lat": 46.19953,
-   "lon": -123.38498,
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.5873,
+   "lon": -122.77004,
    "sog_kn": 0,
-   "cog": 325,
-   "heading": 144,
+   "cog": 328.1,
+   "heading": 139,
    "nav_status": 5,
-   "updated": "2026-11-06 10:30:43.591648174 +0000 UTC"
+   "updated": "2026-11-06 10:35:45.930474423 +0000 UTC"
   },
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.6076,
-   "lon": -122.67761,
+   "mmsi": 311000824,
+   "name": "AFRICAN AVOCET",
+   "lat": 46.09916,
+   "lon": -122.9394,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "cog": 295.2,
+   "heading": 110,
+   "nav_status": 5,
+   "updated": "2026-11-06 10:35:47.121684861 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.99142,
+   "lon": -122.84134,
+   "sog_kn": 1.7,
+   "cog": 131.1,
+   "heading": 158,
    "nav_status": 0,
-   "updated": "2026-11-06 10:30:46.075797983 +0000 UTC"
+   "updated": "2026-11-06 10:35:47.777887149 +0000 UTC"
   },
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 46.0908,
-   "lon": -122.93209,
-   "sog_kn": 0,
-   "cog": 103.9,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-06 10:30:47.284498757 +0000 UTC"
+   "mmsi": 538006443,
+   "name": "RB JAKE",
+   "lat": 46.0272,
+   "lon": -122.86958,
+   "type_code": 70,
+   "destination": "US KAL",
+   "updated": "2026-11-06 10:35:49.00003985 +0000 UTC"
   }
  ]
 }
