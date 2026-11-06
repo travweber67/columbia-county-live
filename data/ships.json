@@ -1,60 +1,93 @@
 {
- "fetched_at": "2026-11-06T01:49:41Z",
+ "fetched_at": "2026-11-06T01:54:42Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 636020486,
-   "name": "BBG GUILIN",
-   "lat": 46.10572,
-   "lon": -122.9573,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
    "sog_kn": 0,
-   "cog": 158.5,
-   "heading": 135,
-   "nav_status": 5,
-   "updated": "2026-11-06 01:49:49.701985672 +0000 UTC"
+   "cog": 102.1,
+   "heading": 127,
+   "nav_status": 15,
+   "updated": "2026-11-06 01:54:48.815413371 +0000 UTC"
   },
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10784,
-   "lon": -122.95904,
-   "type_code": 50,
-   "destination": "CR HARBOR OPS",
-   "updated": "2026-11-06 01:49:54.327203176 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 45.64329,
-   "lon": -122.75282,
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64342,
+   "lon": -122.75283,
    "sog_kn": 0,
-   "cog": 217.9,
+   "cog": 214.8,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-06 01:49:54.340459829 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-06 01:54:55.755437599 +0000 UTC"
   },
   {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.61202,
-   "lon": -122.64535,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07894,
+   "lon": -122.90088,
+   "sog_kn": 0.3,
+   "cog": 41.5,
+   "heading": 321,
+   "nav_status": 3,
+   "updated": "2026-11-06 01:54:58.284515036 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00894,
+   "lon": -122.84836,
+   "sog_kn": 0.4,
+   "cog": 231.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 01:55:00.417785655 +0000 UTC"
+  },
+  {
+   "mmsi": 368450870,
+   "name": "AMERICAN ENCORE",
+   "lat": 46.00361,
+   "lon": -122.84764,
    "sog_kn": 0,
-   "cog": 193.9,
-   "heading": 297,
+   "cog": 27.5,
+   "heading": 160,
    "nav_status": 5,
-   "updated": "2026-11-06 01:49:55.010789785 +0000 UTC"
+   "updated": "2026-11-06 01:55:04.833255311 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60746,
+   "lon": -122.67756,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 01:55:05.330681316 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64541,
+   "lon": -122.73505,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-06 01:55:07.761001733 +0000 UTC"
   },
   {
    "mmsi": 367513230,
    "name": "WILLAMETTE",
-   "lat": 46.03631,
-   "lon": -122.87861,
-   "sog_kn": 13.5,
-   "cog": 346.3,
-   "heading": 346,
+   "lat": 46.05579,
+   "lon": -122.88301,
+   "sog_kn": 13.1,
+   "cog": 346,
+   "heading": 343,
    "nav_status": 0,
-   "updated": "2026-11-06 01:49:57.673085313 +0000 UTC"
+   "updated": "2026-11-06 01:55:16.120150651 +0000 UTC"
   }
  ]
 }
