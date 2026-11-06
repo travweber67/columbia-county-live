@@ -1,60 +1,92 @@
 {
- "fetched_at": "2026-11-06T07:55:06Z",
+ "fetched_at": "2026-11-06T07:56:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.64184,
-   "lon": -122.73979,
-   "sog_kn": 0,
-   "cog": 298.8,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.95099,
+   "lon": -122.80841,
+   "sog_kn": 1.1,
+   "cog": 168.9,
+   "heading": 166,
+   "nav_status": 3,
+   "updated": "2026-11-06 07:57:50.759945497 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15344,
+   "lon": -123.37711,
+   "type_code": 99,
+   "updated": "2026-11-06 07:57:53.577484138 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.63272,
+   "lon": -122.73567,
+   "sog_kn": 0.2,
+   "cog": 93.8,
    "heading": 302,
-   "nav_status": 12,
-   "updated": "2026-11-06 07:55:19.551790828 +0000 UTC"
-  },
-  {
-   "mmsi": 370363000,
-   "name": "SEVEN SEAS HIGHWAY",
-   "lat": 45.63307,
-   "lon": -122.73798,
-   "sog_kn": 0.4,
-   "cog": 129.6,
-   "heading": 137,
-   "nav_status": 5,
-   "updated": "2026-11-06 07:55:23.733925098 +0000 UTC"
-  },
-  {
-   "mmsi": 367645170,
-   "name": "CROWN POINT",
-   "lat": 45.64233,
-   "lon": -122.77508,
-   "sog_kn": 6.3,
-   "cog": 47.4,
-   "heading": 47,
    "nav_status": 0,
-   "updated": "2026-11-06 07:55:25.708651163 +0000 UTC"
+   "updated": "2026-11-06 07:57:54.689515059 +0000 UTC"
   },
   {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 46.04873,
-   "lon": -122.88234,
-   "sog_kn": 9.1,
-   "cog": 359.8,
-   "heading": 357,
-   "nav_status": 12,
-   "updated": "2026-11-06 07:55:32.292136636 +0000 UTC"
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.6426,
+   "lon": -122.77137,
+   "sog_kn": 0,
+   "cog": 170.1,
+   "heading": 227,
+   "nav_status": 0,
+   "updated": "2026-11-06 07:57:54.706054271 +0000 UTC"
   },
   {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 46.09057,
-   "lon": -122.93226,
-   "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-06 07:55:33.375903426 +0000 UTC"
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.1323,
+   "lon": -123.00262,
+   "sog_kn": 0.8,
+   "cog": 73.3,
+   "heading": 101,
+   "nav_status": 3,
+   "updated": "2026-11-06 07:57:59.208473291 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07833,
+   "lon": -122.90246,
+   "sog_kn": 1.2,
+   "cog": 341.3,
+   "heading": 338,
+   "nav_status": 0,
+   "updated": "2026-11-06 07:58:11.309515076 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19997,
+   "lon": -123.3855,
+   "sog_kn": 0.1,
+   "cog": 6.3,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-06 07:58:11.774088331 +0000 UTC"
+  },
+  {
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09422,
+   "lon": -122.93744,
+   "sog_kn": 0.1,
+   "cog": 0.5,
+   "heading": 119,
+   "nav_status": 1,
+   "updated": "2026-11-06 07:58:17.359588119 +0000 UTC"
   }
  ]
 }
