@@ -1,62 +1,78 @@
 {
- "fetched_at": "2026-11-06T13:26:47Z",
+ "fetched_at": "2026-11-06T13:30:32Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07784,
-   "lon": -122.90194,
-   "sog_kn": 5.2,
-   "cog": 204.2,
-   "heading": 184,
+   "mmsi": 538011495,
+   "name": "MTR JUPITER",
+   "lat": 46.12451,
+   "lon": -122.989,
+   "type_code": 70,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-06 13:30:41.422432246 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.02845,
+   "lon": -122.87603,
+   "sog_kn": 0.1,
+   "cog": 240.5,
+   "heading": 143,
    "nav_status": 0,
-   "updated": "2026-11-06 13:27:27.113671785 +0000 UTC"
+   "updated": "2026-11-06 13:30:41.701744968 +0000 UTC"
   },
   {
-   "mmsi": 352006943,
-   "name": "GLOVIS LEGEND",
-   "lat": 45.6461,
-   "lon": -122.75551,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19997,
+   "lon": -123.38543,
    "sog_kn": 0,
-   "cog": 140.3,
-   "heading": 136,
-   "nav_status": 5,
-   "updated": "2026-11-06 13:27:31.726233589 +0000 UTC"
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-06 13:30:43.558397823 +0000 UTC"
   },
   {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10888,
-   "lon": -122.96124,
-   "sog_kn": 0,
-   "cog": 259.6,
-   "heading": 129,
-   "nav_status": 5,
-   "updated": "2026-11-06 13:27:32.068025767 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.10348,
-   "lon": -122.95388,
-   "sog_kn": 1.4,
-   "cog": 113.9,
-   "heading": 118,
-   "nav_status": 3,
-   "updated": "2026-11-06 13:27:39.147623975 +0000 UTC"
+   "mmsi": 370363000,
+   "name": "SEVEN SEAS HIGHWAY",
+   "lat": 45.63302,
+   "lon": -122.73789,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-06 13:30:50.549995999 +0000 UTC"
   },
   {
    "mmsi": 367513220,
    "name": "VANCOUVER",
-   "lat": 46.05856,
-   "lon": -122.88563,
-   "sog_kn": 7.9,
-   "cog": 164.4,
+   "lat": 46.05219,
+   "lon": -122.88301,
+   "sog_kn": 8,
+   "cog": 167.7,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-06 13:27:51.092447275 +0000 UTC"
+   "updated": "2026-11-06 13:30:51.461814487 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64341,
+   "lon": -122.75286,
+   "sog_kn": 0,
+   "cog": 214.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 13:30:54.900843922 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20002,
+   "lon": -123.38553,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-06 13:31:01.101932329 +0000 UTC"
   }
  ]
 }
