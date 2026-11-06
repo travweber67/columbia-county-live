@@ -1,51 +1,80 @@
 {
- "fetched_at": "2026-11-06T18:40:55Z",
+ "fetched_at": "2026-11-06T18:45:55Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19997,
-   "lon": -123.38549,
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.64716,
+   "lon": -122.73962,
    "sog_kn": 0,
-   "cog": 12.4,
+   "cog": 338.6,
+   "heading": 287,
+   "nav_status": 12,
+   "updated": "2026-11-06 18:46:09.221753542 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64764,
+   "lon": -122.77059,
+   "sog_kn": 6.9,
+   "cog": 215.2,
+   "heading": 216,
+   "nav_status": 12,
+   "updated": "2026-11-06 18:46:10.540499289 +0000 UTC"
+  },
+  {
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.11864,
+   "lon": -122.97928,
+   "type_code": 70,
+   "destination": "USA LONGVIEW",
+   "updated": "2026-11-06 18:46:17.171103159 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07933,
+   "lon": -122.90142,
+   "sog_kn": 0.1,
+   "cog": 356.8,
+   "heading": 320,
+   "nav_status": 3,
+   "updated": "2026-11-06 18:46:19.099391587 +0000 UTC"
+  },
+  {
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.643,
+   "lon": -122.77139,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-06 18:46:25.971923976 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64726,
+   "lon": -122.73988,
+   "sog_kn": 0,
+   "cog": 313.7,
    "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-06 18:41:10.360385846 +0000 UTC"
+   "nav_status": 5,
+   "updated": "2026-11-06 18:46:28.648051544 +0000 UTC"
   },
   {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.98122,
-   "lon": -122.83415,
-   "sog_kn": 0.5,
-   "cog": 169.8,
-   "heading": 166,
-   "nav_status": 0,
-   "updated": "2026-11-06 18:41:12.929240884 +0000 UTC"
-  },
-  {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60753,
-   "lon": -122.67762,
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.19964,
+   "lon": -123.38523,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "cog": 304.2,
+   "heading": 320,
    "nav_status": 0,
-   "updated": "2026-11-06 18:41:15.914226374 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.1772,
-   "lon": -123.35743,
-   "sog_kn": 0,
-   "cog": 6.8,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-06 18:41:26.766457235 +0000 UTC"
+   "updated": "2026-11-06 18:46:29.196601402 +0000 UTC"
   }
  ]
 }
