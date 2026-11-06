@@ -1,80 +1,96 @@
 {
- "fetched_at": "2026-11-06T04:49:52Z",
+ "fetched_at": "2026-11-06T04:54:52Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538012377,
-   "name": "UNION SAPPHIRE",
-   "lat": 46.11012,
-   "lon": -122.96345,
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.09068,
+   "lon": -122.93213,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-06 04:55:01.368173378 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.044,
+   "lon": -122.87691,
    "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-06 04:49:58.393637786 +0000 UTC"
+   "destination": "US KAM",
+   "updated": "2026-11-06 04:55:01.754454183 +0000 UTC"
   },
   {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.81603,
-   "lon": -122.79533,
-   "sog_kn": 9.1,
-   "cog": 352.2,
-   "heading": 357,
-   "nav_status": 12,
-   "updated": "2026-11-06 04:49:59.308596086 +0000 UTC"
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58728,
+   "lon": -122.77009,
+   "type_code": 31,
+   "destination": "US^02SY>0UJ9",
+   "updated": "2026-11-06 04:55:04.179623139 +0000 UTC"
   },
   {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 46.0905,
-   "lon": -122.93233,
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 45.59514,
+   "lon": -122.77865,
+   "type_code": 57,
+   "destination": "US PDX",
+   "updated": "2026-11-06 04:55:05.299956146 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.6429,
+   "lon": -122.77104,
    "sog_kn": 0,
-   "cog": 237.3,
+   "cog": 235.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 04:55:05.59263078 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.85796,
+   "lon": -122.78611,
+   "sog_kn": 6.5,
+   "cog": 178.1,
+   "heading": 176,
+   "nav_status": 12,
+   "updated": "2026-11-06 04:55:05.676352953 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09083,
+   "lon": -122.93205,
+   "sog_kn": 0,
+   "cog": 244.6,
    "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-06 04:50:12.870623265 +0000 UTC"
+   "updated": "2026-11-06 04:55:06.48048396 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10359,
-   "lon": -122.91014,
-   "type_code": 52,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-06 04:50:15.968791271 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00899,
-   "lon": -122.8484,
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.64301,
+   "lon": -122.77141,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 04:50:19.57849167 +0000 UTC"
+   "cog": 250.4,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-06 04:55:12.785272851 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.0785,
-   "lon": -122.90078,
-   "sog_kn": 0.2,
-   "cog": 308.5,
-   "heading": 102,
-   "nav_status": 0,
-   "updated": "2026-11-06 04:50:21.61537876 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07877,
-   "lon": -122.9007,
-   "sog_kn": 0.1,
-   "cog": 39.2,
-   "heading": 105,
-   "nav_status": 0,
-   "updated": "2026-11-06 04:50:23.562624606 +0000 UTC"
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64539,
+   "lon": -122.73504,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-06 04:55:19.078412465 +0000 UTC"
   }
  ]
 }
