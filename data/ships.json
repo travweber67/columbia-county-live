@@ -1,58 +1,80 @@
 {
- "fetched_at": "2026-11-06T17:35:50Z",
+ "fetched_at": "2026-11-06T17:40:50Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.6387,
-   "lon": -122.724,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-06 17:35:54.380065078 +0000 UTC"
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79318,
+   "lon": -122.84321,
+   "type_code": 52,
+   "destination": "US^0UX0>?? ???",
+   "updated": "2026-11-06 17:40:54.966081579 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65014,
-   "lon": -122.74754,
+   "mmsi": 368327640,
+   "name": "CAPT. STEVE",
+   "lat": 45.66253,
+   "lon": -122.76173,
+   "sog_kn": 2.5,
+   "cog": 140.6,
+   "heading": 149,
+   "nav_status": 12,
+   "updated": "2026-11-06 17:40:55.622931093 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07913,
+   "lon": -122.90104,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-06 17:41:00.612496838 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.69723,
+   "lon": -122.77307,
+   "sog_kn": 5.1,
+   "cog": 188.9,
+   "heading": 187,
+   "nav_status": 12,
+   "updated": "2026-11-06 17:41:01.862673807 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.3854,
    "sog_kn": 0,
-   "cog": 286.6,
+   "cog": 0,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-06 17:35:59.099496098 +0000 UTC"
+   "nav_status": 8,
+   "updated": "2026-11-06 17:41:05.775220099 +0000 UTC"
+  },
+  {
+   "mmsi": 538006443,
+   "name": "RB JAKE",
+   "lat": 46.20661,
+   "lon": -123.42649,
+   "sog_kn": 10.5,
+   "cog": 8.1,
+   "heading": 10,
+   "nav_status": 0,
+   "updated": "2026-11-06 17:41:08.127842158 +0000 UTC"
   },
   {
    "mmsi": 367384780,
    "name": "CAROLYN DOROTHY",
    "lat": 46.09002,
-   "lon": -122.92948,
-   "type_code": 52,
-   "destination": "CSR OPS",
-   "updated": "2026-11-06 17:36:00.812254509 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 46.09081,
-   "lon": -122.93211,
+   "lon": -122.92947,
    "sog_kn": 0,
-   "cog": 226.1,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-06 17:36:19.571190276 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.86266,
-   "lon": -122.78577,
-   "sog_kn": 8.7,
-   "cog": 169.1,
-   "heading": 170,
+   "cog": 236.1,
+   "heading": 116,
    "nav_status": 0,
-   "updated": "2026-11-06 17:36:23.283339006 +0000 UTC"
+   "updated": "2026-11-06 17:41:18.364013473 +0000 UTC"
   }
  ]
 }
