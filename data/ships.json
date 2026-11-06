@@ -1,58 +1,91 @@
 {
- "fetched_at": "2026-11-06T20:11:01Z",
+ "fetched_at": "2026-11-06T20:16:02Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07923,
-   "lon": -122.9016,
-   "sog_kn": 0.3,
-   "cog": 204.3,
-   "heading": 297,
-   "nav_status": 3,
-   "updated": "2026-11-06 20:11:08.163784867 +0000 UTC"
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40232,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 132,
+   "nav_status": 0,
+   "updated": "2026-11-06 20:16:13.555110622 +0000 UTC"
   },
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64538,
-   "lon": -122.73504,
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09433,
+   "lon": -122.93736,
    "sog_kn": 0,
-   "cog": 30.4,
-   "heading": 112,
+   "cog": 13.4,
+   "heading": 117,
+   "nav_status": 1,
+   "updated": "2026-11-06 20:16:17.894758532 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61202,
+   "lon": -122.64533,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-06 20:16:20.338054355 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64789,
+   "lon": -122.74098,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-06 20:16:26.866350621 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.8601,
+   "lon": -122.79023,
+   "sog_kn": 4.9,
+   "cog": 75.8,
+   "heading": 91,
+   "nav_status": 0,
+   "updated": "2026-11-06 20:16:28.164686727 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.6473,
+   "lon": -122.73987,
+   "sog_kn": 0,
+   "cog": 267,
+   "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-06 20:11:14.203831364 +0000 UTC"
+   "updated": "2026-11-06 20:16:30.874932341 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10353,
-   "lon": -122.91019,
-   "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 76,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.95754,
+   "lon": -122.81201,
+   "sog_kn": 0.7,
+   "cog": 188.9,
+   "heading": 167,
    "nav_status": 3,
-   "updated": "2026-11-06 20:11:24.352013421 +0000 UTC"
+   "updated": "2026-11-06 20:16:35.305390233 +0000 UTC"
   },
   {
-   "mmsi": 353081000,
-   "name": "ELEGANT SW",
-   "lat": 46.1186,
-   "lon": -122.97819,
-   "type_code": 70,
-   "destination": "USA LONGVIEW",
-   "updated": "2026-11-06 20:11:28.637798026 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19997,
-   "lon": -123.38551,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-06 20:11:31.87663909 +0000 UTC"
+   "mmsi": 367747140,
+   "name": "TRIUMPH VIII",
+   "lat": 45.61604,
+   "lon": -122.70346,
+   "sog_kn": 4.7,
+   "cog": 133,
+   "heading": 133,
+   "nav_status": 0,
+   "updated": "2026-11-06 20:16:32.389916336 +0000 UTC"
   }
  ]
 }
