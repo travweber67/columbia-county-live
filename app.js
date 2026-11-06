@@ -7380,40 +7380,66 @@ langSet = function (lang) {
       clones[j].forEach(function (c) { c.style.width = slotW[j] + 'px'; });
     });
   }
-  function measureSlot(src) {
-    var prev = src.style.width;
-    src.style.width = '';
-    var w = src.offsetWidth || 0;
-    var v = src.querySelector('.glance-val');
-    if (v && w) {
-      var ruler = document.createElement('span');
-      var cs = window.getComputedStyle(v);
-      ruler.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap;' +
-        'font-family:' + cs.fontFamily + ';font-size:' + cs.fontSize +
-        ';font-weight:' + cs.fontWeight + ';letter-spacing:' + cs.letterSpacing;
-      ruler.textContent = '0000000000';
-      document.body.appendChild(ruler);
-      var capPx = ruler.offsetWidth / 10 * 36;
-      ruler.textContent = v.textContent;
-      var fullPx = ruler.offsetWidth;
-      document.body.removeChild(ruler);
-      w += Math.min(fullPx, capPx) - v.offsetWidth;
-    }
-    src.style.width = prev;
+  /* v35: slot widths are DERIVED FROM THE CONTENT, never read off
+     the item box. Chromium's intrinsic-width pass over this flex
+     strip is unreliable — a pristine item can measure at barely
+     half its true width (label/sub row contributing zero) until a
+     width has been applied and cleared once, so any box measurement
+     can poison the lock with a too-narrow slot and crushed text.
+     Text measured with a ruler span in the element's own computed
+     font is stable in every layout state. */
+  function rulerW(el, capCh) {
+    if (!el) return 0;
+    var cs = window.getComputedStyle(el);
+    var ruler = document.createElement('span');
+    ruler.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap;' +
+      'font-family:' + cs.fontFamily + ';font-size:' + cs.fontSize +
+      ';font-weight:' + cs.fontWeight + ';letter-spacing:' + cs.letterSpacing +
+      ';text-transform:' + cs.textTransform;
+    ruler.textContent = '0000000000';
+    document.body.appendChild(ruler);
+    var chPx = ruler.offsetWidth / 10;
+    ruler.textContent = el.textContent;
+    var w = ruler.offsetWidth;
+    document.body.removeChild(ruler);
+    if (capCh) w = Math.min(w, chPx * capCh);
     return w;
   }
+  function measureSlot(src) {
+    var cs = window.getComputedStyle(src);
+    var pad = (parseFloat(cs.paddingLeft) || 0) + (parseFloat(cs.paddingRight) || 0) +
+              (parseFloat(cs.borderRightWidth) || 0);
+    var ico = src.querySelector('.gl-ico');
+    var icoW = ico ? (ico.offsetWidth ||
+      parseFloat(window.getComputedStyle(ico).width) || 0) : 0;
+    var gap = parseFloat(cs.columnGap) || 13;
+    var top = src.querySelector('.strip-top');
+    var topGap = top ? (parseFloat(window.getComputedStyle(top).columnGap) || 7) * 2 : 0;
+    var topW = rulerW(src.querySelector('.glance-label')) +
+               rulerW(src.querySelector('.strip-sep')) +
+               rulerW(src.querySelector('.glance-sub')) + topGap;
+    var valW = rulerW(src.querySelector('.glance-val'), 36);
+    return Math.ceil(pad + icoW + gap + Math.max(topW, valW)) + 2;
+  }
   function lockWidths() {
-    if (locked) return;
     if (document.fonts && document.fonts.status !== 'loaded') return;
     var ready = items.every(function (src) {
       var v = src.querySelector('.glance-val');
       return v && v.textContent.trim() && !/checking/i.test(v.textContent);
     });
     if (!ready) return;
+    /* first pass locks; every later pass is a grow-only validation —
+       slots can only ever widen toward the true content width,
+       never shrink, and never while a reader is hovering/focused */
+    var paused = locked && (section.matches(':hover') ||
+      section.contains(document.activeElement));
     var grew = false;
     items.forEach(function (src, j) {
       var w = measureSlot(src);
-      if (w > slotW[j]) { slotW[j] = w; grew = true; }
+      if (w > slotW[j]) {
+        if (paused) return;
+        slotW[j] = w; grew = true;
+      }
     });
     if (grew) applyWidths();
     locked = true;
@@ -7438,7 +7464,7 @@ langSet = function (lang) {
     var need = measureSlot(items[j]);
     if (need > slotW[j]) { slotW[j] = need; applyWidths(); }
   }
-  lockLoop(30000);
+  lockLoop(90000);
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(lockWidths);
   window.addEventListener('ccl-lang-changed', relock);
   var rzT = null;
