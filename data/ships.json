@@ -1,111 +1,92 @@
 {
- "fetched_at": "2026-11-06T15:20:40Z",
+ "fetched_at": "2026-11-06T15:25:40Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 46.05132,
+   "lon": -122.88115,
+   "type_code": 52,
+   "updated": "2026-11-06 15:25:46.596704077 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60747,
+   "lon": -122.67758,
+   "type_code": 50,
+   "updated": "2026-11-06 15:25:52.571144852 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.044,
+   "lon": -122.8769,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-06 15:25:58.661646656 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 46.01178,
+   "lon": -122.85811,
+   "sog_kn": 7.7,
+   "cog": 149,
+   "heading": 147,
+   "nav_status": 0,
+   "updated": "2026-11-06 15:26:00.016157232 +0000 UTC"
+  },
   {
    "mmsi": 368280990,
    "name": "CINDY B",
-   "lat": 45.62511,
-   "lon": -122.68823,
-   "sog_kn": 4.6,
-   "cog": 155.3,
-   "heading": 146,
-   "nav_status": 0,
-   "updated": "2026-11-06 15:20:46.228341347 +0000 UTC"
-  },
-  {
-   "mmsi": 368442720,
-   "name": "RUSTLER",
-   "lat": 45.61171,
-   "lon": -122.78637,
+   "lat": 45.62031,
+   "lon": -122.68258,
    "type_code": 52,
-   "destination": "AXIOS MARINE OPS",
-   "updated": "2026-11-06 15:20:54.760353577 +0000 UTC",
-   "sog_kn": 5.4,
-   "cog": 156.6,
-   "heading": 511,
-   "nav_status": 1
+   "destination": "US^0UYR>0UYR",
+   "updated": "2026-11-06 15:26:00.626305792 +0000 UTC"
   },
   {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64356,
-   "lon": -122.75289,
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.79869,
+   "lon": -122.78626,
    "type_code": 52,
-   "destination": "US^0UU4>02MR",
-   "updated": "2026-11-06 15:20:51.940168355 +0000 UTC"
+   "destination": "COL RIVER",
+   "updated": "2026-11-06 15:26:02.153166487 +0000 UTC"
   },
   {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10891,
-   "lon": -122.96128,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-06 15:20:53.136860824 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19998,
-   "lon": -123.38543,
+   "mmsi": 367681630,
+   "name": "VICKI B",
+   "lat": 45.99096,
+   "lon": -122.84016,
    "sog_kn": 0,
-   "cog": 356.8,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-06 15:20:55.394045108 +0000 UTC"
+   "cog": 318.7,
+   "heading": 156,
+   "nav_status": 0,
+   "updated": "2026-11-06 15:26:03.462227432 +0000 UTC"
   },
   {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00889,
-   "lon": -122.84886,
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63866,
+   "lon": -122.72404,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 15:20:56.808934171 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.14197,
-   "lon": -123.3833,
-   "sog_kn": 7.7,
-   "cog": 341.5,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 15:20:58.545181279 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.65292,
-   "lon": -122.75223,
-   "type_code": 52,
-   "destination": "VANCOUER,WA",
-   "updated": "2026-11-06 15:20:59.969751394 +0000 UTC"
+   "cog": 168.9,
+   "heading": 114,
+   "nav_status": 1,
+   "updated": "2026-11-06 15:26:03.771432557 +0000 UTC"
   },
   {
    "mmsi": 354425000,
    "name": "PAN QUEEN",
-   "lat": 46.09412,
+   "lat": 46.09408,
    "lon": -122.93747,
    "type_code": 70,
    "destination": "US KAM",
-   "updated": "2026-11-06 15:21:07.757475186 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 233.6,
-   "heading": 127,
-   "nav_status": 15,
-   "updated": "2026-11-06 15:21:09.093392401 +0000 UTC"
+   "updated": "2026-11-06 15:26:08.785438642 +0000 UTC"
   }
  ]
 }
