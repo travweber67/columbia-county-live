@@ -2407,3 +2407,47 @@ html[data-theme="dark"] .featured-local.photo-behind .featured-card{background:r
 .drive-sub{font-size:1rem;color:var(--text);margin-top:2px}
 .drive-checked{font-size:.78rem;color:var(--muted);margin-top:4px}
 .drive-fail{font-size:.95rem;line-height:1.5;margin:0}
+
+/* =====================================================================
+   ===== V10 REVISION (Travis, 2026-11-05 — two defects on the live
+   build, fixed the same day) =====
+   1. SAVER BOTTOM OVERLAP (phone display mode): the quiet sponsor
+      line and the photo-credit signature were two absolutely
+      positioned boxes sharing the saver's bottom strip; on a phone
+      the quiet line wraps to two lines ACROSS the cursive credit
+      (logged as a "known nit" in v6, never fixed — fixed now). They
+      live in one .saver-bottom container; at ≤760px — and in short
+      landscape viewports — it becomes a stacked column in normal
+      flow: quiet block, a real gap, credit block beneath (name line,
+      then location line), so overlap is structurally impossible.
+      Desktop/TV keeps the bottom-left / bottom-right arrangement,
+      pixel-identical: the container is height:0 at bottom:0 there,
+      so the children's existing 22px offsets land exactly where
+      they always did.
+   2. GLANCE MARQUEE SMOOTHNESS: translate3d keyframes hold the
+      track on the compositor; the app.js half (targeted clone sync,
+      slot width locks) lives in initStrip.
+   ===================================================================== */
+
+/* --- 1 · saver bottom zone ---------------------------------------- */
+.saver-bottom{position:absolute;left:0;right:0;bottom:0;height:0;z-index:3}
+@media (max-width:760px), (max-height:480px) and (orientation:landscape){
+  .saver-bottom{
+    height:auto;display:flex;flex-direction:column;gap:8px;
+    padding:0 16px 16px;
+  }
+  .saver-bottom .saver-quiet{
+    position:static;left:auto;bottom:auto;max-width:none;
+  }
+  .saver-bottom .saver-credit{
+    position:static;right:auto;bottom:auto;text-align:right;
+  }
+  .saver-bottom .saver-credit-name{display:block}
+  .saver-bottom .saver-credit-loc{display:block;margin-left:0;margin-top:2px}
+  /* the tile stream keeps clear of the taller stacked zone */
+  .saver-answers{bottom:136px}
+}
+
+/* --- 2 · marquee: hold the track on the compositor ---------------- */
+@keyframes stripScroll{to{transform:translate3d(-50%,0,0)}}
+.strip-track{backface-visibility:hidden;-webkit-backface-visibility:hidden}

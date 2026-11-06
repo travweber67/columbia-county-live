@@ -1028,8 +1028,13 @@ document.documentElement.setAttribute("data-theme",t);})();
     <div class="saver-date" id="saver-date">—</div>
   </div>
   <div class="saver-answers" id="saver-answers" aria-live="off"></div>
-  <div class="saver-quiet" id="saver-quiet"></div>
-  <div class="saver-credit" id="saver-credit"></div>
+  <!-- v10: quiet line + photo credit share one bottom container —
+       on narrow screens it becomes a stacked column in normal flow
+       so the two can never overlap (the v6 known nit, fixed). -->
+  <div class="saver-bottom">
+    <div class="saver-quiet" id="saver-quiet"></div>
+    <div class="saver-credit" id="saver-credit"></div>
+  </div>
   <div class="saver-exit-hint" id="saver-exit-hint">Tap anywhere to exit</div>
   <button class="saver-exit" id="saver-exit" type="button" aria-label="Exit screensaver">✕</button>
 </div>

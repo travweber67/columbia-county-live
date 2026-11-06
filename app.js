@@ -7345,21 +7345,120 @@ langSet = function (lang) {
       items.forEach(function (src, j) { track.appendChild(makeClone(src, j)); });
     }
   }
+  /* v10 smoothness — the diagnosis, acted on. Two defects in the
+     v3/v4 mechanics made the stream glitch on a real desktop:
+     (a) SYNC REBUILT THE CLONES: v4's sync replaced each clone's
+     ENTIRE innerHTML on every change — re-creating the icon <img>
+     and re-parsing the subtree inside the animating layer, forcing
+     the browser to re-raster the multi-thousand-pixel track in the
+     middle of the scroll. The sync below copies only what can
+     actually change — the value's text + status class, the sub's
+     text — into the clone's EXISTING nodes. A few text writes, no
+     new nodes, no re-parse.
+     (b) SLOT WIDTHS DRIFTED: whenever a value's text changed length
+     (a tide string rolling over, a longer event title), its slot —
+     and with it the whole track — resized mid-loop, shifting the
+     velocity and the seam. So after the first real readings land,
+     each slot's width is measured (with the value sized at its
+     full text width, capped at the CSS 36ch ceiling — no future
+     value can ever need more room than that) and pinned on the
+     canonical item AND every clone: the two halves stay
+     pixel-identical and later text changes truncate inside the
+     slot instead of resizing it. A longer SUB can still ask for
+     room at most once per slot: the grow path widens every copy of
+     that slot by the same amount, halves still identical. Locks
+     re-run on language flips (ES strings run longer) and on
+     viewport resizes, and a grow never fires while the strip is
+     hovered or focused — the animation is paused then, so nothing
+     can jump under a reading user. */
+  var slotW = items.map(function () { return 0; });
+  var locked = false;
+  function applyWidths() {
+    items.forEach(function (src, j) {
+      if (!slotW[j]) return;
+      src.style.width = slotW[j] + 'px';
+      clones[j].forEach(function (c) { c.style.width = slotW[j] + 'px'; });
+    });
+  }
+  function measureSlot(src) {
+    var prev = src.style.width;
+    src.style.width = '';
+    var w = src.offsetWidth || 0;
+    var v = src.querySelector('.glance-val');
+    if (v && w) {
+      var ruler = document.createElement('span');
+      var cs = window.getComputedStyle(v);
+      ruler.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap;' +
+        'font-family:' + cs.fontFamily + ';font-size:' + cs.fontSize +
+        ';font-weight:' + cs.fontWeight + ';letter-spacing:' + cs.letterSpacing;
+      ruler.textContent = '0000000000';
+      document.body.appendChild(ruler);
+      var capPx = ruler.offsetWidth / 10 * 36;
+      ruler.textContent = v.textContent;
+      var fullPx = ruler.offsetWidth;
+      document.body.removeChild(ruler);
+      w += Math.min(fullPx, capPx) - v.offsetWidth;
+    }
+    src.style.width = prev;
+    return w;
+  }
+  function lockWidths() {
+    if (locked) return;
+    if (document.fonts && document.fonts.status !== 'loaded') return;
+    var ready = items.every(function (src) {
+      var v = src.querySelector('.glance-val');
+      return v && v.textContent.trim() && !/checking/i.test(v.textContent);
+    });
+    if (!ready) return;
+    var grew = false;
+    items.forEach(function (src, j) {
+      var w = measureSlot(src);
+      if (w > slotW[j]) { slotW[j] = w; grew = true; }
+    });
+    if (grew) applyWidths();
+    locked = true;
+  }
+  function lockLoop(maxMs) {
+    var iv = setInterval(lockWidths, 800);
+    setTimeout(function () { clearInterval(iv); }, maxMs || 30000);
+    lockWidths();
+  }
+  function relock() {
+    slotW = items.map(function () { return 0; });
+    locked = false;
+    items.forEach(function (src) { src.style.width = ''; });
+    clones.forEach(function (list) {
+      list.forEach(function (c) { c.style.width = ''; });
+    });
+    lockLoop(10000);
+  }
+  function maybeGrow(j) {
+    if (!locked) return;
+    if (section.matches(':hover') || section.contains(document.activeElement)) return;
+    var need = measureSlot(items[j]);
+    if (need > slotW[j]) { slotW[j] = need; applyWidths(); }
+  }
+  lockLoop(30000);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(lockWidths);
+  window.addEventListener('ccl-lang-changed', relock);
+  var rzT = null;
+  window.addEventListener('resize', function () {
+    if (rzT) clearTimeout(rzT);
+    rzT = setTimeout(relock, 700);
+  });
+
   items.forEach(function (src, j) {
     if (!window.MutationObserver || !clones[j].length) return;
-    /* v4: the sync is coalesced through requestAnimationFrame and
-       skipped entirely when the item's visible signature — value
-       text, value status class, sub text — has not actually changed.
-       Data polls rewrite nodes more often than readings change, and
-       every needless innerHTML swap across the clones is main-thread
-       work in the middle of the scroll Travis called glitchy. The
-       signature re-queries the live nodes each time, so it stays
-       correct even if a module rebuilds an item's children. */
+    /* signature-coalesced like v4 (data polls rewrite nodes more
+       often than readings change), but the write itself is now
+       targeted — see (a) above. The signature re-queries the live
+       nodes each time, so it stays correct even if a module
+       rebuilds an item's children. */
     var lastSig = null, queued = false;
     function signature() {
       var v = src.querySelector('.glance-val');
       var s = src.querySelector('.glance-sub');
-      return (v ? v.textContent + '' + v.className : '') + '|' +
+      return (v ? v.textContent + '\u0001' + v.className : '') + '|' +
              (s ? s.textContent : '');
     }
     function sync() {
@@ -7367,10 +7466,20 @@ langSet = function (lang) {
       var sig = signature();
       if (sig === lastSig) return;
       lastSig = sig;
+      var v = src.querySelector('.glance-val');
+      var s = src.querySelector('.glance-sub');
+      var itemCls = src.className + ' strip-clone';
       clones[j].forEach(function (c) {
-        c.innerHTML = src.innerHTML;
-        c.className = src.className + ' strip-clone';
+        var cv = c.querySelector('.glance-val');
+        var cs2 = c.querySelector('.glance-sub');
+        if (cv && v) {
+          if (cv.textContent !== v.textContent) cv.textContent = v.textContent;
+          if (cv.className !== v.className) cv.className = v.className;
+        }
+        if (cs2 && s && cs2.textContent !== s.textContent) cs2.textContent = s.textContent;
+        if (c.className !== itemCls) c.className = itemCls;
       });
+      maybeGrow(j);
     }
     new MutationObserver(function () {
       if (!queued) { queued = true; requestAnimationFrame(sync); }
@@ -7380,7 +7489,6 @@ langSet = function (lang) {
     });
   });
 })();
-
 /* ---------- Redesign prototype 2026-11-05: Featured Event slot ----------
    Research slot D: while unsold, the pinned Featured Event slot carries
    a real free community event from the site's own event snapshots (never
