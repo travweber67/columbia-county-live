@@ -1,104 +1,77 @@
 {
- "fetched_at": "2026-11-06T00:54:38Z",
+ "fetched_at": "2026-11-06T00:56:37Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10359,
-   "lon": -122.91013,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65016,
+   "lon": -122.74765,
    "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 75,
+   "cog": 264.9,
+   "heading": 511,
    "nav_status": 3,
-   "updated": "2026-11-06 00:54:53.368104722 +0000 UTC"
+   "updated": "2026-11-06 00:57:18.86742554 +0000 UTC"
   },
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.6454,
-   "lon": -122.73503,
+   "mmsi": 352006943,
+   "name": "GLOVIS LEGEND",
+   "lat": 45.64611,
+   "lon": -122.75551,
+   "sog_kn": 0,
+   "cog": 140.3,
+   "heading": 136,
+   "nav_status": 5,
+   "updated": "2026-11-06 00:57:18.878050608 +0000 UTC"
+  },
+  {
+   "mmsi": 538011495,
+   "name": "MTR JUPITER",
+   "lat": 46.1245,
+   "lon": -122.98894,
+   "sog_kn": 0,
+   "cog": 211.8,
+   "heading": 137,
+   "nav_status": 1,
+   "updated": "2026-11-06 00:57:34.312463044 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.98577,
+   "lon": -122.83636,
+   "type_code": 52,
+   "destination": "US^029T>0UW8",
+   "updated": "2026-11-06 00:57:37.776579655 +0000 UTC"
+  },
+  {
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09414,
+   "lon": -122.93743,
    "type_code": 70,
-   "destination": "PER ORDERS",
-   "updated": "2026-11-06 00:55:05.257038792 +0000 UTC"
+   "destination": "US KAM",
+   "updated": "2026-11-06 00:57:41.354585223 +0000 UTC"
   },
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60756,
-   "lon": -122.67757,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 00:55:05.680114825 +0000 UTC"
+   "cog": 318.6,
+   "heading": 126,
+   "nav_status": 15,
+   "updated": "2026-11-06 00:57:47.536412893 +0000 UTC"
   },
   {
-   "mmsi": 477133900,
-   "name": "SHAO SHAN 8",
-   "lat": 45.63029,
-   "lon": -122.69543,
-   "sog_kn": 0.1,
-   "cog": 225,
-   "heading": 129,
-   "nav_status": 5,
-   "updated": "2026-11-06 00:55:06.065955062 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.08624,
-   "lon": -122.90892,
-   "sog_kn": 8.9,
-   "cog": 120.3,
-   "heading": 122,
-   "nav_status": 0,
-   "updated": "2026-11-06 00:55:06.602822636 +0000 UTC"
-  },
-  {
-   "mmsi": 368450870,
-   "name": "AMERICAN ENCORE",
-   "lat": 46.00362,
-   "lon": -122.84763,
-   "sog_kn": 0,
-   "cog": 27.5,
-   "heading": 159,
-   "nav_status": 5,
-   "updated": "2026-11-06 00:55:07.964924839 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09084,
-   "lon": -122.93208,
-   "sog_kn": 0,
-   "cog": 238.3,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-06 00:55:08.063442849 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10776,
-   "lon": -122.95906,
-   "sog_kn": 0.1,
-   "cog": 182.6,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 00:55:10.011807407 +0000 UTC"
-  },
-  {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.09071,
-   "lon": -122.93211,
-   "sog_kn": 0,
-   "cog": 113.3,
-   "heading": 109,
-   "nav_status": 5,
-   "updated": "2026-11-06 00:55:18.887088153 +0000 UTC"
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15339,
+   "lon": -123.37718,
+   "type_code": 99,
+   "updated": "2026-11-06 00:57:47.550694549 +0000 UTC"
   }
  ]
 }
