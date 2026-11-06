@@ -1,73 +1,141 @@
 {
- "fetched_at": "2026-11-06T06:04:57Z",
+ "fetched_at": "2026-11-06T06:09:57Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.6387,
-   "lon": -122.72402,
-   "sog_kn": 0,
-   "cog": 164.4,
-   "heading": 115,
-   "nav_status": 1,
-   "updated": "2026-11-06 06:05:03.773971797 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.97091,
+   "lon": -122.83075,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-06 06:10:19.64048447 +0000 UTC",
+   "sog_kn": 2.6,
+   "cog": 123.4,
+   "heading": 122,
+   "nav_status": 3
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10358,
-   "lon": -122.91013,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.99081,
+   "lon": -122.84135,
    "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 76,
-   "nav_status": 3,
-   "updated": "2026-11-06 06:05:05.811023682 +0000 UTC"
+   "cog": 98.9,
+   "heading": 150,
+   "nav_status": 0,
+   "updated": "2026-11-06 06:10:06.529081207 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09086,
+   "lon": -122.93202,
+   "sog_kn": 0,
+   "cog": 306.5,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-06 06:10:06.530068412 +0000 UTC"
   },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.07866,
-   "lon": -122.90093,
+   "lat": 46.07852,
+   "lon": -122.90081,
    "sog_kn": 0.1,
-   "cog": 158.3,
-   "heading": 133,
+   "cog": 281.1,
+   "heading": 98,
    "nav_status": 0,
-   "updated": "2026-11-06 06:05:17.268067837 +0000 UTC"
+   "updated": "2026-11-06 06:10:07.524863587 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58131,
+   "lon": -122.76064,
+   "sog_kn": 0,
+   "cog": 100.2,
+   "heading": 122,
+   "nav_status": 0,
+   "updated": "2026-11-06 06:10:19.98322682 +0000 UTC",
+   "type_code": 57,
+   "destination": "GASCO"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.38555,
+   "sog_kn": 0,
+   "cog": 347.1,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-06 06:10:11.883703657 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.08965,
+   "lon": -122.92888,
+   "sog_kn": 0,
+   "cog": 291.1,
+   "heading": 196,
+   "nav_status": 0,
+   "updated": "2026-11-06 06:10:12.832376403 +0000 UTC"
+  },
+  {
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09411,
+   "lon": -122.93744,
+   "sog_kn": 0,
+   "cog": 248.8,
+   "heading": 120,
+   "nav_status": 1,
+   "updated": "2026-11-06 06:10:17.344799162 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.13752,
+   "lon": -123.37946,
+   "sog_kn": 3.3,
+   "cog": 125.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 06:10:18.363992943 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.12595,
+   "lon": -122.99599,
+   "sog_kn": 0.1,
+   "cog": 107.6,
+   "heading": 139,
+   "nav_status": 3,
+   "updated": "2026-11-06 06:10:19.897581293 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.612,
+   "lon": -122.64535,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-06 06:10:19.899135516 +0000 UTC"
   },
   {
    "mmsi": 367767410,
    "name": "MULE",
    "lat": 46.10792,
-   "lon": -122.95901,
+   "lon": -122.95903,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-06 06:05:19.804353395 +0000 UTC"
-  },
-  {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.90913,
-   "lon": -122.81437,
-   "sog_kn": 0,
-   "cog": 284.9,
-   "heading": 338,
-   "nav_status": 0,
-   "updated": "2026-11-06 06:05:26.921352172 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08017,
-   "lon": -122.89712,
-   "sog_kn": 28,
-   "cog": 304.4,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 06:05:29.251457425 +0000 UTC"
+   "updated": "2026-11-06 06:10:30.309833274 +0000 UTC"
   }
  ]
 }
