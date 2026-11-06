@@ -1,10 +1,10 @@
 {
- "fetched_at": "2026-11-06T11:26:46Z",
+ "fetched_at": "2026-11-06T11:30:23Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
-   "status": "ok",
-   "note": "Live from the ODOT TripCheck API (free key)."
+   "status": "error",
+   "note": "TripCheck Incidents returned HTTP 404."
   },
   {
    "name": "WSDOT WZDx work zones (keyless)",
@@ -15,126 +15,8 @@
    "status": "ok"
   }
  ],
- "incidents": [
-  {
-   "title": "Traffic Impacts: No traffic impacts.",
-   "desc": "We are improving the long-term safety and lifespan of the St. Johns Bridge by repairing the concrete on the pier columns and arches under the bridge. Repairing the concrete will protect the bridge's steel internal frame and reinforcements from corrosion, maintaining the service life of this beloved Portland Historic Landmark. Link to Additional Information: https://www.oregon.gov/odot/projects/Pages/OR8-Construction.aspx",
-   "impact": "No to Minimum Delay",
-   "place": "US30BP, Intersection with Lower Columbia River Highway US30",
-   "route": "US30BY",
-   "milepost": 0.4,
-   "lat": 45.5816,
-   "lon": -122.76696,
-   "start": "2022-10-21T10:25:45.673-07:00",
-   "updated": "2026-10-30T11:21:35-07:00",
-   "source": "ODOT TripCheck"
-  },
-  {
-   "title": "Traffic impacts: Lane closures at each work site this week on US30.",
-   "desc": "Project Description: The Cornelius Pass Hwy & U.S. 30 ITS Improvements Project focuses on making Cornelius Pass Highway (Highway 127), between U.S. 26 and U.S. 30, safer and more efficient for travelers. The project includes upgrades to lighting, signal equipment, and signage, as well as new intelligent transportation system (ITS) devices such as traffic cameras, variable message signs, and an activated intersection warning system, bringing it up to the latest Oregon Department of Transportation (ODOT) standards. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/projec",
-   "impact": "No to Minimum Delay",
-   "place": "ORE127, Intersection with Columbia River Highway US30",
-   "route": "OR127",
-   "milepost": 0.0,
-   "lat": 45.65166,
-   "lon": -122.85156,
-   "start": "2026-03-31T13:51:51.35-07:00",
-   "updated": "2026-10-30T11:31:42-07:00",
-   "source": "ODOT TripCheck"
-  },
-  {
-   "title": "Road construction is occurring. Prepare to slow. Watch for workers.",
-   "desc": "Expect crews working during the day with shoulder closures as needed. OR 6 traffic will use the roundabout. Traffic entering and exiting the north side of NW Aerts Road will use the roundabout. The south side of NW Aerts Road will temporarily close at the roundabout. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=OR6-Aerts",
-   "impact": "Estimated delay under 20 minutes",
-   "place": "ORE6, 2 miles West of Intersection with Sunset Highway ORE47",
-   "route": "OR6",
-   "milepost": 49.9,
-   "lat": 45.60967,
-   "lon": -123.09797,
-   "start": "2026-06-16T07:31:51.18-07:00",
-   "updated": "2026-11-05T11:47:57-08:00",
-   "source": "ODOT TripCheck"
-  },
-  {
-   "title": "Traffic Impacts: NE Lombard Street reduced to one lane in each direction",
-   "desc": "Project Description: Closures are required for PBOT\u2019s NE 42nd Avenue Bridge Replacement, which will make a seismically safe crossing for an emergency route and provide better access for freight, pedestrians, and people biking on the bridge and NE Lombard Street below the span. Link to Additional Information: https://www.portland.gov/transportation/pbot-projects/construction/ne-42nd-avenue-bridge-replacement-over-lombard-street?utm_medium=email&utm_source=govdelivery",
-   "impact": "No to Minimum Delay",
-   "place": "US30BP, 3 miles West of Intersection with East Portland Highway I-205",
-   "route": "US30BY",
-   "milepost": 8.19,
-   "lat": 45.57062,
-   "lon": -122.62107,
-   "start": "2026-07-01T15:51:43.783-07:00",
-   "updated": "2026-10-30T11:19:04-07:00",
-   "source": "ODOT TripCheck"
-  },
-  {
-   "title": "Travelers on Cornelius Pass Road can expect flagging with traffic holds at the Rock Creek Bridge between Old Cornelius Pass Road and Kaiser Road.",
-   "desc": "Project Description: In partnership with Washington County, we are replacing the bridge over Rock Creek on Cornelius Pass Road, north of Germantown Road Link to Additional Information: https://www.washingtoncountyor.gov/lut/projects/cornelius-pass-road-bridge-rock-creek",
-   "impact": "No to Minimum Delay",
-   "place": "ORE127, Multnomah - Washington County Line",
-   "route": "OR127",
-   "milepost": 5.15,
-   "lat": 45.58796,
-   "lon": -122.8679,
-   "start": "2026-07-02T17:44:07.127-07:00",
-   "updated": "2026-10-30T11:32:17-07:00",
-   "source": "ODOT TripCheck"
-  },
-  {
-   "title": "Road construction is occurring causing minimal delay to traffic. Use caution and watch for workers.",
-   "desc": "Barrier replacement operations and striping are scheduled from 7:00 p.m. Sunday, November 1st, through 12:00 p.m. Friday, November 6th. Work will predominantly occur Sunday nights through Friday mornings. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=21547",
-   "impact": "No to Minimum Delay",
-   "place": "US30, Rainier",
-   "route": "US30",
-   "milepost": 48.4,
-   "lat": 46.09499,
-   "lon": -122.96389,
-   "start": "2026-08-14T05:14:54.54-07:00",
-   "updated": "2026-10-30T08:36:57-07:00",
-   "source": "ODOT TripCheck"
-  },
-  {
-   "title": "Traffic Impacts: Anticipate nighttime lane closures on the I-5 and I-205/OR217.",
-   "desc": "Project Description: This project improves system operations in the region by replacing and upgrading equipment that is beyond its service life. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=22867",
-   "impact": "No to Minimum Delay",
-   "place": "I-5, 1 mile South of Portland, Intersection with Victory Blvd",
-   "route": "I5",
-   "milepost": 306.0,
-   "lat": 45.58519,
-   "lon": -122.67975,
-   "start": "2026-09-09T13:52:01.003-07:00",
-   "updated": "2026-10-30T11:37:08-07:00",
-   "source": "ODOT TripCheck"
-  },
-  {
-   "title": "Traffic Impacts: Expect right lane closures on U.S. 30 BY from NE Columbia Pkwy to NE 109 Ave.",
-   "desc": "We are bringing approximately 260 sidewalk curb ramps into compliance with Americans with Disabilities Act (ADA) accessibility standards on U.S. 30 Bypass between N. Ivanhoe Street and NE 162nd Avenue in Portland. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=23458",
-   "impact": "No to Minimum Delay",
-   "place": "US30BP, 1 mile East of Intersection with Lower Columbia River Highway US30",
-   "route": "US30BY",
-   "milepost": 1.32,
-   "lat": 45.5895,
-   "lon": -122.75547,
-   "start": "2026-09-10T18:20:16.317-07:00",
-   "updated": "2026-10-30T11:20:49-07:00",
-   "source": "ODOT TripCheck"
-  },
-  {
-   "title": "Road construction is occurring causing minimal delay to traffic. Use caution and watch for workers.",
-   "desc": "Timber felling is occurring, prepare to slow or stop. Watch for workers, use caution, and prepare to slow down in the work zone.",
-   "impact": "No to Minimum Delay",
-   "place": "ORE202, 5 miles North of Birkenfeld",
-   "route": "OR202",
-   "milepost": 36.0,
-   "lat": 45.98244,
-   "lon": -123.41492,
-   "start": "2026-11-03T15:57:01.297-08:00",
-   "updated": "2026-11-03T15:58:13-08:00",
-   "source": "ODOT TripCheck"
-  }
- ],
- "odot_active_statewide": 126,
+ "incidents": [],
+ "odot_active_statewide": 0,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
   "alerts": [],
