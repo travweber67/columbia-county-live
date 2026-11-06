@@ -1,93 +1,140 @@
 {
- "fetched_at": "2026-11-06T20:46:05Z",
+ "fetched_at": "2026-11-06T20:51:05Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 13 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07905,
-   "lon": -122.90137,
-   "sog_kn": 0.2,
-   "cog": 358.9,
-   "heading": 344,
-   "nav_status": 0,
-   "updated": "2026-11-06 20:46:18.857375181 +0000 UTC"
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10792,
+   "lon": -122.95903,
+   "type_code": 50,
+   "destination": "CR HARBOR OPS",
+   "updated": "2026-11-06 20:51:11.848816568 +0000 UTC"
+  },
+  {
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09431,
+   "lon": -122.93738,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-06 20:51:15.355896771 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.64361,
+   "lon": -122.75245,
+   "sog_kn": 0.1,
+   "cog": 274.5,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-06 20:51:18.986303225 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64538,
+   "lon": -122.73503,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-06 20:51:20.431705225 +0000 UTC"
   },
   {
    "mmsi": 367310520,
    "name": "JAMES T",
-   "lat": 46.1036,
+   "lat": 46.10356,
    "lon": -122.91012,
    "sog_kn": 0,
    "cog": 83.5,
-   "heading": 75,
+   "heading": 74,
    "nav_status": 3,
-   "updated": "2026-11-06 20:46:23.237833696 +0000 UTC"
+   "updated": "2026-11-06 20:51:23.622973257 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.95243,
-   "lon": -122.80923,
-   "sog_kn": 1.5,
-   "cog": 154.3,
-   "heading": 152,
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.17246,
+   "lon": -123.10603,
+   "sog_kn": 0.1,
+   "cog": 122.8,
+   "heading": 14,
+   "nav_status": 1,
+   "updated": "2026-11-06 20:51:28.118389169 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.12388,
+   "lon": -122.99246,
+   "sog_kn": 0,
+   "cog": 109.5,
+   "heading": 134,
    "nav_status": 3,
-   "updated": "2026-11-06 20:46:24.836171258 +0000 UTC"
+   "updated": "2026-11-06 20:51:29.734784259 +0000 UTC"
   },
   {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.5842,
-   "lon": -122.76612,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61289,
+   "type_code": 0,
+   "updated": "2026-11-06 20:51:39.252679713 +0000 UTC",
    "sog_kn": 0,
-   "cog": 268,
-   "heading": 145,
-   "nav_status": 5,
-   "updated": "2026-11-06 20:46:28.080484355 +0000 UTC"
+   "cog": 11.8,
+   "heading": 128,
+   "nav_status": 15
   },
   {
-   "mmsi": 367667060,
-   "name": "GRANITE POINT",
-   "lat": 45.64734,
-   "lon": -122.73989,
-   "sog_kn": 0,
-   "cog": 245.2,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-06 20:46:30.936482853 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 45.64328,
-   "lon": -122.75281,
-   "type_code": 50,
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-06 20:46:31.753043423 +0000 UTC"
-  },
-  {
-   "mmsi": 563116100,
-   "name": "OCEAN GOLD",
-   "lat": 45.98416,
-   "lon": -122.83551,
-   "sog_kn": 0,
-   "cog": 121.4,
-   "heading": 152,
-   "nav_status": 5,
-   "updated": "2026-11-06 20:46:37.933470804 +0000 UTC"
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
+   "type_code": 30,
+   "updated": "2026-11-06 20:51:32.718534904 +0000 UTC"
   },
   {
    "mmsi": 367380280,
    "name": "WESTERN STAR",
-   "lat": 46.1571,
-   "lon": -123.4024,
-   "sog_kn": 1.5,
-   "cog": 69.9,
-   "heading": 130,
+   "lat": 46.16043,
+   "lon": -123.40661,
+   "sog_kn": 0.2,
+   "cog": 300.5,
+   "heading": 317,
    "nav_status": 0,
-   "updated": "2026-11-06 20:46:40.285799924 +0000 UTC"
+   "updated": "2026-11-06 20:51:32.803830378 +0000 UTC"
+  },
+  {
+   "mmsi": 367681630,
+   "name": "VICKI B",
+   "lat": 45.99097,
+   "lon": -122.84019,
+   "sog_kn": 0,
+   "cog": 291.7,
+   "heading": 156,
+   "nav_status": 0,
+   "updated": "2026-11-06 20:51:33.316919085 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.9507,
+   "lon": -122.80888,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-06 20:51:35.748041392 +0000 UTC"
+  },
+  {
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.19966,
+   "lon": -123.38523,
+   "sog_kn": 0,
+   "cog": 333.4,
+   "heading": 321,
+   "nav_status": 5,
+   "updated": "2026-11-06 20:51:41.289790842 +0000 UTC"
   }
  ]
 }
