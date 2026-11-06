@@ -1,77 +1,89 @@
 {
- "fetched_at": "2026-11-06T15:00:38Z",
+ "fetched_at": "2026-11-06T15:05:39Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367681630,
+   "name": "VICKI B",
+   "lat": 45.99105,
+   "lon": -122.84024,
+   "sog_kn": 1.5,
+   "cog": 148.3,
+   "heading": 155,
+   "nav_status": 0,
+   "updated": "2026-11-06 15:05:51.332055596 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.81389,
+   "lon": -122.82684,
+   "type_code": 52,
+   "destination": "US^0UX0>?? ???",
+   "updated": "2026-11-06 15:05:51.38579242 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63865,
+   "lon": -122.72405,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-06 15:05:53.469876621 +0000 UTC"
+  },
   {
    "mmsi": 368327640,
    "name": "CAPT. STEVE",
-   "lat": 45.99011,
-   "lon": -122.84046,
-   "sog_kn": 0.4,
-   "cog": 179,
-   "heading": 348,
+   "lat": 45.99013,
+   "lon": -122.84042,
+   "sog_kn": 0,
+   "cog": 64.3,
+   "heading": 332,
    "nav_status": 12,
-   "updated": "2026-11-06 15:00:45.354959696 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.0793,
-   "lon": -122.90119,
-   "type_code": 33,
-   "updated": "2026-11-06 15:00:50.19096182 +0000 UTC"
-  },
-  {
-   "mmsi": 370363000,
-   "name": "SEVEN SEAS HIGHWAY",
-   "lat": 45.63305,
-   "lon": -122.7379,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-06 15:00:51.213722229 +0000 UTC"
+   "updated": "2026-11-06 15:05:56.026194976 +0000 UTC"
   },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.07894,
+   "lat": 46.07893,
    "lon": -122.90123,
    "sog_kn": 0,
-   "cog": 322,
-   "heading": 153,
+   "cog": 329.7,
+   "heading": 154,
    "nav_status": 0,
-   "updated": "2026-11-06 15:00:57.020393708 +0000 UTC"
+   "updated": "2026-11-06 15:06:00.034803217 +0000 UTC"
   },
   {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.6411,
-   "lon": -122.72247,
-   "type_code": 52,
-   "destination": "US^0UYR>0UYR",
-   "updated": "2026-11-06 15:01:05.555702278 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00872,
-   "lon": -122.84895,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07906,
+   "lon": -122.90087,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "cog": 356.7,
+   "heading": 150,
    "nav_status": 0,
-   "updated": "2026-11-06 15:01:07.857584638 +0000 UTC"
+   "updated": "2026-11-06 15:06:05.159702155 +0000 UTC"
   },
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.09314,
-   "lon": -122.93774,
-   "sog_kn": 16.6,
-   "cog": 108.1,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 15:01:12.472990916 +0000 UTC"
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.04401,
+   "lon": -122.87691,
+   "sog_kn": 0,
+   "cog": 125.2,
+   "heading": 180,
+   "nav_status": 5,
+   "updated": "2026-11-06 15:06:07.962187703 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19997,
+   "lon": -123.38552,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-06 15:06:16.635808094 +0000 UTC"
   }
  ]
 }
