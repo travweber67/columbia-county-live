@@ -1,80 +1,73 @@
 {
- "fetched_at": "2026-11-06T17:40:50Z",
+ "fetched_at": "2026-11-06T17:45:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 368280980,
    "name": "CHRISSY",
-   "lat": 45.79318,
+   "lat": 45.79317,
    "lon": -122.84321,
-   "type_code": 52,
-   "destination": "US^0UX0>?? ???",
-   "updated": "2026-11-06 17:40:54.966081579 +0000 UTC"
+   "sog_kn": 0,
+   "cog": 122.8,
+   "heading": 212,
+   "nav_status": 0,
+   "updated": "2026-11-06 17:45:57.115580262 +0000 UTC"
   },
   {
-   "mmsi": 368327640,
-   "name": "CAPT. STEVE",
-   "lat": 45.66253,
-   "lon": -122.76173,
-   "sog_kn": 2.5,
-   "cog": 140.6,
-   "heading": 149,
-   "nav_status": 12,
-   "updated": "2026-11-06 17:40:55.622931093 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07913,
-   "lon": -122.90104,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-06 17:41:00.612496838 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.69723,
-   "lon": -122.77307,
-   "sog_kn": 5.1,
-   "cog": 188.9,
-   "heading": 187,
-   "nav_status": 12,
-   "updated": "2026-11-06 17:41:01.862673807 +0000 UTC"
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58081,
+   "lon": -122.76005,
+   "sog_kn": 0,
+   "cog": 120.7,
+   "heading": 121,
+   "nav_status": 0,
+   "updated": "2026-11-06 17:46:00.356008222 +0000 UTC"
   },
   {
    "mmsi": 367531220,
    "name": "WATCHMAN",
-   "lat": 46.19999,
-   "lon": -123.3854,
+   "lat": 46.2,
+   "lon": -123.38541,
    "sog_kn": 0,
    "cog": 0,
    "heading": 511,
    "nav_status": 8,
-   "updated": "2026-11-06 17:41:05.775220099 +0000 UTC"
+   "updated": "2026-11-06 17:46:13.724698211 +0000 UTC"
   },
   {
-   "mmsi": 538006443,
-   "name": "RB JAKE",
-   "lat": 46.20661,
-   "lon": -123.42649,
-   "sog_kn": 10.5,
-   "cog": 8.1,
-   "heading": 10,
-   "nav_status": 0,
-   "updated": "2026-11-06 17:41:08.127842158 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.09002,
-   "lon": -122.92947,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.16285,
+   "lon": -123.40975,
    "sog_kn": 0,
-   "cog": 236.1,
-   "heading": 116,
+   "cog": 360,
+   "heading": 136,
    "nav_status": 0,
-   "updated": "2026-11-06 17:41:18.364013473 +0000 UTC"
+   "updated": "2026-11-06 17:46:14.272869921 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00882,
+   "lon": -122.84889,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 17:46:18.312809897 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07917,
+   "lon": -122.90124,
+   "sog_kn": 0.2,
+   "cog": 96.5,
+   "heading": 190,
+   "nav_status": 0,
+   "updated": "2026-11-06 17:46:18.545110891 +0000 UTC"
   }
  ]
 }
