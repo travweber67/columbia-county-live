@@ -2457,24 +2457,42 @@ html[data-theme="dark"] .featured-local.photo-behind .featured-card{background:r
    Cross-promo for Cascade Controls Jobs, Nomad's other project.
    Deliberately NOT sponsor styling: no founding/featured glass, no
    sponsor language — a plain house card in the site's bone/forest/rust
-   palette, honestly labelled "our other project". Three spots: the
-   card in Events & More (with a real screenshot of the Cascade
-   homepage), a drawer entry under "More from Nomad", and a slim
+   palette, honestly labelled "our other project". Three spots: a
+   compact mini-card in Events & More (real screenshot of the Cascade
+   homepage as a small cropped thumbnail), a drawer entry, and a slim
    footer link. Paid sponsor inventory is untouched.
+   V37 (Travis's feedback on v36): the card read like an entire page —
+   it is now a small horizontal advertisement like the little cards
+   sponsors pay for, and the drawer's separate "More from Nomad"
+   section is gone: Cascade is one tiny muted link under About.
    ===================================================================== */
-.cascade-card{padding:0;overflow:hidden}
-.cascade-promo{display:block;text-decoration:none;color:var(--text)}
+.cascade-card{padding:0;overflow:hidden;background:linear-gradient(135deg,#1e4359,#132e47);border:1px solid #0d2237;box-shadow:0 10px 26px rgba(10,25,40,.35)}
+.cascade-promo{display:flex;align-items:stretch;text-decoration:none;color:#eef3f7}
 .cascade-promo:hover .cascade-title{text-decoration:underline}
-.cascade-promo:focus-visible{outline:3px solid var(--warm);outline-offset:3px;border-radius:14px}
-.cascade-shot{display:block;width:100%;height:auto;border-bottom:3px solid var(--warm,#b0511c)}
-.cascade-body{display:block;padding:16px 18px 18px}
-.cascade-eyebrow{display:block;font-size:.74rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--warm,#b0511c);margin-bottom:6px}
-.cascade-title{display:block;font-family:var(--display);font-size:1.45rem;font-weight:700;line-height:1.15;margin-bottom:6px}
-.cascade-copy{display:block;font-size:.98rem;line-height:1.45;color:var(--muted);margin-bottom:10px}
-.cascade-cta{display:inline-block;font-weight:800;color:var(--accent-dark,#1e4228)}
-html[data-theme="dark"] .cascade-cta{color:#bfe3c8}
-.drawer-nomad-head{margin:0;padding:8px 8px 2px;font-size:.78rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--warm,#b0511c)}
-.cascade-drawer-link{font-weight:600}
+.cascade-promo:hover .cascade-cta{background:#f08212}
+.cascade-promo:focus-visible{outline:3px solid #f5a83d;outline-offset:-3px}
+.cascade-pic{flex:0 0 300px;width:300px;height:170px;border-right:3px solid #e8760a}
+.cascade-shot{display:block;width:100%;height:100%;object-fit:cover;object-position:top left}
+.cascade-body{flex:1 1 auto;min-width:0;display:block;padding:14px 18px}
+.cascade-eyebrow{display:block;font-size:.72rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#f5a83d;margin-bottom:5px}
+.cascade-title{display:block;font-family:var(--sans);font-size:1.22rem;font-weight:800;line-height:1.15;margin-bottom:5px;color:#fff}
+.cascade-copy{display:block;font-size:.92rem;line-height:1.4;color:#c7d5e0;margin-bottom:10px}
+.cascade-cta{display:inline-block;font-weight:800;color:#fff;background:#e8760a;padding:7px 14px;border-radius:8px}
+html[data-theme="dark"] .cascade-cta{color:#fff}
+@media (max-width:640px){
+  /* v38: phone gets the dedicated mobile title-card banner as a full-width
+     top strip (nothing cropped, title fully readable) over a slim body row —
+     the v37 112px side sliver sliced the title text and looked broken. */
+  .cascade-promo{flex-direction:column}
+  .cascade-pic{flex:none;width:100%;height:auto;border-right:none;border-bottom:3px solid #e8760a}
+  .cascade-shot{width:100%;height:auto;object-fit:initial}
+  .cascade-body{padding:10px 14px;display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px}
+  .cascade-eyebrow{font-size:.68rem;flex:1 1 100%;margin-bottom:2px}
+  .cascade-title{font-size:1.05rem;margin-bottom:0}
+  .cascade-copy{display:none}
+  .cascade-cta{margin-left:auto}
+}
+.cascade-drawer-link{font-size:.8rem;padding-top:1px;padding-bottom:1px;opacity:.72}
 .cascade-footer{margin:10px 0 4px}
 .cascade-footer-link{display:inline-block;padding:9px 14px;border:1px solid var(--border);border-radius:999px;color:var(--accent-dark,#1e4228);text-decoration:none;font-weight:700;font-size:.92rem;background:rgba(46,93,58,.08)}
 .cascade-footer-link:hover{border-color:var(--warm,#b0511c);text-decoration:underline}
