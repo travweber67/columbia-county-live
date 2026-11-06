@@ -1,106 +1,92 @@
 {
- "fetched_at": "2026-11-06T19:25:59Z",
+ "fetched_at": "2026-11-06T19:27:04Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
-  {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63869,
-   "lon": -122.72404,
-   "sog_kn": 0,
-   "cog": 30.8,
-   "heading": 115,
-   "nav_status": 1,
-   "updated": "2026-11-06 19:26:03.786846962 +0000 UTC"
-  },
   {
    "mmsi": 367747140,
    "name": "TRIUMPH VIII",
-   "lat": 45.64036,
-   "lon": -122.71575,
-   "sog_kn": 1.1,
-   "cog": 345,
-   "heading": 120,
+   "lat": 45.64027,
+   "lon": -122.71566,
+   "sog_kn": 0.5,
+   "cog": 323,
+   "heading": 188,
    "nav_status": 0,
-   "updated": "2026-11-06 19:26:05.69266825 +0000 UTC"
+   "updated": "2026-11-06 19:28:14.226398449 +0000 UTC",
+   "type_code": 53
   },
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.98553,
-   "lon": -122.83608,
-   "type_code": 52,
-   "destination": "US^029T>0UW8",
-   "updated": "2026-11-06 19:26:06.770623706 +0000 UTC"
-  },
-  {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.79902,
-   "lon": -122.82982,
-   "type_code": 52,
-   "destination": "US^0UX0>02A0",
-   "updated": "2026-11-06 19:26:17.500853642 +0000 UTC",
-   "sog_kn": 2.7,
-   "cog": 86.9,
-   "heading": 84,
-   "nav_status": 0
-  },
-  {
-   "mmsi": 368136580,
-   "name": "ORIN L GREEN",
-   "lat": 46.074,
-   "lon": -122.89375,
-   "sog_kn": 0.9,
-   "cog": 248.8,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20003,
+   "lon": -123.3854,
+   "sog_kn": 0,
+   "cog": 14,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 19:26:11.347172392 +0000 UTC"
+   "nav_status": 8,
+   "updated": "2026-11-06 19:27:54.469825868 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10355,
+   "lon": -122.9101,
+   "sog_kn": 0,
+   "cog": 83.5,
+   "heading": 75,
+   "nav_status": 3,
+   "updated": "2026-11-06 19:27:54.864638089 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07394,
+   "lon": -122.89367,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-06 19:27:56.742624429 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19954,
+   "lon": -123.38496,
+   "sog_kn": 0,
+   "cog": 325,
+   "heading": 144,
+   "nav_status": 5,
+   "updated": "2026-11-06 19:27:57.158427786 +0000 UTC"
+  },
+  {
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.11869,
+   "lon": -122.9791,
+   "type_code": 70,
+   "destination": "USA LONGVIEW",
+   "updated": "2026-11-06 19:28:15.330816706 +0000 UTC"
   },
   {
    "mmsi": 367608420,
    "name": "PETER J BRIX",
-   "lat": 46.08961,
-   "lon": -122.92883,
+   "lat": 46.08963,
+   "lon": -122.92885,
    "sog_kn": 0,
-   "cog": 165.6,
+   "cog": 177.3,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-06 19:26:16.38204191 +0000 UTC"
+   "updated": "2026-11-06 19:28:16.351060591 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.64995,
-   "lon": -122.74765,
-   "sog_kn": 0,
-   "cog": 309.1,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-06 19:26:18.48936883 +0000 UTC"
-  },
-  {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64568,
-   "lon": -122.73487,
-   "sog_kn": 0.1,
-   "cog": 0,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-06 19:26:19.374328677 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.10834,
-   "lon": -122.96808,
-   "sog_kn": 2,
-   "cog": 136.2,
-   "heading": 137,
-   "nav_status": 3,
-   "updated": "2026-11-06 19:26:20.714172471 +0000 UTC"
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07142,
+   "lon": -122.89309,
+   "sog_kn": 0.6,
+   "cog": 10.9,
+   "heading": 192,
+   "nav_status": 0,
+   "updated": "2026-11-06 19:28:17.388686694 +0000 UTC"
   }
  ]
 }
