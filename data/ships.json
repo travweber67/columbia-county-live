@@ -1,58 +1,67 @@
 {
- "fetched_at": "2026-11-06T14:50:38Z",
+ "fetched_at": "2026-11-06T14:55:38Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538007029,
-   "name": "ZEPHYROS",
-   "lat": 46.02718,
-   "lon": -122.86959,
-   "type_code": 70,
-   "destination": "KALAMA,USA",
-   "updated": "2026-11-06 14:50:47.31163892 +0000 UTC"
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10357,
+   "lon": -122.91015,
+   "sog_kn": 0,
+   "cog": 83.5,
+   "heading": 75,
+   "nav_status": 3,
+   "updated": "2026-11-06 14:55:44.759864343 +0000 UTC"
   },
   {
-   "mmsi": 477133900,
-   "name": "SHAO SHAN 8",
-   "lat": 45.6303,
-   "lon": -122.69542,
+   "mmsi": 636020486,
+   "name": "BBG GUILIN",
+   "lat": 46.10597,
+   "lon": -122.95578,
    "type_code": 70,
-   "destination": "USVAN",
-   "updated": "2026-11-06 14:50:51.070254039 +0000 UTC"
+   "destination": "SINGAPORE",
+   "updated": "2026-11-06 14:55:45.38191019 +0000 UTC"
   },
   {
    "mmsi": 367702780,
    "name": "SARAH",
-   "lat": 46.10599,
-   "lon": -122.95631,
-   "sog_kn": 0.1,
-   "cog": 267.1,
-   "heading": 75,
-   "nav_status": 0,
-   "updated": "2026-11-06 14:50:53.728819239 +0000 UTC"
+   "lat": 46.10601,
+   "lon": -122.95634,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-06 14:55:46.550934332 +0000 UTC"
   },
   {
-   "mmsi": 538006443,
-   "name": "RB JAKE",
-   "lat": 46.02808,
-   "lon": -122.87465,
-   "sog_kn": 2.4,
-   "cog": 339.8,
-   "heading": 341,
-   "nav_status": 0,
-   "updated": "2026-11-06 14:50:57.893944366 +0000 UTC"
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64539,
+   "lon": -122.73503,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-06 14:55:54.344793223 +0000 UTC"
   },
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.1534,
-   "lon": -123.37714,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.1772,
+   "lon": -123.35744,
    "sog_kn": 0,
-   "cog": 7.5,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 14:50:57.981780497 +0000 UTC"
+   "cog": 111.3,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-06 14:55:56.456621416 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.93764,
+   "lon": -122.80601,
+   "sog_kn": 1,
+   "cog": 1.4,
+   "heading": 352,
+   "nav_status": 3,
+   "updated": "2026-11-06 14:56:02.766772576 +0000 UTC"
   }
  ]
 }
