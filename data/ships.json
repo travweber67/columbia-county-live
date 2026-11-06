@@ -1,52 +1,92 @@
 {
- "fetched_at": "2026-11-06T10:55:20Z",
+ "fetched_at": "2026-11-06T10:56:45Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10358,
-   "lon": -122.91018,
-   "type_code": 52,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-06 10:55:28.66960931 +0000 UTC"
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.9963,
+   "lon": -122.84647,
+   "sog_kn": 6.9,
+   "cog": 331.3,
+   "heading": 331,
+   "nav_status": 0,
+   "updated": "2026-11-06 10:57:25.558503522 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07881,
-   "lon": -122.90134,
-   "type_code": 33,
-   "updated": "2026-11-06 10:55:36.951670589 +0000 UTC"
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10891,
+   "lon": -122.96127,
+   "sog_kn": 0,
+   "cog": 300.5,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-06 10:57:32.128932998 +0000 UTC"
   },
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64533,
-   "lon": -122.73503,
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09427,
+   "lon": -122.9374,
    "type_code": 70,
-   "destination": "PER ORDERS",
-   "updated": "2026-11-06 10:55:40.454710157 +0000 UTC"
+   "destination": "US KAM",
+   "updated": "2026-11-06 10:57:32.510700736 +0000 UTC"
+  },
+  {
+   "mmsi": 538011495,
+   "name": "MTR JUPITER",
+   "lat": 46.12447,
+   "lon": -122.98897,
+   "sog_kn": 0,
+   "cog": 211.8,
+   "heading": 134,
+   "nav_status": 1,
+   "updated": "2026-11-06 10:57:35.541077145 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64346,
+   "lon": -122.75283,
+   "sog_kn": 0,
+   "cog": 173.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 10:57:35.675333539 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.07141,
+   "lon": -122.88928,
+   "sog_kn": 7.8,
+   "cog": 154.5,
+   "heading": 150,
+   "nav_status": 0,
+   "updated": "2026-11-06 10:57:38.697838384 +0000 UTC"
   },
   {
    "mmsi": 367653630,
    "name": "OSCAR B",
-   "lat": 46.15342,
-   "lon": -123.3771,
+   "lat": 46.15343,
+   "lon": -123.37713,
+   "type_code": 99,
+   "updated": "2026-11-06 10:57:47.402455851 +0000 UTC",
    "sog_kn": 0,
-   "cog": 167.4,
+   "cog": 164.1,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 10:55:47.797104847 +0000 UTC"
+   "nav_status": 0
   },
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60765,
-   "lon": -122.6776,
-   "type_code": 50,
-   "updated": "2026-11-06 10:55:49.982473684 +0000 UTC"
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.17436,
+   "lon": -123.10838,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-06 10:57:47.170772668 +0000 UTC"
   }
  ]
 }
