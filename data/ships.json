@@ -1,62 +1,49 @@
 {
- "fetched_at": "2026-11-06T21:06:06Z",
+ "fetched_at": "2026-11-06T21:11:06Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.16018,
-   "lon": -123.4047,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 121,
-   "nav_status": 0,
-   "updated": "2026-11-06 21:06:20.710161414 +0000 UTC"
-  },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.07899,
-   "lon": -122.90136,
+   "lat": 46.0789,
+   "lon": -122.90127,
+   "sog_kn": 0.2,
+   "cog": 160.9,
+   "heading": 295,
+   "nav_status": 0,
+   "updated": "2026-11-06 21:11:21.157889122 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08962,
+   "lon": -122.92884,
    "type_code": 52,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-06 21:06:27.103719742 +0000 UTC",
-   "sog_kn": 0.1,
-   "cog": 0.8,
-   "heading": 321,
-   "nav_status": 0
+   "destination": "US^0UJB>0UJB",
+   "updated": "2026-11-06 21:11:30.46828251 +0000 UTC"
   },
   {
    "mmsi": 367702780,
    "name": "SARAH",
-   "lat": 45.60608,
-   "lon": -122.78323,
-   "sog_kn": 7.9,
-   "cog": 338.8,
-   "heading": 339,
+   "lat": 45.61671,
+   "lon": -122.78855,
+   "sog_kn": 7.8,
+   "cog": 347.3,
+   "heading": 349,
    "nav_status": 0,
-   "updated": "2026-11-06 21:06:22.791078893 +0000 UTC"
+   "updated": "2026-11-06 21:11:33.104441924 +0000 UTC"
   },
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 46.09082,
-   "lon": -122.93212,
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.1101,
+   "lon": -122.96343,
    "sog_kn": 0,
-   "cog": 226.1,
-   "heading": 511,
+   "cog": 167.3,
+   "heading": 129,
    "nav_status": 5,
-   "updated": "2026-11-06 21:06:23.517841444 +0000 UTC"
-  },
-  {
-   "mmsi": 538011495,
-   "name": "MTR JUPITER",
-   "lat": 46.12483,
-   "lon": -122.98611,
-   "type_code": 70,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-06 21:06:41.355627787 +0000 UTC"
+   "updated": "2026-11-06 21:11:33.360485964 +0000 UTC"
   }
  ]
 }
