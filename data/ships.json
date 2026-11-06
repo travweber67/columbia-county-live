@@ -1,82 +1,120 @@
 {
- "fetched_at": "2026-11-06T15:10:39Z",
+ "fetched_at": "2026-11-06T15:15:40Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.64332,
+   "lon": -122.75282,
+   "type_code": 50,
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-06 15:15:45.166235104 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "lat": 45.81861,
+   "lon": -122.82518,
+   "sog_kn": 7.3,
+   "cog": 33.7,
+   "heading": 38,
+   "nav_status": 12,
+   "updated": "2026-11-06 15:15:47.134485289 +0000 UTC"
+  },
+  {
+   "mmsi": 368136580,
+   "name": "ORIN L GREEN",
+   "lat": 46.07919,
+   "lon": -122.90128,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 15:15:51.781162535 +0000 UTC"
+  },
+  {
+   "mmsi": 368317740,
+   "lat": 45.60133,
+   "lon": -122.77988,
+   "sog_kn": 26.2,
+   "cog": 339.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 15:15:51.781819687 +0000 UTC"
+  },
+  {
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 45.63926,
+   "lon": -122.77786,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-06 15:15:51.794809814 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.64716,
+   "lon": -122.73961,
+   "type_code": 57,
+   "destination": "KALAMA",
+   "updated": "2026-11-06 15:15:55.748193945 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.13723,
+   "lon": -123.37892,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 15:15:57.468235807 +0000 UTC"
+  },
   {
    "mmsi": 368286340,
    "name": "SHAVER",
-   "lat": 46.02604,
-   "lon": -122.86843,
+   "lat": 46.02611,
+   "lon": -122.86842,
    "sog_kn": 0.1,
    "cog": 320.5,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-06 15:10:45.327253672 +0000 UTC"
+   "updated": "2026-11-06 15:15:58.684792863 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08224,
+   "lon": -122.90214,
+   "sog_kn": 11.1,
+   "cog": 309.1,
+   "heading": 298,
+   "nav_status": 0,
+   "updated": "2026-11-06 15:16:08.94378182 +0000 UTC"
+  },
+  {
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.64301,
+   "lon": -122.7714,
+   "sog_kn": 0,
+   "cog": 99.1,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-06 15:16:12.934159411 +0000 UTC"
   },
   {
    "mmsi": 367702780,
    "name": "SARAH",
-   "lat": 46.10328,
-   "lon": -122.95832,
-   "sog_kn": 6.3,
-   "cog": 299.8,
-   "heading": 306,
+   "lat": 46.10611,
+   "lon": -122.96572,
+   "sog_kn": 6.1,
+   "cog": 129.7,
+   "heading": 125,
    "nav_status": 0,
-   "updated": "2026-11-06 15:10:53.877666889 +0000 UTC"
-  },
-  {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63865,
-   "lon": -122.72404,
-   "sog_kn": 0,
-   "cog": 187,
-   "heading": 115,
-   "nav_status": 1,
-   "updated": "2026-11-06 15:11:03.775098646 +0000 UTC"
-  },
-  {
-   "mmsi": 538007029,
-   "name": "ZEPHYROS",
-   "lat": 46.02721,
-   "lon": -122.86959,
-   "sog_kn": 0,
-   "cog": 166.8,
-   "heading": 139,
-   "nav_status": 5,
-   "updated": "2026-11-06 15:11:05.3594024 +0000 UTC"
-  },
-  {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.63357,
-   "lon": -122.70348,
-   "sog_kn": 5.2,
-   "cog": 127.4,
-   "heading": 127,
-   "nav_status": 0,
-   "updated": "2026-11-06 15:11:06.521765961 +0000 UTC"
-  },
-  {
-   "mmsi": 368327640,
-   "name": "CAPT. STEVE",
-   "lat": 45.99269,
-   "lon": -122.84293,
-   "sog_kn": 6.7,
-   "cog": 291.3,
-   "heading": 254,
-   "nav_status": 12,
-   "updated": "2026-11-06 15:11:08.774016552 +0000 UTC"
-  },
-  {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.99096,
-   "lon": -122.84016,
-   "type_code": 52,
-   "destination": "US^0RFZ>?? ???",
-   "updated": "2026-11-06 15:11:11.332245974 +0000 UTC"
+   "updated": "2026-11-06 15:16:13.476614255 +0000 UTC"
   }
  ]
 }
