@@ -1,80 +1,97 @@
 {
- "fetched_at": "2026-11-06T02:09:42Z",
+ "fetched_at": "2026-11-06T02:14:42Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07638,
-   "lon": -122.90083,
-   "sog_kn": 0.2,
-   "cog": 296.7,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07899,
+   "lon": -122.90079,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 333,
+   "nav_status": 3,
+   "updated": "2026-11-06 02:14:48.226502315 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.80017,
+   "lon": -122.78774,
+   "sog_kn": 9.9,
+   "cog": 331.7,
+   "heading": 332,
+   "nav_status": 0,
+   "updated": "2026-11-06 02:14:48.692289825 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64902,
+   "lon": -122.74626,
+   "sog_kn": 3.4,
+   "cog": 292.4,
    "heading": 114,
-   "nav_status": 0,
-   "updated": "2026-11-06 02:09:48.391370415 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20006,
-   "lon": -123.38541,
-   "type_code": 99,
-   "destination": "NAKNEK",
-   "updated": "2026-11-06 02:09:51.349185885 +0000 UTC"
-  },
-  {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.64348,
-   "lon": -122.75242,
-   "type_code": 52,
-   "destination": "US^0UUT>0UW8",
-   "updated": "2026-11-06 02:09:53.77186024 +0000 UTC"
-  },
-  {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.63438,
-   "lon": -122.71475,
-   "sog_kn": 4.5,
-   "cog": 39.2,
-   "heading": 44,
    "nav_status": 12,
-   "updated": "2026-11-06 02:10:01.62584161 +0000 UTC"
+   "updated": "2026-11-06 02:14:50.038370927 +0000 UTC"
   },
   {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.10496,
-   "lon": -122.95615,
-   "sog_kn": 0.2,
-   "cog": 309.7,
-   "heading": 33,
-   "nav_status": 0,
-   "updated": "2026-11-06 02:10:08.708842108 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.98255,
+   "lon": -122.84176,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-06 02:15:00.548125337 +0000 UTC",
+   "sog_kn": 2.3,
+   "cog": 138.9,
+   "heading": 142,
+   "nav_status": 3
   },
   {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.5813,
-   "lon": -122.76067,
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64345,
+   "lon": -122.75288,
    "sog_kn": 0,
-   "cog": 224.4,
-   "heading": 122,
+   "cog": 221.9,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-06 02:10:09.989324386 +0000 UTC"
+   "updated": "2026-11-06 02:14:55.767854714 +0000 UTC"
   },
   {
-   "mmsi": 538006097,
-   "name": "AD ASTRA",
-   "lat": 45.64299,
-   "lon": -122.7714,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07877,
+   "lon": -122.90049,
    "sog_kn": 0,
-   "cog": 194.3,
-   "heading": 229,
-   "nav_status": 5,
-   "updated": "2026-11-06 02:10:12.876781499 +0000 UTC"
+   "cog": 39.6,
+   "heading": 153,
+   "nav_status": 0,
+   "updated": "2026-11-06 02:15:04.683123918 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 240.2,
+   "heading": 129,
+   "nav_status": 15,
+   "updated": "2026-11-06 02:15:08.714708332 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.08883,
+   "lon": -122.91641,
+   "sog_kn": 8.4,
+   "cog": 114.3,
+   "heading": 114,
+   "nav_status": 3,
+   "updated": "2026-11-06 02:15:09.429820583 +0000 UTC"
   }
  ]
 }
