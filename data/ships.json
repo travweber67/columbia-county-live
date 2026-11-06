@@ -1,69 +1,95 @@
 {
- "fetched_at": "2026-11-06T02:29:44Z",
+ "fetched_at": "2026-11-06T02:34:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63867,
-   "lon": -122.72405,
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00879,
+   "lon": -122.84895,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 02:34:52.438442284 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40234,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 137,
+   "nav_status": 0,
+   "updated": "2026-11-06 02:34:54.362679356 +0000 UTC"
+  },
+  {
+   "mmsi": 636020486,
+   "name": "BBG GUILIN",
+   "lat": 46.10607,
+   "lon": -122.95737,
+   "sog_kn": 0,
+   "cog": 158.5,
+   "heading": 133,
+   "nav_status": 5,
+   "updated": "2026-11-06 02:35:00.619026332 +0000 UTC",
    "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-06 02:29:53.732338397 +0000 UTC"
+   "destination": "US LON"
   },
   {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.63431,
-   "lon": -122.71474,
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00901,
+   "lon": -122.84833,
    "sog_kn": 0,
-   "cog": 330,
-   "heading": 115,
-   "nav_status": 12,
-   "updated": "2026-11-06 02:30:00.720176705 +0000 UTC"
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 02:34:59.65135405 +0000 UTC"
   },
   {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.79314,
-   "lon": -122.84323,
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.65293,
+   "lon": -122.7522,
    "sog_kn": 0,
-   "cog": 339.1,
-   "heading": 211,
+   "cog": 255.8,
+   "heading": 139,
    "nav_status": 12,
-   "updated": "2026-11-06 02:30:14.157360029 +0000 UTC",
+   "updated": "2026-11-06 02:35:00.00950171 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07785,
+   "lon": -122.90066,
+   "sog_kn": 0.1,
+   "cog": 233.8,
+   "heading": 155,
+   "nav_status": 0,
+   "updated": "2026-11-06 02:35:00.334716698 +0000 UTC"
+  },
+  {
+   "mmsi": 367645170,
+   "name": "CROWN POINT",
+   "lat": 45.63417,
+   "lon": -122.71493,
    "type_code": 57,
-   "destination": "XX XXX>?? ???"
-  },
-  {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.58417,
-   "lon": -122.76617,
-   "type_code": 52,
-   "destination": "US^00D5>0UHN",
-   "updated": "2026-11-06 02:30:12.511219085 +0000 UTC"
-  },
-  {
-   "mmsi": 352005064,
-   "name": "ANSAC RISING SUN",
-   "lat": 45.64072,
-   "lon": -122.73218,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-06 02:30:18.661292061 +0000 UTC"
+   "destination": "TBL VANCOUVER",
+   "updated": "2026-11-06 02:35:00.973974617 +0000 UTC"
   },
   {
    "mmsi": 367702780,
    "name": "SARAH",
-   "lat": 45.84162,
-   "lon": -122.78699,
+   "lat": 45.85561,
+   "lon": -122.78517,
    "sog_kn": 10.1,
-   "cog": 14.6,
-   "heading": 13,
+   "cog": 1.7,
+   "heading": 2,
    "nav_status": 0,
-   "updated": "2026-11-06 02:30:18.863364149 +0000 UTC"
+   "updated": "2026-11-06 02:35:19.771184147 +0000 UTC"
   }
  ]
 }
