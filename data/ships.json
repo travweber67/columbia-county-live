@@ -1,104 +1,89 @@
 {
- "fetched_at": "2026-11-06T20:21:03Z",
+ "fetched_at": "2026-11-06T20:26:03Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58076,
-   "lon": -122.7601,
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 46.09046,
+   "lon": -122.93233,
    "sog_kn": 0,
-   "cog": 120.7,
-   "heading": 122,
-   "nav_status": 0,
-   "updated": "2026-11-06 20:21:10.250265461 +0000 UTC"
+   "cog": 266.6,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-06 20:26:09.098327664 +0000 UTC"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40232,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 131,
-   "nav_status": 0,
-   "updated": "2026-11-06 20:21:13.589244996 +0000 UTC"
-  },
-  {
-   "mmsi": 367425870,
-   "name": "HUSKY",
-   "lat": 45.64344,
-   "lon": -122.75184,
-   "sog_kn": 0,
-   "cog": 359.1,
-   "heading": 139,
-   "nav_status": 0,
-   "updated": "2026-11-06 20:21:16.382795552 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 318.2,
-   "heading": 127,
-   "nav_status": 15,
-   "updated": "2026-11-06 20:21:17.942871754 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07919,
-   "lon": -122.9011,
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.8465,
+   "lon": -122.78612,
    "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-06 20:21:23.456075015 +0000 UTC"
+   "destination": "US^0UX0>02A0",
+   "updated": "2026-11-06 20:26:09.984060153 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64538,
+   "lon": -122.73503,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-06 20:26:11.679866322 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10355,
+   "lon": -122.91009,
+   "sog_kn": 0,
+   "cog": 83.5,
+   "heading": 75,
+   "nav_status": 3,
+   "updated": "2026-11-06 20:26:26.123905062 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07919,
+   "lon": -122.90163,
+   "sog_kn": 0.4,
+   "cog": 15.3,
+   "heading": 292,
+   "nav_status": 3,
+   "updated": "2026-11-06 20:26:28.159159882 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.07891,
+   "lon": -122.90114,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-06 20:26:31.233775812 +0000 UTC"
   },
   {
    "mmsi": 367513190,
    "name": "PORTLAND",
-   "lat": 45.64302,
-   "lon": -122.75241,
+   "lat": 45.64344,
+   "lon": -122.75282,
    "sog_kn": 0,
-   "cog": 311.6,
+   "cog": 282.6,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-06 20:21:25.5051988 +0000 UTC"
+   "updated": "2026-11-06 20:26:35.270112574 +0000 UTC"
   },
   {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 46.17235,
-   "lon": -123.10538,
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.65563,
+   "lon": -122.75508,
    "sog_kn": 0,
-   "cog": 122.8,
-   "heading": 1,
-   "nav_status": 1,
-   "updated": "2026-11-06 20:21:29.678879819 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.61832,
-   "lon": -122.78753,
-   "sog_kn": 0,
-   "cog": 277.2,
-   "heading": 350,
-   "nav_status": 12,
-   "updated": "2026-11-06 20:21:30.585791833 +0000 UTC"
-  },
-  {
-   "mmsi": 367516730,
-   "name": "CRISTY T",
-   "lat": 45.61886,
-   "lon": -122.71208,
-   "sog_kn": 6.3,
-   "cog": 301.1,
-   "heading": 302,
-   "nav_status": 0,
-   "updated": "2026-11-06 20:21:32.770755983 +0000 UTC"
+   "cog": 14.7,
+   "heading": 152,
+   "nav_status": 5,
+   "updated": "2026-11-06 20:26:35.722592605 +0000 UTC"
   }
  ]
 }
