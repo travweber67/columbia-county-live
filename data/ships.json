@@ -1,70 +1,100 @@
 {
- "fetched_at": "2026-11-06T05:26:40Z",
+ "fetched_at": "2026-11-06T05:29:54Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.90813,
-   "lon": -122.80899,
-   "sog_kn": 9.2,
-   "cog": 348.6,
-   "heading": 353,
-   "nav_status": 12,
-   "updated": "2026-11-06 05:27:40.176689731 +0000 UTC"
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.11816,
+   "lon": -122.98016,
+   "sog_kn": 0,
+   "cog": 7.1,
+   "heading": 136,
+   "nav_status": 1,
+   "updated": "2026-11-06 05:30:01.121815392 +0000 UTC"
   },
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 46.09082,
-   "lon": -122.93208,
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58753,
+   "lon": -122.77047,
    "sog_kn": 0,
-   "cog": 103.9,
+   "cog": 193,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-06 05:27:45.327698663 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.99081,
-   "lon": -122.84135,
-   "sog_kn": 0,
-   "cog": 132,
-   "heading": 152,
    "nav_status": 0,
-   "updated": "2026-11-06 05:27:46.292810552 +0000 UTC"
+   "updated": "2026-11-06 05:30:12.724460913 +0000 UTC"
   },
   {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.90907,
-   "lon": -122.81438,
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58418,
+   "lon": -122.7662,
+   "type_code": 52,
+   "destination": "US^00D5>0UHN",
+   "updated": "2026-11-06 05:30:12.902834388 +0000 UTC"
+  },
+  {
+   "mmsi": 368450870,
+   "name": "AMERICAN ENCORE",
+   "lat": 46.00362,
+   "lon": -122.84764,
+   "type_code": 60,
+   "destination": "ASTORIA",
+   "updated": "2026-11-06 05:30:12.949157572 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10357,
+   "lon": -122.9101,
    "sog_kn": 0,
-   "cog": 212.6,
-   "heading": 341,
-   "nav_status": 0,
-   "updated": "2026-11-06 05:27:46.528326671 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35743,
-   "type_code": 30,
-   "updated": "2026-11-06 05:27:47.74770176 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65012,
-   "lon": -122.74753,
-   "sog_kn": 0,
-   "cog": 243.1,
-   "heading": 511,
+   "cog": 83.5,
+   "heading": 76,
    "nav_status": 3,
-   "updated": "2026-11-06 05:27:59.265617216 +0000 UTC"
+   "updated": "2026-11-06 05:30:13.664440324 +0000 UTC"
+  },
+  {
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 45.63925,
+   "lon": -122.77786,
+   "sog_kn": 0,
+   "cog": 225.3,
+   "heading": 230,
+   "nav_status": 5,
+   "updated": "2026-11-06 05:30:16.584982754 +0000 UTC"
+  },
+  {
+   "mmsi": 370363000,
+   "name": "SEVEN SEAS HIGHWAY",
+   "lat": 45.95673,
+   "lon": -122.81091,
+   "sog_kn": 11.4,
+   "cog": 156,
+   "heading": 157,
+   "nav_status": 0,
+   "updated": "2026-11-06 05:30:18.360487098 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07862,
+   "lon": -122.9009,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-06 05:30:20.152466411 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60753,
+   "lon": -122.67757,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 05:30:26.072925702 +0000 UTC"
   }
  ]
 }
