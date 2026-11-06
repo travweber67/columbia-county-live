@@ -1,89 +1,120 @@
 {
- "fetched_at": "2026-11-06T23:21:17Z",
+ "fetched_at": "2026-11-06T23:26:18Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60752,
+   "lon": -122.67756,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 23:26:23.08772557 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.15871,
+   "lon": -123.06767,
+   "sog_kn": 6.3,
+   "cog": 111.4,
+   "heading": 112,
+   "nav_status": 12,
+   "updated": "2026-11-06 23:26:25.66579835 +0000 UTC"
+  },
+  {
+   "mmsi": 370363000,
+   "name": "SEVEN SEAS HIGHWAY",
+   "lat": 45.59795,
+   "lon": -122.77649,
+   "sog_kn": 1.2,
+   "cog": 114.8,
+   "heading": 322,
+   "nav_status": 0,
+   "updated": "2026-11-06 23:26:25.9189474 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.62928,
+   "lon": -122.78855,
+   "sog_kn": 7.8,
+   "cog": 20.5,
+   "heading": 25,
+   "nav_status": 12,
+   "updated": "2026-11-06 23:26:30.564836339 +0000 UTC"
+  },
+  {
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 45.66707,
+   "lon": -122.76713,
+   "sog_kn": 0,
+   "cog": 328.7,
+   "heading": 163,
+   "nav_status": 1,
+   "updated": "2026-11-06 23:26:42.74448371 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.0792,
+   "lon": -122.90126,
+   "sog_kn": 0,
+   "cog": 31.6,
+   "heading": 110,
+   "nav_status": 0,
+   "updated": "2026-11-06 23:26:43.498939851 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19953,
+   "lon": -123.38499,
+   "sog_kn": 0,
+   "cog": 325,
+   "heading": 145,
+   "nav_status": 5,
+   "updated": "2026-11-06 23:26:44.44425077 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.71517,
+   "lon": -122.76605,
+   "type_code": 57,
+   "destination": "US^0UUT>0UW8",
+   "updated": "2026-11-06 23:26:47.594620741 +0000 UTC"
+  },
+  {
+   "mmsi": 477133900,
+   "name": "SHAO SHAN 8",
+   "lat": 45.63031,
+   "lon": -122.69549,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-06 23:26:49.727435957 +0000 UTC"
+  },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 45.95091,
-   "lon": -122.80821,
-   "sog_kn": 0.9,
-   "cog": 335.2,
-   "heading": 343,
-   "nav_status": 3,
-   "updated": "2026-11-06 23:21:20.890156699 +0000 UTC"
+   "lat": 45.95185,
+   "lon": -122.80865,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-06 23:26:51.125434959 +0000 UTC"
   },
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.2,
-   "lon": -123.38544,
-   "type_code": 99,
-   "destination": "NAKNEK",
-   "updated": "2026-11-06 23:21:21.359602297 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64342,
-   "lon": -122.75285,
-   "sog_kn": 0,
-   "cog": 214.4,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 23:21:25.534138485 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61107,
-   "lon": -122.61292,
-   "type_code": 0,
-   "updated": "2026-11-06 23:21:30.364042009 +0000 UTC"
-  },
-  {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 46.17426,
-   "lon": -123.10831,
-   "sog_kn": 0,
-   "cog": 1,
-   "heading": 110,
-   "nav_status": 1,
-   "updated": "2026-11-06 23:21:48.362218918 +0000 UTC",
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.11011,
+   "lon": -122.96344,
    "type_code": 70,
-   "destination": "USVAN"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.09099,
-   "lon": -122.93178,
-   "sog_kn": 3.4,
-   "cog": 145.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 23:21:33.006200249 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65009,
-   "lon": -122.74748,
-   "sog_kn": 0,
-   "cog": 213.7,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-06 23:21:39.092425801 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.14576,
-   "lon": -123.38428,
-   "type_code": 99,
-   "updated": "2026-11-06 23:21:47.181665127 +0000 UTC"
+   "destination": "US LOG",
+   "updated": "2026-11-06 23:26:51.360619072 +0000 UTC"
   }
  ]
 }
