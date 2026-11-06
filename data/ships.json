@@ -1,51 +1,69 @@
 {
- "fetched_at": "2026-11-06T02:26:38Z",
+ "fetched_at": "2026-11-06T02:29:44Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09086,
-   "lon": -122.93205,
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63867,
+   "lon": -122.72405,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-06 02:29:53.732338397 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.63431,
+   "lon": -122.71474,
    "sog_kn": 0,
-   "cog": 253.8,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-06 02:28:05.531600439 +0000 UTC"
+   "cog": 330,
+   "heading": 115,
+   "nav_status": 12,
+   "updated": "2026-11-06 02:30:00.720176705 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79314,
+   "lon": -122.84323,
+   "sog_kn": 0,
+   "cog": 339.1,
+   "heading": 211,
+   "nav_status": 12,
+   "updated": "2026-11-06 02:30:14.157360029 +0000 UTC",
+   "type_code": 57,
+   "destination": "XX XXX>?? ???"
   },
   {
    "mmsi": 368331640,
    "name": "SCHWEIGER",
    "lat": 45.58417,
    "lon": -122.76617,
-   "sog_kn": 0,
-   "cog": 53.7,
-   "heading": 146,
-   "nav_status": 5,
-   "updated": "2026-11-06 02:28:23.368422438 +0000 UTC"
+   "type_code": 52,
+   "destination": "US^00D5>0UHN",
+   "updated": "2026-11-06 02:30:12.511219085 +0000 UTC"
   },
   {
-   "mmsi": 367645170,
-   "name": "CROWN POINT",
-   "lat": 45.63474,
-   "lon": -122.71531,
-   "sog_kn": 2.3,
-   "cog": 280.5,
-   "heading": 205,
-   "nav_status": 12,
-   "updated": "2026-11-06 02:28:24.630433156 +0000 UTC"
+   "mmsi": 352005064,
+   "name": "ANSAC RISING SUN",
+   "lat": 45.64072,
+   "lon": -122.73218,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-06 02:30:18.661292061 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10359,
-   "lon": -122.91015,
-   "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 75,
-   "nav_status": 3,
-   "updated": "2026-11-06 02:28:24.821673185 +0000 UTC"
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.84162,
+   "lon": -122.78699,
+   "sog_kn": 10.1,
+   "cog": 14.6,
+   "heading": 13,
+   "nav_status": 0,
+   "updated": "2026-11-06 02:30:18.863364149 +0000 UTC"
   }
  ]
 }
