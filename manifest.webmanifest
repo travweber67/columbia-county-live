@@ -1,1 +1,30 @@
-{"background_color":"#08111d","description":"Roads, rivers, weather and ferry for Columbia County, Oregon — one live look.","display":"standalone","icons":[{"purpose":"any","sizes":"192x192","src":"img/icon-192.png","type":"image/png"},{"purpose":"any","sizes":"512x512","src":"img/icon-512.png","type":"image/png"}],"name":"Columbia County Live","scope":".","short_name":"County Live","start_url":".","theme_color":"#08111d"}
+{
+  "name": "Columbia County Live",
+  "short_name": "Columbia County Live",
+  "description": "Roads, rivers, weather and ferry for Columbia County, Oregon \u2014 one live look.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#f1ecdc",
+  "theme_color": "#1e4228",
+  "icons": [
+    {
+      "src": "img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

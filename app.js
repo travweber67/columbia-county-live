@@ -897,13 +897,45 @@ async function loadBend() {
       } catch (e) { /* the weather line is a bonus; cameras + incidents still render */ }
     }
     const inc = (area.incidents || []).map(incidentRow).join('');
-    const cams = (area.cameras || []).length
-      ? '<div class="route-strip">' + area.cameras.map(c =>
-          '<figure class="camera-fig">'
-          + (c.image_url ? '<img loading="lazy" src="' + src(c.image_url) + '" alt="Pass camera: ' + esc(c.name) + '" onerror="this.parentNode.classList.add(\'cam-dead\');this.remove();">' : '')
-          + '<figcaption>' + esc(c.name) + '</figcaption></figure>').join('') + '</div>'
+    const camFig = (c, lead) =>
+      '<figure class="camera-fig' + (lead ? ' bend-lead' : '') + '">'
+      + (c.image_url ? '<img loading="lazy" src="' + src(c.image_url) + '" alt="Pass camera: ' + esc(c.name) + '" onerror="this.parentNode.classList.add(\'cam-dead\');this.remove();">' : '')
+      + '<figcaption>' + esc(c.name)
+      + (lead ? '<span class="cam-dist">' + c.__distMi.toFixed(1) + ' mi from the summit</span>' : '')
+      + '</figcaption></figure>';
+    /* v6: the Mt. Hood section leads with its SUMMIT PAIR — the two
+       Government Camp cameras nearest the pass summit anchor the code
+       already defines (PASS_POINTS.govcamp), shown large. Selection is
+       computed, never hand-picked: haversine distance from the anchor
+       to each camera's own lat/lon in this same snapshot; the two
+       smallest distances lead and leave the strip, the rest of the
+       cameras follow below as before. Cameras without coordinates in
+       the snapshot simply stay in the strip. */
+    let featured = '';
+    let stripCams = area.cameras || [];
+    if (area.id === 'govcamp' && pt && stripCams.length > 2) {
+      const R = 3958.8, rad = Math.PI / 180;
+      const scored = stripCams.map(c => {
+        if (typeof c.lat !== 'number' || typeof c.lon !== 'number') return { c, d: Infinity };
+        const dp = (c.lat - pt.lat) * rad, dl = (c.lon - pt.lon) * rad;
+        const h = Math.pow(Math.sin(dp / 2), 2)
+          + Math.cos(pt.lat * rad) * Math.cos(c.lat * rad) * Math.pow(Math.sin(dl / 2), 2);
+        return { c, d: 2 * R * Math.asin(Math.sqrt(h)) };
+      }).sort((a, b) => a.d - b.d);
+      const lead = scored.slice(0, 2).filter(s => isFinite(s.d));
+      if (lead.length === 2) {
+        lead.forEach(s => { s.c.__distMi = s.d; });
+        const leadSet = new Set(lead.map(s => s.c));
+        featured = '<p class="bend-summit-note">📍 Closest to the summit — the two Government Camp cameras nearest the pass, shown large. The rest follow below.</p>'
+          + '<div class="bend-featured">' + lead.map(s => camFig(s.c, true)).join('') + '</div>';
+        stripCams = stripCams.filter(c => !leadSet.has(c));
+      }
+    }
+    const cams = stripCams.length
+      ? '<div class="route-strip">' + stripCams.map(c => camFig(c, false)).join('') + '</div>'
       : '';
     return '<div class="bend-area"><h3 class="subhead">' + esc(area.name) + '</h3>' + wx
+      + featured
       + (inc || '<p class="no-alerts">✅ No ODOT incidents reported on this stretch in the latest snapshot.</p>')
       + cams + '</div>';
   }));
@@ -2900,6 +2932,47 @@ async function loadEvents() {
 }
 
 /* ---------- at a glance (synthesis strip) ---------- */
+/* The river tile leads with the TIDE (Travis, 2026-11-05): at a
+   glance it must say high / low / incoming in plain words, with the
+   Port Westward gauge level demoted to the sub-line. The tide state
+   comes from the same NOAA predictions the tides card loads
+   (tideData['9439201'], St. Helens) — never estimated here. Until
+   those land (or if they fail), the tile honestly carries the gauge
+   reading it always had. */
+let glanceGauge = null; // { h, arrow, glyph } from the USGS fetch below
+function glanceTideText() {
+  const preds = tideData['9439201'];
+  if (!preds || !preds.length) return null;
+  const now = Date.now();
+  const next = preds.find(p => p.t > now);
+  if (!next) return null;
+  const when = fmtTime(new Date(next.t));
+  const es = langCur === 'es';
+  if (next.t - now <= 30 * 60000) { // at the turn: name the tide itself
+    return (next.type === 'H'
+      ? (es ? 'Marea alta ' : 'High tide ')
+      : (es ? 'Marea baja ' : 'Low tide ')) + when + (es ? ' · ahora' : ' · now');
+  }
+  return next.type === 'H'
+    ? (es ? 'Marea entrante · Alta ' : 'Incoming tide · High ') + when
+    : (es ? 'Marea saliente · Baja ' : 'Outgoing tide · Low ') + when;
+}
+function updateGlanceRiver() {
+  const valEl = $('glance-river-val');
+  if (!valEl) return;
+  const subEl = $('glance-river-sub');
+  const es = langCur === 'es';
+  const tide = glanceTideText();
+  if (tide) {
+    valEl.textContent = tide;
+    if (subEl) subEl.textContent = glanceGauge
+      ? (es ? 'Río ' : 'River ') + num(glanceGauge.h, 2) + ' ft ' + glanceGauge.glyph + ' · Port Westward'
+      : 'St. Helens · NOAA';
+  } else if (glanceGauge) {
+    valEl.textContent = num(glanceGauge.h, 2) + ' ft' + glanceGauge.arrow;
+    if (subEl) subEl.textContent = es ? 'Medidor de Port Westward · USGS' : 'Port Westward gauge · USGS';
+  }
+}
 function todayStrPT() {
   return new Intl.DateTimeFormat('en-CA',
     { timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
@@ -2939,7 +3012,8 @@ async function loadGlance() {
       clean.forEach(v => { const dd = Math.abs(new Date(v.dateTime).getTime() - target); if (dd < bd) { bd = dd; best = v; } });
       const delta = h - parseFloat(best.value);
       const arrow = delta > 0.05 ? ' ▲ rising' : delta < -0.05 ? ' ▼ falling' : ' → steady';
-      $('glance-river-val').textContent = num(h, 2) + ' ft' + arrow;
+      glanceGauge = { h: h, arrow: arrow, glyph: delta > 0.05 ? '▲' : delta < -0.05 ? '▼' : '→' };
+      updateGlanceRiver();
     }
   } catch (e) { /* keep placeholder */ }
   // Next event tile — from the events snapshot, FB events merged in
@@ -3013,6 +3087,44 @@ function initShare() {
   }
 }
 
+/* ---------- the ONE install card (v5, PWA finish) ----------
+   The browser's install offer is captured at the top of this file's
+   share module (beforeinstallprompt → deferredInstallPrompt). This
+   card — in Events & More, the share bar's home — is the single
+   proactive surface for it: it appears only when an install is
+   actually on offer, the page isn't already running installed, and
+   the visitor hasn't dismissed it (the dismissal is remembered in
+   localStorage). The share bar's Add-to-home-screen button keeps its
+   manual instructions for browsers that never fire the event. */
+const INSTALL_DISMISS_KEY = 'ccl-install-dismissed-v1';
+function initInstallCard() {
+  const card = $('install-card');
+  if (!card) return;
+  let dismissed = false;
+  try { dismissed = !!window.localStorage.getItem(INSTALL_DISMISS_KEY); } catch (e) { /* session-only */ }
+  const standalone = !!(window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) || window.navigator.standalone === true;
+  function maybeShow() {
+    if (dismissed || standalone || !deferredInstallPrompt) return;
+    card.hidden = false;
+  }
+  window.addEventListener('beforeinstallprompt', () => setTimeout(maybeShow, 600));
+  window.addEventListener('appinstalled', () => { card.hidden = true; });
+  const go = $('install-card-btn');
+  if (go) go.addEventListener('click', async () => {
+    if (!deferredInstallPrompt) return;
+    deferredInstallPrompt.prompt();
+    try { await deferredInstallPrompt.userChoice; } catch (e) { /* ignore */ }
+    deferredInstallPrompt = null;
+    card.hidden = true;
+  });
+  const dis = $('install-card-dismiss');
+  if (dis) dis.addEventListener('click', () => {
+    card.hidden = true;
+    try { window.localStorage.setItem(INSTALL_DISMISS_KEY, '1'); } catch (e) { /* session-only */ }
+  });
+  maybeShow();
+}
+
 /* ---------- freshness board ---------- */
 const FRESH_ROWS = [
   ['National Weather Service — alerts', 'alerts-updated', 'live'],
@@ -3057,6 +3169,7 @@ initMap();
 initMapTools();
 initTownPicker();
 initShare();
+initInstallCard();
 initEventFilters();
 initSkyFilters();
 loadGlance();
@@ -4126,6 +4239,7 @@ async function loadTides() {
   }));
   if (any) setUpdated('tides-updated');
   renderTides();
+  updateGlanceRiver(); // the glance tile leads with this same tide data
 }
 function renderTides() {
   const body = $('tides-body');
@@ -4168,7 +4282,7 @@ function renderTides() {
       + '<ul class="tide-turns">' + turns + '</ul></div>';
   }).join('');
 }
-function tickTides() { if (Object.keys(tideData).length) renderTides(); }
+function tickTides() { if (Object.keys(tideData).length) { renderTides(); updateGlanceRiver(); } }
 function initTides() {
   loadTides();
   setInterval(loadTides, 30 * 60 * 1000);
@@ -5161,6 +5275,7 @@ initWatch();
 const FINDER_SECTIONS = [
   { id: 'map',           title: 'Live map',                  sub: 'Radar, planes, ships, fires, the ISS — on one map', keys: 'map radar layers explore' },
   { id: 'roads-card',    title: 'US-30, the Bridge & Roads', sub: 'Commute verdict, bridge status, incidents, cameras', keys: 'bridge road highway us-30 commute drive driving closure closed traffic longview cameras detour cornelius pass' },
+  { id: 'drive-card',    title: 'Your Commute — drive times', sub: 'How long the drive takes, from your town to St. Johns, Portland or Longview', keys: 'commute drive time minutes how long portland st johns longview traffic trip' },
   { id: 'ships-card',    title: 'Columbia River Traffic',    sub: 'Ships under way on the river right now', keys: 'ship ships vessel ais river traffic boat freighter' },
   { id: 'ferry-card',    title: 'Oscar B Ferry',             sub: 'Next-boat countdown and the leave-by planner', keys: 'ferry boat oscar westport cathlamet puget island sailing crossing leave' },
   { id: 'events-card',   title: 'Events — Next Two Weeks',   sub: 'City and county calendars, with add-to-calendar', keys: 'events calendar meeting meetings library storytime tonight weekend happening' },
@@ -5525,6 +5640,10 @@ const LANG_ES = {
   tabmore: 'Eventos y más',
   commuteh2: '🚗 El veredicto del viaje',
   commutenote: 'La respuesta en una línea para manejar ahora mismo. El panorama completo del corredor — puente, incidentes y cámaras — está en la pestaña Viajes.',
+  driveh2: '🧭 Tu viaje — ¿cuánto dura el manejo?',
+  drivefrom: 'Desde',
+  driveto: 'Hasta',
+  drivenote: 'Tiempo típico — sin tráfico en vivo. El tiempo viene del servicio gratuito de rutas OSRM, recorriendo la ruta a las velocidades señaladas en condiciones normales — un cierre, una apertura del puente o un choque en la US-30 cambiarán el viaje real.',
   aircrafth2: '✈️ Aviones sobre el condado',
   aircraftnote: 'Aviones: receptores ADS-B de la comunidad vía adsb.fi. Se actualiza automáticamente.',
   __finderPh: 'Busca lo que sea — prueba «ferry», «marea alta», «hora de cuentos», un pueblo…',
@@ -5543,13 +5662,13 @@ const LANG_ES = {
   stickyevents: 'Eventos',
   stickysky: 'Cielo',
   offlinenote: "📶 No tienes conexión — este teléfono muestra las últimas lecturas que recogió. Sus edades reales están en el <a href=\"#freshness-card\">tablero de frescura</a> más abajo; confirma con las fuentes oficiales antes de viajar.",
-  glbridge: '🌉 Puente',
+  glbridge: 'Puente',
   glbridgesub: 'Puente Lewis &amp; Clark',
-  glalerts: '⚠️ Alertas del clima',
+  glalerts: 'Alertas del clima',
   glalertssub: 'Servicio Meteorológico Nacional',
-  glriver: '🌊 Río Columbia',
+  glriver: 'Río Columbia — Mareas',
   glriversub: 'Medidor de Port Westward · USGS',
-  glevents: '📅 Próximo evento',
+  glevents: 'Próximo evento',
   finderhint: 'Una sola búsqueda en todas las tarjetas de esta página, los siete pueblos y los calendarios de eventos — toca un resultado y la página te lleva directo.',
   homeh2: '🏠 Hazlo tuyo',
   sinceh2: '🧭 Mientras no estabas',
@@ -5601,7 +5720,7 @@ const LANG_ES = {
   ferrybox3p: 'Auto $6 · Motocicleta $4 · Bicicleta $3 · A pie $2',
   ferrybridge: '¿Puente cerrado? El ferry históricamente extiende su horario durante los cierres del puente Lewis &amp; Clark — confirma en la página del condado antes de contar con ello.',
   ferrylink: 'Página oficial del ferry — Condado de Wahkiakum →',
-  eventsh2: '📅 Eventos — Próximas dos semanas',
+  eventsh2: 'Eventos — Próximas dos semanas',
   evall: 'Todos',
   evtoday: 'Hoy',
   evweekend: 'Este fin de semana',
@@ -5611,7 +5730,7 @@ const LANG_ES = {
   alertsh2: '⚠️ Alertas del clima',
   alertslink: 'Servicio Meteorológico Nacional — oficina de Portland →',
   forecasth2: '🌦️ Pronóstico',
-  skyh2: '✈️ En el cielo ahora mismo',
+  skyh2: 'En el cielo ahora mismo',
   skyall: 'Todo el tráfico',
   skylow: 'Bajo y local',
   skyground: 'En tierra',
@@ -5625,7 +5744,7 @@ const LANG_ES = {
   pickwhat: 'Qué pescar',
   pickwhere: 'Dónde',
   pickwhen: 'Cuándo',
-  fishh2: '🐟 Conteos de peces — las presas',
+  fishh2: 'Conteos de peces — las presas',
   fishnote: 'Cada salmón que va hacia el alto Columbia pasa por la presa Bonneville, donde el Cuerpo de Ingenieros los cuenta en las escalas de peces. El día publicado más reciente suele ir uno o dos días detrás del calendario — los conteos se registran en video y se revisan antes de publicarse.',
   fishnote2: 'Conteos: Cuerpo de Ingenieros del Ejército de EE. UU., publicados por el Fish Passage Center y Columbia Basin Research (DART). Un cero es una respuesta real, no un vacío — significa que los contadores no vieron ninguno ese día.',
   trackerh2: '🎣 Rastreador de salmones',
@@ -5640,7 +5759,7 @@ const LANG_ES = {
   airh2: '🌫️ Aire y humo',
   airnote: 'La otra cosa invisible sobre el condado — lo que lleva el aire que respiras. Humo de estufas de leña en las noches quietas de invierno, humo de incendios en verano. Aquí está el Índice de Calidad del Aire para el pueblo de la tarjeta de Pronóstico de arriba, y hacia dónde dice el modelo que va.',
   airnote2: "Una estimación modelada del modelo atmosférico de Open-Meteo (Copernicus CAMS) — no hay un monitor oficial de calidad del aire en el condado, así que léelo como una buena guía, no como un medidor en un poste. Lecturas y alertas oficiales: <a href=\"https://www.airnow.gov/\" target=\"_blank\" rel=\"noopener\">AirNow</a>.",
-  schoolsh2: '🎒 Escuelas — Cierres y retrasos',
+  schoolsh2: 'Escuelas — Cierres y retrasos',
   schoolsnote: 'En las mañanas de tormenta, los distritos deciden temprano — St. Helens procura decidir antes de las 6:00 AM — y publican primero en sus propios sitios y aplicaciones. Esta tarjeta es un tablero de tormenta actualizado a mano: con clima tranquilo está en espera y muestra dónde publica cada distrito; en una mañana de tormenta lleva el reporte de ese día para cada distrito, verificado contra la publicación del propio distrito antes de subirlo aquí.',
   schoolsnote2: 'No existe ninguna fuente automática de cierres para estos distritos, así que este tablero se actualiza a mano en las mañanas de tormenta — y el sitio del propio distrito es siempre la última palabra para tu familia.',
   abouth2: '🌲 Acerca de Columbia County Live',
@@ -5658,10 +5777,90 @@ const LANG_ES = {
   sharebtn: '📤 Compartir esta página',
   installbtn: '📱 Agregar a pantalla de inicio',
   wallbtn: '📺 Pantalla en pared',
+  saverbtn: '🖥️ Protector de pantalla',
+  saverh2: '📸 El protector de pantalla de la comunidad',
+  saverp1: 'La pantalla en pared rota las respuestas del condado. El protector de pantalla es el cuarto más tranquilo: fotografías del condado, cambiando despacio, con el reloj y solo las respuestas que tú fijas — hecho para quedarse encendido en una tableta de cocina, un mostrador o el televisor de una sala de espera. Se actualiza solo desde las mismas fuentes en vivo que esta página, nunca pide nada, y se va con un solo toque.',
+  saverstart: '🖥️ Iniciar el protector de pantalla',
+  savertip: '¿Lo vas a poner en un televisor o en una pantalla de oficina? Abre esta página con <strong>?display=1</strong> al final de la dirección y el protector de pantalla inicia solo — guarda esa dirección en el navegador del televisor y aparecerá sin más.',
+  saverpinsh: 'Tus respuestas en la pantalla',
+  saverspinsp: 'Fija las respuestas que te importan con los botones de aquí abajo. El protector de pantalla muestra tus fijadas, lo bastante grandes para leerse desde el otro lado del cuarto. Las fijadas se guardan solo en este aparato, y puedes cambiarlas cuando quieras.',
+  savershareh: 'Comparte tu foto del condado',
+  saversharep: 'Las fotografías del protector de pantalla vienen del propio condado — y la tuya podría ser una de ellas. Envía una foto que hayas tomado en cualquier lugar del condado de Columbia y, una vez aprobada, se une al conjunto por el que pasan todos los protectores de pantalla, con tu nombre. Gratis, siempre.',
+  savername: 'Tu nombre — aparecerá como el crédito de la foto',
+  saverwhere: '¿En qué lugar del condado fue tomada?',
+  saverfile: 'Tu foto',
+  saverrights: 'Yo tomé esta foto y doy permiso a Columbia County Live para mostrarla.',
+  saversubmit: 'Continuar al formulario de fotos &rarr;',
+  saversubmitnote: 'El botón se activa cuando llenas las tres líneas y marcas la casilla de permiso. El formulario pide el mismo nombre y lugar, y recibe la foto.',
+  saverreview: 'Una puerta honesta: cada foto la mira una persona antes de unirse al conjunto — el lugar, la imagen y el permiso. Nada aparece automáticamente, y una foto que no es tuya para compartir nunca se publica.',
+  dirh2: 'Servicios locales — los pequeños',
+  dirintro: 'Niñeras, limpieza, manitas, cuidadores de mascotas, tutores — los negocios de una sola persona que mueven este condado, en una lista sencilla. Los locales con tienda están arriba como patrocinadores y negocios destacados; este estante es para los operadores más pequeños. Toca una categoría para acotar la lista.',
+  dirall: 'Todos los servicios',
+  dirchildcare: 'Cuidado infantil',
+  dircleaning: 'Limpieza',
+  dirhandyman: 'Manitas y reparaciones del hogar',
+  dirpets: 'Cuidado de mascotas',
+  diryard: 'Patio y jardín',
+  dirtutoring: 'Tutorías',
+  dirmoving: 'Mudanzas y fletes',
+  dirother: 'Otros servicios locales',
+  dirfounding: 'Negocio fundador',
+  dirotldesc: 'Boliche, ligas y fiestas de cumpleaños sobre Columbia River Highway.',
+  dirinviteh: 'Tu servicio aquí',
+  dirinvitep: '¿Limpias casas, cuidas niños, paseas perros, arreglas lo que se rompe? Sé uno de los primeros nombres del directorio — los anuncios son gratis mientras lanzamos.',
+  dirlistcta: 'Anuncia tu servicio &rarr;',
+  dirhonest: '<strong>Los anuncios son publicidad, no recomendaciones.</strong> No hemos verificado estos servicios — en especial para servicios dentro del hogar, pide referencias antes de contratar.',
+  dircta: 'Anuncia tu servicio — gratis durante el lanzamiento fundador &rarr;',
+  dirctanote: 'La solicitud usa el mismo formulario corto que las de patrocinadores. Cada anuncio lo lee una persona y se revisa antes de aparecer — nada se publica automáticamente y no hay pago en línea.',
+  displaybtn: 'Pantalla',
+  displaylabel: 'Abrir el modo pantalla — el salvapantallas comunitario',
   footerbyline: '<strong>Columbia County Live</strong> — por <strong>Nomad Development Group</strong>',
   footerdata: 'Datos: Servicio Meteorológico Nacional · Servicio Geológico de EE. UU. (USGS) · NOAA Tides &amp; Currents (mareas del río) · NOAA nowCOAST (radar) · NIFC WFIGS (incendios forestales) · colaboradores de adsb.fi (aviones, ODbL) · wheretheiss.at (posición de la EEI) · CelesTrak / NORAD (órbita de la EEI, para predicciones de paso) · Open-Meteo / Copernicus CAMS (modelo de calidad del aire) · Fish Passage Center y Columbia Basin Research DART (conteos de peces en las presas — datos del Cuerpo de Ingenieros del Ejército de EE. UU.) · colaboradores de OpenStreetMap. Los datos de captura (carreteras, cámaras, puente, alertas del ferry, eventos, tráfico del río) los recoge un pequeño programa recolector de los operadores oficiales — ODOT TripCheck, WSDOT, el condado de Wahkiakum y los calendarios de las ciudades y el condado — y se etiquetan con la hora en que se recogieron. El modelo de capas de rastreo en vivo está inspirado en God&rsquo;s Eye View (código abierto, de Bilawal Sidhu), cuyo DATA_SOURCES.md nos señaló varias de estas fuentes públicas.',
   footerdisc: 'Esta página reúne datos públicos por conveniencia. Antes de viajar con clima severo o agua alta, confirma las condiciones con las fuentes oficiales enlazadas arriba.',
-  langnote: "🌎 This page is showing its headings, buttons and notes in Spanish — tap <strong>English</strong> up top, beside the clock, to switch back. Live readings, alerts and event listings keep arriving in English from their official sources."
+  pinsh2: '📌 Tus fijadas',
+  pinsclear: 'Desfijar todo',
+  pinsnote: 'Las tarjetas que fijaste, aquí arriba en el orden en que las fijaste — copias en vivo que se actualizan cuando cambian las lecturas, mientras las originales se quedan donde pertenecen. Toca una copia para saltar a la tarjeta real; toca su botón <strong>📌 Fijada</strong> para desfijarla.',
+  installh2: 'Pon Columbia County Live en tu pantalla de inicio',
+  installp: 'Instalada, se abre en pantalla completa como una app — sin barra de direcciones, con su propio ícono y el condado a un toque. Gratis, y se sigue actualizando todo el día.',
+  installcardbtn: '📱 Instalar la app',
+  dwcommute: 'El veredicto del viaje',
+  dwdrive: 'Tu viaje — tiempos de manejo',
+  dwgo: 'Antes de salir',
+  dwplan: 'Esta noche y mañana',
+  dwschools: 'Escuelas — cierres y retrasos',
+  dwbriefing: 'El Resumen del Condado',
+  dwhome: 'Hazlo tuyo',
+  dwmap: 'El mapa en vivo',
+  dwroads: 'Carreteras y el puente',
+  dwrouteahead: 'Ruta por delante',
+  dwferry: 'El ferry Oscar B',
+  dwships: 'Tráfico del río',
+  dwaircraft: 'Aviones sobre el condado',
+  dwbend: 'El viaje a Bend',
+  dwalerts: 'Alertas del clima',
+  dwforecast: 'Pronóstico',
+  dwsky: 'El cielo y la estación espacial',
+  dwdark: 'Al anochecer',
+  dwrivers: 'Niveles del río',
+  dwtides: 'Mareas del río',
+  dwfishpick: 'Pesca — ¿vale la pena ir?',
+  dwfish: 'Conteos de peces',
+  dwtracker: 'Rastreador de salmones',
+  dwsteelhead: 'Steelhead',
+  dwalmanac: 'El Almanaque',
+  dwquakes: 'Terremotos',
+  dwfires: 'Incendios forestales',
+  dwair: 'Aire y humo',
+  dwevents: 'Eventos',
+  dwfeatured: 'Negocios destacados',
+  dwwatch: 'La Vigilancia del Condado',
+  dwsaver: 'Protector de pantalla de la comunidad',
+  dwfresh: '¿Qué tan fresca es esta página?',
+  dwabout: 'Acerca de',
+  dwbecome: 'Hazte patrocinador',
+  dwphototitle: 'Comparte tu foto del condado',
+  dwphotoline: '¿Tienes una foto del condado que te encanta? Envíala — las buenas se unen al protector de pantalla de la comunidad, con tu nombre firmado como en una pintura.',
+  langnote: "🌎 This page is showing its headings, buttons and notes in Spanish — tap the courthouse logo up top to open the menu, then tap <strong>English</strong> to switch back. Live readings, alerts and event listings keep arriving in English from their official sources."
 };
 let langCur = 'en';
 let langEls = null;
@@ -6126,77 +6325,172 @@ function initGo() {
 }
 initGo();
 
-/* ---------- Your front page: pin the cards you live by (X20 R18) ----------
-   Twenty-six rounds deep, the page's order was the page's opinion: nine
-   sections before the map, two columns after it, and every visitor read
-   the same front page whether they came for the ferry, the river, or the
-   sky. This module hands the order over. Every content card grows a
-   📌 Pin button in its head; a pinned card's live node is *moved* (never
-   cloned — the panels keep updating in place) into the front-page strip
-   under the glance, in pin order; unpinning returns it to the exact slot
-   it came from, recorded before anything moved. Pins persist only in the
-   visitor's browser (ccl-frontpage-v1, beside the home-town and watch
-   prefs). The map card is deliberately not pinnable: it is the page's
-   anchor, and a Leaflet container does not need the adventure. */
-const FPAGE_KEY = 'ccl-frontpage-v1';
-const FPAGE_CARDS = ['since-card', 'watch-card', 'briefing-card', 'plan-card', 'go-card', 'almanac-card',
-  'roads-card', 'ships-card', 'ferry-card', 'events-card',
-  'alerts-card', 'forecast-card', 'sky-card', 'rivers-card', 'tides-card', 'quakes-card', 'fires-card', 'air-card'];
-let fpagePins = [];        // pinned card ids, in the order they were pinned
-const fpageHomes = {};     // id -> {parent, next} recorded at init, before any move
-const fpageBtns = {};      // id -> its pin button
-function fpageParent(el) { return el ? (el.parentNode || el.parent || null) : null; }
-function fpageLoadPref() {
-  try {
-    const v = JSON.parse(window.localStorage.getItem(FPAGE_KEY) || '[]');
-    if (Array.isArray(v)) fpagePins = v.filter(id => FPAGE_CARDS.indexOf(id) !== -1);
-  } catch (e) { fpagePins = []; }
+/* ---------- the GENERIC pin store (window.CCLPins) ----------
+   One stored object for every kind of pin on the site:
+     { cards:   [card ids, in pin order],
+       answers: [screensaver answer ids, in pin order] }
+   persisted at localStorage 'ccl-pins-v1' and exposed as
+   window.CCLPins so every renderer — the pinned-cards zone at the
+   top of Today and the community screensaver — reads and writes the
+   SAME list. Changes broadcast a 'ccl-pins-changed' document event.
+   Migration, one-way and read-only toward the older keys: a first
+   load with no generic store seeds answers from the saver's
+   prototype key (ccl-saver-pins-v1) if present, and seeds cards
+   from the front-page system's original store (ccl-frontpage-v1).
+   (Moved out of the screensaver module in the v5 pass: the pins
+   zone at the top of Today loads earlier in this file than the
+   saver does, and both must share the one store.) */
+const CCL_PINS_KEY = 'ccl-pins-v1';
+const CCL_ANSWER_IDS = ['bridge', 'tides', 'weather', 'events', 'ferry'];
+const cclPinStore = { cards: [], answers: null };
+function cclPinStoreSave() {
+  try { window.localStorage.setItem(CCL_PINS_KEY, JSON.stringify(cclPinStore)); } catch (e) { /* session-only */ }
+  try { document.dispatchEvent(new CustomEvent('ccl-pins-changed', { detail: { cards: cclPinStore.cards.slice(), answers: (cclPinStore.answers || []).slice() } })); } catch (e) { /* older browser — renderers poll instead */ }
 }
-function fpageSavePref() {
-  try {
-    if (fpagePins.length) window.localStorage.setItem(FPAGE_KEY, JSON.stringify(fpagePins));
-    else window.localStorage.removeItem(FPAGE_KEY);
-  } catch (e) { /* storage unavailable — pins still work for this visit */ }
+(function cclPinStoreLoad() {
+  let v = null;
+  try { v = JSON.parse(window.localStorage.getItem(CCL_PINS_KEY) || 'null'); } catch (e) { /* unreadable */ }
+  if (v && typeof v === 'object') {
+    if (Array.isArray(v.cards)) cclPinStore.cards = v.cards.filter(x => typeof x === 'string');
+    if (Array.isArray(v.answers)) cclPinStore.answers = v.answers.filter(id => CCL_ANSWER_IDS.indexOf(id) !== -1);
+  }
+  if (!cclPinStore.answers) {
+    let legacy = null;
+    try { legacy = JSON.parse(window.localStorage.getItem('ccl-saver-pins-v1') || 'null'); } catch (e) { /* none */ }
+    cclPinStore.answers = Array.isArray(legacy)
+      ? legacy.filter(id => CCL_ANSWER_IDS.indexOf(id) !== -1)
+      : ['bridge', 'tides', 'weather', 'events'];
+  }
+  if (!cclPinStore.cards.length) {
+    let fp = null;
+    try { fp = JSON.parse(window.localStorage.getItem('ccl-frontpage-v1') || 'null'); } catch (e) { /* none */ }
+    if (Array.isArray(fp)) cclPinStore.cards = fp.filter(x => typeof x === 'string');
+  }
+})();
+window.CCLPins = {
+  key: CCL_PINS_KEY,
+  all: function () { return { cards: cclPinStore.cards.slice(), answers: cclPinStore.answers.slice() }; },
+  has: function (kind, id) { const l = kind === 'cards' ? cclPinStore.cards : cclPinStore.answers; return l.indexOf(id) !== -1; },
+  toggle: function (kind, id) {
+    const l = kind === 'cards' ? cclPinStore.cards : cclPinStore.answers;
+    const i = l.indexOf(id);
+    if (i !== -1) l.splice(i, 1); else l.push(id);
+    cclPinStoreSave();
+    return l.slice();
+  },
+  _store: cclPinStore,
+  _save: cclPinStoreSave
+};
+
+/* ---------- Your pins: pin any card to the top of Today (v5) ----------
+   Travis's direction, unified in v5 onto the ONE generic store
+   above (window.CCLPins, localStorage ccl-pins-v1 — the screensaver's
+   answers live in the same object). Every content card in every view
+   grows a 📌 Pin button in its head. A pinned card renders at the top
+   of the Today view as a LIVE COPY — a mirror that re-renders as the
+   original's readings change — in pin order, inside the "Your pins"
+   zone (hidden while empty). The original NEVER moves: pins are
+   shortcuts, not moves (this replaces the X20 front-page system,
+   which physically moved the node and kept its own store;
+   ccl-frontpage-v1 survives only as the store's one-way seed).
+   Unpinning works from the original's button and from the copy's.
+   Tapping a copy (anywhere but its unpin button) jumps to the real
+   card in its home view. The map card is deliberately not pinnable:
+   it is the page's anchor, and a Leaflet container does not need the
+   adventure. */
+const PIN_CARDS = ['since-card', 'home-card', 'commute-card', 'go-card', 'plan-card', 'schools-card', 'briefing-card',
+  'roads-card', 'drive-card', 'routeahead-card', 'ferry-card', 'ships-card', 'aircraft-card', 'bend-card',
+  'alerts-card', 'forecast-card', 'sky-card', 'dark-card', 'rivers-card', 'tides-card',
+  'fishpick-card', 'fish-card', 'tracker-card', 'steelhead-card', 'almanac-card',
+  'quakes-card', 'fires-card', 'air-card',
+  'events-card', 'freshness-card', 'watch-card', 'saver-card', 'about-card'];
+const pinBtns = {};        // card id -> its pin button on the ORIGINAL card
+const pinObservers = {};   // card id -> MutationObserver mirroring it into its copy
+function pinLabel(on) {
+  if (langCur === 'es') return on ? '📌 Fijada' : '📌 Fijar';
+  return on ? '📌 Pinned' : '📌 Pin';
 }
-function fpagePaint() {
-  const wrap = $('frontpage');
-  if (wrap) wrap.hidden = fpagePins.length === 0;
-  FPAGE_CARDS.forEach(id => {
-    const b = fpageBtns[id];
+function pinPaint() {
+  PIN_CARDS.forEach(id => {
+    const b = pinBtns[id];
     if (!b) return;
-    const on = fpagePins.indexOf(id) !== -1;
+    const on = window.CCLPins.has('cards', id);
     b.classList.toggle('active', on);
-    b.textContent = on ? '📌 Pinned' : '📌 Pin';
-    b.title = on ? 'Send this card back where it came from' : 'Pin this card to your front page, up top';
-    if (b.setAttribute) b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    b.textContent = pinLabel(on);
+    b.title = on ? 'Unpin this card from the top of Today' : 'Pin this card to the top of Today';
+    b.setAttribute('aria-pressed', on ? 'true' : 'false');
   });
 }
-function fpagePin(id) {
-  const card = $(id), list = $('frontpage-list');
-  if (!card || !list) return;
-  list.appendChild(card); // appendChild moves the live node — panels keep updating in their new home
-  if (fpagePins.indexOf(id) === -1) fpagePins.push(id);
+function pinMakeCopy(id) {
+  const orig = $(id);
+  if (!orig) return null;
+  const copy = orig.cloneNode(true);
+  copy.removeAttribute('id');
+  copy.querySelectorAll('[id]').forEach(n => n.removeAttribute('id'));
+  copy.classList.add('pin-copy');
+  copy.classList.remove('reveal');
+  copy.classList.add('inview');
+  copy.setAttribute('data-pin-copy', id);
+  copy.setAttribute('aria-label', (orig.getAttribute('aria-label') || 'Card') + ' — pinned copy');
+  const tag = document.createElement('div');
+  tag.className = 'pin-copy-tag';
+  tag.textContent = langCur === 'es' ? '📌 Copia fijada — toca para abrir la tarjeta en vivo' : '📌 Pinned copy — tap to open the live card';
+  copy.insertBefore(tag, copy.firstChild);
+  const head = copy.querySelector('.card-head');
+  if (head) {
+    const stale = head.querySelector('.pin-btn');
+    if (stale) stale.remove();
+    head.classList.add('has-pin');
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'pin-btn active';
+    b.textContent = pinLabel(true);
+    b.title = 'Unpin this card from the top of Today';
+    b.setAttribute('aria-pressed', 'true');
+    b.addEventListener('click', ev => {
+      ev.preventDefault(); ev.stopPropagation();
+      window.CCLPins.toggle('cards', id);
+    });
+    head.appendChild(b);
+  }
+  copy.addEventListener('click', ev => {
+    if (ev.target && ev.target.closest && ev.target.closest('.pin-btn')) return; // the unpin button handles itself
+    ev.preventDefault(); ev.stopPropagation();
+    cclRouteAnchor({ getAttribute: () => '#' + id });
+  }, true);
+  return copy;
 }
-function fpageUnpin(id) {
-  const card = $(id), home = fpageHomes[id];
-  fpagePins = fpagePins.filter(x => x !== id);
-  if (!card || !home || !home.parent) return;
-  const anchor = home.next && fpageParent(home.next) === home.parent ? home.next : null;
-  if (anchor) home.parent.insertBefore(card, anchor);
-  else home.parent.appendChild(card);
+function pinRenderZone() {
+  const wrap = $('frontpage'), list = $('frontpage-list');
+  if (!wrap || !list) return;
+  const ids = window.CCLPins.all().cards.filter(id => PIN_CARDS.indexOf(id) !== -1 && $(id));
+  wrap.hidden = ids.length === 0;
+  list.innerHTML = '';
+  Object.keys(pinObservers).forEach(id => { pinObservers[id].disconnect(); delete pinObservers[id]; });
+  ids.forEach(id => {
+    const copy = pinMakeCopy(id);
+    if (!copy) return;
+    list.appendChild(copy);
+    const orig = $(id);
+    let t = null;
+    const mo = new MutationObserver(() => {
+      if (t) return;
+      t = setTimeout(() => {
+        t = null;
+        const cur = list.querySelector('[data-pin-copy="' + id + '"]');
+        if (!cur) return;
+        const fresh = pinMakeCopy(id);
+        if (fresh) cur.replaceWith(fresh);
+      }, 400);
+    });
+    mo.observe(orig, { subtree: true, childList: true, characterData: true });
+    pinObservers[id] = mo;
+  });
 }
-function fpageToggle(id) {
-  if (fpagePins.indexOf(id) !== -1) fpageUnpin(id); else fpagePin(id);
-  fpageSavePref();
-  fpagePaint();
-}
-function initFrontpage() {
-  const list = $('frontpage-list');
-  if (!list) return;
-  FPAGE_CARDS.forEach(id => {
+function initPins() {
+  PIN_CARDS.forEach(id => {
     const card = $(id);
     if (!card) return;
-    fpageHomes[id] = { parent: fpageParent(card), next: card.nextElementSibling || null };
     const head = card.querySelector('.card-head');
     if (!head) return;
     head.classList.add('has-pin');
@@ -6204,23 +6498,19 @@ function initFrontpage() {
     b.type = 'button';
     b.className = 'pin-btn';
     b.dataset.pinFor = id;
-    b.addEventListener('click', () => fpageToggle(id));
+    b.addEventListener('click', () => window.CCLPins.toggle('cards', id));
     head.appendChild(b);
-    fpageBtns[id] = b;
+    pinBtns[id] = b;
   });
-  fpageLoadPref();
-  fpagePins = fpagePins.filter(id => fpageHomes[id]); // forget pins whose cards are gone
-  fpagePins.forEach(id => { const c = $(id); if (c) list.appendChild(c); });
   const clear = $('frontpage-clear');
   if (clear) clear.addEventListener('click', () => {
-    fpagePins.slice().forEach(id => fpageUnpin(id));
-    fpagePins = [];
-    fpageSavePref();
-    fpagePaint();
+    window.CCLPins.all().cards.slice().forEach(id => window.CCLPins.toggle('cards', id));
   });
-  fpagePaint();
+  document.addEventListener('ccl-pins-changed', () => { pinPaint(); pinRenderZone(); });
+  pinPaint();
+  pinRenderZone();
 }
-initFrontpage();
+initPins();
 
 /* ---------- the county sheet: the page learns to print ----------
    X20 Round 19. Twenty-seven changes in, every way this page travels is
@@ -6723,6 +7013,75 @@ function initViews() {
 }
 initViews();
 
+/* ---------- the drawer (v5): the logo opens a slide-out menu ----------
+   Travis's clean-hero trade: the hero's six quick-nav chips retired,
+   and every jump they carried — plus every other section on the page —
+   now lives here. The courthouse logo in the masthead is the button
+   (hamburger badge on the mark). The drawer slides in from the RIGHT
+   over a dimmed backdrop, frosted glass in both themes, and closes on
+   the backdrop, on Esc, on its ✕, or on any selection. Section links
+   are plain in-page anchors, so initViews' router already switches
+   the view and scrolls them home; this module only adds the closing.
+   The drawer's own chrome strings ride the same data-i18n / LANG_ES
+   system as the rest of the page. */
+function initDrawer() {
+  const drawer = $('drawer'), backdrop = $('drawer-backdrop'),
+        openBtn = $('menu-btn'), closeBtn = $('drawer-close');
+  if (!drawer || !openBtn) return;
+  let lastFocus = null;
+  function openDrawer() {
+    lastFocus = document.activeElement;
+    drawer.hidden = false;
+    if (backdrop) backdrop.hidden = false;
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      drawer.classList.add('open');
+      if (backdrop) backdrop.classList.add('open');
+    }));
+    document.body.classList.add('drawer-on');
+    openBtn.setAttribute('aria-expanded', 'true');
+    if (closeBtn) closeBtn.focus();
+  }
+  function closeDrawer() {
+    if (drawer.hidden) return;
+    drawer.classList.remove('open');
+    if (backdrop) backdrop.classList.remove('open');
+    document.body.classList.remove('drawer-on');
+    openBtn.setAttribute('aria-expanded', 'false');
+    setTimeout(() => { drawer.hidden = true; if (backdrop) backdrop.hidden = true; }, 320);
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  openBtn.addEventListener('click', openDrawer);
+  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+  if (backdrop) backdrop.addEventListener('click', closeDrawer);
+  document.addEventListener('keydown', ev => {
+    if (ev.key === 'Escape') closeDrawer();
+  });
+  drawer.querySelectorAll('.drawer-link, .drawer-action[href^="#"]').forEach(a =>
+    a.addEventListener('click', () => closeDrawer()));
+  drawer.querySelectorAll('[data-drawer-view]').forEach(b =>
+    b.addEventListener('click', () => {
+      closeDrawer();
+      cclShowView(b.dataset ? b.dataset.drawerView : null);
+      if (window.scrollTo) { try { window.scrollTo(0, 0); } catch (e) { /* noop */ } }
+    }));
+  const saverBtn = $('drawer-saver-btn');
+  if (saverBtn) saverBtn.addEventListener('click', () => {
+    closeDrawer();
+    if (window.CCLOpenSaver) window.CCLOpenSaver();
+    else { const sb = $('saver-start-btn'); if (sb) sb.click(); }
+  });
+  /* v6: the masthead Display button — display mode is one tap from
+     first paint on every view, not buried in a card or the drawer.
+     Same opener, same gesture chain (the click is what lets the
+     saver ask for fullscreen). */
+  const dispBtn = $('display-btn');
+  if (dispBtn) dispBtn.addEventListener('click', () => {
+    if (window.CCLOpenSaver) window.CCLOpenSaver();
+    else { const sb = $('saver-start-btn'); if (sb) sb.click(); }
+  });
+}
+initDrawer();
+
 /* ---------- reveal-on-first-sight (Redesign 2026-11-04) ----------
    Cards rise and fade in the first time they scroll into view — motion
    that helps the eye land, nothing more. The hidden start state is added
@@ -6744,7 +7103,16 @@ function initReveal() {
       if (en.isIntersecting) { en.target.classList.add('inview'); io.unobserve(en.target); }
     });
   }, { rootMargin: '0px 0px -6% 0px', threshold: 0.04 });
-  els.forEach(el => { el.classList.add('reveal'); io.observe(el); });
+  /* v4 load pass (Travis: first open "loaded in really slowly and
+     looked kind of weird"): a card already on screen at setup never
+     gets the hidden start state, so first paint reads finished
+     instead of assembling itself. Only below-the-fold cards fade. */
+  const vh = window.innerHeight || 0;
+  els.forEach(el => {
+    const r = el.getBoundingClientRect();
+    if (r.top < vh && r.bottom > 0) return;
+    el.classList.add('reveal'); io.observe(el);
+  });
 }
 initReveal();
 
@@ -6881,3 +7249,969 @@ langSet = function (lang) {
   langSetSchoolsPrev(lang);
   renderSchools();
 };
+
+/* The river glance tile composes its tide-first text in JS, so
+   re-compose it when the language flips (same wrap pattern). */
+const langSetGlancePrev = langSet;
+langSet = function (lang) {
+  langSetGlancePrev(lang);
+  updateGlanceRiver();
+};
+
+/* ---------- Redesign prototype 2026-11-05: theme toggle wiring ----------
+   The theme itself is set before paint by the inline script in
+   index.html (saved choice > OS prefers-color-scheme). This wires the
+   masthead button: since v4 it sits at the top-right beside the clock
+   (in v3 it was the first pill in the hero chip row, where Travis had
+   to hunt for it). Icon + label flip, aria-pressed, theme-color meta,
+   and persisting the choice in localStorage. The label names the mode
+   you switch TO ("Dark" while light, "Light" while dark), matching
+   the aria-label. */
+(function initThemeToggle() {
+  var btn = document.getElementById('theme-btn'); if (!btn) return;
+  var label = document.getElementById('theme-btn-label');
+  var meta = document.querySelector('meta[name="theme-color"]');
+  function paint() {
+    var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+    if (label) label.textContent = dark ? 'Light' : 'Dark';
+    btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
+    btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    if (meta) meta.setAttribute('content', dark ? '#0b120d' : '#1e4228');
+  }
+  btn.addEventListener('click', function () {
+    var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('ccl-theme', next); } catch (e) {}
+    paint();
+  });
+  paint();
+})();
+
+/* ---------- v3 (2026-11-05): the glance strip ----------
+   The four glance answers flow in ONE continuous full-width stream,
+   right-to-left, seamlessly looped — the marquee technique from
+   Travis's own portfolio sites (a flex track at width:max-content,
+   content duplicated, animated to translateX(-50%)). The four items
+   in the markup are canonical: the glance module still writes into
+   the same .glance-val IDs on those same items (data wiring
+   untouched). This script clones the set until the track holds two
+   identical halves wide enough for any viewport, strips the clones'
+   IDs, marks them aria-hidden + untabbable, routes their clicks
+   through the same view router, and keeps every clone in sync with
+   its canonical item via MutationObserver (values, subs and the
+   ok/warn/bad status classes all copy over). Motion is pure CSS;
+   hover / focus pauses it. prefers-reduced-motion: no clones, no
+   animation — a static full-width strip, horizontally scrollable. */
+(function initStrip() {
+  var section = document.getElementById('glance-card'); if (!section) return;
+  var track = document.getElementById('strip-track'); if (!track) return;
+  var items = Array.prototype.slice.call(track.querySelectorAll('.strip-item'));
+  if (!items.length) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    section.classList.add('reduced');
+    return;
+  }
+
+  /* v4 smoothness: clone only as much loop as the screen needs — two
+     identical halves, each at least one viewport wide (capped at 4
+     sets). v3's fixed 3 sets per half built a ~10,000px-wide track on
+     desktop; oversized composited layers are a classic phone-jank
+     source. Measured before fonts settle this can only undershoot,
+     and the ceil() rounds up, so the loop stays seamless. */
+  var setW = 0;
+  items.forEach(function (el) { setW += el.offsetWidth || 0; });
+  var SETS_PER_HALF = 3;
+  if (setW > 0) {
+    SETS_PER_HALF = Math.min(4, Math.max(1,
+      Math.ceil(Math.max(window.innerWidth || 0, setW) / setW)));
+  }
+  var clones = items.map(function () { return []; });
+  function makeClone(src, j) {
+    var c = src.cloneNode(true);
+    c.removeAttribute('id');
+    c.querySelectorAll('[id]').forEach(function (n) { n.removeAttribute('id'); });
+    c.setAttribute('aria-hidden', 'true');
+    c.setAttribute('tabindex', '-1');
+    c.classList.add('strip-clone');
+    c.addEventListener('click', function (ev) {
+      if (typeof cclRouteAnchor === 'function') { ev.preventDefault(); cclRouteAnchor(c); }
+    });
+    clones[j].push(c);
+    return c;
+  }
+  for (var half = 0; half < 2; half++) {
+    for (var s = 0; s < SETS_PER_HALF; s++) {
+      if (half === 0 && s === 0) continue; /* the canonical set is already in the track */
+      items.forEach(function (src, j) { track.appendChild(makeClone(src, j)); });
+    }
+  }
+  items.forEach(function (src, j) {
+    if (!window.MutationObserver || !clones[j].length) return;
+    /* v4: the sync is coalesced through requestAnimationFrame and
+       skipped entirely when the item's visible signature — value
+       text, value status class, sub text — has not actually changed.
+       Data polls rewrite nodes more often than readings change, and
+       every needless innerHTML swap across the clones is main-thread
+       work in the middle of the scroll Travis called glitchy. The
+       signature re-queries the live nodes each time, so it stays
+       correct even if a module rebuilds an item's children. */
+    var lastSig = null, queued = false;
+    function signature() {
+      var v = src.querySelector('.glance-val');
+      var s = src.querySelector('.glance-sub');
+      return (v ? v.textContent + '' + v.className : '') + '|' +
+             (s ? s.textContent : '');
+    }
+    function sync() {
+      queued = false;
+      var sig = signature();
+      if (sig === lastSig) return;
+      lastSig = sig;
+      clones[j].forEach(function (c) {
+        c.innerHTML = src.innerHTML;
+        c.className = src.className + ' strip-clone';
+      });
+    }
+    new MutationObserver(function () {
+      if (!queued) { queued = true; requestAnimationFrame(sync); }
+    }).observe(src, {
+      subtree: true, childList: true, characterData: true,
+      attributes: true, attributeFilter: ['class']
+    });
+  });
+})();
+
+/* ---------- Redesign prototype 2026-11-05: Featured Event slot ----------
+   Research slot D: while unsold, the pinned Featured Event slot carries
+   a real free community event from the site's own event snapshots (never
+   a government meeting — the first community event in the Facebook
+   snapshot, falling back to the city calendars). If nothing qualifies,
+   the slot stays hidden rather than showing a placeholder. */
+(function initFeaturedEvent() {
+  var slot = document.getElementById('featured-event-slot'); if (!slot) return;
+  var body = document.getElementById('featured-event-body');
+  function pick(events) {
+    if (!events || !events.length) return null;
+    for (var i = 0; i < events.length; i++) {
+      var t = (events[i].title || '');
+      if (/meeting|session|commission|hearing|council/i.test(t)) continue;
+      return events[i];
+    }
+    return null;
+  }
+  function render(ev) {
+    if (!ev) return;
+    var when = ev.date || '';
+    try {
+      var d = new Date(ev.date + 'T12:00:00');
+      if (!isNaN(d)) when = d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+    } catch (e) {}
+    var meta = [when, ev.time || '', ev.source ? 'via ' + ev.source : ''].filter(Boolean).join(' · ');
+    body.innerHTML = '';
+    var a = document.createElement('a');
+    a.href = ev.url || '#events-card'; a.textContent = ev.title || 'Community event';
+    if (ev.url) { a.target = '_blank'; a.rel = 'noopener'; }
+    body.appendChild(a);
+    body.appendChild(document.createTextNode(' — ' + meta + '. Free community pick while this slot is unsold.'));
+    slot.hidden = false;
+  }
+  function load(url) {
+    return fetch(url).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
+  }
+  load('data/fb-events.json').then(function (fb) {
+    var ev = pick(fb && fb.events);
+    if (ev) { render(ev); return; }
+    load('data/events.json').then(function (cal) { render(pick(cal && cal.events)); });
+  });
+})();
+
+/* ---------- v3 (2026-11-05): calm per-view photo background ----------
+   No timers, no cycling (Travis: the constantly changing background
+   was "too much"). Each view owns ONE strong photo per theme — the
+   layer whose data-bg-view matches the visible view is "on"; the day
+   and dusk stacks are still shown/hidden by the theme in CSS. The
+   photo changes only when the visitor changes view or theme, with a
+   single short crossfade (the portfolio pattern: imagery swaps on
+   user action, e.g. the detailing demo's service figure). View
+   switching toggles the sections' hidden attribute (cclShowView), so
+   a MutationObserver on that attribute drives the swap; since v4 the
+   non-Today layers' photos are attached lazily (see ensure() below)
+   so first paint downloads one background per theme, not eight. */
+(function () {
+  var layers = Array.prototype.slice.call(document.querySelectorAll('.page-bg .bg-layer[data-bg-view]'));
+  if (!layers.length) return;
+  var views = Array.prototype.slice.call(document.querySelectorAll('.view[data-view]'));
+  function current() {
+    for (var i = 0; i < views.length; i++) {
+      if (!views[i].hidden) return views[i].getAttribute('data-view');
+    }
+    return 'today';
+  }
+  /* v4 load pass: only Today's two layers carry an inline photo.
+     Every other layer's URL waits in data-bg-src and is attached
+     here — the moment its view opens, or at idle after first paint,
+     whichever comes first — so the initial download is the hero plus
+     ONE background per theme instead of eight photographs. */
+  function ensure(l) {
+    var s = l.getAttribute('data-bg-src');
+    if (s && !l.style.backgroundImage) {
+      l.style.backgroundImage = 'url("' + s + '")';
+      l.removeAttribute('data-bg-src');
+    }
+  }
+  function apply() {
+    var name = current();
+    layers.forEach(function (l) {
+      var on = l.getAttribute('data-bg-view') === name;
+      if (on) ensure(l);
+      l.classList.toggle('on', on);
+    });
+  }
+  apply();
+  function warmRest() { layers.forEach(ensure); }
+  if (window.requestIdleCallback) requestIdleCallback(warmRest, { timeout: 2500 });
+  else window.addEventListener('load', function () { setTimeout(warmRest, 400); });
+  if (window.MutationObserver) {
+    var mo = new MutationObserver(apply);
+    views.forEach(function (v) { mo.observe(v, { attributes: true, attributeFilter: ['hidden', 'class'] }); });
+  }
+})();
+
+/* ---------- Community Screensaver (Redesign prototype, 2026-11-05) ----------
+   Travis's direction: an ambient display people can leave running — a
+   phone, a kitchen tablet, or a TV in a county office or waiting room.
+   County photographs fill the screen and crossfade SLOWLY through the
+   community pool (this mode is the one place photo cycling belongs;
+   the main site's backgrounds stay calm, per v3/v4). Over the photo:
+   a large clock + date, and the live answers the visitor PINNED, in
+   across-the-room type over a directional scrim.
+
+   Unattended by design: the overlay lives in this same page, so every
+   data timer the page already runs keeps the answers fresh behind it;
+   the mode itself never opens a dialog, never asks a permission,
+   never pops anything. Exit is any tap / click / keypress.
+
+   Pins: every answer (the four glance answers — bridge / tides /
+   weather / next event — plus the ferry) has a pin chip in the
+   Community Screensaver card on Events & More. (v8: the small 📌
+   toggles that used to ride the scrolling strip are REMOVED —
+   Travis found the amber pin discs on the marquee items ugly; the
+   card's chips are the one answer-pin control now.) Pins live in the
+   GENERIC pin store (window.CCLPins, localStorage ccl-pins-v1) —
+   one stored object, { cards: [...], answers: [...] } — because
+   pins are a site-wide concept, not a screensaver one: Travis has
+   directed that pinned CARDS will also render at the top of the
+   Today view (the base site's front-page system already moves
+   pinned cards there; the next pass unifies its toggles onto this
+   store and reads store.cards). This module owns the answers half.
+   Card heads carry the unified card pins (v5) — never saver pins —
+   and the saver card's chips carry the answer pins, so the two halves
+   of the one store never collide on the same control.
+
+   Photo pool: data/community-photos.json — { src, credit, location }
+   per entry, each shown with its credit line. Seeded with verified
+   site photographs marked "starter". COMMUNITY SUBMISSIONS NEVER
+   WRITE TO THAT FILE: they go to the photo form (PHOTO_FORM_URL
+   below — the live Google Form, swapped in on 2026-11-05,
+   mirroring how SPONSOR_FORM_URL was swapped in at v20), land
+   in the form inbox, pass a human review, and only then get added to
+   the JSON by hand. The review gate is the feature's load-bearing
+   wall, not a detail. */
+const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05 — the real photo Google Form (name / where taken / photo upload / rights checkbox, mirroring the sponsor form)
+(function initSaver() {
+  var overlay = document.getElementById('saver-overlay');
+  if (!overlay) return;
+  var PHOTO_MS = 16000;      // dwell per photo — a slow ambient cycle
+  var QUIET = [
+    { en: 'Presented by — your business here · Founding Sponsor · $49/mo · 0 of 3 claimed',
+      es: 'Presentado por — su negocio aquí · Patrocinador Fundador · $49/mes · 0 de 3 reclamados' },
+    { en: 'These photographs come from the county itself — share yours from the Events & More tab',
+      es: 'Estas fotografías vienen del propio condado — comparte la tuya desde la pestaña Eventos y Más' },
+    null /* a beat of nothing — the quiet line rests every third photo */
+  ];
+  /* v6: the quiet line is a rotation marched by the PHOTOS, not a
+     lookup and not a timer — quietIdx advances exactly once per photo
+     change (showPhoto's timed advance), so the sponsor line, the
+     photo invitation and the blank beat take turns in step with the
+     pictures. Future sponsors slot into QUIET and join the march. */
+  var quietIdx = 0;
+  var FALLBACK_POOL = [
+    { src: 'img/bg/bg-day-1.jpg',  credit: 'Gary Halvorson, Oregon State Archives', location: 'Lewis & Clark Bridge — Rainier' },
+    { src: 'img/bg/bg-day-6.jpg',  credit: 'Kingofthedead', location: 'The dock at Rainier, on the Columbia' },
+    { src: 'img/bg/bg-day-4.jpg',  credit: 'SounderBruce', location: 'The Oscar B ferry, leaving Puget Island' },
+    { src: 'img/bg/bg-day-3.jpg',  credit: 'Quintin Soloviev', location: 'River traffic passing under the Lewis & Clark Bridge' },
+    { src: 'img/bg/bg-dusk-2.jpg', credit: 'Joe Mabel', location: 'Mouth of the Columbia, from Astoria Column' },
+    { src: 'img/bg/bg-dusk-3.jpg', credit: 'Rennett Stowe', location: 'Fishing boat at sunset, lower Columbia' },
+    { src: 'img/bg/bg-dusk-4.jpg', credit: 'Marshalllee84', location: 'Mt. St. Helens at sunset' },
+    { src: 'img/bg/bg-dusk-5.jpg', credit: 'USFWS Pacific', location: 'Sunset on the Columbia at Kelley Point' }
+  ];
+
+  /* ----- the answers the screensaver can show ----- */
+  function tileOf(valId) {
+    var v = document.getElementById(valId);
+    return v ? v.closest('.glance-tile') : null;
+  }
+  function tileLabel(valId, fallback) {
+    var t = tileOf(valId);
+    var l = t ? t.querySelector('.glance-label') : null;
+    var s = l ? l.textContent.trim() : '';
+    return s || fallback[langCur === 'es' ? 'es' : 'en'];
+  }
+  function tileSub(valId) {
+    var t = tileOf(valId);
+    var s = t ? t.querySelector('.glance-sub') : null;
+    return s ? s.textContent.trim() : '';
+  }
+  function cleanVal(id) {
+    var el = document.getElementById(id);
+    var v = el ? el.textContent.trim() : '';
+    if (!v || /checking|loading|gathering|cargando|buscando/i.test(v)) return '';
+    return v;
+  }
+  var ANSWERS = [
+    { id: 'bridge', icon: 'img/icons/icon-bridge.png',
+      label: function () { return tileLabel('glance-bridge-val', { en: 'Bridge', es: 'Puente' }); },
+      val: function () { return cleanVal('glance-bridge-val'); },
+      sub: function () { return tileSub('glance-bridge-val'); } },
+    { id: 'tides', icon: 'img/icons/icon-river.png',
+      label: function () { return tileLabel('glance-river-val', { en: 'Columbia River — Tides', es: 'Río Columbia — Mareas' }); },
+      val: function () { return cleanVal('glance-river-val'); },
+      sub: function () { return tileSub('glance-river-val'); } },
+    { id: 'weather', icon: 'img/icons/icon-alert.png',
+      label: function () { return tileLabel('glance-alerts-val', { en: 'Weather alerts', es: 'Alertas del tiempo' }); },
+      val: function () { return cleanVal('glance-alerts-val'); },
+      sub: function () { return tileSub('glance-alerts-val'); } },
+    { id: 'events', icon: 'img/icons/icon-event-pin.png',
+      label: function () { return tileLabel('glance-events-val', { en: 'Next event', es: 'Próximo evento' }); },
+      val: function () { return cleanVal('glance-events-val'); },
+      sub: function () { return tileSub('glance-events-val'); } },
+    { id: 'ferry', icon: 'img/icons/icon-ferry.png',
+      label: function () { return langCur === 'es' ? 'Próximo ferry' : 'Next ferry'; },
+      val: function () {
+        var fn = document.getElementById('ferry-next');
+        var h = fn ? fn.querySelector('.ferry-next-head') : null;
+        var v = h ? h.textContent.trim() : '';
+        if (!v || /loading|working out|cargando/i.test(v)) return '';
+        return v;
+      },
+      sub: function () { return 'Westport, OR ↔ Puget Island, WA'; } }
+  ];
+  var ANSWER_IDS = ANSWERS.map(function (a) { return a.id; });
+
+  /* ----- pins: the GENERIC pin store -----
+     The store itself moved OUT of this module in the v5 pass (it now
+     lives above the pins module, earlier in this file, as
+     window.CCLPins over localStorage 'ccl-pins-v1' — one object,
+     { cards, answers }, shared with the Your-pins zone at the top of
+     Today). This saver owns only the answers half; the shim below
+     keeps the module's original local names wired to the one store. */
+  var pinStore = window.CCLPins._store;
+  var pins = pinStore.answers;   // the saver's live view of the answers half
+  function savePins() { pinStore.answers = pins; window.CCLPins._save(); }
+  function isPinned(id) { return pins.indexOf(id) !== -1; }
+  function togglePin(id) {
+    if (isPinned(id)) pins = pins.filter(function (x) { return x !== id; });
+    else pins.push(id);
+    savePins();
+    paintPins();
+    if (saverOpen) renderSaverAnswers();
+  }
+
+  /* pin chips in the screensaver card */
+  function paintPins() {
+    var wrap = document.getElementById('saver-pins');
+    if (wrap) {
+      wrap.innerHTML = ANSWERS.map(function (a) {
+        var on = isPinned(a.id);
+        return '<button type="button" class="saver-chip' + (on ? ' on' : '')
+          + '" data-saver-chip="' + a.id + '" aria-pressed="' + (on ? 'true' : 'false') + '">'
+          + '<img src="' + a.icon + '" alt="" aria-hidden="true">'
+          + '<span>' + esc(a.label()) + '</span>'
+          + '<span class="saver-chip-state">' + (on
+            ? (langCur === 'es' ? '📌 Fijada' : '📌 Pinned')
+            : (langCur === 'es' ? 'Fijar' : 'Pin')) + '</span></button>';
+      }).join('');
+    }
+  }
+  var chipsWrap = document.getElementById('saver-pins');
+  if (chipsWrap) chipsWrap.addEventListener('click', function (ev) {
+    var b = ev.target.closest('[data-saver-chip]');
+    if (b) togglePin(b.getAttribute('data-saver-chip'));
+  });
+
+  /* v8: NO pin toggles on the glance strip items. The strip used to
+     grow a small 📌 button inside each canonical tile (its marquee
+     clones hid their copies); Travis, reviewing the preview on his
+     phone, called the amber pin disc riding each scrolling item
+     ugly and unnecessary. The buttons are gone — originals and
+     clones alike carry only icon + label + value — and answer
+     pinning lives solely in the chips above (the screensaver card
+     on Events & More), writing the same store, feeding the same
+     saver stream. */
+
+  /* ----- the photo pool ----- */
+  var pool = FALLBACK_POOL, poolIdx = 0, frontIsA = true, fadeToken = 0;
+  function escHtml(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  function setCaption(p) {
+    var credit = document.getElementById('saver-credit');
+    if (credit) credit.innerHTML = p.credit
+      ? '<span class="saver-credit-name">' + escHtml(p.credit) + '</span>' +
+        (p.location ? '<span class="saver-credit-loc">' + escHtml(p.location) + '</span>' : '')
+      : '';
+    var q = QUIET[quietIdx % QUIET.length];
+    var qEl = document.getElementById('saver-quiet');
+    if (qEl) qEl.textContent = q ? q[langCur === 'es' ? 'es' : 'en'] : '';
+  }
+  function showPhoto(idx, instant) {
+    if (!pool.length) return;
+    /* a real advance (the 16-second tick) — and ONLY that — moves the
+       quiet sponsor rotation to its next entry; opens, language flips
+       and pool repaints are instant and keep the current entry */
+    if (!instant) quietIdx++;
+    poolIdx = ((idx % pool.length) + pool.length) % pool.length;
+    var p = pool[poolIdx];
+    var front = document.getElementById(frontIsA ? 'saver-photo-a' : 'saver-photo-b');
+    var back = document.getElementById(frontIsA ? 'saver-photo-b' : 'saver-photo-a');
+    fadeToken++;
+    if (instant || !back) {
+      if (front) { front.style.backgroundImage = 'url("' + p.src + '")'; front.classList.add('is-on'); }
+      setCaption(p);
+    } else {
+      back.style.backgroundImage = 'url("' + p.src + '")';
+      back.classList.add('is-on');
+      front.classList.remove('is-on');
+      frontIsA = !frontIsA;
+      /* the credit names the photo you can SEE — it swaps when the
+         fade lands, not when it starts */
+      var tk = fadeToken;
+      setTimeout(function () { if (tk === fadeToken && saverOpen) setCaption(p); }, 2900);
+    }
+    var next = new Image();
+    next.src = pool[(poolIdx + 1) % pool.length].src;
+  }
+  fetch('data/community-photos.json').then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (d) {
+      if (d && Array.isArray(d.photos) && d.photos.length) {
+        pool = d.photos.filter(function (p) { return p && p.src; });
+        if (saverOpen) showPhoto(poolIdx, true);
+      }
+    }).catch(function () { /* the fallback pool carries the mode */ });
+
+  /* ----- rendering ----- */
+  function renderSaverClock() {
+    var c = document.getElementById('saver-clock');
+    var d = document.getElementById('saver-date');
+    var now = new Date();
+    var loc = langCur === 'es' ? 'es-US' : 'en-US';
+    if (c) c.textContent = new Intl.DateTimeFormat(loc, {
+      timeZone: 'America/Los_Angeles', hour: 'numeric', minute: '2-digit' }).format(now);
+    if (d) d.textContent = new Intl.DateTimeFormat(loc, {
+      timeZone: 'America/Los_Angeles', weekday: 'long', month: 'long', day: 'numeric' }).format(now);
+  }
+  /* v6: the pinned answers SCROLL — a slow, continuous right-to-left
+     stream across the bottom of the display, built with the main
+     glance strip's own technique (a max-content track holding two
+     identical sets, animated transform-only to -50%). Same glass
+     tiles, same across-the-room type. Exactly one pin — or a visitor
+     who asked for reduced motion — gets a static centered row
+     instead. The 5-second refresh patches values in place when the
+     pin set is unchanged, so the stream never restarts under the
+     reader; a changed pin set or language rebuilds it. */
+  function saverTile(a) {
+    var v = a.val();
+    return '<div class="saver-answer">'
+      + '<div class="saver-answer-label"><img src="' + a.icon + '" alt="" aria-hidden="true"> ' + esc(a.label()) + '</div>'
+      + '<div class="saver-answer-val' + (v && v.length > 56 ? ' xlong' : v && v.length > 24 ? ' long' : '') + '">' + esc(v || '—') + '</div>'
+      + (a.sub() ? '<div class="saver-answer-sub">' + esc(a.sub()) + '</div>' : '')
+      + '</div>';
+  }
+  function patchSaverTile(tile, a) {
+    var v = a.val();
+    var valEl = tile.querySelector('.saver-answer-val');
+    if (valEl) {
+      valEl.textContent = v || '—';
+      valEl.className = 'saver-answer-val' + (v && v.length > 56 ? ' xlong' : v && v.length > 24 ? ' long' : '');
+    }
+    var s = a.sub();
+    var subEl = tile.querySelector('.saver-answer-sub');
+    if (subEl && s) subEl.textContent = s;
+    else if (subEl && !s) subEl.remove();
+    else if (!subEl && s) {
+      var d = document.createElement('div');
+      d.className = 'saver-answer-sub';
+      d.textContent = s;
+      tile.appendChild(d);
+    }
+  }
+  function renderSaverAnswers() {
+    var wrap = document.getElementById('saver-answers');
+    if (!wrap) return;
+    var shown = ANSWERS.filter(function (a) { return isPinned(a.id); });
+    if (!shown.length) {
+      wrap.dataset.sig = '';
+      wrap.classList.remove('scrolling');
+      wrap.classList.add('is-static');
+      wrap.innerHTML = '<div class="saver-answer saver-answer-none"><div class="saver-answer-val">'
+        + (langCur === 'es' ? 'Sin respuestas fijadas' : 'No answers pinned') + '</div>'
+        + '<div class="saver-answer-sub">'
+        + (langCur === 'es' ? 'Fija las tuyas desde la pestaña Eventos y Más' : 'Pin yours from the Events &amp; More tab') + '</div></div>';
+      return;
+    }
+    var sig = shown.map(function (a) { return a.id; }).join(',') + '|' + langCur;
+    var reduced = false;
+    try { reduced = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches); } catch (e) { /* assume motion ok */ }
+    if (shown.length < 2 || reduced) {
+      if (wrap.dataset.sig === sig && wrap.classList.contains('is-static')) {
+        var tiles = wrap.querySelectorAll('.saver-answer');
+        shown.forEach(function (a, i) { if (tiles[i]) patchSaverTile(tiles[i], a); });
+        return;
+      }
+      wrap.dataset.sig = sig;
+      wrap.classList.remove('scrolling');
+      wrap.classList.add('is-static');
+      wrap.innerHTML = shown.map(saverTile).join('');
+      return;
+    }
+    if (wrap.dataset.sig === sig && wrap.classList.contains('scrolling')) {
+      var all = wrap.querySelectorAll('.saver-answer');
+      all.forEach(function (tile, i) { patchSaverTile(tile, shown[i % shown.length]); });
+      return;
+    }
+    wrap.dataset.sig = sig;
+    wrap.classList.remove('is-static');
+    wrap.classList.add('scrolling');
+    var set = shown.map(saverTile).join('');
+    /* v7: the tiles are parade-scale now (~41vw wide, 82vw on phones),
+       so the loop is timed by TRACK WIDTH, not answer count — a constant
+       ~25px/s drift, the same stately pace v6 had, at any screen size.
+       (v6's flat 13s-per-answer would drag the wide tiles past at
+       ~60px/s on a TV.) One set passing = setW / 25 seconds. */
+    var vwSaver = window.innerWidth || 1200;
+    var tileWSaver = vwSaver <= 640 ? vwSaver * 0.82 : Math.min(820, vwSaver * 0.41);
+    var dur = Math.max(30, Math.round(shown.length * (tileWSaver + 20) / 25));
+    wrap.innerHTML = '<div class="saver-scroll-viewport"><div class="saver-scroll-track" style="animation-duration:' + dur + 's">'
+      + '<div class="saver-scroll-set">' + set + '</div>'
+      + '<div class="saver-scroll-set" aria-hidden="true">' + set + '</div>'
+      + '</div></div>';
+  }
+
+  /* ----- open / close: unattended, gestureless-tolerant ----- */
+  var saverOpen = false, saverTimer = null, saverWake = null;
+  var shownAt = 0, tickCount = 0;
+  function saverTick() {
+    if (!saverOpen) return;
+    renderSaverClock();
+    tickCount++;
+    if (typeof document !== 'undefined' && document.hidden) { shownAt = Date.now(); return; }
+    if (tickCount % 5 === 0) renderSaverAnswers();          // answers re-read every 5s
+    if (Date.now() - shownAt >= PHOTO_MS) { shownAt = Date.now(); showPhoto(poolIdx + 1, false); }
+  }
+  function openSaver() {
+    if (saverOpen) return;
+    saverOpen = true;
+    overlay.hidden = false;
+    document.body.classList.add('saver-on');
+    shownAt = Date.now(); tickCount = 0;
+    renderSaverClock();
+    renderSaverAnswers();
+    showPhoto(poolIdx, true);
+    saverTimer = setInterval(saverTick, 1000);
+    var hint = document.getElementById('saver-exit-hint');
+    if (hint) {
+      hint.classList.remove('dim');
+      setTimeout(function () { if (saverOpen) hint.classList.add('dim'); }, 5000);
+    }
+    try {
+      var de = document.documentElement;
+      if (de && de.requestFullscreen) { var pr = de.requestFullscreen(); if (pr && pr.catch) pr.catch(function () {}); }
+    } catch (e) { /* fullscreen is a nicety, never a requirement — and without a gesture (a ?display=1 TV bookmark) the browser may simply decline */ }
+    try {
+      if (navigator.wakeLock && navigator.wakeLock.request) {
+        navigator.wakeLock.request('screen').then(function (w) {
+          if (saverOpen) saverWake = w;
+          else if (w && w.release) w.release();
+        }).catch(function () {});
+      }
+    } catch (e) { /* the saver runs fine without a wake lock */ }
+  }
+  function closeSaver() {
+    if (!saverOpen) return;
+    saverOpen = false;
+    if (saverTimer) { clearInterval(saverTimer); saverTimer = null; }
+    overlay.hidden = true;
+    document.body.classList.remove('saver-on');
+    try { if (document.fullscreenElement && document.exitFullscreen) document.exitFullscreen(); } catch (e) {}
+    try { if (saverWake && saverWake.release) saverWake.release(); } catch (e) {}
+    saverWake = null;
+  }
+  ['saver-btn', 'saver-start-btn'].forEach(function (id) {
+    var b = document.getElementById(id);
+    if (b) b.addEventListener('click', openSaver);
+  });
+  var exitBtn = document.getElementById('saver-exit');
+  if (exitBtn) exitBtn.addEventListener('click', function (ev) {
+    if (ev && ev.stopPropagation) ev.stopPropagation();
+    closeSaver();
+  });
+  overlay.addEventListener('click', function () { if (saverOpen) closeSaver(); });
+  document.addEventListener('keydown', function (ev) {
+    if (!saverOpen) return;
+    var t = ev.target;
+    if (t && /INPUT|TEXTAREA|SELECT/.test(t.tagName || '')) return;
+    closeSaver();
+  });
+
+  /* ----- the photo form's honest gate: the continue button wakes only
+     when the name, the place and the permission box are all present.
+     The fields mirror the real form's questions; the submission
+     itself happens on the form (PHOTO_FORM_URL) and nothing sent
+     there is ever published without review. ----- */
+  var form = document.getElementById('photo-form');
+  if (form) {
+    var nameEl = document.getElementById('photo-name'),
+        whereEl = document.getElementById('photo-where'),
+        rightsEl = document.getElementById('photo-rights'),
+        submitEl = document.getElementById('photo-submit');
+    var gate = function () {
+      var ok = !!(nameEl && nameEl.value.trim() && whereEl && whereEl.value.trim()
+        && rightsEl && rightsEl.checked);
+      if (submitEl) {
+        submitEl.classList.toggle('is-off', !ok);
+        submitEl.setAttribute('aria-disabled', ok ? 'false' : 'true');
+        if (ok) submitEl.setAttribute('href', PHOTO_FORM_URL);
+      }
+      return ok;
+    };
+    form.addEventListener('input', gate);
+    form.addEventListener('change', gate);
+    if (submitEl) submitEl.addEventListener('click', function (ev) {
+      if (!gate()) ev.preventDefault();
+    });
+    gate();
+  }
+
+  /* another writer (the Your-pins zone) can change the shared store —
+     keep this module's view of the answers half in sync, and expose
+     the opener for the drawer's screensaver entry */
+  document.addEventListener('ccl-pins-changed', function () {
+    pins = pinStore.answers;
+    paintPins();
+    if (saverOpen) renderSaverAnswers();
+  });
+  window.CCLOpenSaver = openSaver;
+
+  paintPins();
+
+  /* language flips re-render the saver's own chrome (same wrap pattern
+     as the schools board and the tide glance) */
+  var langSetSaverPrev = langSet;
+  langSet = function (lang) {
+    langSetSaverPrev(lang);
+    paintPins();
+    if (saverOpen) { renderSaverClock(); renderSaverAnswers(); showPhoto(poolIdx, true); }
+  };
+
+  /* a TV / office screen can bookmark straight into the mode */
+  try {
+    if (new URLSearchParams(window.location.search).get('display') === '1') {
+      setTimeout(openSaver, 350);
+    }
+  } catch (e) { /* no query string — the buttons still work */ }
+})();
+
+/* ============================================================
+   LOCAL SERVICES DIRECTORY — category filter (micro-business
+   tier, business plan §6 addendum, 2026-11-05). The rows are
+   static HTML in Events & More; this only shows/hides them.
+   Empty categories get a per-category honest empty state
+   (EN/ES, re-rendered on the language toggle via the same
+   langSet wrap the saver module uses). No data is fetched and
+   no listing is ever created here — listings arrive by hand
+   after the request-form review, like sponsors.
+   ============================================================ */
+(function () {
+  var wrap = document.getElementById('dir-filters');
+  var list = document.getElementById('dir-list');
+  var emptyEl = document.getElementById('dir-empty');
+  if (!wrap || !list || !emptyEl) return;
+
+  var EMPTY = {
+    childcare: {
+      en: 'No child care listings yet — the first sitter, nanny or family daycare to join is listed free during the founding launch.',
+      es: 'Aún no hay anuncios de cuidado infantil — la primera niñera o guardería familiar que se sume aparece gratis durante el lanzamiento fundador.'
+    },
+    cleaning: {
+      en: 'No cleaners listed yet. Make houses shine anywhere in this county? This is your spot — free during the founding launch.',
+      es: 'Aún no hay servicios de limpieza. ¿Dejas las casas brillando en este condado? Este es tu lugar — gratis durante el lanzamiento fundador.'
+    },
+    handyman: {
+      en: 'No handymen or repair folks yet — the first listing here is free while we launch.',
+      es: 'Aún no hay manitas ni reparadores — el primer anuncio aquí es gratis mientras lanzamos.'
+    },
+    pets: {
+      en: 'No pet sitters or groomers yet. Walk dogs or board cats around here? Claim the first spot — free during the founding launch.',
+      es: 'Aún no hay cuidadores de mascotas. ¿Paseas perros o cuidas gatos por aquí? Reclama el primer lugar — gratis durante el lanzamiento fundador.'
+    },
+    yard: {
+      en: 'No yard & garden listings yet — mowing, pruning, brush hauling. First one in is free during the founding launch.',
+      es: 'Aún no hay anuncios de patio y jardín — cortar el césped, podar, retirar ramas. El primero entra gratis durante el lanzamiento fundador.'
+    },
+    tutoring: {
+      en: 'No tutors listed yet. Math help, reading help, test prep — the first listing is free during the founding launch.',
+      es: 'Aún no hay tutores. Ayuda con matemáticas, lectura, preparación de exámenes — el primer anuncio es gratis durante el lanzamiento fundador.'
+    },
+    moving: {
+      en: 'No movers or haulers yet. Got a truck and a strong back? Be the first — free during the founding launch.',
+      es: 'Aún no hay mudanzas ni fletes. ¿Tienes una camioneta y una espalda fuerte? Sé el primero — gratis durante el lanzamiento fundador.'
+    },
+    other: {
+      en: 'Nothing else here yet — listings are free during the founding launch.',
+      es: 'Nada más por aquí todavía — los anuncios son gratis durante el lanzamiento fundador.'
+    }
+  };
+
+  var cur = 'all';
+  function renderDir() {
+    var shown = 0;
+    list.querySelectorAll('.dir-item').forEach(function (item) {
+      var cat = item.getAttribute('data-dircat');
+      var show = cur === 'all' || cat === cur;
+      item.hidden = !show;
+      if (show) shown++;
+    });
+    if (shown === 0 && EMPTY[cur]) {
+      emptyEl.textContent = EMPTY[cur][langCur === 'es' ? 'es' : 'en'];
+      emptyEl.hidden = false;
+    } else {
+      emptyEl.hidden = true;
+    }
+  }
+
+  wrap.querySelectorAll('.dir-chip').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      wrap.querySelectorAll('.dir-chip').forEach(function (x) {
+        x.classList.remove('active');
+        x.setAttribute('aria-pressed', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
+      cur = btn.getAttribute('data-dirfilter') || 'all';
+      renderDir();
+    });
+  });
+
+  renderDir();
+
+  /* language flips re-render the JS-owned empty state (same wrap
+     pattern as the schools board, the tide glance and the saver) */
+  var langSetDirPrev = langSet;
+  langSet = function (lang) {
+    langSetDirPrev(lang);
+    renderDir();
+  };
+})();
+
+/* ---------- v6: mobile sponsor spacing (Today) ----------
+   Research rule: no cluttered above-the-fold ad stacks on phones —
+   sponsor-format cards belong BETWEEN content modules, and a view
+   keeps ONE true invitation up top. At phone widths (where the
+   founding panel stacks into a single column, ≤760px) the panel
+   keeps only the founding invitation; its two house cells — County
+   Watch and the nonprofit notice — move down into Today's flow,
+   spaced between content sections: County Watch lands just before
+   Tonight & Tomorrow, the nonprofit notice just before the County
+   Briefing. They are never adjacent to each other or to the panel.
+   Wider layouts are untouched — the full panel and the rails stay
+   exactly as built. The cells are MOVED, never duplicated, so ids,
+   links and reading order stay single and honest at every width. */
+(function initMobileSponsorSpacing() {
+  var watch = document.getElementById('founding-cell-watch');
+  var nonp = document.getElementById('founding-cell-nonprofit');
+  var plan = document.getElementById('plan-card');
+  var briefing = document.getElementById('briefing-card');
+  if (!watch || !nonp || !plan || !briefing || !plan.parentNode || !briefing.parentNode) return;
+  var homes = [watch, nonp].map(function (el) {
+    return { el: el, parent: el.parentNode, next: el.nextSibling };
+  });
+  var mq = null;
+  try { mq = window.matchMedia('(max-width: 760px)'); } catch (e) { /* no mq: desktop layout stands */ }
+  function apply() {
+    if (mq && mq.matches) {
+      watch.classList.add('in-flow');
+      nonp.classList.add('in-flow');
+      plan.parentNode.insertBefore(watch, plan);
+      briefing.parentNode.insertBefore(nonp, briefing);
+    } else {
+      homes.forEach(function (h) {
+        h.el.classList.remove('in-flow');
+        if (h.next && h.next.parentNode === h.parent) h.parent.insertBefore(h.el, h.next);
+        else h.parent.appendChild(h.el);
+      });
+    }
+  }
+  apply();
+  if (mq) {
+    if (mq.addEventListener) mq.addEventListener('change', apply);
+    else if (mq.addListener) mq.addListener(apply);
+  }
+})();
+
+/* ---------- your commute: typical drive times (v9, 2026-11-05) ----------
+   Travis's last pre-ship addition: one card at the top of Travel —
+   right above the roads card and its My Route strip — answering
+   "how long's the drive?" for a pickable county town → a pickable
+   destination. St. Helens → St. Johns is the default pair, the one
+   he named. Routing is the free OSRM public service, fetched live
+   by the page itself (keyless, no fetcher involvement).
+   HONESTY (binding): OSRM drives the route at posted speeds in
+   free-flow conditions — the number is a TYPICAL drive, never a
+   live-traffic reading, and the card says so in both languages
+   ("Typical drive — no live traffic" / "Tiempo típico — sin
+   tráfico en vivo") directly under the answer.
+   Picks persist in localStorage ccl-commute-v1, and the last good
+   result per town pair is cached in the same store: a failed fetch
+   shows the cached reading with its own checked time instead of an
+   error, and only a pair with no cache at all shows the plain
+   couldn't-load line. Recomputed when the picks change, when the
+   Travel view opens (skipping a fetch whose cache is under five
+   minutes old), and once at load so a pinned copy on Today is
+   never stuck on the loading line. */
+(function () {
+  var DRIVE_KEY = 'ccl-commute-v1';
+  var FROM = [
+    { name: 'St. Helens', lat: 45.8597, lon: -122.8390 },
+    { name: 'Scappoose', lat: 45.7407, lon: -122.8776 },
+    { name: 'Columbia City', lat: 45.8901, lon: -122.8110 },
+    { name: 'Rainier', lat: 46.0896, lon: -122.9367 },
+    { name: 'Clatskanie', lat: 46.1033, lon: -123.2043 },
+    { name: 'Vernonia', lat: 45.8595, lon: -123.1901 }
+  ];
+  var TO = [
+    { name: 'St. Johns', es: 'St. Johns', lat: 45.5899, lon: -122.7543 },
+    { name: 'Downtown Portland', es: 'Centro de Portland', lat: 45.5152, lon: -122.6784 },
+    { name: 'Longview', es: 'Longview', lat: 46.1386, lon: -122.9544 }
+  ];
+  var TXT = {
+    en: { checking: 'Working out the drive…', checked: 'Checked', via: 'via', min: 'min', hr: 'hr', fail: "Couldn't load the drive time — try again in a bit" },
+    es: { checking: 'Calculando el viaje…', checked: 'Consultado', via: 'por', min: 'min', hr: 'h', fail: 'No se pudo cargar el tiempo de manejo — inténtalo de nuevo en un rato' }
+  };
+  var store = { from: 'St. Helens', to: 'St. Johns', cache: {} };
+  try {
+    var saved = JSON.parse(window.localStorage.getItem(DRIVE_KEY) || 'null');
+    if (saved) {
+      if (FROM.some(function (t) { return t.name === saved.from; })) store.from = saved.from;
+      if (TO.some(function (t) { return t.name === saved.to; })) store.to = saved.to;
+      if (saved.cache && typeof saved.cache === 'object') store.cache = saved.cache;
+    }
+  } catch (e) { /* storage blocked — the defaults still apply */ }
+  function save() { try { window.localStorage.setItem(DRIVE_KEY, JSON.stringify(store)); } catch (e) { /* non-fatal */ } }
+  function pairKey() { return store.from + '>' + store.to; }
+  function T() { return TXT[langCur === 'es' ? 'es' : 'en']; }
+  function escTxt(s) { return (typeof esc === 'function') ? esc(s) : s; }
+
+  var lastState = { kind: 'checking', entry: null };
+  var fetching = false;
+
+  function fmtDur(sec) {
+    var mins = Math.max(1, Math.round(sec / 60));
+    if (mins < 60) return '≈ ' + mins + ' ' + T().min;
+    var h = Math.floor(mins / 60), r = mins % 60;
+    return '≈ ' + h + ' ' + T().hr + (r ? ' ' + r + ' ' + T().min : '');
+  }
+  function fmtMi(m) {
+    var mi = m / 1609.344;
+    return (mi >= 10 ? String(Math.round(mi)) : mi.toFixed(1)) + ' mi';
+  }
+  function fmtAt(at) {
+    try { return new Date(at).toLocaleTimeString('en-US', { timeZone: 'America/Los_Angeles', hour: 'numeric', minute: '2-digit' }); }
+    catch (e) { return ''; }
+  }
+  function renderChips() {
+    var fb = document.getElementById('drive-from-chips');
+    var tb = document.getElementById('drive-to-chips');
+    if (fb) {
+      fb.innerHTML = FROM.map(function (t) {
+        return '<button class="drive-chip' + (t.name === store.from ? ' active' : '') + '" type="button" data-drive-from="' + t.name + '" aria-pressed="' + (t.name === store.from) + '">' + t.name + '</button>';
+      }).join('');
+      fb.querySelectorAll('[data-drive-from]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var v = b.getAttribute('data-drive-from');
+          if (store.from === v) return;
+          store.from = v; save(); renderChips(); refresh(true);
+        });
+      });
+    }
+    if (tb) {
+      tb.innerHTML = TO.map(function (t) {
+        var label = langCur === 'es' ? t.es : t.name;
+        return '<button class="drive-chip' + (t.name === store.to ? ' active' : '') + '" type="button" data-drive-to="' + t.name + '" aria-pressed="' + (t.name === store.to) + '">' + label + '</button>';
+      }).join('');
+      tb.querySelectorAll('[data-drive-to]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var v = b.getAttribute('data-drive-to');
+          if (store.to === v) return;
+          store.to = v; save(); renderChips(); refresh(true);
+        });
+      });
+    }
+  }
+  function renderBody() {
+    var body = document.getElementById('drive-body');
+    if (!body) return;
+    if (lastState.kind === 'ok' && lastState.entry) {
+      var e = lastState.entry;
+      var sub = fmtMi(e.m) + (e.via ? ' · ' + T().via + ' ' + escTxt(e.via) : '');
+      body.innerHTML = '<div class="drive-big">' + fmtDur(e.sec) + '</div>'
+        + '<div class="drive-sub">' + sub + '</div>'
+        + '<div class="drive-checked">' + T().checked + ' ' + fmtAt(e.at) + '</div>';
+    } else if (lastState.kind === 'fail') {
+      body.innerHTML = '<p class="drive-fail">' + T().fail + '</p>';
+    } else {
+      body.innerHTML = '<p class="loading">' + T().checking + '</p>';
+    }
+  }
+  function refresh(force) {
+    var key = pairKey();
+    var hit = store.cache[key];
+    if (!force && hit && (Date.now() - hit.at) < 5 * 60 * 1000) {
+      lastState = { kind: 'ok', entry: hit }; renderBody(); return;
+    }
+    if (hit) { lastState = { kind: 'ok', entry: hit }; renderBody(); }
+    else if (lastState.kind !== 'ok') { lastState = { kind: 'checking', entry: null }; renderBody(); }
+    if (fetching) return;
+    var f = FROM.filter(function (t) { return t.name === store.from; })[0] || FROM[0];
+    var t = TO.filter(function (x) { return x.name === store.to; })[0] || TO[0];
+    fetching = true;
+    var url = 'https://router.project-osrm.org/route/v1/driving/' + f.lon + ',' + f.lat + ';' + t.lon + ',' + t.lat + '?overview=false&steps=true';
+    fetch(url).then(function (r) { return r.json(); }).then(function (d) {
+      fetching = false;
+      var rt = d && d.routes && d.routes[0];
+      if (!rt || typeof rt.duration !== 'number') throw new Error('no route');
+      var summary = (rt.legs && rt.legs[0] && rt.legs[0].summary) || '';
+      var entry = { sec: rt.duration, m: rt.distance, via: summary.split(',')[0].trim(), at: Date.now() };
+      store.cache[key] = entry; save();
+      if (pairKey() === key) { lastState = { kind: 'ok', entry: entry }; renderBody(); }
+      else refresh(true); // the picks moved mid-flight — chase the new pair
+    }).catch(function () {
+      fetching = false;
+      if (pairKey() !== key) { refresh(true); return; }
+      var c = store.cache[key];
+      if (c) lastState = { kind: 'ok', entry: c };
+      else lastState = { kind: 'fail', entry: null };
+      renderBody();
+    });
+  }
+
+  renderChips();
+  refresh(false);
+  /* Recompute when the Travel view opens (same wrap discipline as
+     the langSet wraps: the original function runs first, untouched). */
+  if (typeof cclShowView === 'function') {
+    var prevShow = cclShowView;
+    cclShowView = function (name) { prevShow(name); if (name === 'travel') refresh(false); };
+  }
+  if (typeof langSet === 'function') {
+    var prevLang = langSet;
+    langSet = function (lang) { prevLang(lang); renderChips(); renderBody(); };
+  }
+})();
