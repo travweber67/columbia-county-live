@@ -1,88 +1,40 @@
 {
- "fetched_at": "2026-11-06T18:05:52Z",
+ "fetched_at": "2026-11-06T18:10:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538006443,
-   "name": "RB JAKE",
-   "lat": 46.26774,
-   "lon": -123.46517,
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61201,
+   "lon": -122.64535,
+   "sog_kn": 0,
+   "cog": 317.3,
+   "heading": 297,
+   "nav_status": 5,
+   "updated": "2026-11-06 18:10:55.938913599 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63869,
+   "lon": -122.72402,
+   "sog_kn": 0,
+   "cog": 191.7,
+   "heading": 114,
+   "nav_status": 1,
+   "updated": "2026-11-06 18:11:03.773587554 +0000 UTC"
+  },
+  {
+   "mmsi": 368082970,
+   "name": "AMERICAN.HARMONY",
+   "lat": 45.93306,
+   "lon": -122.8049,
    "sog_kn": 9.7,
-   "cog": 304.9,
-   "heading": 300,
+   "cog": 179,
+   "heading": 177,
    "nav_status": 0,
-   "updated": "2026-11-06 18:05:58.043161609 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00885,
-   "lon": -122.84886,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 18:05:58.688734234 +0000 UTC"
-  },
-  {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.79316,
-   "lon": -122.84321,
-   "type_code": 52,
-   "destination": "US^0UX0>?? ???",
-   "updated": "2026-11-06 18:06:03.355207768 +0000 UTC"
-  },
-  {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 46.04399,
-   "lon": -122.87692,
-   "sog_kn": 0,
-   "cog": 125.2,
-   "heading": 180,
-   "nav_status": 5,
-   "updated": "2026-11-06 18:06:06.572433115 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.07887,
-   "lon": -122.90129,
-   "type_code": 69,
-   "updated": "2026-11-06 18:06:13.512399727 +0000 UTC"
-  },
-  {
-   "mmsi": 232038703,
-   "name": "IONIAN SEA",
-   "lat": 45.63926,
-   "lon": -122.77784,
-   "sog_kn": 0,
-   "cog": 132.1,
-   "heading": 230,
-   "nav_status": 5,
-   "updated": "2026-11-06 18:06:17.27840198 +0000 UTC"
-  },
-  {
-   "mmsi": 352005064,
-   "name": "ANSAC RISING SUN",
-   "lat": 45.64072,
-   "lon": -122.73231,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-06 18:06:19.951337198 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 46.09079,
-   "lon": -122.93215,
-   "sog_kn": 0,
-   "cog": 226.1,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-06 18:06:24.326037367 +0000 UTC"
+   "updated": "2026-11-06 18:11:11.24959834 +0000 UTC"
   }
  ]
 }
