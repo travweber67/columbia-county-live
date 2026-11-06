@@ -1,82 +1,104 @@
 {
- "fetched_at": "2026-11-06T03:14:46Z",
+ "fetched_at": "2026-11-06T03:19:47Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.11263,
-   "lon": -122.97598,
-   "type_code": 33,
-   "destination": "LORD ISL. LONGVIEW",
-   "updated": "2026-11-06 03:14:52.146629159 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.79316,
-   "lon": -122.84322,
-   "sog_kn": 0,
-   "cog": 244.1,
-   "heading": 209,
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.63403,
+   "lon": -122.71329,
+   "sog_kn": 3,
+   "cog": 298.2,
+   "heading": 316,
    "nav_status": 12,
-   "updated": "2026-11-06 03:14:54.282825741 +0000 UTC"
+   "updated": "2026-11-06 03:20:02.554040624 +0000 UTC",
+   "type_code": 52,
+   "destination": "KALAMA"
   },
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20003,
-   "lon": -123.38539,
-   "sog_kn": 0.1,
-   "cog": 15.8,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-06 03:14:57.65328945 +0000 UTC"
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 46.10604,
+   "lon": -122.95638,
+   "type_code": 52,
+   "destination": "US^029T>0UW8",
+   "updated": "2026-11-06 03:20:05.323974861 +0000 UTC"
   },
   {
    "mmsi": 367384780,
    "name": "CAROLYN DOROTHY",
-   "lat": 46.1051,
-   "lon": -122.95456,
+   "lat": 46.10513,
+   "lon": -122.95454,
    "sog_kn": 0,
-   "cog": 125.2,
-   "heading": 28,
+   "cog": 294.9,
+   "heading": 30,
    "nav_status": 0,
-   "updated": "2026-11-06 03:14:58.545094093 +0000 UTC"
+   "updated": "2026-11-06 03:20:10.866325857 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65006,
-   "lon": -122.74767,
-   "sog_kn": 0,
-   "cog": 224,
-   "heading": 511,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.95847,
+   "lon": -122.81177,
+   "sog_kn": 3.9,
+   "cog": 347.8,
+   "heading": 359,
    "nav_status": 3,
-   "updated": "2026-11-06 03:15:08.095284341 +0000 UTC"
+   "updated": "2026-11-06 03:20:11.209011557 +0000 UTC"
   },
   {
-   "mmsi": 352006943,
-   "name": "GLOVIS LEGEND",
-   "lat": 45.6461,
-   "lon": -122.7555,
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58756,
+   "lon": -122.77042,
    "sog_kn": 0,
-   "cog": 140.3,
-   "heading": 136,
-   "nav_status": 5,
-   "updated": "2026-11-06 03:15:19.754046875 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.1079,
-   "lon": -122.959,
-   "sog_kn": 0,
-   "cog": 360,
+   "cog": 328.8,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-06 03:15:20.138491665 +0000 UTC"
+   "updated": "2026-11-06 03:20:13.60103266 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.01632,
+   "lon": -122.85991,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-06 03:20:15.493888953 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07901,
+   "lon": -122.90082,
+   "sog_kn": 0.2,
+   "cog": 50.2,
+   "heading": 332,
+   "nav_status": 3,
+   "updated": "2026-11-06 03:20:18.376433299 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64568,
+   "lon": -122.73488,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-06 03:20:20.085595506 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64286,
+   "lon": -122.77116,
+   "sog_kn": 0,
+   "cog": 229.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 03:20:25.480712002 +0000 UTC"
   }
  ]
 }
