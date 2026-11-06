@@ -1,157 +1,69 @@
 {
- "fetched_at": "2026-11-06T17:25:49Z",
+ "fetched_at": "2026-11-06T17:26:50Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 14 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64351,
-   "lon": -122.75282,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19995,
+   "lon": -123.38553,
    "sog_kn": 0,
-   "cog": 218.5,
+   "cog": 36.9,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 17:25:54.895083399 +0000 UTC"
+   "nav_status": 15,
+   "updated": "2026-11-06 17:27:30.286949648 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07899,
-   "lon": -122.90131,
-   "sog_kn": 0.2,
-   "cog": 200.1,
-   "heading": 153,
-   "nav_status": 0,
-   "updated": "2026-11-06 17:25:58.497396904 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.71798,
-   "lon": -122.76665,
-   "sog_kn": 4.9,
-   "cog": 189.6,
-   "heading": 190,
-   "nav_status": 12,
-   "updated": "2026-11-06 17:26:00.65279111 +0000 UTC"
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 45.63927,
+   "lon": -122.77785,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-06 17:27:36.952559535 +0000 UTC"
   },
   {
    "mmsi": 367681630,
    "name": "VICKI B",
-   "lat": 45.9818,
-   "lon": -122.83428,
-   "sog_kn": 0.1,
-   "cog": 197.8,
-   "heading": 162,
-   "nav_status": 0,
-   "updated": "2026-11-06 17:26:01.540203763 +0000 UTC"
+   "lat": 45.98173,
+   "lon": -122.83429,
+   "type_code": 52,
+   "destination": "US^0RFZ>?? ???",
+   "updated": "2026-11-06 17:27:46.034476911 +0000 UTC"
   },
   {
-   "mmsi": 538007029,
-   "name": "ZEPHYROS",
-   "lat": 46.02715,
-   "lon": -122.86962,
-   "sog_kn": 0,
-   "cog": 159,
-   "heading": 139,
-   "nav_status": 5,
-   "updated": "2026-11-06 17:26:05.079864915 +0000 UTC"
-  },
-  {
-   "mmsi": 367425870,
-   "name": "HUSKY",
-   "lat": 45.64988,
-   "lon": -122.74783,
-   "sog_kn": 0,
-   "cog": 243.4,
-   "heading": 103,
-   "nav_status": 0,
-   "updated": "2026-11-06 17:26:07.346957072 +0000 UTC"
-  },
-  {
-   "mmsi": 636020486,
-   "name": "BBG GUILIN",
-   "lat": 46.2423,
-   "lon": -123.43316,
-   "sog_kn": 10.1,
-   "cog": 319.7,
-   "heading": 321,
-   "nav_status": 0,
-   "updated": "2026-11-06 17:26:11.327836512 +0000 UTC"
-  },
-  {
-   "mmsi": 368268040,
-   "name": "PAPA T",
-   "lat": 46.0897,
-   "lon": -122.9297,
-   "sog_kn": 0.1,
-   "cog": 121.5,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 17:26:11.354871094 +0000 UTC"
-  },
-  {
-   "mmsi": 368082970,
-   "name": "AMERICAN.HARMONY",
-   "lat": 46.03419,
-   "lon": -122.87866,
-   "sog_kn": 10.2,
-   "cog": 159.2,
-   "heading": 160,
-   "nav_status": 0,
-   "updated": "2026-11-06 17:26:12.608915773 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.88463,
-   "lon": -122.79835,
-   "sog_kn": 8.4,
-   "cog": 157.8,
-   "heading": 157,
-   "nav_status": 0,
-   "updated": "2026-11-06 17:26:13.572886307 +0000 UTC"
-  },
-  {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64539,
-   "lon": -122.73503,
-   "sog_kn": 0,
-   "cog": 30.4,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-06 17:26:13.727679739 +0000 UTC"
-  },
-  {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 46.04399,
-   "lon": -122.87695,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-06 17:26:14.26450868 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65017,
-   "lon": -122.74759,
-   "sog_kn": 0,
-   "cog": 249.1,
-   "heading": 511,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07926,
+   "lon": -122.90144,
+   "sog_kn": 0.2,
+   "cog": 235.5,
+   "heading": 314,
    "nav_status": 3,
-   "updated": "2026-11-06 17:26:18.769924497 +0000 UTC"
+   "updated": "2026-11-06 17:27:47.722727054 +0000 UTC"
   },
   {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10891,
-   "lon": -122.96128,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-06 17:26:22.541273701 +0000 UTC"
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64342,
+   "lon": -122.75285,
+   "sog_kn": 0,
+   "cog": 219.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 17:27:55.14362514 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07893,
+   "lon": -122.90131,
+   "sog_kn": 0.2,
+   "cog": 270.3,
+   "heading": 132,
+   "nav_status": 0,
+   "updated": "2026-11-06 17:27:55.542989541 +0000 UTC"
   }
  ]
 }
