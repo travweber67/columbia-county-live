@@ -1,115 +1,91 @@
 {
- "fetched_at": "2026-11-06T19:41:00Z",
+ "fetched_at": "2026-11-06T19:46:00Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07609,
-   "lon": -122.90024,
-   "sog_kn": 3.1,
-   "cog": 308.5,
-   "heading": 140,
+   "mmsi": 368082970,
+   "name": "AMERICAN.HARMONY",
+   "lat": 45.67168,
+   "lon": -122.77238,
+   "sog_kn": 8.4,
+   "cog": 161,
+   "heading": 160,
    "nav_status": 0,
-   "updated": "2026-11-06 19:41:09.914597351 +0000 UTC"
+   "updated": "2026-11-06 19:46:12.373052974 +0000 UTC"
   },
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10795,
-   "lon": -122.95901,
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.6435,
+   "lon": -122.75287,
+   "sog_kn": 0,
+   "cog": 252.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 19:46:14.130006346 +0000 UTC"
+  },
+  {
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.11853,
+   "lon": -122.97819,
+   "type_code": 70,
+   "destination": "USA LONGVIEW",
+   "updated": "2026-11-06 19:46:14.762972441 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.95337,
+   "lon": -122.8096,
+   "sog_kn": 1.3,
+   "cog": 342.8,
+   "heading": 345,
+   "nav_status": 3,
+   "updated": "2026-11-06 19:46:14.976080951 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08962,
+   "lon": -122.92889,
+   "sog_kn": 0,
+   "cog": 223.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 19:46:17.156035065 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64788,
+   "lon": -122.74097,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-06 19:46:26.929589905 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 230.1,
+   "heading": 124,
+   "nav_status": 15,
+   "updated": "2026-11-06 19:46:27.433730789 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15705,
+   "lon": -123.40233,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 511,
+   "heading": 131,
    "nav_status": 0,
-   "updated": "2026-11-06 19:41:11.192322474 +0000 UTC"
-  },
-  {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.98152,
-   "lon": -122.83467,
-   "sog_kn": 0.2,
-   "cog": 66.6,
-   "heading": 151,
-   "nav_status": 0,
-   "updated": "2026-11-06 19:41:12.948728545 +0000 UTC"
-  },
-  {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64537,
-   "lon": -122.73503,
-   "sog_kn": 0,
-   "cog": 30.4,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-06 19:41:15.111416912 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00898,
-   "lon": -122.84838,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 19:41:19.799479593 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10359,
-   "lon": -122.91008,
-   "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 76,
-   "nav_status": 3,
-   "updated": "2026-11-06 19:41:24.431279528 +0000 UTC"
-  },
-  {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.81135,
-   "lon": -122.8274,
-   "sog_kn": 6.5,
-   "cog": 349.9,
-   "heading": 357,
-   "nav_status": 0,
-   "updated": "2026-11-06 19:41:26.986635375 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58079,
-   "lon": -122.76005,
-   "type_code": 31,
-   "destination": "PTSI PDX",
-   "updated": "2026-11-06 19:41:27.41351186 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65009,
-   "lon": -122.74764,
-   "sog_kn": 0,
-   "cog": 241.6,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-06 19:41:29.275367424 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20005,
-   "lon": -123.38542,
-   "sog_kn": 0.1,
-   "cog": 14.8,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-06 19:41:36.034291137 +0000 UTC"
+   "updated": "2026-11-06 19:46:33.925807013 +0000 UTC"
   }
  ]
 }
