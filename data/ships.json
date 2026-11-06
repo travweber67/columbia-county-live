@@ -1,58 +1,93 @@
 {
- "fetched_at": "2026-11-06T11:55:26Z",
+ "fetched_at": "2026-11-06T11:56:46Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368327640,
-   "name": "CAPT. STEVE",
-   "lat": 45.85024,
-   "lon": -122.78394,
-   "sog_kn": 8.3,
-   "cog": 7,
-   "heading": 5,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07895,
+   "lon": -122.90096,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-06 11:57:21.332830816 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64349,
+   "lon": -122.77066,
+   "sog_kn": 2.8,
+   "cog": 355.7,
+   "heading": 143,
    "nav_status": 12,
-   "updated": "2026-11-06 11:55:44.90132084 +0000 UTC"
+   "updated": "2026-11-06 11:57:22.188732941 +0000 UTC"
   },
   {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58131,
-   "lon": -122.76066,
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.74462,
+   "lon": -122.76389,
+   "sog_kn": 8.4,
+   "cog": 178.8,
+   "heading": 168,
+   "nav_status": 12,
+   "updated": "2026-11-06 11:57:30.383995359 +0000 UTC"
+  },
+  {
+   "mmsi": 538011495,
+   "name": "MTR JUPITER",
+   "lat": 46.12453,
+   "lon": -122.98895,
    "sog_kn": 0,
-   "cog": 100.2,
-   "heading": 123,
+   "cog": 211.8,
+   "heading": 132,
+   "nav_status": 1,
+   "updated": "2026-11-06 11:57:34.300018965 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07866,
+   "lon": -122.90097,
+   "sog_kn": 0,
+   "cog": 68.9,
+   "heading": 95,
    "nav_status": 0,
-   "updated": "2026-11-06 11:55:49.559389448 +0000 UTC"
+   "updated": "2026-11-06 11:57:36.900802833 +0000 UTC"
   },
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.73136,
-   "lon": -122.7609,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-06 11:56:02.148140976 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64353,
-   "lon": -122.75281,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07892,
+   "lon": -122.90139,
    "sog_kn": 0,
-   "cog": 323.7,
+   "cog": 360,
+   "heading": 279,
+   "nav_status": 3,
+   "updated": "2026-11-06 11:57:37.581266434 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.6501,
+   "lon": -122.74762,
+   "sog_kn": 0,
+   "cog": 294.2,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 11:56:05.484233175 +0000 UTC"
+   "nav_status": 3,
+   "updated": "2026-11-06 11:57:39.0837844 +0000 UTC"
   },
   {
-   "mmsi": 354425000,
-   "name": "PAN QUEEN",
-   "lat": 46.09412,
-   "lon": -122.93747,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-06 11:56:08.968921272 +0000 UTC"
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 46.09082,
+   "lon": -122.93209,
+   "sog_kn": 0,
+   "cog": 103.9,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-06 11:57:47.723225157 +0000 UTC"
   }
  ]
 }
