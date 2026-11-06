@@ -1,120 +1,75 @@
 {
- "fetched_at": "2026-11-06T16:25:45Z",
+ "fetched_at": "2026-11-06T16:26:50Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 636020486,
+   "name": "BBG GUILIN",
+   "lat": 46.14737,
+   "lon": -123.27877,
+   "type_code": 70,
+   "destination": "SINGAPORE",
+   "updated": "2026-11-06 16:27:38.393347885 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65022,
+   "lon": -122.74762,
+   "sog_kn": 0,
+   "cog": 345.9,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-06 16:27:39.115721585 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.64331,
+   "lon": -122.75285,
+   "type_code": 50,
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-06 16:27:44.123632286 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.63383,
+   "lon": -122.70352,
+   "sog_kn": 8.9,
+   "cog": 311.1,
+   "heading": 311,
+   "nav_status": 0,
+   "updated": "2026-11-06 16:27:47.050629153 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15336,
+   "lon": -123.37714,
+   "type_code": 99,
+   "updated": "2026-11-06 16:27:54.987293117 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08967,
+   "lon": -122.9288,
+   "sog_kn": 0,
+   "cog": 302.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 16:27:55.586613435 +0000 UTC"
+  },
   {
    "mmsi": 368082970,
    "name": "AMERICAN.HARMONY",
-   "lat": 46.14068,
-   "lon": -123.02613,
-   "sog_kn": 9.2,
-   "cog": 115.8,
-   "heading": 117,
-   "nav_status": 0,
-   "updated": "2026-11-06 16:25:50.737589816 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07922,
-   "lon": -122.9014,
-   "sog_kn": 0.3,
-   "cog": 35.2,
-   "heading": 312,
-   "nav_status": 3,
-   "updated": "2026-11-06 16:25:57.137433103 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 45.66826,
-   "lon": -122.7666,
-   "type_code": 52,
-   "destination": "COL RIVER",
-   "updated": "2026-11-06 16:26:01.05941982 +0000 UTC"
-  },
-  {
-   "mmsi": 538007029,
-   "name": "ZEPHYROS",
-   "lat": 46.02718,
-   "lon": -122.86958,
-   "type_code": 70,
-   "destination": "KALAMA,USA",
-   "updated": "2026-11-06 16:26:02.451188472 +0000 UTC"
-  },
-  {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63871,
-   "lon": -122.72403,
-   "sog_kn": 0,
-   "cog": 145,
-   "heading": 115,
-   "nav_status": 1,
-   "updated": "2026-11-06 16:26:03.775096678 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.07885,
-   "lon": -122.90109,
-   "type_code": 52,
-   "destination": "PORTLAND",
-   "updated": "2026-11-06 16:26:05.388123557 +0000 UTC"
-  },
-  {
-   "mmsi": 354425000,
-   "name": "PAN QUEEN",
-   "lat": 46.09417,
-   "lon": -122.93743,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-06 16:26:08.776812792 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.10803,
-   "lon": -122.96757,
-   "sog_kn": 1.1,
-   "cog": 128.1,
-   "heading": 127,
-   "nav_status": 3,
-   "updated": "2026-11-06 16:26:10.535884433 +0000 UTC"
-  },
-  {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.98068,
-   "lon": -122.83456,
-   "sog_kn": 0.5,
-   "cog": 157,
-   "heading": 154,
-   "nav_status": 0,
-   "updated": "2026-11-06 16:26:12.555236049 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07618,
-   "lon": -122.8987,
-   "sog_kn": 3.3,
-   "cog": 83.4,
-   "heading": 100,
-   "nav_status": 0,
-   "updated": "2026-11-06 16:26:13.673653629 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.09003,
-   "lon": -122.92948,
-   "sog_kn": 0,
-   "cog": 64.6,
-   "heading": 112,
-   "nav_status": 0,
-   "updated": "2026-11-06 16:26:18.291146045 +0000 UTC"
+   "lat": 46.13858,
+   "lon": -123.01941,
+   "type_code": 60,
+   "destination": "STEVENSON, WA",
+   "updated": "2026-11-06 16:27:57.251641857 +0000 UTC"
   }
  ]
 }
