@@ -1,57 +1,133 @@
 {
- "fetched_at": "2026-11-06T18:26:51Z",
+ "fetched_at": "2026-11-06T18:30:54Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 232038703,
-   "name": "IONIAN SEA",
-   "lat": 45.63924,
-   "lon": -122.77783,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-06 18:27:34.661112205 +0000 UTC"
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64838,
+   "lon": -122.74277,
+   "sog_kn": 0,
+   "cog": 344.2,
+   "heading": 111,
+   "nav_status": 12,
+   "updated": "2026-11-06 18:30:59.477639337 +0000 UTC"
   },
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 45.64332,
-   "lon": -122.75281,
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.09199,
+   "lon": -122.92999,
    "sog_kn": 0,
-   "cog": 289.6,
+   "cog": 239.3,
+   "heading": 123,
+   "nav_status": 1,
+   "updated": "2026-11-06 18:31:01.591485657 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.09071,
+   "lon": -122.93212,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-06 18:31:01.818643271 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09413,
+   "lon": -122.94289,
+   "sog_kn": 0.1,
+   "cog": 222.2,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-06 18:27:45.180555541 +0000 UTC",
-   "type_code": 50,
-   "destination": "ASTORIA NARBOR OPS"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35743,
-   "type_code": 30,
-   "updated": "2026-11-06 18:27:40.675359741 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19996,
-   "lon": -123.38541,
-   "type_code": 99,
-   "destination": "NAKNEK",
-   "updated": "2026-11-06 18:27:52.681378288 +0000 UTC"
-  },
-  {
-   "mmsi": 367323610,
-   "name": "MIKETTE",
-   "lat": 46.19964,
-   "lon": -123.38524,
-   "sog_kn": 0,
-   "cog": 5.4,
-   "heading": 322,
    "nav_status": 0,
-   "updated": "2026-11-06 18:27:53.852773946 +0000 UTC"
+   "updated": "2026-11-06 18:31:07.138148917 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.6435,
+   "lon": -122.75242,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-06 18:31:07.928293587 +0000 UTC"
+  },
+  {
+   "mmsi": 368268040,
+   "name": "PAPA T",
+   "lat": 46.08996,
+   "lon": -122.92972,
+   "sog_kn": 0.5,
+   "cog": 279.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 18:31:11.850809146 +0000 UTC"
+  },
+  {
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.64299,
+   "lon": -122.77142,
+   "sog_kn": 0,
+   "cog": 135.8,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-06 18:31:12.36474443 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79318,
+   "lon": -122.84321,
+   "sog_kn": 0,
+   "cog": 297.2,
+   "heading": 214,
+   "nav_status": 0,
+   "updated": "2026-11-06 18:31:16.334063788 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.6075,
+   "lon": -122.67755,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 18:31:25.109683007 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.98551,
+   "lon": -122.83612,
+   "sog_kn": 0.1,
+   "cog": 321.7,
+   "heading": 330,
+   "nav_status": 0,
+   "updated": "2026-11-06 18:31:25.585774819 +0000 UTC"
+  },
+  {
+   "mmsi": 368327640,
+   "name": "CAPT. STEVE",
+   "lat": 45.58205,
+   "lon": -122.75889,
+   "sog_kn": 7.8,
+   "cog": 125.8,
+   "heading": 125,
+   "nav_status": 12,
+   "updated": "2026-11-06 18:31:25.728489144 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.10987,
+   "lon": -122.97099,
+   "type_code": 33,
+   "destination": "LORD ISL. LONGVIEW",
+   "updated": "2026-11-06 18:31:27.127643001 +0000 UTC"
   }
  ]
 }
