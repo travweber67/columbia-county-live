@@ -1,106 +1,80 @@
 {
- "fetched_at": "2026-11-06T02:04:42Z",
+ "fetched_at": "2026-11-06T02:09:42Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07874,
-   "lon": -122.90059,
-   "sog_kn": 0,
-   "cog": 34,
-   "heading": 116,
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07638,
+   "lon": -122.90083,
+   "sog_kn": 0.2,
+   "cog": 296.7,
+   "heading": 114,
    "nav_status": 0,
-   "updated": "2026-11-06 02:04:32.928569691 +0000 UTC"
+   "updated": "2026-11-06 02:09:48.391370415 +0000 UTC"
   },
   {
-   "mmsi": 563116100,
-   "name": "OCEAN GOLD",
-   "lat": 45.98414,
-   "lon": -122.83549,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20006,
+   "lon": -123.38541,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-06 02:09:51.349185885 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64348,
+   "lon": -122.75242,
+   "type_code": 52,
+   "destination": "US^0UUT>0UW8",
+   "updated": "2026-11-06 02:09:53.77186024 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.63438,
+   "lon": -122.71475,
+   "sog_kn": 4.5,
+   "cog": 39.2,
+   "heading": 44,
+   "nav_status": 12,
+   "updated": "2026-11-06 02:10:01.62584161 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.10496,
+   "lon": -122.95615,
+   "sog_kn": 0.2,
+   "cog": 309.7,
+   "heading": 33,
+   "nav_status": 0,
+   "updated": "2026-11-06 02:10:08.708842108 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.5813,
+   "lon": -122.76067,
    "sog_kn": 0,
-   "cog": 121.4,
-   "heading": 152,
+   "cog": 224.4,
+   "heading": 122,
+   "nav_status": 0,
+   "updated": "2026-11-06 02:10:09.989324386 +0000 UTC"
+  },
+  {
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.64299,
+   "lon": -122.7714,
+   "sog_kn": 0,
+   "cog": 194.3,
+   "heading": 229,
    "nav_status": 5,
-   "updated": "2026-11-06 02:04:33.177380157 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07883,
-   "lon": -122.90102,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 297,
-   "nav_status": 3,
-   "updated": "2026-11-06 02:04:37.486335648 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00906,
-   "lon": -122.84838,
-   "sog_kn": 0.4,
-   "cog": 352.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 02:04:39.089576878 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00879,
-   "lon": -122.84886,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-06 02:04:43.52725166 +0000 UTC"
-  },
-  {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63867,
-   "lon": -122.72404,
-   "sog_kn": 0.1,
-   "cog": 190.4,
-   "heading": 115,
-   "nav_status": 1,
-   "updated": "2026-11-06 02:05:03.77609645 +0000 UTC"
-  },
-  {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.90897,
-   "lon": -122.81433,
-   "sog_kn": 0,
-   "cog": 177.6,
-   "heading": 339,
-   "nav_status": 0,
-   "updated": "2026-11-06 02:05:07.677343722 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19997,
-   "lon": -123.38552,
-   "sog_kn": 0,
-   "cog": 187.4,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-06 02:05:10.298471412 +0000 UTC"
-  },
-  {
-   "mmsi": 370363000,
-   "name": "SEVEN SEAS HIGHWAY",
-   "lat": 46.2612,
-   "lon": -123.45715,
-   "sog_kn": 13.3,
-   "cog": 137.3,
-   "heading": 137,
-   "nav_status": 0,
-   "updated": "2026-11-06 02:05:11.669020476 +0000 UTC"
+   "updated": "2026-11-06 02:10:12.876781499 +0000 UTC"
   }
  ]
 }
