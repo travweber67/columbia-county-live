@@ -1,62 +1,80 @@
 {
- "fetched_at": "2026-11-06T09:10:12Z",
+ "fetched_at": "2026-11-06T09:15:12Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 352006943,
+   "name": "GLOVIS LEGEND",
+   "lat": 45.64611,
+   "lon": -122.7555,
+   "sog_kn": 0,
+   "cog": 140.3,
+   "heading": 136,
+   "nav_status": 5,
+   "updated": "2026-11-06 09:15:21.354918474 +0000 UTC"
+  },
   {
    "mmsi": 367669550,
    "name": "ALASKA CHALLENGER",
    "lat": 46.17719,
-   "lon": -123.35744,
+   "lon": -123.35742,
    "sog_kn": 0,
-   "cog": 265.3,
+   "cog": 309.2,
    "heading": 135,
    "nav_status": 15,
-   "updated": "2026-11-06 09:10:25.677009678 +0000 UTC"
+   "updated": "2026-11-06 09:15:25.955889068 +0000 UTC"
   },
   {
-   "mmsi": 563116100,
-   "name": "OCEAN GOLD",
-   "lat": 45.98415,
-   "lon": -122.83549,
-   "sog_kn": 0,
-   "cog": 121.4,
-   "heading": 151,
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.61969,
+   "lon": -122.79116,
+   "sog_kn": 3.4,
+   "cog": 171.5,
+   "heading": 170,
+   "nav_status": 12,
+   "updated": "2026-11-06 09:15:29.667735858 +0000 UTC"
+  },
+  {
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09426,
+   "lon": -122.93738,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-06 09:15:34.658019296 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.6506,
+   "lon": -122.76682,
+   "sog_kn": 20.5,
+   "cog": 31.1,
+   "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-06 09:10:35.139291199 +0000 UTC"
+   "updated": "2026-11-06 09:15:36.365619836 +0000 UTC"
   },
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58084,
-   "lon": -122.76008,
-   "sog_kn": 0,
-   "cog": 120.7,
-   "heading": 124,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.07876,
+   "lon": -122.90102,
+   "sog_kn": 0.1,
+   "cog": 350.2,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-06 09:10:41.926603323 +0000 UTC"
+   "updated": "2026-11-06 09:15:48.738444334 +0000 UTC"
   },
   {
-   "mmsi": 368450870,
-   "name": "AMERICAN ENCORE",
-   "lat": 46.18272,
-   "lon": -123.11455,
-   "sog_kn": 10.3,
-   "cog": 305.6,
-   "heading": 305,
-   "nav_status": 0,
-   "updated": "2026-11-06 09:10:43.497267259 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 32.2,
-   "heading": 130,
-   "nav_status": 15,
-   "updated": "2026-11-06 09:10:49.555466563 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.97215,
+   "lon": -122.83208,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-06 09:15:49.036002447 +0000 UTC"
   }
  ]
 }
