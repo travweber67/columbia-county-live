@@ -1,38 +1,58 @@
 {
- "fetched_at": "2026-11-06T06:24:58Z",
+ "fetched_at": "2026-11-06T06:26:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 370363000,
-   "name": "SEVEN SEAS HIGHWAY",
-   "lat": 45.78667,
-   "lon": -122.77601,
-   "sog_kn": 13.8,
-   "cog": 148.2,
-   "heading": 148,
-   "nav_status": 0,
-   "updated": "2026-11-06 06:25:06.542405238 +0000 UTC"
-  },
-  {
-   "mmsi": 354425000,
-   "name": "PAN QUEEN",
-   "lat": 46.09412,
-   "lon": -122.93747,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09409,
+   "lon": -122.94275,
    "sog_kn": 0,
-   "cog": 248.8,
-   "heading": 119,
-   "nav_status": 1,
-   "updated": "2026-11-06 06:25:17.625007472 +0000 UTC"
+   "cog": 313.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 06:27:48.237121651 +0000 UTC"
   },
   {
    "mmsi": 367047170,
    "name": "MAVERICK",
-   "lat": 45.69604,
-   "lon": -122.77363,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-06 06:25:20.166097023 +0000 UTC"
+   "lat": 45.69051,
+   "lon": -122.7751,
+   "sog_kn": 6.7,
+   "cog": 184.9,
+   "heading": 182,
+   "nav_status": 12,
+   "updated": "2026-11-06 06:27:54.447655278 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07887,
+   "lon": -122.90058,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-06 06:28:02.148327799 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.38539,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-06 06:28:03.611066602 +0000 UTC"
+  },
+  {
+   "mmsi": 477133900,
+   "name": "SHAO SHAN 8",
+   "lat": 45.63033,
+   "lon": -122.69546,
+   "sog_kn": 0,
+   "cog": 186,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-06 06:28:07.248377773 +0000 UTC"
   }
  ]
 }
