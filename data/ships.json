@@ -1,40 +1,97 @@
 {
- "fetched_at": "2026-11-06T15:26:49Z",
+ "fetched_at": "2026-11-06T15:30:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00881,
-   "lon": -122.84884,
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19951,
+   "lon": -123.38497,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-06 15:30:50.147377715 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63868,
+   "lon": -122.72402,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-06 15:30:53.372242174 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58415,
+   "lon": -122.76613,
+   "type_code": 52,
+   "destination": "US^00D5>0UHN",
+   "updated": "2026-11-06 15:31:02.463280453 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64569,
+   "lon": -122.73488,
+   "type_code": 79,
+   "updated": "2026-11-06 15:31:04.46396527 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.09541,
+   "lon": -122.93398,
+   "sog_kn": 2.6,
+   "cog": 303.6,
+   "heading": 300,
+   "nav_status": 3,
+   "updated": "2026-11-06 15:31:06.76971183 +0000 UTC"
+  },
+  {
+   "mmsi": 636020486,
+   "name": "BBG GUILIN",
+   "lat": 46.14233,
+   "lon": -123.03004,
+   "sog_kn": 13.2,
+   "cog": 294.9,
+   "heading": 296,
+   "nav_status": 0,
+   "updated": "2026-11-06 15:31:11.382464963 +0000 UTC"
+  },
+  {
+   "mmsi": 367681630,
+   "name": "VICKI B",
+   "lat": 45.99096,
+   "lon": -122.84017,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "cog": 178.3,
+   "heading": 155,
    "nav_status": 0,
-   "updated": "2026-11-06 15:27:37.6199435 +0000 UTC"
+   "updated": "2026-11-06 15:31:11.721493893 +0000 UTC"
   },
   {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 46.09258,
-   "lon": -122.93538,
-   "sog_kn": 6.6,
-   "cog": 116.3,
-   "heading": 110,
-   "nav_status": 0,
-   "updated": "2026-11-06 15:27:44.785813605 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.93774,
+   "lon": -122.80587,
+   "sog_kn": 1.5,
+   "cog": 357.4,
+   "heading": 154,
+   "nav_status": 3,
+   "updated": "2026-11-06 15:31:11.792373491 +0000 UTC"
   },
   {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.61909,
-   "lon": -122.67943,
-   "sog_kn": 4.5,
-   "cog": 116.5,
-   "heading": 116,
-   "nav_status": 0,
-   "updated": "2026-11-06 15:27:47.087981811 +0000 UTC"
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.64299,
+   "lon": -122.77141,
+   "sog_kn": 0,
+   "cog": 103.6,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-06 15:31:12.402749403 +0000 UTC"
   }
  ]
 }
