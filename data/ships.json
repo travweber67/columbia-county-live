@@ -1,58 +1,62 @@
 {
- "fetched_at": "2026-11-06T12:00:25Z",
+ "fetched_at": "2026-11-06T12:05:25Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.73755,
-   "lon": -122.76325,
-   "sog_kn": 8.5,
-   "cog": 177.4,
-   "heading": 171,
-   "nav_status": 12,
-   "updated": "2026-11-06 12:00:30.305243783 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 46.02583,
-   "lon": -122.86838,
-   "type_code": 31,
-   "destination": "PORTLAND",
-   "updated": "2026-11-06 12:00:35.88431964 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 46.09083,
-   "lon": -122.9321,
-   "sog_kn": 0,
-   "cog": 103.9,
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.61746,
+   "lon": -122.78904,
+   "type_code": 52,
+   "destination": "US^0UJB>0UJB",
+   "updated": "2026-11-06 12:05:43.477168939 +0000 UTC",
+   "sog_kn": 9,
+   "cog": 351.7,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-06 12:00:48.709696401 +0000 UTC"
+   "nav_status": 0
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10358,
-   "lon": -122.91017,
-   "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 76,
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.6539,
+   "lon": -122.75893,
+   "sog_kn": 6.6,
+   "cog": 96.1,
+   "heading": 109,
+   "nav_status": 12,
+   "updated": "2026-11-06 12:05:33.958004353 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.93484,
+   "lon": -122.80533,
+   "sog_kn": 0.2,
+   "cog": 255.7,
+   "heading": 187,
    "nav_status": 3,
-   "updated": "2026-11-06 12:00:53.723711117 +0000 UTC"
+   "updated": "2026-11-06 12:05:41.726738787 +0000 UTC"
   },
   {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00872,
-   "lon": -122.84896,
-   "type_code": 50,
-   "destination": "--",
-   "updated": "2026-11-06 12:00:57.392966627 +0000 UTC"
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.1079,
+   "lon": -122.95903,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 12:05:49.660168971 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.6387,
+   "lon": -122.72403,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-06 12:05:53.499640326 +0000 UTC"
   }
  ]
 }
