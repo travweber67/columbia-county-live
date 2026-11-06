@@ -1,38 +1,51 @@
 {
- "fetched_at": "2026-11-06T13:05:30Z",
+ "fetched_at": "2026-11-06T13:10:30Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.02791,
+   "lon": -122.86992,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-06 13:10:40.129243217 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10359,
+   "lon": -122.91011,
+   "sog_kn": 0,
+   "cog": 83.5,
+   "heading": 74,
+   "nav_status": 3,
+   "updated": "2026-11-06 13:10:43.593031573 +0000 UTC"
+  },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 45.93572,
-   "lon": -122.80595,
-   "sog_kn": 0.7,
-   "cog": 190.8,
-   "heading": 169,
+   "lat": 45.93509,
+   "lon": -122.80511,
+   "sog_kn": 0.8,
+   "cog": 127.5,
+   "heading": 175,
    "nav_status": 3,
-   "updated": "2026-11-06 13:05:34.589909192 +0000 UTC"
+   "updated": "2026-11-06 13:10:48.990864841 +0000 UTC"
   },
   {
-   "mmsi": 538006097,
-   "name": "AD ASTRA",
-   "lat": 45.64299,
-   "lon": -122.77141,
-   "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-06 13:05:36.894255353 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 46.0282,
-   "lon": -122.86855,
+   "mmsi": 636020486,
+   "name": "BBG GUILIN",
+   "lat": 46.10608,
+   "lon": -122.95588,
    "sog_kn": 0,
-   "cog": 308.6,
-   "heading": 73,
-   "nav_status": 0,
-   "updated": "2026-11-06 13:05:46.385765011 +0000 UTC"
+   "cog": 79.8,
+   "heading": 124,
+   "nav_status": 5,
+   "updated": "2026-11-06 13:10:54.431029314 +0000 UTC"
   }
  ]
 }
