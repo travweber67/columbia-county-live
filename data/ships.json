@@ -1,48 +1,89 @@
 {
- "fetched_at": "2026-11-07T01:46:29Z",
+ "fetched_at": "2026-11-07T01:51:30Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58729,
-   "lon": -122.77007,
-   "type_code": 31,
-   "destination": "US^02SY>0UJ9",
-   "updated": "2026-11-07 01:46:37.097116055 +0000 UTC"
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.98811,
+   "lon": -122.83921,
+   "sog_kn": 2,
+   "cog": 149,
+   "heading": 153,
+   "nav_status": 0,
+   "updated": "2026-11-07 01:51:40.177305987 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.64331,
+   "lon": -122.75278,
+   "type_code": 50,
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-07 01:51:45.231908372 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07909,
+   "lon": -122.90153,
+   "sog_kn": 0.2,
+   "cog": 306,
+   "heading": 137,
+   "nav_status": 0,
+   "updated": "2026-11-07 01:51:47.109252772 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40232,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 133,
+   "nav_status": 0,
+   "updated": "2026-11-07 01:51:53.14374595 +0000 UTC"
+  },
+  {
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.19966,
+   "lon": -123.38523,
+   "type_code": 30,
+   "destination": "",
+   "updated": "2026-11-07 01:51:54.364990518 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.00281,
+   "lon": -122.85132,
+   "sog_kn": 5.6,
+   "cog": 158.9,
+   "heading": 161,
+   "nav_status": 12,
+   "updated": "2026-11-07 01:51:54.710724333 +0000 UTC"
   },
   {
    "mmsi": 367653630,
    "name": "OSCAR B",
-   "lat": 46.15342,
-   "lon": -123.37713,
-   "type_code": 99,
-   "updated": "2026-11-07 01:46:57.24246976 +0000 UTC",
+   "lat": 46.1534,
+   "lon": -123.37715,
    "sog_kn": 0,
-   "cog": 192.4,
+   "cog": 194.1,
    "heading": 511,
-   "nav_status": 0
+   "nav_status": 0,
+   "updated": "2026-11-07 01:51:57.491953539 +0000 UTC"
   },
   {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.60539,
-   "lon": -122.61528,
-   "sog_kn": 7.3,
-   "cog": 283.4,
-   "heading": 284,
-   "nav_status": 12,
-   "updated": "2026-11-07 01:46:56.25827645 +0000 UTC"
-  },
-  {
-   "mmsi": 538006097,
-   "name": "AD ASTRA",
-   "lat": 45.64298,
-   "lon": -122.77141,
-   "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-07 01:47:04.79754224 +0000 UTC"
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.0793,
+   "lon": -122.90124,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-07 01:51:59.748718496 +0000 UTC"
   }
  ]
 }
