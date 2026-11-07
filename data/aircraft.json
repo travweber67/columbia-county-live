@@ -1,47 +1,87 @@
 {
- "fetched_at": "2026-11-07T02:27:12Z",
+ "fetched_at": "2026-11-07T02:31:33Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
+   "hex": "a744b3",
+   "callsign": "ASA1328",
+   "type": "B738",
+   "alt_ft": 34800,
+   "gs_kn": 429.1,
+   "track": 175.86,
+   "lat": 46.022964,
+   "lon": -123.103146
+  },
+  {
    "hex": "ab6828",
    "callsign": "N834KX",
    "type": "C172",
-   "alt_ft": 2475,
-   "gs_kn": 84.4,
-   "track": 143.67,
-   "lat": 45.651352,
-   "lon": -123.0659
+   "alt_ft": 800,
+   "gs_kn": 79.6,
+   "track": 144.71,
+   "lat": 45.581772,
+   "lon": -122.993149
   },
   {
    "hex": "c05d5d",
    "callsign": "N",
    "type": "S22T",
-   "alt_ft": 7750,
-   "gs_kn": 168.1,
-   "track": 1.7,
-   "lat": 45.73645,
-   "lon": -122.960458
+   "alt_ft": 7775,
+   "gs_kn": 169.1,
+   "track": 2.03,
+   "lat": 45.915619,
+   "lon": -122.952084
   },
   {
-   "hex": "a6f96c",
-   "callsign": "ASA1322",
-   "type": "B738",
-   "alt_ft": 29100,
-   "gs_kn": 441.6,
-   "track": 355.19,
-   "lat": 46.063439,
-   "lon": -122.649582
+   "hex": "a66d79",
+   "callsign": "N513KD",
+   "type": "F2TH",
+   "alt_ft": 3775,
+   "gs_kn": 227.6,
+   "track": 322.68,
+   "lat": 45.594498,
+   "lon": -122.875113
   },
   {
-   "hex": "a8a478",
-   "callsign": "QXE2331",
-   "type": "E75L",
-   "alt_ft": 175,
-   "gs_kn": 125.4,
-   "track": 119.63,
-   "lat": 45.604202,
-   "lon": -122.644869
+   "hex": "ad4afb",
+   "callsign": "ASA1455",
+   "type": "B39M",
+   "alt_ft": 22825,
+   "gs_kn": 388.4,
+   "track": 344.93,
+   "lat": 46.246483,
+   "lon": -122.82653
+  },
+  {
+   "hex": "a22020",
+   "callsign": "N236PS",
+   "type": "GALX",
+   "alt_ft": 2800,
+   "gs_kn": 196.6,
+   "track": 195.95,
+   "lat": 45.711502,
+   "lon": -122.825742
+  },
+  {
+   "hex": "c008f0",
+   "callsign": "JZA654",
+   "type": "CRJ7",
+   "alt_ft": 4650,
+   "gs_kn": 216.9,
+   "track": 288.27,
+   "lat": 45.73819,
+   "lon": -122.665837
+  },
+  {
+   "hex": "abb325",
+   "callsign": "GTI8554",
+   "type": "B748",
+   "alt_ft": 36000,
+   "gs_kn": 434.7,
+   "track": 317.8,
+   "lat": 45.764053,
+   "lon": -122.612982
   }
  ]
 }
