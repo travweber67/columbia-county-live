@@ -1,71 +1,67 @@
 {
- "fetched_at": "2026-11-07T02:11:32Z",
+ "fetched_at": "2026-11-07T02:16:32Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 563116100,
+   "name": "OCEAN GOLD",
+   "lat": 45.98412,
+   "lon": -122.83548,
+   "sog_kn": 0,
+   "cog": 121.4,
+   "heading": 152,
+   "nav_status": 5,
+   "updated": "2026-11-07 02:16:39.162867688 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.07912,
+   "lon": -122.90144,
+   "sog_kn": 0,
+   "cog": 228.8,
+   "heading": 152,
+   "nav_status": 5,
+   "updated": "2026-11-07 02:16:43.606709181 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58078,
+   "lon": -122.76008,
+   "sog_kn": 0,
+   "cog": 120.7,
+   "heading": 125,
+   "nav_status": 0,
+   "updated": "2026-11-07 02:16:50.444998714 +0000 UTC"
+  },
+  {
+   "mmsi": 352006943,
+   "name": "GLOVIS LEGEND",
+   "lat": 45.64611,
+   "lon": -122.75551,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-07 02:16:51.977785581 +0000 UTC"
+  },
   {
    "mmsi": 367047270,
    "name": "LIBERTY",
    "lat": 45.64789,
    "lon": -122.74099,
-   "sog_kn": 0,
-   "cog": 112.3,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-07 02:11:38.366250321 +0000 UTC"
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-07 02:17:00.61919902 +0000 UTC"
   },
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.10354,
-   "lon": -122.95893,
-   "sog_kn": 2.9,
-   "cog": 304.1,
-   "heading": 117,
-   "nav_status": 3,
-   "updated": "2026-11-07 02:11:39.306647111 +0000 UTC"
-  },
-  {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59407,
-   "lon": -122.7722,
-   "sog_kn": 0,
-   "cog": 338.3,
-   "heading": 149,
-   "nav_status": 5,
-   "updated": "2026-11-07 02:11:42.47408857 +0000 UTC"
-  },
-  {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63874,
-   "lon": -122.72402,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-07 02:11:53.460104052 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58751,
-   "lon": -122.77047,
-   "sog_kn": 0,
-   "cog": 208.9,
-   "heading": 141,
-   "nav_status": 0,
-   "updated": "2026-11-07 02:11:53.552207975 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07926,
-   "lon": -122.90181,
-   "sog_kn": 0.4,
-   "cog": 197.6,
-   "heading": 286,
-   "nav_status": 3,
-   "updated": "2026-11-07 02:12:06.524323355 +0000 UTC"
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79283,
+   "lon": -122.84484,
+   "type_code": 57,
+   "destination": "US^0UHM>?? ???",
+   "updated": "2026-11-07 02:17:01.697386498 +0000 UTC"
   }
  ]
 }
