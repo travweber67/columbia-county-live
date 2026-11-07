@@ -1,47 +1,80 @@
 {
- "fetched_at": "2026-11-07T05:11:44Z",
+ "fetched_at": "2026-11-07T05:21:45Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10788,
-   "lon": -122.95906,
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64354,
+   "lon": -122.75297,
+   "type_code": 52,
+   "destination": "US^0UU4>02MR",
+   "updated": "2026-11-07 05:21:51.343245769 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64729,
+   "lon": -122.7395,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 124.4,
+   "heading": 289,
+   "nav_status": 12,
+   "updated": "2026-11-07 05:21:59.554572924 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.69567,
+   "lon": -122.77308,
+   "sog_kn": 5.7,
+   "cog": 196,
+   "heading": 191,
+   "nav_status": 12,
+   "updated": "2026-11-07 05:22:05.66845016 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 239.1,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-07 05:22:06.383083757 +0000 UTC"
+  },
+  {
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.19965,
+   "lon": -123.3852,
+   "type_code": 30,
+   "destination": "",
+   "updated": "2026-11-07 05:22:12.954587875 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08974,
+   "lon": -122.92906,
+   "sog_kn": 0,
+   "cog": 181.5,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-07 05:11:52.41151171 +0000 UTC"
+   "nav_status": 5,
+   "updated": "2026-11-07 05:22:13.635238791 +0000 UTC"
   },
   {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.6387,
-   "lon": -122.72401,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-07 05:11:55.566349056 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 46.1001,
-   "lon": -122.94073,
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09406,
+   "lon": -122.93752,
    "sog_kn": 0,
-   "cog": 40,
-   "heading": 117,
-   "nav_status": 0,
-   "updated": "2026-11-07 05:11:55.825273987 +0000 UTC"
-  },
-  {
-   "mmsi": 368327640,
-   "name": "CAPT. STEVE",
-   "lat": 45.82912,
-   "lon": -122.79212,
-   "type_code": 99,
-   "destination": "XX XXX>US^02MR",
-   "updated": "2026-11-07 05:12:13.744760851 +0000 UTC"
+   "cog": 260,
+   "heading": 120,
+   "nav_status": 1,
+   "updated": "2026-11-07 05:22:17.733875082 +0000 UTC"
   }
  ]
 }
