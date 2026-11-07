@@ -1,71 +1,59 @@
 {
- "fetched_at": "2026-11-07T06:21:50Z",
+ "fetched_at": "2026-11-07T06:26:50Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.09407,
-   "lon": -122.94274,
-   "sog_kn": 0.1,
-   "cog": 312.8,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.3855,
+   "sog_kn": 0,
+   "cog": 337,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-07 06:21:58.321623086 +0000 UTC"
+   "nav_status": 15,
+   "updated": "2026-11-07 06:27:00.575605899 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.2,
+   "lon": -123.38538,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-07 06:27:04.698651605 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 328.1,
+   "heading": 126,
+   "nav_status": 15,
+   "updated": "2026-11-07 06:27:09.274222379 +0000 UTC"
   },
   {
    "mmsi": 367425950,
    "name": "SEA HAWK",
-   "lat": 45.65007,
-   "lon": -122.74758,
-   "sog_kn": 0,
-   "cog": 314.4,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-07 06:21:59.598729544 +0000 UTC"
+   "lat": 45.65016,
+   "lon": -122.74765,
+   "type_code": 33,
+   "updated": "2026-11-07 06:27:10.598702449 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.95167,
-   "lon": -122.80797,
-   "sog_kn": 9,
-   "cog": 159.9,
-   "heading": 160,
+   "mmsi": 368450870,
+   "name": "AMERICAN ENCORE",
+   "lat": 46.0863,
+   "lon": -122.90925,
+   "sog_kn": 10.4,
+   "cog": 127.9,
+   "heading": 127,
    "nav_status": 0,
-   "updated": "2026-11-07 06:22:10.864404221 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.14865,
-   "lon": -123.38169,
-   "sog_kn": 8.5,
-   "cog": 36.4,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-07 06:22:17.09737952 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00883,
-   "lon": -122.84882,
-   "type_code": 50,
-   "destination": "--",
-   "updated": "2026-11-07 06:22:18.848358841 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00897,
-   "lon": -122.8483,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-07 06:22:23.236779293 +0000 UTC"
+   "updated": "2026-11-07 06:27:17.300116007 +0000 UTC"
   }
  ]
 }
