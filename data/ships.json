@@ -1,47 +1,71 @@
 {
- "fetched_at": "2026-11-07T16:07:33Z",
+ "fetched_at": "2026-11-07T16:12:33Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.98992,
-   "lon": -122.8409,
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10789,
+   "lon": -122.95903,
    "sog_kn": 0,
-   "cog": 21.2,
-   "heading": 335,
-   "nav_status": 12,
-   "updated": "2026-11-07 16:07:49.02393141 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.65177,
-   "lon": -122.75478,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-07 16:08:03.599732602 +0000 UTC"
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-07 16:12:44.377864966 +0000 UTC"
   },
   {
    "mmsi": 367047170,
    "name": "MAVERICK",
-   "lat": 46.18386,
-   "lon": -123.18196,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-07 16:08:04.633613195 +0000 UTC"
+   "lat": 46.17816,
+   "lon": -123.19781,
+   "sog_kn": 8.6,
+   "cog": 242.8,
+   "heading": 246,
+   "nav_status": 12,
+   "updated": "2026-11-07 16:12:49.080486896 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35744,
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.65075,
+   "lon": -122.7532,
+   "sog_kn": 7,
+   "cog": 66.8,
+   "heading": 83,
+   "nav_status": 0,
+   "updated": "2026-11-07 16:12:50.163667883 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.99014,
+   "lon": -122.84041,
    "sog_kn": 0,
-   "cog": 263.8,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-07 16:08:08.260943253 +0000 UTC"
+   "cog": 50.9,
+   "heading": 332,
+   "nav_status": 12,
+   "updated": "2026-11-07 16:12:50.260466551 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.09068,
+   "lon": -122.93209,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-07 16:13:01.93927033 +0000 UTC"
+  },
+  {
+   "mmsi": 368328430,
+   "name": "MCR 8",
+   "lat": 45.58475,
+   "lon": -122.76618,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-07 16:13:07.998180262 +0000 UTC"
   }
  ]
 }
