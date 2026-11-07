@@ -1,68 +1,38 @@
 {
- "fetched_at": "2026-11-07T23:33:07Z",
+ "fetched_at": "2026-11-07T23:38:07Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 46.04401,
-   "lon": -122.87693,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07958,
+   "lon": -122.90165,
    "sog_kn": 0,
-   "cog": 125.2,
-   "heading": 180,
+   "cog": 68.9,
+   "heading": 138,
+   "nav_status": 0,
+   "updated": "2026-11-07 23:38:24.769594498 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59408,
+   "lon": -122.77215,
+   "sog_kn": 0,
+   "cog": 338.3,
+   "heading": 149,
    "nav_status": 5,
-   "updated": "2026-11-07 23:33:17.223947925 +0000 UTC"
+   "updated": "2026-11-07 23:38:42.307624566 +0000 UTC"
   },
   {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58758,
-   "lon": -122.77044,
-   "sog_kn": 0,
-   "cog": 264.2,
-   "heading": 141,
-   "nav_status": 0,
-   "updated": "2026-11-07 23:33:17.668614803 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07967,
-   "lon": -122.90216,
-   "sog_kn": 0,
-   "cog": 262.5,
-   "heading": 135,
-   "nav_status": 0,
-   "updated": "2026-11-07 23:33:27.909916382 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.6129,
-   "type_code": 0,
-   "updated": "2026-11-07 23:33:28.068225523 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.82769,
-   "lon": -122.79313,
-   "type_code": 57,
-   "destination": "US^029T>0UW8",
-   "updated": "2026-11-07 23:33:29.603421906 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.98625,
-   "lon": -122.83688,
-   "sog_kn": 0,
-   "cog": 264,
-   "heading": 152,
-   "nav_status": 12,
-   "updated": "2026-11-07 23:33:30.630275538 +0000 UTC"
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19997,
+   "lon": -123.38544,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-07 23:38:43.936037239 +0000 UTC"
   }
  ]
 }
