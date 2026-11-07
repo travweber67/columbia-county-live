@@ -1,59 +1,58 @@
 {
- "fetched_at": "2026-11-07T06:26:50Z",
+ "fetched_at": "2026-11-07T06:27:30Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19998,
-   "lon": -123.3855,
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.64298,
+   "lon": -122.77143,
    "sog_kn": 0,
-   "cog": 337,
+   "cog": 229.4,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-07 06:28:12.60097113 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00887,
+   "lon": -122.84882,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-07 06:27:00.575605899 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.2,
-   "lon": -123.38538,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-07 06:27:04.698651605 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 328.1,
-   "heading": 126,
-   "nav_status": 15,
-   "updated": "2026-11-07 06:27:09.274222379 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65016,
-   "lon": -122.74765,
-   "type_code": 33,
-   "updated": "2026-11-07 06:27:10.598702449 +0000 UTC"
-  },
-  {
-   "mmsi": 368450870,
-   "name": "AMERICAN ENCORE",
-   "lat": 46.0863,
-   "lon": -122.90925,
-   "sog_kn": 10.4,
-   "cog": 127.9,
-   "heading": 127,
    "nav_status": 0,
-   "updated": "2026-11-07 06:27:17.300116007 +0000 UTC"
+   "updated": "2026-11-07 06:28:26.245247037 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64787,
+   "lon": -122.74097,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-07 06:28:27.091411887 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19945,
+   "lon": -123.385,
+   "sog_kn": 0,
+   "cog": 89,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-07 06:28:32.733525708 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58725,
+   "lon": -122.77006,
+   "type_code": 31,
+   "destination": "US^02SY>0UJ9",
+   "updated": "2026-11-07 06:28:35.382264339 +0000 UTC"
   }
  ]
 }
