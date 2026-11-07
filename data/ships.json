@@ -1,100 +1,91 @@
 {
- "fetched_at": "2026-11-07T02:57:18Z",
+ "fetched_at": "2026-11-07T03:01:34Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65009,
-   "lon": -122.74762,
-   "type_code": 33,
-   "updated": "2026-11-07 02:58:02.443179874 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 38.7,
-   "heading": 126,
-   "nav_status": 15,
-   "updated": "2026-11-07 02:58:08.174236023 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.80633,
-   "lon": -122.82382,
-   "sog_kn": 3.9,
-   "cog": 219.2,
-   "heading": 207,
-   "nav_status": 12,
-   "updated": "2026-11-07 02:58:27.114218486 +0000 UTC",
-   "type_code": 57,
-   "destination": "US^0UHM>?? ???"
-  },
-  {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.64439,
-   "lon": -122.74197,
-   "type_code": 0,
-   "destination": "PASCO",
-   "updated": "2026-11-07 02:58:11.904389992 +0000 UTC"
-  },
-  {
-   "mmsi": 538006097,
-   "name": "AD ASTRA",
-   "lat": 45.643,
-   "lon": -122.7714,
-   "sog_kn": 0,
-   "cog": 181.7,
-   "heading": 229,
-   "nav_status": 5,
-   "updated": "2026-11-07 02:58:12.613210473 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15337,
-   "lon": -123.37716,
-   "type_code": 99,
-   "updated": "2026-11-07 02:58:15.347043447 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10359,
-   "lon": -122.91011,
-   "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 74,
-   "nav_status": 3,
-   "updated": "2026-11-07 02:58:15.650403119 +0000 UTC"
-  },
-  {
-   "mmsi": 367516730,
-   "name": "CRISTY T",
-   "lat": 45.62337,
-   "lon": -122.6854,
-   "sog_kn": 8.5,
-   "cog": 138.7,
-   "heading": 135,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 46.08828,
+   "lon": -122.91493,
+   "sog_kn": 11.8,
+   "cog": 297.5,
+   "heading": 295,
    "nav_status": 0,
-   "updated": "2026-11-07 02:58:18.330016739 +0000 UTC"
+   "updated": "2026-11-07 03:02:07.929265044 +0000 UTC",
+   "type_code": 52,
+   "destination": "US^029T>0UW8"
   },
   {
    "mmsi": 367513190,
    "name": "PORTLAND",
-   "lat": 45.64342,
-   "lon": -122.75285,
+   "lat": 45.64341,
+   "lon": -122.75286,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-07 03:02:02.148872255 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00892,
+   "lon": -122.84883,
    "sog_kn": 0,
-   "cog": 236.3,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-07 02:58:25.582877366 +0000 UTC"
+   "updated": "2026-11-07 03:02:07.841051584 +0000 UTC"
+  },
+  {
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09411,
+   "lon": -122.93745,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-07 03:02:08.777574862 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64217,
+   "lon": -122.74148,
+   "sog_kn": 2.3,
+   "cog": 334.2,
+   "heading": 147,
+   "nav_status": 12,
+   "updated": "2026-11-07 03:02:10.121444487 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 46.09046,
+   "lon": -122.93222,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-07 03:02:10.571226714 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10785,
+   "lon": -122.95902,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-07 03:02:13.927157613 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.65063,
+   "lon": -122.75415,
+   "sog_kn": 7.6,
+   "cog": 307,
+   "heading": 306,
+   "nav_status": 12,
+   "updated": "2026-11-07 03:02:15.128348281 +0000 UTC"
   }
  ]
 }
