@@ -1,6 +1,78 @@
 {
- "fetched_at": "2026-11-07T23:23:07Z",
- "status": "error",
- "note": "AISStream error: timed out",
- "ships": []
+ "fetched_at": "2026-11-07T23:27:10Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.6454,
+   "lon": -122.73502,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-07 23:28:00.382485916 +0000 UTC"
+  },
+  {
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.61222,
+   "lon": -122.64521,
+   "type_code": 52,
+   "destination": "US^10M4>02MP",
+   "updated": "2026-11-07 23:28:01.149775992 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20001,
+   "lon": -123.38546,
+   "sog_kn": 0.1,
+   "cog": 193.5,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-07 23:28:03.457065802 +0000 UTC"
+  },
+  {
+   "mmsi": 477133900,
+   "name": "SHAO SHAN 8",
+   "lat": 45.63039,
+   "lon": -122.69561,
+   "sog_kn": 0,
+   "cog": 216.2,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-07 23:28:03.748197975 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58754,
+   "lon": -122.77046,
+   "sog_kn": 0,
+   "cog": 260.2,
+   "heading": 141,
+   "nav_status": 0,
+   "updated": "2026-11-07 23:28:08.945795529 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.64242,
+   "lon": -122.77155,
+   "type_code": 57,
+   "destination": "KALAMA",
+   "updated": "2026-11-07 23:28:15.303338695 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.62943,
+   "lon": -122.69431,
+   "sog_kn": 0,
+   "cog": 148,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-07 23:28:18.388621931 +0000 UTC"
+  }
+ ]
 }
