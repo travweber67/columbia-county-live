@@ -1,18 +1,66 @@
 {
- "fetched_at": "2026-11-07T08:47:00Z",
+ "fetched_at": "2026-11-07T08:52:00Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 1 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64537,
-   "lon": -122.73503,
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07091,
+   "lon": -122.89521,
+   "sog_kn": 7.2,
+   "cog": 315.2,
+   "heading": 319,
+   "nav_status": 0,
+   "updated": "2026-11-07 08:51:54.06577976 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.61289,
+   "type_code": 0,
+   "updated": "2026-11-07 08:52:00.616477025 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07964,
+   "lon": -122.90172,
    "sog_kn": 0,
-   "cog": 30.4,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-07 08:47:14.012639499 +0000 UTC"
+   "cog": 360,
+   "heading": 330,
+   "nav_status": 3,
+   "updated": "2026-11-07 08:52:07.731208563 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58083,
+   "lon": -122.76007,
+   "sog_kn": 0,
+   "cog": 120.7,
+   "heading": 120,
+   "nav_status": 0,
+   "updated": "2026-11-07 08:52:11.884231682 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61202,
+   "lon": -122.64536,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-07 08:52:19.931604501 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64787,
+   "lon": -122.74097,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-07 08:52:26.844851999 +0000 UTC"
   }
  ]
 }
