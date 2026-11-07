@@ -1,56 +1,81 @@
 {
- "fetched_at": "2026-11-07T06:01:48Z",
+ "fetched_at": "2026-11-07T06:06:49Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60757,
+   "lon": -122.67758,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-07 06:06:53.697976237 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07954,
+   "lon": -122.90177,
+   "type_code": 33,
+   "updated": "2026-11-07 06:06:56.145735509 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.09068,
+   "lon": -122.93212,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-07 06:07:02.095277711 +0000 UTC"
+  },
+  {
+   "mmsi": 477133900,
+   "name": "SHAO SHAN 8",
+   "lat": 45.6304,
+   "lon": -122.69558,
+   "sog_kn": 0,
+   "cog": 38.4,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-07 06:07:03.827063272 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.97283,
+   "lon": -122.83334,
+   "sog_kn": 0.4,
+   "cog": 331.5,
+   "heading": 139,
+   "nav_status": 3,
+   "updated": "2026-11-07 06:07:22.116245059 +0000 UTC",
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER"
+  },
   {
    "mmsi": 367513190,
    "name": "PORTLAND",
-   "lat": 45.64343,
+   "lat": 45.64329,
    "lon": -122.75285,
-   "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-07 06:02:02.232255202 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.07921,
-   "lon": -122.89717,
-   "sog_kn": 21.7,
-   "cog": 113.8,
+   "sog_kn": 0,
+   "cog": 298.2,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-07 06:02:05.526420545 +0000 UTC"
+   "updated": "2026-11-07 06:07:14.949131819 +0000 UTC"
   },
   {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 45.64347,
-   "lon": -122.75245,
-   "type_code": 52,
-   "destination": "COL RIVER",
-   "updated": "2026-11-07 06:02:12.569557495 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 46.10012,
-   "lon": -122.94076,
-   "type_code": 52,
-   "destination": "US^029T>0UW8",
-   "updated": "2026-11-07 06:02:14.827514398 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19998,
-   "lon": -123.38549,
-   "sog_kn": 0,
-   "cog": 347.3,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-07 06:02:19.781128416 +0000 UTC"
+   "mmsi": 370363000,
+   "name": "SEVEN SEAS HIGHWAY",
+   "lat": 45.65129,
+   "lon": -122.76649,
+   "sog_kn": 10.1,
+   "cog": 29,
+   "heading": 30,
+   "nav_status": 0,
+   "updated": "2026-11-07 06:07:20.2394535 +0000 UTC"
   }
  ]
 }
