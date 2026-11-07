@@ -1,49 +1,93 @@
 {
- "fetched_at": "2026-11-07T07:56:57Z",
+ "fetched_at": "2026-11-07T08:01:57Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 45.64332,
-   "lon": -122.75283,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.61291,
    "sog_kn": 0,
-   "cog": 243.4,
+   "cog": 337.1,
+   "heading": 129,
+   "nav_status": 15,
+   "updated": "2026-11-07 08:01:48.552479608 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 67.6,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-07 08:02:06.302999362 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 46.0905,
+   "lon": -122.93231,
+   "sog_kn": 0,
+   "cog": 204.3,
    "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-07 07:57:39.050676024 +0000 UTC"
+   "updated": "2026-11-07 08:02:13.98238065 +0000 UTC"
   },
   {
-   "mmsi": 368450870,
-   "name": "AMERICAN ENCORE",
-   "lat": 45.85551,
-   "lon": -122.78487,
-   "sog_kn": 7.8,
-   "cog": 179,
-   "heading": 180,
-   "nav_status": 0,
-   "updated": "2026-11-07 07:57:47.232766122 +0000 UTC"
-  },
-  {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 46.17388,
-   "lon": -123.10833,
-   "type_code": 70,
-   "destination": "USVAN",
-   "updated": "2026-11-07 07:57:48.341884598 +0000 UTC"
-  },
-  {
-   "mmsi": 477133900,
-   "name": "SHAO SHAN 8",
-   "lat": 45.63039,
-   "lon": -122.69561,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65009,
+   "lon": -122.7476,
    "sog_kn": 0,
-   "cog": 38.4,
-   "heading": 129,
+   "cog": 228,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-07 08:02:19.361648131 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.64348,
+   "lon": -122.75242,
+   "sog_kn": 0,
+   "cog": 253.1,
+   "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-07 07:58:04.238064883 +0000 UTC"
+   "updated": "2026-11-07 08:02:21.749501555 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.0794,
+   "lon": -122.90135,
+   "sog_kn": 0,
+   "cog": 80.7,
+   "heading": 148,
+   "nav_status": 0,
+   "updated": "2026-11-07 08:02:23.201954352 +0000 UTC"
+  },
+  {
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09416,
+   "lon": -122.93748,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-07 08:02:27.98210917 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07505,
+   "lon": -122.89681,
+   "sog_kn": 1.2,
+   "cog": 155.7,
+   "heading": 347,
+   "nav_status": 0,
+   "updated": "2026-11-07 08:02:27.990067497 +0000 UTC"
   }
  ]
 }
