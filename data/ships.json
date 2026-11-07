@@ -1,104 +1,115 @@
 {
- "fetched_at": "2026-11-07T22:57:09Z",
+ "fetched_at": "2026-11-07T23:03:05Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00901,
-   "lon": -122.84832,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.10234,
+   "lon": -122.95436,
+   "sog_kn": 7.1,
+   "cog": 118.1,
+   "heading": 116,
+   "nav_status": 12,
+   "updated": "2026-11-07 23:03:14.729997733 +0000 UTC"
+  },
+  {
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 45.63927,
+   "lon": -122.77787,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-07 22:57:53.769435234 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10282,
-   "lon": -122.90852,
-   "sog_kn": 0,
-   "cog": 289.2,
-   "heading": 353,
-   "nav_status": 0,
-   "updated": "2026-11-07 22:57:56.289186294 +0000 UTC"
-  },
-  {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64539,
-   "lon": -122.73504,
-   "type_code": 70,
-   "destination": "PER ORDERS",
-   "updated": "2026-11-07 22:57:57.409186555 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.2,
-   "lon": -123.38554,
-   "sog_kn": 0,
-   "cog": 340.1,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-07 22:58:10.348334808 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.62866,
-   "lon": -122.69628,
-   "sog_kn": 2,
-   "cog": 130.9,
-   "heading": 130,
-   "nav_status": 3,
-   "updated": "2026-11-07 22:58:11.629715568 +0000 UTC"
+   "cog": 139.8,
+   "heading": 230,
+   "nav_status": 5,
+   "updated": "2026-11-07 23:03:17.102219441 +0000 UTC"
   },
   {
    "mmsi": 368440320,
    "name": "HEATHER S",
-   "lat": 45.64461,
-   "lon": -122.74804,
-   "sog_kn": 5.9,
-   "cog": 70.6,
+   "lat": 45.64307,
+   "lon": -122.73662,
+   "sog_kn": 5.8,
+   "cog": 108.2,
    "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-07 22:58:13.585825778 +0000 UTC"
+   "updated": "2026-11-07 23:03:23.435420051 +0000 UTC"
   },
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 46.10705,
-   "lon": -122.96693,
-   "sog_kn": 7.3,
-   "cog": 123.9,
-   "heading": 122,
-   "nav_status": 12,
-   "updated": "2026-11-07 22:58:14.712085095 +0000 UTC"
-  },
-  {
-   "mmsi": 354425000,
-   "name": "PAN QUEEN",
-   "lat": 46.09437,
-   "lon": -122.93743,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07958,
+   "lon": -122.90166,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-07 23:03:34.472195433 +0000 UTC",
    "sog_kn": 0,
-   "cog": 329.3,
-   "heading": 118,
-   "nav_status": 1,
-   "updated": "2026-11-07 22:58:17.687617137 +0000 UTC"
+   "cog": 92,
+   "heading": 139,
+   "nav_status": 0
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65017,
-   "lon": -122.74755,
+   "mmsi": 352006943,
+   "name": "GLOVIS LEGEND",
+   "lat": 45.64611,
+   "lon": -122.75552,
    "sog_kn": 0,
-   "cog": 228.8,
+   "cog": 140.3,
+   "heading": 136,
+   "nav_status": 5,
+   "updated": "2026-11-07 23:03:31.790359038 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20003,
+   "lon": -123.38548,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-07 23:03:32.032616037 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15199,
+   "lon": -123.37943,
+   "sog_kn": 7.1,
+   "cog": 219.5,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-07 22:58:19.053847099 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-07 23:03:36.40170185 +0000 UTC"
+  },
+  {
+   "mmsi": 563116100,
+   "name": "OCEAN GOLD",
+   "lat": 45.98424,
+   "lon": -122.83558,
+   "type_code": 70,
+   "destination": "US KAL",
+   "updated": "2026-11-07 23:03:39.309592151 +0000 UTC"
+  },
+  {
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.17436,
+   "lon": -123.1084,
+   "sog_kn": 0,
+   "cog": 213.6,
+   "heading": 120,
+   "nav_status": 1,
+   "updated": "2026-11-07 23:03:39.321550335 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58758,
+   "lon": -122.7704,
+   "sog_kn": 0,
+   "cog": 278.6,
+   "heading": 142,
+   "nav_status": 0,
+   "updated": "2026-11-07 23:03:40.068056944 +0000 UTC"
   }
  ]
 }
