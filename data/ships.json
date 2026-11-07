@@ -1,95 +1,90 @@
 {
- "fetched_at": "2026-11-07T00:31:23Z",
+ "fetched_at": "2026-11-07T00:36:23Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.1036,
-   "lon": -122.91016,
-   "type_code": 52,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-07 00:31:32.358708191 +0000 UTC"
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.60334,
+   "lon": -122.78129,
+   "sog_kn": 9.2,
+   "cog": 335.8,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-07 00:36:31.60988887 +0000 UTC"
+  },
+  {
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.17459,
+   "lon": -123.10819,
+   "sog_kn": 0,
+   "cog": 1,
+   "heading": 120,
+   "nav_status": 1,
+   "updated": "2026-11-07 00:36:31.617983272 +0000 UTC"
   },
   {
    "mmsi": 367608420,
    "name": "PETER J BRIX",
-   "lat": 46.10571,
-   "lon": -122.9556,
+   "lat": 46.10566,
+   "lon": -122.95561,
    "sog_kn": 0,
-   "cog": 309.4,
+   "cog": 343.4,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-07 00:31:36.357475625 +0000 UTC"
+   "updated": "2026-11-07 00:36:36.316170729 +0000 UTC"
   },
   {
-   "mmsi": 538007029,
-   "name": "ZEPHYROS",
-   "lat": 46.0272,
-   "lon": -122.86959,
+   "mmsi": 538011495,
+   "name": "MTR JUPITER",
+   "lat": 46.10654,
+   "lon": -122.95689,
    "type_code": 70,
-   "destination": "KALAMA,USA",
-   "updated": "2026-11-07 00:31:36.808163692 +0000 UTC"
+   "destination": "LONGVIEW",
+   "updated": "2026-11-07 00:36:41.510406821 +0000 UTC"
   },
   {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.079,
-   "lon": -122.90131,
-   "type_code": 52,
-   "destination": "PORTLAND",
-   "updated": "2026-11-07 00:31:40.463980899 +0000 UTC"
-  },
-  {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64568,
-   "lon": -122.73487,
-   "type_code": 79,
-   "updated": "2026-11-07 00:31:48.129321352 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.77267,
-   "lon": -122.77025,
-   "sog_kn": 8.7,
-   "cog": 339.7,
-   "heading": 338,
-   "nav_status": 12,
-   "updated": "2026-11-07 00:31:50.178852303 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10789,
-   "lon": -122.95902,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10357,
+   "lon": -122.91014,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 83.5,
+   "heading": 75,
+   "nav_status": 3,
+   "updated": "2026-11-07 00:36:53.369337833 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 325.5,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-07 00:36:47.127001941 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07956,
+   "lon": -122.90124,
+   "type_code": 33,
+   "updated": "2026-11-07 00:36:52.17356054 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19942,
+   "lon": -123.38512,
+   "sog_kn": 0,
+   "cog": 319,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-07 00:31:53.591906733 +0000 UTC"
-  },
-  {
-   "mmsi": 367347000,
-   "name": "WENDY SEAA",
-   "lat": 46.19953,
-   "lon": -123.385,
-   "sog_kn": 0,
-   "cog": 325,
-   "heading": 145,
    "nav_status": 5,
-   "updated": "2026-11-07 00:31:56.157781511 +0000 UTC"
-  },
-  {
-   "mmsi": 338616000,
-   "name": "DUBLIN SEA",
-   "lat": 45.66706,
-   "lon": -122.7672,
-   "type_code": 57,
-   "destination": "US PDX",
-   "updated": "2026-11-07 00:31:57.434069377 +0000 UTC"
+   "updated": "2026-11-07 00:36:53.073363916 +0000 UTC"
   }
  ]
 }
