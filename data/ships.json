@@ -1,36 +1,129 @@
 {
- "fetched_at": "2026-11-07T04:27:21Z",
+ "fetched_at": "2026-11-07T04:31:42Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 353081000,
-   "name": "ELEGANT SW",
-   "lat": 46.11822,
-   "lon": -122.98016,
-   "type_code": 70,
-   "destination": "USA LONGVIEW",
-   "updated": "2026-11-07 04:28:15.327350038 +0000 UTC"
+   "mmsi": 368450870,
+   "name": "AMERICAN ENCORE",
+   "lat": 46.14212,
+   "lon": -123.31714,
+   "type_code": 60,
+   "destination": "THE DALLES",
+   "updated": "2026-11-07 04:32:06.474282333 +0000 UTC",
+   "sog_kn": 10.1,
+   "cog": 89.3,
+   "heading": 89,
+   "nav_status": 0
   },
   {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.63005,
-   "lon": -122.70421,
-   "sog_kn": 0.8,
-   "cog": 291.7,
-   "heading": 296,
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.6434,
+   "lon": -122.75286,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-07 04:31:48.522672338 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.044,
+   "lon": -122.87691,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-07 04:31:49.000200675 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.97048,
+   "lon": -122.82762,
+   "sog_kn": 8.5,
+   "cog": 109.4,
+   "heading": 119,
+   "nav_status": 3,
+   "updated": "2026-11-07 04:32:00.948860111 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40232,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 133,
+   "nav_status": 0,
+   "updated": "2026-11-07 04:31:53.094291206 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.64716,
+   "lon": -122.73959,
+   "sog_kn": 0,
+   "cog": 267,
+   "heading": 287,
    "nav_status": 12,
-   "updated": "2026-11-07 04:28:22.272855358 +0000 UTC"
+   "updated": "2026-11-07 04:31:59.409170475 +0000 UTC"
   },
   {
-   "mmsi": 538006097,
-   "name": "AD ASTRA",
-   "lat": 45.64301,
-   "lon": -122.77142,
-   "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-07 04:28:26.163885395 +0000 UTC"
+   "mmsi": 538007029,
+   "name": "ZEPHYROS",
+   "lat": 46.02717,
+   "lon": -122.86961,
+   "sog_kn": 0,
+   "cog": 290.7,
+   "heading": 139,
+   "nav_status": 5,
+   "updated": "2026-11-07 04:32:05.131235317 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64568,
+   "lon": -122.73487,
+   "type_code": 79,
+   "updated": "2026-11-07 04:32:06.367051659 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 46.10011,
+   "lon": -122.94074,
+   "type_code": 52,
+   "destination": "US^029T>0UW8",
+   "updated": "2026-11-07 04:32:07.48630885 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.2,
+   "lon": -123.38541,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-07 04:32:14.180102277 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 46.09079,
+   "lon": -122.93211,
+   "type_code": 52,
+   "updated": "2026-11-07 04:32:15.503294599 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64539,
+   "lon": -122.73501,
+   "sog_kn": 0,
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-07 04:32:15.96445151 +0000 UTC"
   }
  ]
 }
