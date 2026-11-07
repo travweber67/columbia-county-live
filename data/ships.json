@@ -1,71 +1,114 @@
 {
- "fetched_at": "2026-11-07T00:46:24Z",
+ "fetched_at": "2026-11-07T00:51:24Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367667060,
-   "name": "GRANITE POINT",
-   "lat": 45.64728,
-   "lon": -122.73989,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37717,
    "sog_kn": 0,
-   "cog": 233.2,
+   "cog": 193.7,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-07 00:46:30.482101125 +0000 UTC"
-  },
-  {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58729,
-   "lon": -122.77008,
-   "type_code": 31,
-   "destination": "US^02SY>0UJ9",
-   "updated": "2026-11-07 00:46:34.367730338 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.10576,
-   "lon": -122.95711,
-   "sog_kn": 3.5,
-   "cog": 138.2,
-   "heading": 126,
    "nav_status": 0,
-   "updated": "2026-11-07 00:46:36.372751198 +0000 UTC"
+   "updated": "2026-11-07 00:52:00.18876553 +0000 UTC",
+   "type_code": 99
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07926,
+   "lon": -122.90119,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-07 00:51:38.161780762 +0000 UTC"
   },
   {
    "mmsi": 563116100,
    "name": "OCEAN GOLD",
-   "lat": 45.98414,
-   "lon": -122.8355,
-   "sog_kn": 0,
-   "cog": 121.4,
-   "heading": 151,
-   "nav_status": 5,
-   "updated": "2026-11-07 00:46:39.094959064 +0000 UTC"
+   "lat": 45.98412,
+   "lon": -122.83549,
+   "type_code": 70,
+   "destination": "US KAL",
+   "updated": "2026-11-07 00:51:39.687604743 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07915,
-   "lon": -122.9015,
-   "sog_kn": 0.1,
-   "cog": 348.4,
-   "heading": 157,
-   "nav_status": 0,
-   "updated": "2026-11-07 00:46:41.106695034 +0000 UTC"
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07944,
+   "lon": -122.9016,
+   "sog_kn": 0.2,
+   "cog": 223.9,
+   "heading": 318,
+   "nav_status": 3,
+   "updated": "2026-11-07 00:51:47.320351618 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19945,
+   "lon": -123.38513,
+   "sog_kn": 0,
+   "cog": 164,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-07 00:51:47.660732295 +0000 UTC"
   },
   {
    "mmsi": 367496010,
    "name": "DELIVERANCE",
-   "lat": 46.07923,
-   "lon": -122.90149,
+   "lat": 46.07918,
+   "lon": -122.90147,
    "sog_kn": 0.2,
-   "cog": 26.8,
+   "cog": 227.5,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-07 00:46:45.934638973 +0000 UTC"
+   "updated": "2026-11-07 00:51:54.927028422 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19954,
+   "lon": -123.38502,
+   "sog_kn": 0,
+   "cog": 325,
+   "heading": 144,
+   "nav_status": 5,
+   "updated": "2026-11-07 00:51:57.987276701 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64148,
+   "lon": -122.73887,
+   "sog_kn": 0,
+   "cog": 334.4,
+   "heading": 300,
+   "nav_status": 12,
+   "updated": "2026-11-07 00:51:59.608800902 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.98597,
+   "lon": -122.83738,
+   "sog_kn": 1.5,
+   "cog": 300,
+   "heading": 80,
+   "nav_status": 0,
+   "updated": "2026-11-07 00:52:00.462962201 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58082,
+   "lon": -122.76014,
+   "sog_kn": 0,
+   "cog": 120.7,
+   "heading": 123,
+   "nav_status": 0,
+   "updated": "2026-11-07 00:52:01.574429202 +0000 UTC"
   }
  ]
 }
