@@ -1,77 +1,124 @@
 {
- "fetched_at": "2026-11-07T04:41:46Z",
+ "fetched_at": "2026-11-07T04:47:03Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.07911,
-   "lon": -122.90155,
-   "type_code": 69,
-   "updated": "2026-11-07 04:42:56.734795688 +0000 UTC"
-  },
-  {
-   "mmsi": 368450870,
-   "name": "AMERICAN ENCORE",
-   "lat": 46.14773,
-   "lon": -123.2772,
-   "type_code": 60,
-   "destination": "THE DALLES",
-   "updated": "2026-11-07 04:42:58.188183015 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65017,
-   "lon": -122.74755,
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58756,
+   "lon": -122.77041,
    "sog_kn": 0,
-   "cog": 287.3,
+   "cog": 261.6,
+   "heading": 142,
+   "nav_status": 0,
+   "updated": "2026-11-07 04:47:32.794678803 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08966,
+   "lon": -122.92904,
+   "type_code": 52,
+   "destination": "US^0UJB>0UJB",
+   "updated": "2026-11-07 04:47:39.464640976 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59407,
+   "lon": -122.77215,
+   "sog_kn": 0,
+   "cog": 338.3,
+   "heading": 149,
+   "nav_status": 5,
+   "updated": "2026-11-07 04:47:42.944930001 +0000 UTC"
+  },
+  {
+   "mmsi": 311000824,
+   "name": "AFRICAN AVOCET",
+   "lat": 46.09914,
+   "lon": -122.93945,
+   "type_code": 79,
+   "destination": "US LOG",
+   "updated": "2026-11-07 04:47:45.38469272 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64694,
+   "lon": -122.73847,
+   "sog_kn": 2.8,
+   "cog": 308.3,
+   "heading": 306,
+   "nav_status": 12,
+   "updated": "2026-11-07 04:47:46.10824407 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08982,
+   "lon": -122.92899,
+   "sog_kn": 0,
+   "cog": 30.2,
+   "heading": 101,
+   "nav_status": 5,
+   "updated": "2026-11-07 04:47:52.072026618 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60753,
+   "lon": -122.67762,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-07 04:42:59.123937573 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-07 04:47:54.485049779 +0000 UTC"
+  },
+  {
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.1182,
+   "lon": -122.98021,
+   "sog_kn": 0,
+   "cog": 210.3,
+   "heading": 133,
+   "nav_status": 1,
+   "updated": "2026-11-07 04:47:59.325858849 +0000 UTC"
   },
   {
    "mmsi": 366972000,
    "name": "ESSAYONS",
-   "lat": 46.10377,
-   "lon": -122.96195,
-   "type_code": 33,
-   "destination": "LORD ISL. LONGVIEW",
-   "updated": "2026-11-07 04:43:03.352964234 +0000 UTC"
+   "lat": 46.10247,
+   "lon": -122.95776,
+   "sog_kn": 2.2,
+   "cog": 114.2,
+   "heading": 117,
+   "nav_status": 3,
+   "updated": "2026-11-07 04:47:59.494580796 +0000 UTC"
   },
   {
-   "mmsi": 477133900,
-   "name": "SHAO SHAN 8",
-   "lat": 45.63039,
-   "lon": -122.69561,
-   "sog_kn": 0,
-   "cog": 38.4,
-   "heading": 129,
-   "nav_status": 5,
-   "updated": "2026-11-07 04:43:05.948381666 +0000 UTC"
-  },
-  {
-   "mmsi": 538006097,
-   "name": "AD ASTRA",
-   "lat": 45.64296,
-   "lon": -122.77146,
-   "sog_kn": 0,
-   "cog": 352.3,
-   "heading": 229,
-   "nav_status": 5,
-   "updated": "2026-11-07 04:43:12.771181853 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64346,
-   "lon": -122.75282,
-   "sog_kn": 0,
-   "cog": 233.7,
-   "heading": 511,
+   "mmsi": 368450870,
+   "name": "AMERICAN ENCORE",
+   "lat": 46.15407,
+   "lon": -123.25606,
+   "sog_kn": 9.9,
+   "cog": 53.6,
+   "heading": 53,
    "nav_status": 0,
-   "updated": "2026-11-07 04:43:14.080832243 +0000 UTC"
+   "updated": "2026-11-07 04:48:00.949562317 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.74935,
+   "lon": -122.76147,
+   "sog_kn": 5.8,
+   "cog": 188.7,
+   "heading": 181,
+   "nav_status": 12,
+   "updated": "2026-11-07 04:48:05.677377592 +0000 UTC"
   }
  ]
 }
