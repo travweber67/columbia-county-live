@@ -1,89 +1,122 @@
 {
- "fetched_at": "2026-11-07T01:51:30Z",
+ "fetched_at": "2026-11-07T01:56:31Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.98811,
-   "lon": -122.83921,
-   "sog_kn": 2,
-   "cog": 149,
-   "heading": 153,
-   "nav_status": 0,
-   "updated": "2026-11-07 01:51:40.177305987 +0000 UTC"
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58131,
+   "lon": -122.76066,
+   "type_code": 57,
+   "destination": "GASCO",
+   "updated": "2026-11-07 01:56:37.754545359 +0000 UTC"
   },
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 45.64331,
-   "lon": -122.75278,
-   "type_code": 50,
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-07 01:51:45.231908372 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07909,
-   "lon": -122.90153,
-   "sog_kn": 0.2,
-   "cog": 306,
-   "heading": 137,
-   "nav_status": 0,
-   "updated": "2026-11-07 01:51:47.109252772 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40232,
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59405,
+   "lon": -122.77213,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 133,
+   "cog": 338.3,
+   "heading": 149,
+   "nav_status": 5,
+   "updated": "2026-11-07 01:56:41.437033766 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 242.4,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-07 01:56:47.207290362 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64319,
+   "lon": -122.746,
+   "sog_kn": 0,
+   "cog": 355,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-07 01:51:53.14374595 +0000 UTC"
+   "updated": "2026-11-07 01:56:49.607121723 +0000 UTC"
+  },
+  {
+   "mmsi": 477133900,
+   "name": "SHAO SHAN 8",
+   "lat": 45.63031,
+   "lon": -122.69543,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-07 01:56:49.649703849 +0000 UTC"
+  },
+  {
+   "mmsi": 370363000,
+   "name": "SEVEN SEAS HIGHWAY",
+   "lat": 45.59752,
+   "lon": -122.77475,
+   "sog_kn": 0,
+   "cog": 151.1,
+   "heading": 330,
+   "nav_status": 5,
+   "updated": "2026-11-07 01:56:49.703100078 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58749,
+   "lon": -122.77043,
+   "sog_kn": 0,
+   "cog": 213.1,
+   "heading": 141,
+   "nav_status": 0,
+   "updated": "2026-11-07 01:56:52.332845955 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.65375,
+   "lon": -122.76228,
+   "sog_kn": 5.3,
+   "cog": 85,
+   "heading": 107,
+   "nav_status": 12,
+   "updated": "2026-11-07 01:56:53.173589373 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.94913,
+   "lon": -122.80766,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-07 01:56:54.958167312 +0000 UTC"
   },
   {
    "mmsi": 367323610,
    "name": "MIKETTE",
-   "lat": 46.19966,
-   "lon": -123.38523,
-   "type_code": 30,
-   "destination": "",
-   "updated": "2026-11-07 01:51:54.364990518 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 46.00281,
-   "lon": -122.85132,
-   "sog_kn": 5.6,
-   "cog": 158.9,
-   "heading": 161,
-   "nav_status": 12,
-   "updated": "2026-11-07 01:51:54.710724333 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.1534,
-   "lon": -123.37715,
+   "lat": 46.19965,
+   "lon": -123.38524,
    "sog_kn": 0,
-   "cog": 194.1,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-07 01:51:57.491953539 +0000 UTC"
+   "cog": 194.3,
+   "heading": 322,
+   "nav_status": 5,
+   "updated": "2026-11-07 01:56:57.981185576 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.0793,
-   "lon": -122.90124,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-07 01:51:59.748718496 +0000 UTC"
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.98676,
+   "lon": -122.83788,
+   "sog_kn": 0.2,
+   "cog": 313.8,
+   "heading": 150,
+   "nav_status": 0,
+   "updated": "2026-11-07 01:56:59.097355819 +0000 UTC"
   }
  ]
 }
