@@ -1,18 +1,38 @@
 {
- "fetched_at": "2026-11-07T22:38:05Z",
+ "fetched_at": "2026-11-07T22:43:03Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07975,
-   "lon": -122.90205,
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.64459,
+   "lon": -122.73556,
+   "sog_kn": 9.6,
+   "cog": 304.4,
+   "heading": 305,
+   "nav_status": 5,
+   "updated": "2026-11-07 22:43:10.074267141 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65013,
+   "lon": -122.74767,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 319,
+   "cog": 210.8,
+   "heading": 511,
    "nav_status": 3,
-   "updated": "2026-11-07 22:38:09.615881498 +0000 UTC"
+   "updated": "2026-11-07 22:43:28.941823316 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08985,
+   "lon": -122.92894,
+   "type_code": 52,
+   "destination": "CSR OPS",
+   "updated": "2026-11-07 22:43:34.311320642 +0000 UTC"
   },
   {
    "mmsi": 368410780,
@@ -20,32 +40,28 @@
    "lat": 46.10282,
    "lon": -122.90852,
    "sog_kn": 0,
-   "cog": 327.6,
+   "cog": 338.7,
    "heading": 352,
    "nav_status": 0,
-   "updated": "2026-11-07 22:38:24.557384277 +0000 UTC"
+   "updated": "2026-11-07 22:43:34.428843302 +0000 UTC"
   },
   {
-   "mmsi": 538012377,
-   "name": "UNION SAPPHIRE",
-   "lat": 46.11009,
-   "lon": -122.9634,
-   "sog_kn": 0,
-   "cog": 62.5,
-   "heading": 129,
-   "nav_status": 5,
-   "updated": "2026-11-07 22:38:33.94087865 +0000 UTC"
+   "mmsi": 538011495,
+   "name": "MTR JUPITER",
+   "lat": 46.10651,
+   "lon": -122.95687,
+   "type_code": 70,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-07 22:43:35.800871801 +0000 UTC"
   },
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10793,
-   "lon": -122.95903,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-07 22:38:35.685275972 +0000 UTC"
+   "mmsi": 538007029,
+   "name": "ZEPHYROS",
+   "lat": 46.02715,
+   "lon": -122.86961,
+   "type_code": 70,
+   "destination": "KALAMA,USA",
+   "updated": "2026-11-07 22:43:36.349114546 +0000 UTC"
   }
  ]
 }
