@@ -1,85 +1,48 @@
 {
- "fetched_at": "2026-11-07T01:41:30Z",
+ "fetched_at": "2026-11-07T01:46:29Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.07922,
-   "lon": -122.90154,
-   "sog_kn": 0,
-   "cog": 218.4,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-07 01:42:13.760581971 +0000 UTC",
-   "type_code": 69
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58729,
+   "lon": -122.77007,
+   "type_code": 31,
+   "destination": "US^02SY>0UJ9",
+   "updated": "2026-11-07 01:46:37.097116055 +0000 UTC"
   },
   {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.80762,
-   "lon": -122.82436,
-   "sog_kn": 6,
-   "cog": 151.4,
-   "heading": 147,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37713,
+   "type_code": 99,
+   "updated": "2026-11-07 01:46:57.24246976 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 192.4,
+   "heading": 511,
+   "nav_status": 0
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.60539,
+   "lon": -122.61528,
+   "sog_kn": 7.3,
+   "cog": 283.4,
+   "heading": 284,
    "nav_status": 12,
-   "updated": "2026-11-07 01:42:05.308781734 +0000 UTC"
+   "updated": "2026-11-07 01:46:56.25827645 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07948,
-   "lon": -122.90157,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 324,
-   "nav_status": 3,
-   "updated": "2026-11-07 01:42:06.542738608 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64314,
-   "lon": -122.74603,
-   "sog_kn": 0,
-   "cog": 340.2,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-07 01:42:11.197674058 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65011,
-   "lon": -122.74767,
-   "sog_kn": 0,
-   "cog": 224.1,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-07 01:42:18.278052521 +0000 UTC"
-  },
-  {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.98095,
-   "lon": -122.83471,
-   "sog_kn": 8.4,
-   "cog": 335.5,
-   "heading": 336,
-   "nav_status": 0,
-   "updated": "2026-11-07 01:42:18.280361324 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19994,
-   "lon": -123.38553,
-   "sog_kn": 0,
-   "cog": 194.9,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-07 01:42:20.069353417 +0000 UTC"
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.64298,
+   "lon": -122.77141,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-07 01:47:04.79754224 +0000 UTC"
   }
  ]
 }
