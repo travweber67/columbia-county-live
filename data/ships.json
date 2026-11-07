@@ -1,84 +1,106 @@
 {
- "fetched_at": "2026-11-07T20:32:53Z",
+ "fetched_at": "2026-11-07T20:37:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 203.4,
-   "heading": 127,
-   "nav_status": 15,
-   "updated": "2026-11-07 20:33:37.83791461 +0000 UTC"
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.1995,
+   "lon": -123.38508,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-07 20:38:02.499683905 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65017,
-   "lon": -122.74744,
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63882,
+   "lon": -122.72398,
    "sog_kn": 0,
-   "cog": 270.9,
+   "cog": 25,
+   "heading": 114,
+   "nav_status": 1,
+   "updated": "2026-11-07 20:38:03.783547762 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60755,
+   "lon": -122.67766,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-07 20:33:39.535238268 +0000 UTC"
-  },
-  {
-   "mmsi": 353081000,
-   "name": "ELEGANT SW",
-   "lat": 46.09903,
-   "lon": -122.93929,
-   "sog_kn": 0.2,
-   "cog": 100.7,
-   "heading": 110,
    "nav_status": 0,
-   "updated": "2026-11-07 20:33:43.635961872 +0000 UTC"
+   "updated": "2026-11-07 20:38:04.408168266 +0000 UTC"
   },
   {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58131,
-   "lon": -122.76067,
-   "type_code": 57,
-   "destination": "GASCO",
-   "updated": "2026-11-07 20:33:48.322885744 +0000 UTC",
-   "sog_kn": 0,
-   "cog": 156.1,
-   "heading": 122,
-   "nav_status": 0
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.10334,
-   "lon": -122.95033,
-   "sog_kn": 0.1,
-   "cog": 306,
-   "heading": 25,
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10788,
+   "lon": -122.96768,
+   "sog_kn": 5.5,
+   "cog": 130.8,
+   "heading": 128,
    "nav_status": 0,
-   "updated": "2026-11-07 20:33:47.554833707 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 45.64329,
-   "lon": -122.75282,
-   "type_code": 50,
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-07 20:33:48.495141263 +0000 UTC"
+   "updated": "2026-11-07 20:38:06.370815255 +0000 UTC",
+   "type_code": 52,
+   "destination": "US^0T0P>035F"
   },
   {
    "mmsi": 367047170,
    "name": "MAVERICK",
-   "lat": 46.14454,
-   "lon": -123.35533,
+   "lat": 46.14315,
+   "lon": -123.3416,
    "sog_kn": 8,
-   "cog": 102.2,
-   "heading": 100,
+   "cog": 95.2,
+   "heading": 93,
    "nav_status": 12,
-   "updated": "2026-11-07 20:33:54.759103098 +0000 UTC"
+   "updated": "2026-11-07 20:38:14.738425281 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15705,
+   "lon": -123.40233,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 132,
+   "nav_status": 0,
+   "updated": "2026-11-07 20:38:14.766592998 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64568,
+   "lon": -122.73489,
+   "sog_kn": 0.1,
+   "cog": 0,
+   "heading": 113,
+   "nav_status": 5,
+   "updated": "2026-11-07 20:38:18.711073314 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00892,
+   "lon": -122.84835,
+   "sog_kn": 0.1,
+   "cog": 20.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-07 20:38:23.523575137 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.58753,
+   "lon": -122.77066,
+   "sog_kn": 0,
+   "cog": 118.6,
+   "heading": 139,
+   "nav_status": 0,
+   "updated": "2026-11-07 20:38:27.111993684 +0000 UTC"
   }
  ]
 }
