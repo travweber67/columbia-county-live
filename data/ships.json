@@ -1,80 +1,121 @@
 {
- "fetched_at": "2026-11-07T02:51:33Z",
+ "fetched_at": "2026-11-07T02:56:34Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59408,
-   "lon": -122.77212,
-   "type_code": 70,
-   "destination": "NOT AVAILABLE",
-   "updated": "2026-11-07 02:51:40.330961779 +0000 UTC"
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58745,
+   "lon": -122.77051,
+   "sog_kn": 0,
+   "cog": 240.6,
+   "heading": 141,
+   "nav_status": 0,
+   "updated": "2026-11-07 02:56:42.926660073 +0000 UTC"
+  },
+  {
+   "mmsi": 311000824,
+   "name": "AFRICAN AVOCET",
+   "lat": 46.09912,
+   "lon": -122.93935,
+   "sog_kn": 0,
+   "cog": 295.2,
+   "heading": 109,
+   "nav_status": 5,
+   "updated": "2026-11-07 02:56:46.16962185 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.64225,
+   "lon": -122.74007,
+   "type_code": 52,
+   "destination": "KALAMA",
+   "updated": "2026-11-07 02:57:00.589729836 +0000 UTC",
+   "sog_kn": 0.6,
+   "cog": 332.2,
+   "heading": 198,
+   "nav_status": 12
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07905,
+   "lon": -122.90153,
+   "sog_kn": 0.2,
+   "cog": 148.5,
+   "heading": 115,
+   "nav_status": 0,
+   "updated": "2026-11-07 02:56:47.085932464 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 46.07858,
+   "lon": -122.89638,
+   "sog_kn": 11.4,
+   "cog": 317.3,
+   "heading": 314,
+   "nav_status": 0,
+   "updated": "2026-11-07 02:56:47.188799784 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00886,
+   "lon": -122.84893,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-07 02:56:47.350926562 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.10438,
+   "lon": -122.96291,
+   "sog_kn": 0.9,
+   "cog": 129.9,
+   "heading": 129,
+   "nav_status": 3,
+   "updated": "2026-11-07 02:56:50.17841196 +0000 UTC"
   },
   {
    "mmsi": 368440320,
    "name": "HEATHER S",
-   "lat": 45.64676,
-   "lon": -122.74996,
-   "sog_kn": 0.9,
-   "cog": 313.5,
+   "lat": 45.64733,
+   "lon": -122.75096,
+   "type_code": 52,
+   "destination": "US^0UU4>02MR",
+   "updated": "2026-11-07 02:57:11.084245372 +0000 UTC",
+   "sog_kn": 0.3,
+   "cog": 254.6,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-07 02:51:41.332454253 +0000 UTC"
+   "nav_status": 0
   },
   {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.64137,
-   "lon": -122.73888,
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.11822,
+   "lon": -122.98018,
    "sog_kn": 0,
-   "cog": 132.7,
-   "heading": 297,
-   "nav_status": 12,
-   "updated": "2026-11-07 02:51:49.748003799 +0000 UTC",
-   "type_code": 0,
-   "destination": "PASCO"
+   "cog": 57.8,
+   "heading": 134,
+   "nav_status": 1,
+   "updated": "2026-11-07 02:56:59.565646041 +0000 UTC"
   },
   {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 46.17472,
-   "lon": -123.10809,
-   "type_code": 70,
-   "destination": "USVAN",
-   "updated": "2026-11-07 02:51:47.415649647 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08983,
-   "lon": -122.92901,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
    "sog_kn": 0,
-   "cog": 30.2,
-   "heading": 101,
-   "nav_status": 0,
-   "updated": "2026-11-07 02:51:55.94928716 +0000 UTC"
-  },
-  {
-   "mmsi": 367323610,
-   "name": "MIKETTE",
-   "lat": 46.19965,
-   "lon": -123.38524,
-   "type_code": 30,
-   "destination": "",
-   "updated": "2026-11-07 02:52:00.509997206 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10355,
-   "lon": -122.91016,
-   "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 75,
-   "nav_status": 3,
-   "updated": "2026-11-07 02:52:03.484737971 +0000 UTC"
+   "cog": 65.4,
+   "heading": 125,
+   "nav_status": 15,
+   "updated": "2026-11-07 02:57:08.283603306 +0000 UTC"
   }
  ]
 }
