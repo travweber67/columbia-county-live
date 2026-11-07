@@ -1,104 +1,71 @@
 {
- "fetched_at": "2026-11-07T08:56:58Z",
+ "fetched_at": "2026-11-07T09:02:00Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40234,
+   "mmsi": 368327640,
+   "name": "CAPT. STEVE",
+   "lat": 45.81228,
+   "lon": -122.79521,
+   "sog_kn": 8.4,
+   "cog": 166.3,
+   "heading": 164,
+   "nav_status": 0,
+   "updated": "2026-11-07 09:02:08.139277758 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.6129,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 131,
-   "nav_status": 0,
-   "updated": "2026-11-07 08:57:34.646399189 +0000 UTC"
+   "cog": 165,
+   "heading": 129,
+   "nav_status": 15,
+   "updated": "2026-11-07 09:02:19.350945781 +0000 UTC"
   },
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10787,
-   "lon": -122.95901,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-07 08:57:35.159427063 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64351,
-   "lon": -122.75288,
-   "type_code": 52,
-   "destination": "US^0UU4>02MR",
-   "updated": "2026-11-07 08:57:35.82196322 +0000 UTC"
-  },
-  {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 46.17238,
-   "lon": -123.10555,
-   "sog_kn": 0.1,
-   "cog": 80.9,
-   "heading": 351,
-   "nav_status": 1,
-   "updated": "2026-11-07 08:57:36.522186107 +0000 UTC"
-  },
-  {
-   "mmsi": 368450870,
-   "name": "AMERICAN ENCORE",
-   "lat": 45.75188,
-   "lon": -122.76084,
-   "sog_kn": 6.6,
-   "cog": 177.9,
-   "heading": 178,
-   "nav_status": 0,
-   "updated": "2026-11-07 08:57:36.950448918 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.6501,
-   "lon": -122.74754,
-   "sog_kn": 0,
-   "cog": 241,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-07 08:57:39.279184241 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00878,
-   "lon": -122.84881,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-07 08:57:46.502072922 +0000 UTC"
-  },
-  {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.78061,
-   "lon": -122.77378,
-   "sog_kn": 9.1,
-   "cog": 340,
-   "heading": 340,
-   "nav_status": 0,
-   "updated": "2026-11-07 08:57:56.767242695 +0000 UTC"
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10891,
+   "lon": -122.96127,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-07 09:02:22.555682791 +0000 UTC"
   },
   {
    "mmsi": 368171270,
    "name": "DR. RAY",
-   "lat": 45.5813,
-   "lon": -122.76065,
+   "lat": 45.58131,
+   "lon": -122.76066,
    "sog_kn": 0,
    "cog": 156.1,
    "heading": 122,
    "nav_status": 0,
-   "updated": "2026-11-07 08:57:56.877812327 +0000 UTC"
+   "updated": "2026-11-07 09:02:26.055044798 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37714,
+   "sog_kn": 0,
+   "cog": 355.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-07 09:02:28.454752967 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.64743,
+   "lon": -122.73944,
+   "sog_kn": 0,
+   "cog": 299,
+   "heading": 284,
+   "nav_status": 5,
+   "updated": "2026-11-07 09:02:32.881682033 +0000 UTC"
   }
  ]
 }
