@@ -1,115 +1,80 @@
 {
- "fetched_at": "2026-11-07T23:03:05Z",
+ "fetched_at": "2026-11-07T23:08:05Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 46.10234,
-   "lon": -122.95436,
-   "sog_kn": 7.1,
-   "cog": 118.1,
-   "heading": 116,
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00898,
+   "lon": -122.84832,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-07 23:08:12.54833813 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64538,
+   "lon": -122.73503,
+   "sog_kn": 0,
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-07 23:08:15.95570157 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.88915,
+   "lon": -122.80084,
+   "sog_kn": 9.5,
+   "cog": 159.9,
+   "heading": 160,
    "nav_status": 12,
-   "updated": "2026-11-07 23:03:14.729997733 +0000 UTC"
+   "updated": "2026-11-07 23:08:17.752811583 +0000 UTC"
   },
   {
-   "mmsi": 232038703,
-   "name": "IONIAN SEA",
-   "lat": 45.63927,
-   "lon": -122.77787,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07975,
+   "lon": -122.90204,
    "sog_kn": 0,
-   "cog": 139.8,
-   "heading": 230,
-   "nav_status": 5,
-   "updated": "2026-11-07 23:03:17.102219441 +0000 UTC"
+   "cog": 360,
+   "heading": 319,
+   "nav_status": 3,
+   "updated": "2026-11-07 23:08:18.348142598 +0000 UTC"
   },
   {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64307,
-   "lon": -122.73662,
-   "sog_kn": 5.8,
-   "cog": 108.2,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-07 23:03:23.435420051 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07958,
-   "lon": -122.90166,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-07 23:03:34.472195433 +0000 UTC",
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.58755,
+   "lon": -122.7707,
    "sog_kn": 0,
-   "cog": 92,
+   "cog": 118.6,
    "heading": 139,
-   "nav_status": 0
-  },
-  {
-   "mmsi": 352006943,
-   "name": "GLOVIS LEGEND",
-   "lat": 45.64611,
-   "lon": -122.75552,
-   "sog_kn": 0,
-   "cog": 140.3,
-   "heading": 136,
-   "nav_status": 5,
-   "updated": "2026-11-07 23:03:31.790359038 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20003,
-   "lon": -123.38548,
-   "type_code": 99,
-   "destination": "NAKNEK",
-   "updated": "2026-11-07 23:03:32.032616037 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15199,
-   "lon": -123.37943,
-   "sog_kn": 7.1,
-   "cog": 219.5,
-   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-07 23:03:36.40170185 +0000 UTC"
+   "updated": "2026-11-07 23:08:36.946821412 +0000 UTC"
   },
   {
-   "mmsi": 563116100,
-   "name": "OCEAN GOLD",
-   "lat": 45.98424,
-   "lon": -122.83558,
-   "type_code": 70,
-   "destination": "US KAL",
-   "updated": "2026-11-07 23:03:39.309592151 +0000 UTC"
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.6424,
+   "lon": -122.73559,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-07 23:08:39.941440213 +0000 UTC"
   },
   {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 46.17436,
-   "lon": -123.1084,
-   "sog_kn": 0,
-   "cog": 213.6,
-   "heading": 120,
-   "nav_status": 1,
-   "updated": "2026-11-07 23:03:39.321550335 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58758,
-   "lon": -122.7704,
-   "sog_kn": 0,
-   "cog": 278.6,
-   "heading": 142,
-   "nav_status": 0,
-   "updated": "2026-11-07 23:03:40.068056944 +0000 UTC"
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.07937,
+   "lon": -122.9018,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-07 23:08:41.12808849 +0000 UTC"
   }
  ]
 }
