@@ -1,37 +1,87 @@
 {
- "fetched_at": "2026-11-07T05:56:48Z",
+ "fetched_at": "2026-11-07T05:57:27Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368327640,
+   "name": "CAPT. STEVE",
+   "lat": 45.94842,
+   "lon": -122.80777,
+   "sog_kn": 9.5,
+   "cog": 347.6,
+   "heading": 347,
+   "nav_status": 0,
+   "updated": "2026-11-07 05:57:59.859217755 +0000 UTC"
+  },
+  {
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.19965,
+   "lon": -123.38523,
+   "type_code": 30,
+   "destination": "",
+   "updated": "2026-11-07 05:58:00.965810186 +0000 UTC"
+  },
+  {
+   "mmsi": 477133900,
+   "name": "SHAO SHAN 8",
+   "lat": 45.63042,
+   "lon": -122.69561,
+   "sog_kn": 0,
+   "cog": 38.4,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-07 05:58:06.626330482 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08977,
+   "lon": -122.92901,
+   "sog_kn": 0,
+   "cog": 222.3,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-07 05:58:13.924540839 +0000 UTC"
+  },
   {
    "mmsi": 353081000,
    "name": "ELEGANT SW",
    "lat": 46.1182,
    "lon": -122.98016,
-   "sog_kn": 0.1,
-   "cog": 321.2,
-   "heading": 138,
-   "nav_status": 1,
-   "updated": "2026-11-07 05:56:59.192309547 +0000 UTC"
+   "type_code": 70,
+   "destination": "USA LONGVIEW",
+   "updated": "2026-11-07 05:58:16.407092281 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65016,
-   "lon": -122.7475,
-   "type_code": 33,
-   "updated": "2026-11-07 05:57:05.411014616 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19998,
-   "lon": -123.38548,
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09411,
+   "lon": -122.93748,
    "sog_kn": 0,
-   "cog": 353.5,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-07 05:57:11.128822238 +0000 UTC"
+   "cog": 19.5,
+   "heading": 122,
+   "nav_status": 1,
+   "updated": "2026-11-07 05:58:17.435176443 +0000 UTC"
+  },
+  {
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.64298,
+   "lon": -122.7714,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-07 05:58:26.082464952 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64788,
+   "lon": -122.74101,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-07 05:58:26.902803727 +0000 UTC"
   }
  ]
 }
