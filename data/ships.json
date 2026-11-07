@@ -1,48 +1,60 @@
 {
- "fetched_at": "2026-11-07T06:31:50Z",
+ "fetched_at": "2026-11-07T06:36:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60763,
-   "lon": -122.67755,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 46.07875,
+   "lon": -122.89606,
+   "sog_kn": 8.3,
+   "cog": 139.2,
+   "heading": 142,
+   "nav_status": 12,
+   "updated": "2026-11-07 06:37:06.490157901 +0000 UTC"
+  },
+  {
+   "mmsi": 477133900,
+   "name": "SHAO SHAN 8",
+   "lat": 45.63039,
+   "lon": -122.69563,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-07 06:31:53.694854935 +0000 UTC"
+   "cog": 38.4,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-07 06:37:06.854985356 +0000 UTC"
   },
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.62383,
-   "lon": -122.78965,
-   "sog_kn": 7.9,
-   "cog": 1,
-   "heading": 9,
-   "nav_status": 0,
-   "updated": "2026-11-07 06:31:54.203937736 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 46.09079,
-   "lon": -122.93209,
-   "type_code": 52,
-   "updated": "2026-11-07 06:32:03.455885271 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65023,
-   "lon": -122.74763,
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.64303,
+   "lon": -122.77143,
    "sog_kn": 0,
-   "cog": 312.3,
+   "cog": 12.6,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-07 06:37:12.754175808 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.2,
+   "lon": -123.38541,
+   "sog_kn": 0,
+   "cog": 0,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-07 06:32:09.354579062 +0000 UTC"
+   "nav_status": 8,
+   "updated": "2026-11-07 06:37:16.804161027 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.91506,
+   "lon": -122.8093,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-07 06:37:22.822848327 +0000 UTC"
   }
  ]
 }
