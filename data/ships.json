@@ -1,40 +1,90 @@
 {
- "fetched_at": "2026-11-07T00:16:22Z",
+ "fetched_at": "2026-11-07T00:21:22Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.83896,
-   "lon": -122.78822,
-   "sog_kn": 9.8,
-   "cog": 21.7,
-   "heading": 21,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.61291,
+   "type_code": 0,
+   "updated": "2026-11-07 00:21:27.844925658 +0000 UTC"
+  },
+  {
+   "mmsi": 563116100,
+   "name": "OCEAN GOLD",
+   "lat": 45.98413,
+   "lon": -122.83548,
+   "type_code": 70,
+   "destination": "US KAL",
+   "updated": "2026-11-07 00:21:39.310976554 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.5808,
+   "lon": -122.76006,
+   "sog_kn": 0,
+   "cog": 120.7,
+   "heading": 122,
    "nav_status": 0,
-   "updated": "2026-11-07 00:16:38.702615285 +0000 UTC"
+   "updated": "2026-11-07 00:21:40.043324883 +0000 UTC"
   },
   {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.65186,
-   "lon": -122.75592,
-   "sog_kn": 1.4,
-   "cog": 118.3,
-   "heading": 43,
-   "nav_status": 12,
-   "updated": "2026-11-07 00:16:47.096407786 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.95781,
+   "lon": -122.81191,
+   "sog_kn": 1.8,
+   "cog": 337.2,
+   "heading": 159,
+   "nav_status": 3,
+   "updated": "2026-11-07 00:21:41.325250765 +0000 UTC"
   },
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 46.10856,
-   "lon": -122.97118,
-   "sog_kn": 5.9,
-   "cog": 130.8,
-   "heading": 125,
-   "nav_status": 12,
-   "updated": "2026-11-07 00:16:55.882504222 +0000 UTC"
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07926,
+   "lon": -122.90124,
+   "sog_kn": 0,
+   "cog": 245,
+   "heading": 127,
+   "nav_status": 0,
+   "updated": "2026-11-07 00:21:43.668402036 +0000 UTC"
+  },
+  {
+   "mmsi": 538011495,
+   "name": "MTR JUPITER",
+   "lat": 46.1065,
+   "lon": -122.95688,
+   "sog_kn": 0,
+   "cog": 303.5,
+   "heading": 122,
+   "nav_status": 0,
+   "updated": "2026-11-07 00:21:47.211238559 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.6501,
+   "lon": -122.74766,
+   "sog_kn": 0,
+   "cog": 277.9,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-07 00:21:50.88201775 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40232,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 135,
+   "nav_status": 0,
+   "updated": "2026-11-07 00:21:54.29389923 +0000 UTC"
   }
  ]
 }
