@@ -1,60 +1,49 @@
 {
- "fetched_at": "2026-11-07T18:07:41Z",
+ "fetched_at": "2026-11-07T18:12:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 563116100,
-   "name": "OCEAN GOLD",
-   "lat": 45.98413,
-   "lon": -122.8355,
+   "mmsi": 352005064,
+   "name": "ANSAC RISING SUN",
+   "lat": 45.60107,
+   "lon": -122.77412,
    "sog_kn": 0,
-   "cog": 121.4,
-   "heading": 151,
+   "cog": 115,
+   "heading": 277,
    "nav_status": 5,
-   "updated": "2026-11-07 18:07:48.516190633 +0000 UTC"
+   "updated": "2026-11-07 18:12:49.94302909 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19948,
+   "lon": -123.38507,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-07 18:12:59.296900063 +0000 UTC"
   },
   {
    "mmsi": 367425950,
    "name": "SEA HAWK",
-   "lat": 45.65015,
-   "lon": -122.74759,
+   "lat": 45.65002,
+   "lon": -122.74757,
    "sog_kn": 0,
-   "cog": 301.2,
+   "cog": 296.8,
    "heading": 511,
    "nav_status": 3,
-   "updated": "2026-11-07 18:07:58.839310918 +0000 UTC"
+   "updated": "2026-11-07 18:13:00.320296513 +0000 UTC"
   },
   {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.61199,
-   "lon": -122.64536,
-   "sog_kn": 0,
-   "cog": 278.2,
-   "heading": 298,
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.64305,
+   "lon": -122.77132,
+   "sog_kn": 0.1,
+   "cog": 49.5,
+   "heading": 229,
    "nav_status": 5,
-   "updated": "2026-11-07 18:08:08.481775193 +0000 UTC"
-  },
-  {
-   "mmsi": 354425000,
-   "name": "PAN QUEEN",
-   "lat": 46.09412,
-   "lon": -122.93749,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-07 18:08:08.899644672 +0000 UTC"
-  },
-  {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 46.09046,
-   "lon": -122.93231,
-   "sog_kn": 0,
-   "cog": 302.1,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-07 18:08:13.90992993 +0000 UTC"
+   "updated": "2026-11-07 18:13:12.439989702 +0000 UTC"
   }
  ]
 }
