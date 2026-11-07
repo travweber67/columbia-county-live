@@ -1,47 +1,79 @@
 {
- "fetched_at": "2026-11-07T15:17:28Z",
+ "fetched_at": "2026-11-07T15:22:29Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64788,
-   "lon": -122.741,
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58418,
+   "lon": -122.76622,
    "sog_kn": 0,
-   "cog": 111.5,
-   "heading": 111,
+   "cog": 23.4,
+   "heading": 145,
    "nav_status": 5,
-   "updated": "2026-11-07 15:17:46.396278065 +0000 UTC"
+   "updated": "2026-11-07 15:22:34.144290089 +0000 UTC"
   },
   {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58132,
-   "lon": -122.76065,
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58731,
+   "lon": -122.77006,
+   "type_code": 31,
+   "destination": "US^02SY>0UJ9",
+   "updated": "2026-11-07 15:22:35.69049639 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58079,
+   "lon": -122.7601,
    "sog_kn": 0,
-   "cog": 156.1,
-   "heading": 123,
+   "cog": 120.7,
+   "heading": 122,
    "nav_status": 0,
-   "updated": "2026-11-07 15:17:47.6117148 +0000 UTC"
+   "updated": "2026-11-07 15:22:41.565740631 +0000 UTC"
   },
   {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63869,
-   "lon": -122.72405,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-07 15:17:53.470862401 +0000 UTC"
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58761,
+   "lon": -122.77043,
+   "sog_kn": 0,
+   "cog": 131.2,
+   "heading": 142,
+   "nav_status": 0,
+   "updated": "2026-11-07 15:22:47.622409335 +0000 UTC"
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.2,
-   "lon": -123.38553,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-07 15:17:56.723685049 +0000 UTC"
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.14841,
+   "lon": -123.38155,
+   "type_code": 99,
+   "updated": "2026-11-07 15:22:52.639971871 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.99014,
+   "lon": -122.84041,
+   "sog_kn": 0,
+   "cog": 18.7,
+   "heading": 332,
+   "nav_status": 12,
+   "updated": "2026-11-07 15:22:55.930044093 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00884,
+   "lon": -122.84889,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-07 15:22:57.547159324 +0000 UTC"
   }
  ]
 }
