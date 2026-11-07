@@ -1,71 +1,46 @@
 {
- "fetched_at": "2026-11-07T15:27:03Z",
+ "fetched_at": "2026-11-07T15:32:30Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 46.09054,
+   "lon": -122.93232,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-07 15:32:42.313860065 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.99015,
+   "lon": -122.84042,
+   "sog_kn": 0,
+   "cog": 192.5,
+   "heading": 331,
+   "nav_status": 12,
+   "updated": "2026-11-07 15:32:47.602454557 +0000 UTC"
+  },
+  {
+   "mmsi": 367516730,
+   "name": "CRISTY T",
+   "lat": 45.61213,
+   "lon": -122.64533,
+   "type_code": 0,
+   "updated": "2026-11-07 15:32:57.334968225 +0000 UTC"
+  },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
    "lat": 46.07967,
-   "lon": -122.90218,
+   "lon": -122.90216,
    "sog_kn": 0,
-   "cog": 108.7,
+   "cog": 104,
    "heading": 134,
    "nav_status": 0,
-   "updated": "2026-11-07 15:27:57.045193732 +0000 UTC"
-  },
-  {
-   "mmsi": 477133900,
-   "name": "SHAO SHAN 8",
-   "lat": 45.63039,
-   "lon": -122.69562,
-   "sog_kn": 0,
-   "cog": 225,
-   "heading": 129,
-   "nav_status": 5,
-   "updated": "2026-11-07 15:28:06.378937472 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64357,
-   "lon": -122.75293,
-   "sog_kn": 0,
-   "cog": 207.3,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-07 15:28:13.600790199 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07958,
-   "lon": -122.90165,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-07 15:28:15.393550369 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00899,
-   "lon": -122.8483,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-07 15:28:23.241109411 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64345,
-   "lon": -122.7529,
-   "sog_kn": 0,
-   "cog": 223.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-07 15:28:25.975987474 +0000 UTC"
+   "updated": "2026-11-07 15:32:59.298938664 +0000 UTC"
   }
  ]
 }
