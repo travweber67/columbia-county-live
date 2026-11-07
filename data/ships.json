@@ -1,71 +1,35 @@
 {
- "fetched_at": "2026-11-07T05:01:43Z",
+ "fetched_at": "2026-11-07T05:06:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 46.1001,
-   "lon": -122.94073,
-   "sog_kn": 0.1,
-   "cog": 207.7,
-   "heading": 118,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07939,
+   "lon": -122.90185,
+   "type_code": 33,
+   "updated": "2026-11-07 05:06:56.148017437 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.09069,
+   "lon": -122.93214,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-07 05:07:01.768326326 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07934,
+   "lon": -122.9014,
+   "sog_kn": 0,
+   "cog": 334.2,
+   "heading": 115,
    "nav_status": 0,
-   "updated": "2026-11-07 05:01:47.144956205 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.07911,
-   "lon": -122.90144,
-   "sog_kn": 0,
-   "cog": 100.4,
-   "heading": 120,
-   "nav_status": 5,
-   "updated": "2026-11-07 05:01:50.899868765 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00899,
-   "lon": -122.84823,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-07 05:01:52.605753165 +0000 UTC"
-  },
-  {
-   "mmsi": 367347000,
-   "name": "WENDY SEAA",
-   "lat": 46.19952,
-   "lon": -123.38499,
-   "sog_kn": 0,
-   "cog": 325,
-   "heading": 144,
-   "nav_status": 5,
-   "updated": "2026-11-07 05:01:54.070000965 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 239.2,
-   "heading": 128,
-   "nav_status": 15,
-   "updated": "2026-11-07 05:02:07.721473334 +0000 UTC"
-  },
-  {
-   "mmsi": 354425000,
-   "name": "PAN QUEEN",
-   "lat": 46.0941,
-   "lon": -122.93749,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-07 05:02:11.906750975 +0000 UTC"
+   "updated": "2026-11-07 05:07:04.639515021 +0000 UTC"
   },
   {
    "mmsi": 367380280,
@@ -76,7 +40,7 @@
    "cog": 360,
    "heading": 132,
    "nav_status": 0,
-   "updated": "2026-11-07 05:02:13.934318343 +0000 UTC"
+   "updated": "2026-11-07 05:07:13.54048118 +0000 UTC"
   }
  ]
 }
