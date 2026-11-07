@@ -1,73 +1,80 @@
 {
- "fetched_at": "2026-11-07T13:42:21Z",
+ "fetched_at": "2026-11-07T13:47:22Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.1089,
-   "lon": -122.96127,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37714,
    "sog_kn": 0,
-   "cog": 264.2,
-   "heading": 129,
-   "nav_status": 5,
-   "updated": "2026-11-07 13:42:31.957736835 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10358,
-   "lon": -122.91018,
-   "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 74,
-   "nav_status": 3,
-   "updated": "2026-11-07 13:42:33.347764804 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65023,
-   "lon": -122.74752,
-   "sog_kn": 0,
-   "cog": 146.9,
+   "cog": 0,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-07 13:42:38.4479011 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19998,
-   "lon": -123.38545,
-   "sog_kn": 0,
-   "cog": 193.3,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-07 13:42:45.461486376 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-07 13:47:26.960035143 +0000 UTC"
   },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 45.63192,
-   "lon": -122.70121,
-   "sog_kn": 1.1,
-   "cog": 314.9,
-   "heading": 307,
+   "lat": 45.63494,
+   "lon": -122.70693,
+   "sog_kn": 6.9,
+   "cog": 300.8,
+   "heading": 302,
    "nav_status": 3,
-   "updated": "2026-11-07 13:42:51.585874671 +0000 UTC"
+   "updated": "2026-11-07 13:47:51.976412694 +0000 UTC"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40232,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35742,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 132,
-   "nav_status": 0,
-   "updated": "2026-11-07 13:42:53.238999794 +0000 UTC"
+   "cog": 6.4,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-07 13:47:45.986914436 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19943,
+   "lon": -123.38512,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-07 13:47:51.362775202 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63868,
+   "lon": -122.72404,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-07 13:47:54.350489289 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08988,
+   "lon": -122.92898,
+   "sog_kn": 0,
+   "cog": 218.4,
+   "heading": 101,
+   "nav_status": 5,
+   "updated": "2026-11-07 13:47:54.861900841 +0000 UTC",
+   "type_code": 52,
+   "destination": "CSR OPS"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19953,
+   "lon": -123.38502,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-07 13:47:55.718604294 +0000 UTC"
   }
  ]
 }
