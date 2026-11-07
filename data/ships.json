@@ -1,71 +1,47 @@
 {
- "fetched_at": "2026-11-07T09:42:03Z",
+ "fetched_at": "2026-11-07T09:47:04Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00888,
-   "lon": -122.84885,
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58082,
+   "lon": -122.76005,
+   "type_code": 31,
+   "destination": "PTSI PDX",
+   "updated": "2026-11-07 09:47:25.582294286 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64343,
+   "lon": -122.75289,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-07 09:42:07.71725034 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.98714,
-   "lon": -122.83742,
-   "sog_kn": 0.1,
-   "cog": 41.7,
-   "heading": 150,
-   "nav_status": 12,
-   "updated": "2026-11-07 09:42:10.207204578 +0000 UTC"
-  },
-  {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.5842,
-   "lon": -122.76618,
-   "type_code": 52,
-   "destination": "US^00D5>0UHN",
-   "updated": "2026-11-07 09:42:14.972506731 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.14747,
-   "lon": -123.37526,
-   "sog_kn": 12.6,
-   "cog": 283.8,
-   "heading": 283,
-   "nav_status": 0,
-   "updated": "2026-11-07 09:42:19.917628377 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 46.0908,
-   "lon": -122.93206,
-   "sog_kn": 0,
-   "cog": 226.1,
+   "cog": 206.5,
    "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-07 09:42:26.827872339 +0000 UTC"
+   "updated": "2026-11-07 09:47:28.230872384 +0000 UTC"
   },
   {
-   "mmsi": 352006943,
-   "name": "GLOVIS LEGEND",
-   "lat": 45.64613,
-   "lon": -122.75551,
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.11013,
+   "lon": -122.96343,
    "sog_kn": 0,
-   "cog": 140.3,
-   "heading": 136,
+   "cog": 281.4,
+   "heading": 129,
    "nav_status": 5,
-   "updated": "2026-11-07 09:42:28.286925504 +0000 UTC"
+   "updated": "2026-11-07 09:47:33.376732116 +0000 UTC"
+  },
+  {
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.643,
+   "lon": -122.77144,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-07 09:47:35.746335264 +0000 UTC"
   }
  ]
 }
