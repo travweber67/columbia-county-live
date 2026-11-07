@@ -1,27 +1,66 @@
 {
- "fetched_at": "2026-11-07T21:42:58Z",
+ "fetched_at": "2026-11-07T21:47:58Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15341,
-   "lon": -123.37716,
-   "sog_kn": 0,
-   "cog": 147.2,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-07 21:43:17.165321428 +0000 UTC"
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08973,
+   "lon": -122.92904,
+   "type_code": 52,
+   "destination": "US^0UJB>0UJB",
+   "updated": "2026-11-07 21:48:03.346935843 +0000 UTC"
   },
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00899,
-   "lon": -122.84822,
-   "type_code": 31,
-   "destination": "HARBOROPPS-",
-   "updated": "2026-11-07 21:43:25.737346098 +0000 UTC"
+   "mmsi": 368328430,
+   "name": "MCR 8",
+   "lat": 45.58478,
+   "lon": -122.76623,
+   "type_code": 33,
+   "updated": "2026-11-07 21:48:07.201370888 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59407,
+   "lon": -122.77215,
+   "type_code": 70,
+   "destination": "NOT AVAILABLE",
+   "updated": "2026-11-07 21:48:07.35307298 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20002,
+   "lon": -123.38553,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-07 21:48:22.892484816 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 1.6,
+   "heading": 511,
+   "nav_status": 15
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.18765,
+   "lon": -123.13796,
+   "sog_kn": 7.7,
+   "cog": 100.1,
+   "heading": 96,
+   "nav_status": 12,
+   "updated": "2026-11-07 21:48:13.567690905 +0000 UTC"
+  },
+  {
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.19965,
+   "lon": -123.38523,
+   "type_code": 30,
+   "destination": "",
+   "updated": "2026-11-07 21:48:17.006439218 +0000 UTC"
   }
  ]
 }
