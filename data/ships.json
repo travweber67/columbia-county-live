@@ -1,64 +1,92 @@
 {
- "fetched_at": "2026-11-07T16:57:05Z",
+ "fetched_at": "2026-11-07T17:02:37Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60759,
-   "lon": -122.6775,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.0796,
+   "lon": -122.90166,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "cog": 3,
+   "heading": 134,
    "nav_status": 0,
-   "updated": "2026-11-07 16:58:03.895089472 +0000 UTC"
-  },
-  {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.98078,
-   "lon": -122.8346,
-   "sog_kn": 0,
-   "cog": 193.6,
-   "heading": 161,
-   "nav_status": 0,
-   "updated": "2026-11-07 16:58:25.015488212 +0000 UTC",
-   "type_code": 52,
-   "destination": "US^0RFZ>?? ???"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58753,
-   "lon": -122.77066,
-   "sog_kn": 0,
-   "cog": 38.7,
-   "heading": 138,
-   "nav_status": 0,
-   "updated": "2026-11-07 16:58:07.52082519 +0000 UTC"
+   "updated": "2026-11-07 17:02:43.569730752 +0000 UTC"
   },
   {
    "mmsi": 367047170,
    "name": "MAVERICK",
-   "lat": 46.14444,
-   "lon": -123.34912,
+   "lat": 46.14602,
+   "lon": -123.36474,
    "sog_kn": 8.5,
-   "cog": 278.3,
-   "heading": 273,
+   "cog": 280.2,
+   "heading": 281,
    "nav_status": 12,
-   "updated": "2026-11-07 16:58:08.31362987 +0000 UTC"
+   "updated": "2026-11-07 17:02:46.826256006 +0000 UTC",
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07966,
-   "lon": -122.90218,
+   "mmsi": 368328430,
+   "name": "MCR 8",
+   "lat": 45.58477,
+   "lon": -122.76621,
    "sog_kn": 0,
-   "cog": 315.8,
-   "heading": 134,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-07 17:02:49.507914044 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.62905,
+   "lon": -122.69242,
+   "sog_kn": 0,
+   "cog": 4.4,
+   "heading": 310,
    "nav_status": 0,
-   "updated": "2026-11-07 16:58:16.150433212 +0000 UTC"
+   "updated": "2026-11-07 17:02:52.35988094 +0000 UTC"
+  },
+  {
+   "mmsi": 538007029,
+   "name": "ZEPHYROS",
+   "lat": 46.02719,
+   "lon": -122.86955,
+   "type_code": 70,
+   "destination": "KALAMA,USA",
+   "updated": "2026-11-07 17:02:52.790097573 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65017,
+   "lon": -122.74757,
+   "sog_kn": 0,
+   "cog": 270.9,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-07 17:03:08.749136462 +0000 UTC",
+   "type_code": 33
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64343,
+   "lon": -122.75282,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-07 17:02:59.748241153 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.6473,
+   "lon": -122.73991,
+   "type_code": 52,
+   "destination": "SRT PASCO",
+   "updated": "2026-11-07 17:03:09.346371793 +0000 UTC"
   }
  ]
 }
