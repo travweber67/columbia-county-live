@@ -1,77 +1,100 @@
 {
- "fetched_at": "2026-11-07T02:21:32Z",
+ "fetched_at": "2026-11-07T02:26:32Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79262,
+   "lon": -122.84491,
+   "sog_kn": 0.9,
+   "cog": 47.2,
+   "heading": 248,
+   "nav_status": 12,
+   "updated": "2026-11-07 02:26:37.011882503 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.6439,
+   "lon": -122.74571,
+   "sog_kn": 2.1,
+   "cog": 337.8,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-07 02:26:38.982816959 +0000 UTC"
+  },
+  {
+   "mmsi": 538011495,
+   "name": "MTR JUPITER",
+   "lat": 46.10649,
+   "lon": -122.95686,
+   "sog_kn": 0,
+   "cog": 303.5,
+   "heading": 123,
+   "nav_status": 5,
+   "updated": "2026-11-07 02:26:44.129029729 +0000 UTC"
+  },
+  {
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 45.66702,
+   "lon": -122.76728,
+   "sog_kn": 0,
+   "cog": 328.7,
+   "heading": 162,
+   "nav_status": 1,
+   "updated": "2026-11-07 02:26:44.773854102 +0000 UTC"
+  },
+  {
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 45.63924,
+   "lon": -122.77784,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-07 02:26:44.872904235 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19997,
+   "lon": -123.38544,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-07 02:26:45.375467273 +0000 UTC"
+  },
+  {
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10891,
+   "lon": -122.96129,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-07 02:26:47.336022976 +0000 UTC"
+  },
   {
    "mmsi": 368470580,
    "name": "ASSIST",
-   "lat": 46.00875,
-   "lon": -122.84892,
+   "lat": 46.00879,
+   "lon": -122.84894,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-07 02:21:37.490955124 +0000 UTC"
+   "updated": "2026-11-07 02:26:47.418707455 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07924,
-   "lon": -122.90155,
-   "sog_kn": 0.1,
-   "cog": 17.8,
-   "heading": 167,
-   "nav_status": 0,
-   "updated": "2026-11-07 02:21:37.830852236 +0000 UTC"
-  },
-  {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.94848,
-   "lon": -122.80905,
-   "sog_kn": 7.8,
-   "cog": 156.4,
-   "heading": 155,
-   "nav_status": 0,
-   "updated": "2026-11-07 02:22:00.602589318 +0000 UTC",
-   "type_code": 57,
-   "destination": "US^0UUT>0UW8"
-  },
-  {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.63136,
-   "lon": -122.70429,
-   "type_code": 0,
-   "destination": "PASCO",
-   "updated": "2026-11-07 02:21:46.363409858 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.14472,
-   "lon": -123.38441,
-   "type_code": 99,
-   "updated": "2026-11-07 02:21:48.332620724 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.6436,
-   "lon": -122.74697,
-   "type_code": 52,
-   "destination": "US^0UU4>02MR",
-   "updated": "2026-11-07 02:21:51.348393962 +0000 UTC"
-  },
-  {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61221,
-   "lon": -122.6452,
-   "type_code": 52,
-   "destination": "US^10M4>02MP",
-   "updated": "2026-11-07 02:21:58.577965208 +0000 UTC"
+   "mmsi": 370363000,
+   "name": "SEVEN SEAS HIGHWAY",
+   "lat": 45.5975,
+   "lon": -122.77477,
+   "sog_kn": 0,
+   "cog": 151.1,
+   "heading": 332,
+   "nav_status": 5,
+   "updated": "2026-11-07 02:26:49.725020474 +0000 UTC"
   }
  ]
 }
