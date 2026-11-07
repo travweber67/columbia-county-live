@@ -1,60 +1,130 @@
 {
- "fetched_at": "2026-11-07T06:36:51Z",
+ "fetched_at": "2026-11-07T06:41:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 46.07875,
-   "lon": -122.89606,
-   "sog_kn": 8.3,
-   "cog": 139.2,
-   "heading": 142,
-   "nav_status": 12,
-   "updated": "2026-11-07 06:37:06.490157901 +0000 UTC"
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08986,
+   "lon": -122.92903,
+   "type_code": 52,
+   "destination": "CSR OPS",
+   "updated": "2026-11-07 06:41:54.353260299 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 157,
+   "heading": 99,
+   "nav_status": 5
   },
   {
-   "mmsi": 477133900,
-   "name": "SHAO SHAN 8",
-   "lat": 45.63039,
-   "lon": -122.69563,
+   "mmsi": 311000824,
+   "name": "AFRICAN AVOCET",
+   "lat": 46.09917,
+   "lon": -122.93948,
    "sog_kn": 0,
-   "cog": 38.4,
-   "heading": 129,
+   "cog": 295.2,
+   "heading": 109,
    "nav_status": 5,
-   "updated": "2026-11-07 06:37:06.854985356 +0000 UTC"
+   "updated": "2026-11-07 06:41:54.354775441 +0000 UTC"
   },
   {
-   "mmsi": 538006097,
-   "name": "AD ASTRA",
-   "lat": 45.64303,
-   "lon": -122.77143,
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19952,
+   "lon": -123.38499,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-07 06:41:56.833690756 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07963,
+   "lon": -122.90167,
    "sog_kn": 0,
-   "cog": 12.6,
-   "heading": 229,
-   "nav_status": 5,
-   "updated": "2026-11-07 06:37:12.754175808 +0000 UTC"
+   "cog": 360,
+   "heading": 330,
+   "nav_status": 3,
+   "updated": "2026-11-07 06:41:56.747322229 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19943,
+   "lon": -123.38507,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-07 06:41:57.401876366 +0000 UTC"
+  },
+  {
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.11818,
+   "lon": -122.98014,
+   "sog_kn": 0,
+   "cog": 204.4,
+   "heading": 135,
+   "nav_status": 1,
+   "updated": "2026-11-07 06:41:59.392326819 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07922,
+   "lon": -122.90165,
+   "sog_kn": 0,
+   "cog": 14.3,
+   "heading": 145,
+   "nav_status": 0,
+   "updated": "2026-11-07 06:42:07.583653724 +0000 UTC"
+  },
+  {
+   "mmsi": 368327640,
+   "name": "CAPT. STEVE",
+   "lat": 46.05026,
+   "lon": -122.88297,
+   "sog_kn": 9.3,
+   "cog": 353.2,
+   "heading": 353,
+   "nav_status": 0,
+   "updated": "2026-11-07 06:42:08.101823027 +0000 UTC"
   },
   {
    "mmsi": 367531220,
    "name": "WATCHMAN",
    "lat": 46.2,
-   "lon": -123.38541,
+   "lon": -123.38543,
    "sog_kn": 0,
    "cog": 0,
    "heading": 511,
    "nav_status": 8,
-   "updated": "2026-11-07 06:37:16.804161027 +0000 UTC"
+   "updated": "2026-11-07 06:42:16.20160592 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.91506,
-   "lon": -122.8093,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-07 06:37:22.822848327 +0000 UTC"
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09407,
+   "lon": -122.94277,
+   "type_code": 69,
+   "updated": "2026-11-07 06:42:16.649623197 +0000 UTC"
+  },
+  {
+   "mmsi": 352005064,
+   "name": "ANSAC RISING SUN",
+   "lat": 45.60115,
+   "lon": -122.7748,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-07 06:42:19.530070101 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.5808,
+   "lon": -122.76011,
+   "type_code": 31,
+   "destination": "PTSI PDX",
+   "updated": "2026-11-07 06:42:20.410685751 +0000 UTC"
   }
  ]
 }
