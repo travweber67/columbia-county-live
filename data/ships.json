@@ -1,60 +1,66 @@
 {
- "fetched_at": "2026-11-07T09:56:59Z",
+ "fetched_at": "2026-11-07T10:02:04Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 563116100,
-   "name": "OCEAN GOLD",
-   "lat": 45.98415,
-   "lon": -122.83549,
-   "type_code": 70,
-   "destination": "US KAL",
-   "updated": "2026-11-07 09:57:37.936731203 +0000 UTC"
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58132,
+   "lon": -122.76064,
+   "type_code": 57,
+   "destination": "GASCO",
+   "updated": "2026-11-07 10:03:12.806176969 +0000 UTC"
   },
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60761,
-   "lon": -122.67761,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07951,
+   "lon": -122.90203,
+   "sog_kn": 0.2,
+   "cog": 206.9,
+   "heading": 294,
+   "nav_status": 3,
+   "updated": "2026-11-07 10:03:18.335909646 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00888,
+   "lon": -122.84894,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-07 09:57:43.844121293 +0000 UTC"
+   "updated": "2026-11-07 10:03:26.953996021 +0000 UTC"
   },
   {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.19947,
-   "lon": -123.38507,
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 45.63926,
+   "lon": -122.77785,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-07 10:03:27.369007611 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.61291,
+   "type_code": 0,
+   "updated": "2026-11-07 10:03:28.145163166 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.65845,
+   "lon": -122.75756,
    "sog_kn": 0,
-   "cog": 2,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-07 09:57:47.580079362 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.63311,
-   "lon": -122.70226,
-   "sog_kn": 1.4,
-   "cog": 343.4,
-   "heading": 309,
-   "nav_status": 3,
-   "updated": "2026-11-07 09:57:54.233847244 +0000 UTC"
-  },
-  {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.80863,
-   "lon": -122.82542,
-   "sog_kn": 4.9,
-   "cog": 159.2,
-   "heading": 157,
+   "cog": 54,
+   "heading": 151,
    "nav_status": 0,
-   "updated": "2026-11-07 09:57:57.919918985 +0000 UTC"
+   "updated": "2026-11-07 10:03:31.670852032 +0000 UTC"
   }
  ]
 }
