@@ -1,113 +1,80 @@
 {
- "fetched_at": "2026-11-07T02:46:33Z",
+ "fetched_at": "2026-11-07T02:51:33Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58728,
-   "lon": -122.77005,
-   "type_code": 31,
-   "destination": "US^02SY>0UJ9",
-   "updated": "2026-11-07 02:46:42.456082502 +0000 UTC"
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59408,
+   "lon": -122.77212,
+   "type_code": 70,
+   "destination": "NOT AVAILABLE",
+   "updated": "2026-11-07 02:51:40.330961779 +0000 UTC"
   },
   {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.07904,
-   "lon": -122.90132,
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64676,
+   "lon": -122.74996,
+   "sog_kn": 0.9,
+   "cog": 313.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-07 02:51:41.332454253 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.64137,
+   "lon": -122.73888,
    "sog_kn": 0,
-   "cog": 106.8,
-   "heading": 96,
-   "nav_status": 5,
-   "updated": "2026-11-07 02:46:43.541834944 +0000 UTC"
+   "cog": 132.7,
+   "heading": 297,
+   "nav_status": 12,
+   "updated": "2026-11-07 02:51:49.748003799 +0000 UTC",
+   "type_code": 0,
+   "destination": "PASCO"
+  },
+  {
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.17472,
+   "lon": -123.10809,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-07 02:51:47.415649647 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08983,
+   "lon": -122.92901,
+   "sog_kn": 0,
+   "cog": 30.2,
+   "heading": 101,
+   "nav_status": 0,
+   "updated": "2026-11-07 02:51:55.94928716 +0000 UTC"
   },
   {
    "mmsi": 367323610,
    "name": "MIKETTE",
-   "lat": 46.19967,
-   "lon": -123.38521,
+   "lat": 46.19965,
+   "lon": -123.38524,
    "type_code": 30,
    "destination": "",
-   "updated": "2026-11-07 02:46:47.721266942 +0000 UTC"
+   "updated": "2026-11-07 02:52:00.509997206 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07919,
-   "lon": -122.90185,
-   "sog_kn": 0.2,
-   "cog": 182.5,
-   "heading": 274,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10355,
+   "lon": -122.91016,
+   "sog_kn": 0,
+   "cog": 83.5,
+   "heading": 75,
    "nav_status": 3,
-   "updated": "2026-11-07 02:46:48.490018388 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 233.5,
-   "heading": 126,
-   "nav_status": 15,
-   "updated": "2026-11-07 02:46:49.341655928 +0000 UTC"
-  },
-  {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.61199,
-   "lon": -122.64535,
-   "sog_kn": 0,
-   "cog": 303.8,
-   "heading": 296,
-   "nav_status": 5,
-   "updated": "2026-11-07 02:46:58.984191871 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.64398,
-   "lon": -122.74353,
-   "sog_kn": 5.8,
-   "cog": 142.7,
-   "heading": 139,
-   "nav_status": 12,
-   "updated": "2026-11-07 02:46:59.172668999 +0000 UTC"
-  },
-  {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.64187,
-   "lon": -122.73951,
-   "sog_kn": 0,
-   "cog": 237.6,
-   "heading": 211,
-   "nav_status": 12,
-   "updated": "2026-11-07 02:46:59.32917552 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64343,
-   "lon": -122.75285,
-   "sog_kn": 0,
-   "cog": 235.9,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-07 02:47:05.130414467 +0000 UTC"
-  },
-  {
-   "mmsi": 538007029,
-   "name": "ZEPHYROS",
-   "lat": 46.02715,
-   "lon": -122.86956,
-   "sog_kn": 0,
-   "cog": 175.7,
-   "heading": 139,
-   "nav_status": 5,
-   "updated": "2026-11-07 02:47:05.304164262 +0000 UTC"
+   "updated": "2026-11-07 02:52:03.484737971 +0000 UTC"
   }
  ]
 }
