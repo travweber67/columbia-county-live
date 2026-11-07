@@ -1,69 +1,115 @@
 {
- "fetched_at": "2026-11-07T20:52:54Z",
+ "fetched_at": "2026-11-07T20:57:07Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37718,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-07 20:58:37.562175287 +0000 UTC"
+  },
+  {
+   "mmsi": 368328430,
+   "name": "MCR 8",
+   "lat": 45.58478,
+   "lon": -122.76622,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-07 20:58:49.507560992 +0000 UTC"
+  },
   {
    "mmsi": 367363590,
    "name": "CLARKSTON",
    "lat": 45.98625,
-   "lon": -122.83688,
+   "lon": -122.83687,
    "sog_kn": 0,
-   "cog": 304,
+   "cog": 347.2,
    "heading": 152,
    "nav_status": 12,
-   "updated": "2026-11-07 20:53:10.14275157 +0000 UTC"
+   "updated": "2026-11-07 20:58:40.7517477 +0000 UTC"
   },
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10791,
-   "lon": -122.95905,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10356,
+   "lon": -122.91013,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 83.5,
+   "heading": 76,
+   "nav_status": 3,
+   "updated": "2026-11-07 20:58:45.155952207 +0000 UTC"
+  },
+  {
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.19965,
+   "lon": -123.38523,
+   "type_code": 30,
+   "destination": "",
+   "updated": "2026-11-07 20:58:48.999902826 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20001,
+   "lon": -123.38543,
+   "sog_kn": 0,
+   "cog": 358.2,
    "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-07 20:59:03.46519783 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63874,
+   "lon": -122.724,
+   "sog_kn": 0.1,
+   "cog": 35.6,
+   "heading": 113,
+   "nav_status": 1,
+   "updated": "2026-11-07 20:59:03.776386931 +0000 UTC"
+  },
+  {
+   "mmsi": 538007029,
+   "name": "ZEPHYROS",
+   "lat": 46.02716,
+   "lon": -122.86958,
+   "sog_kn": 0,
+   "cog": 182.8,
+   "heading": 139,
+   "nav_status": 5,
+   "updated": "2026-11-07 20:59:05.267706434 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07969,
+   "lon": -122.90217,
+   "sog_kn": 0,
+   "cog": 353.8,
+   "heading": 134,
    "nav_status": 0,
-   "updated": "2026-11-07 20:53:15.305195083 +0000 UTC"
+   "updated": "2026-11-07 20:59:06.409771383 +0000 UTC"
   },
   {
-   "mmsi": 353081000,
-   "name": "ELEGANT SW",
-   "lat": 46.09905,
-   "lon": -122.93931,
-   "type_code": 70,
-   "destination": "USA LONGVIEW",
-   "updated": "2026-11-07 20:53:21.350044124 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58079,
-   "lon": -122.76005,
-   "type_code": 31,
-   "destination": "PTSI PDX",
-   "updated": "2026-11-07 20:53:26.184762258 +0000 UTC"
-  },
-  {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61221,
-   "lon": -122.6452,
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.58755,
+   "lon": -122.77068,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-07 20:53:32.323817661 +0000 UTC"
-  },
-  {
-   "mmsi": 538012377,
-   "name": "UNION SAPPHIRE",
-   "lat": 46.1101,
-   "lon": -122.96342,
-   "sog_kn": 0,
-   "cog": 62.5,
-   "heading": 129,
-   "nav_status": 5,
-   "updated": "2026-11-07 20:53:33.347971531 +0000 UTC"
+   "cog": 118.6,
+   "heading": 139,
+   "nav_status": 0,
+   "updated": "2026-11-07 20:59:07.60093741 +0000 UTC"
   }
  ]
 }
