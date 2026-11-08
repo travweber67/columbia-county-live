@@ -1,91 +1,73 @@
 {
- "fetched_at": "2026-11-08T02:33:19Z",
+ "fetched_at": "2026-11-08T02:38:19Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07975,
-   "lon": -122.90204,
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.1101,
+   "lon": -122.9634,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 319,
-   "nav_status": 3,
-   "updated": "2026-11-08 02:33:30.071138492 +0000 UTC"
+   "cog": 62.5,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-08 02:38:40.565291973 +0000 UTC",
+   "type_code": 70,
+   "destination": "US LOG"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58131,
+   "lon": -122.76064,
+   "type_code": 57,
+   "destination": "GASCO",
+   "updated": "2026-11-08 02:38:39.158897691 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59407,
+   "lon": -122.77213,
+   "sog_kn": 0,
+   "cog": 338.3,
+   "heading": 149,
+   "nav_status": 5,
+   "updated": "2026-11-08 02:38:42.398279567 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64789,
+   "lon": -122.741,
+   "sog_kn": 0,
+   "cog": 111.9,
+   "heading": 111,
+   "nav_status": 5,
+   "updated": "2026-11-08 02:38:48.573460267 +0000 UTC"
   },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 45.63062,
-   "lon": -122.69912,
-   "sog_kn": 0.5,
-   "cog": 141.6,
-   "heading": 127,
+   "lat": 45.63223,
+   "lon": -122.70185,
+   "sog_kn": 3.3,
+   "cog": 303.8,
+   "heading": 113,
    "nav_status": 3,
-   "updated": "2026-11-08 02:33:31.696805031 +0000 UTC"
+   "updated": "2026-11-08 02:38:51.950668881 +0000 UTC"
   },
   {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 46.17457,
-   "lon": -123.10826,
-   "sog_kn": 0,
-   "cog": 213.6,
-   "heading": 121,
-   "nav_status": 1,
-   "updated": "2026-11-08 02:33:35.323464947 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 344,
-   "heading": 128,
-   "nav_status": 15,
-   "updated": "2026-11-08 02:33:38.869021391 +0000 UTC"
-  },
-  {
-   "mmsi": 563116100,
-   "name": "OCEAN GOLD",
-   "lat": 45.98407,
-   "lon": -122.83544,
-   "type_code": 70,
-   "destination": "US KAL",
-   "updated": "2026-11-08 02:33:41.817624783 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 45.64333,
-   "lon": -122.75283,
-   "type_code": 50,
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-08 02:33:47.398171781 +0000 UTC"
-  },
-  {
-   "mmsi": 352005064,
-   "name": "ANSAC RISING SUN",
-   "lat": 45.6011,
-   "lon": -122.77448,
-   "sog_kn": 0,
-   "cog": 162,
-   "heading": 277,
-   "nav_status": 5,
-   "updated": "2026-11-08 02:33:50.160666548 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.79421,
-   "lon": -122.78527,
-   "sog_kn": 5.6,
-   "cog": 147.1,
-   "heading": 149,
-   "nav_status": 12,
-   "updated": "2026-11-08 02:33:54.396936635 +0000 UTC"
+   "mmsi": 368082970,
+   "name": "AMERICAN.HARMONY",
+   "lat": 45.60974,
+   "lon": -122.64124,
+   "sog_kn": 14.2,
+   "cog": 287.3,
+   "heading": 287,
+   "nav_status": 0,
+   "updated": "2026-11-08 02:38:56.824758882 +0000 UTC"
   }
  ]
 }
