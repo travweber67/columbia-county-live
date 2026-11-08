@@ -1,60 +1,83 @@
 {
- "fetched_at": "2026-11-08T06:33:35Z",
+ "fetched_at": "2026-11-08T06:38:35Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.1101,
+   "lon": -122.96341,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-08 06:38:40.630823912 +0000 UTC"
+  },
+  {
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 45.63922,
+   "lon": -122.77783,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-08 06:38:45.076577602 +0000 UTC"
+  },
   {
    "mmsi": 367513220,
    "name": "VANCOUVER",
-   "lat": 45.64351,
-   "lon": -122.75244,
+   "lat": 45.6435,
+   "lon": -122.75248,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-08 06:38:49.854307608 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35744,
+   "type_code": 30,
+   "updated": "2026-11-08 06:38:52.412972934 +0000 UTC"
+  },
+  {
+   "mmsi": 311000824,
+   "name": "AFRICAN AVOCET",
+   "lat": 46.10343,
+   "lon": -122.94983,
    "sog_kn": 0,
-   "cog": 309.1,
-   "heading": 511,
+   "cog": 15,
+   "heading": 118,
+   "nav_status": 5,
+   "updated": "2026-11-08 06:38:57.339860819 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07959,
+   "lon": -122.90164,
+   "sog_kn": 0,
+   "cog": 286.7,
+   "heading": 137,
    "nav_status": 0,
-   "updated": "2026-11-08 06:33:46.471041983 +0000 UTC"
+   "updated": "2026-11-08 06:39:03.459716957 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61289,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.99081,
+   "lon": -122.84136,
    "sog_kn": 0,
-   "cog": 293.1,
-   "heading": 132,
-   "nav_status": 15,
-   "updated": "2026-11-08 06:33:48.478742458 +0000 UTC"
+   "cog": 336.6,
+   "heading": 153,
+   "nav_status": 12,
+   "updated": "2026-11-08 06:39:06.467951247 +0000 UTC"
   },
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 45.64334,
-   "lon": -122.75279,
-   "type_code": 50,
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-08 06:33:49.089588553 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.27152,
-   "lon": -123.48624,
-   "sog_kn": 1.8,
-   "cog": 91.8,
-   "heading": 96,
-   "nav_status": 3,
-   "updated": "2026-11-08 06:34:02.413501987 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.38552,
-   "sog_kn": 0,
-   "cog": 337.1,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-08 06:34:11.214215838 +0000 UTC"
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65018,
+   "lon": -122.74759,
+   "type_code": 33,
+   "updated": "2026-11-08 06:39:06.728247129 +0000 UTC"
   }
  ]
 }
