@@ -1,73 +1,80 @@
 {
- "fetched_at": "2026-11-08T00:53:13Z",
+ "fetched_at": "2026-11-08T00:57:11Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 368380350,
    "name": "TAYA T",
-   "lat": 45.6122,
-   "lon": -122.64519,
+   "lat": 45.61221,
+   "lon": -122.64517,
+   "type_code": 52,
+   "destination": "US^10M4>02MP",
+   "updated": "2026-11-08 00:58:01.092172515 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.62903,
+   "lon": -122.69582,
+   "sog_kn": 0.5,
+   "cog": 287.7,
+   "heading": 133,
+   "nav_status": 3,
+   "updated": "2026-11-08 00:58:11.120092789 +0000 UTC"
+  },
+  {
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.64305,
+   "lon": -122.77133,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "cog": 266.4,
+   "heading": 229,
    "nav_status": 5,
-   "updated": "2026-11-08 00:53:31.230426501 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19997,
-   "lon": -123.38552,
-   "sog_kn": 0,
-   "cog": 356.9,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-08 00:53:32.310119138 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07959,
-   "lon": -122.90165,
-   "sog_kn": 0,
-   "cog": 265.7,
-   "heading": 135,
-   "nav_status": 0,
-   "updated": "2026-11-08 00:53:34.908732811 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64791,
-   "lon": -122.741,
-   "sog_kn": 0,
-   "cog": 111.9,
-   "heading": 111,
-   "nav_status": 5,
-   "updated": "2026-11-08 00:53:44.81993987 +0000 UTC"
+   "updated": "2026-11-08 00:58:12.574265912 +0000 UTC"
   },
   {
    "mmsi": 367513230,
    "name": "WILLAMETTE",
    "lat": 45.66214,
-   "lon": -122.76072,
+   "lon": -122.76071,
    "sog_kn": 0,
-   "cog": 282.1,
-   "heading": 155,
+   "cog": 320.8,
+   "heading": 154,
    "nav_status": 12,
-   "updated": "2026-11-08 00:53:46.412685487 +0000 UTC"
+   "updated": "2026-11-08 00:58:17.351969012 +0000 UTC"
   },
   {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64363,
-   "lon": -122.73937,
-   "sog_kn": 0.3,
-   "cog": 207.7,
-   "heading": 511,
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.09907,
+   "lon": -122.93934,
+   "sog_kn": 0,
+   "cog": 97.7,
+   "heading": 110,
    "nav_status": 5,
-   "updated": "2026-11-08 00:53:47.144703352 +0000 UTC"
+   "updated": "2026-11-08 00:58:18.864097622 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61201,
+   "lon": -122.64535,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-08 00:58:21.324825158 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10789,
+   "lon": -122.95904,
+   "sog_kn": 0.1,
+   "cog": 185.3,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 00:58:27.42539154 +0000 UTC"
   }
  ]
 }
