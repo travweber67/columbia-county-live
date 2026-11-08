@@ -1,69 +1,135 @@
 {
- "fetched_at": "2026-11-08T10:48:54Z",
+ "fetched_at": "2026-11-08T10:53:55Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.09072,
-   "lon": -122.9321,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.99554,
+   "lon": -122.84686,
+   "sog_kn": 1.4,
+   "cog": 318.1,
+   "heading": 326,
+   "nav_status": 12,
+   "updated": "2026-11-08 10:53:58.036878441 +0000 UTC",
    "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-08 10:49:01.505693695 +0000 UTC"
+   "destination": "US^029T>0UW8"
+  },
+  {
+   "mmsi": 368257130,
+   "name": "TRIUMPH VII",
+   "lat": 46.0059,
+   "lon": -122.85211,
+   "sog_kn": 4.7,
+   "cog": 182.5,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-08 10:53:59.351017556 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.38543,
+   "sog_kn": 0,
+   "cog": 358.4,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-08 10:54:04.349919992 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 46.09418,
+   "lon": -122.93597,
+   "sog_kn": 6.1,
+   "cog": 282.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 10:54:05.117519342 +0000 UTC"
   },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 45.64134,
-   "lon": -122.72449,
-   "sog_kn": 10.5,
-   "cog": 290.2,
-   "heading": 291,
+   "lat": 45.6465,
+   "lon": -122.74461,
+   "sog_kn": 10.4,
+   "cog": 292.5,
+   "heading": 294,
    "nav_status": 3,
-   "updated": "2026-11-08 10:49:02.073850984 +0000 UTC"
+   "updated": "2026-11-08 10:54:11.924151301 +0000 UTC"
   },
   {
-   "mmsi": 367513140,
-   "name": "CLEARWATER",
-   "lat": 45.66133,
-   "lon": -122.75997,
-   "sog_kn": 0,
-   "cog": 77.7,
-   "heading": 336,
+   "mmsi": 563116100,
+   "name": "OCEAN GOLD",
+   "lat": 45.99721,
+   "lon": -122.84875,
+   "sog_kn": 1.7,
+   "cog": 244.7,
+   "heading": 200,
    "nav_status": 0,
-   "updated": "2026-11-08 10:49:06.705712411 +0000 UTC"
+   "updated": "2026-11-08 10:54:13.99310299 +0000 UTC"
   },
   {
-   "mmsi": 311000824,
-   "name": "AFRICAN AVOCET",
-   "lat": 46.10348,
-   "lon": -122.94978,
-   "type_code": 79,
-   "destination": "KR PUS",
-   "updated": "2026-11-08 10:49:15.381727059 +0000 UTC"
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.38549,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-08 10:54:17.742022883 +0000 UTC"
   },
   {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 45.6434,
-   "lon": -122.75253,
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 45.63922,
+   "lon": -122.77785,
    "sog_kn": 0,
-   "cog": 172.6,
+   "cog": 332,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-08 10:54:17.005536409 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07965,
+   "lon": -122.90217,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-08 10:54:22.145945348 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00879,
+   "lon": -122.84886,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-08 10:49:26.907284623 +0000 UTC"
+   "updated": "2026-11-08 10:54:23.47530361 +0000 UTC"
   },
   {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58131,
-   "lon": -122.76066,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07976,
+   "lon": -122.90208,
    "sog_kn": 0,
-   "cog": 51.8,
-   "heading": 122,
-   "nav_status": 0,
-   "updated": "2026-11-08 10:49:27.883830736 +0000 UTC"
+   "cog": 360,
+   "heading": 319,
+   "nav_status": 3,
+   "updated": "2026-11-08 10:54:26.971498776 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58418,
+   "lon": -122.76617,
+   "type_code": 52,
+   "destination": "US^00D5>0UHN",
+   "updated": "2026-11-08 10:54:27.310190828 +0000 UTC"
   }
  ]
 }
