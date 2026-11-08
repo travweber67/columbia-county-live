@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-08T05:43:32Z",
+ "fetched_at": "2026-11-08T05:48:32Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -147,12 +147,18 @@
    "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 133,
+ "odot_active_statewide": 132,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
-  "alerts": [],
+  "alerts": [
+   {
+    "title": "All lanes of southbound I-5 near US 12 (milepost 68) in Lewis County are fully blocked due to a multi-vehicle collision and downed trees.\r\n\r\nCrews are on scene working to clear debris from the roadway. There is no estimated time for reopening. Travelers should use an alternate route when possible and expect significant delay beginning at 8:50 pm on November 7, 2026 until further notice.",
+    "desc": "All lanes of southbound I-5 near US 12 (milepost 68) in Lewis County are fully blocked due to a multi-vehicle collision and downed trees.\r\n\r\nCrews are on scene working to clear debris from the roadway. There is no estimated time for reopening. Travelers should use an alternate route when possible and expect significant delay beginning at 8:50 pm on November 7, 2026 until further notice.",
+    "updated": "/Date(1794116894683-0800)/"
+   }
+  ],
   "work_zones": [],
-  "status": "clear",
-  "note": "No WSDOT alerts or work zones found for the bridge in the latest snapshot."
+  "status": "alert",
+  "note": "WSDOT is reporting alert(s) affecting the bridge."
  }
 }
