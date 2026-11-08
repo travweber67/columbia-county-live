@@ -129,6 +129,7 @@ document.documentElement.setAttribute("data-theme",t);})();
   <span class="sticky-brand"><img class="sticky-ico" src="img/icons/icon-logo-courthouse.png" alt="" aria-hidden="true"> Live view</span>
   <a class="sticky-pill" id="sticky-weather" href="#alerts-card">⚠️ Weather —</a>
   <a class="sticky-pill" id="sticky-bridge" href="#roads-card">🌉 Bridge —</a>
+  <a class="sticky-pill" id="sticky-rally" href="#rally-card" style="display:none">🏁 Rally today</a>
   <nav class="sticky-links" aria-label="Jump to a section">
     <a href="#rivers-card" data-i18n="stickyriver">River</a>
     <a href="#ferry-card" data-i18n="stickyferry">Ferry</a>
@@ -259,6 +260,41 @@ document.documentElement.setAttribute("data-theme",t);})();
   <p class="finder-hint" data-i18n="finderhint">One search across every card on this page, all seven towns, and the events calendars — tap a result and the page takes you straight there.</p>
 </section>
 
+<section class="card rally-card" id="rally-card" hidden aria-label="Today only — the Mike Nagle RallySprint in St. Helens">
+  <div class="card-photo"><img src="img/bg/bg-day-7.jpg" alt="Rally cars lined up on S 1st Street in downtown St. Helens this morning" loading="lazy" decoding="async"></div>
+  <div class="card-head">
+    <h2 data-i18n="rallyh2">🏁 Today only — rally cars in St. Helens</h2>
+  </div>
+  <div class="panel-body">
+    <p data-i18n="rallylead">A real stage rally is running out of St. Helens today — the Mike Nagle RallySprint. One gravel stage up in the Nehalem Divide, 9.7 miles, run four times, 38 cars. Here is the route, the roads it closes, and where you can actually see the cars.</p>
+    <div id="rally-map" class="rally-map" aria-label="Map of the rally stage, the closed roads, and the places to see the cars"></div>
+    <div class="rally-legend">
+      <span class="rally-key"><span class="rally-swatch sw-closed" aria-hidden="true"></span><span data-i18n="rallylegclosed">Road closed today, 8 AM – 6 PM</span></span>
+      <span class="rally-key"><span class="rally-swatch sw-stage" aria-hidden="true"></span><span data-i18n="rallylegstage">The stage (line is approximate — forest roads, no public access)</span></span>
+      <span class="rally-key"><span class="rally-dot" aria-hidden="true"></span><span data-i18n="rallylegspot">Places to see the cars</span></span>
+    </div>
+    <h3 data-i18n="rallyclosedh">Roads closed today · 8 AM – 6 PM</h3>
+    <ul class="rally-list">
+      <li data-i18n="rallyclosed1">Camp Wilkerson / Karth Rd — Apiary Rd to Pittsburg Rd</li>
+      <li data-i18n="rallyclosed2">Pittsburg Rd — Scappoose-Vernonia Hwy to Karth Rd</li>
+    </ul>
+    <p class="card-note" data-i18n="rallyclosednote">There are no spectator areas along the stage roads, for safety. See the cars in town instead:</p>
+    <h3 data-i18n="rallyseeh">Where to see the cars</h3>
+    <ul class="rally-list">
+      <li data-i18n="rallysee1">~12:30 PM · Service at the St. Helens Rec Center — open to the public, watch the crews work on the cars</li>
+      <li data-i18n="rallysee2">6:00 PM · Podium &amp; Parc Fermé at McCormick Park</li>
+      <li data-i18n="rallysee3">Stages run at 9:53 AM, 11:25 AM, 2:27 PM and 3:59 PM (first car) — the Oregon Trail Rally YouTube channel is livestreaming them free</li>
+      <li data-i18n="rallysee4">Between stages the cars transit the Scappoose-Vernonia Hwy at normal road speed, so you may spot them around town</li>
+    </ul>
+    <p class="rally-links">
+      <a class="rally-btn" href="https://www.youtube.com/@oregontrailrally" target="_blank" rel="noopener" data-i18n="rallywatch">▶ Watch the stages live — YouTube</a>
+      <a class="rally-btn alt" href="https://www.facebook.com/OregonTrailRally" target="_blank" rel="noopener" data-i18n="rallyfb">Oregon Trail Rally on Facebook</a>
+    </p>
+    <p class="card-note small" data-i18n="rallysrc">Route, closures and times: Oregon Trail Rally official routebook and road-closure notice. Photo: Travis Weber, downtown this morning — sent in through this site's own photo form, and in the community screensaver now.</p>
+    <p class="card-note small"><a href="https://oregontrailrally.com/mike-nagle-rallysprint-spectators/" target="_blank" rel="noopener" data-i18n="rallylink">Oregon Trail Rally spectator page →</a></p>
+  </div>
+</section>
+
 <section class="card since-card" id="since-card" hidden aria-label="What changed since your last visit">
   <div class="card-head">
     <h2 data-i18n="sinceh2">🧭 Since you were away</h2>
@@ -353,6 +389,14 @@ document.documentElement.setAttribute("data-theme",t);})();
   </div>
   <p class="card-note small" data-i18n="schoolsnote2">No automated closure feed exists for these districts, so this board is updated by hand on storm mornings — and a district&rsquo;s own site is always the final word for your family.</p>
 </section>
+
+<!-- v41: ONE-DAY spotlight — Mike Nagle RallySprint, Sun Nov 8 2026 only.
+     The card ships hidden; app.js (rally module) unhides it only when the
+     visitor's local date is 2026-11-08, and builds the mini map from
+     data/rally2026.json (official closed-road geometry). After today it
+     simply never appears again. Facts: Oregon Trail Rally official
+     routebook + road-closure notice. Photo: Travis Weber's own rally
+     photo from this morning (community pool bg-day-7). -->
 
 <section class="card band-card briefing-card" id="briefing-card" aria-label="The county briefing — today's summary, ready to copy and share">
       <div class="card-band" aria-hidden="true"><img src="img/dusk/ticker-panorama.jpg" alt="" loading="lazy" decoding="async"></div>

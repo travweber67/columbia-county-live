@@ -5761,6 +5761,24 @@ const LANG_ES = {
   tabtravel: 'Viajes',
   taboutdoors: 'Aire libre',
   tabmore: 'Eventos y más',
+  rallyh2: '🏁 Solo hoy — autos de rally en St. Helens',
+  rallylead: 'Hoy se corre un rally de verdad desde St. Helens — el Mike Nagle RallySprint. Una sola etapa de ripio en Nehalem Divide, 9.7 millas, corrida cuatro veces, 38 autos. Aquí está la ruta, las carreteras que cierra y dónde sí puedes ver los autos.',
+  rallylegclosed: 'Carretera cerrada hoy, 8 AM – 6 PM',
+  rallylegstage: 'La etapa (la línea es aproximada — caminos forestales, sin acceso público)',
+  rallylegspot: 'Lugares para ver los autos',
+  rallyclosedh: 'Carreteras cerradas hoy · 8 AM – 6 PM',
+  rallyclosed1: 'Camp Wilkerson / Karth Rd — de Apiary Rd a Pittsburg Rd',
+  rallyclosed2: 'Pittsburg Rd — de Scappoose-Vernonia Hwy a Karth Rd',
+  rallyclosednote: 'No hay zonas para espectadores junto a las etapas, por seguridad. Mejor mira los autos en el pueblo:',
+  rallyseeh: 'Dónde ver los autos',
+  rallysee1: '~12:30 PM · Servicio en el St. Helens Rec Center — abierto al público, mira cómo trabajan los equipos',
+  rallysee2: '6:00 PM · Podio y Parc Fermé en McCormick Park',
+  rallysee3: 'Las etapas corren a las 9:53 AM, 11:25 AM, 2:27 PM y 3:59 PM (primer auto) — el canal de YouTube de Oregon Trail Rally las transmite gratis en vivo',
+  rallysee4: 'Entre etapas los autos transitan por la Scappoose-Vernonia Hwy a velocidad normal, así que puedes verlos por el pueblo',
+  rallysrc: 'Ruta, cierres y horarios: ruta oficial y aviso de cierres de Oregon Trail Rally. Foto: Travis Weber, hoy en el centro — enviada por el formulario de fotos de este sitio, y ya está en el protector de pantalla de la comunidad.',
+  rallylink: 'Página para espectadores de Oregon Trail Rally →',
+  rallywatch: '▶ Mira las etapas en vivo — YouTube',
+  rallyfb: 'Oregon Trail Rally en Facebook',
   commuteh2: '🚗 El veredicto del viaje',
   commutenote: 'La respuesta en una línea para manejar ahora mismo. El panorama completo del corredor — puente, incidentes y cámaras — está en la pestaña Viajes.',
   driveh2: '🧭 Tu viaje — ¿cuánto dura el manejo?',
@@ -8501,4 +8519,66 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
     var prevLang = langSet;
     langSet = function (lang) { prevLang(lang); renderChips(); renderBody(); };
   }
+})();
+
+/* v41 — RallySprint one-day spotlight (Travis, 2026-11-08).
+   The #rally-card ships hidden and only appears when the visitor's
+   local date (America/Los_Angeles) is 2026-11-08 — the Mike Nagle
+   RallySprint's one race day. Geometry in data/rally2026.json follows
+   the actual closed roads (OSM road paths for the two segments named
+   in the official closure notice); start/finish are the routebook's
+   own GPS points; the stage connector is dashed and labelled
+   approximate because the stage runs on closed forest roads. */
+(function () {
+  var card = document.getElementById('rally-card');
+  if (!card) return;
+  var today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' });
+  if (today !== '2026-11-08') return;
+  card.hidden = false;
+  var rallyPill = document.getElementById('sticky-rally');
+  if (rallyPill) rallyPill.style.display = '';
+  var ES = document.documentElement.lang === 'es';
+  var T = ES ? {
+    start: 'Inicio de la etapa — Nehalem Divide',
+    finish: 'Meta de la etapa',
+    expose: 'Parc Exposé — centro, 8–9 AM',
+    service: 'Servicio — St. Helens Rec Center, ~12:30 PM, abierto al público',
+    podium: 'Podio — McCormick Park, 6 PM'
+  } : {
+    start: 'Stage start — Nehalem Divide',
+    finish: 'Stage finish',
+    expose: 'Parc Exposé — downtown, 8–9 AM',
+    service: 'Service — St. Helens Rec Center, ~12:30 PM, open to the public',
+    podium: 'Podium — McCormick Park, 6 PM'
+  };
+  fetch('data/rally2026.json')
+    .then(function (r) { return r.json(); })
+    .then(function (d) {
+      if (typeof L === 'undefined' || !document.getElementById('rally-map')) return;
+      var map = L.map('rally-map', { scrollWheelZoom: false });
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors', maxZoom: 18
+      }).addTo(map);
+      var closedStyle = { color: '#b0511c', weight: 5, opacity: 0.9 };
+      var layers = [];
+      if (d.karth_closed) layers.push(L.polyline(d.karth_closed, closedStyle).addTo(map));
+      if (d.pittsburg_closed) layers.push(L.polyline(d.pittsburg_closed, closedStyle).addTo(map));
+      layers.push(L.polyline([[45.90589, -123.12445], [45.93328, -123.05324]],
+        { color: '#e9a44a', weight: 4, dashArray: '2 8', opacity: 0.95 }).addTo(map));
+      function spot(lat, lon, label) {
+        var m = L.circleMarker([lat, lon], {
+          radius: 7, color: '#1e4228', weight: 2, fillColor: '#e9a44a', fillOpacity: 0.95
+        }).addTo(map).bindPopup(label);
+        layers.push(m);
+        return m;
+      }
+      spot(45.90589, -123.12445, T.start);
+      spot(45.93328, -123.05324, T.finish);
+      spot(45.86299, -122.79754, T.expose);
+      spot(45.85131, -122.81298, T.service);
+      spot(45.85247, -122.81706, T.podium);
+      map.fitBounds(L.featureGroup(layers).getBounds().pad(0.08));
+      setTimeout(function () { map.invalidateSize(); }, 250);
+    })
+    .catch(function () { /* card still reads fine without the map */ });
 })();
