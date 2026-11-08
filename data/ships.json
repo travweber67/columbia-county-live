@@ -1,18 +1,38 @@
 {
- "fetched_at": "2026-11-08T14:04:09Z",
+ "fetched_at": "2026-11-08T14:09:09Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61289,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.3854,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-08 14:09:15.49542762 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.04401,
+   "lon": -122.87691,
    "sog_kn": 0,
-   "cog": 74.3,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-08 14:04:18.038819954 +0000 UTC"
+   "cog": 125.2,
+   "heading": 180,
+   "nav_status": 5,
+   "updated": "2026-11-08 14:09:15.911210845 +0000 UTC"
+  },
+  {
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 45.63925,
+   "lon": -122.77786,
+   "sog_kn": 0,
+   "cog": 23.4,
+   "heading": 230,
+   "nav_status": 5,
+   "updated": "2026-11-08 14:09:17.145854433 +0000 UTC"
   },
   {
    "mmsi": 366986380,
@@ -21,27 +41,50 @@
    "lon": -122.90204,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 319,
+   "heading": 318,
    "nav_status": 3,
-   "updated": "2026-11-08 14:04:27.001757265 +0000 UTC"
+   "updated": "2026-11-08 14:09:28.142011085 +0000 UTC"
   },
   {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.5873,
-   "lon": -122.77006,
-   "type_code": 31,
-   "destination": "US^02SY>0UJ9",
-   "updated": "2026-11-08 14:04:35.806029705 +0000 UTC"
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
+   "type_code": 0,
+   "updated": "2026-11-08 14:09:29.169626867 +0000 UTC"
   },
   {
-   "mmsi": 353081000,
-   "name": "ELEGANT SW",
-   "lat": 46.09908,
-   "lon": -122.93933,
-   "type_code": 70,
-   "destination": "USA LONGVIEW",
-   "updated": "2026-11-08 14:04:41.351180902 +0000 UTC"
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.1089,
+   "lon": -122.96127,
+   "sog_kn": 0,
+   "cog": 215.7,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-08 14:09:32.07095329 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.63792,
+   "lon": -122.72501,
+   "sog_kn": 8.5,
+   "cog": 114.7,
+   "heading": 114,
+   "nav_status": 12,
+   "updated": "2026-11-08 14:09:35.429581345 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19948,
+   "lon": -123.3851,
+   "sog_kn": 0,
+   "cog": 30,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-08 14:09:38.296826173 +0000 UTC"
   }
  ]
 }
