@@ -1,150 +1,78 @@
 {
- "fetched_at": "2026-11-08T14:14:17Z",
+ "fetched_at": "2026-11-08T14:19:10Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 14 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10891,
-   "lon": -122.96127,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-08 14:14:22.590939224 +0000 UTC"
-  },
-  {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61222,
-   "lon": -122.64519,
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64338,
+   "lon": -122.75133,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 93,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-08 14:14:33.292092559 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-08 14:19:14.946421776 +0000 UTC"
   },
   {
-   "mmsi": 538012377,
-   "name": "UNION SAPPHIRE",
-   "lat": 46.11008,
-   "lon": -122.96342,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.38551,
    "sog_kn": 0,
-   "cog": 331,
-   "heading": 129,
-   "nav_status": 5,
-   "updated": "2026-11-08 14:14:33.889114358 +0000 UTC"
+   "cog": 240,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-08 14:19:22.861037706 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64361,
+   "lon": -122.75233,
+   "sog_kn": 1.1,
+   "cog": 157,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 14:19:25.552200563 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.63419,
+   "lon": -122.70332,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-08 14:19:25.827556977 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.64349,
+   "lon": -122.75248,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-08 14:19:34.009298453 +0000 UTC"
+  },
+  {
+   "mmsi": 538007029,
+   "name": "ZEPHYROS",
+   "lat": 46.02717,
+   "lon": -122.86955,
+   "type_code": 70,
+   "destination": "KALAMA,USA",
+   "updated": "2026-11-08 14:19:36.318733818 +0000 UTC"
   },
   {
    "mmsi": 367047080,
    "name": "THE CHIEF",
-   "lat": 45.63332,
-   "lon": -122.70982,
-   "sog_kn": 8.4,
-   "cog": 118.6,
-   "heading": 118,
+   "lat": 45.63034,
+   "lon": -122.70581,
+   "sog_kn": 0,
+   "cog": 38.9,
+   "heading": 119,
    "nav_status": 12,
-   "updated": "2026-11-08 14:14:36.021762706 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58755,
-   "lon": -122.77066,
-   "sog_kn": 0,
-   "cog": 121.3,
-   "heading": 140,
-   "nav_status": 0,
-   "updated": "2026-11-08 14:14:37.753679509 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.27125,
-   "lon": -123.49712,
-   "sog_kn": 1.3,
-   "cog": 88.9,
-   "heading": 86,
-   "nav_status": 3,
-   "updated": "2026-11-08 14:14:40.259708065 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00884,
-   "lon": -122.84887,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-08 14:14:40.502105751 +0000 UTC"
-  },
-  {
-   "mmsi": 232038703,
-   "name": "IONIAN SEA",
-   "lat": 45.63924,
-   "lon": -122.77786,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-08 14:14:45.153492049 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19999,
-   "lon": -123.38541,
-   "type_code": 99,
-   "destination": "NAKNEK",
-   "updated": "2026-11-08 14:14:46.976400464 +0000 UTC"
-  },
-  {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.87762,
-   "lon": -122.79363,
-   "sog_kn": 9.6,
-   "cog": 330.4,
-   "heading": 329,
-   "nav_status": 0,
-   "updated": "2026-11-08 14:14:47.517658141 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00903,
-   "lon": -122.84838,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-08 14:14:49.855700519 +0000 UTC"
-  },
-  {
-   "mmsi": 477133900,
-   "name": "SHAO SHAN 8",
-   "lat": 45.64393,
-   "lon": -122.74116,
-   "type_code": 70,
-   "destination": "CN QDG",
-   "updated": "2026-11-08 14:14:49.98817767 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.63215,
-   "lon": -122.70419,
-   "sog_kn": 6.2,
-   "cog": 299.3,
-   "heading": 299,
-   "nav_status": 12,
-   "updated": "2026-11-08 14:14:50.102955973 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.1772,
-   "lon": -123.35742,
-   "type_code": 30,
-   "updated": "2026-11-08 14:14:51.210998539 +0000 UTC"
+   "updated": "2026-11-08 14:19:36.470044535 +0000 UTC"
   }
  ]
 }
