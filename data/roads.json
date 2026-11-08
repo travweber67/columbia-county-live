@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-08T07:18:38Z",
+ "fetched_at": "2026-11-08T07:23:39Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -12,7 +12,8 @@
   },
   {
    "name": "WSDOT Highway Alerts (free code)",
-   "status": "ok"
+   "status": "error",
+   "note": "HTTP 0"
   }
  ],
  "incidents": [
@@ -147,7 +148,7 @@
    "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 133,
+ "odot_active_statewide": 130,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
   "alerts": [],
