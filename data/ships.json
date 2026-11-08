@@ -1,58 +1,91 @@
 {
- "fetched_at": "2026-11-08T23:04:47Z",
+ "fetched_at": "2026-11-08T23:09:47Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.64489,
-   "lon": -122.73747,
-   "sog_kn": 9.9,
-   "cog": 283.7,
-   "heading": 281,
-   "nav_status": 3,
-   "updated": "2026-11-08 23:05:00.942631124 +0000 UTC"
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.877,
+   "lon": -122.79338,
+   "sog_kn": 9.6,
+   "cog": 150.8,
+   "heading": 153,
+   "nav_status": 12,
+   "updated": "2026-11-08 23:09:56.445896433 +0000 UTC"
   },
   {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64788,
-   "lon": -122.74098,
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.19963,
+   "lon": -123.38523,
+   "type_code": 30,
+   "destination": "",
+   "updated": "2026-11-08 23:09:57.634383822 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64344,
+   "lon": -122.75253,
    "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-08 23:05:03.349246757 +0000 UTC"
+   "destination": "US^0UU4>02MR",
+   "updated": "2026-11-08 23:10:02.14863052 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 297.1,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-08 23:10:06.38570836 +0000 UTC"
   },
   {
    "mmsi": 368083770,
    "name": "SUPPORT",
-   "lat": 46.009,
-   "lon": -122.84833,
+   "lat": 46.00901,
+   "lon": -122.84826,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-08 23:05:08.794600837 +0000 UTC"
+   "updated": "2026-11-08 23:10:07.884602381 +0000 UTC"
   },
   {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 46.02714,
-   "lon": -122.86955,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07974,
+   "lon": -122.90204,
    "sog_kn": 0,
-   "cog": 319.8,
-   "heading": 138,
-   "nav_status": 5,
-   "updated": "2026-11-08 23:05:19.796133827 +0000 UTC"
+   "cog": 360,
+   "heading": 319,
+   "nav_status": 3,
+   "updated": "2026-11-08 23:10:08.079592286 +0000 UTC"
   },
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64539,
-   "lon": -122.73503,
-   "type_code": 70,
-   "destination": "PER ORDERS",
-   "updated": "2026-11-08 23:05:28.43387391 +0000 UTC"
+   "mmsi": 538007029,
+   "name": "ZEPHYROS",
+   "lat": 46.02816,
+   "lon": -122.87527,
+   "sog_kn": 0,
+   "cog": 342.8,
+   "heading": 150,
+   "nav_status": 1,
+   "updated": "2026-11-08 23:10:15.140280918 +0000 UTC"
+  },
+  {
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.09906,
+   "lon": -122.93932,
+   "sog_kn": 0,
+   "cog": 127.5,
+   "heading": 110,
+   "nav_status": 5,
+   "updated": "2026-11-08 23:10:19.723702087 +0000 UTC"
   }
  ]
 }
