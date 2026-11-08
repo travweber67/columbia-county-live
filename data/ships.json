@@ -1,67 +1,60 @@
 {
- "fetched_at": "2026-11-08T13:57:22Z",
+ "fetched_at": "2026-11-08T13:59:08Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.02814,
-   "lon": -122.8684,
+   "mmsi": 367719170,
+   "name": "RYAN POINT",
+   "lat": 45.6473,
+   "lon": -122.7435,
+   "sog_kn": 6.3,
+   "cog": 123.2,
+   "heading": 121,
+   "nav_status": 12,
+   "updated": "2026-11-08 13:59:12.291478836 +0000 UTC"
+  },
+  {
+   "mmsi": 538006268,
+   "name": "STAR CARIOCA",
+   "lat": 46.14806,
+   "lon": -123.38158,
+   "sog_kn": 10.6,
+   "cog": 104.9,
+   "heading": 104,
+   "nav_status": 0,
+   "updated": "2026-11-08 13:59:27.275795249 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.79858,
+   "lon": -122.78672,
+   "sog_kn": 8.6,
+   "cog": 334,
+   "heading": 336,
+   "nav_status": 12,
+   "updated": "2026-11-08 13:59:30.293272086 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.62907,
+   "lon": -122.69245,
+   "sog_kn": 0.1,
+   "cog": 49.4,
+   "heading": 308,
+   "nav_status": 12,
+   "updated": "2026-11-08 13:59:30.464671249 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08972,
+   "lon": -122.92907,
    "type_code": 52,
-   "destination": "CSR OPS",
-   "updated": "2026-11-08 13:58:05.332502368 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.6295,
-   "lon": -122.69631,
-   "sog_kn": 1.6,
-   "cog": 336.8,
-   "heading": 322,
-   "nav_status": 3,
-   "updated": "2026-11-08 13:58:11.10882982 +0000 UTC"
-  },
-  {
-   "mmsi": 538006097,
-   "name": "AD ASTRA",
-   "lat": 45.64271,
-   "lon": -122.77172,
-   "sog_kn": 0,
-   "cog": 186.9,
-   "heading": 229,
-   "nav_status": 5,
-   "updated": "2026-11-08 13:58:12.553055051 +0000 UTC"
-  },
-  {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.83995,
-   "lon": -122.80472,
-   "type_code": 52,
-   "destination": "US^0RFZ>?? ???",
-   "updated": "2026-11-08 13:58:15.348226775 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61289,
-   "sog_kn": 0,
-   "cog": 115.3,
-   "heading": 133,
-   "nav_status": 15,
-   "updated": "2026-11-08 13:58:18.107329499 +0000 UTC"
-  },
-  {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.612,
-   "lon": -122.64538,
-   "type_code": 52,
-   "destination": "US^0UUT>0T9D",
-   "updated": "2026-11-08 13:58:20.324438588 +0000 UTC"
+   "destination": "US^0UJB>0UJB",
+   "updated": "2026-11-08 13:59:31.666221546 +0000 UTC"
   }
  ]
 }
