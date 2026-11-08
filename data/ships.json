@@ -1,56 +1,112 @@
 {
- "fetched_at": "2026-11-08T03:38:24Z",
+ "fetched_at": "2026-11-08T03:43:23Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.07951,
-   "lon": -122.90195,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40232,
    "sog_kn": 0,
-   "cog": 25,
+   "cog": 360,
+   "heading": 134,
+   "nav_status": 0,
+   "updated": "2026-11-08 03:43:34.712835328 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00879,
+   "lon": -122.84894,
+   "sog_kn": 0.1,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-08 03:38:43.638441244 +0000 UTC"
+   "updated": "2026-11-08 03:43:49.695215241 +0000 UTC",
+   "type_code": 50,
+   "destination": "--"
   },
   {
-   "mmsi": 477133900,
-   "name": "SHAO SHAN 8",
-   "lat": 45.64391,
-   "lon": -122.74118,
-   "type_code": 70,
-   "destination": "CN QDG",
-   "updated": "2026-11-08 03:38:49.63627261 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64345,
-   "lon": -122.75288,
-   "type_code": 52,
-   "destination": "US^0UU4>02MR",
-   "updated": "2026-11-08 03:38:52.661212868 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61289,
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58727,
+   "lon": -122.77009,
    "sog_kn": 0,
-   "cog": 192.7,
-   "heading": 126,
-   "nav_status": 15,
-   "updated": "2026-11-08 03:38:58.570661723 +0000 UTC"
+   "cog": 75.8,
+   "heading": 139,
+   "nav_status": 5,
+   "updated": "2026-11-08 03:43:37.611621393 +0000 UTC"
   },
   {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58131,
-   "lon": -122.76064,
-   "type_code": 57,
-   "destination": "GASCO",
-   "updated": "2026-11-08 03:39:02.1574759 +0000 UTC"
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.82634,
+   "lon": -122.79603,
+   "sog_kn": 4.8,
+   "cog": 194.1,
+   "heading": 188,
+   "nav_status": 12,
+   "updated": "2026-11-08 03:43:38.79844737 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64728,
+   "lon": -122.73992,
+   "sog_kn": 0,
+   "cog": 258.6,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-08 03:43:44.799014039 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 46.09081,
+   "lon": -122.9321,
+   "type_code": 52,
+   "updated": "2026-11-08 03:43:47.158924491 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64347,
+   "lon": -122.7528,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-08 03:43:47.766590362 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07974,
+   "lon": -122.90205,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 318,
+   "nav_status": 3,
+   "updated": "2026-11-08 03:43:48.470321298 +0000 UTC"
+  },
+  {
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.11013,
+   "lon": -122.96341,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-08 03:43:58.523354716 +0000 UTC"
+  },
+  {
+   "mmsi": 368082970,
+   "name": "AMERICAN.HARMONY",
+   "lat": 45.802,
+   "lon": -122.78764,
+   "sog_kn": 15,
+   "cog": 333.1,
+   "heading": 333,
+   "nav_status": 0,
+   "updated": "2026-11-08 03:44:00.731370975 +0000 UTC"
   }
  ]
 }
