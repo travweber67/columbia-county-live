@@ -1,38 +1,77 @@
 {
- "fetched_at": "2026-11-08T08:43:45Z",
+ "fetched_at": "2026-11-08T08:48:45Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07976,
+   "lon": -122.90204,
+   "type_code": 33,
+   "updated": "2026-11-08 08:48:50.240890248 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19947,
+   "lon": -123.38508,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-08 08:48:51.697141032 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59407,
+   "lon": -122.77212,
+   "type_code": 70,
+   "destination": "NOT AVAILABLE",
+   "updated": "2026-11-08 08:48:56.603164892 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64204,
+   "lon": -122.7409,
+   "sog_kn": 0.1,
+   "cog": 304.3,
+   "heading": 120,
+   "nav_status": 12,
+   "updated": "2026-11-08 08:48:59.145387318 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00908,
+   "lon": -122.84833,
+   "type_code": 31,
+   "destination": "HARBOROPPS-",
+   "updated": "2026-11-08 08:49:04.995583349 +0000 UTC",
+   "sog_kn": 0.2,
+   "cog": 178.4,
+   "heading": 511,
+   "nav_status": 0
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64345,
+   "lon": -122.75283,
+   "sog_kn": 0,
+   "cog": 254.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 08:49:05.186264118 +0000 UTC"
+  },
   {
    "mmsi": 311000824,
    "name": "AFRICAN AVOCET",
-   "lat": 46.10347,
-   "lon": -122.94981,
+   "lat": 46.1034,
+   "lon": -122.94973,
    "type_code": 79,
    "destination": "KR PUS",
-   "updated": "2026-11-08 08:43:52.630390525 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.05968,
-   "lon": -122.88325,
-   "sog_kn": 7.8,
-   "cog": 164.2,
-   "heading": 165,
-   "nav_status": 0,
-   "updated": "2026-11-08 08:44:05.127024524 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58753,
-   "lon": -122.77068,
-   "sog_kn": 0,
-   "cog": 118.6,
-   "heading": 140,
-   "nav_status": 0,
-   "updated": "2026-11-08 08:44:07.60683974 +0000 UTC"
+   "updated": "2026-11-08 08:49:15.07481093 +0000 UTC"
   }
  ]
 }
