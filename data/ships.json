@@ -1,62 +1,91 @@
 {
- "fetched_at": "2026-11-08T13:39:06Z",
+ "fetched_at": "2026-11-08T13:44:07Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538006268,
-   "name": "STAR CARIOCA",
-   "lat": 46.19228,
-   "lon": -123.43059,
-   "sog_kn": 12,
-   "cog": 182.7,
-   "heading": 181,
-   "nav_status": 0,
-   "updated": "2026-11-08 13:39:17.622560764 +0000 UTC"
+   "mmsi": 367719170,
+   "name": "RYAN POINT",
+   "lat": 45.6525,
+   "lon": -122.75188,
+   "sog_kn": 0,
+   "cog": 151.1,
+   "heading": 136,
+   "nav_status": 12,
+   "updated": "2026-11-08 13:44:11.536054391 +0000 UTC"
   },
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60761,
-   "lon": -122.67748,
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 46.09055,
+   "lon": -122.93226,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-08 13:44:13.558355619 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.07939,
+   "lon": -122.90181,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-08 13:44:15.394370469 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.64347,
+   "lon": -122.75246,
+   "sog_kn": 0,
+   "cog": 172.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 13:44:18.295402763 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.62816,
+   "lon": -122.69164,
+   "sog_kn": 0.3,
+   "cog": 356.6,
+   "heading": 314,
+   "nav_status": 12,
+   "updated": "2026-11-08 13:44:18.678406547 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64569,
+   "lon": -122.73484,
+   "sog_kn": 0.1,
+   "cog": 0,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-08 13:44:19.191797991 +0000 UTC"
+  },
+  {
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.11013,
+   "lon": -122.96339,
+   "sog_kn": 0,
+   "cog": 331,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-08 13:44:34.094717088 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.16285,
+   "lon": -123.40973,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 511,
+   "heading": 133,
    "nav_status": 0,
-   "updated": "2026-11-08 13:39:23.172699892 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07959,
-   "lon": -122.90164,
-   "sog_kn": 0,
-   "cog": 294.7,
-   "heading": 136,
-   "nav_status": 0,
-   "updated": "2026-11-08 13:39:25.087657289 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.75868,
-   "lon": -122.76424,
-   "sog_kn": 10.3,
-   "cog": 167.1,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-08 13:39:25.238189863 +0000 UTC"
-  },
-  {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.65902,
-   "lon": -122.75856,
-   "sog_kn": 1.4,
-   "cog": 318.7,
-   "heading": 134,
-   "nav_status": 12,
-   "updated": "2026-11-08 13:39:26.420624337 +0000 UTC"
+   "updated": "2026-11-08 13:44:34.09671083 +0000 UTC"
   }
  ]
 }
