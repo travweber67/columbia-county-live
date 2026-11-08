@@ -1,69 +1,60 @@
 {
- "fetched_at": "2026-11-08T06:27:16Z",
+ "fetched_at": "2026-11-08T06:33:35Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60759,
-   "lon": -122.67754,
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.64351,
+   "lon": -122.75244,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 309.1,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-08 06:28:23.565783417 +0000 UTC"
+   "updated": "2026-11-08 06:33:46.471041983 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10355,
-   "lon": -122.9101,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61289,
    "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 75,
+   "cog": 293.1,
+   "heading": 132,
+   "nav_status": 15,
+   "updated": "2026-11-08 06:33:48.478742458 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.64334,
+   "lon": -122.75279,
+   "type_code": 50,
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-08 06:33:49.089588553 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.27152,
+   "lon": -123.48624,
+   "sog_kn": 1.8,
+   "cog": 91.8,
+   "heading": 96,
    "nav_status": 3,
-   "updated": "2026-11-08 06:28:24.763124809 +0000 UTC"
+   "updated": "2026-11-08 06:34:02.413501987 +0000 UTC"
   },
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10795,
-   "lon": -122.95901,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.38552,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 337.1,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-08 06:28:24.800627823 +0000 UTC"
-  },
-  {
-   "mmsi": 538006097,
-   "name": "AD ASTRA",
-   "lat": 45.64306,
-   "lon": -122.77133,
-   "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-08 06:28:26.129879858 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64787,
-   "lon": -122.74096,
-   "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-08 06:28:27.920331692 +0000 UTC"
-  },
-  {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.09071,
-   "lon": -122.93214,
-   "sog_kn": 0,
-   "cog": 321.4,
-   "heading": 111,
-   "nav_status": 5,
-   "updated": "2026-11-08 06:28:35.514356796 +0000 UTC"
+   "nav_status": 15,
+   "updated": "2026-11-08 06:34:11.214215838 +0000 UTC"
   }
  ]
 }
