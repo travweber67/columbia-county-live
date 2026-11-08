@@ -1,27 +1,80 @@
 {
- "fetched_at": "2026-11-08T22:39:46Z",
+ "fetched_at": "2026-11-08T22:44:46Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64349,
+   "lon": -122.75242,
+   "type_code": 52,
+   "destination": "US^0UU4>02MR",
+   "updated": "2026-11-08 22:44:52.455173206 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60757,
+   "lon": -122.67757,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 22:44:53.299847274 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64788,
+   "lon": -122.74099,
+   "sog_kn": 0,
+   "cog": 111.6,
+   "heading": 111,
+   "nav_status": 5,
+   "updated": "2026-11-08 22:44:53.386094992 +0000 UTC"
+  },
+  {
+   "mmsi": 367315790,
+   "name": "LORI B.",
+   "lat": 46.22579,
+   "lon": -123.42852,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-08 22:45:04.873574783 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.1079,
+   "lon": -122.95901,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 22:45:05.247923228 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.63108,
+   "lon": -122.69822,
+   "sog_kn": 0.4,
+   "cog": 298,
+   "heading": 294,
+   "nav_status": 3,
+   "updated": "2026-11-08 22:45:18.344198152 +0000 UTC"
+  },
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
-   "lat": 46.07956,
-   "lon": -122.90163,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-08 22:40:11.947806168 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61291,
+   "lat": 46.07957,
+   "lon": -122.90164,
    "sog_kn": 0,
-   "cog": 114,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-08 22:40:18.789026616 +0000 UTC"
+   "cog": 146.3,
+   "heading": 138,
+   "nav_status": 0,
+   "updated": "2026-11-08 22:45:12.896246454 +0000 UTC"
   }
  ]
 }
