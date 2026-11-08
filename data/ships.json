@@ -1,47 +1,70 @@
 {
- "fetched_at": "2026-11-08T17:44:26Z",
+ "fetched_at": "2026-11-08T17:49:26Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64351,
-   "lon": -122.75292,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.16285,
+   "lon": -123.40974,
    "sog_kn": 0,
-   "cog": 343.1,
+   "cog": 360,
+   "heading": 135,
+   "nav_status": 0,
+   "updated": "2026-11-08 17:49:33.994863475 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60761,
+   "lon": -122.67764,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-08 17:44:33.969095927 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-08 17:49:50.126718081 +0000 UTC",
+   "type_code": 50
   },
   {
    "mmsi": 538007029,
    "name": "ZEPHYROS",
    "lat": 46.02718,
-   "lon": -122.86959,
+   "lon": -122.86961,
    "type_code": 70,
    "destination": "KALAMA,USA",
-   "updated": "2026-11-08 17:44:36.949280389 +0000 UTC"
+   "updated": "2026-11-08 17:49:36.579897899 +0000 UTC"
   },
   {
-   "mmsi": 367347000,
-   "name": "WENDY SEAA",
-   "lat": 46.19953,
-   "lon": -123.38501,
+   "mmsi": 368046350,
+   "name": "AMERICAN SONG",
+   "lat": 46.00368,
+   "lon": -122.84776,
+   "type_code": 69,
+   "destination": "KALAMA, WA",
+   "updated": "2026-11-08 17:49:40.393983347 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20003,
+   "lon": -123.3854,
    "sog_kn": 0,
-   "cog": 325,
-   "heading": 144,
-   "nav_status": 5,
-   "updated": "2026-11-08 17:44:43.995383861 +0000 UTC"
+   "cog": 2.6,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-08 17:49:43.911777153 +0000 UTC"
   },
   {
-   "mmsi": 232038703,
-   "name": "IONIAN SEA",
-   "lat": 45.63748,
-   "lon": -122.70907,
-   "type_code": 70,
-   "destination": "BR SSZ",
-   "updated": "2026-11-08 17:44:45.347559326 +0000 UTC"
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58132,
+   "lon": -122.76066,
+   "sog_kn": 0,
+   "cog": 51.8,
+   "heading": 123,
+   "nav_status": 0,
+   "updated": "2026-11-08 17:49:47.777712568 +0000 UTC"
   },
   {
    "mmsi": 367602150,
@@ -49,73 +72,19 @@
    "lat": 45.61109,
    "lon": -122.6129,
    "sog_kn": 0,
-   "cog": 200,
+   "cog": 225.1,
    "heading": 134,
    "nav_status": 15,
-   "updated": "2026-11-08 17:44:48.687466144 +0000 UTC"
+   "updated": "2026-11-08 17:49:48.760652067 +0000 UTC"
   },
   {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.9853,
-   "lon": -122.83647,
-   "sog_kn": 0.7,
-   "cog": 64.3,
-   "heading": 310,
-   "nav_status": 12,
-   "updated": "2026-11-08 17:44:50.104187119 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.63718,
-   "lon": -122.70904,
-   "type_code": 52,
-   "updated": "2026-11-08 17:44:50.148507869 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64788,
-   "lon": -122.74099,
-   "sog_kn": 0,
-   "cog": 112,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-08 17:44:54.872250053 +0000 UTC"
-  },
-  {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.98127,
-   "lon": -122.83521,
-   "sog_kn": 0.1,
-   "cog": 343.5,
-   "heading": 134,
-   "nav_status": 0,
-   "updated": "2026-11-08 17:44:57.301953533 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 45.64792,
-   "lon": -122.75764,
-   "sog_kn": 1.7,
-   "cog": 228.1,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-08 17:44:59.089273732 +0000 UTC"
-  },
-  {
-   "mmsi": 311000824,
-   "name": "AFRICAN AVOCET",
-   "lat": 46.10348,
-   "lon": -122.94983,
-   "sog_kn": 0,
-   "cog": 15,
-   "heading": 118,
-   "nav_status": 5,
-   "updated": "2026-11-08 17:44:59.38730133 +0000 UTC"
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10791,
+   "lon": -122.959,
+   "type_code": 50,
+   "destination": "CR HARBOR OPS",
+   "updated": "2026-11-08 17:49:56.780845345 +0000 UTC"
   }
  ]
 }
