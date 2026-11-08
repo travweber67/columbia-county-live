@@ -1,84 +1,58 @@
 {
- "fetched_at": "2026-11-08T03:48:24Z",
+ "fetched_at": "2026-11-08T03:53:24Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65007,
-   "lon": -122.7476,
-   "sog_kn": 0,
-   "cog": 289.2,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-08 03:48:39.608656994 +0000 UTC"
-  },
   {
    "mmsi": 367363590,
    "name": "CLARKSTON",
-   "lat": 45.81976,
-   "lon": -122.79726,
-   "sog_kn": 4.7,
-   "cog": 177.3,
-   "heading": 173,
-   "nav_status": 12,
-   "updated": "2026-11-08 03:48:39.915746154 +0000 UTC"
+   "lat": 45.81295,
+   "lon": -122.79591,
+   "type_code": 57,
+   "destination": "VANCOUER,WA",
+   "updated": "2026-11-08 03:53:58.156440894 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10357,
-   "lon": -122.91011,
-   "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 74,
-   "nav_status": 3,
-   "updated": "2026-11-08 03:48:42.787131083 +0000 UTC"
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19956,
+   "lon": -123.385,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-08 03:54:11.172369811 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07959,
-   "lon": -122.90165,
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.044,
+   "lon": -122.87691,
    "sog_kn": 0,
-   "cog": 291.7,
-   "heading": 136,
+   "cog": 125.2,
+   "heading": 180,
+   "nav_status": 5,
+   "updated": "2026-11-08 03:54:17.701857646 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 223.4,
+   "heading": 127,
+   "nav_status": 15,
+   "updated": "2026-11-08 03:54:18.428165364 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58754,
+   "lon": -122.77047,
+   "sog_kn": 0,
+   "cog": 346.4,
+   "heading": 140,
    "nav_status": 0,
-   "updated": "2026-11-08 03:48:43.571911027 +0000 UTC"
-  },
-  {
-   "mmsi": 369990212,
-   "name": "CG29212",
-   "lat": 45.59496,
-   "lon": -122.7751,
-   "sog_kn": 35.6,
-   "cog": 145.3,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-08 03:48:43.948572527 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58753,
-   "lon": -122.77069,
-   "sog_kn": 0,
-   "cog": 118.6,
-   "heading": 139,
-   "nav_status": 0,
-   "updated": "2026-11-08 03:48:47.143481544 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07974,
-   "lon": -122.90203,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 318,
-   "nav_status": 3,
-   "updated": "2026-11-08 03:49:06.554181305 +0000 UTC"
+   "updated": "2026-11-08 03:54:18.873967385 +0000 UTC"
   }
  ]
 }
