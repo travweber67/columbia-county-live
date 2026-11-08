@@ -1,113 +1,153 @@
 {
- "fetched_at": "2026-11-08T18:27:48Z",
+ "fetched_at": "2026-11-08T18:34:30Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 14 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58727,
+   "lon": -122.77006,
+   "type_code": 31,
+   "destination": "US^02SY>0UJ9",
+   "updated": "2026-11-08 18:34:36.845825697 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58417,
+   "lon": -122.76615,
+   "sog_kn": 0,
+   "cog": 91,
+   "heading": 145,
+   "nav_status": 5,
+   "updated": "2026-11-08 18:34:40.15074976 +0000 UTC"
+  },
+  {
+   "mmsi": 477050900,
+   "name": "MING DE",
+   "lat": 46.13662,
+   "lon": -123.01344,
+   "sog_kn": 11.6,
+   "cog": 110.9,
+   "heading": 115,
+   "nav_status": 0,
+   "updated": "2026-11-08 18:34:43.587316268 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.6473,
+   "lon": -122.73991,
+   "type_code": 52,
+   "destination": "SRT PASCO",
+   "updated": "2026-11-08 18:34:46.334890599 +0000 UTC"
+  },
+  {
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 45.63747,
+   "lon": -122.70899,
+   "sog_kn": 0,
+   "cog": 38,
+   "heading": 303,
+   "nav_status": 5,
+   "updated": "2026-11-08 18:34:51.059496012 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.62788,
+   "lon": -122.6938,
+   "sog_kn": 0.4,
+   "cog": 112,
+   "heading": 120,
+   "nav_status": 3,
+   "updated": "2026-11-08 18:34:51.891118073 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15707,
+   "lon": -123.40234,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 136,
+   "nav_status": 0,
+   "updated": "2026-11-08 18:34:53.152594592 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.6404,
+   "lon": -122.7774,
+   "sog_kn": 2.6,
+   "cog": 226.8,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 18:34:55.539021228 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.07938,
+   "lon": -122.90181,
+   "sog_kn": 0,
+   "cog": 13.1,
+   "heading": 138,
+   "nav_status": 5,
+   "updated": "2026-11-08 18:34:57.887161683 +0000 UTC"
+  },
+  {
+   "mmsi": 367681630,
+   "name": "VICKI B",
+   "lat": 45.98058,
+   "lon": -122.83471,
+   "sog_kn": 0.1,
+   "cog": 205,
+   "heading": 163,
+   "nav_status": 0,
+   "updated": "2026-11-08 18:34:58.188437566 +0000 UTC"
+  },
+  {
+   "mmsi": 538006268,
+   "name": "STAR CARIOCA",
+   "lat": 45.6412,
+   "lon": -122.77567,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-08 18:35:01.062694818 +0000 UTC"
+  },
+  {
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.64281,
+   "lon": -122.77171,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-08 18:35:03.351339122 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63858,
+   "lon": -122.7241,
+   "sog_kn": 0.1,
+   "cog": 154.5,
+   "heading": 112,
+   "nav_status": 1,
+   "updated": "2026-11-08 18:35:03.783370716 +0000 UTC"
+  },
   {
    "mmsi": 538007029,
    "name": "ZEPHYROS",
-   "lat": 46.02719,
-   "lon": -122.86957,
-   "sog_kn": 0.1,
-   "cog": 39.5,
+   "lat": 46.02715,
+   "lon": -122.86954,
+   "sog_kn": 0,
+   "cog": 36.6,
    "heading": 139,
    "nav_status": 5,
-   "updated": "2026-11-08 18:29:05.273137887 +0000 UTC"
-  },
-  {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.6454,
-   "lon": -122.73507,
-   "type_code": 70,
-   "destination": "PER ORDERS",
-   "updated": "2026-11-08 18:29:13.808615699 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00881,
-   "lon": -122.84871,
-   "type_code": 50,
-   "destination": "--",
-   "updated": "2026-11-08 18:29:16.049559937 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20001,
-   "lon": -123.3854,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-08 18:29:16.791567462 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.74846,
-   "lon": -122.76267,
-   "sog_kn": 11.6,
-   "cog": 356.7,
-   "heading": 358,
-   "nav_status": 0,
-   "updated": "2026-11-08 18:29:17.27783141 +0000 UTC"
-  },
-  {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.64314,
-   "lon": -122.77086,
-   "sog_kn": 0,
-   "cog": 308.6,
-   "heading": 245,
-   "nav_status": 0,
-   "updated": "2026-11-08 18:29:17.315603815 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07976,
-   "lon": -122.90205,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 318,
-   "nav_status": 3,
-   "updated": "2026-11-08 18:29:18.383792552 +0000 UTC"
-  },
-  {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 46.09047,
-   "lon": -122.93229,
-   "sog_kn": 0,
-   "cog": 304,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-08 18:29:18.554926337 +0000 UTC"
-  },
-  {
-   "mmsi": 538012377,
-   "name": "UNION SAPPHIRE",
-   "lat": 46.1101,
-   "lon": -122.9634,
-   "sog_kn": 0,
-   "cog": 331,
-   "heading": 129,
-   "nav_status": 5,
-   "updated": "2026-11-08 18:29:33.352614544 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 157.4,
-   "heading": 131,
-   "nav_status": 15,
-   "updated": "2026-11-08 18:29:37.927385108 +0000 UTC"
+   "updated": "2026-11-08 18:35:05.309488505 +0000 UTC"
   }
  ]
 }
