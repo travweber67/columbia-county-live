@@ -1,90 +1,71 @@
 {
- "fetched_at": "2026-11-08T03:13:22Z",
+ "fetched_at": "2026-11-08T03:18:22Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58756,
-   "lon": -122.77066,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.72901,
+   "lon": -122.76317,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-08 03:18:31.735747463 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19952,
+   "lon": -123.38497,
    "sog_kn": 0,
-   "cog": 118.6,
+   "cog": 325,
+   "heading": 144,
+   "nav_status": 5,
+   "updated": "2026-11-08 03:18:36.123429231 +0000 UTC"
+  },
+  {
+   "mmsi": 352006943,
+   "name": "GLOVIS LEGEND",
+   "lat": 45.6461,
+   "lon": -122.75552,
+   "sog_kn": 0,
+   "cog": 140.3,
+   "heading": 136,
+   "nav_status": 5,
+   "updated": "2026-11-08 03:18:37.508939158 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00889,
+   "lon": -122.8489,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 03:18:37.537054983 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58753,
+   "lon": -122.7705,
+   "sog_kn": 0,
+   "cog": 265.3,
    "heading": 140,
    "nav_status": 0,
-   "updated": "2026-11-08 03:13:38.206337266 +0000 UTC"
+   "updated": "2026-11-08 03:18:38.135875379 +0000 UTC"
   },
   {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.58412,
-   "lon": -122.76615,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10358,
+   "lon": -122.91011,
    "sog_kn": 0,
-   "cog": 235.9,
-   "heading": 146,
-   "nav_status": 5,
-   "updated": "2026-11-08 03:13:39.896131865 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.07938,
-   "lon": -122.9018,
-   "type_code": 52,
-   "destination": "PORTLAND",
-   "updated": "2026-11-08 03:13:40.103287123 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 46.09081,
-   "lon": -122.93211,
-   "type_code": 52,
-   "updated": "2026-11-08 03:13:46.973730511 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.0839,
-   "lon": -122.9071,
-   "sog_kn": 14.7,
-   "cog": 83.3,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-08 03:13:52.433261294 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00905,
-   "lon": -122.84824,
-   "sog_kn": 0.1,
-   "cog": 304.6,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-08 03:13:52.481994671 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19998,
-   "lon": -123.38551,
-   "sog_kn": 0,
-   "cog": 243.6,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-08 03:14:00.626964076 +0000 UTC"
-  },
-  {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63878,
-   "lon": -122.72399,
-   "sog_kn": 0,
-   "cog": 174.2,
-   "heading": 114,
-   "nav_status": 1,
-   "updated": "2026-11-08 03:14:03.777142986 +0000 UTC"
+   "cog": 83.5,
+   "heading": 77,
+   "nav_status": 3,
+   "updated": "2026-11-08 03:18:53.746792787 +0000 UTC"
   }
  ]
 }
