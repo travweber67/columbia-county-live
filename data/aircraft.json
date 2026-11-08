@@ -1,57 +1,67 @@
 {
- "fetched_at": "2026-11-08T01:27:11Z",
+ "fetched_at": "2026-11-08T01:33:16Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
+   "hex": "a3573a",
+   "callsign": "REH89",
+   "type": "EC35",
+   "alt_ft": 950,
+   "gs_kn": 113.6,
+   "track": 130.0,
+   "lat": 45.635651,
+   "lon": -123.112324
+  },
+  {
+   "hex": "a72c78",
+   "callsign": "AAL3299",
+   "type": "A321",
+   "alt_ft": 2050,
+   "gs_kn": 171.2,
+   "track": 120.16,
+   "lat": 45.655781,
+   "lon": -122.777161
+  },
+  {
+   "hex": "a9b273",
+   "callsign": "ASA763",
+   "type": "B39M",
+   "alt_ft": 24250,
+   "gs_kn": 450.2,
+   "track": 352.21,
+   "lat": 46.267685,
+   "lon": -122.711591
+  },
+  {
+   "hex": "a17140",
+   "callsign": "SKW3108",
+   "type": "E75L",
+   "alt_ft": 3925,
+   "gs_kn": 192.9,
+   "track": 287.5,
+   "lat": 45.711456,
+   "lon": -122.692901
+  },
+  {
+   "hex": "a6fafb",
+   "callsign": "N549SR",
+   "type": "SR22",
+   "alt_ft": 800,
+   "gs_kn": 63.2,
+   "track": 156.68,
+   "lat": 45.641281,
+   "lon": -122.686738
+  },
+  {
    "hex": "a02412",
    "callsign": "AMF8075",
    "type": "BE99",
-   "alt_ft": 3100,
-   "gs_kn": 187.7,
-   "track": 308.95,
-   "lat": 45.609834,
-   "lon": -122.844727
-  },
-  {
-   "hex": "ac3315",
-   "callsign": "SWA3318",
-   "type": "B38M",
-   "alt_ft": 2525,
-   "gs_kn": 168.8,
-   "track": 119.45,
-   "lat": 45.655549,
-   "lon": -122.752098
-  },
-  {
-   "hex": "a81e38",
-   "callsign": "FFT1177",
-   "type": "A21N",
-   "alt_ft": 24775,
-   "gs_kn": 461.8,
-   "track": 352.66,
-   "lat": 46.219855,
-   "lon": -122.70266
-  },
-  {
-   "hex": "a6c120",
-   "callsign": "AAL3230",
-   "type": "A321",
-   "alt_ft": 450,
-   "gs_kn": 129.4,
-   "track": 119.14,
-   "lat": 45.603882,
-   "lon": -122.6444
-  },
-  {
-   "hex": "aa8741",
-   "callsign": "CFS7687",
-   "type": "C208",
-   "alt_ft": 50,
-   "gs_kn": 16.1,
-   "track": 97.13,
-   "lat": 45.586716,
-   "lon": -122.610302
+   "alt_ft": 525,
+   "gs_kn": 102.1,
+   "track": 119.33,
+   "lat": 45.603561,
+   "lon": -122.643596
   }
  ]
 }
