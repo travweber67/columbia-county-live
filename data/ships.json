@@ -1,69 +1,110 @@
 {
- "fetched_at": "2026-11-08T05:27:15Z",
+ "fetched_at": "2026-11-08T05:33:31Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00907,
-   "lon": -122.84837,
-   "sog_kn": 0,
-   "cog": 360,
+   "mmsi": 563116100,
+   "name": "OCEAN GOLD",
+   "lat": 45.98408,
+   "lon": -122.83543,
+   "type_code": 70,
+   "destination": "US KAL",
+   "updated": "2026-11-08 05:33:59.114480888 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.6313,
+   "lon": -122.69816,
+   "sog_kn": 2,
+   "cog": 324.3,
+   "heading": 303,
+   "nav_status": 3,
+   "updated": "2026-11-08 05:33:41.262328201 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.57759,
+   "lon": -122.74873,
+   "sog_kn": 8.1,
+   "cog": 308.3,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-08 05:28:24.278158193 +0000 UTC"
+   "updated": "2026-11-08 05:33:47.280425562 +0000 UTC"
   },
   {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64791,
-   "lon": -122.74098,
-   "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-08 05:28:27.619351836 +0000 UTC"
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.17428,
+   "lon": -123.10806,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-08 05:33:48.384142283 +0000 UTC"
   },
   {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 46.08973,
-   "lon": -122.92897,
+   "mmsi": 352005064,
+   "name": "ANSAC RISING SUN",
+   "lat": 45.60109,
+   "lon": -122.77448,
    "sog_kn": 0,
-   "cog": 201.5,
-   "heading": 511,
+   "cog": 153.5,
+   "heading": 277,
    "nav_status": 5,
-   "updated": "2026-11-08 05:28:33.328221913 +0000 UTC"
+   "updated": "2026-11-08 05:33:50.0917487 +0000 UTC"
   },
   {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.19945,
-   "lon": -123.38507,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07959,
+   "lon": -122.90164,
    "sog_kn": 0,
-   "cog": 25,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-08 05:28:34.66316025 +0000 UTC"
+   "cog": 235.4,
+   "heading": 137,
+   "nav_status": 0,
+   "updated": "2026-11-08 05:33:53.652262491 +0000 UTC"
   },
   {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.61201,
-   "lon": -122.64536,
-   "type_code": 52,
-   "destination": "US^0UUT>0T9D",
-   "updated": "2026-11-08 05:28:41.869217804 +0000 UTC"
+   "mmsi": 368082970,
+   "name": "AMERICAN.HARMONY",
+   "lat": 46.1691,
+   "lon": -123.08988,
+   "sog_kn": 14.9,
+   "cog": 309.1,
+   "heading": 308,
+   "nav_status": 0,
+   "updated": "2026-11-08 05:33:54.581069628 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.6129,
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.65838,
+   "lon": -122.75731,
    "sog_kn": 0,
-   "cog": 303,
-   "heading": 128,
-   "nav_status": 15,
-   "updated": "2026-11-08 05:28:47.845578347 +0000 UTC"
+   "cog": 166.7,
+   "heading": 142,
+   "nav_status": 12,
+   "updated": "2026-11-08 05:33:56.324317912 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.58753,
+   "lon": -122.77068,
+   "sog_kn": 0,
+   "cog": 118.6,
+   "heading": 139,
+   "nav_status": 0,
+   "updated": "2026-11-08 05:33:56.923240543 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37715,
+   "type_code": 99,
+   "updated": "2026-11-08 05:34:02.20013364 +0000 UTC"
   }
  ]
 }

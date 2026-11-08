@@ -1,87 +1,37 @@
 {
- "fetched_at": "2026-11-08T05:27:15Z",
+ "fetched_at": "2026-11-08T05:33:31Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
-   "hex": "c05ed9",
-   "callsign": "ACA572",
-   "type": "BCS3",
-   "alt_ft": 35000,
-   "gs_kn": 393.1,
-   "track": 178.83,
-   "lat": 45.703217,
-   "lon": -123.364474
+   "hex": "a7fdab",
+   "callsign": "ASA82",
+   "type": "B737",
+   "alt_ft": 3575,
+   "gs_kn": 220.5,
+   "track": 117.84,
+   "lat": 45.708385,
+   "lon": -122.913391
+  },
+  {
+   "hex": "a2c43e",
+   "callsign": "ASA698",
+   "type": "B739",
+   "alt_ft": 29600,
+   "gs_kn": 483.1,
+   "track": 358.7,
+   "lat": 46.181542,
+   "lon": -122.88105
   },
   {
    "hex": "a1427f",
    "callsign": "AAL1211",
    "type": "A321",
-   "alt_ft": 6975,
-   "gs_kn": 195.6,
-   "track": 170.59,
-   "lat": 45.876253,
-   "lon": -123.059853
-  },
-  {
-   "hex": "a7fdab",
-   "callsign": "ASA82",
-   "type": "B737",
-   "alt_ft": 9175,
-   "gs_kn": 240.1,
-   "track": 178.57,
-   "lat": 45.980483,
-   "lon": -123.036438
-  },
-  {
-   "hex": "ac7a5b",
-   "callsign": "ASA569",
-   "type": "B39M",
-   "alt_ft": 4900,
-   "gs_kn": 209.3,
-   "track": 141.6,
-   "lat": 45.732376,
-   "lon": -122.920264
-  },
-  {
-   "hex": "a12777",
-   "callsign": "UAL684",
-   "type": "B38M",
-   "alt_ft": 32800,
-   "gs_kn": 484.7,
-   "track": 355.27,
-   "lat": 46.139319,
-   "lon": -122.797211
-  },
-  {
-   "hex": "a183d3",
-   "callsign": "SKW3148",
-   "type": "E75L",
-   "alt_ft": 2650,
-   "gs_kn": 198.8,
-   "track": 119.53,
-   "lat": 45.657623,
-   "lon": -122.782935
-  },
-  {
-   "hex": "a24529",
-   "callsign": "UAL498",
-   "type": "A21N",
-   "alt_ft": 1175,
-   "gs_kn": 173.3,
-   "track": 119.38,
-   "lat": 45.621552,
-   "lon": -122.663559
-  },
-  {
-   "hex": "ac536c",
-   "callsign": "SWA1196",
-   "type": "B738",
-   "alt_ft": 7100,
-   "gs_kn": 217.8,
-   "track": 284.36,
-   "lat": 45.705002,
-   "lon": -122.660076
+   "alt_ft": 2800,
+   "gs_kn": 195.7,
+   "track": 119.71,
+   "lat": 45.660507,
+   "lon": -122.789835
   }
  ]
 }
