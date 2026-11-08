@@ -1,91 +1,69 @@
 {
- "fetched_at": "2026-11-08T17:09:24Z",
+ "fetched_at": "2026-11-08T17:14:24Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 45.62977,
-   "lon": -122.69813,
-   "sog_kn": 1.6,
-   "cog": 269.6,
-   "heading": 511,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.17144,
+   "lon": -123.09491,
+   "sog_kn": 9.3,
+   "cog": 308.5,
+   "heading": 308,
+   "nav_status": 12,
+   "updated": "2026-11-08 17:15:09.439171374 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.63082,
+   "lon": -122.70475,
+   "sog_kn": 0.4,
+   "cog": 299.1,
+   "heading": 147,
    "nav_status": 0,
-   "updated": "2026-11-08 17:09:36.641378637 +0000 UTC"
-  },
-  {
-   "mmsi": 538006268,
-   "name": "STAR CARIOCA",
-   "lat": 45.88736,
-   "lon": -122.80011,
-   "sog_kn": 11.7,
-   "cog": 155,
-   "heading": 155,
-   "nav_status": 0,
-   "updated": "2026-11-08 17:09:37.513143104 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64359,
-   "lon": -122.75284,
-   "type_code": 52,
-   "destination": "US^0UU4>02MR",
-   "updated": "2026-11-08 17:09:39.969806929 +0000 UTC"
-  },
-  {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 46.14767,
-   "lon": -123.37909,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-08 17:09:40.224701976 +0000 UTC"
+   "updated": "2026-11-08 17:15:12.427771584 +0000 UTC"
   },
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
-   "lat": 46.07959,
+   "lat": 46.0796,
    "lon": -122.90166,
-   "sog_kn": 0,
-   "cog": 198.2,
-   "heading": 137,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-08 17:15:27.187610763 +0000 UTC"
+  },
+  {
+   "mmsi": 538007029,
+   "name": "ZEPHYROS",
+   "lat": 46.02715,
+   "lon": -122.86956,
+   "type_code": 70,
+   "destination": "KALAMA,USA",
+   "updated": "2026-11-08 17:15:28.55507931 +0000 UTC"
+  },
+  {
+   "mmsi": 367315790,
+   "name": "LORI B.",
+   "lat": 46.19012,
+   "lon": -123.4286,
+   "sog_kn": 10.2,
+   "cog": 1.9,
+   "heading": 1,
    "nav_status": 0,
-   "updated": "2026-11-08 17:09:43.552355678 +0000 UTC"
+   "updated": "2026-11-08 17:15:30.586973657 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65015,
-   "lon": -122.74768,
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10889,
+   "lon": -122.96126,
    "sog_kn": 0,
-   "cog": 276.3,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-08 17:09:49.268535878 +0000 UTC"
-  },
-  {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.1995,
-   "lon": -123.38513,
-   "sog_kn": 0,
-   "cog": 16,
-   "heading": 511,
+   "cog": 133.3,
+   "heading": 129,
    "nav_status": 5,
-   "updated": "2026-11-08 17:09:49.527716748 +0000 UTC"
-  },
-  {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.98184,
-   "lon": -122.83421,
-   "sog_kn": 0.1,
-   "cog": 139.2,
-   "heading": 168,
-   "nav_status": 0,
-   "updated": "2026-11-08 17:09:58.191014346 +0000 UTC"
+   "updated": "2026-11-08 17:15:32.124875665 +0000 UTC"
   }
  ]
 }
