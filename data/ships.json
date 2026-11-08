@@ -1,91 +1,46 @@
 {
- "fetched_at": "2026-11-08T15:54:17Z",
+ "fetched_at": "2026-11-08T15:57:23Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 563116100,
-   "name": "OCEAN GOLD",
-   "lat": 45.99838,
-   "lon": -122.85185,
-   "type_code": 70,
-   "destination": "KR YOS",
-   "updated": "2026-11-08 15:54:41.716847905 +0000 UTC",
-   "sog_kn": 0,
-   "cog": 341.9,
-   "heading": 164,
-   "nav_status": 1
+   "mmsi": 367719170,
+   "name": "RYAN POINT",
+   "lat": 45.61689,
+   "lon": -122.67261,
+   "sog_kn": 7,
+   "cog": 113.7,
+   "heading": 112,
+   "nav_status": 12,
+   "updated": "2026-11-08 15:58:01.211466734 +0000 UTC"
+  },
+  {
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.61221,
+   "lon": -122.64521,
+   "type_code": 52,
+   "destination": "US^10M4>02MP",
+   "updated": "2026-11-08 15:58:15.718771998 +0000 UTC"
   },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.07967,
+   "lat": 46.07968,
    "lon": -122.90216,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-08 15:54:22.508156657 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58752,
-   "lon": -122.77039,
-   "type_code": 52,
-   "destination": "PORTLAND,OR",
-   "updated": "2026-11-08 15:54:36.324806783 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65007,
-   "lon": -122.74762,
    "sog_kn": 0,
-   "cog": 256.6,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-08 15:54:39.079502594 +0000 UTC"
-  },
-  {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 46.17459,
-   "lon": -123.10813,
-   "sog_kn": 0,
-   "cog": 230.7,
-   "heading": 123,
-   "nav_status": 1,
-   "updated": "2026-11-08 15:54:39.216238717 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19999,
-   "lon": -123.38542,
-   "sog_kn": 0,
-   "cog": 172.5,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-08 15:54:44.773407515 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.77367,
-   "lon": -122.7688,
-   "type_code": 57,
-   "destination": "VANCOUER,WA",
-   "updated": "2026-11-08 15:54:45.186658088 +0000 UTC"
-  },
-  {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.6453,
-   "lon": -122.74637,
-   "sog_kn": 7.3,
-   "cog": 115.8,
-   "heading": 114,
+   "cog": 304.2,
+   "heading": 134,
    "nav_status": 0,
-   "updated": "2026-11-08 15:54:46.224176609 +0000 UTC"
+   "updated": "2026-11-08 15:58:16.165572596 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15339,
+   "lon": -123.37714,
+   "type_code": 99,
+   "updated": "2026-11-08 15:58:23.185880153 +0000 UTC"
   }
  ]
 }
