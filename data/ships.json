@@ -1,78 +1,89 @@
 {
- "fetched_at": "2026-11-08T14:19:10Z",
+ "fetched_at": "2026-11-08T14:24:10Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64338,
-   "lon": -122.75133,
-   "sog_kn": 0,
-   "cog": 93,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-08 14:19:14.946421776 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.38551,
-   "sog_kn": 0,
-   "cog": 240,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-08 14:19:22.861037706 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64361,
-   "lon": -122.75233,
-   "sog_kn": 1.1,
-   "cog": 157,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-08 14:19:25.552200563 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.63419,
-   "lon": -122.70332,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-08 14:19:25.827556977 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 45.64349,
-   "lon": -122.75248,
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58415,
+   "lon": -122.7661,
    "type_code": 52,
-   "destination": "COL RIVER",
-   "updated": "2026-11-08 14:19:34.009298453 +0000 UTC"
+   "destination": "US^00D5>0UHN",
+   "updated": "2026-11-08 14:24:17.506349015 +0000 UTC"
   },
   {
-   "mmsi": 538007029,
-   "name": "ZEPHYROS",
-   "lat": 46.02717,
-   "lon": -122.86955,
-   "type_code": 70,
-   "destination": "KALAMA,USA",
-   "updated": "2026-11-08 14:19:36.318733818 +0000 UTC"
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07968,
+   "lon": -122.90215,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-08 14:24:22.351280069 +0000 UTC"
   },
   {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.63034,
-   "lon": -122.70581,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07957,
+   "lon": -122.90165,
    "sog_kn": 0,
-   "cog": 38.9,
-   "heading": 119,
-   "nav_status": 12,
-   "updated": "2026-11-08 14:19:36.470044535 +0000 UTC"
+   "cog": 240.8,
+   "heading": 135,
+   "nav_status": 0,
+   "updated": "2026-11-08 14:24:24.316474392 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.58754,
+   "lon": -122.77069,
+   "sog_kn": 0,
+   "cog": 121.3,
+   "heading": 139,
+   "nav_status": 0,
+   "updated": "2026-11-08 14:24:27.087324726 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.3854,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-08 14:24:33.757542261 +0000 UTC"
+  },
+  {
+   "mmsi": 352006943,
+   "name": "GLOVIS LEGEND",
+   "lat": 45.64612,
+   "lon": -122.75549,
+   "sog_kn": 0,
+   "cog": 140.3,
+   "heading": 135,
+   "nav_status": 5,
+   "updated": "2026-11-08 14:24:35.063118089 +0000 UTC"
+  },
+  {
+   "mmsi": 367719170,
+   "name": "RYAN POINT",
+   "lat": 45.64739,
+   "lon": -122.73941,
+   "type_code": 52,
+   "destination": "VANCOUVER WA",
+   "updated": "2026-11-08 14:24:35.234136266 +0000 UTC"
+  },
+  {
+   "mmsi": 367516730,
+   "name": "CRISTY T",
+   "lat": 45.61212,
+   "lon": -122.64532,
+   "sog_kn": 0,
+   "cog": 16.1,
+   "heading": 298,
+   "nav_status": 5,
+   "updated": "2026-11-08 14:24:41.720579254 +0000 UTC"
   }
  ]
 }
