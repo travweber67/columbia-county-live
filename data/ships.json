@@ -1,82 +1,104 @@
 {
- "fetched_at": "2026-11-08T10:58:55Z",
+ "fetched_at": "2026-11-08T11:03:56Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65014,
-   "lon": -122.74757,
-   "sog_kn": 0,
-   "cog": 187.3,
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 46.08443,
+   "lon": -122.90532,
+   "sog_kn": 8.9,
+   "cog": 127.1,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-08 10:58:59.00871425 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-08 11:04:06.205643453 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.58754,
+   "lon": -122.77067,
+   "sog_kn": 0,
+   "cog": 121.3,
+   "heading": 140,
+   "nav_status": 0,
+   "updated": "2026-11-08 11:04:06.791810936 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.64356,
+   "lon": -122.75246,
+   "sog_kn": 0,
+   "cog": 241.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 11:04:06.88556448 +0000 UTC"
   },
   {
    "mmsi": 367363590,
    "name": "CLARKSTON",
-   "lat": 45.63412,
-   "lon": -122.71403,
-   "sog_kn": 1.1,
-   "cog": 124.8,
-   "heading": 120,
-   "nav_status": 12,
-   "updated": "2026-11-08 10:58:59.179886341 +0000 UTC"
+   "lat": 45.63397,
+   "lon": -122.71384,
+   "type_code": 57,
+   "destination": "VANCOUER,WA",
+   "updated": "2026-11-08 11:04:10.475755726 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.61291,
+   "type_code": 0,
+   "updated": "2026-11-08 11:04:16.627479351 +0000 UTC"
+  },
+  {
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.09903,
+   "lon": -122.93938,
+   "type_code": 70,
+   "destination": "USA LONGVIEW",
+   "updated": "2026-11-08 11:04:17.798549333 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00902,
+   "lon": -122.84825,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 11:04:20.713934745 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.64334,
+   "lon": -122.75283,
+   "type_code": 50,
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-08 11:04:21.340051731 +0000 UTC"
   },
   {
    "mmsi": 538006097,
    "name": "AD ASTRA",
-   "lat": 45.64284,
-   "lon": -122.77172,
+   "lat": 45.6429,
+   "lon": -122.7718,
    "type_code": 70,
    "destination": "USPDX",
-   "updated": "2026-11-08 10:59:03.616703619 +0000 UTC"
+   "updated": "2026-11-08 11:04:26.098313083 +0000 UTC"
   },
   {
-   "mmsi": 367513140,
-   "name": "CLEARWATER",
-   "lat": 45.66133,
-   "lon": -122.75999,
-   "sog_kn": 0,
-   "cog": 272.9,
-   "heading": 335,
-   "nav_status": 12,
-   "updated": "2026-11-08 10:59:06.763029418 +0000 UTC"
-  },
-  {
-   "mmsi": 563116100,
-   "name": "OCEAN GOLD",
-   "lat": 45.99586,
-   "lon": -122.84939,
-   "sog_kn": 0.4,
-   "cog": 184.9,
-   "heading": 157,
-   "nav_status": 0,
-   "updated": "2026-11-08 10:59:07.538876098 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.58301,
-   "lon": -122.76015,
-   "sog_kn": 6.7,
-   "cog": 311.8,
-   "heading": 311,
-   "nav_status": 0,
-   "updated": "2026-11-08 10:59:10.014991743 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07958,
-   "lon": -122.90167,
-   "sog_kn": 0,
-   "cog": 250.3,
-   "heading": 133,
-   "nav_status": 0,
-   "updated": "2026-11-08 10:59:24.347022874 +0000 UTC"
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64786,
+   "lon": -122.74101,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-08 11:04:27.229057617 +0000 UTC"
   }
  ]
 }
