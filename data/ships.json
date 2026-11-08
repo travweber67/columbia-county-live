@@ -1,82 +1,60 @@
 {
- "fetched_at": "2026-11-08T14:39:11Z",
+ "fetched_at": "2026-11-08T14:44:12Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 45.64342,
-   "lon": -122.75283,
-   "type_code": 50,
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-08 14:39:48.812496886 +0000 UTC"
+   "mmsi": 538006268,
+   "name": "STAR CARIOCA",
+   "lat": 46.18251,
+   "lon": -123.18594,
+   "sog_kn": 11.8,
+   "cog": 62.8,
+   "heading": 62,
+   "nav_status": 0,
+   "updated": "2026-11-08 14:44:17.09010088 +0000 UTC"
   },
   {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58132,
-   "lon": -122.76066,
-   "sog_kn": 0,
-   "cog": 51.8,
-   "heading": 123,
-   "nav_status": 0,
-   "updated": "2026-11-08 14:39:57.348878042 +0000 UTC"
-  },
-  {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.94277,
-   "lon": -122.80943,
-   "sog_kn": 9.6,
-   "cog": 346.2,
-   "heading": 348,
-   "nav_status": 0,
-   "updated": "2026-11-08 14:39:58.072385638 +0000 UTC"
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10892,
+   "lon": -122.96128,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-08 14:44:23.190637034 +0000 UTC"
   },
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
-   "lat": 46.07959,
-   "lon": -122.90166,
+   "lat": 46.07958,
+   "lon": -122.90167,
    "sog_kn": 0,
-   "cog": 277,
+   "cog": 262.3,
    "heading": 136,
    "nav_status": 0,
-   "updated": "2026-11-08 14:40:04.509459027 +0000 UTC"
+   "updated": "2026-11-08 14:44:23.562440641 +0000 UTC"
   },
   {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.02815,
-   "lon": -122.86842,
-   "sog_kn": 0,
-   "cog": 45.6,
-   "heading": 344,
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.6435,
+   "lon": -122.75227,
+   "sog_kn": 0.1,
+   "cog": 139.7,
+   "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-08 14:40:07.986924678 +0000 UTC",
-   "type_code": 52,
-   "destination": "CSR OPS"
+   "updated": "2026-11-08 14:44:25.090588909 +0000 UTC"
   },
   {
-   "mmsi": 367719170,
-   "name": "RYAN POINT",
-   "lat": 45.64739,
-   "lon": -122.73941,
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64346,
+   "lon": -122.75285,
    "sog_kn": 0,
-   "cog": 346.3,
-   "heading": 285,
-   "nav_status": 12,
-   "updated": "2026-11-08 14:40:11.234444926 +0000 UTC"
-  },
-  {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61221,
-   "lon": -122.64521,
-   "type_code": 52,
-   "destination": "US^10M4>02MP",
-   "updated": "2026-11-08 14:40:12.101833039 +0000 UTC"
+   "cog": 228.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 14:44:25.551930668 +0000 UTC"
   }
  ]
 }
