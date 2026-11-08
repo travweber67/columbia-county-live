@@ -1,70 +1,97 @@
 {
- "fetched_at": "2026-11-08T10:08:51Z",
+ "fetched_at": "2026-11-08T10:13:52Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.65383,
-   "lon": -122.76222,
-   "sog_kn": 9.1,
-   "cog": 274.8,
-   "heading": 261,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 224.9,
+   "heading": 133,
+   "nav_status": 15,
+   "updated": "2026-11-08 10:13:57.793907666 +0000 UTC"
+  },
+  {
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.11009,
+   "lon": -122.96339,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-08 10:13:57.951899602 +0000 UTC"
+  },
+  {
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.09432,
+   "lon": -122.93739,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-08 10:14:08.704629936 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.09495,
+   "lon": -122.93807,
+   "sog_kn": 14.9,
+   "cog": 261.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 10:14:09.303950818 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.65257,
+   "lon": -122.75299,
+   "sog_kn": 3.7,
+   "cog": 185.1,
+   "heading": 169,
    "nav_status": 12,
-   "updated": "2026-11-08 10:09:06.834288775 +0000 UTC"
+   "updated": "2026-11-08 10:14:09.8986666 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65014,
-   "lon": -122.74759,
-   "type_code": 33,
-   "updated": "2026-11-08 10:09:10.125190334 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.6321,
-   "lon": -122.70251,
-   "sog_kn": 3.3,
-   "cog": 303.8,
-   "heading": 0,
-   "nav_status": 3,
-   "updated": "2026-11-08 10:09:10.720339014 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20001,
-   "lon": -123.3854,
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.6454,
+   "lon": -122.73503,
    "sog_kn": 0,
-   "cog": 354.2,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-08 10:09:13.694150414 +0000 UTC"
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-08 10:14:14.248103899 +0000 UTC"
   },
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 46.09445,
-   "lon": -122.93941,
-   "sog_kn": 0.5,
-   "cog": 101.2,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-08 10:09:15.076018421 +0000 UTC"
+   "mmsi": 368257130,
+   "name": "TRIUMPH VII",
+   "lat": 46.00986,
+   "lon": -122.84833,
+   "type_code": 50,
+   "updated": "2026-11-08 10:14:16.003437116 +0000 UTC"
   },
   {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58749,
-   "lon": -122.77043,
+   "mmsi": 367513140,
+   "name": "CLEARWATER",
+   "lat": 45.63608,
+   "lon": -122.78474,
+   "type_code": 57,
+   "destination": "XX XXX>US^0T67",
+   "updated": "2026-11-08 10:14:16.383245109 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 46.0905,
+   "lon": -122.93229,
    "sog_kn": 0,
-   "cog": 163.6,
-   "heading": 143,
-   "nav_status": 0,
-   "updated": "2026-11-08 10:09:18.56912677 +0000 UTC"
+   "cog": 187.3,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-08 10:14:17.619653744 +0000 UTC"
   }
  ]
 }
