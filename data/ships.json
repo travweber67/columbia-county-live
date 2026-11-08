@@ -1,46 +1,97 @@
 {
- "fetched_at": "2026-11-08T07:08:38Z",
+ "fetched_at": "2026-11-08T07:13:38Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 338616000,
-   "name": "DUBLIN SEA",
-   "lat": 45.66717,
-   "lon": -122.76697,
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 46.09081,
+   "lon": -122.93214,
+   "type_code": 52,
+   "updated": "2026-11-08 07:13:47.753730617 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64348,
+   "lon": -122.75279,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-08 07:13:48.440671872 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.65777,
+   "lon": -122.75776,
+   "type_code": 52,
+   "destination": "KALAMA",
+   "updated": "2026-11-08 07:13:55.257317755 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.07939,
+   "lon": -122.9018,
    "sog_kn": 0,
-   "cog": 267.5,
-   "heading": 160,
-   "nav_status": 1,
-   "updated": "2026-11-08 07:08:47.887704783 +0000 UTC"
-  },
-  {
-   "mmsi": 368082970,
-   "name": "AMERICAN.HARMONY",
-   "lat": 46.26997,
-   "lon": -123.47265,
-   "type_code": 60,
-   "destination": "ASTORIA,OR.",
-   "updated": "2026-11-08 07:08:51.985336322 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35742,
-   "type_code": 30,
-   "updated": "2026-11-08 07:08:52.787890908 +0000 UTC"
-  },
-  {
-   "mmsi": 311000824,
-   "name": "AFRICAN AVOCET",
-   "lat": 46.10346,
-   "lon": -122.94985,
-   "sog_kn": 0,
-   "cog": 15,
-   "heading": 118,
+   "cog": 201.2,
+   "heading": 139,
    "nav_status": 5,
-   "updated": "2026-11-08 07:08:58.650710941 +0000 UTC"
+   "updated": "2026-11-08 07:13:55.752163954 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10357,
+   "lon": -122.91012,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-08 07:14:02.151287373 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07961,
+   "lon": -122.90165,
+   "sog_kn": 0,
+   "cog": 74,
+   "heading": 134,
+   "nav_status": 0,
+   "updated": "2026-11-08 07:14:07.059608031 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.64349,
+   "lon": -122.75253,
+   "sog_kn": 0,
+   "cog": 231.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 07:14:07.79765309 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61289,
+   "sog_kn": 0,
+   "cog": 140,
+   "heading": 133,
+   "nav_status": 15,
+   "updated": "2026-11-08 07:14:08.145290501 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.99081,
+   "lon": -122.84136,
+   "sog_kn": 0,
+   "cog": 30.3,
+   "heading": 152,
+   "nav_status": 12,
+   "updated": "2026-11-08 07:14:16.085300559 +0000 UTC"
   }
  ]
 }
