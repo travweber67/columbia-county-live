@@ -1,56 +1,54 @@
 {
- "fetched_at": "2026-11-08T09:48:50Z",
+ "fetched_at": "2026-11-08T09:53:50Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19948,
+   "lon": -123.3851,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-08 09:53:53.166259113 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.98402,
+   "lon": -122.8358,
+   "type_code": 52,
+   "destination": "US^029T>0UW8",
+   "updated": "2026-11-08 09:53:55.524331924 +0000 UTC"
+  },
+  {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.07968,
-   "lon": -122.90216,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-08 09:48:59.742221988 +0000 UTC"
-  },
-  {
-   "mmsi": 367347000,
-   "name": "WENDY SEAA",
-   "lat": 46.19954,
-   "lon": -123.38501,
-   "type_code": 30,
-   "destination": "CATHLAMET,WA",
-   "updated": "2026-11-08 09:49:05.303959039 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.98518,
-   "lon": -122.83608,
-   "sog_kn": 0,
-   "cog": 149.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-08 09:49:06.733703314 +0000 UTC"
-  },
-  {
-   "mmsi": 368046350,
-   "name": "AMERICAN SONG",
-   "lat": 45.6146,
-   "lon": -122.66142,
-   "type_code": 69,
-   "destination": "KALAMA, WA",
-   "updated": "2026-11-08 09:49:14.279004254 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07958,
-   "lon": -122.90166,
-   "sog_kn": 0,
-   "cog": 303.6,
+   "lat": 46.07965,
+   "lon": -122.90218,
+   "sog_kn": 0.1,
+   "cog": 272.9,
    "heading": 135,
    "nav_status": 0,
-   "updated": "2026-11-08 09:49:15.669008193 +0000 UTC"
+   "updated": "2026-11-08 09:54:17.363560763 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58418,
+   "lon": -122.76622,
+   "type_code": 52,
+   "destination": "US^00D5>0UHN",
+   "updated": "2026-11-08 09:54:17.713689564 +0000 UTC"
+  },
+  {
+   "mmsi": 352005064,
+   "name": "ANSAC RISING SUN",
+   "lat": 45.60113,
+   "lon": -122.77451,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-08 09:54:19.583861671 +0000 UTC"
   }
  ]
 }
