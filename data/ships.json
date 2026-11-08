@@ -1,91 +1,93 @@
 {
- "fetched_at": "2026-11-08T01:23:15Z",
+ "fetched_at": "2026-11-08T01:27:11Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64343,
-   "lon": -122.75284,
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 45.63924,
+   "lon": -122.77784,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-08 01:27:56.166729005 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10283,
+   "lon": -122.9085,
    "sog_kn": 0,
-   "cog": 273.7,
+   "cog": 124.6,
+   "heading": 355,
+   "nav_status": 0,
+   "updated": "2026-11-08 01:28:05.320403088 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.64398,
+   "lon": -122.74709,
+   "sog_kn": 1.9,
+   "cog": 287.5,
+   "heading": 110,
+   "nav_status": 12,
+   "updated": "2026-11-08 01:28:06.360660159 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00911,
+   "lon": -122.84829,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-08 01:23:25.620606502 +0000 UTC"
+   "updated": "2026-11-08 01:28:12.87534247 +0000 UTC"
+  },
+  {
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.09902,
+   "lon": -122.93929,
+   "type_code": 70,
+   "destination": "USA LONGVIEW",
+   "updated": "2026-11-08 01:28:17.798151646 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 97.7,
+   "heading": 110,
+   "nav_status": 5
   },
   {
    "mmsi": 367764250,
    "name": "PJ BRIX",
-   "lat": 45.58754,
-   "lon": -122.77066,
+   "lat": 45.58753,
+   "lon": -122.77067,
    "sog_kn": 0,
    "cog": 118.6,
    "heading": 140,
    "nav_status": 0,
-   "updated": "2026-11-08 01:23:27.110857658 +0000 UTC"
+   "updated": "2026-11-08 01:28:17.72002006 +0000 UTC"
   },
   {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 46.08972,
-   "lon": -122.92903,
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61198,
+   "lon": -122.64535,
    "type_code": 52,
-   "destination": "US^0UJB>0UJB",
-   "updated": "2026-11-08 01:23:31.931488881 +0000 UTC"
-  },
-  {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61222,
-   "lon": -122.64518,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-08 01:23:35.085187833 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.89887,
-   "lon": -122.80745,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-08 01:23:38.795877918 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64341,
-   "lon": -122.742,
-   "sog_kn": 0.6,
-   "cog": 240.4,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-08 01:23:43.584363232 +0000 UTC"
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-08 01:28:21.977103634 +0000 UTC"
   },
   {
    "mmsi": 368070380,
    "name": "TOKITAE",
    "lat": 45.60765,
-   "lon": -122.67745,
+   "lon": -122.67747,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-08 01:23:43.96484582 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64789,
-   "lon": -122.74095,
-   "sog_kn": 0,
-   "cog": 111.7,
-   "heading": 111,
-   "nav_status": 5,
-   "updated": "2026-11-08 01:23:44.22030499 +0000 UTC"
+   "updated": "2026-11-08 01:28:23.126628329 +0000 UTC"
   }
  ]
 }
