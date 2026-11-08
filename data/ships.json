@@ -1,118 +1,111 @@
 {
- "fetched_at": "2026-11-08T13:24:05Z",
+ "fetched_at": "2026-11-08T13:27:21Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367719170,
-   "name": "RYAN POINT",
-   "lat": 45.6525,
-   "lon": -122.75186,
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.19965,
+   "lon": -123.38521,
+   "type_code": 30,
+   "destination": "",
+   "updated": "2026-11-08 13:27:57.174583545 +0000 UTC"
+  },
+  {
+   "mmsi": 538006268,
+   "name": "STAR CARIOCA",
+   "lat": 46.23007,
+   "lon": -123.42716,
+   "sog_kn": 12,
+   "cog": 167.4,
+   "heading": 168,
+   "nav_status": 0,
+   "updated": "2026-11-08 13:27:58.265942674 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15336,
+   "lon": -123.37717,
+   "sog_kn": 0.1,
+   "cog": 343.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 13:27:58.568705691 +0000 UTC"
+  },
+  {
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.60678,
+   "lon": -122.62448,
+   "type_code": 57,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-08 13:28:13.731237047 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19994,
+   "lon": -123.38544,
    "sog_kn": 0,
-   "cog": 151.1,
-   "heading": 136,
-   "nav_status": 12,
-   "updated": "2026-11-08 13:24:09.843796929 +0000 UTC"
+   "cog": 195.8,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-08 13:28:03.447032958 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07968,
+   "lon": -122.90215,
+   "sog_kn": 0,
+   "cog": 119.7,
+   "heading": 135,
+   "nav_status": 0,
+   "updated": "2026-11-08 13:28:06.789576426 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.16284,
+   "lon": -123.40974,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 134,
+   "nav_status": 0,
+   "updated": "2026-11-08 13:28:13.537726468 +0000 UTC"
+  },
+  {
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.09916,
+   "lon": -122.93929,
+   "type_code": 70,
+   "destination": "USA LONGVIEW",
+   "updated": "2026-11-08 13:28:14.097315428 +0000 UTC"
   },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 45.63411,
-   "lon": -122.70483,
-   "sog_kn": 1.5,
-   "cog": 120.1,
-   "heading": 118,
+   "lat": 45.63382,
+   "lon": -122.70376,
+   "sog_kn": 0.5,
+   "cog": 118.2,
+   "heading": 131,
    "nav_status": 3,
-   "updated": "2026-11-08 13:24:11.08623242 +0000 UTC"
+   "updated": "2026-11-08 13:28:21.323633818 +0000 UTC"
   },
   {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.5842,
-   "lon": -122.7662,
-   "type_code": 52,
-   "destination": "US^00D5>0UHN",
-   "updated": "2026-11-08 13:24:17.641492732 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00896,
-   "lon": -122.8484,
-   "type_code": 31,
-   "destination": "HARBOROPPS-",
-   "updated": "2026-11-08 13:24:19.910959995 +0000 UTC"
-  },
-  {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59407,
-   "lon": -122.77212,
-   "type_code": 70,
-   "destination": "NOT AVAILABLE",
-   "updated": "2026-11-08 13:24:24.769851428 +0000 UTC"
-  },
-  {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.19945,
-   "lon": -123.38512,
-   "type_code": 30,
-   "destination": "CATHLAMET WA",
-   "updated": "2026-11-08 13:24:26.433271134 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19993,
-   "lon": -123.38553,
-   "sog_kn": 0,
-   "cog": 252.4,
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.79193,
+   "lon": -122.78041,
+   "sog_kn": 12,
+   "cog": 153.7,
    "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-08 13:24:30.335014073 +0000 UTC"
-  },
-  {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10892,
-   "lon": -122.96126,
-   "sog_kn": 0,
-   "cog": 268.5,
-   "heading": 129,
-   "nav_status": 5,
-   "updated": "2026-11-08 13:24:31.911635584 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10356,
-   "lon": -122.91012,
-   "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 74,
-   "nav_status": 3,
-   "updated": "2026-11-08 13:24:34.502459272 +0000 UTC"
-  },
-  {
-   "mmsi": 352006943,
-   "name": "GLOVIS LEGEND",
-   "lat": 45.64611,
-   "lon": -122.75551,
-   "sog_kn": 0,
-   "cog": 140.3,
-   "heading": 135,
-   "nav_status": 5,
-   "updated": "2026-11-08 13:24:34.678981057 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58755,
-   "lon": -122.77047,
-   "type_code": 52,
-   "destination": "PORTLAND,OR",
-   "updated": "2026-11-08 13:24:35.697427609 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-08 13:28:24.746292307 +0000 UTC"
   }
  ]
 }
