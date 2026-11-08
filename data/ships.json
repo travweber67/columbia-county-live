@@ -1,84 +1,102 @@
 {
- "fetched_at": "2026-11-08T19:04:32Z",
+ "fetched_at": "2026-11-08T19:09:32Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.5842,
-   "lon": -122.76612,
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.98619,
+   "lon": -122.83688,
+   "sog_kn": 0.7,
+   "cog": 256.6,
+   "heading": 302,
+   "nav_status": 12,
+   "updated": "2026-11-08 19:09:39.927604469 +0000 UTC"
+  },
+  {
+   "mmsi": 563116100,
+   "name": "OCEAN GOLD",
+   "lat": 45.99838,
+   "lon": -122.85191,
    "sog_kn": 0,
-   "cog": 42.4,
-   "heading": 146,
-   "nav_status": 5,
-   "updated": "2026-11-08 19:04:45.388308724 +0000 UTC"
+   "cog": 341.9,
+   "heading": 164,
+   "nav_status": 1,
+   "updated": "2026-11-08 19:09:42.365105032 +0000 UTC"
+  },
+  {
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.1741,
+   "lon": -123.10836,
+   "sog_kn": 0,
+   "cog": 230.7,
+   "heading": 108,
+   "nav_status": 1,
+   "updated": "2026-11-08 19:09:42.536997727 +0000 UTC"
   },
   {
    "mmsi": 367764250,
    "name": "PJ BRIX",
-   "lat": 45.86002,
-   "lon": -122.78437,
-   "sog_kn": 11.9,
-   "cog": 350.8,
-   "heading": 349,
+   "lat": 45.87567,
+   "lon": -122.79201,
+   "sog_kn": 12.1,
+   "cog": 333.8,
+   "heading": 335,
    "nav_status": 0,
-   "updated": "2026-11-08 19:04:47.769207149 +0000 UTC"
+   "updated": "2026-11-08 19:09:47.200107526 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.64331,
+   "lon": -122.7528,
+   "type_code": 50,
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-08 19:09:48.953955993 +0000 UTC"
+  },
+  {
+   "mmsi": 352005064,
+   "name": "ANSAC RISING SUN",
+   "lat": 45.6011,
+   "lon": -122.77452,
+   "sog_kn": 0,
+   "cog": 113.2,
+   "heading": 277,
+   "nav_status": 5,
+   "updated": "2026-11-08 19:09:49.786726375 +0000 UTC"
+  },
+  {
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.19965,
+   "lon": -123.38522,
+   "type_code": 30,
+   "destination": "",
+   "updated": "2026-11-08 19:09:50.89996112 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60764,
+   "lon": -122.67755,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 19:09:53.272069957 +0000 UTC"
   },
   {
    "mmsi": 366986380,
    "name": "DREDGE OREGON",
    "lat": 46.07976,
-   "lon": -122.90205,
+   "lon": -122.90204,
    "sog_kn": 0,
    "cog": 360,
    "heading": 319,
    "nav_status": 3,
-   "updated": "2026-11-08 19:04:47.830063977 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58077,
-   "lon": -122.76007,
-   "sog_kn": 0,
-   "cog": 120.7,
-   "heading": 122,
-   "nav_status": 5,
-   "updated": "2026-11-08 19:04:53.592584953 +0000 UTC"
-  },
-  {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.64315,
-   "lon": -122.77083,
-   "sog_kn": 0,
-   "cog": 211.9,
-   "heading": 244,
-   "nav_status": 0,
-   "updated": "2026-11-08 19:04:57.348605784 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65013,
-   "lon": -122.7478,
-   "sog_kn": 0,
-   "cog": 314.5,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-08 19:04:59.014513742 +0000 UTC"
-  },
-  {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63865,
-   "lon": -122.72407,
-   "sog_kn": 0,
-   "cog": 27.5,
-   "heading": 112,
-   "nav_status": 1,
-   "updated": "2026-11-08 19:05:03.790544337 +0000 UTC"
+   "updated": "2026-11-08 19:09:57.897391351 +0000 UTC"
   }
  ]
 }
