@@ -1,40 +1,96 @@
 {
- "fetched_at": "2026-11-08T20:39:38Z",
+ "fetched_at": "2026-11-08T20:44:39Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20002,
+   "lon": -123.38546,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-08 20:44:44.830815265 +0000 UTC"
+  },
+  {
+   "mmsi": 477133900,
+   "name": "SHAO SHAN 8",
+   "lat": 45.64398,
+   "lon": -122.74113,
+   "type_code": 70,
+   "destination": "CN QDG",
+   "updated": "2026-11-08 20:44:49.751974418 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.27155,
+   "lon": -123.48679,
+   "sog_kn": 1.5,
+   "cog": 281.4,
+   "heading": 277,
+   "nav_status": 3,
+   "updated": "2026-11-08 20:44:52.810657495 +0000 UTC"
+  },
+  {
+   "mmsi": 538011495,
+   "name": "MTR JUPITER",
+   "lat": 46.10619,
+   "lon": -122.95623,
+   "sog_kn": 0,
+   "cog": 125.7,
+   "heading": 122,
+   "nav_status": 5,
+   "updated": "2026-11-08 20:44:55.674245826 +0000 UTC"
+  },
+  {
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 45.66715,
+   "lon": -122.76685,
+   "sog_kn": 0,
+   "cog": 309.1,
+   "heading": 162,
+   "nav_status": 1,
+   "updated": "2026-11-08 20:44:56.714567622 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.07938,
+   "lon": -122.90182,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-08 20:45:00.947677318 +0000 UTC"
+  },
   {
    "mmsi": 368070380,
    "name": "TOKITAE",
-   "lat": 45.60754,
-   "lon": -122.67766,
+   "lat": 45.60757,
+   "lon": -122.67763,
+   "type_code": 50,
+   "updated": "2026-11-08 20:45:03.348402257 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.6501,
+   "lon": -122.74768,
+   "type_code": 33,
+   "updated": "2026-11-08 20:45:09.432055719 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00883,
+   "lon": -122.84883,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-08 20:39:44.731714253 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.94107,
-   "lon": -122.80852,
-   "sog_kn": 7.1,
-   "cog": 170.7,
-   "heading": 175,
-   "nav_status": 12,
-   "updated": "2026-11-08 20:39:50.157500472 +0000 UTC"
-  },
-  {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58131,
-   "lon": -122.76066,
-   "sog_kn": 0,
-   "cog": 51.8,
-   "heading": 123,
-   "nav_status": 0,
-   "updated": "2026-11-08 20:40:07.951709289 +0000 UTC"
+   "updated": "2026-11-08 20:45:10.048446154 +0000 UTC"
   }
  ]
 }
