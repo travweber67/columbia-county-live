@@ -1,113 +1,93 @@
 {
- "fetched_at": "2026-11-08T07:43:40Z",
+ "fetched_at": "2026-11-08T07:48:40Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 46.09081,
-   "lon": -122.93211,
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.19965,
+   "lon": -123.38521,
+   "sog_kn": 0,
+   "cog": 325.6,
+   "heading": 322,
+   "nav_status": 5,
+   "updated": "2026-11-08 07:48:49.586501415 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00901,
+   "lon": -122.84825,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 07:49:04.633254509 +0000 UTC",
+   "type_code": 31,
+   "destination": "HARBOROPPS-"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.65831,
+   "lon": -122.75778,
+   "sog_kn": 1,
+   "cog": 74.9,
+   "heading": 145,
+   "nav_status": 12,
+   "updated": "2026-11-08 07:48:56.153624455 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65013,
+   "lon": -122.74755,
+   "sog_kn": 0,
+   "cog": 243.1,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-08 07:48:59.242570978 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58418,
+   "lon": -122.76618,
    "type_code": 52,
-   "updated": "2026-11-08 07:43:46.418077135 +0000 UTC"
+   "destination": "US^00D5>0UHN",
+   "updated": "2026-11-08 07:49:02.147234179 +0000 UTC"
   },
   {
    "mmsi": 367513190,
    "name": "PORTLAND",
-   "lat": 45.64346,
-   "lon": -122.75286,
-   "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-08 07:43:49.767824667 +0000 UTC"
-  },
-  {
-   "mmsi": 338616000,
-   "name": "DUBLIN SEA",
-   "lat": 45.66723,
-   "lon": -122.7668,
-   "type_code": 57,
-   "destination": "US PDX",
-   "updated": "2026-11-08 07:43:52.037056725 +0000 UTC"
+   "lat": 45.64347,
+   "lon": -122.75281,
+   "sog_kn": 0,
+   "cog": 248.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 07:49:04.463301172 +0000 UTC"
   },
   {
    "mmsi": 367363590,
    "name": "CLARKSTON",
    "lat": 45.65686,
    "lon": -122.75661,
-   "sog_kn": 0.1,
-   "cog": 72,
-   "heading": 333,
+   "sog_kn": 0,
+   "cog": 135.4,
+   "heading": 334,
    "nav_status": 12,
-   "updated": "2026-11-08 07:44:00.315402489 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 45.64347,
-   "lon": -122.75242,
-   "type_code": 52,
-   "destination": "COL RIVER",
-   "updated": "2026-11-08 07:44:00.606740746 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08983,
-   "lon": -122.929,
-   "type_code": 52,
-   "destination": "CSR OPS",
-   "updated": "2026-11-08 07:44:01.075571206 +0000 UTC"
-  },
-  {
-   "mmsi": 538007029,
-   "name": "ZEPHYROS",
-   "lat": 46.02716,
-   "lon": -122.86956,
-   "type_code": 70,
-   "destination": "KALAMA,USA",
-   "updated": "2026-11-08 07:44:02.673359507 +0000 UTC"
+   "updated": "2026-11-08 07:49:10.247294867 +0000 UTC"
   },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.07968,
+   "lat": 46.07966,
    "lon": -122.90215,
-   "sog_kn": 0.1,
-   "cog": 86.1,
-   "heading": 135,
-   "nav_status": 0,
-   "updated": "2026-11-08 07:44:07.491716136 +0000 UTC"
-  },
-  {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 46.09048,
-   "lon": -122.93231,
    "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-08 07:44:12.864484213 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20003,
-   "lon": -123.3854,
-   "sog_kn": 0,
-   "cog": 9.5,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-08 07:44:14.583195967 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.99081,
-   "lon": -122.84135,
-   "sog_kn": 0.1,
-   "cog": 181.2,
-   "heading": 153,
-   "nav_status": 12,
-   "updated": "2026-11-08 07:44:16.066761623 +0000 UTC"
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-08 07:49:12.807924537 +0000 UTC"
   }
  ]
 }
