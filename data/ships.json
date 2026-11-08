@@ -1,67 +1,114 @@
 {
- "fetched_at": "2026-11-08T08:33:44Z",
+ "fetched_at": "2026-11-08T08:38:44Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367323610,
-   "name": "MIKETTE",
-   "lat": 46.19963,
-   "lon": -123.38522,
-   "type_code": 30,
-   "destination": "",
-   "updated": "2026-11-08 08:33:53.915207231 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.6422,
-   "lon": -122.74093,
-   "type_code": 52,
-   "destination": "VANCOUER,WA",
-   "updated": "2026-11-08 08:33:59.772129563 +0000 UTC"
-  },
-  {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 46.17438,
-   "lon": -123.10811,
-   "type_code": 70,
-   "destination": "USVAN",
-   "updated": "2026-11-08 08:34:03.61586894 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19999,
-   "lon": -123.3854,
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 45.66714,
+   "lon": -122.76698,
    "sog_kn": 0,
-   "cog": 4.9,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-08 08:34:05.169949188 +0000 UTC"
+   "cog": 267.5,
+   "heading": 159,
+   "nav_status": 1,
+   "updated": "2026-11-08 08:38:48.383230945 +0000 UTC"
   },
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10793,
-   "lon": -122.95899,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35742,
+   "type_code": 30,
+   "updated": "2026-11-08 08:38:49.576288764 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.63423,
+   "lon": -122.70367,
+   "sog_kn": 1.7,
+   "cog": 305,
+   "heading": 304,
+   "nav_status": 3,
+   "updated": "2026-11-08 08:38:51.708738324 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64346,
+   "lon": -122.75283,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-08 08:38:53.16131271 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00879,
+   "lon": -122.84881,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-08 08:34:06.380665974 +0000 UTC"
+   "updated": "2026-11-08 08:38:57.94165798 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64206,
+   "lon": -122.74088,
+   "sog_kn": 0,
+   "cog": 243.1,
+   "heading": 122,
+   "nav_status": 12,
+   "updated": "2026-11-08 08:38:59.517208665 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10791,
+   "lon": -122.959,
+   "type_code": 50,
+   "destination": "CR HARBOR OPS",
+   "updated": "2026-11-08 08:39:00.613286082 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00901,
+   "lon": -122.84818,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 08:39:03.456172132 +0000 UTC"
   },
   {
    "mmsi": 367047080,
    "name": "THE CHIEF",
-   "lat": 45.63899,
-   "lon": -122.72715,
-   "sog_kn": 5.8,
-   "cog": 111.9,
-   "heading": 109,
-   "nav_status": 12,
-   "updated": "2026-11-08 08:34:06.767285021 +0000 UTC"
+   "lat": 45.636,
+   "lon": -122.71792,
+   "type_code": 52,
+   "destination": "KALAMA",
+   "updated": "2026-11-08 08:39:04.632028703 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65014,
+   "lon": -122.74759,
+   "type_code": 33,
+   "updated": "2026-11-08 08:39:07.072326416 +0000 UTC"
+  },
+  {
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.1101,
+   "lon": -122.9634,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-08 08:39:15.544237731 +0000 UTC"
   }
  ]
 }
