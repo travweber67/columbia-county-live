@@ -1,111 +1,60 @@
 {
- "fetched_at": "2026-11-08T20:24:37Z",
+ "fetched_at": "2026-11-08T20:27:26Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.19948,
-   "lon": -123.38507,
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.6479,
+   "lon": -122.74098,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-08 20:28:28.36446992 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.02863,
+   "lon": -122.8734,
+   "sog_kn": 0.9,
+   "cog": 108.5,
+   "heading": 110,
+   "nav_status": 5,
+   "updated": "2026-11-08 20:28:36.923830046 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
    "sog_kn": 0,
-   "cog": 240,
+   "cog": 332.1,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-08 20:28:38.27992147 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64731,
+   "lon": -122.73988,
+   "sog_kn": 0,
+   "cog": 268.3,
    "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-08 20:24:56.410928542 +0000 UTC"
+   "updated": "2026-11-08 20:28:46.169614332 +0000 UTC"
   },
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10283,
-   "lon": -122.9085,
-   "type_code": 52,
-   "destination": "US^0T0P>035F",
-   "updated": "2026-11-08 20:25:01.77799801 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.05318,
-   "lon": -122.88375,
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 45.63744,
+   "lon": -122.70901,
    "sog_kn": 0,
-   "cog": 103.1,
-   "heading": 161,
-   "nav_status": 0,
-   "updated": "2026-11-08 20:25:05.376915726 +0000 UTC"
-  },
-  {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.99099,
-   "lon": -122.84017,
-   "sog_kn": 0,
-   "cog": 3.2,
-   "heading": 158,
-   "nav_status": 0,
-   "updated": "2026-11-08 20:25:08.26079203 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00884,
-   "lon": -122.84885,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-08 20:25:10.31840724 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07969,
-   "lon": -122.90215,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-08 20:25:11.748490513 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10356,
-   "lon": -122.91017,
-   "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 75,
-   "nav_status": 3,
-   "updated": "2026-11-08 20:25:13.731650781 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 45.89537,
-   "lon": -122.80378,
-   "sog_kn": 10.6,
-   "cog": 344.9,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-08 20:25:18.344815577 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.6286,
-   "lon": -122.69385,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-08 20:25:23.547455053 +0000 UTC"
-  },
-  {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 46.05229,
-   "lon": -122.88359,
-   "sog_kn": 0,
-   "cog": 254.5,
-   "heading": 170,
-   "nav_status": 1,
-   "updated": "2026-11-08 20:25:24.944560843 +0000 UTC"
+   "cog": 166.3,
+   "heading": 303,
+   "nav_status": 5,
+   "updated": "2026-11-08 20:28:51.058451316 +0000 UTC"
   }
  ]
 }
