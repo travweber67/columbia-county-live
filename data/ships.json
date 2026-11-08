@@ -1,95 +1,98 @@
 {
- "fetched_at": "2026-11-08T12:24:01Z",
+ "fetched_at": "2026-11-08T12:27:20Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07961,
+   "lon": -122.90164,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-08 12:28:03.346547519 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.6322,
+   "lon": -122.70321,
+   "sog_kn": 0.8,
+   "cog": 309.9,
+   "heading": 301,
+   "nav_status": 3,
+   "updated": "2026-11-08 12:28:07.795653771 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00884,
+   "lon": -122.84877,
+   "sog_kn": 0.1,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 12:28:13.515904769 +0000 UTC"
+  },
   {
    "mmsi": 367310520,
    "name": "JAMES T",
-   "lat": 46.10357,
+   "lat": 46.10358,
    "lon": -122.91013,
    "sog_kn": 0,
    "cog": 83.5,
    "heading": 76,
    "nav_status": 3,
-   "updated": "2026-11-08 12:23:54.955689408 +0000 UTC"
+   "updated": "2026-11-08 12:28:14.07015975 +0000 UTC"
   },
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15345,
-   "lon": -123.37715,
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.09904,
+   "lon": -122.93934,
    "sog_kn": 0,
-   "cog": 357.4,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-08 12:23:56.768773888 +0000 UTC"
+   "cog": 1.3,
+   "heading": 109,
+   "nav_status": 5,
+   "updated": "2026-11-08 12:28:19.666973693 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07969,
-   "lon": -122.90216,
-   "sog_kn": 0.1,
-   "cog": 332.2,
-   "heading": 135,
-   "nav_status": 0,
-   "updated": "2026-11-08 12:24:07.986077289 +0000 UTC"
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.612,
+   "lon": -122.64536,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-08 12:28:21.230845673 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.63157,
-   "lon": -122.70197,
-   "sog_kn": 0.4,
-   "cog": 306.4,
-   "heading": 301,
-   "nav_status": 3,
-   "updated": "2026-11-08 12:24:11.082340384 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.64385,
-   "lon": -122.77078,
-   "sog_kn": 4,
-   "cog": 7.1,
-   "heading": 16,
-   "nav_status": 12,
-   "updated": "2026-11-08 12:24:23.27359686 +0000 UTC"
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.64332,
+   "lon": -122.75283,
+   "type_code": 50,
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-08 12:28:23.925922653 +0000 UTC"
   },
   {
    "mmsi": 368286340,
    "name": "SHAVER",
-   "lat": 45.98275,
-   "lon": -122.83467,
-   "sog_kn": 0,
-   "cog": 147.9,
+   "lat": 45.98158,
+   "lon": -122.8352,
+   "sog_kn": 4,
+   "cog": 193.9,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-08 12:24:24.727073686 +0000 UTC"
+   "updated": "2026-11-08 12:28:24.376722328 +0000 UTC"
   },
   {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64348,
-   "lon": -122.75283,
-   "sog_kn": 0,
-   "cog": 257.4,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-08 12:24:25.589701973 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.61831,
-   "lon": -122.78797,
-   "sog_kn": 1.7,
-   "cog": 8.4,
-   "heading": 358,
-   "nav_status": 0,
-   "updated": "2026-11-08 12:24:30.366699644 +0000 UTC"
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.64283,
+   "lon": -122.77174,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-08 12:28:26.226836536 +0000 UTC"
   }
  ]
 }
