@@ -1,96 +1,87 @@
 {
- "fetched_at": "2026-11-08T20:44:39Z",
+ "fetched_at": "2026-11-08T20:49:39Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20002,
-   "lon": -123.38546,
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58131,
+   "lon": -122.76066,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 51.8,
+   "heading": 123,
+   "nav_status": 0,
+   "updated": "2026-11-08 20:49:47.524511547 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64729,
+   "lon": -122.73991,
+   "sog_kn": 0,
+   "cog": 284.2,
    "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-08 20:44:44.830815265 +0000 UTC"
+   "nav_status": 5,
+   "updated": "2026-11-08 20:49:49.566090989 +0000 UTC"
   },
   {
-   "mmsi": 477133900,
-   "name": "SHAO SHAN 8",
-   "lat": 45.64398,
-   "lon": -122.74113,
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.6435,
+   "lon": -122.75281,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-08 20:49:51.975632903 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.04401,
+   "lon": -122.87693,
    "type_code": 70,
-   "destination": "CN QDG",
-   "updated": "2026-11-08 20:44:49.751974418 +0000 UTC"
+   "destination": "US KAM",
+   "updated": "2026-11-08 20:49:52.662219011 +0000 UTC"
   },
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.27155,
-   "lon": -123.48679,
-   "sog_kn": 1.5,
-   "cog": 281.4,
-   "heading": 277,
-   "nav_status": 3,
-   "updated": "2026-11-08 20:44:52.810657495 +0000 UTC"
-  },
-  {
-   "mmsi": 538011495,
-   "name": "MTR JUPITER",
-   "lat": 46.10619,
-   "lon": -122.95623,
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58079,
+   "lon": -122.76004,
    "sog_kn": 0,
-   "cog": 125.7,
+   "cog": 120.7,
    "heading": 122,
    "nav_status": 5,
-   "updated": "2026-11-08 20:44:55.674245826 +0000 UTC"
-  },
-  {
-   "mmsi": 338616000,
-   "name": "DUBLIN SEA",
-   "lat": 45.66715,
-   "lon": -122.76685,
-   "sog_kn": 0,
-   "cog": 309.1,
-   "heading": 162,
-   "nav_status": 1,
-   "updated": "2026-11-08 20:44:56.714567622 +0000 UTC"
+   "updated": "2026-11-08 20:49:54.52498066 +0000 UTC"
   },
   {
    "mmsi": 368442390,
    "name": "COWLITZ",
-   "lat": 46.07938,
-   "lon": -122.90182,
-   "type_code": 52,
-   "destination": "PORTLAND",
-   "updated": "2026-11-08 20:45:00.947677318 +0000 UTC"
-  },
-  {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60757,
-   "lon": -122.67763,
-   "type_code": 50,
-   "updated": "2026-11-08 20:45:03.348402257 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.6501,
-   "lon": -122.74768,
-   "type_code": 33,
-   "updated": "2026-11-08 20:45:09.432055719 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00883,
-   "lon": -122.84883,
+   "lat": 46.07937,
+   "lon": -122.90181,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-08 20:45:10.048446154 +0000 UTC"
+   "cog": 283.2,
+   "heading": 140,
+   "nav_status": 5,
+   "updated": "2026-11-08 20:49:54.871820371 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10791,
+   "lon": -122.95906,
+   "type_code": 50,
+   "destination": "CR HARBOR OPS",
+   "updated": "2026-11-08 20:49:57.166988443 +0000 UTC"
+  },
+  {
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 45.98388,
+   "lon": -122.83509,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-08 20:50:08.953426766 +0000 UTC"
   }
  ]
 }
