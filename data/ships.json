@@ -1,106 +1,80 @@
 {
- "fetched_at": "2026-11-08T21:19:41Z",
+ "fetched_at": "2026-11-08T21:24:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367667060,
-   "name": "GRANITE POINT",
-   "lat": 45.64729,
-   "lon": -122.73994,
-   "sog_kn": 0,
-   "cog": 288.6,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-08 21:19:48.748746664 +0000 UTC"
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.85487,
+   "lon": -122.78552,
+   "type_code": 52,
+   "destination": "VANCOUER,WA",
+   "updated": "2026-11-08 21:24:49.570893152 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.64078,
-   "lon": -122.72275,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-08 21:19:49.243487154 +0000 UTC"
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00903,
+   "lon": -122.8484,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-08 21:24:59.284975531 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 46.02545,
+   "lon": -122.8699,
+   "sog_kn": 1.6,
+   "cog": 260.9,
+   "heading": 31,
+   "nav_status": 12,
+   "updated": "2026-11-08 21:25:06.397335509 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58131,
+   "lon": -122.76065,
+   "sog_kn": 0,
+   "cog": 51.8,
+   "heading": 122,
+   "nav_status": 0,
+   "updated": "2026-11-08 21:25:06.698841979 +0000 UTC"
   },
   {
    "mmsi": 367061930,
    "name": "TEBENKOF",
-   "lat": 46.19997,
-   "lon": -123.38551,
+   "lat": 46.19995,
+   "lon": -123.3855,
    "sog_kn": 0,
-   "cog": 39.2,
+   "cog": 23.4,
    "heading": 511,
    "nav_status": 15,
-   "updated": "2026-11-08 21:19:51.462609829 +0000 UTC"
+   "updated": "2026-11-08 21:25:09.990434396 +0000 UTC"
   },
   {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 46.04015,
-   "lon": -122.88055,
-   "sog_kn": 1.5,
-   "cog": 173.9,
-   "heading": 171,
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07968,
+   "lon": -122.90216,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-08 21:25:11.998184372 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.03991,
+   "lon": -122.88103,
+   "sog_kn": 0.7,
+   "cog": 191.3,
+   "heading": 159,
    "nav_status": 0,
-   "updated": "2026-11-08 21:19:54.50185082 +0000 UTC"
-  },
-  {
-   "mmsi": 367047150,
-   "name": "CAPTAIN BOB",
-   "lat": 45.646,
-   "lon": -122.77189,
-   "sog_kn": 7.4,
-   "cog": 34.5,
-   "heading": 33,
-   "nav_status": 12,
-   "updated": "2026-11-08 21:20:02.280848201 +0000 UTC",
-   "type_code": 0,
-   "destination": "VANCOUVER"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.6501,
-   "lon": -122.74763,
-   "sog_kn": 0,
-   "cog": 300,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-08 21:19:59.23132346 +0000 UTC"
-  },
-  {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63868,
-   "lon": -122.72405,
-   "sog_kn": 0.1,
-   "cog": 82.6,
-   "heading": 112,
-   "nav_status": 1,
-   "updated": "2026-11-08 21:20:04.143360742 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20001,
-   "lon": -123.38544,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-08 21:20:05.126273783 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 2.8,
-   "heading": 132,
-   "nav_status": 15,
-   "updated": "2026-11-08 21:20:09.307982978 +0000 UTC"
+   "updated": "2026-11-08 21:25:14.758301172 +0000 UTC"
   }
  ]
 }
