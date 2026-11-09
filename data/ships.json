@@ -1,69 +1,87 @@
 {
- "fetched_at": "2026-11-09T13:05:51Z",
+ "fetched_at": "2026-11-09T13:10:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60757,
-   "lon": -122.67753,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.6129,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 13:05:53.667461959 +0000 UTC"
+   "cog": 10.9,
+   "heading": 132,
+   "nav_status": 15,
+   "updated": "2026-11-09 13:10:58.775128255 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07958,
-   "lon": -122.9016,
-   "sog_kn": 0,
-   "cog": 37.4,
-   "heading": 137,
-   "nav_status": 0,
-   "updated": "2026-11-09 13:05:53.695330406 +0000 UTC"
+   "mmsi": 352006943,
+   "name": "GLOVIS LEGEND",
+   "lat": 45.64731,
+   "lon": -122.75529,
+   "type_code": 70,
+   "destination": "USGHR",
+   "updated": "2026-11-09 13:10:59.88629824 +0000 UTC"
   },
   {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.64143,
-   "lon": -122.7735,
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.61272,
+   "lon": -122.78751,
+   "type_code": 57,
+   "destination": "KALAMA",
+   "updated": "2026-11-09 13:11:00.610234143 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.00334,
+   "lon": -122.85013,
+   "sog_kn": 7.8,
+   "cog": 338.6,
+   "heading": 333,
+   "nav_status": 12,
+   "updated": "2026-11-09 13:11:00.912762908 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.6457,
+   "lon": -122.73484,
+   "sog_kn": 0.1,
+   "cog": 0,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-09 13:11:08.226634643 +0000 UTC"
+  },
+  {
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.9094,
+   "lon": -122.81454,
+   "sog_kn": 0,
+   "cog": 230.2,
+   "heading": 339,
+   "nav_status": 0,
+   "updated": "2026-11-09 13:11:19.512958389 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20003,
+   "lon": -123.38554,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-09 13:11:23.6930647 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 46.11534,
+   "lon": -122.98027,
    "type_code": 31,
-   "destination": "PORTLAND",
-   "updated": "2026-11-09 13:06:03.297364275 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.0259,
-   "lon": -122.87261,
-   "type_code": 52,
-   "destination": "COL RIVER",
-   "updated": "2026-11-09 13:06:07.675050077 +0000 UTC"
-  },
-  {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.02708,
-   "lon": -122.87547,
-   "sog_kn": 1.4,
-   "cog": 213.7,
-   "heading": 93,
-   "nav_status": 0,
-   "updated": "2026-11-09 13:06:08.788849143 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64479,
-   "lon": -122.73908,
-   "sog_kn": 0.4,
-   "cog": 315.6,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 13:06:14.874071815 +0000 UTC"
+   "destination": "ASTORIA",
+   "updated": "2026-11-09 13:11:27.105055148 +0000 UTC"
   }
  ]
 }
