@@ -5754,10 +5754,10 @@ const LANG_ES = {
   taboutdoors: 'Aire libre',
   tabmore: 'Eventos y más',
   fseyebrow: 'Presentado por nuestros patrocinadores fundadores',
-  fs1box: 'Lugar reclamado',
-  fs1eyebrow: 'Patrocinador fundador · Lugar 1 de 3 — Ocupado',
-  fs1h3: 'Este lugar ya está reclamado',
-  fs1p: 'Nuestro primer patrocinador fundador ya tomó este lugar. Su nombre se suma a este panel en cuanto se apruebe su tarjeta — y se queda aquí para siempre, con la tarifa fundadora bloqueada.',
+  fs1box: 'Lugar reservado',
+  fs1eyebrow: 'Patrocinador fundador · Lugar 1 de 3 — Reservado',
+  fs1h3: 'Este lugar está reservado',
+  fs1p: 'Estamos apartando este lugar para un negocio local mientras decide. Su nombre se suma a este panel solo si confirma y aprueba su tarjeta — los otros dos lugares siguen disponibles.',
   fs1cta: 'Ver los dos lugares que quedan &rarr;',
   fslogohere: 'Tu logo aquí',
   fs2eyebrow: 'Patrocinador fundador · Lugar 2 de 3 — Disponible',
@@ -7870,8 +7870,8 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
   if (!overlay) return;
   var PHOTO_MS = 16000;      // dwell per photo — a slow ambient cycle
   var QUIET = [
-    { en: 'Presented by — your business here · Founding Sponsor · $49/mo · 1 of 3 claimed',
-      es: 'Presentado por — su negocio aquí · Patrocinador Fundador · $49/mes · 1 de 3 reclamados' },
+    { en: 'Presented by — your business here · Founding Sponsor · $49/mo · 1 spot reserved, 2 open',
+      es: 'Presentado por — su negocio aquí · Patrocinador Fundador · $49/mes · 1 lugar reservado, 2 disponibles' },
     { en: 'These photographs come from the county itself — share yours from the Events & More tab',
       es: 'Estas fotografías vienen del propio condado — comparte la tuya desde la pestaña Eventos y Más' },
     null /* a beat of nothing — the quiet line rests every third photo */
