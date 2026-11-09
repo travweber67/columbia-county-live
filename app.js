@@ -5932,6 +5932,7 @@ const LANG_ES = {
   dirfreehelp: 'Ayuda gratuita / apoyo comunitario',
   dirfounding: 'Negocio fundador',
   dirotldesc: 'Boliche, ligas y fiestas de cumpleaños sobre Columbia River Highway.',
+  dirflcdesc: 'Cena comunitaria gratuita todos los martes en la iglesia First Lutheran — las puertas abren a las 5 y la cena se sirve a las 5:30. Todos son bienvenidos: solo tienes que venir, sin trámites ni preguntas. Organizado por Community Meals of Columbia County.',
   dirinviteh: 'Tu servicio aquí',
   dirinvitep: '¿Limpias casas, cuidas niños, paseas perros, arreglas lo que se rompe? Sé uno de los primeros nombres del directorio — los anuncios son gratis hasta el 31 de enero de 2027.',
   dirlistcta: 'Anuncia tu servicio &rarr;',
