@@ -1,80 +1,69 @@
 {
- "fetched_at": "2026-11-09T05:00:14Z",
+ "fetched_at": "2026-11-09T05:05:15Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00883,
-   "lon": -122.84883,
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08976,
+   "lon": -122.92908,
+   "sog_kn": 0,
+   "cog": 60.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 05:05:29.431303448 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60766,
+   "lon": -122.67764,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-09 05:00:24.539734476 +0000 UTC"
+   "updated": "2026-11-09 05:05:23.481801463 +0000 UTC"
   },
   {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.6387,
-   "lon": -122.72408,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-09 05:00:32.182630484 +0000 UTC"
-  },
-  {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.98957,
-   "lon": -122.84085,
-   "sog_kn": 1.8,
-   "cog": 175.3,
-   "heading": 70,
-   "nav_status": 0,
-   "updated": "2026-11-09 05:00:36.930579977 +0000 UTC"
-  },
-  {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.64041,
-   "lon": -122.71777,
-   "sog_kn": 9.5,
-   "cog": 299.7,
-   "heading": 293,
-   "nav_status": 0,
-   "updated": "2026-11-09 05:00:38.723851154 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58757,
-   "lon": -122.77045,
-   "sog_kn": 0,
-   "cog": 254,
-   "heading": 140,
-   "nav_status": 0,
-   "updated": "2026-11-09 05:00:41.540797543 +0000 UTC"
-  },
-  {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 46.1746,
-   "lon": -123.10816,
-   "sog_kn": 0,
-   "cog": 233.4,
-   "heading": 123,
-   "nav_status": 1,
-   "updated": "2026-11-09 05:00:42.305724879 +0000 UTC"
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.65089,
+   "lon": -122.75082,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-09 05:05:39.030858062 +0000 UTC"
   },
   {
    "mmsi": 367363590,
    "name": "CLARKSTON",
-   "lat": 45.64239,
-   "lon": -122.74148,
-   "type_code": 52,
-   "destination": "VANCOUER,WA",
-   "updated": "2026-11-09 05:00:46.390911247 +0000 UTC"
+   "lat": 45.64274,
+   "lon": -122.73708,
+   "sog_kn": 1,
+   "cog": 101.9,
+   "heading": 62,
+   "nav_status": 12,
+   "updated": "2026-11-09 05:05:39.093677266 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19952,
+   "lon": -123.38499,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-09 05:05:46.33572285 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.5813,
+   "lon": -122.76066,
+   "sog_kn": 0,
+   "cog": 212.3,
+   "heading": 122,
+   "nav_status": 0,
+   "updated": "2026-11-09 05:05:47.243362562 +0000 UTC"
   }
  ]
 }
