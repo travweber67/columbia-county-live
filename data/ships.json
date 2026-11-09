@@ -1,46 +1,71 @@
 {
- "fetched_at": "2026-11-09T03:27:32Z",
+ "fetched_at": "2026-11-09T03:30:07Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.61201,
-   "lon": -122.64537,
-   "type_code": 52,
-   "destination": "US^0UUT>0T9D",
-   "updated": "2026-11-09 03:28:21.694232318 +0000 UTC"
+   "mmsi": 538006268,
+   "name": "STAR CARIOCA",
+   "lat": 45.63917,
+   "lon": -122.77778,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-09 03:30:15.94593229 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40234,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 134,
+   "nav_status": 0,
+   "updated": "2026-11-09 03:30:20.732980519 +0000 UTC"
   },
   {
    "mmsi": 367315790,
    "name": "LORI B.",
-   "lat": 46.13372,
-   "lon": -123.00739,
+   "lat": 46.13239,
+   "lon": -123.00464,
    "sog_kn": 4.2,
-   "cog": 125.4,
+   "cog": 124.4,
    "heading": 126,
    "nav_status": 0,
-   "updated": "2026-11-09 03:28:31.850929742 +0000 UTC"
+   "updated": "2026-11-09 03:30:31.69725433 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.61291,
-   "type_code": 0,
-   "updated": "2026-11-09 03:28:36.94748423 +0000 UTC"
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.05725,
+   "lon": -122.88534,
+   "sog_kn": 8.4,
+   "cog": 159.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 03:30:31.744889667 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.63369,
-   "lon": -122.70584,
-   "sog_kn": 0.6,
-   "cog": 141.1,
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10891,
+   "lon": -122.96127,
+   "sog_kn": 0,
+   "cog": 145.4,
    "heading": 129,
-   "nav_status": 3,
-   "updated": "2026-11-09 03:28:42.172952994 +0000 UTC"
+   "nav_status": 5,
+   "updated": "2026-11-09 03:30:31.890138062 +0000 UTC"
+  },
+  {
+   "mmsi": 352006943,
+   "name": "GLOVIS LEGEND",
+   "lat": 45.64612,
+   "lon": -122.75552,
+   "sog_kn": 0,
+   "cog": 140.3,
+   "heading": 136,
+   "nav_status": 5,
+   "updated": "2026-11-09 03:30:38.795667938 +0000 UTC"
   }
  ]
 }
