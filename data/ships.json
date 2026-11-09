@@ -1,57 +1,133 @@
 {
- "fetched_at": "2026-11-09T13:30:53Z",
+ "fetched_at": "2026-11-09T13:35:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.63794,
-   "lon": -122.71058,
-   "sog_kn": 0.1,
-   "cog": 69.2,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65018,
+   "lon": -122.74761,
+   "sog_kn": 0,
+   "cog": 145.3,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 13:31:04.284744292 +0000 UTC"
+   "nav_status": 3,
+   "updated": "2026-11-09 13:36:00.306386939 +0000 UTC"
   },
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64351,
-   "lon": -122.75243,
-   "sog_kn": 0.1,
-   "cog": 138,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.2,
+   "lon": -123.38549,
+   "sog_kn": 0,
+   "cog": 7.9,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 13:31:06.590950324 +0000 UTC"
+   "nav_status": 15,
+   "updated": "2026-11-09 13:36:18.567743779 +0000 UTC",
+   "type_code": 30,
+   "destination": "FISHMN TMNL"
   },
   {
-   "mmsi": 368136580,
-   "name": "ORIN L GREEN",
-   "lat": 46.00853,
-   "lon": -122.84763,
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58132,
+   "lon": -122.76065,
+   "sog_kn": 0,
+   "cog": 212.3,
+   "heading": 122,
+   "nav_status": 0,
+   "updated": "2026-11-09 13:36:06.73922145 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 46.14873,
+   "lon": -123.04216,
+   "type_code": 31,
+   "destination": "ASTORIA",
+   "updated": "2026-11-09 13:36:15.368815606 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07976,
+   "lon": -122.90206,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 511,
+   "heading": 319,
+   "nav_status": 3,
+   "updated": "2026-11-09 13:36:17.210281577 +0000 UTC"
+  },
+  {
+   "mmsi": 352005064,
+   "name": "ANSAC RISING SUN",
+   "lat": 45.60111,
+   "lon": -122.77452,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-09 13:36:18.995330956 +0000 UTC"
+  },
+  {
+   "mmsi": 538006268,
+   "name": "STAR CARIOCA",
+   "lat": 45.63916,
+   "lon": -122.77776,
+   "sog_kn": 0,
+   "cog": 40,
+   "heading": 228,
+   "nav_status": 5,
+   "updated": "2026-11-09 13:36:19.53531435 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64539,
+   "lon": -122.73503,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-09 13:36:20.095239778 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58755,
+   "lon": -122.77045,
+   "sog_kn": 0,
+   "cog": 181.4,
+   "heading": 146,
    "nav_status": 0,
-   "updated": "2026-11-09 13:31:07.552069339 +0000 UTC"
+   "updated": "2026-11-09 13:36:20.730120022 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07959,
+   "lon": -122.90163,
+   "sog_kn": 0,
+   "cog": 8.1,
+   "heading": 136,
+   "nav_status": 0,
+   "updated": "2026-11-09 13:36:23.494925748 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.0797,
+   "lon": -122.90216,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-09 13:36:23.658396351 +0000 UTC"
   },
   {
    "mmsi": 367496010,
    "name": "DELIVERANCE",
-   "lat": 46.07948,
-   "lon": -122.90192,
-   "type_code": 69,
-   "updated": "2026-11-09 13:31:15.205478601 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.63233,
-   "lon": -122.70075,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-09 13:31:26.131035359 +0000 UTC"
+   "lat": 46.07953,
+   "lon": -122.9019,
+   "sog_kn": 0,
+   "cog": 146.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 13:36:24.503878005 +0000 UTC"
   }
  ]
 }
