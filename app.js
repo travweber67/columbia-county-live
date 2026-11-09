@@ -5949,10 +5949,10 @@ const LANG_ES = {
   dirfounding: 'Negocio fundador',
   dirotldesc: 'Boliche, ligas y fiestas de cumpleaños sobre Columbia River Highway.',
   dirinviteh: 'Tu servicio aquí',
-  dirinvitep: '¿Limpias casas, cuidas niños, paseas perros, arreglas lo que se rompe? Sé uno de los primeros nombres del directorio — los anuncios son gratis mientras lanzamos.',
+  dirinvitep: '¿Limpias casas, cuidas niños, paseas perros, arreglas lo que se rompe? Sé uno de los primeros nombres del directorio — los anuncios son gratis hasta el 31 de enero de 2027.',
   dirlistcta: 'Anuncia tu servicio &rarr;',
   dirhonest: '<strong>Los anuncios son publicidad, no recomendaciones.</strong> No hemos verificado estos servicios — en especial para servicios dentro del hogar, pide referencias antes de contratar.',
-  dircta: 'Anuncia tu servicio — gratis durante el lanzamiento fundador &rarr;',
+  dircta: 'Anuncia tu servicio — gratis hasta el 31 de enero de 2027 &rarr;',
   dirctanote: 'La solicitud usa el mismo formulario corto que las de patrocinadores. Cada anuncio lo lee una persona y se revisa antes de aparecer — nada se publica automáticamente y no hay pago en línea.',
   displaybtn: 'Pantalla',
   displaylabel: 'Abrir el modo pantalla — el salvapantallas comunitario',
@@ -8243,36 +8243,36 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
 
   var EMPTY = {
     childcare: {
-      en: 'No child care listings yet — the first sitter, nanny or family daycare to join is listed free during the founding launch.',
-      es: 'Aún no hay anuncios de cuidado infantil — la primera niñera o guardería familiar que se sume aparece gratis durante el lanzamiento fundador.'
+      en: 'No child care listings yet — the first sitter, nanny or family daycare to join is listed free through January 31, 2027.',
+      es: 'Aún no hay anuncios de cuidado infantil — la primera niñera o guardería familiar que se sume aparece gratis hasta el 31 de enero de 2027.'
     },
     cleaning: {
-      en: 'No cleaners listed yet. Make houses shine anywhere in this county? This is your spot — free during the founding launch.',
-      es: 'Aún no hay servicios de limpieza. ¿Dejas las casas brillando en este condado? Este es tu lugar — gratis durante el lanzamiento fundador.'
+      en: 'No cleaners listed yet. Make houses shine anywhere in this county? This is your spot — free through January 31, 2027.',
+      es: 'Aún no hay servicios de limpieza. ¿Dejas las casas brillando en este condado? Este es tu lugar — gratis hasta el 31 de enero de 2027.'
     },
     handyman: {
       en: 'No handymen or repair folks yet — the first listing here is free while we launch.',
       es: 'Aún no hay manitas ni reparadores — el primer anuncio aquí es gratis mientras lanzamos.'
     },
     pets: {
-      en: 'No pet sitters or groomers yet. Walk dogs or board cats around here? Claim the first spot — free during the founding launch.',
-      es: 'Aún no hay cuidadores de mascotas. ¿Paseas perros o cuidas gatos por aquí? Reclama el primer lugar — gratis durante el lanzamiento fundador.'
+      en: 'No pet sitters or groomers yet. Walk dogs or board cats around here? Claim the first spot — free through January 31, 2027.',
+      es: 'Aún no hay cuidadores de mascotas. ¿Paseas perros o cuidas gatos por aquí? Reclama el primer lugar — gratis hasta el 31 de enero de 2027.'
     },
     yard: {
-      en: 'No yard & garden listings yet — mowing, pruning, brush hauling. First one in is free during the founding launch.',
-      es: 'Aún no hay anuncios de patio y jardín — cortar el césped, podar, retirar ramas. El primero entra gratis durante el lanzamiento fundador.'
+      en: 'No yard & garden listings yet — mowing, pruning, brush hauling. First one in is free through January 31, 2027.',
+      es: 'Aún no hay anuncios de patio y jardín — cortar el césped, podar, retirar ramas. El primero entra gratis hasta el 31 de enero de 2027.'
     },
     tutoring: {
-      en: 'No tutors listed yet. Math help, reading help, test prep — the first listing is free during the founding launch.',
-      es: 'Aún no hay tutores. Ayuda con matemáticas, lectura, preparación de exámenes — el primer anuncio es gratis durante el lanzamiento fundador.'
+      en: 'No tutors listed yet. Math help, reading help, test prep — the first listing is free through January 31, 2027.',
+      es: 'Aún no hay tutores. Ayuda con matemáticas, lectura, preparación de exámenes — el primer anuncio es gratis hasta el 31 de enero de 2027.'
     },
     moving: {
-      en: 'No movers or haulers yet. Got a truck and a strong back? Be the first — free during the founding launch.',
-      es: 'Aún no hay mudanzas ni fletes. ¿Tienes una camioneta y una espalda fuerte? Sé el primero — gratis durante el lanzamiento fundador.'
+      en: 'No movers or haulers yet. Got a truck and a strong back? Be the first — free through January 31, 2027.',
+      es: 'Aún no hay mudanzas ni fletes. ¿Tienes una camioneta y una espalda fuerte? Sé el primero — gratis hasta el 31 de enero de 2027.'
     },
     other: {
-      en: 'Nothing else here yet — listings are free during the founding launch.',
-      es: 'Nada más por aquí todavía — los anuncios son gratis durante el lanzamiento fundador.'
+      en: 'Nothing else here yet — listings are free through January 31, 2027.',
+      es: 'Nada más por aquí todavía — los anuncios son gratis hasta el 31 de enero de 2027.'
     }
   };
 
