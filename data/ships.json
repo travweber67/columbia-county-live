@@ -1,37 +1,140 @@
 {
- "fetched_at": "2026-11-09T06:30:21Z",
+ "fetched_at": "2026-11-09T06:35:22Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 13 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07959,
-   "lon": -122.90165,
-   "sog_kn": 0,
-   "cog": 319.6,
-   "heading": 137,
-   "nav_status": 0,
-   "updated": "2026-11-09 06:30:34.131345116 +0000 UTC"
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58082,
+   "lon": -122.76003,
+   "type_code": 31,
+   "destination": "ASTORIA",
+   "updated": "2026-11-09 06:35:25.937016195 +0000 UTC"
   },
   {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.19943,
-   "lon": -123.38508,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.64324,
+   "lon": -122.74591,
+   "type_code": 52,
+   "destination": "US^029T>0UW8",
+   "updated": "2026-11-09 06:35:26.02195612 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08975,
+   "lon": -122.92903,
+   "type_code": 52,
+   "destination": "US^0UJB>0UJB",
+   "updated": "2026-11-09 06:35:31.91181352 +0000 UTC"
+  },
+  {
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.11011,
+   "lon": -122.96341,
    "sog_kn": 0,
-   "cog": 225,
+   "cog": 331,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-09 06:35:33.351014746 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10283,
+   "lon": -122.9085,
+   "sog_kn": 0,
+   "cog": 327.8,
+   "heading": 353,
+   "nav_status": 0,
+   "updated": "2026-11-09 06:35:34.023653408 +0000 UTC"
+  },
+  {
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.61221,
+   "lon": -122.64523,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-09 06:30:48.432212463 +0000 UTC"
+   "updated": "2026-11-09 06:35:34.853563167 +0000 UTC"
   },
   {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64568,
-   "lon": -122.73487,
-   "type_code": 79,
-   "updated": "2026-11-09 06:30:52.497286092 +0000 UTC"
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58131,
+   "lon": -122.76064,
+   "sog_kn": 0,
+   "cog": 212.3,
+   "heading": 123,
+   "nav_status": 0,
+   "updated": "2026-11-09 06:35:36.948310053 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64729,
+   "lon": -122.73989,
+   "type_code": 52,
+   "destination": "SRT PASCO",
+   "updated": "2026-11-09 06:35:38.190211367 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10362,
+   "lon": -122.9101,
+   "sog_kn": 0,
+   "cog": 83.5,
+   "heading": 75,
+   "nav_status": 3,
+   "updated": "2026-11-09 06:35:43.940501933 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10795,
+   "lon": -122.95901,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 06:35:54.919326129 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.62425,
+   "lon": -122.78916,
+   "sog_kn": 4.9,
+   "cog": 184.7,
+   "heading": 178,
+   "nav_status": 12,
+   "updated": "2026-11-09 06:35:50.768977834 +0000 UTC"
+  },
+  {
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 45.66712,
+   "lon": -122.76708,
+   "sog_kn": 0,
+   "cog": 309.1,
+   "heading": 158,
+   "nav_status": 1,
+   "updated": "2026-11-09 06:35:55.791706468 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64538,
+   "lon": -122.73503,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-09 06:35:56.314607188 +0000 UTC"
   }
  ]
 }
