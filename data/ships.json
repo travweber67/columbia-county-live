@@ -1,60 +1,69 @@
 {
- "fetched_at": "2026-11-09T13:00:51Z",
+ "fetched_at": "2026-11-09T13:05:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63875,
-   "lon": -122.72403,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-09 13:01:03.445145059 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00897,
-   "lon": -122.84821,
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60757,
+   "lon": -122.67753,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-09 13:01:06.904921728 +0000 UTC"
+   "updated": "2026-11-09 13:05:53.667461959 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07958,
+   "lon": -122.9016,
+   "sog_kn": 0,
+   "cog": 37.4,
+   "heading": 137,
+   "nav_status": 0,
+   "updated": "2026-11-09 13:05:53.695330406 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.64143,
+   "lon": -122.7735,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-09 13:06:03.297364275 +0000 UTC"
   },
   {
    "mmsi": 367513220,
    "name": "VANCOUVER",
-   "lat": 46.02584,
-   "lon": -122.87304,
+   "lat": 46.0259,
+   "lon": -122.87261,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-09 13:06:07.675050077 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.02708,
+   "lon": -122.87547,
+   "sog_kn": 1.4,
+   "cog": 213.7,
+   "heading": 93,
+   "nav_status": 0,
+   "updated": "2026-11-09 13:06:08.788849143 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64479,
+   "lon": -122.73908,
    "sog_kn": 0.4,
-   "cog": 77.9,
+   "cog": 315.6,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-09 13:01:09.975836134 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.00008,
-   "lon": -122.85227,
-   "sog_kn": 3.4,
-   "cog": 163.8,
-   "heading": 158,
-   "nav_status": 0,
-   "updated": "2026-11-09 13:01:10.899492767 +0000 UTC"
-  },
-  {
-   "mmsi": 353081000,
-   "name": "ELEGANT SW",
-   "lat": 46.09896,
-   "lon": -122.93936,
-   "sog_kn": 0,
-   "cog": 7.8,
-   "heading": 110,
-   "nav_status": 5,
-   "updated": "2026-11-09 13:01:17.510890737 +0000 UTC"
+   "updated": "2026-11-09 13:06:14.874071815 +0000 UTC"
   }
  ]
 }
