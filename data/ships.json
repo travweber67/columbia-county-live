@@ -1,84 +1,104 @@
 {
- "fetched_at": "2026-11-09T04:27:33Z",
+ "fetched_at": "2026-11-09T04:30:17Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.0906,
-   "lon": -122.93204,
-   "sog_kn": 0,
-   "cog": 233.5,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.07948,
+   "lon": -122.90196,
+   "sog_kn": 0.1,
+   "cog": 328.6,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-09 04:28:11.756379951 +0000 UTC"
+   "updated": "2026-11-09 04:30:40.334181583 +0000 UTC",
+   "type_code": 69
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40233,
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.26192,
+   "lon": -123.45802,
+   "type_code": 33,
+   "destination": "PILLAR ROCK",
+   "updated": "2026-11-09 04:30:25.245202119 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00893,
+   "lon": -122.8483,
+   "type_code": 31,
+   "destination": "HARBOROPPS-",
+   "updated": "2026-11-09 04:30:25.592830937 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35744,
+   "sog_kn": 0,
+   "cog": 228,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-09 04:30:26.265754585 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07975,
+   "lon": -122.90204,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 132,
-   "nav_status": 0,
-   "updated": "2026-11-09 04:28:13.481408733 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19996,
-   "lon": -123.38555,
-   "sog_kn": 0,
-   "cog": 14.7,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-09 04:28:19.776056432 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58755,
-   "lon": -122.77039,
-   "sog_kn": 0,
-   "cog": 237.2,
-   "heading": 140,
-   "nav_status": 0,
-   "updated": "2026-11-09 04:28:21.055544791 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19998,
-   "lon": -123.38542,
-   "sog_kn": 0,
-   "cog": 195.4,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-09 04:28:24.739579311 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10354,
-   "lon": -122.91012,
-   "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 75,
+   "heading": 318,
    "nav_status": 3,
-   "updated": "2026-11-09 04:28:34.100640454 +0000 UTC"
+   "updated": "2026-11-09 04:30:47.193596406 +0000 UTC",
+   "type_code": 33
   },
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10283,
-   "lon": -122.9085,
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19954,
+   "lon": -123.38497,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-09 04:30:35.748200685 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.66595,
+   "lon": -122.76904,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-09 04:30:42.713292117 +0000 UTC",
+   "sog_kn": 5.8,
+   "cog": 163.3,
+   "heading": 153,
+   "nav_status": 12
+  },
+  {
+   "mmsi": 563116100,
+   "name": "OCEAN GOLD",
+   "lat": 45.99836,
+   "lon": -122.85195,
    "sog_kn": 0,
-   "cog": 320.8,
-   "heading": 353,
-   "nav_status": 0,
-   "updated": "2026-11-09 04:28:37.595019566 +0000 UTC"
+   "cog": 341.9,
+   "heading": 164,
+   "nav_status": 1,
+   "updated": "2026-11-09 04:30:42.545721252 +0000 UTC"
+  },
+  {
+   "mmsi": 352005064,
+   "name": "ANSAC RISING SUN",
+   "lat": 45.6011,
+   "lon": -122.77446,
+   "sog_kn": 0,
+   "cog": 149.6,
+   "heading": 277,
+   "nav_status": 5,
+   "updated": "2026-11-09 04:30:49.91033191 +0000 UTC"
   }
  ]
 }
