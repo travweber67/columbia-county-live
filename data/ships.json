@@ -1,40 +1,119 @@
 {
- "fetched_at": "2026-11-08T23:57:29Z",
+ "fetched_at": "2026-11-08T23:59:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 45.64337,
-   "lon": -122.75279,
+   "mmsi": 563116100,
+   "name": "OCEAN GOLD",
+   "lat": 45.99838,
+   "lon": -122.85182,
+   "type_code": 70,
+   "destination": "KR YOS",
+   "updated": "2026-11-09 00:00:23.371029204 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07958,
+   "lon": -122.90166,
    "sog_kn": 0,
-   "cog": 303.2,
+   "cog": 294.9,
+   "heading": 136,
+   "nav_status": 0,
+   "updated": "2026-11-09 00:00:23.898446243 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.62824,
+   "lon": -122.69578,
+   "sog_kn": 0.8,
+   "cog": 307.5,
+   "heading": 316,
+   "nav_status": 3,
+   "updated": "2026-11-09 00:00:27.324296092 +0000 UTC"
+  },
+  {
+   "mmsi": 538008434,
+   "lat": 46.10892,
+   "lon": -122.96132,
+   "sog_kn": 0,
+   "cog": 243.9,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-09 00:00:31.927272766 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.1995,
+   "lon": -123.38498,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-09 00:00:37.731745116 +0000 UTC"
+  },
+  {
+   "mmsi": 538011495,
+   "name": "MTR JUPITER",
+   "lat": 46.10619,
+   "lon": -122.95621,
+   "type_code": 70,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-09 00:00:42.77513913 +0000 UTC"
+  },
+  {
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.17486,
+   "lon": -123.10733,
+   "sog_kn": 0.1,
+   "cog": 233.4,
+   "heading": 142,
+   "nav_status": 1,
+   "updated": "2026-11-09 00:00:45.900399518 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64553,
+   "lon": -122.73785,
+   "type_code": 52,
+   "destination": "VANCOUER,WA",
+   "updated": "2026-11-09 00:00:47.296436632 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19945,
+   "lon": -123.38512,
+   "sog_kn": 0,
+   "cog": 80,
    "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-08 23:58:46.114785731 +0000 UTC"
+   "updated": "2026-11-09 00:00:49.571487689 +0000 UTC"
   },
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64351,
-   "lon": -122.75295,
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58753,
+   "lon": -122.77042,
    "sog_kn": 0,
-   "cog": 187.4,
-   "heading": 511,
+   "cog": 310.5,
+   "heading": 141,
    "nav_status": 0,
-   "updated": "2026-11-08 23:58:56.690204731 +0000 UTC"
+   "updated": "2026-11-09 00:00:50.174765596 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65014,
-   "lon": -122.74764,
-   "sog_kn": 0,
-   "cog": 280.3,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-08 23:58:58.061636167 +0000 UTC"
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.08474,
+   "lon": -122.90463,
+   "sog_kn": 7,
+   "cog": 127.7,
+   "heading": 132,
+   "nav_status": 12,
+   "updated": "2026-11-09 00:00:50.703807648 +0000 UTC"
   }
  ]
 }
