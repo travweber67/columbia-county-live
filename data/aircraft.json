@@ -1,27 +1,67 @@
 {
- "fetched_at": "2026-11-09T15:41:03Z",
+ "fetched_at": "2026-11-09T15:46:03Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
+   "hex": "a12ae8",
+   "callsign": "UAL2328",
+   "type": "B39M",
+   "alt_ft": 35000,
+   "gs_kn": 406.1,
+   "track": 178.59,
+   "lat": 46.099564,
+   "lon": -123.376328
+  },
+  {
    "hex": "ab52c7",
    "callsign": "N829F",
    "type": "FOX",
-   "alt_ft": 2175,
-   "gs_kn": 91.2,
-   "track": 282.67,
-   "lat": 45.941752,
-   "lon": -122.76638
+   "alt_ft": 2725,
+   "gs_kn": 82.5,
+   "track": 263.74,
+   "lat": 46.01023,
+   "lon": -122.892792
   },
   {
-   "hex": "a8a0c1",
-   "callsign": "QXE2074",
-   "type": "E75L",
+   "hex": "a8579e",
+   "callsign": "N6369E",
+   "type": "C172",
+   "alt_ft": 1000,
+   "gs_kn": 90.6,
+   "track": 259.19,
+   "lat": 45.651731,
+   "lon": -122.77771
+  },
+  {
+   "hex": "a9ab05",
+   "callsign": "ASA607",
+   "type": "B39M",
+   "alt_ft": 30925,
+   "gs_kn": 452.6,
+   "track": 350.2,
+   "lat": 45.954483,
+   "lon": -122.642792
+  },
+  {
+   "hex": "a97608",
+   "callsign": "ASA509",
+   "type": "B39M",
    "alt_ft": "ground",
-   "gs_kn": 4.8,
+   "gs_kn": 0.0,
    "track": null,
-   "lat": 45.595024,
-   "lon": -122.621138
+   "lat": 45.595985,
+   "lon": -122.620623
+  },
+  {
+   "hex": "a602ab",
+   "callsign": "ASA784",
+   "type": "B739",
+   "alt_ft": "ground",
+   "gs_kn": 0.0,
+   "track": null,
+   "lat": 45.596191,
+   "lon": -122.619329
   },
   {
    "hex": "aabf9a",
@@ -30,18 +70,8 @@
    "alt_ft": "ground",
    "gs_kn": 0.0,
    "track": null,
-   "lat": 45.588867,
+   "lat": 45.588879,
    "lon": -122.614138
-  },
-  {
-   "hex": "a97608",
-   "callsign": "ASA509",
-   "type": "B39M",
-   "alt_ft": "ground",
-   "gs_kn": 13.8,
-   "track": null,
-   "lat": 45.59396,
-   "lon": -122.613602
   }
  ]
 }
