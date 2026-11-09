@@ -1,58 +1,71 @@
 {
- "fetched_at": "2026-11-09T23:16:36Z",
+ "fetched_at": "2026-11-09T23:21:36Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60753,
-   "lon": -122.67763,
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09608,
+   "lon": -122.93056,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 24.5,
+   "heading": 69,
+   "nav_status": 3,
+   "updated": "2026-11-09 23:22:04.31224495 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.63554,
+   "lon": -122.71462,
+   "sog_kn": 7.6,
+   "cog": 124,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-09 23:16:43.633703958 +0000 UTC"
+   "updated": "2026-11-09 23:22:14.813434842 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 181.5,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-09 23:16:48.579839835 +0000 UTC"
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20002,
+   "lon": -123.38545,
+   "sog_kn": 0.1,
+   "cog": 16.3,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-09 23:22:27.953334956 +0000 UTC",
+   "type_code": 99,
+   "destination": "NAKNEK"
   },
   {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58729,
-   "lon": -122.77007,
-   "sog_kn": 0,
-   "cog": 198.5,
-   "heading": 139,
-   "nav_status": 5,
-   "updated": "2026-11-09 23:16:48.922688129 +0000 UTC"
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.5813,
+   "lon": -122.76064,
+   "type_code": 57,
+   "destination": "GASCO",
+   "updated": "2026-11-09 23:22:26.186668276 +0000 UTC"
   },
   {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 46.09062,
-   "lon": -122.93211,
+   "mmsi": 367645170,
+   "name": "CROWN POINT",
+   "lat": 45.65169,
+   "lon": -122.75103,
    "type_code": 52,
-   "destination": "US^0UU4>02MR",
-   "updated": "2026-11-09 23:16:52.168821735 +0000 UTC"
+   "destination": "TBL VANCOUVER",
+   "updated": "2026-11-09 23:22:27.315479903 +0000 UTC"
   },
   {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08983,
-   "lon": -122.92893,
-   "type_code": 52,
-   "destination": "CSR OPS",
-   "updated": "2026-11-09 23:17:08.442442028 +0000 UTC"
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.10005,
+   "lon": -122.94771,
+   "sog_kn": 7.6,
+   "cog": 119.7,
+   "heading": 116,
+   "nav_status": 12,
+   "updated": "2026-11-09 23:22:30.34009393 +0000 UTC"
   }
  ]
 }
