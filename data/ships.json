@@ -1,42 +1,131 @@
 {
- "fetched_at": "2026-11-09T02:45:03Z",
+ "fetched_at": "2026-11-09T02:50:03Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.6454,
+   "lon": -122.73504,
+   "sog_kn": 0,
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-09 02:50:15.24800423 +0000 UTC"
+  },
   {
    "mmsi": 366972000,
    "name": "ESSAYONS",
-   "lat": 46.27136,
-   "lon": -123.48109,
-   "sog_kn": 0.7,
-   "cog": 358.6,
-   "heading": 59,
+   "lat": 46.27199,
+   "lon": -123.48575,
+   "sog_kn": 3.7,
+   "cog": 268.3,
+   "heading": 280,
    "nav_status": 3,
-   "updated": "2026-11-09 02:45:12.681101186 +0000 UTC"
+   "updated": "2026-11-09 02:50:22.536397242 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.02847,
+   "lon": -122.87602,
+   "sog_kn": 0.1,
+   "cog": 233.7,
+   "heading": 153,
+   "nav_status": 5,
+   "updated": "2026-11-09 02:50:22.565605607 +0000 UTC"
+  },
+  {
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.1089,
+   "lon": -122.96125,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-09 02:50:22.689333335 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35742,
+   "sog_kn": 0,
+   "cog": 293,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-09 02:50:25.512588462 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.62768,
+   "lon": -122.69864,
+   "sog_kn": 1.8,
+   "cog": 16.5,
+   "heading": 287,
+   "nav_status": 12,
+   "updated": "2026-11-09 02:50:25.534018817 +0000 UTC"
+  },
+  {
+   "mmsi": 477050900,
+   "name": "MING DE",
+   "lat": 46.02715,
+   "lon": -122.86955,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-09 02:50:25.925658457 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10359,
+   "lon": -122.9101,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-09 02:50:33.345334229 +0000 UTC"
+  },
+  {
+   "mmsi": 477133900,
+   "name": "SHAO SHAN 8",
+   "lat": 45.64395,
+   "lon": -122.74112,
+   "sog_kn": 0,
+   "cog": 196,
+   "heading": 110,
+   "nav_status": 1,
+   "updated": "2026-11-09 02:50:33.951154785 +0000 UTC"
   },
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
-   "lat": 46.07959,
+   "lat": 46.07958,
    "lon": -122.90164,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-09 02:45:34.135771731 +0000 UTC",
    "sog_kn": 0,
-   "cog": 246.1,
-   "heading": 138,
-   "nav_status": 0
+   "cog": 274.4,
+   "heading": 137,
+   "nav_status": 0,
+   "updated": "2026-11-09 02:50:34.132204141 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61291,
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.61219,
+   "lon": -122.6452,
    "sog_kn": 0,
-   "cog": 201.7,
-   "heading": 133,
-   "nav_status": 15,
-   "updated": "2026-11-09 02:45:27.6132744 +0000 UTC"
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-09 02:50:34.550326515 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58131,
+   "lon": -122.76065,
+   "type_code": 57,
+   "destination": "GASCO",
+   "updated": "2026-11-09 02:50:36.434078231 +0000 UTC"
   }
  ]
 }
