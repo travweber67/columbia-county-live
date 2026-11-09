@@ -1,66 +1,58 @@
 {
- "fetched_at": "2026-11-09T22:31:33Z",
+ "fetched_at": "2026-11-09T22:36:33Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 46.08971,
-   "lon": -122.929,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37715,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 22:36:38.250562489 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.9101,
+   "sog_kn": 0,
+   "cog": 255.3,
+   "heading": 73,
+   "nav_status": 0,
+   "updated": "2026-11-09 22:36:41.120693227 +0000 UTC"
+  },
+  {
+   "mmsi": 367513120,
+   "name": "CASCADES",
+   "lat": 45.68538,
+   "lon": -122.77374,
    "type_code": 52,
-   "destination": "US^0UJB>0UJB",
-   "updated": "2026-11-09 22:31:41.790434152 +0000 UTC"
+   "destination": "US^11MS>02MR",
+   "updated": "2026-11-09 22:36:42.830988073 +0000 UTC"
   },
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64362,
-   "lon": -122.75296,
-   "type_code": 52,
-   "updated": "2026-11-09 22:31:47.607832808 +0000 UTC"
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.16225,
+   "lon": -123.40889,
+   "sog_kn": 0.1,
+   "cog": 252.7,
+   "heading": 135,
+   "nav_status": 0,
+   "updated": "2026-11-09 22:36:53.191592514 +0000 UTC"
   },
   {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.81071,
-   "lon": -122.79041,
-   "type_code": 52,
-   "destination": "US^0RFZ>?? ???",
-   "updated": "2026-11-09 22:31:58.025011441 +0000 UTC",
-   "sog_kn": 5.9,
-   "cog": 351.7,
-   "heading": 351,
-   "nav_status": 0
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10788,
-   "lon": -122.95906,
-   "type_code": 50,
-   "destination": "CR HARBOR OPS",
-   "updated": "2026-11-09 22:31:52.145011209 +0000 UTC"
-  },
-  {
-   "mmsi": 538012377,
-   "name": "UNION SAPPHIRE",
-   "lat": 46.09425,
-   "lon": -122.93748,
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.6454,
+   "lon": -122.73503,
    "type_code": 70,
-   "destination": "CN TAC",
-   "updated": "2026-11-09 22:31:57.432932238 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 46.16141,
-   "lon": -123.07723,
-   "sog_kn": 7.9,
-   "cog": 118,
-   "heading": 109,
-   "nav_status": 12,
-   "updated": "2026-11-09 22:32:00.578698843 +0000 UTC"
+   "destination": "PER ORDERS",
+   "updated": "2026-11-09 22:36:54.980405718 +0000 UTC"
   }
  ]
 }
