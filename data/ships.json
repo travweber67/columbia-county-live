@@ -1,41 +1,82 @@
 {
- "fetched_at": "2026-11-09T18:21:14Z",
+ "fetched_at": "2026-11-09T18:26:14Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.07948,
-   "lon": -122.90191,
+   "lat": 46.07943,
+   "lon": -122.9019,
    "sog_kn": 0.1,
-   "cog": 76.9,
-   "heading": 133,
+   "cog": 185.3,
+   "heading": 115,
    "nav_status": 0,
-   "updated": "2026-11-09 18:21:27.22665191 +0000 UTC"
+   "updated": "2026-11-09 18:26:28.678377017 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.61291,
-   "type_code": 0,
-   "updated": "2026-11-09 18:21:38.233994732 +0000 UTC",
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.77328,
+   "lon": -122.76672,
+   "sog_kn": 5.2,
+   "cog": 159.5,
+   "heading": 160,
+   "nav_status": 0,
+   "updated": "2026-11-09 18:26:29.305936525 +0000 UTC"
+  },
+  {
+   "mmsi": 477050900,
+   "name": "MING DE",
+   "lat": 46.02715,
+   "lon": -122.86956,
    "sog_kn": 0,
-   "cog": 200.1,
-   "heading": 134,
-   "nav_status": 15
+   "cog": 319.8,
+   "heading": 138,
+   "nav_status": 5,
+   "updated": "2026-11-09 18:26:29.601437066 +0000 UTC"
   },
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.26301,
-   "lon": -123.45675,
-   "sog_kn": 1.7,
-   "cog": 123.3,
-   "heading": 135,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07075,
+   "lon": -122.89419,
+   "sog_kn": 0,
+   "cog": 103.8,
+   "heading": 77,
+   "nav_status": 0,
+   "updated": "2026-11-09 18:26:34.068222031 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10354,
+   "lon": -122.9101,
+   "sog_kn": 0,
+   "cog": 83.5,
+   "heading": 77,
    "nav_status": 3,
-   "updated": "2026-11-09 18:21:33.312221849 +0000 UTC"
+   "updated": "2026-11-09 18:26:34.103499158 +0000 UTC"
+  },
+  {
+   "mmsi": 367513120,
+   "name": "CASCADES",
+   "lat": 46.03288,
+   "lon": -122.87719,
+   "sog_kn": 9.5,
+   "cog": 341.3,
+   "heading": 347,
+   "nav_status": 12,
+   "updated": "2026-11-09 18:26:42.469100582 +0000 UTC"
+  },
+  {
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 46.14284,
+   "lon": -123.34849,
+   "type_code": 70,
+   "destination": "BR SSZ",
+   "updated": "2026-11-09 18:26:45.191060126 +0000 UTC"
   }
  ]
 }
