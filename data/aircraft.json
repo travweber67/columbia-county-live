@@ -1,117 +1,127 @@
 {
- "fetched_at": "2026-11-09T21:26:29Z",
+ "fetched_at": "2026-11-09T21:27:47Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
+   "hex": "ab7b67",
+   "callsign": "N839SP",
+   "type": "C172",
+   "alt_ft": 4100,
+   "gs_kn": 120.4,
+   "track": 318.37,
+   "lat": 45.627045,
+   "lon": -123.195994
+  },
+  {
    "hex": "ab6471",
    "callsign": "N833KX",
    "type": "C172",
-   "alt_ft": 3950,
-   "gs_kn": 65.0,
-   "track": 216.87,
-   "lat": 45.784653,
-   "lon": -123.10462
-  },
-  {
-   "hex": "a8a82f",
-   "callsign": "QXE2458",
-   "type": "E75L",
-   "alt_ft": 37000,
-   "gs_kn": 393.1,
-   "track": 175.77,
-   "lat": 45.714065,
-   "lon": -123.070015
+   "alt_ft": 4000,
+   "gs_kn": 65.8,
+   "track": 204.23,
+   "lat": 45.756195,
+   "lon": -123.134216
   },
   {
    "hex": "a07bfa",
    "callsign": "N130JA",
    "type": "C172",
    "alt_ft": 6000,
-   "gs_kn": 136.7,
-   "track": 354.12,
-   "lat": 46.03602,
-   "lon": -123.065277
+   "gs_kn": 132.9,
+   "track": 353.52,
+   "lat": 46.106035,
+   "lon": -123.074478
   },
   {
    "hex": "c05fba",
    "callsign": "CGKGN",
    "type": "CL60",
    "alt_ft": 37000,
-   "gs_kn": 418.1,
-   "track": 178.63,
-   "lat": 46.22735,
-   "lon": -123.00396
+   "gs_kn": 420.1,
+   "track": 178.64,
+   "lat": 46.006119,
+   "lon": -122.996097
   },
   {
-   "hex": "a70aa1",
-   "callsign": "ASA709",
-   "type": "B738",
-   "alt_ft": 2975,
-   "gs_kn": 204.3,
-   "track": 70.86,
-   "lat": 45.69023,
-   "lon": -122.907623
+   "hex": "a8dd2c",
+   "callsign": "QXE2269",
+   "type": "E195",
+   "alt_ft": 2950,
+   "gs_kn": 169.6,
+   "track": 155.25,
+   "lat": 45.708385,
+   "lon": -122.871094
   },
   {
    "hex": "aaaec0",
    "callsign": "CFS101",
    "type": "C208",
    "alt_ft": "ground",
-   "gs_kn": 0.0,
-   "track": null,
-   "lat": 45.764527,
-   "lon": -122.859026
+   "gs_kn": 16.5,
+   "track": 348.75,
+   "lat": 45.766599,
+   "lon": -122.859592
   },
   {
-   "hex": "a8dd2c",
-   "callsign": "QXE2269",
-   "type": "E195",
-   "alt_ft": 3975,
-   "gs_kn": 218.9,
-   "track": 280.8,
-   "lat": 45.756381,
-   "lon": -122.784988
-  },
-  {
-   "hex": "a29cbf",
-   "callsign": "ASA1467",
-   "type": "B739",
-   "alt_ft": 1950,
-   "gs_kn": 157.5,
-   "track": 118.84,
-   "lat": 45.642002,
-   "lon": -122.742279
-  },
-  {
-   "hex": "ab148b",
-   "callsign": "ASA251",
-   "type": "B38M",
-   "alt_ft": 1325,
-   "gs_kn": 124.9,
-   "track": 119.23,
-   "lat": 45.627152,
-   "lon": -122.678833
+   "hex": "a69424",
+   "callsign": "ASA1355",
+   "type": "B738",
+   "alt_ft": 4200,
+   "gs_kn": 236.1,
+   "track": 305.17,
+   "lat": 45.597839,
+   "lon": -122.85582
   },
   {
    "hex": "a163c2",
    "callsign": "SKW3430",
    "type": "E75L",
-   "alt_ft": 5300,
-   "gs_kn": 233.2,
-   "track": 298.98,
-   "lat": 45.71616,
-   "lon": -122.663452
+   "alt_ft": 4025,
+   "gs_kn": 211.3,
+   "track": 298.87,
+   "lat": 45.7733,
+   "lon": -122.804975
   },
   {
-   "hex": "a65408",
-   "callsign": "AAL562",
-   "type": "A321",
-   "alt_ft": "ground",
-   "gs_kn": 2.8,
-   "track": null,
-   "lat": 45.594933,
-   "lon": -122.620954
+   "hex": "a70aa1",
+   "callsign": "ASA709",
+   "type": "B738",
+   "alt_ft": 2650,
+   "gs_kn": 162.4,
+   "track": 118.3,
+   "lat": 45.660018,
+   "lon": -122.788628
+  },
+  {
+   "hex": "a9cecd",
+   "callsign": "ASA1358",
+   "type": "B39M",
+   "alt_ft": 5925,
+   "gs_kn": 203.0,
+   "track": 296.31,
+   "lat": 45.722258,
+   "lon": -122.684738
+  },
+  {
+   "hex": "a449e5",
+   "callsign": "DAL2508",
+   "type": "B738",
+   "alt_ft": 28175,
+   "gs_kn": 467.9,
+   "track": 350.16,
+   "lat": 46.061188,
+   "lon": -122.669052
+  },
+  {
+   "hex": "a29cbf",
+   "callsign": "ASA1467",
+   "type": "B739",
+   "alt_ft": 500,
+   "gs_kn": 139.7,
+   "track": 119.13,
+   "lat": 45.606855,
+   "lon": -122.651642
   }
  ]
 }
