@@ -1,80 +1,58 @@
 {
- "fetched_at": "2026-11-09T05:10:15Z",
+ "fetched_at": "2026-11-09T05:15:16Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10358,
+   "lon": -122.91012,
+   "sog_kn": 0,
+   "cog": 83.5,
+   "heading": 75,
+   "nav_status": 3,
+   "updated": "2026-11-09 05:15:24.387552115 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08969,
+   "lon": -122.92906,
+   "sog_kn": 0,
+   "cog": 48.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 05:15:28.158295878 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07959,
+   "lon": -122.90165,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-09 05:15:29.363559337 +0000 UTC"
+  },
   {
    "mmsi": 367315790,
    "name": "LORI B.",
-   "lat": 46.05785,
-   "lon": -122.88585,
-   "sog_kn": 4.2,
-   "cog": 163.8,
-   "heading": 166,
-   "nav_status": 0,
-   "updated": "2026-11-09 05:10:22.031874607 +0000 UTC"
+   "lat": 46.05216,
+   "lon": -122.88361,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-09 05:15:35.770798536 +0000 UTC"
   },
   {
-   "mmsi": 368082970,
-   "name": "AMERICAN.HARMONY",
-   "lat": 46.18206,
-   "lon": -123.18679,
-   "sog_kn": 10.8,
-   "cog": 64.3,
-   "heading": 63,
-   "nav_status": 0,
-   "updated": "2026-11-09 05:10:23.169268213 +0000 UTC"
-  },
-  {
-   "mmsi": 538006097,
-   "name": "AD ASTRA",
-   "lat": 45.64309,
-   "lon": -122.77126,
-   "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-09 05:10:25.995204589 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64789,
-   "lon": -122.74096,
-   "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-09 05:10:28.552977774 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.07953,
-   "lon": -122.90193,
+   "mmsi": 563116100,
+   "name": "OCEAN GOLD",
+   "lat": 45.99837,
+   "lon": -122.85194,
    "sog_kn": 0,
-   "cog": 331.5,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 05:10:42.790997481 +0000 UTC"
-  },
-  {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58729,
-   "lon": -122.77007,
-   "sog_kn": 0,
-   "cog": 337.2,
-   "heading": 139,
-   "nav_status": 5,
-   "updated": "2026-11-09 05:10:47.31972848 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 45.64334,
-   "lon": -122.7528,
-   "sog_kn": 0,
-   "cog": 257.1,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-09 05:10:48.481279123 +0000 UTC"
+   "cog": 341.9,
+   "heading": 164,
+   "nav_status": 1,
+   "updated": "2026-11-09 05:15:43.598617035 +0000 UTC"
   }
  ]
 }
