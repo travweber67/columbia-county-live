@@ -1,67 +1,47 @@
 {
- "fetched_at": "2026-11-09T15:36:02Z",
+ "fetched_at": "2026-11-09T15:41:03Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
-   "hex": "ab5c12",
-   "callsign": "AAL168",
-   "type": "B789",
-   "alt_ft": 36975,
-   "gs_kn": 534.1,
-   "track": 86.24,
-   "lat": 45.713287,
-   "lon": -123.384437
-  },
-  {
-   "hex": "a56866",
-   "callsign": "ASA68",
-   "type": "B739",
-   "alt_ft": 28200,
-   "gs_kn": 445.9,
-   "track": 352.4,
-   "lat": 46.152466,
-   "lon": -122.688614
-  },
-  {
-   "hex": "a8dd2c",
-   "callsign": "QXE2268",
-   "type": "E195",
-   "alt_ft": "ground",
-   "gs_kn": 0.0,
-   "track": null,
-   "lat": 45.594856,
-   "lon": -122.620726
-  },
-  {
-   "hex": "a28de3",
-   "callsign": "ASA358",
-   "type": "B739",
-   "alt_ft": "ground",
-   "gs_kn": 1.9,
-   "track": null,
-   "lat": 45.595997,
-   "lon": -122.620602
-  },
-  {
-   "hex": "a84a55",
-   "callsign": "QXE2476",
-   "type": "E75L",
-   "alt_ft": "ground",
-   "gs_kn": 2.8,
-   "track": null,
-   "lat": 45.596329,
-   "lon": -122.619966
+   "hex": "ab52c7",
+   "callsign": "N829F",
+   "type": "FOX",
+   "alt_ft": 2175,
+   "gs_kn": 91.2,
+   "track": 282.67,
+   "lat": 45.941752,
+   "lon": -122.76638
   },
   {
    "hex": "a8a0c1",
    "callsign": "QXE2074",
    "type": "E75L",
    "alt_ft": "ground",
-   "gs_kn": 14.2,
+   "gs_kn": 4.8,
    "track": null,
-   "lat": 45.595578,
-   "lon": -122.617756
+   "lat": 45.595024,
+   "lon": -122.621138
+  },
+  {
+   "hex": "aabf9a",
+   "callsign": "N792BP",
+   "type": "PC24",
+   "alt_ft": "ground",
+   "gs_kn": 0.0,
+   "track": null,
+   "lat": 45.588867,
+   "lon": -122.614138
+  },
+  {
+   "hex": "a97608",
+   "callsign": "ASA509",
+   "type": "B39M",
+   "alt_ft": "ground",
+   "gs_kn": 13.8,
+   "track": null,
+   "lat": 45.59396,
+   "lon": -122.613602
   }
  ]
 }
