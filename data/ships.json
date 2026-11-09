@@ -1,29 +1,84 @@
 {
- "fetched_at": "2026-11-09T10:10:38Z",
+ "fetched_at": "2026-11-09T10:15:38Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 232038703,
-   "name": "IONIAN SEA",
-   "lat": 45.63745,
-   "lon": -122.70899,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10357,
+   "lon": -122.9101,
    "sog_kn": 0,
-   "cog": 3.5,
-   "heading": 303,
-   "nav_status": 5,
-   "updated": "2026-11-09 10:10:51.062010607 +0000 UTC"
+   "cog": 83.5,
+   "heading": 77,
+   "nav_status": 3,
+   "updated": "2026-11-09 10:15:45.332393857 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.62901,
-   "lon": -122.69721,
-   "sog_kn": 2.1,
-   "cog": 310.9,
-   "heading": 245,
-   "nav_status": 3,
-   "updated": "2026-11-09 10:10:51.10085443 +0000 UTC"
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.17209,
+   "lon": -123.10652,
+   "sog_kn": 0.1,
+   "cog": 87.1,
+   "heading": 12,
+   "nav_status": 1,
+   "updated": "2026-11-09 10:15:50.91760095 +0000 UTC",
+   "type_code": 70,
+   "destination": "USVAN"
+  },
+  {
+   "mmsi": 563116100,
+   "name": "OCEAN GOLD",
+   "lat": 45.99835,
+   "lon": -122.85181,
+   "sog_kn": 0,
+   "cog": 341.9,
+   "heading": 163,
+   "nav_status": 1,
+   "updated": "2026-11-09 10:15:48.345659064 +0000 UTC"
+  },
+  {
+   "mmsi": 352005064,
+   "name": "ANSAC RISING SUN",
+   "lat": 45.60108,
+   "lon": -122.77447,
+   "sog_kn": 0,
+   "cog": 202.8,
+   "heading": 277,
+   "nav_status": 5,
+   "updated": "2026-11-09 10:15:50.22512567 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58762,
+   "lon": -122.77048,
+   "sog_kn": 0,
+   "cog": 208.8,
+   "heading": 141,
+   "nav_status": 0,
+   "updated": "2026-11-09 10:16:00.719280876 +0000 UTC"
+  },
+  {
+   "mmsi": 367315790,
+   "name": "LORI B.",
+   "lat": 45.68584,
+   "lon": -122.77322,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-09 10:16:03.912030163 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.02857,
+   "lon": -122.87616,
+   "sog_kn": 0.1,
+   "cog": 43.9,
+   "heading": 137,
+   "nav_status": 0,
+   "updated": "2026-11-09 10:16:08.76021254 +0000 UTC"
   }
  ]
 }
