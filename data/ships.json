@@ -1,8 +1,43 @@
 {
- "fetched_at": "2026-11-09T03:35:07Z",
+ "fetched_at": "2026-11-09T03:40:08Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.09909,
+   "lon": -122.93935,
+   "type_code": 70,
+   "destination": "USA LONGVIEW",
+   "updated": "2026-11-09 03:40:17.34554887 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 127.5,
+   "heading": 110,
+   "nav_status": 5
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58131,
+   "lon": -122.76064,
+   "sog_kn": 0,
+   "cog": 212.3,
+   "heading": 122,
+   "nav_status": 0,
+   "updated": "2026-11-09 03:40:27.079937004 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64828,
+   "lon": -122.74242,
+   "sog_kn": 0,
+   "cog": 343.3,
+   "heading": 113,
+   "nav_status": 12,
+   "updated": "2026-11-09 03:40:30.29071871 +0000 UTC"
+  },
   {
    "mmsi": 367380280,
    "name": "WESTERN STAR",
@@ -10,115 +45,42 @@
    "lon": -123.40233,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 136,
+   "heading": 133,
    "nav_status": 0,
-   "updated": "2026-11-09 03:35:13.791303434 +0000 UTC"
+   "updated": "2026-11-09 03:40:33.880847108 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.63293,
-   "lon": -122.70467,
-   "sog_kn": 0.6,
-   "cog": 130.6,
-   "heading": 124,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65007,
+   "lon": -122.74767,
+   "sog_kn": 0,
+   "cog": 275.3,
+   "heading": 511,
    "nav_status": 3,
-   "updated": "2026-11-09 03:35:17.211253899 +0000 UTC"
+   "updated": "2026-11-09 03:40:39.900156341 +0000 UTC"
   },
   {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 46.08968,
-   "lon": -122.92897,
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58752,
+   "lon": -122.77047,
    "sog_kn": 0,
-   "cog": 134.2,
-   "heading": 511,
+   "cog": 294.4,
+   "heading": 141,
    "nav_status": 0,
-   "updated": "2026-11-09 03:35:18.719255696 +0000 UTC"
+   "updated": "2026-11-09 03:40:39.96721292 +0000 UTC"
   },
   {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 46.09045,
-   "lon": -122.93228,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.2,
+   "lon": -123.38549,
    "sog_kn": 0,
-   "cog": 259.3,
+   "cog": 349,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-09 03:35:19.805623266 +0000 UTC"
-  },
-  {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60751,
-   "lon": -122.67745,
-   "sog_kn": 0.1,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 03:35:23.119450246 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00879,
-   "lon": -122.84901,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 03:35:24.500486691 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10356,
-   "lon": -122.91013,
-   "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 75,
-   "nav_status": 3,
-   "updated": "2026-11-09 03:35:24.70766692 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07974,
-   "lon": -122.90205,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 318,
-   "nav_status": 3,
-   "updated": "2026-11-09 03:35:28.139753348 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64788,
-   "lon": -122.74099,
-   "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-09 03:35:37.703573235 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.75402,
-   "lon": -122.76324,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-09 03:35:39.116835768 +0000 UTC"
-  },
-  {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59407,
-   "lon": -122.77215,
-   "sog_kn": 0,
-   "cog": 338.3,
-   "heading": 149,
-   "nav_status": 5,
-   "updated": "2026-11-09 03:35:41.673793132 +0000 UTC"
+   "nav_status": 15,
+   "updated": "2026-11-09 03:40:40.17766665 +0000 UTC"
   }
  ]
 }
