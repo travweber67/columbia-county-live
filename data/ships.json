@@ -1,80 +1,64 @@
 {
- "fetched_at": "2026-11-09T09:45:36Z",
+ "fetched_at": "2026-11-09T09:50:36Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 45.63745,
+   "lon": -122.709,
+   "type_code": 70,
+   "destination": "BR SSZ",
+   "updated": "2026-11-09 09:50:45.236276238 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.1772,
+   "lon": -123.35744,
+   "type_code": 30,
+   "updated": "2026-11-09 09:50:49.986729573 +0000 UTC"
+  },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 45.63199,
-   "lon": -122.70284,
-   "sog_kn": 0.6,
-   "cog": 125.7,
-   "heading": 129,
+   "lat": 45.63037,
+   "lon": -122.70114,
+   "sog_kn": 1.8,
+   "cog": 139.7,
+   "heading": 134,
    "nav_status": 3,
-   "updated": "2026-11-09 09:45:41.383206582 +0000 UTC"
+   "updated": "2026-11-09 09:50:51.144928526 +0000 UTC"
   },
   {
-   "mmsi": 338616000,
-   "name": "DUBLIN SEA",
-   "lat": 45.80985,
-   "lon": -122.79423,
-   "type_code": 57,
-   "destination": "US OTS",
-   "updated": "2026-11-09 09:45:44.997631302 +0000 UTC"
-  },
-  {
-   "mmsi": 367516730,
-   "name": "CRISTY T",
-   "lat": 45.61212,
-   "lon": -122.64533,
-   "sog_kn": 0,
-   "cog": 282,
-   "heading": 298,
-   "nav_status": 5,
-   "updated": "2026-11-09 09:45:47.677773558 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65043,
-   "lon": -122.74777,
-   "sog_kn": 0,
-   "cog": 306.6,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-09 09:45:59.086350252 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
+   "mmsi": 367513190,
+   "name": "PORTLAND",
    "lat": 45.64347,
-   "lon": -122.7525,
+   "lon": -122.75283,
    "type_code": 52,
-   "destination": "US^0UU4>02MR",
-   "updated": "2026-11-09 09:46:02.272729154 +0000 UTC"
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-09 09:50:51.343261964 +0000 UTC"
   },
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20002,
-   "lon": -123.38536,
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00905,
+   "lon": -122.8482,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 360,
    "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-09 09:46:04.656658217 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-09 09:50:56.681742314 +0000 UTC"
   },
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.75275,
-   "lon": -122.76031,
-   "sog_kn": 8.5,
-   "cog": 358.2,
-   "heading": 357,
-   "nav_status": 0,
-   "updated": "2026-11-09 09:46:06.328440511 +0000 UTC"
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.11011,
+   "lon": -122.9634,
+   "type_code": 70,
+   "destination": "CN TAC",
+   "updated": "2026-11-09 09:51:02.227699706 +0000 UTC"
   }
  ]
 }
