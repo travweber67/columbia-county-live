@@ -30,12 +30,12 @@
 if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
-<link rel="manifest" href="manifest.webmanifest?v=54">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=54">
+<link rel="manifest" href="manifest.webmanifest?v=55">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=55">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=54">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=54">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=54">
+<link rel="stylesheet" href="style.css?v=55">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=55">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=55">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
      only page backgrounds first paint needs — warm them with the hero.
      Every other view's photo is lazy-attached by app.js. -->
@@ -223,29 +223,39 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="founding-panel" id="founding-panel" aria-label="Founding sponsors of Columbia County Live">
   <div class="founding-inner">
-    <p class="founding-eyebrow">Presented by our Founding Sponsors</p>
+    <p class="founding-eyebrow" data-i18n="fseyebrow">Presented by our Founding Sponsors</p>
+    <!-- v55: the panel is the three founding spots themselves, shown
+         exactly as a prospect would ask to see them — spot 1 claimed
+         (generic taken state; the sponsor's own name and card join the
+         panel only when they approve their preview), spots 2 and 3
+         open invitations. The two house cells that used to fill this
+         grid now live permanently in Today's flow (before Tonight &
+         Tomorrow and before the County Briefing — the same spots the
+         v6 phone mover used to carry them to). -->
     <div class="founding-cells">
+      <article class="founding-cell taken">
+        <div class="ghost-logo claimed" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fs1box">Spot claimed</span></div>
+        <p class="cell-eyebrow" data-i18n="fs1eyebrow">Founding Sponsor · Spot 1 of 3 — Taken</p>
+        <h3 data-i18n="fs1h3">This spot is claimed</h3>
+        <p data-i18n="fs1p">Our first founding sponsor has taken this spot. Their name joins this panel as soon as their card is approved — and stays here for good, at the locked founding rate.</p>
+        <a class="founding-cta alt" href="sponsor.html#founding" data-i18n="fs1cta">See the two spots still open &rarr;</a>
+      </article>
       <article class="founding-cell invite">
-        <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span>Your logo here</span></div>
-        <p class="cell-eyebrow">Founding Sponsor — 3 of 3 remaining</p>
-        <h3>Presented by — your business here</h3>
-        <p>Columbia County Live is signing exactly three founding sponsors. Their names stay on this panel for good, and their $49/mo rate never rises while they&rsquo;re with us.</p>
-        <a class="founding-cta" href="sponsor.html#founding">Become a founding sponsor &rarr;</a>
+        <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
+        <p class="cell-eyebrow" data-i18n="fs2eyebrow">Founding Sponsor · Spot 2 of 3 — Open</p>
+        <h3 data-i18n="fs2h3">Your business here</h3>
+        <p data-i18n="fs2p">One of only three founding spots, ever — your name and logo on the panel every visitor sees first. $49/mo, locked while you stay, and a free 30-day pilot before you pay anything.</p>
+        <a class="founding-cta" href="sponsor.html#founding" data-i18n="fs2cta">Claim spot 2 &rarr;</a>
       </article>
-      <article class="founding-cell house" id="founding-cell-watch">
-        <p class="cell-eyebrow">Never miss a change</p>
-        <h3>Get told when the county changes</h3>
-        <p>The County Watch checks the National Weather Service, the bridge and the ferry every two minutes while this page is open — and tells you the moment something new posts.</p>
-        <a class="founding-cta alt" href="#watch-card">Start the County Watch &rarr;</a>
-      </article>
-      <article class="founding-cell house" id="founding-cell-nonprofit">
-        <p class="cell-eyebrow">Community notice</p>
-        <h3>Free placement for local nonprofits</h3>
-        <p>This space rotates free notices for Columbia County nonprofits — food banks, libraries, volunteer fire &amp; EMS recruitment. A community service, not an ad.</p>
-        <a class="founding-cta alt" href="sponsor.html#community">How community notices work &rarr;</a>
+      <article class="founding-cell invite">
+        <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
+        <p class="cell-eyebrow" data-i18n="fs3eyebrow">Founding Sponsor · Spot 3 of 3 — Open</p>
+        <h3 data-i18n="fs3h3">Your business here</h3>
+        <p data-i18n="fs3p">One of only three founding spots, ever — your name and logo on the panel every visitor sees first. $49/mo, locked while you stay, and a free 30-day pilot before you pay anything.</p>
+        <a class="founding-cta" href="sponsor.html#founding" data-i18n="fs3cta">Claim spot 3 &rarr;</a>
       </article>
     </div>
-    <p class="founding-foot">Every founding sponsor keeps a permanent &ldquo;Founding Sponsor &middot; 2026&rdquo; badge and a place on the Community Partners wall below — even if they later change tiers.</p>
+    <p class="founding-foot" data-i18n="fsfoot">Every founding sponsor keeps a permanent &ldquo;Founding Sponsor &middot; 2026&rdquo; badge and a place on the Community Partners wall below — even if they later change tiers. Founding closes January 31, 2027 — after that, no new founding sponsors ever.</p>
   </div>
 </section>
 
@@ -326,6 +336,16 @@ document.documentElement.setAttribute("data-theme",t);})();
   <p class="card-note small">The checks use the same official sources as the rest of this page, at the moment you look. A green verdict is a snapshot, not a promise — weather, the corridor, and the river can all change after you've left.</p>
 </section>
 
+<!-- v55: the founding panel's County Watch house cell lives here in
+     Today's flow permanently (it used to sit in the panel grid on
+     desktop and be moved here on phones by app.js). -->
+<article class="founding-cell house in-flow" id="founding-cell-watch">
+  <p class="cell-eyebrow">Never miss a change</p>
+  <h3>Get told when the county changes</h3>
+  <p>The County Watch checks the National Weather Service, the bridge and the ferry every two minutes while this page is open — and tells you the moment something new posts.</p>
+  <a class="founding-cta alt" href="#watch-card">Start the County Watch &rarr;</a>
+</article>
+
 <section class="card plan-card" id="plan-card" aria-label="Tonight and tomorrow — the evening planning brief">
   <div class="card-head">
     <h2 data-i18n="planh2">🌙 Tonight &amp; tomorrow</h2>
@@ -355,6 +375,16 @@ document.documentElement.setAttribute("data-theme",t);})();
   </div>
   <p class="card-note small" data-i18n="schoolsnote2">No automated closure feed exists for these districts, so this board is updated by hand on storm mornings — and a district&rsquo;s own site is always the final word for your family.</p>
 </section>
+
+<!-- v55: the founding panel's nonprofit house cell lives here in
+     Today's flow permanently (same relocation as the County Watch
+     cell above). -->
+<article class="founding-cell house in-flow" id="founding-cell-nonprofit">
+  <p class="cell-eyebrow">Community notice</p>
+  <h3>Free placement for local nonprofits</h3>
+  <p>This space rotates free notices for Columbia County nonprofits — food banks, libraries, volunteer fire &amp; EMS recruitment. A community service, not an ad.</p>
+  <a class="founding-cta alt" href="sponsor.html#community">How community notices work &rarr;</a>
+</article>
 
 <section class="card band-card briefing-card" id="briefing-card" aria-label="The county briefing — today's summary, ready to copy and share">
       <div class="card-band" aria-hidden="true"><img src="img/dusk/ticker-panorama.jpg" alt="" loading="lazy" decoding="async"></div>
@@ -716,7 +746,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <section class="sponsor-top" aria-label="Sponsor spotlight — the local businesses that keep this page free">
   <p class="cell-eyebrow">Sponsor spotlight</p>
   <h2>The local businesses that keep this page free</h2>
-  <p>Columbia County Live carries no ad network and no paywall — a small number of local businesses fund it with named spots like this one. The first three become Founding Sponsors: their names stay on the Today page for good, at a $49/mo rate that never rises while they&rsquo;re with us. <strong>0 of 3 claimed so far.</strong></p>
+  <p>Columbia County Live carries no ad network and no paywall — a small number of local businesses fund it with named spots like this one. The first three become Founding Sponsors: their names stay on the Today page for good, at a $49/mo rate that never rises while they&rsquo;re with us. <strong>1 of 3 claimed so far.</strong></p>
   <a class="founding-cta" href="sponsor.html#founding">See the founding sponsor spots &rarr;</a>
 </section>
 
@@ -1167,7 +1197,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=54"></script>
+<script src="app.js?v=55"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>

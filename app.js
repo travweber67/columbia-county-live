@@ -5753,6 +5753,22 @@ const LANG_ES = {
   tabtravel: 'Viajes',
   taboutdoors: 'Aire libre',
   tabmore: 'Eventos y más',
+  fseyebrow: 'Presentado por nuestros patrocinadores fundadores',
+  fs1box: 'Lugar reclamado',
+  fs1eyebrow: 'Patrocinador fundador · Lugar 1 de 3 — Ocupado',
+  fs1h3: 'Este lugar ya está reclamado',
+  fs1p: 'Nuestro primer patrocinador fundador ya tomó este lugar. Su nombre se suma a este panel en cuanto se apruebe su tarjeta — y se queda aquí para siempre, con la tarifa fundadora bloqueada.',
+  fs1cta: 'Ver los dos lugares que quedan &rarr;',
+  fslogohere: 'Tu logo aquí',
+  fs2eyebrow: 'Patrocinador fundador · Lugar 2 de 3 — Disponible',
+  fs2h3: 'Tu negocio aquí',
+  fs2p: 'Uno de solo tres lugares fundadores, para siempre — tu nombre y logo en el panel que todo visitante ve primero. $49/mes, bloqueado mientras te quedes, y una prueba gratuita de 30 días antes de pagar algo.',
+  fs2cta: 'Reclama el lugar 2 &rarr;',
+  fs3eyebrow: 'Patrocinador fundador · Lugar 3 de 3 — Disponible',
+  fs3h3: 'Tu negocio aquí',
+  fs3p: 'Uno de solo tres lugares fundadores, para siempre — tu nombre y logo en el panel que todo visitante ve primero. $49/mes, bloqueado mientras te quedes, y una prueba gratuita de 30 días antes de pagar algo.',
+  fs3cta: 'Reclama el lugar 3 &rarr;',
+  fsfoot: 'Cada patrocinador fundador conserva una insignia permanente de «Patrocinador Fundador · 2026» y un lugar en el muro de Socios Comunitarios de abajo — aunque después cambie de nivel. El período fundador cierra el 31 de enero de 2027 — después de eso, nunca más habrá patrocinadores fundadores nuevos.',
   commuteh2: '🚗 El veredicto del viaje',
   commutenote: 'La respuesta en una línea para manejar ahora mismo. El panorama completo del corredor — puente, incidentes y cámaras — está en la pestaña Viajes.',
   driveh2: '🧭 Tu viaje — ¿cuánto dura el manejo?',
@@ -7854,8 +7870,8 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
   if (!overlay) return;
   var PHOTO_MS = 16000;      // dwell per photo — a slow ambient cycle
   var QUIET = [
-    { en: 'Presented by — your business here · Founding Sponsor · $49/mo · 0 of 3 claimed',
-      es: 'Presentado por — su negocio aquí · Patrocinador Fundador · $49/mes · 0 de 3 reclamados' },
+    { en: 'Presented by — your business here · Founding Sponsor · $49/mo · 1 of 3 claimed',
+      es: 'Presentado por — su negocio aquí · Patrocinador Fundador · $49/mes · 1 de 3 reclamados' },
     { en: 'These photographs come from the county itself — share yours from the Events & More tab',
       es: 'Estas fotografías vienen del propio condado — comparte la tuya desde la pestaña Eventos y Más' },
     null /* a beat of nothing — the quiet line rests every third photo */
@@ -8346,50 +8362,15 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
   };
 })();
 
-/* ---------- v6: mobile sponsor spacing (Today) ----------
-   Research rule: no cluttered above-the-fold ad stacks on phones —
-   sponsor-format cards belong BETWEEN content modules, and a view
-   keeps ONE true invitation up top. At phone widths (where the
-   founding panel stacks into a single column, ≤760px) the panel
-   keeps only the founding invitation; its two house cells — County
-   Watch and the nonprofit notice — move down into Today's flow,
-   spaced between content sections: County Watch lands just before
-   Tonight & Tomorrow, the nonprofit notice just before the County
-   Briefing. They are never adjacent to each other or to the panel.
-   Wider layouts are untouched — the full panel and the rails stay
-   exactly as built. The cells are MOVED, never duplicated, so ids,
-   links and reading order stay single and honest at every width. */
-(function initMobileSponsorSpacing() {
-  var watch = document.getElementById('founding-cell-watch');
-  var nonp = document.getElementById('founding-cell-nonprofit');
-  var plan = document.getElementById('plan-card');
-  var briefing = document.getElementById('briefing-card');
-  if (!watch || !nonp || !plan || !briefing || !plan.parentNode || !briefing.parentNode) return;
-  var homes = [watch, nonp].map(function (el) {
-    return { el: el, parent: el.parentNode, next: el.nextSibling };
-  });
-  var mq = null;
-  try { mq = window.matchMedia('(max-width: 760px)'); } catch (e) { /* no mq: desktop layout stands */ }
-  function apply() {
-    if (mq && mq.matches) {
-      watch.classList.add('in-flow');
-      nonp.classList.add('in-flow');
-      plan.parentNode.insertBefore(watch, plan);
-      briefing.parentNode.insertBefore(nonp, briefing);
-    } else {
-      homes.forEach(function (h) {
-        h.el.classList.remove('in-flow');
-        if (h.next && h.next.parentNode === h.parent) h.parent.insertBefore(h.el, h.next);
-        else h.parent.appendChild(h.el);
-      });
-    }
-  }
-  apply();
-  if (mq) {
-    if (mq.addEventListener) mq.addEventListener('change', apply);
-    else if (mq.addListener) mq.addListener(apply);
-  }
-})();
+/* ---------- v55: founding house cells live in the flow ----------
+   The v6 phone mover is retired: the founding panel is now the three
+   sponsor spots themselves, and its two old house cells — County
+   Watch and the nonprofit notice — are static residents of Today's
+   flow at every width, sitting exactly where the mover used to carry
+   them on phones (County Watch just before Tonight & Tomorrow, the
+   nonprofit notice just before the County Briefing), carrying the
+   .in-flow styling permanently. Moved in the HTML, never duplicated,
+   ids and links unchanged. */
 
 /* ---------- your commute: typical drive times (v9, 2026-11-05) ----------
    Travis's last pre-ship addition: one card at the top of Travel —
