@@ -5851,6 +5851,7 @@ const LANG_ES = {
   evweek: 'Próximos 7 días',
   evcalnote: '¿Vas a ir? Toca <strong>＋ Agregar</strong> en cualquier evento y llega a tu propio calendario — con la hora convertida y la página oficial adjunta — para que tu teléfono te lo recuerde el mismo día.',
   eventsnote: "Recogido por nuestro recolector de los calendarios oficiales de las ciudades. Fuentes oficiales: <a href=\"https://www.sthelensoregon.gov/calendar.aspx\" target=\"_blank\" rel=\"noopener\">St. Helens</a> · <a href=\"https://www.scappoose.gov/calendar.aspx\" target=\"_blank\" rel=\"noopener\">Scappoose</a> · <a href=\"https://www.columbiacountyor.gov/calendar\" target=\"_blank\" rel=\"noopener\">Condado de Columbia</a>",
+  eventadd: '¿Tiene un negocio o grupo local? Agregue su evento →',
   alertsh2: '⚠️ Alertas del clima',
   alertslink: 'Servicio Meteorológico Nacional — oficina de Portland →',
   forecasth2: '🌦️ Pronóstico',
@@ -7319,6 +7320,24 @@ function initSponsorLink() {
   a.textContent = '📋 Founding sponsor interest form';
 }
 initSponsorLink();
+
+/* EVENT SUBMISSIONS — the "Submit an Event" Google Form (v47). Same
+   swap pattern as SPONSOR_FORM_URL / PHOTO_FORM_URL: the constant is
+   the single source of truth, the Events card link in index.html
+   carries the same URL statically (honest without JS), and this init
+   re-points it from the constant so the two can never drift apart.
+   Submissions land in the form inbox and pass a human review before
+   anything is added to the events list — the review gate is the
+   feature's load-bearing wall, same as photo submissions. */
+const EVENT_FORM_URL = 'https://forms.gle/dWzcBcnf79Qq5XQQA'; // LIVE 2026-11-09: Submit an Event Google Form (created in Travis's Google account; full URL https://docs.google.com/forms/d/e/1FAIpQLScsLe440Ew7k2h_56UG_cxh9ySmn6BfNYABc_A7ermx_F118Q/viewform)
+function initEventLink() {
+  const a = $('event-submit-link');
+  if (!a || !EVENT_FORM_URL) return;
+  a.href = EVENT_FORM_URL;
+  a.target = '_blank';
+  a.rel = 'noopener';
+}
+initEventLink();
 
 const SCHOOL_STATUS = {
   open:      { en: 'Open',          es: 'Abierto',       cls: 'school-open' },
