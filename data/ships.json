@@ -1,100 +1,107 @@
 {
- "fetched_at": "2026-11-09T01:57:31Z",
+ "fetched_at": "2026-11-09T02:00:00Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538006097,
-   "name": "AD ASTRA",
-   "lat": 45.64311,
-   "lon": -122.77122,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07958,
+   "lon": -122.90167,
+   "sog_kn": 0,
+   "cog": 193.9,
+   "heading": 135,
+   "nav_status": 0,
+   "updated": "2026-11-09 02:00:05.99385713 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58074,
+   "lon": -122.76005,
+   "type_code": 31,
+   "destination": "ASTORIA",
+   "updated": "2026-11-09 02:00:16.30929479 +0000 UTC"
+  },
+  {
+   "mmsi": 538006268,
+   "name": "STAR CARIOCA",
+   "lat": 45.63917,
+   "lon": -122.77776,
    "type_code": 70,
    "destination": "USPDX",
-   "updated": "2026-11-09 01:58:25.943585677 +0000 UTC"
+   "updated": "2026-11-09 02:00:17.30369508 +0000 UTC"
+  },
+  {
+   "mmsi": 352005064,
+   "name": "ANSAC RISING SUN",
+   "lat": 45.6011,
+   "lon": -122.77447,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-09 02:00:18.987616143 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07966,
+   "lon": -122.90217,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-09 02:00:22.366728966 +0000 UTC"
   },
   {
    "mmsi": 367061930,
    "name": "TEBENKOF",
-   "lat": 46.19996,
-   "lon": -123.38551,
-   "sog_kn": 0,
-   "cog": 184.8,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-09 01:58:30.331433096 +0000 UTC"
+   "lat": 46.19995,
+   "lon": -123.38558,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-09 02:00:22.923231107 +0000 UTC"
   },
   {
-   "mmsi": 367315790,
-   "name": "LORI B.",
-   "lat": 46.18761,
-   "lon": -123.13539,
-   "type_code": 31,
-   "destination": "PORTLAND",
-   "updated": "2026-11-09 01:58:52.193416269 +0000 UTC",
-   "sog_kn": 4.3,
-   "cog": 98.5,
-   "heading": 99,
-   "nav_status": 0
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64358,
-   "lon": -122.75292,
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.0088,
+   "lon": -122.84894,
    "sog_kn": 0,
-   "cog": 187.4,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-09 01:58:36.611392632 +0000 UTC"
+   "updated": "2026-11-09 02:00:23.304836381 +0000 UTC"
   },
   {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58729,
-   "lon": -122.77007,
-   "type_code": 31,
-   "destination": "US^02SY>0UJ9",
-   "updated": "2026-11-09 01:58:36.788367559 +0000 UTC"
-  },
-  {
-   "mmsi": 367347000,
-   "name": "WENDY SEAA",
-   "lat": 46.19954,
-   "lon": -123.38501,
-   "sog_kn": 0,
-   "cog": 325,
-   "heading": 143,
-   "nav_status": 5,
-   "updated": "2026-11-09 01:58:37.108672032 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65012,
-   "lon": -122.74768,
-   "sog_kn": 0,
-   "cog": 214.5,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19998,
+   "lon": -123.38545,
+   "sog_kn": 0.1,
+   "cog": 196.8,
    "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-09 02:00:26.351672458 +0000 UTC"
+  },
+  {
+   "mmsi": 368046350,
+   "name": "AMERICAN SONG",
+   "lat": 46.00415,
+   "lon": -122.84913,
+   "sog_kn": 2.7,
+   "cog": 291.7,
+   "heading": 68,
+   "nav_status": 0,
+   "updated": "2026-11-09 02:00:29.117323815 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10359,
+   "lon": -122.91011,
+   "sog_kn": 0,
+   "cog": 83.5,
+   "heading": 74,
    "nav_status": 3,
-   "updated": "2026-11-09 01:58:39.886771322 +0000 UTC"
-  },
-  {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61219,
-   "lon": -122.64519,
-   "type_code": 52,
-   "destination": "US^10M4>02MP",
-   "updated": "2026-11-09 01:58:44.255205401 +0000 UTC"
-  },
-  {
-   "mmsi": 477133900,
-   "name": "SHAO SHAN 8",
-   "lat": 45.6439,
-   "lon": -122.74117,
-   "type_code": 70,
-   "destination": "CN QDG",
-   "updated": "2026-11-09 01:58:44.378050991 +0000 UTC"
+   "updated": "2026-11-09 02:00:33.385385302 +0000 UTC"
   }
  ]
 }
