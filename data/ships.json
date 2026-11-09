@@ -1,58 +1,91 @@
 {
- "fetched_at": "2026-11-09T16:36:07Z",
+ "fetched_at": "2026-11-09T16:41:07Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15707,
-   "lon": -123.40233,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 137,
-   "nav_status": 0,
-   "updated": "2026-11-09 16:36:13.58774558 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10787,
-   "lon": -122.95899,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 16:36:14.872336856 +0000 UTC"
-  },
   {
    "mmsi": 538006268,
    "name": "STAR CARIOCA",
-   "lat": 45.63914,
-   "lon": -122.77779,
+   "lat": 45.63918,
+   "lon": -122.77776,
+   "sog_kn": 0,
+   "cog": 40,
+   "heading": 228,
+   "nav_status": 5,
+   "updated": "2026-11-09 16:42:17.556389322 +0000 UTC",
    "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-09 16:36:17.421701371 +0000 UTC"
+   "destination": "USPDX"
   },
   {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.91059,
-   "lon": -122.81259,
-   "sog_kn": 0.7,
-   "cog": 325.5,
-   "heading": 188,
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 46.09658,
+   "lon": -122.9378,
+   "sog_kn": 10.3,
+   "cog": 295.4,
+   "heading": 296,
    "nav_status": 0,
-   "updated": "2026-11-09 16:36:23.765456641 +0000 UTC"
+   "updated": "2026-11-09 16:42:17.695136156 +0000 UTC"
   },
   {
-   "mmsi": 352005064,
-   "name": "ANSAC RISING SUN",
-   "lat": 45.60112,
-   "lon": -122.77448,
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.84211,
+   "lon": -122.78817,
+   "sog_kn": 5.3,
+   "cog": 187.7,
+   "heading": 187,
+   "nav_status": 12,
+   "updated": "2026-11-09 16:42:19.832837373 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07362,
+   "lon": -122.89576,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-09 16:42:23.884033813 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00906,
+   "lon": -122.84853,
+   "type_code": 31,
+   "destination": "HARBOROPPS-",
+   "updated": "2026-11-09 16:42:26.741082763 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.1355,
+   "lon": -123.01396,
+   "sog_kn": 13.8,
+   "cog": 294.8,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 16:42:30.497222127 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.6454,
+   "lon": -122.73504,
    "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-09 16:36:18.955038569 +0000 UTC"
+   "destination": "PER ORDERS",
+   "updated": "2026-11-09 16:42:32.71290867 +0000 UTC"
+  },
+  {
+   "mmsi": 477133900,
+   "name": "SHAO SHAN 8",
+   "lat": 46.15747,
+   "lon": -123.06112,
+   "sog_kn": 12.7,
+   "cog": 293.8,
+   "heading": 293,
+   "nav_status": 0,
+   "updated": "2026-11-09 16:42:33.143985185 +0000 UTC"
   }
  ]
 }
