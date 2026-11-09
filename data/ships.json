@@ -1,71 +1,122 @@
 {
- "fetched_at": "2026-11-09T05:45:18Z",
+ "fetched_at": "2026-11-09T05:50:19Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64343,
+   "lon": -122.75246,
+   "sog_kn": 0,
+   "cog": 332.9,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-09 05:50:52.609035089 +0000 UTC",
+   "type_code": 52,
+   "destination": "US^0UU4>02MR"
+  },
+  {
+   "mmsi": 477050900,
+   "name": "MING DE",
+   "lat": 46.02716,
+   "lon": -122.86958,
+   "sog_kn": 0,
+   "cog": 319.8,
+   "heading": 138,
+   "nav_status": 5,
+   "updated": "2026-11-09 05:50:27.186051074 +0000 UTC"
+  },
+  {
+   "mmsi": 477133900,
+   "name": "SHAO SHAN 8",
+   "lat": 45.64398,
+   "lon": -122.74112,
+   "sog_kn": 0,
+   "cog": 196,
+   "heading": 109,
+   "nav_status": 1,
+   "updated": "2026-11-09 05:50:31.538911896 +0000 UTC"
+  },
+  {
+   "mmsi": 368082970,
+   "name": "AMERICAN.HARMONY",
+   "lat": 46.14425,
+   "lon": -123.0345,
+   "type_code": 60,
+   "destination": "KALAMA WA",
+   "updated": "2026-11-09 05:50:32.196739556 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19953,
+   "lon": -123.385,
+   "sog_kn": 0,
+   "cog": 325,
+   "heading": 144,
+   "nav_status": 5,
+   "updated": "2026-11-09 05:50:35.853665346 +0000 UTC"
+  },
+  {
+   "mmsi": 538007029,
+   "name": "ZEPHYROS",
+   "lat": 46.02777,
+   "lon": -122.87569,
+   "type_code": 70,
+   "destination": "CNQDG",
+   "updated": "2026-11-09 05:50:37.754163546 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58132,
+   "lon": -122.76064,
+   "type_code": 57,
+   "destination": "GASCO",
+   "updated": "2026-11-09 05:50:37.936736157 +0000 UTC"
+  },
+  {
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 45.63747,
+   "lon": -122.70898,
+   "type_code": 70,
+   "destination": "BR SSZ",
+   "updated": "2026-11-09 05:50:44.862641263 +0000 UTC"
+  },
   {
    "mmsi": 367047080,
    "name": "THE CHIEF",
-   "lat": 45.91055,
-   "lon": -122.81202,
-   "sog_kn": 7.4,
-   "cog": 172.8,
-   "heading": 176,
+   "lat": 45.90029,
+   "lon": -122.80816,
+   "sog_kn": 7,
+   "cog": 148.7,
+   "heading": 151,
    "nav_status": 0,
-   "updated": "2026-11-09 05:45:23.677585472 +0000 UTC"
+   "updated": "2026-11-09 05:50:47.165781813 +0000 UTC"
   },
   {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10892,
-   "lon": -122.96128,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-09 05:45:41.80167182 +0000 UTC"
-  },
-  {
-   "mmsi": 563116100,
-   "name": "OCEAN GOLD",
-   "lat": 45.99838,
-   "lon": -122.85196,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07975,
+   "lon": -122.90205,
    "sog_kn": 0,
-   "cog": 341.9,
-   "heading": 164,
-   "nav_status": 1,
-   "updated": "2026-11-09 05:45:43.622415066 +0000 UTC"
+   "cog": 360,
+   "heading": 318,
+   "nav_status": 3,
+   "updated": "2026-11-09 05:50:47.72625704 +0000 UTC"
   },
   {
-   "mmsi": 367516730,
-   "name": "CRISTY T",
-   "lat": 45.6121,
-   "lon": -122.64531,
-   "sog_kn": 0,
-   "cog": 253.3,
-   "heading": 299,
-   "nav_status": 5,
-   "updated": "2026-11-09 05:45:46.127795802 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61289,
-   "sog_kn": 0,
-   "cog": 323.1,
-   "heading": 132,
-   "nav_status": 15,
-   "updated": "2026-11-09 05:45:48.400673569 +0000 UTC"
-  },
-  {
-   "mmsi": 352005064,
-   "name": "ANSAC RISING SUN",
-   "lat": 45.60109,
-   "lon": -122.7745,
-   "sog_kn": 0,
-   "cog": 337.9,
-   "heading": 277,
-   "nav_status": 5,
-   "updated": "2026-11-09 05:45:51.000686296 +0000 UTC"
+   "mmsi": 367315790,
+   "name": "LORI B.",
+   "lat": 46.0136,
+   "lon": -122.8601,
+   "sog_kn": 4.7,
+   "cog": 151.7,
+   "heading": 152,
+   "nav_status": 0,
+   "updated": "2026-11-09 05:50:52.188010437 +0000 UTC"
   }
  ]
 }
