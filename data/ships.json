@@ -1,49 +1,56 @@
 {
- "fetched_at": "2026-11-09T17:01:09Z",
+ "fetched_at": "2026-11-09T17:06:09Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07268,
-   "lon": -122.89577,
-   "sog_kn": 1.1,
-   "cog": 165,
-   "heading": 342,
-   "nav_status": 0,
-   "updated": "2026-11-09 17:01:24.818270845 +0000 UTC"
+   "mmsi": 352005064,
+   "name": "ANSAC RISING SUN",
+   "lat": 45.60109,
+   "lon": -122.77448,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-09 17:06:18.728853469 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64386,
+   "lon": -122.73829,
+   "sog_kn": 0.3,
+   "cog": 129.5,
+   "heading": 297,
+   "nav_status": 12,
+   "updated": "2026-11-09 17:06:20.772152958 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.009,
+   "lon": -122.84827,
+   "type_code": 31,
+   "destination": "HARBOROPPS-",
+   "updated": "2026-11-09 17:06:26.017210965 +0000 UTC"
   },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.07315,
-   "lon": -122.89591,
-   "sog_kn": 1.1,
-   "cog": 272.9,
-   "heading": 93,
+   "lat": 46.07739,
+   "lon": -122.89697,
+   "sog_kn": 2.3,
+   "cog": 249.5,
+   "heading": 222,
    "nav_status": 0,
-   "updated": "2026-11-09 17:01:27.099887432 +0000 UTC"
+   "updated": "2026-11-09 17:06:27.723823471 +0000 UTC"
   },
   {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.88267,
-   "lon": -122.79746,
-   "sog_kn": 4.6,
-   "cog": 150.1,
-   "heading": 152,
-   "nav_status": 0,
-   "updated": "2026-11-09 17:01:29.321019297 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10358,
-   "lon": -122.91011,
-   "type_code": 52,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-09 17:01:32.001762411 +0000 UTC"
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64538,
+   "lon": -122.73506,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-09 17:06:33.99579748 +0000 UTC"
   },
   {
    "mmsi": 368410780,
@@ -51,10 +58,32 @@
    "lat": 46.10283,
    "lon": -122.9085,
    "sog_kn": 0,
-   "cog": 315.8,
-   "heading": 353,
+   "cog": 251,
+   "heading": 352,
    "nav_status": 0,
-   "updated": "2026-11-09 17:01:34.79609603 +0000 UTC"
+   "updated": "2026-11-09 17:06:34.336701116 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10357,
+   "lon": -122.9101,
+   "sog_kn": 0,
+   "cog": 83.5,
+   "heading": 76,
+   "nav_status": 3,
+   "updated": "2026-11-09 17:06:34.509269748 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.05382,
+   "lon": -122.88334,
+   "sog_kn": 8.6,
+   "cog": 172.3,
+   "heading": 167,
+   "nav_status": 0,
+   "updated": "2026-11-09 17:06:39.034878579 +0000 UTC"
   }
  ]
 }
