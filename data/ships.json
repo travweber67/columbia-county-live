@@ -1,93 +1,69 @@
 {
- "fetched_at": "2026-11-09T13:45:54Z",
+ "fetched_at": "2026-11-09T13:50:54Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09781,
-   "lon": -122.93728,
-   "sog_kn": 6.1,
-   "cog": 308.9,
-   "heading": 511,
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 46.24553,
+   "lon": -123.43659,
+   "sog_kn": 12.6,
+   "cog": 321,
+   "heading": 320,
+   "nav_status": 12,
+   "updated": "2026-11-09 13:50:57.998903458 +0000 UTC"
+  },
+  {
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.9094,
+   "lon": -122.81454,
+   "sog_kn": 0,
+   "cog": 254.7,
+   "heading": 339,
    "nav_status": 0,
-   "updated": "2026-11-09 13:45:59.339326665 +0000 UTC"
+   "updated": "2026-11-09 13:50:59.550451972 +0000 UTC"
   },
   {
    "mmsi": 367047080,
    "name": "THE CHIEF",
-   "lat": 45.57132,
-   "lon": -122.73731,
-   "type_code": 57,
-   "destination": "KALAMA",
-   "updated": "2026-11-09 13:46:05.523869966 +0000 UTC"
-  },
-  {
-   "mmsi": 367513120,
-   "name": "CASCADES",
-   "lat": 45.6432,
-   "lon": -122.7443,
-   "sog_kn": 0,
-   "cog": 320.9,
-   "heading": 293,
+   "lat": 45.57118,
+   "lon": -122.73728,
+   "sog_kn": 4,
+   "cog": 123.1,
+   "heading": 119,
    "nav_status": 12,
-   "updated": "2026-11-09 13:46:12.665518058 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40233,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 133,
-   "nav_status": 0,
-   "updated": "2026-11-09 13:46:13.585501441 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 46.16061,
-   "lon": -123.07168,
-   "sog_kn": 8.3,
-   "cog": 298.3,
-   "heading": 297,
-   "nav_status": 0,
-   "updated": "2026-11-09 13:46:16.553663537 +0000 UTC"
-  },
-  {
-   "mmsi": 352006943,
-   "name": "GLOVIS LEGEND",
-   "lat": 45.73294,
-   "lon": -122.76092,
-   "sog_kn": 12.5,
-   "cog": 8.7,
-   "heading": 8,
-   "nav_status": 0,
-   "updated": "2026-11-09 13:46:18.10861817 +0000 UTC"
+   "updated": "2026-11-09 13:51:17.357353002 +0000 UTC"
   },
   {
    "mmsi": 367425950,
    "name": "SEA HAWK",
-   "lat": 45.65026,
-   "lon": -122.74757,
+   "lat": 45.65012,
+   "lon": -122.74759,
    "sog_kn": 0,
-   "cog": 131.4,
+   "cog": 110.2,
    "heading": 511,
    "nav_status": 3,
-   "updated": "2026-11-09 13:46:18.288159961 +0000 UTC"
+   "updated": "2026-11-09 13:51:18.491969031 +0000 UTC"
   },
   {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.63955,
-   "lon": -122.72334,
-   "sog_kn": 8.9,
-   "cog": 289.6,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 13:46:25.543072417 +0000 UTC"
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 45.64086,
+   "lon": -122.72189,
+   "type_code": 70,
+   "destination": "BR SSZ",
+   "updated": "2026-11-09 13:51:24.038023993 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07958,
+   "lon": -122.90162,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-09 13:51:26.078927601 +0000 UTC"
   }
  ]
 }
