@@ -1,62 +1,132 @@
 {
- "fetched_at": "2026-11-09T20:46:24Z",
+ "fetched_at": "2026-11-09T20:51:24Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 46.08974,
-   "lon": -122.92899,
-   "sog_kn": 0,
-   "cog": 345.9,
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.64203,
+   "lon": -122.73981,
+   "type_code": 52,
+   "destination": "KALAMA",
+   "updated": "2026-11-09 20:51:29.819505979 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.07963,
+   "lon": -122.90201,
+   "sog_kn": 0.2,
+   "cog": 219.5,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-09 20:46:34.69886788 +0000 UTC"
+   "updated": "2026-11-09 20:51:30.375131214 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.64846,
-   "lon": -122.75105,
-   "sog_kn": 7.9,
-   "cog": 141.2,
-   "heading": 133,
-   "nav_status": 3,
-   "updated": "2026-11-09 20:46:40.594496637 +0000 UTC"
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
+   "type_code": 0,
+   "updated": "2026-11-09 20:51:32.039926791 +0000 UTC"
   },
   {
-   "mmsi": 368328430,
-   "name": "MCR 8",
-   "lat": 45.58478,
-   "lon": -122.76625,
+   "mmsi": 367513120,
+   "name": "CASCADES",
+   "lat": 45.93265,
+   "lon": -122.80838,
+   "sog_kn": 8.5,
+   "cog": 180.9,
+   "heading": 182,
+   "nav_status": 0,
+   "updated": "2026-11-09 20:51:32.757558294 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15343,
+   "lon": -123.37716,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 1.8,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-09 20:46:45.355371971 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-09 20:51:37.766461889 +0000 UTC"
   },
   {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58728,
-   "lon": -122.77004,
+   "mmsi": 367645170,
+   "name": "CROWN POINT",
+   "lat": 45.64746,
+   "lon": -122.73942,
    "sog_kn": 0,
-   "cog": 198.5,
-   "heading": 139,
-   "nav_status": 5,
-   "updated": "2026-11-09 20:46:48.554480692 +0000 UTC"
+   "cog": 289.2,
+   "heading": 286,
+   "nav_status": 12,
+   "updated": "2026-11-09 20:51:38.910388159 +0000 UTC"
   },
   {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63873,
-   "lon": -122.72405,
-   "sog_kn": 0,
-   "cog": 179.3,
-   "heading": 115,
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.17229,
+   "lon": -123.1064,
+   "sog_kn": 0.1,
+   "cog": 97.8,
+   "heading": 11,
    "nav_status": 1,
-   "updated": "2026-11-09 20:47:03.779153884 +0000 UTC"
+   "updated": "2026-11-09 20:51:49.698680515 +0000 UTC",
+   "type_code": 70,
+   "destination": "USVAN"
+  },
+  {
+   "mmsi": 352005064,
+   "name": "ANSAC RISING SUN",
+   "lat": 45.60114,
+   "lon": -122.77518,
+   "sog_kn": 0,
+   "cog": 201.5,
+   "heading": 277,
+   "nav_status": 5,
+   "updated": "2026-11-09 20:51:50.126117849 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.64328,
+   "lon": -122.7528,
+   "type_code": 50,
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-09 20:51:51.148346069 +0000 UTC"
+  },
+  {
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.19964,
+   "lon": -123.38524,
+   "sog_kn": 0,
+   "cog": 28.2,
+   "heading": 322,
+   "nav_status": 5,
+   "updated": "2026-11-09 20:51:54.306574618 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64621,
+   "lon": -122.74107,
+   "sog_kn": 3.8,
+   "cog": 218.7,
+   "heading": 186,
+   "nav_status": 5,
+   "updated": "2026-11-09 20:51:56.999487921 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.6473,
+   "lon": -122.73949,
+   "type_code": 52,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-09 20:51:57.991001878 +0000 UTC"
   }
  ]
 }
