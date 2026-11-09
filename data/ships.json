@@ -1,38 +1,69 @@
 {
- "fetched_at": "2026-11-09T00:14:52Z",
+ "fetched_at": "2026-11-09T00:19:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 354425000,
    "name": "PAN QUEEN",
-   "lat": 45.98393,
-   "lon": -122.83519,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-09 00:15:03.493260628 +0000 UTC"
+   "lat": 45.9839,
+   "lon": -122.83515,
+   "sog_kn": 0,
+   "cog": 227.9,
+   "heading": 152,
+   "nav_status": 5,
+   "updated": "2026-11-09 00:20:12.521358349 +0000 UTC"
   },
   {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00883,
-   "lon": -122.8488,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15705,
+   "lon": -123.40233,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 511,
+   "heading": 134,
    "nav_status": 0,
-   "updated": "2026-11-09 00:15:06.103710066 +0000 UTC"
+   "updated": "2026-11-09 00:20:13.882103537 +0000 UTC"
   },
   {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.64901,
-   "lon": -122.74535,
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 46.09056,
+   "lon": -122.93238,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-09 00:20:14.895758817 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64347,
+   "lon": -122.75245,
    "sog_kn": 0,
-   "cog": 309.8,
-   "heading": 105,
-   "nav_status": 0,
-   "updated": "2026-11-09 00:15:26.048894147 +0000 UTC"
+   "cog": 315,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-09 00:20:23.86564422 +0000 UTC"
+  },
+  {
+   "mmsi": 477050900,
+   "name": "MING DE",
+   "lat": 46.02714,
+   "lon": -122.86954,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-09 00:20:26.127324412 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.70068,
+   "lon": -122.76775,
+   "sog_kn": 8.8,
+   "cog": 195.4,
+   "heading": 196,
+   "nav_status": 12,
+   "updated": "2026-11-09 00:20:26.770019428 +0000 UTC"
   }
  ]
 }
