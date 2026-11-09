@@ -1,104 +1,77 @@
 {
- "fetched_at": "2026-11-09T05:20:16Z",
+ "fetched_at": "2026-11-09T05:25:17Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15705,
-   "lon": -123.40233,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 138,
-   "nav_status": 0,
-   "updated": "2026-11-09 05:20:20.742259657 +0000 UTC"
-  },
-  {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10892,
-   "lon": -122.96128,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-09 05:20:23.1494471 +0000 UTC"
-  },
-  {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60752,
-   "lon": -122.67745,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 05:20:25.250396521 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10788,
-   "lon": -122.95906,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 05:20:25.628349371 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65003,
-   "lon": -122.74762,
-   "sog_kn": 0,
-   "cog": 239.4,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-09 05:20:39.087048472 +0000 UTC"
-  },
-  {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58131,
-   "lon": -122.76065,
-   "sog_kn": 0,
-   "cog": 212.3,
-   "heading": 123,
-   "nav_status": 0,
-   "updated": "2026-11-09 05:20:36.977703836 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00899,
-   "lon": -122.84836,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 05:20:37.519159789 +0000 UTC"
-  },
-  {
-   "mmsi": 367315790,
-   "name": "LORI B.",
-   "lat": 46.04597,
-   "lon": -122.88178,
-   "sog_kn": 4.5,
-   "cog": 176.3,
-   "heading": 177,
-   "nav_status": 0,
-   "updated": "2026-11-09 05:20:41.108796204 +0000 UTC"
-  },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 45.63267,
-   "lon": -122.70281,
-   "sog_kn": 1,
-   "cog": 122,
-   "heading": 124,
+   "lat": 45.63172,
+   "lon": -122.7012,
+   "sog_kn": 0.9,
+   "cog": 134.7,
+   "heading": 129,
    "nav_status": 3,
-   "updated": "2026-11-09 05:20:41.499231212 +0000 UTC"
+   "updated": "2026-11-09 05:25:21.308684446 +0000 UTC"
+  },
+  {
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 45.66719,
+   "lon": -122.76687,
+   "type_code": 57,
+   "destination": "US PDX",
+   "updated": "2026-11-09 05:25:22.170277003 +0000 UTC"
+  },
+  {
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.6852,
+   "lon": -122.77372,
+   "type_code": 52,
+   "destination": "US^0UYR>0ZBA",
+   "updated": "2026-11-09 05:25:30.481496089 +0000 UTC",
+   "sog_kn": 9.7,
+   "cog": 4.2,
+   "heading": 3,
+   "nav_status": 0
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.1036,
+   "lon": -122.91015,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-09 05:25:31.973817462 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.07937,
+   "lon": -122.90181,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-09 05:25:41.46008467 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15304,
+   "lon": -123.37813,
+   "sog_kn": 3.4,
+   "cog": 71.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 05:25:47.333243554 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64355,
+   "lon": -122.75293,
+   "type_code": 52,
+   "updated": "2026-11-09 05:25:49.100275128 +0000 UTC"
   }
  ]
 }
