@@ -1,84 +1,102 @@
 {
- "fetched_at": "2026-11-09T06:15:21Z",
+ "fetched_at": "2026-11-09T06:20:21Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07957,
-   "lon": -122.90164,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-09 06:15:24.393504077 +0000 UTC"
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35742,
+   "sog_kn": 0,
+   "cog": 335.6,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-09 06:20:27.772096404 +0000 UTC"
   },
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10283,
-   "lon": -122.9085,
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 45.66718,
+   "lon": -122.76694,
+   "type_code": 57,
+   "destination": "US PDX",
+   "updated": "2026-11-09 06:20:32.147139236 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58131,
+   "lon": -122.76064,
+   "type_code": 57,
+   "destination": "GASCO",
+   "updated": "2026-11-09 06:20:47.086557631 +0000 UTC",
    "sog_kn": 0,
-   "cog": 282.9,
-   "heading": 353,
+   "cog": 212.3,
+   "heading": 122,
+   "nav_status": 0
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19948,
+   "lon": -123.38505,
+   "sog_kn": 0,
+   "cog": 262,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-09 06:20:40.34735066 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00884,
+   "lon": -122.84882,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-09 06:15:24.932041352 +0000 UTC"
+   "updated": "2026-11-09 06:20:45.298558578 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10357,
-   "lon": -122.91011,
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64344,
+   "lon": -122.75279,
    "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 75,
-   "nav_status": 3,
-   "updated": "2026-11-09 06:15:34.175396612 +0000 UTC"
+   "cog": 310.3,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 06:20:45.894042643 +0000 UTC"
   },
   {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09064,
-   "lon": -122.93213,
+   "mmsi": 367315790,
+   "name": "LORI B.",
+   "lat": 45.97965,
+   "lon": -122.83709,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-09 06:20:51.220501217 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64786,
+   "lon": -122.74099,
+   "sog_kn": 0,
+   "cog": 112.1,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-09 06:20:52.464686255 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08985,
+   "lon": -122.929,
    "type_code": 52,
-   "destination": "COL RIVER",
-   "updated": "2026-11-09 06:15:35.879278758 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.65749,
-   "lon": -122.75856,
-   "sog_kn": 5,
-   "cog": 222.8,
-   "heading": 217,
-   "nav_status": 12,
-   "updated": "2026-11-09 06:15:47.737925327 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20004,
-   "lon": -123.38543,
-   "type_code": 99,
-   "destination": "NAKNEK",
-   "updated": "2026-11-09 06:15:48.894653362 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 45.64333,
-   "lon": -122.75277,
-   "type_code": 50,
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-09 06:15:49.993714274 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.6502,
-   "lon": -122.7476,
-   "type_code": 33,
-   "updated": "2026-11-09 06:15:52.684579563 +0000 UTC"
+   "destination": "CSR OPS",
+   "updated": "2026-11-09 06:20:56.288892458 +0000 UTC"
   }
  ]
 }
