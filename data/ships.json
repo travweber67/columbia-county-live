@@ -1,78 +1,60 @@
 {
- "fetched_at": "2026-11-09T22:56:35Z",
+ "fetched_at": "2026-11-09T22:57:49Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64344,
-   "lon": -122.75287,
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64383,
+   "lon": -122.7258,
+   "type_code": 57,
+   "destination": "US^0UWG>0ZBC",
+   "updated": "2026-11-09 22:58:59.62550927 +0000 UTC"
+  },
+  {
+   "mmsi": 367315790,
+   "name": "LORI B.",
+   "lat": 45.73101,
+   "lon": -122.76268,
+   "sog_kn": 7.9,
+   "cog": 9.2,
+   "heading": 8,
+   "nav_status": 0,
+   "updated": "2026-11-09 22:59:21.200481312 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.13124,
+   "lon": -123.0031,
+   "sog_kn": 7.7,
+   "cog": 125,
+   "heading": 129,
+   "nav_status": 12,
+   "updated": "2026-11-09 22:59:21.2893753 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.91008,
    "sog_kn": 0,
-   "cog": 222.5,
+   "cog": 190.8,
+   "heading": 72,
+   "nav_status": 0,
+   "updated": "2026-11-09 22:59:21.884461821 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20003,
+   "lon": -123.38542,
+   "sog_kn": 0,
+   "cog": 12.2,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-09 22:56:48.685581168 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61107,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 118.6,
-   "heading": 133,
-   "nav_status": 15,
-   "updated": "2026-11-09 22:56:48.794500924 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 46.09062,
-   "lon": -122.93203,
-   "type_code": 52,
-   "destination": "US^0UU4>02MR",
-   "updated": "2026-11-09 22:56:52.435627396 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.09632,
-   "lon": -122.93053,
-   "sog_kn": 0,
-   "cog": 108,
-   "heading": 67,
-   "nav_status": 3,
-   "updated": "2026-11-09 22:56:53.725269887 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58759,
-   "lon": -122.77043,
-   "type_code": 52,
-   "destination": "PORTLAND,OR",
-   "updated": "2026-11-09 22:57:03.34324162 +0000 UTC"
-  },
-  {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.77044,
-   "lon": -122.76795,
-   "type_code": 52,
-   "destination": "BLUE LAKE",
-   "updated": "2026-11-09 22:57:09.389780797 +0000 UTC"
-  },
-  {
-   "mmsi": 538006268,
-   "name": "STAR CARIOCA",
-   "lat": 45.63915,
-   "lon": -122.77777,
-   "sog_kn": 0,
-   "cog": 40,
-   "heading": 228,
-   "nav_status": 5,
-   "updated": "2026-11-09 22:57:17.711052337 +0000 UTC"
+   "nav_status": 8,
+   "updated": "2026-11-09 22:59:25.023330434 +0000 UTC"
   }
  ]
 }
