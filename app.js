@@ -36,7 +36,6 @@ const inBox = (lat, lon) => lat != null && lon != null
 const NWS_ALERTS_URL = 'https://api.weather.gov/alerts/active?zone=ORC009';
 const USGS_IV_URL = 'https://waterservices.usgs.gov/nwis/iv/?format=json&sites='
   + GAUGES.map(g => g.site).join(',') + '&parameterCd=00065,00060&period=P2D';
-const ADSBFI_URL = 'https://opendata.adsb.fi/api/v2/lat/46.0/lon/-123.06/dist/45';
 const ISS_URL = 'https://api.wheretheiss.at/v1/satellites/25544';
 const WFIGS_POINTS_URL = 'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/'
   + 'WFIGS_Incident_Locations_Current/FeatureServer/0/query?where=1%3D1'
@@ -494,7 +493,7 @@ async function loadFires() {
   }
 }
 
-/* ---------- sky: aircraft (direct ADS-B, snapshot fallback) + ISS ---------- */
+/* ---------- sky: aircraft (fetcher snapshot) + ISS ---------- */
 let skyCache = null;
 let currentSkyFilter = 'all';
 function drawSkyMarkers(list) {
@@ -565,18 +564,11 @@ function initSkyFilters() {
   });
 }
 async function loadAircraft() {
-  // Preferred: straight from adsb.fi (works the day their CORS opens up).
-  try {
-    const d = await getJSON(ADSBFI_URL);
-    const raw = d.aircraft || d.ac || [];
-    const list = raw.filter(a => inBox(a.lat, a.lon)).map(a => ({
-      hex: a.hex, callsign: String(a.flight || a.r || '').trim(), type: a.t || '',
-      alt_ft: a.alt_baro, gs_kn: a.gs, track: a.track, lat: a.lat, lon: a.lon
-    }));
-    renderAircraft(list, 'live ADS-B');
-    setUpdated('sky-updated');
-    return;
-  } catch (e) { /* CORS-blocked today — snapshot below is the normal path */ }
+  // Snapshot only — the fetcher collects ADS-B and publishes data/aircraft.json.
+  // The browser used to try adsb.fi direct first, but their API sends no CORS
+  // headers, so every load burned failed fetches and sat on the "Loading…"
+  // state for seconds before falling back to this same snapshot. Removed
+  // 2026-11-09 (v54, full-audit defect); the snapshot is the one data route.
   try {
     const snap = await getSnapshot('aircraft.json');
     renderAircraft(snap.aircraft || [], 'ADS-B snapshot');
