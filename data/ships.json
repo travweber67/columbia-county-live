@@ -1,82 +1,113 @@
 {
- "fetched_at": "2026-11-09T18:26:14Z",
+ "fetched_at": "2026-11-09T18:27:45Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.07943,
-   "lon": -122.9019,
-   "sog_kn": 0.1,
-   "cog": 185.3,
-   "heading": 115,
+   "lat": 46.07949,
+   "lon": -122.90191,
+   "sog_kn": 0.2,
+   "cog": 3.8,
+   "heading": 135,
    "nav_status": 0,
-   "updated": "2026-11-09 18:26:28.678377017 +0000 UTC"
-  },
-  {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.77328,
-   "lon": -122.76672,
-   "sog_kn": 5.2,
-   "cog": 159.5,
-   "heading": 160,
-   "nav_status": 0,
-   "updated": "2026-11-09 18:26:29.305936525 +0000 UTC"
-  },
-  {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 46.02715,
-   "lon": -122.86956,
-   "sog_kn": 0,
-   "cog": 319.8,
-   "heading": 138,
-   "nav_status": 5,
-   "updated": "2026-11-09 18:26:29.601437066 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07075,
-   "lon": -122.89419,
-   "sog_kn": 0,
-   "cog": 103.8,
-   "heading": 77,
-   "nav_status": 0,
-   "updated": "2026-11-09 18:26:34.068222031 +0000 UTC"
+   "updated": "2026-11-09 18:28:33.979968573 +0000 UTC"
   },
   {
    "mmsi": 367310520,
    "name": "JAMES T",
-   "lat": 46.10354,
-   "lon": -122.9101,
+   "lat": 46.10357,
+   "lon": -122.91012,
    "sog_kn": 0,
    "cog": 83.5,
    "heading": 77,
    "nav_status": 3,
-   "updated": "2026-11-09 18:26:34.103499158 +0000 UTC"
+   "updated": "2026-11-09 18:28:34.107506137 +0000 UTC"
   },
   {
-   "mmsi": 367513120,
-   "name": "CASCADES",
-   "lat": 46.03288,
-   "lon": -122.87719,
-   "sog_kn": 9.5,
-   "cog": 341.3,
-   "heading": 347,
-   "nav_status": 12,
-   "updated": "2026-11-09 18:26:42.469100582 +0000 UTC"
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19938,
+   "lon": -123.38515,
+   "sog_kn": 0,
+   "cog": 193,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-09 18:28:35.177103558 +0000 UTC"
   },
   {
-   "mmsi": 232038703,
-   "name": "IONIAN SEA",
-   "lat": 46.14284,
-   "lon": -123.34849,
-   "type_code": 70,
-   "destination": "BR SSZ",
-   "updated": "2026-11-09 18:26:45.191060126 +0000 UTC"
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.64351,
+   "lon": -122.75296,
+   "sog_kn": 0,
+   "cog": 336.9,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-09 18:28:42.511436 +0000 UTC"
+  },
+  {
+   "mmsi": 477133900,
+   "name": "SHAO SHAN 8",
+   "lat": 46.24509,
+   "lon": -123.43654,
+   "sog_kn": 10.9,
+   "cog": 321.8,
+   "heading": 324,
+   "nav_status": 0,
+   "updated": "2026-11-09 18:28:42.921438064 +0000 UTC"
+  },
+  {
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.19963,
+   "lon": -123.38523,
+   "sog_kn": 0,
+   "cog": 193.2,
+   "heading": 321,
+   "nav_status": 5,
+   "updated": "2026-11-09 18:28:49.508114377 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58728,
+   "lon": -122.77008,
+   "sog_kn": 0,
+   "cog": 198.5,
+   "heading": 139,
+   "nav_status": 5,
+   "updated": "2026-11-09 18:28:50.106453367 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.12634,
+   "lon": -122.99686,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-09 18:28:57.39439019 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.64335,
+   "lon": -122.75281,
+   "type_code": 50,
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-09 18:28:57.420922377 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.07084,
+   "lon": -122.89421,
+   "sog_kn": 0,
+   "cog": 272.7,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-09 18:28:59.191440549 +0000 UTC"
   }
  ]
 }
