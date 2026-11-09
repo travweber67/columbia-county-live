@@ -1,102 +1,145 @@
 {
- "fetched_at": "2026-11-09T06:20:21Z",
+ "fetched_at": "2026-11-09T06:25:21Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 14 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35742,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07977,
+   "lon": -122.90204,
    "sog_kn": 0,
-   "cog": 335.6,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-09 06:20:27.772096404 +0000 UTC"
+   "cog": 360,
+   "heading": 318,
+   "nav_status": 3,
+   "updated": "2026-11-09 06:25:27.64716913 +0000 UTC"
   },
   {
-   "mmsi": 338616000,
-   "name": "DUBLIN SEA",
-   "lat": 45.66718,
-   "lon": -122.76694,
-   "type_code": 57,
-   "destination": "US PDX",
-   "updated": "2026-11-09 06:20:32.147139236 +0000 UTC"
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64178,
+   "lon": -122.73962,
+   "sog_kn": 0,
+   "cog": 287.8,
+   "heading": 301,
+   "nav_status": 12,
+   "updated": "2026-11-09 06:25:30.581477797 +0000 UTC"
   },
   {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58131,
-   "lon": -122.76064,
-   "type_code": 57,
-   "destination": "GASCO",
-   "updated": "2026-11-09 06:20:47.086557631 +0000 UTC",
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07959,
+   "lon": -122.90165,
    "sog_kn": 0,
-   "cog": 212.3,
-   "heading": 122,
-   "nav_status": 0
+   "cog": 75.6,
+   "heading": 137,
+   "nav_status": 0,
+   "updated": "2026-11-09 06:25:34.493498383 +0000 UTC"
   },
   {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.19948,
-   "lon": -123.38505,
+   "mmsi": 538007029,
+   "name": "ZEPHYROS",
+   "lat": 46.02777,
+   "lon": -122.87571,
+   "type_code": 70,
+   "destination": "CNQDG",
+   "updated": "2026-11-09 06:25:37.180912958 +0000 UTC"
+  },
+  {
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.8379,
+   "lon": -122.7883,
+   "sog_kn": 9.8,
+   "cog": 16.9,
+   "heading": 9,
+   "nav_status": 0,
+   "updated": "2026-11-09 06:25:40.023425247 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64727,
+   "lon": -122.73989,
    "sog_kn": 0,
-   "cog": 262,
+   "cog": 317.4,
    "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-09 06:20:40.34735066 +0000 UTC"
+   "updated": "2026-11-09 06:25:47.479628071 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64352,
+   "lon": -122.75287,
+   "type_code": 52,
+   "updated": "2026-11-09 06:25:50.155721783 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59407,
+   "lon": -122.77213,
+   "type_code": 70,
+   "destination": "NOT AVAILABLE",
+   "updated": "2026-11-09 06:25:50.958884535 +0000 UTC"
+  },
+  {
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 45.63745,
+   "lon": -122.70898,
+   "sog_kn": 0,
+   "cog": 236.4,
+   "heading": 303,
+   "nav_status": 5,
+   "updated": "2026-11-09 06:25:51.053078073 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64345,
+   "lon": -122.75279,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-09 06:25:51.128775748 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60755,
+   "lon": -122.67755,
+   "type_code": 50,
+   "updated": "2026-11-09 06:25:53.414353624 +0000 UTC"
   },
   {
    "mmsi": 368470580,
    "name": "ASSIST",
-   "lat": 46.00884,
+   "lat": 46.00883,
    "lon": -122.84882,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-09 06:20:45.298558578 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64344,
-   "lon": -122.75279,
-   "sog_kn": 0,
-   "cog": 310.3,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 06:20:45.894042643 +0000 UTC"
-  },
-  {
-   "mmsi": 367315790,
-   "name": "LORI B.",
-   "lat": 45.97965,
-   "lon": -122.83709,
-   "type_code": 31,
-   "destination": "PORTLAND",
-   "updated": "2026-11-09 06:20:51.220501217 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64786,
-   "lon": -122.74099,
-   "sog_kn": 0,
-   "cog": 112.1,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-09 06:20:52.464686255 +0000 UTC"
+   "updated": "2026-11-09 06:25:53.521914706 +0000 UTC"
   },
   {
    "mmsi": 367384780,
    "name": "CAROLYN DOROTHY",
-   "lat": 46.08985,
-   "lon": -122.929,
+   "lat": 46.08984,
+   "lon": -122.92899,
    "type_code": 52,
    "destination": "CSR OPS",
-   "updated": "2026-11-09 06:20:56.288892458 +0000 UTC"
+   "updated": "2026-11-09 06:25:53.694897371 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.02846,
+   "lon": -122.87609,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-09 06:25:56.148816331 +0000 UTC"
   }
  ]
 }
