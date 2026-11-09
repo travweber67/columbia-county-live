@@ -1,55 +1,80 @@
 {
- "fetched_at": "2026-11-09T02:15:02Z",
+ "fetched_at": "2026-11-09T02:20:02Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60761,
-   "lon": -122.67759,
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64536,
+   "lon": -122.73503,
+   "sog_kn": 0,
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-09 02:20:13.513882689 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64828,
+   "lon": -122.74242,
+   "sog_kn": 0.3,
+   "cog": 98.5,
+   "heading": 111,
+   "nav_status": 12,
+   "updated": "2026-11-09 02:20:19.134823162 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59407,
+   "lon": -122.77217,
+   "type_code": 70,
+   "destination": "NOT AVAILABLE",
+   "updated": "2026-11-09 02:20:21.503288674 +0000 UTC"
+  },
+  {
+   "mmsi": 367315790,
+   "name": "LORI B.",
+   "lat": 46.17596,
+   "lon": -123.1012,
+   "sog_kn": 4.5,
+   "cog": 128,
+   "heading": 129,
+   "nav_status": 0,
+   "updated": "2026-11-09 02:20:22.291354276 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10786,
+   "lon": -122.95904,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-09 02:15:12.954969493 +0000 UTC"
+   "updated": "2026-11-09 02:20:24.69201563 +0000 UTC"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15707,
-   "lon": -123.40234,
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 46.09049,
+   "lon": -122.93231,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 130,
-   "nav_status": 0,
-   "updated": "2026-11-09 02:15:13.562706513 +0000 UTC"
+   "cog": 246.7,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-09 02:20:26.771685978 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07959,
-   "lon": -122.90165,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-09 02:15:25.726605774 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61292,
-   "type_code": 0,
-   "updated": "2026-11-09 02:15:30.835691177 +0000 UTC"
-  },
-  {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58132,
-   "lon": -122.76065,
-   "type_code": 57,
-   "destination": "GASCO",
-   "updated": "2026-11-09 02:15:39.369742089 +0000 UTC"
+   "mmsi": 538007029,
+   "name": "ZEPHYROS",
+   "lat": 46.02779,
+   "lon": -122.87559,
+   "type_code": 70,
+   "destination": "CNQDG",
+   "updated": "2026-11-09 02:20:36.793234164 +0000 UTC"
   }
  ]
 }
