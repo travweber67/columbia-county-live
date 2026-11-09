@@ -1,82 +1,95 @@
 {
- "fetched_at": "2026-11-09T07:40:27Z",
+ "fetched_at": "2026-11-09T07:45:28Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64334,
-   "lon": -122.75272,
-   "sog_kn": 0,
-   "cog": 227.6,
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.02874,
+   "lon": -122.87621,
+   "sog_kn": 2.3,
+   "cog": 150.4,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-09 07:40:35.344696207 +0000 UTC"
+   "updated": "2026-11-09 07:45:32.081045156 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10358,
+   "lon": -122.9101,
+   "sog_kn": 0,
+   "cog": 83.5,
+   "heading": 75,
+   "nav_status": 3,
+   "updated": "2026-11-09 07:45:34.491105031 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.27145,
+   "lon": -123.48195,
+   "sog_kn": 1.5,
+   "cog": 295.4,
+   "heading": 306,
+   "nav_status": 3,
+   "updated": "2026-11-09 07:45:41.367409922 +0000 UTC"
+  },
+  {
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 45.66717,
+   "lon": -122.76696,
+   "type_code": 57,
+   "destination": "US OTS",
+   "updated": "2026-11-09 07:45:44.916292345 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15344,
+   "lon": -123.37711,
+   "type_code": 99,
+   "updated": "2026-11-09 07:45:46.369271044 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07965,
+   "lon": -122.90216,
+   "sog_kn": 0.1,
+   "cog": 115.3,
+   "heading": 134,
+   "nav_status": 0,
+   "updated": "2026-11-09 07:45:47.263548047 +0000 UTC"
+  },
+  {
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.1089,
+   "lon": -122.96127,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-09 07:45:47.998158889 +0000 UTC"
   },
   {
    "mmsi": 367740820,
    "name": "RELIEF",
-   "lat": 45.66848,
-   "lon": -122.7675,
+   "lat": 45.66785,
+   "lon": -122.76763,
    "type_code": 50,
    "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-09 07:40:36.41066785 +0000 UTC"
+   "updated": "2026-11-09 07:45:51.446780543 +0000 UTC"
   },
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64262,
-   "lon": -122.74015,
-   "sog_kn": 6.2,
-   "cog": 111.9,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 07:40:36.693990822 +0000 UTC"
-  },
-  {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60749,
-   "lon": -122.67751,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 07:40:42.778126675 +0000 UTC"
-  },
-  {
-   "mmsi": 367667060,
-   "name": "GRANITE POINT",
-   "lat": 45.64728,
-   "lon": -122.73988,
-   "sog_kn": 0,
-   "cog": 242.8,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-09 07:40:47.336310232 +0000 UTC"
-  },
-  {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58728,
-   "lon": -122.77006,
-   "sog_kn": 0,
-   "cog": 337.2,
-   "heading": 139,
-   "nav_status": 5,
-   "updated": "2026-11-09 07:40:47.76251066 +0000 UTC"
-  },
-  {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.68549,
-   "lon": -122.77362,
-   "sog_kn": 7.5,
-   "cog": 196.2,
-   "heading": 183,
-   "nav_status": 0,
-   "updated": "2026-11-09 07:40:58.029880497 +0000 UTC"
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 45.63745,
+   "lon": -122.709,
+   "type_code": 70,
+   "destination": "BR SSZ",
+   "updated": "2026-11-09 07:45:57.039470775 +0000 UTC"
   }
  ]
 }
