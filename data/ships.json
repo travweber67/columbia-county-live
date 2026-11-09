@@ -1,60 +1,83 @@
 {
- "fetched_at": "2026-11-09T21:11:29Z",
+ "fetched_at": "2026-11-09T21:16:27Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10789,
-   "lon": -122.95906,
-   "sog_kn": 0,
-   "cog": 360,
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79842,
+   "lon": -122.83524,
+   "sog_kn": 3.1,
+   "cog": 59.7,
+   "heading": 64,
+   "nav_status": 0,
+   "updated": "2026-11-09 21:16:36.514947597 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.13798,
+   "lon": -123.38006,
+   "sog_kn": 5.9,
+   "cog": 310.7,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-09 21:11:52.395316062 +0000 UTC"
+   "updated": "2026-11-09 21:17:01.21288679 +0000 UTC",
+   "type_code": 99
   },
   {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63875,
-   "lon": -122.72402,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-09 21:11:54.793328184 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 46.08971,
-   "lon": -122.92908,
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.64355,
+   "lon": -122.75296,
    "sog_kn": 0,
-   "cog": 345.9,
+   "cog": 302.9,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 21:11:56.157239394 +0000 UTC"
+   "nav_status": 5,
+   "updated": "2026-11-09 21:16:43.755261137 +0000 UTC"
   },
   {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.68543,
-   "lon": -122.77431,
-   "sog_kn": 0.1,
-   "cog": 38.2,
-   "heading": 184,
-   "nav_status": 0,
-   "updated": "2026-11-09 21:11:59.558420188 +0000 UTC",
-   "type_code": 52,
-   "destination": "US^0RFZ>?? ???"
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19995,
+   "lon": -123.3855,
+   "sog_kn": 0,
+   "cog": 43.4,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-09 21:16:50.797675589 +0000 UTC"
   },
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.27027,
-   "lon": -123.47568,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-09 21:12:09.458509503 +0000 UTC"
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.6473,
+   "lon": -122.7395,
+   "sog_kn": 0,
+   "cog": 302.7,
+   "heading": 289,
+   "nav_status": 12,
+   "updated": "2026-11-09 21:16:54.960051762 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65006,
+   "lon": -122.74763,
+   "sog_kn": 0,
+   "cog": 301.4,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-09 21:16:59.957850361 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.64341,
+   "lon": -122.75286,
+   "type_code": 50,
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-09 21:17:04.60630922 +0000 UTC"
   }
  ]
 }
