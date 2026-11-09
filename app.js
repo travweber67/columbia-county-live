@@ -5761,25 +5761,6 @@ const LANG_ES = {
   tabtravel: 'Viajes',
   taboutdoors: 'Aire libre',
   tabmore: 'Eventos y más',
-  rallyh2: '🏁 Solo hoy — autos de rally en St. Helens',
-  rallylead: 'Hoy se corre un rally de verdad desde St. Helens — el Mike Nagle RallySprint. Una sola etapa de ripio en Nehalem Divide, 9.7 millas, corrida cuatro veces, 38 autos. Aquí está la ruta, las carreteras que cierra y dónde sí puedes ver los autos.',
-  rallylegclosed: 'Carretera cerrada hoy, 8 AM – 6 PM',
-  rallylegstage: 'La etapa (la línea es aproximada — caminos forestales, sin acceso público)',
-  rallylegspot: 'Lugares para ver los autos',
-  rallyclosedh: 'Carreteras cerradas hoy · 8 AM – 6 PM',
-  rallyclosed1: 'Camp Wilkerson / Karth Rd — de Apiary Rd a Pittsburg Rd',
-  rallyclosed2: 'Pittsburg Rd — de Scappoose-Vernonia Hwy a Karth Rd',
-  rallyclosednote: 'No hay zonas para espectadores junto a las etapas, por seguridad. Mejor mira los autos en el pueblo:',
-  rallyseeh: 'Dónde ver los autos',
-  rallysee1: '~12:30 PM · Servicio en el St. Helens Rec Center — abierto al público, mira cómo trabajan los equipos',
-  rallysee2: '6:00 PM · Podio y Parc Fermé en McCormick Park',
-  rallysee3: 'Las etapas corren a las 9:53 AM, 11:25 AM, 2:27 PM y 3:59 PM (primer auto) — el canal de YouTube de Oregon Trail Rally las transmite gratis en vivo',
-  rallysee4: 'Entre etapas los autos transitan por la Scappoose-Vernonia Hwy a velocidad normal, así que puedes verlos por el pueblo',
-  rallysrc: 'Ruta, cierres y horarios: ruta oficial y aviso de cierres de Oregon Trail Rally.',
-  rallycap: 'El centro esta mañana en el Parc Exposé. Fotos: Travis Weber, enviadas por el formulario de fotos de este sitio — ya están también en el protector de pantalla de la comunidad.',
-  rallylink: 'Página para espectadores de Oregon Trail Rally →',
-  rallywatch: '▶ Mira las etapas en vivo — YouTube',
-  rallyfb: 'Oregon Trail Rally en Facebook',
   commuteh2: '🚗 El veredicto del viaje',
   commutenote: 'La respuesta en una línea para manejar ahora mismo. El panorama completo del corredor — puente, incidentes y cámaras — está en la pestaña Viajes.',
   driveh2: '🧭 Tu viaje — ¿cuánto dura el manejo?',
@@ -5802,6 +5783,7 @@ const LANG_ES = {
   stickyriver: 'Río',
   stickyferry: 'Ferry',
   stickyevents: 'Eventos',
+  stickybiz: 'Negocios',
   stickysky: 'Cielo',
   offlinenote: "📶 No tienes conexión — este teléfono muestra las últimas lecturas que recogió. Sus edades reales están en el <a href=\"#freshness-card\">tablero de frescura</a> más abajo; confirma con las fuentes oficiales antes de viajar.",
   glbridge: 'Puente',
@@ -5953,6 +5935,7 @@ const LANG_ES = {
   dirlistcta: 'Anuncia tu servicio &rarr;',
   dirhonest: '<strong>Los anuncios son publicidad, no recomendaciones.</strong> No hemos verificado estos servicios — en especial para servicios dentro del hogar, pide referencias antes de contratar.',
   dircta: 'Anuncia tu servicio — gratis hasta el 31 de enero de 2027 &rarr;',
+  dirmaphint: 'Toca un pin para ver el negocio en la lista de abajo.',
   dirctanote: 'La solicitud usa el mismo formulario corto que las de patrocinadores. Cada anuncio lo lee una persona y se revisa antes de aparecer — nada se publica automáticamente y no hay pago en línea.',
   displaybtn: 'Pantalla',
   displaylabel: 'Abrir el modo pantalla — el salvapantallas comunitario',
@@ -6019,6 +6002,7 @@ const LANG_ES = {
   dwair: 'Aire y humo',
   dwevents: 'Eventos',
   dwfeatured: 'Negocios destacados',
+  dwservices: 'Negocios locales',
   dwwatch: 'La Vigilancia del Condado',
   dwsaver: 'Protector de pantalla de la comunidad',
   dwfresh: '¿Qué tan fresca es esta página?',
@@ -8251,8 +8235,8 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
       es: 'Aún no hay servicios de limpieza. ¿Dejas las casas brillando en este condado? Este es tu lugar — gratis hasta el 31 de enero de 2027.'
     },
     handyman: {
-      en: 'No handymen or repair folks yet — the first listing here is free while we launch.',
-      es: 'Aún no hay manitas ni reparadores — el primer anuncio aquí es gratis mientras lanzamos.'
+      en: 'No handymen or repair folks yet — the first listing here is free through January 31, 2027.',
+      es: 'Aún no hay manitas ni reparadores — el primer anuncio aquí es gratis hasta el 31 de enero de 2027.'
     },
     pets: {
       en: 'No pet sitters or groomers yet. Walk dogs or board cats around here? Claim the first spot — free through January 31, 2027.',
@@ -8522,64 +8506,100 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
   }
 })();
 
-/* v41 — RallySprint one-day spotlight (Travis, 2026-11-08).
-   The #rally-card ships hidden and only appears when the visitor's
-   local date (America/Los_Angeles) is 2026-11-08 — the Mike Nagle
-   RallySprint's one race day. Geometry in data/rally2026.json follows
-   the actual closed roads (OSM road paths for the two segments named
-   in the official closure notice); start/finish are the routebook's
-   own GPS points; the stage connector is dashed and labelled
-   approximate because the stage runs on closed forest roads. */
+/* ============================================================
+   v45 — LOCAL SERVICES DIRECTORY MAP (2026-11-08).
+   A small Leaflet map inside the services card: one pin per
+   listed business, read from the dir-item articles themselves
+   (data-lat / data-lng in the markup — no data file; listings
+   are added by hand after review, like sponsors). Built lazily
+   the first time the Events & More view opens (the card lives
+   in a hidden view; Leaflet needs a sized container), kept in
+   step with the category filter by watching the rows' hidden
+   state. Tapping a pin names the business and flashes its row.
+   ============================================================ */
 (function () {
-  var card = document.getElementById('rally-card');
-  if (!card) return;
-  var today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' });
-  if (today !== '2026-11-08') return;
-  card.hidden = false;
-  var rallyPill = document.getElementById('sticky-rally');
-  if (rallyPill) rallyPill.style.display = '';
-  var ES = document.documentElement.lang === 'es';
-  var T = ES ? {
-    start: 'Inicio de la etapa — Nehalem Divide',
-    finish: 'Meta de la etapa',
-    expose: 'Parc Exposé — centro, 8–9 AM',
-    service: 'Servicio — St. Helens Rec Center, ~12:30 PM, abierto al público',
-    podium: 'Podio — McCormick Park, 6 PM'
-  } : {
-    start: 'Stage start — Nehalem Divide',
-    finish: 'Stage finish',
-    expose: 'Parc Exposé — downtown, 8–9 AM',
-    service: 'Service — St. Helens Rec Center, ~12:30 PM, open to the public',
-    podium: 'Podium — McCormick Park, 6 PM'
-  };
-  fetch('data/rally2026.json')
-    .then(function (r) { return r.json(); })
-    .then(function (d) {
-      if (typeof L === 'undefined' || !document.getElementById('rally-map')) return;
-      var map = L.map('rally-map', { scrollWheelZoom: false });
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap contributors', maxZoom: 18
-      }).addTo(map);
-      var closedStyle = { color: '#b0511c', weight: 5, opacity: 0.9 };
-      var layers = [];
-      if (d.karth_closed) layers.push(L.polyline(d.karth_closed, closedStyle).addTo(map));
-      if (d.pittsburg_closed) layers.push(L.polyline(d.pittsburg_closed, closedStyle).addTo(map));
-      layers.push(L.polyline([[45.90589, -123.12445], [45.93328, -123.05324]],
-        { color: '#e9a44a', weight: 4, dashArray: '2 8', opacity: 0.95 }).addTo(map));
-      function spot(lat, lon, label) {
-        var m = L.circleMarker([lat, lon], {
-          radius: 7, color: '#1e4228', weight: 2, fillColor: '#e9a44a', fillOpacity: 0.95
-        }).addTo(map).bindPopup(label);
-        layers.push(m);
-        return m;
+  var el = document.getElementById('dir-map');
+  if (!el) return;
+  var map = null;
+  function rows() {
+    return Array.prototype.slice.call(
+      document.querySelectorAll('#dir-list .dir-item[data-lat][data-lng]'));
+  }
+  function pinIcon() {
+    return L.divIcon({
+      className: 'dir-pin',
+      html: '<span class="dir-pin-dot"></span>',
+      iconSize: [22, 22], iconAnchor: [11, 11]
+    });
+  }
+  function bizName(item) {
+    var h = item.querySelector('h3');
+    if (!h) return 'Local business';
+    var c = h.cloneNode(true);
+    var badge = c.querySelector('.dir-badge');
+    if (badge) badge.remove();
+    return c.textContent.trim();
+  }
+  function syncPins() {
+    if (!map) return;
+    rows().forEach(function (item) {
+      var m = item._dirMarker;
+      if (!m) return;
+      if (item.hidden) { if (map.hasLayer(m)) map.removeLayer(m); }
+      else if (!map.hasLayer(m)) m.addTo(map);
+    });
+  }
+  function build() {
+    if (map || typeof L === 'undefined') return;
+    map = L.map('dir-map', { scrollWheelZoom: false });
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors', maxZoom: 18
+    }).addTo(map);
+    var pts = [];
+    rows().forEach(function (item) {
+      var lat = parseFloat(item.getAttribute('data-lat'));
+      var lng = parseFloat(item.getAttribute('data-lng'));
+      if (!isFinite(lat) || !isFinite(lng)) return;
+      var metaEl = item.querySelector('.dir-meta');
+      var m = L.marker([lat, lng], { icon: pinIcon() }).addTo(map);
+      m.bindPopup('<div class="dirpop"><div class="dirpop-name">' +
+        bizName(item) + '</div>' +
+        (metaEl ? '<div class="dirpop-meta">' + metaEl.textContent.trim() + '</div>' : '') +
+        '</div>');
+      m.on('click', function () {
+        try { item.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); } catch (e) { /* older browser */ }
+        item.classList.remove('dir-flash');
+        void item.offsetWidth;
+        item.classList.add('dir-flash');
+      });
+      item._dirMarker = m;
+      pts.push([lat, lng]);
+    });
+    if (pts.length === 1) map.setView(pts[0], 14);
+    else if (pts.length > 1) map.fitBounds(L.latLngBounds(pts).pad(0.15));
+    else map.setView([46.02, -122.98], 10);
+    syncPins();
+    setTimeout(function () { try { map.invalidateSize(); } catch (e) {} }, 250);
+  }
+  if (window.MutationObserver) {
+    var mo = new MutationObserver(syncPins);
+    rows().forEach(function (item) {
+      mo.observe(item, { attributes: true, attributeFilter: ['hidden'] });
+    });
+  }
+  if (typeof cclShowView === 'function') {
+    var prevShow = cclShowView;
+    cclShowView = function (name) {
+      prevShow(name);
+      if (name === 'more') {
+        setTimeout(function () {
+          build();
+          if (map) { try { map.invalidateSize(); } catch (e) {} }
+        }, 60);
       }
-      spot(45.90589, -123.12445, T.start);
-      spot(45.93328, -123.05324, T.finish);
-      spot(45.86299, -122.79754, T.expose);
-      spot(45.85131, -122.81298, T.service);
-      spot(45.85247, -122.81706, T.podium);
-      map.fitBounds(L.featureGroup(layers).getBounds().pad(0.08));
-      setTimeout(function () { map.invalidateSize(); }, 250);
-    })
-    .catch(function () { /* card still reads fine without the map */ });
+    };
+  }
+  if (typeof cclViewCur !== 'undefined' && cclViewCur === 'more') {
+    setTimeout(build, 400);
+  }
 })();

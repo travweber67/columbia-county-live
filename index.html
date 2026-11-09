@@ -33,7 +33,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=44">
+<link rel="stylesheet" href="style.css?v=45">
 <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
@@ -129,11 +129,11 @@ document.documentElement.setAttribute("data-theme",t);})();
   <span class="sticky-brand"><img class="sticky-ico" src="img/icons/icon-logo-courthouse.png" alt="" aria-hidden="true"> Live view</span>
   <a class="sticky-pill" id="sticky-weather" href="#alerts-card">⚠️ Weather —</a>
   <a class="sticky-pill" id="sticky-bridge" href="#roads-card">🌉 Bridge —</a>
-  <a class="sticky-pill" id="sticky-rally" href="#rally-card" style="display:none">🏁 Rally today</a>
   <nav class="sticky-links" aria-label="Jump to a section">
     <a href="#rivers-card" data-i18n="stickyriver">River</a>
     <a href="#ferry-card" data-i18n="stickyferry">Ferry</a>
     <a href="#events-card" data-i18n="stickyevents">Events</a>
+    <a href="#services-card" data-i18n="stickybiz">Businesses</a>
     <a href="#sky-card" data-i18n="stickysky">Sky</a>
   </nav>
 </div>
@@ -260,47 +260,6 @@ document.documentElement.setAttribute("data-theme",t);})();
   <p class="finder-hint" data-i18n="finderhint">One search across every card on this page, all seven towns, and the events calendars — tap a result and the page takes you straight there.</p>
 </section>
 
-<section class="card rally-card" id="rally-card" hidden aria-label="Today only — the Mike Nagle RallySprint in St. Helens">
-  <div class="rally-hero">
-    <img src="img/bg/bg-day-8.jpg" alt="Rally cars in front of the Columbia County Courthouse in St. Helens this morning" loading="lazy" decoding="async">
-    <div class="rally-hero-text">
-      <h2 data-i18n="rallyh2">🏁 Today only — rally cars in St. Helens</h2>
-      <p data-i18n="rallylead">A real stage rally is running out of St. Helens today — the Mike Nagle RallySprint. One gravel stage up in the Nehalem Divide, 9.7 miles, run four times, 38 cars. Here is the route, the roads it closes, and where you can actually see the cars.</p>
-    </div>
-  </div>
-  <div class="panel-body">
-    <div id="rally-map" class="rally-map" aria-label="Map of the rally stage, the closed roads, and the places to see the cars"></div>
-    <div class="rally-legend">
-      <span class="rally-key"><span class="rally-swatch sw-closed" aria-hidden="true"></span><span data-i18n="rallylegclosed">Road closed today, 8 AM – 6 PM</span></span>
-      <span class="rally-key"><span class="rally-swatch sw-stage" aria-hidden="true"></span><span data-i18n="rallylegstage">The stage (line is approximate — forest roads, no public access)</span></span>
-      <span class="rally-key"><span class="rally-dot" aria-hidden="true"></span><span data-i18n="rallylegspot">Places to see the cars</span></span>
-    </div>
-    <div class="rally-photos">
-      <img src="img/bg/bg-day-7.jpg" alt="Rally cars lined up on S 1st Street in downtown St. Helens this morning" loading="lazy" decoding="async">
-      <img src="img/bg/bg-day-9.jpg" alt="A gray Volvo rally car in front of City Hall in St. Helens this morning" loading="lazy" decoding="async">
-    </div>
-    <p class="card-note small" data-i18n="rallycap">Downtown this morning at the Parc Exposé. Photos: Travis Weber, sent in through this site's own photo form — they're in the community screensaver now too.</p>
-    <h3 data-i18n="rallyclosedh">Roads closed today · 8 AM – 6 PM</h3>
-    <ul class="rally-list">
-      <li data-i18n="rallyclosed1">Camp Wilkerson / Karth Rd — Apiary Rd to Pittsburg Rd</li>
-      <li data-i18n="rallyclosed2">Pittsburg Rd — Scappoose-Vernonia Hwy to Karth Rd</li>
-    </ul>
-    <p class="card-note" data-i18n="rallyclosednote">There are no spectator areas along the stage roads, for safety. See the cars in town instead:</p>
-    <h3 data-i18n="rallyseeh">Where to see the cars</h3>
-    <ul class="rally-list">
-      <li data-i18n="rallysee1">~12:30 PM · Service at the St. Helens Rec Center — open to the public, watch the crews work on the cars</li>
-      <li data-i18n="rallysee2">6:00 PM · Podium &amp; Parc Fermé at McCormick Park</li>
-      <li data-i18n="rallysee3">Stages run at 9:53 AM, 11:25 AM, 2:27 PM and 3:59 PM (first car) — the Oregon Trail Rally YouTube channel is livestreaming them free</li>
-      <li data-i18n="rallysee4">Between stages the cars transit the Scappoose-Vernonia Hwy at normal road speed, so you may spot them around town</li>
-    </ul>
-    <p class="rally-links">
-      <a class="rally-btn" href="https://www.youtube.com/@oregontrailrally" target="_blank" rel="noopener" data-i18n="rallywatch">▶ Watch the stages live — YouTube</a>
-      <a class="rally-btn alt" href="https://www.facebook.com/OregonTrailRally" target="_blank" rel="noopener" data-i18n="rallyfb">Oregon Trail Rally on Facebook</a>
-    </p>
-    <p class="card-note small" data-i18n="rallysrc">Route, closures and times: Oregon Trail Rally official routebook and road-closure notice.</p>
-    <p class="card-note small"><a href="https://oregontrailrally.com/mike-nagle-rallysprint-spectators/" target="_blank" rel="noopener" data-i18n="rallylink">Oregon Trail Rally spectator page →</a></p>
-  </div>
-</section>
 
 <section class="card since-card" id="since-card" hidden aria-label="What changed since your last visit">
   <div class="card-head">
@@ -396,14 +355,6 @@ document.documentElement.setAttribute("data-theme",t);})();
   </div>
   <p class="card-note small" data-i18n="schoolsnote2">No automated closure feed exists for these districts, so this board is updated by hand on storm mornings — and a district&rsquo;s own site is always the final word for your family.</p>
 </section>
-
-<!-- v41: ONE-DAY spotlight — Mike Nagle RallySprint, Sun Nov 8 2026 only.
-     The card ships hidden; app.js (rally module) unhides it only when the
-     visitor's local date is 2026-11-08, and builds the mini map from
-     data/rally2026.json (official closed-road geometry). After today it
-     simply never appears again. Facts: Oregon Trail Rally official
-     routebook + road-closure notice. Photo: Travis Weber's own rally
-     photo from this morning (community pool bg-day-7). -->
 
 <section class="card band-card briefing-card" id="briefing-card" aria-label="The county briefing — today's summary, ready to copy and share">
       <div class="card-band" aria-hidden="true"><img src="img/dusk/ticker-panorama.jpg" alt="" loading="lazy" decoding="async"></div>
@@ -825,6 +776,8 @@ document.documentElement.setAttribute("data-theme",t);})();
     <img class="card-ico" src="img/icons/icon-search.png" alt="" aria-hidden="true"><h2 data-i18n="dirh2">Local services — the little guys</h2>
   </div>
   <p class="card-note" data-i18n="dirintro">Babysitters, cleaners, handymen, pet sitters, tutors — the one-person businesses this county runs on, in one plain list. The storefronts sit up top as sponsors and featured businesses; this shelf is for the smallest operators. Tap a category to narrow it down.</p>
+  <div id="dir-map" class="dir-map" aria-label="Map of the listed local businesses"></div>
+  <p class="card-note small dir-map-hint" data-i18n="dirmaphint">Tap a pin to find the business in the list below.</p>
   <div class="dir-filters" id="dir-filters" role="group" aria-label="Filter local services by category">
     <button class="dir-chip active" type="button" data-dirfilter="all" aria-pressed="true" data-i18n="dirall">All services</button>
     <button class="dir-chip" type="button" data-dirfilter="childcare" aria-pressed="false" data-i18n="dirchildcare">Child care</button>
@@ -837,7 +790,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <button class="dir-chip" type="button" data-dirfilter="other" aria-pressed="false" data-i18n="dirother">Other local services</button>
   </div>
   <div class="dir-list" id="dir-list">
-    <article class="dir-item" data-dircat="other">
+    <article class="dir-item" data-dircat="other" data-lat="45.85067" data-lng="-122.83077">
+      <!-- Photo: Oregon Trail Lanes' own website (oregontraillanes.com) — league night at the lanes, May 2023. Added v45. -->
+      <img class="dir-photo" src="img/dir-oregon-trail-lanes.jpg" alt="League night inside Oregon Trail Lanes in St. Helens" loading="lazy" decoding="async">
       <div class="dir-item-main">
         <h3>Oregon Trail Lanes <span class="dir-badge" data-i18n="dirfounding">Founding business</span></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirother">Other local services</span></p>
@@ -1068,6 +1023,7 @@ document.documentElement.setAttribute("data-theme",t);})();
       <button class="drawer-view" type="button" data-drawer-view="more"><img src="img/icons/icon-events.png" alt="" aria-hidden="true"><span data-i18n="tabmore">Events &amp; More</span></button>
       <a class="drawer-link" href="#events-card" data-i18n="dwevents">Events</a>
       <a class="drawer-link" href="#featured-local" data-i18n="dwfeatured">Featured local</a>
+      <a class="drawer-link" href="#services-card" data-i18n="dwservices">Local businesses</a>
       <a class="drawer-link" href="#watch-card" data-i18n="dwwatch">The County Watch</a>
       <a class="drawer-link" href="#saver-card" data-i18n="dwsaver">Community screensaver</a>
       <a class="drawer-link" href="#freshness-card" data-i18n="dwfresh">How fresh is this page?</a>
@@ -1190,7 +1146,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=44"></script>
+<script src="app.js?v=45"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>

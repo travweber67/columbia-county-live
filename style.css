@@ -2577,27 +2577,18 @@ html[data-theme="dark"] .getapp-other summary{color:#bfe3c8}
   .briefing-view{min-height:660px}
 }
 
-/* v41 — RallySprint one-day spotlight card */
-.rally-card{padding-top:0;overflow:hidden}
-.rally-card h3{margin:18px 0 6px;font-size:1.02rem}
-.rally-map{height:340px;border-radius:14px;margin:12px 0 8px;background:#e8e2cf;z-index:0}
-.rally-legend{display:flex;flex-wrap:wrap;gap:6px 18px;margin:4px 0 2px}
-.rally-key{display:inline-flex;align-items:center;gap:8px;font-size:.86rem}
-.rally-swatch{display:inline-block;width:30px;height:0;border-top:5px solid #b0511c;border-radius:3px}
-.rally-swatch.sw-stage{border-top:4px dashed #e9a44a}
-.rally-dot{display:inline-block;width:11px;height:11px;border-radius:50%;background:#e9a44a;border:2px solid #1e4228}
-.rally-list{margin:4px 0 8px;padding-left:20px}
-.rally-list li{margin:3px 0}
-@media (max-width:640px){.rally-map{height:280px}}
-.rally-links{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 4px}
-.rally-btn{display:inline-block;background:#b0511c;color:#f1ecdc;font-weight:700;padding:10px 16px;border-radius:999px;text-decoration:none;font-size:.95rem}
-.rally-btn.alt{background:transparent;color:#b0511c;border:2px solid #b0511c}
-.rally-hero{position:relative;overflow:hidden}
-.rally-hero::before{content:"";position:absolute;top:0;left:0;right:0;height:12px;z-index:2;background:repeating-conic-gradient(#1c1a15 0% 25%, #f1ecdc 0% 50%) 0 0/24px 24px}
-.rally-hero img{display:block;width:100%;height:380px;object-fit:cover;object-position:center 72%}
-.rally-hero-text{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:44px 20px 16px;background:linear-gradient(to bottom,rgba(18,14,8,0),rgba(18,14,8,.86) 58%);color:#f1ecdc}
-.rally-hero-text h2{color:#f1ecdc;margin:0 0 6px;text-shadow:0 1px 8px rgba(0,0,0,.45)}
-.rally-hero-text p{margin:0;font-size:.96rem;line-height:1.45}
-.rally-photos{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0 4px}
-.rally-photos img{width:100%;height:160px;object-fit:cover;border-radius:12px;display:block}
-@media (max-width:640px){.rally-hero img{height:340px}.rally-photos img{height:132px}}
+/* v45 — directory map, business photos, pin + popup (site palette) */
+.dir-map{height:300px;border-radius:14px;margin:12px 0 6px;background:#e8e2cf;z-index:0}
+@media (max-width:640px){.dir-map{height:250px}}
+.dir-map-hint{margin:2px 0 10px}
+.dir-photo{width:118px;height:88px;object-fit:cover;border-radius:10px;flex-shrink:0;display:block}
+@media (max-width:640px){.dir-photo{width:100%;height:150px}}
+.dir-pin{background:transparent;border:none}
+.dir-pin-dot{display:block;width:20px;height:20px;border-radius:50%;background:#b0511c;border:3px solid #f1ecdc;box-shadow:0 1px 5px rgba(20,16,8,.5)}
+.dir-map .leaflet-popup-content-wrapper{background:#f7f2df;color:#22301f;border-radius:12px}
+.dir-map .leaflet-popup-tip{background:#f7f2df}
+.dir-map .leaflet-popup-content{margin:10px 14px}
+.dirpop-name{font-family:var(--display);font-weight:700;font-size:1rem;line-height:1.2}
+.dirpop-meta{font-size:.74rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#b0511c;margin-top:2px}
+.dir-item.dir-flash{animation:dirflash 1.6s ease}
+@keyframes dirflash{0%,55%{background:rgba(233,164,74,.32)}100%{background:transparent}}
