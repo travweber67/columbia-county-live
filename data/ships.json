@@ -1,6 +1,82 @@
 {
- "fetched_at": "2026-11-09T10:55:41Z",
- "status": "error",
- "note": "AISStream error: timed out",
- "ships": []
+ "fetched_at": "2026-11-09T10:57:39Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 538007029,
+   "name": "ZEPHYROS",
+   "lat": 46.02818,
+   "lon": -122.87547,
+   "sog_kn": 0.1,
+   "cog": 215.8,
+   "heading": 144,
+   "nav_status": 1,
+   "updated": "2026-11-09 10:58:15.115681991 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.0796,
+   "lon": -122.90165,
+   "sog_kn": 0,
+   "cog": 288.4,
+   "heading": 135,
+   "nav_status": 0,
+   "updated": "2026-11-09 10:58:23.146862278 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.65906,
+   "lon": -122.76246,
+   "sog_kn": 2.1,
+   "cog": 8.8,
+   "heading": 79,
+   "nav_status": 3,
+   "updated": "2026-11-09 10:58:30.817498298 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.71084,
+   "lon": -122.76786,
+   "sog_kn": 8.5,
+   "cog": 190.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 10:58:32.879579912 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64343,
+   "lon": -122.75282,
+   "sog_kn": 0,
+   "cog": 224.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 10:58:35.269930199 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58728,
+   "lon": -122.77009,
+   "type_code": 31,
+   "destination": "US^02SY>0UJ9",
+   "updated": "2026-11-09 10:58:36.715440443 +0000 UTC"
+  },
+  {
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 46.02556,
+   "lon": -122.87091,
+   "sog_kn": 11.1,
+   "cog": 322.4,
+   "heading": 324,
+   "nav_status": 12,
+   "updated": "2026-11-09 10:58:37.884004866 +0000 UTC"
+  }
+ ]
 }
