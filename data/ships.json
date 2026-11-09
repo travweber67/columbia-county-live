@@ -1,59 +1,116 @@
 {
- "fetched_at": "2026-11-09T11:50:44Z",
+ "fetched_at": "2026-11-09T11:55:45Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35742,
-   "type_code": 30,
-   "updated": "2026-11-09 11:50:51.175480001 +0000 UTC"
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64345,
+   "lon": -122.75279,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-09 11:55:49.939513322 +0000 UTC"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15707,
-   "lon": -123.40234,
+   "mmsi": 368082970,
+   "name": "AMERICAN.HARMONY",
+   "lat": 46.00359,
+   "lon": -122.8477,
+   "type_code": 60,
+   "destination": "KALAMA WA",
+   "updated": "2026-11-09 11:55:52.789101648 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64731,
+   "lon": -122.7399,
+   "sog_kn": 0,
+   "cog": 320.9,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-09 11:55:53.512501348 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00883,
+   "lon": -122.8488,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 131,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-09 11:50:54.342255408 +0000 UTC"
+   "updated": "2026-11-09 11:55:55.112037444 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10357,
-   "lon": -122.91009,
+   "mmsi": 368257130,
+   "name": "TRIUMPH VII",
+   "lat": 46.00987,
+   "lon": -122.84831,
    "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 76,
-   "nav_status": 3,
-   "updated": "2026-11-09 11:50:54.595507638 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.8507,
-   "lon": -122.78468,
-   "sog_kn": 7.5,
-   "cog": 1.4,
-   "heading": 359,
-   "nav_status": 12,
-   "updated": "2026-11-09 11:51:00.591471162 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 345.7,
-   "heading": 135,
+   "cog": 25.6,
+   "heading": 511,
    "nav_status": 15,
-   "updated": "2026-11-09 11:51:17.866685722 +0000 UTC"
+   "updated": "2026-11-09 11:55:56.846201153 +0000 UTC"
+  },
+  {
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.1101,
+   "lon": -122.9634,
+   "type_code": 70,
+   "destination": "CN TAC",
+   "updated": "2026-11-09 11:55:57.43860649 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20001,
+   "lon": -123.38553,
+   "sog_kn": 0,
+   "cog": 240.2,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-09 11:56:00.897507336 +0000 UTC"
+  },
+  {
+   "mmsi": 311000824,
+   "name": "AFRICAN AVOCET",
+   "lat": 46.10351,
+   "lon": -122.94986,
+   "type_code": 79,
+   "destination": "KR PUS",
+   "updated": "2026-11-09 11:56:02.344451253 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63873,
+   "lon": -122.72403,
+   "sog_kn": 0,
+   "cog": 223.5,
+   "heading": 113,
+   "nav_status": 1,
+   "updated": "2026-11-09 11:56:03.777138287 +0000 UTC"
+  },
+  {
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 45.98404,
+   "lon": -122.83524,
+   "type_code": 70,
+   "destination": "KR PUS",
+   "updated": "2026-11-09 11:56:09.194028609 +0000 UTC"
+  },
+  {
+   "mmsi": 538007029,
+   "name": "ZEPHYROS",
+   "lat": 46.02741,
+   "lon": -122.8764,
+   "type_code": 70,
+   "destination": "CNQDG",
+   "updated": "2026-11-09 11:56:16.54467955 +0000 UTC"
   }
  ]
 }
