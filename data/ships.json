@@ -1,47 +1,60 @@
 {
- "fetched_at": "2026-11-09T18:06:13Z",
+ "fetched_at": "2026-11-09T18:11:13Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.79824,
-   "lon": -122.78674,
-   "sog_kn": 5,
-   "cog": 149.5,
-   "heading": 152,
-   "nav_status": 0,
-   "updated": "2026-11-09 18:06:29.32180255 +0000 UTC"
+   "mmsi": 369493484,
+   "name": "USCG BLUEBELLL",
+   "lat": 46.07371,
+   "lon": -122.89391,
+   "sog_kn": 0.2,
+   "cog": 353.8,
+   "heading": 143,
+   "nav_status": 3,
+   "updated": "2026-11-09 18:11:29.151894875 +0000 UTC"
   },
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.07972,
-   "lon": -122.90171,
+   "mmsi": 352006943,
+   "name": "GLOVIS LEGEND",
+   "lat": 46.2723,
+   "lon": -123.48901,
+   "sog_kn": 13.3,
+   "cog": 270.6,
+   "heading": 270,
+   "nav_status": 0,
+   "updated": "2026-11-09 18:11:29.549428393 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.12543,
+   "lon": -122.99406,
+   "type_code": 52,
+   "destination": "US^0UJB>0UJB",
+   "updated": "2026-11-09 18:11:32.036675176 +0000 UTC"
+  },
+  {
+   "mmsi": 368328430,
+   "name": "MCR 8",
+   "lat": 45.58479,
+   "lon": -122.76624,
    "sog_kn": 0,
-   "cog": 40.8,
+   "cog": 360,
    "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-09 18:11:44.921644763 +0000 UTC"
+  },
+  {
+   "mmsi": 367681630,
+   "name": "VICKI B",
+   "lat": 45.82918,
+   "lon": -122.7904,
+   "sog_kn": 5.3,
+   "cog": 186.6,
+   "heading": 183,
    "nav_status": 0,
-   "updated": "2026-11-09 18:06:31.632041782 +0000 UTC"
-  },
-  {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64538,
-   "lon": -122.73505,
-   "type_code": 70,
-   "destination": "PER ORDERS",
-   "updated": "2026-11-09 18:06:36.498325403 +0000 UTC"
-  },
-  {
-   "mmsi": 538011495,
-   "name": "MTR JUPITER",
-   "lat": 46.10633,
-   "lon": -122.95652,
-   "type_code": 70,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-09 18:06:43.786482808 +0000 UTC"
+   "updated": "2026-11-09 18:11:47.38686987 +0000 UTC"
   }
  ]
 }
