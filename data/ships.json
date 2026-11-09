@@ -1,87 +1,55 @@
 {
- "fetched_at": "2026-11-09T08:45:32Z",
+ "fetched_at": "2026-11-09T08:50:32Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65009,
-   "lon": -122.74754,
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00879,
+   "lon": -122.84881,
    "sog_kn": 0,
-   "cog": 239.6,
+   "cog": 360,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-09 08:45:40.348743825 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-09 08:50:45.328391462 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.2,
+   "lon": -123.38539,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-09 08:50:45.838720511 +0000 UTC"
   },
   {
    "mmsi": 338616000,
    "name": "DUBLIN SEA",
-   "lat": 45.66596,
-   "lon": -122.76675,
-   "type_code": 57,
-   "destination": "US OTS",
-   "updated": "2026-11-09 08:45:43.955370058 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15342,
-   "lon": -123.37711,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 08:45:47.27169864 +0000 UTC"
+   "lat": 45.66542,
+   "lon": -122.76666,
+   "sog_kn": 0.2,
+   "cog": 102.3,
+   "heading": 156,
+   "nav_status": 12,
+   "updated": "2026-11-09 08:50:56.587765947 +0000 UTC"
   },
   {
    "mmsi": 367513190,
    "name": "PORTLAND",
-   "lat": 45.64345,
-   "lon": -122.75281,
+   "lat": 45.64343,
+   "lon": -122.75282,
    "type_code": 52,
    "destination": "COL RIVER OPS",
-   "updated": "2026-11-09 08:45:52.212589098 +0000 UTC"
+   "updated": "2026-11-09 08:51:03.151348897 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 303.7,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-09 08:45:59.733111779 +0000 UTC"
-  },
-  {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58131,
-   "lon": -122.76066,
-   "type_code": 57,
-   "destination": "GASCO",
-   "updated": "2026-11-09 08:46:00.005187633 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58759,
-   "lon": -122.77042,
-   "sog_kn": 0,
-   "cog": 248.7,
-   "heading": 140,
-   "nav_status": 0,
-   "updated": "2026-11-09 08:46:00.400448286 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64347,
-   "lon": -122.75251,
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.65073,
+   "lon": -122.75476,
    "type_code": 52,
-   "destination": "US^0UU4>02MR",
-   "updated": "2026-11-09 08:46:00.607658412 +0000 UTC"
+   "updated": "2026-11-09 08:51:04.783387976 +0000 UTC"
   }
  ]
 }
