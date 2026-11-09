@@ -1,82 +1,69 @@
 {
- "fetched_at": "2026-11-09T09:55:37Z",
+ "fetched_at": "2026-11-09T09:57:38Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.8525,
+   "lon": -122.78597,
+   "sog_kn": 9.2,
+   "cog": 175.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 09:58:23.079780211 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60757,
+   "lon": -122.67754,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 09:58:23.165387073 +0000 UTC"
+  },
+  {
+   "mmsi": 367315790,
+   "name": "LORI B.",
+   "lat": 45.71141,
+   "lon": -122.7672,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-09 09:58:31.866038618 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15707,
+   "lon": -123.40235,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 130,
+   "nav_status": 0,
+   "updated": "2026-11-09 09:58:34.286397114 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58731,
+   "lon": -122.77007,
+   "type_code": 31,
+   "destination": "US^02SY>0UJ9",
+   "updated": "2026-11-09 09:58:36.746147098 +0000 UTC"
+  },
   {
    "mmsi": 368041480,
    "name": "SAMANTHA S",
-   "lat": 46.02835,
-   "lon": -122.87652,
+   "lat": 46.02833,
+   "lon": -122.87655,
    "sog_kn": 0.1,
    "cog": 58.6,
-   "heading": 141,
+   "heading": 134,
    "nav_status": 0,
-   "updated": "2026-11-09 09:55:50.232983961 +0000 UTC",
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS"
-  },
-  {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.5842,
-   "lon": -122.76617,
-   "sog_kn": 0,
-   "cog": 344.5,
-   "heading": 145,
-   "nav_status": 5,
-   "updated": "2026-11-09 09:55:44.807417219 +0000 UTC"
-  },
-  {
-   "mmsi": 367667060,
-   "name": "GRANITE POINT",
-   "lat": 45.64731,
-   "lon": -122.73991,
-   "sog_kn": 0,
-   "cog": 287.4,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-09 09:55:53.509993557 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.62902,
-   "lon": -122.69231,
-   "sog_kn": 0,
-   "cog": 171.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 09:55:55.213307896 +0000 UTC"
-  },
-  {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.90898,
-   "lon": -122.81432,
-   "sog_kn": 0,
-   "cog": 247,
-   "heading": 340,
-   "nav_status": 0,
-   "updated": "2026-11-09 09:55:59.508167358 +0000 UTC"
-  },
-  {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59407,
-   "lon": -122.77215,
-   "type_code": 70,
-   "destination": "NOT AVAILABLE",
-   "updated": "2026-11-09 09:56:06.356643311 +0000 UTC"
-  },
-  {
-   "mmsi": 354425000,
-   "name": "PAN QUEEN",
-   "lat": 45.9841,
-   "lon": -122.8353,
-   "type_code": 70,
-   "destination": "KR PUS",
-   "updated": "2026-11-09 09:56:08.987925347 +0000 UTC"
+   "updated": "2026-11-09 09:58:41.190728771 +0000 UTC"
   }
  ]
 }
