@@ -1,49 +1,78 @@
 {
- "fetched_at": "2026-11-09T09:27:38Z",
+ "fetched_at": "2026-11-09T09:30:35Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538007029,
-   "name": "ZEPHYROS",
-   "lat": 46.0278,
-   "lon": -122.87583,
+   "mmsi": 563116100,
+   "name": "OCEAN GOLD",
+   "lat": 45.99837,
+   "lon": -122.85185,
    "sog_kn": 0,
-   "cog": 179.4,
-   "heading": 139,
+   "cog": 341.9,
+   "heading": 164,
    "nav_status": 1,
-   "updated": "2026-11-09 09:28:15.217246244 +0000 UTC"
+   "updated": "2026-11-09 09:30:43.771909481 +0000 UTC"
   },
   {
-   "mmsi": 538006097,
-   "name": "AD ASTRA",
-   "lat": 45.64309,
-   "lon": -122.77125,
-   "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-09 09:28:26.106989512 +0000 UTC"
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.634,
+   "lon": -122.71515,
+   "type_code": 52,
+   "destination": "VANCOUER,WA",
+   "updated": "2026-11-09 09:30:47.071942835 +0000 UTC"
   },
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15342,
-   "lon": -123.37713,
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.63233,
+   "lon": -122.70948,
+   "sog_kn": 3.6,
+   "cog": 121.7,
+   "heading": 113,
+   "nav_status": 0,
+   "updated": "2026-11-09 09:30:47.117767278 +0000 UTC"
+  },
+  {
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.90899,
+   "lon": -122.81432,
    "sog_kn": 0,
-   "cog": 162.2,
-   "heading": 511,
+   "cog": 332.1,
+   "heading": 339,
    "nav_status": 0,
-   "updated": "2026-11-09 09:28:36.395229837 +0000 UTC"
+   "updated": "2026-11-09 09:30:59.085064431 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07967,
-   "lon": -122.90215,
-   "sog_kn": 0.1,
-   "cog": 134.7,
-   "heading": 135,
-   "nav_status": 0,
-   "updated": "2026-11-09 09:28:36.874175109 +0000 UTC"
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19942,
+   "lon": -123.38507,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-09 09:31:00.828026144 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.044,
+   "lon": -122.87692,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-09 09:31:04.498127433 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20001,
+   "lon": -123.38539,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-09 09:31:04.630273512 +0000 UTC"
   }
  ]
 }
