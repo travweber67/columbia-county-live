@@ -1,60 +1,89 @@
 {
- "fetched_at": "2026-11-09T00:54:55Z",
+ "fetched_at": "2026-11-09T00:57:30Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.2,
-   "lon": -123.38542,
-   "sog_kn": 0,
-   "cog": 165.3,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-09 00:55:05.829010296 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07975,
-   "lon": -122.90204,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 319,
-   "nav_status": 3,
-   "updated": "2026-11-09 00:55:08.120567391 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15705,
-   "lon": -123.40232,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 138,
-   "nav_status": 0,
-   "updated": "2026-11-09 00:55:13.508671969 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07958,
-   "lon": -122.90166,
-   "sog_kn": 0,
-   "cog": 325.4,
-   "heading": 137,
-   "nav_status": 0,
-   "updated": "2026-11-09 00:55:24.685827213 +0000 UTC"
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.09906,
+   "lon": -122.93928,
+   "type_code": 70,
+   "destination": "USA LONGVIEW",
+   "updated": "2026-11-09 00:58:16.350287184 +0000 UTC"
   },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 45.62947,
-   "lon": -122.69862,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-09 00:55:25.030969879 +0000 UTC"
+   "lat": 45.63457,
+   "lon": -122.7066,
+   "sog_kn": 10.1,
+   "cog": 310.9,
+   "heading": 309,
+   "nav_status": 3,
+   "updated": "2026-11-09 00:58:19.368986232 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58758,
+   "lon": -122.77047,
+   "sog_kn": 0,
+   "cog": 333.1,
+   "heading": 141,
+   "nav_status": 0,
+   "updated": "2026-11-09 00:58:19.614747798 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00909,
+   "lon": -122.84833,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 00:58:19.720207046 +0000 UTC"
+  },
+  {
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.64316,
+   "lon": -122.77124,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-09 00:58:26.020597526 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.38553,
+   "sog_kn": 0,
+   "cog": 3,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-09 00:58:30.396498494 +0000 UTC"
+  },
+  {
+   "mmsi": 368046350,
+   "name": "AMERICAN SONG",
+   "lat": 46.00369,
+   "lon": -122.84777,
+   "sog_kn": 0,
+   "cog": 177.8,
+   "heading": 160,
+   "nav_status": 5,
+   "updated": "2026-11-09 00:58:31.625203431 +0000 UTC"
+  },
+  {
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.6122,
+   "lon": -122.64519,
+   "type_code": 52,
+   "destination": "US^10M4>02MP",
+   "updated": "2026-11-09 00:58:42.918290369 +0000 UTC"
   }
  ]
 }
