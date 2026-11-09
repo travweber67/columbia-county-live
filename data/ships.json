@@ -1,131 +1,95 @@
 {
- "fetched_at": "2026-11-09T02:50:03Z",
+ "fetched_at": "2026-11-09T02:55:04Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.6454,
-   "lon": -122.73504,
+   "mmsi": 538007029,
+   "name": "ZEPHYROS",
+   "lat": 46.02779,
+   "lon": -122.87562,
    "sog_kn": 0,
-   "cog": 30.4,
+   "cog": 164.7,
+   "heading": 155,
+   "nav_status": 1,
+   "updated": "2026-11-09 02:55:15.271487765 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.81296,
+   "lon": -122.79598,
+   "sog_kn": 5.7,
+   "cog": 168,
+   "heading": 162,
+   "nav_status": 12,
+   "updated": "2026-11-09 02:55:20.072437605 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.6483,
+   "lon": -122.74243,
+   "sog_kn": 0,
+   "cog": 239.6,
    "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-09 02:50:15.24800423 +0000 UTC"
+   "nav_status": 12,
+   "updated": "2026-11-09 02:55:20.703079419 +0000 UTC"
   },
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.27199,
-   "lon": -123.48575,
-   "sog_kn": 3.7,
-   "cog": 268.3,
-   "heading": 280,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.65205,
+   "lon": -122.75543,
+   "sog_kn": 10.5,
+   "cog": 315,
+   "heading": 318,
    "nav_status": 3,
-   "updated": "2026-11-09 02:50:22.536397242 +0000 UTC"
+   "updated": "2026-11-09 02:55:24.945820708 +0000 UTC",
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER"
   },
   {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.02847,
-   "lon": -122.87602,
-   "sog_kn": 0.1,
-   "cog": 233.7,
-   "heading": 153,
-   "nav_status": 5,
-   "updated": "2026-11-09 02:50:22.565605607 +0000 UTC"
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 45.66705,
+   "lon": -122.76701,
+   "type_code": 57,
+   "destination": "US PDX",
+   "updated": "2026-11-09 02:55:22.411354147 +0000 UTC"
   },
   {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.1089,
-   "lon": -122.96125,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-09 02:50:22.689333335 +0000 UTC"
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60752,
+   "lon": -122.67769,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 02:55:23.212008394 +0000 UTC"
   },
   {
    "mmsi": 367669550,
    "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35742,
+   "lat": 46.17718,
+   "lon": -123.35744,
    "sog_kn": 0,
-   "cog": 293,
+   "cog": 259.4,
    "heading": 135,
    "nav_status": 15,
-   "updated": "2026-11-09 02:50:25.512588462 +0000 UTC"
+   "updated": "2026-11-09 02:55:25.542553964 +0000 UTC"
   },
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.62768,
-   "lon": -122.69864,
-   "sog_kn": 1.8,
-   "cog": 16.5,
-   "heading": 287,
-   "nav_status": 12,
-   "updated": "2026-11-09 02:50:25.534018817 +0000 UTC"
-  },
-  {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 46.02715,
-   "lon": -122.86955,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-09 02:50:25.925658457 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10359,
-   "lon": -122.9101,
-   "type_code": 52,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-09 02:50:33.345334229 +0000 UTC"
-  },
-  {
-   "mmsi": 477133900,
-   "name": "SHAO SHAN 8",
-   "lat": 45.64395,
-   "lon": -122.74112,
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.5842,
+   "lon": -122.7661,
    "sog_kn": 0,
-   "cog": 196,
-   "heading": 110,
-   "nav_status": 1,
-   "updated": "2026-11-09 02:50:33.951154785 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07958,
-   "lon": -122.90164,
-   "sog_kn": 0,
-   "cog": 274.4,
-   "heading": 137,
-   "nav_status": 0,
-   "updated": "2026-11-09 02:50:34.132204141 +0000 UTC"
-  },
-  {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61219,
-   "lon": -122.6452,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "cog": 30.5,
+   "heading": 145,
    "nav_status": 5,
-   "updated": "2026-11-09 02:50:34.550326515 +0000 UTC"
-  },
-  {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58131,
-   "lon": -122.76065,
-   "type_code": 57,
-   "destination": "GASCO",
-   "updated": "2026-11-09 02:50:36.434078231 +0000 UTC"
+   "updated": "2026-11-09 02:55:42.682208682 +0000 UTC"
   }
  ]
 }
