@@ -1,58 +1,42 @@
 {
- "fetched_at": "2026-11-09T02:40:03Z",
+ "fetched_at": "2026-11-09T02:45:03Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15336,
-   "lon": -123.37717,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 02:40:27.682735369 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64789,
-   "lon": -122.74095,
-   "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-09 02:40:28.392647983 +0000 UTC"
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.27136,
+   "lon": -123.48109,
+   "sog_kn": 0.7,
+   "cog": 358.6,
+   "heading": 59,
+   "nav_status": 3,
+   "updated": "2026-11-09 02:45:12.681101186 +0000 UTC"
   },
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
-   "lat": 46.07958,
-   "lon": -122.90165,
+   "lat": 46.07959,
+   "lon": -122.90164,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-09 02:45:34.135771731 +0000 UTC",
    "sog_kn": 0,
-   "cog": 125.5,
+   "cog": 246.1,
    "heading": 138,
-   "nav_status": 0,
-   "updated": "2026-11-09 02:40:34.493405727 +0000 UTC"
+   "nav_status": 0
   },
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10283,
-   "lon": -122.9085,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
    "sog_kn": 0,
-   "cog": 43.7,
-   "heading": 352,
-   "nav_status": 0,
-   "updated": "2026-11-09 02:40:35.089823369 +0000 UTC"
-  },
-  {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58729,
-   "lon": -122.77006,
-   "type_code": 31,
-   "destination": "US^02SY>0UJ9",
-   "updated": "2026-11-09 02:40:36.544342051 +0000 UTC"
+   "cog": 201.7,
+   "heading": 133,
+   "nav_status": 15,
+   "updated": "2026-11-09 02:45:27.6132744 +0000 UTC"
   }
  ]
 }
