@@ -1,71 +1,115 @@
 {
- "fetched_at": "2026-11-09T04:50:13Z",
+ "fetched_at": "2026-11-09T04:55:14Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.63191,
+   "lon": -122.69994,
+   "type_code": 52,
+   "destination": "US^0UYR>0ZBA",
+   "updated": "2026-11-09 04:55:23.370399903 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.65018,
+   "lon": -122.75372,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-09 04:55:23.844479122 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64326,
+   "lon": -122.75263,
+   "sog_kn": 0,
+   "cog": 307.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 04:55:52.600216544 +0000 UTC",
+   "type_code": 52,
+   "destination": "COL RIVER OPS"
+  },
   {
    "mmsi": 368171270,
    "name": "DR. RAY",
-   "lat": 45.58132,
-   "lon": -122.76067,
+   "lat": 45.5813,
+   "lon": -122.76066,
    "sog_kn": 0,
    "cog": 212.3,
-   "heading": 122,
+   "heading": 123,
    "nav_status": 0,
-   "updated": "2026-11-09 04:50:17.410890503 +0000 UTC"
+   "updated": "2026-11-09 04:55:27.256229239 +0000 UTC"
   },
   {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 46.09052,
-   "lon": -122.93231,
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.6423,
+   "lon": -122.74143,
+   "sog_kn": 1.5,
+   "cog": 301.3,
+   "heading": 121,
+   "nav_status": 12,
+   "updated": "2026-11-09 04:55:29.306661473 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.38552,
    "sog_kn": 0,
-   "cog": 251.5,
+   "cog": 295.3,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-09 04:50:20.924544646 +0000 UTC"
+   "nav_status": 15,
+   "updated": "2026-11-09 04:55:33.34616482 +0000 UTC"
   },
   {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 46.02715,
-   "lon": -122.86955,
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64351,
+   "lon": -122.75288,
    "sog_kn": 0,
-   "cog": 319.8,
-   "heading": 138,
-   "nav_status": 5,
-   "updated": "2026-11-09 04:50:21.082722811 +0000 UTC"
+   "cog": 187.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 04:55:35.438796793 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 231.3,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-09 04:55:39.030662995 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35742,
+   "sog_kn": 0,
+   "cog": 230.8,
+   "heading": 136,
+   "nav_status": 15,
+   "updated": "2026-11-09 04:55:48.33207531 +0000 UTC"
   },
   {
    "mmsi": 367513220,
    "name": "VANCOUVER",
-   "lat": 46.09062,
-   "lon": -122.93204,
+   "lat": 46.09064,
+   "lon": -122.93208,
    "sog_kn": 0,
-   "cog": 236,
+   "cog": 242.3,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-09 04:50:21.957659589 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.07958,
-   "lon": -122.90189,
-   "sog_kn": 0,
-   "cog": 280.6,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 04:50:22.379031246 +0000 UTC"
-  },
-  {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10891,
-   "lon": -122.96124,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-09 04:50:22.957652257 +0000 UTC"
+   "updated": "2026-11-09 04:55:50.978925279 +0000 UTC"
   }
  ]
 }
