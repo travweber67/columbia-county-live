@@ -1,93 +1,87 @@
 {
- "fetched_at": "2026-11-09T06:00:19Z",
+ "fetched_at": "2026-11-09T06:05:20Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.27201,
-   "lon": -123.49465,
-   "sog_kn": 10.1,
-   "cog": 84.1,
-   "heading": 87,
-   "nav_status": 3,
-   "updated": "2026-11-09 06:00:31.592490578 +0000 UTC"
-  },
-  {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.1089,
-   "lon": -122.96124,
-   "sog_kn": 0,
-   "cog": 29.5,
-   "heading": 129,
-   "nav_status": 5,
-   "updated": "2026-11-09 06:00:31.886244899 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58752,
-   "lon": -122.77045,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.64359,
+   "lon": -122.74567,
    "type_code": 52,
-   "destination": "PORTLAND,OR",
-   "updated": "2026-11-09 06:00:37.555382597 +0000 UTC"
+   "destination": "US^029T>0UW8",
+   "updated": "2026-11-09 06:05:24.977755 +0000 UTC"
   },
   {
-   "mmsi": 368082970,
-   "name": "AMERICAN.HARMONY",
-   "lat": 46.12677,
-   "lon": -122.99537,
-   "sog_kn": 11.3,
-   "cog": 133.9,
-   "heading": 134,
-   "nav_status": 0,
-   "updated": "2026-11-09 06:00:43.888449996 +0000 UTC"
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08975,
+   "lon": -122.92898,
+   "type_code": 52,
+   "destination": "US^0UJB>0UJB",
+   "updated": "2026-11-09 06:05:32.281574621 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10355,
-   "lon": -122.91008,
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64341,
+   "lon": -122.75287,
    "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 75,
-   "nav_status": 3,
-   "updated": "2026-11-09 06:00:44.012777027 +0000 UTC"
-  },
-  {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 46.17466,
-   "lon": -123.10815,
-   "sog_kn": 0,
-   "cog": 233.4,
-   "heading": 128,
-   "nav_status": 1,
-   "updated": "2026-11-09 06:00:47.192140721 +0000 UTC"
-  },
-  {
-   "mmsi": 367347000,
-   "name": "WENDY SEAA",
-   "lat": 46.19954,
-   "lon": -123.38498,
-   "sog_kn": 0,
-   "cog": 325,
-   "heading": 144,
-   "nav_status": 5,
-   "updated": "2026-11-09 06:00:49.209447442 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19999,
-   "lon": -123.3854,
-   "sog_kn": 0,
-   "cog": 5.1,
+   "cog": 309.6,
    "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-09 06:00:54.05764987 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-09 06:05:35.272254787 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00896,
+   "lon": -122.84833,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 06:05:37.604285775 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.65607,
+   "lon": -122.7571,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-09 06:05:46.392806203 +0000 UTC",
+   "sog_kn": 8.1,
+   "cog": 334.3,
+   "heading": 338,
+   "nav_status": 12
+  },
+  {
+   "mmsi": 352006943,
+   "name": "GLOVIS LEGEND",
+   "lat": 45.64612,
+   "lon": -122.7555,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-09 06:05:41.651073215 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19948,
+   "lon": -123.3851,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-09 06:05:51.171886286 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64539,
+   "lon": -122.73502,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-09 06:05:55.113084248 +0000 UTC"
   }
  ]
 }
