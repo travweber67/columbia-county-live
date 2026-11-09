@@ -1,62 +1,78 @@
 {
- "fetched_at": "2026-11-09T20:36:27Z",
+ "fetched_at": "2026-11-09T20:41:24Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.5813,
-   "lon": -122.76065,
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19954,
+   "lon": -123.38498,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-09 20:41:47.586280517 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64786,
+   "lon": -122.741,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-09 20:41:48.775612233 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.91008,
    "sog_kn": 0,
-   "cog": 205.3,
-   "heading": 122,
+   "cog": 154.2,
+   "heading": 71,
    "nav_status": 0,
-   "updated": "2026-11-09 20:36:57.370970042 +0000 UTC"
+   "updated": "2026-11-09 20:41:50.145799773 +0000 UTC"
   },
   {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.6435,
-   "lon": -122.75242,
-   "sog_kn": 0.1,
-   "cog": 203.6,
-   "heading": 137,
-   "nav_status": 5,
-   "updated": "2026-11-09 20:36:59.530720633 +0000 UTC"
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63868,
+   "lon": -122.72407,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-09 20:41:53.926703968 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10301,
-   "lon": -122.91093,
-   "sog_kn": 0.1,
-   "cog": 17.9,
-   "heading": 240,
-   "nav_status": 3,
-   "updated": "2026-11-09 20:37:01.723203442 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 46.09062,
-   "lon": -122.93202,
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64383,
+   "lon": -122.7258,
    "sog_kn": 0,
-   "cog": 194.6,
+   "cog": 352.7,
+   "heading": 116,
+   "nav_status": 12,
+   "updated": "2026-11-09 20:41:57.660879055 +0000 UTC"
+  },
+  {
+   "mmsi": 367513120,
+   "name": "CASCADES",
+   "lat": 45.95455,
+   "lon": -122.81184,
+   "sog_kn": 8.4,
+   "cog": 153.3,
+   "heading": 155,
+   "nav_status": 0,
+   "updated": "2026-11-09 20:42:02.247250421 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10789,
+   "lon": -122.95906,
+   "sog_kn": 0.1,
+   "cog": 0.4,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-09 20:37:04.785757022 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40233,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 129,
    "nav_status": 0,
-   "updated": "2026-11-09 20:37:12.387626454 +0000 UTC"
+   "updated": "2026-11-09 20:42:04.938363696 +0000 UTC"
   }
  ]
 }
