@@ -1,62 +1,69 @@
 {
- "fetched_at": "2026-11-09T22:46:34Z",
+ "fetched_at": "2026-11-09T22:51:34Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.60884,
+   "lon": -122.78462,
+   "sog_kn": 6.5,
+   "cog": 340.9,
+   "heading": 344,
+   "nav_status": 0,
+   "updated": "2026-11-09 22:52:06.941999119 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64327,
+   "lon": -122.74577,
+   "sog_kn": 0.4,
+   "cog": 206,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 22:52:15.217107184 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.0799,
+   "lon": -122.90218,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 321,
+   "nav_status": 3,
+   "updated": "2026-11-09 22:52:17.607101766 +0000 UTC"
+  },
   {
    "mmsi": 368171270,
    "name": "DR. RAY",
-   "lat": 45.58129,
+   "lat": 45.58133,
    "lon": -122.76065,
-   "sog_kn": 0,
-   "cog": 205.3,
-   "heading": 122,
-   "nav_status": 0,
-   "updated": "2026-11-09 22:46:47.109588301 +0000 UTC"
+   "type_code": 57,
+   "destination": "GASCO",
+   "updated": "2026-11-09 22:52:20.145949952 +0000 UTC"
   },
   {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61193,
-   "lon": -122.64481,
-   "sog_kn": 0,
-   "cog": 290.5,
-   "heading": 121,
-   "nav_status": 0,
-   "updated": "2026-11-09 22:46:48.217669699 +0000 UTC"
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.138,
+   "lon": -123.02297,
+   "sog_kn": 7.9,
+   "cog": 119.4,
+   "heading": 113,
+   "nav_status": 12,
+   "updated": "2026-11-09 22:52:20.171987768 +0000 UTC"
   },
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15342,
-   "lon": -123.37715,
-   "sog_kn": 0,
-   "cog": 3.5,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 22:46:48.558883046 +0000 UTC"
-  },
-  {
-   "mmsi": 354425000,
-   "name": "PAN QUEEN",
-   "lat": 46.27214,
-   "lon": -123.48029,
-   "sog_kn": 10.6,
-   "cog": 282.6,
-   "heading": 280,
-   "nav_status": 0,
-   "updated": "2026-11-09 22:47:00.391104204 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20001,
-   "lon": -123.38542,
-   "sog_kn": 0,
-   "cog": 4.3,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-09 22:47:05.119121957 +0000 UTC"
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64349,
+   "lon": -122.75243,
+   "type_code": 52,
+   "destination": "US^0UUT>0UW8",
+   "updated": "2026-11-09 22:52:27.932310019 +0000 UTC"
   }
  ]
 }
