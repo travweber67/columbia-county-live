@@ -1,145 +1,58 @@
 {
- "fetched_at": "2026-11-09T06:25:21Z",
+ "fetched_at": "2026-11-09T06:27:34Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 14 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07977,
-   "lon": -122.90204,
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64788,
+   "lon": -122.741,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-09 06:28:29.167851127 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58755,
+   "lon": -122.7705,
+   "sog_kn": 0,
+   "cog": 289.8,
+   "heading": 140,
+   "nav_status": 0,
+   "updated": "2026-11-09 06:28:30.536103439 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00896,
+   "lon": -122.84826,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 318,
-   "nav_status": 3,
-   "updated": "2026-11-09 06:25:27.64716913 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.64178,
-   "lon": -122.73962,
-   "sog_kn": 0,
-   "cog": 287.8,
-   "heading": 301,
-   "nav_status": 12,
-   "updated": "2026-11-09 06:25:30.581477797 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07959,
-   "lon": -122.90165,
-   "sog_kn": 0,
-   "cog": 75.6,
-   "heading": 137,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-09 06:25:34.493498383 +0000 UTC"
-  },
-  {
-   "mmsi": 538007029,
-   "name": "ZEPHYROS",
-   "lat": 46.02777,
-   "lon": -122.87571,
-   "type_code": 70,
-   "destination": "CNQDG",
-   "updated": "2026-11-09 06:25:37.180912958 +0000 UTC"
-  },
-  {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.8379,
-   "lon": -122.7883,
-   "sog_kn": 9.8,
-   "cog": 16.9,
-   "heading": 9,
-   "nav_status": 0,
-   "updated": "2026-11-09 06:25:40.023425247 +0000 UTC"
+   "updated": "2026-11-09 06:28:36.770965862 +0000 UTC"
   },
   {
    "mmsi": 367667060,
    "name": "GRANITE POINT",
    "lat": 45.64727,
    "lon": -122.73989,
-   "sog_kn": 0,
-   "cog": 317.4,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-09 06:25:47.479628071 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64352,
-   "lon": -122.75287,
    "type_code": 52,
-   "updated": "2026-11-09 06:25:50.155721783 +0000 UTC"
+   "destination": "SRT PASCO",
+   "updated": "2026-11-09 06:28:46.22540865 +0000 UTC"
   },
   {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59407,
-   "lon": -122.77213,
-   "type_code": 70,
-   "destination": "NOT AVAILABLE",
-   "updated": "2026-11-09 06:25:50.958884535 +0000 UTC"
-  },
-  {
-   "mmsi": 232038703,
-   "name": "IONIAN SEA",
-   "lat": 45.63745,
-   "lon": -122.70898,
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08975,
+   "lon": -122.92902,
    "sog_kn": 0,
-   "cog": 236.4,
-   "heading": 303,
-   "nav_status": 5,
-   "updated": "2026-11-09 06:25:51.053078073 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64345,
-   "lon": -122.75279,
-   "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-09 06:25:51.128775748 +0000 UTC"
-  },
-  {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60755,
-   "lon": -122.67755,
-   "type_code": 50,
-   "updated": "2026-11-09 06:25:53.414353624 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00883,
-   "lon": -122.84882,
-   "sog_kn": 0,
-   "cog": 360,
+   "cog": 217.2,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-09 06:25:53.521914706 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08984,
-   "lon": -122.92899,
-   "type_code": 52,
-   "destination": "CSR OPS",
-   "updated": "2026-11-09 06:25:53.694897371 +0000 UTC"
-  },
-  {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.02846,
-   "lon": -122.87609,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-09 06:25:56.148816331 +0000 UTC"
+   "updated": "2026-11-09 06:28:47.776584129 +0000 UTC"
   }
  ]
 }
