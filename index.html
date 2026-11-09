@@ -33,7 +33,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=48">
+<link rel="stylesheet" href="style.css?v=49">
 <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
@@ -777,6 +777,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <img class="card-ico" src="img/icons/icon-search.png" alt="" aria-hidden="true"><h2 data-i18n="dirh2">Local services — the little guys</h2>
   </div>
   <p class="card-note" data-i18n="dirintro">Babysitters, cleaners, handymen, pet sitters, tutors — the one-person businesses this county runs on, in one plain list. The storefronts sit up top as sponsors and featured businesses; this shelf is for the smallest operators. Tap a category to narrow it down.</p>
+  <div class="dir-add">
+    <a class="share-btn primary svc-form-link" id="service-add-link" href="https://forms.gle/D4poEqfu1ogoMr4r6" target="_blank" rel="noopener" data-i18n="diradd">Run a one-person business? Add yourself — it&rsquo;s free &rarr;</a>
+  </div>
   <div id="dir-map" class="dir-map" aria-label="Map of the listed local businesses"></div>
   <p class="card-note small dir-map-hint" data-i18n="dirmaphint">Tap a pin to find the business in the list below.</p>
   <div class="dir-filters" id="dir-filters" role="group" aria-label="Filter local services by category">
@@ -789,6 +792,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <button class="dir-chip" type="button" data-dirfilter="tutoring" aria-pressed="false" data-i18n="dirtutoring">Tutoring</button>
     <button class="dir-chip" type="button" data-dirfilter="moving" aria-pressed="false" data-i18n="dirmoving">Moving &amp; hauling</button>
     <button class="dir-chip" type="button" data-dirfilter="other" aria-pressed="false" data-i18n="dirother">Other local services</button>
+    <button class="dir-chip" type="button" data-dirfilter="freehelp" aria-pressed="false" data-i18n="dirfreehelp">Free help / community support</button>
   </div>
   <div class="dir-list" id="dir-list">
     <article class="dir-item" data-dircat="other" data-lat="45.85067" data-lng="-122.83077">
@@ -810,15 +814,15 @@ document.documentElement.setAttribute("data-theme",t);})();
         <p class="dir-desc" data-i18n="dirinvitep">Clean houses, watch kids, walk dogs, fix what&rsquo;s broken? Be one of the first names in the directory — listings are free through January 31, 2027.</p>
       </div>
       <div class="dir-contact">
-        <a class="dir-call" href="https://forms.gle/D4poEqfu1ogoMr4r6" target="_blank" rel="noopener" data-i18n="dirlistcta">List your service &rarr;</a>
+        <a class="dir-call svc-form-link" href="https://forms.gle/D4poEqfu1ogoMr4r6" target="_blank" rel="noopener" data-i18n="dirlistcta">List your service &rarr;</a>
       </div>
     </article>
   </div>
   <p class="dir-empty" id="dir-empty" hidden></p>
   <p class="card-note small dir-honest" data-i18n="dirhonest"><strong>Listings are advertisements, not endorsements.</strong> We haven&rsquo;t vetted these services — for in-home services especially, check references before you book.</p>
   <div class="dir-actions">
-    <a class="share-btn primary" href="https://forms.gle/D4poEqfu1ogoMr4r6" target="_blank" rel="noopener" data-i18n="dircta">List your service — free through January 31, 2027 &rarr;</a>
-    <p class="card-note small" data-i18n="dirctanote">The request rides the same short form as sponsor requests. Every listing is read by a person and checked before it appears — nothing posts automatically, and there&rsquo;s no online payment.</p>
+    <a class="share-btn primary svc-form-link" href="https://forms.gle/D4poEqfu1ogoMr4r6" target="_blank" rel="noopener" data-i18n="dircta">List your service — free through January 31, 2027 &rarr;</a>
+    <p class="card-note small" data-i18n="dirctanote">One short form made just for this shelf. Every listing is read by a person and checked before it appears — nothing posts automatically, and there&rsquo;s no payment to make.</p>
   </div>
 </section>
 
@@ -1151,7 +1155,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=48"></script>
+<script src="app.js?v=49"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>

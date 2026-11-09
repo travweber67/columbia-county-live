@@ -5929,6 +5929,7 @@ const LANG_ES = {
   dirtutoring: 'Tutorías',
   dirmoving: 'Mudanzas y fletes',
   dirother: 'Otros servicios locales',
+  dirfreehelp: 'Ayuda gratuita / apoyo comunitario',
   dirfounding: 'Negocio fundador',
   dirotldesc: 'Boliche, ligas y fiestas de cumpleaños sobre Columbia River Highway.',
   dirinviteh: 'Tu servicio aquí',
@@ -5937,7 +5938,8 @@ const LANG_ES = {
   dirhonest: '<strong>Los anuncios son publicidad, no recomendaciones.</strong> No hemos verificado estos servicios — en especial para servicios dentro del hogar, pide referencias antes de contratar.',
   dircta: 'Anuncia tu servicio — gratis hasta el 31 de enero de 2027 &rarr;',
   dirmaphint: 'Toca un pin para ver el negocio en la lista de abajo.',
-  dirctanote: 'La solicitud usa el mismo formulario corto que las de patrocinadores. Cada anuncio lo lee una persona y se revisa antes de aparecer — nada se publica automáticamente y no hay pago en línea.',
+  diradd: '¿Tienes un negocio de una sola persona? Agrégate — es gratis &rarr;',
+  dirctanote: 'Un formulario corto hecho solo para este estante. Cada anuncio lo lee una persona y se revisa antes de aparecer — nada se publica automáticamente y no hay ningún pago.',
   displaybtn: 'Pantalla',
   displaylabel: 'Abrir el modo pantalla — el salvapantallas comunitario',
   footerbyline: '<strong>Columbia County Live</strong> — por <strong>Nomad Development Group</strong>',
@@ -7341,6 +7343,31 @@ function initEventLink() {
 }
 initEventLink();
 
+/* LOCAL SERVICES INTAKE — the "Add Your Local Service" Google Form
+   (v49, 2026-11-09; form live, wired and published).
+   The little-guys shelf gets its OWN form — the founding/storefront
+   form (SPONSOR_FORM_URL) stays separate so storefront prospecting
+   records never mix with one-person services. Same swap pattern as
+   EVENT_FORM_URL: SERVICE_FORM_URL is the single source of truth,
+   every .svc-form-link anchor in the services card (the top
+   "Add yourself" button, the invite row, the bottom CTA) carries the
+   general form URL statically as the honest no-JS fallback, and this
+   init re-points all of them from the constant once the dedicated
+   form is live. The shelf is FREE — no payment step, no pricing in
+   this flow (Travis delegated the call 2026-11-09: free community
+   shelf). Submissions pass the same human review gate as everything
+   else; nothing posts automatically. */
+const SERVICE_FORM_URL = 'https://forms.gle/9XMavZPhuDhNAzKM9'; // LIVE 2026-11-09: "Columbia County Live — Add Your Local Service" (form 1Dutw3SwHmW4Nh2qo975PqEhMV_1mvtDi43zLVc73ErQ)
+function initServiceLinks() {
+  if (!SERVICE_FORM_URL) return; // static hrefs (general form) are the interim capture
+  document.querySelectorAll('.svc-form-link').forEach(a => {
+    a.href = SERVICE_FORM_URL;
+    a.target = '_blank';
+    a.rel = 'noopener';
+  });
+}
+initServiceLinks();
+
 const SCHOOL_STATUS = {
   open:      { en: 'Open',          es: 'Abierto',       cls: 'school-open' },
   closed:    { en: 'Closed',        es: 'Cerrado',       cls: 'school-closed' },
@@ -8278,6 +8305,10 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
     other: {
       en: 'Nothing else here yet — listings are free through January 31, 2027.',
       es: 'Nada más por aquí todavía — los anuncios son gratis hasta el 31 de enero de 2027.'
+    },
+    freehelp: {
+      en: 'No free-help listings yet — churches with free food nights, free support services, neighbours helping neighbours. Know one? Add it with the form above — it is free, like everything on this shelf.',
+      es: 'Aún no hay anuncios de ayuda gratuita — iglesias con cenas gratuitas, servicios de apoyo sin costo, vecinos ayudando a vecinos. ¿Conoces uno? Agrégalo con el formulario de arriba — es gratis, como todo en este estante.'
     }
   };
 
