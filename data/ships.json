@@ -1,93 +1,57 @@
 {
- "fetched_at": "2026-11-09T12:10:46Z",
+ "fetched_at": "2026-11-09T12:15:46Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.61291,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40233,
    "sog_kn": 0,
-   "cog": 178.5,
+   "cog": 360,
    "heading": 133,
-   "nav_status": 15,
-   "updated": "2026-11-09 12:10:48.916229871 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-09 12:15:53.08382331 +0000 UTC"
   },
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.2723,
-   "lon": -123.48361,
-   "sog_kn": 1.3,
-   "cog": 80.4,
-   "heading": 109,
-   "nav_status": 3,
-   "updated": "2026-11-09 12:10:52.640540659 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.0796,
-   "lon": -122.90168,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-09 12:10:56.398044703 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20003,
-   "lon": -123.38541,
-   "sog_kn": 0,
-   "cog": 354.2,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-09 12:11:03.483397328 +0000 UTC"
-  },
-  {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63875,
-   "lon": -122.72404,
-   "sog_kn": 0,
-   "cog": 223.5,
-   "heading": 114,
-   "nav_status": 1,
-   "updated": "2026-11-09 12:11:03.774413884 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.64018,
-   "lon": -122.72175,
-   "sog_kn": 8.4,
-   "cog": 111.4,
-   "heading": 110,
-   "nav_status": 12,
-   "updated": "2026-11-09 12:11:06.186238348 +0000 UTC"
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15345,
+   "lon": -123.37714,
+   "type_code": 99,
+   "updated": "2026-11-09 12:15:53.856130789 +0000 UTC"
   },
   {
    "mmsi": 366998830,
    "name": "ROYAL MELBOURNE",
-   "lat": 46.02942,
-   "lon": -122.8744,
-   "sog_kn": 7.1,
-   "cog": 325.3,
-   "heading": 328,
+   "lat": 46.03848,
+   "lon": -122.87851,
+   "sog_kn": 6.9,
+   "cog": 350.8,
+   "heading": 350,
    "nav_status": 0,
-   "updated": "2026-11-09 12:11:06.411537508 +0000 UTC"
+   "updated": "2026-11-09 12:16:06.361833562 +0000 UTC"
   },
   {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64569,
-   "lon": -122.73486,
-   "sog_kn": 0.6,
-   "cog": 125.9,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-09 12:11:06.755670679 +0000 UTC"
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.90915,
+   "lon": -122.8144,
+   "sog_kn": 0,
+   "cog": 3.6,
+   "heading": 340,
+   "nav_status": 0,
+   "updated": "2026-11-09 12:16:09.675453162 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.63503,
+   "lon": -122.70696,
+   "type_code": 57,
+   "destination": "US^029T>0UW8",
+   "updated": "2026-11-09 12:16:11.902408372 +0000 UTC"
   }
  ]
 }
