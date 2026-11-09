@@ -1,80 +1,85 @@
 {
- "fetched_at": "2026-11-09T09:00:33Z",
+ "fetched_at": "2026-11-09T09:05:33Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367347000,
-   "name": "WENDY SEAA",
-   "lat": 46.19952,
-   "lon": -123.385,
-   "type_code": 30,
-   "destination": "CATHLAMET,WA",
-   "updated": "2026-11-09 09:00:38.94788651 +0000 UTC"
-  },
-  {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 46.17456,
-   "lon": -123.10784,
-   "sog_kn": 0,
-   "cog": 233.4,
-   "heading": 129,
-   "nav_status": 1,
-   "updated": "2026-11-09 09:00:43.614073478 +0000 UTC"
-  },
-  {
-   "mmsi": 563116100,
-   "name": "OCEAN GOLD",
-   "lat": 45.99836,
-   "lon": -122.85191,
-   "sog_kn": 0,
-   "cog": 341.9,
-   "heading": 164,
-   "nav_status": 1,
-   "updated": "2026-11-09 09:00:44.11502103 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.63017,
-   "lon": -122.70573,
-   "type_code": 52,
-   "destination": "VANCOUER,WA",
-   "updated": "2026-11-09 09:00:47.521942275 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64343,
-   "lon": -122.75281,
-   "sog_kn": 0,
-   "cog": 257.5,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 09:01:05.528040441 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19997,
-   "lon": -123.38551,
-   "sog_kn": 0,
-   "cog": 33.2,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-09 09:01:02.432398491 +0000 UTC"
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.61912,
+   "lon": -122.78812,
+   "sog_kn": 0.1,
+   "cog": 351.4,
+   "heading": 351,
+   "nav_status": 12,
+   "updated": "2026-11-09 09:05:40.559463845 +0000 UTC"
   },
   {
    "mmsi": 367513150,
    "name": "COLUMBIA",
-   "lat": 45.98632,
-   "lon": -122.84315,
-   "sog_kn": 7.9,
-   "cog": 161.7,
+   "lat": 45.97838,
+   "lon": -122.83564,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-09 09:05:41.221296078 +0000 UTC"
+  },
+  {
+   "mmsi": 563116100,
+   "name": "OCEAN GOLD",
+   "lat": 45.99837,
+   "lon": -122.85191,
+   "type_code": 70,
+   "destination": "KR YOS",
+   "updated": "2026-11-09 09:05:42.731030953 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.63751,
+   "lon": -122.72693,
+   "sog_kn": 0,
+   "cog": 215.6,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-09 09:01:03.494871219 +0000 UTC"
+   "updated": "2026-11-09 09:05:46.182288761 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19952,
+   "lon": -123.38499,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-09 09:05:47.554321074 +0000 UTC"
+  },
+  {
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.09902,
+   "lon": -122.93931,
+   "type_code": 70,
+   "destination": "USA LONGVIEW",
+   "updated": "2026-11-09 09:05:47.725156188 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63872,
+   "lon": -122.72406,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-09 09:05:53.593010168 +0000 UTC"
+  },
+  {
+   "mmsi": 538011495,
+   "name": "MTR JUPITER",
+   "lat": 46.10636,
+   "lon": -122.95655,
+   "sog_kn": 0,
+   "cog": 288.8,
+   "heading": 122,
+   "nav_status": 5,
+   "updated": "2026-11-09 09:06:03.455423587 +0000 UTC"
   }
  ]
 }
