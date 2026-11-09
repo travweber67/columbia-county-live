@@ -1,76 +1,104 @@
 {
- "fetched_at": "2026-11-09T11:35:43Z",
+ "fetched_at": "2026-11-09T11:40:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.19945,
-   "lon": -123.38512,
-   "type_code": 30,
-   "destination": "CATHLAMET WA",
-   "updated": "2026-11-09 11:35:50.265787439 +0000 UTC"
+   "mmsi": 232038703,
+   "name": "IONIAN SEA",
+   "lat": 45.63746,
+   "lon": -122.70899,
+   "sog_kn": 0,
+   "cog": 335.5,
+   "heading": 303,
+   "nav_status": 5,
+   "updated": "2026-11-09 11:40:51.056762317 +0000 UTC"
+  },
+  {
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.61218,
+   "lon": -122.64519,
+   "type_code": 52,
+   "destination": "US^10M4>02MP",
+   "updated": "2026-11-09 11:40:53.772155613 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.65996,
+   "lon": -122.75924,
+   "sog_kn": 3.4,
+   "cog": 140.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 11:41:02.738917426 +0000 UTC"
   },
   {
    "mmsi": 357359000,
    "name": "FEDERAL ILLINOIS",
    "lat": 45.63874,
-   "lon": -122.72405,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-09 11:35:54.355255333 +0000 UTC"
+   "lon": -122.72404,
+   "sog_kn": 0.1,
+   "cog": 172,
+   "heading": 114,
+   "nav_status": 1,
+   "updated": "2026-11-09 11:41:03.779006953 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07976,
-   "lon": -122.90204,
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64568,
+   "lon": -122.73487,
+   "sog_kn": 0.3,
+   "cog": 116.3,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-09 11:41:07.231108731 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07969,
+   "lon": -122.90216,
+   "sog_kn": 0.1,
+   "cog": 306.9,
+   "heading": 136,
+   "nav_status": 0,
+   "updated": "2026-11-09 11:41:07.560054723 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15344,
+   "lon": -123.37713,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 319,
-   "nav_status": 3,
-   "updated": "2026-11-09 11:35:56.711426591 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.64259,
-   "lon": -122.7714,
-   "sog_kn": 0,
-   "cog": 340.5,
-   "heading": 234,
-   "nav_status": 12,
-   "updated": "2026-11-09 11:35:59.267616022 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.83713,
-   "lon": -122.79016,
-   "type_code": 31,
-   "destination": "PORTLAND",
-   "updated": "2026-11-09 11:36:01.620602952 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.96988,
-   "lon": -122.82585,
-   "type_code": 31,
-   "destination": "ASTORIA",
-   "updated": "2026-11-09 11:36:02.143953932 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20003,
-   "lon": -123.38539,
-   "sog_kn": 0,
-   "cog": 6.3,
+   "cog": 3.6,
    "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-09 11:36:14.40603215 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-09 11:41:08.600842092 +0000 UTC"
+  },
+  {
+   "mmsi": 368082970,
+   "name": "AMERICAN.HARMONY",
+   "lat": 46.0036,
+   "lon": -122.84772,
+   "sog_kn": 0,
+   "cog": 166.3,
+   "heading": 159,
+   "nav_status": 5,
+   "updated": "2026-11-09 11:41:14.92564369 +0000 UTC"
+  },
+  {
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 46.11709,
+   "lon": -122.9831,
+   "sog_kn": 11,
+   "cog": 316.5,
+   "heading": 316,
+   "nav_status": 12,
+   "updated": "2026-11-09 11:41:17.59135098 +0000 UTC"
   }
  ]
 }
