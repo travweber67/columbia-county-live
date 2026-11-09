@@ -2492,7 +2492,16 @@ html[data-theme="dark"] .cascade-cta{color:#fff}
   .cascade-copy{display:none}
   .cascade-cta{margin-left:auto}
 }
-.cascade-drawer-link{font-size:.8rem;padding-top:1px;padding-bottom:1px;opacity:.72}
+/* v48: the two Nomad cross-promos (Cascade Controls Jobs + the website
+   portfolio) sit together as a small quiet footer pair at the very bottom
+   of the drawer's scroll — below the fold, findable by the curious only. */
+.drawer-foot{margin-top:10px;padding:11px 10px 4px 41px;border-top:1px solid var(--border)}
+html[data-theme="dark"] .drawer-foot{border-top-color:rgba(244,241,228,.14)}
+.drawer-foot-link{display:block;padding:2px 0;color:var(--muted);text-decoration:none;font-size:.78rem;opacity:.72}
+.drawer-foot-link:hover{color:var(--text);text-decoration:underline;opacity:1}
+html[data-theme="dark"] .drawer-foot-link{color:#c9d2bd}
+.drawer-foot-head{display:block;margin-top:9px;padding:2px 0 0;color:var(--warm);font-size:.78rem;font-weight:700;opacity:.85}
+html[data-theme="dark"] .drawer-foot-head{color:var(--warm-fill)}
 .cascade-footer{margin:10px 0 4px}
 .cascade-footer-link{display:inline-block;padding:9px 14px;border:1px solid var(--border);border-radius:999px;color:var(--accent-dark,#1e4228);text-decoration:none;font-weight:700;font-size:.92rem;background:rgba(46,93,58,.08)}
 .cascade-footer-link:hover{border-color:var(--warm,#b0511c);text-decoration:underline}
