@@ -5934,10 +5934,10 @@ const LANG_ES = {
   dirotldesc: 'Boliche, ligas y fiestas de cumpleaños sobre Columbia River Highway.',
   dirflcdesc: 'Cena comunitaria gratuita todos los martes en la iglesia First Lutheran — las puertas abren a las 5 y la cena se sirve a las 5:30. Todos son bienvenidos: solo tienes que venir, sin trámites ni preguntas. Organizado por Community Meals of Columbia County.',
   dirinviteh: 'Tu servicio aquí',
-  dirinvitep: '¿Limpias casas, cuidas niños, paseas perros, arreglas lo que se rompe? Sé uno de los primeros nombres del directorio — los anuncios son gratis hasta el 31 de enero de 2027.',
+  dirinvitep: '¿Limpias casas, cuidas niños, paseas perros, arreglas lo que se rompe? Sé uno de los primeros nombres del directorio — los anuncios son gratis.',
   dirlistcta: 'Anuncia tu servicio &rarr;',
   dirhonest: '<strong>Los anuncios son publicidad, no recomendaciones.</strong> No hemos verificado estos servicios — en especial para servicios dentro del hogar, pide referencias antes de contratar.',
-  dircta: 'Anuncia tu servicio — gratis hasta el 31 de enero de 2027 &rarr;',
+  dircta: 'Anuncia tu servicio — es gratis &rarr;',
   dirmaphint: 'Toca un pin para ver el negocio en la lista de abajo.',
   diradd: '¿Tienes un negocio de una sola persona? Agrégate — es gratis &rarr;',
   dirctanote: 'Un formulario corto hecho solo para este estante. Cada anuncio lo lee una persona y se revisa antes de aparecer — nada se publica automáticamente y no hay ningún pago.',
@@ -8276,36 +8276,36 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
 
   var EMPTY = {
     childcare: {
-      en: 'No child care listings yet — the first sitter, nanny or family daycare to join is listed free through January 31, 2027.',
-      es: 'Aún no hay anuncios de cuidado infantil — la primera niñera o guardería familiar que se sume aparece gratis hasta el 31 de enero de 2027.'
+      en: 'No child care listings yet — the first sitter, nanny or family daycare to join is listed free.',
+      es: 'Aún no hay anuncios de cuidado infantil — la primera niñera o guardería familiar que se sume aparece gratis.'
     },
     cleaning: {
-      en: 'No cleaners listed yet. Make houses shine anywhere in this county? This is your spot — free through January 31, 2027.',
-      es: 'Aún no hay servicios de limpieza. ¿Dejas las casas brillando en este condado? Este es tu lugar — gratis hasta el 31 de enero de 2027.'
+      en: 'No cleaners listed yet. Make houses shine anywhere in this county? This is your spot — free.',
+      es: 'Aún no hay servicios de limpieza. ¿Dejas las casas brillando en este condado? Este es tu lugar — gratis.'
     },
     handyman: {
-      en: 'No handymen or repair folks yet — the first listing here is free through January 31, 2027.',
-      es: 'Aún no hay manitas ni reparadores — el primer anuncio aquí es gratis hasta el 31 de enero de 2027.'
+      en: 'No handymen or repair folks yet — the first listing here is free.',
+      es: 'Aún no hay manitas ni reparadores — el primer anuncio aquí es gratis.'
     },
     pets: {
-      en: 'No pet sitters or groomers yet. Walk dogs or board cats around here? Claim the first spot — free through January 31, 2027.',
-      es: 'Aún no hay cuidadores de mascotas. ¿Paseas perros o cuidas gatos por aquí? Reclama el primer lugar — gratis hasta el 31 de enero de 2027.'
+      en: 'No pet sitters or groomers yet. Walk dogs or board cats around here? Claim the first spot — free.',
+      es: 'Aún no hay cuidadores de mascotas. ¿Paseas perros o cuidas gatos por aquí? Reclama el primer lugar — gratis.'
     },
     yard: {
-      en: 'No yard & garden listings yet — mowing, pruning, brush hauling. First one in is free through January 31, 2027.',
-      es: 'Aún no hay anuncios de patio y jardín — cortar el césped, podar, retirar ramas. El primero entra gratis hasta el 31 de enero de 2027.'
+      en: 'No yard & garden listings yet — mowing, pruning, brush hauling. First one in is free.',
+      es: 'Aún no hay anuncios de patio y jardín — cortar el césped, podar, retirar ramas. El primero entra gratis.'
     },
     tutoring: {
-      en: 'No tutors listed yet. Math help, reading help, test prep — the first listing is free through January 31, 2027.',
-      es: 'Aún no hay tutores. Ayuda con matemáticas, lectura, preparación de exámenes — el primer anuncio es gratis hasta el 31 de enero de 2027.'
+      en: 'No tutors listed yet. Math help, reading help, test prep — the first listing is free.',
+      es: 'Aún no hay tutores. Ayuda con matemáticas, lectura, preparación de exámenes — el primer anuncio es gratis.'
     },
     moving: {
-      en: 'No movers or haulers yet. Got a truck and a strong back? Be the first — free through January 31, 2027.',
-      es: 'Aún no hay mudanzas ni fletes. ¿Tienes una camioneta y una espalda fuerte? Sé el primero — gratis hasta el 31 de enero de 2027.'
+      en: 'No movers or haulers yet. Got a truck and a strong back? Be the first — free.',
+      es: 'Aún no hay mudanzas ni fletes. ¿Tienes una camioneta y una espalda fuerte? Sé el primero — gratis.'
     },
     other: {
-      en: 'Nothing else here yet — listings are free through January 31, 2027.',
-      es: 'Nada más por aquí todavía — los anuncios son gratis hasta el 31 de enero de 2027.'
+      en: 'Nothing else here yet — listings are free.',
+      es: 'Nada más por aquí todavía — los anuncios son gratis.'
     },
     freehelp: {
       en: 'No free-help listings yet — churches with free food nights, free support services, neighbours helping neighbours. Know one? Add it with the form above — it is free, like everything on this shelf.',
