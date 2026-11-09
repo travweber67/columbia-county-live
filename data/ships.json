@@ -1,69 +1,71 @@
 {
- "fetched_at": "2026-11-09T01:09:56Z",
+ "fetched_at": "2026-11-09T01:14:57Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65014,
+   "lon": -122.74769,
+   "type_code": 33,
+   "updated": "2026-11-09 01:15:29.265139236 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 268.1,
+   "heading": 511,
+   "nav_status": 3
+  },
+  {
+   "mmsi": 538006268,
+   "name": "STAR CARIOCA",
+   "lat": 45.63917,
+   "lon": -122.77775,
+   "sog_kn": 0,
+   "cog": 40,
+   "heading": 228,
+   "nav_status": 5,
+   "updated": "2026-11-09 01:15:11.715852853 +0000 UTC"
+  },
   {
    "mmsi": 367047080,
    "name": "THE CHIEF",
    "lat": 45.6302,
    "lon": -122.70434,
-   "type_code": 57,
-   "destination": "KALAMA",
-   "updated": "2026-11-09 01:10:00.425686511 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.97068,
-   "lon": -122.82732,
-   "sog_kn": 6.1,
-   "cog": 142.4,
-   "heading": 141,
-   "nav_status": 12,
-   "updated": "2026-11-09 01:10:11.190632408 +0000 UTC"
-  },
-  {
-   "mmsi": 353081000,
-   "name": "ELEGANT SW",
-   "lat": 46.09901,
-   "lon": -122.93933,
-   "type_code": 70,
-   "destination": "USA LONGVIEW",
-   "updated": "2026-11-09 01:10:13.915644592 +0000 UTC"
-  },
-  {
-   "mmsi": 538007029,
-   "name": "ZEPHYROS",
-   "lat": 46.02801,
-   "lon": -122.87547,
-   "sog_kn": 0.2,
-   "cog": 224.6,
-   "heading": 156,
-   "nav_status": 1,
-   "updated": "2026-11-09 01:10:15.154482035 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10357,
-   "lon": -122.91017,
    "sog_kn": 0,
-   "cog": 83.5,
-   "heading": 75,
-   "nav_status": 3,
-   "updated": "2026-11-09 01:10:24.697886753 +0000 UTC"
+   "cog": 307,
+   "heading": 299,
+   "nav_status": 0,
+   "updated": "2026-11-09 01:15:16.172843889 +0000 UTC"
   },
   {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.64143,
-   "lon": -122.73875,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.13722,
+   "lon": -123.37891,
    "sog_kn": 0,
-   "cog": 329.3,
-   "heading": 300,
-   "nav_status": 12,
-   "updated": "2026-11-09 01:10:29.345496038 +0000 UTC"
+   "cog": 11.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 01:15:17.788867101 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10785,
+   "lon": -122.95905,
+   "sog_kn": 0.1,
+   "cog": 182.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 01:15:27.585035983 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61111,
+   "lon": -122.6129,
+   "type_code": 0,
+   "updated": "2026-11-09 01:15:29.2491158 +0000 UTC"
   }
  ]
 }
