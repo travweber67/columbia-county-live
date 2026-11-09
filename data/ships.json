@@ -1,48 +1,78 @@
 {
- "fetched_at": "2026-11-09T17:46:12Z",
+ "fetched_at": "2026-11-09T17:51:13Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65014,
-   "lon": -122.74762,
-   "type_code": 33,
-   "updated": "2026-11-09 17:46:31.697342514 +0000 UTC"
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07073,
+   "lon": -122.89424,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-09 17:51:27.206395095 +0000 UTC"
   },
   {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.1836,
-   "lon": -123.18288,
-   "sog_kn": 13.4,
-   "cog": 244.1,
-   "heading": 247,
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07898,
+   "lon": -122.90098,
+   "sog_kn": 0.1,
+   "cog": 70.3,
+   "heading": 135,
    "nav_status": 0,
-   "updated": "2026-11-09 17:46:42.526364563 +0000 UTC"
+   "updated": "2026-11-09 17:51:27.482055916 +0000 UTC"
   },
   {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58131,
-   "lon": -122.76063,
-   "sog_kn": 0,
-   "cog": 212.3,
-   "heading": 123,
-   "nav_status": 0,
-   "updated": "2026-11-09 17:46:47.191392981 +0000 UTC"
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58755,
+   "lon": -122.77051,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-09 17:51:35.548374756 +0000 UTC"
   },
   {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.5873,
-   "lon": -122.77007,
+   "mmsi": 367645170,
+   "name": "CROWN POINT",
+   "lat": 45.64768,
+   "lon": -122.74224,
    "sog_kn": 0,
-   "cog": 198.5,
-   "heading": 139,
-   "nav_status": 5,
-   "updated": "2026-11-09 17:46:47.736606149 +0000 UTC"
+   "cog": 275.6,
+   "heading": 108,
+   "nav_status": 12,
+   "updated": "2026-11-09 17:51:37.66935257 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.16028,
+   "lon": -123.40623,
+   "sog_kn": 0,
+   "cog": 136.6,
+   "heading": 136,
+   "nav_status": 12,
+   "updated": "2026-11-09 17:51:40.904843303 +0000 UTC"
+  },
+  {
+   "mmsi": 367513120,
+   "name": "CASCADES",
+   "lat": 45.9855,
+   "lon": -122.83632,
+   "type_code": 57,
+   "destination": "US^11MS>?? ???",
+   "updated": "2026-11-09 17:51:43.575103095 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07981,
+   "lon": -122.90206,
+   "sog_kn": 0.3,
+   "cog": 41.7,
+   "heading": 319,
+   "nav_status": 3,
+   "updated": "2026-11-09 17:51:47.271244027 +0000 UTC"
   }
  ]
 }
