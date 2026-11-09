@@ -1,51 +1,122 @@
 {
- "fetched_at": "2026-11-09T19:57:46Z",
+ "fetched_at": "2026-11-09T20:01:23Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.63411,
-   "lon": -122.71309,
-   "sog_kn": 0.6,
-   "cog": 277.2,
-   "heading": 159,
-   "nav_status": 0,
-   "updated": "2026-11-09 19:59:22.175985157 +0000 UTC"
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58417,
+   "lon": -122.76612,
+   "type_code": 52,
+   "destination": "US^00D5>0UHN",
+   "updated": "2026-11-09 20:01:53.807226854 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 68.7,
+   "heading": 145,
+   "nav_status": 5
   },
   {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 46.02713,
-   "lon": -122.86954,
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.64357,
+   "lon": -122.75293,
    "sog_kn": 0,
-   "cog": 319.8,
-   "heading": 138,
+   "cog": 278,
+   "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-09 19:59:24.907497487 +0000 UTC"
+   "updated": "2026-11-09 20:01:42.359151516 +0000 UTC"
   },
   {
-   "mmsi": 538006097,
-   "name": "AD ASTRA",
-   "lat": 46.20022,
-   "lon": -123.42803,
-   "sog_kn": 10.6,
-   "cog": 7.9,
-   "heading": 9,
-   "nav_status": 0,
-   "updated": "2026-11-09 19:59:26.129494017 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 46.15705,
-   "lon": -123.40249,
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.5813,
+   "lon": -122.76064,
    "sog_kn": 0,
-   "cog": 134.4,
-   "heading": 134,
+   "cog": 212.3,
+   "heading": 123,
+   "nav_status": 0,
+   "updated": "2026-11-09 20:01:47.233174323 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15332,
+   "lon": -123.37715,
+   "sog_kn": 1.4,
+   "cog": 195.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 20:01:47.393771011 +0000 UTC"
+  },
+  {
+   "mmsi": 367645170,
+   "name": "CROWN POINT",
+   "lat": 45.64745,
+   "lon": -122.7394,
+   "sog_kn": 0,
+   "cog": 245.1,
+   "heading": 284,
    "nav_status": 12,
-   "updated": "2026-11-09 19:59:30.371784926 +0000 UTC"
+   "updated": "2026-11-09 20:01:47.554031749 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.6435,
+   "lon": -122.75278,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-09 20:01:51.425875442 +0000 UTC"
+  },
+  {
+   "mmsi": 538006268,
+   "name": "STAR CARIOCA",
+   "lat": 45.63915,
+   "lon": -122.77776,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-09 20:01:52.188020055 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.62432,
+   "lon": -122.68652,
+   "type_code": 52,
+   "destination": "HME",
+   "updated": "2026-11-09 20:01:52.361210875 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08969,
+   "lon": -122.92905,
+   "sog_kn": 0,
+   "cog": 306.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-09 20:01:54.75166891 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10791,
+   "lon": -122.95903,
+   "type_code": 50,
+   "destination": "CR HARBOR OPS",
+   "updated": "2026-11-09 20:01:57.142855918 +0000 UTC"
+  },
+  {
+   "mmsi": 354425000,
+   "name": "PAN QUEEN",
+   "lat": 46.11078,
+   "lon": -122.97418,
+   "sog_kn": 9.3,
+   "cog": 307.7,
+   "heading": 314,
+   "nav_status": 0,
+   "updated": "2026-11-09 20:02:00.470637001 +0000 UTC"
   }
  ]
 }
