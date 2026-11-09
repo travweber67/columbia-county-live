@@ -1,104 +1,160 @@
 {
- "fetched_at": "2026-11-09T11:40:43Z",
+ "fetched_at": "2026-11-09T11:45:44Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 15 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.17261,
+   "lon": -123.10478,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-09 11:45:48.755369724 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58132,
+   "lon": -122.76066,
+   "type_code": 57,
+   "destination": "GASCO",
+   "updated": "2026-11-09 11:45:50.280427205 +0000 UTC"
+  },
+  {
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.19965,
+   "lon": -123.38523,
+   "sog_kn": 0,
+   "cog": 345.1,
+   "heading": 325,
+   "nav_status": 5,
+   "updated": "2026-11-09 11:45:51.604738855 +0000 UTC"
+  },
   {
    "mmsi": 232038703,
    "name": "IONIAN SEA",
    "lat": 45.63746,
-   "lon": -122.70899,
+   "lon": -122.709,
+   "type_code": 70,
+   "destination": "BR SSZ",
+   "updated": "2026-11-09 11:45:53.367436449 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.64735,
+   "lon": -122.74166,
    "sog_kn": 0,
-   "cog": 335.5,
-   "heading": 303,
-   "nav_status": 5,
-   "updated": "2026-11-09 11:40:51.056762317 +0000 UTC"
-  },
-  {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61218,
-   "lon": -122.64519,
-   "type_code": 52,
-   "destination": "US^10M4>02MP",
-   "updated": "2026-11-09 11:40:53.772155613 +0000 UTC"
-  },
-  {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 45.65996,
-   "lon": -122.75924,
-   "sog_kn": 3.4,
-   "cog": 140.2,
-   "heading": 511,
+   "cog": 345.3,
+   "heading": 286,
    "nav_status": 0,
-   "updated": "2026-11-09 11:41:02.738917426 +0000 UTC"
+   "updated": "2026-11-09 11:45:56.129051178 +0000 UTC"
   },
   {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63874,
-   "lon": -122.72404,
-   "sog_kn": 0.1,
-   "cog": 172,
-   "heading": 114,
-   "nav_status": 1,
-   "updated": "2026-11-09 11:41:03.779006953 +0000 UTC"
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07975,
+   "lon": -122.90204,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 319,
+   "nav_status": 3,
+   "updated": "2026-11-09 11:45:57.972028586 +0000 UTC"
   },
   {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64568,
-   "lon": -122.73487,
-   "sog_kn": 0.3,
-   "cog": 116.3,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-09 11:41:07.231108731 +0000 UTC"
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.10329,
+   "lon": -122.95026,
+   "type_code": 52,
+   "destination": "CSR OPS",
+   "updated": "2026-11-09 11:45:59.340257993 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20002,
+   "lon": -123.38542,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-09 11:46:02.192888669 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.66015,
+   "lon": -122.75978,
+   "sog_kn": 0,
+   "cog": 48.3,
+   "heading": 154,
+   "nav_status": 12,
+   "updated": "2026-11-09 11:46:05.653353376 +0000 UTC"
   },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.07969,
+   "lat": 46.07967,
    "lon": -122.90216,
    "sog_kn": 0.1,
-   "cog": 306.9,
-   "heading": 136,
+   "cog": 358.7,
+   "heading": 135,
    "nav_status": 0,
-   "updated": "2026-11-09 11:41:07.560054723 +0000 UTC"
+   "updated": "2026-11-09 11:46:07.531156206 +0000 UTC"
   },
   {
    "mmsi": 367653630,
    "name": "OSCAR B",
-   "lat": 46.15344,
-   "lon": -123.37713,
+   "lat": 46.15342,
+   "lon": -123.37712,
    "sog_kn": 0,
-   "cog": 3.6,
+   "cog": 1.7,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-09 11:41:08.600842092 +0000 UTC"
+   "updated": "2026-11-09 11:46:08.405376372 +0000 UTC"
   },
   {
-   "mmsi": 368082970,
-   "name": "AMERICAN.HARMONY",
-   "lat": 46.0036,
-   "lon": -122.84772,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65012,
+   "lon": -122.74758,
    "sog_kn": 0,
-   "cog": 166.3,
-   "heading": 159,
-   "nav_status": 5,
-   "updated": "2026-11-09 11:41:14.92564369 +0000 UTC"
+   "cog": 292.6,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-09 11:46:09.324406507 +0000 UTC"
   },
   {
-   "mmsi": 338616000,
-   "name": "DUBLIN SEA",
-   "lat": 46.11709,
-   "lon": -122.9831,
-   "sog_kn": 11,
-   "cog": 316.5,
-   "heading": 316,
-   "nav_status": 12,
-   "updated": "2026-11-09 11:41:17.59135098 +0000 UTC"
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.02794,
+   "lon": -122.87713,
+   "sog_kn": 0.2,
+   "cog": 224.5,
+   "heading": 144,
+   "nav_status": 0,
+   "updated": "2026-11-09 11:46:09.923708837 +0000 UTC"
+  },
+  {
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 45.6428,
+   "lon": -122.77179,
+   "sog_kn": 0,
+   "cog": 327.8,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-09 11:46:12.651284029 +0000 UTC"
+  },
+  {
+   "mmsi": 353081000,
+   "name": "ELEGANT SW",
+   "lat": 46.09906,
+   "lon": -122.93933,
+   "type_code": 70,
+   "destination": "USA LONGVIEW",
+   "updated": "2026-11-09 11:46:16.410710328 +0000 UTC"
   }
  ]
 }
