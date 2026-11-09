@@ -1,86 +1,113 @@
 {
- "fetched_at": "2026-11-09T17:56:12Z",
+ "fetched_at": "2026-11-09T17:57:44Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.85117,
-   "lon": -122.78695,
-   "sog_kn": 5.1,
-   "cog": 182.5,
-   "heading": 177,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07074,
+   "lon": -122.89424,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-09 17:58:31.716084609 +0000 UTC"
+  },
+  {
+   "mmsi": 538006097,
+   "name": "AD ASTRA",
+   "lat": 46.10295,
+   "lon": -122.95638,
+   "sog_kn": 10.3,
+   "cog": 298,
+   "heading": 298,
    "nav_status": 0,
-   "updated": "2026-11-09 17:56:17.169756086 +0000 UTC"
+   "updated": "2026-11-09 17:58:35.396991542 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 241.3,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-09 17:56:19.13677388 +0000 UTC"
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.61274,
+   "lon": -122.63452,
+   "sog_kn": 0.3,
+   "cog": 357.6,
+   "heading": 344,
+   "nav_status": 5,
+   "updated": "2026-11-09 17:58:36.262752903 +0000 UTC"
   },
   {
-   "mmsi": 538012377,
-   "name": "UNION SAPPHIRE",
-   "lat": 46.1619,
-   "lon": -123.07749,
-   "sog_kn": 8.4,
-   "cog": 125.7,
-   "heading": 119,
-   "nav_status": 0,
-   "updated": "2026-11-09 17:56:24.307033495 +0000 UTC"
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58728,
+   "lon": -122.77008,
+   "type_code": 31,
+   "destination": "US^02SY>0UJ9",
+   "updated": "2026-11-09 17:58:36.346048784 +0000 UTC"
   },
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.1534,
-   "lon": -123.37715,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-09 17:56:28.151587588 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.62744,
-   "lon": -122.69586,
-   "sog_kn": 0.5,
-   "cog": 105,
-   "heading": 109,
-   "nav_status": 3,
-   "updated": "2026-11-09 17:56:31.591679735 +0000 UTC"
-  },
-  {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58132,
-   "lon": -122.76066,
-   "type_code": 57,
-   "destination": "GASCO",
-   "updated": "2026-11-09 17:56:47.679212137 +0000 UTC",
-   "sog_kn": 0,
-   "cog": 212.3,
-   "heading": 122,
-   "nav_status": 0
+   "mmsi": 367645170,
+   "name": "CROWN POINT",
+   "lat": 45.65133,
+   "lon": -122.75139,
+   "sog_kn": 6.1,
+   "cog": 313.4,
+   "heading": 313,
+   "nav_status": 12,
+   "updated": "2026-11-09 17:58:38.872358186 +0000 UTC"
   },
   {
    "mmsi": 232038703,
    "name": "IONIAN SEA",
-   "lat": 46.17367,
-   "lon": -123.2129,
+   "lat": 46.17058,
+   "lon": -123.22212,
    "sog_kn": 12.9,
    "cog": 244.2,
    "heading": 245,
    "nav_status": 0,
-   "updated": "2026-11-09 17:56:47.176261591 +0000 UTC"
+   "updated": "2026-11-09 17:58:47.074161414 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.5842,
+   "lon": -122.76618,
+   "sog_kn": 0,
+   "cog": 55.5,
+   "heading": 145,
+   "nav_status": 5,
+   "updated": "2026-11-09 17:58:47.268585012 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58129,
+   "lon": -122.76064,
+   "sog_kn": 0,
+   "cog": 212.3,
+   "heading": 123,
+   "nav_status": 0,
+   "updated": "2026-11-09 17:58:47.505618757 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19943,
+   "lon": -123.38507,
+   "sog_kn": 0,
+   "cog": 28,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-09 17:58:47.508304294 +0000 UTC"
+  },
+  {
+   "mmsi": 369493484,
+   "name": "USCG BLUEBELLL",
+   "lat": 46.06898,
+   "lon": -122.88761,
+   "sog_kn": 11.5,
+   "cog": 330.3,
+   "heading": 328,
+   "nav_status": 0,
+   "updated": "2026-11-09 17:58:48.446735241 +0000 UTC"
   }
  ]
 }
