@@ -1,77 +1,104 @@
 {
- "fetched_at": "2026-11-10T09:43:27Z",
+ "fetched_at": "2026-11-10T09:48:27Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.08024,
-   "lon": -122.90211,
-   "sog_kn": 0.5,
-   "cog": 80.5,
-   "heading": 0,
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.27073,
+   "lon": -123.47811,
+   "sog_kn": 1.3,
+   "cog": 281.7,
+   "heading": 282,
    "nav_status": 3,
-   "updated": "2026-11-10 09:43:37.483185957 +0000 UTC"
+   "updated": "2026-11-10 09:48:33.456369774 +0000 UTC"
   },
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10355,
-   "lon": -122.91008,
+   "mmsi": 367513120,
+   "name": "CASCADES",
+   "lat": 45.66021,
+   "lon": -122.75974,
+   "type_code": 57,
+   "destination": "US^11MS>02MR",
+   "updated": "2026-11-10 09:48:42.462866195 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20002,
+   "lon": -123.38539,
    "sog_kn": 0,
-   "cog": 78.8,
-   "heading": 73,
-   "nav_status": 0,
-   "updated": "2026-11-10 09:43:41.153865181 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64354,
-   "lon": -122.75286,
-   "type_code": 52,
-   "updated": "2026-11-10 09:43:47.630864551 +0000 UTC"
-  },
-  {
-   "mmsi": 368046350,
-   "name": "AMERICAN SONG",
-   "lat": 46.18119,
-   "lon": -123.1115,
-   "type_code": 69,
-   "destination": "STEVENSON, WA",
-   "updated": "2026-11-10 09:43:51.299218661 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09051,
-   "lon": -122.93234,
-   "sog_kn": 0,
-   "cog": 335.1,
+   "cog": 355.1,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-10 09:43:53.489964188 +0000 UTC"
+   "nav_status": 8,
+   "updated": "2026-11-10 09:48:44.281948444 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64684,
+   "lon": -122.77125,
+   "sog_kn": 9,
+   "cog": 216.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 09:48:44.679885444 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.90236,
+   "lon": -122.8047,
+   "sog_kn": 10.3,
+   "cog": 339.7,
+   "heading": 336,
+   "nav_status": 0,
+   "updated": "2026-11-10 09:48:48.77812723 +0000 UTC"
   },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.07994,
-   "lon": -122.90237,
-   "sog_kn": 0.2,
-   "cog": 40.1,
-   "heading": 181,
+   "lat": 46.07983,
+   "lon": -122.90242,
+   "sog_kn": 0.3,
+   "cog": 7.5,
+   "heading": 152,
    "nav_status": 0,
-   "updated": "2026-11-10 09:43:57.766774842 +0000 UTC"
+   "updated": "2026-11-10 09:48:50.230612839 +0000 UTC"
   },
   {
-   "mmsi": 538012377,
-   "name": "UNION SAPPHIRE",
-   "lat": 46.09419,
-   "lon": -122.93755,
-   "type_code": 70,
-   "destination": "CN TAC",
-   "updated": "2026-11-10 09:43:58.136177221 +0000 UTC"
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08022,
+   "lon": -122.90234,
+   "sog_kn": 0.4,
+   "cog": 58.7,
+   "heading": 337,
+   "nav_status": 3,
+   "updated": "2026-11-10 09:48:58.023227056 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65017,
+   "lon": -122.7477,
+   "sog_kn": 0,
+   "cog": 267.5,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-10 09:48:58.332258936 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.07995,
+   "lon": -122.90244,
+   "sog_kn": 0.2,
+   "cog": 17.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 09:48:59.104033249 +0000 UTC"
   }
  ]
 }
