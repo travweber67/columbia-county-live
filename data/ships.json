@@ -1,47 +1,75 @@
 {
- "fetched_at": "2026-11-10T15:23:54Z",
+ "fetched_at": "2026-11-10T15:28:54Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538011495,
-   "name": "MTR JUPITER",
-   "lat": 46.10607,
-   "lon": -122.95593,
-   "type_code": 70,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-10 15:24:43.970179932 +0000 UTC"
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.82345,
+   "lon": -122.818,
+   "sog_kn": 7.5,
+   "cog": 217.3,
+   "heading": 221,
+   "nav_status": 0,
+   "updated": "2026-11-10 15:29:11.484649104 +0000 UTC"
   },
   {
-   "mmsi": 352005064,
-   "name": "ANSAC RISING SUN",
-   "lat": 45.60103,
-   "lon": -122.77373,
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.62903,
+   "lon": -122.69239,
+   "type_code": 52,
+   "destination": "VANCOUER,WA",
+   "updated": "2026-11-10 15:29:13.658835451 +0000 UTC",
    "sog_kn": 0,
-   "cog": 7.6,
-   "heading": 277,
-   "nav_status": 5,
-   "updated": "2026-11-10 15:24:49.469974159 +0000 UTC"
+   "cog": 338.6,
+   "heading": 307,
+   "nav_status": 12
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58131,
+   "lon": -122.76066,
+   "sog_kn": 0,
+   "cog": 208.1,
+   "heading": 122,
+   "nav_status": 0,
+   "updated": "2026-11-10 15:29:07.521866207 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60758,
+   "lon": -122.67765,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 15:29:07.607042068 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15339,
+   "lon": -123.37712,
+   "sog_kn": 0.3,
+   "cog": 9.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 15:29:07.690830678 +0000 UTC"
   },
   {
    "mmsi": 367047170,
    "name": "MAVERICK",
-   "lat": 46.1498,
-   "lon": -123.38705,
-   "sog_kn": 9.5,
-   "cog": 293.8,
-   "heading": 300,
+   "lat": 46.15655,
+   "lon": -123.39866,
+   "sog_kn": 8,
+   "cog": 316.4,
+   "heading": 313,
    "nav_status": 12,
-   "updated": "2026-11-10 15:25:00.89035224 +0000 UTC"
-  },
-  {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.19948,
-   "lon": -123.38512,
-   "type_code": 30,
-   "destination": "CATHLAMET WA",
-   "updated": "2026-11-10 15:25:01.819267135 +0000 UTC"
+   "updated": "2026-11-10 15:29:12.015979252 +0000 UTC"
   }
  ]
 }
