@@ -1,88 +1,62 @@
 {
- "fetched_at": "2026-11-10T07:43:17Z",
+ "fetched_at": "2026-11-10T07:48:18Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15343,
-   "lon": -123.37712,
+   "mmsi": 352006999,
+   "name": "WABI SABI",
+   "lat": 46.17719,
+   "lon": -123.11158,
+   "sog_kn": 0.1,
+   "cog": 46.5,
+   "heading": 128,
+   "nav_status": 1,
+   "updated": "2026-11-10 07:48:22.493210292 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07956,
+   "lon": -122.90221,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-10 07:48:35.722092719 +0000 UTC",
+   "sog_kn": 0.1,
+   "cog": 180.5,
+   "heading": 101,
+   "nav_status": 0
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.2,
+   "lon": -123.38541,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 15.9,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 07:43:37.563155831 +0000 UTC"
+   "nav_status": 8,
+   "updated": "2026-11-10 07:48:26.183581521 +0000 UTC"
   },
   {
    "mmsi": 367727410,
    "name": "AMY B",
    "lat": 45.79315,
-   "lon": -122.8432,
+   "lon": -122.84322,
    "sog_kn": 0,
-   "cog": 343.5,
+   "cog": 355.2,
    "heading": 213,
    "nav_status": 12,
-   "updated": "2026-11-10 07:43:28.345421063 +0000 UTC"
+   "updated": "2026-11-10 07:48:28.408851791 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 323,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-10 07:43:39.360193558 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 45.98527,
-   "lon": -122.83593,
-   "sog_kn": 0.1,
-   "cog": 183.8,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 07:43:47.306016038 +0000 UTC"
-  },
-  {
-   "mmsi": 538011495,
-   "name": "MTR JUPITER",
-   "lat": 46.10607,
-   "lon": -122.95591,
-   "type_code": 70,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-10 07:43:48.574889313 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.63421,
-   "lon": -122.71254,
-   "type_code": 52,
-   "updated": "2026-11-10 07:43:48.788863401 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.91008,
-   "type_code": 52,
-   "destination": "US^0T0P>035F",
-   "updated": "2026-11-10 07:43:50.263013584 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07971,
-   "lon": -122.90233,
-   "sog_kn": 0.2,
-   "cog": 171.5,
-   "heading": 141,
-   "nav_status": 0,
-   "updated": "2026-11-10 07:43:51.130060918 +0000 UTC"
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 46.15543,
+   "lon": -123.05856,
+   "type_code": 31,
+   "destination": "VAN ANCHOR",
+   "updated": "2026-11-10 07:48:51.445832465 +0000 UTC"
   }
  ]
 }
