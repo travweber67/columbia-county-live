@@ -1,16 +1,40 @@
 {
- "fetched_at": "2026-11-10T07:23:15Z",
+ "fetched_at": "2026-11-10T07:23:56Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 636093248,
-   "name": "TALITHA",
-   "lat": 45.98373,
-   "lon": -122.83518,
-   "type_code": 70,
-   "destination": "KALAMA,USA",
-   "updated": "2026-11-10 07:23:20.964514688 +0000 UTC"
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.62977,
+   "lon": -122.69522,
+   "sog_kn": 0,
+   "cog": 261.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 07:24:24.107154254 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.07972,
+   "lon": -122.9023,
+   "sog_kn": 0.7,
+   "cog": 111.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 07:24:24.947467634 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.63813,
+   "lon": -122.71495,
+   "sog_kn": 6.8,
+   "cog": 115.4,
+   "heading": 116,
+   "nav_status": 3,
+   "updated": "2026-11-10 07:24:25.550039576 +0000 UTC"
   },
   {
    "mmsi": 367767410,
@@ -21,75 +45,38 @@
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-10 07:23:27.41924146 +0000 UTC"
+   "updated": "2026-11-10 07:24:28.654867684 +0000 UTC"
   },
   {
-   "mmsi": 367323610,
-   "name": "MIKETTE",
-   "lat": 46.19965,
-   "lon": -123.38519,
-   "type_code": 30,
-   "destination": "",
-   "updated": "2026-11-10 07:23:48.294222691 +0000 UTC",
-   "sog_kn": 0,
-   "cog": 268.3,
-   "heading": 321,
-   "nav_status": 5
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58757,
-   "lon": -122.77046,
-   "sog_kn": 0,
-   "cog": 357.6,
-   "heading": 140,
-   "nav_status": 0,
-   "updated": "2026-11-10 07:23:33.343493422 +0000 UTC"
-  },
-  {
-   "mmsi": 440576000,
-   "name": "PAN FLOWER",
-   "lat": 45.64302,
-   "lon": -122.7714,
-   "sog_kn": 0,
-   "cog": 148.7,
-   "heading": 229,
-   "nav_status": 5,
-   "updated": "2026-11-10 07:23:35.557309703 +0000 UTC"
-  },
-  {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59415,
-   "lon": -122.77213,
-   "sog_kn": 0,
-   "cog": 338.3,
-   "heading": 148,
-   "nav_status": 5,
-   "updated": "2026-11-10 07:23:41.720079713 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07997,
-   "lon": -122.90253,
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.61225,
+   "lon": -122.64525,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 304,
-   "nav_status": 3,
-   "updated": "2026-11-10 07:23:47.302128 +0000 UTC"
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-10 07:24:29.061087817 +0000 UTC"
   },
   {
-   "mmsi": 368046350,
-   "name": "AMERICAN SONG",
-   "lat": 46.26958,
-   "lon": -123.47493,
-   "sog_kn": 8.5,
-   "cog": 117.7,
-   "heading": 118,
-   "nav_status": 0,
-   "updated": "2026-11-10 07:23:47.671218356 +0000 UTC"
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20002,
+   "lon": -123.38556,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-10 07:24:38.191594095 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.15524,
+   "lon": -123.05717,
+   "sog_kn": 8.8,
+   "cog": 299,
+   "heading": 300,
+   "nav_status": 3,
+   "updated": "2026-11-10 07:24:43.946304908 +0000 UTC"
   }
  ]
 }
