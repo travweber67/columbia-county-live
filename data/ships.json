@@ -1,83 +1,113 @@
 {
- "fetched_at": "2026-11-10T18:39:18Z",
+ "fetched_at": "2026-11-10T18:44:18Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 352006999,
-   "name": "WABI SABI",
-   "lat": 46.17687,
-   "lon": -123.11203,
-   "sog_kn": 0.1,
-   "cog": 188.9,
-   "heading": 122,
+   "mmsi": 563017700,
+   "name": "ROSTELLA",
+   "lat": 45.67635,
+   "lon": -122.77017,
+   "type_code": 89,
+   "destination": "AUGLT >> USPDX",
+   "updated": "2026-11-10 18:44:09.925103086 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.15971,
+   "lon": -123.40546,
+   "sog_kn": 0,
+   "cog": 135.9,
+   "heading": 135,
+   "nav_status": 12,
+   "updated": "2026-11-10 18:44:10.393857392 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79319,
+   "lon": -122.84319,
+   "sog_kn": 0,
+   "cog": 88.8,
+   "heading": 217,
+   "nav_status": 0,
+   "updated": "2026-11-10 18:44:29.289863759 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09622,
+   "lon": -122.92989,
+   "sog_kn": 0,
+   "cog": 186.9,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-10 18:44:32.155708538 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40233,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 134,
+   "nav_status": 0,
+   "updated": "2026-11-10 18:44:34.034044427 +0000 UTC"
+  },
+  {
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.61192,
+   "lon": -122.64482,
+   "sog_kn": 0,
+   "cog": 28.6,
+   "heading": 121,
+   "nav_status": 0,
+   "updated": "2026-11-10 18:44:39.151915307 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.67652,
+   "lon": -122.76999,
+   "sog_kn": 0,
+   "cog": 256.3,
+   "heading": 154,
    "nav_status": 1,
-   "updated": "2026-11-10 18:39:22.309137061 +0000 UTC"
+   "updated": "2026-11-10 18:44:43.765907615 +0000 UTC"
   },
   {
-   "mmsi": 538006268,
-   "name": "STAR CARIOCA",
-   "lat": 45.63914,
-   "lon": -122.77774,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.2,
+   "lon": -123.38539,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-10 18:44:44.786336046 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.5813,
+   "lon": -122.76067,
    "sog_kn": 0,
-   "cog": 40,
-   "heading": 228,
+   "cog": 208.1,
+   "heading": 122,
+   "nav_status": 12,
+   "updated": "2026-11-10 18:44:47.172357392 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64351,
+   "lon": -122.75248,
+   "sog_kn": 0,
+   "cog": 34.3,
+   "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-10 18:39:23.675718935 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07793,
-   "lon": -122.90274,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-10 18:39:34.512714112 +0000 UTC",
-   "sog_kn": 0.1,
-   "cog": 209.3,
-   "heading": 230,
-   "nav_status": 0
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.38553,
-   "sog_kn": 0,
-   "cog": 4.3,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-10 18:39:31.525097593 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64353,
-   "lon": -122.75286,
-   "type_code": 52,
-   "updated": "2026-11-10 18:39:32.448171004 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.07639,
-   "lon": -122.89608,
-   "sog_kn": 0,
-   "cog": 15.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 18:39:43.883086588 +0000 UTC"
-  },
-  {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.909,
-   "lon": -122.81431,
-   "sog_kn": 0.1,
-   "cog": 60.2,
-   "heading": 337,
-   "nav_status": 0,
-   "updated": "2026-11-10 18:39:48.872583101 +0000 UTC"
+   "updated": "2026-11-10 18:44:49.690260592 +0000 UTC"
   }
  ]
 }
