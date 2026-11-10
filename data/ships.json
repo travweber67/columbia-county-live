@@ -1,51 +1,63 @@
 {
- "fetched_at": "2026-11-10T06:13:09Z",
+ "fetched_at": "2026-11-10T06:18:10Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00623,
-   "lon": -122.85029,
-   "sog_kn": 9.2,
-   "cog": 162.8,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 06:13:36.904210023 +0000 UTC",
-   "type_code": 31,
-   "destination": "HARBOROPPS-"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.13723,
-   "lon": -123.37894,
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.09412,
+   "lon": -122.93758,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 06:13:36.486054282 +0000 UTC"
+   "cog": 257,
+   "heading": 122,
+   "nav_status": 1,
+   "updated": "2026-11-10 06:18:15.269587312 +0000 UTC"
   },
   {
-   "mmsi": 563017700,
-   "name": "ROSTELLA",
-   "lat": 46.1819,
-   "lon": -123.42954,
-   "sog_kn": 10.1,
-   "cog": 161.6,
-   "heading": 156,
-   "nav_status": 0,
-   "updated": "2026-11-10 06:13:39.434785996 +0000 UTC"
+   "mmsi": 538006268,
+   "name": "STAR CARIOCA",
+   "lat": 45.63918,
+   "lon": -122.77776,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-10 06:18:24.730280084 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 40,
+   "heading": 228,
+   "nav_status": 5
   },
   {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 45.64314,
-   "lon": -122.75262,
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.63432,
+   "lon": -122.78644,
    "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-10 06:13:42.392624788 +0000 UTC"
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-10 06:18:19.951975981 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09605,
+   "lon": -122.9311,
+   "type_code": 0,
+   "updated": "2026-11-10 06:18:23.865360667 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 267.1,
+   "heading": 67,
+   "nav_status": 3
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 46.17072,
+   "lon": -123.21986,
+   "sog_kn": 4.7,
+   "cog": 62.2,
+   "heading": 62,
+   "nav_status": 0,
+   "updated": "2026-11-10 06:18:22.133550896 +0000 UTC"
   }
  ]
 }
