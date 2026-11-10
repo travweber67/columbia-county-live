@@ -1,78 +1,71 @@
 {
- "fetched_at": "2026-11-10T19:04:19Z",
+ "fetched_at": "2026-11-10T19:09:20Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367323610,
-   "name": "MIKETTE",
-   "lat": 46.19964,
-   "lon": -123.38522,
-   "type_code": 30,
-   "destination": "",
-   "updated": "2026-11-10 19:04:36.777680994 +0000 UTC"
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.17361,
+   "lon": -123.08507,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 19:09:42.475822066 +0000 UTC"
+  },
+  {
+   "mmsi": 311594000,
+   "name": "RCC AFRICA",
+   "lat": 46.15413,
+   "lon": -123.3946,
+   "type_code": 78,
+   "destination": "US PDX",
+   "updated": "2026-11-10 19:09:43.964291199 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20001,
+   "lon": -123.38543,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-10 19:09:45.455124276 +0000 UTC"
   },
   {
    "mmsi": 368121540,
    "name": "RANDY S",
-   "lat": 45.64016,
-   "lon": -122.72802,
-   "sog_kn": 4,
-   "cog": 92.7,
-   "heading": 96,
+   "lat": 45.63792,
+   "lon": -122.71953,
+   "sog_kn": 4.6,
+   "cog": 110.8,
+   "heading": 116,
    "nav_status": 0,
-   "updated": "2026-11-10 19:04:39.267455881 +0000 UTC"
+   "updated": "2026-11-10 19:09:49.383827942 +0000 UTC"
   },
   {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58751,
-   "lon": -122.77045,
-   "type_code": 52,
-   "destination": "PORTLAND,OR",
-   "updated": "2026-11-10 19:04:40.563952835 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.20001,
-   "lon": -123.38547,
-   "sog_kn": 0.1,
-   "cog": 17.8,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-10 19:04:49.943332389 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.0806,
-   "lon": -122.90309,
+   "mmsi": 352005064,
+   "name": "ANSAC RISING SUN",
+   "lat": 45.60101,
+   "lon": -122.77374,
    "sog_kn": 0,
-   "cog": 17.3,
-   "heading": 132,
-   "nav_status": 0,
-   "updated": "2026-11-10 19:04:53.832374109 +0000 UTC"
+   "cog": 323.7,
+   "heading": 277,
+   "nav_status": 5,
+   "updated": "2026-11-10 19:09:50.120384316 +0000 UTC"
   },
   {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59403,
-   "lon": -122.77215,
-   "type_code": 70,
-   "destination": "NOT AVAILABLE",
-   "updated": "2026-11-10 19:04:56.945035936 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07802,
-   "lon": -122.90226,
-   "sog_kn": 0.4,
-   "cog": 51,
-   "heading": 217,
-   "nav_status": 0,
-   "updated": "2026-11-10 19:04:57.316544976 +0000 UTC"
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.1735,
+   "lon": -123.10654,
+   "sog_kn": 0,
+   "cog": 238.7,
+   "heading": 110,
+   "nav_status": 1,
+   "updated": "2026-11-10 19:09:52.06884038 +0000 UTC"
   }
  ]
 }
