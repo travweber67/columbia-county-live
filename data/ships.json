@@ -1,62 +1,86 @@
 {
- "fetched_at": "2026-11-10T02:46:50Z",
+ "fetched_at": "2026-11-10T02:51:50Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.26194,
-   "lon": -123.45742,
-   "sog_kn": 3.3,
-   "cog": 319,
-   "heading": 306,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07981,
+   "lon": -122.90245,
+   "sog_kn": 0.3,
+   "cog": 202.3,
+   "heading": 294,
    "nav_status": 3,
-   "updated": "2026-11-10 02:47:03.607991651 +0000 UTC"
+   "updated": "2026-11-10 02:52:06.94956352 +0000 UTC"
   },
   {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63876,
-   "lon": -122.72406,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20002,
+   "lon": -123.38539,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-10 02:52:09.349326849 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.10793,
+   "lon": -122.95919,
+   "type_code": 50,
+   "destination": "--",
+   "updated": "2026-11-10 02:52:09.423547716 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65007,
+   "lon": -122.74758,
+   "type_code": 33,
+   "updated": "2026-11-10 02:52:16.633664134 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61202,
+   "lon": -122.64536,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-10 02:52:21.626352379 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09607,
+   "lon": -122.93052,
    "sog_kn": 0,
-   "cog": 189.1,
-   "heading": 113,
-   "nav_status": 1,
-   "updated": "2026-11-10 02:47:03.779812279 +0000 UTC"
-  },
-  {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.98544,
-   "lon": -122.8363,
-   "sog_kn": 0,
-   "cog": 243.8,
-   "heading": 328,
-   "nav_status": 12,
-   "updated": "2026-11-10 02:47:11.523766231 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.65553,
-   "lon": -122.75702,
-   "sog_kn": 0.2,
-   "cog": 71,
-   "heading": 148,
+   "cog": 0,
+   "heading": 68,
    "nav_status": 3,
-   "updated": "2026-11-10 02:47:15.362742834 +0000 UTC"
+   "updated": "2026-11-10 02:52:23.152249347 +0000 UTC"
   },
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 46.27107,
-   "lon": -123.50019,
-   "sog_kn": 4.7,
-   "cog": 73.2,
-   "heading": 74,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35744,
+   "sog_kn": 0,
+   "cog": 294.6,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-10 02:52:28.910181957 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10355,
+   "lon": -122.9101,
+   "sog_kn": 0,
+   "cog": 69.2,
+   "heading": 70,
    "nav_status": 0,
-   "updated": "2026-11-10 02:47:21.93265758 +0000 UTC"
+   "updated": "2026-11-10 02:52:30.503140293 +0000 UTC"
   }
  ]
 }
