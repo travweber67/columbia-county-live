@@ -1,161 +1,82 @@
 {
- "fetched_at": "2026-11-10T09:08:24Z",
+ "fetched_at": "2026-11-10T09:13:24Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 14 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58132,
-   "lon": -122.76065,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.13979,
+   "lon": -123.02328,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-10 09:13:33.987678374 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15707,
+   "lon": -123.40233,
    "sog_kn": 0,
-   "cog": 140.4,
-   "heading": 122,
+   "cog": 360,
+   "heading": 132,
    "nav_status": 0,
-   "updated": "2026-11-10 09:08:41.36041137 +0000 UTC",
-   "type_code": 57,
-   "destination": "GASCO"
+   "updated": "2026-11-10 09:13:34.678391706 +0000 UTC"
   },
   {
-   "mmsi": 367425870,
-   "name": "HUSKY",
-   "lat": 45.65036,
-   "lon": -122.74751,
-   "sog_kn": 0,
-   "cog": 270.7,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-10 09:08:30.002641564 +0000 UTC"
-  },
-  {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 46.02717,
-   "lon": -122.86956,
-   "sog_kn": 0,
-   "cog": 319.8,
-   "heading": 138,
-   "nav_status": 5,
-   "updated": "2026-11-10 09:08:31.58754461 +0000 UTC"
-  },
-  {
-   "mmsi": 440576000,
-   "name": "PAN FLOWER",
-   "lat": 45.64301,
-   "lon": -122.7714,
-   "sog_kn": 0,
-   "cog": 153.6,
-   "heading": 228,
-   "nav_status": 5,
-   "updated": "2026-11-10 09:08:35.727125218 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 220.5,
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.16315,
+   "lon": -123.40674,
+   "sog_kn": 8.8,
+   "cog": 135.6,
    "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-10 09:08:38.535031478 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-10 09:13:35.805751845 +0000 UTC"
   },
   {
-   "mmsi": 352006999,
-   "name": "WABI SABI",
-   "lat": 46.17689,
-   "lon": -123.11181,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20001,
+   "lon": -123.38553,
+   "sog_kn": 0,
+   "cog": 16.1,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-10 09:13:41.387961941 +0000 UTC"
+  },
+  {
+   "mmsi": 563017700,
+   "name": "ROSTELLA",
+   "lat": 45.99787,
+   "lon": -122.84823,
+   "sog_kn": 10.8,
+   "cog": 164.1,
+   "heading": 165,
+   "nav_status": 0,
+   "updated": "2026-11-10 09:13:46.330870912 +0000 UTC"
+  },
+  {
+   "mmsi": 368082970,
+   "name": "AMERICAN.HARMONY",
+   "lat": 45.60613,
+   "lon": -122.62075,
+   "sog_kn": 10.6,
+   "cog": 103.7,
+   "heading": 101,
+   "nav_status": 0,
+   "updated": "2026-11-10 09:13:59.135638848 +0000 UTC",
+   "type_code": 60,
+   "destination": "HOOD RIVER OR"
+  },
+  {
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.09415,
+   "lon": -122.93755,
    "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-10 09:08:38.791701212 +0000 UTC"
-  },
-  {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60756,
-   "lon": -122.67756,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 09:08:42.682056127 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.66277,
-   "lon": -122.76123,
-   "sog_kn": 0.1,
-   "cog": 209.9,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 09:08:45.959135731 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35742,
-   "sog_kn": 0,
-   "cog": 300.6,
-   "heading": 136,
-   "nav_status": 15,
-   "updated": "2026-11-10 09:08:46.694316011 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.79316,
-   "lon": -122.84321,
-   "sog_kn": 0,
-   "cog": 38.7,
-   "heading": 214,
-   "nav_status": 12,
-   "updated": "2026-11-10 09:08:49.587186216 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.65341,
-   "lon": -122.75751,
-   "sog_kn": 7.9,
-   "cog": 167.5,
-   "heading": 158,
-   "nav_status": 3,
-   "updated": "2026-11-10 09:08:51.589182867 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07993,
-   "lon": -122.90203,
-   "sog_kn": 0.1,
-   "cog": 99.2,
-   "heading": 160,
-   "nav_status": 0,
-   "updated": "2026-11-10 09:08:53.343309898 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.1079,
-   "lon": -122.95901,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 09:08:56.886356912 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.0802,
-   "lon": -122.90226,
-   "sog_kn": 0.3,
-   "cog": 68.5,
-   "heading": 343,
-   "nav_status": 3,
-   "updated": "2026-11-10 09:08:58.031746824 +0000 UTC"
+   "destination": "CN TAC",
+   "updated": "2026-11-10 09:13:57.948510712 +0000 UTC"
   }
  ]
 }
