@@ -1,56 +1,86 @@
 {
- "fetched_at": "2026-11-10T05:58:08Z",
+ "fetched_at": "2026-11-10T06:03:09Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.612,
-   "lon": -122.64536,
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.09409,
+   "lon": -122.93757,
+   "sog_kn": 0,
+   "cog": 257,
+   "heading": 121,
+   "nav_status": 1,
+   "updated": "2026-11-10 06:03:15.161176696 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.63253,
+   "lon": -122.7027,
+   "sog_kn": 1.1,
+   "cog": 155.2,
+   "heading": 150,
+   "nav_status": 3,
+   "updated": "2026-11-10 06:03:21.560474231 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58131,
+   "lon": -122.76064,
+   "type_code": 57,
+   "destination": "GASCO",
+   "updated": "2026-11-10 06:03:27.349346906 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 265.5,
+   "heading": 133,
+   "nav_status": 15,
+   "updated": "2026-11-10 06:03:27.791115973 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35742,
+   "type_code": 30,
+   "updated": "2026-11-10 06:03:35.859947396 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.07958,
+   "lon": -122.90199,
    "type_code": 52,
-   "destination": "US^0UUT>0T9D",
-   "updated": "2026-11-10 05:58:21.873820208 +0000 UTC"
+   "destination": "PORTLAND",
+   "updated": "2026-11-10 06:03:37.211045832 +0000 UTC"
   },
   {
    "mmsi": 636026991,
    "name": "ALTHEA",
-   "lat": 45.67062,
-   "lon": -122.77115,
+   "lat": 45.65576,
+   "lon": -122.76182,
    "type_code": 70,
    "destination": "USVAN",
-   "updated": "2026-11-10 05:58:23.577782937 +0000 UTC"
+   "updated": "2026-11-10 06:03:38.991726404 +0000 UTC"
   },
   {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.64228,
-   "lon": -122.77335,
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10355,
+   "lon": -122.9101,
    "sog_kn": 0,
-   "cog": 312.1,
-   "heading": 141,
+   "cog": 349.3,
+   "heading": 71,
    "nav_status": 0,
-   "updated": "2026-11-10 05:58:24.333578079 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.01277,
-   "lon": -122.85783,
-   "sog_kn": 7,
-   "cog": 154.8,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 05:58:26.080215407 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64788,
-   "lon": -122.741,
-   "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-10 05:58:28.690317838 +0000 UTC"
+   "updated": "2026-11-10 06:03:41.529374276 +0000 UTC"
   }
  ]
 }
