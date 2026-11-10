@@ -1,58 +1,133 @@
 {
- "fetched_at": "2026-11-10T00:36:42Z",
+ "fetched_at": "2026-11-10T00:41:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.64612,
-   "lon": -122.74308,
-   "sog_kn": 7.8,
-   "cog": 292.7,
-   "heading": 291,
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.26348,
+   "lon": -123.46165,
+   "sog_kn": 0.5,
+   "cog": 129.7,
+   "heading": 131,
    "nav_status": 3,
-   "updated": "2026-11-10 00:36:51.912951852 +0000 UTC"
+   "updated": "2026-11-10 00:41:51.949908758 +0000 UTC"
   },
   {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 46.08974,
-   "lon": -122.92899,
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19948,
+   "lon": -123.38505,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-10 00:41:53.152865513 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63859,
+   "lon": -122.72419,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-10 00:41:53.744515934 +0000 UTC"
+  },
+  {
+   "mmsi": 367645170,
+   "name": "CROWN POINT",
+   "lat": 45.63351,
+   "lon": -122.70405,
+   "sog_kn": 6.1,
+   "cog": 124.9,
+   "heading": 123,
+   "nav_status": 12,
+   "updated": "2026-11-10 00:41:59.293323516 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09051,
+   "lon": -122.93234,
    "sog_kn": 0,
-   "cog": 168.6,
+   "cog": 262.4,
    "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-10 00:42:00.555125845 +0000 UTC"
+  },
+  {
+   "mmsi": 367513120,
+   "name": "CASCADES",
+   "lat": 45.62806,
+   "lon": -122.69995,
+   "sog_kn": 0,
+   "cog": 329.6,
+   "heading": 124,
    "nav_status": 0,
-   "updated": "2026-11-10 00:36:54.388080224 +0000 UTC"
+   "updated": "2026-11-10 00:42:01.079734436 +0000 UTC"
   },
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.91008,
-   "type_code": 52,
-   "destination": "US^0T0P>035F",
-   "updated": "2026-11-10 00:36:59.793042844 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.97558,
-   "lon": -122.83548,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-10 00:37:03.348366192 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.07974,
-   "lon": -122.90241,
-   "sog_kn": 0.3,
-   "cog": 200.6,
-   "heading": 289,
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09603,
+   "lon": -122.93058,
+   "sog_kn": 0,
+   "cog": 159.2,
+   "heading": 66,
    "nav_status": 3,
-   "updated": "2026-11-10 00:37:08.130812109 +0000 UTC"
+   "updated": "2026-11-10 00:42:04.822557825 +0000 UTC"
+  },
+  {
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 46.14338,
+   "lon": -123.29961,
+   "sog_kn": 11.7,
+   "cog": 76,
+   "heading": 74,
+   "nav_status": 0,
+   "updated": "2026-11-10 00:42:05.689008768 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.38551,
+   "sog_kn": 0,
+   "cog": 5.4,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-10 00:42:10.292439514 +0000 UTC"
+  },
+  {
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.09428,
+   "lon": -122.93748,
+   "sog_kn": 0,
+   "cog": 208.7,
+   "heading": 117,
+   "nav_status": 1,
+   "updated": "2026-11-10 00:42:15.279086244 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.0923,
+   "lon": -122.92778,
+   "sog_kn": 7.6,
+   "cog": 130.7,
+   "heading": 130,
+   "nav_status": 0,
+   "updated": "2026-11-10 00:42:17.381107032 +0000 UTC"
+  },
+  {
+   "mmsi": 538006268,
+   "name": "STAR CARIOCA",
+   "lat": 45.63917,
+   "lon": -122.77776,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-10 00:42:17.62802696 +0000 UTC"
   }
  ]
 }
