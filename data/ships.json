@@ -1,69 +1,74 @@
 {
- "fetched_at": "2026-11-10T22:29:35Z",
+ "fetched_at": "2026-11-10T22:34:36Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08027,
+   "lon": -122.90258,
+   "sog_kn": 0,
+   "cog": 254.5,
+   "heading": 132,
+   "nav_status": 0,
+   "updated": "2026-11-10 22:34:43.511400866 +0000 UTC"
+  },
+  {
+   "mmsi": 311594000,
+   "name": "RCC AFRICA",
+   "lat": 45.76414,
+   "lon": -122.76201,
+   "sog_kn": 14.6,
+   "cog": 170.4,
+   "heading": 171,
+   "nav_status": 0,
+   "updated": "2026-11-10 22:35:08.911650706 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08041,
+   "lon": -122.90301,
+   "sog_kn": 0.4,
+   "cog": 219.3,
+   "heading": 312,
+   "nav_status": 3,
+   "updated": "2026-11-10 22:34:46.49803923 +0000 UTC"
+  },
   {
    "mmsi": 367669550,
    "name": "ALASKA CHALLENGER",
    "lat": 46.17718,
    "lon": -123.35743,
    "sog_kn": 0,
-   "cog": 237.9,
+   "cog": 284,
    "heading": 135,
    "nav_status": 15,
-   "updated": "2026-11-10 22:29:47.875087307 +0000 UTC"
+   "updated": "2026-11-10 22:34:47.085436762 +0000 UTC"
   },
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 46.14428,
-   "lon": -123.30857,
-   "sog_kn": 7.2,
-   "cog": 80.3,
-   "heading": 78,
-   "nav_status": 12,
-   "updated": "2026-11-10 22:29:49.560644273 +0000 UTC"
-  },
-  {
-   "mmsi": 367323610,
-   "name": "MIKETTE",
-   "lat": 46.19965,
-   "lon": -123.38523,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15339,
+   "lon": -123.37718,
+   "type_code": 99,
+   "updated": "2026-11-10 22:35:09.645650525 +0000 UTC",
    "sog_kn": 0,
-   "cog": 116.4,
-   "heading": 322,
-   "nav_status": 5,
-   "updated": "2026-11-10 22:29:51.453872638 +0000 UTC"
+   "cog": 189.7,
+   "heading": 511,
+   "nav_status": 0
   },
   {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.19942,
-   "lon": -123.38503,
-   "type_code": 30,
-   "destination": "CATHLAMET WA",
-   "updated": "2026-11-10 22:29:52.377312729 +0000 UTC"
-  },
-  {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63878,
-   "lon": -122.72406,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-10 22:29:53.89412533 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.9101,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.38553,
    "sog_kn": 0,
-   "cog": 227.5,
-   "heading": 73,
-   "nav_status": 0,
-   "updated": "2026-11-10 22:30:11.386903452 +0000 UTC"
+   "cog": 0.7,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-10 22:35:11.180818257 +0000 UTC"
   }
  ]
 }
