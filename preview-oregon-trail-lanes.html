@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +8,10 @@
 <link rel="stylesheet" href="style.css?v=56">
 <style>
   .pv-wrap{max-width:1060px;margin:0 auto;padding:20px 16px 48px}
-  .pv-head{padding:26px 4px 6px}
+  .pv-head{padding:22px 20px;margin-top:20px;background:rgba(251,248,238,.94);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow)}
+  .pv-intro{background:rgba(251,248,238,.94);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);padding:14px 20px;margin-bottom:14px}
+  .pv-intro h2{margin:0 0 4px}
+  .pv-intro .pv-sub{margin:0}
   .pv-kicker{font-size:.74rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--warm);margin:0 0 8px}
   .pv-head h1{font-family:var(--display);font-size:2rem;margin:0 0 8px;color:var(--accent-dark)}
   .pv-head p{margin:0 0 6px;color:var(--muted);max-width:640px}
@@ -32,11 +35,19 @@
   .otl-list{margin:0;padding-left:18px;font-size:.94rem}
   .otl-list li{margin:3px 0}
   .otl-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
-  .otl-note{margin-top:26px;font-size:.85rem;color:var(--muted);border-top:1px solid var(--border);padding-top:14px}
+  .otl-note{margin-top:26px;font-size:.85rem;color:var(--muted);background:rgba(251,248,238,.94);border:1px solid var(--border);border-radius:16px;padding:14px 20px}
   .dir-badge{background:var(--warm-fill);color:#2a1c08;font-size:.68rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:3px 9px;vertical-align:middle}
 </style>
 </head>
 <body>
+<div class="page-bg" aria-hidden="true">
+  <div class="bg-stack bg-day">
+    <div class="bg-layer on" style="background-image:url('img/bg/bg-day-6.jpg')"></div>
+  </div>
+  <div class="bg-stack bg-dusk">
+    <div class="bg-layer on" style="background-image:url('img/bg/bg-dusk-2.jpg')"></div>
+  </div>
+</div>
 <div class="pv-wrap">
 
   <header class="pv-head">
@@ -46,8 +57,8 @@
   </header>
 
   <section class="pv-sec" aria-label="Founding sponsor panel preview">
-    <h2>1 · The Founding Sponsors panel</h2>
-    <p class="pv-sub">This panel sits at the top of the Today page, in front of every visitor. Your spot is Spot 1.</p>
+    <div class="pv-intro"><h2>1 · The Founding Sponsors panel</h2>
+    <p class="pv-sub">This panel sits at the top of the Today page, in front of every visitor. Your spot is Spot 1.</p></div>
 
     <section class="founding-panel" aria-label="Founding sponsors of Columbia County Live">
       <div class="founding-inner">
@@ -81,8 +92,8 @@
   </section>
 
   <section class="pv-sec" aria-label="Oregon Trail Lanes full card preview">
-    <h2>2 · Your full card</h2>
-    <p class="pv-sub">The bigger card visitors open from the panel and the directory — photo, hours, and everything you offer.</p>
+    <div class="pv-intro"><h2>2 · Your full card</h2>
+    <p class="pv-sub">The bigger card visitors open from the panel and the directory — photo, hours, and everything you offer.</p></div>
 
     <article class="otl-card">
       <img class="otl-photo" src="img/dir-oregon-trail-lanes.jpg" alt="League night inside Oregon Trail Lanes in St. Helens">
