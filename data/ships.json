@@ -1,60 +1,107 @@
 {
- "fetched_at": "2026-11-10T16:34:03Z",
+ "fetched_at": "2026-11-10T16:39:04Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19999,
-   "lon": -123.38542,
-   "sog_kn": 0,
-   "cog": 182.8,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-10 16:34:15.757128538 +0000 UTC"
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08981,
+   "lon": -122.92899,
+   "type_code": 52,
+   "destination": "CSR OPS",
+   "updated": "2026-11-10 16:39:10.603574749 +0000 UTC"
   },
   {
-   "mmsi": 368328430,
-   "name": "MCR 8",
-   "lat": 45.58477,
-   "lon": -122.76621,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65011,
+   "lon": -122.74765,
+   "type_code": 33,
+   "updated": "2026-11-10 16:39:11.216636248 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.38554,
+   "sog_kn": 0,
+   "cog": 34,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-10 16:39:11.828365362 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.17362,
+   "lon": -123.08506,
+   "type_code": 50,
+   "destination": "--",
+   "updated": "2026-11-10 16:39:20.444295697 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.64771,
+   "lon": -122.74235,
+   "sog_kn": 0.2,
+   "cog": 128.1,
+   "heading": 108,
+   "nav_status": 12,
+   "updated": "2026-11-10 16:39:24.809567803 +0000 UTC"
+  },
+  {
+   "mmsi": 352006999,
+   "name": "WABI SABI",
+   "lat": 46.17699,
+   "lon": -123.11203,
+   "sog_kn": 0,
+   "cog": 7.7,
+   "heading": 121,
+   "nav_status": 1,
+   "updated": "2026-11-10 16:39:26.76924829 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37715,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 16:39:28.877344743 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
+   "type_code": 0,
+   "updated": "2026-11-10 16:39:30.777402901 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.9101,
+   "sog_kn": 0,
+   "cog": 264.4,
+   "heading": 73,
+   "nav_status": 0,
+   "updated": "2026-11-10 16:39:31.667312589 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15707,
+   "lon": -123.40234,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-10 16:34:19.851580691 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07904,
-   "lon": -122.9025,
-   "sog_kn": 0.2,
-   "cog": 215.6,
-   "heading": 165,
+   "heading": 132,
    "nav_status": 0,
-   "updated": "2026-11-10 16:34:20.406401101 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64347,
-   "lon": -122.75252,
-   "type_code": 57,
-   "destination": "US^0UU4>02MR",
-   "updated": "2026-11-10 16:34:23.723031426 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07626,
-   "lon": -122.90064,
-   "sog_kn": 1.2,
-   "cog": 335.4,
-   "heading": 154,
-   "nav_status": 0,
-   "updated": "2026-11-10 16:34:36.764233098 +0000 UTC"
+   "updated": "2026-11-10 16:39:32.802501569 +0000 UTC"
   }
  ]
 }
