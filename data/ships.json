@@ -1,76 +1,67 @@
 {
- "fetched_at": "2026-11-10T01:31:44Z",
+ "fetched_at": "2026-11-10T01:36:45Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 352005064,
-   "name": "ANSAC RISING SUN",
-   "lat": 45.60116,
-   "lon": -122.77515,
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63879,
+   "lon": -122.72401,
    "type_code": 70,
    "destination": "US PDX",
-   "updated": "2026-11-10 01:31:55.057540679 +0000 UTC"
+   "updated": "2026-11-10 01:36:56.753837662 +0000 UTC"
   },
   {
-   "mmsi": 538012377,
-   "name": "UNION SAPPHIRE",
-   "lat": 46.09429,
-   "lon": -122.93745,
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07949,
+   "lon": -122.90212,
+   "sog_kn": 0.2,
+   "cog": 145.4,
+   "heading": 116,
+   "nav_status": 0,
+   "updated": "2026-11-10 01:37:02.76660494 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64537,
+   "lon": -122.73503,
    "type_code": 70,
-   "destination": "CN TAC",
-   "updated": "2026-11-10 01:31:58.159180724 +0000 UTC"
+   "destination": "PER ORDERS",
+   "updated": "2026-11-10 01:37:04.165034124 +0000 UTC"
   },
   {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.09209,
-   "lon": -122.93069,
-   "sog_kn": 6.3,
-   "cog": 224.1,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 01:31:58.784825593 +0000 UTC"
-  },
-  {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.6121,
-   "lon": -122.79019,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19997,
+   "lon": -123.38552,
    "sog_kn": 0,
-   "cog": 210.8,
-   "heading": 191,
+   "cog": 189.8,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-10 01:37:11.270590037 +0000 UTC"
+  },
+  {
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 46.15967,
+   "lon": -123.06924,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-10 01:37:15.343505527 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58132,
+   "lon": -122.76067,
+   "sog_kn": 0,
+   "cog": 205.3,
+   "heading": 122,
    "nav_status": 0,
-   "updated": "2026-11-10 01:31:59.227652773 +0000 UTC"
-  },
-  {
-   "mmsi": 367425870,
-   "name": "HUSKY",
-   "lat": 45.65036,
-   "lon": -122.74759,
-   "type_code": 52,
-   "destination": "VANCOUVER",
-   "updated": "2026-11-10 01:32:00.619362061 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58749,
-   "lon": -122.77044,
-   "type_code": 52,
-   "destination": "PORTLAND,OR",
-   "updated": "2026-11-10 01:32:11.556164678 +0000 UTC"
-  },
-  {
-   "mmsi": 636026991,
-   "name": "ALTHEA",
-   "lat": 46.15119,
-   "lon": -123.38956,
-   "sog_kn": 10.9,
-   "cog": 121.3,
-   "heading": 119,
-   "nav_status": 0,
-   "updated": "2026-11-10 01:32:20.073935303 +0000 UTC"
+   "updated": "2026-11-10 01:37:17.315402658 +0000 UTC"
   }
  ]
 }
