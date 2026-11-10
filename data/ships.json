@@ -1,58 +1,79 @@
 {
- "fetched_at": "2026-11-10T11:33:36Z",
+ "fetched_at": "2026-11-10T11:38:36Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 352005064,
-   "name": "ANSAC RISING SUN",
-   "lat": 45.60107,
-   "lon": -122.77377,
-   "sog_kn": 0,
-   "cog": 247,
-   "heading": 276,
-   "nav_status": 5,
-   "updated": "2026-11-10 11:33:50.256786048 +0000 UTC"
-  },
-  {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 46.17289,
-   "lon": -123.10173,
-   "sog_kn": 0,
-   "cog": 174.7,
-   "heading": 285,
-   "nav_status": 1,
-   "updated": "2026-11-10 11:33:50.257106235 +0000 UTC"
-  },
-  {
-   "mmsi": 338205428,
-   "name": "CLAIRE B",
-   "lat": 45.8061,
-   "lon": -122.7916,
-   "type_code": 52,
-   "destination": "",
-   "updated": "2026-11-10 11:33:59.346535882 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.79315,
-   "lon": -122.84324,
-   "sog_kn": 0,
-   "cog": 298.7,
-   "heading": 211,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.95427,
+   "lon": -122.81132,
+   "sog_kn": 7.9,
+   "cog": 336,
+   "heading": 329,
    "nav_status": 12,
-   "updated": "2026-11-10 11:33:59.671423055 +0000 UTC"
+   "updated": "2026-11-10 11:38:40.50887771 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58752,
+   "lon": -122.77045,
+   "sog_kn": 0,
+   "cog": 335.7,
+   "heading": 142,
+   "nav_status": 0,
+   "updated": "2026-11-10 11:38:43.509849853 +0000 UTC"
+  },
+  {
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.09419,
+   "lon": -122.93753,
+   "type_code": 70,
+   "destination": "CN TAC",
+   "updated": "2026-11-10 11:38:52.628640499 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.07973,
+   "lon": -122.90236,
+   "sog_kn": 0,
+   "cog": 11.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 11:38:55.544215477 +0000 UTC"
+  },
+  {
+   "mmsi": 367516730,
+   "name": "CRISTY T",
+   "lat": 45.61211,
+   "lon": -122.64533,
+   "type_code": 0,
+   "updated": "2026-11-10 11:38:58.274850125 +0000 UTC"
   },
   {
    "mmsi": 367047080,
    "name": "THE CHIEF",
-   "lat": 45.98614,
-   "lon": -122.83716,
-   "type_code": 57,
-   "destination": "KALAMA",
-   "updated": "2026-11-10 11:34:10.358126282 +0000 UTC"
+   "lat": 45.98464,
+   "lon": -122.8367,
+   "sog_kn": 7.9,
+   "cog": 164.9,
+   "heading": 157,
+   "nav_status": 12,
+   "updated": "2026-11-10 11:39:00.900118415 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.38551,
+   "sog_kn": 0,
+   "cog": 316.8,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-10 11:39:02.406363959 +0000 UTC"
   }
  ]
 }
