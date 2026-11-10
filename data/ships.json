@@ -1,67 +1,99 @@
 {
- "fetched_at": "2026-11-10T01:36:45Z",
+ "fetched_at": "2026-11-10T01:41:47Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63879,
-   "lon": -122.72401,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-10 01:36:56.753837662 +0000 UTC"
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09043,
+   "lon": -122.93236,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-10 01:42:00.446005539 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 279.7,
+   "heading": 511,
+   "nav_status": 5
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07949,
-   "lon": -122.90212,
-   "sog_kn": 0.2,
-   "cog": 145.4,
-   "heading": 116,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.62748,
+   "lon": -122.69606,
+   "sog_kn": 0.7,
+   "cog": 113.4,
+   "heading": 115,
+   "nav_status": 3,
+   "updated": "2026-11-10 01:42:00.950958461 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07976,
+   "lon": -122.90176,
+   "sog_kn": 0,
+   "cog": 118.4,
+   "heading": 179,
    "nav_status": 0,
-   "updated": "2026-11-10 01:37:02.76660494 +0000 UTC"
+   "updated": "2026-11-10 01:42:04.775928425 +0000 UTC"
   },
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64537,
-   "lon": -122.73503,
-   "type_code": 70,
-   "destination": "PER ORDERS",
-   "updated": "2026-11-10 01:37:04.165034124 +0000 UTC"
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08973,
+   "lon": -122.92906,
+   "sog_kn": 0,
+   "cog": 209.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 01:42:06.500893471 +0000 UTC"
   },
   {
    "mmsi": 367061930,
    "name": "TEBENKOF",
-   "lat": 46.19997,
-   "lon": -123.38552,
+   "lat": 46.19998,
+   "lon": -123.38551,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-10 01:42:21.007738966 +0000 UTC",
    "sog_kn": 0,
-   "cog": 189.8,
+   "cog": 188.3,
    "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-10 01:37:11.270590037 +0000 UTC"
+   "nav_status": 15
   },
   {
-   "mmsi": 440576000,
-   "name": "PAN FLOWER",
-   "lat": 46.15967,
-   "lon": -123.06924,
-   "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-10 01:37:15.343505527 +0000 UTC"
-  },
-  {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58132,
-   "lon": -122.76067,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
    "sog_kn": 0,
-   "cog": 205.3,
-   "heading": 122,
+   "cog": 205.2,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-10 01:42:18.617738471 +0000 UTC"
+  },
+  {
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.61209,
+   "lon": -122.79019,
+   "sog_kn": 0,
+   "cog": 232.8,
+   "heading": 192,
    "nav_status": 0,
-   "updated": "2026-11-10 01:37:17.315402658 +0000 UTC"
+   "updated": "2026-11-10 01:42:19.899981506 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.07976,
+   "lon": -122.90207,
+   "sog_kn": 0.1,
+   "cog": 56.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 01:42:22.085220211 +0000 UTC"
   }
  ]
 }
