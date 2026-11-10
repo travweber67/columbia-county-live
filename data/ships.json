@@ -1,146 +1,102 @@
 {
- "fetched_at": "2026-11-10T08:23:21Z",
+ "fetched_at": "2026-11-10T08:24:02Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 13 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 46.02716,
-   "lon": -122.86956,
+   "mmsi": 563017700,
+   "name": "ROSTELLA",
+   "lat": 46.10525,
+   "lon": -122.96403,
+   "sog_kn": 10.9,
+   "cog": 126,
+   "heading": 123,
+   "nav_status": 0,
+   "updated": "2026-11-10 08:24:38.82459998 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58132,
+   "lon": -122.76064,
    "sog_kn": 0,
-   "cog": 319.8,
-   "heading": 138,
-   "nav_status": 5,
-   "updated": "2026-11-10 08:23:29.708070668 +0000 UTC"
+   "cog": 140.4,
+   "heading": 123,
+   "nav_status": 0,
+   "updated": "2026-11-10 08:24:38.063326353 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.2,
+   "lon": -123.38537,
+   "sog_kn": 0,
+   "cog": 1.4,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-10 08:24:45.45726835 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79314,
+   "lon": -122.84322,
+   "sog_kn": 0,
+   "cog": 231.7,
+   "heading": 210,
+   "nav_status": 12,
+   "updated": "2026-11-10 08:24:48.408249523 +0000 UTC"
   },
   {
    "mmsi": 367047170,
    "name": "MAVERICK",
    "lat": 45.62124,
-   "lon": -122.78814,
+   "lon": -122.78816,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-10 08:24:51.346581437 +0000 UTC"
+  },
+  {
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.17403,
+   "lon": -123.10608,
    "sog_kn": 0,
-   "cog": 356.8,
-   "heading": 356,
-   "nav_status": 12,
-   "updated": "2026-11-10 08:23:30.308779405 +0000 UTC"
+   "cog": 252.9,
+   "heading": 126,
+   "nav_status": 1,
+   "updated": "2026-11-10 08:24:53.537802696 +0000 UTC"
   },
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 46.12546,
-   "lon": -122.99545,
-   "sog_kn": 5.5,
-   "cog": 136.3,
-   "heading": 134,
-   "nav_status": 0,
-   "updated": "2026-11-10 08:23:32.185727543 +0000 UTC"
-  },
-  {
-   "mmsi": 368046350,
-   "name": "AMERICAN SONG",
-   "lat": 46.15218,
-   "lon": -123.39044,
-   "sog_kn": 8.3,
-   "cog": 125.1,
-   "heading": 124,
-   "nav_status": 0,
-   "updated": "2026-11-10 08:23:37.476616507 +0000 UTC"
-  },
-  {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58133,
-   "lon": -122.76067,
-   "sog_kn": 0,
-   "cog": 140.4,
-   "heading": 123,
-   "nav_status": 0,
-   "updated": "2026-11-10 08:23:37.804999701 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.07057,
-   "lon": -122.8886,
-   "sog_kn": 9.9,
-   "cog": 331,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 08:23:37.888207255 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20002,
-   "lon": -123.3854,
-   "sog_kn": 0,
-   "cog": 1.9,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-10 08:23:45.776990112 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.63099,
-   "lon": -122.70055,
-   "sog_kn": 1.8,
-   "cog": 306.5,
-   "heading": 309,
-   "nav_status": 3,
-   "updated": "2026-11-10 08:23:50.788151253 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19993,
-   "lon": -123.3855,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-10 08:23:52.587568597 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00905,
-   "lon": -122.84829,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.07985,
+   "lon": -122.90233,
    "sog_kn": 0.1,
-   "cog": 28.5,
+   "cog": 353.8,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-10 08:23:53.51894246 +0000 UTC"
-  },
-  {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.63871,
-   "lon": -122.72407,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-10 08:23:54.352675016 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 46.08977,
-   "lon": -122.92896,
-   "sog_kn": 0,
-   "cog": 182.2,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 08:23:54.364754977 +0000 UTC"
+   "updated": "2026-11-10 08:24:59.227918745 +0000 UTC"
   },
   {
    "mmsi": 367702780,
    "name": "SARAH",
-   "lat": 45.58758,
-   "lon": -122.77042,
+   "lat": 45.58757,
+   "lon": -122.77041,
    "sog_kn": 0,
-   "cog": 249.1,
-   "heading": 140,
+   "cog": 253.1,
+   "heading": 141,
    "nav_status": 0,
-   "updated": "2026-11-10 08:23:54.544743619 +0000 UTC"
+   "updated": "2026-11-10 08:25:03.085363148 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.07309,
+   "lon": -122.89057,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-10 08:25:04.631020678 +0000 UTC"
   }
  ]
 }
