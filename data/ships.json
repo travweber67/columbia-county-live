@@ -1,18 +1,18 @@
 {
- "fetched_at": "2026-11-10T22:14:35Z",
+ "fetched_at": "2026-11-10T22:19:35Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59405,
-   "lon": -122.77215,
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.1079,
+   "lon": -122.95904,
    "sog_kn": 0,
-   "cog": 338.3,
-   "heading": 148,
-   "nav_status": 5,
-   "updated": "2026-11-10 22:14:41.135727192 +0000 UTC"
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 22:19:50.775644751 +0000 UTC"
   },
   {
    "mmsi": 368410780,
@@ -20,43 +20,53 @@
    "lat": 46.10353,
    "lon": -122.9101,
    "sog_kn": 0,
-   "cog": 88.4,
-   "heading": 72,
+   "cog": 262.2,
+   "heading": 73,
    "nav_status": 0,
-   "updated": "2026-11-10 22:14:41.188770613 +0000 UTC"
+   "updated": "2026-11-10 22:19:51.547671417 +0000 UTC"
   },
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.1079,
-   "lon": -122.95902,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09412,
+   "lon": -122.94283,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 157.8,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-10 22:14:41.670728535 +0000 UTC"
+   "updated": "2026-11-10 22:20:15.361811151 +0000 UTC",
+   "type_code": 69
   },
   {
-   "mmsi": 311594000,
-   "name": "RCC AFRICA",
-   "lat": 45.83669,
-   "lon": -122.79036,
-   "sog_kn": 14.4,
-   "cog": 202.4,
-   "heading": 201,
-   "nav_status": 0,
-   "updated": "2026-11-10 22:15:04.470310298 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40234,
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.66143,
+   "lon": -122.7606,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 131,
+   "cog": 337.2,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-10 22:15:13.611304194 +0000 UTC"
+   "updated": "2026-11-10 22:19:54.360319413 +0000 UTC"
+  },
+  {
+   "mmsi": 367681630,
+   "name": "VICKI B",
+   "lat": 45.82481,
+   "lon": -122.79123,
+   "sog_kn": 5.9,
+   "cog": 5.4,
+   "heading": 8,
+   "nav_status": 0,
+   "updated": "2026-11-10 22:19:54.445033088 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.64715,
+   "lon": -122.73962,
+   "type_code": 52,
+   "destination": "KALAMA",
+   "updated": "2026-11-10 22:20:14.778579729 +0000 UTC"
   }
  ]
 }
