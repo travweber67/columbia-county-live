@@ -1,80 +1,121 @@
 {
- "fetched_at": "2026-11-10T22:39:36Z",
+ "fetched_at": "2026-11-10T22:44:42Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 636026991,
-   "name": "ALTHEA",
-   "lat": 45.63019,
-   "lon": -122.69532,
-   "type_code": 70,
-   "destination": "USVAN",
-   "updated": "2026-11-10 22:39:39.411958672 +0000 UTC"
-  },
-  {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.77621,
-   "lon": -122.77153,
-   "sog_kn": 7.8,
-   "cog": 154.5,
-   "heading": 155,
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10787,
+   "lon": -122.95905,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-10 22:39:38.782236612 +0000 UTC"
+   "updated": "2026-11-10 22:45:19.687193629 +0000 UTC",
+   "type_code": 50,
+   "destination": "CR HARBOR OPS"
   },
   {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08009,
-   "lon": -122.90275,
-   "sog_kn": 0.1,
-   "cog": 78.2,
-   "heading": 153,
-   "nav_status": 5,
-   "updated": "2026-11-10 22:39:47.406704938 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35743,
-   "sog_kn": 0,
-   "cog": 226.7,
-   "heading": 136,
-   "nav_status": 15,
-   "updated": "2026-11-10 22:40:06.562660839 +0000 UTC"
-  },
-  {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.5813,
-   "lon": -122.76065,
-   "sog_kn": 0,
-   "cog": 30.5,
-   "heading": 122,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.15026,
+   "lon": -123.26464,
+   "sog_kn": 7.7,
+   "cog": 68.5,
+   "heading": 58,
    "nav_status": 12,
-   "updated": "2026-11-10 22:40:06.563217534 +0000 UTC"
+   "updated": "2026-11-10 22:45:01.006369956 +0000 UTC"
   },
   {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 46.17184,
-   "lon": -123.10538,
+   "mmsi": 367327440,
+   "name": "KATHRYN B.",
+   "lat": 45.97527,
+   "lon": -122.83412,
+   "sog_kn": 9.9,
+   "cog": 135.8,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 22:45:04.068680239 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64539,
+   "lon": -122.73505,
    "type_code": 70,
-   "destination": "USVAN",
-   "updated": "2026-11-10 22:40:07.80338203 +0000 UTC"
+   "destination": "PER ORDERS",
+   "updated": "2026-11-10 22:45:07.055051963 +0000 UTC"
   },
   {
    "mmsi": 367061930,
    "name": "TEBENKOF",
-   "lat": 46.19992,
+   "lat": 46.19997,
    "lon": -123.38553,
    "sog_kn": 0,
-   "cog": 330.4,
+   "cog": 341.7,
    "heading": 511,
    "nav_status": 15,
-   "updated": "2026-11-10 22:40:11.213867118 +0000 UTC"
+   "updated": "2026-11-10 22:45:11.10839978 +0000 UTC"
+  },
+  {
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10891,
+   "lon": -122.9613,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-10 22:45:15.563112721 +0000 UTC"
+  },
+  {
+   "mmsi": 368328430,
+   "name": "MCR 8",
+   "lat": 45.58478,
+   "lon": -122.76627,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-10 22:45:18.895066381 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64568,
+   "lon": -122.73485,
+   "type_code": 79,
+   "updated": "2026-11-10 22:45:20.537310706 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.65163,
+   "lon": -122.76606,
+   "sog_kn": 7.7,
+   "cog": 28.6,
+   "heading": 32,
+   "nav_status": 12,
+   "updated": "2026-11-10 22:45:25.573156335 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08049,
+   "lon": -122.90287,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 330,
+   "nav_status": 3,
+   "updated": "2026-11-10 22:45:26.956936485 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09074,
+   "lon": -122.93216,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-10 22:45:28.657238209 +0000 UTC"
   }
  ]
 }
