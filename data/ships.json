@@ -1,59 +1,84 @@
 {
- "fetched_at": "2026-11-10T14:38:50Z",
+ "fetched_at": "2026-11-10T14:43:50Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65017,
-   "lon": -122.74763,
-   "type_code": 33,
-   "updated": "2026-11-10 14:39:10.867841142 +0000 UTC"
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64659,
+   "lon": -122.74123,
+   "sog_kn": 5.3,
+   "cog": 263.3,
+   "heading": 238,
+   "nav_status": 12,
+   "updated": "2026-11-10 14:44:07.488671066 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.1079,
+   "lon": -122.95902,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 14:44:11.129456133 +0000 UTC"
   },
   {
    "mmsi": 367310520,
    "name": "JAMES T",
-   "lat": 46.18492,
-   "lon": -123.12178,
-   "sog_kn": 7.9,
-   "cog": 298.2,
-   "heading": 296,
+   "lat": 46.18761,
+   "lon": -123.13793,
+   "sog_kn": 8.2,
+   "cog": 278.9,
+   "heading": 279,
    "nav_status": 3,
-   "updated": "2026-11-10 14:39:14.267874094 +0000 UTC"
+   "updated": "2026-11-10 14:44:23.529904741 +0000 UTC"
   },
   {
-   "mmsi": 636026991,
-   "name": "ALTHEA",
-   "lat": 45.63011,
-   "lon": -122.69531,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.1534,
+   "lon": -123.37714,
    "sog_kn": 0,
-   "cog": 40,
-   "heading": 127,
-   "nav_status": 5,
-   "updated": "2026-11-10 14:39:16.332434305 +0000 UTC"
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 14:44:26.93357813 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07989,
-   "lon": -122.90259,
-   "sog_kn": 0.2,
-   "cog": 33.2,
-   "heading": 141,
-   "nav_status": 0,
-   "updated": "2026-11-10 14:39:18.006317807 +0000 UTC"
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65005,
+   "lon": -122.7476,
+   "sog_kn": 0,
+   "cog": 176,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-10 14:44:29.672719354 +0000 UTC"
   },
   {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.89428,
-   "lon": -122.80553,
-   "sog_kn": 9,
-   "cog": 334.4,
-   "heading": 333,
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.80054,
+   "lon": -122.78737,
+   "sog_kn": 9.1,
+   "cog": 337.9,
+   "heading": 338,
    "nav_status": 0,
-   "updated": "2026-11-10 14:39:20.072402992 +0000 UTC"
+   "updated": "2026-11-10 14:44:31.122052761 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40233,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 136,
+   "nav_status": 0,
+   "updated": "2026-11-10 14:44:34.038882075 +0000 UTC"
   }
  ]
 }
