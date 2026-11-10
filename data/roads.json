@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-10T22:49:37Z",
+ "fetched_at": "2026-11-10T22:54:03Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -40,19 +40,6 @@
    "lon": -123.09797,
    "start": "2026-06-16T07:31:51.18-07:00",
    "updated": "2026-11-05T11:47:57-08:00",
-   "source": "ODOT TripCheck"
-  },
-  {
-   "title": "Road construction is occurring causing minimal delay to traffic. Use caution and watch for workers.",
-   "desc": "Timber felling is occurring, prepare to slow or stop. Watch for workers, use caution, and prepare to slow down in the work zone.",
-   "impact": "No to Minimum Delay",
-   "place": "ORE202, 5 miles North of Birkenfeld",
-   "route": "OR202",
-   "milepost": 36.0,
-   "lat": 45.98244,
-   "lon": -123.41492,
-   "start": "2026-11-03T15:57:01.297-08:00",
-   "updated": "2026-11-03T15:58:13-08:00",
    "source": "ODOT TripCheck"
   },
   {
@@ -121,16 +108,16 @@
    "source": "ODOT TripCheck"
   },
   {
-   "title": "Road maintenance operations are occurring causing minimal delay to traffic. Prepare to slow or move over for worker safety.",
-   "desc": "",
+   "title": "Road construction is occurring causing minimal delay to traffic. Use caution and watch for workers.",
+   "desc": "Timber felling is occurring, prepare to slow or stop. Watch for workers, use caution, and prepare to slow down in the work zone.",
    "impact": "No to Minimum Delay",
-   "place": "US30BP, 3 miles West of Intersection with East Portland Highway I-205",
-   "route": "US30BY",
-   "milepost": 8.19,
-   "lat": 45.57062,
-   "lon": -122.62107,
-   "start": "2026-11-10T08:37:29.28-08:00",
-   "updated": "2026-11-10T08:37:37-08:00",
+   "place": "ORE202, 5 miles North of Birkenfeld",
+   "route": "OR202",
+   "milepost": 36.0,
+   "lat": 45.98244,
+   "lon": -123.41492,
+   "start": "2026-11-03T15:57:01.297-08:00",
+   "updated": "2026-11-03T15:58:13-08:00",
    "source": "ODOT TripCheck"
   },
   {
@@ -147,6 +134,19 @@
    "source": "ODOT TripCheck"
   },
   {
+   "title": "Road maintenance operations are occurring causing minimal delay to traffic. Prepare to slow or move over for worker safety.",
+   "desc": "",
+   "impact": "No to Minimum Delay",
+   "place": "US30BP, 3 miles West of Intersection with East Portland Highway I-205",
+   "route": "US30BY",
+   "milepost": 8.19,
+   "lat": 45.57062,
+   "lon": -122.62107,
+   "start": "2026-11-10T08:37:29.28-08:00",
+   "updated": "2026-11-10T08:37:37-08:00",
+   "source": "ODOT TripCheck"
+  },
+  {
    "title": "Bridge work is occurring causing minimal delay to traffic. Use caution.",
    "desc": "Bridge construction is occurring. Prepare to slow. Watch for workers. 3/11/26 - 11/30/26: MP 38.5 to MP 38.63 (Bridge structure ID: 03113A) portable traffic signal in place with 24-hour lane closure. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=23117",
    "impact": "No to Minimum Delay",
@@ -160,7 +160,7 @@
    "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 128,
+ "odot_active_statewide": 125,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
   "alerts": [
