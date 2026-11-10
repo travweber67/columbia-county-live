@@ -1,67 +1,97 @@
 {
- "fetched_at": "2026-11-10T17:53:56Z",
+ "fetched_at": "2026-11-10T17:59:12Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 46.15971,
-   "lon": -123.40547,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-10 17:54:38.137473648 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.04897,
-   "lon": -122.88121,
-   "type_code": 52,
-   "destination": "COL RIVER",
-   "updated": "2026-11-10 17:54:39.344494987 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.0965,
-   "lon": -122.92984,
-   "sog_kn": 0.3,
-   "cog": 53.7,
-   "heading": 65,
-   "nav_status": 3,
-   "updated": "2026-11-10 17:54:42.774343411 +0000 UTC"
-  },
-  {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.80088,
-   "lon": -122.79048,
-   "sog_kn": 5.4,
-   "cog": 156.1,
-   "heading": 155,
-   "nav_status": 0,
-   "updated": "2026-11-10 17:54:44.122344668 +0000 UTC"
-  },
-  {
-   "mmsi": 367323610,
-   "name": "MIKETTE",
-   "lat": 46.19965,
-   "lon": -123.38521,
+   "mmsi": 368328430,
+   "name": "MCR 8",
+   "lat": 45.58479,
+   "lon": -122.76625,
    "sog_kn": 0,
-   "cog": 14.2,
-   "heading": 322,
-   "nav_status": 5,
-   "updated": "2026-11-10 17:54:56.83590093 +0000 UTC"
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-10 17:59:18.835712668 +0000 UTC"
   },
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.67655,
-   "lon": -122.76985,
-   "type_code": 31,
-   "destination": "VAN ANCHOR",
-   "updated": "2026-11-10 17:55:00.216919606 +0000 UTC"
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37716,
+   "type_code": 99,
+   "updated": "2026-11-10 17:59:20.147862403 +0000 UTC"
+  },
+  {
+   "mmsi": 636093248,
+   "name": "TALITHA",
+   "lat": 45.98392,
+   "lon": -122.83533,
+   "type_code": 70,
+   "destination": "KALAMA,USA",
+   "updated": "2026-11-10 17:59:21.369804759 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19995,
+   "lon": -123.38551,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-10 17:59:22.648975331 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07952,
+   "lon": -122.9014,
+   "sog_kn": 2.1,
+   "cog": 98.2,
+   "heading": 103,
+   "nav_status": 0,
+   "updated": "2026-11-10 17:59:33.131133718 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 194.9,
+   "heading": 133,
+   "nav_status": 15,
+   "updated": "2026-11-10 17:59:28.885702325 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.65035,
+   "lon": -122.74757,
+   "sog_kn": 0,
+   "cog": 311.8,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-10 17:59:31.77377284 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08974,
+   "lon": -122.92899,
+   "type_code": 52,
+   "destination": "US^0UJB>0UJB",
+   "updated": "2026-11-10 17:59:32.806184629 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.6075,
+   "lon": -122.67762,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 17:59:37.743087198 +0000 UTC"
   }
  ]
 }
