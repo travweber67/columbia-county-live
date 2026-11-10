@@ -1,105 +1,78 @@
 {
- "fetched_at": "2026-11-10T18:53:57Z",
+ "fetched_at": "2026-11-10T18:59:19Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 45.98987,
-   "lon": -122.84078,
-   "sog_kn": 0.1,
-   "cog": 117,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 18:55:18.897079547 +0000 UTC"
-  },
-  {
-   "mmsi": 369493484,
-   "name": "USCG BLUEBELLL",
-   "lat": 46.20722,
-   "lon": -123.42639,
-   "sog_kn": 9.5,
-   "cog": 191.2,
-   "heading": 192,
-   "nav_status": 0,
-   "updated": "2026-11-10 18:55:20.257389738 +0000 UTC"
-  },
-  {
-   "mmsi": 338205428,
-   "name": "CLAIRE B",
-   "lat": 45.81847,
-   "lon": -122.793,
-   "type_code": 52,
-   "destination": "",
-   "updated": "2026-11-10 18:55:25.556847066 +0000 UTC",
-   "sog_kn": 6.3,
-   "cog": 181.5,
-   "heading": 176,
-   "nav_status": 0
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64351,
-   "lon": -122.75286,
-   "sog_kn": 0,
-   "cog": 198.4,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-10 18:55:48.420781739 +0000 UTC",
-   "type_code": 52
-  },
   {
    "mmsi": 311594000,
    "name": "RCC AFRICA",
-   "lat": 46.18495,
-   "lon": -123.43035,
-   "sog_kn": 13.5,
-   "cog": 178.1,
-   "heading": 175,
+   "lat": 46.17381,
+   "lon": -123.42003,
+   "sog_kn": 11.9,
+   "cog": 139.4,
+   "heading": 138,
    "nav_status": 0,
-   "updated": "2026-11-10 18:55:21.973421332 +0000 UTC"
+   "updated": "2026-11-10 18:59:25.934916725 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64691,
+   "lon": -122.74205,
+   "sog_kn": 4.9,
+   "cog": 135.9,
+   "heading": 118,
+   "nav_status": 12,
+   "updated": "2026-11-10 18:59:34.298432028 +0000 UTC"
+  },
+  {
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 45.643,
+   "lon": -122.77139,
+   "sog_kn": 0,
+   "cog": 324.5,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-10 18:59:35.579651228 +0000 UTC"
   },
   {
    "mmsi": 367047170,
    "name": "MAVERICK",
-   "lat": 46.15974,
-   "lon": -123.40546,
-   "sog_kn": 0,
-   "cog": 136.3,
-   "heading": 136,
-   "nav_status": 12,
-   "updated": "2026-11-10 18:55:39.295443711 +0000 UTC"
+   "lat": 46.15975,
+   "lon": -123.40547,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-10 18:59:41.138177247 +0000 UTC"
   },
   {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.71607,
-   "lon": -122.76679,
-   "type_code": 52,
-   "destination": "US^0RFZ>?? ???",
-   "updated": "2026-11-10 18:55:47.769921169 +0000 UTC"
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.81094,
+   "lon": -122.79201,
+   "sog_kn": 6.2,
+   "cog": 172.4,
+   "heading": 167,
+   "nav_status": 0,
+   "updated": "2026-11-10 18:59:46.332317093 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17717,
-   "lon": -123.35743,
-   "sog_kn": 0,
-   "cog": 328.2,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-10 18:55:47.137496929 +0000 UTC"
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19953,
+   "lon": -123.38499,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-10 18:59:47.7210537 +0000 UTC"
   },
   {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 46.04399,
-   "lon": -122.87692,
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63877,
+   "lon": -122.72406,
    "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-10 18:55:50.169668232 +0000 UTC"
+   "destination": "US PDX",
+   "updated": "2026-11-10 18:59:53.507377031 +0000 UTC"
   }
  ]
 }
