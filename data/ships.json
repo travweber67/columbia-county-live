@@ -1,62 +1,126 @@
 {
- "fetched_at": "2026-11-10T03:27:52Z",
+ "fetched_at": "2026-11-10T03:31:55Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.9101,
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.2707,
+   "lon": -123.47372,
+   "sog_kn": 1.3,
+   "cog": 296.6,
+   "heading": 281,
+   "nav_status": 3,
+   "updated": "2026-11-10 03:32:11.101604548 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58757,
+   "lon": -122.77045,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-10 03:32:11.644089409 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.044,
+   "lon": -122.87693,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-10 03:32:11.702167539 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.65034,
+   "lon": -122.74755,
+   "type_code": 52,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-10 03:32:15.397956256 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.07975,
+   "lon": -122.90251,
+   "type_code": 33,
+   "updated": "2026-11-10 03:32:20.559104897 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.64321,
+   "lon": -122.75272,
    "sog_kn": 0,
-   "cog": 272.6,
-   "heading": 73,
-   "nav_status": 0,
-   "updated": "2026-11-10 03:29:10.187448572 +0000 UTC"
-  },
-  {
-   "mmsi": 440576000,
-   "name": "PAN FLOWER",
-   "lat": 45.92509,
-   "lon": -122.80718,
-   "sog_kn": 11.2,
-   "cog": 191.4,
-   "heading": 190,
-   "nav_status": 0,
-   "updated": "2026-11-10 03:29:06.472324022 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.13734,
-   "lon": -123.01545,
-   "sog_kn": 17.1,
-   "cog": 292.9,
+   "cog": 234.9,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 03:29:07.924763401 +0000 UTC"
+   "nav_status": 5,
+   "updated": "2026-11-10 03:32:21.34835607 +0000 UTC"
   },
   {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64569,
-   "lon": -122.7349,
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61202,
+   "lon": -122.64534,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 112,
+   "cog": 317.2,
+   "heading": 297,
    "nav_status": 5,
-   "updated": "2026-11-10 03:29:08.947722984 +0000 UTC"
+   "updated": "2026-11-10 03:32:21.714728708 +0000 UTC"
+  },
+  {
+   "mmsi": 477050900,
+   "name": "MING DE",
+   "lat": 46.02714,
+   "lon": -122.86957,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-10 03:32:26.148555568 +0000 UTC"
   },
   {
    "mmsi": 367047170,
    "name": "MAVERICK",
-   "lat": 45.69081,
-   "lon": -122.77393,
+   "lat": 45.68543,
+   "lon": -122.7748,
    "sog_kn": 5.9,
-   "cog": 185.9,
-   "heading": 183,
+   "cog": 178.7,
+   "heading": 175,
    "nav_status": 12,
-   "updated": "2026-11-10 03:29:10.057711485 +0000 UTC"
+   "updated": "2026-11-10 03:32:29.542881018 +0000 UTC"
+  },
+  {
+   "mmsi": 368257130,
+   "name": "TRIUMPH VII",
+   "lat": 46.11259,
+   "lon": -122.97027,
+   "sog_kn": 30.7,
+   "cog": 126.3,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-10 03:32:30.592777002 +0000 UTC"
+  },
+  {
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.6121,
+   "lon": -122.79022,
+   "type_code": 52,
+   "destination": "US^0UYR>0UHR",
+   "updated": "2026-11-10 03:32:31.931659976 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.38554,
+   "sog_kn": 0,
+   "cog": 351.4,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-10 03:32:32.291942024 +0000 UTC"
   }
  ]
 }
