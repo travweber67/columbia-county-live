@@ -1,101 +1,133 @@
 {
- "fetched_at": "2026-11-10T02:11:47Z",
+ "fetched_at": "2026-11-10T02:16:49Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15707,
+   "lon": -123.40234,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 140,
+   "nav_status": 0,
+   "updated": "2026-11-10 02:16:59.874655008 +0000 UTC"
+  },
   {
    "mmsi": 440576000,
    "name": "PAN FLOWER",
-   "lat": 46.09924,
-   "lon": -122.94599,
-   "sog_kn": 9.2,
-   "cog": 114.2,
-   "heading": 114,
+   "lat": 46.09451,
+   "lon": -122.93069,
+   "sog_kn": 7.7,
+   "cog": 115.2,
+   "heading": 115,
    "nav_status": 0,
-   "updated": "2026-11-10 02:11:56.925777179 +0000 UTC"
+   "updated": "2026-11-10 02:17:05.267734086 +0000 UTC"
   },
   {
    "mmsi": 368171270,
    "name": "DR. RAY",
-   "lat": 45.58131,
+   "lat": 45.58132,
    "lon": -122.76067,
    "sog_kn": 0,
    "cog": 192.6,
    "heading": 123,
    "nav_status": 0,
-   "updated": "2026-11-10 02:11:57.761102126 +0000 UTC"
+   "updated": "2026-11-10 02:17:07.658515544 +0000 UTC"
   },
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.09406,
-   "lon": -122.94276,
-   "sog_kn": 0.1,
-   "cog": 256.6,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 02:11:57.769119835 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64787,
-   "lon": -122.74099,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
    "sog_kn": 0,
-   "cog": 111.6,
-   "heading": 111,
+   "cog": 351.4,
+   "heading": 136,
+   "nav_status": 15,
+   "updated": "2026-11-10 02:17:09.024720101 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64537,
+   "lon": -122.73503,
+   "sog_kn": 0,
+   "cog": 30.4,
+   "heading": 112,
    "nav_status": 5,
-   "updated": "2026-11-10 02:11:57.98789636 +0000 UTC"
-  },
-  {
-   "mmsi": 368257130,
-   "name": "TRIUMPH VII",
-   "lat": 46.10792,
-   "lon": -122.9592,
-   "type_code": 50,
-   "updated": "2026-11-10 02:12:01.213070463 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.63399,
-   "lon": -122.70649,
-   "sog_kn": 3,
-   "cog": 311.9,
-   "heading": 31,
-   "nav_status": 3,
-   "updated": "2026-11-10 02:12:02.166806957 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19999,
-   "lon": -123.3854,
-   "sog_kn": 0,
-   "cog": 193.7,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-10 02:12:05.228178455 +0000 UTC"
+   "updated": "2026-11-10 02:17:15.480593341 +0000 UTC"
   },
   {
    "mmsi": 366986380,
    "name": "DREDGE OREGON",
-   "lat": 46.07989,
-   "lon": -122.90237,
-   "sog_kn": 0.4,
-   "cog": 218.9,
-   "heading": 308,
+   "lat": 46.08005,
+   "lon": -122.90203,
+   "sog_kn": 0.2,
+   "cog": 68,
+   "heading": 348,
    "nav_status": 3,
-   "updated": "2026-11-10 02:12:08.553266528 +0000 UTC"
+   "updated": "2026-11-10 02:17:17.120283517 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07958,
-   "lon": -122.90219,
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09049,
+   "lon": -122.93236,
    "type_code": 52,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-10 02:12:23.875480022 +0000 UTC"
+   "destination": "COL RIVER",
+   "updated": "2026-11-10 02:17:17.228346724 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.98715,
+   "lon": -122.83735,
+   "sog_kn": 0,
+   "cog": 266.4,
+   "heading": 148,
+   "nav_status": 12,
+   "updated": "2026-11-10 02:17:22.588237421 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08971,
+   "lon": -122.929,
+   "sog_kn": 0,
+   "cog": 209.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 02:17:23.670023143 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.38552,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-10 02:17:24.386611702 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.18859,
+   "lon": -123.14712,
+   "sog_kn": 6.5,
+   "cog": 102.9,
+   "heading": 103,
+   "nav_status": 3,
+   "updated": "2026-11-10 02:17:24.792694119 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61199,
+   "lon": -122.64536,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-10 02:17:27.948059686 +0000 UTC"
   }
  ]
 }
