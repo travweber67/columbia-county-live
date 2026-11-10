@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-09T23:27:48Z",
+ "fetched_at": "2026-11-09T23:57:58Z",
  "sources": [
   {
    "name": "City of St. Helens calendar (CivicPlus)",
@@ -9,12 +9,12 @@
   {
    "name": "City of Scappoose calendar (CivicPlus)",
    "status": "ok",
-   "note": "1 events in the next 14 days."
+   "note": "0 events in the next 14 days (12 day(s) failed to load this run and will retry next run)."
   },
   {
    "name": "Columbia County calendar (EvoGov)",
-   "status": "ok",
-   "note": "12 upcoming events extracted from the rendered November 2026 county calendar (headless Chromium); each event's time comes from its own event page."
+   "status": "blocked_needs_browser",
+   "note": "The county calendar is an EvoGov cloud widget that renders only in a real browser \u2014 the raw page has no event data and no public JSON endpoint was found. This branch renders it with headless Chromium when one is available (it is, on Travis's computer); this machine has none, so the county source waits for the omarchy run. The rest of the snapshot is unaffected."
   }
  ],
  "events": [
@@ -55,24 +55,10 @@
   },
   {
    "date": "2026-11-10",
-   "time": "2:00 PM",
-   "title": "Columbia County Homeland Security Emergency Management Commission (HSEMC)",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/98833/"
-  },
-  {
-   "date": "2026-11-10",
    "time": "6:30 PM",
    "title": "Planning Commission Meeting",
    "source": "City of St. Helens",
    "url": "https://www.sthelensoregon.gov/Calendar.aspx?EID=394"
-  },
-  {
-   "date": "2026-11-10",
-   "time": "10:00 AM",
-   "title": "Solid Waste Advisory Committee (SWAC)",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/97757/"
   },
   {
    "date": "2026-11-10",
@@ -90,20 +76,6 @@
   },
   {
    "date": "2026-11-11",
-   "time": "10:00 AM",
-   "title": "Board of Commissioners Meeting",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/102397/"
-  },
-  {
-   "date": "2026-11-11",
-   "time": "1:00 PM",
-   "title": "Board of Commissioners Work Session",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/102398/"
-  },
-  {
-   "date": "2026-11-11",
    "time": "All Day Event",
    "title": "Library Closed",
    "source": "City of St. Helens",
@@ -115,13 +87,6 @@
    "title": "Veterans Day - CLOSED",
    "source": "City of St. Helens",
    "url": "https://www.sthelensoregon.gov/Calendar.aspx?EID=364"
-  },
-  {
-   "date": "2026-11-11",
-   "time": "8:00 AM",
-   "title": "Veterans' Day ~ City offices closed",
-   "source": "City of Scappoose",
-   "url": "https://www.scappoose.gov/Calendar.aspx?EID=385"
   },
   {
    "date": "2026-11-12",
@@ -136,20 +101,6 @@
    "title": "Maker Friday",
    "source": "City of St. Helens",
    "url": "https://www.sthelensoregon.gov/Calendar.aspx?EID=766"
-  },
-  {
-   "date": "2026-11-14",
-   "time": "8:00 AM",
-   "title": "FREE COLLECTION OF MATTRESSES, ELECTRONIC WASTE AND SPECIAL RECYCLABLE ITEMS -COLUMBIA COUNTY TRANSFER STATION",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/101596/"
-  },
-  {
-   "date": "2026-11-14",
-   "time": "8:00 AM",
-   "title": "Mattress Recycling Event - St. Helens Transfer Station",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/100078/"
   },
   {
    "date": "2026-11-14",
@@ -194,13 +145,6 @@
    "url": "https://www.sthelensoregon.gov/Calendar.aspx?EID=742"
   },
   {
-   "date": "2026-11-17",
-   "time": "4:00 PM",
-   "title": "Transit Advisory Committee meeting",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/97451/"
-  },
-  {
    "date": "2026-11-18",
    "time": "7:00 PM",
    "title": "City Council Regular Session",
@@ -215,13 +159,6 @@
    "url": "https://www.sthelensoregon.gov/Calendar.aspx?EID=442"
   },
   {
-   "date": "2026-11-19",
-   "time": "10:00 AM",
-   "title": "Columbia County Transportation & Road Advisory Committee (TRAC)",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/102374/"
-  },
-  {
    "date": "2026-11-20",
    "time": "1:00 PM",
    "title": "Maker Friday",
@@ -229,39 +166,11 @@
    "url": "https://www.sthelensoregon.gov/Calendar.aspx?EID=767"
   },
   {
-   "date": "2026-11-20",
-   "time": "12:00 PM",
-   "title": "Veterans and Families- QPR Suicide Prevention Training",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/102352/"
-  },
-  {
-   "date": "2026-11-20",
-   "time": "6:00 PM",
-   "title": "Veterans and Families- QPR Suicide Prevention Training",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/102353/"
-  },
-  {
    "date": "2026-11-21",
    "time": "All Day Event",
    "title": "Teen Writers",
    "source": "City of St. Helens",
    "url": "https://www.sthelensoregon.gov/Calendar.aspx?EID=783"
-  },
-  {
-   "date": "2026-12-01",
-   "time": "12:00 PM",
-   "title": "Columbia County Local Alcohol and Drug Planning Committee",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/98768/"
-  },
-  {
-   "date": "2026-12-04",
-   "time": "12:00 PM",
-   "title": "LOCAL PUBLIC SAFETY COORDINATING COUNCIL (LPSCC)",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/102369/"
   }
  ]
 }
