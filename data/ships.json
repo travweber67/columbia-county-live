@@ -1,113 +1,91 @@
 {
- "fetched_at": "2026-11-10T03:57:51Z",
+ "fetched_at": "2026-11-10T04:01:58Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.63882,
+   "lon": -122.72405,
+   "sog_kn": 0.1,
+   "cog": 165.9,
+   "heading": 114,
+   "nav_status": 1,
+   "updated": "2026-11-10 04:02:03.779802261 +0000 UTC"
+  },
   {
    "mmsi": 367310520,
    "name": "JAMES T",
-   "lat": 46.09636,
-   "lon": -122.93072,
-   "sog_kn": 1.3,
-   "cog": 102.1,
+   "lat": 46.09642,
+   "lon": -122.93032,
+   "sog_kn": 0,
+   "cog": 67.9,
    "heading": 69,
    "nav_status": 3,
-   "updated": "2026-11-10 03:58:52.324731975 +0000 UTC"
+   "updated": "2026-11-10 04:02:05.905002146 +0000 UTC"
   },
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60759,
-   "lon": -122.67766,
+   "mmsi": 538006268,
+   "name": "STAR CARIOCA",
+   "lat": 45.63915,
+   "lon": -122.77776,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-10 04:02:10.915565646 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.64335,
+   "lon": -122.75279,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 289.4,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 03:58:34.149403374 +0000 UTC"
+   "nav_status": 5,
+   "updated": "2026-11-10 04:02:11.328737618 +0000 UTC"
   },
   {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08985,
-   "lon": -122.92898,
-   "type_code": 52,
-   "destination": "CSR OPS",
-   "updated": "2026-11-10 03:58:36.372516032 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19999,
-   "lon": -123.38541,
+   "mmsi": 368082970,
+   "name": "AMERICAN.HARMONY",
+   "lat": 46.00362,
+   "lon": -122.8477,
    "sog_kn": 0,
-   "cog": 191.6,
+   "cog": 215.6,
+   "heading": 159,
+   "nav_status": 5,
+   "updated": "2026-11-10 04:02:17.554583595 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65012,
+   "lon": -122.7476,
+   "sog_kn": 0,
+   "cog": 298.7,
    "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-10 03:58:36.158061057 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.65766,
-   "lon": -122.75709,
-   "sog_kn": 0,
-   "cog": 325.3,
-   "heading": 149,
-   "nav_status": 12,
-   "updated": "2026-11-10 03:58:36.281906078 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.08011,
-   "lon": -122.90201,
-   "sog_kn": 0.1,
-   "cog": 66.6,
-   "heading": 351,
    "nav_status": 3,
-   "updated": "2026-11-10 03:58:36.712497597 +0000 UTC"
+   "updated": "2026-11-10 04:02:18.388236923 +0000 UTC"
   },
   {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.5873,
-   "lon": -122.77008,
-   "type_code": 31,
-   "destination": "US^02SY>0UJ9",
-   "updated": "2026-11-10 03:58:36.795860888 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.62761,
+   "lon": -122.69502,
+   "sog_kn": 0.5,
+   "cog": 67.6,
+   "heading": 95,
+   "nav_status": 3,
+   "updated": "2026-11-10 04:02:23.184046186 +0000 UTC"
   },
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.64386,
-   "lon": -122.77471,
-   "sog_kn": 6.7,
-   "cog": 232,
-   "heading": 218,
-   "nav_status": 12,
-   "updated": "2026-11-10 03:58:39.273414227 +0000 UTC"
-  },
-  {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58133,
-   "lon": -122.76066,
-   "sog_kn": 0,
-   "cog": 192.6,
-   "heading": 123,
-   "nav_status": 0,
-   "updated": "2026-11-10 03:58:56.080317117 +0000 UTC"
-  },
-  {
-   "mmsi": 636093248,
-   "name": "TALITHA",
-   "lat": 46.14942,
-   "lon": -123.26633,
-   "sog_kn": 10.6,
-   "cog": 69.6,
-   "heading": 62,
-   "nav_status": 0,
-   "updated": "2026-11-10 03:59:03.461189661 +0000 UTC"
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.61209,
+   "lon": -122.7902,
+   "type_code": 52,
+   "destination": "US^0UYR>0UHR",
+   "updated": "2026-11-10 04:02:31.802833891 +0000 UTC"
   }
  ]
 }
