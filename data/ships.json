@@ -1,40 +1,80 @@
 {
- "fetched_at": "2026-11-10T06:18:10Z",
+ "fetched_at": "2026-11-10T06:23:10Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538012377,
-   "name": "UNION SAPPHIRE",
-   "lat": 46.09412,
-   "lon": -122.93758,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61107,
+   "lon": -122.61289,
    "sog_kn": 0,
-   "cog": 257,
-   "heading": 122,
-   "nav_status": 1,
-   "updated": "2026-11-10 06:18:15.269587312 +0000 UTC"
+   "cog": 337.6,
+   "heading": 132,
+   "nav_status": 15,
+   "updated": "2026-11-10 06:23:17.724861669 +0000 UTC"
   },
   {
-   "mmsi": 538006268,
-   "name": "STAR CARIOCA",
-   "lat": 45.63918,
-   "lon": -122.77776,
+   "mmsi": 636093248,
+   "name": "TALITHA",
+   "lat": 45.99833,
+   "lon": -122.84843,
    "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-10 06:18:24.730280084 +0000 UTC",
-   "sog_kn": 0,
-   "cog": 40,
-   "heading": 228,
-   "nav_status": 5
+   "destination": "KALAMA,USA",
+   "updated": "2026-11-10 06:23:21.010007902 +0000 UTC"
   },
   {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.63432,
-   "lon": -122.78644,
-   "type_code": 52,
-   "destination": "PORTLAND,OR",
-   "updated": "2026-11-10 06:18:19.951975981 +0000 UTC"
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.2,
+   "lon": -123.38551,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-10 06:23:23.314813521 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.61986,
+   "lon": -122.78781,
+   "sog_kn": 0,
+   "cog": 175.8,
+   "heading": 175,
+   "nav_status": 12,
+   "updated": "2026-11-10 06:23:42.831490261 +0000 UTC",
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.63486,
+   "lon": -122.70752,
+   "sog_kn": 5.1,
+   "cog": 121.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 06:23:32.270758018 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.98297,
+   "lon": -122.83503,
+   "sog_kn": 3.9,
+   "cog": 134.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 06:23:33.953370342 +0000 UTC"
+  },
+  {
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.19962,
+   "lon": -123.3852,
+   "type_code": 30,
+   "destination": "",
+   "updated": "2026-11-10 06:23:41.974346281 +0000 UTC"
   },
   {
    "mmsi": 367427060,
@@ -42,22 +82,7 @@
    "lat": 46.09605,
    "lon": -122.9311,
    "type_code": 0,
-   "updated": "2026-11-10 06:18:23.865360667 +0000 UTC",
-   "sog_kn": 0,
-   "cog": 267.1,
-   "heading": 67,
-   "nav_status": 3
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 46.17072,
-   "lon": -123.21986,
-   "sog_kn": 4.7,
-   "cog": 62.2,
-   "heading": 62,
-   "nav_status": 0,
-   "updated": "2026-11-10 06:18:22.133550896 +0000 UTC"
+   "updated": "2026-11-10 06:23:44.194171599 +0000 UTC"
   }
  ]
 }
