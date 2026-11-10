@@ -1,71 +1,105 @@
 {
- "fetched_at": "2026-11-10T18:49:18Z",
+ "fetched_at": "2026-11-10T18:53:57Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.0965,
-   "lon": -122.92979,
-   "sog_kn": 0,
-   "cog": 23.4,
-   "heading": 65,
-   "nav_status": 3,
-   "updated": "2026-11-10 18:49:23.145649137 +0000 UTC"
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.98987,
+   "lon": -122.84078,
+   "sog_kn": 0.1,
+   "cog": 117,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 18:55:18.897079547 +0000 UTC"
   },
   {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.6445,
-   "lon": -122.77328,
-   "sog_kn": 6.7,
-   "cog": 222.5,
-   "heading": 224,
-   "nav_status": 12,
-   "updated": "2026-11-10 18:49:26.045140019 +0000 UTC"
+   "mmsi": 369493484,
+   "name": "USCG BLUEBELLL",
+   "lat": 46.20722,
+   "lon": -123.42639,
+   "sog_kn": 9.5,
+   "cog": 191.2,
+   "heading": 192,
+   "nav_status": 0,
+   "updated": "2026-11-10 18:55:20.257389738 +0000 UTC"
   },
   {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 46.08978,
-   "lon": -122.92899,
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.81847,
+   "lon": -122.793,
+   "type_code": 52,
+   "destination": "",
+   "updated": "2026-11-10 18:55:25.556847066 +0000 UTC",
+   "sog_kn": 6.3,
+   "cog": 181.5,
+   "heading": 176,
+   "nav_status": 0
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64351,
+   "lon": -122.75286,
    "sog_kn": 0,
-   "cog": 316.3,
+   "cog": 198.4,
    "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-10 18:49:31.507222878 +0000 UTC"
+   "updated": "2026-11-10 18:55:48.420781739 +0000 UTC",
+   "type_code": 52
   },
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.91008,
-   "sog_kn": 0,
-   "cog": 7.4,
-   "heading": 72,
+   "mmsi": 311594000,
+   "name": "RCC AFRICA",
+   "lat": 46.18495,
+   "lon": -123.43035,
+   "sog_kn": 13.5,
+   "cog": 178.1,
+   "heading": 175,
    "nav_status": 0,
-   "updated": "2026-11-10 18:49:41.16649866 +0000 UTC"
+   "updated": "2026-11-10 18:55:21.973421332 +0000 UTC"
   },
   {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 45.64336,
-   "lon": -122.75276,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.15974,
+   "lon": -123.40546,
+   "sog_kn": 0,
+   "cog": 136.3,
+   "heading": 136,
+   "nav_status": 12,
+   "updated": "2026-11-10 18:55:39.295443711 +0000 UTC"
+  },
+  {
+   "mmsi": 367681630,
+   "name": "VICKI B",
+   "lat": 45.71607,
+   "lon": -122.76679,
    "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-10 18:49:42.811645951 +0000 UTC"
+   "destination": "US^0RFZ>?? ???",
+   "updated": "2026-11-10 18:55:47.769921169 +0000 UTC"
   },
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15341,
-   "lon": -123.37715,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17717,
+   "lon": -123.35743,
    "sog_kn": 0,
-   "cog": 185.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 18:49:46.100220637 +0000 UTC"
+   "cog": 328.2,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-10 18:55:47.137496929 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.04399,
+   "lon": -122.87692,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-10 18:55:50.169668232 +0000 UTC"
   }
  ]
 }
