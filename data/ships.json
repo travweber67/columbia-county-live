@@ -1,71 +1,75 @@
 {
- "fetched_at": "2026-11-10T08:38:22Z",
+ "fetched_at": "2026-11-10T08:43:22Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.62125,
-   "lon": -122.78817,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.17246,
+   "lon": -123.09752,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-10 08:43:34.112371694 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37713,
    "sog_kn": 0,
-   "cog": 358.7,
-   "heading": 358,
+   "cog": 0.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 08:43:36.31012179 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64248,
+   "lon": -122.77149,
+   "sog_kn": 0,
+   "cog": 269.6,
+   "heading": 229,
    "nav_status": 12,
-   "updated": "2026-11-10 08:38:30.387922068 +0000 UTC"
+   "updated": "2026-11-10 08:43:36.58660415 +0000 UTC"
   },
   {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 46.02713,
-   "lon": -122.86952,
-   "sog_kn": 0,
-   "cog": 319.8,
-   "heading": 138,
-   "nav_status": 5,
-   "updated": "2026-11-10 08:38:32.794049625 +0000 UTC"
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08005,
+   "lon": -122.90251,
+   "type_code": 33,
+   "updated": "2026-11-10 08:43:38.147046234 +0000 UTC"
   },
   {
-   "mmsi": 440576000,
-   "name": "PAN FLOWER",
-   "lat": 45.643,
-   "lon": -122.77137,
-   "sog_kn": 0,
-   "cog": 328.3,
-   "heading": 228,
-   "nav_status": 5,
-   "updated": "2026-11-10 08:38:35.697245602 +0000 UTC"
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.07969,
+   "lon": -122.90221,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-10 08:43:43.587684834 +0000 UTC"
   },
   {
-   "mmsi": 352006999,
-   "name": "WABI SABI",
-   "lat": 46.17716,
-   "lon": -123.11162,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-10 08:38:38.172909914 +0000 UTC"
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09051,
+   "lon": -122.93236,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-10 08:43:53.649657765 +0000 UTC"
   },
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00906,
-   "lon": -122.84815,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40234,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 511,
+   "heading": 134,
    "nav_status": 0,
-   "updated": "2026-11-10 08:38:42.467446806 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.93443,
-   "lon": -122.80641,
-   "sog_kn": 8.2,
-   "cog": 178.2,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 08:38:45.084641821 +0000 UTC"
+   "updated": "2026-11-10 08:43:54.417542965 +0000 UTC"
   }
  ]
 }
