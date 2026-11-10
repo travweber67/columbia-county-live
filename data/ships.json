@@ -1,58 +1,84 @@
 {
- "fetched_at": "2026-11-10T09:24:05Z",
+ "fetched_at": "2026-11-10T09:28:26Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00907,
+   "lon": -122.8482,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 09:28:33.121014838 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15707,
+   "lon": -123.40233,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 131,
+   "nav_status": 0,
+   "updated": "2026-11-10 09:28:33.97325277 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.84574,
+   "lon": -122.78571,
+   "sog_kn": 10.5,
+   "cog": 8,
+   "heading": 6,
+   "nav_status": 0,
+   "updated": "2026-11-10 09:28:40.156292692 +0000 UTC"
+  },
   {
    "mmsi": 367047170,
    "name": "MAVERICK",
-   "lat": 45.64085,
-   "lon": -122.77827,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-10 09:24:39.35178036 +0000 UTC"
+   "lat": 45.64941,
+   "lon": -122.76802,
+   "sog_kn": 8.1,
+   "cog": 28.7,
+   "heading": 25,
+   "nav_status": 12,
+   "updated": "2026-11-10 09:28:40.583060017 +0000 UTC"
   },
   {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.07967,
-   "lon": -122.9021,
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.79276,
+   "lon": -122.84377,
+   "sog_kn": 0.3,
+   "cog": 326,
+   "heading": 212,
+   "nav_status": 0,
+   "updated": "2026-11-10 09:28:41.74332406 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10788,
+   "lon": -122.95903,
    "sog_kn": 0,
-   "cog": 259.1,
-   "heading": 86,
-   "nav_status": 5,
-   "updated": "2026-11-10 09:24:42.775901376 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.6629,
-   "lon": -122.76114,
-   "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-10 09:24:52.593094876 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.82101,
-   "lon": -122.79498,
-   "sog_kn": 9.6,
-   "cog": 194.6,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-10 09:24:56.108279338 +0000 UTC"
+   "updated": "2026-11-10 09:28:46.878152845 +0000 UTC"
   },
   {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.98618,
-   "lon": -122.83701,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19998,
+   "lon": -123.3854,
    "sog_kn": 0,
-   "cog": 304,
-   "heading": 146,
-   "nav_status": 5,
-   "updated": "2026-11-10 09:24:58.502838047 +0000 UTC"
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-10 09:28:54.859721553 +0000 UTC"
   }
  ]
 }
