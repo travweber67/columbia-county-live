@@ -5919,12 +5919,9 @@ const LANG_ES = {
   saverspinsp: 'Fija las respuestas que te importan con los botones de aquí abajo. El protector de pantalla muestra tus fijadas, lo bastante grandes para leerse desde el otro lado del cuarto. Las fijadas se guardan solo en este aparato, y puedes cambiarlas cuando quieras.',
   savershareh: 'Comparte tu foto del condado',
   saversharep: 'Las fotografías del protector de pantalla vienen del propio condado — y la tuya podría ser una de ellas. Envía una foto que hayas tomado en cualquier lugar del condado de Columbia y, una vez aprobada, se une al conjunto por el que pasan todos los protectores de pantalla, con tu nombre. Gratis, siempre.',
-  savername: 'Tu nombre — aparecerá como el crédito de la foto',
-  saverwhere: '¿En qué lugar del condado fue tomada?',
-  saverfile: 'Tu foto',
-  saverrights: 'Yo tomé esta foto y doy permiso a Columbia County Live para mostrarla.',
-  saversubmit: 'Continuar al formulario de fotos &rarr;',
-  saversubmitnote: 'El botón se activa cuando llenas las tres líneas y marcas la casilla de permiso. El formulario pide el mismo nombre y lugar, y recibe la foto.',
+  saverways: 'Dos maneras fáciles, sin cuenta y sin iniciar sesión: envía tu foto por correo a nomadov3rland@gmail.com con tu nombre y dónde la tomaste, o responde 3 preguntas rápidas en el formulario de fotos y luego envía la foto por correo. Eso es todo.',
+  saveremailbtn: '📧 Envía tu foto por correo',
+  saverformbtn: 'Usa el formulario rápido de fotos &rarr;',
   saverreview: 'Una puerta honesta: cada foto la mira una persona antes de unirse al conjunto — el lugar, la imagen y el permiso. Nada aparece automáticamente, y una foto que no es tuya para compartir nunca se publica.',
   dirh2: 'Servicios locales — los pequeños',
   dirintro: 'Niñeras, limpieza, manitas, cuidadores de mascotas, tutores — los negocios de una sola persona que mueven este condado, en una lista sencilla. Los locales con tienda están arriba como patrocinadores y negocios destacados; este estante es para los operadores más pequeños. Toca una categoría para acotar la lista.',
@@ -8208,34 +8205,10 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
     closeSaver();
   });
 
-  /* ----- the photo form's honest gate: the continue button wakes only
-     when the name, the place and the permission box are all present.
-     The fields mirror the real form's questions; the submission
-     itself happens on the form (PHOTO_FORM_URL) and nothing sent
-     there is ever published without review. ----- */
-  var form = document.getElementById('photo-form');
-  if (form) {
-    var nameEl = document.getElementById('photo-name'),
-        whereEl = document.getElementById('photo-where'),
-        rightsEl = document.getElementById('photo-rights'),
-        submitEl = document.getElementById('photo-submit');
-    var gate = function () {
-      var ok = !!(nameEl && nameEl.value.trim() && whereEl && whereEl.value.trim()
-        && rightsEl && rightsEl.checked);
-      if (submitEl) {
-        submitEl.classList.toggle('is-off', !ok);
-        submitEl.setAttribute('aria-disabled', ok ? 'false' : 'true');
-        if (ok) submitEl.setAttribute('href', PHOTO_FORM_URL);
-      }
-      return ok;
-    };
-    form.addEventListener('input', gate);
-    form.addEventListener('change', gate);
-    if (submitEl) submitEl.addEventListener('click', function (ev) {
-      if (!gate()) ev.preventDefault();
-    });
-    gate();
-  }
+  /* v57: the photo block is two plain links now (the mailto button +
+     the quick form) — the on-page gate that watched the old fake
+     form's fields is gone with the form itself. Submissions still
+     pass the human review gate before joining the pool. */
 
   /* another writer (the Your-pins zone) can change the shared store —
      keep this module's view of the answers half in sync, and expose

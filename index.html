@@ -30,12 +30,12 @@
 if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
-<link rel="manifest" href="manifest.webmanifest?v=56">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=56">
+<link rel="manifest" href="manifest.webmanifest?v=57">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=57">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=56">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=56">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=56">
+<link rel="stylesheet" href="style.css?v=57">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=57">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=57">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
      only page backgrounds first paint needs — warm them with the hero.
      Every other view's photo is lazy-attached by app.js. -->
@@ -964,27 +964,19 @@ document.documentElement.setAttribute("data-theme",t);})();
   <div class="saver-pins" id="saver-pins" role="group" aria-label="Choose which answers the screensaver shows"></div>
   <h3 class="subhead" data-i18n="savershareh">Share your county photo</h3>
   <p class="card-note" data-i18n="saversharep">The photographs in the screensaver come from the county itself — and yours could be one of them. Send a photo you took anywhere in Columbia County and, once it&rsquo;s approved, it joins the pool every screensaver cycles through, with your name on it. Free, always.</p>
-  <!-- The submit link points at PHOTO_FORM_URL (constant in app.js).
-       REMAINING LIVE STEP: create the real Google Form — name / where
-       taken / photo upload / rights checkbox, mirroring the sponsor
-       form — in the signed-in browser and swap the constant (a Forms
-       API create can't carry the file-upload question, so this one is
-       a browser job). Nothing submitted anywhere is ever published
-       automatically: see the review gate in DESIGN-SPEC.md. -->
-  <form class="photo-form" id="photo-form">
-    <label class="photo-field"><span data-i18n="savername">Your name — shown as the photo credit</span>
-      <input id="photo-name" type="text" autocomplete="name" placeholder="e.g. Sam Rivera">
-    </label>
-    <label class="photo-field"><span data-i18n="saverwhere">Where in the county was it taken?</span>
-      <input id="photo-where" type="text" placeholder="e.g. Jones Beach, near Clatskanie">
-    </label>
-    <label class="photo-field"><span data-i18n="saverfile">Your photo</span>
-      <input id="photo-file" type="file" accept="image/*">
-    </label>
-    <label class="photo-rights"><input id="photo-rights" type="checkbox"> <span data-i18n="saverrights">I took this photo and I give Columbia County Live permission to show it.</span></label>
-    <a class="share-btn primary photo-submit is-off" id="photo-submit" href="https://forms.gle/COLUMBIA-COUNTY-PHOTO-FORM" target="_blank" rel="noopener" aria-disabled="true" data-i18n="saversubmit">Continue to the photo form &rarr;</a>
-    <p class="card-note small" data-i18n="saversubmitnote">The button wakes up once you&rsquo;ve filled in the three lines and ticked the permission box. The form itself asks for the same name and place, and takes the upload.</p>
-  </form>
+  <!-- v57: two honest routes, no fake form. Email the photo (the
+       mailto carries the name / where / permission lines), or the
+       quick Google Form — 3 questions, no sign-in since the upload
+       question was deleted there — and then email the photo. Nothing
+       submitted anywhere is ever published automatically: see the
+       review gate in DESIGN-SPEC.md. -->
+  <div class="photo-form" id="photo-form">
+    <p class="card-note" data-i18n="saverways">Two easy ways, no account and no sign-in: email your photo to nomadov3rland@gmail.com with your name and where you took it, or answer 3 quick questions on the photo form and then email the photo. That is all it takes.</p>
+    <div class="saver-actions">
+      <a class="share-btn primary" href="mailto:nomadov3rland@gmail.com?subject=Screensaver%20photo&body=My%20name%3A%0AWhere%20I%20took%20it%3A%0A%0AI%20took%20this%20photo%20and%20I%20give%20Columbia%20County%20Live%20permission%20to%20show%20it." data-i18n="saveremailbtn">📧 Email your photo</a>
+      <a class="share-btn" href="https://forms.gle/e1GU1qnuBKCM9KBk9" target="_blank" rel="noopener" data-i18n="saverformbtn">Use the quick photo form &rarr;</a>
+    </div>
+  </div>
   <p class="card-note small" data-i18n="saverreview">One honest gate: every photo is looked at by a person before it joins the pool — for the place, the picture, and the permission. Nothing appears automatically, and a photo that isn&rsquo;t yours to share never goes up.</p>
 </section>
 
@@ -1197,7 +1189,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=56"></script>
+<script src="app.js?v=57"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>
