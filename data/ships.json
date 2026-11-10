@@ -1,111 +1,91 @@
 {
- "fetched_at": "2026-11-10T18:19:15Z",
+ "fetched_at": "2026-11-10T18:23:57Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64934,
+   "lon": -122.74773,
+   "sog_kn": 2.3,
+   "cog": 84.6,
+   "heading": 116,
+   "nav_status": 12,
+   "updated": "2026-11-10 18:24:42.690544928 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19997,
+   "lon": -123.38549,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-10 18:24:44.414349776 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10784,
+   "lon": -122.95906,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 18:24:51.958289226 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40234,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 131,
+   "nav_status": 0,
+   "updated": "2026-11-10 18:24:53.856857 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60749,
+   "lon": -122.6776,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 18:24:58.070247588 +0000 UTC"
+  },
   {
    "mmsi": 368136580,
    "name": "ORIN L GREEN",
-   "lat": 46.08004,
-   "lon": -122.90294,
-   "sog_kn": 0.3,
-   "cog": 182.3,
+   "lat": 46.07994,
+   "lon": -122.90298,
+   "sog_kn": 0.1,
+   "cog": 335.9,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-10 18:19:19.703247606 +0000 UTC"
+   "updated": "2026-11-10 18:24:58.582761137 +0000 UTC"
   },
   {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.60651,
-   "lon": -122.78483,
-   "sog_kn": 6.4,
-   "cog": 161.8,
-   "heading": 158,
-   "nav_status": 12,
-   "updated": "2026-11-10 18:19:24.569939498 +0000 UTC"
-  },
-  {
-   "mmsi": 338205428,
-   "name": "CLAIRE B",
-   "lat": 45.83569,
-   "lon": -122.80892,
-   "type_code": 52,
-   "destination": "",
-   "updated": "2026-11-10 18:19:27.049553554 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.08014,
-   "lon": -122.90297,
-   "sog_kn": 0.3,
-   "cog": 197.6,
-   "heading": 290,
-   "nav_status": 3,
-   "updated": "2026-11-10 18:19:26.868307123 +0000 UTC"
-  },
-  {
-   "mmsi": 563017700,
-   "name": "ROSTELLA",
-   "lat": 45.67636,
-   "lon": -122.77009,
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.91008,
    "sog_kn": 0,
-   "cog": 282.6,
-   "heading": 153,
-   "nav_status": 1,
-   "updated": "2026-11-10 18:19:31.402059675 +0000 UTC"
+   "cog": 141.6,
+   "heading": 73,
+   "nav_status": 0,
+   "updated": "2026-11-10 18:25:00.332658822 +0000 UTC"
   },
   {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.64872,
-   "lon": -122.74535,
-   "sog_kn": 0.5,
-   "cog": 134.9,
-   "heading": 50,
-   "nav_status": 12,
-   "updated": "2026-11-10 18:19:31.650350416 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.09651,
-   "lon": -122.92984,
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.90898,
+   "lon": -122.81433,
    "type_code": 52,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-10 18:19:33.36503458 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.14392,
-   "lon": -123.38418,
-   "sog_kn": 7.6,
-   "cog": 342.4,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 18:19:38.259052216 +0000 UTC"
-  },
-  {
-   "mmsi": 538011495,
-   "name": "MTR JUPITER",
-   "lat": 46.10606,
-   "lon": -122.95592,
-   "type_code": 70,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-10 18:19:41.730176767 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07656,
-   "lon": -122.90102,
-   "sog_kn": 0,
-   "cog": 34,
-   "heading": 165,
-   "nav_status": 0,
-   "updated": "2026-11-10 18:19:42.830988968 +0000 UTC"
+   "destination": "US^0UYR>0ZBA",
+   "updated": "2026-11-10 18:25:00.535708604 +0000 UTC"
   }
  ]
 }
