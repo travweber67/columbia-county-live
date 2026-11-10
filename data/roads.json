@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-10T17:19:08Z",
+ "fetched_at": "2026-11-10T17:23:56Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -176,9 +176,15 @@
  "odot_active_statewide": 139,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
-  "alerts": [],
+  "alerts": [
+   {
+    "title": "Maintenance on I-5 northbound at milepost 19.5 near N Fork Lewis River will have the right lane closed. Use caution when approaching the area, beginning at 9:22 am on November 10, 2026 until further notice. ",
+    "desc": "Maintenance on I-5 northbound at milepost 19.5 near N Fork Lewis River will have the right lane closed. Use caution when approaching the area, beginning at 9:22 am on November 10, 2026 until further notice.",
+    "updated": "/Date(1794331408430-0800)/"
+   }
+  ],
   "work_zones": [],
-  "status": "clear",
-  "note": "No WSDOT alerts or work zones found for the bridge in the latest snapshot."
+  "status": "alert",
+  "note": "WSDOT is reporting alert(s) affecting the bridge."
  }
 }
