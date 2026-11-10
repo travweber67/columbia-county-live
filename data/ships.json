@@ -1,53 +1,68 @@
 {
- "fetched_at": "2026-11-10T02:01:48Z",
+ "fetched_at": "2026-11-10T02:06:48Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.6121,
-   "lon": -122.79018,
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10791,
+   "lon": -122.95905,
    "sog_kn": 0,
-   "cog": 226.8,
-   "heading": 191,
+   "cog": 360,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-10 02:01:59.211853987 +0000 UTC"
+   "updated": "2026-11-10 02:07:05.205031314 +0000 UTC"
   },
   {
-   "mmsi": 368082970,
-   "name": "AMERICAN.HARMONY",
-   "lat": 46.0036,
-   "lon": -122.84772,
-   "sog_kn": 0,
-   "cog": 203.5,
-   "heading": 158,
-   "nav_status": 5,
-   "updated": "2026-11-10 02:02:17.284219485 +0000 UTC"
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.19047,
+   "lon": -123.16472,
+   "sog_kn": 1,
+   "cog": 210.5,
+   "heading": 86,
+   "nav_status": 3,
+   "updated": "2026-11-10 02:07:30.62808125 +0000 UTC",
+   "type_code": 52,
+   "destination": "LONGVIEW"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09407,
+   "lon": -122.94278,
+   "type_code": 69,
+   "updated": "2026-11-10 02:07:14.78829937 +0000 UTC"
+  },
+  {
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 46.1047,
+   "lon": -122.96198,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-10 02:07:15.107452673 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.27059,
+   "lon": -123.47688,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-10 02:07:21.458282973 +0000 UTC"
   },
   {
    "mmsi": 367047120,
    "name": "REBEL",
-   "lat": 45.642,
+   "lat": 45.64199,
    "lon": -122.7408,
    "sog_kn": 0,
-   "cog": 288.2,
-   "heading": 122,
+   "cog": 253.1,
+   "heading": 121,
    "nav_status": 12,
-   "updated": "2026-11-10 02:02:26.080071547 +0000 UTC"
-  },
-  {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 46.02714,
-   "lon": -122.86955,
-   "sog_kn": 0,
-   "cog": 319.8,
-   "heading": 138,
-   "nav_status": 5,
-   "updated": "2026-11-10 02:02:27.95817764 +0000 UTC",
-   "type_code": 70,
-   "destination": "US KAM"
+   "updated": "2026-11-10 02:07:35.666358283 +0000 UTC"
   }
  ]
 }
