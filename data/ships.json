@@ -1,73 +1,77 @@
 {
- "fetched_at": "2026-11-10T08:53:23Z",
+ "fetched_at": "2026-11-10T08:54:04Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 440576000,
-   "name": "PAN FLOWER",
-   "lat": 45.64301,
-   "lon": -122.77142,
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.79286,
+   "lon": -122.84411,
+   "sog_kn": 0.3,
+   "cog": 319.3,
+   "heading": 124,
+   "nav_status": 0,
+   "updated": "2026-11-10 08:54:31.516844857 +0000 UTC"
+  },
+  {
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10897,
+   "lon": -122.96134,
    "sog_kn": 0,
-   "cog": 330.4,
-   "heading": 228,
+   "cog": 12.7,
+   "heading": 129,
    "nav_status": 5,
-   "updated": "2026-11-10 08:53:35.536839674 +0000 UTC"
+   "updated": "2026-11-10 08:54:31.907806793 +0000 UTC"
   },
   {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.64377,
-   "lon": -122.77027,
-   "sog_kn": 2.5,
-   "cog": 14.5,
-   "heading": 199,
-   "nav_status": 12,
-   "updated": "2026-11-10 08:53:46.374453769 +0000 UTC"
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09607,
+   "lon": -122.93034,
+   "type_code": 0,
+   "updated": "2026-11-10 08:54:51.342726201 +0000 UTC"
   },
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.62125,
-   "lon": -122.78817,
-   "sog_kn": 0,
-   "cog": 359.5,
-   "heading": 359,
-   "nav_status": 12,
-   "updated": "2026-11-10 08:53:41.769909466 +0000 UTC",
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA"
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.16005,
+   "lon": -123.06886,
+   "sog_kn": 7.1,
+   "cog": 114.5,
+   "heading": 114,
+   "nav_status": 3,
+   "updated": "2026-11-10 08:54:53.300964958 +0000 UTC"
+  },
+  {
+   "mmsi": 563017700,
+   "name": "ROSTELLA",
+   "lat": 46.04713,
+   "lon": -122.88096,
+   "sog_kn": 10.5,
+   "cog": 176.3,
+   "heading": 177,
+   "nav_status": 0,
+   "updated": "2026-11-10 08:54:55.667930484 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19948,
+   "lon": -123.38508,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-10 08:54:59.753079656 +0000 UTC"
   },
   {
    "mmsi": 367513190,
    "name": "PORTLAND",
-   "lat": 45.6628,
-   "lon": -122.76128,
-   "sog_kn": 0.3,
-   "cog": 254.4,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 08:53:43.984313262 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 46.08967,
-   "lon": -122.92902,
-   "sog_kn": 0,
-   "cog": 257.9,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 08:53:45.319838119 +0000 UTC"
-  },
-  {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.6387,
-   "lon": -122.72408,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-10 08:53:53.717229436 +0000 UTC"
+   "lat": 45.66279,
+   "lon": -122.76126,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-10 08:55:02.746191215 +0000 UTC"
   }
  ]
 }
