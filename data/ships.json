@@ -1,49 +1,58 @@
 {
- "fetched_at": "2026-11-10T09:23:26Z",
+ "fetched_at": "2026-11-10T09:24:05Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367425870,
-   "name": "HUSKY",
-   "lat": 45.65038,
-   "lon": -122.74748,
-   "sog_kn": 0.1,
-   "cog": 290.3,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64085,
+   "lon": -122.77827,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-10 09:24:39.35178036 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.07967,
+   "lon": -122.9021,
+   "sog_kn": 0,
+   "cog": 259.1,
+   "heading": 86,
+   "nav_status": 5,
+   "updated": "2026-11-10 09:24:42.775901376 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.6629,
+   "lon": -122.76114,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-10 09:24:52.593094876 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.82101,
+   "lon": -122.79498,
+   "sog_kn": 9.6,
+   "cog": 194.6,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-10 09:23:30.947850315 +0000 UTC"
-  },
-  {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 46.02715,
-   "lon": -122.86955,
-   "sog_kn": 0,
-   "cog": 319.8,
-   "heading": 138,
-   "nav_status": 5,
-   "updated": "2026-11-10 09:23:31.788219214 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19994,
-   "lon": -123.38547,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-10 09:23:48.116779618 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58757,
-   "lon": -122.77036,
-   "sog_kn": 0,
-   "cog": 305.2,
-   "heading": 140,
    "nav_status": 0,
-   "updated": "2026-11-10 09:23:53.713680364 +0000 UTC"
+   "updated": "2026-11-10 09:24:56.108279338 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.98618,
+   "lon": -122.83701,
+   "sog_kn": 0,
+   "cog": 304,
+   "heading": 146,
+   "nav_status": 5,
+   "updated": "2026-11-10 09:24:58.502838047 +0000 UTC"
   }
  ]
 }
