@@ -1,70 +1,86 @@
 {
- "fetched_at": "2026-11-10T12:38:41Z",
+ "fetched_at": "2026-11-10T12:43:42Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64345,
+   "lon": -122.75286,
+   "type_code": 52,
+   "updated": "2026-11-10 12:43:48.367316158 +0000 UTC"
+  },
+  {
+   "mmsi": 367516730,
+   "name": "CRISTY T",
+   "lat": 45.61212,
+   "lon": -122.64533,
+   "sog_kn": 0,
+   "cog": 153.6,
+   "heading": 298,
+   "nav_status": 5,
+   "updated": "2026-11-10 12:43:51.269093675 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58727,
+   "lon": -122.77006,
+   "sog_kn": 0,
+   "cog": 153.3,
+   "heading": 139,
+   "nav_status": 5,
+   "updated": "2026-11-10 12:43:52.770351281 +0000 UTC"
+  },
+  {
+   "mmsi": 538012377,
+   "name": "UNION SAPPHIRE",
+   "lat": 46.09432,
+   "lon": -122.93708,
+   "type_code": 70,
+   "destination": "CN TAC",
+   "updated": "2026-11-10 12:43:57.3516119 +0000 UTC"
+  },
   {
    "mmsi": 368280990,
    "name": "CINDY B",
-   "lat": 45.63702,
-   "lon": -122.78337,
-   "sog_kn": 7.4,
-   "cog": 38.7,
-   "heading": 44,
-   "nav_status": 0,
-   "updated": "2026-11-10 12:38:48.595642414 +0000 UTC"
-  },
-  {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.98856,
-   "lon": -122.84422,
-   "sog_kn": 8.1,
-   "cog": 160.3,
-   "heading": 159,
-   "nav_status": 0,
-   "updated": "2026-11-10 12:38:50.726008742 +0000 UTC"
+   "lat": 45.64403,
+   "lon": -122.77287,
+   "type_code": 52,
+   "destination": "US^0UYR>0ZBA",
+   "updated": "2026-11-10 12:44:00.604205226 +0000 UTC"
   },
   {
    "mmsi": 368171270,
    "name": "DR. RAY",
-   "lat": 45.58131,
-   "lon": -122.76067,
+   "lat": 45.5813,
+   "lon": -122.76066,
    "sog_kn": 0,
    "cog": 108.3,
    "heading": 123,
    "nav_status": 0,
-   "updated": "2026-11-10 12:39:06.769968679 +0000 UTC"
+   "updated": "2026-11-10 12:44:06.309234223 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65007,
-   "lon": -122.74768,
-   "type_code": 33,
-   "updated": "2026-11-10 12:39:10.948074971 +0000 UTC"
+   "mmsi": 563017700,
+   "name": "ROSTELLA",
+   "lat": 45.67463,
+   "lon": -122.76968,
+   "type_code": 89,
+   "destination": "AUGLT >> USPDX",
+   "updated": "2026-11-10 12:44:09.188851716 +0000 UTC"
   },
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10792,
-   "lon": -122.95904,
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.0907,
+   "lon": -122.93213,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 12:39:11.503760411 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 46.09459,
-   "lon": -122.93772,
-   "sog_kn": 0.6,
-   "cog": 46.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 12:39:14.790546278 +0000 UTC"
+   "cog": 280.8,
+   "heading": 111,
+   "nav_status": 5,
+   "updated": "2026-11-10 12:44:12.815038837 +0000 UTC"
   }
  ]
 }
