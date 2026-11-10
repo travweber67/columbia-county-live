@@ -1,103 +1,80 @@
 {
- "fetched_at": "2026-11-10T07:08:14Z",
+ "fetched_at": "2026-11-10T07:13:14Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 368280990,
    "name": "CINDY B",
-   "lat": 45.6121,
+   "lat": 45.61211,
    "lon": -122.79016,
-   "type_code": 52,
-   "destination": "US^0UYR>0UHR",
-   "updated": "2026-11-10 07:08:30.836778934 +0000 UTC"
+   "sog_kn": 0,
+   "cog": 205.6,
+   "heading": 191,
+   "nav_status": 0,
+   "updated": "2026-11-10 07:13:19.502506301 +0000 UTC"
   },
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.07974,
-   "lon": -122.9023,
-   "sog_kn": 0,
-   "cog": 115.2,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 07:08:35.85441094 +0000 UTC",
-   "type_code": 69
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 45.98252,
-   "lon": -122.83399,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 07:08:35.119575174 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.64641,
+   "lon": -122.74467,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-10 07:13:26.414682677 +0000 UTC"
   },
   {
    "mmsi": 368440320,
    "name": "HEATHER S",
-   "lat": 45.98348,
-   "lon": -122.83517,
+   "lat": 45.9835,
+   "lon": -122.83528,
    "sog_kn": 0,
-   "cog": 215.7,
+   "cog": 156.7,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-10 07:08:35.365439966 +0000 UTC"
+   "updated": "2026-11-10 07:13:35.369672282 +0000 UTC"
   },
   {
-   "mmsi": 440576000,
-   "name": "PAN FLOWER",
-   "lat": 45.64303,
-   "lon": -122.77139,
-   "sog_kn": 0,
-   "cog": 148.7,
-   "heading": 229,
-   "nav_status": 5,
-   "updated": "2026-11-10 07:08:35.379590044 +0000 UTC"
-  },
-  {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.98864,
-   "lon": -122.83954,
-   "sog_kn": 1,
-   "cog": 5.4,
-   "heading": 336,
-   "nav_status": 12,
-   "updated": "2026-11-10 07:08:41.42772226 +0000 UTC"
-  },
-  {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.0961,
-   "lon": -122.93032,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-10 07:08:42.467741132 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 46.08975,
-   "lon": -122.92905,
-   "sog_kn": 0,
-   "cog": 188.8,
-   "heading": 511,
+   "mmsi": 368046350,
+   "name": "AMERICAN SONG",
+   "lat": 46.26862,
+   "lon": -123.50813,
+   "sog_kn": 8.6,
+   "cog": 68.8,
+   "heading": 68,
    "nav_status": 0,
-   "updated": "2026-11-10 07:08:54.320999358 +0000 UTC"
+   "updated": "2026-11-10 07:13:36.351566862 +0000 UTC"
   },
   {
    "mmsi": 368442390,
    "name": "COWLITZ",
-   "lat": 46.07964,
-   "lon": -122.90214,
+   "lat": 46.07963,
+   "lon": -122.90215,
    "type_code": 52,
    "destination": "PORTLAND",
-   "updated": "2026-11-10 07:08:56.283037931 +0000 UTC"
+   "updated": "2026-11-10 07:13:41.719329154 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60754,
+   "lon": -122.67749,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-10 07:13:43.477974378 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.63464,
+   "lon": -122.71307,
+   "sog_kn": 5.8,
+   "cog": 126.4,
+   "heading": 125,
+   "nav_status": 12,
+   "updated": "2026-11-10 07:13:44.790558104 +0000 UTC"
   }
  ]
 }
