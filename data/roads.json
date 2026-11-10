@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-10T22:19:35Z",
+ "fetched_at": "2026-11-10T22:24:00Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -16,6 +16,19 @@
   }
  ],
  "incidents": [
+  {
+   "title": "High water is causing minimal delay to traffic. Use caution.",
+   "desc": "",
+   "impact": "No to Minimum Delay",
+   "place": "US30BP, 1 mile East of Intersection with Pacific Highway I-5",
+   "route": "US30BY",
+   "milepost": 5.97,
+   "lat": 45.57722,
+   "lon": -122.66501,
+   "start": "2026-11-10T14:20:33.89-08:00",
+   "updated": "2026-11-10T14:20:55-08:00",
+   "source": "ODOT TripCheck"
+  },
   {
    "title": "Road construction is occurring causing minimal delay to traffic. Use caution and watch for workers.",
    "desc": "Timber felling is occurring, prepare to slow or stop. Watch for workers, use caution, and prepare to slow down in the work zone.",
@@ -160,7 +173,7 @@
    "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 128,
+ "odot_active_statewide": 129,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
   "alerts": [

@@ -1,72 +1,90 @@
 {
- "fetched_at": "2026-11-10T22:19:35Z",
+ "fetched_at": "2026-11-10T22:24:00Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.1079,
-   "lon": -122.95904,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 22:19:50.775644751 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.61604,
+   "lon": -122.78912,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-10 22:25:09.334472923 +0000 UTC"
   },
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.9101,
-   "sog_kn": 0,
-   "cog": 262.2,
-   "heading": 73,
+   "mmsi": 311594000,
+   "name": "RCC AFRICA",
+   "lat": 45.79941,
+   "lon": -122.78791,
+   "sog_kn": 14.1,
+   "cog": 148.7,
+   "heading": 147,
    "nav_status": 0,
-   "updated": "2026-11-10 22:19:51.547671417 +0000 UTC"
+   "updated": "2026-11-10 22:25:13.496243387 +0000 UTC"
   },
   {
    "mmsi": 367496010,
    "name": "DELIVERANCE",
-   "lat": 46.09412,
-   "lon": -122.94283,
+   "lat": 46.09415,
+   "lon": -122.94285,
+   "type_code": 69,
+   "updated": "2026-11-10 22:25:23.236144869 +0000 UTC",
    "sog_kn": 0,
-   "cog": 157.8,
+   "cog": 214.9,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 22:20:15.361811151 +0000 UTC",
-   "type_code": 69
+   "nav_status": 0
   },
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.66143,
-   "lon": -122.7606,
+   "mmsi": 563017700,
+   "name": "ROSTELLA",
+   "lat": 45.67641,
+   "lon": -122.77097,
    "sog_kn": 0,
-   "cog": 337.2,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-10 22:19:54.360319413 +0000 UTC"
+   "cog": 60.9,
+   "heading": 136,
+   "nav_status": 1,
+   "updated": "2026-11-10 22:25:33.132314324 +0000 UTC"
   },
   {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.82481,
-   "lon": -122.79123,
-   "sog_kn": 5.9,
-   "cog": 5.4,
-   "heading": 8,
-   "nav_status": 0,
-   "updated": "2026-11-10 22:19:54.445033088 +0000 UTC"
-  },
-  {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.64715,
-   "lon": -122.73962,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.18867,
+   "lon": -123.14331,
    "type_code": 52,
-   "destination": "KALAMA",
-   "updated": "2026-11-10 22:20:14.778579729 +0000 UTC"
+   "destination": "LONGVIEW",
+   "updated": "2026-11-10 22:25:34.33179533 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.0897,
+   "lon": -122.92901,
+   "sog_kn": 0,
+   "cog": 96.7,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-10 22:25:35.87588981 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.0834,
+   "lon": -122.90816,
+   "sog_kn": 7.4,
+   "cog": 304.5,
+   "heading": 305,
+   "nav_status": 0,
+   "updated": "2026-11-10 22:25:41.239547879 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.62724,
+   "lon": -122.78966,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-10 22:25:44.045436255 +0000 UTC"
   }
  ]
 }
