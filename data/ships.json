@@ -1,87 +1,115 @@
 {
- "fetched_at": "2026-11-11T04:19:59Z",
+ "fetched_at": "2026-11-11T04:24:05Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
-  {
-   "mmsi": 352005064,
-   "name": "ANSAC RISING SUN",
-   "lat": 46.07041,
-   "lon": -122.88828,
-   "sog_kn": 10.8,
-   "cog": 336.9,
-   "heading": 333,
-   "nav_status": 0,
-   "updated": "2026-11-11 04:20:15.306135576 +0000 UTC"
-  },
-  {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10892,
-   "lon": -122.96126,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-11 04:20:23.198727064 +0000 UTC"
-  },
-  {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.612,
-   "lon": -122.64535,
-   "sog_kn": 0,
-   "cog": 266.9,
-   "heading": 297,
-   "nav_status": 5,
-   "updated": "2026-11-11 04:20:28.68411347 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58753,
-   "lon": -122.77046,
-   "sog_kn": 0,
-   "cog": 270.2,
-   "heading": 140,
-   "nav_status": 0,
-   "updated": "2026-11-11 04:20:34.073718017 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40232,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 134,
-   "nav_status": 0,
-   "updated": "2026-11-11 04:20:34.312355801 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19998,
-   "lon": -123.38542,
-   "type_code": 99,
-   "destination": "NAKNEK",
-   "updated": "2026-11-11 04:20:36.81262753 +0000 UTC"
-  },
-  {
-   "mmsi": 352006999,
-   "name": "WABI SABI",
-   "lat": 46.17694,
-   "lon": -123.11201,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-11 04:20:38.747479882 +0000 UTC"
-  },
   {
    "mmsi": 368410780,
    "name": "GAMBLER",
    "lat": 46.10355,
    "lon": -122.91008,
+   "sog_kn": 0.1,
+   "cog": 89.5,
+   "heading": 72,
+   "nav_status": 0,
+   "updated": "2026-11-11 04:25:20.812663723 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.08032,
+   "lon": -122.90294,
+   "sog_kn": 0.2,
+   "cog": 21,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-11 04:25:25.777325614 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08017,
+   "lon": -122.90293,
    "type_code": 52,
-   "destination": "US^0T0P>035F",
-   "updated": "2026-11-11 04:20:41.748812121 +0000 UTC"
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-11 04:25:27.350659028 +0000 UTC"
+  },
+  {
+   "mmsi": 636093248,
+   "name": "TALITHA",
+   "lat": 45.98393,
+   "lon": -122.8353,
+   "sog_kn": 0,
+   "cog": 163.2,
+   "heading": 151,
+   "nav_status": 5,
+   "updated": "2026-11-11 04:25:28.120750095 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.24884,
+   "lon": -123.43995,
+   "sog_kn": 2.8,
+   "cog": 316.1,
+   "heading": 123,
+   "nav_status": 3,
+   "updated": "2026-11-11 04:25:31.61169131 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09661,
+   "lon": -122.92947,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-11 04:25:34.07169297 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 77.3,
+   "heading": 64,
+   "nav_status": 3
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.0897,
+   "lon": -122.92908,
+   "sog_kn": 0,
+   "cog": 315,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-11 04:25:39.209648369 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08016,
+   "lon": -122.90282,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-11 04:25:41.455271101 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09632,
+   "lon": -122.92954,
+   "sog_kn": 0,
+   "cog": 194.3,
+   "heading": 325,
+   "nav_status": 3,
+   "updated": "2026-11-11 04:25:43.53324535 +0000 UTC"
+  },
+  {
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.19965,
+   "lon": -123.38522,
+   "sog_kn": 0,
+   "cog": 17.4,
+   "heading": 324,
+   "nav_status": 5,
+   "updated": "2026-11-11 04:25:48.422447493 +0000 UTC"
   }
  ]
 }
