@@ -1,44 +1,51 @@
 {
- "fetched_at": "2026-11-11T14:45:45Z",
+ "fetched_at": "2026-11-11T14:50:47Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 46.17346,
-   "lon": -123.10651,
-   "type_code": 70,
-   "destination": "USVAN",
-   "updated": "2026-11-11 14:45:49.938654447 +0000 UTC"
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.63873,
+   "lon": -122.71179,
+   "type_code": 57,
+   "destination": "PASCO",
+   "updated": "2026-11-11 14:50:52.556514696 +0000 UTC"
   },
   {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64479,
-   "lon": -122.74622,
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 46.16405,
+   "lon": -123.4034,
+   "sog_kn": 0,
+   "cog": 219.8,
+   "heading": 317,
+   "nav_status": 12,
+   "updated": "2026-11-11 14:51:00.109775299 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.65986,
+   "lon": -122.75957,
+   "type_code": 52,
+   "destination": "US^0UUT>0UW8",
+   "updated": "2026-11-11 14:51:10.692069677 +0000 UTC",
    "sog_kn": 0.2,
-   "cog": 15.8,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-11 14:45:52.161876313 +0000 UTC"
+   "cog": 64.6,
+   "heading": 150,
+   "nav_status": 0
   },
   {
-   "mmsi": 636093248,
-   "name": "TALITHA",
-   "lat": 45.98376,
-   "lon": -122.83514,
-   "type_code": 70,
-   "destination": "JP CHB",
-   "updated": "2026-11-11 14:45:59.365329209 +0000 UTC"
-  },
-  {
-   "mmsi": 367516730,
-   "name": "CRISTY T",
-   "lat": 45.61211,
-   "lon": -122.64531,
-   "type_code": 0,
-   "updated": "2026-11-11 14:46:07.383625083 +0000 UTC"
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08063,
+   "lon": -122.90325,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 316,
+   "nav_status": 3,
+   "updated": "2026-11-11 14:51:07.724699229 +0000 UTC"
   }
  ]
 }
