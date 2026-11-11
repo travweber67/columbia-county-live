@@ -1,101 +1,76 @@
 {
- "fetched_at": "2026-11-11T20:21:09Z",
+ "fetched_at": "2026-11-11T20:24:16Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64349,
-   "lon": -122.75244,
-   "type_code": 52,
-   "updated": "2026-11-11 20:21:14.260332822 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16671,
+   "lon": -123.08705,
+   "sog_kn": 0.8,
+   "cog": 305.5,
+   "heading": 304,
+   "nav_status": 3,
+   "updated": "2026-11-11 20:25:05.202005844 +0000 UTC"
   },
   {
-   "mmsi": 636026991,
-   "name": "ALTHEA",
-   "lat": 45.63014,
-   "lon": -122.69526,
-   "sog_kn": 0,
-   "cog": 40,
-   "heading": 128,
-   "nav_status": 5,
-   "updated": "2026-11-11 20:21:38.604317806 +0000 UTC",
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.044,
+   "lon": -122.87691,
    "type_code": 70,
-   "destination": "USVAN"
+   "destination": "US KAM",
+   "updated": "2026-11-11 20:25:06.379004899 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08048,
-   "lon": -122.90286,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-11 20:21:31.780952533 +0000 UTC"
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15298,
+   "lon": -123.3773,
+   "sog_kn": 3.9,
+   "cog": 28.3,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-11 20:25:07.676937736 +0000 UTC"
   },
   {
-   "mmsi": 352006999,
-   "name": "WABI SABI",
-   "lat": 46.17676,
-   "lon": -123.11212,
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.601,
+   "lon": -122.77438,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-11 20:25:12.794190407 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35743,
    "sog_kn": 0,
-   "cog": 174.2,
-   "heading": 116,
-   "nav_status": 1,
-   "updated": "2026-11-11 20:21:33.913690028 +0000 UTC"
+   "cog": 291.7,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-11 20:25:25.613084809 +0000 UTC"
   },
   {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61224,
-   "lon": -122.64524,
-   "sog_kn": 0,
-   "cog": 214.4,
-   "heading": 216,
-   "nav_status": 0,
-   "updated": "2026-11-11 20:21:34.765511033 +0000 UTC"
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 46.15894,
+   "lon": -123.40409,
+   "type_code": 57,
+   "destination": "VANCOUER,WA",
+   "updated": "2026-11-11 20:25:28.807243914 +0000 UTC"
   },
   {
-   "mmsi": 538006268,
-   "name": "STAR CARIOCA",
-   "lat": 46.09856,
-   "lon": -122.94375,
-   "sog_kn": 8.6,
-   "cog": 296.2,
-   "heading": 295,
-   "nav_status": 0,
-   "updated": "2026-11-11 20:21:37.768846904 +0000 UTC"
-  },
-  {
-   "mmsi": 431300000,
-   "name": "TRITON HIGHWAY",
-   "lat": 46.27217,
-   "lon": -123.48386,
-   "sog_kn": 13.3,
-   "cog": 88.6,
-   "heading": 87,
-   "nav_status": 0,
-   "updated": "2026-11-11 20:21:37.810446165 +0000 UTC"
-  },
-  {
-   "mmsi": 367047250,
-   "name": "VOYAGER",
-   "lat": 46.04874,
-   "lon": -122.88252,
-   "type_code": 31,
-   "destination": "PORTLAND",
-   "updated": "2026-11-11 20:21:37.812864864 +0000 UTC"
-  },
-  {
-   "mmsi": 338205428,
-   "name": "CLAIRE B",
-   "lat": 45.79888,
-   "lon": -122.8334,
-   "sog_kn": 5.9,
-   "cog": 265.1,
-   "heading": 251,
-   "nav_status": 0,
-   "updated": "2026-11-11 20:21:39.119890271 +0000 UTC"
+   "mmsi": 538011495,
+   "name": "MTR JUPITER",
+   "lat": 46.10661,
+   "lon": -122.95712,
+   "type_code": 70,
+   "destination": "TH SRI",
+   "updated": "2026-11-11 20:25:34.475147004 +0000 UTC"
   }
  ]
 }
