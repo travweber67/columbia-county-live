@@ -1,47 +1,91 @@
 {
- "fetched_at": "2026-11-11T15:00:47Z",
+ "fetched_at": "2026-11-11T15:05:48Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 46.17362,
-   "lon": -123.1065,
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 46.16404,
+   "lon": -123.40341,
    "sog_kn": 0,
-   "cog": 291.4,
-   "heading": 117,
-   "nav_status": 1,
-   "updated": "2026-11-11 15:00:57.900644516 +0000 UTC"
+   "cog": 105.8,
+   "heading": 317,
+   "nav_status": 12,
+   "updated": "2026-11-11 15:06:00.469849327 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.65999,
+   "lon": -122.75989,
+   "sog_kn": 1.5,
+   "cog": 170.9,
+   "heading": 152,
+   "nav_status": 0,
+   "updated": "2026-11-11 15:06:00.738594387 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.83231,
+   "lon": -122.81187,
+   "type_code": 52,
+   "destination": "US^0UX0>?? ???",
+   "updated": "2026-11-11 15:06:04.889311675 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58759,
+   "lon": -122.77042,
+   "sog_kn": 0,
+   "cog": 101.8,
+   "heading": 141,
+   "nav_status": 0,
+   "updated": "2026-11-11 15:06:13.795275822 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64353,
+   "lon": -122.75245,
+   "sog_kn": 0,
+   "cog": 166.8,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-11 15:06:14.076850985 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.38552,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-11 15:06:19.141287467 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.0805,
+   "lon": -122.9033,
+   "sog_kn": 0,
+   "cog": 16.2,
+   "heading": 314,
+   "nav_status": 0,
+   "updated": "2026-11-11 15:06:17.721712011 +0000 UTC"
   },
   {
    "mmsi": 368041480,
    "name": "SAMANTHA S",
-   "lat": 46.07823,
-   "lon": -122.89606,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-11 15:01:05.142479391 +0000 UTC"
-  },
-  {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 46.044,
-   "lon": -122.87692,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-11 15:01:05.623770124 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.14145,
-   "lon": -123.02872,
-   "sog_kn": 6.8,
-   "cog": 120.6,
-   "heading": 120,
-   "nav_status": 3,
-   "updated": "2026-11-11 15:01:14.103284655 +0000 UTC"
+   "lat": 46.06036,
+   "lon": -122.88553,
+   "sog_kn": 13,
+   "cog": 167,
+   "heading": 168,
+   "nav_status": 5,
+   "updated": "2026-11-11 15:06:20.322622314 +0000 UTC"
   }
  ]
 }
