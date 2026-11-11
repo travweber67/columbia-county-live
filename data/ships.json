@@ -1,49 +1,101 @@
 {
- "fetched_at": "2026-11-11T03:39:56Z",
+ "fetched_at": "2026-11-11T03:44:56Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.1534,
+   "lon": -123.37715,
+   "sog_kn": 0,
+   "cog": 188.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-11 03:45:08.437472504 +0000 UTC"
+  },
   {
    "mmsi": 368280990,
    "name": "CINDY B",
-   "lat": 45.68279,
-   "lon": -122.77382,
+   "lat": 45.67593,
+   "lon": -122.77147,
    "sog_kn": 5.1,
-   "cog": 182.9,
-   "heading": 175,
+   "cog": 167.7,
+   "heading": 170,
    "nav_status": 0,
-   "updated": "2026-11-11 03:40:09.01231303 +0000 UTC"
+   "updated": "2026-11-11 03:45:09.298136858 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.09661,
-   "lon": -122.9294,
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.6479,
+   "lon": -122.74096,
    "sog_kn": 0,
-   "cog": 77.3,
-   "heading": 64,
-   "nav_status": 3,
-   "updated": "2026-11-11 03:40:15.726706136 +0000 UTC"
+   "cog": 112,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-11 03:45:10.538614536 +0000 UTC"
   },
   {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.61202,
-   "lon": -122.64539,
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64352,
+   "lon": -122.75243,
    "type_code": 52,
-   "destination": "US^0UUT>0T9D",
-   "updated": "2026-11-11 03:40:22.192824071 +0000 UTC"
+   "updated": "2026-11-11 03:45:10.598455468 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.61291,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08035,
+   "lon": -122.90262,
    "sog_kn": 0,
-   "cog": 246.4,
-   "heading": 133,
-   "nav_status": 15,
-   "updated": "2026-11-11 03:40:28.164348957 +0000 UTC"
+   "cog": 79.7,
+   "heading": 150,
+   "nav_status": 0,
+   "updated": "2026-11-11 03:45:23.228029878 +0000 UTC"
+  },
+  {
+   "mmsi": 538006268,
+   "name": "STAR CARIOCA",
+   "lat": 45.63914,
+   "lon": -122.77777,
+   "sog_kn": 0,
+   "cog": 40,
+   "heading": 228,
+   "nav_status": 5,
+   "updated": "2026-11-11 03:45:24.852905756 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19998,
+   "lon": -123.3854,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-11 03:45:36.388988 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.24765,
+   "lon": -123.43893,
+   "sog_kn": 1.5,
+   "cog": 138.8,
+   "heading": 140,
+   "nav_status": 3,
+   "updated": "2026-11-11 03:45:33.484623179 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09631,
+   "lon": -122.92949,
+   "sog_kn": 0,
+   "cog": 184.9,
+   "heading": 60,
+   "nav_status": 3,
+   "updated": "2026-11-11 03:45:34.175831104 +0000 UTC"
   }
  ]
 }
