@@ -1,71 +1,49 @@
 {
- "fetched_at": "2026-11-11T00:04:51Z",
+ "fetched_at": "2026-11-11T00:09:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64539,
-   "lon": -122.73503,
-   "sog_kn": 0,
-   "cog": 30.4,
-   "heading": 112,
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.19965,
+   "lon": -123.38524,
+   "type_code": 30,
+   "destination": "",
+   "updated": "2026-11-11 00:09:57.60365402 +0000 UTC"
+  },
+  {
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.64056,
+   "lon": -122.72158,
+   "sog_kn": 8.4,
+   "cog": 295,
+   "heading": 291,
    "nav_status": 5,
-   "updated": "2026-11-11 00:05:14.925466316 +0000 UTC"
+   "updated": "2026-11-11 00:10:10.006014476 +0000 UTC"
   },
   {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64789,
-   "lon": -122.74099,
-   "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-11 00:05:28.015088735 +0000 UTC"
-  },
-  {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.612,
-   "lon": -122.64537,
-   "sog_kn": 0,
-   "cog": 302.1,
-   "heading": 296,
-   "nav_status": 5,
-   "updated": "2026-11-11 00:05:31.215406953 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.64189,
-   "lon": -122.74114,
-   "sog_kn": 0.7,
-   "cog": 335.3,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.14721,
+   "lon": -123.04124,
+   "sog_kn": 7,
+   "cog": 134.6,
    "heading": 130,
    "nav_status": 12,
-   "updated": "2026-11-11 00:05:31.556450432 +0000 UTC"
+   "updated": "2026-11-11 00:10:11.917110066 +0000 UTC"
   },
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.0802,
-   "lon": -122.90286,
-   "sog_kn": 0,
-   "cog": 324.2,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-11 00:05:34.033643861 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.89243,
-   "lon": -122.80405,
-   "sog_kn": 10.2,
-   "cog": 343.2,
-   "heading": 345,
-   "nav_status": 0,
-   "updated": "2026-11-11 00:05:34.631362875 +0000 UTC"
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.63395,
+   "lon": -122.78608,
+   "sog_kn": 7.3,
+   "cog": 28,
+   "heading": 33,
+   "nav_status": 12,
+   "updated": "2026-11-11 00:10:16.11044076 +0000 UTC"
   }
  ]
 }
