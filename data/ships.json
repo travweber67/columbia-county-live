@@ -1,49 +1,90 @@
 {
- "fetched_at": "2026-11-11T00:09:43Z",
+ "fetched_at": "2026-11-11T00:14:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367323610,
-   "name": "MIKETTE",
-   "lat": 46.19965,
-   "lon": -123.38524,
-   "type_code": 30,
-   "destination": "",
-   "updated": "2026-11-11 00:09:57.60365402 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.91843,
+   "lon": -122.80818,
+   "sog_kn": 10.2,
+   "cog": 10.9,
+   "heading": 11,
+   "nav_status": 0,
+   "updated": "2026-11-11 00:14:55.534340954 +0000 UTC"
   },
   {
-   "mmsi": 367047240,
-   "name": "DEFIANCE",
-   "lat": 45.64056,
-   "lon": -122.72158,
-   "sog_kn": 8.4,
-   "cog": 295,
-   "heading": 291,
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.79282,
+   "lon": -122.84364,
+   "sog_kn": 0.8,
+   "cog": 41.7,
+   "heading": 202,
+   "nav_status": 0,
+   "updated": "2026-11-11 00:14:56.890633988 +0000 UTC"
+  },
+  {
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.61223,
+   "lon": -122.64525,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-11 00:10:10.006014476 +0000 UTC"
+   "updated": "2026-11-11 00:14:57.320641244 +0000 UTC"
   },
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 46.14721,
-   "lon": -123.04124,
-   "sog_kn": 7,
-   "cog": 134.6,
-   "heading": 130,
-   "nav_status": 12,
-   "updated": "2026-11-11 00:10:11.917110066 +0000 UTC"
+   "mmsi": 369493484,
+   "name": "USCG BLUEBELLL",
+   "lat": 45.86351,
+   "lon": -122.79531,
+   "sog_kn": 0,
+   "cog": 186.1,
+   "heading": 163,
+   "nav_status": 0,
+   "updated": "2026-11-11 00:15:00.731044285 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58755,
+   "lon": -122.7704,
+   "sog_kn": 0,
+   "cog": 345.1,
+   "heading": 141,
+   "nav_status": 0,
+   "updated": "2026-11-11 00:15:12.891927096 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65015,
+   "lon": -122.74767,
+   "type_code": 33,
+   "updated": "2026-11-11 00:15:14.011259155 +0000 UTC"
   },
   {
    "mmsi": 367727410,
    "name": "AMY B",
-   "lat": 45.63395,
-   "lon": -122.78608,
-   "sog_kn": 7.3,
-   "cog": 28,
-   "heading": 33,
-   "nav_status": 12,
-   "updated": "2026-11-11 00:10:16.11044076 +0000 UTC"
+   "lat": 45.64157,
+   "lon": -122.77702,
+   "type_code": 57,
+   "destination": "US^0UWG>?? ???",
+   "updated": "2026-11-11 00:15:17.713008646 +0000 UTC"
+  },
+  {
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.64461,
+   "lon": -122.73774,
+   "sog_kn": 8.4,
+   "cog": 289.3,
+   "heading": 289,
+   "nav_status": 5,
+   "updated": "2026-11-11 00:15:20.102079216 +0000 UTC"
   }
  ]
 }
