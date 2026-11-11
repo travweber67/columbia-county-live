@@ -1,49 +1,86 @@
 {
- "fetched_at": "2026-11-11T14:20:43Z",
+ "fetched_at": "2026-11-11T14:24:11Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.0805,
-   "lon": -122.90329,
-   "sog_kn": 0,
-   "cog": 159,
-   "heading": 314,
-   "nav_status": 0,
-   "updated": "2026-11-11 14:20:57.031054245 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19998,
-   "lon": -123.38543,
-   "sog_kn": 0,
-   "cog": 13.1,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-11 14:21:04.635743936 +0000 UTC"
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08063,
+   "lon": -122.90326,
+   "type_code": 33,
+   "updated": "2026-11-11 14:24:52.604959544 +0000 UTC"
   },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 46.15826,
-   "lon": -123.06273,
-   "sog_kn": 7.9,
-   "cog": 112,
-   "heading": 110,
-   "nav_status": 0,
-   "updated": "2026-11-11 14:21:05.313280334 +0000 UTC"
+   "lat": 46.15511,
+   "lon": -123.05246,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-11 14:25:00.061420416 +0000 UTC"
   },
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.6454,
-   "lon": -122.73503,
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.17328,
+   "lon": -123.10663,
+   "sog_kn": 0,
+   "cog": 291.4,
+   "heading": 104,
+   "nav_status": 1,
+   "updated": "2026-11-11 14:25:01.597183221 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.09072,
+   "lon": -122.93211,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-11 14:25:04.412668425 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.04401,
+   "lon": -122.87692,
    "type_code": 70,
-   "destination": "PER ORDERS",
-   "updated": "2026-11-11 14:21:10.341987113 +0000 UTC"
+   "destination": "US KAM",
+   "updated": "2026-11-11 14:25:05.182264275 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.3854,
+   "sog_kn": 0,
+   "cog": 8.6,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-11 14:25:05.795447038 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10355,
+   "lon": -122.91008,
+   "sog_kn": 0,
+   "cog": 239.5,
+   "heading": 72,
+   "nav_status": 0,
+   "updated": "2026-11-11 14:25:11.365236439 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.63759,
+   "lon": -122.72818,
+   "sog_kn": 0.1,
+   "cog": 204.4,
+   "heading": 114,
+   "nav_status": 0,
+   "updated": "2026-11-11 14:25:16.940347865 +0000 UTC"
   }
  ]
 }
