@@ -1,71 +1,49 @@
 {
- "fetched_at": "2026-11-11T14:15:42Z",
+ "fetched_at": "2026-11-11T14:20:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.1772,
-   "lon": -123.35742,
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.0805,
+   "lon": -122.90329,
    "sog_kn": 0,
-   "cog": 181.9,
-   "heading": 133,
-   "nav_status": 15,
-   "updated": "2026-11-11 14:15:47.100281145 +0000 UTC"
+   "cog": 159,
+   "heading": 314,
+   "nav_status": 0,
+   "updated": "2026-11-11 14:20:57.031054245 +0000 UTC"
   },
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.09407,
-   "lon": -122.94276,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19998,
+   "lon": -123.38543,
    "sog_kn": 0,
-   "cog": 250.1,
+   "cog": 13.1,
    "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-11 14:21:04.635743936 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.15826,
+   "lon": -123.06273,
+   "sog_kn": 7.9,
+   "cog": 112,
+   "heading": 110,
    "nav_status": 0,
-   "updated": "2026-11-11 14:15:54.850238498 +0000 UTC"
+   "updated": "2026-11-11 14:21:05.313280334 +0000 UTC"
   },
   {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 46.16403,
-   "lon": -123.40341,
-   "type_code": 57,
-   "destination": "VANCOUER,WA",
-   "updated": "2026-11-11 14:15:57.165025465 +0000 UTC"
-  },
-  {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.77776,
-   "lon": -122.7722,
-   "sog_kn": 8.8,
-   "cog": 339.4,
-   "heading": 336,
-   "nav_status": 0,
-   "updated": "2026-11-11 14:15:58.024425351 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.23901,
-   "lon": -123.43164,
-   "sog_kn": 1,
-   "cog": 156.4,
-   "heading": 151,
-   "nav_status": 3,
-   "updated": "2026-11-11 14:16:03.772124798 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10786,
-   "lon": -122.95901,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-11 14:16:10.056446722 +0000 UTC"
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.6454,
+   "lon": -122.73503,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-11 14:21:10.341987113 +0000 UTC"
   }
  ]
 }
