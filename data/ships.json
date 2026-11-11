@@ -1,60 +1,126 @@
 {
- "fetched_at": "2026-11-11T04:54:05Z",
+ "fetched_at": "2026-11-11T05:00:02Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.61832,
-   "lon": -122.78754,
-   "sog_kn": 0.2,
-   "cog": 249.4,
-   "heading": 2,
-   "nav_status": 12,
-   "updated": "2026-11-11 04:55:19.770391502 +0000 UTC"
-  },
-  {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60747,
-   "lon": -122.67757,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-11 04:55:23.348935012 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35745,
-   "sog_kn": 0,
-   "cog": 227.2,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-11 04:55:26.855477056 +0000 UTC"
-  },
   {
    "mmsi": 368410780,
    "name": "GAMBLER",
-   "lat": 46.10355,
+   "lat": 46.10353,
    "lon": -122.91008,
-   "type_code": 52,
-   "destination": "US^0T0P>035F",
-   "updated": "2026-11-11 04:55:27.517642004 +0000 UTC"
+   "sog_kn": 0,
+   "cog": 67,
+   "heading": 71,
+   "nav_status": 0,
+   "updated": "2026-11-11 05:00:11.358420594 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.61289,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16524,
+   "lon": -123.08432,
+   "sog_kn": 1,
+   "cog": 115.2,
+   "heading": 124,
+   "nav_status": 0,
+   "updated": "2026-11-11 05:00:20.54772045 +0000 UTC",
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64772,
+   "lon": -122.75576,
+   "sog_kn": 5.8,
+   "cog": 152.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-11 05:00:20.811084867 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09626,
+   "lon": -122.92951,
    "sog_kn": 0,
-   "cog": 187.7,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-11 04:55:38.118036532 +0000 UTC"
+   "cog": 195,
+   "heading": 56,
+   "nav_status": 3,
+   "updated": "2026-11-11 05:00:23.537822505 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58754,
+   "lon": -122.77047,
+   "sog_kn": 0,
+   "cog": 205.3,
+   "heading": 141,
+   "nav_status": 0,
+   "updated": "2026-11-11 05:00:23.557294975 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10392,
+   "lon": -122.95923,
+   "sog_kn": 8.7,
+   "cog": 298.7,
+   "heading": 300,
+   "nav_status": 3,
+   "updated": "2026-11-11 05:00:24.729625346 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08015,
+   "lon": -122.90293,
+   "sog_kn": 0.1,
+   "cog": 309.4,
+   "heading": 326,
+   "nav_status": 0,
+   "updated": "2026-11-11 05:00:26.803492388 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09076,
+   "lon": -122.9321,
+   "sog_kn": 0,
+   "cog": 223.2,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-11 05:00:31.664935144 +0000 UTC"
+  },
+  {
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10888,
+   "lon": -122.96126,
+   "sog_kn": 0,
+   "cog": 285.6,
+   "heading": 130,
+   "nav_status": 5,
+   "updated": "2026-11-11 05:00:31.886650092 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59412,
+   "lon": -122.7721,
+   "type_code": 70,
+   "destination": "NOT AVAILABLE",
+   "updated": "2026-11-11 05:00:36.356698818 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.60103,
+   "lon": -122.77477,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-11 05:00:38.255744653 +0000 UTC"
   }
  ]
 }
