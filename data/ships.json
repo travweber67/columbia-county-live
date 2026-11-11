@@ -1,82 +1,93 @@
 {
- "fetched_at": "2026-11-11T16:25:53Z",
+ "fetched_at": "2026-11-11T16:30:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 636093248,
+   "name": "TALITHA",
+   "lat": 45.99903,
+   "lon": -122.84859,
+   "sog_kn": 8.1,
+   "cog": 344,
+   "heading": 343,
+   "nav_status": 0,
+   "updated": "2026-11-11 16:31:17.37018081 +0000 UTC",
+   "type_code": 70,
+   "destination": "JP CHB"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64551,
+   "lon": -122.74824,
+   "sog_kn": 9.5,
+   "cog": 273.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-11 16:31:00.599993867 +0000 UTC"
+  },
   {
    "mmsi": 368410780,
    "name": "GAMBLER",
    "lat": 46.10353,
-   "lon": -122.91008,
-   "sog_kn": 0.1,
-   "cog": 194.2,
-   "heading": 73,
+   "lon": -122.9101,
+   "sog_kn": 0,
+   "cog": 135.5,
+   "heading": 72,
    "nav_status": 0,
-   "updated": "2026-11-11 16:26:00.313624336 +0000 UTC"
+   "updated": "2026-11-11 16:31:01.491971582 +0000 UTC"
   },
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58079,
-   "lon": -122.76007,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35744,
    "sog_kn": 0,
-   "cog": 345.4,
-   "heading": 122,
-   "nav_status": 5,
-   "updated": "2026-11-11 16:26:08.846335774 +0000 UTC"
+   "cog": 198.8,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-11 16:31:06.405337689 +0000 UTC"
   },
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08039,
-   "lon": -122.90316,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37714,
    "sog_kn": 0,
-   "cog": 6.8,
+   "cog": 188.9,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-11 16:26:17.723358995 +0000 UTC"
+   "updated": "2026-11-11 16:31:08.560872275 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.08064,
-   "lon": -122.90326,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 317,
-   "nav_status": 3,
-   "updated": "2026-11-11 16:26:18.969456473 +0000 UTC"
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.66065,
+   "lon": -122.76004,
+   "type_code": 52,
+   "destination": "VANCOUVER,WA.",
+   "updated": "2026-11-11 16:31:10.375273952 +0000 UTC"
   },
   {
-   "mmsi": 367047250,
-   "name": "VOYAGER",
-   "lat": 46.23202,
-   "lon": -123.42852,
-   "sog_kn": 7.7,
-   "cog": 164.5,
-   "heading": 511,
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.65055,
+   "lon": -122.74876,
+   "sog_kn": 1.7,
+   "cog": 177,
+   "heading": 141,
    "nav_status": 0,
-   "updated": "2026-11-11 16:26:19.120196861 +0000 UTC"
+   "updated": "2026-11-11 16:31:13.659298737 +0000 UTC"
   },
   {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.83311,
-   "lon": -122.78935,
-   "sog_kn": 5.7,
-   "cog": 188.3,
-   "heading": 184,
-   "nav_status": 0,
-   "updated": "2026-11-11 16:26:20.967710785 +0000 UTC"
-  },
-  {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 46.04399,
-   "lon": -122.87692,
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 45.64271,
+   "lon": -122.77189,
    "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-11 16:26:27.347301025 +0000 UTC"
+   "destination": "USPDX",
+   "updated": "2026-11-11 16:31:15.11081115 +0000 UTC"
   }
  ]
 }
