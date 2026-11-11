@@ -1,58 +1,73 @@
 {
- "fetched_at": "2026-11-11T16:24:13Z",
+ "fetched_at": "2026-11-11T16:25:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
-  {
-   "mmsi": 368328430,
-   "name": "MCR 8",
-   "lat": 45.58478,
-   "lon": -122.76621,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-11 16:24:58.09987918 +0000 UTC"
-  },
   {
    "mmsi": 368410780,
    "name": "GAMBLER",
    "lat": 46.10353,
-   "lon": -122.9101,
-   "type_code": 52,
-   "destination": "US^0T0P>035F",
-   "updated": "2026-11-11 16:24:59.729204964 +0000 UTC"
+   "lon": -122.91008,
+   "sog_kn": 0.1,
+   "cog": 194.2,
+   "heading": 73,
+   "nav_status": 0,
+   "updated": "2026-11-11 16:26:00.313624336 +0000 UTC"
   },
   {
-   "mmsi": 636021177,
-   "name": "FORTUNE COOKIE",
-   "lat": 45.9888,
-   "lon": -122.8413,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-11 16:24:59.814713153 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58754,
-   "lon": -122.77046,
-   "type_code": 52,
-   "destination": "PORTLAND,OR",
-   "updated": "2026-11-11 16:25:23.622679696 +0000 UTC",
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58079,
+   "lon": -122.76007,
    "sog_kn": 0,
-   "cog": 66.7,
-   "heading": 141,
-   "nav_status": 0
+   "cog": 345.4,
+   "heading": 122,
+   "nav_status": 5,
+   "updated": "2026-11-11 16:26:08.846335774 +0000 UTC"
   },
   {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.19947,
-   "lon": -123.3851,
-   "type_code": 30,
-   "destination": "CATHLAMET WA",
-   "updated": "2026-11-11 16:25:01.008615093 +0000 UTC"
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.08039,
+   "lon": -122.90316,
+   "sog_kn": 0,
+   "cog": 6.8,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-11 16:26:17.723358995 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08064,
+   "lon": -122.90326,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 317,
+   "nav_status": 3,
+   "updated": "2026-11-11 16:26:18.969456473 +0000 UTC"
+  },
+  {
+   "mmsi": 367047250,
+   "name": "VOYAGER",
+   "lat": 46.23202,
+   "lon": -123.42852,
+   "sog_kn": 7.7,
+   "cog": 164.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-11 16:26:19.120196861 +0000 UTC"
+  },
+  {
+   "mmsi": 367681630,
+   "name": "VICKI B",
+   "lat": 45.83311,
+   "lon": -122.78935,
+   "sog_kn": 5.7,
+   "cog": 188.3,
+   "heading": 184,
+   "nav_status": 0,
+   "updated": "2026-11-11 16:26:20.967710785 +0000 UTC"
   },
   {
    "mmsi": 538010986,
@@ -61,66 +76,7 @@
    "lon": -122.87692,
    "type_code": 70,
    "destination": "US KAM",
-   "updated": "2026-11-11 16:25:05.530274626 +0000 UTC"
-  },
-  {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 45.98852,
-   "lon": -122.84149,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-11 16:25:06.382794821 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.24552,
-   "lon": -123.4377,
-   "sog_kn": 3.3,
-   "cog": 325.8,
-   "heading": 333,
-   "nav_status": 3,
-   "updated": "2026-11-11 16:25:07.081571174 +0000 UTC"
-  },
-  {
-   "mmsi": 440576000,
-   "name": "PAN FLOWER",
-   "lat": 45.64274,
-   "lon": -122.77185,
-   "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-11 16:25:14.98716917 +0000 UTC"
-  },
-  {
-   "mmsi": 367047250,
-   "name": "VOYAGER",
-   "lat": 46.2341,
-   "lon": -123.42912,
-   "sog_kn": 7.6,
-   "cog": 163.8,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-11 16:25:18.026312769 +0000 UTC"
-  },
-  {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.83467,
-   "lon": -122.789,
-   "sog_kn": 5.6,
-   "cog": 189.8,
-   "heading": 186,
-   "nav_status": 0,
-   "updated": "2026-11-11 16:25:20.978645944 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08041,
-   "lon": -122.90316,
-   "type_code": 69,
-   "updated": "2026-11-11 16:25:21.410876243 +0000 UTC"
+   "updated": "2026-11-11 16:26:27.347301025 +0000 UTC"
   }
  ]
 }
