@@ -1,48 +1,68 @@
 {
- "fetched_at": "2026-11-11T11:10:29Z",
+ "fetched_at": "2026-11-11T11:15:30Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.19943,
-   "lon": -123.38508,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
    "sog_kn": 0,
-   "cog": 143,
-   "heading": 511,
+   "cog": 112.7,
+   "heading": 133,
+   "nav_status": 15,
+   "updated": "2026-11-11 11:15:38.094690843 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.60103,
+   "lon": -122.77478,
+   "sog_kn": 0,
+   "cog": 228.4,
+   "heading": 278,
    "nav_status": 5,
-   "updated": "2026-11-11 11:10:48.370050125 +0000 UTC"
+   "updated": "2026-11-11 11:15:40.211200521 +0000 UTC"
   },
   {
-   "mmsi": 311594000,
-   "name": "RCC AFRICA",
-   "lat": 45.64648,
-   "lon": -122.7562,
-   "type_code": 78,
-   "destination": "US PDX",
-   "updated": "2026-11-11 11:10:52.748211046 +0000 UTC"
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10791,
+   "lon": -122.95902,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-11 11:15:50.018152504 +0000 UTC"
   },
   {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64571,
-   "lon": -122.73489,
-   "type_code": 79,
-   "updated": "2026-11-11 11:11:06.888150477 +0000 UTC",
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37713,
+   "type_code": 99,
+   "updated": "2026-11-11 11:15:53.449751746 +0000 UTC"
+  },
+  {
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.17304,
+   "lon": -123.10668,
    "sog_kn": 0.1,
-   "cog": 0,
-   "heading": 112,
-   "nav_status": 5
+   "cog": 291.4,
+   "heading": 94,
+   "nav_status": 1,
+   "updated": "2026-11-11 11:15:57.370602189 +0000 UTC"
   },
   {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64792,
-   "lon": -122.74098,
-   "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-11 11:11:00.930515196 +0000 UTC"
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79315,
+   "lon": -122.84321,
+   "type_code": 57,
+   "destination": "US^0UWG>?? ???",
+   "updated": "2026-11-11 11:16:01.204401009 +0000 UTC"
   }
  ]
 }
