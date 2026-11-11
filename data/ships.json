@@ -1,60 +1,113 @@
 {
- "fetched_at": "2026-11-11T20:26:09Z",
+ "fetched_at": "2026-11-11T20:31:09Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.10254,
+   "lon": -122.95122,
+   "sog_kn": 9.3,
+   "cog": 309.9,
+   "heading": 308,
+   "nav_status": 0,
+   "updated": "2026-11-11 20:31:18.378210544 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.13435,
+   "lon": -123.01067,
+   "sog_kn": 7.2,
+   "cog": 120.7,
+   "heading": 122,
+   "nav_status": 3,
+   "updated": "2026-11-11 20:31:24.493512869 +0000 UTC"
+  },
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
    "lat": 46.08049,
    "lon": -122.90286,
    "sog_kn": 0,
-   "cog": 206.3,
-   "heading": 133,
+   "cog": 278.1,
+   "heading": 130,
    "nav_status": 0,
-   "updated": "2026-11-11 20:26:23.194039127 +0000 UTC"
+   "updated": "2026-11-11 20:31:24.49880748 +0000 UTC"
   },
   {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.09407,
-   "lon": -122.93575,
-   "type_code": 52,
-   "destination": "CSR OPS",
-   "updated": "2026-11-11 20:26:23.614203019 +0000 UTC"
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35744,
+   "sog_kn": 0,
+   "cog": 290.3,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-11 20:31:25.613958208 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.80506,
+   "lon": -122.82065,
+   "sog_kn": 0.4,
+   "cog": 146.6,
+   "heading": 317,
+   "nav_status": 12,
+   "updated": "2026-11-11 20:31:34.317715861 +0000 UTC"
   },
   {
    "mmsi": 367608420,
    "name": "PETER J BRIX",
-   "lat": 46.09449,
-   "lon": -122.93607,
-   "sog_kn": 9.8,
-   "cog": 304.8,
+   "lat": 46.10214,
+   "lon": -122.95363,
+   "sog_kn": 10.1,
+   "cog": 311.5,
    "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-11 20:26:34.663271423 +0000 UTC"
+   "updated": "2026-11-11 20:31:35.480768812 +0000 UTC"
   },
   {
-   "mmsi": 440576000,
-   "name": "PAN FLOWER",
-   "lat": 45.64272,
-   "lon": -122.7719,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.38542,
    "sog_kn": 0,
-   "cog": 55.9,
-   "heading": 228,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-11 20:31:36.065238484 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08027,
+   "lon": -122.90299,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-11 20:31:42.441874224 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19955,
+   "lon": -123.38499,
+   "sog_kn": 0,
+   "cog": 325,
+   "heading": 144,
    "nav_status": 5,
-   "updated": "2026-11-11 20:26:35.324927903 +0000 UTC"
+   "updated": "2026-11-11 20:31:43.957873497 +0000 UTC"
   },
   {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09643,
-   "lon": -122.92904,
-   "sog_kn": 0,
-   "cog": 176,
-   "heading": 65,
-   "nav_status": 3,
-   "updated": "2026-11-11 20:26:43.884854869 +0000 UTC"
+   "mmsi": 538011495,
+   "name": "MTR JUPITER",
+   "lat": 46.1066,
+   "lon": -122.95712,
+   "type_code": 70,
+   "destination": "TH SRI",
+   "updated": "2026-11-11 20:31:44.398972502 +0000 UTC"
   }
  ]
 }
