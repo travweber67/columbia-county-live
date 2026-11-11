@@ -1,73 +1,115 @@
 {
- "fetched_at": "2026-11-11T00:49:45Z",
+ "fetched_at": "2026-11-11T00:54:02Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.64224,
-   "lon": -122.77531,
-   "sog_kn": 18.4,
-   "cog": 44.9,
-   "heading": 46,
-   "nav_status": 0,
-   "updated": "2026-11-11 00:50:06.404491304 +0000 UTC"
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65014,
+   "lon": -122.74762,
+   "type_code": 33,
+   "updated": "2026-11-11 00:57:13.170205736 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.72618,
+   "lon": -122.76332,
+   "type_code": 57,
+   "destination": "US^0UWG>?? ???",
+   "updated": "2026-11-11 00:57:17.519909595 +0000 UTC"
   },
   {
    "mmsi": 367513190,
    "name": "PORTLAND",
-   "lat": 45.60095,
-   "lon": -122.77637,
-   "sog_kn": 0.1,
-   "cog": 4.1,
+   "lat": 45.60097,
+   "lon": -122.77641,
+   "sog_kn": 0,
+   "cog": 355.1,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-11 00:50:11.370290903 +0000 UTC"
+   "updated": "2026-11-11 00:57:20.680618278 +0000 UTC"
   },
   {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.0907,
-   "lon": -122.93213,
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.63756,
+   "lon": -122.7424,
+   "sog_kn": 18.5,
+   "cog": 138.2,
+   "heading": 139,
+   "nav_status": 0,
+   "updated": "2026-11-11 00:57:24.496769726 +0000 UTC"
+  },
+  {
+   "mmsi": 538006268,
+   "name": "STAR CARIOCA",
+   "lat": 45.63915,
+   "lon": -122.77778,
    "sog_kn": 0,
-   "cog": 280.8,
-   "heading": 111,
+   "cog": 40,
+   "heading": 228,
    "nav_status": 5,
-   "updated": "2026-11-11 00:50:18.277100537 +0000 UTC"
+   "updated": "2026-11-11 00:57:24.946826593 +0000 UTC"
   },
   {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09633,
-   "lon": -122.92963,
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09077,
+   "lon": -122.93215,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-11 00:57:27.324101505 +0000 UTC"
+  },
+  {
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.90942,
+   "lon": -122.81457,
    "sog_kn": 0,
-   "cog": 178.9,
-   "heading": 65,
-   "nav_status": 3,
-   "updated": "2026-11-11 00:50:22.154430585 +0000 UTC"
+   "cog": 35.6,
+   "heading": 339,
+   "nav_status": 0,
+   "updated": "2026-11-11 00:57:29.867824122 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08029,
+   "lon": -122.90262,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-11 00:57:30.657185933 +0000 UTC"
   },
   {
    "mmsi": 367531220,
    "name": "WATCHMAN",
-   "lat": 46.20001,
-   "lon": -123.3854,
-   "sog_kn": 0,
-   "cog": 172.4,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-11 00:50:24.409508554 +0000 UTC"
+   "lat": 46.2,
+   "lon": -123.38542,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-11 00:57:36.055932906 +0000 UTC"
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.38553,
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.04399,
+   "lon": -122.87693,
    "sog_kn": 0,
-   "cog": 352.5,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-11 00:50:31.505034121 +0000 UTC"
+   "cog": 125.2,
+   "heading": 180,
+   "nav_status": 5,
+   "updated": "2026-11-11 00:57:36.370307543 +0000 UTC"
+  },
+  {
+   "mmsi": 636026991,
+   "name": "ALTHEA",
+   "lat": 45.63017,
+   "lon": -122.69532,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-11 00:57:39.176908391 +0000 UTC"
   }
  ]
 }
