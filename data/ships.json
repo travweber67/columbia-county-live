@@ -1,60 +1,38 @@
 {
- "fetched_at": "2026-11-11T08:00:16Z",
+ "fetched_at": "2026-11-11T08:05:15Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08011,
-   "lon": -122.90294,
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61203,
+   "lon": -122.64534,
+   "sog_kn": 0,
+   "cog": 302.3,
+   "heading": 297,
+   "nav_status": 5,
+   "updated": "2026-11-11 08:05:29.275552773 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08972,
+   "lon": -122.92902,
    "type_code": 52,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-11 08:00:27.232964262 +0000 UTC"
+   "destination": "US^0UJB>0UJB",
+   "updated": "2026-11-11 08:05:34.13705209 +0000 UTC"
   },
   {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.90469,
-   "lon": -122.81277,
-   "sog_kn": 1.1,
-   "cog": 185.8,
-   "heading": 157,
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58756,
+   "lon": -122.77041,
+   "sog_kn": 0,
+   "cog": 216.3,
+   "heading": 140,
    "nav_status": 0,
-   "updated": "2026-11-11 08:00:28.943393893 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19996,
-   "lon": -123.38551,
-   "sog_kn": 0,
-   "cog": 6.2,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-11 08:00:31.044821948 +0000 UTC"
-  },
-  {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.0963,
-   "lon": -122.92947,
-   "sog_kn": 0,
-   "cog": 8.7,
-   "heading": 56,
-   "nav_status": 3,
-   "updated": "2026-11-11 08:00:43.955806921 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40234,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 135,
-   "nav_status": 0,
-   "updated": "2026-11-11 08:00:53.510104391 +0000 UTC"
+   "updated": "2026-11-11 08:05:42.327251048 +0000 UTC"
   }
  ]
 }
