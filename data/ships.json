@@ -1,70 +1,115 @@
 {
- "fetched_at": "2026-11-11T18:46:04Z",
+ "fetched_at": "2026-11-11T18:51:03Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 338205428,
-   "name": "CLAIRE B",
-   "lat": 45.74547,
-   "lon": -122.76232,
-   "type_code": 52,
-   "destination": "",
-   "updated": "2026-11-11 18:46:26.812065797 +0000 UTC"
-  },
-  {
-   "mmsi": 367047250,
-   "name": "VOYAGER",
-   "lat": 46.17405,
-   "lon": -123.10923,
-   "type_code": 31,
-   "destination": "PORTLAND",
-   "updated": "2026-11-11 18:46:27.970691484 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15343,
-   "lon": -123.37713,
+   "mmsi": 636026991,
+   "name": "ALTHEA",
+   "lat": 45.63013,
+   "lon": -122.69535,
    "sog_kn": 0,
-   "cog": 157.3,
+   "cog": 40,
+   "heading": 128,
+   "nav_status": 5,
+   "updated": "2026-11-11 18:51:39.328028639 +0000 UTC",
+   "type_code": 70,
+   "destination": "USVAN"
+  },
+  {
+   "mmsi": 367681630,
+   "name": "VICKI B",
+   "lat": 45.77354,
+   "lon": -122.76427,
+   "sog_kn": 0.3,
+   "cog": 147,
+   "heading": 204,
+   "nav_status": 0,
+   "updated": "2026-11-11 18:51:21.044937846 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.83707,
+   "lon": -122.80777,
+   "type_code": 52,
+   "destination": "SANTOSH",
+   "updated": "2026-11-11 18:51:25.74015851 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10789,
+   "lon": -122.95902,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-11 18:46:39.95449477 +0000 UTC",
-   "type_code": 99
-  },
-  {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.63873,
-   "lon": -122.71176,
-   "sog_kn": 0,
-   "cog": 26.7,
-   "heading": 122,
-   "nav_status": 12,
-   "updated": "2026-11-11 18:46:36.997309469 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.91008,
-   "sog_kn": 0,
-   "cog": 220.2,
-   "heading": 72,
-   "nav_status": 0,
-   "updated": "2026-11-11 18:46:41.138602422 +0000 UTC"
+   "updated": "2026-11-11 18:51:31.878817338 +0000 UTC"
   },
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
    "lat": 46.0805,
    "lon": -122.90288,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-11 18:51:33.171130742 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.16732,
+   "lon": -123.08676,
+   "sog_kn": 8.6,
+   "cog": 302.8,
+   "heading": 305,
+   "nav_status": 3,
+   "updated": "2026-11-11 18:51:34.894181423 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.6387,
+   "lon": -122.71178,
+   "type_code": 57,
+   "destination": "PASCO",
+   "updated": "2026-11-11 18:51:35.850494631 +0000 UTC"
+  },
+  {
+   "mmsi": 368442720,
+   "name": "RUSTLER",
+   "lat": 45.60836,
+   "lon": -122.68623,
    "sog_kn": 0,
-   "cog": 38.1,
-   "heading": 129,
+   "cog": 360,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-11 18:46:43.991851026 +0000 UTC"
+   "updated": "2026-11-11 18:51:37.429905037 +0000 UTC"
+  },
+  {
+   "mmsi": 367047250,
+   "name": "VOYAGER",
+   "lat": 46.16766,
+   "lon": -123.09189,
+   "sog_kn": 8,
+   "cog": 119.8,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-11 18:51:41.370445016 +0000 UTC",
+   "type_code": 31,
+   "destination": "PORTLAND"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09642,
+   "lon": -122.92905,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 66,
+   "nav_status": 3,
+   "updated": "2026-11-11 18:51:42.461667638 +0000 UTC"
   }
  ]
 }
