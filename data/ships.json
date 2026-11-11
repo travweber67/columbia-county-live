@@ -1,47 +1,93 @@
 {
- "fetched_at": "2026-11-11T15:45:51Z",
+ "fetched_at": "2026-11-11T15:50:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37714,
+   "sog_kn": 0,
+   "cog": 182.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-11 15:50:56.725445211 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.24157,
+   "lon": -123.43098,
+   "sog_kn": 1.3,
+   "cog": 172.4,
+   "heading": 158,
+   "nav_status": 3,
+   "updated": "2026-11-11 15:51:03.605290504 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64789,
+   "lon": -122.74098,
+   "sog_kn": 0,
+   "cog": 111.9,
+   "heading": 111,
+   "nav_status": 5,
+   "updated": "2026-11-11 15:51:08.161945848 +0000 UTC"
+  },
+  {
+   "mmsi": 367047250,
+   "name": "VOYAGER",
+   "lat": 46.26989,
+   "lon": -123.50911,
+   "sog_kn": 7.6,
+   "cog": 65.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-11 15:51:08.792605932 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.64345,
+   "lon": -122.75284,
+   "sog_kn": 0,
+   "cog": 321.2,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-11 15:51:09.048573276 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64741,
+   "lon": -122.73949,
+   "sog_kn": 0,
+   "cog": 287.6,
+   "heading": 287,
+   "nav_status": 5,
+   "updated": "2026-11-11 15:51:10.410371454 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64539,
+   "lon": -122.73502,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-11 15:51:15.449982239 +0000 UTC"
+  },
   {
    "mmsi": 367727410,
    "name": "AMY B",
-   "lat": 45.86044,
-   "lon": -122.78974,
-   "type_code": 57,
-   "destination": "US^0UWG>?? ???",
-   "updated": "2026-11-11 15:45:56.141918553 +0000 UTC"
-  },
-  {
-   "mmsi": 367719170,
-   "name": "RYAN POINT",
-   "lat": 45.64715,
-   "lon": -122.73954,
-   "sog_kn": 0,
-   "cog": 43.5,
-   "heading": 289,
+   "lat": 45.85344,
+   "lon": -122.78698,
+   "sog_kn": 5.7,
+   "cog": 174.2,
+   "heading": 175,
    "nav_status": 12,
-   "updated": "2026-11-11 15:45:58.485385292 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.16282,
-   "lon": -123.40971,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 132,
-   "nav_status": 0,
-   "updated": "2026-11-11 15:46:13.538622105 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 46.16402,
-   "lon": -123.4034,
-   "type_code": 57,
-   "destination": "VANCOUER,WA",
-   "updated": "2026-11-11 15:46:17.718644129 +0000 UTC"
+   "updated": "2026-11-11 15:51:16.471469516 +0000 UTC"
   }
  ]
 }
