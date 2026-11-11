@@ -1,16 +1,48 @@
 {
- "fetched_at": "2026-11-11T11:05:29Z",
+ "fetched_at": "2026-11-11T11:10:29Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 1 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.64145,
-   "lon": -122.73884,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-11 11:05:42.548874972 +0000 UTC"
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19943,
+   "lon": -123.38508,
+   "sog_kn": 0,
+   "cog": 143,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-11 11:10:48.370050125 +0000 UTC"
+  },
+  {
+   "mmsi": 311594000,
+   "name": "RCC AFRICA",
+   "lat": 45.64648,
+   "lon": -122.7562,
+   "type_code": 78,
+   "destination": "US PDX",
+   "updated": "2026-11-11 11:10:52.748211046 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64571,
+   "lon": -122.73489,
+   "type_code": 79,
+   "updated": "2026-11-11 11:11:06.888150477 +0000 UTC",
+   "sog_kn": 0.1,
+   "cog": 0,
+   "heading": 112,
+   "nav_status": 5
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64792,
+   "lon": -122.74098,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-11 11:11:00.930515196 +0000 UTC"
   }
  ]
 }
