@@ -1,46 +1,88 @@
 {
- "fetched_at": "2026-11-11T07:15:11Z",
+ "fetched_at": "2026-11-11T07:20:12Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.79315,
-   "lon": -122.84319,
-   "type_code": 57,
-   "destination": "US^0UWG>?? ???",
-   "updated": "2026-11-11 07:15:18.579678375 +0000 UTC"
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64343,
+   "lon": -122.75276,
+   "sog_kn": 0,
+   "cog": 248.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-11 07:20:19.913035078 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.09071,
+   "lon": -122.93214,
+   "sog_kn": 0,
+   "cog": 166.3,
+   "heading": 110,
+   "nav_status": 5,
+   "updated": "2026-11-11 07:20:19.927498128 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.9101,
+   "sog_kn": 0,
+   "cog": 327,
+   "heading": 72,
+   "nav_status": 0,
+   "updated": "2026-11-11 07:20:20.798996097 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08985,
+   "lon": -122.92899,
+   "type_code": 52,
+   "destination": "CSR OPS",
+   "updated": "2026-11-11 07:20:21.362249537 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60758,
+   "lon": -122.67747,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-11 07:20:22.504264264 +0000 UTC"
+  },
+  {
+   "mmsi": 369493484,
+   "name": "USCG BLUEBELLL",
+   "lat": 45.86351,
+   "lon": -122.79531,
+   "type_code": 0,
+   "updated": "2026-11-11 07:20:30.771647811 +0000 UTC"
+  },
+  {
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 45.643,
+   "lon": -122.77141,
+   "sog_kn": 0,
+   "cog": 153.3,
+   "heading": 228,
+   "nav_status": 5,
+   "updated": "2026-11-11 07:20:35.384002439 +0000 UTC"
   },
   {
    "mmsi": 352006999,
    "name": "WABI SABI",
-   "lat": 46.17715,
-   "lon": -123.11192,
-   "sog_kn": 0.1,
-   "cog": 197.8,
-   "heading": 130,
-   "nav_status": 1,
-   "updated": "2026-11-11 07:15:25.584820279 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.6129,
-   "type_code": 0,
-   "updated": "2026-11-11 07:15:30.74458185 +0000 UTC"
-  },
-  {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.60102,
-   "lon": -122.77478,
-   "sog_kn": 0,
-   "cog": 4.5,
-   "heading": 277,
-   "nav_status": 5,
-   "updated": "2026-11-11 07:15:40.472454186 +0000 UTC"
+   "lat": 46.17705,
+   "lon": -123.11202,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-11 07:20:39.214780312 +0000 UTC"
   }
  ]
 }
