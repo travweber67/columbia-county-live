@@ -1,54 +1,91 @@
 {
- "fetched_at": "2026-11-11T13:00:37Z",
+ "fetched_at": "2026-11-11T13:05:37Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.65225,
+   "lon": -122.75272,
+   "sog_kn": 1.8,
+   "cog": 292.8,
+   "heading": 111,
+   "nav_status": 12,
+   "updated": "2026-11-11 13:05:46.053171393 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.64345,
+   "lon": -122.75286,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-11 13:05:53.132547693 +0000 UTC"
+  },
   {
    "mmsi": 368171270,
    "name": "DR. RAY",
-   "lat": 45.57049,
-   "lon": -122.73607,
-   "sog_kn": 5,
-   "cog": 309.9,
-   "heading": 307,
+   "lat": 45.57492,
+   "lon": -122.74414,
+   "sog_kn": 5.2,
+   "cog": 309.3,
+   "heading": 308,
    "nav_status": 12,
-   "updated": "2026-11-11 13:00:47.101653128 +0000 UTC"
+   "updated": "2026-11-11 13:05:57.287450678 +0000 UTC"
   },
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58077,
-   "lon": -122.7601,
-   "type_code": 31,
-   "destination": "PDX PTSI",
-   "updated": "2026-11-11 13:00:47.613561053 +0000 UTC"
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.61222,
+   "lon": -122.64525,
+   "sog_kn": 0.1,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-11 13:05:58.088807404 +0000 UTC"
   },
   {
-   "mmsi": 367347000,
-   "name": "WENDY SEAA",
-   "lat": 46.19952,
-   "lon": -123.38499,
-   "type_code": 30,
-   "destination": "CATHLAMET,WA",
-   "updated": "2026-11-11 13:00:48.986302959 +0000 UTC"
-  },
-  {
-   "mmsi": 636021177,
-   "name": "FORTUNE COOKIE",
-   "lat": 46.21709,
-   "lon": -123.42487,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-11 13:00:59.830283517 +0000 UTC"
-  },
-  {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.0907,
-   "lon": -122.93211,
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.63234,
+   "lon": -122.70172,
    "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-11 13:01:04.338871005 +0000 UTC"
+   "destination": "US^0UX0>?? ???",
+   "updated": "2026-11-11 13:06:00.2473102 +0000 UTC"
+  },
+  {
+   "mmsi": 367719170,
+   "name": "RYAN POINT",
+   "lat": 45.64942,
+   "lon": -122.74771,
+   "sog_kn": 0.7,
+   "cog": 279.5,
+   "heading": 99,
+   "nav_status": 12,
+   "updated": "2026-11-11 13:06:07.388676546 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07944,
+   "lon": -122.90452,
+   "sog_kn": 0.1,
+   "cog": 49.4,
+   "heading": 53,
+   "nav_status": 0,
+   "updated": "2026-11-11 13:06:07.615513759 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64879,
+   "lon": -122.74645,
+   "sog_kn": 0.2,
+   "cog": 279,
+   "heading": 305,
+   "nav_status": 12,
+   "updated": "2026-11-11 13:06:09.695104457 +0000 UTC"
   }
  ]
 }
