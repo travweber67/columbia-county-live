@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="dark" />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="icon" href="data:," />
+<title>NOMAD BOT — Nomad Development Group</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js"></script>
+<style>
+  :root{
+    --bg:#121517;
+    --panel:#1a1f23;
+    --text:#f2f4f6;
+    --muted:#a7b0b8;
+    --accent:#e85d04;
+    --accent-dark:#c24e02;
+    --line:rgba(167,176,184,.16);
+    --line-strong:rgba(167,176,184,.3);
+  }
+  *{box-sizing:border-box}
+  html{overflow-x:clip}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Barlow",system-ui,-apple-system,Segoe UI,sans-serif;
+    font-size:17px;
+    line-height:1.55;
+    overflow-x:hidden;
+    min-height:100vh;
+  }
+
+  .wrap{max-width:1180px;width:100%;margin:0 auto;padding:0 20px}
+
+  /* Header */
+  .hero{
+    padding:38px 0 22px;
+    display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px 32px;justify-content:space-between;
+  }
+  .title-block{min-width:0}
+  .eyebrow{
+    font-family:"Barlow Condensed",sans-serif;font-weight:600;letter-spacing:.18em;
+    font-size:14px;color:var(--accent);text-transform:uppercase;margin:0 0 10px;
+    display:flex;align-items:center;gap:10px;
+  }
+  .eyebrow::before{content:"";width:28px;height:2px;background:var(--accent);display:inline-block;flex:none}
+  h1{
+    font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;
+    font-size:clamp(56px,8vw,96px);line-height:.92;letter-spacing:.01em;margin:0;
+  }
+  h1 .accent{color:var(--accent)}
+  .sub{color:var(--muted);font-size:18.5px;line-height:1.6;margin:14px 0 0;max-width:36em}
+  .sub strong{color:var(--text);font-weight:600}
+  .hint{
+    display:inline-flex;align-items:center;gap:9px;flex:none;
+    background:var(--panel);border:1px solid var(--line);border-radius:999px;
+    padding:9px 16px;font-size:14.5px;color:var(--muted);margin-bottom:8px;
+  }
+  .hint .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none;box-shadow:0 0 10px rgba(232,93,4,.8)}
+  .hint strong{color:var(--text);font-weight:600}
+
+  /* 3D stage — explicitly sized container; the viewer never sizes itself */
+  .stage{
+    position:relative;
+    display:block;
+    width:100%;
+    height:min(78vh,720px);
+    min-height:420px;
+    border-radius:18px;overflow:hidden;
+    border:1px solid var(--line-strong);
+    background:#0c0e10;
+    box-shadow:0 24px 60px rgba(0,0,0,.5);
+  }
+  .stage spline-viewer{
+    position:absolute;inset:0;z-index:1;
+    width:100%;height:100%;display:block;
+  }
+  /* Poster: passive backdrop under the viewer, visible until the scene renders */
+  .stage-poster{
+    position:absolute;inset:0;z-index:0;
+  }
+  .stage-poster img{
+    width:100%;height:100%;display:block;
+    object-fit:cover;object-position:center;
+  }
+
+  /* Credit + notes */
+  .notes{
+    display:flex;flex-wrap:wrap;gap:12px 40px;justify-content:space-between;align-items:flex-start;
+    padding:20px 2px 0;
+  }
+  .credit{color:var(--muted);font-size:15.5px;line-height:1.6;margin:0;max-width:44em}
+  .credit strong{color:var(--text);font-weight:600}
+  .watermark-note{color:var(--muted);font-size:14px;line-height:1.55;margin:0;max-width:26em}
+  .watermark-note strong{color:var(--text);font-weight:600}
+
+  footer{
+    border-top:1px solid var(--line);
+    margin-top:40px;
+    padding:22px 0 32px;color:var(--muted);font-size:14.5px;line-height:1.6;
+    display:flex;flex-wrap:wrap;gap:6px 28px;justify-content:space-between;
+  }
+  footer strong{color:var(--text);font-weight:600}
+
+  @media (max-width:900px){
+    .hero{padding-top:28px}
+  }
+  @media (max-width:560px){
+    body{font-size:16px}
+    .wrap{padding:0 16px}
+    h1{font-size:58px}
+    .sub{font-size:17px}
+    .hint{margin-bottom:0}
+    .stage{height:64vh;min-height:400px;border-radius:14px}
+    .notes{flex-direction:column;gap:10px}
+  }
+</style>
+</head>
+<body>
+
+<main class="wrap">
+
+  <div class="hero">
+    <div class="title-block">
+      <p class="eyebrow">Nomad Development Group</p>
+      <h1>Nomad <span class="accent">Bot</span></h1>
+      <p class="sub">The restyled Nomad bot — dark finish, orange accents — as a <strong>live, interactive 3D scene</strong>. Grab him and take a look around.</p>
+    </div>
+    <span class="hint"><span class="dot" aria-hidden="true"></span><span><strong>Drag to orbit.</strong> Scroll or pinch to zoom.</span></span>
+  </div>
+
+  <div class="stage" aria-label="Interactive 3D Nomad bot scene. Drag to orbit, scroll or pinch to zoom.">
+    <div class="stage-poster" aria-hidden="true">
+      <img src="nomad-bot-poster.jpg" alt="" />
+    </div>
+    <spline-viewer url="https://prod.spline.design/vy3kfnp2-w1gvE3h/scene.splinecode"></spline-viewer>
+  </div>
+
+  <div class="notes">
+    <p class="credit">Original model: <strong>NEXBOT by @aximoris (CC BY 4.0)</strong>, restyled by Nomad Development Group.</p>
+    <p class="watermark-note"><strong>Note:</strong> this viewer runs on Spline&rsquo;s free plan, so the scene carries a small Spline watermark in the corner.</p>
+  </div>
+
+  <footer>
+    <div><strong>Nomad Development Group</strong> · Nomad Bot demo</div>
+    <div>Scene published from Spline · free plan</div>
+  </footer>
+
+</main>
+
+</body>
+</html>
