@@ -1,62 +1,69 @@
 {
- "fetched_at": "2026-11-11T13:15:38Z",
+ "fetched_at": "2026-11-11T13:20:38Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09637,
-   "lon": -122.92919,
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19953,
+   "lon": -123.38501,
    "sog_kn": 0,
-   "cog": 189,
-   "heading": 57,
-   "nav_status": 3,
-   "updated": "2026-11-11 13:15:53.714498034 +0000 UTC"
+   "cog": 325,
+   "heading": 145,
+   "nav_status": 5,
+   "updated": "2026-11-11 13:20:46.848076987 +0000 UTC"
   },
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.9101,
-   "sog_kn": 0,
-   "cog": 216.8,
-   "heading": 71,
-   "nav_status": 0,
-   "updated": "2026-11-11 13:16:01.610670091 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19997,
-   "lon": -123.38543,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.07639,
+   "lon": -122.89605,
+   "type_code": 69,
+   "updated": "2026-11-11 13:21:00.317441351 +0000 UTC",
    "sog_kn": 0.1,
-   "cog": 198.4,
+   "cog": 142.7,
    "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-11 13:16:03.456949247 +0000 UTC"
+   "nav_status": 0
   },
   {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58494,
-   "lon": -122.76343,
-   "sog_kn": 6.2,
-   "cog": 308.1,
-   "heading": 311,
-   "nav_status": 12,
-   "updated": "2026-11-11 13:16:06.768569383 +0000 UTC"
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08028,
+   "lon": -122.90299,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-11 13:20:52.377947213 +0000 UTC"
   },
   {
-   "mmsi": 367719170,
-   "name": "RYAN POINT",
-   "lat": 45.64679,
-   "lon": -122.74009,
-   "sog_kn": 3.4,
-   "cog": 88.3,
-   "heading": 88,
-   "nav_status": 12,
-   "updated": "2026-11-11 13:16:07.534746662 +0000 UTC"
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08049,
+   "lon": -122.90284,
+   "sog_kn": 0,
+   "cog": 329.9,
+   "heading": 136,
+   "nav_status": 0,
+   "updated": "2026-11-11 13:20:52.554052678 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60758,
+   "lon": -122.67761,
+   "type_code": 50,
+   "updated": "2026-11-11 13:21:07.74003219 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.64331,
+   "lon": -122.75278,
+   "sog_kn": 0,
+   "cog": 146.8,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-11 13:21:08.949769084 +0000 UTC"
   }
  ]
 }
