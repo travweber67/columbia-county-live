@@ -1,91 +1,102 @@
 {
- "fetched_at": "2026-11-11T19:01:03Z",
+ "fetched_at": "2026-11-11T19:06:05Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08051,
+   "lon": -122.90288,
+   "sog_kn": 0,
+   "cog": 8.9,
+   "heading": 133,
+   "nav_status": 0,
+   "updated": "2026-11-11 19:06:34.06382756 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.81729,
+   "lon": -122.8263,
+   "sog_kn": 5.8,
+   "cog": 213.6,
+   "heading": 201,
+   "nav_status": 0,
+   "updated": "2026-11-11 19:06:35.550378504 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.044,
+   "lon": -122.87692,
+   "sog_kn": 0,
+   "cog": 125.2,
+   "heading": 180,
+   "nav_status": 5,
+   "updated": "2026-11-11 19:06:39.314446699 +0000 UTC"
+  },
+  {
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.79059,
+   "lon": -122.78289,
+   "sog_kn": 8.2,
+   "cog": 332.7,
+   "heading": 331,
+   "nav_status": 0,
+   "updated": "2026-11-11 19:06:45.88491877 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35744,
+   "sog_kn": 0,
+   "cog": 101.5,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-11 19:06:46.507144311 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19952,
+   "lon": -123.38501,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-11 19:06:48.943924757 +0000 UTC"
+  },
   {
    "mmsi": 368442390,
    "name": "COWLITZ",
-   "lat": 46.08027,
+   "lat": 46.08026,
    "lon": -122.90301,
-   "type_code": 52,
-   "destination": "PORTLAND",
-   "updated": "2026-11-11 19:01:42.953168061 +0000 UTC"
-  },
-  {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60755,
-   "lon": -122.67758,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-11 19:01:54.406931307 +0000 UTC"
-  },
-  {
-   "mmsi": 367684980,
-   "name": "CHRISTIE",
-   "lat": 45.62759,
-   "lon": -122.70014,
-   "type_code": 52,
-   "destination": "ASTORIA",
-   "updated": "2026-11-11 19:01:56.937883942 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.64384,
-   "lon": -122.7258,
-   "sog_kn": 0,
-   "cog": 357.5,
-   "heading": 116,
-   "nav_status": 12,
-   "updated": "2026-11-11 19:02:05.052276495 +0000 UTC"
-  },
-  {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58731,
-   "lon": -122.77008,
-   "sog_kn": 0,
-   "cog": 204.4,
-   "heading": 138,
+   "cog": 72.8,
+   "heading": 135,
    "nav_status": 5,
-   "updated": "2026-11-11 19:02:06.330132091 +0000 UTC"
+   "updated": "2026-11-11 19:06:49.637962569 +0000 UTC"
   },
   {
-   "mmsi": 538006268,
-   "name": "STAR CARIOCA",
-   "lat": 45.90199,
-   "lon": -122.80691,
-   "sog_kn": 9.9,
-   "cog": 350,
-   "heading": 350,
-   "nav_status": 0,
-   "updated": "2026-11-11 19:02:06.46794831 +0000 UTC"
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.5941,
+   "lon": -122.77213,
+   "type_code": 70,
+   "destination": "NOT AVAILABLE",
+   "updated": "2026-11-11 19:06:55.702618399 +0000 UTC"
   },
   {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.63871,
-   "lon": -122.71177,
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64367,
+   "lon": -122.75221,
    "sog_kn": 0,
-   "cog": 26.7,
-   "heading": 122,
-   "nav_status": 12,
-   "updated": "2026-11-11 19:02:07.612288136 +0000 UTC"
-  },
-  {
-   "mmsi": 367047250,
-   "name": "VOYAGER",
-   "lat": 46.15685,
-   "lon": -123.06317,
-   "sog_kn": 7.6,
-   "cog": 118.3,
+   "cog": 198,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-11 19:02:08.027437265 +0000 UTC"
+   "updated": "2026-11-11 19:06:59.110081547 +0000 UTC"
   }
  ]
 }
