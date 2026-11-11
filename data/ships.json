@@ -1,6 +1,98 @@
 {
- "fetched_at": "2026-11-11T01:24:05Z",
- "status": "error",
- "note": "AISStream error: timed out",
- "ships": []
+ "fetched_at": "2026-11-11T01:29:48Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 352005064,
+   "name": "ANSAC RISING SUN",
+   "lat": 45.62609,
+   "lon": -122.79144,
+   "type_code": 70,
+   "destination": "JP KSM",
+   "updated": "2026-11-11 01:30:19.527040596 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.10303,
+   "lon": -122.9567,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-11 01:30:21.193200892 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08028,
+   "lon": -122.90268,
+   "sog_kn": 0,
+   "cog": 230.2,
+   "heading": 110,
+   "nav_status": 0,
+   "updated": "2026-11-11 01:30:24.336181449 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.6434,
+   "lon": -122.74474,
+   "sog_kn": 1.7,
+   "cog": 293,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-11 01:30:24.801646185 +0000 UTC"
+  },
+  {
+   "mmsi": 538006268,
+   "name": "STAR CARIOCA",
+   "lat": 45.63914,
+   "lon": -122.77777,
+   "sog_kn": 0,
+   "cog": 40,
+   "heading": 228,
+   "nav_status": 5,
+   "updated": "2026-11-11 01:30:26.811277445 +0000 UTC"
+  },
+  {
+   "mmsi": 352006999,
+   "name": "WABI SABI",
+   "lat": 46.17689,
+   "lon": -123.11206,
+   "sog_kn": 0.1,
+   "cog": 357.7,
+   "heading": 119,
+   "nav_status": 1,
+   "updated": "2026-11-11 01:30:26.967558171 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07999,
+   "lon": -122.90273,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-11 01:30:27.323873564 +0000 UTC"
+  },
+  {
+   "mmsi": 538011495,
+   "name": "MTR JUPITER",
+   "lat": 46.10662,
+   "lon": -122.95718,
+   "type_code": 70,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-11 01:30:44.135370432 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20003,
+   "lon": -123.38538,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-11 01:30:44.938217797 +0000 UTC"
+  }
+ ]
 }
