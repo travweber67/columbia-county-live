@@ -1,82 +1,91 @@
 {
- "fetched_at": "2026-11-11T11:30:31Z",
+ "fetched_at": "2026-11-11T11:35:31Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64246,
+   "lon": -122.77154,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-11 11:35:40.451508681 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59407,
+   "lon": -122.77212,
+   "sog_kn": 0,
+   "cog": 338.3,
+   "heading": 149,
+   "nav_status": 5,
+   "updated": "2026-11-11 11:35:42.469862728 +0000 UTC"
+  },
   {
    "mmsi": 338205428,
    "name": "CLAIRE B",
-   "lat": 45.76397,
-   "lon": -122.76539,
-   "type_code": 52,
-   "destination": "",
-   "updated": "2026-11-11 11:30:42.610339289 +0000 UTC",
+   "lat": 45.75652,
+   "lon": -122.76447,
    "sog_kn": 5.3,
-   "cog": 168,
-   "heading": 168,
-   "nav_status": 0
+   "cog": 177.2,
+   "heading": 176,
+   "nav_status": 0,
+   "updated": "2026-11-11 11:35:43.00243285 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.09668,
-   "lon": -122.92927,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.38551,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-11 11:35:45.624897567 +0000 UTC"
+  },
+  {
+   "mmsi": 369493484,
+   "name": "USCG BLUEBELLL",
+   "lat": 45.86351,
+   "lon": -122.79531,
    "sog_kn": 0,
-   "cog": 70.9,
-   "heading": 62,
-   "nav_status": 3,
-   "updated": "2026-11-11 11:30:54.543411467 +0000 UTC"
+   "cog": 312.8,
+   "heading": 163,
+   "nav_status": 5,
+   "updated": "2026-11-11 11:35:51.95660138 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60757,
+   "lon": -122.67768,
+   "sog_kn": 0.1,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-11 11:36:02.949080299 +0000 UTC"
   },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.08027,
-   "lon": -122.90313,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-11 11:31:00.157562504 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64351,
-   "lon": -122.75291,
-   "sog_kn": 0,
-   "cog": 292.2,
-   "heading": 511,
+   "lat": 46.08026,
+   "lon": -122.90311,
+   "sog_kn": 0.3,
+   "cog": 331,
+   "heading": 134,
    "nav_status": 0,
-   "updated": "2026-11-11 11:31:00.689107219 +0000 UTC"
-  },
-  {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.0964,
-   "lon": -122.92936,
-   "sog_kn": 0.1,
-   "cog": 4.4,
-   "heading": 64,
-   "nav_status": 3,
-   "updated": "2026-11-11 11:31:03.958465977 +0000 UTC"
-  },
-  {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.09071,
-   "lon": -122.93211,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-11 11:31:05.369682323 +0000 UTC"
+   "updated": "2026-11-11 11:36:05.27620334 +0000 UTC"
   },
   {
    "mmsi": 368171270,
    "name": "DR. RAY",
-   "lat": 45.58132,
-   "lon": -122.76068,
+   "lat": 45.58133,
+   "lon": -122.76066,
    "sog_kn": 0,
    "cog": 241.9,
    "heading": 122,
    "nav_status": 12,
-   "updated": "2026-11-11 11:31:06.329910342 +0000 UTC"
+   "updated": "2026-11-11 11:36:06.381400538 +0000 UTC"
   }
  ]
 }
