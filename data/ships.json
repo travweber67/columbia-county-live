@@ -1,56 +1,73 @@
 {
- "fetched_at": "2026-11-11T07:35:13Z",
+ "fetched_at": "2026-11-11T07:40:13Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 636093248,
-   "name": "TALITHA",
-   "lat": 45.98393,
-   "lon": -122.83532,
-   "type_code": 70,
-   "destination": "KALAMA,USA",
-   "updated": "2026-11-11 07:35:21.311499407 +0000 UTC"
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.0802,
+   "lon": -122.90298,
+   "sog_kn": 0.2,
+   "cog": 354.5,
+   "heading": 344,
+   "nav_status": 0,
+   "updated": "2026-11-11 07:40:20.45251058 +0000 UTC"
   },
   {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58754,
-   "lon": -122.77041,
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64353,
+   "lon": -122.75228,
    "sog_kn": 0,
-   "cog": 212.3,
-   "heading": 141,
+   "cog": 107.2,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-11 07:40:25.86960201 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.61899,
+   "lon": -122.78785,
+   "sog_kn": 0,
+   "cog": 81.7,
+   "heading": 81,
+   "nav_status": 12,
+   "updated": "2026-11-11 07:40:30.309242884 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16487,
+   "lon": -123.08275,
+   "sog_kn": 11.6,
+   "cog": 308.6,
+   "heading": 312,
    "nav_status": 0,
-   "updated": "2026-11-11 07:35:33.351808406 +0000 UTC"
+   "updated": "2026-11-11 07:40:31.810875382 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.12851,
+   "lon": -122.99935,
+   "sog_kn": 6.2,
+   "cog": 131.3,
+   "heading": 133,
+   "nav_status": 3,
+   "updated": "2026-11-11 07:40:33.306584933 +0000 UTC"
   },
   {
    "mmsi": 367513190,
    "name": "PORTLAND",
    "lat": 45.64351,
-   "lon": -122.75289,
-   "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-11 07:35:39.401001951 +0000 UTC"
-  },
-  {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09631,
-   "lon": -122.92944,
+   "lon": -122.75287,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 57,
-   "nav_status": 3,
-   "updated": "2026-11-11 07:35:43.590634079 +0000 UTC"
-  },
-  {
-   "mmsi": 367347000,
-   "name": "WENDY SEAA",
-   "lat": 46.19954,
-   "lon": -123.385,
-   "type_code": 30,
-   "destination": "CATHLAMET,WA",
-   "updated": "2026-11-11 07:35:47.769440634 +0000 UTC"
+   "cog": 251.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-11 07:40:40.011635074 +0000 UTC"
   }
  ]
 }
