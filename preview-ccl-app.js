@@ -8700,3 +8700,42 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
     setTimeout(build, 400);
   }
 })();
+
+/* PREVIEW ADDITION — ad-card robot follows the pointer anywhere on the
+   page: the card's viewer keeps pointer-events:none (scroll/clicks
+   untouched) while window-level pointer events are re-dispatched into
+   it (host + shadow canvas) with their real coordinates, so the
+   scene's built-in look-at runs from anywhere on the page. */
+(function () {
+  var v = document.querySelector('.cascade-viewer');
+  if (!v) return;
+  function targets() {
+    var list = [v];
+    try {
+      var c = v.shadowRoot && v.shadowRoot.querySelector('canvas');
+      if (c) list.push(c);
+    } catch (e) {}
+    return list;
+  }
+  function fwd(type, x, y, ptype) {
+    var opts = { bubbles: true, cancelable: true, composed: true,
+      clientX: x, clientY: y, screenX: x, screenY: y,
+      pointerId: 1, isPrimary: true, pointerType: ptype || 'mouse',
+      button: 0, buttons: type === 'pointerdown' ? 1 : 0 };
+    var ev;
+    try { ev = new PointerEvent(type, opts); }
+    catch (e) { ev = new MouseEvent(type === 'pointerdown' ? 'mousedown' : 'mousemove', opts); }
+    var ts = targets();
+    for (var i = 0; i < ts.length; i++) { try { ts[i].dispatchEvent(ev); } catch (e) {} }
+  }
+  var last = 0;
+  window.addEventListener('pointermove', function (e) {
+    var n = Date.now();
+    if (n - last < 40) return;
+    last = n;
+    fwd('pointermove', e.clientX, e.clientY, e.pointerType);
+  }, { passive: true });
+  window.addEventListener('pointerdown', function (e) {
+    fwd('pointerdown', e.clientX, e.clientY, e.pointerType);
+  }, { passive: true });
+})();
