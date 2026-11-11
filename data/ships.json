@@ -1,38 +1,75 @@
 {
- "fetched_at": "2026-11-11T08:10:15Z",
+ "fetched_at": "2026-11-11T08:15:16Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09648,
+   "lon": -122.93201,
+   "sog_kn": 3,
+   "cog": 90.9,
+   "heading": 102,
+   "nav_status": 3,
+   "updated": "2026-11-11 08:15:27.009913423 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.044,
+   "lon": -122.87691,
+   "sog_kn": 0,
+   "cog": 125.2,
+   "heading": 180,
+   "nav_status": 5,
+   "updated": "2026-11-11 08:15:37.530193168 +0000 UTC"
+  },
+  {
+   "mmsi": 311594000,
+   "name": "RCC AFRICA",
+   "lat": 45.6465,
+   "lon": -122.75619,
+   "type_code": 78,
+   "destination": "US PDX",
+   "updated": "2026-11-11 08:15:42.993263526 +0000 UTC"
+  },
+  {
+   "mmsi": 477050900,
+   "name": "MING DE",
+   "lat": 46.02713,
+   "lon": -122.86955,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-11 08:15:48.013988181 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.6435,
+   "lon": -122.75289,
+   "sog_kn": 0,
+   "cog": 251.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-11 08:15:49.78988444 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35743,
+   "type_code": 30,
+   "updated": "2026-11-11 08:15:50.145970795 +0000 UTC"
+  },
   {
    "mmsi": 367363590,
    "name": "CLARKSTON",
-   "lat": 45.99753,
-   "lon": -122.84783,
-   "sog_kn": 9.1,
-   "cog": 340,
-   "heading": 345,
-   "nav_status": 12,
-   "updated": "2026-11-11 08:10:30.749292488 +0000 UTC"
-  },
-  {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58729,
-   "lon": -122.77006,
-   "type_code": 31,
-   "destination": "US^02SY>0UJ9",
-   "updated": "2026-11-11 08:10:37.582735121 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08036,
-   "lon": -122.90281,
-   "sog_kn": 0,
-   "cog": 49,
-   "heading": 117,
-   "nav_status": 0,
-   "updated": "2026-11-11 08:10:43.890507621 +0000 UTC"
+   "lat": 46.00857,
+   "lon": -122.85346,
+   "type_code": 57,
+   "destination": "VANCOUER,WA",
+   "updated": "2026-11-11 08:15:53.649575348 +0000 UTC"
   }
  ]
 }
