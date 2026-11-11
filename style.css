@@ -2474,33 +2474,30 @@ html[data-theme="dark"] .featured-local.photo-behind .featured-card{background:r
    section is gone: Cascade is one tiny muted link under About.
    ===================================================================== */
 .cascade-card{padding:0;overflow:hidden;background:linear-gradient(135deg,#1e4359,#132e47);border:1px solid #0d2237;box-shadow:0 10px 26px rgba(10,25,40,.35)}
-/* v59: robot stage on top of the card — poster still as the passive
-   underlay (never a black box), live viewer above it, pointer-events
-   off so the stage never traps touch scrolling. The orange rule is
-   the seam: stage above it, card body below, one connected object. */
-.cascade-stage{position:relative;height:320px;background:#121517;border-bottom:3px solid #e8760a;overflow:hidden}
-.cascade-poster{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center 30%}
-.cascade-viewer{position:absolute;inset:0;display:block;width:100%;height:100%;pointer-events:none}
-.cascade-promo{display:block;text-decoration:none;color:#eef3f7}
+.cascade-promo{display:flex;align-items:stretch;text-decoration:none;color:#eef3f7}
 .cascade-promo:hover .cascade-title{text-decoration:underline}
 .cascade-promo:hover .cascade-cta{background:#f08212}
 .cascade-promo:focus-visible{outline:3px solid #f5a83d;outline-offset:-3px}
-.cascade-body{display:block;padding:14px 18px 2px}
+.cascade-pic{flex:0 0 300px;width:300px;height:170px;border-right:3px solid #e8760a}
+.cascade-shot{display:block;width:100%;height:100%;object-fit:cover;object-position:top left}
+.cascade-body{flex:1 1 auto;min-width:0;display:block;padding:14px 18px}
 .cascade-eyebrow{display:block;font-size:.72rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#f5a83d;margin-bottom:5px}
 .cascade-title{display:block;font-family:var(--sans);font-size:1.22rem;font-weight:800;line-height:1.15;margin-bottom:5px;color:#fff}
 .cascade-copy{display:block;font-size:.92rem;line-height:1.4;color:#c7d5e0;margin-bottom:10px}
 .cascade-cta{display:inline-block;font-weight:800;color:#fff;background:#e8760a;padding:7px 14px;border-radius:8px}
 html[data-theme="dark"] .cascade-cta{color:#fff}
-.cascade-credit{margin:0;padding:4px 18px 12px;font-size:.72rem;color:#8fa9bd}
 @media (max-width:640px){
-  /* v59: phone keeps the same stacked unit, shorter stage; the body
-     copy stays visible now (the robot carries no text, unlike the
-     retired v38 title-card banner). */
-  .cascade-stage{height:250px}
-  .cascade-body{padding:12px 14px 2px}
-  .cascade-eyebrow{font-size:.68rem}
-  .cascade-title{font-size:1.08rem}
-  .cascade-credit{padding:4px 14px 10px}
+  /* v38: phone gets the dedicated mobile title-card banner as a full-width
+     top strip (nothing cropped, title fully readable) over a slim body row —
+     the v37 112px side sliver sliced the title text and looked broken. */
+  .cascade-promo{flex-direction:column}
+  .cascade-pic{flex:none;width:100%;height:auto;border-right:none;border-bottom:3px solid #e8760a}
+  .cascade-shot{width:100%;height:auto;object-fit:initial}
+  .cascade-body{padding:10px 14px;display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px}
+  .cascade-eyebrow{font-size:.68rem;flex:1 1 100%;margin-bottom:2px}
+  .cascade-title{font-size:1.05rem;margin-bottom:0}
+  .cascade-copy{display:none}
+  .cascade-cta{margin-left:auto}
 }
 /* v48: the two Nomad cross-promos (Cascade Controls Jobs + the website
    portfolio) sit together as a small quiet footer pair at the very bottom

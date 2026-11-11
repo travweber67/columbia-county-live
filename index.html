@@ -30,12 +30,12 @@
 if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
-<link rel="manifest" href="manifest.webmanifest?v=59">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=59">
+<link rel="manifest" href="manifest.webmanifest?v=58">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=58">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=59">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=59">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=59">
+<link rel="stylesheet" href="style.css?v=58">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=58">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=58">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
      only page backgrounds first paint needs — warm them with the hero.
      Every other view's photo is lazy-attached by app.js. -->
@@ -870,20 +870,15 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <!-- Cross-promo (2026-11-05, Travis's directive): Cascade Controls Jobs,
      Nomad Development Group's other project. NOT a sponsor placement —
-     labelled as ours, placed below the services directory and above
-     every utility card that follows.
-     v59 (2026-11-11, Travis directed): the screenshot thumb is retired —
-     the Nomad Bot now sits on TOP of the card as a mascot header (Spline
-     scene, restyle of NEXBOT by @aximoris, CC BY 4.0) with the poster
-     still underneath so the stage is never a black box; the viewer is
-     pointer-events:none so touch scrolling is never trapped. The card
-     body below carries the same pitch + link as before. -->
+     labelled as ours, styled as a plain house card (no sponsor glass,
+     no founding/featured language), placed below the services
+     directory and above every utility card that follows. -->
 <section class="card cascade-card" id="cascade-card" aria-label="Cascade Controls Jobs — our other project from Nomad Development Group">
-  <div class="cascade-stage" aria-hidden="true">
-    <img class="cascade-poster" src="nomad-bot-poster.jpg" alt="" loading="lazy" decoding="async">
-    <spline-viewer class="cascade-viewer" url="https://prod.spline.design/vy3kfnp2-w1gvE3h/scene.splinecode"></spline-viewer>
-  </div>
   <a class="cascade-promo" href="https://travweber67.github.io/cascade-controls-jobs/">
+    <picture class="cascade-pic">
+      <source media="(max-width: 640px)" srcset="img/cascade-thumb-mobile.jpg">
+      <img class="cascade-shot" src="img/cascade-thumb.jpg" alt="Cascade Controls Jobs — a Nomad Development Group job board for controls and industrial maintenance work in the Pacific Northwest" loading="lazy" decoding="async">
+    </picture>
     <span class="cascade-body">
       <span class="cascade-eyebrow" data-i18n="cascEyebrow">From Nomad Development Group — our other project</span>
       <span class="cascade-title" data-i18n="cascTitle">Cascade Controls Jobs</span>
@@ -891,7 +886,6 @@ document.documentElement.setAttribute("data-theme",t);})();
       <span class="cascade-cta" data-i18n="cascCta">See the jobs &amp; postings &rarr;</span>
     </span>
   </a>
-  <p class="cascade-credit">Robot: NEXBOT by @aximoris (CC BY 4.0)</p>
 </section>
 
 <section class="card freshness-card" id="freshness-card">
@@ -1195,8 +1189,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js"></script>
-<script src="app.js?v=59"></script>
+<script src="app.js?v=58"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>
