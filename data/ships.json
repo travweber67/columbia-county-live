@@ -1,66 +1,120 @@
 {
- "fetched_at": "2026-11-11T17:00:56Z",
+ "fetched_at": "2026-11-11T17:05:56Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.75591,
+   "lon": -122.76384,
+   "type_code": 57,
+   "destination": "US^0UWG>0ZBC",
+   "updated": "2026-11-11 17:06:12.69418825 +0000 UTC",
+   "sog_kn": 5.6,
+   "cog": 170.5,
+   "heading": 174,
+   "nav_status": 12
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19995,
+   "lon": -123.38552,
+   "sog_kn": 0,
+   "cog": 54.4,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-11 17:06:02.38217373 +0000 UTC"
+  },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 46.16591,
-   "lon": -123.0851,
-   "sog_kn": 1.7,
-   "cog": 313.5,
-   "heading": 303,
+   "lat": 46.16689,
+   "lon": -123.08693,
+   "sog_kn": 0.9,
+   "cog": 303.8,
+   "heading": 306,
    "nav_status": 0,
-   "updated": "2026-11-11 17:01:04.124882271 +0000 UTC"
+   "updated": "2026-11-11 17:06:05.692938679 +0000 UTC"
   },
   {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 45.98647,
-   "lon": -122.83743,
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64791,
+   "lon": -122.74094,
+   "sog_kn": 0,
+   "cog": 111.6,
+   "heading": 111,
+   "nav_status": 5,
+   "updated": "2026-11-11 17:06:09.703516511 +0000 UTC"
+  },
+  {
+   "mmsi": 368442720,
+   "name": "RUSTLER",
+   "lat": 45.60832,
+   "lon": -122.68621,
    "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-11 17:01:05.23190482 +0000 UTC"
+   "destination": "AXIOS MARINE OPS",
+   "updated": "2026-11-11 17:06:16.442816071 +0000 UTC"
   },
   {
-   "mmsi": 636093248,
-   "name": "TALITHA",
-   "lat": 46.07192,
-   "lon": -122.88874,
-   "sog_kn": 10.5,
-   "cog": 328.7,
-   "heading": 327,
-   "nav_status": 0,
-   "updated": "2026-11-11 17:01:15.931247864 +0000 UTC",
-   "type_code": 70,
-   "destination": "JP CHB"
-  },
-  {
-   "mmsi": 440576000,
-   "name": "PAN FLOWER",
-   "lat": 45.6427,
-   "lon": -122.7719,
-   "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-11 17:01:15.579924974 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08038,
-   "lon": -122.90321,
-   "type_code": 69,
-   "updated": "2026-11-11 17:01:18.973079739 +0000 UTC"
-  },
-  {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.60567,
-   "lon": -122.61972,
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79316,
+   "lon": -122.84322,
    "type_code": 52,
-   "destination": "US^00D5>0UHN",
-   "updated": "2026-11-11 17:01:29.892386612 +0000 UTC"
+   "destination": "US^0UX0>?? ???",
+   "updated": "2026-11-11 17:06:16.79027728 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08051,
+   "lon": -122.90331,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-11 17:06:24.658039149 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.64337,
+   "lon": -122.75268,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-11 17:06:24.807366787 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.0898,
+   "lon": -122.92904,
+   "type_code": 52,
+   "destination": "US^0UJB>0UJB",
+   "updated": "2026-11-11 17:06:26.941011706 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35744,
+   "sog_kn": 0,
+   "cog": 122.6,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-11 17:06:27.342446424 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08066,
+   "lon": -122.90324,
+   "sog_kn": 0.1,
+   "cog": 222.4,
+   "heading": 317,
+   "nav_status": 3,
+   "updated": "2026-11-11 17:06:28.474560745 +0000 UTC"
   }
  ]
 }
