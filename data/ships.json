@@ -1,29 +1,55 @@
 {
- "fetched_at": "2026-11-11T02:34:52Z",
+ "fetched_at": "2026-11-11T02:39:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65011,
-   "lon": -122.74763,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15707,
+   "lon": -123.40235,
    "sog_kn": 0,
-   "cog": 225.4,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-11 02:35:18.706269612 +0000 UTC"
+   "cog": 360,
+   "heading": 137,
+   "nav_status": 0,
+   "updated": "2026-11-11 02:40:14.105848591 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 221.7,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-11 02:35:29.539087102 +0000 UTC"
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61201,
+   "lon": -122.64537,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-11 02:40:22.629511445 +0000 UTC"
+  },
+  {
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.6403,
+   "lon": -122.73051,
+   "sog_kn": 7.5,
+   "cog": 124.7,
+   "heading": 124,
+   "nav_status": 5,
+   "updated": "2026-11-11 02:40:25.817944932 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64568,
+   "lon": -122.73488,
+   "type_code": 79,
+   "updated": "2026-11-11 02:40:28.663858069 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64788,
+   "lon": -122.741,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-11 02:40:29.245976885 +0000 UTC"
   }
  ]
 }
