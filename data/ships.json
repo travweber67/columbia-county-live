@@ -1,70 +1,80 @@
 {
- "fetched_at": "2026-11-10T23:54:02Z",
+ "fetched_at": "2026-11-10T23:59:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
-  {
-   "mmsi": 367516730,
-   "name": "CRISTY T",
-   "lat": 45.61213,
-   "lon": -122.64534,
-   "sog_kn": 0,
-   "cog": 240.1,
-   "heading": 299,
-   "nav_status": 5,
-   "updated": "2026-11-10 23:55:58.183381733 +0000 UTC"
-  },
   {
    "mmsi": 357359000,
    "name": "FEDERAL ILLINOIS",
    "lat": 45.63883,
    "lon": -122.72404,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-10 23:59:54.318360612 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08029,
+   "lon": -122.90258,
+   "sog_kn": 0,
+   "cog": 354.1,
+   "heading": 142,
+   "nav_status": 0,
+   "updated": "2026-11-10 23:59:54.93219548 +0000 UTC"
+  },
+  {
+   "mmsi": 367681630,
+   "name": "VICKI B",
+   "lat": 45.794,
+   "lon": -122.84252,
+   "sog_kn": 0,
+   "cog": 111.3,
+   "heading": 209,
+   "nav_status": 0,
+   "updated": "2026-11-10 23:59:55.570400628 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08046,
+   "lon": -122.90293,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 324,
+   "nav_status": 3,
+   "updated": "2026-11-10 23:59:58.332216178 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.63426,
+   "lon": -122.70391,
+   "sog_kn": 3.3,
+   "cog": 124.6,
+   "heading": 128,
+   "nav_status": 0,
+   "updated": "2026-11-10 23:59:59.526139288 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10793,
+   "lon": -122.95904,
    "sog_kn": 0.1,
-   "cog": 86.9,
-   "heading": 114,
-   "nav_status": 1,
-   "updated": "2026-11-10 23:56:04.174467551 +0000 UTC"
-  },
-  {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58132,
-   "lon": -122.76066,
-   "sog_kn": 0,
-   "cog": 30.5,
-   "heading": 122,
-   "nav_status": 12,
-   "updated": "2026-11-10 23:56:07.590020119 +0000 UTC"
-  },
-  {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64539,
-   "lon": -122.73504,
-   "sog_kn": 0,
-   "cog": 30.4,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-10 23:56:14.917578122 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08023,
-   "lon": -122.90281,
-   "type_code": 69,
-   "updated": "2026-11-10 23:56:20.311418924 +0000 UTC"
+   "cog": 347.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-11 00:00:11.131165595 +0000 UTC"
   },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 45.86934,
-   "lon": -122.78659,
-   "sog_kn": 10.2,
-   "cog": 341.2,
-   "heading": 340,
-   "nav_status": 0,
-   "updated": "2026-11-10 23:56:23.035463345 +0000 UTC"
+   "lat": 45.87779,
+   "lon": -122.79286,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-11 00:00:18.617364342 +0000 UTC"
   }
  ]
 }
