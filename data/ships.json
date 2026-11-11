@@ -1,60 +1,93 @@
 {
- "fetched_at": "2026-11-11T05:54:05Z",
+ "fetched_at": "2026-11-11T06:00:07Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.98748,
+   "lon": -122.83834,
+   "type_code": 52,
+   "destination": "US^0UUT>0UW8",
+   "updated": "2026-11-11 06:00:14.148442058 +0000 UTC"
+  },
+  {
+   "mmsi": 352006999,
+   "name": "WABI SABI",
+   "lat": 46.17712,
+   "lon": -123.11196,
+   "sog_kn": 0,
+   "cog": 222.3,
+   "heading": 122,
+   "nav_status": 1,
+   "updated": "2026-11-11 06:00:25.692780568 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08058,
+   "lon": -122.90299,
+   "sog_kn": 0.4,
+   "cog": 242.5,
+   "heading": 331,
+   "nav_status": 3,
+   "updated": "2026-11-11 06:00:26.979234258 +0000 UTC"
+  },
+  {
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10892,
+   "lon": -122.96127,
+   "sog_kn": 0,
+   "cog": 39.9,
+   "heading": 130,
+   "nav_status": 5,
+   "updated": "2026-11-11 06:00:31.882827716 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.044,
+   "lon": -122.87691,
+   "sog_kn": 0,
+   "cog": 125.2,
+   "heading": 180,
+   "nav_status": 5,
+   "updated": "2026-11-11 06:00:33.291777393 +0000 UTC"
+  },
   {
    "mmsi": 352005064,
    "name": "ANSAC RISING SUN",
-   "lat": 46.15434,
-   "lon": -123.25613,
-   "sog_kn": 13.3,
-   "cog": 233.7,
-   "heading": 233,
+   "lat": 46.14667,
+   "lon": -123.28286,
+   "sog_kn": 12.5,
+   "cog": 255.9,
+   "heading": 255,
    "nav_status": 0,
-   "updated": "2026-11-11 05:55:15.97724891 +0000 UTC",
-   "type_code": 70,
-   "destination": "JP KSM"
+   "updated": "2026-11-11 06:00:34.662268145 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19953,
+   "lon": -123.38498,
+   "sog_kn": 0,
+   "cog": 325,
+   "heading": 144,
+   "nav_status": 5,
+   "updated": "2026-11-11 06:00:41.18533096 +0000 UTC"
   },
   {
    "mmsi": 368410780,
    "name": "GAMBLER",
    "lat": 46.10355,
    "lon": -122.91008,
-   "type_code": 52,
-   "destination": "US^0T0P>035F",
-   "updated": "2026-11-11 05:54:59.578263304 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08021,
-   "lon": -122.90296,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-11 05:55:00.004768918 +0000 UTC"
-  },
-  {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.97615,
-   "lon": -122.8323,
-   "sog_kn": 10.4,
-   "cog": 334.5,
-   "heading": 333,
-   "nav_status": 0,
-   "updated": "2026-11-11 05:55:02.127827755 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15342,
-   "lon": -123.37715,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
+   "cog": 317.9,
+   "heading": 71,
    "nav_status": 0,
-   "updated": "2026-11-11 05:55:17.498912461 +0000 UTC"
+   "updated": "2026-11-11 06:00:42.167686711 +0000 UTC"
   }
  ]
 }
