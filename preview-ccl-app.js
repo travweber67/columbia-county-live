@@ -1609,13 +1609,13 @@ async function loadQuadWx() {
   renderDayPlan();
 }
 const QUAD_CORNERS = {
-  anchor: { name: 'Anchoring', cls: 'qc-br',
+  anchor: { name: 'Anchoring', cls: 'qc-br', icon: 'preview-icon-anchor.jpg',
     line: 'Anchor up and let the push work your gear.' },
-  troll: { name: 'Trolling', cls: 'qc-tr',
+  troll: { name: 'Trolling', cls: 'qc-tr', icon: 'preview-icon-troll.jpg',
     line: 'Too rough to sit still — keep moving and troll through it.' },
-  plunk: { name: 'Plunking', cls: 'qc-tl',
+  plunk: { name: 'Plunking', cls: 'qc-tl', icon: 'preview-icon-plunk.jpg',
     line: 'Bank weather — plunk it with enough lead to hold bottom.' },
-  steel: { name: 'Bank steelhead', cls: 'qc-bl',
+  steel: { name: 'Bank steelhead', cls: 'qc-bl', icon: 'preview-icon-steel.jpg',
     line: 'Soft water and a calm day — work the bank and the creeks.' }
 };
 function quadCall(x, rough) {
@@ -1663,7 +1663,9 @@ function renderDayPlan() {
   });
   const corners = Object.keys(QUAD_CORNERS).map(k =>
     '<span class="quad-corner ' + QUAD_CORNERS[k].cls
-    + (k === call ? ' on' : '') + '">' + QUAD_CORNERS[k].name + '</span>'
+    + (k === call ? ' on' : '') + '"><img class="quad-ico" src="'
+    + QUAD_CORNERS[k].icon + '" alt="" aria-hidden="true" loading="lazy">'
+    + '<span>' + QUAD_CORNERS[k].name + '</span></span>'
   ).join('');
   const quad = '<div class="quad" role="img" aria-label="Fishing call'
     + ' chart: the dot leans toward ' + QUAD_CORNERS[call].name

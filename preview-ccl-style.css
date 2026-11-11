@@ -2647,3 +2647,13 @@ html[data-theme="dark"] .getapp-other summary{color:#bfe3c8}
 .quad-photo .quad-why{background:rgba(9,15,12,.8);border-radius:10px;padding:10px 12px;color:#f5eedd}
 .quad-photo .quad-axis-x{color:rgba(247,234,210,.75)}
 .quad-credit{font-size:.7rem;color:rgba(247,234,210,.78);margin:8px 2px 2px;text-shadow:0 1px 6px rgba(0,0,0,.85)}
+
+/* ===== PREVIEW refinement 2: corner icons (matched pictogram set,
+   generated 2026-11-11: boat-on-anchor / bank holder + sinker +
+   spinner / boat under way trolling / angler casting from the bank;
+   bone on deep green with an orange accent, badged so they sit
+   cleanly on the photo panel) ===== */
+.quad-corner{display:flex;align-items:center;gap:7px}
+.quad-corner.qc-tr,.quad-corner.qc-br{flex-direction:row-reverse}
+.quad-ico{width:34px;height:34px;flex:none;border-radius:9px;border:1px solid rgba(247,234,210,.55);box-shadow:0 2px 8px rgba(0,0,0,.55);display:block}
+@media(max-width:560px){.quad-ico{width:27px;height:27px;border-radius:7px}.quad-corner{gap:5px}}
