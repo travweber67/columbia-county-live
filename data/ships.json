@@ -1,113 +1,58 @@
 {
- "fetched_at": "2026-11-11T15:35:51Z",
+ "fetched_at": "2026-11-11T15:40:50Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 367513150,
    "name": "COLUMBIA",
    "lat": 45.64343,
    "lon": -122.75283,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-11 15:41:12.41270529 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64536,
+   "lon": -122.73502,
    "sog_kn": 0,
-   "cog": 220.8,
-   "heading": 511,
+   "cog": 30.4,
+   "heading": 112,
    "nav_status": 5,
-   "updated": "2026-11-11 15:36:05.500308173 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.64741,
-   "lon": -122.73946,
-   "sog_kn": 0,
-   "cog": 286.4,
-   "heading": 286,
-   "nav_status": 5,
-   "updated": "2026-11-11 15:36:11.324942791 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00901,
-   "lon": -122.84827,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-11 15:36:11.387961771 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.9101,
-   "sog_kn": 0,
-   "cog": 83,
-   "heading": 72,
-   "nav_status": 0,
-   "updated": "2026-11-11 15:36:11.835141588 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.63528,
-   "lon": -122.70524,
-   "sog_kn": 1.1,
-   "cog": 121,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-11 15:36:18.741587244 +0000 UTC"
-  },
-  {
-   "mmsi": 538006268,
-   "name": "STAR CARIOCA",
-   "lat": 45.63916,
-   "lon": -122.77777,
-   "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-11 15:36:20.167117011 +0000 UTC"
+   "updated": "2026-11-11 15:41:15.302127106 +0000 UTC"
   },
   {
    "mmsi": 368440320,
    "name": "HEATHER S",
-   "lat": 45.63441,
-   "lon": -122.70359,
-   "sog_kn": 1,
-   "cog": 116.5,
+   "lat": 45.63414,
+   "lon": -122.70263,
+   "type_code": 52,
+   "destination": "US^0UU4>02MR",
+   "updated": "2026-11-11 15:41:17.766862234 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.98265,
+   "lon": -122.83465,
+   "sog_kn": 0.1,
+   "cog": 253.1,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-11 15:36:21.986416247 +0000 UTC"
+   "updated": "2026-11-11 15:41:17.761890672 +0000 UTC"
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.38553,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-11 15:36:22.152960664 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58754,
-   "lon": -122.77042,
-   "sog_kn": 0,
-   "cog": 94.9,
-   "heading": 140,
+   "mmsi": 212656000,
+   "name": "PANAGIA THALASSINI",
+   "lat": 45.63502,
+   "lon": -122.70383,
+   "sog_kn": 0.2,
+   "cog": 98.4,
+   "heading": 127,
    "nav_status": 0,
-   "updated": "2026-11-11 15:36:23.544449457 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.23948,
-   "lon": -123.43061,
-   "sog_kn": 2.4,
-   "cog": 341.8,
-   "heading": 168,
-   "nav_status": 3,
-   "updated": "2026-11-11 15:36:24.132851027 +0000 UTC"
+   "updated": "2026-11-11 15:41:26.219371264 +0000 UTC"
   }
  ]
 }
