@@ -1,40 +1,91 @@
 {
- "fetched_at": "2026-11-11T00:14:43Z",
+ "fetched_at": "2026-11-11T00:19:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 45.91843,
-   "lon": -122.80818,
+   "lat": 45.93242,
+   "lon": -122.80498,
    "sog_kn": 10.2,
-   "cog": 10.9,
-   "heading": 11,
+   "cog": 4.1,
+   "heading": 4,
    "nav_status": 0,
-   "updated": "2026-11-11 00:14:55.534340954 +0000 UTC"
+   "updated": "2026-11-11 00:19:55.561146369 +0000 UTC"
   },
   {
-   "mmsi": 338205428,
-   "name": "CLAIRE B",
-   "lat": 45.79282,
-   "lon": -122.84364,
-   "sog_kn": 0.8,
-   "cog": 41.7,
-   "heading": 202,
-   "nav_status": 0,
-   "updated": "2026-11-11 00:14:56.890633988 +0000 UTC"
-  },
-  {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61223,
-   "lon": -122.64525,
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58729,
+   "lon": -122.77007,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "cog": 13.8,
+   "heading": 139,
    "nav_status": 5,
-   "updated": "2026-11-11 00:14:57.320641244 +0000 UTC"
+   "updated": "2026-11-11 00:19:56.840445723 +0000 UTC"
+  },
+  {
+   "mmsi": 538006268,
+   "name": "STAR CARIOCA",
+   "lat": 45.63915,
+   "lon": -122.77774,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-11 00:20:00.67577997 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 35.1,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-11 00:20:05.864124958 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58132,
+   "lon": -122.76067,
+   "type_code": 57,
+   "destination": "PASCO",
+   "updated": "2026-11-11 00:20:06.975237988 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08055,
+   "lon": -122.90282,
+   "sog_kn": 0.1,
+   "cog": 71.8,
+   "heading": 338,
+   "nav_status": 3,
+   "updated": "2026-11-11 00:20:08.107050263 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09653,
+   "lon": -122.92966,
+   "sog_kn": 0,
+   "cog": 75.7,
+   "heading": 63,
+   "nav_status": 3,
+   "updated": "2026-11-11 00:20:13.822505707 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08983,
+   "lon": -122.92901,
+   "sog_kn": 0,
+   "cog": 23,
+   "heading": 105,
+   "nav_status": 5,
+   "updated": "2026-11-11 00:20:17.493120641 +0000 UTC"
   },
   {
    "mmsi": 369493484,
@@ -42,49 +93,30 @@
    "lat": 45.86351,
    "lon": -122.79531,
    "sog_kn": 0,
-   "cog": 186.1,
+   "cog": 140.8,
    "heading": 163,
    "nav_status": 0,
-   "updated": "2026-11-11 00:15:00.731044285 +0000 UTC"
+   "updated": "2026-11-11 00:20:19.963261736 +0000 UTC"
   },
   {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58755,
-   "lon": -122.7704,
-   "sog_kn": 0,
-   "cog": 345.1,
-   "heading": 141,
-   "nav_status": 0,
-   "updated": "2026-11-11 00:15:12.891927096 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65015,
-   "lon": -122.74767,
-   "type_code": 33,
-   "updated": "2026-11-11 00:15:14.011259155 +0000 UTC"
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10892,
+   "lon": -122.96129,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-11 00:20:23.172009602 +0000 UTC"
   },
   {
    "mmsi": 367727410,
    "name": "AMY B",
-   "lat": 45.64157,
-   "lon": -122.77702,
-   "type_code": 57,
-   "destination": "US^0UWG>?? ???",
-   "updated": "2026-11-11 00:15:17.713008646 +0000 UTC"
-  },
-  {
-   "mmsi": 367047240,
-   "name": "DEFIANCE",
-   "lat": 45.64461,
-   "lon": -122.73774,
-   "sog_kn": 8.4,
-   "cog": 289.3,
-   "heading": 289,
-   "nav_status": 5,
-   "updated": "2026-11-11 00:15:20.102079216 +0000 UTC"
+   "lat": 45.64976,
+   "lon": -122.7681,
+   "sog_kn": 7.3,
+   "cog": 26.5,
+   "heading": 22,
+   "nav_status": 12,
+   "updated": "2026-11-11 00:20:25.529509785 +0000 UTC"
   }
  ]
 }
