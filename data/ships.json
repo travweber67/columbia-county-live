@@ -1,45 +1,58 @@
 {
- "fetched_at": "2026-11-11T12:40:36Z",
+ "fetched_at": "2026-11-11T12:45:36Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367516730,
-   "name": "CRISTY T",
-   "lat": 45.61211,
-   "lon": -122.64532,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37714,
+   "type_code": 99,
+   "updated": "2026-11-11 12:45:46.053457603 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
+   "type_code": 30,
+   "updated": "2026-11-11 12:46:05.176891999 +0000 UTC",
    "sog_kn": 0,
-   "cog": 319.6,
-   "heading": 299,
-   "nav_status": 5,
-   "updated": "2026-11-11 12:40:57.500644915 +0000 UTC"
+   "cog": 241.7,
+   "heading": 134,
+   "nav_status": 15
   },
   {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64353,
-   "lon": -122.7529,
-   "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-11 12:40:58.810210719 +0000 UTC"
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 46.16403,
+   "lon": -123.40342,
+   "type_code": 57,
+   "destination": "VANCOUER,WA",
+   "updated": "2026-11-11 12:45:54.549442653 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08049,
-   "lon": -122.90273,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-11 12:40:59.550727393 +0000 UTC"
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 46.17243,
+   "lon": -123.10643,
+   "sog_kn": 0.1,
+   "cog": 291.4,
+   "heading": 67,
+   "nav_status": 1,
+   "updated": "2026-11-11 12:46:00.573625605 +0000 UTC"
   },
   {
    "mmsi": 366972000,
    "name": "ESSAYONS",
-   "lat": 46.24625,
-   "lon": -123.43902,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-11 12:41:00.978279546 +0000 UTC"
+   "lat": 46.2438,
+   "lon": -123.43603,
+   "sog_kn": 1.5,
+   "cog": 134.5,
+   "heading": 134,
+   "nav_status": 3,
+   "updated": "2026-11-11 12:46:11.6150973 +0000 UTC"
   }
  ]
 }
