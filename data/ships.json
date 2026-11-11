@@ -1,54 +1,47 @@
 {
- "fetched_at": "2026-11-11T03:19:55Z",
+ "fetched_at": "2026-11-11T03:24:03Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64535,
-   "lon": -122.73505,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.07445,
+   "lon": -122.89811,
    "sog_kn": 0,
-   "cog": 30.4,
-   "heading": 112,
+   "cog": 158.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-11 03:25:14.731665725 +0000 UTC"
+  },
+  {
+   "mmsi": 636093248,
+   "name": "TALITHA",
+   "lat": 45.98391,
+   "lon": -122.8353,
+   "sog_kn": 0,
+   "cog": 163.2,
+   "heading": 151,
    "nav_status": 5,
-   "updated": "2026-11-11 03:20:14.313031182 +0000 UTC"
+   "updated": "2026-11-11 03:25:27.197693786 +0000 UTC"
   },
   {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08987,
-   "lon": -122.92901,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09658,
+   "lon": -122.92956,
    "type_code": 52,
-   "destination": "CSR OPS",
-   "updated": "2026-11-11 03:20:20.102678272 +0000 UTC"
+   "destination": "LONGVIEW",
+   "updated": "2026-11-11 03:25:31.976241194 +0000 UTC"
   },
   {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10892,
-   "lon": -122.96128,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-11 03:20:23.183541414 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19999,
-   "lon": -123.38537,
-   "type_code": 99,
-   "destination": "NAKNEK",
-   "updated": "2026-11-11 03:20:33.171041881 +0000 UTC"
-  },
-  {
-   "mmsi": 352006999,
-   "name": "WABI SABI",
-   "lat": 46.17697,
-   "lon": -123.11205,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-11 03:20:39.217156166 +0000 UTC"
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.76826,
+   "lon": -122.76474,
+   "type_code": 52,
+   "destination": "US^0UUT>0UW8",
+   "updated": "2026-11-11 03:25:33.362449992 +0000 UTC"
   }
  ]
 }
