@@ -1,47 +1,78 @@
 {
- "fetched_at": "2026-11-11T10:20:26Z",
+ "fetched_at": "2026-11-11T10:24:08Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 352006999,
-   "name": "WABI SABI",
-   "lat": 46.17649,
-   "lon": -123.11225,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-11 10:20:39.187323403 +0000 UTC"
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.63392,
+   "lon": -122.71489,
+   "sog_kn": 0,
+   "cog": 114.3,
+   "heading": 114,
+   "nav_status": 12,
+   "updated": "2026-11-11 10:24:40.210154194 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.61291,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.0967,
+   "lon": -122.92929,
    "sog_kn": 0,
-   "cog": 152.1,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-11 10:20:39.363883066 +0000 UTC"
+   "cog": 70.9,
+   "heading": 65,
+   "nav_status": 3,
+   "updated": "2026-11-11 10:24:43.924200907 +0000 UTC"
   },
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60766,
-   "lon": -122.67756,
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.85054,
+   "lon": -122.78648,
+   "type_code": 52,
+   "destination": "",
+   "updated": "2026-11-11 10:24:45.32932348 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58132,
+   "lon": -122.76067,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 30.5,
+   "heading": 123,
+   "nav_status": 12,
+   "updated": "2026-11-11 10:24:47.164910148 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19996,
+   "lon": -123.38549,
+   "sog_kn": 0,
+   "cog": 1,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-11 10:20:59.734995072 +0000 UTC",
-   "type_code": 50
+   "nav_status": 15,
+   "updated": "2026-11-11 10:25:11.197938254 +0000 UTC"
   },
   {
-   "mmsi": 367516730,
-   "name": "CRISTY T",
-   "lat": 45.61211,
-   "lon": -122.64532,
-   "type_code": 0,
-   "updated": "2026-11-11 10:20:58.563033292 +0000 UTC"
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 45.64304,
+   "lon": -122.77139,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-11 10:25:14.990431154 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59402,
+   "lon": -122.77213,
+   "type_code": 70,
+   "destination": "NOT AVAILABLE",
+   "updated": "2026-11-11 10:25:16.663907486 +0000 UTC"
   }
  ]
 }
