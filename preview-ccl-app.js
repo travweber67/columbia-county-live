@@ -8739,3 +8739,28 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
     fwd('pointerdown', e.clientX, e.clientY, e.pointerType);
   }, { passive: true });
 })();
+
+/* PREVIEW ADDITION — revive the ad viewer when its card first becomes
+   visible: the spline-viewer initializes at the 300x150 default when
+   it loads inside the hidden Events & More view and never resizes.
+   When the card first scrolls into view, re-create the viewer element
+   so it initializes at its real size. */
+(function () {
+  var card = document.querySelector('.cascade-card');
+  var v = document.querySelector('.cascade-viewer');
+  if (!card || !v || !('IntersectionObserver' in window)) return;
+  var done = false;
+  var io = new IntersectionObserver(function (entries) {
+    if (done) return;
+    for (var i = 0; i < entries.length; i++) {
+      if (!entries[i].isIntersecting) continue;
+      done = true; io.disconnect();
+      var c = null;
+      try { c = v.shadowRoot && v.shadowRoot.querySelector('canvas'); } catch (e) {}
+      if (c && c.width > 300) return; /* already live at real size */
+      var nv = v.cloneNode(false);
+      v.replaceWith(nv);
+    }
+  }, { threshold: 0.15 });
+  io.observe(card);
+})();
