@@ -1,47 +1,75 @@
 {
- "fetched_at": "2026-11-11T03:24:03Z",
+ "fetched_at": "2026-11-11T03:29:55Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.07445,
-   "lon": -122.89811,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.38552,
    "sog_kn": 0,
-   "cog": 158.1,
+   "cog": 350.8,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-11 03:25:14.731665725 +0000 UTC"
+   "nav_status": 15,
+   "updated": "2026-11-11 03:30:01.40140534 +0000 UTC"
   },
   {
-   "mmsi": 636093248,
-   "name": "TALITHA",
-   "lat": 45.98391,
-   "lon": -122.8353,
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64788,
+   "lon": -122.74103,
    "sog_kn": 0,
-   "cog": 163.2,
-   "heading": 151,
+   "cog": 111.9,
+   "heading": 111,
    "nav_status": 5,
-   "updated": "2026-11-11 03:25:27.197693786 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.09658,
-   "lon": -122.92956,
-   "type_code": 52,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-11 03:25:31.976241194 +0000 UTC"
+   "updated": "2026-11-11 03:30:07.899715865 +0000 UTC"
   },
   {
    "mmsi": 368121540,
    "name": "RANDY S",
-   "lat": 45.76826,
-   "lon": -122.76474,
+   "lat": 45.78273,
+   "lon": -122.7733,
    "type_code": 52,
    "destination": "US^0UUT>0UW8",
-   "updated": "2026-11-11 03:25:33.362449992 +0000 UTC"
+   "updated": "2026-11-11 03:30:15.981176577 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.0963,
+   "lon": -122.92949,
+   "type_code": 0,
+   "updated": "2026-11-11 03:30:16.64001441 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16397,
+   "lon": -123.08123,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-11 03:30:18.412983535 +0000 UTC"
+  },
+  {
+   "mmsi": 352005064,
+   "name": "ANSAC RISING SUN",
+   "lat": 45.94308,
+   "lon": -122.80533,
+   "type_code": 70,
+   "destination": "JP KSM",
+   "updated": "2026-11-11 03:30:19.585381652 +0000 UTC"
+  },
+  {
+   "mmsi": 352006999,
+   "name": "WABI SABI",
+   "lat": 46.17701,
+   "lon": -123.11192,
+   "sog_kn": 0.1,
+   "cog": 357.7,
+   "heading": 119,
+   "nav_status": 1,
+   "updated": "2026-11-11 03:30:28.217471357 +0000 UTC"
   }
  ]
 }
