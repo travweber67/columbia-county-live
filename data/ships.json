@@ -1,25 +1,81 @@
 {
- "fetched_at": "2026-11-11T13:45:40Z",
+ "fetched_at": "2026-11-11T13:50:40Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 46.17333,
-   "lon": -123.10656,
-   "type_code": 70,
-   "destination": "USVAN",
-   "updated": "2026-11-11 13:45:49.570060943 +0000 UTC"
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00908,
+   "lon": -122.8483,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-11 13:50:50.276067105 +0000 UTC"
   },
   {
-   "mmsi": 367323610,
-   "name": "MIKETTE",
-   "lat": 46.19966,
-   "lon": -123.38524,
-   "type_code": 30,
-   "destination": "",
-   "updated": "2026-11-11 13:45:52.538642125 +0000 UTC"
+   "mmsi": 636021177,
+   "name": "FORTUNE COOKIE",
+   "lat": 46.14598,
+   "lon": -123.2852,
+   "sog_kn": 11.4,
+   "cog": 75.7,
+   "heading": 75,
+   "nav_status": 0,
+   "updated": "2026-11-11 13:50:53.880174226 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08026,
+   "lon": -122.903,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-11 13:50:56.506895847 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.62875,
+   "lon": -122.69211,
+   "sog_kn": 1,
+   "cog": 323.6,
+   "heading": 311,
+   "nav_status": 0,
+   "updated": "2026-11-11 13:51:01.776411555 +0000 UTC",
+   "type_code": 52,
+   "destination": "US^0UUT>0UW8"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60764,
+   "lon": -122.67758,
+   "type_code": 50,
+   "updated": "2026-11-11 13:51:09.344828182 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.91008,
+   "sog_kn": 0,
+   "cog": 83.2,
+   "heading": 72,
+   "nav_status": 0,
+   "updated": "2026-11-11 13:51:00.425646066 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 46.16403,
+   "lon": -123.40341,
+   "sog_kn": 0,
+   "cog": 30,
+   "heading": 316,
+   "nav_status": 12,
+   "updated": "2026-11-11 13:51:09.981376968 +0000 UTC"
   }
  ]
 }
