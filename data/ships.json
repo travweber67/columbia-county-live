@@ -1,89 +1,62 @@
 {
- "fetched_at": "2026-11-12T10:32:15Z",
+ "fetched_at": "2026-11-12T10:37:16Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08048,
-   "lon": -122.90288,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19997,
+   "lon": -123.38542,
    "sog_kn": 0,
-   "cog": 260.3,
-   "heading": 134,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-12 10:37:26.258883642 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08052,
+   "lon": -122.90331,
+   "sog_kn": 0.1,
+   "cog": 320.6,
+   "heading": 315,
    "nav_status": 0,
-   "updated": "2026-11-12 10:32:23.650722844 +0000 UTC"
+   "updated": "2026-11-12 10:37:35.950209474 +0000 UTC",
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER"
   },
   {
    "mmsi": 367310520,
    "name": "JAMES T",
-   "lat": 46.19114,
-   "lon": -123.16258,
-   "sog_kn": 1.1,
-   "cog": 96.1,
-   "heading": 90,
-   "nav_status": 3,
-   "updated": "2026-11-12 10:32:24.705514451 +0000 UTC"
-  },
-  {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.64348,
-   "lon": -122.75286,
+   "lat": 46.1903,
+   "lon": -123.15801,
    "type_code": 52,
-   "destination": "US^0UUT>0UW8",
-   "updated": "2026-11-12 10:32:25.972515852 +0000 UTC"
+   "destination": "LONGVIEW",
+   "updated": "2026-11-12 10:37:34.52405481 +0000 UTC",
+   "sog_kn": 7.5,
+   "cog": 103.2,
+   "heading": 100,
+   "nav_status": 3
   },
   {
-   "mmsi": 367425870,
-   "name": "HUSKY",
-   "lat": 45.65032,
-   "lon": -122.74755,
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08026,
+   "lon": -122.90302,
    "type_code": 52,
-   "destination": "XX XXX>US^02A3",
-   "updated": "2026-11-12 10:32:35.186597004 +0000 UTC"
+   "destination": "PORTLAND",
+   "updated": "2026-11-12 10:37:42.643393148 +0000 UTC"
   },
   {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.79315,
-   "lon": -122.84323,
-   "type_code": 57,
-   "destination": "US^0UWG>?? ???",
-   "updated": "2026-11-12 10:32:35.786584293 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.08065,
-   "lon": -122.90329,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 317,
-   "nav_status": 3,
-   "updated": "2026-11-12 10:32:37.881789582 +0000 UTC"
-  },
-  {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 46.02715,
-   "lon": -122.86952,
-   "sog_kn": 0,
-   "cog": 319.8,
-   "heading": 138,
-   "nav_status": 5,
-   "updated": "2026-11-12 10:32:45.937954846 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15341,
-   "lon": -123.37712,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-12 10:32:47.305614212 +0000 UTC"
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00883,
+   "lon": -122.84822,
+   "type_code": 31,
+   "destination": "HARBOROPPS-",
+   "updated": "2026-11-12 10:37:48.131431245 +0000 UTC"
   }
  ]
 }
