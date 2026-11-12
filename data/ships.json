@@ -1,50 +1,69 @@
 {
- "fetched_at": "2026-11-12T04:01:48Z",
+ "fetched_at": "2026-11-12T04:06:46Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 440576000,
-   "name": "PAN FLOWER",
-   "lat": 45.64275,
-   "lon": -122.77188,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19995,
+   "lon": -123.38543,
    "sog_kn": 0,
-   "cog": 352.9,
-   "heading": 228,
-   "nav_status": 5,
-   "updated": "2026-11-12 04:02:35.380823158 +0000 UTC"
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-12 04:07:14.42583051 +0000 UTC"
   },
   {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.90897,
-   "lon": -122.81434,
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.23503,
+   "lon": -123.42979,
+   "sog_kn": 2,
+   "cog": 175.1,
+   "heading": 166,
+   "nav_status": 3,
+   "updated": "2026-11-12 04:07:17.83200399 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.3855,
    "sog_kn": 0,
-   "cog": 290,
-   "heading": 340,
-   "nav_status": 0,
-   "updated": "2026-11-12 04:02:51.96356072 +0000 UTC",
+   "cog": 12.9,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-12 04:07:32.132754846 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.14715,
+   "lon": -123.04325,
+   "sog_kn": 0.8,
+   "cog": 162.5,
+   "heading": 146,
+   "nav_status": 3,
+   "updated": "2026-11-12 04:07:34.285598694 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.5941,
+   "lon": -122.77217,
+   "type_code": 70,
+   "destination": "NOT AVAILABLE",
+   "updated": "2026-11-12 04:07:40.561991956 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08026,
+   "lon": -122.903,
    "type_code": 52,
-   "destination": "US^0UYR>0ZBA"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17721,
-   "lon": -123.35743,
-   "type_code": 30,
-   "updated": "2026-11-12 04:02:54.797159905 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08985,
-   "lon": -122.92894,
-   "sog_kn": 0,
-   "cog": 82.5,
-   "heading": 101,
-   "nav_status": 0,
-   "updated": "2026-11-12 04:02:58.027268465 +0000 UTC"
+   "destination": "PORTLAND",
+   "updated": "2026-11-12 04:07:43.547303582 +0000 UTC"
   }
  ]
 }
