@@ -1,82 +1,104 @@
 {
- "fetched_at": "2026-11-12T20:13:02Z",
+ "fetched_at": "2026-11-12T20:18:01Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 563331600,
-   "name": "BELLE LUNE",
-   "lat": 46.14218,
-   "lon": -123.31324,
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.6475,
+   "lon": -122.75024,
+   "sog_kn": 8.1,
+   "cog": 302,
+   "heading": 304,
+   "nav_status": 5,
+   "updated": "2026-11-12 20:18:30.918026134 +0000 UTC",
+   "type_code": 31,
+   "destination": "PORTLAND"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64787,
+   "lon": -122.74096,
+   "sog_kn": 0,
+   "cog": 112.1,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-12 20:18:15.902420533 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.6387,
+   "lon": -122.71176,
+   "sog_kn": 0,
+   "cog": 312.6,
+   "heading": 122,
+   "nav_status": 12,
+   "updated": "2026-11-12 20:18:17.436946711 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.08034,
+   "lon": -122.90321,
+   "sog_kn": 0.1,
+   "cog": 176.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 20:18:23.155560338 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.64528,
+   "lon": -122.74315,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-12 20:18:24.889052137 +0000 UTC"
+  },
+  {
+   "mmsi": 636026991,
+   "name": "ALTHEA",
+   "lat": 45.64367,
+   "lon": -122.74078,
    "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-12 20:13:09.361409583 +0000 UTC"
+   "destination": "KRPUS",
+   "updated": "2026-11-12 20:18:26.253943938 +0000 UTC"
   },
   {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.64415,
-   "lon": -122.73756,
-   "sog_kn": 5.9,
-   "cog": 116.5,
-   "heading": 115,
-   "nav_status": 0,
-   "updated": "2026-11-12 20:13:12.774444696 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10786,
-   "lon": -122.96778,
-   "sog_kn": 6.6,
-   "cog": 126.9,
-   "heading": 127,
-   "nav_status": 3,
-   "updated": "2026-11-12 20:13:14.078374427 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.61292,
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64382,
+   "lon": -122.72579,
    "sog_kn": 0,
-   "cog": 202,
-   "heading": 136,
-   "nav_status": 15,
-   "updated": "2026-11-12 20:13:18.173836559 +0000 UTC"
+   "cog": 59.3,
+   "heading": 117,
+   "nav_status": 12,
+   "updated": "2026-11-12 20:18:29.369420877 +0000 UTC"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.16149,
-   "lon": -123.40803,
+   "mmsi": 368327640,
+   "name": "CAPT. STEVE",
+   "lat": 45.99078,
+   "lon": -122.84152,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 131,
-   "nav_status": 0,
-   "updated": "2026-11-12 20:13:32.677162344 +0000 UTC"
+   "cog": 39,
+   "heading": 153,
+   "nav_status": 12,
+   "updated": "2026-11-12 20:18:33.138657705 +0000 UTC"
   },
   {
    "mmsi": 636015993,
    "name": "SIEM NEWTON",
-   "lat": 45.63303,
+   "lat": 45.63302,
    "lon": -122.73783,
    "sog_kn": 0,
    "cog": 19,
    "heading": 136,
    "nav_status": 0,
-   "updated": "2026-11-12 20:13:37.116143952 +0000 UTC"
-  },
-  {
-   "mmsi": 368257130,
-   "name": "TRIUMPH VII",
-   "lat": 46.1493,
-   "lon": -123.0405,
-   "sog_kn": 24,
-   "cog": 336.4,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-12 20:13:38.796715341 +0000 UTC"
+   "updated": "2026-11-12 20:18:37.402613453 +0000 UTC"
   }
  ]
 }
