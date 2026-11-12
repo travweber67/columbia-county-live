@@ -1,62 +1,126 @@
 {
- "fetched_at": "2026-11-12T10:37:16Z",
+ "fetched_at": "2026-11-12T10:42:16Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19997,
-   "lon": -123.38542,
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.58753,
+   "lon": -122.77063,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-12 10:37:26.258883642 +0000 UTC"
+   "cog": 151.4,
+   "heading": 140,
+   "nav_status": 5,
+   "updated": "2026-11-12 10:42:26.222047555 +0000 UTC",
+   "type_code": 31,
+   "destination": "PORTLAND"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08052,
-   "lon": -122.90331,
-   "sog_kn": 0.1,
-   "cog": 320.6,
-   "heading": 315,
-   "nav_status": 0,
-   "updated": "2026-11-12 10:37:35.950209474 +0000 UTC",
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.1903,
-   "lon": -123.15801,
-   "type_code": 52,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-12 10:37:34.52405481 +0000 UTC",
-   "sog_kn": 7.5,
-   "cog": 103.2,
-   "heading": 100,
-   "nav_status": 3
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08026,
-   "lon": -122.90302,
-   "type_code": 52,
-   "destination": "PORTLAND",
-   "updated": "2026-11-12 10:37:42.643393148 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16639,
+   "lon": -123.08614,
+   "sog_kn": 1.2,
+   "cog": 132.4,
+   "heading": 126,
+   "nav_status": 3,
+   "updated": "2026-11-12 10:42:25.671108099 +0000 UTC"
   },
   {
    "mmsi": 368083770,
    "name": "SUPPORT",
-   "lat": 46.00883,
-   "lon": -122.84822,
-   "type_code": 31,
-   "destination": "HARBOROPPS-",
-   "updated": "2026-11-12 10:37:48.131431245 +0000 UTC"
+   "lat": 46.009,
+   "lon": -122.84826,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 10:42:26.124447718 +0000 UTC"
+  },
+  {
+   "mmsi": 636026991,
+   "name": "ALTHEA",
+   "lat": 45.63008,
+   "lon": -122.6953,
+   "sog_kn": 0,
+   "cog": 297.1,
+   "heading": 127,
+   "nav_status": 5,
+   "updated": "2026-11-12 10:42:27.744744308 +0000 UTC"
+  },
+  {
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10891,
+   "lon": -122.96128,
+   "sog_kn": 0.1,
+   "cog": 278.9,
+   "heading": 130,
+   "nav_status": 5,
+   "updated": "2026-11-12 10:42:31.923463811 +0000 UTC"
+  },
+  {
+   "mmsi": 212656000,
+   "name": "PANAGIA THALASSINI",
+   "lat": 45.63495,
+   "lon": -122.70372,
+   "type_code": 82,
+   "destination": "USVAN",
+   "updated": "2026-11-12 10:42:33.987179316 +0000 UTC"
+  },
+  {
+   "mmsi": 352006999,
+   "name": "WABI SABI",
+   "lat": 46.17668,
+   "lon": -123.11214,
+   "sog_kn": 0,
+   "cog": 73.8,
+   "heading": 112,
+   "nav_status": 1,
+   "updated": "2026-11-12 10:42:34.466329953 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08053,
+   "lon": -122.90331,
+   "sog_kn": 0,
+   "cog": 219.8,
+   "heading": 315,
+   "nav_status": 0,
+   "updated": "2026-11-12 10:42:37.668160086 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.601,
+   "lon": -122.77441,
+   "sog_kn": 0.1,
+   "cog": 273.1,
+   "heading": 277,
+   "nav_status": 5,
+   "updated": "2026-11-12 10:42:40.002214152 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08048,
+   "lon": -122.90289,
+   "sog_kn": 0,
+   "cog": 151.5,
+   "heading": 133,
+   "nav_status": 0,
+   "updated": "2026-11-12 10:42:43.917281898 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19947,
+   "lon": -123.38506,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-12 10:42:50.252435348 +0000 UTC"
   }
  ]
 }
