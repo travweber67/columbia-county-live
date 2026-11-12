@@ -1,47 +1,62 @@
 {
- "fetched_at": "2026-11-12T06:16:54Z",
+ "fetched_at": "2026-11-12T06:18:45Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 45.64346,
-   "lon": -122.7528,
-   "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-12 06:17:12.881072941 +0000 UTC"
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40233,
+   "sog_kn": 0.4,
+   "cog": 131.5,
+   "heading": 126,
+   "nav_status": 0,
+   "updated": "2026-11-12 06:19:54.343756418 +0000 UTC"
   },
   {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64351,
-   "lon": -122.75243,
-   "type_code": 52,
-   "destination": "US^0UU4>02MR",
-   "updated": "2026-11-12 06:17:15.371040623 +0000 UTC"
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64709,
+   "lon": -122.73962,
+   "sog_kn": 0.1,
+   "cog": 26,
+   "heading": 296,
+   "nav_status": 12,
+   "updated": "2026-11-12 06:20:00.816066402 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.09618,
-   "lon": -122.93063,
-   "sog_kn": 0,
-   "cog": 75.2,
-   "heading": 73,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.15935,
+   "lon": -123.06877,
+   "sog_kn": 13.3,
+   "cog": 295.8,
+   "heading": 295,
    "nav_status": 3,
-   "updated": "2026-11-12 06:17:24.384449118 +0000 UTC"
+   "updated": "2026-11-12 06:20:05.357160918 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35742,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
    "sog_kn": 0,
-   "cog": 278.4,
-   "heading": 135,
+   "cog": 68.7,
+   "heading": 134,
    "nav_status": 15,
-   "updated": "2026-11-12 06:17:29.854327104 +0000 UTC"
+   "updated": "2026-11-12 06:20:09.10843767 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65014,
+   "lon": -122.74759,
+   "sog_kn": 0,
+   "cog": 315.5,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-12 06:20:19.969935489 +0000 UTC"
   }
  ]
 }
