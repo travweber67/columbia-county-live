@@ -1,80 +1,58 @@
 {
- "fetched_at": "2026-11-12T18:37:55Z",
+ "fetched_at": "2026-11-12T18:42:55Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58726,
-   "lon": -122.77005,
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 45.64293,
+   "lon": -122.77151,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-12 18:43:15.165626129 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64384,
+   "lon": -122.72579,
    "sog_kn": 0,
-   "cog": 335.3,
-   "heading": 138,
-   "nav_status": 5,
-   "updated": "2026-11-12 18:38:06.305955315 +0000 UTC"
+   "cog": 202.2,
+   "heading": 116,
+   "nav_status": 12,
+   "updated": "2026-11-12 18:43:18.364264843 +0000 UTC"
   },
   {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.63871,
-   "lon": -122.71178,
-   "type_code": 57,
-   "destination": "PASCO",
-   "updated": "2026-11-12 18:38:08.892813514 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.72279,
-   "lon": -122.76422,
-   "sog_kn": 5.7,
-   "cog": 194,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65016,
+   "lon": -122.74764,
+   "sog_kn": 0,
+   "cog": 309.9,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-12 18:38:16.372210107 +0000 UTC"
-  },
-  {
-   "mmsi": 367667060,
-   "name": "GRANITE POINT",
-   "lat": 45.64729,
-   "lon": -122.73993,
-   "type_code": 52,
-   "destination": "SRT PASCO",
-   "updated": "2026-11-12 18:38:18.845728366 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58079,
-   "lon": -122.76004,
-   "sog_kn": 0,
-   "cog": 345.4,
-   "heading": 123,
-   "nav_status": 5,
-   "updated": "2026-11-12 18:38:19.490856094 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17717,
-   "lon": -123.35743,
-   "sog_kn": 0,
-   "cog": 237.8,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-12 18:38:26.783382366 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.08057,
-   "lon": -122.9034,
-   "sog_kn": 0.2,
-   "cog": 210.3,
-   "heading": 298,
    "nav_status": 3,
-   "updated": "2026-11-12 18:38:28.103087025 +0000 UTC"
+   "updated": "2026-11-12 18:43:19.511557672 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.6516,
+   "lon": -122.7506,
+   "sog_kn": 0.5,
+   "cog": 345.3,
+   "heading": 120,
+   "nav_status": 15,
+   "updated": "2026-11-12 18:43:21.527462551 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64537,
+   "lon": -122.73504,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-12 18:43:21.606338819 +0000 UTC"
   }
  ]
 }
