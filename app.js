@@ -3348,9 +3348,10 @@ function renderHome() {
   const body = $('home-body');
   if (!body) return;
   if (homeTown) {
-    body.innerHTML = '<p class="home-status">🏠 Your town: <strong>' + esc(homeTown.name) + '</strong> — the forecast opens on '
-      + esc(homeTown.name) + ', the map starts there, and the at-a-glance strip prefers its next event. '
+    body.innerHTML = '<p class="home-status">🏠 Your town: <strong>' + esc(homeTown.name) + '</strong> — the county, from home. '
       + '<span id="home-cal-note"></span></p>'
+      + '<p class="town-line" id="town-forecast">🌤️ Reading today\'s forecast for ' + esc(homeTown.name) + '…</p>'
+      + '<p class="town-line" id="town-river">🌊 Reading the river gauges…</p>'
       + '<div class="home-actions">'
       + '<button class="share-btn" id="home-change-btn" type="button">Change town</button>'
       + '<button class="share-btn" id="home-clear-btn" type="button">Show the whole county</button></div>';
@@ -3363,6 +3364,8 @@ function renderHome() {
       loadShips(); // ETAs fall back to the St. Helens river point
     });
     homeRefreshCalNote();
+    townFillForecast(homeTown);
+    townFillRiver();
   } else if (homeVisitor) {
     body.innerHTML = '<p class="home-status">🌎 Showing the whole county, no home town set. '
       + '<button class="home-linkbtn" id="home-pick-btn" type="button">Pick a home town instead</button></p>';
@@ -4373,7 +4376,7 @@ initPasses();
    missing by two minutes costs a full hour, and exactly when the ferry
    matters most: when the commute verdict is sending US-30 drivers here
    as the bridge detour. Pick a direction and where you're leaving from
-   (your home town from "Make it yours" if you've set one) and the
+   (your home town from "Your town" if you've set one) and the
    planner answers in one line — leave by X, the Y boat, across by about
    Z — with the miss-it boat after it, an honest tight/no-more-boats
    state, and full deference to a posted closure alert, the countdown's
@@ -5142,7 +5145,7 @@ const FINDER_SECTIONS = [
   { id: 'briefing-card', title: 'The County Briefing',       sub: 'Today in one copyable note — or hear it read aloud', keys: 'briefing summary copy share text listen hear read aloud voice' },
   { id: 'watch-card',    title: 'The County Watch',          sub: 'Get told when a warning posts or the bridge closes', keys: 'notify notification notifications alarm alert me tell me watch monitor' },
   { id: 'since-card',    title: 'Since you were away',       sub: 'What changed since your last visit', keys: 'changed new since missed away difference' },
-  { id: 'home-card',     title: 'Make it yours',             sub: 'Pick your home town and the page tunes itself', keys: 'my town home town personalize personalise settings set town' },
+  { id: 'home-card',     title: 'Your town',                   sub: 'Your town at a glance — forecast, river, and its next events', keys: 'my town home town personalize personalise settings set town' },
   { id: 'freshness-card', title: 'How fresh is this page?',  sub: 'Every source, its age, in the open', keys: 'fresh freshness stale updated sources trust age old' },
   { id: 'share-card',    title: 'Keep it handy / Wall display', sub: 'Home-screen install, sharing, and the big-screen wall', keys: 'install home screen app share wall display tv screen handy keep' },
   { id: 'share-card',    title: 'Print the county sheet',    sub: 'One paper page with today\u2019s answers — fridge, bulletin board, shop counter', keys: 'print printed paper fridge bulletin board poster sheet hard copy post pin up' }
@@ -5533,7 +5536,7 @@ const LANG_ES = {
   glriversub: 'Medidor de Port Westward · USGS',
   glevents: 'Próximo evento',
   finderhint: 'Una sola búsqueda en todas las tarjetas de esta página, los siete pueblos y los calendarios de eventos — toca un resultado y la página te lleva directo.',
-  homeh2: '🏠 Hazlo tuyo',
+  homeh2: '📍 Tu pueblo',
   sinceh2: '🧭 Mientras no estabas',
   watchh2: '🔔 La Vigilancia del Condado',
   watchnote: 'Todo lo demás en esta página espera a que vengas a mirar. La vigilancia no. Deja esta página abierta — en una pestaña, instalada en tu pantalla de inicio o en la pared — y revisa el Servicio Meteorológico Nacional, el puente y el ferry cada dos minutos. Si se publica una alerta nueva, el puente cierra o el ferry anuncia algo mientras no estás mirando, te avisa: una notificación en este dispositivo donde el navegador las ofrece, una línea en el registro de abajo y — si marcas la casilla — dice las alertas nuevas en voz alta.',
@@ -6818,7 +6821,7 @@ initDark();
    hidden, so every switch to Travel calls invalidateSize(). The last
    view is remembered (ccl-view-v1). */
 const VIEW_KEY = 'ccl-view-v1';
-const VIEW_IDS = ['today', 'travel', 'outdoors', 'more'];
+const VIEW_IDS = ['today', 'travel', 'outdoors', 'more', 'emergency'];
 let cclViewCur = 'today';
 
 function cclParentOf(el) { return el ? (el.parentNode || el.parent || null) : null; }
@@ -6848,6 +6851,9 @@ function cclShowView(name) {
   try { window.localStorage.setItem(VIEW_KEY, name); } catch (e) { /* storage unavailable — choice is session-only */ }
   if (name === 'travel' && typeof map !== 'undefined' && map && map.invalidateSize) {
     setTimeout(() => { try { map.invalidateSize(); } catch (e) { /* map still booting */ } }, 60);
+  }
+  if (name === 'emergency') {
+    setTimeout(() => { try { initEmergency(); } catch (e) { /* emergency module still booting */ } }, 60);
   }
   if (name === 'outdoors') {
     /* The heat strip renders inside this (usually hidden) view, where
@@ -6950,18 +6956,16 @@ function initDrawer() {
       cclShowView(b.dataset ? b.dataset.drawerView : null);
       if (window.scrollTo) { try { window.scrollTo(0, 0); } catch (e) { /* noop */ } }
     }));
-  const saverBtn = $('drawer-saver-btn');
-  if (saverBtn) saverBtn.addEventListener('click', () => {
-    closeDrawer();
-    if (window.CCLOpenSaver) window.CCLOpenSaver();
-    else { const sb = $('saver-start-btn'); if (sb) sb.click(); }
-  });
-  /* v6: the masthead Display button — display mode is one tap from
-     first paint on every view, not buried in a card or the drawer.
-     Same opener, same gesture chain (the click is what lets the
-     saver ask for fullscreen). */
-  const dispBtn = $('display-btn');
+  /* Refinements round (Travis, Nov 11): the Display control lives in
+     the drawer now, one of the three utility pill buttons, and it
+     carries the screensaver start (the old drawer-saver-btn row and
+     the floating masthead Display pill are both retired). Same
+     behavior as the old drawer entry: close the drawer, then open
+     the saver — the tap is the gesture chain that lets the saver
+     ask for fullscreen. */
+  const dispBtn = $('drawer-display-btn');
   if (dispBtn) dispBtn.addEventListener('click', () => {
+    closeDrawer();
     if (window.CCLOpenSaver) window.CCLOpenSaver();
     else { const sb = $('saver-start-btn'); if (sb) sb.click(); }
   });
@@ -7189,15 +7193,16 @@ langSet = function (lang) {
 /* ---------- Redesign prototype 2026-11-05: theme toggle wiring ----------
    The theme itself is set before paint by the inline script in
    index.html (saved choice > OS prefers-color-scheme). This wires the
-   masthead button: since v4 it sits at the top-right beside the clock
-   (in v3 it was the first pill in the hero chip row, where Travis had
-   to hunt for it). Icon + label flip, aria-pressed, theme-color meta,
-   and persisting the choice in localStorage. The label names the mode
-   you switch TO ("Dark" while light, "Light" while dark), matching
-   the aria-label. */
+   toggle button: it used to float in the masthead beside the clock;
+   in the refinements round (Travis, Nov 11) it moved into the pullout
+   drawer as one of the three utility pill buttons
+   (drawer-theme-btn). Icon + label flip, aria-pressed, theme-color
+   meta, and persisting the choice in localStorage. The label names
+   the mode you switch TO ("Dark" while light, "Light" while dark),
+   matching the aria-label. */
 (function initThemeToggle() {
-  var btn = document.getElementById('theme-btn'); if (!btn) return;
-  var label = document.getElementById('theme-btn-label');
+  var btn = document.getElementById('drawer-theme-btn'); if (!btn) return;
+  var label = document.getElementById('drawer-theme-label');
   var meta = document.querySelector('meta[name="theme-color"]');
   function paint() {
     var dark = document.documentElement.getAttribute('data-theme') === 'dark';
@@ -8320,3 +8325,181 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
     setTimeout(build, 400);
   }
 })();
+
+/* ---------- REFINEMENTS BATCH 1 (v61): town info + emergency view ---------- */
+async function townFillForecast(town) {
+  const el = $('town-forecast');
+  if (!el) return;
+  try {
+    if (!forecastUrlCache[town.name]) {
+      const pts = await getJSON('https://api.weather.gov/points/'
+        + town.lat + ',' + town.lon);
+      forecastUrlCache[town.name] = pts.properties.forecast;
+    }
+    const fc = await getJSON(forecastUrlCache[town.name]);
+    const p = fc && fc.properties && fc.properties.periods && fc.properties.periods[0];
+    if (!p) throw new Error('no period');
+    el.textContent = '🌤️ ' + town.name + ' — ' + p.name + ': ' + p.shortForecast
+      + ', ' + p.temperature + '°' + p.temperatureUnit + '.';
+  } catch (e) {
+    el.textContent = '🌤️ Forecast for ' + town.name
+      + ' is on the Outdoors tab — the weather service did not answer just now.';
+  }
+}
+async function townFillRiver() {
+  const el = $('town-river');
+  if (!el) return;
+  try {
+    const d = await getJSON(USGS_IV_URL);
+    const parts = [];
+    (d.value.timeSeries || []).forEach(ts => {
+      const code = ts.sourceInfo && ts.sourceInfo.siteCode
+        && ts.sourceInfo.siteCode[0] && ts.sourceInfo.siteCode[0].value;
+      const varc = ts.variable && ts.variable.variableCode
+        && ts.variable.variableCode[0] && ts.variable.variableCode[0].value;
+      const g = GAUGES.find(x => x.site === code);
+      if (!g || varc !== '00065') return;
+      const vals = ts.values && ts.values[0] && ts.values[0].value;
+      if (!vals || !vals.length) return;
+      const v = parseFloat(vals[vals.length - 1].value);
+      if (isFinite(v)) parts.push(g.label.replace(' River', '') + ' ' + v.toFixed(2) + ' ft');
+    });
+    el.textContent = parts.length
+      ? '🌊 Rivers right now: ' + parts.join(' · ') + ' — flood stages on the Outdoors tab.'
+      : '🌊 River gauges did not answer just now — full levels on the Outdoors tab.';
+  } catch (e) {
+    el.textContent = '🌊 River gauges did not answer just now — full levels on the Outdoors tab.';
+  }
+}
+
+let emMap = null, emStarted = false, emCoordsWired = false;
+function initEmergency() {
+  emWireCoords();
+  if (!emStarted) { emStarted = true; emLoadStatus(); }
+  if (typeof L === 'undefined') return;
+  const el = document.getElementById('em-map');
+  if (!el) return;
+  if (!emMap) {
+    emMap = L.map('em-map', { scrollWheelZoom: false }).setView([46.02, -122.98], 10);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18, attribution: '© OpenStreetMap contributors'
+    }).addTo(emMap);
+    emPlotRoads();
+  } else {
+    setTimeout(() => { try { emMap.invalidateSize(); } catch (e) { /* map mid-boot */ } }, 80);
+  }
+}
+async function emPlotRoads() {
+  try {
+    const d = await getJSON('data/roads.json');
+    let n = 0;
+    (d.incidents || []).forEach(i => {
+      if (i.lat == null || i.lon == null || !inBox(i.lat, i.lon)) return;
+      n++;
+      L.circleMarker([i.lat, i.lon], { radius: 7, color: '#8a3c07',
+        fillColor: '#e8760a', fillOpacity: 0.85, weight: 2 }).addTo(emMap)
+        .bindPopup('<strong>' + esc(i.title || 'Road incident') + '</strong>'
+          + (i.place ? '<br>' + esc(i.place) : '')
+          + (i.impact ? '<br>' + esc(i.impact) : ''));
+    });
+    const u = $('em-map-updated');
+    if (u) u.textContent = n + ' incidents in the county snapshot';
+    if (n === 0 && emMap) { /* still a useful map: county view stands */ }
+  } catch (e) { /* snapshot unreachable — the map itself still renders */ }
+}
+async function emLoadStatus() {
+  const set = (id, txt) => { const el = $(id); if (el) el.textContent = txt; };
+  try {
+    const a = await getJSON(NWS_ALERTS_URL);
+    const f = (a && a.features) || [];
+    set('em-row-alerts', f.length
+      ? f.length + ' active — ' + ((f[0].properties && f[0].properties.event) || 'weather alert')
+      : 'No active weather alerts for the county.');
+  } catch (e) { set('em-row-alerts', 'Weather service did not answer — open the card for the latest.'); }
+  try {
+    const d = await getJSON('data/roads.json');
+    const inc = (d.incidents || []).filter(i => i.lat != null && inBox(i.lat, i.lon));
+    const b = d.bridge || {};
+    set('em-row-roads', inc.length + ' road incidents in the county snapshot'
+      + (b.name ? ' · ' + b.name + ': ' + (b.status || 'see card') : '')
+      + (d.fetched_at ? ' · snapshot ' + d.fetched_at.slice(0, 16).replace('T', ' ') + 'Z' : '') + '.');
+  } catch (e) { set('em-row-roads', 'Road snapshot did not load — open the card for the latest.'); }
+  try {
+    const d = await getJSON(USGS_IV_URL);
+    const parts = [];
+    (d.value.timeSeries || []).forEach(ts => {
+      const code = ts.sourceInfo && ts.sourceInfo.siteCode
+        && ts.sourceInfo.siteCode[0] && ts.sourceInfo.siteCode[0].value;
+      const varc = ts.variable && ts.variable.variableCode
+        && ts.variable.variableCode[0] && ts.variable.variableCode[0].value;
+      const g = GAUGES.find(x => x.site === code);
+      if (!g || varc !== '00065') return;
+      const vals = ts.values && ts.values[0] && ts.values[0].value;
+      if (!vals || !vals.length) return;
+      const v = parseFloat(vals[vals.length - 1].value);
+      if (isFinite(v)) parts.push(g.label.replace(' River', '') + ' ' + v.toFixed(2) + ' ft');
+    });
+    set('em-row-rivers', parts.length ? parts.join(' · ') + '.' : 'Gauges quiet — open the card for levels.');
+  } catch (e) { set('em-row-rivers', 'Gauges did not answer — open the card for levels.'); }
+  try {
+    const d = await getJSON('data/schools.json');
+    const rep = (d.districts || []).filter(x => x.status && x.status !== 'no_report');
+    set('em-row-schools', rep.length
+      ? rep.map(x => x.name + ': ' + x.status.replace(/_/g, ' ')).join(' · ')
+      : 'No closures or delays reported by any district.');
+  } catch (e) { set('em-row-schools', 'School board did not load — open the card for the latest.'); }
+  if (typeof airData !== 'undefined' && airData && airData.cur && airData.cur.aqi != null) {
+    set('em-row-air', 'AQI ' + airData.cur.aqi + ' (' + airCat(airData.cur.aqi).name + ') near '
+      + (airData.town || 'the county') + '.');
+  } else {
+    set('em-row-air', 'Open the Air & Smoke card for the current reading.');
+  }
+  const u = $('em-status-updated');
+  if (u) u.textContent = 'checked just now';
+}
+function emWireCoords() {
+  if (emCoordsWired) return;
+  const btn = $('em-coords-btn'), out = $('em-coords-out'), copy = $('em-coords-copy');
+  if (!btn || !out) return;
+  emCoordsWired = true;
+  let lastFix = '';
+  btn.addEventListener('click', () => {
+    if (!navigator.geolocation) {
+      out.textContent = 'Location unavailable — this browser has no GPS access. The map above still shows where you are headed.';
+      return;
+    }
+    out.textContent = 'Finding you…';
+    navigator.geolocation.getCurrentPosition(
+      pos => {
+        const la = pos.coords.latitude, lo = pos.coords.longitude;
+        lastFix = la.toFixed(5) + ', ' + lo.toFixed(5);
+        out.textContent = lastFix;
+        if (copy) {
+          copy.hidden = false;
+          copy.textContent = 'Copy coordinates (±'
+            + Math.round(pos.coords.accuracy || 0) + ' m)';
+        }
+        if (emMap) {
+          L.marker([la, lo]).addTo(emMap)
+            .bindPopup('You are here').openPopup();
+          emMap.setView([la, lo], 12);
+        }
+      },
+      () => {
+        out.textContent = 'Location unavailable — check that location is allowed for this site, or read your position off the map above.';
+      },
+      { enableHighAccuracy: true, timeout: 12000 });
+  });
+  if (copy) copy.addEventListener('click', async () => {
+    if (!lastFix) return;
+    try { await navigator.clipboard.writeText(lastFix); copy.textContent = 'Copied ✓'; }
+    catch (e) {
+      const ta = document.createElement('textarea');
+      ta.value = lastFix; document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); copy.textContent = 'Copied ✓'; } catch (e2) { /* numbers stay on screen */ }
+      ta.remove();
+    }
+    setTimeout(() => { copy.textContent = 'Copy coordinates'; }, 2000);
+  });
+}
+/* ---------- END REFINEMENTS BATCH 1 module ---------- */

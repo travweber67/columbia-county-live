@@ -30,12 +30,12 @@
 if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
-<link rel="manifest" href="manifest.webmanifest?v=60">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=60">
+<link rel="manifest" href="manifest.webmanifest?v=61">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=61">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=60">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=60">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=60">
+<link rel="stylesheet" href="style.css?v=61">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=61">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=61">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
      only page backgrounds first paint needs — warm them with the hero.
      Every other view's photo is lazy-attached by app.js. -->
@@ -94,17 +94,13 @@ document.documentElement.setAttribute("data-theme",t);})();
           <div id="clock" class="clock">—</div>
           <div class="clock-label" data-i18n="clocklabel">Pacific Time</div>
         </div>
-        <!-- v40: the install door moves to the masthead — one tap from
-             the landing view, not buried in Events & More. Opens the
-             Get-the-app sheet (app.js initGetApp): device-detected
-             numbered steps, with the Facebook-browser escape first
-             when the visitor is inside an app's webview. -->
-        <button class="hero-theme-btn getapp-btn" id="getapp-btn" type="button" aria-haspopup="dialog" aria-controls="getapp-sheet" aria-expanded="false" aria-label="Get the app — put Columbia County Live on your home screen" title="Get the app — home-screen install steps"><span class="getapp-ico" aria-hidden="true">📱</span><span data-i18n="getappbtn">Get the app</span></button>
-        <!-- v4: the theme toggle lives HERE now — top-right, beside the
-             clock, labelled and amber-ringed. In v3 it was the first
-             pill in the chip row below and Travis had to hunt for it. -->
-        <button class="hero-theme-btn display-btn" id="display-btn" type="button" aria-label="Open display mode — the community screensaver" title="Open display mode — the community screensaver"><svg class="theme-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M12 16.5v3M8.8 21h6.4"/></svg><span data-i18n="displaybtn">Display</span></button>
-        <button class="theme-toggle hero-theme-btn" id="theme-btn" type="button" aria-pressed="false" aria-label="Switch to dark mode" title="Switch between light and dark mode"><img class="theme-ico" src="img/icons/icon-theme.png" alt="" aria-hidden="true"><span id="theme-btn-label">Dark</span></button>
+        <!-- Refinements round (Travis, Nov 11): the Get the app /
+             Display / theme pills NO LONGER float here beside the
+             clock. All three now live as pill buttons in the pullout
+             drawer's utility block (drawer-getapp-btn,
+             drawer-display-btn, drawer-theme-btn) — the masthead
+             keeps only the clock. The Get-the-app sheet itself is
+             unchanged (app.js initGetApp). -->
       </div>
     </div>
     <!-- v5 CLEAN HERO (Travis): the hero keeps ONLY the photo, the name
@@ -279,9 +275,9 @@ document.documentElement.setAttribute("data-theme",t);})();
   <div id="since-body" class="panel-body"><p class="loading">Checking what changed…</p></div>
 </section>
 
-<section class="card home-card" id="home-card" aria-label="Make this page yours — pick your home town">
+<section class="card home-card" id="home-card" aria-label="Your town — the county from home">
   <div class="card-head">
-    <h2 data-i18n="homeh2">🏠 Make it yours</h2>
+    <h2 data-i18n="homeh2">📍 Your town</h2>
   </div>
   <div id="home-body" class="panel-body"><p class="loading">Loading your town picker…</p></div>
 </section>
@@ -539,7 +535,7 @@ document.documentElement.setAttribute("data-theme",t);})();
         <span class="updated" id="ships-updated"></span>
       </div>
       <div id="ships-body" class="panel-body"><p class="loading">Loading river traffic…</p></div>
-      <p class="card-note small" data-i18n="shipsnote">Ships sorted by when they'll pass your home town — St. Helens until you pick one in “Make it yours” on the Today tab. ETAs use each ship's current reported speed, so a ship that slows down arrives later. Live positions from AISStream, refreshed about every five minutes.</p>
+      <p class="card-note small" data-i18n="shipsnote">Ships sorted by when they'll pass your home town — St. Helens until you pick one under “Your town” on the Today tab. ETAs use each ship's current reported speed, so a ship that slows down arrives later. Live positions from AISStream, refreshed about every five minutes.</p>
     </div>
 
     <div class="card" id="aircraft-card">
@@ -1001,6 +997,64 @@ document.documentElement.setAttribute("data-theme",t);})();
      in the masthead opens it. Every view and the sections inside each
      view are jump links: a tap switches the view, scrolls to the
      section, and closes the drawer. Frosted glass in both themes. -->
+<section class="view" id="view-emergency" data-view="emergency" aria-label="Emergency — the county emergency board" hidden>
+
+<section class="card" id="em-map-card" aria-label="Emergency map — road closures and incidents">
+  <div class="card-head">
+    <h2>🚨 Emergency map — closures &amp; incidents</h2>
+    <span class="updated" id="em-map-updated"></span>
+  </div>
+  <div class="panel-body">
+    <div id="em-map" class="em-map" role="application" aria-label="Map of current road incidents and closures in Columbia County"></div>
+    <p class="card-note small">Orange dots: road incidents and closures from the same ODOT TripCheck / WSDOT snapshot as the Roads card. <strong>Evacuation routes:</strong> the Sheriff sets them for each incident — there is no standing route map for this county. If you are told to leave, follow the route in the official notice and the county's <a href="https://www.columbiacountyor.gov/during-a-disaster" target="_blank" rel="noopener">During a Disaster</a> page.</p>
+  </div>
+</section>
+
+<section class="card" id="em-status-card" aria-label="County status board">
+  <div class="card-head">
+    <h2>📋 County status board</h2>
+    <span class="updated" id="em-status-updated"></span>
+  </div>
+  <div class="panel-body">
+    <div class="em-rows">
+      <a class="em-row" href="#alerts-card"><b>Weather alerts</b><span id="em-row-alerts">Checking the National Weather Service…</span><i aria-hidden="true">→</i></a>
+      <a class="em-row" href="#roads-card"><b>Roads &amp; bridge</b><span id="em-row-roads">Checking the road snapshot…</span><i aria-hidden="true">→</i></a>
+      <a class="em-row" href="#rivers-card"><b>Rivers &amp; flood</b><span id="em-row-rivers">Reading the river gauges…</span><i aria-hidden="true">→</i></a>
+      <a class="em-row" href="#schools-card"><b>School closures</b><span id="em-row-schools">Checking the school board…</span><i aria-hidden="true">→</i></a>
+      <a class="em-row" href="#air-card"><b>Air quality</b><span id="em-row-air">Checking the air…</span><i aria-hidden="true">→</i></a>
+      <div class="em-row em-row-static"><b>Power outages</b><span>Columbia County Live doesn't get a live outage feed for our area yet (we've asked CRPUD). Check your utility's outage map, or the county page below. Never touch a downed line — call 911.</span></div>
+    </div>
+    <p class="card-note small">Tap any row for the full card. Readings are as fresh as their sources — the same data the rest of this site runs on, gathered in one place.</p>
+  </div>
+</section>
+
+<section class="card" id="em-contacts-card" aria-label="Emergency contacts and official links">
+  <div class="card-head">
+    <h2>☎️ Emergency contacts &amp; official links</h2>
+  </div>
+  <div class="panel-body">
+    <p class="em-big"><strong>In an emergency, call 911.</strong></p>
+    <p><strong>Columbia County Emergency Management</strong> — 230 Strand St, St. Helens · <a href="tel:+19712033617">971-203-3617</a></p>
+    <p><a href="https://www.columbiacountyor.gov/during-a-disaster" target="_blank" rel="noopener">County: During a Disaster — steps, evacuation levels, sandbag locations</a></p>
+    <p><a href="https://www.columbiacountyor.gov/make-a-plan" target="_blank" rel="noopener">County: Make a Plan — family emergency plans and escape routes</a></p>
+    <p><a href="https://www.tripcheck.com/" target="_blank" rel="noopener">ODOT TripCheck — official road conditions statewide</a></p>
+  </div>
+</section>
+
+<section class="card" id="em-coords-card" aria-label="Your coordinates">
+  <div class="card-head">
+    <h2>📍 Your coordinates</h2>
+  </div>
+  <div class="panel-body">
+    <p class="card-note">If you ever have to tell a dispatcher or a tow truck exactly where you are: tap the button, read the numbers out loud, or copy and paste them into a text. GPS works without cell signal.</p>
+    <button class="share-btn primary" id="em-coords-btn" type="button">Get my coordinates</button>
+    <p class="em-coords-out" id="em-coords-out" aria-live="polite"></p>
+    <button class="share-btn" id="em-coords-copy" type="button" hidden>Copy coordinates</button>
+  </div>
+</section>
+
+</section>
+
 <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
 <aside class="drawer" id="drawer" hidden role="dialog" aria-modal="true" aria-label="Menu — every view and section on this page">
   <div class="drawer-head">
@@ -1008,6 +1062,13 @@ document.documentElement.setAttribute("data-theme",t);})();
     <button class="drawer-close" id="drawer-close" type="button" aria-label="Close the menu">✕</button>
   </div>
   <nav class="drawer-nav" aria-label="Views and sections">
+    <div class="drawer-group drawer-em-group">
+      <button class="drawer-view drawer-emergency" type="button" data-drawer-view="emergency"><span aria-hidden="true">🚨</span><span data-i18n="emview">Emergency</span></button>
+      <a class="drawer-link" href="#em-map-card">Emergency map — closures &amp; incidents</a>
+      <a class="drawer-link" href="#em-status-card">County status board</a>
+      <a class="drawer-link" href="#em-contacts-card">Emergency contacts &amp; links</a>
+      <a class="drawer-link" href="#em-coords-card">Get my coordinates</a>
+    </div>
     <div class="drawer-group">
       <button class="drawer-view" type="button" data-drawer-view="today"><img src="img/icons/icon-today.png" alt="" aria-hidden="true"><span data-i18n="tabtoday">Today</span></button>
       <a class="drawer-link" href="#commute-card" data-i18n="dwcommute">The commute verdict</a>
@@ -1015,7 +1076,6 @@ document.documentElement.setAttribute("data-theme",t);})();
       <a class="drawer-link" href="#plan-card" data-i18n="dwplan">Tonight &amp; tomorrow</a>
       <a class="drawer-link" href="#schools-card" data-i18n="dwschools">Schools — closures &amp; delays</a>
       <a class="drawer-link" href="#briefing-card" data-i18n="dwbriefing">The County Briefing</a>
-      <a class="drawer-link" href="#home-card" data-i18n="dwhome">Make it yours</a>
     </div>
     <div class="drawer-group">
       <button class="drawer-view" type="button" data-drawer-view="travel"><img src="img/icons/icon-travel.png" alt="" aria-hidden="true"><span data-i18n="tabtravel">Travel</span></button>
@@ -1059,10 +1119,18 @@ document.documentElement.setAttribute("data-theme",t);})();
       <span class="drawer-foot-head" data-i18n="webPromoHead">Need a website built?</span>
       <a class="drawer-foot-link" href="https://nomadov3rland-cloud.github.io/"><span data-i18n="webPromoLink">Check out other sites built by Nomad Development Group &rarr;</span></a>
     </div>
-  </nav>
   <div class="drawer-actions">
-    <button class="drawer-action" id="drawer-getapp-btn" type="button"><span class="drawer-action-ico" aria-hidden="true">📱</span><span data-i18n="getappbtn">Get the app</span></button>
-    <button class="drawer-action" id="drawer-saver-btn" type="button"><span class="drawer-action-ico" aria-hidden="true">🖥️</span><span data-i18n="saverstart">Start the screensaver</span></button>
+    <!-- Refinements round (Travis, Nov 11): the three utility controls
+         — Get the app, Display (screensaver), Light/Dark — integrated
+         into the drawer as pill buttons in the screenshot style
+         (rounded, dark green, bone text, small icon). Display carries
+         the screensaver start, so the old "Start the screensaver"
+         drawer row is retired; the saver card keeps its own buttons. -->
+    <div class="drawer-util-btns" role="group" aria-label="Get the app, display mode, and light or dark mode">
+      <button class="drawer-util-btn" id="drawer-getapp-btn" type="button" aria-haspopup="dialog" aria-controls="getapp-sheet" aria-expanded="false" aria-label="Get the app — put Columbia County Live on your home screen"><span class="getapp-ico" aria-hidden="true">📱</span><span data-i18n="getappbtn">Get the app</span></button>
+      <button class="drawer-util-btn" id="drawer-display-btn" type="button" aria-label="Open display mode — the community screensaver"><svg class="theme-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M12 16.5v3M8.8 21h6.4"/></svg><span data-i18n="displaybtn">Display</span></button>
+      <button class="drawer-util-btn" id="drawer-theme-btn" type="button" aria-pressed="false" aria-label="Switch to dark mode"><img class="theme-ico" src="img/icons/icon-theme.png" alt="" aria-hidden="true"><span id="drawer-theme-label">Dark</span></button>
+    </div>
     <a class="drawer-action" href="sponsor.html"><img class="drawer-action-img" src="img/icons/icon-sponsor.png" alt="" aria-hidden="true"><span data-i18n="dwbecome">Become a sponsor</span></a>
     <a class="drawer-action drawer-photo" href="#photo-form">
       <span class="drawer-action-ico" aria-hidden="true">📸</span>
@@ -1073,10 +1141,11 @@ document.documentElement.setAttribute("data-theme",t);})();
     </a>
     <button class="drawer-action lang-pill" id="lang-btn" type="button">🌎 En español</button>
   </div>
+  </nav>
 </aside>
 
-<!-- v40: the Get-the-app sheet. One door (masthead button + drawer
-     entry), device-detected numbered steps in plain language. app.js
+<!-- v40: the Get-the-app sheet. One door (the drawer's Get the app
+     pill button), device-detected numbered steps in plain language. app.js
      (initGetApp) decides what shows: a step-0 escape when the visitor
      is inside Facebook's / Instagram's browser or a non-Safari iOS
      browser (where Add to Home Screen silently does nothing), the
@@ -1175,7 +1244,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=60"></script>
+<script src="app.js?v=61"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>

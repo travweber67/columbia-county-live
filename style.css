@@ -2093,6 +2093,25 @@ html[data-theme="dark"] .drawer-action{background:rgba(244,241,228,.06);color:#e
 .drawer-action:hover{border-color:var(--warm)}
 .drawer-action-ico{font-size:1.1rem;line-height:1;flex:none}
 .drawer-action-img{width:24px;height:24px;border-radius:50%;flex:none}
+/* Refinements round (Travis, Nov 11): the three utility controls —
+   Get the app / Display / Light — as pill buttons inside the drawer,
+   in the style of the pills Travis screenshotted (rounded, dark
+   green, bone text, small icon, amber ring). They replaced the
+   floating masthead pills; the drawer is their only home now. */
+.drawer-util-btns{display:flex;flex-wrap:wrap;gap:8px}
+.drawer-util-btn{
+  display:inline-flex;align-items:center;gap:7px;cursor:pointer;
+  font:inherit;font-size:.9rem;font-weight:800;color:#f5efdb;
+  background:rgba(9,22,13,.88);border:1.5px solid var(--warm-fill);
+  border-radius:999px;padding:9px 14px;min-height:44px;
+  box-shadow:0 3px 10px rgba(0,0,0,.25);
+  transition:background .15s ease,transform .12s ease;
+}
+.drawer-util-btn:hover{background:rgba(9,22,13,1)}
+.drawer-util-btn:active{transform:scale(.97)}
+.drawer-util-btn .theme-ico{width:20px;height:20px}
+.drawer-util-btn svg.theme-ico{color:#f2c078}
+.drawer-util-btn .getapp-ico{font-size:1.05rem;line-height:1}
 .drawer-photo{background:rgba(233,164,74,.22);border-color:rgba(176,81,28,.45)}
 html[data-theme="dark"] .drawer-photo{background:rgba(233,164,74,.16)}
 .drawer-photo-text{display:flex;flex-direction:column;gap:2px}
@@ -2619,3 +2638,31 @@ html[data-theme="dark"] .getapp-other summary{color:#bfe3c8}
 .quad-corner.qc-tr,.quad-corner.qc-br{flex-direction:row-reverse}
 .quad-ico{width:34px;height:34px;flex:none;border-radius:9px;border:1px solid rgba(247,234,210,.55);box-shadow:0 2px 8px rgba(0,0,0,.55);display:block}
 @media(max-width:560px){.quad-ico{width:27px;height:27px;border-radius:7px}.quad-corner{gap:5px}}
+
+/* ============ REFINEMENTS BATCH 1 (v61, live) ============ */
+/* Item 1: the drawer slides from the LEFT now. */
+.drawer{left:0;right:auto;transform:translateX(-106%);
+  border-right:1px solid var(--border);border-left:0;
+  box-shadow:18px 0 44px rgba(20,30,16,.28)}
+[data-theme="dark"] .drawer{border-right-color:#3a4436}
+.drawer.open{transform:none}
+/* The Emergency drawer entry stands out a little. */
+.drawer-emergency{border-color:#c45a1b;color:#a34a12}
+[data-theme="dark"] .drawer-emergency{border-color:#8a4d22;color:#f0a25e}
+/* Emergency view pieces. */
+.em-map{height:340px;border-radius:12px;overflow:hidden;z-index:0}
+@media (max-width:640px){.em-map{height:300px}}
+.em-rows{display:flex;flex-direction:column}
+.em-row{display:flex;gap:10px;align-items:baseline;padding:10px 2px;
+  border-bottom:1px solid var(--border);text-decoration:none;color:inherit}
+.em-row:last-child{border-bottom:0}
+.em-row b{flex:0 0 118px}
+.em-row span{flex:1}
+.em-row i{font-style:normal;color:var(--muted)}
+.em-row-static{cursor:default}
+.em-big{font-size:1.15rem}
+.em-coords-out{font-family:'JetBrains Mono',ui-monospace,monospace;
+  font-size:1.6rem;font-weight:700;letter-spacing:.02em;margin:12px 0}
+/* Town panel lines. */
+.town-line{margin:6px 0}
+/* ============ END REFINEMENTS BATCH 1 ============ */
