@@ -1,74 +1,131 @@
 {
- "fetched_at": "2026-11-12T02:48:41Z",
+ "fetched_at": "2026-11-12T02:56:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60756,
-   "lon": -122.67757,
-   "sog_kn": 0,
-   "cog": 360,
+   "mmsi": 367047250,
+   "name": "VOYAGER",
+   "lat": 45.95241,
+   "lon": -122.81356,
+   "sog_kn": 8,
+   "cog": 336.4,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-12 02:50:57.929868797 +0000 UTC",
-   "type_code": 50
+   "updated": "2026-11-12 02:57:07.511700479 +0000 UTC"
   },
   {
-   "mmsi": 440576000,
-   "name": "PAN FLOWER",
-   "lat": 45.64276,
-   "lon": -122.7718,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19995,
+   "lon": -123.38552,
    "sog_kn": 0,
-   "cog": 22.3,
-   "heading": 228,
-   "nav_status": 5,
-   "updated": "2026-11-12 02:50:35.396626541 +0000 UTC"
+   "cog": 252.6,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-12 02:57:10.747147587 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.80998,
+   "lon": -122.79404,
+   "sog_kn": 4.9,
+   "cog": 162.5,
+   "heading": 161,
+   "nav_status": 12,
+   "updated": "2026-11-12 02:57:20.995679503 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.17524,
+   "lon": -123.09977,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-12 02:57:13.740867662 +0000 UTC"
   },
   {
    "mmsi": 367425950,
    "name": "SEA HAWK",
-   "lat": 45.65012,
-   "lon": -122.74757,
-   "sog_kn": 0,
-   "cog": 228.8,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-12 02:50:48.970451538 +0000 UTC"
+   "lat": 45.65017,
+   "lon": -122.7476,
+   "type_code": 33,
+   "updated": "2026-11-12 02:57:15.371121386 +0000 UTC"
   },
   {
-   "mmsi": 367516730,
-   "name": "CRISTY T",
-   "lat": 45.61185,
-   "lon": -122.6455,
-   "sog_kn": 0.1,
-   "cog": 220.1,
-   "heading": 295,
-   "nav_status": 0,
-   "updated": "2026-11-12 02:50:56.566575408 +0000 UTC"
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.62162,
+   "lon": -122.6807,
+   "type_code": 52,
+   "destination": "US^0UUT>0UW8",
+   "updated": "2026-11-12 02:57:16.632264379 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.08064,
-   "lon": -122.90326,
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00917,
+   "lon": -122.84823,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 317,
-   "nav_status": 3,
-   "updated": "2026-11-12 02:50:56.810878252 +0000 UTC"
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 02:57:17.172361716 +0000 UTC"
   },
   {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09053,
-   "lon": -122.93237,
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.65037,
+   "lon": -122.74751,
    "sog_kn": 0,
-   "cog": 241.5,
+   "cog": 240.1,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-12 02:50:59.274975786 +0000 UTC"
+   "nav_status": 15,
+   "updated": "2026-11-12 02:57:22.292295733 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.65193,
+   "lon": -122.76582,
+   "sog_kn": 5.1,
+   "cog": 25.2,
+   "heading": 34,
+   "nav_status": 12,
+   "updated": "2026-11-12 02:57:29.700009695 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.0805,
+   "lon": -122.90285,
+   "sog_kn": 0,
+   "cog": 236.9,
+   "heading": 131,
+   "nav_status": 0,
+   "updated": "2026-11-12 02:57:31.768027044 +0000 UTC",
+   "type_code": 52,
+   "destination": "US^03F8>02T9"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61289,
+   "type_code": 0,
+   "updated": "2026-11-12 02:57:30.98286477 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.63872,
+   "lon": -122.71178,
+   "sog_kn": 0,
+   "cog": 172.4,
+   "heading": 122,
+   "nav_status": 12,
+   "updated": "2026-11-12 02:57:36.95025199 +0000 UTC"
   }
  ]
 }
