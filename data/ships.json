@@ -1,46 +1,67 @@
 {
- "fetched_at": "2026-11-12T09:17:10Z",
+ "fetched_at": "2026-11-12T09:18:46Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15343,
-   "lon": -123.37715,
-   "type_code": 99,
-   "updated": "2026-11-12 09:17:22.844017759 +0000 UTC"
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.63871,
+   "lon": -122.71175,
+   "sog_kn": 0,
+   "cog": 208.1,
+   "heading": 122,
+   "nav_status": 12,
+   "updated": "2026-11-12 09:19:27.130412257 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.12055,
+   "lon": -122.98753,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-12 09:19:35.888850335 +0000 UTC"
   },
   {
    "mmsi": 367061930,
    "name": "TEBENKOF",
-   "lat": 46.2,
-   "lon": -123.38552,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-12 09:17:24.396099527 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.79315,
-   "lon": -122.84323,
+   "lat": 46.19999,
+   "lon": -123.38553,
    "sog_kn": 0,
-   "cog": 0.9,
-   "heading": 209,
-   "nav_status": 12,
-   "updated": "2026-11-12 09:17:25.513294574 +0000 UTC"
+   "cog": 8.4,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-12 09:19:41.669822454 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.08066,
-   "lon": -122.90325,
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08027,
+   "lon": -122.90302,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-12 09:19:42.703207018 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00893,
+   "lon": -122.84836,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 318,
-   "nav_status": 3,
-   "updated": "2026-11-12 09:17:28.524961586 +0000 UTC"
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 09:19:47.375425929 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16664,
+   "lon": -123.08595,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-12 09:19:49.543753577 +0000 UTC"
   }
  ]
 }
