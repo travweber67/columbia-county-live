@@ -1,99 +1,115 @@
 {
- "fetched_at": "2026-11-12T15:12:36Z",
+ "fetched_at": "2026-11-12T15:17:38Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19947,
+   "lon": -123.38507,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-12 15:17:45.212099044 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19952,
+   "lon": -123.385,
+   "sog_kn": 0,
+   "cog": 175,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-12 15:17:52.066162142 +0000 UTC"
+  },
   {
    "mmsi": 367496010,
    "name": "DELIVERANCE",
-   "lat": 46.08035,
-   "lon": -122.90312,
-   "type_code": 69,
-   "updated": "2026-11-12 15:12:43.903550037 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.09627,
-   "lon": -122.93023,
-   "sog_kn": 0,
-   "cog": 81.6,
-   "heading": 73,
-   "nav_status": 3,
-   "updated": "2026-11-12 15:12:44.755755609 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58079,
-   "lon": -122.76008,
-   "type_code": 31,
-   "destination": "PDX PTSI",
-   "updated": "2026-11-12 15:12:49.56493274 +0000 UTC"
-  },
-  {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09625,
-   "lon": -122.9305,
-   "sog_kn": 0,
-   "cog": 0,
+   "lat": 46.07635,
+   "lon": -122.89466,
+   "sog_kn": 9.1,
+   "cog": 293.6,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-12 15:12:52.181733288 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-12 15:17:53.408383669 +0000 UTC"
   },
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.009,
-   "lon": -122.84819,
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.60098,
+   "lon": -122.77437,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-12 15:17:53.833743129 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.14934,
+   "lon": -123.04583,
+   "sog_kn": 5.2,
+   "cog": 133.1,
+   "heading": 138,
+   "nav_status": 3,
+   "updated": "2026-11-12 15:17:55.566319542 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09049,
+   "lon": -122.93241,
+   "sog_kn": 0,
+   "cog": 155.3,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-12 15:18:05.530853345 +0000 UTC",
+   "type_code": 52,
+   "destination": "COL RIVER"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.80562,
+   "lon": -122.82417,
+   "sog_kn": 6.5,
+   "cog": 203.3,
+   "heading": 216,
+   "nav_status": 0,
+   "updated": "2026-11-12 15:17:58.01776132 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10787,
+   "lon": -122.95901,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-12 15:12:57.094492147 +0000 UTC"
+   "updated": "2026-11-12 15:18:02.394130647 +0000 UTC"
   },
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.13723,
-   "lon": -123.37893,
-   "sog_kn": 0,
-   "cog": 0,
+   "mmsi": 368317740,
+   "name": "BEAVER",
+   "lat": 45.63561,
+   "lon": -122.78363,
+   "sog_kn": 21.1,
+   "cog": 30.6,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-12 15:12:57.983495178 +0000 UTC"
+   "updated": "2026-11-12 15:18:03.989050534 +0000 UTC"
   },
   {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.60458,
-   "lon": -122.61041,
-   "sog_kn": 5.5,
-   "cog": 108.2,
-   "heading": 103,
-   "nav_status": 0,
-   "updated": "2026-11-12 15:12:58.23869137 +0000 UTC"
-  },
-  {
-   "mmsi": 636021177,
-   "name": "FORTUNE COOKIE",
-   "lat": 45.98379,
-   "lon": -122.83497,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-12 15:12:59.706447772 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 275.1,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-12 15:13:08.21608068 +0000 UTC"
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.86003,
+   "lon": -122.79106,
+   "sog_kn": 4,
+   "cog": 82.1,
+   "heading": 106,
+   "nav_status": 12,
+   "updated": "2026-11-12 15:18:06.806395985 +0000 UTC"
   }
  ]
 }
