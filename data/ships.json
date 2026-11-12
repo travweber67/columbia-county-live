@@ -1,89 +1,123 @@
 {
- "fetched_at": "2026-11-12T13:17:28Z",
+ "fetched_at": "2026-11-12T13:18:49Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08048,
-   "lon": -122.90286,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65026,
+   "lon": -122.7476,
    "sog_kn": 0,
-   "cog": 348.8,
-   "heading": 133,
-   "nav_status": 0,
-   "updated": "2026-11-12 13:17:34.20628009 +0000 UTC"
+   "cog": 139.7,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-12 13:19:29.82503274 +0000 UTC"
   },
   {
    "mmsi": 368280980,
    "name": "CHRISSY",
-   "lat": 45.64655,
-   "lon": -122.74462,
+   "lat": 45.64876,
+   "lon": -122.75187,
+   "sog_kn": 9.1,
+   "cog": 302.2,
+   "heading": 314,
+   "nav_status": 0,
+   "updated": "2026-11-12 13:19:38.045516006 +0000 UTC"
+  },
+  {
+   "mmsi": 368442720,
+   "name": "RUSTLER",
+   "lat": 45.60835,
+   "lon": -122.68621,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 13:19:38.706085776 +0000 UTC"
+  },
+  {
+   "mmsi": 636021177,
+   "name": "FORTUNE COOKIE",
+   "lat": 45.98376,
+   "lon": -122.83491,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-12 13:19:41.17950353 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09646,
+   "lon": -122.93082,
+   "sog_kn": 0,
+   "cog": 20.4,
+   "heading": 66,
+   "nav_status": 3,
+   "updated": "2026-11-12 13:19:43.571699902 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.9101,
+   "sog_kn": 0.1,
+   "cog": 319.6,
+   "heading": 73,
+   "nav_status": 0,
+   "updated": "2026-11-12 13:19:50.139140356 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.66192,
+   "lon": -122.76125,
    "type_code": 52,
-   "destination": "US^0UX0>?? ???",
-   "updated": "2026-11-12 13:17:39.342798426 +0000 UTC"
+   "updated": "2026-11-12 13:19:50.836152831 +0000 UTC"
   },
   {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.62854,
-   "lon": -122.69194,
-   "sog_kn": 0.4,
-   "cog": 74.9,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.08046,
+   "lon": -122.9031,
+   "sog_kn": 0,
+   "cog": 271.2,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-12 13:17:43.592141223 +0000 UTC"
+   "updated": "2026-11-12 13:19:52.531711522 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35743,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.0805,
+   "lon": -122.90285,
    "sog_kn": 0,
-   "cog": 48.2,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-12 13:17:47.833156174 +0000 UTC"
-  },
-  {
-   "mmsi": 431300000,
-   "name": "TRITON HIGHWAY",
-   "lat": 45.59771,
-   "lon": -122.77497,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-12 13:17:48.796754564 +0000 UTC"
-  },
-  {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.60098,
-   "lon": -122.77441,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-12 13:17:55.031544494 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09068,
-   "lon": -122.9323,
-   "sog_kn": 0,
-   "cog": 288.9,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-12 13:17:56.734489892 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08985,
-   "lon": -122.92898,
-   "sog_kn": 0,
-   "cog": 191.9,
-   "heading": 106,
+   "cog": 2,
+   "heading": 133,
    "nav_status": 0,
-   "updated": "2026-11-12 13:17:59.855354195 +0000 UTC"
+   "updated": "2026-11-12 13:19:53.697841544 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.65851,
+   "lon": -122.75914,
+   "sog_kn": 4.1,
+   "cog": 125.3,
+   "heading": 124,
+   "nav_status": 12,
+   "updated": "2026-11-12 13:19:54.576274998 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.66189,
+   "lon": -122.76145,
+   "sog_kn": 0.3,
+   "cog": 134.4,
+   "heading": 76,
+   "nav_status": 0,
+   "updated": "2026-11-12 13:19:57.297622412 +0000 UTC"
   }
  ]
 }
