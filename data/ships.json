@@ -1,55 +1,47 @@
 {
- "fetched_at": "2026-11-12T11:07:17Z",
+ "fetched_at": "2026-11-12T11:12:18Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20002,
+   "lon": -123.3854,
+   "sog_kn": 0,
+   "cog": 17.8,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-12 11:12:24.330931725 +0000 UTC"
+  },
   {
    "mmsi": 212656000,
    "name": "PANAGIA THALASSINI",
-   "lat": 45.63495,
+   "lat": 45.63497,
    "lon": -122.70372,
    "type_code": 82,
    "destination": "USVAN",
-   "updated": "2026-11-12 11:07:29.782982609 +0000 UTC"
+   "updated": "2026-11-12 11:12:36.536015581 +0000 UTC"
   },
   {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 46.20118,
-   "lon": -123.38704,
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.19965,
+   "lon": -123.38523,
+   "type_code": 30,
+   "destination": "",
+   "updated": "2026-11-12 11:12:42.057838313 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.62722,
+   "lon": -122.69912,
    "sog_kn": 0,
-   "cog": 275.7,
+   "cog": 247.3,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-12 11:07:33.949846619 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10355,
-   "lon": -122.91008,
-   "type_code": 52,
-   "destination": "US^0T0P>035F",
-   "updated": "2026-11-12 11:07:36.777307057 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.63733,
-   "lon": -122.72709,
-   "type_code": 52,
-   "updated": "2026-11-12 11:07:51.128790648 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.23798,
-   "lon": -123.43092,
-   "sog_kn": 2.3,
-   "cog": 156.5,
-   "heading": 333,
-   "nav_status": 3,
-   "updated": "2026-11-12 11:07:52.639616063 +0000 UTC"
+   "updated": "2026-11-12 11:12:43.530687 +0000 UTC"
   }
  ]
 }
