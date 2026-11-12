@@ -1,62 +1,123 @@
 {
- "fetched_at": "2026-11-12T08:32:08Z",
+ "fetched_at": "2026-11-12T08:37:07Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16672,
+   "lon": -123.0868,
+   "sog_kn": 1,
+   "cog": 135,
+   "heading": 124,
+   "nav_status": 3,
+   "updated": "2026-11-12 08:37:14.685689754 +0000 UTC"
+  },
+  {
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 45.64277,
+   "lon": -122.77191,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-12 08:37:14.993785861 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.58751,
+   "lon": -122.77067,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-12 08:37:15.967066855 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58758,
+   "lon": -122.77039,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-12 08:37:21.929681229 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.1079,
+   "lon": -122.95901,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 08:37:22.075447337 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08053,
+   "lon": -122.9033,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-12 08:37:24.812642737 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09054,
+   "lon": -122.93229,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-12 08:37:24.983792244 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58081,
+   "lon": -122.76004,
+   "type_code": 31,
+   "destination": "PDX PTSI",
+   "updated": "2026-11-12 08:37:31.052050741 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.044,
+   "lon": -122.87692,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-12 08:37:36.353953082 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79316,
+   "lon": -122.84323,
+   "sog_kn": 0,
+   "cog": 150.6,
+   "heading": 215,
+   "nav_status": 12,
+   "updated": "2026-11-12 08:37:36.920227303 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08975,
+   "lon": -122.92904,
+   "sog_kn": 0,
+   "cog": 172.8,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-12 08:37:37.695439658 +0000 UTC"
+  },
   {
    "mmsi": 338205428,
    "name": "CLAIRE B",
-   "lat": 45.79454,
-   "lon": -122.84164,
+   "lat": 45.79354,
+   "lon": -122.84333,
    "type_code": 52,
    "destination": "",
-   "updated": "2026-11-12 08:32:40.386472703 +0000 UTC",
-   "sog_kn": 0.2,
-   "cog": 288.4,
-   "heading": 222,
-   "nav_status": 0
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.63281,
-   "lon": -122.73718,
-   "sog_kn": 0.1,
-   "cog": 24.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-12 08:32:23.148035446 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.24981,
-   "lon": -123.44081,
-   "sog_kn": 2.4,
-   "cog": 328,
-   "heading": 147,
-   "nav_status": 3,
-   "updated": "2026-11-12 08:32:24.004550719 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65009,
-   "lon": -122.74759,
-   "sog_kn": 0,
-   "cog": 222.5,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-12 08:32:29.723651559 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20004,
-   "lon": -123.38539,
-   "type_code": 99,
-   "destination": "NAKNEK",
-   "updated": "2026-11-12 08:32:45.164156897 +0000 UTC"
+   "updated": "2026-11-12 08:37:41.676329016 +0000 UTC"
   }
  ]
 }
