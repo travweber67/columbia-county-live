@@ -1,99 +1,89 @@
 {
- "fetched_at": "2026-11-12T10:27:15Z",
+ "fetched_at": "2026-11-12T10:32:15Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08048,
+   "lon": -122.90288,
+   "sog_kn": 0,
+   "cog": 260.3,
+   "heading": 134,
+   "nav_status": 0,
+   "updated": "2026-11-12 10:32:23.650722844 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.19114,
+   "lon": -123.16258,
+   "sog_kn": 1.1,
+   "cog": 96.1,
+   "heading": 90,
+   "nav_status": 3,
+   "updated": "2026-11-12 10:32:24.705514451 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64348,
+   "lon": -122.75286,
+   "type_code": 52,
+   "destination": "US^0UUT>0UW8",
+   "updated": "2026-11-12 10:32:25.972515852 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.65032,
+   "lon": -122.74755,
+   "type_code": 52,
+   "destination": "XX XXX>US^02A3",
+   "updated": "2026-11-12 10:32:35.186597004 +0000 UTC"
+  },
   {
    "mmsi": 367727410,
    "name": "AMY B",
-   "lat": 45.79314,
+   "lat": 45.79315,
    "lon": -122.84323,
    "type_code": 57,
    "destination": "US^0UWG>?? ???",
-   "updated": "2026-11-12 10:27:21.931245734 +0000 UTC"
+   "updated": "2026-11-12 10:32:35.786584293 +0000 UTC"
   },
   {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.99035,
-   "lon": -122.8407,
-   "sog_kn": 3,
-   "cog": 153.3,
-   "heading": 155,
-   "nav_status": 12,
-   "updated": "2026-11-12 10:27:24.747935272 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.16872,
-   "lon": -123.09048,
-   "sog_kn": 0.7,
-   "cog": 127.8,
-   "heading": 129,
-   "nav_status": 3,
-   "updated": "2026-11-12 10:27:25.77338133 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35742,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08065,
+   "lon": -122.90329,
    "sog_kn": 0,
-   "cog": 156.3,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-12 10:27:25.940823329 +0000 UTC"
+   "cog": 360,
+   "heading": 317,
+   "nav_status": 3,
+   "updated": "2026-11-12 10:32:37.881789582 +0000 UTC"
+  },
+  {
+   "mmsi": 477050900,
+   "name": "MING DE",
+   "lat": 46.02715,
+   "lon": -122.86952,
+   "sog_kn": 0,
+   "cog": 319.8,
+   "heading": 138,
+   "nav_status": 5,
+   "updated": "2026-11-12 10:32:45.937954846 +0000 UTC"
   },
   {
    "mmsi": 367653630,
    "name": "OSCAR B",
-   "lat": 46.15342,
+   "lat": 46.15341,
    "lon": -123.37712,
    "sog_kn": 0,
    "cog": 0,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-12 10:27:28.787186339 +0000 UTC"
-  },
-  {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10892,
-   "lon": -122.96129,
-   "sog_kn": 0.1,
-   "cog": 256.3,
-   "heading": 130,
-   "nav_status": 5,
-   "updated": "2026-11-12 10:27:32.08371345 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61292,
-   "type_code": 0,
-   "updated": "2026-11-12 10:27:32.76533973 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08049,
-   "lon": -122.90285,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-12 10:27:35.175988405 +0000 UTC"
-  },
-  {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.60097,
-   "lon": -122.77441,
-   "sog_kn": 0.1,
-   "cog": 323.9,
-   "heading": 277,
-   "nav_status": 5,
-   "updated": "2026-11-12 10:27:39.854593143 +0000 UTC"
+   "updated": "2026-11-12 10:32:47.305614212 +0000 UTC"
   }
  ]
 }
