@@ -1,60 +1,113 @@
 {
- "fetched_at": "2026-11-12T22:58:20Z",
+ "fetched_at": "2026-11-12T23:03:17Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 367513190,
    "name": "PORTLAND",
-   "lat": 45.64174,
-   "lon": -122.77501,
-   "sog_kn": 8.8,
-   "cog": 48.8,
+   "lat": 45.65274,
+   "lon": -122.76537,
+   "sog_kn": 9,
+   "cog": 24.7,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-12 22:58:33.953128859 +0000 UTC"
+   "updated": "2026-11-12 23:03:53.800557197 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.08076,
-   "lon": -122.90337,
+   "mmsi": 352006999,
+   "name": "WABI SABI",
+   "lat": 46.17759,
+   "lon": -123.11031,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-12 23:03:44.915410418 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.59547,
+   "lon": -122.77497,
+   "sog_kn": 5.9,
+   "cog": 173,
+   "heading": 324,
+   "nav_status": 5,
+   "updated": "2026-11-12 23:03:46.327291514 +0000 UTC"
+  },
+  {
+   "mmsi": 367575580,
+   "name": "DIANE B.",
+   "lat": 46.26804,
+   "lon": -123.51084,
+   "sog_kn": 7.7,
+   "cog": 63.9,
+   "heading": 63,
+   "nav_status": 5,
+   "updated": "2026-11-12 23:03:55.23378465 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.0089,
+   "lon": -122.84834,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 321,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 23:03:56.724927311 +0000 UTC"
+  },
+  {
+   "mmsi": 368257130,
+   "name": "TRIUMPH VII",
+   "lat": 46.17044,
+   "lon": -123.09825,
+   "sog_kn": 0.1,
+   "cog": 133.4,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-12 23:03:57.258670465 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58757,
+   "lon": -122.77044,
+   "sog_kn": 0,
+   "cog": 247.6,
+   "heading": 141,
+   "nav_status": 0,
+   "updated": "2026-11-12 23:03:57.307908392 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 46.14822,
+   "lon": -123.03908,
+   "type_code": 57,
+   "destination": "VANCOUER,WA",
+   "updated": "2026-11-12 23:03:58.002702239 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.61576,
+   "lon": -122.66838,
+   "sog_kn": 6,
+   "cog": 103.9,
+   "heading": 106,
+   "nav_status": 0,
+   "updated": "2026-11-12 23:03:59.700036992 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.21016,
+   "lon": -123.42685,
+   "sog_kn": 1.1,
+   "cog": 17.3,
+   "heading": 11,
    "nav_status": 3,
-   "updated": "2026-11-12 22:58:36.810359225 +0000 UTC"
-  },
-  {
-   "mmsi": 431300000,
-   "name": "TRITON HIGHWAY",
-   "lat": 45.5977,
-   "lon": -122.775,
-   "sog_kn": 0,
-   "cog": 82.4,
-   "heading": 328,
-   "nav_status": 0,
-   "updated": "2026-11-12 22:58:49.522114102 +0000 UTC"
-  },
-  {
-   "mmsi": 352006982,
-   "name": "MOSHILL",
-   "lat": 46.15242,
-   "lon": -123.04941,
-   "type_code": 70,
-   "destination": "US VAN",
-   "updated": "2026-11-12 22:58:51.421562303 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08984,
-   "lon": -122.92897,
-   "sog_kn": 0,
-   "cog": 222.7,
-   "heading": 107,
-   "nav_status": 0,
-   "updated": "2026-11-12 22:58:59.511691689 +0000 UTC"
+   "updated": "2026-11-12 23:04:03.589188969 +0000 UTC"
   }
  ]
 }
