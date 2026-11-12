@@ -5843,9 +5843,13 @@ const GO_TRIPS = {
   ferry: "⛴️ Catch the ferry",
   river: "🎣 On the river"
 };
+/* Drive destinations: the spots a corridor drive actually ends at — the
+   bridge towns and Portland past the county towns the From list uses. */
+const GO_DESTS = ["Portland", "Longview", "Kelso"].concat(TOWNS.map(t => t.name));
 let goTrip = "commute";
 let goWhenKey = "now";
 let goTownName = null;
+let goToName = "Portland";
 let goData = null, goDataAt = 0, goDataTown = "";
 let goRenderSeq = 0;
 let goLastText = "", goLastDep = 0;
@@ -5854,6 +5858,14 @@ function goTown() {
   return TOWNS.find(t => t.name === goTownName) || currentTown || TOWNS[0];
 }
 function goTripPlain() { return GO_TRIPS[goTrip].split(" ").slice(1).join(" "); }
+/* "from St. Helens" — the drive names its destination too once one is
+   picked ("from St. Helens to Longview"); ferry and river trips start
+   somewhere but don't name an end town, so they stay from-only. */
+function goRoutePhrase() {
+  let s = "from " + goTown().name;
+  if (goTrip === "commute" && goToName && goToName !== goTown().name) s += " to " + goToName;
+  return s;
+}
 function goLoadPref() {
   try {
     const v = JSON.parse(window.localStorage.getItem(GO_KEY) || "null");
@@ -5861,13 +5873,14 @@ function goLoadPref() {
       if (GO_TRIPS[v.trip]) goTrip = v.trip;
       if (GO_WHEN.some(w => w.key === v.when)) goWhenKey = v.when;
       if (TOWNS.some(t => t.name === v.from)) goTownName = v.from;
+      if (GO_DESTS.indexOf(v.to) >= 0) goToName = v.to;
     }
   } catch (e) { /* storage unavailable — defaults apply */ }
   if (!goTownName) goTownName = (currentTown || TOWNS[0]).name;
 }
 function goSavePref() {
   try {
-    window.localStorage.setItem(GO_KEY, JSON.stringify({ trip: goTrip, when: goWhenKey, from: goTownName }));
+    window.localStorage.setItem(GO_KEY, JSON.stringify({ trip: goTrip, when: goWhenKey, from: goTownName, to: goToName }));
   } catch (e) { /* private mode: session-only */ }
 }
 function goPtParts(date) {
@@ -5931,7 +5944,7 @@ function goCheckAlerts(src) {
     detail: "Nothing posted for Columbia County right now." };
   const names = src.alerts.map(a => a.event || "Weather alert");
   const severe = src.alerts.some(a => /warning/i.test(a.event || "") && /severe|extreme/i.test(a.severity || ""));
-  return { state: severe ? "bad" : "warn", icon: severe ? "⛔" : "⚠️",
+  return { state: severe ? "bad" : "warn", block: "weather", icon: severe ? "⛔" : "⚠️",
     label: names.length + (names.length === 1 ? " weather alert" : " weather alerts") + " posted",
     detail: names.slice(0, 2).join(" · ") + (names.length > 2 ? " · +" + (names.length - 2) + " more" : "")
       + " — read the Weather Alerts card before you leave." };
@@ -5944,7 +5957,7 @@ function goCheckRoads(src, label) {
   const inc = (r.incidents || []).length, wz = (b.work_zones || []).length, al = (b.alerts || []).length;
   if (b.status === "alert" || al > 0) {
     const first = (b.alerts || [])[0] || {};
-    return { state: "bad", icon: "⛔", label: label + " — bridge alert posted",
+    return { state: "bad", block: "bridge", icon: "⛔", label: label + " — bridge alert posted",
       detail: (first.title || b.note || "An alert is posted for the Lewis & Clark Bridge.")
         + " If US-30 is blocked: Cornelius Pass or the St. Johns Bridge are the usual detours." };
   }
@@ -6003,7 +6016,7 @@ function goCheckBoat(src, dep) {
   if (!src.ferry) return { state: "na", icon: "❔", label: "Ferry — couldn't check for alerts",
     detail: "The ferry snapshot didn't load, so the closure check couldn't run. Glance at the county ferry page before you count on a boat." };
   if (src.ferry.status === "ok" && src.ferry.alert)
-    return { state: "bad", icon: "⛔", label: "A ferry closure alert is posted",
+    return { state: "bad", block: "ferry", icon: "⛔", label: "A ferry closure alert is posted",
       detail: String(src.ferry.alert).slice(0, 200) + " — see the ferry card for the county's wording." };
   if (src.ferry.status !== "ok") return { state: "na", icon: "❔", label: "Ferry — alert check incomplete",
     detail: "The latest snapshot's ferry check didn't complete. The timetable math below still holds; confirm the alert line on the ferry card." };
@@ -6014,7 +6027,7 @@ function goCheckBoat(src, dep) {
   for (let h = side.firstHour; h <= side.lastHour; h++) {
     if (h * 60 + side.minute >= arrival) { boat = { h: h, min: side.minute, isLast: h === side.lastHour }; break; }
   }
-  if (!boat) return { state: "bad", icon: "⛔", label: "No boat that day after you could reach the dock",
+  if (!boat) return { state: "bad", block: "noboat", icon: "⛔", label: "No boat that day after you could reach the dock",
     detail: "From " + town.name + " (" + drive + " min drive + 10 at the dock), the last Westport sailing — "
       + fmtClock(side.lastHour, side.minute) + " — is out of reach leaving at that time. First boat next morning is "
       + fmtClock(side.firstHour, side.minute) + "; leave by " + fpClock(side.firstHour * 60 + side.minute - drive - 10) + "." };
@@ -6080,13 +6093,25 @@ function goVerdict(rows) {
   const sev = { ok: 0, na: 1, warn: 1, bad: 2 };
   let worst = 0;
   rows.forEach(r => { worst = Math.max(worst, sev[r.state] || 0); });
-  if (worst === 2) return { cls: "go-bad", head: "⛔ Not at that time" };
-  if (worst === 1) return { cls: "go-warn", head: "⚠️ Go — but know this first" };
+  if (worst === 2) {
+    /* The headline names the blocker itself (Travis, 2026-11-12: "Not at
+       that time" said nothing) — each bad check tags what kind it is. */
+    const bad = rows.find(r => r.state === "bad");
+    const heads = {
+      bridge: "⛔ Delay on bridge",
+      route: "⛔ Route not clear",
+      weather: "⛔ Weather alert on the route",
+      ferry: "⛔ Ferry not running",
+      noboat: "⛔ No boat at that time"
+    };
+    return { cls: "go-bad", head: (bad && heads[bad.block]) || "⛔ Route not clear" };
+  }
+  if (worst === 1) return { cls: "go-warn", head: "⚠️ Go — but check the notes first" };
   return { cls: "go-ok", head: "✅ Good to go" };
 }
 function goComposeText(rows, v, dep) {
   const lines = [];
-  lines.push("🛟 BEFORE YOU GO — " + goTripPlain() + " from " + goTown().name + ", " + goWhenLabel(dep));
+  lines.push("🛟 BEFORE YOU GO — " + goTripPlain() + " " + goRoutePhrase() + ", " + goWhenLabel(dep));
   lines.push("Verdict: " + v.head.split(" ").slice(1).join(" "));
   rows.forEach(r => { lines.push(r.icon + " " + r.label + " — " + r.detail); });
   lines.push("Checked " + fmtDayTime(new Date()) + " · Columbia County Live — conditions change; re-check before you leave.");
@@ -6107,7 +6132,7 @@ async function renderGo(force) {
   const first = rows.find(r => r.state === "bad") || rows.find(r => r.state !== "ok");
   const sub = first ? first.label + "." : "Every check this page can run says go.";
   body.innerHTML = "<div class=\"go-verdict " + v.cls + "\"><div class=\"go-verdict-head\">" + v.head + "</div>"
-    + "<div class=\"go-verdict-sub\">" + esc(GO_TRIPS[goTrip] + " from " + goTown().name + " · " + goWhenLabel(dep) + " — " + sub) + "</div></div>"
+    + "<div class=\"go-verdict-sub\">" + esc(GO_TRIPS[goTrip] + " " + goRoutePhrase() + " · " + goWhenLabel(dep) + " — " + sub) + "</div></div>"
     + "<ul class=\"go-rows\">" + rows.map(r =>
         "<li class=\"go-row go-row-" + r.state + "\"><span class=\"go-row-ico\">" + r.icon + "</span>"
         + "<span class=\"go-row-main\"><strong>" + esc(r.label) + "</strong>"
@@ -6128,7 +6153,7 @@ function goIcs() {
     "DTSTAMP:" + evcalStamp(new Date()),
     "DTSTART:" + evcalStamp(new Date(goLastDep)),
     "DURATION:PT1H",
-    "SUMMARY:" + evcalEscText("🛟 Before you go: " + goTripPlain() + " from " + goTown().name),
+    "SUMMARY:" + evcalEscText("🛟 Before you go: " + goTripPlain() + " " + goRoutePhrase()),
     "DESCRIPTION:" + evcalEscText(goLastText),
     "URL:https://travweber67.github.io/columbia-county-live/",
     "END:VEVENT", "END:VCALENDAR"];
@@ -6183,6 +6208,14 @@ function initGo() {
     fromSel.value = goTownName;
     fromSel.addEventListener("change", () => { goTownName = fromSel.value; goSavePref(); renderGo(false); });
   }
+  const toSel = $("go-to");
+  const toField = $("go-to-field");
+  const syncToField = () => { if (toField) toField.style.display = goTrip === "commute" ? "" : "none"; };
+  if (toSel) {
+    toSel.value = goToName;
+    toSel.addEventListener("change", () => { goToName = toSel.value; goSavePref(); renderGo(false); });
+  }
+  syncToField();
   const whenSel = $("go-when");
   if (whenSel) {
     whenSel.value = goWhenKey;
@@ -6201,6 +6234,7 @@ function initGo() {
         x.classList.toggle("active", x === b);
         if (x.setAttribute) x.setAttribute("aria-pressed", x === b ? "true" : "false");
       });
+      syncToField();
       goSavePref();
       renderGo(false);
     }));

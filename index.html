@@ -30,12 +30,12 @@
 if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
-<link rel="manifest" href="manifest.webmanifest?v=61">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=61">
+<link rel="manifest" href="manifest.webmanifest?v=62">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=62">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=61">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=61">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=61">
+<link rel="stylesheet" href="style.css?v=62">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=62">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=62">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
      only page backgrounds first paint needs — warm them with the hero.
      Every other view's photo is lazy-attached by app.js. -->
@@ -295,7 +295,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <h2>🛟 Before You Go</h2>
     <span class="updated" id="go-updated"></span>
   </div>
-  <p class="card-note">The last look before the keys. Pick the trip and when you're leaving, and this card runs the page's own live checks — weather alerts, the corridor, the forecast for that hour, the boat math or the tide window, and how much light you'll have — then answers with one verdict. Take the answer with you: copy it, or drop the trip in your calendar.</p>
+  <p class="card-note">The last look before the keys. Pick the trip, where you're headed, and when you're leaving, and this card runs the page's own live checks — weather alerts, the corridor, the forecast for that hour, the boat math or the tide window, and how much light you'll have — then answers with one verdict. Take the answer with you: copy it, or drop the trip in your calendar.</p>
   <div class="go-trips" id="go-trips" role="group" aria-label="What kind of trip">
     <button class="go-trip-btn active" type="button" data-go-trip="commute" aria-pressed="true">🚗 The drive</button>
     <button class="go-trip-btn" type="button" data-go-trip="ferry" aria-pressed="false">⛴️ Catch the ferry</button>
@@ -313,6 +313,20 @@ document.documentElement.setAttribute("data-theme",t);})();
     </label>
     <label class="go-field">From
       <select id="go-from">
+        <option>St. Helens</option>
+        <option>Scappoose</option>
+        <option>Rainier</option>
+        <option>Clatskanie</option>
+        <option>Vernonia</option>
+        <option>Columbia City</option>
+        <option>Warren</option>
+      </select>
+    </label>
+    <label class="go-field" id="go-to-field">To
+      <select id="go-to">
+        <option>Portland</option>
+        <option>Longview</option>
+        <option>Kelso</option>
         <option>St. Helens</option>
         <option>Scappoose</option>
         <option>Rainier</option>
@@ -1244,7 +1258,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=61"></script>
+<script src="app.js?v=62"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>
