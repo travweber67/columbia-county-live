@@ -983,31 +983,6 @@ h2{font-weight:700;letter-spacing:-.01em}
 .pill-poor{background:#eef1f4;color:#5b7186}
 .verdict-text{font-size:1.16rem;line-height:1.45;margin:0}
 .verdict-tomorrow{font-size:.98rem;margin:0 0 10px}
-/* The answer card (top of the fishing section): question rows in the
-   briefing's small-caps rhythm, then one glanceable answer. */
-.pick-row{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid var(--border)}
-.pick-label{
-  flex:0 0 84px;padding-top:9px;font-size:.72rem;font-weight:700;
-  text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
-}
-.pick-chips{display:flex;flex-wrap:wrap;gap:7px;flex:1;min-width:0}
-.pick-chip{min-height:40px;padding:8px 14px;font-size:.92rem}
-#fishpick-body{padding-top:14px}
-.pick-answer{display:flex;gap:14px;align-items:flex-start}
-.pick-answer-main{flex:1;min-width:0}
-.pick-fc-tag{
-  display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.09em;
-  text-transform:uppercase;color:var(--accent-2);
-  border:1px solid var(--accent-2);border-radius:999px;padding:2px 8px;
-  margin:2px 0 7px;
-}
-.pick-why{font-size:1.14rem;line-height:1.45;margin:0}
-.pick-window{font-size:1rem;font-weight:700;color:var(--accent-2);margin:7px 0 0}
-.pick-seewhy{
-  display:inline-block;margin-top:9px;font-size:.9rem;font-weight:600;
-  color:var(--accent);text-decoration:none;
-}
-.pick-seewhy:hover{text-decoration:underline}
 /* The tracker heat strip: three anchor labels only (Ocean / Bonneville
    Dam / John Day), towns and The Dalles as bare ticks, the county
    stretch named by one zone label above the strip. */
@@ -2612,8 +2587,8 @@ html[data-theme="dark"] .getapp-other summary{color:#bfe3c8}
 @keyframes dirflash{0%,55%{background:rgba(233,164,74,.32)}100%{background:transparent}}
 
 /* ===== PREVIEW (unapproved): fishing-call quadrant ===== */
-.quad{position:relative;aspect-ratio:1/1;max-width:540px;margin:12px auto 2px;border-radius:14px;overflow:hidden;border:1px solid rgba(240,220,180,.28);background:linear-gradient(90deg,transparent calc(50% - 1px),rgba(240,220,180,.30) 50%,transparent calc(50% + 1px)),linear-gradient(0deg,transparent calc(50% - 1px),rgba(240,220,180,.30) 50%,transparent calc(50% + 1px)),linear-gradient(135deg,rgba(70,100,66,.40),rgba(16,30,24,.60))}
-.quad-corner{position:absolute;font-weight:800;font-size:1.02rem;letter-spacing:.02em;color:rgba(242,231,207,.55);text-shadow:0 1px 8px rgba(0,0,0,.6);padding:10px 12px;line-height:1.15;max-width:48%}
+.quad{position:relative;aspect-ratio:1/1;max-width:540px;margin:12px auto 2px;border-radius:14px;overflow:hidden;border:1px solid rgba(240,220,180,.4);background-color:#0d1512;background-image:linear-gradient(90deg,transparent calc(50% - 1px),rgba(240,220,180,.34) 50%,transparent calc(50% + 1px)),linear-gradient(0deg,transparent calc(50% - 1px),rgba(240,220,180,.34) 50%,transparent calc(50% + 1px)),linear-gradient(180deg,rgba(8,14,11,.60) 0%,rgba(8,14,11,.08) 27%,rgba(8,14,11,.08) 71%,rgba(8,14,11,.64) 100%),linear-gradient(rgba(8,14,11,.14),rgba(8,14,11,.14)),url('preview-fish-jump.jpg');background-size:cover;background-position:66% 50%}
+.quad-corner{position:absolute;font-weight:800;font-size:1.02rem;letter-spacing:.02em;color:rgba(242,231,207,.88);text-shadow:0 1px 8px rgba(0,0,0,.75),0 0 2px rgba(0,0,0,.8);padding:10px 12px;line-height:1.15;max-width:48%;z-index:2}
 .quad-corner.qc-tl{top:0;left:0}
 .quad-corner.qc-tr{top:0;right:0;text-align:right}
 .quad-corner.qc-bl{bottom:0;left:0}
@@ -2621,8 +2596,8 @@ html[data-theme="dark"] .getapp-other summary{color:#bfe3c8}
 .quad-corner.on{color:#ffb35c}
 .quad-axis-y{position:absolute;left:2px;top:50%;transform:rotate(-90deg) translateX(50%);transform-origin:left center;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(242,231,207,.45);white-space:nowrap}
 .quad-axis-x{text-align:center;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(242,231,207,.5);margin:2px 0 8px}
-.quad-dot{position:absolute;width:24px;height:24px;border-radius:50%;background:#e8760a;border:3px solid #f7ead2;box-shadow:0 0 0 6px rgba(232,118,10,.25),0 2px 10px rgba(0,0,0,.55);transform:translate(-50%,50%);transition:left .6s ease,bottom .6s ease;z-index:3}
-.quad-ghost{position:absolute;width:11px;height:11px;border-radius:50%;background:rgba(247,234,210,.45);transform:translate(-50%,50%);z-index:2}
+.quad-dot{position:absolute;width:24px;height:24px;border-radius:50%;background:#e8760a;border:3px solid #fff7e8;box-shadow:0 0 0 5px rgba(10,14,10,.45),0 0 16px 5px rgba(247,234,210,.85),0 2px 10px rgba(0,0,0,.6);transform:translate(-50%,50%);transition:left .6s ease,bottom .6s ease;z-index:3}
+.quad-ghost{position:absolute;width:11px;height:11px;border-radius:50%;background:rgba(247,234,210,.78);box-shadow:0 0 0 2px rgba(10,14,10,.55);transform:translate(-50%,50%);z-index:2}
 .quad-why{font-size:1rem;line-height:1.45;margin:6px 0 4px}
 .preview-ribbon{background:#e8760a;color:#14100a;font-weight:700;text-align:center;padding:9px 14px;font-size:.92rem;line-height:1.35}
 
@@ -2633,19 +2608,8 @@ html[data-theme="dark"] .getapp-other summary{color:#bfe3c8}
    river to spawn.jpg). The photo fills the panel; a dark scrim sits
    over it; the square rides on a dark frosted panel so every label,
    chip and dot stays crisp over bright water and dark rock alike. */
-.quad-photo{position:relative;border-radius:14px;overflow:hidden;padding:16px 16px 8px;margin-top:12px;background-color:#0d1512;background-image:linear-gradient(180deg,rgba(8,14,11,.52) 0%,rgba(8,14,11,.66) 55%,rgba(8,14,11,.82) 100%),url('preview-fish-jump.jpg');background-size:cover;background-position:center 38%}
-.quad-photo .subhead{color:#f7ead2;text-shadow:0 1px 10px rgba(0,0,0,.85);margin-top:0}
-.quad-photo .card-note{color:rgba(247,234,210,.92);text-shadow:0 1px 6px rgba(0,0,0,.85)}
-.quad-photo .quad{background:linear-gradient(90deg,transparent calc(50% - 1px),rgba(240,220,180,.34) 50%,transparent calc(50% + 1px)),linear-gradient(0deg,transparent calc(50% - 1px),rgba(240,220,180,.34) 50%,transparent calc(50% + 1px)),rgba(9,15,12,.82);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);border-color:rgba(240,220,180,.4)}
-.quad-photo .quad-corner{color:rgba(242,231,207,.78)}
-.quad-photo .quad-corner.on{color:#ffb35c}
-.quad-photo .plan-chip{background:rgba(9,15,12,.8);color:#f2e7cf;border:1px solid rgba(242,231,207,.45)}
-.quad-photo .plan-chip.active{background:#e8760a;border-color:#ffb35c;color:#fff}
-.quad-photo .quad-dot{border:3px solid #fff7e8;box-shadow:0 0 0 5px rgba(10,14,10,.45),0 0 16px 5px rgba(247,234,210,.85),0 2px 10px rgba(0,0,0,.6)}
-.quad-photo .quad-ghost{background:rgba(247,234,210,.78);box-shadow:0 0 0 2px rgba(10,14,10,.55)}
-.quad-photo .quad-why{background:rgba(9,15,12,.8);border-radius:10px;padding:10px 12px;color:#f5eedd}
-.quad-photo .quad-axis-x{color:rgba(247,234,210,.75)}
-.quad-credit{font-size:.7rem;color:rgba(247,234,210,.78);margin:8px 2px 2px;text-shadow:0 1px 6px rgba(0,0,0,.85)}
+.quad-photo{margin-top:12px}
+.quad-credit{font-size:.7rem;color:rgba(233,238,230,.72);margin:8px 2px 2px}
 
 /* ===== PREVIEW refinement 2: corner icons (matched pictogram set,
    generated 2026-11-11: boat-on-anchor / bank holder + sinker +
