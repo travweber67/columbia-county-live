@@ -1,0 +1,2652 @@
+/* Columbia County Live — Redesign 2026-11-04 styles.
+   Modern light system: ink/slate text on white cards over a very light
+   gray-blue page, one accent (river blue), status colors only for status.
+   Clean system sans everywhere (the old display serif is retired), 16px card
+   radius, whisper shadows, 8/12/16/24 spacing scale. The page is four
+   views (Today / Travel / Outdoors / Events & More) switched by the tab
+   bar — bottom bar on phones, top bar on desktop. */
+:root{
+  --bg:#f1ecdc;
+  --panel:#fbf8ee;
+  --panel-2:#f0ead6;
+  --panel-3:#e3dcc2;
+  --border:#d9d1b6;
+  --text:#1e2b1f;
+  --muted:#5d6b57;
+  --accent:#2e5d3a;
+  --accent-dark:#1e4228;
+  --accent-2:#2e7d3f; /* darkened 2026-11-04 (WS-1 a11y): #0d8a5f was 3.9:1 on panel-2 / 4.35:1 on white as text — Lighthouse color-contrast failure; #0b7a52 is 4.80:1 / 5.36:1 */
+  --warm:#b0511c;
+  --warm-fill:#e9a44a;
+  --warn:#b0511c;
+  --danger:#b3352b;
+  --radius:16px;
+  --shadow:0 1px 2px rgba(43,52,30,.06),0 10px 28px rgba(43,52,30,.07);
+  --sponsor-bg:#f6ead0;
+  --sans:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --display:Georgia,"Iowan Old Style","Palatino Linotype","Times New Roman",serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:linear-gradient(180deg,#faf6ea,var(--bg) 480px) no-repeat,var(--bg);
+  color:var(--text);
+  font-family:var(--sans);
+  line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent-dark);outline-offset:2px}
+h1,h2,h3{margin:0;line-height:1.2;font-family:var(--sans)}
+h2{font-weight:700;letter-spacing:-.01em}
+.small{font-size:.82rem;color:var(--muted)}
+::selection{background:rgba(46,93,58,.25)}
+
+/* ---------- Hero (slim banner) ---------- */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--border)}
+.hero-img{
+  position:absolute;inset:0;width:100%;height:100%;z-index:0;
+  object-fit:cover;object-position:center 62%;
+  filter:saturate(.86) contrast(1.04) brightness(.95);
+}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='480' height='300' viewBox='0 0 480 300'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.16'%3E%3Ccircle cx='428' cy='16' r='28'/%3E%3Ccircle cx='428' cy='16' r='58'/%3E%3Ccircle cx='428' cy='16' r='88'/%3E%3Ccircle cx='428' cy='16' r='118'/%3E%3Ccircle cx='428' cy='16' r='148'/%3E%3C/g%3E%3C/svg%3E") right top no-repeat,
+    linear-gradient(180deg,rgba(9,22,13,.58) 0%,rgba(9,22,13,.40) 52%,rgba(9,22,13,.68) 100%);
+}
+.hero-inner{
+  position:relative;z-index:1;max-width:1200px;margin:0 auto;
+  padding:16px 20px 14px;
+  display:flex;flex-direction:column;
+}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-mark{
+  font-size:1.45rem;line-height:1;padding:7px 8px;
+  background:rgba(10,24,14,.55);border:1px solid rgba(255,255,255,.25);
+  border-radius:12px;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);
+}
+.brand-name{
+  font-size:1.28rem;font-weight:800;letter-spacing:-.01em;
+  color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.5);
+}
+.live-word{color:var(--warm-fill)}
+.tagline{margin:2px 0 0;color:#d7e6f2;font-size:.86rem;text-shadow:0 1px 8px rgba(0,0,0,.55)}
+.header-clock{
+  text-align:right;background:rgba(8,20,32,.55);
+  border:1px solid rgba(255,255,255,.22);border-radius:12px;
+  padding:7px 13px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+}
+.clock{font-size:1.18rem;font-weight:700;font-variant-numeric:tabular-nums;color:#fff}
+.clock-label{color:#cfe0f0;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em}
+.hero-title{
+  font-weight:800;letter-spacing:-.015em;
+  font-size:clamp(1.32rem,2.6vw,1.8rem);line-height:1.15;
+  margin-top:14px;max-width:22em;color:#fff;
+  text-shadow:0 2px 20px rgba(0,0,0,.5);
+}
+.hero-title em{font-style:normal;color:var(--warm-fill)}
+.hero-promise{
+  max-width:72ch;color:#e3eef7;font-size:.9rem;margin:6px 0 12px;
+  text-shadow:0 1px 10px rgba(0,0,0,.6);
+}
+.status-strip{display:flex;flex-wrap:wrap;gap:8px}
+.status-strip a{
+  display:inline-flex;align-items:center;gap:7px;
+  background:rgba(9,22,36,.66);border:1px solid rgba(255,255,255,.22);
+  color:#eef4fa;text-decoration:none;font-size:.84rem;font-weight:600;
+  padding:7px 13px;border-radius:999px;
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  transition:border-color .15s ease,transform .15s ease;
+}
+.status-strip a:hover{border-color:var(--warm-fill);transform:translateY(-1px)}
+.pulse-dot{
+  width:8px;height:8px;border-radius:50%;background:#2fbf71;flex:0 0 auto;
+  box-shadow:0 0 0 0 rgba(47,191,113,.45);animation:pulse 2.4s ease-out infinite;
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(47,191,113,.45)}
+  70%{box-shadow:0 0 0 8px rgba(47,191,113,0)}
+  100%{box-shadow:0 0 0 0 rgba(47,191,113,0)}
+}
+
+/* ---------- Tab bar (view switcher) ---------- */
+.tabbar{
+  position:sticky;top:0;z-index:950;height:57px;
+  display:flex;align-items:center;justify-content:center;gap:6px;
+  padding:8px 12px;
+  background:rgba(255,255,255,.9);border-bottom:1px solid var(--border);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+}
+.tab-btn{
+  display:inline-flex;align-items:center;gap:7px;
+  font:inherit;font-size:.94rem;font-weight:600;color:var(--muted);
+  background:transparent;border:1px solid transparent;border-radius:999px;
+  padding:9px 18px;cursor:pointer;
+  transition:background .18s ease,color .18s ease,transform .12s ease,box-shadow .18s ease;
+}
+.tab-btn:hover{color:var(--text);background:var(--panel-2)}
+.tab-btn:active{transform:scale(.97)}
+.tab-btn.active{
+  background:var(--accent);color:#fff;border-color:var(--accent);
+  box-shadow:0 3px 10px rgba(30,66,40,.32);
+}
+.tab-ico{font-size:1.02rem;line-height:1}
+@media (max-width:899px){
+  .tabbar{
+    position:fixed;top:auto;bottom:0;left:0;right:0;height:auto;z-index:1200;
+    justify-content:space-around;gap:2px;
+    padding:6px 6px calc(6px + env(safe-area-inset-bottom));
+    border-bottom:none;border-top:1px solid var(--border);
+    background:rgba(255,255,255,.96);
+  }
+  .tab-btn{flex:1;flex-direction:column;gap:2px;padding:6px 4px;font-size:.7rem;border-radius:12px}
+  .tab-ico{font-size:1.15rem}
+  body{padding-bottom:82px}
+}
+
+/* Sticky status bar */
+.sticky-bar{
+  position:sticky;top:0;z-index:900;
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  padding:8px 16px;
+  background:rgba(255,255,255,.94);border-bottom:1px solid var(--border);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+}
+@media (min-width:900px){.sticky-bar{top:57px}}
+.sticky-brand{font-weight:800;font-size:.95rem;letter-spacing:-.01em;margin-right:2px}
+.sticky-pill{
+  text-decoration:none;color:var(--text);font-size:.8rem;font-weight:700;
+  border:1px solid var(--border);border-radius:999px;padding:4px 11px;background:var(--panel-2);
+}
+.sticky-pill.ok{border-color:var(--accent-2);color:var(--accent-2)}
+.sticky-pill.warn{border-color:var(--warn);color:var(--warn)}
+.sticky-pill.bad{border-color:#e5a3a3;color:#991b1b;background:#fdecec}
+.sticky-links{display:flex;gap:4px;margin-left:auto}
+.sticky-links a{color:var(--muted);text-decoration:none;font-size:.82rem;font-weight:600;padding:4px 8px;border-radius:8px}
+.sticky-links a:hover{color:var(--text);background:var(--panel-2)}
+@media (max-width:560px){.sticky-links{display:none}}
+
+/* Alert banner */
+.alert-banner{
+  max-width:1200px;margin:14px auto 0;padding:12px 18px;width:calc(100% - 40px);
+  background:#fdecec;border:1px solid #e5a3a3;border-radius:var(--radius);
+  color:#7c1d1d;font-size:.95rem;
+}
+.alert-banner strong{color:#5f1212}
+@media (max-width:920px){.alert-banner{width:calc(100% - 24px)}}
+
+/* ---------- Views ---------- */
+.views{max-width:1200px;margin:0 auto;padding:16px 20px 8px}
+.view{display:flex;flex-direction:column;gap:16px;min-width:0}
+.view[hidden]{display:none!important}
+.view-active{animation:viewIn .22s ease both}
+@keyframes viewIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (min-width:900px){
+  #view-travel{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+  #view-travel .map-card,#view-travel #roads-card,#view-travel #ferry-card{grid-column:1 / -1}
+  #view-outdoors{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+  #view-outdoors #alerts-card,#view-outdoors #rivers-card{grid-column:1 / -1}
+}
+@media (max-width:899px){
+  .views{padding:12px 12px 4px}
+}
+
+/* Reveal-on-first-sight (class added by JS only — content is never
+   gated on animation; no-JS and no-IO visitors simply see the cards) */
+.reveal{opacity:0;transform:translateY(12px)}
+.reveal.inview{opacity:1;transform:none;transition:opacity .5s ease,transform .5s ease}
+
+/* At-a-glance KPI strip */
+.glance{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:10px;
+}
+.glance-tile{
+  display:flex;flex-direction:column;gap:2px;text-decoration:none;color:var(--text);
+  background:var(--panel);
+  border:1px solid var(--border);border-radius:var(--radius);
+  padding:14px 16px;box-shadow:var(--shadow);
+  transition:border-color .15s ease,transform .15s ease;
+}
+.glance-tile:hover{border-color:var(--accent);transform:translateY(-1px)}
+.glance-tile:active{transform:translateY(1px)}
+.glance-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700}
+.glance-val{font-size:1.42rem;font-weight:800;letter-spacing:-.01em;line-height:1.15;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;transition:color .4s ease}
+.glance-val.ok{color:var(--accent-2)}
+.glance-val.warn{color:var(--warn)}
+.glance-val.bad{color:var(--danger)}
+.glance-sub{font-size:.76rem;color:var(--muted)}
+@media (max-width:560px){.glance{grid-template-columns:1fr 1fr}.glance-val{font-size:1.12rem}}
+
+/* Cards */
+.card{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:20px;
+  box-shadow:var(--shadow);
+  min-width:0;
+}
+.card-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:10px}
+.card-head h2{font-size:1.06rem}
+.updated{font-size:.72rem;color:var(--muted);white-space:nowrap}
+.card-note{color:var(--muted);font-size:.9rem;margin:6px 0 12px}
+.panel-body{min-height:40px}
+.loading{color:var(--muted);font-size:.9rem}
+.loading::after{
+  content:"";display:block;height:10px;max-width:430px;margin-top:10px;border-radius:6px;
+  background:linear-gradient(90deg,var(--panel-2) 25%,var(--panel-3) 50%,var(--panel-2) 75%);
+  background-size:200% 100%;animation:shimmer 1.3s linear infinite;
+}
+@keyframes shimmer{from{background-position:180% 0}to{background-position:-20% 0}}
+.fallback{color:var(--muted);font-size:.9rem}
+.text-link{font-size:.88rem;text-decoration:none}
+.text-link:hover{text-decoration:underline}
+.subhead{
+  font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;
+  color:var(--muted);margin:16px 0 6px;
+}
+
+/* Card photo headers — one consistent strip, gentle modern grade */
+.photo-card{padding-top:0;overflow:hidden}
+.card-photo{position:relative;margin:0 -20px 16px;height:132px;background:#ddd5ba}
+.card-photo img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  filter:saturate(.88) contrast(1.03);
+}
+.card-photo::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:46%;pointer-events:none;
+  background:linear-gradient(180deg,rgba(12,26,15,0),rgba(12,26,15,.28));
+}
+.photo-courthouse img{object-position:center 34%}
+.photo-dock img{object-position:center 62%}
+.photo-ferry img{object-position:center 55%}
+.photo-pano img{object-position:center 50%}
+@media (max-width:560px){.card-photo{height:118px}}
+
+/* Map */
+.map-card{padding:12px}
+.map-toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:2px 2px 10px}
+.map-tool-btn{
+  background:var(--panel-2);color:var(--text);border:1px solid var(--border);
+  border-radius:999px;padding:6px 13px;font-size:.82rem;font-weight:700;cursor:pointer;
+  transition:border-color .15s ease,transform .12s ease;
+}
+.map-tool-btn:hover{border-color:var(--accent)}
+.map-tool-btn:active{transform:scale(.97)}
+.map-towns{display:inline-flex;flex-wrap:wrap;gap:6px;flex:1}
+.map-town-chip{
+  background:transparent;color:var(--muted);border:1px solid var(--border);
+  border-radius:999px;padding:5px 11px;font-size:.8rem;cursor:pointer;
+}
+.map-town-chip:hover{color:var(--text);border-color:var(--accent)}
+#map:fullscreen{height:100%;border-radius:0}
+#map{height:440px;border-radius:12px;background:#dce7ef;z-index:0}
+@media (max-width:920px){#map{height:320px}}
+.map-legend{display:flex;flex-wrap:wrap;gap:14px;padding:10px 6px 2px;color:var(--muted);font-size:.8rem}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle}
+.dot-town{background:#2e5d3a}
+.dot-gauge{background:#0d8a5f}
+.dot-quake{background:#e05252}
+.dot-landmark{background:#d97706}
+.leaflet-popup-content{font-size:.85rem;line-height:1.4}
+.emoji-pin{background:none;border:none;font-size:20px;line-height:1;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+
+/* Link tiles */
+.link-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.link-tile{
+  display:block;text-decoration:none;color:var(--text);
+  background:var(--panel-2);border:1px solid var(--border);border-radius:12px;
+  padding:12px 14px;transition:border-color .15s ease, transform .15s ease;
+}
+.link-tile:hover{border-color:var(--accent);transform:translateY(-1px)}
+.link-tile strong{display:block;font-size:.95rem;margin-bottom:3px}
+.link-tile span{color:var(--muted);font-size:.82rem}
+@media (max-width:560px){.link-grid{grid-template-columns:1fr}}
+
+/* Ferry */
+.ferry-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:10px}
+@media (max-width:560px){.ferry-grid{grid-template-columns:1fr}}
+.ferry-box{background:var(--panel-2);border:1px solid var(--border);border-radius:12px;padding:10px 12px}
+.ferry-box h3{font-size:.85rem;color:var(--accent);margin-bottom:4px}
+.ferry-box p{margin:0;font-size:.9rem}
+
+/* Ferry next-boat countdown */
+.ferry-next{margin:4px 0 14px}
+.ferry-next-head{font-size:1.12rem;font-weight:800;letter-spacing:-.01em;margin-bottom:8px}
+.ferry-next-head .fn-when{color:var(--warm)}
+.ferry-next-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ferry-next-box{background:var(--panel-2);border:1px solid var(--border);border-radius:12px;padding:10px 12px}
+.ferry-next-box .fn-side{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
+.ferry-next-box .fn-count{font-size:1.3rem;font-weight:800;font-variant-numeric:tabular-nums;line-height:1.2}
+.ferry-next-box .fn-time{color:var(--muted);font-size:.82rem}
+.ferry-next-box.last-boat{border-color:var(--warn)}
+.fn-last{display:inline-block;color:#23160a;background:var(--warm-fill);font-size:.68rem;font-weight:800;border-radius:999px;padding:1px 8px;margin-left:6px;vertical-align:2px;text-transform:uppercase;letter-spacing:.05em}
+@media (max-width:560px){.ferry-next-grid{grid-template-columns:1fr}}
+
+/* Alerts */
+.alert-item{border-left:4px solid var(--warn);background:var(--panel-2);border-radius:10px;padding:10px 12px;margin-bottom:10px}
+.alert-item.severe{border-left-color:var(--danger)}
+.alert-item h3{font-size:.95rem;margin-bottom:3px}
+.alert-item p{margin:0;color:var(--muted);font-size:.85rem}
+.no-alerts{color:var(--accent-2);font-size:.92rem}
+
+/* Forecast */
+.town-picker{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.town-btn{
+  background:var(--panel-2);color:var(--muted);border:1px solid var(--border);
+  border-radius:999px;padding:5px 12px;font-size:.82rem;cursor:pointer;
+  transition:background .15s ease,color .15s ease,border-color .15s ease;
+}
+.town-btn:hover{color:var(--text);border-color:var(--accent)}
+.town-btn.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+.forecast-periods{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media (max-width:560px){.forecast-periods{grid-template-columns:1fr}}
+.period{background:var(--panel-2);border:1px solid var(--border);border-radius:12px;padding:9px 11px}
+.period h4{margin:0 0 2px;font-size:.83rem;color:var(--accent)}
+.period .temp{font-size:1.15rem;font-weight:800}
+.period p{margin:2px 0 0;color:var(--muted);font-size:.8rem}
+
+/* Rivers */
+.river-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--border)}
+.river-spark{flex-basis:100%;margin-top:2px}
+.river-spark svg{width:100%;height:46px;display:block;animation:sparkIn .7s ease both}
+@keyframes sparkIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.river-spark-cap{font-size:.72rem;color:var(--muted);margin-top:2px}
+.river-row:last-child{border-bottom:none}
+.river-name{font-weight:700;font-size:.93rem}
+.river-sub{color:var(--muted);font-size:.78rem}
+.river-nums{text-align:right;white-space:nowrap}
+.river-nums .big{font-size:1.05rem;font-weight:800;font-variant-numeric:tabular-nums}
+.trend-up{color:var(--warn)}
+.trend-down{color:var(--accent-2)}
+.trend-flat{color:var(--muted)}
+
+/* Quakes */
+.quake-row{display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid var(--border)}
+.quake-row:last-child{border-bottom:none}
+.quake-mag{
+  flex:0 0 auto;min-width:44px;text-align:center;font-weight:800;font-size:.95rem;
+  background:var(--panel-2);border:1px solid var(--border);border-radius:10px;padding:6px 4px;
+}
+.quake-mag.hot{border-color:#e5a3a3;color:#b32626;background:#fdecec}
+.quake-place{font-size:.9rem}
+.quake-time{color:var(--muted);font-size:.78rem}
+
+/* Freshness board */
+.fresh-row{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid var(--border);font-size:.9rem}
+.fresh-row:last-child{border-bottom:none}
+.fresh-dot{flex:0 0 auto;width:10px;height:10px;border-radius:50%;background:var(--muted)}
+.fresh-dot.dot-ok{background:var(--accent-2)}
+.fresh-dot.dot-warn{background:var(--warn)}
+.fresh-dot.dot-bad{background:var(--danger)}
+.fresh-dot.dot-none{background:transparent;border:1px solid var(--muted)}
+.fresh-label{flex:1}
+.fresh-age{color:var(--muted);font-size:.82rem;font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* Share / keep bar */
+.share-bar{
+  display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;
+  background:var(--panel);
+  border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:20px;
+}
+.share-copy{flex:1 1 320px}
+.share-copy h2{font-size:1.12rem;margin-bottom:4px}
+.share-copy p{margin:0;color:var(--muted);font-size:.9rem}
+.share-actions{display:flex;flex-wrap:wrap;gap:10px}
+.share-btn{
+  background:var(--panel);color:var(--text);border:1px solid var(--border);
+  border-radius:999px;padding:11px 18px;font-size:.92rem;font-weight:700;cursor:pointer;
+  transition:border-color .15s ease,background .15s ease,transform .12s ease;
+}
+.share-btn:hover{border-color:var(--accent)}
+.share-btn:active{transform:translateY(1px)}
+.share-btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.share-btn.primary:hover{background:var(--accent-dark)}
+.install-help{flex-basis:100%;margin:0;color:var(--muted);font-size:.88rem;background:var(--panel-2);border:1px dashed var(--border);border-radius:12px;padding:10px 12px}
+
+/* Footer */
+.site-footer{
+  padding:18px 4px 30px;
+  border-top:1px solid var(--border);color:var(--muted);font-size:.9rem;
+}
+.site-footer strong{color:var(--text)}
+
+/* Mobile hero trims */
+@media (max-width:560px){
+  .header-clock{display:none}
+  .hero-inner{padding:14px 14px 12px}
+  .brand-name{font-size:1.12rem}
+  .hero-promise{display:none}
+  /* Card heads: let the timestamp drop to its own line instead of
+     squeezing the title into a word-per-line column beside the pin. */
+  .card-head{flex-wrap:wrap}
+  .card-head h2{flex:1 1 auto}
+  .card-head .updated{order:3;flex-basis:100%;margin-top:2px}
+  .map-towns{order:3;flex-basis:100%;margin-top:2px}
+}
+
+/* ---- v1.1: live layers + snapshot panels ---- */
+.dot-plane{background:#d97706}
+.dot-ship{background:#6366f1}
+.dot-fire{background:#ea580c}
+.legend-note{flex-basis:100%;font-size:.75rem}
+.status-note{
+  color:var(--muted);font-size:.88rem;background:#f2f7fb;
+  border:1px dashed var(--border);border-radius:12px;padding:10px 12px;margin:0;
+}
+.leaflet-control-layers{
+  background:var(--panel);color:var(--text);border:1px solid var(--border);
+  border-radius:10px;font-size:.8rem;
+}
+.leaflet-control-layers label{color:var(--text)}
+.plane-pin span{filter:drop-shadow(0 1px 3px rgba(0,0,0,.7))}
+
+/* Commute verdict */
+.commute-verdict{border-radius:12px;padding:13px 15px;border:1px solid var(--border);background:var(--panel-2)}
+.commute-verdict .cv-head{font-size:1.18rem;font-weight:800;letter-spacing:-.01em;line-height:1.2}
+.commute-verdict .cv-sub{color:var(--muted);font-size:.85rem;margin-top:3px}
+.commute-verdict.cv-ok{border-left:5px solid var(--accent-2)}
+.commute-verdict.cv-ok .cv-head{color:var(--accent-2)}
+.commute-verdict.cv-warn{border-left:5px solid var(--warn)}
+.commute-verdict.cv-warn .cv-head{color:var(--warn)}
+.commute-verdict.cv-bad{border-left:5px solid var(--danger);background:#fdf1f1}
+.commute-verdict.cv-bad .cv-head{color:var(--danger)}
+
+/* Bridge */
+.bridge-box{border-radius:12px;padding:12px 14px;margin-bottom:6px;border:1px solid var(--border);background:var(--panel-2)}
+.bridge-title{font-weight:800;font-size:1rem;margin-bottom:4px}
+.bridge-box p{margin:0;color:var(--muted);font-size:.88rem}
+.bridge-clear{border-left:4px solid var(--accent-2)}
+.bridge-work{border-left:4px solid var(--warn)}
+.bridge-alert{border-left:4px solid var(--danger)}
+.bridge-unknown{border-left:4px solid var(--muted)}
+
+/* Incidents */
+.incident-row{padding:8px 0;border-bottom:1px solid var(--border);font-size:.9rem}
+.incident-row:last-child{border-bottom:none}
+.incident-row p{margin:2px 0 0;color:var(--muted);font-size:.83rem}
+
+/* Cameras */
+.camera-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.camera-fig{margin:0;background:var(--panel-2);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.camera-fig img{width:100%;height:96px;object-fit:cover;display:block;background:#d7e2ec}
+.camera-fig figcaption{padding:7px 9px;font-size:.76rem;color:var(--muted)}
+.camera-fig.cam-dead figcaption::after{content:" — still unavailable";color:var(--warn)}
+
+/* Ships */
+.ship-row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--border)}
+.ship-row:last-child{border-bottom:none}
+
+/* Build batch 2026-11-04: My Route strips, incident meta, route-ahead, Bend run */
+.route-group{margin:0 0 12px}
+.route-group:last-child{margin-bottom:2px}
+.route-group-name{font-weight:700;font-size:.85rem;margin:0 0 6px}
+.route-strip{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px}
+.route-strip .camera-fig{flex:0 0 168px}
+.route-strip .camera-fig img{height:104px}
+.incident-meta{color:var(--muted);font-size:.76rem;margin-top:2px}
+.incident-scope{color:var(--muted);font-size:.8rem;margin:0 0 8px}
+.ra-town{padding:10px 0;border-bottom:1px solid var(--border)}
+.ra-town:first-child{padding-top:2px}
+.ra-town:last-child{border-bottom:none;padding-bottom:2px}
+.ra-town-name{font-weight:800;font-size:.95rem;margin-bottom:6px}
+.ra-strip{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px}
+.ra-chip{flex:0 0 108px;background:var(--panel-2);border:1px solid var(--border);border-radius:12px;padding:8px 9px}
+.ra-hour{font-size:.72rem;color:var(--muted);font-weight:700}
+.ra-temp{font-size:1.05rem;font-weight:800;font-variant-numeric:tabular-nums}
+.ra-wx{font-size:.74rem;color:var(--muted)}
+.ra-pop{font-size:.72rem;color:var(--muted)}
+.ra-flags{font-size:.82rem;font-weight:600;margin-top:2px}
+.ra-flags.ra-clear{color:var(--muted);font-weight:400}
+.bend-area{padding:2px 0 10px}
+.bend-wx{font-size:.9rem;margin:4px 0 8px}
+
+/* Sky (aircraft filters/list now live on the Travel tab's aircraft card) */
+.sky-filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.sky-filter-btn{
+  background:var(--panel-2);color:var(--muted);border:1px solid var(--border);
+  border-radius:999px;padding:5px 12px;font-size:.82rem;cursor:pointer;
+  transition:background .15s ease,color .15s ease,border-color .15s ease;
+}
+.sky-filter-btn:hover{color:var(--text);border-color:var(--accent)}
+.sky-filter-btn.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+.sky-count{margin:0 0 6px;font-size:.92rem}
+.sky-row{display:flex;align-items:baseline;gap:10px;padding:6px 0;border-bottom:1px solid var(--border);font-size:.88rem}
+.sky-row:last-child{border-bottom:none}
+.sky-cs{font-weight:800;min-width:74px}
+.sky-meta{color:var(--muted);flex:1}
+.sky-alt{font-variant-numeric:tabular-nums;white-space:nowrap}
+.iss-line p{margin:8px 0 0;font-size:.88rem;color:var(--muted)}
+.iss-line strong{color:var(--text)}
+
+/* Fires */
+.fire-row{padding:8px 0;border-bottom:1px solid var(--border)}
+.fire-row:last-child{border-bottom:none}
+.fire-name{font-weight:700;font-size:.93rem}
+.fire-sub{color:var(--muted);font-size:.8rem}
+
+/* Events */
+.event-filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.event-filter-btn{
+  background:var(--panel-2);color:var(--muted);border:1px solid var(--border);
+  border-radius:999px;padding:5px 12px;font-size:.82rem;cursor:pointer;
+  transition:background .15s ease,color .15s ease,border-color .15s ease;
+}
+.event-filter-btn:hover{color:var(--text);border-color:var(--accent)}
+.event-filter-btn.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+.event-today-badge{
+  display:inline-block;background:var(--warm-fill);color:#23160a;font-size:.66rem;font-weight:800;
+  border-radius:999px;padding:1px 8px;margin-left:6px;vertical-align:2px;letter-spacing:.05em;
+}
+.event-date{
+  font-weight:800;font-size:.85rem;color:var(--warm);
+  margin:12px 0 4px;text-transform:uppercase;letter-spacing:.04em;
+}
+.event-date:first-child{margin-top:0}
+.event-row{display:flex;gap:10px;align-items:baseline;padding:5px 0;border-bottom:1px solid var(--border);font-size:.9rem}
+.event-row:last-of-type{border-bottom:none}
+.event-time{flex:0 0 74px;color:var(--muted);font-size:.8rem;font-variant-numeric:tabular-nums}
+.event-title{flex:1}
+.event-title a{color:var(--text);text-decoration:none}
+.event-title a:hover{color:var(--accent);text-decoration:underline}
+.event-src{color:var(--muted);font-size:.74rem;white-space:nowrap}
+.event-fb-tag{flex:0 0 auto;background:#1877f2;color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.02em;padding:2px 7px;border-radius:999px;white-space:nowrap;align-self:center}
+#events-body .status-note{margin-top:12px}
+@media (max-width:560px){
+  .event-src{display:none}
+  .leaflet-control-layers{font-size:.72rem}
+}
+
+/* The County Briefing — today's answers, ready to take with you */
+.briefing-card{border-left:4px solid var(--accent)}
+.briefing-view{margin:0 0 14px}
+.briefing-loading{margin:0;padding:6px 0 2px;color:var(--muted);font-size:.93rem}
+.briefing-row{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--border)}
+.briefing-row:first-child{padding-top:0}
+.briefing-row:last-child{border-bottom:none}
+.briefing-row-alert{background:var(--panel-2);border:1px solid var(--border);border-left:4px solid var(--warn);border-radius:10px;padding:10px 12px}
+.briefing-ico{flex:0 0 28px;font-size:1.15rem;line-height:1.35;text-align:center}
+.briefing-main{flex:1;min-width:0}
+.briefing-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700;margin-bottom:2px}
+.briefing-body{font-size:.98rem;line-height:1.45}
+.briefing-temp{font-weight:800}
+.briefing-items{list-style:none;margin:3px 0 0;padding:0;display:grid;gap:4px}
+.briefing-items li{font-size:.93rem;line-height:1.4;padding-left:14px;position:relative}
+.briefing-items li::before{content:"•";position:absolute;left:2px;color:var(--muted)}
+.briefing-more{font-size:.85rem;color:var(--muted);margin-top:4px}
+.briefing-foot{font-size:.74rem;color:var(--muted);margin:10px 0 0;line-height:1.5}
+.briefing-actions{display:flex;flex-wrap:wrap;gap:10px}
+.briefing-card .install-help{margin-top:12px}
+
+/* Since you were away — return-visit briefing */
+.since-card{border-left:4px solid var(--warm-fill)}
+.since-dismiss{background:none;border:1px solid var(--border);color:var(--muted);border-radius:8px;width:30px;height:30px;font-size:.8rem;cursor:pointer;flex:none}
+.since-dismiss:hover{color:var(--warn);border-color:var(--warn)}
+.since-when{font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:700;margin:2px 0 8px}
+.since-list{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.since-list li{font-size:.95rem;line-height:1.45}
+.since-quiet,.since-welcome{font-size:.95rem;line-height:1.5;margin:0}
+
+/* My town — the page tunes itself around home (X20 R3) */
+.home-chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 6px}
+.home-chip{
+  background:var(--panel-2);color:var(--muted);border:1px solid var(--border);
+  border-radius:999px;padding:6px 14px;font-size:.85rem;cursor:pointer;
+  transition:background .15s ease,color .15s ease,border-color .15s ease;
+}
+.home-chip:hover{color:var(--text);border-color:var(--accent)}
+.home-chip.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+.home-status{font-size:.95rem;line-height:1.5;margin:4px 0 10px}
+.home-actions{display:flex;flex-wrap:wrap;gap:8px}
+.home-visit{margin:8px 0 0}
+.home-linkbtn{background:none;border:none;color:var(--accent);cursor:pointer;font-size:.85rem;padding:0;text-decoration:underline}
+.event-row-home{border-left:3px solid var(--warm-fill);padding-left:8px}
+.event-home-badge{
+  flex:0 0 auto;background:var(--warm-fill);color:#23160a;font-size:.68rem;font-weight:700;
+  border-radius:999px;padding:2px 8px;white-space:nowrap;align-self:center;
+}
+
+/* Offline note (X20 R4) */
+.offline-note{
+  max-width:1200px;margin:14px auto 0;padding:12px 18px;width:calc(100% - 40px);
+  background:#fff6dd;border:1px solid #e6cf87;border-radius:var(--radius);
+  color:#6d5200;font-size:.95rem;
+}
+.offline-note a{color:var(--accent-dark);text-decoration:underline}
+@media (max-width:920px){.offline-note{width:calc(100% - 24px)}}
+
+/* Tonight & tomorrow — the evening planning brief (X20 R5) */
+.plan-card{border-left:4px solid #8b7fd4}
+.plan-lines{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.plan-lines li{font-size:.95rem;line-height:1.5;display:flex;gap:9px;align-items:baseline}
+.plan-ico{flex:0 0 1.35em;text-align:center}
+.plan-warn{color:var(--warm);font-weight:600}
+.plan-src{color:var(--muted);font-size:.78rem;margin:10px 0 0}
+
+/* X20 R6 — events: take it with you (add to your own calendar) */
+.evcal-note{margin:0 0 8px}
+.evcal-btn{
+  flex:0 0 auto;align-self:center;
+  font:inherit;font-size:.74rem;font-weight:700;white-space:nowrap;
+  color:var(--accent);background:transparent;border:1px solid var(--accent);
+  border-radius:999px;padding:3px 10px;cursor:pointer;
+}
+.evcal-btn:hover,.evcal-btn:focus-visible{background:var(--accent);color:#fff}
+.evcal-btn.evcal-added{background:var(--accent-2);border-color:var(--accent-2);color:#fff}
+
+/* X20 Round 7 — hear the briefing: the listen button's speaking state */
+.share-btn.speaking{background:var(--warm-fill);border-color:var(--warm-fill);color:#23160a;animation:voicePulse 1.6s ease-in-out infinite}
+@keyframes voicePulse{0%,100%{box-shadow:0 0 0 0 rgba(217,119,6,.4)}50%{box-shadow:0 0 0 7px rgba(217,119,6,0)}}
+@media (prefers-reduced-motion:reduce){.share-btn.speaking{animation:none}}
+
+/* X20 Round 8 — river tides: the day's other schedule */
+.tide-station{padding:10px 0;border-bottom:1px solid var(--border)}
+.tide-station:last-child{border-bottom:none}
+.tide-line{font-size:.95rem;line-height:1.5;margin:6px 0 8px}
+.tide-turns{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.tide-turns li{display:flex;justify-content:space-between;gap:12px;font-size:.88rem}
+.tide-turn-v{color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* ---------- ISS pass predictions (X20 Round 9) ---------- */
+.iss-passes{margin-top:10px;border-top:1px solid var(--border);padding-top:10px}
+.iss-passes-head{font-size:.95rem;margin-bottom:6px}
+.iss-pass-hero{font-size:.95rem;line-height:1.55;margin:6px 0 10px;padding:10px 12px;
+  background:var(--panel-2);border:1px solid var(--border);border-left:3px solid var(--warm-fill);border-radius:10px}
+.iss-pass-list{list-style:none;margin:0 0 8px;padding:0;display:grid;gap:8px}
+.iss-pass-list li{display:grid;gap:2px;padding:8px 0;border-bottom:1px solid var(--border)}
+.iss-pass-list li:last-child{border-bottom:none}
+.iss-pass-t{font-weight:600;font-size:.92rem}
+.iss-pass-d{font-size:.88rem;color:var(--muted)}
+.iss-pass-k{font-size:.85rem;color:var(--warm)}
+
+/* Catch the boat — the ferry leave-by planner (X20 R10) */
+.ferry-plan{margin:2px 0 14px}
+.fp-dirs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.fp-dir-btn{
+  background:var(--panel-2);color:var(--muted);border:1px solid var(--border);
+  border-radius:999px;padding:5px 12px;font-size:.82rem;cursor:pointer;
+  transition:background .15s ease,color .15s ease,border-color .15s ease;
+}
+.fp-dir-btn:hover{color:var(--text);border-color:var(--accent)}
+.fp-dir-btn.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+.fp-towns{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}
+.fp-towns[hidden]{display:none}
+.fp-from{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
+.fp-town-chip{
+  background:var(--panel-2);color:var(--muted);border:1px solid var(--border);
+  border-radius:999px;padding:6px 14px;font-size:.85rem;cursor:pointer;
+  transition:background .15s ease,color .15s ease,border-color .15s ease;
+}
+.fp-town-chip:hover{color:var(--text);border-color:var(--accent)}
+.fp-town-chip.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+.fp-verdict{background:var(--panel-2);border:1px solid var(--border);border-radius:12px;padding:12px 14px}
+.fp-verdict.fp-tight{border-color:var(--warn)}
+.fp-verdict.fp-done{font-weight:700}
+.fp-verdict.fp-alert{border-color:var(--danger);font-size:.95rem;line-height:1.5}
+.fp-leave{font-size:1.18rem;font-weight:800;letter-spacing:-.01em;line-height:1.25}
+.fp-leave .fp-time{color:var(--warm);font-variant-numeric:tabular-nums}
+.fp-leave .fp-away{font-size:.85rem;font-weight:600;color:var(--muted)}
+.fp-sub{color:var(--muted);font-size:.9rem;line-height:1.5;margin-top:4px}
+.fp-sub strong{color:var(--text)}
+.fp-next{font-size:.92rem;line-height:1.5;margin:10px 0 4px}
+.fp-next.fp-last{color:var(--warn)}
+
+/* The County Almanac (X20 R11) */
+/* Steelhead Day Index: one row per river — pill + why up front, the
+   factor breakdown one tap down. */
+.sh-target{font-weight:700;margin:2px 0 8px}
+.sh-row{border-top:1px solid var(--border);padding:9px 0 7px}
+.sh-row:first-child{border-top:0}
+.sh-head{display:flex;justify-content:space-between;align-items:center;gap:10px;
+  width:100%;background:none;border:0;padding:2px 0;cursor:pointer;
+  font:inherit;color:inherit;text-align:left}
+.sh-name{font-weight:700;font-size:1.02rem}
+.sh-tag{display:block;font-weight:600;font-size:.74rem;color:var(--muted);margin-top:1px}
+.sh-pill{flex:none;border-radius:999px;padding:4px 12px;font-weight:700;font-size:.85rem}
+.sh-good{background:#dff2e2;color:#1d5c2e}
+.sh-fair{background:#fdf0d5;color:#7a5410}
+.sh-poor{background:#eef1f4;color:#5b7186}
+.sh-why{margin:4px 0 2px;font-size:.95rem}
+.sh-detail{margin:6px 0 2px;padding:8px 10px;background:var(--panel-2);border-radius:10px}
+.sh-detail p{margin:4px 0;font-size:.88rem}
+.almanac-card{border-left:4px solid var(--warm-fill)}
+.alm-verdict{background:var(--panel-2);border:1px solid var(--border);border-radius:12px;padding:12px 14px}
+.alm-head{font-size:1.16rem;font-weight:800;letter-spacing:-.01em;line-height:1.3}
+.alm-head .alm-away{color:var(--warm);font-variant-numeric:tabular-nums}
+.alm-sub{color:var(--muted);font-size:.92rem;line-height:1.5;margin-top:4px}
+.alm-sub strong{color:var(--text)}
+.alm-arc{display:block;width:100%;max-width:560px;height:auto;margin:4px auto 0}
+.alm-arc-day{fill:none;stroke:#d97706;stroke-width:2;opacity:.6}
+.alm-arc-night{fill:none;stroke:#bfcfe0;stroke-width:1.5;stroke-dasharray:4 5}
+.alm-horizon{stroke:#bfcfe0;stroke-width:1}
+.alm-sun{fill:#f7c948;stroke:#e3a008;stroke-width:2}
+.alm-sun-down{fill:var(--muted);stroke:var(--border);opacity:.55}
+.alm-arc-lab{fill:var(--muted);font-size:11px;font-variant-numeric:tabular-nums}
+.alm-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+@media (max-width:560px){.alm-facts{grid-template-columns:1fr 1fr}}
+.alm-fact{background:var(--panel-2);border:1px solid var(--border);border-radius:12px;padding:10px 12px}
+.alm-k{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
+.alm-v{font-size:1.04rem;font-weight:700;margin-top:2px;font-variant-numeric:tabular-nums;line-height:1.25}
+.alm-s{font-size:.8rem;color:var(--muted);margin-top:1px;line-height:1.4}
+.alm-moon-fact{display:flex;gap:12px;align-items:center}
+.alm-moon{flex:0 0 auto}
+.alm-moon-dark{fill:#ccdcee;stroke:var(--border)}
+.alm-moon-lit{fill:#f5d98b}
+
+/* ---------- the county wall: ambient display mode (stays dark by design —
+   it is a night-friendly TV display, not page chrome) ---------- */
+.wall-overlay{position:fixed;inset:0;z-index:1500;background:radial-gradient(120% 100% at 50% 0%,#10233d 0%,#08111d 58%,#050a13 100%);color:#eef4fb;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:5vh 6vw;box-sizing:border-box;text-align:center;cursor:pointer}
+.wall-overlay[hidden]{display:none}
+.wall-exit{position:absolute;top:14px;right:16px;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);color:#fff;font-size:1.25rem;line-height:1;cursor:pointer;z-index:2}
+.wall-exit:hover{background:rgba(255,255,255,.18)}
+.wall-scene{max-width:1150px}
+.wall-kicker{font-size:clamp(.95rem,2.6vw,1.5rem);letter-spacing:.14em;text-transform:uppercase;color:#f2b25c;font-weight:700;margin-bottom:2.4vh}
+.wall-head{font-weight:800;letter-spacing:-.015em;font-size:clamp(2.3rem,8.2vw,6rem);line-height:1.1}
+.wall-kind-now .wall-head{font-size:clamp(3.4rem,13vw,9.5rem)}
+.wall-sub{margin-top:2.6vh;font-size:clamp(1.15rem,3.4vw,2.05rem);line-height:1.4;color:#c9d8ea}
+.wall-kind-alert.wall-warn .wall-head{color:#ffd166}
+.wall-kind-alert.wall-severe .wall-head{color:#ff9a8a}
+.wall-in{animation:wallfade .6s ease both}
+@keyframes wallfade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.wall-foot{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;font-size:.95rem;color:#9fb4cc}
+.wall-live{display:inline-flex;align-items:center;gap:8px;font-weight:700;letter-spacing:.12em;color:#7ee2a0;white-space:nowrap}
+.wall-dots{display:inline-flex;gap:7px}
+.wall-dot{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.25);display:block}
+.wall-dot.on{background:#f2b25c}
+.wall-src{text-align:right}
+@media (prefers-reduced-motion: reduce){.wall-in{animation:none}}
+.watch-status{margin:2px 0 12px;font-size:.97rem;line-height:1.5}
+.watch-status p{margin:0}
+.watch-live-line{display:flex;align-items:center;gap:8px}
+.watch-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:0 0 12px}
+.watch-voice{display:inline-flex;align-items:center;gap:7px;font-size:.93rem;cursor:pointer}
+.watch-voice input{width:17px;height:17px;accent-color:var(--accent)}
+.watch-log{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.watch-log li{font-size:.93rem;line-height:1.45;border-left:3px solid #dbe5ef;padding:2px 0 2px 10px}
+.watch-log li.watch-hit{border-left-color:var(--warm-fill)}
+.watch-log-time{opacity:.65;font-size:.85em;margin-right:4px}
+.watch-card.watch-flash{animation:watchFlash 1.6s ease-in-out 2}
+@keyframes watchFlash{0%,100%{box-shadow:none}50%{box-shadow:0 0 0 3px var(--warm-fill)}}
+@media (prefers-reduced-motion: reduce){.watch-card.watch-flash{animation:none}}
+
+/* ---------- Finder (X20 R14): one search across the whole page ---------- */
+.finder{min-width:0}
+.finder-box{
+  display:flex;align-items:center;gap:10px;
+  background:var(--panel);border:1px solid var(--border);border-radius:999px;
+  padding:10px 18px;box-shadow:var(--shadow);
+}
+.finder-box:focus-within{border-color:var(--accent)}
+.finder-icon{font-size:1.15rem;line-height:1}
+#finder-input{
+  flex:1;min-width:0;background:none;border:none;outline:none;
+  color:var(--text);font:inherit;font-size:1.05rem;
+}
+#finder-input::placeholder{color:var(--muted)}
+#finder-input::-webkit-search-cancel-button{display:none}
+.finder-hint{margin:8px 6px 0;font-size:.82rem;color:var(--muted)}
+.finder-results{
+  margin-top:10px;background:var(--panel);border:1px solid var(--border);
+  border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;
+}
+.finder-result{
+  display:flex;align-items:baseline;gap:10px;width:100%;text-align:left;
+  background:none;border:none;border-bottom:1px solid var(--border);
+  padding:12px 16px;color:var(--text);font:inherit;cursor:pointer;
+}
+.finder-result:last-child{border-bottom:none}
+.finder-result:hover,.finder-result.active{background:var(--panel-2)}
+.finder-kind{
+  flex:none;font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:#fff;background:var(--accent);border-radius:999px;padding:2px 8px;
+}
+.finder-kind.kind-town{background:var(--accent-2)}
+.finder-kind.kind-event{background:var(--warm-fill);color:#23160a}
+.finder-result-main{flex:1;min-width:0}
+.finder-result-title{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.finder-result-sub{display:block;font-size:.82rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.finder-empty{padding:14px 16px;color:var(--muted);font-size:.95rem;line-height:1.5}
+.finder-flash{animation:finderFlash 1.3s ease-in-out 2;border-radius:var(--radius)}
+@keyframes finderFlash{0%,100%{box-shadow:var(--shadow)}50%{box-shadow:0 0 0 3px var(--warm-fill),var(--shadow)}}
+.event-row.finder-flash-row{animation:finderFlashRow 1.3s ease-in-out 2;border-radius:8px}
+@keyframes finderFlashRow{0%,100%{background:transparent}50%{background:rgba(245,183,77,.35)}}
+@media (prefers-reduced-motion: reduce){
+  .finder-flash{animation:none;box-shadow:0 0 0 3px var(--warm-fill),var(--shadow)}
+  .event-row.finder-flash-row{animation:none;background:rgba(245,183,77,.35)}
+}
+
+/* ---------- X20 R15: air & smoke ---------- */
+.air-verdict{display:flex;align-items:center;gap:14px;background:var(--panel-2);border:1px solid var(--border);border-left:5px solid var(--muted);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+.air-big{font-size:2.6rem;font-weight:800;letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums}
+.air-cat-name{font-size:1.12rem;font-weight:700;line-height:1.25}
+.air-cat-sub{color:var(--muted);font-size:.8rem;margin-top:2px}
+.air-advice{font-size:.95rem;line-height:1.5;margin:8px 0 4px}
+.air-scale{position:relative;height:12px;display:flex;margin:18px 0 4px}
+.air-seg{height:100%;opacity:.55}
+.air-seg:first-child{border-radius:6px 0 0 6px}
+.air-seg:last-child{border-radius:0 6px 6px 0}
+.air-marker{position:absolute;top:-5px;width:3px;height:22px;background:#15222f;border-radius:2px;transform:translateX(-50%);box-shadow:0 0 0 2px rgba(255,255,255,.9)}
+.air-scale-labels{display:flex;justify-content:space-between;color:var(--muted);font-size:.72rem;font-variant-numeric:tabular-nums;margin-bottom:10px}
+.air-day{font-size:.92rem;line-height:1.5;margin:6px 0 10px}
+.air-readings{display:grid;gap:4px;font-size:.88rem;color:var(--muted)}
+.air-readings strong{color:var(--text);font-variant-numeric:tabular-nums}
+
+/* X20 Round 16 — language toggle (hero pill) + bilingual note in the share bar */
+.status-strip .lang-pill{
+  display:inline-flex;align-items:center;gap:7px;
+  background:rgba(9,22,36,.66);border:1px solid rgba(255,255,255,.22);
+  color:#eef4fa;font:inherit;font-size:.85rem;font-weight:600;
+  padding:7px 13px;border-radius:999px;cursor:pointer;
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  transition:border-color .15s ease,transform .15s ease;
+}
+.status-strip .lang-pill:hover{border-color:var(--warm-fill);transform:translateY(-1px)}
+.lang-note{flex-basis:100%;margin:0;color:var(--muted);font-size:.88rem;background:var(--panel-2);border:1px dashed var(--border);border-radius:12px;padding:10px 12px}
+
+/* ---------- X20 R17: before you go — trip check ---------- */
+.go-trips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}
+.go-trip-btn{
+  font:inherit;font-size:.92rem;font-weight:600;color:var(--muted);
+  background:var(--panel-2);border:1px solid var(--border);border-radius:999px;
+  padding:8px 14px;cursor:pointer;transition:border-color .15s ease,color .15s ease,background .15s ease;
+}
+.go-trip-btn:hover{color:var(--text);border-color:var(--accent)}
+.go-trip-btn.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+.go-whenrow{display:flex;flex-wrap:wrap;gap:10px 18px;margin:8px 0 12px}
+.go-field{display:inline-flex;align-items:center;gap:8px;font-size:.9rem;font-weight:600;color:var(--muted)}
+.go-field select{
+  font:inherit;font-size:.92rem;font-weight:600;color:var(--text);
+  background:var(--panel-2);border:1px solid var(--border);border-radius:10px;
+  padding:7px 10px;cursor:pointer;
+}
+.go-field select:focus-visible{outline:2px solid var(--accent-dark);outline-offset:1px}
+.go-verdict{border-radius:12px;padding:13px 15px;margin-bottom:12px;border:1px solid var(--border);background:var(--panel-2)}
+.go-verdict-head{font-size:1.28rem;font-weight:800;letter-spacing:-.01em;line-height:1.2}
+.go-verdict-sub{color:var(--muted);font-size:.88rem;margin-top:3px;line-height:1.45}
+.go-verdict.go-ok{border-left:5px solid var(--accent-2)}
+.go-verdict.go-ok .go-verdict-head{color:var(--accent-2)}
+.go-verdict.go-warn{border-left:5px solid var(--warn)}
+.go-verdict.go-warn .go-verdict-head{color:var(--warn)}
+.go-verdict.go-bad{border-left:5px solid var(--danger);background:#fdf1f1}
+.go-verdict.go-bad .go-verdict-head{color:var(--danger)}
+.go-rows{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:8px}
+.go-row{display:flex;gap:10px;align-items:flex-start;background:var(--panel-2);border:1px solid var(--border);border-radius:10px;padding:10px 12px}
+.go-row-ico{font-size:1.05rem;line-height:1.35;flex:none}
+.go-row-main{display:block;min-width:0}
+.go-row-main strong{display:block;font-size:.95rem;line-height:1.35}
+.go-row-detail{display:block;color:var(--muted);font-size:.86rem;line-height:1.45;margin-top:2px}
+.go-row-bad{border-color:var(--danger)}
+.go-row-warn{border-left:4px solid var(--warn)}
+.go-row-na{border-style:dashed}
+.go-actions{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 8px}
+
+/* ---------- Your front page (X20 R18) ---------- */
+.frontpage{min-width:0}
+.frontpage-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.frontpage-head h2{font-size:1.2rem}
+.frontpage-note{margin:4px 0 12px}
+.frontpage-list{display:flex;flex-direction:column;gap:16px}
+.frontpage-list>.card{margin:0;width:100%;max-width:none}
+.pin-clear{
+  flex:none;font-size:.82rem;font-weight:600;color:var(--muted);
+  background:var(--panel-2);border:1px solid var(--border);border-radius:999px;
+  padding:6px 12px;cursor:pointer;
+}
+.pin-clear:hover{color:var(--text);border-color:var(--accent)}
+.card-head.has-pin{position:relative;padding-right:96px}
+.pin-btn{
+  position:absolute;top:0;right:0;flex:none;
+  font-size:.78rem;font-weight:600;color:var(--muted);
+  background:var(--panel-2);border:1px solid var(--border);border-radius:999px;
+  padding:4px 10px;cursor:pointer;white-space:nowrap;
+  transition:background .15s ease,color .15s ease,border-color .15s ease,transform .12s ease;
+}
+.pin-btn:hover{color:var(--text);border-color:var(--accent)}
+.pin-btn:active{transform:scale(.96)}
+.pin-btn.active{color:#23160a;background:var(--warm-fill);border-color:var(--warm-fill)}
+
+/* ===== X20 Round 19 — the county sheet: the page learns to print ===== */
+.print-note{flex-basis:100%;margin:0;color:var(--muted);font-size:.88rem;background:var(--panel-2);border:1px dashed var(--border);border-radius:12px;padding:10px 12px}
+#print-sheet{display:none}
+@page{margin:.55in .5in}
+@media print{
+  body>*{display:none!important}
+  #print-sheet{display:block!important;color:#111;background:#fff;font-size:10.5pt;line-height:1.35}
+  #print-sheet .ps-mast{border-bottom:3px double #111;padding-bottom:6pt;margin-bottom:8pt}
+  #print-sheet .ps-title{font-size:23pt;font-weight:800;letter-spacing:-.2pt}
+  #print-sheet .ps-sub{font-size:10.5pt;color:#333;margin-top:2pt}
+  #print-sheet .ps-alert{border:1.5px solid #111;border-radius:6pt;padding:6pt 9pt;margin-bottom:9pt;font-weight:600}
+  #print-sheet .ps-alert.warn{border-width:2.5px;background:#f3f3f3}
+  #print-sheet .ps-alert.ok{font-weight:400}
+  #print-sheet .ps-grid{display:grid;grid-template-columns:1fr 1fr;gap:7pt 16pt;margin-bottom:2pt}
+  #print-sheet .ps-block{break-inside:avoid;margin-bottom:7pt}
+  #print-sheet .ps-block h3{font-size:10pt;text-transform:uppercase;letter-spacing:.6pt;border-bottom:1px solid #999;padding-bottom:2pt;margin:0 0 4pt}
+  #print-sheet .ps-row{display:flex;gap:8pt;margin-bottom:2.5pt}
+  #print-sheet .ps-k{flex:0 0 27%;font-weight:600}
+  #print-sheet .ps-v{flex:1}
+  #print-sheet .ps-big{font-size:12.5pt;font-weight:700;margin-bottom:2pt}
+  #print-sheet .ps-note{font-size:9pt;color:#444;margin-top:2pt}
+  #print-sheet .ps-foot{border-top:1.5px solid #111;margin-top:8pt;padding-top:5pt;font-size:8.8pt;color:#333;line-height:1.45}
+}
+
+/* X20 Round 20 — After Dark: tonight's-sky verdict band + check rows */
+.dark-verdict{border-radius:12px;padding:13px 15px;margin-bottom:12px;border:1px solid var(--border);background:var(--panel-2)}
+.dark-verdict-head{font-size:1.28rem;font-weight:800;letter-spacing:-.01em;line-height:1.2}
+.dark-verdict-sub{color:var(--muted);font-size:.88rem;margin-top:3px;line-height:1.45}
+.dark-verdict.dark-ok{border-left:5px solid var(--accent-2)}
+.dark-verdict.dark-ok .dark-verdict-head{color:var(--accent-2)}
+.dark-verdict.dark-warn{border-left:5px solid var(--warn)}
+.dark-verdict.dark-warn .dark-verdict-head{color:var(--warn)}
+.dark-verdict.dark-bad{border-left:5px solid var(--danger);background:#fdf1f1}
+.dark-verdict.dark-bad .dark-verdict-head{color:var(--danger)}
+.dark-rows{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.dark-rows li{display:grid;gap:2px;padding:8px 0;border-bottom:1px solid var(--border)}
+.dark-rows li:last-child{border-bottom:none}
+.dark-row-k{font-weight:600;font-size:.92rem}
+.dark-row-v{font-size:.92rem;line-height:1.45;color:var(--muted)}
+.dark-row-v strong{color:var(--text);font-variant-numeric:tabular-nums}
+
+/* ---------- Fish counts + Salmon Tracker (2026-11-04) ---------- */
+.fish-rows{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 2px}
+.fish-sp{
+  flex:1 1 104px;background:var(--panel-2);border:1px solid var(--border);
+  border-radius:12px;padding:8px 12px;display:flex;flex-direction:column;gap:1px;
+}
+.fish-sp-name{font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.fish-sp-num{font-size:1.45rem;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.15}
+.fish-sp-jack{font-size:.78rem;color:var(--muted)}
+.fish-season,.fish-ladder{font-size:.92rem;margin:8px 0 0}
+.run-rows{display:flex;flex-direction:column}
+.run-row{
+  display:grid;grid-template-columns:128px 118px 1fr;gap:4px 12px;
+  padding:7px 0;border-top:1px solid var(--border);align-items:baseline;
+}
+.run-name{font-weight:700}
+.run-win{color:var(--muted);font-size:.86rem}
+.run-state{font-size:.92rem}
+@media (max-width:640px){
+  .run-row{grid-template-columns:1fr}
+  .run-state{grid-column:1}
+}
+.verdict{display:flex;gap:14px;align-items:flex-start;margin:2px 0 18px}
+.verdict-pill{
+  flex:0 0 auto;font-weight:800;font-size:1.05rem;letter-spacing:.04em;
+  padding:8px 14px;border-radius:999px;margin-top:2px;
+}
+.pill-good{background:#c2540a;color:#fff}
+.pill-fair{background:var(--warm-fill);color:#15222f}
+.pill-slow{background:var(--panel-3);color:var(--muted)}
+.pill-poor{background:#eef1f4;color:#5b7186}
+.verdict-text{font-size:1.16rem;line-height:1.45;margin:0}
+.verdict-tomorrow{font-size:.98rem;margin:0 0 10px}
+/* The tracker heat strip: three anchor labels only (Ocean / Bonneville
+   Dam / John Day), towns and The Dalles as bare ticks, the county
+   stretch named by one zone label above the strip. */
+.heat-wrap{margin:16px 2px 0}
+.heat-zone{position:relative;height:20px}
+.heat-zone span{
+  position:absolute;top:0;transform:translateX(-50%);white-space:nowrap;
+  font-size:.72rem;font-weight:700;text-transform:uppercase;
+  letter-spacing:.08em;color:var(--accent);
+}
+.heat-box{position:relative}
+.heat-row{display:flex;gap:1px;height:52px}
+.heat-bin{flex:1 1 0;border-radius:3px;min-width:0}
+.heat-county{
+  position:absolute;top:-5px;bottom:6px;pointer-events:none;z-index:2;
+  border:1.5px dashed rgba(11,111,164,.55);border-radius:8px;
+}
+.heat-ticks{position:relative;height:9px}
+.heat-tick{
+  position:absolute;top:2px;width:1px;height:6px;
+  background:rgba(21,34,47,.30);
+}
+.heat-tick.tick-dam{width:2px;height:8px;background:rgba(21,34,47,.55)}
+.heat-anchors{position:relative;height:20px;margin-top:1px}
+.heat-anchor{
+  position:absolute;top:2px;white-space:nowrap;
+  font-size:.74rem;color:var(--muted);
+}
+.heat-anchor.a-l{transform:translateX(0)}
+.heat-anchor.a-c{transform:translateX(-50%);font-weight:700;color:var(--text)}
+.heat-anchor.a-r{transform:translateX(-100%);font-weight:700;color:var(--text)}
+.heat-anchors.split{height:38px}
+.heat-anchors.split .heat-anchor.a-r{top:19px}
+.heat-anchors.no-rm .a-rm{display:none}
+.heat-anchors.no-labels .heat-anchor{display:none}
+.heat-legend{font-size:.84rem;color:var(--muted);margin:10px 0 0}
+.heat-legend .lg{
+  display:inline-block;width:12px;height:12px;border-radius:3px;
+  vertical-align:-1px;margin:0 3px 0 10px;border:1px solid rgba(21,34,47,.15);
+}
+.heat-legend .lg:first-child{margin-left:0}
+.track-caption{font-size:.8rem;color:var(--muted);margin:5px 0 4px}
+#tracker-card .subhead{margin-top:24px}
+.why-box,.wave-details{margin:12px 0 0}
+.why-box summary,.wave-details summary{
+  cursor:pointer;font-weight:700;font-size:.98rem;padding:10px 12px;
+  background:var(--panel-2);border:1px solid var(--border);border-radius:12px;
+  min-height:44px;
+}
+.why-box p{line-height:1.55;margin:10px 2px 0}
+.wave-list{margin:8px 0 0;padding-left:20px}
+.wave-list li{margin-bottom:10px;line-height:1.5}
+.plan-chips{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 10px}
+.plan-chip{
+  font:inherit;font-weight:600;padding:10px 16px;min-height:44px;
+  border-radius:999px;border:1.5px solid var(--border);
+  background:var(--panel);color:var(--text);cursor:pointer;
+}
+.plan-chip.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.plan-callout{font-size:1rem;margin:0 0 10px}
+.plan-strip{display:flex;gap:2px;height:46px;margin:4px 0 0}
+.plan-seg{
+  border-radius:8px;display:flex;align-items:center;justify-content:center;
+  overflow:hidden;min-width:0;
+}
+.plan-seg span{font-weight:700;font-size:.82rem;white-space:nowrap;padding:0 4px}
+.seg-strong{background:#c2540a;color:#fff}
+.seg-moderate{background:var(--warm-fill);color:#15222f}
+.seg-weak{background:#fdeeda;color:#7c4a12}
+.plan-seg.dim{opacity:.45}
+.plan-seg.mine{outline:3px solid var(--accent);outline-offset:1px}
+.plan-hours{
+  display:flex;justify-content:space-between;font-size:.72rem;
+  color:var(--muted);margin:3px 1px 8px;
+}
+.plan-now{font-size:1rem;margin:6px 0}
+.plan-list{margin:6px 0;padding-left:20px}
+.plan-list li{margin-bottom:8px;line-height:1.5}
+.plan-tomorrow{font-size:.94rem;margin:8px 0 0}
+
+/* ---------- Reduced motion: calm everything non-essential ---------- */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms!important;animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+  }
+  .reveal{opacity:1;transform:none}
+  .view-active{animation:none}
+}
+
+/* ---------- WS-1 2026-11-04: schools board, about/support, a11y fixes ---------- */
+/* School closures — dormant-ready storm-day board (data/schools.json) */
+.schools-card{border-left:4px solid var(--accent)}
+.schools-dormant{color:var(--accent-2);font-size:.95rem;line-height:1.5;margin:2px 0 10px}
+.schools-report{font-size:.95rem;line-height:1.5;margin:2px 0 10px;padding:10px 12px;
+  background:var(--panel-2);border:1px solid var(--border);border-left:4px solid var(--warn);border-radius:10px}
+.schools-list{list-style:none;margin:0;padding:0}
+.school-row{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--border)}
+.school-row:last-child{border-bottom:none}
+.school-main{flex:1;min-width:0;display:flex;flex-direction:column}
+.school-name{font-weight:700;font-size:.95rem}
+.school-sub,.school-note{color:var(--muted);font-size:.8rem}
+.school-note{flex-basis:100%}
+.school-pill{flex:0 0 auto;font-size:.74rem;font-weight:800;letter-spacing:.03em;
+  border-radius:999px;padding:4px 10px;white-space:nowrap}
+.school-open{background:#dff2e2;color:#1d5c2e}
+.school-closed{background:#fdecec;color:#991b1b}
+.school-delayed{background:#fdf0d5;color:#7a5410}
+.school-none{background:var(--panel-2);color:var(--muted);border:1px solid var(--border)}
+.school-link{flex:0 0 auto;font-size:.85rem;text-decoration:none;white-space:nowrap;min-height:36px;display:inline-flex;align-items:center}
+.school-link:hover{text-decoration:underline}
+@media (max-width:560px){.school-row{flex-wrap:wrap}.school-main{flex-basis:100%}}
+
+/* About / support this service (Phase-2 interest capture — nothing for sale) */
+.about-card{border-left:4px solid var(--warm-fill)}
+.about-actions{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 10px}
+.about-actions .share-btn{text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+
+/* A11y pass 2026-11-04 — tap targets: the chip/button families were
+   ~26–31px tall. 36px minimum here (44px where the layout already
+   allows it), contents centered so the bigger box reads as designed. */
+.town-btn,.sky-filter-btn,.event-filter-btn,.fp-dir-btn,.map-town-chip,
+.home-chip,.fp-town-chip,.go-trip-btn,.map-tool-btn{
+  min-height:36px;display:inline-flex;align-items:center;justify-content:center;
+}
+.evcal-btn{min-height:32px;padding:6px 12px;display:inline-flex;align-items:center}
+.pin-btn{min-height:32px;display:inline-flex;align-items:center}
+.since-dismiss{width:36px;height:36px}
+.sticky-links a{padding:8px}
+
+/* WS-1d 2026-11-04 — map layers panel: collapsed by default (app.js),
+   and when open on a phone it stays a compact corner panel instead of
+   swallowing the map: capped width, capped height with its own scroll,
+   compact rows. The toggle itself is a full-size touch target. */
+.leaflet-control-layers-toggle{width:44px!important;height:44px!important;background-size:26px 26px!important}
+@media (max-width:899px){
+  .leaflet-control-layers-expanded{max-width:70vw}
+  .leaflet-control-layers-list{max-height:44vh;overflow-y:auto;padding:2px 8px 6px}
+  .leaflet-control-layers label{display:flex;align-items:center;gap:8px;padding:5px 2px;font-size:.88rem;line-height:1.25}
+  .leaflet-control-layers-selector{margin:0;flex:0 0 auto;width:20px;height:20px;accent-color:var(--accent)}
+}
+
+/* =====================================================================
+   REDESIGN PROTOTYPE 2026-11-05 — fall palette presentation layer.
+   Built to the sponsor/design research report (binding) + Travis's
+   directives. Palette re-rooted above (forest green / bone / rust-amber;
+   clinical blue deleted). Everything below is additive: ticker answer
+   board, founding panel, featured slots, photo bands, partners wall,
+   trust strip, icon set, dark mode. Glass is rationed per the research:
+   full frost on the ticker + founding panel only, 16px blur, solid
+   fallbacks for reduced-transparency / no-support / high-contrast.
+   ===================================================================== */
+
+/* ---------- generated icon set (duotone badges, bone baked in) ---------- */
+.brand-mark{padding:4px}
+.brand-mark img{width:30px;height:30px;border-radius:50%;display:block}
+.tab-ico img{width:26px;height:26px;border-radius:50%;display:block}
+@media (max-width:899px){.tab-ico img{width:24px;height:24px}}
+.sticky-ico{width:20px;height:20px;border-radius:50%;vertical-align:-5px;margin-right:2px}
+.theme-toggle{display:inline-flex;align-items:center;gap:2px;cursor:pointer}
+.theme-ico{width:18px;height:18px;border-radius:50%}
+.gl-ico{width:52px;height:52px;border-radius:50%;flex:0 0 auto;box-shadow:0 2px 8px rgba(0,0,0,.35)}
+.card-ico{width:34px;height:34px;border-radius:50%;flex:0 0 auto;align-self:center}
+.feat-ico{width:42px;height:42px;border-radius:50%}
+
+/* ---------- type: display serif for answers & sponsor headlines ---------- */
+.hero-title{font-family:var(--display);font-weight:700}
+.ticker .glance-val{font-family:var(--display);font-weight:700;font-variant-numeric:tabular-nums}
+.founding-cell h3,.featured-card h3{font-family:var(--display)}
+
+/* ---------- chrome: glass tab bar (bone), SOLID deep-green sticky bar ---------- */
+.tabbar{background:rgba(247,242,226,.9)}
+@media (max-width:899px){.tabbar{background:rgba(247,242,226,.96)}}
+.sticky-bar{background:#22402c;color:#eef2e2;border-bottom:1px solid #152619;backdrop-filter:none;-webkit-backdrop-filter:none}
+.sticky-pill{background:rgba(255,255,255,.1);color:#eef2e2;border-color:rgba(255,255,255,.28)}
+.sticky-pill.ok{border-color:#8fe3a8;color:#8fe3a8}
+.sticky-pill.warn{border-color:#ffc98a;color:#ffc98a}
+.sticky-pill.bad{border-color:#e5a3a3;color:#ffb3ab;background:rgba(179,53,43,.28)}
+.sticky-links a{color:#cfd8c2}
+.sticky-links a:hover{color:#fff;background:rgba(255,255,255,.12)}
+
+/* ---------- the ticker: one glass answer board over the river photo ---------- */
+.ticker{
+  position:relative;border-radius:20px;overflow:hidden;isolation:isolate;
+  background:#20392a url("img/dusk/ticker-panorama.jpg") center 60%/cover no-repeat;
+  box-shadow:0 2px 3px rgba(30,40,20,.18),0 18px 40px rgba(30,40,20,.22);
+}
+.ticker-stage{
+  position:relative;display:grid;min-height:118px;
+  background:linear-gradient(100deg,rgba(15,32,20,.88),rgba(15,32,20,.8) 55%,rgba(15,32,20,.7));
+  backdrop-filter:blur(16px) saturate(1.1);-webkit-backdrop-filter:blur(16px) saturate(1.1);
+}
+.ticker-slide{
+  grid-area:1/1;display:flex;align-items:center;gap:16px;
+  padding:20px 22px;color:#f3efe0;text-decoration:none;
+  opacity:0;visibility:hidden;transform:translateX(30px);
+  transition:opacity .55s ease,transform .55s ease,visibility 0s linear .55s;
+}
+.ticker-slide.active{opacity:1;visibility:visible;transform:none;transition:opacity .55s ease,transform .55s ease}
+.ticker-slide.leaving{transform:translateX(-30px)}
+.ticker:not(.js) .ticker-slide:first-child{opacity:1;visibility:visible;transform:none}
+.ticker-main{display:flex;flex-direction:column;gap:2px;min-width:0}
+.ticker .glance-label{color:#d5dec4;font-size:.74rem;display:flex;align-items:center;gap:8px}
+.ticker .glance-val{color:#fff;font-size:1.9rem;line-height:1.12;letter-spacing:0;-webkit-line-clamp:2}
+.ticker .glance-val.ok{color:#a5ecb6}
+.ticker .glance-val.warn{color:#ffc98a}
+.ticker .glance-val.bad{color:#ffab9e}
+.ticker .glance-sub{color:#bfccab;font-size:.8rem}
+.ticker-nav{
+  position:relative;display:flex;gap:6px;flex-wrap:wrap;
+  padding:0 22px 16px;margin-top:-4px;
+}
+.ticker-dot{
+  font:inherit;font-size:.74rem;font-weight:700;cursor:pointer;
+  color:#d5dec4;background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:5px 12px;
+  transition:background .2s ease,color .2s ease;
+}
+.ticker-dot:hover{background:rgba(255,255,255,.18);color:#fff}
+.ticker-dot.active{background:var(--warm-fill);border-color:var(--warm-fill);color:#2a1c08}
+.ticker.reduced .ticker-stage{display:grid;grid-template-columns:1fr 1fr;min-height:0}
+.ticker.reduced .ticker-slide{opacity:1;visibility:visible;transform:none;position:relative}
+.ticker.reduced .ticker-nav{display:none}
+@media (max-width:560px){
+  .ticker-stage{min-height:108px}
+  .ticker-slide{padding:16px;gap:12px}
+  .ticker .glance-val{font-size:1.45rem}
+  .gl-ico{width:44px;height:44px}
+  .ticker.reduced .ticker-stage{grid-template-columns:1fr 1fr}
+  .ticker.reduced .ticker-slide{padding:12px}
+  .ticker.reduced .glance-val{font-size:1.05rem}
+}
+
+/* ---------- founding sponsor panel (full glass surface #2) ---------- */
+.founding-panel{
+  position:relative;border-radius:20px;overflow:hidden;isolation:isolate;
+  background:#2a2118 url("img/dusk/founding-sunset.jpg") center 62%/cover no-repeat;
+  box-shadow:0 2px 3px rgba(30,40,20,.18),0 18px 40px rgba(30,40,20,.22);
+}
+.founding-inner{
+  position:relative;padding:22px;color:#f5efdd;
+  background:linear-gradient(180deg,rgba(22,30,16,.6),rgba(22,30,16,.78));
+  backdrop-filter:blur(16px) saturate(1.05);-webkit-backdrop-filter:blur(16px) saturate(1.05);
+}
+.founding-eyebrow{
+  margin:0 0 14px;font-size:.76rem;font-weight:800;letter-spacing:.14em;
+  text-transform:uppercase;color:#f2c078;
+}
+.founding-cells{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.founding-cell{
+  background:rgba(251,248,238,.08);border:1px solid rgba(255,255,255,.24);
+  border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:8px;min-width:0;
+}
+.founding-cell.invite{border-color:rgba(233,164,74,.65);background:rgba(251,248,238,.12)}
+.founding-cell h3{margin:0;font-size:1.22rem;line-height:1.25}
+.founding-cell p{margin:0;font-size:.9rem;color:#e6e0c8}
+.cell-eyebrow{
+  font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  color:#f2c078;display:flex;align-items:center;gap:7px;
+}
+.ghost-logo{
+  height:64px;border:1.5px dashed rgba(245,239,221,.55);border-radius:10px;
+  background:rgba(255,255,255,.05);
+  display:flex;align-items:center;justify-content:center;gap:9px;
+  color:#e8dfc8;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+}
+.ghost-logo img{width:34px;height:34px;border-radius:50%}
+.founding-cell.taken{border-color:rgba(233,164,74,.45);background:rgba(251,248,238,.06)}
+.ghost-logo.claimed{
+  border-style:solid;border-color:rgba(233,164,74,.7);
+  background:rgba(233,164,74,.14);color:#f2c078;
+}
+.founding-cta{
+  margin-top:auto;align-self:flex-start;display:inline-block;text-decoration:none;
+  font-weight:800;font-size:.88rem;border-radius:999px;padding:9px 16px;
+  background:var(--warm-fill);color:#2a1c08;border:1px solid var(--warm-fill);
+}
+.founding-cta.alt{background:transparent;color:#f5efdd;border-color:rgba(245,239,221,.6)}
+.founding-foot{margin:14px 0 0;font-size:.8rem;color:#cfd6ba}
+@media (max-width:760px){.founding-cells{grid-template-columns:1fr}}
+
+/* ---------- featured local (Slot C) + featured event (Slot D) ---------- */
+.featured-local{
+  background:var(--sponsor-bg);border:1px solid #e3cd96;border-radius:var(--radius);
+  padding:20px;box-shadow:var(--shadow);
+}
+.featured-title{font-size:1.05rem;margin:0 0 14px}
+.featured-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:640px){.featured-row{grid-template-columns:1fr}}
+.featured-card{
+  background:var(--panel);border:1px solid var(--border);border-radius:14px;
+  padding:16px;display:flex;flex-direction:column;gap:8px;min-width:0;
+}
+.featured-card.invite{border-color:#dfb96a}
+.featured-card h3{margin:0;font-size:1.18rem}
+.featured-card p{margin:0;font-size:.9rem;color:var(--muted)}
+.featured-card .cell-eyebrow{color:var(--warm)}
+.featured-card .founding-cta{margin-top:auto}
+.featured-card .founding-cta.alt{background:transparent;color:var(--accent-dark);border-color:var(--accent)}
+.featured-event{
+  border:1px solid #dfb96a;background:var(--sponsor-bg);border-radius:12px;
+  padding:12px 16px;margin-bottom:14px;
+}
+.featured-event .cell-eyebrow{color:var(--warm);margin:0 0 4px}
+.featured-event .gl-ico{width:22px;height:22px}
+.featured-event-body{margin:0;font-weight:600;font-size:.95rem}
+.featured-event-body a{color:var(--accent-dark)}
+
+/* ---------- local services directory (micro-business tier) ----------
+   Deliberately PLAIN next to the premium surfaces above: one glass
+   card, flat hairline rows inside — no photo showcase, no gold, no
+   sponsor language. The plainness IS the tier separation. */
+.dir-filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
+.dir-chip{
+  background:var(--panel-2);color:var(--muted);border:1px solid var(--border);
+  border-radius:999px;padding:5px 12px;font-size:.82rem;cursor:pointer;
+  transition:background .15s ease,color .15s ease,border-color .15s ease;
+}
+.dir-chip:hover{color:var(--text);border-color:var(--accent)}
+.dir-chip.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+.dir-list{display:flex;flex-direction:column}
+.dir-item{
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+  padding:13px 2px;border-top:1px solid var(--border);min-width:0;
+}
+.dir-item:first-child{border-top:none}
+.dir-item[hidden]{display:none}
+.dir-empty[hidden]{display:none}
+.dir-item-main{min-width:0}
+.dir-item h3{font-family:var(--display);font-size:1.06rem;margin:0;line-height:1.25}
+.dir-badge{
+  display:inline-block;vertical-align:2px;margin-left:6px;padding:2px 8px;
+  background:var(--warm-fill);color:#42250a;border-radius:999px;
+  font-family:var(--sans);font-size:.62rem;font-weight:700;
+  letter-spacing:.07em;text-transform:uppercase;white-space:nowrap;
+}
+.dir-meta{margin:3px 0 2px;font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--warm)}
+.dir-desc{margin:0;font-size:.9rem;color:var(--muted)}
+.dir-contact{display:flex;flex-direction:column;align-items:flex-end;gap:3px;text-align:right;flex-shrink:0}
+.dir-call{font-weight:700;color:var(--accent-dark);text-decoration:none;white-space:nowrap}
+.dir-call:hover{text-decoration:underline}
+.dir-addr{font-size:.78rem;color:var(--muted)}
+.dir-item.dir-invite{
+  border:1px dashed var(--warm);border-radius:12px;padding:13px 12px;margin-top:10px;
+  background:rgba(233,164,74,.10);
+}
+html[data-theme="dark"] .dir-item.dir-invite{background:rgba(233,164,74,.08)}
+.dir-empty{
+  margin:6px 0 2px;padding:12px 14px;border-radius:12px;
+  background:var(--panel-2);color:var(--muted);font-size:.9rem;
+}
+html[data-theme="dark"] .dir-empty{background:rgba(240,234,214,.08)}
+.dir-honest{margin-top:14px}
+.dir-actions{margin-top:10px}
+.dir-actions .share-btn{display:inline-block;text-decoration:none}
+.dir-add{margin:2px 0 12px}
+.dir-add .share-btn{display:inline-block;text-decoration:none}
+@media (max-width:640px){
+  .dir-item{flex-direction:column;align-items:flex-start;gap:6px}
+  .dir-contact{align-items:flex-start;text-align:left}
+}
+
+/* ---------- photo bands on photo-less cards (light frost chip zone) ---------- */
+.band-card{padding-top:0;overflow:hidden}
+.card-band{position:relative;margin:0 -20px 14px;height:84px;overflow:hidden;background:#ddd5ba}
+.card-band img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.92) contrast(1.02)}
+.card-band::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:55%;pointer-events:none;
+  background:linear-gradient(180deg,rgba(12,26,15,0),rgba(12,26,15,.28));
+}
+@media (max-width:560px){.card-band{height:72px}}
+
+/* ---------- partners wall + trust strip (footer) ---------- */
+.partners-wall{text-align:center;padding:16px 8px 4px}
+.partners-wall h2{font-size:1rem;margin:0 0 8px}
+.partners-empty{margin:0}
+.partners-empty a{
+  font-weight:800;color:var(--accent-dark);text-decoration:none;
+  border-bottom:2px solid var(--warm-fill);padding-bottom:1px;
+}
+
+/* ---------- glass fallbacks (research: ship-blockers, not niceties) ---------- */
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  .ticker-stage{background:linear-gradient(100deg,rgba(15,32,20,.96),rgba(15,32,20,.94))}
+  .founding-inner{background:linear-gradient(180deg,rgba(22,30,16,.94),rgba(22,30,16,.97))}
+}
+@media (prefers-reduced-transparency:reduce){
+  .ticker-stage,.founding-inner{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(15,32,20,.96)}
+  .tabbar{backdrop-filter:none;-webkit-backdrop-filter:none;background:#f7f2e2}
+}
+@media (prefers-contrast:more){
+  .ticker-stage,.founding-inner{border:1.5px solid #f5efdd}
+  .founding-cell{border-color:rgba(255,255,255,.6)}
+}
+@media (prefers-reduced-motion:reduce){
+  .ticker-slide{transition:none}
+  .hero-img-night,.card-photo .photo-night{transition:none}
+}
+
+/* ---------- photo swap: dusk twins crossfade in dark mode ---------- */
+.hero-img-night{opacity:0;transition:opacity .7s ease;object-position:center 50%}
+html[data-theme="dark"] .hero-img-night{opacity:1}
+.card-photo .photo-night{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  opacity:0;transition:opacity .7s ease;
+}
+html[data-theme="dark"] .card-photo .photo-night{opacity:1}
+
+/* ---------- dark mode (same fall palette, night values) ---------- */
+html[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0b120d;
+  --panel:#16211a;
+  --panel-2:#1e2e23;
+  --panel-3:#2b4232;
+  --border:#2d4636;
+  --text:#eef2e2;
+  --muted:#a9bba2;
+  --accent:#7cc491;
+  --accent-dark:#a9dcb6;
+  --accent-2:#5fce8a;
+  --warm:#f0a35e;
+  --warm-fill:#e9a44a;
+  --warn:#f0a35e;
+  --danger:#ff9d8a;
+  --sponsor-bg:#2a2416;
+  --shadow:0 1px 2px rgba(0,0,0,.45),0 10px 28px rgba(0,0,0,.38);
+}
+html[data-theme="dark"] body{background:linear-gradient(180deg,#101b13,var(--bg) 480px) no-repeat,var(--bg)}
+html[data-theme="dark"] .tabbar{background:rgba(16,27,20,.92)}
+@media (max-width:899px){html[data-theme="dark"] .tabbar{background:rgba(16,27,20,.97)}}
+html[data-theme="dark"] .sticky-bar{background:#152619}
+html[data-theme="dark"] .card-photo,html[data-theme="dark"] .card-band{background:#1e2e23}
+html[data-theme="dark"] .featured-local{border-color:#4a3d1e}
+html[data-theme="dark"] .featured-card.invite,html[data-theme="dark"] .featured-event{border-color:#6b5726}
+html[data-theme="dark"] .hero-img{filter:saturate(.88) contrast(1.04) brightness(.8)}
+/* status tints: light pastels become translucent dark tints */
+html[data-theme="dark"] .alert-banner{background:rgba(179,53,43,.18);border-color:#8c453c;color:#ffc9c0}
+html[data-theme="dark"] .alert-banner strong{color:#ffd9d3}
+html[data-theme="dark"] .offline-note{background:rgba(233,164,74,.13);border-color:#8a6d2f;color:#f5d9a0}
+html[data-theme="dark"] .quake-mag.hot{border-color:#8c453c;color:#ff9d8a;background:rgba(179,53,43,.18)}
+html[data-theme="dark"] .commute-verdict.cv-bad,
+html[data-theme="dark"] .go-verdict.go-bad,
+html[data-theme="dark"] .dark-verdict.dark-bad{background:rgba(179,53,43,.14)}
+html[data-theme="dark"] .sh-good{background:rgba(46,125,63,.4);color:#8fe3a8}
+html[data-theme="dark"] .sh-fair{background:rgba(217,119,6,.3);color:#ffd9a0}
+html[data-theme="dark"] .sh-poor{background:#1e2e23;color:#a9bba2}
+html[data-theme="dark"] .pill-poor{background:#1e2e23;color:#a9bba2}
+html[data-theme="dark"] .seg-weak{background:rgba(217,119,6,.24);color:#ffc98a}
+html[data-theme="dark"] .school-open{background:rgba(46,125,63,.4);color:#8fe3a8}
+html[data-theme="dark"] .school-closed{background:rgba(179,53,43,.2);color:#ffab9e}
+html[data-theme="dark"] .school-delayed{background:rgba(217,119,6,.3);color:#ffd9a0}
+html[data-theme="dark"] .sticky-pill.bad{background:rgba(179,53,43,.35)}
+/* map: dim the daylight tiles, keep popups on the dark panel */
+html[data-theme="dark"] #map{background:#14231a}
+html[data-theme="dark"] .leaflet-tile-pane{filter:brightness(.82) saturate(.75) contrast(1.02)}
+html[data-theme="dark"] .leaflet-popup-content-wrapper,
+html[data-theme="dark"] .leaflet-popup-tip{background:var(--panel);color:var(--text)}
+html[data-theme="dark"] .leaflet-bar a{background:var(--panel);color:var(--text);border-color:var(--border)}
+
+/* ---------- sponsor page (sponsor.html) ---------- */
+.sponsor-page{background:var(--bg)}
+.sp-wrap{max-width:880px;margin:0 auto;padding:24px 20px 48px}
+.sp-back{font-weight:700;color:var(--accent-dark);text-decoration:none}
+.sp-hero h1{font-family:var(--display);font-size:2rem;line-height:1.15;margin:14px 0 8px}
+.sp-hero p{color:var(--muted);max-width:56ch}
+.sp-avail{
+  display:flex;flex-wrap:wrap;gap:8px 22px;background:var(--panel);
+  border:1px solid var(--border);border-radius:12px;padding:12px 16px;
+  font-weight:700;font-size:.92rem;box-shadow:var(--shadow);
+}
+.sp-avail .rem{color:var(--warm)}
+.sp-grid{display:grid;grid-template-columns:340px 1fr;gap:26px;align-items:start;margin:30px 0}
+@media (max-width:760px){.sp-grid{grid-template-columns:1fr}}
+.sp-phone{
+  border:10px solid #20392a;border-radius:38px;overflow:hidden;background:var(--panel);
+  box-shadow:0 18px 44px rgba(30,40,20,.28);max-width:340px;margin:0 auto;
+}
+.sp-phone .founding-panel,.sp-phone .featured-local{border-radius:0;box-shadow:none}
+.sp-phone .founding-cells{grid-template-columns:1fr}
+.sp-phone .featured-row{grid-template-columns:1fr}
+.sp-phone .ticker{border-radius:0;box-shadow:none}
+.sp-phone .ticker-stage{min-height:96px}
+.sp-terms{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+.sp-terms h2{font-family:var(--display);margin:0 0 10px}
+.sp-terms ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:7px}
+.sp-price{font-family:var(--display);font-size:1.6rem;color:var(--warm)}
+.sp-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:26px 0}
+@media (max-width:640px){.sp-steps{grid-template-columns:1fr 1fr}}
+.sp-step{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center}
+.sp-step strong{display:block;font-family:var(--display);font-size:1.05rem;margin-bottom:4px}
+.sp-step span{font-size:.82rem;color:var(--muted)}
+.sp-cta{
+  display:inline-block;background:var(--warm-fill);color:#2a1c08;font-weight:800;
+  border-radius:999px;padding:13px 24px;text-decoration:none;font-size:1rem;
+}
+.sp-note{font-size:.85rem;color:var(--muted)}
+
+/* ---------- correction pass: neutralize the base glance anatomy ----------
+   The base .glance is a 4-column grid of white tiles; inside the ticker
+   those rules must not apply (found in screenshot review round 1). */
+.ticker{display:block}
+.ticker-slide.glance-tile{
+  background:transparent;border:none;box-shadow:none;border-radius:0;
+  flex-direction:row;text-align:left;min-height:0;color:#f3efe0;
+}
+.ticker-slide.glance-tile:hover{border-color:transparent}
+
+/* =====================================================================
+   V2 REVISION 2026-11-05 (Travis, after reviewing v1) — supersedes the
+   v1 card treatment above where they conflict:
+   "the images of the county are supposed to pop up and be the entire
+   background and the cards just the etched glass."
+   1) County photos become the ENTIRE page background: a fixed layer
+      behind everything, slowly crossfading (day photos in light mode,
+      the verified dusk pool in dark mode), static under reduced motion.
+   2) Cards stop being solid: every card surface is translucent etched
+      glass floating directly on that photo background. The v1 photo
+      bands are retired (the background IS the photo now).
+   3) Staggered pairs: where a card pairs with content (sponsor page
+      sections, homepage founding cells + featured row), the partners
+      sit side by side with a vertical offset, alternating sides.
+   ===================================================================== */
+
+/* ---------- 1) the full-page photographic background ---------- */
+html{background:#223c29}
+body{background:transparent}
+html[data-theme="dark"] body{background:transparent}
+.sponsor-page{background:transparent}
+.page-bg{position:fixed;inset:0;z-index:-1;overflow:hidden;background:#223c29}
+.bg-stack{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease}
+html[data-theme="light"] .bg-stack.bg-day{opacity:1}
+html[data-theme="dark"] .bg-stack.bg-dusk{opacity:1}
+.bg-layer{
+  position:absolute;inset:0;background-size:cover;background-position:center 42%;
+  opacity:0;transition:opacity 2.6s ease;transform:scale(1.03);
+}
+.bg-layer.on{opacity:1}
+@media (prefers-reduced-motion:no-preference){
+  .bg-layer.on{animation:bgsettle 12s ease-out both}
+  @keyframes bgsettle{from{transform:scale(1.09)}to{transform:scale(1.03)}}
+}
+@media (prefers-reduced-motion:reduce){
+  .bg-layer{transition:none}
+  .bg-stack{transition:none}
+}
+/* one tasteful veil over the photos: keeps the masthead / ticker zone
+   legible and unifies the set — the photos still read as photos */
+.page-bg::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(22,38,24,.20),rgba(241,236,220,.13) 34%,rgba(241,236,220,.05) 68%,rgba(22,38,24,.16));
+}
+html[data-theme="dark"] .page-bg::after{
+  background:linear-gradient(180deg,rgba(4,9,5,.42),rgba(4,9,5,.30) 40%,rgba(4,9,5,.44));
+}
+
+/* ---------- 2) cards are etched glass on the photo ---------- */
+.card{
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);
+  backdrop-filter:blur(12px) saturate(1.25);
+  border:1px solid rgba(255,255,255,.6);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 2px rgba(20,32,16,.10),0 16px 36px rgba(20,32,16,.18);
+}
+html[data-theme="dark"] .card{
+  background:linear-gradient(180deg,rgba(26,43,32,.85),rgba(13,23,16,.77));
+  border-color:rgba(196,226,196,.18);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 1px 2px rgba(0,0,0,.4),0 16px 36px rgba(0,0,0,.35);
+}
+/* warm sponsor surfaces get warm glass */
+.featured-local{
+  background:linear-gradient(180deg,rgba(250,238,214,.88),rgba(246,234,208,.78));
+  -webkit-backdrop-filter:blur(12px) saturate(1.2);
+  backdrop-filter:blur(12px) saturate(1.2);
+}
+html[data-theme="dark"] .featured-local{background:linear-gradient(180deg,rgba(43,37,20,.88),rgba(32,27,15,.8))}
+/* nested cards sit ON a glass parent — translucent tint, no second blur
+   (stacked backdrop-filters are what turns glass muddy) */
+.featured-card{background:rgba(253,250,240,.88)}
+html[data-theme="dark"] .featured-card{background:rgba(22,34,26,.88)}
+.featured-event{background:rgba(246,234,208,.85)}
+html[data-theme="dark"] .featured-event{background:rgba(43,37,20,.85)}
+/* finder + footer: glass sheets directly on the photo */
+.finder-box,.finder-results{
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);
+  backdrop-filter:blur(12px) saturate(1.25);
+}
+.finder-box{background:rgba(251,248,238,.82)}
+.finder-results{background:rgba(251,248,238,.9)}
+html[data-theme="dark"] .finder-box{background:rgba(20,33,24,.85)}
+html[data-theme="dark"] .finder-results{background:rgba(20,33,24,.92)}
+.site-footer{
+  background:rgba(247,242,226,.84);
+  -webkit-backdrop-filter:blur(14px) saturate(1.2);
+  backdrop-filter:blur(14px) saturate(1.2);
+  border-top:1px solid rgba(255,255,255,.5);
+}
+html[data-theme="dark"] .site-footer{background:rgba(12,21,14,.85);border-top-color:rgba(196,226,196,.14)}
+/* sponsor page surfaces */
+.sp-avail,.sp-terms,.sp-step{
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);
+  backdrop-filter:blur(12px) saturate(1.25);
+  border:1px solid rgba(255,255,255,.6);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 2px rgba(20,32,16,.10),0 16px 36px rgba(20,32,16,.18);
+}
+html[data-theme="dark"] .sp-avail,html[data-theme="dark"] .sp-terms,html[data-theme="dark"] .sp-step{
+  background:linear-gradient(180deg,rgba(26,43,32,.85),rgba(13,23,16,.77));
+  border-color:rgba(196,226,196,.18);
+}
+/* the sponsor page's phone mocks show the same photo background inside
+   the frame, so the mini cards float the way the real ones do */
+.sp-phone{background:#20392a url("img/bg/bg-dusk-3.jpg") center/cover no-repeat}
+/* the tab bar joins the glass system (sticky bar stays solid deep green
+   on purpose — the legibility anchor) */
+.tabbar{-webkit-backdrop-filter:blur(14px) saturate(1.25);backdrop-filter:blur(14px) saturate(1.25)}
+/* v1 photo bands retired — the page background carries the photography */
+.card-band{display:none}
+.band-card{padding-top:20px}
+
+/* ---------- 3) side-by-side pairs — NATURAL heights (v4) ----------
+   v2's manufactured stagger offsets (founding cells stepped 18/36px,
+   featured house card dropped 26px, sponsor-page partners dropped
+   54px, phone insets 12–28px) were REMOVED in v4 — Travis: "don't
+   force the cards to stagger… leaving that giant spacing is kind of
+   weird." The v4 layer at the bottom of this file gives the pairs
+   align-items:start so each card keeps its natural content height;
+   whatever stagger shows is the organic kind, from the cards simply
+   being different sizes. */
+
+/* ---------- fallbacks: no blur support / reduced transparency ---------- */
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  .card,.sp-avail,.sp-terms,.sp-step{background:#fbf8ee}
+  .featured-local{background:var(--sponsor-bg)}
+  .site-footer{background:#f7f2e2}
+  .finder-box,.finder-results{background:#fbf8ee}
+  html[data-theme="dark"] .card,html[data-theme="dark"] .sp-avail,
+  html[data-theme="dark"] .sp-terms,html[data-theme="dark"] .sp-step{background:#16211a}
+  html[data-theme="dark"] .site-footer{background:#0c1510}
+  html[data-theme="dark"] .finder-box,html[data-theme="dark"] .finder-results{background:#16211a}
+}
+@media (prefers-reduced-transparency:reduce){
+  .card,.featured-local,.sp-avail,.sp-terms,.sp-step,.site-footer,.finder-box,.finder-results{
+    backdrop-filter:none;-webkit-backdrop-filter:none;background:#fbf8ee;
+  }
+  html[data-theme="dark"] .card,html[data-theme="dark"] .featured-local,
+  html[data-theme="dark"] .sp-avail,html[data-theme="dark"] .sp-terms,
+  html[data-theme="dark"] .sp-step,html[data-theme="dark"] .site-footer,
+  html[data-theme="dark"] .finder-box,html[data-theme="dark"] .finder-results{background:#16211a}
+}
+@media print{
+  .page-bg{display:none!important}
+  .card,.sp-avail,.sp-terms,.sp-step,.site-footer{background:#fff!important;backdrop-filter:none;-webkit-backdrop-filter:none}
+}
+
+/* v2 readability touch-up (screenshot review): the few text lines that sit
+   directly on the photo — finder hint, sponsor hero/notes/back link — get
+   a soft halo in the page's own bone (light) / deep green (dark) so they
+   hold over bright sky and busy foliage alike */
+.finder-hint,.sp-hero p,.sp-note,.sp-back{
+  text-shadow:0 1px 6px rgba(247,242,226,.95),0 0 2px rgba(247,242,226,.9);
+}
+html[data-theme="dark"] .finder-hint,html[data-theme="dark"] .sp-hero p,
+html[data-theme="dark"] .sp-note,html[data-theme="dark"] .sp-back{
+  text-shadow:0 1px 6px rgba(6,12,7,.95),0 0 2px rgba(6,12,7,.9);
+}
+
+/* v2 touch-up 2: the finder hint gets its own whisper of glass (a pill in
+   the site's chip language) — a text halo alone didn't hold over the
+   brightest bridge steel in screenshot review */
+.finder-hint{
+  background:rgba(247,242,226,.68);border:1px solid rgba(255,255,255,.45);
+  border-radius:12px;padding:7px 12px;
+  -webkit-backdrop-filter:blur(8px) saturate(1.2);
+  backdrop-filter:blur(8px) saturate(1.2);
+  text-shadow:none;
+}
+html[data-theme="dark"] .finder-hint{
+  background:rgba(16,28,19,.68);border-color:rgba(196,226,196,.14);text-shadow:none;
+}
+
+/* =====================================================================
+   V3 REVISION (Travis's corrections on v2, 2026-11-05) — supersedes the
+   v2 glance board and the cycling background:
+   1. THE GLANCE STRIP — one continuous full-width stream (below).
+   2. CALM BACKGROUND — one static photo per view; the timed crossfade
+      cycle and the settle-zoom are gone; the uniform veil becomes the
+      portfolio's directional scrim (dark where type sits, clear where
+      the photo should pop).
+   3. Cards stay exactly as v2 — etched glass over the imagery.
+   The v1/v2 .ticker rules above are now unused by the markup (the
+   sponsor phone mock has its own .mock-strip styles at the bottom).
+   ===================================================================== */
+
+/* the strip breaks out of the content column — keep the page itself
+   from growing a horizontal scrollbar over the 100vw math */
+html,body{overflow-x:clip}
+
+/* ---------- 2 · calm background ---------- */
+.bg-layer{transition:opacity .6s ease;transform:none}
+@media (prefers-reduced-motion:no-preference){
+  .bg-layer.on{animation:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .bg-layer{transition:none}
+}
+/* directional scrim — portfolio pattern (lawn hero: gradient dark at
+   the ends where the type sits, clear through the middle). The glass
+   cards carry their own legibility; this only grounds the masthead
+   zone at the top and the tab-bar / footer zone at the bottom. */
+.page-bg::after{
+  background:linear-gradient(180deg,
+    rgba(17,32,19,.40) 0, rgba(17,32,19,.14) 15%,
+    rgba(17,32,19,0) 32%, rgba(17,32,19,0) 76%,
+    rgba(17,32,19,.28) 100%);
+}
+html[data-theme="dark"] .page-bg::after{
+  background:linear-gradient(180deg,
+    rgba(3,8,4,.60) 0, rgba(3,8,4,.32) 15%,
+    rgba(3,8,4,.08) 34%, rgba(3,8,4,.12) 76%,
+    rgba(3,8,4,.48) 100%);
+}
+
+/* ---------- 1 · the glance strip ---------- */
+.glance-strip{
+  flex:none;width:100vw;margin-left:calc(50% - 50vw);
+  background:linear-gradient(180deg,rgba(21,40,25,.88),rgba(13,26,16,.92));
+  -webkit-backdrop-filter:blur(14px) saturate(1.25);
+  backdrop-filter:blur(14px) saturate(1.25);
+  border-top:1px solid rgba(233,244,220,.18);
+  border-bottom:1px solid rgba(233,244,220,.18);
+  box-shadow:0 16px 34px rgba(10,18,8,.30);
+}
+.strip-viewport{overflow:hidden}
+/* the portfolio marquee: track at max-content, two identical halves,
+   slide to -50% and loop; 80s = a slow, calm drift */
+.strip-track{
+  display:flex;width:max-content;
+  animation:stripScroll 80s linear infinite;
+  will-change:transform;
+}
+@keyframes stripScroll{to{transform:translateX(-50%)}}
+.glance-strip:hover .strip-track,
+.glance-strip:focus-within .strip-track{animation-play-state:paused}
+.strip-item.glance-tile{
+  flex:none;flex-direction:row;align-items:center;gap:13px;
+  background:transparent;border:0;border-right:1px solid rgba(233,244,220,.14);
+  border-radius:0;box-shadow:none;color:#eef4e2;
+  padding:11px 26px 11px 22px;transform:none;
+}
+.strip-item.glance-tile:hover{border-color:rgba(233,244,220,.14);transform:none}
+.glance-strip .gl-ico{width:36px;height:36px;flex:none}
+.strip-main{display:flex;flex-direction:column;gap:1px;min-width:0}
+.strip-top{display:flex;align-items:baseline;gap:7px;white-space:nowrap}
+.glance-strip .glance-label{color:#cfe0b8;font-size:.68rem}
+.glance-strip .strip-sep{color:#8aa583;font-size:.68rem}
+.glance-strip .glance-sub{color:#a9bfa0;font-size:.72rem;white-space:nowrap}
+.glance-strip .glance-val{
+  font-family:var(--display);font-weight:700;color:#fff;
+  font-size:1.18rem;line-height:1.18;letter-spacing:0;
+  display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  max-width:36ch;-webkit-line-clamp:unset;-webkit-box-orient:unset;
+}
+.glance-strip .glance-val.ok{color:#a5ecb6}
+.glance-strip .glance-val.warn{color:#ffc98a}
+.glance-strip .glance-val.bad{color:#ffab9e}
+@media (max-width:560px){
+  .strip-item.glance-tile{gap:10px;padding:9px 20px 9px 16px}
+  .glance-strip .gl-ico{width:30px;height:30px}
+  .glance-strip .glance-val{font-size:1.03rem;max-width:27ch}
+  .glance-strip .glance-sub{font-size:.68rem}
+}
+/* reduced motion: no stream — a static, swipeable full-width strip */
+.glance-strip.reduced .strip-viewport{overflow-x:auto}
+.glance-strip.reduced .strip-track{animation:none}
+@media (prefers-reduced-motion:reduce){
+  .strip-track{animation:none}
+  .strip-viewport{overflow-x:auto}
+}
+/* strip fallbacks, same discipline as the cards */
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  .glance-strip{background:#16281a}
+}
+@media (prefers-reduced-transparency:reduce){
+  .glance-strip{background:#16281a;backdrop-filter:none;-webkit-backdrop-filter:none}
+}
+@media (prefers-contrast:more){
+  .glance-strip{background:#101f13}
+}
+@media print{
+  .glance-strip{display:none}
+}
+
+/* sponsor page phone mock: the strip, miniaturised and static */
+.sp-phone .mock-strip{
+  display:flex;overflow:hidden;
+  background:linear-gradient(180deg,rgba(21,40,25,.94),rgba(13,26,16,.97));
+  border-top:1px solid rgba(233,244,220,.18);
+  border-bottom:1px solid rgba(233,244,220,.18);
+}
+.sp-phone .ms-item{
+  display:flex;align-items:center;gap:8px;flex:none;
+  padding:8px 14px;border-right:1px solid rgba(233,244,220,.14);
+}
+.sp-phone .ms-item .gl-ico{width:26px;height:26px;flex:none}
+.sp-phone .ms-main{display:flex;flex-direction:column}
+.sp-phone .ms-top{
+  font-size:.52rem;font-weight:700;letter-spacing:.07em;
+  text-transform:uppercase;color:#a9bfa0;white-space:nowrap;
+}
+.sp-phone .ms-val{
+  font-family:var(--display);font-size:.88rem;font-weight:700;
+  color:#fff;white-space:nowrap;line-height:1.2;
+}
+.sp-phone .ms-val.ok{color:#a5ecb6}
+
+/* =====================================================================
+   V4 REVISION (Travis's five fixes on v3, 2026-11-05)
+   1. THEME TOGGLE UNMISSABLE — out of the hero chip row, into the
+      masthead top-right beside the clock: labelled, amber-ringed,
+      44px tap target, high contrast in both themes (it sits on the
+      hero photo, whose scrim is dark in both). On phones the clock
+      hides (base trim) and the toggle stays, top-right, alone.
+   2. STRIP GLIDES + FIRST PAINT FINISHED — the strip's backdrop
+      blur is GONE: a blurred backdrop under a perpetually animating
+      track forces a re-blur of the strip's whole footprint every
+      frame; that was the glitch. The band is now a near-opaque
+      deep-green gradient (no filter), the track stays transform-only
+      (app.js also right-sizes the clones and batches their sync).
+      Reveal is softer and app.js never hides a card that is already
+      on screen; non-Today backgrounds attach lazily (app.js), so
+      first paint downloads one background per theme, not eight.
+   3. SPONSOR RAILS — Today + Events & More: sticky cards in the
+      page margins on wide screens (the margin grows a little to
+      hold them; below 1440px they vanish rather than squeeze), plus
+      ONE sponsor card at the very top of Events & More at all
+      widths. Sold, the rails and the top card ARE the paid
+      placements; unsold, they carry house content — each view keeps
+      exactly ONE paid-format invitation (Today: the founding panel;
+      More: the Featured Local card).
+   4. DOUBLE BRIDGE KILLED — hero keeps the Lewis & Clark Bridge;
+      Today's backgrounds are river photos (day: Rainier dock;
+      dusk: the river-mouth panorama). Rule: no view background may
+      duplicate the hero image in the same theme.
+   5. GREEN BAR — the sticky bar's brand line now reads "Live view"
+      (index.html); the masthead keeps the full name.
+   6. NATURAL STAGGER — v2's offset block (deleted above) is
+      replaced by natural heights: pairs align at the top and size
+      to their own content, and Travel/Outdoors trade their
+      row-locked two-column grid (equal-height rows = voids under
+      short cards — the Outdoors empty spaces Travis flagged) for
+      balanced columns that pack each card at its own height.
+   ===================================================================== */
+
+/* ---------- 1 · theme toggle beside the clock ---------- */
+.hero-side{display:flex;align-items:flex-start;gap:10px}
+.hero-theme-btn{
+  display:inline-flex;align-items:center;gap:8px;cursor:pointer;
+  font:inherit;font-size:.92rem;font-weight:800;color:#fff;
+  background:rgba(9,22,13,.72);border:1.5px solid var(--warm-fill);
+  border-radius:999px;padding:10px 16px;min-height:44px;
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+  box-shadow:0 4px 14px rgba(0,0,0,.35);
+  transition:background .15s ease,transform .12s ease;
+}
+.hero-theme-btn:hover{background:rgba(9,22,13,.9)}
+.hero-theme-btn:active{transform:scale(.97)}
+.hero-theme-btn .theme-ico{width:22px;height:22px}
+@media (max-width:560px){
+  .hero-theme-btn{padding:9px 13px;font-size:.86rem;min-height:42px}
+}
+
+/* ---------- 6 · natural stagger ---------- */
+.founding-cells{align-items:start}
+.featured-row{align-items:start}
+@media (min-width:900px){
+  /* balanced columns: cards flow down one column and up the next at
+     their natural heights — no row ever waits for a taller partner.
+     Outdoors flows as ONE column group (no column-span breaks at
+     all): the span breaks chopped it into segments too small to
+     balance, and the short segment left a photo-sized hole under
+     the shorter column — the exact void Travis flagged. Travel
+     keeps two spans (the Leaflet map and the camera-heavy roads
+     card genuinely need the width); its remaining five cards are
+     near-enough in height to balance cleanly. */
+  #view-travel,#view-outdoors{display:block;columns:2;column-gap:20px}
+  #view-travel>*,#view-outdoors>*{break-inside:avoid;margin:0 0 20px}
+  #view-travel .map-card,#view-travel #roads-card{column-span:all}
+}
+
+/* ---------- 2 · strip: no backdrop filter under the animation ---------- */
+.glance-strip{
+  background:linear-gradient(180deg,rgba(19,37,23,.96),rgba(12,24,15,.97));
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+}
+/* softer reveal (app.js also skips cards already on screen) */
+.reveal{transform:translateY(6px)}
+.reveal.inview{transition:opacity .35s ease,transform .35s ease}
+
+/* ---------- 3 · sponsor rails + Events & More top card ---------- */
+.view{position:relative}
+.rail-zone{display:none}
+.sponsor-top{
+  border-radius:var(--radius);padding:20px;
+  border:1px solid #e3cd96;box-shadow:var(--shadow);
+  background:linear-gradient(180deg,rgba(250,238,214,.9),rgba(246,234,208,.82));
+  -webkit-backdrop-filter:blur(12px) saturate(1.2);
+  backdrop-filter:blur(12px) saturate(1.2);
+}
+html[data-theme="dark"] .sponsor-top{background:linear-gradient(180deg,rgba(43,37,20,.9),rgba(32,27,15,.84))}
+.sponsor-top h2{font-family:var(--display);font-size:1.3rem;margin:0 0 8px;line-height:1.25}
+.sponsor-top p{margin:0 0 12px;font-size:.94rem;max-width:75ch}
+.sponsor-top .cell-eyebrow{color:var(--warm);margin:0 0 8px}
+html[data-theme="dark"] .sponsor-top .cell-eyebrow{color:#f2c078}
+.rail-card{
+  width:176px;border-radius:16px;padding:16px 14px;
+  display:flex;flex-direction:column;gap:8px;
+  background:linear-gradient(180deg,rgba(253,250,240,.9),rgba(249,244,229,.82));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);
+  backdrop-filter:blur(12px) saturate(1.25);
+  border:1px solid rgba(255,255,255,.6);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 2px rgba(20,32,16,.10),0 16px 36px rgba(20,32,16,.18);
+}
+html[data-theme="dark"] .rail-card{
+  background:linear-gradient(180deg,rgba(26,43,32,.88),rgba(13,23,16,.82));
+  border-color:rgba(196,226,196,.18);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 1px 2px rgba(0,0,0,.4),0 16px 36px rgba(0,0,0,.35);
+}
+.rail-card h3{font-family:var(--display);font-size:1.06rem;line-height:1.25;margin:0}
+.rail-card p{margin:0;font-size:.84rem;color:var(--muted)}
+html[data-theme="dark"] .rail-card p{color:#c9d4bd}
+.rail-card .cell-eyebrow{color:var(--warm);margin:0}
+html[data-theme="dark"] .rail-card .cell-eyebrow{color:#f2c078}
+.rail-cta{
+  margin-top:auto;align-self:flex-start;display:inline-block;text-decoration:none;
+  font-weight:800;font-size:.8rem;border-radius:999px;padding:8px 13px;
+  background:transparent;color:var(--accent-dark);border:1px solid var(--accent);
+}
+html[data-theme="dark"] .rail-cta{color:#cfe0b8;border-color:rgba(196,226,196,.45)}
+@media (min-width:1440px){
+  /* the room is carved only while Today or Events & More is live —
+     the content column trades a little width, the margins gain the
+     cards; every other view keeps the full layout untouched */
+  .views:has(> #view-today:not([hidden])),
+  .views:has(> #view-more:not([hidden])){max-width:1600px;padding-left:204px;padding-right:204px}
+  .rail-zone{
+    display:flex;justify-content:space-between;align-items:flex-start;
+    /* top offset clears the glance strip on Today, so the rails flank
+       content instead of floating over the strip's ends */
+    position:absolute;top:84px;bottom:0;left:-204px;right:-204px;
+    pointer-events:none;z-index:4;
+  }
+  .rail-card{position:sticky;top:112px;pointer-events:auto;flex:none}
+}
+/* rail + top-card fallbacks, same discipline as the cards */
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  .rail-card,.sponsor-top{background:#fbf8ee}
+  html[data-theme="dark"] .rail-card,html[data-theme="dark"] .sponsor-top{background:#16211a}
+}
+@media (prefers-reduced-transparency:reduce){
+  .rail-card,.sponsor-top{backdrop-filter:none;-webkit-backdrop-filter:none;background:#fbf8ee}
+  html[data-theme="dark"] .rail-card,html[data-theme="dark"] .sponsor-top{background:#16211a}
+}
+@media print{
+  .rail-zone{display:none!important}
+}
+
+/* ===== Community Screensaver (Redesign prototype, 2026-11-05) =====
+   The ambient display: one county photo full-screen, crossfading
+   slowly through the community pool — the ONE place photo cycling
+   belongs (the page background stays calm). Clock + pinned answers
+   in across-the-room type over a directional scrim (portfolio
+   pattern: dark where the text sits, clear through the middle so
+   the photo carries). The glass here is deep-green in BOTH themes —
+   it always sits on a photograph; the theme still tints the card
+   and chips back on the page. */
+.saver-overlay{position:fixed;inset:0;z-index:1600;background:#0b120d;color:#f4f1e4;overflow:hidden;cursor:pointer;font-family:var(--font,inherit)}
+.saver-overlay[hidden]{display:none}
+.saver-photo{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 2.8s ease}
+.saver-photo.is-on{opacity:1}
+.saver-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,16,10,.52) 0%,rgba(8,16,10,0) 26%,rgba(8,16,10,0) 52%,rgba(8,16,10,.78) 100%);pointer-events:none}
+.saver-top{position:absolute;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:20px 28px;z-index:3}
+.saver-brand{display:inline-flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:clamp(1rem,2.2vw,1.5rem);letter-spacing:.01em;text-shadow:0 1px 8px rgba(0,0,0,.55)}
+.saver-brand img{width:34px;height:34px;border-radius:50%}
+.saver-brand .live-word{color:var(--amber,#e9a44a)}
+.saver-live{display:inline-flex;align-items:center;gap:8px;font-weight:700;letter-spacing:.14em;font-size:clamp(.8rem,1.6vw,1rem);color:#8fe3a8;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.saver-clockbox{position:absolute;top:12vh;left:0;right:0;text-align:center;z-index:3;padding:0 4vw}
+.saver-clock{font-family:var(--display);font-weight:700;font-size:clamp(4.2rem,15vw,11rem);line-height:.98;letter-spacing:-.01em;text-shadow:0 2px 26px rgba(0,0,0,.55),0 1px 4px rgba(0,0,0,.6)}
+.saver-date{margin-top:1.2vh;font-size:clamp(1.15rem,3.4vw,2.1rem);font-weight:600;color:#efe9d2;text-shadow:0 1px 10px rgba(0,0,0,.65)}
+.saver-answers{position:absolute;left:0;right:0;bottom:9.5vh;z-index:3;display:flex;flex-wrap:wrap;justify-content:center;gap:14px;padding:0 3.5vw}
+.saver-answer{flex:1 1 200px;max-width:340px;border-radius:18px;padding:14px 18px 12px;color:#f4f1e4;background:rgba(20,38,26,.55);border:1px solid rgba(244,241,228,.28);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 14px 30px rgba(0,0,0,.35);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.saver-answer-label{display:flex;align-items:center;gap:8px;font-size:clamp(.78rem,1.7vw,.98rem);font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#f2c078}
+.saver-answer-label img{width:22px;height:22px;border-radius:50%}
+.saver-answer-val{margin-top:5px;font-family:var(--display);font-weight:700;font-size:clamp(1.45rem,3.6vw,2.5rem);line-height:1.12;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.saver-answer-sub{margin-top:4px;font-size:clamp(.85rem,1.9vw,1.05rem);color:#d8dfc8;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.saver-answer-none{max-width:520px;text-align:center}
+.saver-quiet{position:absolute;left:28px;bottom:22px;z-index:3;max-width:62vw;font-size:clamp(.85rem,1.8vw,1.05rem);color:#e6e0c8;text-shadow:0 1px 8px rgba(0,0,0,.7)}
+.saver-credit{position:absolute;right:28px;bottom:22px;z-index:3;color:rgba(255,250,238,.9);text-shadow:0 1px 12px rgba(6,16,9,.65),0 0 3px rgba(6,16,9,.5);text-align:right}
+/* the photographer's name as a signature on the painting —
+   small, handwritten, bottom corner (Travis, 2026-11-05) */
+.saver-credit-name{font-family:"Segoe Script","Brush Script MT","Snell Roundhand","Apple Chancery",cursive;font-size:1.35rem;line-height:1.1}
+.saver-credit-loc{font-size:.72rem;font-weight:600;letter-spacing:.04em;opacity:.85;margin-left:.45em}
+.saver-exit{position:absolute;top:64px;right:16px;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.35);background:rgba(10,20,13,.45);color:#fff;font-size:1.25rem;line-height:1;cursor:pointer;z-index:4}
+.saver-exit:hover{background:rgba(10,20,13,.7)}
+.saver-exit-hint{position:absolute;left:0;right:0;bottom:5.2vh;z-index:3;text-align:center;font-size:.95rem;letter-spacing:.06em;color:rgba(244,241,228,.85);text-shadow:0 1px 8px rgba(0,0,0,.7);transition:opacity 1.2s ease}
+.saver-exit-hint.dim{opacity:.3}
+body.saver-on{overflow:hidden}
+@media (max-width:640px){
+  .saver-top{padding:14px 16px}
+  .saver-clockbox{top:9vh}
+  .saver-answers{bottom:13vh;gap:10px;padding:0 4vw}
+  .saver-answer{flex:1 1 44%;max-width:none;padding:11px 13px 10px}
+  /* quiet line stays bottom-left; the signature lives bottom-right */
+  .saver-quiet{left:16px;bottom:48px;max-width:88vw}
+  .saver-credit{right:16px;bottom:16px;text-align:right}
+  .saver-credit-name{font-size:1.15rem}
+  .saver-exit-hint{display:none}
+  .saver-exit{top:58px;right:12px}
+}
+@media (prefers-reduced-motion:reduce){
+  .saver-photo{transition:none}
+  .saver-exit-hint{transition:none}
+}
+@media print{.saver-overlay{display:none!important}}
+
+/* the card + pin chips + photo form, back on the page */
+.saver-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;margin:4px 0 6px}
+.saver-tip{flex:1 1 260px;margin:0;font-size:.92rem;color:var(--muted)}
+.saver-pins{display:flex;flex-wrap:wrap;gap:9px;margin:2px 0 8px}
+.saver-chip{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:8px 14px 8px 9px;font:inherit;font-weight:700;font-size:.9rem;cursor:pointer;color:var(--text);background:var(--panel-2);border:1.5px solid var(--border)}
+.saver-chip img{width:24px;height:24px;border-radius:50%}
+.saver-chip-state{font-size:.78rem;font-weight:800;letter-spacing:.04em;color:var(--muted)}
+.saver-chip.on{border-color:var(--amber,#e9a44a);background:rgba(233,164,74,.14);box-shadow:0 0 0 1px var(--amber,#e9a44a) inset}
+.saver-chip.on .saver-chip-state{color:var(--rust,#b0511c)}
+html[data-theme="dark"] .saver-chip.on .saver-chip-state{color:#f2c078}
+.photo-form{display:grid;gap:11px;margin-top:4px}
+.photo-field{display:grid;gap:5px;font-weight:700;font-size:.92rem}
+.photo-field input[type="text"]{font:inherit;font-weight:400;padding:10px 12px;border-radius:10px;border:1px solid var(--border);background:var(--panel);color:var(--text)}
+.photo-field input[type="file"]{font:inherit;font-weight:400;font-size:.9rem}
+.photo-rights{display:flex;align-items:flex-start;gap:9px;font-size:.94rem;cursor:pointer}
+.photo-rights input{width:18px;height:18px;margin-top:2px;accent-color:var(--accent)}
+.photo-submit{justify-self:start;text-decoration:none}
+.photo-submit.is-off{opacity:.45;filter:grayscale(.4)}
+
+/* v8: the glance strip items no longer carry pin toggles — the
+   .saver-pin disc rules that lived here are deleted with the
+   buttons themselves (app.js). Strip items are icon + label +
+   value only; answer pinning lives in the saver card's chips. */
+.strip-item{position:relative}
+
+/* ===== V5 REVISION (Travis's fixes on v4 + screensaver, 2026-11-05) =====
+   Clean hero, the logo becomes the menu button, a slide-out drawer,
+   pin-any-card as live copies at the top of Today, the PWA install
+   card, the courthouse brand mark, and the saver's long-name wrap. */
+
+/* --- the logo is the menu button now --- */
+.brand-mark.menu-btn{cursor:pointer;position:relative;font:inherit;color:inherit;padding:5px}
+.brand-mark.menu-btn img{width:36px;height:36px;border-radius:50%;display:block}
+.menu-badge{position:absolute;right:-7px;bottom:-7px;width:21px;height:21px;border-radius:7px;background:var(--warm-fill);border:1px solid rgba(35,22,10,.4);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2.5px;box-shadow:0 2px 8px rgba(0,0,0,.35)}
+.menu-badge span{display:block;width:10px;height:2px;border-radius:1px;background:#23160a}
+.brand-mark.menu-btn:hover{border-color:var(--warm-fill)}
+.brand-mark.menu-btn:active{transform:scale(.96)}
+
+/* --- the drawer: frosted glass sliding in from the right --- */
+.drawer-backdrop{position:fixed;inset:0;z-index:1200;background:rgba(10,18,12,.45);opacity:0;transition:opacity .25s ease}
+.drawer-backdrop.open{opacity:1}
+.drawer{position:fixed;top:0;right:0;bottom:0;z-index:1201;width:min(86vw,344px);display:flex;flex-direction:column;transform:translateX(106%);transition:transform .3s ease;background:rgba(251,248,238,.92);-webkit-backdrop-filter:blur(18px) saturate(1.15);backdrop-filter:blur(18px) saturate(1.15);border-left:1px solid var(--border);box-shadow:-18px 0 44px rgba(20,30,16,.28);color:var(--text)}
+.drawer.open{transform:none}
+.drawer[hidden]{display:none}
+html[data-theme="dark"] .drawer{background:rgba(20,32,24,.94);color:#eef0e2;border-left-color:rgba(244,241,228,.18)}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  .drawer{background:#fbf8ee}
+  html[data-theme="dark"] .drawer{background:#16211a}
+}
+@media (prefers-reduced-transparency:reduce){
+  .drawer{-webkit-backdrop-filter:none;backdrop-filter:none;background:#fbf8ee}
+  html[data-theme="dark"] .drawer{background:#16211a}
+}
+@media (prefers-reduced-motion:reduce){
+  .drawer,.drawer-backdrop{transition:none}
+}
+body.drawer-on{overflow:hidden}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px 10px;border-bottom:1px solid var(--border)}
+html[data-theme="dark"] .drawer-head{border-bottom-color:rgba(244,241,228,.16)}
+.drawer-brand{display:inline-flex;align-items:center;gap:9px;font-family:var(--display);font-weight:700;font-size:1.02rem}
+.drawer-brand img{width:32px;height:32px;border-radius:50%}
+.drawer-brand .live-word{color:var(--warm)}
+html[data-theme="dark"] .drawer-brand .live-word{color:var(--warm-fill)}
+.drawer-close{flex:none;width:38px;height:38px;border-radius:50%;border:1px solid var(--border);background:transparent;color:inherit;font-size:1rem;cursor:pointer}
+.drawer-close:hover{border-color:var(--warm)}
+.drawer-nav{flex:1;overflow-y:auto;padding:6px 10px 12px;-webkit-overflow-scrolling:touch}
+.drawer-group{padding:8px 0 4px}
+.drawer-group + .drawer-group{border-top:1px solid var(--border)}
+html[data-theme="dark"] .drawer-group + .drawer-group{border-top-color:rgba(244,241,228,.14)}
+.drawer-view{display:flex;align-items:center;gap:9px;width:100%;padding:8px 8px 6px;background:none;border:0;font:inherit;font-weight:800;font-size:.98rem;color:var(--accent-dark);cursor:pointer;text-align:left}
+html[data-theme="dark"] .drawer-view{color:#bfe3c8}
+.drawer-view img{width:24px;height:24px;border-radius:50%}
+.drawer-view:hover{text-decoration:underline}
+.drawer-link{display:block;padding:7px 10px 7px 41px;border-radius:9px;color:var(--muted);text-decoration:none;font-size:.94rem}
+.drawer-link:hover{background:rgba(46,93,58,.1);color:var(--text)}
+html[data-theme="dark"] .drawer-link{color:#c9d2bd}
+html[data-theme="dark"] .drawer-link:hover{background:rgba(244,241,228,.08);color:#fff}
+.drawer-actions{border-top:1px solid var(--border);padding:10px;display:flex;flex-direction:column;gap:8px}
+html[data-theme="dark"] .drawer-actions{border-top-color:rgba(244,241,228,.16)}
+.drawer-action{display:flex;align-items:center;gap:10px;width:100%;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:rgba(255,255,255,.35);color:var(--text);font:inherit;font-size:.95rem;font-weight:600;text-decoration:none;cursor:pointer;text-align:left}
+html[data-theme="dark"] .drawer-action{background:rgba(244,241,228,.06);color:#eef0e2;border-color:rgba(244,241,228,.18)}
+.drawer-action:hover{border-color:var(--warm)}
+.drawer-action-ico{font-size:1.1rem;line-height:1;flex:none}
+.drawer-action-img{width:24px;height:24px;border-radius:50%;flex:none}
+.drawer-photo{background:rgba(233,164,74,.22);border-color:rgba(176,81,28,.45)}
+html[data-theme="dark"] .drawer-photo{background:rgba(233,164,74,.16)}
+.drawer-photo-text{display:flex;flex-direction:column;gap:2px}
+.drawer-photo-title{font-weight:800}
+.drawer-photo-line{font-size:.82rem;font-weight:500;line-height:1.35;color:var(--muted)}
+html[data-theme="dark"] .drawer-photo-line{color:#d8dfc8}
+
+/* --- your pins: live copies at the top of Today --- */
+.pin-copy{cursor:pointer}
+.pin-copy-tag{display:flex;align-items:center;gap:6px;font-size:.74rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--warm);margin:0 0 8px}
+.pin-copy .card-head.has-pin{padding-right:96px}
+
+/* --- the ONE install card (Events & More) --- */
+.install-card{position:relative}
+.install-dismiss{position:absolute;top:10px;right:10px;width:34px;height:34px;border-radius:50%;border:1px solid var(--border);background:transparent;color:var(--muted);font-size:.95rem;cursor:pointer;z-index:2}
+.install-dismiss:hover{color:var(--text);border-color:var(--warm)}
+.install-card-main{display:flex;gap:14px;align-items:flex-start;padding-right:30px}
+.install-ico{width:58px;height:58px;border-radius:15px;flex:none;box-shadow:0 4px 14px rgba(30,40,20,.25)}
+.install-card-main h2{font-size:1.12rem;margin-bottom:4px}
+.install-card-main .share-btn{margin-top:8px}
+
+/* --- saver: long event names wrap instead of ellipsizing (fix 7) --- */
+.saver-answer-val{-webkit-line-clamp:3}
+.saver-answer-val.long{font-size:clamp(1.02rem,2.3vw,1.55rem);line-height:1.16;-webkit-line-clamp:4}
+.saver-answer-val.xlong{font-size:clamp(.92rem,1.9vw,1.28rem);line-height:1.14;-webkit-line-clamp:5}
+
+/* =====================================================================
+   ===== V6 REVISION (Travis, 2026-11-05) =====
+   Display in the masthead, a scrolling saver, photo-synced sponsor
+   rotation, mobile sponsor spacing, the Bend summit pair, and the
+   photo-top treatment spread — a little bit more, not everywhere.
+   ===================================================================== */
+
+/* --- 1 · the masthead Display button --------------------------------
+   Same pill as the theme toggle (dark glass, amber ring) so the right
+   cluster reads as one instrument row; the monitor glyph is drawn in
+   light amber to tell it apart at a glance. The word stays — phones
+   down to 360px fit clock + Display + Dark (the clock's text hides
+   first, per the existing ≤560px rule, before any label would). */
+.display-btn svg.theme-ico{color:#f2c078}
+@media (max-width:380px){
+  .display-btn{padding:9px 11px}
+}
+
+/* --- 2 · the saver's answers scroll ---------------------------------
+   The glance strip's technique at across-the-room scale: a viewport,
+   a max-content track of two identical sets, transform-only to -50%.
+   The bottom scrim already darkens toward the answers; the edge mask
+   lets tiles dissolve at the frame instead of popping. */
+.saver-answers.scrolling{display:block;padding:0}
+.saver-scroll-viewport{
+  overflow:hidden;width:100%;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 3.5%,#000 96.5%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 3.5%,#000 96.5%,transparent);
+}
+.saver-scroll-track{display:flex;width:max-content;animation:saverScroll 60s linear infinite;will-change:transform}
+.saver-scroll-set{display:flex;gap:14px;padding-right:14px;align-items:stretch}
+.saver-scroll-set .saver-answer{flex:none;width:min(330px,76vw);max-width:none}
+@keyframes saverScroll{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){
+  .saver-scroll-track{animation:none}
+}
+
+/* --- 4 · founding house cells, spaced through Today's flow ----------
+   On phones the two house cells leave the panel (app.js moves them)
+   and stand as their own deep-green glass panels between content
+   sections — the founding panel's own material, so they still read
+   as sponsor-format cards, just no longer stacked at the top. */
+.founding-cell.in-flow{
+  background:linear-gradient(180deg,rgba(24,40,26,.93),rgba(14,24,16,.96));
+  border:1px solid rgba(233,164,74,.45);border-radius:18px;
+  padding:20px;color:#f5efdd;box-shadow:var(--shadow);
+  -webkit-backdrop-filter:blur(10px) saturate(1.1);backdrop-filter:blur(10px) saturate(1.1);
+}
+
+/* --- 5 · the Bend run summit pair ------------------------------------
+   Two large lead cameras under the Mt. Hood subhead; the figcaption
+   carries the computed distance from the summit anchor. */
+.bend-summit-note{font-size:.9rem;font-weight:600;margin:8px 0 8px}
+.bend-featured{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 10px}
+.bend-featured .camera-fig img{height:190px}
+.bend-lead figcaption{font-size:.84rem}
+.cam-dist{display:block;font-weight:700;color:var(--accent-dark)}
+@media (max-width:560px){
+  .bend-featured .camera-fig img{height:118px}
+}
+
+/* --- 6 · photo-tops (treatment A) — the Events card's pattern --------
+   One new header band per view cluster, hung on the existing
+   .card-photo machinery (same height, same bottom fade). */
+.photo-summit img{object-position:center 34%}
+.photo-fish img{object-position:center 58%}
+.photo-pier img{object-position:center 63%}
+
+/* --- 6 · photo-behind-text (treatment B) ------------------------------
+   The photo fills the card's interior; a DIRECTIONAL scrim carries
+   the words — heavy where the text sits, lighter where the picture
+   can breathe. Readability is the gate: the saver card's scrim stays
+   near-opaque in both themes, and Featured Local's cards go glass
+   over a warm dark wash. */
+.photo-behind{position:relative;overflow:hidden;isolation:isolate}
+.card-bgphoto{position:absolute;inset:0;z-index:0}
+.card-bgphoto img{width:100%;height:100%;object-fit:cover;display:block}
+.photo-behind>*:not(.card-bgphoto){position:relative;z-index:1}
+/* the Community Screensaver card — a pool photo (the river-mouth
+   panorama the saver itself cycles) behind the words */
+.saver-card .card-bgphoto::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(243,238,222,.95),rgba(243,238,222,.9) 55%,rgba(243,238,222,.94));
+}
+html[data-theme="dark"] .saver-card .card-bgphoto::after{
+  background:linear-gradient(180deg,rgba(10,17,12,.92),rgba(10,17,12,.88) 55%,rgba(10,17,12,.93));
+}
+/* Featured Local — the 1973 Columbia-mouth sunset behind glass cards */
+.featured-local.photo-behind{background:#2a2118}
+.featured-local .card-bgphoto::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(30,24,12,.4),rgba(30,24,12,.55));
+}
+.featured-local.photo-behind .featured-title{color:#f8f2df;text-shadow:0 1px 10px rgba(20,14,4,.6)}
+.featured-local.photo-behind .featured-card{
+  background:rgba(251,248,238,.9);
+  -webkit-backdrop-filter:blur(9px) saturate(1.1);backdrop-filter:blur(9px) saturate(1.1);
+}
+html[data-theme="dark"] .featured-local.photo-behind .featured-card{background:rgba(19,30,22,.9)}
+@media print{
+  .card-bgphoto{display:none}
+}
+
+/* =====================================================================
+   ===== V7 REVISION (Travis, 2026-11-05) =====
+   A real Mt. Hood over the Bend run, saver tiles at parade scale,
+   a compact phone masthead, and river evenings for dark mode.
+   ===================================================================== */
+
+/* --- 1 · the Bend band is Mt. Hood now -------------------------------
+   The band file is pre-cropped to the summit (Trillium Lake original,
+   U.S. Forest Service, public domain — photos/PHOTOS.md); this just
+   frames the peak a touch higher in the strip. */
+.photo-summit img{object-position:center 30%}
+
+/* --- 2 · saver stream tiles at parade scale ---------------------------
+   Travis: the tiles should NOT all fit across the screen — the slow
+   scroll exists because they parade by. Tiles go to ~41vw (capped
+   820px): at 1920px a tile is ~790px, so two fill the frame and the
+   third is always arriving. Type scales ~1.45x with them; the loop
+   On a TV one set takes ~130s to pass; on a phone ~55s. The 1-pin and
+   reduced-motion static states keep the v6 sizing — they are a reading
+   row, not a parade. (The duration itself is computed in app.js from
+   the track width — the track's inline style owns it.) */
+.saver-scroll-set{gap:20px;padding-right:20px}
+.saver-scroll-set .saver-answer{width:min(820px,41vw);max-width:none;padding:24px 30px 22px;border-radius:22px}
+.saver-scroll-set .saver-answer-label{font-size:clamp(1.02rem,2vw,1.4rem);gap:10px}
+.saver-scroll-set .saver-answer-label img{width:32px;height:32px}
+.saver-scroll-set .saver-answer-val{font-size:clamp(2.1rem,5vw,3.6rem);margin-top:8px}
+.saver-scroll-set .saver-answer-val.long{font-size:clamp(1.45rem,3.2vw,2.2rem)}
+.saver-scroll-set .saver-answer-val.xlong{font-size:clamp(1.3rem,2.7vw,1.85rem)}
+.saver-scroll-set .saver-answer-sub{font-size:clamp(1.15rem,2.4vw,1.5rem);margin-top:6px}
+@media (max-width:640px){
+  .saver-scroll-set .saver-answer{width:82vw;padding:20px 22px 18px}
+}
+
+/* --- 3 · compact phone masthead ---------------------------------------
+   Travis: the Display and Dark pills eat the phone masthead. At phone
+   widths (the same ≤560px line where the clock already hides) both
+   become 44px circular icon buttons — matched pair, amber rings,
+   labels off. The words remain on wider screens; the buttons keep
+   their aria-labels and titles at every width, and the theme label
+   span stays in the DOM (the toggle's JS writes it) — it is only
+   visually hidden here. The freed width goes back to the site name. */
+@media (max-width:560px){
+  .hero-side{gap:8px;align-items:center}
+  .hero-side .hero-theme-btn{
+    width:44px;height:44px;min-height:44px;padding:0;gap:0;flex:none;
+    border-radius:50%;justify-content:center;
+  }
+  .hero-side .hero-theme-btn span{display:none}
+  .hero-side .hero-theme-btn .theme-ico{width:22px;height:22px}
+}
+
+
+/* ===== V8 REVISION (Travis, 2026-11-05 — from his desktop + phone
+   photos of the preview) =====
+   (1) The hero photo runs CONTINUOUS to the green sticky bar on
+   desktop — the bone tab-bar band is gone; the tab pills float
+   over the picture in dark glass. (2) The masthead pills slim
+   down on wider screens. (The strip pin-disc removal is app.js +
+   the deleted .saver-pin rules above; the rails needed no change
+   — already sticky, proven with a two-depth geometry probe.)
+
+/* --- 1 · hero photo to the green bar (desktop tab row only) --------
+   The tabbar is a 57px sticky row directly after the hero. The
+   hero gains exactly that much bottom padding (photo + scrim fill
+   the padding box) and the tabbar pulls up over it with a matching
+   negative margin, its band made transparent — the bridge picture
+   now runs unbroken from the top of the page to the green "Live
+   view" bar, and the four tab pills float on it in the same dark
+   glass as the masthead pills. When the row sticks during scroll
+   the pills keep their own blurred glass, so labels read over
+   whatever passes beneath. Phones are untouched: their tab bar is
+   bottom chrome, and their hero already meets the green bar
+   directly. */
+@media (min-width:900px){
+  .hero{padding-bottom:57px;border-bottom:none}
+  .tabbar{
+    margin-top:-57px;background:transparent;border-bottom:none;
+    -webkit-backdrop-filter:none;backdrop-filter:none;
+  }
+  html[data-theme="dark"] .tabbar{background:transparent}
+  .tab-btn{
+    background:rgba(13,26,17,.52);color:#f2eedd;
+    border-color:rgba(255,255,255,.28);
+    -webkit-backdrop-filter:blur(10px) saturate(1.2);
+    backdrop-filter:blur(10px) saturate(1.2);
+    box-shadow:0 3px 12px rgba(6,14,8,.38);
+    text-shadow:0 1px 6px rgba(0,0,0,.5);
+  }
+  .tab-btn:hover{background:rgba(13,26,17,.74);color:#fff}
+  .tab-btn.active{
+    background:var(--accent);color:#fff;border-color:rgba(255,255,255,.4);
+    box-shadow:0 4px 14px rgba(6,14,8,.45);
+  }
+}
+@media (min-width:900px) and (prefers-reduced-transparency:reduce){
+  /* no glass under reduced transparency: solid deep-green pills,
+     the row itself stays clear of the photo */
+  .tab-btn{-webkit-backdrop-filter:none;backdrop-filter:none;background:#20392a}
+  .tab-btn.active{background:var(--accent)}
+}
+@media (min-width:900px) and (prefers-contrast:more){
+  .tab-btn{border-color:rgba(255,255,255,.65)}
+}
+
+/* --- 2 · slimmer masthead pills (wider screens) --------------------
+   Travis: the desktop Display / Dark / clock pills are still
+   chunky. Padding and type come down ~25–30%; labels stay, and
+   the buttons keep a clear 40px minimum height. The ≤560px
+   circular icon buttons (v7) live in their own media block and
+   are untouched. */
+@media (min-width:561px){
+  .hero-side{gap:8px}
+  .hero-theme-btn{padding:7px 12px;font-size:.85rem;min-height:40px;gap:6px}
+  .hero-theme-btn .theme-ico{width:19px;height:19px}
+  .header-clock{padding:5px 10px}
+  .clock{font-size:1.02rem}
+  .clock-label{font-size:.64rem}
+}
+
+
+/* ===== V9 (2026-11-05 — the commute card + Travis's desktop scroll
+   fix, from his photo of the preview mid-scroll) =====
+   On desktop the tab-pill row and the green "Live view" bar were
+   sticky: scrolled partway down, they stayed pinned at the top of
+   the viewport and content slid underneath them. Travis: "when I
+   scroll, all the stuff stays — you need to make it scroll too, on
+   the desktop version." So at ≥900px both bars give up their
+   stickiness and scroll away with the page — nothing at the top of
+   the desktop viewport stays pinned. The V8 hero treatment is
+   untouched: the tabbar keeps its −57px pull-up over the hero's
+   padding box (position:relative keeps its z-index over the
+   picture), it simply no longer sticks once you scroll past it.
+   Phones are untouched — their tab bar is bottom chrome, and their
+   green bar keeps its top stick as before.
+   The rail cards are the deliberate exception (Travis approved
+   their staying in view minutes before this note — persistent
+   visibility is the sponsor pitch). Their sticky offset was
+   112px to clear the two stuck bars; with the bars gone they ride
+   at 20px from the viewport top instead. */
+@media (min-width:900px){
+  .tabbar{position:relative}
+  .sticky-bar{position:static}
+}
+@media (min-width:1440px){
+  .rail-card{top:20px}
+}
+
+/* --- the commute card (Travel, above the roads card) --------------
+   Chips borrow the ferry planner's town-chip discipline; the
+   answer itself is one big display-serif reading, with the
+   distance/road line and the checked time under it. The card is
+   ordinary etched glass like its neighbours — no new treatment. */
+.drive-controls{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
+.drive-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.drive-label{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700;min-width:42px}
+.drive-chips{display:flex;flex-wrap:wrap;gap:8px}
+.drive-chip{
+  background:var(--panel-2);color:var(--muted);border:1px solid var(--border);
+  border-radius:999px;padding:6px 14px;font-size:.85rem;cursor:pointer;font:inherit;
+  transition:background .15s ease,color .15s ease,border-color .15s ease;
+}
+.drive-chip:hover{color:var(--text);border-color:var(--accent)}
+.drive-chip.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+.drive-big{font-family:var(--display);font-size:2.3rem;font-weight:700;letter-spacing:-.01em;line-height:1.1}
+.drive-sub{font-size:1rem;color:var(--text);margin-top:2px}
+.drive-checked{font-size:.78rem;color:var(--muted);margin-top:4px}
+.drive-fail{font-size:.95rem;line-height:1.5;margin:0}
+
+/* =====================================================================
+   ===== V10 REVISION (Travis, 2026-11-05 — two defects on the live
+   build, fixed the same day) =====
+   1. SAVER BOTTOM OVERLAP (phone display mode): the quiet sponsor
+      line and the photo-credit signature were two absolutely
+      positioned boxes sharing the saver's bottom strip; on a phone
+      the quiet line wraps to two lines ACROSS the cursive credit
+      (logged as a "known nit" in v6, never fixed — fixed now). They
+      live in one .saver-bottom container; at ≤760px — and in short
+      landscape viewports — it becomes a stacked column in normal
+      flow: quiet block, a real gap, credit block beneath (name line,
+      then location line), so overlap is structurally impossible.
+      Desktop/TV keeps the bottom-left / bottom-right arrangement,
+      pixel-identical: the container is height:0 at bottom:0 there,
+      so the children's existing 22px offsets land exactly where
+      they always did.
+   2. GLANCE MARQUEE SMOOTHNESS: translate3d keyframes hold the
+      track on the compositor; the app.js half (targeted clone sync,
+      slot width locks) lives in initStrip.
+   ===================================================================== */
+
+/* --- 1 · saver bottom zone ---------------------------------------- */
+.saver-bottom{position:absolute;left:0;right:0;bottom:0;height:0;z-index:3}
+@media (max-width:760px), (max-height:480px) and (orientation:landscape){
+  .saver-bottom{
+    height:auto;display:flex;flex-direction:column;gap:8px;
+    padding:0 16px 16px;
+  }
+  .saver-bottom .saver-quiet{
+    position:static;left:auto;bottom:auto;max-width:none;
+  }
+  .saver-bottom .saver-credit{
+    position:static;right:auto;bottom:auto;text-align:right;
+  }
+  .saver-bottom .saver-credit-name{display:block}
+  .saver-bottom .saver-credit-loc{display:block;margin-left:0;margin-top:2px}
+  /* the tile stream keeps clear of the taller stacked zone */
+  .saver-answers{bottom:136px}
+}
+
+/* --- 2 · marquee: hold the track on the compositor ---------------- */
+@keyframes stripScroll{to{transform:translate3d(-50%,0,0)}}
+.strip-track{backface-visibility:hidden;-webkit-backface-visibility:hidden}
+
+/* =====================================================================
+   ===== V36 (2026-11-05 — Travis's directive) =====
+   Cross-promo for Cascade Controls Jobs, Nomad's other project.
+   Deliberately NOT sponsor styling: no founding/featured glass, no
+   sponsor language — a plain house card in the site's bone/forest/rust
+   palette, honestly labelled "our other project". Three spots: a
+   compact mini-card in Events & More (real screenshot of the Cascade
+   homepage as a small cropped thumbnail), a drawer entry, and a slim
+   footer link. Paid sponsor inventory is untouched.
+   V37 (Travis's feedback on v36): the card read like an entire page —
+   it is now a small horizontal advertisement like the little cards
+   sponsors pay for, and the drawer's separate "More from Nomad"
+   section is gone: Cascade is one tiny muted link under About.
+   ===================================================================== */
+.cascade-card{padding:0;overflow:hidden;background:linear-gradient(135deg,#1e4359,#132e47);border:1px solid #0d2237;box-shadow:0 10px 26px rgba(10,25,40,.35)}
+/* v59: robot stage on top of the card — poster still as the passive
+   underlay (never a black box), live viewer above it, pointer-events
+   off so the stage never traps touch scrolling. The orange rule is
+   the seam: stage above it, card body below, one connected object. */
+.cascade-stage{position:relative;height:320px;background:#121517;border-bottom:3px solid #e8760a;overflow:hidden}
+.cascade-poster{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.cascade-promo{display:block;text-decoration:none;color:#eef3f7}
+.cascade-promo:hover .cascade-title{text-decoration:underline}
+.cascade-promo:hover .cascade-cta{background:#f08212}
+.cascade-promo:focus-visible{outline:3px solid #f5a83d;outline-offset:-3px}
+.cascade-body{display:block;padding:14px 18px 2px}
+.cascade-eyebrow{display:block;font-size:.72rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#f5a83d;margin-bottom:5px}
+.cascade-title{display:block;font-family:var(--sans);font-size:1.22rem;font-weight:800;line-height:1.15;margin-bottom:5px;color:#fff}
+.cascade-copy{display:block;font-size:.92rem;line-height:1.4;color:#c7d5e0;margin-bottom:10px}
+.cascade-cta{display:inline-block;font-weight:800;color:#fff;background:#e8760a;padding:7px 14px;border-radius:8px}
+html[data-theme="dark"] .cascade-cta{color:#fff}
+.cascade-credit{margin:0;padding:4px 18px 12px;font-size:.72rem;color:#8fa9bd}
+@media (max-width:640px){
+  /* v59: phone keeps the same stacked unit, shorter stage; the body
+     copy stays visible now (the robot carries no text, unlike the
+     retired v38 title-card banner). */
+  .cascade-stage{height:250px}
+  .cascade-body{padding:12px 14px 2px}
+  .cascade-eyebrow{font-size:.68rem}
+  .cascade-title{font-size:1.08rem}
+  .cascade-credit{padding:4px 14px 10px}
+}
+/* v48: the two Nomad cross-promos (Cascade Controls Jobs + the website
+   portfolio) sit together as a small quiet footer pair at the very bottom
+   of the drawer's scroll — below the fold, findable by the curious only. */
+.drawer-foot{margin-top:10px;padding:11px 10px 4px 41px;border-top:1px solid var(--border)}
+html[data-theme="dark"] .drawer-foot{border-top-color:rgba(244,241,228,.14)}
+.drawer-foot-link{display:block;padding:2px 0;color:var(--muted);text-decoration:none;font-size:.78rem;opacity:.72}
+.drawer-foot-link:hover{color:var(--text);text-decoration:underline;opacity:1}
+html[data-theme="dark"] .drawer-foot-link{color:#c9d2bd}
+.drawer-foot-head{display:block;margin-top:9px;padding:2px 0 0;color:var(--warm);font-size:.78rem;font-weight:700;opacity:.85}
+html[data-theme="dark"] .drawer-foot-head{color:var(--warm-fill)}
+.cascade-footer{margin:10px 0 4px}
+.cascade-footer-link{display:inline-block;padding:9px 14px;border:1px solid var(--border);border-radius:999px;color:var(--accent-dark,#1e4228);text-decoration:none;font-weight:700;font-size:.92rem;background:rgba(46,93,58,.08)}
+.cascade-footer-link:hover{border-color:var(--warm,#b0511c);text-decoration:underline}
+html[data-theme="dark"] .cascade-footer-link{color:#bfe3c8;background:rgba(244,241,228,.06)}
+
+
+/* =====================================================================
+   ===== V40 — install discovery + briefing bounce fix (2026-11-05) =====
+   Diagnosis: ~/workspace/ccl-install-fix/DIAGNOSIS.md. Three pieces:
+   (1) the Get-the-app sheet behind the new masthead/drawer buttons,
+   (2) the end-of-Today signpost under the County Briefing, (3) a
+   reserved min-height on #briefing-view so the loading → composed
+   flip stops changing the document height during the first minute
+   (the DOM-rebuild guard itself is in app.js refreshBriefing).
+   ===================================================================== */
+
+/* --- (1) the sheet: a right-slide panel in the drawer's language --- */
+.getapp-ico{font-size:1.05rem;line-height:1}
+.sheet-backdrop{position:fixed;inset:0;z-index:1300;background:rgba(10,18,12,.45);opacity:0;transition:opacity .25s ease}
+.sheet-backdrop.open{opacity:1}
+.getapp-sheet{position:fixed;top:0;right:0;bottom:0;z-index:1301;width:min(92vw,404px);display:flex;flex-direction:column;transform:translateX(106%);transition:transform .3s ease;background:rgba(251,248,238,.94);-webkit-backdrop-filter:blur(18px) saturate(1.15);backdrop-filter:blur(18px) saturate(1.15);border-left:1px solid var(--border);box-shadow:-18px 0 44px rgba(20,30,16,.28);color:var(--text)}
+.getapp-sheet.open{transform:none}
+.getapp-sheet[hidden]{display:none}
+html[data-theme="dark"] .getapp-sheet{background:rgba(20,32,24,.95);color:#eef0e2;border-left-color:rgba(244,241,228,.18)}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  .getapp-sheet{background:#fbf8ee}
+  html[data-theme="dark"] .getapp-sheet{background:#16211a}
+}
+@media (prefers-reduced-transparency:reduce){
+  .getapp-sheet{-webkit-backdrop-filter:none;backdrop-filter:none;background:#fbf8ee}
+  html[data-theme="dark"] .getapp-sheet{background:#16211a}
+}
+@media (prefers-reduced-motion:reduce){
+  .getapp-sheet,.sheet-backdrop{transition:none}
+}
+body.getapp-on{overflow:hidden}
+.getapp-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px 10px;border-bottom:1px solid var(--border)}
+html[data-theme="dark"] .getapp-head{border-bottom-color:rgba(244,241,228,.16)}
+.getapp-title{font-family:var(--display);font-weight:700;font-size:1.04rem;line-height:1.25}
+.getapp-body{flex:1;overflow-y:auto;padding:14px 16px 22px;-webkit-overflow-scrolling:touch}
+.getapp-install{width:100%;margin:0 0 12px;padding:13px 18px;font-size:1rem}
+.getapp-step0{background:var(--panel-2);border:1.5px solid var(--warm);border-radius:12px;padding:11px 13px;margin:0 0 14px}
+.getapp-step0 p{margin:0;font-size:.95rem;line-height:1.45}
+.getapp-plat{margin:0 0 16px}
+.getapp-plat h3{font-size:1.02rem;margin:0 0 8px}
+.getapp-plat ol{margin:0 0 10px;padding-left:22px}
+.getapp-plat li{margin:0 0 7px;line-height:1.45;font-size:.95rem}
+.getapp-plat p{line-height:1.45;font-size:.95rem}
+.getapp-sub{margin:0 0 8px;line-height:1.45;font-size:.95rem}
+.getapp-other{margin:2px 0 14px;border-top:1px solid var(--border);padding-top:10px}
+.getapp-other summary{cursor:pointer;font-weight:700;font-size:.93rem;color:var(--accent-dark)}
+html[data-theme="dark"] .getapp-other summary{color:#bfe3c8}
+.getapp-other-body{padding-top:10px}
+.getapp-nosee{margin:0;background:var(--panel-2);border:1px dashed var(--border);border-radius:12px;padding:10px 12px;font-size:.9rem;line-height:1.45;color:var(--muted)}
+/* phone masthead (≤560px): the Get-the-app button joins Display/Dark
+   as a 44px circle (the generic hero rule hides its text label) —
+   but its 📱 must stay visible, unlike the text spans. */
+@media (max-width:560px){
+  .hero-side .hero-theme-btn.getapp-btn .getapp-ico{display:block;font-size:20px}
+}
+
+/* --- (2) end-of-Today signpost --- */
+.today-signpost{margin:2px 0 6px;text-align:center}
+.signpost-line{margin:0 0 10px;color:var(--muted);font-size:.95rem}
+.signpost-chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.signpost-chip{
+  background:var(--panel);color:var(--text);border:1px solid var(--border);
+  border-radius:999px;padding:10px 16px;font-size:.92rem;font-weight:700;cursor:pointer;
+  transition:border-color .15s ease,transform .12s ease;
+}
+.signpost-chip:hover{border-color:var(--accent)}
+.signpost-chip:active{transform:translateY(1px)}
+
+/* --- (3) briefing loading-state space reservation ---
+   The old one-line loading state let the document grow by the full
+   composed height during the first minute, which at max-scroll reads
+   as a bounce. Reserve just under the composed height — CDP-measured
+   on the real content: 692px at 390px wide, 462px at 1280px wide
+   (rows vary a little with alerts/events, so sit slightly under). */
+.briefing-view{min-height:440px}
+@media (max-width:640px){
+  .briefing-view{min-height:660px}
+}
+
+/* v45 — directory map, business photos, pin + popup (site palette) */
+.dir-map{height:300px;border-radius:14px;margin:12px 0 6px;background:#e8e2cf;z-index:0}
+@media (max-width:640px){.dir-map{height:250px}}
+.dir-map-hint{margin:2px 0 10px}
+.dir-photo{width:118px;height:88px;object-fit:cover;border-radius:10px;flex-shrink:0;display:block}
+@media (max-width:640px){.dir-photo{width:100%;height:150px}}
+.dir-pin{background:transparent;border:none}
+.dir-pin-dot{display:block;width:20px;height:20px;border-radius:50%;background:#b0511c;border:3px solid #f1ecdc;box-shadow:0 1px 5px rgba(20,16,8,.5)}
+.dir-map .leaflet-popup-content-wrapper{background:#f7f2df;color:#22301f;border-radius:12px}
+.dir-map .leaflet-popup-tip{background:#f7f2df}
+.dir-map .leaflet-popup-content{margin:10px 14px}
+.dirpop-name{font-family:var(--display);font-weight:700;font-size:1rem;line-height:1.2}
+.dirpop-meta{font-size:.74rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#b0511c;margin-top:2px}
+.dir-item.dir-flash{animation:dirflash 1.6s ease}
+@keyframes dirflash{0%,55%{background:rgba(233,164,74,.32)}100%{background:transparent}}
+
+/* ===== PREVIEW (unapproved): fishing-call quadrant ===== */
+.quad{position:relative;aspect-ratio:1/1;max-width:540px;margin:12px auto 2px;border-radius:14px;overflow:hidden;border:1px solid rgba(240,220,180,.4);background-color:#0d1512;background-image:linear-gradient(90deg,transparent calc(50% - 1px),rgba(240,220,180,.34) 50%,transparent calc(50% + 1px)),linear-gradient(0deg,transparent calc(50% - 1px),rgba(240,220,180,.34) 50%,transparent calc(50% + 1px)),linear-gradient(180deg,rgba(8,14,11,.60) 0%,rgba(8,14,11,.08) 27%,rgba(8,14,11,.08) 71%,rgba(8,14,11,.64) 100%),linear-gradient(rgba(8,14,11,.14),rgba(8,14,11,.14)),url('preview-fish-jump.jpg');background-size:cover;background-position:66% 50%}
+.quad-corner{position:absolute;font-weight:800;font-size:1.02rem;letter-spacing:.02em;color:rgba(242,231,207,.88);text-shadow:0 1px 8px rgba(0,0,0,.75),0 0 2px rgba(0,0,0,.8);padding:10px 12px;line-height:1.15;max-width:48%;z-index:2}
+.quad-corner.qc-tl{top:0;left:0}
+.quad-corner.qc-tr{top:0;right:0;text-align:right}
+.quad-corner.qc-bl{bottom:0;left:0}
+.quad-corner.qc-br{bottom:0;right:0;text-align:right}
+.quad-corner.on{color:#ffb35c}
+.quad-axis-y{position:absolute;left:2px;top:50%;transform:rotate(-90deg) translateX(50%);transform-origin:left center;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(242,231,207,.45);white-space:nowrap}
+.quad-axis-x{text-align:center;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(242,231,207,.5);margin:2px 0 8px}
+.quad-dot{position:absolute;width:24px;height:24px;border-radius:50%;background:#e8760a;border:3px solid #fff7e8;box-shadow:0 0 0 5px rgba(10,14,10,.45),0 0 16px 5px rgba(247,234,210,.85),0 2px 10px rgba(0,0,0,.6);transform:translate(-50%,50%);transition:left .6s ease,bottom .6s ease;z-index:3}
+.quad-ghost{position:absolute;width:11px;height:11px;border-radius:50%;background:rgba(247,234,210,.78);box-shadow:0 0 0 2px rgba(10,14,10,.55);transform:translate(-50%,50%);z-index:2}
+.quad-why{font-size:1rem;line-height:1.45;margin:6px 0 4px}
+
+/* ===== PREVIEW refinement (Travis): photo-backed fishing call =====
+   Real photo: sockeye salmon leaping a waterfall — Marvina Munch,
+   U.S. Fish & Wildlife Service, public domain, via Wikimedia Commons
+   (File:Adult sockeye salmon encounter a waterfall on their way up
+   river to spawn.jpg). The photo fills the panel; a dark scrim sits
+   over it; the square rides on a dark frosted panel so every label,
+   chip and dot stays crisp over bright water and dark rock alike. */
+.quad-photo{margin-top:12px}
+.quad-credit{font-size:.7rem;color:rgba(233,238,230,.72);margin:8px 2px 2px}
+
+/* ===== PREVIEW refinement 2: corner icons (matched pictogram set,
+   generated 2026-11-11: boat-on-anchor / bank holder + sinker +
+   spinner / boat under way trolling / angler casting from the bank;
+   bone on deep green with an orange accent, badged so they sit
+   cleanly on the photo panel) ===== */
+.quad-corner{display:flex;align-items:center;gap:7px}
+.quad-corner.qc-tr,.quad-corner.qc-br{flex-direction:row-reverse}
+.quad-ico{width:34px;height:34px;flex:none;border-radius:9px;border:1px solid rgba(247,234,210,.55);box-shadow:0 2px 8px rgba(0,0,0,.55);display:block}
+@media(max-width:560px){.quad-ico{width:27px;height:27px;border-radius:7px}.quad-corner{gap:5px}}
+
+/* ============ REFINEMENTS PREVIEW (Batch 1) ============ */
+.preview-ribbon{position:sticky;top:0;z-index:1200;background:#e8760a;color:#fff;
+  font:700 .78rem/1.2 'Barlow',system-ui,sans-serif;letter-spacing:.08em;
+  text-align:center;padding:7px 10px}
+/* Item 1: the drawer slides from the LEFT now. */
+.drawer{left:0;right:auto;transform:translateX(-106%);
+  border-right:1px solid var(--border);border-left:0;
+  box-shadow:18px 0 44px rgba(20,30,16,.28)}
+[data-theme="dark"] .drawer{border-right-color:#3a4436}
+.drawer.open{transform:none}
+/* The Emergency drawer entry stands out a little. */
+.drawer-emergency{border-color:#c45a1b;color:#a34a12}
+[data-theme="dark"] .drawer-emergency{border-color:#8a4d22;color:#f0a25e}
+/* Emergency view pieces. */
+.em-map{height:340px;border-radius:12px;overflow:hidden;z-index:0}
+@media (max-width:640px){.em-map{height:300px}}
+.em-rows{display:flex;flex-direction:column}
+.em-row{display:flex;gap:10px;align-items:baseline;padding:10px 2px;
+  border-bottom:1px solid var(--border);text-decoration:none;color:inherit}
+.em-row:last-child{border-bottom:0}
+.em-row b{flex:0 0 118px}
+.em-row span{flex:1}
+.em-row i{font-style:normal;color:var(--muted)}
+.em-row-static{cursor:default}
+.em-big{font-size:1.15rem}
+.em-coords-out{font-family:'JetBrains Mono',ui-monospace,monospace;
+  font-size:1.6rem;font-weight:700;letter-spacing:.02em;margin:12px 0}
+/* Town panel lines. */
+.town-line{margin:6px 0}
+/* ============ END REFINEMENTS PREVIEW ============ */
