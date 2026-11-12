@@ -1,73 +1,91 @@
 {
- "fetched_at": "2026-11-12T02:16:37Z",
+ "fetched_at": "2026-11-12T02:18:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 311594000,
-   "name": "RCC AFRICA",
-   "lat": 46.17392,
-   "lon": -123.09793,
-   "sog_kn": 16.1,
-   "cog": 308.8,
-   "heading": 308,
-   "nav_status": 0,
-   "updated": "2026-11-12 02:17:03.455779466 +0000 UTC"
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.19135,
+   "lon": -123.16106,
+   "sog_kn": 0.4,
+   "cog": 325.9,
+   "heading": 240,
+   "nav_status": 3,
+   "updated": "2026-11-12 02:20:04.693304353 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08047,
-   "lon": -122.90287,
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.04399,
+   "lon": -122.87691,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-12 02:20:05.297474181 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64352,
+   "lon": -122.75288,
    "sog_kn": 0,
-   "cog": 90.7,
-   "heading": 135,
+   "cog": 238,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-12 02:17:05.917673752 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08051,
-   "lon": -122.9033,
-   "sog_kn": 0,
-   "cog": 197.1,
-   "heading": 314,
-   "nav_status": 0,
-   "updated": "2026-11-12 02:17:06.302934697 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.65189,
-   "lon": -122.75422,
-   "sog_kn": 6.6,
-   "cog": 304,
-   "heading": 296,
-   "nav_status": 12,
-   "updated": "2026-11-12 02:17:08.365841337 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58081,
-   "lon": -122.76006,
-   "sog_kn": 0,
-   "cog": 345.4,
-   "heading": 122,
-   "nav_status": 5,
-   "updated": "2026-11-12 02:17:11.358360937 +0000 UTC"
+   "updated": "2026-11-12 02:20:18.355683047 +0000 UTC"
   },
   {
    "mmsi": 368280990,
    "name": "CINDY B",
-   "lat": 45.90897,
-   "lon": -122.81432,
+   "lat": 45.90896,
+   "lon": -122.81433,
    "sog_kn": 0,
-   "cog": 226,
+   "cog": 248.1,
    "heading": 339,
    "nav_status": 0,
-   "updated": "2026-11-12 02:17:19.641800009 +0000 UTC"
+   "updated": "2026-11-12 02:20:19.990464261 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.86131,
+   "lon": -122.78526,
+   "sog_kn": 5.5,
+   "cog": 171.1,
+   "heading": 172,
+   "nav_status": 12,
+   "updated": "2026-11-12 02:20:21.01039513 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08064,
+   "lon": -122.90327,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 316,
+   "nav_status": 3,
+   "updated": "2026-11-12 02:20:28.069463299 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.61009,
+   "lon": -122.64122,
+   "type_code": 52,
+   "destination": "US^0UUT>0UW8",
+   "updated": "2026-11-12 02:20:28.435611486 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35744,
+   "sog_kn": 0,
+   "cog": 255.1,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-12 02:20:28.71847948 +0000 UTC"
   }
  ]
 }
