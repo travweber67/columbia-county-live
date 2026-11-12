@@ -1,27 +1,89 @@
 {
- "fetched_at": "2026-11-12T11:22:18Z",
+ "fetched_at": "2026-11-12T11:27:20Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00893,
+   "lon": -122.84837,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 11:27:06.869863461 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.6503,
+   "lon": -122.74764,
+   "sog_kn": 0,
+   "cog": 280.3,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-12 11:27:08.923258946 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64347,
+   "lon": -122.75284,
+   "sog_kn": 0,
+   "cog": 114.8,
+   "heading": 228,
+   "nav_status": 5,
+   "updated": "2026-11-12 11:27:15.662751537 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08983,
+   "lon": -122.929,
+   "sog_kn": 0,
+   "cog": 191.9,
+   "heading": 105,
+   "nav_status": 0,
+   "updated": "2026-11-12 11:27:28.08457232 +0000 UTC"
+  },
   {
    "mmsi": 367669550,
    "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35743,
-   "sog_kn": 0,
-   "cog": 286.1,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-12 11:22:25.954991051 +0000 UTC"
+   "lat": 46.17719,
+   "lon": -123.35744,
+   "type_code": 30,
+   "updated": "2026-11-12 11:27:39.431966726 +0000 UTC"
   },
   {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58726,
-   "lon": -122.77007,
-   "type_code": 31,
-   "destination": "US^02SY>0UJ9",
-   "updated": "2026-11-12 11:22:38.838003019 +0000 UTC"
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60759,
+   "lon": -122.67762,
+   "type_code": 50,
+   "updated": "2026-11-12 11:27:48.944857703 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 46.08817,
+   "lon": -122.91526,
+   "sog_kn": 7.5,
+   "cog": 299.3,
+   "heading": 299,
+   "nav_status": 12,
+   "updated": "2026-11-12 11:27:49.877436349 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10788,
+   "lon": -122.95903,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 11:27:51.158161353 +0000 UTC"
   }
  ]
 }
