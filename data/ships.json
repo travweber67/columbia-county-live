@@ -1,57 +1,98 @@
 {
- "fetched_at": "2026-11-12T20:28:02Z",
+ "fetched_at": "2026-11-12T20:33:03Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
-   "lat": 46.08051,
-   "lon": -122.90306,
-   "sog_kn": 0.2,
-   "cog": 227.6,
-   "heading": 103,
+   "lat": 46.08055,
+   "lon": -122.90294,
+   "sog_kn": 0,
+   "cog": 86.2,
+   "heading": 142,
    "nav_status": 0,
-   "updated": "2026-11-12 20:28:14.160804382 +0000 UTC"
+   "updated": "2026-11-12 20:33:35.838462583 +0000 UTC",
+   "type_code": 52,
+   "destination": "US^03F8>02T9"
   },
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15343,
-   "lon": -123.37717,
-   "type_code": 99,
-   "updated": "2026-11-12 20:28:18.927143312 +0000 UTC"
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 46.20121,
+   "lon": -123.38702,
+   "type_code": 31,
+   "destination": "XX XXX>US^0ZBM",
+   "updated": "2026-11-12 20:33:16.372375109 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65012,
+   "lon": -122.74764,
+   "type_code": 33,
+   "updated": "2026-11-12 20:33:18.938401205 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 46.15667,
+   "lon": -123.39958,
+   "sog_kn": 6.1,
+   "cog": 129.6,
+   "heading": 131,
+   "nav_status": 12,
+   "updated": "2026-11-12 20:33:21.033114249 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.91008,
+   "sog_kn": 0.1,
+   "cog": 8.3,
+   "heading": 74,
+   "nav_status": 0,
+   "updated": "2026-11-12 20:33:21.497861768 +0000 UTC"
   },
   {
    "mmsi": 367602150,
    "name": "LUNA",
    "lat": 45.61109,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 327.8,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-12 20:28:38.145846575 +0000 UTC",
-   "type_code": 0
+   "lon": -122.61291,
+   "type_code": 0,
+   "updated": "2026-11-12 20:33:31.531006345 +0000 UTC"
   },
   {
-   "mmsi": 368328430,
-   "name": "MCR 8",
-   "lat": 45.58477,
-   "lon": -122.7662,
-   "type_code": 33,
-   "updated": "2026-11-12 20:28:29.36348898 +0000 UTC"
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.0963,
+   "lon": -122.92999,
+   "sog_kn": 0,
+   "cog": 24.7,
+   "heading": 71,
+   "nav_status": 3,
+   "updated": "2026-11-12 20:33:34.223345029 +0000 UTC"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.16228,
-   "lon": -123.4089,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 134,
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.62889,
+   "lon": -122.70116,
+   "sog_kn": 3.1,
+   "cog": 140,
+   "heading": 88,
    "nav_status": 0,
-   "updated": "2026-11-12 20:28:34.022360358 +0000 UTC"
+   "updated": "2026-11-12 20:33:36.437492069 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.8425,
+   "lon": -122.78652,
+   "type_code": 52,
+   "destination": "US^0UX0>02A0",
+   "updated": "2026-11-12 20:33:38.208219851 +0000 UTC"
   }
  ]
 }
