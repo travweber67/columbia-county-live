@@ -1,60 +1,131 @@
 {
- "fetched_at": "2026-11-12T00:36:30Z",
+ "fetched_at": "2026-11-12T00:41:33Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.09688,
-   "lon": -122.92858,
-   "sog_kn": 1.2,
-   "cog": 248.7,
-   "heading": 67,
-   "nav_status": 3,
-   "updated": "2026-11-12 00:36:43.572809552 +0000 UTC"
+   "mmsi": 431300000,
+   "name": "TRITON HIGHWAY",
+   "lat": 45.70969,
+   "lon": -122.76824,
+   "sog_kn": 13.5,
+   "cog": 193.6,
+   "heading": 192,
+   "nav_status": 0,
+   "updated": "2026-11-12 00:42:13.611319899 +0000 UTC"
   },
   {
-   "mmsi": 636021177,
-   "name": "FORTUNE COOKIE",
-   "lat": 45.98374,
-   "lon": -122.83499,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-12 00:36:59.757639927 +0000 UTC"
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.6501,
+   "lon": -122.7476,
+   "sog_kn": 0,
+   "cog": 285.1,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-12 00:42:18.333741371 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.14716,
+   "lon": -123.0417,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-12 00:42:18.774755925 +0000 UTC"
   },
   {
    "mmsi": 368410780,
    "name": "GAMBLER",
    "lat": 46.10355,
-   "lon": -122.9101,
+   "lon": -122.91008,
    "sog_kn": 0,
-   "cog": 83.8,
-   "heading": 73,
+   "cog": 357.7,
+   "heading": 72,
    "nav_status": 0,
-   "updated": "2026-11-12 00:37:01.345772821 +0000 UTC",
-   "type_code": 52,
-   "destination": "US^0T0P>035F"
+   "updated": "2026-11-12 00:42:20.682713089 +0000 UTC"
   },
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.23739,
-   "lon": -123.4301,
-   "sog_kn": 0.4,
-   "cog": 177,
-   "heading": 170,
-   "nav_status": 3,
-   "updated": "2026-11-12 00:37:01.75097019 +0000 UTC"
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64358,
+   "lon": -122.75229,
+   "sog_kn": 0,
+   "cog": 139.7,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-12 00:42:22.069275172 +0000 UTC"
   },
   {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.09071,
-   "lon": -122.93215,
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00907,
+   "lon": -122.84822,
+   "type_code": 31,
+   "destination": "HARBOROPPS-",
+   "updated": "2026-11-12 00:42:23.512887368 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.0805,
+   "lon": -122.9033,
    "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-12 00:37:05.168793549 +0000 UTC"
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-12 00:42:28.577011348 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64349,
+   "lon": -122.7529,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-12 00:42:29.770754471 +0000 UTC"
+  },
+  {
+   "mmsi": 352006999,
+   "name": "WABI SABI",
+   "lat": 46.17469,
+   "lon": -123.11043,
+   "sog_kn": 0.2,
+   "cog": 279.5,
+   "heading": 16,
+   "nav_status": 1,
+   "updated": "2026-11-12 00:42:32.930136078 +0000 UTC"
+  },
+  {
+   "mmsi": 636021177,
+   "name": "FORTUNE COOKIE",
+   "lat": 45.98376,
+   "lon": -122.83496,
+   "sog_kn": 0,
+   "cog": 279.1,
+   "heading": 152,
+   "nav_status": 5,
+   "updated": "2026-11-12 00:42:34.887954077 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19965,
+   "lon": -123.38495,
+   "sog_kn": 0,
+   "cog": 2,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-12 00:42:35.857819673 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37717,
+   "sog_kn": 0,
+   "cog": 185.3,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 00:42:37.902835707 +0000 UTC"
   }
  ]
 }
