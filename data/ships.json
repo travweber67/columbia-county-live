@@ -1,60 +1,80 @@
 {
- "fetched_at": "2026-11-12T18:32:54Z",
+ "fetched_at": "2026-11-12T18:37:55Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58726,
+   "lon": -122.77005,
+   "sog_kn": 0,
+   "cog": 335.3,
+   "heading": 138,
+   "nav_status": 5,
+   "updated": "2026-11-12 18:38:06.305955315 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.63871,
+   "lon": -122.71178,
+   "type_code": 57,
+   "destination": "PASCO",
+   "updated": "2026-11-12 18:38:08.892813514 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.72279,
+   "lon": -122.76422,
+   "sog_kn": 5.7,
+   "cog": 194,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 18:38:16.372210107 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64729,
+   "lon": -122.73993,
+   "type_code": 52,
+   "destination": "SRT PASCO",
+   "updated": "2026-11-12 18:38:18.845728366 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58079,
+   "lon": -122.76004,
+   "sog_kn": 0,
+   "cog": 345.4,
+   "heading": 123,
+   "nav_status": 5,
+   "updated": "2026-11-12 18:38:19.490856094 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17717,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 237.8,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-12 18:38:26.783382366 +0000 UTC"
+  },
   {
    "mmsi": 366986380,
    "name": "DREDGE OREGON",
-   "lat": 46.08079,
-   "lon": -122.90307,
-   "sog_kn": 0.1,
-   "cog": 60.1,
-   "heading": 341,
+   "lat": 46.08057,
+   "lon": -122.9034,
+   "sog_kn": 0.2,
+   "cog": 210.3,
+   "heading": 298,
    "nav_status": 3,
-   "updated": "2026-11-12 18:32:59.846201188 +0000 UTC"
-  },
-  {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 45.64342,
-   "lon": -122.75286,
-   "sog_kn": 0,
-   "cog": 303.7,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-12 18:33:15.264908008 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.66448,
-   "lon": -122.76585,
-   "sog_kn": 13.2,
-   "cog": 348.3,
-   "heading": 350,
-   "nav_status": 0,
-   "updated": "2026-11-12 18:33:16.596014356 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08613,
-   "lon": -122.91553,
-   "type_code": 52,
-   "destination": "PORTLAND",
-   "updated": "2026-11-12 18:33:19.937421056 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.16393,
-   "lon": -123.08062,
-   "sog_kn": 1.2,
-   "cog": 145.2,
-   "heading": 133,
-   "nav_status": 3,
-   "updated": "2026-11-12 18:33:22.051002892 +0000 UTC"
+   "updated": "2026-11-12 18:38:28.103087025 +0000 UTC"
   }
  ]
 }
