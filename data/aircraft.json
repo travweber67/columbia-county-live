@@ -1,67 +1,47 @@
 {
- "fetched_at": "2026-11-12T18:18:53Z",
+ "fetched_at": "2026-11-12T18:22:53Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
-   "hex": "~2b9827",
-   "callsign": "",
-   "type": "",
-   "alt_ft": 3100,
-   "gs_kn": 325.9,
-   "track": 96.17,
-   "lat": 45.657944,
-   "lon": -122.788294
+   "hex": "a6766a",
+   "callsign": "N5150R",
+   "type": "RV10",
+   "alt_ft": 3325,
+   "gs_kn": 159.8,
+   "track": 307.37,
+   "lat": 45.919546,
+   "lon": -123.390953
+  },
+  {
+   "hex": "aa4435",
+   "callsign": "N7602Q",
+   "type": "C310",
+   "alt_ft": 4150,
+   "gs_kn": 128.3,
+   "track": 183.58,
+   "lat": 46.266037,
+   "lon": -123.118353
   },
   {
    "hex": "ab9dc6",
    "callsign": "N848CC",
    "type": "G280",
-   "alt_ft": 4875,
-   "gs_kn": 228.7,
-   "track": 281.6,
-   "lat": 45.720768,
-   "lon": -122.722916
+   "alt_ft": 2600,
+   "gs_kn": 172.3,
+   "track": 118.8,
+   "lat": 45.645264,
+   "lon": -122.725994
   },
   {
-   "hex": "a7888c",
-   "callsign": "ASA702",
-   "type": "B738",
-   "alt_ft": 23650,
-   "gs_kn": 446.1,
-   "track": 352.27,
-   "lat": 46.300369,
-   "lon": -122.718156
-  },
-  {
-   "hex": "a1460a",
-   "callsign": "SKW3169",
-   "type": "E75L",
-   "alt_ft": 1450,
-   "gs_kn": 128.0,
-   "track": 118.97,
-   "lat": 45.626404,
-   "lon": -122.702011
-  },
-  {
-   "hex": "acd71a",
-   "callsign": "N9262H",
-   "type": "C172",
-   "alt_ft": "ground",
-   "gs_kn": 7.2,
-   "track": null,
-   "lat": 45.621368,
-   "lon": -122.656609
-  },
-  {
-   "hex": "~2b9828",
-   "callsign": "",
-   "type": "",
-   "alt_ft": 4200,
-   "gs_kn": 89.2,
-   "track": 176.14,
-   "lat": 45.868652,
-   "lon": -122.630265
+   "hex": "a9e8ce",
+   "callsign": "ASA490",
+   "type": "B39M",
+   "alt_ft": 20000,
+   "gs_kn": 423.7,
+   "track": 353.5,
+   "lat": 46.103348,
+   "lon": -122.625844
   }
  ]
 }
