@@ -1,62 +1,89 @@
 {
- "fetched_at": "2026-11-12T18:07:52Z",
+ "fetched_at": "2026-11-12T18:12:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 46.20117,
+   "lon": -123.38702,
+   "type_code": 31,
+   "destination": "US^00D5>?? ???",
+   "updated": "2026-11-12 18:13:15.343600409 +0000 UTC"
+  },
+  {
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 45.6429,
+   "lon": -122.77155,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-12 18:13:15.35648827 +0000 UTC"
+  },
+  {
+   "mmsi": 368328430,
+   "name": "MCR 8",
+   "lat": 45.58478,
+   "lon": -122.76625,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-12 18:13:16.123644649 +0000 UTC"
+  },
   {
    "mmsi": 368410780,
    "name": "GAMBLER",
    "lat": 46.10353,
    "lon": -122.9101,
-   "type_code": 52,
-   "destination": "US^0T0P>035F",
-   "updated": "2026-11-12 18:08:11.740370896 +0000 UTC",
-   "sog_kn": 0.1,
-   "cog": 235.7,
-   "heading": 73,
-   "nav_status": 0
+   "sog_kn": 0,
+   "cog": 283.2,
+   "heading": 72,
+   "nav_status": 0,
+   "updated": "2026-11-12 18:13:20.733018137 +0000 UTC"
   },
   {
-   "mmsi": 636021177,
-   "name": "FORTUNE COOKIE",
-   "lat": 45.98365,
-   "lon": -122.83493,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-12 18:08:02.144343361 +0000 UTC"
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.61158,
+   "lon": -122.78828,
+   "type_code": 52,
+   "destination": "",
+   "updated": "2026-11-12 18:13:21.251097427 +0000 UTC"
   },
   {
    "mmsi": 636026991,
    "name": "ALTHEA",
-   "lat": 45.71761,
-   "lon": -122.7662,
-   "sog_kn": 3.3,
-   "cog": 13.7,
-   "heading": 11,
+   "lat": 45.7216,
+   "lon": -122.76471,
+   "sog_kn": 2.5,
+   "cog": 12.8,
+   "heading": 12,
    "nav_status": 8,
-   "updated": "2026-11-12 18:08:03.277241146 +0000 UTC"
+   "updated": "2026-11-12 18:13:24.863211571 +0000 UTC"
   },
   {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64569,
-   "lon": -122.73485,
-   "sog_kn": 0.1,
-   "cog": 0,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-12 18:08:08.413624202 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08986,
-   "lon": -122.92901,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35744,
    "sog_kn": 0,
-   "cog": 182.1,
-   "heading": 101,
+   "cog": 309.1,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-12 18:13:25.533217209 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.0091,
+   "lon": -122.8481,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-12 18:08:18.31302914 +0000 UTC"
+   "updated": "2026-11-12 18:13:27.265489514 +0000 UTC"
   }
  ]
 }
