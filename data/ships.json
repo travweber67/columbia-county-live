@@ -1,102 +1,104 @@
 {
- "fetched_at": "2026-11-12T17:18:52Z",
+ "fetched_at": "2026-11-12T17:22:48Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.63872,
-   "lon": -122.71177,
-   "type_code": 57,
-   "destination": "PASCO",
-   "updated": "2026-11-12 17:20:08.158670809 +0000 UTC"
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.38551,
+   "sog_kn": 0,
+   "cog": 54.8,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-12 17:23:00.616307279 +0000 UTC"
   },
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
-   "lat": 46.06963,
-   "lon": -122.89277,
-   "sog_kn": 2.2,
-   "cog": 328.3,
-   "heading": 327,
+   "lat": 46.0705,
+   "lon": -122.89358,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-12 17:23:00.968277352 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.08035,
+   "lon": -122.90317,
+   "sog_kn": 1.4,
+   "cog": 238.4,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-12 17:20:09.045196579 +0000 UTC"
+   "updated": "2026-11-12 17:23:03.911402281 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.15437,
+   "lon": -123.05012,
+   "sog_kn": 7.1,
+   "cog": 113.7,
+   "heading": 113,
+   "nav_status": 3,
+   "updated": "2026-11-12 17:23:04.632487418 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58728,
+   "lon": -122.77007,
+   "sog_kn": 0,
+   "cog": 335.3,
+   "heading": 139,
+   "nav_status": 5,
+   "updated": "2026-11-12 17:23:06.525191448 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64568,
+   "lon": -122.73487,
+   "sog_kn": 0.1,
+   "cog": 0,
+   "heading": 113,
+   "nav_status": 5,
+   "updated": "2026-11-12 17:23:08.070877749 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64346,
+   "lon": -122.75286,
+   "type_code": 52,
+   "destination": "US^0UUT>0UW8",
+   "updated": "2026-11-12 17:23:08.638325929 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 46.16387,
+   "lon": -123.40349,
+   "sog_kn": 0,
+   "cog": 2.8,
+   "heading": 317,
+   "nav_status": 12,
+   "updated": "2026-11-12 17:23:09.232981433 +0000 UTC"
   },
   {
    "mmsi": 368136580,
    "name": "ORIN L GREEN",
-   "lat": 46.08042,
-   "lon": -122.90345,
+   "lat": 46.0804,
+   "lon": -122.90342,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-12 17:20:17.203029652 +0000 UTC"
-  },
-  {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 46.20118,
-   "lon": -123.38704,
-   "sog_kn": 0,
-   "cog": 275.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-12 17:20:23.732223251 +0000 UTC"
-  },
-  {
-   "mmsi": 368327640,
-   "name": "CAPT. STEVE",
-   "lat": 45.99078,
-   "lon": -122.84153,
-   "type_code": 99,
-   "destination": "XX XXX>US^0T67",
-   "updated": "2026-11-12 17:20:25.656276193 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19999,
-   "lon": -123.38544,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-12 17:20:26.105020664 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65008,
-   "lon": -122.74762,
-   "sog_kn": 0,
-   "cog": 278.8,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-12 17:20:28.866242116 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.64735,
-   "lon": -122.73953,
-   "sog_kn": 0.1,
-   "cog": 110.1,
-   "heading": 200,
-   "nav_status": 12,
-   "updated": "2026-11-12 17:20:29.320002538 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.63766,
-   "lon": -122.72752,
-   "sog_kn": 0.5,
-   "cog": 249.3,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-12 17:20:29.77304122 +0000 UTC"
+   "updated": "2026-11-12 17:23:17.766506409 +0000 UTC",
+   "type_code": 33,
+   "destination": "LOWER COLUMBIA RIVER"
   }
  ]
 }
