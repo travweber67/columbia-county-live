@@ -1,60 +1,71 @@
 {
- "fetched_at": "2026-11-12T14:07:31Z",
+ "fetched_at": "2026-11-12T14:12:32Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368442720,
-   "name": "RUSTLER",
-   "lat": 45.60835,
-   "lon": -122.68621,
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.65058,
+   "lon": -122.75495,
+   "sog_kn": 7.7,
+   "cog": 306.6,
+   "heading": 306,
+   "nav_status": 12,
+   "updated": "2026-11-12 14:12:36.596120994 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08983,
+   "lon": -122.92902,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 191.9,
+   "heading": 107,
+   "nav_status": 0,
+   "updated": "2026-11-12 14:12:37.539207693 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.9101,
+   "sog_kn": 0.1,
+   "cog": 0.3,
+   "heading": 73,
+   "nav_status": 0,
+   "updated": "2026-11-12 14:12:40.336092101 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65014,
+   "lon": -122.74755,
+   "sog_kn": 0,
+   "cog": 179.5,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-12 14:12:48.975092194 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64331,
+   "lon": -122.74139,
+   "sog_kn": 10,
+   "cog": 103,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-12 14:07:37.340801133 +0000 UTC"
+   "updated": "2026-11-12 14:12:59.556368773 +0000 UTC"
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19998,
-   "lon": -123.38551,
-   "sog_kn": 0,
-   "cog": 235.6,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-12 14:07:40.166090381 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08025,
-   "lon": -122.90299,
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09049,
+   "lon": -122.93237,
    "type_code": 52,
-   "destination": "PORTLAND",
-   "updated": "2026-11-12 14:07:42.405705405 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00886,
-   "lon": -122.84826,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-12 14:07:56.71036084 +0000 UTC"
-  },
-  {
-   "mmsi": 636015993,
-   "name": "SIEM NEWTON",
-   "lat": 45.63305,
-   "lon": -122.73787,
-   "sog_kn": 0,
-   "cog": 335,
-   "heading": 136,
-   "nav_status": 0,
-   "updated": "2026-11-12 14:07:57.907438497 +0000 UTC"
+   "destination": "COL RIVER",
+   "updated": "2026-11-12 14:13:05.364203078 +0000 UTC"
   }
  ]
 }
