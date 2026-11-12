@@ -1,18 +1,27 @@
 {
- "fetched_at": "2026-11-12T11:02:17Z",
+ "fetched_at": "2026-11-12T11:07:17Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.93111,
-   "lon": -122.80702,
-   "sog_kn": 6.8,
-   "cog": 184,
-   "heading": 186,
-   "nav_status": 12,
-   "updated": "2026-11-12 11:02:35.748104657 +0000 UTC"
+   "mmsi": 212656000,
+   "name": "PANAGIA THALASSINI",
+   "lat": 45.63495,
+   "lon": -122.70372,
+   "type_code": 82,
+   "destination": "USVAN",
+   "updated": "2026-11-12 11:07:29.782982609 +0000 UTC"
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 46.20118,
+   "lon": -123.38704,
+   "sog_kn": 0,
+   "cog": 275.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 11:07:33.949846619 +0000 UTC"
   },
   {
    "mmsi": 368410780,
@@ -21,18 +30,26 @@
    "lon": -122.91008,
    "type_code": 52,
    "destination": "US^0T0P>035F",
-   "updated": "2026-11-12 11:02:37.199588489 +0000 UTC"
+   "updated": "2026-11-12 11:07:36.777307057 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.63733,
+   "lon": -122.72709,
+   "type_code": 52,
+   "updated": "2026-11-12 11:07:51.128790648 +0000 UTC"
   },
   {
    "mmsi": 366972000,
    "name": "ESSAYONS",
-   "lat": 46.23959,
-   "lon": -123.43183,
-   "sog_kn": 1.1,
-   "cog": 330.6,
-   "heading": 336,
+   "lat": 46.23798,
+   "lon": -123.43092,
+   "sog_kn": 2.3,
+   "cog": 156.5,
+   "heading": 333,
    "nav_status": 3,
-   "updated": "2026-11-12 11:02:43.37973457 +0000 UTC"
+   "updated": "2026-11-12 11:07:52.639616063 +0000 UTC"
   }
  ]
 }
