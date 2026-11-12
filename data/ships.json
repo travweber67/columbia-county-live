@@ -1,29 +1,38 @@
 {
- "fetched_at": "2026-11-12T04:41:48Z",
+ "fetched_at": "2026-11-12T04:46:48Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047250,
-   "name": "VOYAGER",
-   "lat": 46.14067,
-   "lon": -123.02581,
-   "sog_kn": 9.5,
-   "cog": 298.9,
-   "heading": 511,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08048,
+   "lon": -122.90286,
+   "sog_kn": 0,
+   "cog": 217.1,
+   "heading": 133,
    "nav_status": 0,
-   "updated": "2026-11-12 04:42:08.731035561 +0000 UTC"
+   "updated": "2026-11-12 04:47:13.697048508 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08051,
-   "lon": -122.9033,
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 46.20123,
+   "lon": -123.38703,
    "sog_kn": 0,
-   "cog": 117,
-   "heading": 315,
+   "cog": 275.7,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-12 04:42:17.690430266 +0000 UTC"
+   "updated": "2026-11-12 04:47:13.772100798 +0000 UTC"
+  },
+  {
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.61223,
+   "lon": -122.64525,
+   "type_code": 52,
+   "destination": "US^10M4>02MP",
+   "updated": "2026-11-12 04:47:24.311071583 +0000 UTC"
   }
  ]
 }
