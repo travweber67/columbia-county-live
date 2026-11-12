@@ -1,37 +1,27 @@
 {
- "fetched_at": "2026-11-12T04:36:47Z",
+ "fetched_at": "2026-11-12T04:41:48Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
-   "hex": "a91fcf",
-   "callsign": "N68713",
+   "hex": "ac530f",
+   "callsign": "N89312",
    "type": "C152",
    "alt_ft": "ground",
-   "gs_kn": 12.8,
-   "track": 348.75,
-   "lat": 45.77615,
-   "lon": -122.862352
-  },
-  {
-   "hex": "a60814",
-   "callsign": "UAL762",
-   "type": "A320",
-   "alt_ft": 28450,
-   "gs_kn": 475.9,
-   "track": 350.2,
-   "lat": 45.981275,
-   "lon": -122.64917
-  },
-  {
-   "hex": "a1288b",
-   "callsign": "FDX1807",
-   "type": "B763",
-   "alt_ft": "ground",
-   "gs_kn": 0.0,
+   "gs_kn": 6.8,
    "track": null,
-   "lat": 45.5793,
-   "lon": -122.610252
+   "lat": 45.776829,
+   "lon": -122.862888
+  },
+  {
+   "hex": "aaa5ae",
+   "callsign": "UAL1811",
+   "type": "B738",
+   "alt_ft": 2800,
+   "gs_kn": 188.7,
+   "track": 101.31,
+   "lat": 45.655746,
+   "lon": -122.762704
   }
  ]
 }
