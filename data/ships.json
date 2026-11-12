@@ -1,129 +1,82 @@
 {
- "fetched_at": "2026-11-12T16:17:43Z",
+ "fetched_at": "2026-11-12T16:18:52Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367347000,
-   "name": "WENDY SEAA",
-   "lat": 46.19949,
-   "lon": -123.38506,
-   "type_code": 30,
-   "destination": "CATHLAMET,WA",
-   "updated": "2026-11-12 16:17:46.37089511 +0000 UTC"
-  },
-  {
-   "mmsi": 431300000,
-   "name": "TRITON HIGHWAY",
-   "lat": 45.59772,
-   "lon": -122.77497,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-12 16:17:48.435890117 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 46.16387,
-   "lon": -123.40348,
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58755,
+   "lon": -122.77041,
    "sog_kn": 0,
-   "cog": 36.6,
-   "heading": 318,
+   "cog": 89,
+   "heading": 141,
+   "nav_status": 0,
+   "updated": "2026-11-12 16:19:27.917423493 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19994,
+   "lon": -123.38551,
+   "sog_kn": 0,
+   "cog": 26.7,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-12 16:19:29.19707679 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09631,
+   "lon": -122.93013,
+   "sog_kn": 0,
+   "cog": 47.1,
+   "heading": 74,
+   "nav_status": 3,
+   "updated": "2026-11-12 16:19:33.296513619 +0000 UTC"
+  },
+  {
+   "mmsi": 368136580,
+   "name": "ORIN L GREEN",
+   "lat": 46.0802,
+   "lon": -122.90334,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 16:19:37.92632477 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.07638,
+   "lon": -122.89613,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-12 16:19:42.775971968 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.64292,
+   "lon": -122.77075,
+   "sog_kn": 3.3,
+   "cog": 45.4,
+   "heading": 215,
    "nav_status": 12,
-   "updated": "2026-11-12 16:17:50.736132031 +0000 UTC"
+   "updated": "2026-11-12 16:19:44.736346648 +0000 UTC"
   },
   {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58729,
-   "lon": -122.77005,
-   "type_code": 31,
-   "destination": "US^02SY>0UJ9",
-   "updated": "2026-11-12 16:17:51.405688085 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.08031,
-   "lon": -122.90341,
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.63872,
+   "lon": -122.71176,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 269,
-   "nav_status": 3,
-   "updated": "2026-11-12 16:17:57.205606622 +0000 UTC"
-  },
-  {
-   "mmsi": 367323610,
-   "name": "MIKETTE",
-   "lat": 46.19964,
-   "lon": -123.38524,
-   "sog_kn": 0,
-   "cog": 358,
-   "heading": 322,
-   "nav_status": 5,
-   "updated": "2026-11-12 16:17:59.432562031 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08022,
-   "lon": -122.90307,
-   "sog_kn": 0,
-   "cog": 253,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-12 16:18:02.078834968 +0000 UTC"
-  },
-  {
-   "mmsi": 368442720,
-   "name": "RUSTLER",
-   "lat": 45.60833,
-   "lon": -122.68621,
-   "type_code": 52,
-   "destination": "AXIOS MARINE OPS",
-   "updated": "2026-11-12 16:18:03.343460107 +0000 UTC"
-  },
-  {
-   "mmsi": 368458550,
-   "name": "SKAGIT",
-   "lat": 45.58477,
-   "lon": -122.76664,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-12 16:18:08.125313408 +0000 UTC"
-  },
-  {
-   "mmsi": 367667060,
-   "name": "GRANITE POINT",
-   "lat": 45.64728,
-   "lon": -122.73993,
-   "type_code": 52,
-   "destination": "SRT PASCO",
-   "updated": "2026-11-12 16:18:08.146269174 +0000 UTC"
-  },
-  {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 45.64285,
-   "lon": -122.7524,
-   "sog_kn": 0,
-   "cog": 36.3,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-12 16:18:12.768774752 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.20309,
-   "lon": -123.42756,
-   "sog_kn": 1,
-   "cog": 186,
-   "heading": 185,
-   "nav_status": 3,
-   "updated": "2026-11-12 16:18:14.281952486 +0000 UTC"
+   "cog": 312.6,
+   "heading": 122,
+   "nav_status": 12,
+   "updated": "2026-11-12 16:19:56.063890167 +0000 UTC"
   }
  ]
 }
