@@ -1,128 +1,147 @@
 {
- "fetched_at": "2026-11-12T14:32:33Z",
+ "fetched_at": "2026-11-12T14:37:33Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 13 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 636021177,
-   "name": "FORTUNE COOKIE",
-   "lat": 45.98375,
-   "lon": -122.83491,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-12 14:32:39.19550454 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10355,
-   "lon": -122.91008,
-   "type_code": 52,
-   "destination": "US^0T0P>035F",
-   "updated": "2026-11-12 14:32:40.403749925 +0000 UTC"
-  },
-  {
-   "mmsi": 440576000,
-   "name": "PAN FLOWER",
-   "lat": 45.64297,
-   "lon": -122.77153,
-   "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-12 14:32:42.709003752 +0000 UTC"
-  },
-  {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 46.04401,
-   "lon": -122.87692,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-12 14:32:47.315872876 +0000 UTC"
-  },
-  {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 46.02716,
-   "lon": -122.86957,
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.63869,
+   "lon": -122.71176,
    "sog_kn": 0,
-   "cog": 319.8,
-   "heading": 138,
+   "cog": 312.6,
+   "heading": 122,
+   "nav_status": 12,
+   "updated": "2026-11-12 14:38:07.93059983 +0000 UTC",
+   "type_code": 57,
+   "destination": "PASCO"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.5808,
+   "lon": -122.76008,
+   "type_code": 31,
+   "destination": "PDX PTSI",
+   "updated": "2026-11-12 14:37:47.745947642 +0000 UTC"
+  },
+  {
+   "mmsi": 212656000,
+   "name": "PANAGIA THALASSINI",
+   "lat": 45.63495,
+   "lon": -122.70372,
+   "sog_kn": 0,
+   "cog": 127.4,
+   "heading": 127,
    "nav_status": 5,
-   "updated": "2026-11-12 14:32:47.485858387 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.16594,
-   "lon": -123.08557,
-   "sog_kn": 1.2,
-   "cog": 139.5,
-   "heading": 126,
-   "nav_status": 3,
-   "updated": "2026-11-12 14:32:48.680000318 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00893,
-   "lon": -122.84841,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-12 14:32:55.852415307 +0000 UTC"
+   "updated": "2026-11-12 14:37:54.689623642 +0000 UTC"
   },
   {
    "mmsi": 367047180,
    "name": "SUNDIAL",
-   "lat": 45.63562,
-   "lon": -122.71735,
-   "sog_kn": 6.5,
-   "cog": 293.9,
-   "heading": 292,
+   "lat": 45.63916,
+   "lon": -122.72896,
+   "sog_kn": 5.8,
+   "cog": 295.6,
+   "heading": 290,
    "nav_status": 12,
-   "updated": "2026-11-12 14:32:55.861076158 +0000 UTC"
+   "updated": "2026-11-12 14:37:55.537720913 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15339,
+   "lon": -123.37713,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 14:37:57.482949617 +0000 UTC"
+  },
+  {
+   "mmsi": 368442720,
+   "name": "RUSTLER",
+   "lat": 45.60835,
+   "lon": -122.68621,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 14:37:57.842459196 +0000 UTC"
+  },
+  {
+   "mmsi": 636015993,
+   "name": "SIEM NEWTON",
+   "lat": 45.63307,
+   "lon": -122.73787,
+   "sog_kn": 0,
+   "cog": 335,
+   "heading": 136,
+   "nav_status": 0,
+   "updated": "2026-11-12 14:37:58.354278665 +0000 UTC"
   },
   {
    "mmsi": 368280990,
    "name": "CINDY B",
-   "lat": 45.62589,
-   "lon": -122.68863,
+   "lat": 45.6201,
+   "lon": -122.68177,
    "sog_kn": 5.5,
-   "cog": 136.5,
-   "heading": 142,
+   "cog": 131.7,
+   "heading": 124,
    "nav_status": 0,
-   "updated": "2026-11-12 14:32:59.284145784 +0000 UTC"
+   "updated": "2026-11-12 14:37:59.548718133 +0000 UTC"
   },
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60748,
-   "lon": -122.67751,
-   "type_code": 50,
-   "updated": "2026-11-12 14:32:59.351722598 +0000 UTC"
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64569,
+   "lon": -122.73487,
+   "type_code": 79,
+   "updated": "2026-11-12 14:38:00.921003128 +0000 UTC"
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 46.20119,
+   "lon": -123.38705,
+   "sog_kn": 0,
+   "cog": 275.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 14:38:03.453947693 +0000 UTC"
   },
   {
    "mmsi": 366972000,
    "name": "ESSAYONS",
-   "lat": 46.26973,
-   "lon": -123.47075,
-   "sog_kn": 12.5,
-   "cog": 111.6,
-   "heading": 110,
+   "lat": 46.25842,
+   "lon": -123.4524,
+   "sog_kn": 12.4,
+   "cog": 140.9,
+   "heading": 140,
    "nav_status": 3,
-   "updated": "2026-11-12 14:33:03.606276937 +0000 UTC"
+   "updated": "2026-11-12 14:38:05.336895467 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08049,
-   "lon": -122.90328,
-   "sog_kn": 0,
-   "cog": 341.4,
-   "heading": 314,
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.62836,
+   "lon": -122.69155,
+   "sog_kn": 0.6,
+   "cog": 120.9,
+   "heading": 295,
    "nav_status": 0,
-   "updated": "2026-11-12 14:33:07.465590236 +0000 UTC"
+   "updated": "2026-11-12 14:38:06.356926908 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08064,
+   "lon": -122.90326,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 316,
+   "nav_status": 3,
+   "updated": "2026-11-12 14:38:08.086956429 +0000 UTC"
   }
  ]
 }
