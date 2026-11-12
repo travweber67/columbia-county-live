@@ -1,47 +1,113 @@
 {
- "fetched_at": "2026-11-12T03:48:42Z",
+ "fetched_at": "2026-11-12T03:56:46Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.11163,
+   "lon": -122.97338,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-12 03:57:00.956028764 +0000 UTC"
+  },
   {
    "mmsi": 367531220,
    "name": "WATCHMAN",
-   "lat": 46.19998,
-   "lon": -123.38543,
-   "type_code": 99,
-   "destination": "NAKNEK",
-   "updated": "2026-11-12 03:50:45.34589842 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09051,
-   "lon": -122.93238,
+   "lat": 46.19999,
+   "lon": -123.38544,
    "sog_kn": 0,
-   "cog": 289,
+   "cog": 0,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-12 03:50:58.174168528 +0000 UTC"
+   "nav_status": 8,
+   "updated": "2026-11-12 03:57:05.451322948 +0000 UTC"
   },
   {
    "mmsi": 367425950,
    "name": "SEA HAWK",
-   "lat": 45.65018,
-   "lon": -122.74768,
+   "lat": 45.65008,
+   "lon": -122.74763,
    "sog_kn": 0,
-   "cog": 276.8,
+   "cog": 266.7,
    "heading": 511,
    "nav_status": 3,
-   "updated": "2026-11-12 03:51:00.278879556 +0000 UTC"
+   "updated": "2026-11-12 03:57:09.315957992 +0000 UTC"
   },
   {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.79316,
-   "lon": -122.8432,
-   "type_code": 57,
-   "destination": "US^0UWG>?? ???",
-   "updated": "2026-11-12 03:51:13.05663806 +0000 UTC"
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.23918,
+   "lon": -123.43073,
+   "sog_kn": 1.4,
+   "cog": 165.7,
+   "heading": 163,
+   "nav_status": 3,
+   "updated": "2026-11-12 03:57:13.028647978 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60753,
+   "lon": -122.67762,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 03:57:13.916074542 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08985,
+   "lon": -122.929,
+   "sog_kn": 0,
+   "cog": 82.5,
+   "heading": 101,
+   "nav_status": 0,
+   "updated": "2026-11-12 03:57:18.305945598 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.73543,
+   "lon": -122.76221,
+   "sog_kn": 4.6,
+   "cog": 181.8,
+   "heading": 182,
+   "nav_status": 12,
+   "updated": "2026-11-12 03:57:20.610647919 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.6436,
+   "lon": -122.75231,
+   "sog_kn": 0,
+   "cog": 139.7,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-12 03:57:22.320869833 +0000 UTC"
+  },
+  {
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.90896,
+   "lon": -122.81433,
+   "type_code": 52,
+   "destination": "US^0UYR>0ZBA",
+   "updated": "2026-11-12 03:57:24.976697327 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 163.7,
+   "heading": 133,
+   "nav_status": 15,
+   "updated": "2026-11-12 03:57:28.035719879 +0000 UTC"
   }
  ]
 }
