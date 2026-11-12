@@ -1,95 +1,104 @@
 {
- "fetched_at": "2026-11-12T22:18:12Z",
+ "fetched_at": "2026-11-12T22:18:56Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.0807,
-   "lon": -122.90343,
-   "sog_kn": 1,
-   "cog": 34.4,
-   "heading": 313,
-   "nav_status": 3,
-   "updated": "2026-11-12 22:18:17.095367544 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58754,
-   "lon": -122.77045,
-   "sog_kn": 0,
-   "cog": 245.7,
-   "heading": 141,
-   "nav_status": 0,
-   "updated": "2026-11-12 22:18:17.351783613 +0000 UTC"
-  },
-  {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09639,
-   "lon": -122.93004,
-   "sog_kn": 0,
-   "cog": 1.5,
-   "heading": 68,
-   "nav_status": 3,
-   "updated": "2026-11-12 22:18:23.580936678 +0000 UTC"
-  },
-  {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.1089,
-   "lon": -122.9613,
-   "sog_kn": 0.1,
-   "cog": 252.4,
-   "heading": 130,
-   "nav_status": 5,
-   "updated": "2026-11-12 22:18:31.943274366 +0000 UTC"
-  },
   {
    "mmsi": 367047180,
    "name": "SUNDIAL",
-   "lat": 45.63661,
-   "lon": -122.71354,
-   "sog_kn": 10,
-   "cog": 295.8,
-   "heading": 294,
+   "lat": 45.6378,
+   "lon": -122.71711,
+   "sog_kn": 9.9,
+   "cog": 294.5,
+   "heading": 293,
    "nav_status": 12,
-   "updated": "2026-11-12 22:18:35.102011364 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.38551,
-   "sog_kn": 0,
-   "cog": 358.1,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-12 22:18:40.138770443 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.19399,
-   "lon": -123.42924,
-   "sog_kn": 2.5,
-   "cog": 189.1,
-   "heading": 221,
-   "nav_status": 3,
-   "updated": "2026-11-12 22:18:41.160442941 +0000 UTC"
+   "updated": "2026-11-12 22:19:35.177347127 +0000 UTC"
   },
   {
    "mmsi": 367310520,
    "name": "JAMES T",
-   "lat": 46.09639,
-   "lon": -122.92977,
+   "lat": 46.09641,
+   "lon": -122.92978,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-12 22:19:35.692201503 +0000 UTC"
+  },
+  {
+   "mmsi": 636015993,
+   "name": "SIEM NEWTON",
+   "lat": 45.63302,
+   "lon": -122.73785,
    "sog_kn": 0,
-   "cog": 42.6,
-   "heading": 68,
+   "cog": 28,
+   "heading": 136,
+   "nav_status": 0,
+   "updated": "2026-11-12 22:19:37.054692153 +0000 UTC"
+  },
+  {
+   "mmsi": 368442720,
+   "name": "RUSTLER",
+   "lat": 45.60835,
+   "lon": -122.68619,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 22:19:37.403961638 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.9101,
+   "sog_kn": 0,
+   "cog": 20,
+   "heading": 72,
+   "nav_status": 0,
+   "updated": "2026-11-12 22:19:41.149574049 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.0907,
+   "lon": -122.93212,
+   "sog_kn": 0,
+   "cog": 246.9,
+   "heading": 114,
+   "nav_status": 5,
+   "updated": "2026-11-12 22:19:45.949211028 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08495,
+   "lon": -122.91402,
+   "sog_kn": 0.7,
+   "cog": 109.8,
+   "heading": 36,
+   "nav_status": 0,
+   "updated": "2026-11-12 22:19:58.895222748 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64708,
+   "lon": -122.73962,
+   "sog_kn": 0.1,
+   "cog": 25.8,
+   "heading": 295,
+   "nav_status": 12,
+   "updated": "2026-11-12 22:19:59.156829422 +0000 UTC"
+  },
+  {
+   "mmsi": 368328430,
+   "name": "MCR 8",
+   "lat": 45.58481,
+   "lon": -122.7662,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
    "nav_status": 3,
-   "updated": "2026-11-12 22:18:43.532785197 +0000 UTC"
+   "updated": "2026-11-12 22:20:02.460714712 +0000 UTC"
   }
  ]
 }
