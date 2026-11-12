@@ -1,69 +1,92 @@
 {
- "fetched_at": "2026-11-12T11:17:18Z",
+ "fetched_at": "2026-11-12T11:18:49Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.20001,
-   "lon": -123.38553,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-12 11:17:23.637216575 +0000 UTC"
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60758,
+   "lon": -122.67768,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 11:19:23.377784486 +0000 UTC"
+  },
+  {
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.68265,
+   "lon": -122.86624,
+   "sog_kn": 5.1,
+   "cog": 187.2,
+   "heading": 188,
+   "nav_status": 0,
+   "updated": "2026-11-12 11:19:50.930906943 +0000 UTC",
+   "type_code": 52,
+   "destination": ""
+  },
+  {
+   "mmsi": 636015993,
+   "name": "SIEM NEWTON",
+   "lat": 45.63305,
+   "lon": -122.73785,
+   "sog_kn": 0,
+   "cog": 229,
+   "heading": 136,
+   "nav_status": 0,
+   "updated": "2026-11-12 11:19:37.419822319 +0000 UTC"
   },
   {
    "mmsi": 367384780,
    "name": "CAROLYN DOROTHY",
    "lat": 46.08986,
    "lon": -122.92899,
+   "sog_kn": 0,
+   "cog": 191.9,
+   "heading": 103,
+   "nav_status": 0,
+   "updated": "2026-11-12 11:19:37.59066902 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08977,
+   "lon": -122.92902,
+   "sog_kn": 0,
+   "cog": 172.8,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-12 11:19:39.268178446 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19948,
+   "lon": -123.38502,
+   "sog_kn": 0,
+   "cog": 189,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-12 11:19:47.490041488 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58762,
+   "lon": -122.7704,
    "type_code": 52,
-   "destination": "CSR OPS",
-   "updated": "2026-11-12 11:17:25.232735429 +0000 UTC"
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-12 11:19:47.747202976 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35742,
-   "sog_kn": 0,
-   "cog": 309,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-12 11:17:25.921924009 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15341,
-   "lon": -123.37715,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-12 11:17:26.949838147 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.2,
-   "lon": -123.38542,
-   "sog_kn": 0,
-   "cog": 16.5,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-12 11:17:37.296872772 +0000 UTC"
-  },
-  {
-   "mmsi": 636015993,
-   "name": "SIEM NEWTON",
-   "lat": 45.63302,
-   "lon": -122.73782,
-   "sog_kn": 0,
-   "cog": 229,
-   "heading": 136,
-   "nav_status": 0,
-   "updated": "2026-11-12 11:17:37.354257017 +0000 UTC"
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.63734,
+   "lon": -122.72709,
+   "type_code": 52,
+   "updated": "2026-11-12 11:19:51.952040595 +0000 UTC"
   }
  ]
 }
