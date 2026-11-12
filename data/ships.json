@@ -1,60 +1,89 @@
 {
- "fetched_at": "2026-11-12T08:47:08Z",
+ "fetched_at": "2026-11-12T08:48:46Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.6454,
-   "lon": -122.73505,
-   "sog_kn": 0,
-   "cog": 30.4,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-12 08:47:14.758122265 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 46.08976,
-   "lon": -122.929,
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58755,
+   "lon": -122.77046,
    "type_code": 52,
-   "destination": "US^0UJB>0UJB",
-   "updated": "2026-11-12 08:47:33.998588907 +0000 UTC"
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-12 08:49:28.628291004 +0000 UTC"
   },
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00902,
-   "lon": -122.84819,
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.9094,
+   "lon": -122.81454,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 70.6,
+   "heading": 340,
+   "nav_status": 0,
+   "updated": "2026-11-12 08:49:30.465761089 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.64331,
+   "lon": -122.75278,
+   "sog_kn": 0,
+   "cog": 186.7,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-12 08:47:36.954986847 +0000 UTC"
+   "nav_status": 5,
+   "updated": "2026-11-12 08:49:37.006328055 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.0805,
-   "lon": -122.90286,
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.09071,
+   "lon": -122.93214,
    "sog_kn": 0,
-   "cog": 66,
-   "heading": 136,
-   "nav_status": 0,
-   "updated": "2026-11-12 08:47:42.704591672 +0000 UTC"
+   "cog": 246.9,
+   "heading": 111,
+   "nav_status": 5,
+   "updated": "2026-11-12 08:49:42.359756316 +0000 UTC"
   },
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.24833,
-   "lon": -123.44098,
-   "sog_kn": 1.2,
-   "cog": 140.9,
-   "heading": 141,
-   "nav_status": 3,
-   "updated": "2026-11-12 08:47:43.192409556 +0000 UTC"
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.79262,
+   "lon": -122.84451,
+   "type_code": 52,
+   "destination": "",
+   "updated": "2026-11-12 08:49:42.763995167 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 231,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-12 08:49:45.182658673 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.04401,
+   "lon": -122.87692,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-12 08:49:47.742490089 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.74637,
+   "lon": -122.76172,
+   "sog_kn": 8.9,
+   "cog": 356.5,
+   "heading": 357,
+   "nav_status": 12,
+   "updated": "2026-11-12 08:49:50.704809683 +0000 UTC"
   }
  ]
 }
