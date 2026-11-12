@@ -1,70 +1,113 @@
 {
- "fetched_at": "2026-11-12T16:02:41Z",
+ "fetched_at": "2026-11-12T16:07:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 46.02717,
-   "lon": -122.86958,
-   "sog_kn": 0,
-   "cog": 319.8,
-   "heading": 138,
+   "mmsi": 367575580,
+   "name": "DIANE B.",
+   "lat": 46.14538,
+   "lon": -123.33049,
+   "sog_kn": 9.7,
+   "cog": 273.2,
+   "heading": 269,
    "nav_status": 5,
-   "updated": "2026-11-12 16:02:45.931459323 +0000 UTC"
+   "updated": "2026-11-12 16:07:50.120220193 +0000 UTC"
   },
   {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61167,
-   "lon": -122.64704,
-   "sog_kn": 3.6,
-   "cog": 158.9,
-   "heading": 137,
-   "nav_status": 0,
-   "updated": "2026-11-12 16:02:48.747940584 +0000 UTC"
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.044,
+   "lon": -122.87691,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-12 16:07:59.327792444 +0000 UTC"
   },
   {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 46.20119,
-   "lon": -123.38706,
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79318,
+   "lon": -122.84321,
    "sog_kn": 0,
-   "cog": 275.7,
+   "cog": 104.6,
+   "heading": 209,
+   "nav_status": 0,
+   "updated": "2026-11-12 16:07:59.083252267 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.63871,
+   "lon": -122.71177,
+   "type_code": 57,
+   "destination": "PASCO",
+   "updated": "2026-11-12 16:08:05.742856021 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 2.3,
+   "heading": 133,
+   "nav_status": 15,
+   "updated": "2026-11-12 16:08:07.724771265 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.62491,
+   "lon": -122.68639,
+   "sog_kn": 7,
+   "cog": 123,
+   "heading": 122,
+   "nav_status": 15,
+   "updated": "2026-11-12 16:08:11.229413608 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15973,
+   "lon": -123.40541,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 132,
+   "nav_status": 0,
+   "updated": "2026-11-12 16:08:13.596629659 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07234,
+   "lon": -122.89588,
+   "sog_kn": 5.4,
+   "cog": 165.9,
+   "heading": 153,
+   "nav_status": 0,
+   "updated": "2026-11-12 16:08:14.096582408 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64537,
+   "lon": -122.73503,
+   "sog_kn": 0,
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-12 16:08:14.780952524 +0000 UTC"
+  },
+  {
+   "mmsi": 368458550,
+   "name": "SKAGIT",
+   "lat": 45.58476,
+   "lon": -122.76657,
+   "sog_kn": 0.2,
+   "cog": 323.3,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-12 16:02:52.575935985 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35743,
-   "type_code": 30,
-   "updated": "2026-11-12 16:02:54.396297935 +0000 UTC"
-  },
-  {
-   "mmsi": 367667060,
-   "name": "GRANITE POINT",
-   "lat": 45.64728,
-   "lon": -122.73993,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-12 16:03:01.55619886 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.16473,
-   "lon": -123.07975,
-   "sog_kn": 1.1,
-   "cog": 138.1,
-   "heading": 126,
-   "nav_status": 3,
-   "updated": "2026-11-12 16:03:14.737696876 +0000 UTC"
+   "updated": "2026-11-12 16:08:18.292034805 +0000 UTC"
   }
  ]
 }
