@@ -1,47 +1,69 @@
 {
- "fetched_at": "2026-11-12T11:12:18Z",
+ "fetched_at": "2026-11-12T11:17:18Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20001,
+   "lon": -123.38553,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-12 11:17:23.637216575 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08986,
+   "lon": -122.92899,
+   "type_code": 52,
+   "destination": "CSR OPS",
+   "updated": "2026-11-12 11:17:25.232735429 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35742,
+   "sog_kn": 0,
+   "cog": 309,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-12 11:17:25.921924009 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37715,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 11:17:26.949838147 +0000 UTC"
+  },
   {
    "mmsi": 367531220,
    "name": "WATCHMAN",
-   "lat": 46.20002,
-   "lon": -123.3854,
+   "lat": 46.2,
+   "lon": -123.38542,
    "sog_kn": 0,
-   "cog": 17.8,
+   "cog": 16.5,
    "heading": 511,
    "nav_status": 8,
-   "updated": "2026-11-12 11:12:24.330931725 +0000 UTC"
+   "updated": "2026-11-12 11:17:37.296872772 +0000 UTC"
   },
   {
-   "mmsi": 212656000,
-   "name": "PANAGIA THALASSINI",
-   "lat": 45.63497,
-   "lon": -122.70372,
-   "type_code": 82,
-   "destination": "USVAN",
-   "updated": "2026-11-12 11:12:36.536015581 +0000 UTC"
-  },
-  {
-   "mmsi": 367323610,
-   "name": "MIKETTE",
-   "lat": 46.19965,
-   "lon": -123.38523,
-   "type_code": 30,
-   "destination": "",
-   "updated": "2026-11-12 11:12:42.057838313 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.62722,
-   "lon": -122.69912,
+   "mmsi": 636015993,
+   "name": "SIEM NEWTON",
+   "lat": 45.63302,
+   "lon": -122.73782,
    "sog_kn": 0,
-   "cog": 247.3,
-   "heading": 511,
+   "cog": 229,
+   "heading": 136,
    "nav_status": 0,
-   "updated": "2026-11-12 11:12:43.530687 +0000 UTC"
+   "updated": "2026-11-12 11:17:37.354257017 +0000 UTC"
   }
  ]
 }
