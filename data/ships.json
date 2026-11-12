@@ -1,56 +1,67 @@
 {
- "fetched_at": "2026-11-12T12:27:23Z",
+ "fetched_at": "2026-11-12T12:32:25Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10893,
-   "lon": -122.96129,
-   "sog_kn": 0,
-   "cog": 332.9,
-   "heading": 130,
-   "nav_status": 5,
-   "updated": "2026-11-12 12:27:32.088426265 +0000 UTC"
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 45.64274,
+   "lon": -122.77187,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-12 12:32:32.175448569 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20005,
+   "lon": -123.38542,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-12 12:32:34.329923855 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.65038,
+   "lon": -122.74759,
+   "type_code": 52,
+   "destination": "XX XXX>US^02A3",
+   "updated": "2026-11-12 12:32:35.176591779 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 46.15887,
+   "lon": -123.06547,
+   "sog_kn": 6.8,
+   "cog": 293.5,
+   "heading": 292,
+   "nav_status": 12,
+   "updated": "2026-11-12 12:32:40.068171466 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16588,
+   "lon": -123.08539,
+   "sog_kn": 1.7,
+   "cog": 127.5,
+   "heading": 122,
+   "nav_status": 3,
+   "updated": "2026-11-12 12:32:54.696497617 +0000 UTC"
   },
   {
    "mmsi": 367602150,
    "name": "LUNA",
    "lat": 45.6111,
-   "lon": -122.6129,
-   "type_code": 0,
-   "updated": "2026-11-12 12:27:33.176628985 +0000 UTC"
-  },
-  {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09625,
-   "lon": -122.93063,
+   "lon": -122.61289,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 65,
-   "nav_status": 3,
-   "updated": "2026-11-12 12:27:34.205240349 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 46.15439,
-   "lon": -123.05349,
-   "sog_kn": 6.8,
-   "cog": 302.9,
-   "heading": 300,
-   "nav_status": 12,
-   "updated": "2026-11-12 12:27:40.090464589 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15345,
-   "lon": -123.37711,
-   "type_code": 99,
-   "updated": "2026-11-12 12:27:56.996198019 +0000 UTC"
+   "cog": 205.4,
+   "heading": 133,
+   "nav_status": 15,
+   "updated": "2026-11-12 12:32:49.356834126 +0000 UTC"
   }
  ]
 }
