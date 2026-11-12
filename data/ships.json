@@ -1,47 +1,86 @@
 {
- "fetched_at": "2026-11-12T21:13:06Z",
+ "fetched_at": "2026-11-12T21:18:06Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 440576000,
-   "name": "PAN FLOWER",
-   "lat": 45.6429,
-   "lon": -122.77154,
-   "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-12 21:13:15.030917101 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16661,
+   "lon": -123.08654,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-12 21:18:38.995289576 +0000 UTC",
+   "sog_kn": 0.4,
+   "cog": 315,
+   "heading": 301,
+   "nav_status": 3
   },
   {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.60092,
-   "lon": -122.77367,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-12 21:13:15.351151685 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.13721,
-   "lon": -123.37893,
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64789,
+   "lon": -122.74098,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-12 21:13:36.889334885 +0000 UTC"
-  },
-  {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.09071,
-   "lon": -122.93212,
-   "sog_kn": 0,
-   "cog": 246.9,
+   "cog": 112.1,
    "heading": 112,
    "nav_status": 5,
-   "updated": "2026-11-12 21:13:48.340299967 +0000 UTC"
+   "updated": "2026-11-12 21:18:19.873151515 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65013,
+   "lon": -122.74758,
+   "sog_kn": 0,
+   "cog": 264.9,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-12 21:18:19.944390807 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.1079,
+   "lon": -122.95903,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 21:18:31.576792188 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09636,
+   "lon": -122.92989,
+   "sog_kn": 0,
+   "cog": 2.7,
+   "heading": 72,
+   "nav_status": 3,
+   "updated": "2026-11-12 21:18:44.78898045 +0000 UTC"
+  },
+  {
+   "mmsi": 338926117,
+   "name": "CG26117",
+   "lat": 46.16949,
+   "lon": -123.22904,
+   "sog_kn": 0,
+   "cog": 99.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 21:18:45.984722645 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07849,
+   "lon": -122.90333,
+   "sog_kn": 0.1,
+   "cog": 123.2,
+   "heading": 232,
+   "nav_status": 0,
+   "updated": "2026-11-12 21:18:47.510174692 +0000 UTC"
   }
  ]
 }
