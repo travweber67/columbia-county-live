@@ -96,17 +96,13 @@ document.documentElement.setAttribute("data-theme",t);})();
           <div id="clock" class="clock">—</div>
           <div class="clock-label" data-i18n="clocklabel">Pacific Time</div>
         </div>
-        <!-- v40: the install door moves to the masthead — one tap from
-             the landing view, not buried in Events & More. Opens the
-             Get-the-app sheet (app.js initGetApp): device-detected
-             numbered steps, with the Facebook-browser escape first
-             when the visitor is inside an app's webview. -->
-        <button class="hero-theme-btn getapp-btn" id="getapp-btn" type="button" aria-haspopup="dialog" aria-controls="getapp-sheet" aria-expanded="false" aria-label="Get the app — put Columbia County Live on your home screen" title="Get the app — home-screen install steps"><span class="getapp-ico" aria-hidden="true">📱</span><span data-i18n="getappbtn">Get the app</span></button>
-        <!-- v4: the theme toggle lives HERE now — top-right, beside the
-             clock, labelled and amber-ringed. In v3 it was the first
-             pill in the chip row below and Travis had to hunt for it. -->
-        <button class="hero-theme-btn display-btn" id="display-btn" type="button" aria-label="Open display mode — the community screensaver" title="Open display mode — the community screensaver"><svg class="theme-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M12 16.5v3M8.8 21h6.4"/></svg><span data-i18n="displaybtn">Display</span></button>
-        <button class="theme-toggle hero-theme-btn" id="theme-btn" type="button" aria-pressed="false" aria-label="Switch to dark mode" title="Switch between light and dark mode"><img class="theme-ico" src="img/icons/icon-theme.png" alt="" aria-hidden="true"><span id="theme-btn-label">Dark</span></button>
+        <!-- Refinements round (Travis, Nov 11): the Get the app /
+             Display / theme pills NO LONGER float here beside the
+             clock. All three now live as pill buttons in the pullout
+             drawer's utility block (drawer-getapp-btn,
+             drawer-display-btn, drawer-theme-btn) — the masthead
+             keeps only the clock. The Get-the-app sheet itself is
+             unchanged (app.js initGetApp). -->
       </div>
     </div>
     <!-- v5 CLEAN HERO (Travis): the hero keeps ONLY the photo, the name
@@ -1126,8 +1122,17 @@ document.documentElement.setAttribute("data-theme",t);})();
       <a class="drawer-foot-link" href="https://nomadov3rland-cloud.github.io/"><span data-i18n="webPromoLink">Check out other sites built by Nomad Development Group &rarr;</span></a>
     </div>
   <div class="drawer-actions">
-    <button class="drawer-action" id="drawer-getapp-btn" type="button"><span class="drawer-action-ico" aria-hidden="true">📱</span><span data-i18n="getappbtn">Get the app</span></button>
-    <button class="drawer-action" id="drawer-saver-btn" type="button"><span class="drawer-action-ico" aria-hidden="true">🖥️</span><span data-i18n="saverstart">Start the screensaver</span></button>
+    <!-- Refinements round (Travis, Nov 11): the three utility controls
+         — Get the app, Display (screensaver), Light/Dark — integrated
+         into the drawer as pill buttons in the screenshot style
+         (rounded, dark green, bone text, small icon). Display carries
+         the screensaver start, so the old "Start the screensaver"
+         drawer row is retired; the saver card keeps its own buttons. -->
+    <div class="drawer-util-btns" role="group" aria-label="Get the app, display mode, and light or dark mode">
+      <button class="drawer-util-btn" id="drawer-getapp-btn" type="button" aria-haspopup="dialog" aria-controls="getapp-sheet" aria-expanded="false" aria-label="Get the app — put Columbia County Live on your home screen"><span class="getapp-ico" aria-hidden="true">📱</span><span data-i18n="getappbtn">Get the app</span></button>
+      <button class="drawer-util-btn" id="drawer-display-btn" type="button" aria-label="Open display mode — the community screensaver"><svg class="theme-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M12 16.5v3M8.8 21h6.4"/></svg><span data-i18n="displaybtn">Display</span></button>
+      <button class="drawer-util-btn" id="drawer-theme-btn" type="button" aria-pressed="false" aria-label="Switch to dark mode"><img class="theme-ico" src="img/icons/icon-theme.png" alt="" aria-hidden="true"><span id="drawer-theme-label">Dark</span></button>
+    </div>
     <a class="drawer-action" href="sponsor.html"><img class="drawer-action-img" src="img/icons/icon-sponsor.png" alt="" aria-hidden="true"><span data-i18n="dwbecome">Become a sponsor</span></a>
     <a class="drawer-action drawer-photo" href="#photo-form">
       <span class="drawer-action-ico" aria-hidden="true">📸</span>
@@ -1141,8 +1146,8 @@ document.documentElement.setAttribute("data-theme",t);})();
   </nav>
 </aside>
 
-<!-- v40: the Get-the-app sheet. One door (masthead button + drawer
-     entry), device-detected numbered steps in plain language. app.js
+<!-- v40: the Get-the-app sheet. One door (the drawer's Get the app
+     pill button), device-detected numbered steps in plain language. app.js
      (initGetApp) decides what shows: a step-0 escape when the visitor
      is inside Facebook's / Instagram's browser or a non-Safari iOS
      browser (where Add to Home Screen silently does nothing), the

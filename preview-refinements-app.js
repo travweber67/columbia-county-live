@@ -6956,18 +6956,16 @@ function initDrawer() {
       cclShowView(b.dataset ? b.dataset.drawerView : null);
       if (window.scrollTo) { try { window.scrollTo(0, 0); } catch (e) { /* noop */ } }
     }));
-  const saverBtn = $('drawer-saver-btn');
-  if (saverBtn) saverBtn.addEventListener('click', () => {
-    closeDrawer();
-    if (window.CCLOpenSaver) window.CCLOpenSaver();
-    else { const sb = $('saver-start-btn'); if (sb) sb.click(); }
-  });
-  /* v6: the masthead Display button — display mode is one tap from
-     first paint on every view, not buried in a card or the drawer.
-     Same opener, same gesture chain (the click is what lets the
-     saver ask for fullscreen). */
-  const dispBtn = $('display-btn');
+  /* Refinements round (Travis, Nov 11): the Display control lives in
+     the drawer now, one of the three utility pill buttons, and it
+     carries the screensaver start (the old drawer-saver-btn row and
+     the floating masthead Display pill are both retired). Same
+     behavior as the old drawer entry: close the drawer, then open
+     the saver — the tap is the gesture chain that lets the saver
+     ask for fullscreen. */
+  const dispBtn = $('drawer-display-btn');
   if (dispBtn) dispBtn.addEventListener('click', () => {
+    closeDrawer();
     if (window.CCLOpenSaver) window.CCLOpenSaver();
     else { const sb = $('saver-start-btn'); if (sb) sb.click(); }
   });
@@ -7195,15 +7193,16 @@ langSet = function (lang) {
 /* ---------- Redesign prototype 2026-11-05: theme toggle wiring ----------
    The theme itself is set before paint by the inline script in
    index.html (saved choice > OS prefers-color-scheme). This wires the
-   masthead button: since v4 it sits at the top-right beside the clock
-   (in v3 it was the first pill in the hero chip row, where Travis had
-   to hunt for it). Icon + label flip, aria-pressed, theme-color meta,
-   and persisting the choice in localStorage. The label names the mode
-   you switch TO ("Dark" while light, "Light" while dark), matching
-   the aria-label. */
+   toggle button: it used to float in the masthead beside the clock;
+   in the refinements round (Travis, Nov 11) it moved into the pullout
+   drawer as one of the three utility pill buttons
+   (drawer-theme-btn). Icon + label flip, aria-pressed, theme-color
+   meta, and persisting the choice in localStorage. The label names
+   the mode you switch TO ("Dark" while light, "Light" while dark),
+   matching the aria-label. */
 (function initThemeToggle() {
-  var btn = document.getElementById('theme-btn'); if (!btn) return;
-  var label = document.getElementById('theme-btn-label');
+  var btn = document.getElementById('drawer-theme-btn'); if (!btn) return;
+  var label = document.getElementById('drawer-theme-label');
   var meta = document.querySelector('meta[name="theme-color"]');
   function paint() {
     var dark = document.documentElement.getAttribute('data-theme') === 'dark';
