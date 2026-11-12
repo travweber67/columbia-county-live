@@ -1,57 +1,73 @@
 {
- "fetched_at": "2026-11-12T22:03:12Z",
+ "fetched_at": "2026-11-12T22:08:12Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20002,
+   "lon": -123.38549,
+   "sog_kn": 0,
+   "cog": 8.9,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-12 22:08:21.044805351 +0000 UTC"
+  },
   {
    "mmsi": 367425950,
    "name": "SEA HAWK",
-   "lat": 45.65013,
-   "lon": -122.74766,
-   "type_code": 33,
-   "updated": "2026-11-12 22:03:19.560946242 +0000 UTC"
+   "lat": 45.65012,
+   "lon": -122.74765,
+   "sog_kn": 0,
+   "cog": 291.2,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-12 22:08:29.76430493 +0000 UTC"
+  },
+  {
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 45.64293,
+   "lon": -122.77154,
+   "sog_kn": 0,
+   "cog": 157.4,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-12 22:08:35.347610928 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.38543,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-12 22:08:36.004317899 +0000 UTC"
   },
   {
    "mmsi": 367363590,
    "name": "CLARKSTON",
-   "lat": 46.18294,
-   "lon": -123.18364,
-   "sog_kn": 7,
-   "cog": 63.9,
-   "heading": 69,
+   "lat": 46.18719,
+   "lon": -123.17031,
+   "sog_kn": 6.8,
+   "cog": 65.7,
+   "heading": 73,
    "nav_status": 12,
-   "updated": "2026-11-12 22:03:20.038575904 +0000 UTC"
+   "updated": "2026-11-12 22:08:39.260829128 +0000 UTC"
   },
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00908,
-   "lon": -122.84831,
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08984,
+   "lon": -122.92902,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "cog": 196.2,
+   "heading": 107,
    "nav_status": 0,
-   "updated": "2026-11-12 22:03:27.264434988 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09051,
-   "lon": -122.93235,
-   "type_code": 52,
-   "destination": "COL RIVER",
-   "updated": "2026-11-12 22:03:39.382442209 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08163,
-   "lon": -122.90405,
-   "sog_kn": 18.4,
-   "cog": 316,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-12 22:03:47.120856882 +0000 UTC"
+   "updated": "2026-11-12 22:08:48.604485579 +0000 UTC"
   }
  ]
 }
