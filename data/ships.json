@@ -1,51 +1,62 @@
 {
- "fetched_at": "2026-11-12T17:32:49Z",
+ "fetched_at": "2026-11-12T17:37:50Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367667060,
-   "name": "GRANITE POINT",
-   "lat": 45.64728,
-   "lon": -122.73993,
+   "mmsi": 212656000,
+   "name": "PANAGIA THALASSINI",
+   "lat": 45.63495,
+   "lon": -122.70372,
+   "sog_kn": 0,
+   "cog": 127.9,
+   "heading": 128,
+   "nav_status": 5,
+   "updated": "2026-11-12 17:37:55.91642903 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58728,
+   "lon": -122.77008,
+   "sog_kn": 0,
+   "cog": 335.3,
+   "heading": 139,
+   "nav_status": 5,
+   "updated": "2026-11-12 17:38:06.768208727 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64567,
+   "lon": -122.73486,
    "sog_kn": 0,
    "cog": 0,
-   "heading": 16,
+   "heading": 112,
    "nav_status": 5,
-   "updated": "2026-11-12 17:33:01.731180641 +0000 UTC"
+   "updated": "2026-11-12 17:38:08.051593906 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07683,
-   "lon": -122.90197,
-   "sog_kn": 4,
-   "cog": 328.9,
-   "heading": 167,
-   "nav_status": 0,
-   "updated": "2026-11-12 17:33:04.882089904 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.65249,
-   "lon": -122.75477,
-   "sog_kn": 5.9,
-   "cog": 140.7,
-   "heading": 136,
-   "nav_status": 12,
-   "updated": "2026-11-12 17:33:18.174051631 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65009,
-   "lon": -122.74758,
+   "mmsi": 636015993,
+   "name": "SIEM NEWTON",
+   "lat": 45.63305,
+   "lon": -122.7379,
    "sog_kn": 0,
-   "cog": 285.3,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-12 17:33:19.570009053 +0000 UTC"
+   "cog": 19,
+   "heading": 136,
+   "nav_status": 0,
+   "updated": "2026-11-12 17:38:18.034185074 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.9101,
+   "sog_kn": 0,
+   "cog": 35.3,
+   "heading": 73,
+   "nav_status": 0,
+   "updated": "2026-11-12 17:38:23.85770385 +0000 UTC"
   }
  ]
 }
