@@ -30,12 +30,12 @@
 if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
-<link rel="manifest" href="manifest.webmanifest?v=59">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=59">
+<link rel="manifest" href="manifest.webmanifest?v=60">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=60">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=59">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=59">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=59">
+<link rel="stylesheet" href="style.css?v=60">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=60">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=60">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
      only page backgrounds first paint needs — warm them with the hero.
      Every other view's photo is lazy-attached by app.js. -->
@@ -631,26 +631,6 @@ document.documentElement.setAttribute("data-theme",t);})();
       <p class="card-note small" data-i18n="tidesnote2">Tide <em>predictions</em> from NOAA Tides &amp; Currents (station 9439201 at St. Helens, station 9439099 at Wauna), in feet above mean lower low water. River flow pushes real water off the prediction — a high river runs higher and later — so treat the times as the plan, not a promise.</p>
     </div>
 
-    <div class="card photo-card" id="fishpick-card">
-      <div class="card-photo photo-fish"><img src="img/card-fish.jpg" alt="Small fishing boats along a Columbia River shoreline at golden hour" loading="lazy" decoding="async"><img class="photo-night" src="img/bg/bg-dusk-3.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
-      <div class="card-head">
-        <h2 data-i18n="pickh2">🎣 Fishing — Worth Going?</h2>
-      </div>
-      <div class="pick-row">
-        <span class="pick-label" data-i18n="pickwhat">Fishing for</span>
-        <div class="pick-chips" id="pick-species"></div>
-      </div>
-      <div class="pick-row">
-        <span class="pick-label" data-i18n="pickwhere">Where</span>
-        <div class="pick-chips" id="pick-where"></div>
-      </div>
-      <div class="pick-row">
-        <span class="pick-label" data-i18n="pickwhen">When</span>
-        <div class="pick-chips" id="pick-day"></div>
-      </div>
-      <div id="fishpick-body" class="panel-body"><p class="loading">Reading the river…</p></div>
-    </div>
-
     <div class="card band-card" id="fish-card">
       <div class="card-band" aria-hidden="true"><img src="img/dusk/band-river.jpg" alt="" loading="lazy" decoding="async"></div>
       <div class="card-head">
@@ -669,9 +649,12 @@ document.documentElement.setAttribute("data-theme",t);})();
         <span class="updated" id="tracker-updated"></span>
       </div>
       <div id="tracker-body" class="panel-body"><p class="loading">Plotting the runs…</p></div>
-      <h3 class="subhead" data-i18n="methodh3">The day plan — fish the current</h3>
-      <p class="card-note" data-i18n="methodnote">Strong current is plunking and anchor time; when the current dies, that&rsquo;s trolling time. Pick your method and the plan calls out your windows.</p>
+      <div class="quad-photo">
+      <h3 class="subhead">The Fishing Call — one square, four ways to fish</h3>
+      <p class="card-note">No forms, no settings — pick a day and read the dot. The stronger the tide push, the further right it lands; the rougher the weather, the higher it climbs. Whichever corner it leans toward is the call.</p>
       <div id="dayplan-body" class="panel-body"><p class="loading">Reading the river&rsquo;s current predictions…</p></div>
+      <p class="quad-credit">Photo: sockeye salmon leaping a waterfall — Marvina Munch, U.S. Fish &amp; Wildlife Service (public domain), via Wikimedia Commons.</p>
+    </div>
     </div>
 
     <div class="card band-card" id="steelhead-card">
@@ -870,15 +853,18 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <!-- Cross-promo (2026-11-05, Travis's directive): Cascade Controls Jobs,
      Nomad Development Group's other project. NOT a sponsor placement —
-     labelled as ours, styled as a plain house card (no sponsor glass,
-     no founding/featured language), placed below the services
-     directory and above every utility card that follows. -->
+     labelled as ours, placed below the services directory and above
+     every utility card that follows.
+     v59 (2026-11-11, Travis directed): the screenshot thumb is retired —
+     the Nomad Bot sits on TOP of the card as a mascot header. Still
+     image only (a rendered portrait of NEXBOT by @aximoris, CC BY 4.0):
+     the live 3D scene was retired the same day because it froze phones.
+     The card body below carries the same pitch + link as before. -->
 <section class="card cascade-card" id="cascade-card" aria-label="Cascade Controls Jobs — our other project from Nomad Development Group">
+  <div class="cascade-stage" aria-hidden="true">
+    <img class="cascade-poster" src="nomad-bot-poster.jpg" alt="" decoding="async">
+  </div>
   <a class="cascade-promo" href="https://travweber67.github.io/cascade-controls-jobs/">
-    <picture class="cascade-pic">
-      <source media="(max-width: 640px)" srcset="img/cascade-thumb-mobile.jpg">
-      <img class="cascade-shot" src="img/cascade-thumb.jpg" alt="Cascade Controls Jobs — a Nomad Development Group job board for controls and industrial maintenance work in the Pacific Northwest" loading="lazy" decoding="async">
-    </picture>
     <span class="cascade-body">
       <span class="cascade-eyebrow" data-i18n="cascEyebrow">From Nomad Development Group — our other project</span>
       <span class="cascade-title" data-i18n="cascTitle">Cascade Controls Jobs</span>
@@ -886,6 +872,7 @@ document.documentElement.setAttribute("data-theme",t);})();
       <span class="cascade-cta" data-i18n="cascCta">See the jobs &amp; postings &rarr;</span>
     </span>
   </a>
+  <p class="cascade-credit">Robot: NEXBOT by @aximoris (CC BY 4.0)</p>
 </section>
 
 <section class="card freshness-card" id="freshness-card">
@@ -1049,7 +1036,6 @@ document.documentElement.setAttribute("data-theme",t);})();
       <a class="drawer-link" href="#dark-card" data-i18n="dwdark">After dark</a>
       <a class="drawer-link" href="#rivers-card" data-i18n="dwrivers">River levels</a>
       <a class="drawer-link" href="#tides-card" data-i18n="dwtides">River tides</a>
-      <a class="drawer-link" href="#fishpick-card" data-i18n="dwfishpick">Fishing — worth going?</a>
       <a class="drawer-link" href="#fish-card" data-i18n="dwfish">Fish counts</a>
       <a class="drawer-link" href="#tracker-card" data-i18n="dwtracker">Salmon tracker</a>
       <a class="drawer-link" href="#steelhead-card" data-i18n="dwsteelhead">Steelhead</a>
@@ -1189,7 +1175,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=59"></script>
+<script src="app.js?v=60"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>
