@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-12T16:27:43Z",
+ "fetched_at": "2026-11-12T16:32:43Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -121,6 +121,19 @@
    "source": "ODOT TripCheck"
   },
   {
+   "title": "Road maintenance operations are occurring causing minimal delay to traffic. Prepare to slow or move over for worker safety.",
+   "desc": "",
+   "impact": "No to Minimum Delay",
+   "place": "US30, Warren",
+   "route": "US30",
+   "milepost": 24.87,
+   "lat": 45.81122,
+   "lon": -122.85476,
+   "start": "2026-11-05T15:37:20.38-08:00",
+   "updated": "2026-11-09T08:02:16-08:00",
+   "source": "ODOT TripCheck"
+  },
+  {
    "title": "Road maintenance operations with flaggers directing traffic. Prepare to slow or move over for worker safety.",
    "desc": "",
    "impact": "Estimated delay under 20 minutes",
@@ -134,16 +147,16 @@
    "source": "ODOT TripCheck"
   },
   {
-   "title": "Road maintenance operations are occurring causing minimal delay to traffic. Prepare to slow or move over for worker safety.",
+   "title": "Maintenance is occurring at Old Cornelius. Prepare to slow or move over for worker safety.",
    "desc": "",
-   "impact": "No to Minimum Delay",
-   "place": "US30, Warren",
-   "route": "US30",
-   "milepost": 24.87,
-   "lat": 45.81122,
-   "lon": -122.85476,
-   "start": "2026-11-05T15:37:20.38-08:00",
-   "updated": "2026-11-09T08:02:16-08:00",
+   "impact": "Estimated delay under 20 minutes",
+   "place": "ORE127, Intersection with W Union Rd",
+   "route": "OR127",
+   "milepost": 6.58,
+   "lat": 45.57312,
+   "lon": -122.88767,
+   "start": "2026-11-12T08:29:46.41-08:00",
+   "updated": "2026-11-12T08:31:56-08:00",
    "source": "ODOT TripCheck"
   },
   {
@@ -160,12 +173,18 @@
    "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 135,
+ "odot_active_statewide": 136,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
-  "alerts": [],
+  "alerts": [
+   {
+    "title": "Construction on SR 4 both directions from milepost 58 near 36th Avenue to milepost 62 near Three Rivers Mall will have the right lane closed for utility work, use caution beginning at 8:26 am on November 12, 2026 until further notice. ",
+    "desc": "Construction on SR 4 both directions from milepost 58 near 36th Avenue to milepost 62 near Three Rivers Mall will have the right lane closed for utility work, use caution beginning at 8:26 am on November 12, 2026 until further notice.",
+    "updated": "/Date(1794501045037-0800)/"
+   }
+  ],
   "work_zones": [],
-  "status": "clear",
-  "note": "No WSDOT alerts or work zones found for the bridge in the latest snapshot."
+  "status": "alert",
+  "note": "WSDOT is reporting alert(s) affecting the bridge."
  }
 }
