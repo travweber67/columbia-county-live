@@ -1,48 +1,99 @@
 {
- "fetched_at": "2026-11-12T15:07:37Z",
+ "fetched_at": "2026-11-12T15:12:36Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35743,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.08035,
+   "lon": -122.90312,
+   "type_code": 69,
+   "updated": "2026-11-12 15:12:43.903550037 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09627,
+   "lon": -122.93023,
    "sog_kn": 0,
-   "cog": 82.9,
+   "cog": 81.6,
+   "heading": 73,
+   "nav_status": 3,
+   "updated": "2026-11-12 15:12:44.755755609 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58079,
+   "lon": -122.76008,
+   "type_code": 31,
+   "destination": "PDX PTSI",
+   "updated": "2026-11-12 15:12:49.56493274 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09625,
+   "lon": -122.9305,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-12 15:12:52.181733288 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.009,
+   "lon": -122.84819,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 15:12:57.094492147 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.13723,
+   "lon": -123.37893,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 15:12:57.983495178 +0000 UTC"
+  },
+  {
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.60458,
+   "lon": -122.61041,
+   "sog_kn": 5.5,
+   "cog": 108.2,
+   "heading": 103,
+   "nav_status": 0,
+   "updated": "2026-11-12 15:12:58.23869137 +0000 UTC"
+  },
+  {
+   "mmsi": 636021177,
+   "name": "FORTUNE COOKIE",
+   "lat": 45.98379,
+   "lon": -122.83497,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-12 15:12:59.706447772 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 275.1,
    "heading": 134,
    "nav_status": 15,
-   "updated": "2026-11-12 15:07:47.885721061 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.63011,
-   "lon": -122.69562,
-   "type_code": 52,
-   "updated": "2026-11-12 15:07:51.123704299 +0000 UTC"
-  },
-  {
-   "mmsi": 367425870,
-   "name": "HUSKY",
-   "lat": 45.62827,
-   "lon": -122.69116,
-   "sog_kn": 0,
-   "cog": 5.7,
-   "heading": 299,
-   "nav_status": 0,
-   "updated": "2026-11-12 15:08:12.202708404 +0000 UTC"
-  },
-  {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.6454,
-   "lon": -122.73503,
-   "sog_kn": 0,
-   "cog": 30.4,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-12 15:08:14.680367103 +0000 UTC"
+   "updated": "2026-11-12 15:13:08.21608068 +0000 UTC"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-12T15:07:37Z",
+ "fetched_at": "2026-11-12T15:12:36Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -16,6 +16,19 @@
   }
  ],
  "incidents": [
+  {
+   "title": "An unconfirmed report of a struck animal creating a hazard has been received. Use caution.",
+   "desc": "",
+   "impact": "Unconfirmed",
+   "place": "US30, Portland",
+   "route": "US30",
+   "milepost": 9.65,
+   "lat": 45.61459,
+   "lon": -122.80169,
+   "start": "2026-11-12T07:03:00.243-08:00",
+   "updated": "2026-11-12T07:09:21-08:00",
+   "source": "ODOT TripCheck"
+  },
   {
    "title": "A disabled vehicle has the left shoulder closed at Jantzen Beach, causing minimal delay to traffic. Use caution.",
    "desc": "",
@@ -147,6 +160,19 @@
    "source": "ODOT TripCheck"
   },
   {
+   "title": "Road maintenance operations with flaggers directing traffic. Prepare to slow or move over for worker safety.",
+   "desc": "",
+   "impact": "Estimated delay under 20 minutes",
+   "place": "ORE127, Intersection with NW Germantown Rd",
+   "route": "OR127",
+   "milepost": 5.84,
+   "lat": 45.57982,
+   "lon": -122.8757,
+   "start": "2026-11-12T07:06:50.927-08:00",
+   "updated": "2026-11-12T07:11:07-08:00",
+   "source": "ODOT TripCheck"
+  },
+  {
    "title": "Bridge work is occurring causing minimal delay to traffic. Use caution.",
    "desc": "Bridge construction is occurring. Prepare to slow. Watch for workers. 3/11/26 - 11/30/26: MP 38.5 to MP 38.63 (Bridge structure ID: 03113A) portable traffic signal in place with 24-hour lane closure. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=23117",
    "impact": "No to Minimum Delay",
@@ -160,7 +186,7 @@
    "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 113,
+ "odot_active_statewide": 117,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
   "alerts": [],
