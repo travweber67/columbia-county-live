@@ -1,62 +1,100 @@
 {
- "fetched_at": "2026-11-12T17:37:50Z",
+ "fetched_at": "2026-11-12T17:42:50Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 212656000,
-   "name": "PANAGIA THALASSINI",
-   "lat": 45.63495,
-   "lon": -122.70372,
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.64333,
+   "lon": -122.75278,
    "sog_kn": 0,
-   "cog": 127.9,
-   "heading": 128,
+   "cog": 252.9,
+   "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-12 17:37:55.91642903 +0000 UTC"
+   "updated": "2026-11-12 17:42:55.877139036 +0000 UTC"
   },
   {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58728,
-   "lon": -122.77008,
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.64718,
+   "lon": -122.73956,
    "sog_kn": 0,
-   "cog": 335.3,
-   "heading": 139,
-   "nav_status": 5,
-   "updated": "2026-11-12 17:38:06.768208727 +0000 UTC"
+   "cog": 227.7,
+   "heading": 289,
+   "nav_status": 12,
+   "updated": "2026-11-12 17:42:56.116170842 +0000 UTC"
   },
   {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64567,
-   "lon": -122.73486,
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.6387,
+   "lon": -122.71175,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-12 17:38:08.051593906 +0000 UTC"
+   "cog": 312.6,
+   "heading": 122,
+   "nav_status": 12,
+   "updated": "2026-11-12 17:42:56.976243112 +0000 UTC"
   },
   {
-   "mmsi": 636015993,
-   "name": "SIEM NEWTON",
-   "lat": 45.63305,
-   "lon": -122.7379,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08055,
+   "lon": -122.90339,
    "sog_kn": 0,
-   "cog": 19,
-   "heading": 136,
+   "cog": 360,
+   "heading": 299,
+   "nav_status": 3,
+   "updated": "2026-11-12 17:42:57.925151001 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19957,
+   "lon": -123.3851,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-12 17:43:00.596714647 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79316,
+   "lon": -122.84321,
+   "sog_kn": 0,
+   "cog": 343.9,
+   "heading": 204,
    "nav_status": 0,
-   "updated": "2026-11-12 17:38:18.034185074 +0000 UTC"
+   "updated": "2026-11-12 17:43:10.105205806 +0000 UTC"
   },
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.9101,
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09631,
+   "lon": -122.93022,
    "sog_kn": 0,
-   "cog": 35.3,
-   "heading": 73,
-   "nav_status": 0,
-   "updated": "2026-11-12 17:38:23.85770385 +0000 UTC"
+   "cog": 187.2,
+   "heading": 70,
+   "nav_status": 3,
+   "updated": "2026-11-12 17:43:14.086043506 +0000 UTC"
+  },
+  {
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 45.64292,
+   "lon": -122.77152,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-12 17:43:15.16378748 +0000 UTC"
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 46.20119,
+   "lon": -123.38705,
+   "type_code": 31,
+   "destination": "US^00D5>?? ???",
+   "updated": "2026-11-12 17:43:20.450173848 +0000 UTC"
   }
  ]
 }
