@@ -8450,7 +8450,7 @@ async function emLoadStatus() {
       : 'No closures or delays reported by any district.');
   } catch (e) { set('em-row-schools', 'School board did not load — open the card for the latest.'); }
   if (typeof airData !== 'undefined' && airData && airData.cur && airData.cur.aqi != null) {
-    set('em-row-air', 'AQI ' + airData.cur.aqi + ' (' + airCat(airData.cur.aqi) + ') near '
+    set('em-row-air', 'AQI ' + airData.cur.aqi + ' (' + airCat(airData.cur.aqi).name + ') near '
       + (airData.town || 'the county') + '.');
   } else {
     set('em-row-air', 'Open the Air & Smoke card for the current reading.');
