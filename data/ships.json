@@ -1,108 +1,91 @@
 {
- "fetched_at": "2026-11-12T01:06:32Z",
+ "fetched_at": "2026-11-12T01:11:32Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047250,
-   "name": "VOYAGER",
-   "lat": 45.74002,
-   "lon": -122.7626,
-   "sog_kn": 6.3,
-   "cog": 359.8,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-12 01:06:38.980377842 +0000 UTC"
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.1995,
+   "lon": -123.38508,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-12 01:11:46.171008167 +0000 UTC"
   },
   {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.60101,
-   "lon": -122.77443,
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.23678,
+   "lon": -123.43007,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-12 01:11:51.37080639 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64347,
+   "lon": -122.7529,
    "sog_kn": 0,
-   "cog": 328.1,
-   "heading": 278,
+   "cog": 203.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 01:11:59.878450248 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.12666,
+   "lon": -122.9956,
+   "sog_kn": 6.9,
+   "cog": 312.8,
+   "heading": 317,
+   "nav_status": 3,
+   "updated": "2026-11-12 01:12:04.348228906 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.6479,
+   "lon": -122.741,
+   "sog_kn": 0,
+   "cog": 112,
+   "heading": 112,
    "nav_status": 5,
-   "updated": "2026-11-12 01:06:39.908238766 +0000 UTC"
+   "updated": "2026-11-12 01:12:09.737428347 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.2,
+   "lon": -123.38551,
+   "sog_kn": 0,
+   "cog": 215.8,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-12 01:12:09.956879725 +0000 UTC"
   },
   {
    "mmsi": 368410780,
    "name": "GAMBLER",
    "lat": 46.10355,
-   "lon": -122.91008,
+   "lon": -122.9101,
    "sog_kn": 0,
-   "cog": 338.1,
-   "heading": 72,
+   "cog": 147,
+   "heading": 71,
    "nav_status": 0,
-   "updated": "2026-11-12 01:07:00.315250297 +0000 UTC",
-   "type_code": 52,
-   "destination": "US^0T0P>035F"
+   "updated": "2026-11-12 01:12:10.24939782 +0000 UTC"
   },
   {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08025,
-   "lon": -122.903,
-   "sog_kn": 0,
-   "cog": 136.7,
-   "heading": 136,
-   "nav_status": 5,
-   "updated": "2026-11-12 01:06:53.574333738 +0000 UTC"
-  },
-  {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 46.17246,
-   "lon": -123.10631,
-   "sog_kn": 0.3,
-   "cog": 332.9,
-   "heading": 70,
-   "nav_status": 1,
-   "updated": "2026-11-12 01:07:01.510705184 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00905,
-   "lon": -122.84822,
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60759,
+   "lon": -122.67752,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-12 01:07:06.55101664 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.08062,
-   "lon": -122.90327,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 316,
-   "nav_status": 3,
-   "updated": "2026-11-12 01:07:06.57423185 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08986,
-   "lon": -122.92899,
-   "sog_kn": 0,
-   "cog": 212,
-   "heading": 106,
-   "nav_status": 0,
-   "updated": "2026-11-12 01:07:08.086079917 +0000 UTC"
-  },
-  {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.6117,
-   "lon": -122.63469,
-   "sog_kn": 0,
-   "cog": 106.1,
-   "heading": 359,
-   "nav_status": 0,
-   "updated": "2026-11-12 01:07:10.218012802 +0000 UTC"
+   "updated": "2026-11-12 01:12:13.484772527 +0000 UTC"
   }
  ]
 }
