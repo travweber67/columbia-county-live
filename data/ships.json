@@ -1,49 +1,99 @@
 {
- "fetched_at": "2026-11-12T10:22:15Z",
+ "fetched_at": "2026-11-12T10:27:15Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.64708,
-   "lon": -122.73962,
-   "sog_kn": 0,
-   "cog": 296.1,
-   "heading": 296,
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79314,
+   "lon": -122.84323,
+   "type_code": 57,
+   "destination": "US^0UWG>?? ???",
+   "updated": "2026-11-12 10:27:21.931245734 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.99035,
+   "lon": -122.8407,
+   "sog_kn": 3,
+   "cog": 153.3,
+   "heading": 155,
    "nav_status": 12,
-   "updated": "2026-11-12 10:22:30.908204854 +0000 UTC"
+   "updated": "2026-11-12 10:27:24.747935272 +0000 UTC"
   },
   {
-   "mmsi": 367425870,
-   "name": "HUSKY",
-   "lat": 45.65033,
-   "lon": -122.74756,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16872,
+   "lon": -123.09048,
+   "sog_kn": 0.7,
+   "cog": 127.8,
+   "heading": 129,
+   "nav_status": 3,
+   "updated": "2026-11-12 10:27:25.77338133 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35742,
    "sog_kn": 0,
-   "cog": 170.9,
-   "heading": 511,
+   "cog": 156.3,
+   "heading": 135,
    "nav_status": 15,
-   "updated": "2026-11-12 10:22:32.224964363 +0000 UTC"
+   "updated": "2026-11-12 10:27:25.940823329 +0000 UTC"
   },
   {
-   "mmsi": 368442720,
-   "name": "RUSTLER",
-   "lat": 45.60833,
-   "lon": -122.68621,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37712,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 0,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-12 10:22:47.274948081 +0000 UTC"
+   "updated": "2026-11-12 10:27:28.787186339 +0000 UTC"
   },
   {
-   "mmsi": 367667060,
-   "name": "GRANITE POINT",
-   "lat": 45.64728,
-   "lon": -122.73993,
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10892,
+   "lon": -122.96129,
+   "sog_kn": 0.1,
+   "cog": 256.3,
+   "heading": 130,
+   "nav_status": 5,
+   "updated": "2026-11-12 10:27:32.08371345 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61292,
+   "type_code": 0,
+   "updated": "2026-11-12 10:27:32.76533973 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08049,
+   "lon": -122.90285,
    "type_code": 52,
-   "destination": "SRT PASCO",
-   "updated": "2026-11-12 10:22:53.725852294 +0000 UTC"
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-12 10:27:35.175988405 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.60097,
+   "lon": -122.77441,
+   "sog_kn": 0.1,
+   "cog": 323.9,
+   "heading": 277,
+   "nav_status": 5,
+   "updated": "2026-11-12 10:27:39.854593143 +0000 UTC"
   }
  ]
 }
