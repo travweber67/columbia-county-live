@@ -1,88 +1,128 @@
 {
- "fetched_at": "2026-11-12T14:27:33Z",
+ "fetched_at": "2026-11-12T14:32:33Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 636021177,
+   "name": "FORTUNE COOKIE",
+   "lat": 45.98375,
+   "lon": -122.83491,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-12 14:32:39.19550454 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10355,
+   "lon": -122.91008,
+   "type_code": 52,
+   "destination": "US^0T0P>035F",
+   "updated": "2026-11-12 14:32:40.403749925 +0000 UTC"
+  },
+  {
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 45.64297,
+   "lon": -122.77153,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-12 14:32:42.709003752 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.04401,
+   "lon": -122.87692,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-12 14:32:47.315872876 +0000 UTC"
+  },
   {
    "mmsi": 477050900,
    "name": "MING DE",
-   "lat": 46.02715,
+   "lat": 46.02716,
    "lon": -122.86957,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-12 14:27:29.138304701 +0000 UTC"
-  },
-  {
-   "mmsi": 367575580,
-   "name": "DIANE B.",
-   "lat": 46.12346,
-   "lon": -122.99102,
-   "sog_kn": 8.8,
-   "cog": 309.8,
-   "heading": 308,
-   "nav_status": 5,
-   "updated": "2026-11-12 14:27:29.281095999 +0000 UTC"
-  },
-  {
-   "mmsi": 368136580,
-   "name": "ORIN L GREEN",
-   "lat": 46.08089,
-   "lon": -122.90246,
-   "sog_kn": 6.8,
-   "cog": 133.1,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-12 14:27:29.588854507 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15326,
-   "lon": -123.37714,
-   "sog_kn": 0.5,
-   "cog": 31,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-12 14:27:30.033322744 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08049,
-   "lon": -122.90287,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-12 14:27:31.951188382 +0000 UTC"
-  },
-  {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10893,
-   "lon": -122.96123,
    "sog_kn": 0,
-   "cog": 175.8,
-   "heading": 130,
+   "cog": 319.8,
+   "heading": 138,
    "nav_status": 5,
-   "updated": "2026-11-12 14:27:32.0972308 +0000 UTC"
+   "updated": "2026-11-12 14:32:47.485858387 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16594,
+   "lon": -123.08557,
+   "sog_kn": 1.2,
+   "cog": 139.5,
+   "heading": 126,
+   "nav_status": 3,
+   "updated": "2026-11-12 14:32:48.680000318 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00893,
+   "lon": -122.84841,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-12 14:32:55.852415307 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.63562,
+   "lon": -122.71735,
+   "sog_kn": 6.5,
+   "cog": 293.9,
+   "heading": 292,
+   "nav_status": 12,
+   "updated": "2026-11-12 14:32:55.861076158 +0000 UTC"
+  },
+  {
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.62589,
+   "lon": -122.68863,
+   "sog_kn": 5.5,
+   "cog": 136.5,
+   "heading": 142,
+   "nav_status": 0,
+   "updated": "2026-11-12 14:32:59.284145784 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60748,
+   "lon": -122.67751,
+   "type_code": 50,
+   "updated": "2026-11-12 14:32:59.351722598 +0000 UTC"
   },
   {
    "mmsi": 366972000,
    "name": "ESSAYONS",
-   "lat": 46.272,
-   "lon": -123.49784,
-   "sog_kn": 12.4,
-   "cog": 75.1,
-   "heading": 80,
+   "lat": 46.26973,
+   "lon": -123.47075,
+   "sog_kn": 12.5,
+   "cog": 111.6,
+   "heading": 110,
    "nav_status": 3,
-   "updated": "2026-11-12 14:27:32.257806665 +0000 UTC"
+   "updated": "2026-11-12 14:33:03.606276937 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35744,
-   "type_code": 30,
-   "updated": "2026-11-12 14:27:46.343431458 +0000 UTC"
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08049,
+   "lon": -122.90328,
+   "sog_kn": 0,
+   "cog": 341.4,
+   "heading": 314,
+   "nav_status": 0,
+   "updated": "2026-11-12 14:33:07.465590236 +0000 UTC"
   }
  ]
 }
