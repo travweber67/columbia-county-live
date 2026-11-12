@@ -1,58 +1,89 @@
 {
- "fetched_at": "2026-11-12T08:57:09Z",
+ "fetched_at": "2026-11-12T09:02:09Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58083,
+   "lon": -122.76007,
+   "sog_kn": 0,
+   "cog": 345.4,
+   "heading": 125,
+   "nav_status": 5,
+   "updated": "2026-11-12 09:02:16.004715187 +0000 UTC"
+  },
   {
    "mmsi": 367653630,
    "name": "OSCAR B",
    "lat": 46.15344,
-   "lon": -123.37711,
+   "lon": -123.37713,
    "sog_kn": 0,
    "cog": 0,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-12 08:57:17.856891451 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08984,
-   "lon": -122.92899,
-   "sog_kn": 0,
-   "cog": 191.9,
-   "heading": 100,
-   "nav_status": 0,
-   "updated": "2026-11-12 08:57:18.424725541 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10792,
-   "lon": -122.95904,
-   "type_code": 50,
-   "destination": "CR HARBOR OPS",
-   "updated": "2026-11-12 08:57:21.926379879 +0000 UTC"
+   "updated": "2026-11-12 09:02:17.113485978 +0000 UTC"
   },
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
    "lat": 46.0805,
-   "lon": -122.90288,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-12 08:57:32.095018605 +0000 UTC"
+   "lon": -122.90287,
+   "sog_kn": 0,
+   "cog": 287.2,
+   "heading": 133,
+   "nav_status": 0,
+   "updated": "2026-11-12 09:02:23.15947964 +0000 UTC"
+  },
+  {
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10891,
+   "lon": -122.96127,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-12 09:02:23.312488698 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09624,
+   "lon": -122.9308,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 78,
+   "nav_status": 3,
+   "updated": "2026-11-12 09:02:23.883118599 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19995,
+   "lon": -123.38552,
+   "sog_kn": 0,
+   "cog": 14,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-12 09:02:30.341111415 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79317,
+   "lon": -122.84321,
+   "type_code": 57,
+   "destination": "US^0UWG>?? ???",
+   "updated": "2026-11-12 09:02:35.550321952 +0000 UTC"
   },
   {
    "mmsi": 352006999,
    "name": "WABI SABI",
-   "lat": 46.1772,
-   "lon": -123.11175,
-   "sog_kn": 0.2,
-   "cog": 165.9,
-   "heading": 136,
-   "nav_status": 1,
-   "updated": "2026-11-12 08:57:35.822108436 +0000 UTC"
+   "lat": 46.17706,
+   "lon": -123.11173,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-12 09:02:40.111688964 +0000 UTC"
   }
  ]
 }
