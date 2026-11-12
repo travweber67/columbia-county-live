@@ -1,82 +1,46 @@
 {
- "fetched_at": "2026-11-12T09:12:10Z",
+ "fetched_at": "2026-11-12T09:17:10Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15971,
-   "lon": -123.40541,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15343,
+   "lon": -123.37715,
+   "type_code": 99,
+   "updated": "2026-11-12 09:17:22.844017759 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.2,
+   "lon": -123.38552,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-12 09:17:24.396099527 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79315,
+   "lon": -122.84323,
+   "sog_kn": 0,
+   "cog": 0.9,
+   "heading": 209,
+   "nav_status": 12,
+   "updated": "2026-11-12 09:17:25.513294574 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08066,
+   "lon": -122.90325,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 136,
-   "nav_status": 0,
-   "updated": "2026-11-12 09:12:13.594103763 +0000 UTC"
-  },
-  {
-   "mmsi": 367425870,
-   "name": "HUSKY",
-   "lat": 45.65028,
-   "lon": -122.74751,
-   "sog_kn": 0,
-   "cog": 311.2,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-12 09:12:21.709353032 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08054,
-   "lon": -122.90329,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-12 09:12:28.056023549 +0000 UTC"
-  },
-  {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 46.20116,
-   "lon": -123.38705,
-   "sog_kn": 0,
-   "cog": 275.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-12 09:12:33.312038859 +0000 UTC"
-  },
-  {
-   "mmsi": 636021177,
-   "name": "FORTUNE COOKIE",
-   "lat": 45.98381,
-   "lon": -122.83494,
-   "sog_kn": 0,
-   "cog": 322.1,
-   "heading": 152,
-   "nav_status": 5,
-   "updated": "2026-11-12 09:12:35.168870594 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.16537,
-   "lon": -123.08328,
-   "sog_kn": 1.5,
-   "cog": 302.2,
-   "heading": 293,
+   "heading": 318,
    "nav_status": 3,
-   "updated": "2026-11-12 09:12:35.170679324 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58752,
-   "lon": -122.77048,
-   "sog_kn": 0,
-   "cog": 290.6,
-   "heading": 141,
-   "nav_status": 0,
-   "updated": "2026-11-12 09:12:43.583418139 +0000 UTC"
+   "updated": "2026-11-12 09:17:28.524961586 +0000 UTC"
   }
  ]
 }
