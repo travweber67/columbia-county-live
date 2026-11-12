@@ -1,93 +1,96 @@
 {
- "fetched_at": "2026-11-12T16:42:45Z",
+ "fetched_at": "2026-11-12T16:47:45Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07073,
-   "lon": -122.89439,
-   "sog_kn": 0,
-   "cog": 3.5,
-   "heading": 156,
-   "nav_status": 0,
-   "updated": "2026-11-12 16:42:52.506295879 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.07638,
-   "lon": -122.89613,
-   "sog_kn": 0,
-   "cog": 115.8,
-   "heading": 115,
-   "nav_status": 5,
-   "updated": "2026-11-12 16:42:54.456588762 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.09631,
-   "lon": -122.93001,
-   "sog_kn": 0,
-   "cog": 5.4,
-   "heading": 70,
-   "nav_status": 3,
-   "updated": "2026-11-12 16:42:54.522040588 +0000 UTC"
+   "mmsi": 368328430,
+   "name": "MCR 8",
+   "lat": 45.58479,
+   "lon": -122.76626,
+   "type_code": 33,
+   "updated": "2026-11-12 16:47:50.158122017 +0000 UTC"
   },
   {
    "mmsi": 431300000,
    "name": "TRITON HIGHWAY",
-   "lat": 45.59771,
-   "lon": -122.77497,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-12 16:43:03.343686928 +0000 UTC"
+   "lat": 45.5977,
+   "lon": -122.77496,
+   "sog_kn": 0,
+   "cog": 82.4,
+   "heading": 329,
+   "nav_status": 5,
+   "updated": "2026-11-12 16:47:53.486446347 +0000 UTC"
   },
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.1927,
-   "lon": -123.42921,
-   "sog_kn": 2.8,
-   "cog": 198,
-   "heading": 203,
-   "nav_status": 3,
-   "updated": "2026-11-12 16:43:12.807648769 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.16281,
-   "lon": -123.07704,
-   "sog_kn": 0.6,
-   "cog": 110.9,
-   "heading": 114,
-   "nav_status": 3,
-   "updated": "2026-11-12 16:43:14.771268761 +0000 UTC"
-  },
-  {
-   "mmsi": 368328430,
-   "name": "MCR 8",
-   "lat": 45.58475,
-   "lon": -122.76622,
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00899,
+   "lon": -122.84828,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-12 16:43:15.022371227 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-12 16:48:18.884942965 +0000 UTC",
+   "type_code": 31,
+   "destination": "HARBOROPPS-"
   },
   {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.79317,
-   "lon": -122.84322,
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09046,
+   "lon": -122.93236,
    "sog_kn": 0,
-   "cog": 295.8,
-   "heading": 205,
-   "nav_status": 0,
-   "updated": "2026-11-12 16:43:18.96024563 +0000 UTC"
+   "cog": 298.4,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-12 16:48:05.76691193 +0000 UTC",
+   "type_code": 52,
+   "destination": "COL RIVER"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.6387,
+   "lon": -122.71175,
+   "sog_kn": 0,
+   "cog": 312.6,
+   "heading": 121,
+   "nav_status": 12,
+   "updated": "2026-11-12 16:48:06.37563388 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08031,
+   "lon": -122.90341,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 269,
+   "nav_status": 3,
+   "updated": "2026-11-12 16:48:06.878856053 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64734,
+   "lon": -122.73956,
+   "sog_kn": 0,
+   "cog": 198.2,
+   "heading": 198,
+   "nav_status": 12,
+   "updated": "2026-11-12 16:48:10.474296014 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64345,
+   "lon": -122.75288,
+   "sog_kn": 0.1,
+   "cog": 335.2,
+   "heading": 226,
+   "nav_status": 5,
+   "updated": "2026-11-12 16:48:21.587951782 +0000 UTC"
   }
  ]
 }
