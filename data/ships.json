@@ -1,51 +1,113 @@
 {
- "fetched_at": "2026-11-13T17:44:37Z",
+ "fetched_at": "2026-11-13T17:49:07Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58131,
+   "lon": -122.76065,
+   "type_code": 57,
+   "destination": "PASCO",
+   "updated": "2026-11-13 17:50:05.513395219 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08983,
+   "lon": -122.92902,
+   "sog_kn": 0,
+   "cog": 266.9,
+   "heading": 98,
+   "nav_status": 0,
+   "updated": "2026-11-13 17:50:07.730013681 +0000 UTC"
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.6485,
+   "lon": -122.75489,
+   "sog_kn": 5.1,
+   "cog": 291.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-13 17:50:10.888701259 +0000 UTC"
+  },
+  {
+   "mmsi": 367327440,
+   "name": "KATHRYN B.",
+   "lat": 46.09048,
+   "lon": -122.93265,
+   "sog_kn": 0,
+   "cog": 295.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-13 17:50:12.765082722 +0000 UTC"
+  },
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
-   "lat": 46.08093,
-   "lon": -122.90353,
+   "lat": 46.08095,
+   "lon": -122.90339,
    "sog_kn": 0,
-   "cog": 64.9,
-   "heading": 127,
+   "cog": 100.2,
+   "heading": 166,
    "nav_status": 0,
-   "updated": "2026-11-13 17:44:53.703174709 +0000 UTC"
+   "updated": "2026-11-13 17:50:14.13266975 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.6501,
-   "lon": -122.74753,
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64539,
+   "lon": -122.73506,
    "sog_kn": 0,
-   "cog": 289.2,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-13 17:44:59.248663615 +0000 UTC"
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-13 17:50:15.084462262 +0000 UTC"
   },
   {
-   "mmsi": 368328430,
-   "name": "MCR 8",
-   "lat": 45.58479,
-   "lon": -122.76623,
+   "mmsi": 368442720,
+   "name": "RUSTLER",
+   "lat": 45.60831,
+   "lon": -122.68619,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-13 17:45:11.109283346 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-13 17:50:17.971485204 +0000 UTC"
   },
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.9101,
-   "sog_kn": 0,
-   "cog": 73.1,
-   "heading": 72,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.081,
+   "lon": -122.90378,
+   "sog_kn": 0.2,
+   "cog": 27.9,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-13 17:45:11.366884988 +0000 UTC"
+   "updated": "2026-11-13 17:50:22.323186095 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19998,
+   "lon": -123.38543,
+   "sog_kn": 0,
+   "cog": 173.4,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-13 17:50:23.261486389 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.044,
+   "lon": -122.87692,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-13 17:50:28.464223139 +0000 UTC"
   }
  ]
 }
