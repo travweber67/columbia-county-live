@@ -1,40 +1,62 @@
 {
- "fetched_at": "2026-11-13T01:33:28Z",
+ "fetched_at": "2026-11-13T01:38:29Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10892,
-   "lon": -122.96128,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35743,
+   "sog_kn": 0.1,
+   "cog": 228.6,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-13 01:38:25.556163607 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58754,
+   "lon": -122.77049,
    "sog_kn": 0,
-   "cog": 204.6,
-   "heading": 129,
-   "nav_status": 5,
-   "updated": "2026-11-13 01:33:32.063362057 +0000 UTC"
-  },
-  {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 45.93511,
-   "lon": -122.80473,
-   "sog_kn": 12.9,
-   "cog": 173.3,
-   "heading": 178,
+   "cog": 216.4,
+   "heading": 139,
    "nav_status": 0,
-   "updated": "2026-11-13 01:33:40.07086892 +0000 UTC"
+   "updated": "2026-11-13 01:38:27.94462417 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.16019,
-   "lon": -123.0703,
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60622,
+   "lon": -122.64016,
    "sog_kn": 7,
-   "cog": 295.7,
+   "cog": 321.9,
+   "heading": 326,
+   "nav_status": 0,
+   "updated": "2026-11-13 01:38:52.603858971 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61198,
+   "lon": -122.64536,
+   "sog_kn": 0,
+   "cog": 188.9,
    "heading": 296,
-   "nav_status": 3,
-   "updated": "2026-11-13 01:33:43.529289832 +0000 UTC"
+   "nav_status": 5,
+   "updated": "2026-11-13 01:38:42.025049963 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.6473,
+   "lon": -122.73994,
+   "sog_kn": 0,
+   "cog": 210,
+   "heading": 16,
+   "nav_status": 5,
+   "updated": "2026-11-13 01:39:05.659499903 +0000 UTC"
   }
  ]
 }
