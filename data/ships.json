@@ -1,64 +1,46 @@
 {
- "fetched_at": "2026-11-13T18:34:41Z",
+ "fetched_at": "2026-11-13T18:39:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368442720,
-   "name": "RUSTLER",
-   "lat": 45.60831,
-   "lon": -122.68617,
-   "type_code": 52,
-   "destination": "AXIOS MARINE OPS",
-   "updated": "2026-11-13 18:34:51.124752067 +0000 UTC"
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.64385,
+   "lon": -122.7258,
+   "sog_kn": 0,
+   "cog": 209.6,
+   "heading": 117,
+   "nav_status": 0,
+   "updated": "2026-11-13 18:39:48.639224917 +0000 UTC"
   },
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15341,
-   "lon": -123.37713,
-   "type_code": 99,
-   "updated": "2026-11-13 18:34:51.349465939 +0000 UTC"
+   "mmsi": 477050900,
+   "name": "MING DE",
+   "lat": 45.99848,
+   "lon": -122.85182,
+   "type_code": 70,
+   "destination": "CN QDG",
+   "updated": "2026-11-13 18:40:04.784703836 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.64311,
+   "lon": -122.74431,
+   "sog_kn": 0.1,
+   "cog": 45.6,
+   "heading": 290,
+   "nav_status": 0,
+   "updated": "2026-11-13 18:40:06.689887522 +0000 UTC"
   },
   {
    "mmsi": 367669550,
    "name": "ALASKA CHALLENGER",
-   "lat": 46.1772,
+   "lat": 46.17718,
    "lon": -123.35744,
-   "sog_kn": 0,
-   "cog": 326.9,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-13 18:34:54.879772553 +0000 UTC"
-  },
-  {
-   "mmsi": 368458550,
-   "name": "SKAGIT",
-   "lat": 45.58423,
-   "lon": -122.76626,
-   "type_code": 52,
-   "destination": "AAC",
-   "updated": "2026-11-13 18:35:03.350504744 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.21062,
-   "lon": -123.42686,
-   "sog_kn": 1.5,
-   "cog": 190.8,
-   "heading": 188,
-   "nav_status": 3,
-   "updated": "2026-11-13 18:35:05.719775228 +0000 UTC"
-  },
-  {
-   "mmsi": 373989000,
-   "name": "AFRICAN CARDINAL",
-   "lat": 45.63927,
-   "lon": -122.77775,
-   "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-13 18:35:12.839087632 +0000 UTC"
+   "type_code": 30,
+   "updated": "2026-11-13 18:40:11.787548492 +0000 UTC"
   }
  ]
 }
