@@ -1,51 +1,90 @@
 {
- "fetched_at": "2026-11-13T17:14:35Z",
+ "fetched_at": "2026-11-13T17:19:06Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.14355,
+   "lon": -123.3838,
+   "type_code": 99,
+   "updated": "2026-11-13 17:21:47.117131512 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.97832,
+   "lon": -122.83656,
+   "sog_kn": 8.4,
+   "cog": 143.4,
+   "heading": 142,
+   "nav_status": 5,
+   "updated": "2026-11-13 17:21:47.800989251 +0000 UTC"
+  },
+  {
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 45.63028,
+   "lon": -122.69565,
+   "sog_kn": 0,
+   "cog": 60.6,
+   "heading": 128,
+   "nav_status": 5,
+   "updated": "2026-11-13 17:21:49.450649214 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79316,
+   "lon": -122.84322,
+   "sog_kn": 0,
+   "cog": 270.2,
+   "heading": 208,
+   "nav_status": 0,
+   "updated": "2026-11-13 17:21:49.678971727 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.1618,
+   "lon": -123.40836,
+   "sog_kn": 0,
+   "cog": 315.4,
+   "heading": 315,
+   "nav_status": 0,
+   "updated": "2026-11-13 17:22:01.000378987 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.06769,
+   "lon": -122.88725,
+   "type_code": 52,
+   "destination": "CSR OPS",
+   "updated": "2026-11-13 17:22:05.212090624 +0000 UTC"
+  },
   {
    "mmsi": 368442720,
    "name": "RUSTLER",
    "lat": 45.60834,
-   "lon": -122.68619,
+   "lon": -122.68618,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-13 17:14:38.065100414 +0000 UTC"
+   "updated": "2026-11-13 17:22:06.833562639 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65008,
-   "lon": -122.74755,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20001,
+   "lon": -123.38541,
    "sog_kn": 0,
-   "cog": 287,
+   "cog": 0,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-13 17:14:39.428896991 +0000 UTC"
-  },
-  {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.61202,
-   "lon": -122.64536,
-   "sog_kn": 0,
-   "cog": 303.4,
-   "heading": 296,
-   "nav_status": 5,
-   "updated": "2026-11-13 17:14:42.845074048 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10789,
-   "lon": -122.959,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-13 17:14:45.915977959 +0000 UTC"
+   "nav_status": 8,
+   "updated": "2026-11-13 17:22:14.171159117 +0000 UTC"
   }
  ]
 }
