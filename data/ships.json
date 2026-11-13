@@ -1,80 +1,58 @@
 {
- "fetched_at": "2026-11-13T20:59:51Z",
+ "fetched_at": "2026-11-13T21:04:52Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 636015993,
-   "name": "SIEM NEWTON",
-   "lat": 45.63302,
-   "lon": -122.73787,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.64311,
+   "lon": -122.74432,
+   "type_code": 52,
+   "destination": "PDX/VANC.OPS.",
+   "updated": "2026-11-13 21:05:00.800344679 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.164,
+   "lon": -123.40333,
+   "sog_kn": 0.2,
+   "cog": 353,
+   "heading": 289,
+   "nav_status": 0,
+   "updated": "2026-11-13 21:05:13.591787654 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08192,
+   "lon": -122.90258,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-13 21:05:14.266978063 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58728,
+   "lon": -122.77006,
    "sog_kn": 0,
-   "cog": 17,
-   "heading": 136,
-   "nav_status": 0,
-   "updated": "2026-11-13 20:59:57.435007602 +0000 UTC"
-  },
-  {
-   "mmsi": 366396000,
-   "name": "NAT GEO SEA LION",
-   "lat": 46.14486,
-   "lon": -123.29129,
-   "sog_kn": 9.7,
-   "cog": 72.1,
-   "heading": 72,
-   "nav_status": 0,
-   "updated": "2026-11-13 21:00:10.57509156 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64596,
-   "lon": -122.75574,
-   "sog_kn": 0.1,
-   "cog": 150,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-13 21:00:06.563458307 +0000 UTC"
-  },
-  {
-   "mmsi": 563331600,
-   "name": "BELLE LUNE",
-   "lat": 46.17049,
-   "lon": -123.09981,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-13 21:00:08.012954867 +0000 UTC"
+   "cog": 357.3,
+   "heading": 139,
+   "nav_status": 5,
+   "updated": "2026-11-13 21:05:16.069716722 +0000 UTC"
   },
   {
    "mmsi": 367608420,
    "name": "PETER J BRIX",
-   "lat": 46.08976,
-   "lon": -122.92905,
+   "lat": 46.08975,
+   "lon": -122.92901,
    "sog_kn": 0,
-   "cog": 311.9,
+   "cog": 237.3,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-13 21:00:13.282853664 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.64384,
-   "lon": -122.72579,
-   "sog_kn": 0,
-   "cog": 349.8,
-   "heading": 115,
-   "nav_status": 12,
-   "updated": "2026-11-13 21:00:14.450715034 +0000 UTC"
-  },
-  {
-   "mmsi": 368442720,
-   "name": "RUSTLER",
-   "lat": 45.60834,
-   "lon": -122.68621,
-   "type_code": 52,
-   "destination": "AXIOS MARINE OPS",
-   "updated": "2026-11-13 21:00:25.205958943 +0000 UTC"
+   "updated": "2026-11-13 21:05:24.684066406 +0000 UTC"
   }
  ]
 }
