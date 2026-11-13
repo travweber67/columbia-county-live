@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-13T04:48:44Z",
+ "fetched_at": "2026-11-13T04:50:22Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -8,8 +8,7 @@
   },
   {
    "name": "WSDOT WZDx work zones (keyless)",
-   "status": "error",
-   "note": "HTTP 0"
+   "status": "ok"
   },
   {
    "name": "WSDOT Highway Alerts (free code)",
@@ -17,19 +16,6 @@
   }
  ],
  "incidents": [
-  {
-   "title": "Road construction is occurring causing minimal delay to traffic. Use caution and watch for workers.",
-   "desc": "Timber felling is occurring, prepare to slow or stop. Watch for workers, use caution, and prepare to slow down in the work zone.",
-   "impact": "No to Minimum Delay",
-   "place": "ORE202, 5 miles North of Birkenfeld",
-   "route": "OR202",
-   "milepost": 36.0,
-   "lat": 45.98244,
-   "lon": -123.41492,
-   "start": "2026-11-03T15:57:01.297-08:00",
-   "updated": "2026-11-03T15:58:13-08:00",
-   "source": "ODOT TripCheck"
-  },
   {
    "title": "Traffic Impacts: NE Lombard Street reduced to one lane in each direction",
    "desc": "Project Description: Closures are required for PBOT\u2019s NE 42nd Avenue Bridge Replacement, which will make a seismically safe crossing for an emergency route and provide better access for freight, pedestrians, and people biking on the bridge and NE Lombard Street below the span. Link to Additional Information: https://www.portland.gov/transportation/pbot-projects/construction/ne-42nd-avenue-bridge-replacement-over-lombard-street?utm_medium=email&utm_source=govdelivery",
@@ -96,16 +82,16 @@
    "source": "ODOT TripCheck"
   },
   {
-   "title": "Traffic Impacts: Anticipate nighttime lane closures on the I-5 and I-205/OR217.",
-   "desc": "Project Description: This project improves system operations in the region by replacing and upgrading equipment that is beyond its service life. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=22867",
+   "title": "Road construction is occurring causing minimal delay to traffic. Use caution and watch for workers.",
+   "desc": "Timber felling is occurring, prepare to slow or stop. Watch for workers, use caution, and prepare to slow down in the work zone.",
    "impact": "No to Minimum Delay",
-   "place": "I-5, 1 mile South of Portland, Intersection with Victory Blvd",
-   "route": "I5",
-   "milepost": 306.0,
-   "lat": 45.58519,
-   "lon": -122.67975,
-   "start": "2026-09-09T13:52:01.003-07:00",
-   "updated": "2026-10-30T11:37:08-07:00",
+   "place": "ORE202, 5 miles North of Birkenfeld",
+   "route": "OR202",
+   "milepost": 36.0,
+   "lat": 45.98244,
+   "lon": -123.41492,
+   "start": "2026-11-03T15:57:01.297-08:00",
+   "updated": "2026-11-03T15:58:13-08:00",
    "source": "ODOT TripCheck"
   },
   {
@@ -119,6 +105,19 @@
    "lon": -123.09797,
    "start": "2026-06-16T07:31:51.18-07:00",
    "updated": "2026-11-05T11:47:57-08:00",
+   "source": "ODOT TripCheck"
+  },
+  {
+   "title": "Traffic Impacts: Anticipate nighttime lane closures on the I-5 and I-205/OR217.",
+   "desc": "Project Description: This project improves system operations in the region by replacing and upgrading equipment that is beyond its service life. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=22867",
+   "impact": "No to Minimum Delay",
+   "place": "I-5, 1 mile South of Portland, Intersection with Victory Blvd",
+   "route": "I5",
+   "milepost": 306.0,
+   "lat": 45.58519,
+   "lon": -122.67975,
+   "start": "2026-09-09T13:52:01.003-07:00",
+   "updated": "2026-10-30T11:37:08-07:00",
    "source": "ODOT TripCheck"
   },
   {
@@ -148,7 +147,7 @@
    "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 119,
+ "odot_active_statewide": 120,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
   "alerts": [],
