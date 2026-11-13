@@ -1,60 +1,70 @@
 {
- "fetched_at": "2026-11-13T08:54:00Z",
+ "fetched_at": "2026-11-13T08:59:00Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.20143,
-   "lon": -123.42731,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-13 08:54:13.764654542 +0000 UTC"
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.16517,
+   "lon": -123.40687,
+   "sog_kn": 5.8,
+   "cog": 216.8,
+   "heading": 199,
+   "nav_status": 0,
+   "updated": "2026-11-13 08:59:06.678805526 +0000 UTC"
   },
   {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.79317,
-   "lon": -122.84321,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37711,
+   "type_code": 99,
+   "updated": "2026-11-13 08:59:09.348550984 +0000 UTC"
+  },
+  {
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.79464,
+   "lon": -122.84156,
+   "sog_kn": 0.1,
+   "cog": 126.4,
+   "heading": 22,
+   "nav_status": 0,
+   "updated": "2026-11-13 08:59:11.403334258 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08072,
+   "lon": -122.90314,
+   "sog_kn": 0.1,
+   "cog": 267.4,
+   "heading": 147,
+   "nav_status": 0,
+   "updated": "2026-11-13 08:59:13.674842993 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35742,
    "sog_kn": 0,
-   "cog": 75.3,
-   "heading": 216,
-   "nav_status": 12,
-   "updated": "2026-11-13 08:54:14.763593426 +0000 UTC"
+   "cog": 249.4,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-13 08:59:26.25334919 +0000 UTC"
   },
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08078,
-   "lon": -122.9033,
-   "sog_kn": 0.2,
-   "cog": 48.5,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-13 08:54:16.020448004 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.63919,
-   "lon": -122.72331,
-   "sog_kn": 2.5,
-   "cog": 297.4,
-   "heading": 288,
-   "nav_status": 12,
-   "updated": "2026-11-13 08:54:16.469295699 +0000 UTC"
-  },
-  {
-   "mmsi": 563017700,
-   "name": "ROSTELLA",
-   "lat": 46.10424,
-   "lon": -122.95919,
-   "sog_kn": 8.6,
-   "cog": 297.6,
-   "heading": 296,
-   "nav_status": 0,
-   "updated": "2026-11-13 08:54:17.09183922 +0000 UTC"
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08091,
+   "lon": -122.9035,
+   "sog_kn": 0.4,
+   "cog": 234.3,
+   "heading": 326,
+   "nav_status": 3,
+   "updated": "2026-11-13 08:59:27.349465663 +0000 UTC"
   }
  ]
 }
