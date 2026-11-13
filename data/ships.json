@@ -1,70 +1,113 @@
 {
- "fetched_at": "2026-11-13T04:50:22Z",
+ "fetched_at": "2026-11-13T04:53:44Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.64347,
+   "lon": -122.75287,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-13 04:53:51.355184566 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19955,
+   "lon": -123.385,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-13 04:53:51.981957539 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.60101,
+   "lon": -122.77485,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-13 04:53:53.773291015 +0000 UTC"
+  },
   {
    "mmsi": 367653630,
    "name": "OSCAR B",
    "lat": 46.1534,
    "lon": -123.37718,
-   "type_code": 99,
-   "updated": "2026-11-13 04:52:01.258960339 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.65436,
-   "lon": -122.7659,
-   "type_code": 57,
-   "destination": "VANCOUER,WA",
-   "updated": "2026-11-13 04:52:00.70923536 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08984,
-   "lon": -122.92902,
-   "type_code": 52,
-   "destination": "CSR OPS",
-   "updated": "2026-11-13 04:52:17.605393043 +0000 UTC",
    "sog_kn": 0,
-   "cog": 9.3,
-   "heading": 100,
-   "nav_status": 0
+   "cog": 199.8,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-13 04:53:56.849231928 +0000 UTC"
   },
   {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09649,
-   "lon": -122.92969,
-   "sog_kn": 0,
-   "cog": 188.6,
-   "heading": 69,
-   "nav_status": 3,
-   "updated": "2026-11-13 04:52:05.858353247 +0000 UTC"
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.62047,
+   "lon": -122.78821,
+   "sog_kn": 1.2,
+   "cog": 337.7,
+   "heading": 2,
+   "nav_status": 0,
+   "updated": "2026-11-13 04:54:10.510609333 +0000 UTC"
   },
   {
-   "mmsi": 636026991,
-   "name": "ALTHEA",
-   "lat": 45.64369,
-   "lon": -122.74079,
-   "sog_kn": 0,
-   "cog": 261.4,
-   "heading": 114,
+   "mmsi": 563331600,
+   "name": "BELLE LUNE",
+   "lat": 46.17064,
+   "lon": -123.09973,
+   "sog_kn": 0.1,
+   "cog": 44.8,
+   "heading": 117,
    "nav_status": 1,
-   "updated": "2026-11-13 04:52:11.972874178 +0000 UTC"
+   "updated": "2026-11-13 04:54:08.11147966 +0000 UTC",
+   "type_code": 70,
+   "destination": "US KAM"
   },
   {
-   "mmsi": 367645170,
-   "name": "CROWN POINT",
-   "lat": 45.64744,
-   "lon": -122.7394,
-   "sog_kn": 0,
-   "cog": 290.9,
-   "heading": 285,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.08051,
+   "lon": -122.9034,
+   "sog_kn": 0.1,
+   "cog": 185.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-13 04:54:10.170201404 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.85943,
+   "lon": -122.78462,
+   "sog_kn": 7.7,
+   "cog": 4,
+   "heading": 359,
    "nav_status": 12,
-   "updated": "2026-11-13 04:52:17.436703187 +0000 UTC"
+   "updated": "2026-11-13 04:54:16.045236164 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58752,
+   "lon": -122.77049,
+   "sog_kn": 0,
+   "cog": 241.5,
+   "heading": 141,
+   "nav_status": 0,
+   "updated": "2026-11-13 04:54:16.475245737 +0000 UTC"
+  },
+  {
+   "mmsi": 368442720,
+   "name": "RUSTLER",
+   "lat": 45.60835,
+   "lon": -122.68621,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-13 04:54:18.011225847 +0000 UTC"
   }
  ]
 }
