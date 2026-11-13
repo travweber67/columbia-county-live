@@ -1,60 +1,108 @@
 {
- "fetched_at": "2026-11-13T03:38:37Z",
+ "fetched_at": "2026-11-13T03:43:39Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.5941,
-   "lon": -122.77212,
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09643,
+   "lon": -122.92976,
    "sog_kn": 0,
-   "cog": 338.3,
-   "heading": 148,
+   "cog": 186.6,
+   "heading": 67,
+   "nav_status": 3,
+   "updated": "2026-11-13 03:43:42.399901875 +0000 UTC"
+  },
+  {
+   "mmsi": 367575580,
+   "name": "DIANE B.",
+   "lat": 46.10004,
+   "lon": -122.94341,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-13 03:43:43.766089363 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08976,
+   "lon": -122.92906,
+   "sog_kn": 0,
+   "cog": 270.9,
+   "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-13 03:38:42.78362595 +0000 UTC"
+   "updated": "2026-11-13 03:43:44.089496502 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.1457,
-   "lon": -123.04159,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-13 03:38:48.987484067 +0000 UTC"
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08985,
+   "lon": -122.92903,
+   "sog_kn": 0,
+   "cog": 9.3,
+   "heading": 100,
+   "nav_status": 0,
+   "updated": "2026-11-13 03:43:48.888452374 +0000 UTC"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40233,
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.63011,
+   "lon": -122.69582,
+   "type_code": 52,
+   "updated": "2026-11-13 03:43:49.568297668 +0000 UTC"
+  },
+  {
+   "mmsi": 368442720,
+   "name": "RUSTLER",
+   "lat": 45.60833,
+   "lon": -122.68621,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 135,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-13 03:38:55.09343995 +0000 UTC"
+   "updated": "2026-11-13 03:43:56.993365115 +0000 UTC"
   },
   {
-   "mmsi": 368327640,
-   "name": "CAPT. STEVE",
-   "lat": 45.98576,
-   "lon": -122.83635,
-   "sog_kn": 0,
-   "cog": 26.2,
-   "heading": 151,
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.9101,
+   "type_code": 52,
+   "destination": "US^0T0P>035F",
+   "updated": "2026-11-13 03:44:03.351165287 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.71944,
+   "lon": -122.76432,
+   "sog_kn": 7.4,
+   "cog": 8.3,
+   "heading": 10,
    "nav_status": 12,
-   "updated": "2026-11-13 03:39:02.484010218 +0000 UTC"
+   "updated": "2026-11-13 03:44:04.895843814 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08063,
-   "lon": -122.90313,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35742,
    "sog_kn": 0,
-   "cog": 62.2,
-   "heading": 122,
-   "nav_status": 0,
-   "updated": "2026-11-13 03:39:04.514727779 +0000 UTC"
+   "cog": 298.1,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-13 03:44:05.476327407 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58133,
+   "lon": -122.76065,
+   "type_code": 57,
+   "destination": "PASCO",
+   "updated": "2026-11-13 03:44:05.701844479 +0000 UTC"
   }
  ]
 }
