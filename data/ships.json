@@ -1,148 +1,102 @@
 {
- "fetched_at": "2026-11-13T12:34:16Z",
+ "fetched_at": "2026-11-13T12:39:17Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 13 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 212138000,
-   "name": "ALKIMOS HERACLES",
-   "lat": 46.09051,
-   "lon": -122.92068,
-   "sog_kn": 10.4,
-   "cog": 110.3,
-   "heading": 114,
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79236,
+   "lon": -122.78104,
+   "sog_kn": 9.4,
+   "cog": 333.9,
+   "heading": 333,
    "nav_status": 0,
-   "updated": "2026-11-13 12:34:18.333980577 +0000 UTC"
+   "updated": "2026-11-13 12:39:18.78866747 +0000 UTC"
   },
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10355,
-   "lon": -122.91008,
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64786,
+   "lon": -122.74101,
    "sog_kn": 0,
-   "cog": 193,
-   "heading": 74,
-   "nav_status": 0,
-   "updated": "2026-11-13 12:34:21.175631064 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08077,
-   "lon": -122.90334,
-   "sog_kn": 0.1,
-   "cog": 40.9,
-   "heading": 109,
-   "nav_status": 0,
-   "updated": "2026-11-13 12:34:25.080211158 +0000 UTC"
+   "cog": 112.1,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-13 12:39:20.068256103 +0000 UTC"
   },
   {
    "mmsi": 352006982,
    "name": "MOSHILL",
-   "lat": 45.63358,
-   "lon": -122.70101,
+   "lat": 45.63365,
+   "lon": -122.70102,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-13 12:39:22.271469508 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.0966,
+   "lon": -122.92903,
    "sog_kn": 0,
-   "cog": 193.2,
-   "heading": 126,
+   "cog": 66,
+   "heading": 67,
+   "nav_status": 3,
+   "updated": "2026-11-13 12:39:24.340346108 +0000 UTC"
+  },
+  {
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.64796,
+   "lon": -122.745,
+   "sog_kn": 5.2,
+   "cog": 120.6,
+   "heading": 115,
+   "nav_status": 0,
+   "updated": "2026-11-13 12:39:29.120046894 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.0907,
+   "lon": -122.93211,
+   "sog_kn": 0.1,
+   "cog": 90.8,
+   "heading": 110,
    "nav_status": 5,
-   "updated": "2026-11-13 12:34:26.071142205 +0000 UTC"
+   "updated": "2026-11-13 12:39:29.722401509 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20002,
+   "lon": -123.38544,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-13 12:39:38.098660436 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.02815,
+   "lon": -122.86841,
+   "sog_kn": 0,
+   "cog": 99.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-13 12:39:43.879421883 +0000 UTC"
   },
   {
    "mmsi": 367653630,
    "name": "OSCAR B",
    "lat": 46.15342,
-   "lon": -123.37715,
+   "lon": -123.37716,
    "sog_kn": 0,
    "cog": 0,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-13 12:34:28.06823848 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10792,
-   "lon": -122.95904,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-13 12:34:30.281840145 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64788,
-   "lon": -122.74098,
-   "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-13 12:34:30.622506058 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19993,
-   "lon": -123.38552,
-   "sog_kn": 0,
-   "cog": 258.9,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-13 12:34:31.059553386 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.63105,
-   "lon": -122.70417,
-   "sog_kn": 3.9,
-   "cog": 122.9,
-   "heading": 301,
-   "nav_status": 0,
-   "updated": "2026-11-13 12:34:36.575068744 +0000 UTC"
-  },
-  {
-   "mmsi": 373989000,
-   "name": "AFRICAN CARDINAL",
-   "lat": 45.63927,
-   "lon": -122.77776,
-   "sog_kn": 0,
-   "cog": 197.6,
-   "heading": 229,
-   "nav_status": 5,
-   "updated": "2026-11-13 12:34:43.908025619 +0000 UTC"
-  },
-  {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.64717,
-   "lon": -122.73955,
-   "sog_kn": 0,
-   "cog": 165.6,
-   "heading": 289,
-   "nav_status": 12,
-   "updated": "2026-11-13 12:34:45.131384885 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.79316,
-   "lon": -122.8432,
-   "sog_kn": 0,
-   "cog": 206.6,
-   "heading": 211,
-   "nav_status": 12,
-   "updated": "2026-11-13 12:34:45.38693832 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.15845,
-   "lon": -123.06539,
-   "sog_kn": 9.9,
-   "cog": 113.9,
-   "heading": 112,
-   "nav_status": 3,
-   "updated": "2026-11-13 12:34:48.358770596 +0000 UTC"
+   "updated": "2026-11-13 12:39:47.721023165 +0000 UTC"
   }
  ]
 }
