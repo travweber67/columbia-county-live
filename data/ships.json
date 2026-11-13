@@ -1,77 +1,82 @@
 {
- "fetched_at": "2026-11-13T01:03:27Z",
+ "fetched_at": "2026-11-13T01:08:27Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
-   "lat": 46.08057,
-   "lon": -122.90285,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-13 01:03:32.836757552 +0000 UTC"
-  },
-  {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.6077,
-   "lon": -122.67753,
-   "type_code": 50,
-   "updated": "2026-11-13 01:03:34.69251222 +0000 UTC"
-  },
-  {
-   "mmsi": 636015993,
-   "name": "SIEM NEWTON",
-   "lat": 45.63297,
-   "lon": -122.73787,
-   "sog_kn": 0,
-   "cog": 28,
-   "heading": 136,
+   "lat": 46.08056,
+   "lon": -122.90286,
+   "sog_kn": 0.1,
+   "cog": 130,
+   "heading": 182,
    "nav_status": 0,
-   "updated": "2026-11-13 01:03:37.797485585 +0000 UTC"
+   "updated": "2026-11-13 01:08:56.444449418 +0000 UTC"
   },
   {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10892,
-   "lon": -122.96128,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-13 01:03:39.774786756 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.13096,
-   "lon": -123.00282,
-   "sog_kn": 6.5,
-   "cog": 317.6,
-   "heading": 314,
-   "nav_status": 3,
-   "updated": "2026-11-13 01:03:43.486283429 +0000 UTC"
-  },
-  {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 46.20122,
-   "lon": -123.38704,
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 45.64285,
+   "lon": -122.77157,
    "sog_kn": 0,
-   "cog": 275.7,
+   "cog": 202.9,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-13 01:08:35.693110058 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.612,
+   "lon": -122.64535,
+   "sog_kn": 0,
+   "cog": 260.7,
+   "heading": 297,
+   "nav_status": 5,
+   "updated": "2026-11-13 01:08:42.566134693 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.63756,
+   "lon": -122.72743,
+   "sog_kn": 0,
+   "cog": 97.7,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-13 01:03:44.248154691 +0000 UTC"
+   "updated": "2026-11-13 01:08:42.599897863 +0000 UTC"
   },
   {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.64349,
-   "lon": -122.75284,
-   "sog_kn": 0.1,
-   "cog": 312.5,
-   "heading": 230,
-   "nav_status": 5,
-   "updated": "2026-11-13 01:03:44.273839172 +0000 UTC"
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.63745,
+   "lon": -122.72744,
+   "sog_kn": 0,
+   "cog": 279.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-13 01:08:42.941935855 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20003,
+   "lon": -123.38539,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-13 01:08:45.156512029 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08089,
+   "lon": -122.90294,
+   "sog_kn": 0.4,
+   "cog": 95.5,
+   "heading": 6,
+   "nav_status": 3,
+   "updated": "2026-11-13 01:08:48.472713562 +0000 UTC"
   }
  ]
 }
