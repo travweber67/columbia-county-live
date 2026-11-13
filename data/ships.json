@@ -1,46 +1,70 @@
 {
- "fetched_at": "2026-11-13T18:39:41Z",
+ "fetched_at": "2026-11-13T18:44:42Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 338205428,
-   "name": "CLAIRE B",
-   "lat": 45.64385,
-   "lon": -122.7258,
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64354,
+   "lon": -122.75242,
+   "type_code": 52,
+   "updated": "2026-11-13 18:44:48.748912674 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65016,
+   "lon": -122.74758,
    "sog_kn": 0,
-   "cog": 209.6,
-   "heading": 117,
+   "cog": 319.2,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-13 18:44:49.73961255 +0000 UTC"
+  },
+  {
+   "mmsi": 368328430,
+   "name": "MCR 8",
+   "lat": 45.58482,
+   "lon": -122.76622,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-13 18:44:51.956930855 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08974,
+   "lon": -122.92896,
+   "sog_kn": 0,
+   "cog": 147.4,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-13 18:39:48.639224917 +0000 UTC"
+   "updated": "2026-11-13 18:44:53.971499497 +0000 UTC"
   },
   {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 45.99848,
-   "lon": -122.85182,
-   "type_code": 70,
-   "destination": "CN QDG",
-   "updated": "2026-11-13 18:40:04.784703836 +0000 UTC"
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.61255,
+   "lon": -122.6459,
+   "sog_kn": 0,
+   "cog": 35.7,
+   "heading": 122,
+   "nav_status": 5,
+   "updated": "2026-11-13 18:45:11.670049204 +0000 UTC"
   },
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.64311,
-   "lon": -122.74431,
-   "sog_kn": 0.1,
-   "cog": 45.6,
-   "heading": 290,
-   "nav_status": 0,
-   "updated": "2026-11-13 18:40:06.689887522 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35744,
-   "type_code": 30,
-   "updated": "2026-11-13 18:40:11.787548492 +0000 UTC"
+   "mmsi": 563331600,
+   "name": "BELLE LUNE",
+   "lat": 46.17031,
+   "lon": -123.09998,
+   "sog_kn": 0,
+   "cog": 204.3,
+   "heading": 109,
+   "nav_status": 1,
+   "updated": "2026-11-13 18:45:14.741279082 +0000 UTC"
   }
  ]
 }
