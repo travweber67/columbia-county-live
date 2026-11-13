@@ -1,51 +1,108 @@
 {
- "fetched_at": "2026-11-13T12:04:15Z",
+ "fetched_at": "2026-11-13T12:09:15Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10792,
+   "lon": -122.95906,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-13 12:09:20.904138836 +0000 UTC"
+  },
   {
    "mmsi": 367047120,
    "name": "REBEL",
-   "lat": 45.64717,
+   "lat": 45.64719,
    "lon": -122.73955,
    "sog_kn": 0,
-   "cog": 215.9,
-   "heading": 289,
+   "cog": 357.4,
+   "heading": 288,
    "nav_status": 12,
-   "updated": "2026-11-13 12:04:25.565325671 +0000 UTC"
+   "updated": "2026-11-13 12:09:25.88240213 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35742,
+   "mmsi": 368327640,
+   "name": "CAPT. STEVE",
+   "lat": 45.97368,
+   "lon": -122.82894,
+   "type_code": 99,
+   "destination": "XX XXX>US^0T67",
+   "updated": "2026-11-13 12:09:27.341725037 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64348,
+   "lon": -122.75241,
    "sog_kn": 0,
-   "cog": 141,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-13 12:04:27.0809206 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 46.07891,
-   "lon": -122.89629,
-   "sog_kn": 9,
-   "cog": 136.8,
+   "cog": 246.1,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-13 12:04:34.543571134 +0000 UTC"
+   "nav_status": 5,
+   "updated": "2026-11-13 12:09:27.987191815 +0000 UTC"
   },
   {
-   "mmsi": 636026991,
-   "name": "ALTHEA",
-   "lat": 45.7989,
-   "lon": -122.78682,
-   "sog_kn": 11.8,
-   "cog": 327.7,
-   "heading": 328,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61292,
+   "type_code": 0,
+   "updated": "2026-11-13 12:09:31.404322149 +0000 UTC"
+  },
+  {
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10892,
+   "lon": -122.96127,
+   "sog_kn": 0,
+   "cog": 262.2,
+   "heading": 130,
+   "nav_status": 5,
+   "updated": "2026-11-13 12:09:32.070648468 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15993,
+   "lon": -123.40489,
+   "sog_kn": 2.9,
+   "cog": 189.2,
+   "heading": 152,
    "nav_status": 0,
-   "updated": "2026-11-13 12:04:39.910906069 +0000 UTC"
+   "updated": "2026-11-13 12:09:33.962031052 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08078,
+   "lon": -122.90333,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-13 12:09:34.218140489 +0000 UTC"
+  },
+  {
+   "mmsi": 352006999,
+   "name": "WABI SABI",
+   "lat": 46.1777,
+   "lon": -123.11016,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-13 12:09:35.740697322 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.19521,
+   "lon": -123.42887,
+   "sog_kn": 1.1,
+   "cog": 347.7,
+   "heading": 344,
+   "nav_status": 3,
+   "updated": "2026-11-13 12:09:36.679156748 +0000 UTC"
   }
  ]
 }
