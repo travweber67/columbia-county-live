@@ -30,12 +30,12 @@
 if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
-<link rel="manifest" href="manifest.webmanifest?v=65">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=65">
+<link rel="manifest" href="manifest.webmanifest?v=66">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=66">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=65">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=65">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=65">
+<link rel="stylesheet" href="style.css?v=66">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=66">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=66">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
      only page backgrounds first paint needs — warm them with the hero.
      Every other view's photo is lazy-attached by app.js. -->
@@ -1607,21 +1607,6 @@ document.documentElement.setAttribute("data-theme",t);})();
     <button class="drawer-close" id="drawer-close" type="button" aria-label="Close the menu">✕</button>
   </div>
   <nav class="drawer-nav" aria-label="Views and sections">
-    <div class="drawer-group drawer-em-group">
-      <button class="drawer-view drawer-emergency" type="button" data-drawer-view="emergency"><span aria-hidden="true">🚨</span><span data-i18n="emview">Emergency</span></button>
-      <a class="drawer-link" href="#em-map-card">Emergency map — closures &amp; incidents</a>
-      <a class="drawer-link" href="#em-status-card">County status board</a>
-      <a class="drawer-link" href="#em-contacts-card">Emergency contacts &amp; links</a>
-      <a class="drawer-link" href="#em-coords-card">Get my coordinates</a>
-    </div>
-    <div class="drawer-group">
-      <button class="drawer-view" type="button" data-drawer-view="help"><span aria-hidden="true">🤝</span><span data-i18n="helpview">Community Help</span></button>
-      <a class="drawer-link" href="#help-food-card" data-i18n="dwhelpfood">Free food</a>
-      <a class="drawer-link" href="#help-crisis-card" data-i18n="dwhelpcrisis">Crisis &amp; safety</a>
-      <a class="drawer-link" href="#help-money-card" data-i18n="dwhelpmoney">Money &amp; housing help</a>
-      <a class="drawer-link" href="#help-family-card" data-i18n="dwhelpfamily">Family &amp; health</a>
-      <a class="drawer-link" href="#help-vets-card" data-i18n="dwhelpvets">Veterans, legal &amp; recovery</a>
-    </div>
     <div class="drawer-group">
       <button class="drawer-view" type="button" data-drawer-view="today"><img src="img/icons/icon-today.png" alt="" aria-hidden="true"><span data-i18n="tabtoday">Today</span></button>
       <a class="drawer-link" href="#commute-card" data-i18n="dwcommute">The commute verdict</a>
@@ -1640,6 +1625,14 @@ document.documentElement.setAttribute("data-theme",t);})();
       <a class="drawer-link" href="#ships-card" data-i18n="dwships">River traffic</a>
       <a class="drawer-link" href="#aircraft-card" data-i18n="dwaircraft">Aircraft overhead</a>
       <a class="drawer-link" href="#bend-card" data-i18n="dwbend">The Bend run</a>
+    </div>
+    <div class="drawer-group">
+      <button class="drawer-view" type="button" data-drawer-view="help"><span aria-hidden="true">🤝</span><span data-i18n="helpview">Community Help</span></button>
+      <a class="drawer-link" href="#help-food-card" data-i18n="dwhelpfood">Free food</a>
+      <a class="drawer-link" href="#help-crisis-card" data-i18n="dwhelpcrisis">Crisis &amp; safety</a>
+      <a class="drawer-link" href="#help-money-card" data-i18n="dwhelpmoney">Money &amp; housing help</a>
+      <a class="drawer-link" href="#help-family-card" data-i18n="dwhelpfamily">Family &amp; health</a>
+      <a class="drawer-link" href="#help-vets-card" data-i18n="dwhelpvets">Veterans, legal &amp; recovery</a>
     </div>
     <div class="drawer-group">
       <button class="drawer-view" type="button" data-drawer-view="outdoors"><img src="img/icons/icon-outdoors.png" alt="" aria-hidden="true"><span data-i18n="taboutdoors">Outdoors</span></button>
@@ -1666,6 +1659,13 @@ document.documentElement.setAttribute("data-theme",t);})();
       <a class="drawer-link" href="#saver-card" data-i18n="dwsaver">Community screensaver</a>
       <a class="drawer-link" href="#freshness-card" data-i18n="dwfresh">How fresh is this page?</a>
       <a class="drawer-link" href="#about-card" data-i18n="dwabout">About</a>
+    </div>
+    <div class="drawer-group drawer-em-group">
+      <button class="drawer-view drawer-emergency" type="button" data-drawer-view="emergency"><span aria-hidden="true">🚨</span><span data-i18n="emview">Emergency</span></button>
+      <a class="drawer-link" href="#em-map-card">Emergency map — closures &amp; incidents</a>
+      <a class="drawer-link" href="#em-status-card">County status board</a>
+      <a class="drawer-link" href="#em-contacts-card">Emergency contacts &amp; links</a>
+      <a class="drawer-link" href="#em-coords-card">Get my coordinates</a>
     </div>
     <div class="drawer-foot">
       <a class="drawer-foot-link" href="https://travweber67.github.io/cascade-controls-jobs/"><span data-i18n="cascDrawerLink">Also ours: Cascade Controls Jobs &rarr;</span></a>
@@ -1797,7 +1797,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=65"></script>
+<script src="app.js?v=66"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>
