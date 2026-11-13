@@ -1,84 +1,105 @@
 {
- "fetched_at": "2026-11-13T05:43:48Z",
+ "fetched_at": "2026-11-13T05:48:48Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08061,
-   "lon": -122.90341,
-   "sog_kn": 0.2,
-   "cog": 9.2,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-13 05:43:59.566078754 +0000 UTC"
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.64351,
+   "lon": -122.75288,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-13 05:48:53.84819905 +0000 UTC"
   },
   {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 46.20118,
-   "lon": -123.38705,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40234,
    "sog_kn": 0,
-   "cog": 275.7,
-   "heading": 511,
+   "cog": 360,
+   "heading": 132,
    "nav_status": 0,
-   "updated": "2026-11-13 05:44:03.546822879 +0000 UTC"
+   "updated": "2026-11-13 05:48:54.389414098 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.60105,
+   "lon": -122.77481,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-13 05:48:55.58313725 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58078,
+   "lon": -122.76008,
+   "sog_kn": 0,
+   "cog": 92.5,
+   "heading": 123,
+   "nav_status": 0,
+   "updated": "2026-11-13 05:48:57.891457785 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.61854,
+   "lon": -122.78793,
+   "sog_kn": 0.1,
+   "cog": 263,
+   "heading": 353,
+   "nav_status": 0,
+   "updated": "2026-11-13 05:49:00.389001081 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.91008,
+   "type_code": 52,
+   "destination": "US^0T0P>035F",
+   "updated": "2026-11-13 05:49:01.805718359 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19948,
+   "lon": -123.38508,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-13 05:49:04.782847214 +0000 UTC"
   },
   {
    "mmsi": 367047120,
    "name": "REBEL",
-   "lat": 45.64714,
-   "lon": -122.73958,
+   "lat": 45.64715,
+   "lon": -122.73959,
+   "type_code": 52,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-13 05:49:12.740534456 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58755,
+   "lon": -122.77042,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-13 05:49:12.968069532 +0000 UTC"
+  },
+  {
+   "mmsi": 368442720,
+   "name": "RUSTLER",
+   "lat": 45.60835,
+   "lon": -122.68623,
    "sog_kn": 0,
-   "cog": 335,
-   "heading": 291,
-   "nav_status": 12,
-   "updated": "2026-11-13 05:44:05.279265856 +0000 UTC"
-  },
-  {
-   "mmsi": 563017700,
-   "name": "ROSTELLA",
-   "lat": 45.61728,
-   "lon": -122.78993,
-   "sog_kn": 7.4,
-   "cog": 344.6,
-   "heading": 348,
-   "nav_status": 0,
-   "updated": "2026-11-13 05:44:06.497176085 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.62007,
-   "lon": -122.78785,
-   "sog_kn": 0.1,
-   "cog": 288.9,
-   "heading": 353,
-   "nav_status": 12,
-   "updated": "2026-11-13 05:44:19.672176427 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.0966,
-   "lon": -122.92929,
-   "sog_kn": 0,
-   "cog": 356.6,
-   "heading": 80,
-   "nav_status": 3,
-   "updated": "2026-11-13 05:44:21.327012211 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09052,
-   "lon": -122.93235,
-   "sog_kn": 0,
-   "cog": 300.5,
+   "cog": 360,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-13 05:44:22.124494356 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-13 05:49:18.711387832 +0000 UTC"
   }
  ]
 }
