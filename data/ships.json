@@ -1,139 +1,69 @@
 {
- "fetched_at": "2026-11-13T00:03:21Z",
+ "fetched_at": "2026-11-13T00:08:23Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.64248,
-   "lon": -122.77153,
-   "sog_kn": 0.1,
-   "cog": 139.5,
-   "heading": 229,
-   "nav_status": 12,
-   "updated": "2026-11-13 00:03:17.265201722 +0000 UTC"
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.0965,
+   "lon": -122.92947,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-13 00:08:26.090253603 +0000 UTC"
   },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.08059,
-   "lon": -122.90273,
+   "lat": 46.08065,
+   "lon": -122.90286,
    "sog_kn": 0.2,
-   "cog": 298.1,
-   "heading": 257,
+   "cog": 290.7,
+   "heading": 232,
    "nav_status": 0,
-   "updated": "2026-11-13 00:03:17.315880097 +0000 UTC"
+   "updated": "2026-11-13 00:08:30.608483093 +0000 UTC"
   },
   {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58756,
-   "lon": -122.77043,
-   "sog_kn": 0,
-   "cog": 342.8,
-   "heading": 142,
-   "nav_status": 0,
-   "updated": "2026-11-13 00:03:17.343002563 +0000 UTC"
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20002,
+   "lon": -123.38544,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-13 00:08:36.325338364 +0000 UTC"
   },
   {
    "mmsi": 368171270,
    "name": "DR. RAY",
    "lat": 45.63871,
-   "lon": -122.71178,
+   "lon": -122.71176,
    "sog_kn": 0,
    "cog": 312.6,
    "heading": 122,
    "nav_status": 12,
-   "updated": "2026-11-13 00:03:17.365460692 +0000 UTC"
+   "updated": "2026-11-13 00:08:38.121303203 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.6129,
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59403,
+   "lon": -122.7721,
    "sog_kn": 0,
-   "cog": 244.3,
-   "heading": 135,
+   "cog": 338.3,
+   "heading": 148,
+   "nav_status": 5,
+   "updated": "2026-11-13 00:08:42.725087176 +0000 UTC"
+  },
+  {
+   "mmsi": 368257130,
+   "name": "TRIUMPH VII",
+   "lat": 46.10172,
+   "lon": -122.95127,
+   "sog_kn": 29,
+   "cog": 116.1,
+   "heading": 511,
    "nav_status": 15,
-   "updated": "2026-11-13 00:03:29.124300631 +0000 UTC"
-  },
-  {
-   "mmsi": 373989000,
-   "name": "AFRICAN CARDINAL",
-   "lat": 45.63954,
-   "lon": -122.77753,
-   "sog_kn": 0.3,
-   "cog": 213.5,
-   "heading": 226,
-   "nav_status": 0,
-   "updated": "2026-11-13 00:03:35.698553937 +0000 UTC"
-  },
-  {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.60094,
-   "lon": -122.77376,
-   "sog_kn": 0,
-   "cog": 242.8,
-   "heading": 277,
-   "nav_status": 5,
-   "updated": "2026-11-13 00:03:40.221233561 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08054,
-   "lon": -122.90323,
-   "sog_kn": 0.1,
-   "cog": 212.1,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-13 00:03:41.664448547 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.63966,
-   "lon": -122.7778,
-   "sog_kn": 0.2,
-   "cog": 194.9,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-13 00:03:43.715086372 +0000 UTC"
-  },
-  {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 46.04401,
-   "lon": -122.87692,
-   "sog_kn": 0,
-   "cog": 125.2,
-   "heading": 180,
-   "nav_status": 5,
-   "updated": "2026-11-13 00:03:48.707393104 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.62702,
-   "lon": -122.69894,
-   "sog_kn": 0.3,
-   "cog": 322.5,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-13 00:03:48.834004261 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65006,
-   "lon": -122.74765,
-   "sog_kn": 0,
-   "cog": 293.9,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-13 00:03:48.920136587 +0000 UTC"
+   "updated": "2026-11-13 00:08:42.810260173 +0000 UTC"
   }
  ]
 }
