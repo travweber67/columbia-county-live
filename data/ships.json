@@ -1,62 +1,49 @@
 {
- "fetched_at": "2026-11-13T15:19:05Z",
+ "fetched_at": "2026-11-13T15:24:27Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 46.02802,
+   "lon": -122.87536,
+   "sog_kn": 0.1,
+   "cog": 229.7,
+   "heading": 143,
+   "nav_status": 5,
+   "updated": "2026-11-13 15:24:36.579995002 +0000 UTC"
+  },
+  {
+   "mmsi": 367327440,
+   "name": "KATHRYN B.",
+   "lat": 46.09042,
+   "lon": -122.93253,
+   "type_code": 31,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-13 15:24:36.835209968 +0000 UTC"
+  },
   {
    "mmsi": 367425950,
    "name": "SEA HAWK",
-   "lat": 45.6501,
-   "lon": -122.74764,
+   "lat": 45.65008,
+   "lon": -122.74761,
    "sog_kn": 0,
-   "cog": 186.1,
+   "cog": 217.6,
    "heading": 511,
    "nav_status": 3,
-   "updated": "2026-11-13 15:19:37.829456532 +0000 UTC"
+   "updated": "2026-11-13 15:24:38.798910534 +0000 UTC"
   },
   {
    "mmsi": 367727410,
    "name": "AMY B",
-   "lat": 45.83408,
-   "lon": -122.81017,
+   "lat": 45.84083,
+   "lon": -122.80394,
    "sog_kn": 5.7,
-   "cog": 28.3,
+   "cog": 31.6,
    "heading": 33,
    "nav_status": 12,
-   "updated": "2026-11-13 15:19:40.389897959 +0000 UTC"
-  },
-  {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 45.83972,
-   "lon": -122.78893,
-   "sog_kn": 5.5,
-   "cog": 200.6,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-13 15:19:42.349462434 +0000 UTC"
-  },
-  {
-   "mmsi": 636021177,
-   "name": "FORTUNE COOKIE",
-   "lat": 46.2721,
-   "lon": -123.49242,
-   "sog_kn": 11.5,
-   "cog": 268.3,
-   "heading": 268,
-   "nav_status": 0,
-   "updated": "2026-11-13 15:19:43.890075213 +0000 UTC"
-  },
-  {
-   "mmsi": 368327640,
-   "name": "CAPT. STEVE",
-   "lat": 45.62912,
-   "lon": -122.6924,
-   "sog_kn": 0,
-   "cog": 63.4,
-   "heading": 307,
-   "nav_status": 12,
-   "updated": "2026-11-13 15:19:51.993585113 +0000 UTC"
+   "updated": "2026-11-13 15:24:44.093745321 +0000 UTC"
   },
   {
    "mmsi": 367323610,
@@ -64,21 +51,39 @@
    "lat": 46.20618,
    "lon": -123.38663,
    "sog_kn": 0,
-   "cog": 89.8,
-   "heading": 183,
+   "cog": 19,
+   "heading": 182,
    "nav_status": 5,
-   "updated": "2026-11-13 15:19:52.655082471 +0000 UTC"
+   "updated": "2026-11-13 15:24:50.308050433 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20004,
+   "lon": -123.38552,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-13 15:24:51.578918483 +0000 UTC"
   },
   {
    "mmsi": 367047170,
    "name": "MAVERICK",
-   "lat": 46.18711,
-   "lon": -123.13519,
-   "sog_kn": 7.9,
-   "cog": 277.8,
-   "heading": 277,
+   "lat": 46.18929,
+   "lon": -123.15037,
+   "sog_kn": 8,
+   "cog": 283.4,
+   "heading": 274,
    "nav_status": 0,
-   "updated": "2026-11-13 15:20:00.815653751 +0000 UTC"
+   "updated": "2026-11-13 15:24:55.523121844 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.64345,
+   "lon": -122.7529,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-13 15:24:56.341134235 +0000 UTC"
   }
  ]
 }
