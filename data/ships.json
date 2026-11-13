@@ -1,69 +1,89 @@
 {
- "fetched_at": "2026-11-13T07:53:56Z",
+ "fetched_at": "2026-11-13T07:58:56Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.61804,
-   "lon": -122.78767,
-   "sog_kn": 0.4,
-   "cog": 276.5,
-   "heading": 352,
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.65575,
+   "lon": -122.76073,
+   "type_code": 52,
+   "destination": "US^0UX0>?? ???",
+   "updated": "2026-11-13 07:59:03.911650096 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58754,
+   "lon": -122.77042,
+   "sog_kn": 0,
+   "cog": 167.5,
+   "heading": 140,
    "nav_status": 0,
-   "updated": "2026-11-13 07:54:00.406047975 +0000 UTC"
+   "updated": "2026-11-13 07:59:06.441978453 +0000 UTC"
   },
   {
-   "mmsi": 636015993,
-   "name": "SIEM NEWTON",
-   "lat": 45.63302,
-   "lon": -122.73787,
-   "type_code": 79,
-   "destination": "USPDX",
-   "updated": "2026-11-13 07:54:01.958932742 +0000 UTC"
+   "mmsi": 563017700,
+   "name": "ROSTELLA",
+   "lat": 45.99901,
+   "lon": -122.84912,
+   "sog_kn": 8.2,
+   "cog": 342,
+   "heading": 342,
+   "nav_status": 0,
+   "updated": "2026-11-13 07:59:06.496061981 +0000 UTC"
   },
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20001,
-   "lon": -123.38541,
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64538,
+   "lon": -122.73505,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-13 07:54:14.916616056 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.6502,
-   "lon": -122.74757,
-   "sog_kn": 0,
-   "cog": 215.1,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-13 07:54:19.604843225 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64789,
-   "lon": -122.74097,
-   "sog_kn": 0,
-   "cog": 112.1,
+   "cog": 30.4,
    "heading": 112,
    "nav_status": 5,
-   "updated": "2026-11-13 07:54:21.886941107 +0000 UTC"
+   "updated": "2026-11-13 07:59:14.943199277 +0000 UTC"
   },
   {
    "mmsi": 636026991,
    "name": "ALTHEA",
-   "lat": 45.64364,
-   "lon": -122.74077,
+   "lat": 45.64363,
+   "lon": -122.74081,
    "type_code": 70,
    "destination": "KRPUS",
-   "updated": "2026-11-13 07:54:21.967576799 +0000 UTC"
+   "updated": "2026-11-13 07:59:20.503743623 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09049,
+   "lon": -122.93226,
+   "sog_kn": 0,
+   "cog": 186.9,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-13 07:59:20.833201868 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.2,
+   "lon": -123.38549,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-13 07:59:22.565960783 +0000 UTC"
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 46.17351,
+   "lon": -123.41884,
+   "sog_kn": 4.4,
+   "cog": 136.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-13 07:59:24.908663135 +0000 UTC"
   }
  ]
 }
