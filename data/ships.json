@@ -1,49 +1,69 @@
 {
- "fetched_at": "2026-11-13T19:14:44Z",
+ "fetched_at": "2026-11-13T19:19:07Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 45.99853,
-   "lon": -122.85179,
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00908,
+   "lon": -122.84833,
+   "type_code": 31,
+   "destination": "HARBOROPPS-",
+   "updated": "2026-11-13 19:19:52.659041263 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64538,
+   "lon": -122.73507,
+   "sog_kn": 0,
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-13 19:20:15.989916899 +0000 UTC"
+  },
+  {
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 45.63028,
+   "lon": -122.69567,
    "type_code": 70,
-   "destination": "CN QDG",
-   "updated": "2026-11-13 19:14:56.161726413 +0000 UTC"
+   "destination": "USVAN",
+   "updated": "2026-11-13 19:20:16.415597288 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.21076,
+   "lon": -123.42672,
+   "sog_kn": 1.6,
+   "cog": 15.1,
+   "heading": 12,
+   "nav_status": 3,
+   "updated": "2026-11-13 19:20:16.691345013 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58728,
+   "lon": -122.77009,
+   "sog_kn": 0,
+   "cog": 357.3,
+   "heading": 138,
+   "nav_status": 5,
+   "updated": "2026-11-13 19:20:17.184376678 +0000 UTC"
   },
   {
    "mmsi": 367767410,
    "name": "MULE",
-   "lat": 46.1079,
-   "lon": -122.95902,
+   "lat": 46.10791,
+   "lon": -122.95903,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-13 19:14:57.358487726 +0000 UTC"
-  },
-  {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.09069,
-   "lon": -122.9321,
-   "sog_kn": 0,
-   "cog": 234,
-   "heading": 110,
-   "nav_status": 5,
-   "updated": "2026-11-13 19:14:59.407822592 +0000 UTC"
-  },
-  {
-   "mmsi": 563331600,
-   "name": "BELLE LUNE",
-   "lat": 46.17044,
-   "lon": -123.09991,
-   "sog_kn": 0,
-   "cog": 204.3,
-   "heading": 116,
-   "nav_status": 1,
-   "updated": "2026-11-13 19:15:14.765756038 +0000 UTC"
+   "updated": "2026-11-13 19:20:17.377938264 +0000 UTC"
   }
  ]
 }
