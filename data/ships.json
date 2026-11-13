@@ -1,70 +1,117 @@
 {
- "fetched_at": "2026-11-13T19:39:45Z",
+ "fetched_at": "2026-11-13T19:44:46Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35743,
-   "type_code": 30,
-   "updated": "2026-11-13 19:39:51.963267138 +0000 UTC"
+   "mmsi": 367327440,
+   "name": "KATHRYN B.",
+   "lat": 46.09047,
+   "lon": -122.93259,
+   "sog_kn": 0,
+   "cog": 257.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-13 19:44:53.534165608 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.6474,
+   "lon": -122.73946,
+   "sog_kn": 0,
+   "cog": 230.1,
+   "heading": 285,
+   "nav_status": 12,
+   "updated": "2026-11-13 19:44:54.738873779 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10792,
+   "lon": -122.959,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-13 19:44:57.03617554 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08113,
+   "lon": -122.9041,
+   "sog_kn": 0.1,
+   "cog": 216.1,
+   "heading": 307,
+   "nav_status": 3,
+   "updated": "2026-11-13 19:45:06.547983038 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79688,
+   "lon": -122.83797,
+   "sog_kn": 2.8,
+   "cog": 54.3,
+   "heading": 49,
+   "nav_status": 0,
+   "updated": "2026-11-13 19:45:09.322636746 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64728,
+   "lon": -122.73995,
+   "sog_kn": 0,
+   "cog": 349.2,
+   "heading": 17,
+   "nav_status": 5,
+   "updated": "2026-11-13 19:45:13.590316311 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.20819,
+   "lon": -123.42721,
+   "sog_kn": 2.5,
+   "cog": 14.2,
+   "heading": 7,
+   "nav_status": 3,
+   "updated": "2026-11-13 19:45:15.97421021 +0000 UTC"
+  },
+  {
+   "mmsi": 636015993,
+   "name": "SIEM NEWTON",
+   "lat": 45.63303,
+   "lon": -122.73783,
+   "sog_kn": 0,
+   "cog": 17,
+   "heading": 137,
+   "nav_status": 0,
+   "updated": "2026-11-13 19:45:18.036895148 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61292,
+   "sog_kn": 0,
+   "cog": 238.2,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-13 19:45:19.221317012 +0000 UTC"
   },
   {
    "mmsi": 366396000,
    "name": "NAT GEO SEA LION",
-   "lat": 46.27161,
-   "lon": -123.48089,
+   "lat": 46.26521,
+   "lon": -123.46161,
    "sog_kn": 9.8,
-   "cog": 97.8,
-   "heading": 102,
+   "cog": 130.9,
+   "heading": 135,
    "nav_status": 0,
-   "updated": "2026-11-13 19:39:54.360140412 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20001,
-   "lon": -123.38538,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-13 19:39:55.347496227 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00913,
-   "lon": -122.84827,
-   "sog_kn": 0.1,
-   "cog": 310.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-13 19:39:55.695861451 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.64312,
-   "lon": -122.74431,
-   "sog_kn": 0,
-   "cog": 167.2,
-   "heading": 289,
-   "nav_status": 0,
-   "updated": "2026-11-13 19:39:55.772668997 +0000 UTC"
-  },
-  {
-   "mmsi": 368328430,
-   "name": "MCR 8",
-   "lat": 45.58474,
-   "lon": -122.7662,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-13 19:40:20.982368575 +0000 UTC"
+   "updated": "2026-11-13 19:45:21.951403933 +0000 UTC"
   }
  ]
 }
