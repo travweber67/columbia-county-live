@@ -1,49 +1,71 @@
 {
- "fetched_at": "2026-11-13T00:38:24Z",
+ "fetched_at": "2026-11-13T00:43:24Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 352006999,
-   "name": "WABI SABI",
-   "lat": 46.17548,
-   "lon": -123.10798,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 305.3,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-13 00:43:37.489710507 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.0907,
+   "lon": -122.93213,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-13 00:43:50.319326072 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 246.9,
+   "heading": 113,
+   "nav_status": 5
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.044,
+   "lon": -122.87692,
    "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-13 00:38:40.61535141 +0000 UTC"
+   "destination": "US KAM",
+   "updated": "2026-11-13 00:43:48.49585734 +0000 UTC"
   },
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00922,
-   "lon": -122.84837,
-   "sog_kn": 0.1,
-   "cog": 228.2,
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.63477,
+   "lon": -122.7113,
+   "sog_kn": 10.3,
+   "cog": 295.8,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-13 00:38:45.050830673 +0000 UTC"
+   "updated": "2026-11-13 00:43:49.177468964 +0000 UTC"
   },
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08058,
-   "lon": -122.90327,
-   "sog_kn": 0.1,
-   "cog": 9.2,
+   "mmsi": 369990212,
+   "name": "CG29212",
+   "lat": 45.57593,
+   "lon": -122.74333,
+   "sog_kn": 3.4,
+   "cog": 125.9,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-13 00:38:51.078654016 +0000 UTC"
+   "updated": "2026-11-13 00:43:50.202768306 +0000 UTC"
   },
   {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.64246,
-   "lon": -122.77151,
-   "sog_kn": 0.1,
-   "cog": 227.5,
-   "heading": 227,
-   "nav_status": 12,
-   "updated": "2026-11-13 00:38:55.720419523 +0000 UTC"
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09201,
+   "lon": -122.9336,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-13 00:43:50.470378933 +0000 UTC"
   }
  ]
 }
