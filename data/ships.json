@@ -1,72 +1,51 @@
 {
- "fetched_at": "2026-11-13T15:44:29Z",
+ "fetched_at": "2026-11-13T15:49:05Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 46.16235,
-   "lon": -123.07505,
-   "sog_kn": 2,
-   "cog": 112.6,
-   "heading": 113,
+   "lat": 46.16184,
+   "lon": -123.0732,
+   "sog_kn": 1.1,
+   "cog": 117.7,
+   "heading": 123,
    "nav_status": 3,
-   "updated": "2026-11-13 15:44:35.476629942 +0000 UTC"
+   "updated": "2026-11-13 15:49:45.9566308 +0000 UTC",
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER"
   },
   {
-   "mmsi": 440576000,
-   "name": "PAN FLOWER",
-   "lat": 45.64294,
-   "lon": -122.77153,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.1534,
+   "lon": -123.37713,
    "sog_kn": 0,
-   "cog": 336.9,
-   "heading": 229,
-   "nav_status": 5,
-   "updated": "2026-11-13 15:44:35.685125773 +0000 UTC"
-  },
-  {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.61199,
-   "lon": -122.64536,
-   "sog_kn": 0,
-   "cog": 323.8,
-   "heading": 296,
-   "nav_status": 5,
-   "updated": "2026-11-13 15:44:40.042348515 +0000 UTC"
-  },
-  {
-   "mmsi": 368328430,
-   "lat": 45.58489,
-   "lon": -122.76624,
-   "sog_kn": 0.1,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-13 15:44:51.983908775 +0000 UTC"
-  },
-  {
-   "mmsi": 368136580,
-   "name": "ORIN L GREEN",
-   "lat": 46.08077,
-   "lon": -122.90388,
-   "sog_kn": 0.5,
-   "cog": 1.3,
+   "cog": 0,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-13 15:44:56.764106537 +0000 UTC"
+   "updated": "2026-11-13 15:49:46.213085547 +0000 UTC"
   },
   {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 45.99936,
-   "lon": -122.85216,
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79316,
+   "lon": -122.84322,
    "sog_kn": 0.1,
-   "cog": 122.2,
-   "heading": 142,
+   "cog": 25.1,
+   "heading": 212,
    "nav_status": 0,
-   "updated": "2026-11-13 15:44:58.301806196 +0000 UTC"
+   "updated": "2026-11-13 15:49:59.100605145 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.09885,
+   "lon": -122.93952,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-13 15:50:03.346496561 +0000 UTC"
   }
  ]
 }
