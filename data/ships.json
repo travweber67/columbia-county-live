@@ -1,132 +1,81 @@
 {
- "fetched_at": "2026-11-13T23:15:02Z",
+ "fetched_at": "2026-11-13T23:19:10Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10792,
-   "lon": -122.95902,
+   "mmsi": 352006999,
+   "name": "WABI SABI",
+   "lat": 46.09906,
+   "lon": -122.9394,
+   "sog_kn": 0,
+   "cog": 4,
+   "heading": 109,
+   "nav_status": 5,
+   "updated": "2026-11-13 23:19:46.300711101 +0000 UTC"
+  },
+  {
+   "mmsi": 636015993,
+   "name": "SIEM NEWTON",
+   "lat": 45.63303,
+   "lon": -122.73785,
+   "sog_kn": 0,
+   "cog": 312,
+   "heading": 136,
+   "nav_status": 0,
+   "updated": "2026-11-13 23:19:48.093083743 +0000 UTC"
+  },
+  {
+   "mmsi": 373989000,
+   "name": "AFRICAN CARDINAL",
+   "lat": 45.63924,
+   "lon": -122.7778,
+   "sog_kn": 0,
+   "cog": 197.6,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-13 23:19:48.928443305 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64353,
+   "lon": -122.75242,
+   "type_code": 52,
+   "updated": "2026-11-13 23:19:49.969750087 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08121,
+   "lon": -122.90422,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 306,
+   "nav_status": 3,
+   "updated": "2026-11-13 23:19:57.907929122 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.6076,
+   "lon": -122.67768,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-13 23:15:06.409222836 +0000 UTC"
+   "updated": "2026-11-13 23:20:06.477129441 +0000 UTC"
   },
   {
-   "mmsi": 563331600,
-   "name": "BELLE LUNE",
-   "lat": 46.17009,
-   "lon": -123.09997,
-   "sog_kn": 0,
-   "cog": 204.3,
-   "heading": 98,
-   "nav_status": 1,
-   "updated": "2026-11-13 23:15:12.722656712 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.16021,
-   "lon": -123.40552,
-   "sog_kn": 2.4,
-   "cog": 7.3,
-   "heading": 195,
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64636,
+   "lon": -122.75388,
+   "sog_kn": 8.1,
+   "cog": 135.9,
+   "heading": 136,
    "nav_status": 0,
-   "updated": "2026-11-13 23:15:12.740106785 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08109,
-   "lon": -122.90378,
-   "sog_kn": 0,
-   "cog": 269,
-   "heading": 123,
-   "nav_status": 0,
-   "updated": "2026-11-13 23:15:14.316554297 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65015,
-   "lon": -122.74765,
-   "sog_kn": 0,
-   "cog": 269.4,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-13 23:15:18.100090283 +0000 UTC"
-  },
-  {
-   "mmsi": 366892350,
-   "name": "NAT GEO SEA BIRD",
-   "lat": 46.09112,
-   "lon": -122.93018,
-   "sog_kn": 0.2,
-   "cog": 149.9,
-   "heading": 146,
-   "nav_status": 0,
-   "updated": "2026-11-13 23:15:19.547943254 +0000 UTC"
-  },
-  {
-   "mmsi": 636024922,
-   "name": "VERACITY",
-   "lat": 46.14862,
-   "lon": -123.26942,
-   "type_code": 70,
-   "destination": "KALAMA USA",
-   "updated": "2026-11-13 23:15:21.420107598 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09255,
-   "lon": -122.92799,
-   "sog_kn": 6.9,
-   "cog": 88.4,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-13 23:15:21.936745337 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08114,
-   "lon": -122.90271,
-   "sog_kn": 8,
-   "cog": 296.5,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-13 23:15:28.56605063 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08104,
-   "lon": -122.90411,
-   "sog_kn": 0.1,
-   "cog": 306.3,
-   "heading": 124,
-   "nav_status": 0,
-   "updated": "2026-11-13 23:15:30.899185271 +0000 UTC"
-  },
-  {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 45.64657,
-   "lon": -122.7475,
-   "type_code": 31,
-   "destination": "MCALLS FUEL DOCK",
-   "updated": "2026-11-13 23:15:31.600893898 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61107,
-   "lon": -122.61291,
-   "type_code": 0,
-   "updated": "2026-11-13 23:15:33.968575297 +0000 UTC"
+   "updated": "2026-11-13 23:20:12.129579602 +0000 UTC"
   }
  ]
 }
