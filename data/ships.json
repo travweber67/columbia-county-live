@@ -1,62 +1,98 @@
 {
- "fetched_at": "2026-11-13T10:04:05Z",
+ "fetched_at": "2026-11-13T10:09:05Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.99007,
+   "lon": -122.8413,
+   "sog_kn": 0,
+   "cog": 224.3,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-13 10:09:09.94381141 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65019,
+   "lon": -122.74755,
+   "type_code": 33,
+   "updated": "2026-11-13 10:09:18.94004728 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10796,
+   "lon": -122.95897,
+   "type_code": 50,
+   "destination": "CR HARBOR OPS",
+   "updated": "2026-11-13 10:09:22.313064836 +0000 UTC"
+  },
+  {
+   "mmsi": 368327640,
+   "name": "CAPT. STEVE",
+   "lat": 45.98577,
+   "lon": -122.83635,
+   "sog_kn": 0,
+   "cog": 157.4,
+   "heading": 153,
+   "nav_status": 12,
+   "updated": "2026-11-13 10:09:26.257467942 +0000 UTC",
+   "type_code": 99,
+   "destination": "XX XXX>US^0T67"
+  },
   {
    "mmsi": 367602150,
    "name": "LUNA",
    "lat": 45.61109,
-   "lon": -122.61292,
-   "sog_kn": 0,
-   "cog": 227.5,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-13 10:04:08.41343048 +0000 UTC"
+   "lon": -122.6129,
+   "type_code": 0,
+   "updated": "2026-11-13 10:09:31.848713364 +0000 UTC"
   },
   {
-   "mmsi": 368442720,
-   "name": "RUSTLER",
-   "lat": 45.60837,
-   "lon": -122.68621,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08057,
+   "lon": -122.90351,
+   "sog_kn": 0.2,
+   "cog": 193.5,
+   "heading": 139,
    "nav_status": 0,
-   "updated": "2026-11-13 10:04:08.870266887 +0000 UTC"
+   "updated": "2026-11-13 10:09:33.982996861 +0000 UTC"
   },
   {
-   "mmsi": 352006982,
-   "name": "MOSHILL",
-   "lat": 45.63366,
-   "lon": -122.70107,
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.99074,
+   "lon": -122.84142,
    "sog_kn": 0,
-   "cog": 189.6,
-   "heading": 126,
-   "nav_status": 5,
-   "updated": "2026-11-13 10:04:26.074955828 +0000 UTC"
+   "cog": 197.2,
+   "heading": 153,
+   "nav_status": 12,
+   "updated": "2026-11-13 10:09:36.280600564 +0000 UTC"
   },
   {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.65293,
-   "lon": -122.75339,
-   "sog_kn": 0.4,
-   "cog": 313.5,
-   "heading": 245,
-   "nav_status": 12,
-   "updated": "2026-11-13 10:04:30.851816693 +0000 UTC"
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.64926,
+   "lon": -122.7673,
+   "sog_kn": 8.7,
+   "cog": 29.9,
+   "heading": 14,
+   "nav_status": 0,
+   "updated": "2026-11-13 10:09:36.603776723 +0000 UTC"
   },
   {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.79316,
-   "lon": -122.84323,
-   "sog_kn": 0,
-   "cog": 41.7,
-   "heading": 211,
-   "nav_status": 12,
-   "updated": "2026-11-13 10:04:35.094852703 +0000 UTC"
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08075,
+   "lon": -122.9032,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-13 10:09:37.716892037 +0000 UTC"
   }
  ]
 }
