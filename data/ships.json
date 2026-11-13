@@ -1,38 +1,120 @@
 {
- "fetched_at": "2026-11-13T18:49:07Z",
+ "fetched_at": "2026-11-13T18:54:44Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 367327440,
    "name": "KATHRYN B.",
    "lat": 46.09045,
-   "lon": -122.93262,
+   "lon": -122.9326,
    "sog_kn": 0,
-   "cog": 281,
+   "cog": 223.7,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-13 18:49:43.801904896 +0000 UTC"
+   "updated": "2026-11-13 18:54:53.132927126 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 196.5,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-13 18:54:56.118318333 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.64342,
+   "lon": -122.75281,
+   "sog_kn": 0,
+   "cog": 316.8,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-13 18:54:59.360984064 +0000 UTC"
+  },
+  {
+   "mmsi": 368328430,
+   "name": "MCR 8",
+   "lat": 45.58477,
+   "lon": -122.76619,
+   "sog_kn": 0.1,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-13 18:55:00.900496504 +0000 UTC"
   },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 46.14868,
-   "lon": -123.04385,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-13 18:49:47.551276586 +0000 UTC"
+   "lat": 46.14376,
+   "lon": -123.03826,
+   "sog_kn": 0.5,
+   "cog": 55.4,
+   "heading": 116,
+   "nav_status": 3,
+   "updated": "2026-11-13 18:55:05.422546241 +0000 UTC"
   },
   {
-   "mmsi": 367323610,
-   "name": "MIKETTE",
-   "lat": 46.20621,
-   "lon": -123.38665,
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.09071,
+   "lon": -122.93209,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-13 18:55:05.763252486 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.04399,
+   "lon": -122.87692,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-13 18:55:08.156180797 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.64328,
+   "lon": -122.75281,
    "sog_kn": 0,
-   "cog": 36.7,
-   "heading": 181,
+   "cog": 305.8,
+   "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-13 18:49:49.055149367 +0000 UTC"
+   "updated": "2026-11-13 18:55:10.044920931 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64431,
+   "lon": -122.73173,
+   "sog_kn": 2.6,
+   "cog": 85.8,
+   "heading": 96,
+   "nav_status": 12,
+   "updated": "2026-11-13 18:55:10.50138245 +0000 UTC"
+  },
+  {
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 45.63029,
+   "lon": -122.69565,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-13 18:55:13.134849722 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19948,
+   "lon": -123.3851,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-13 18:55:14.258705696 +0000 UTC"
   }
  ]
 }
