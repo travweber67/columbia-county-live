@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-13T01:23:28Z",
+ "fetched_at": "2026-11-13T01:28:28Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -17,16 +17,16 @@
  ],
  "incidents": [
   {
-   "title": "Road construction is occurring causing minimal delay to traffic. Use caution and watch for workers.",
-   "desc": "Timber felling is occurring, prepare to slow or stop. Watch for workers, use caution, and prepare to slow down in the work zone.",
+   "title": "A crash has occurred with minimal delay to traffic. Prepare to slow or move over for worker safety.",
+   "desc": "",
    "impact": "No to Minimum Delay",
-   "place": "ORE202, 5 miles North of Birkenfeld",
-   "route": "OR202",
-   "milepost": 36.0,
-   "lat": 45.98244,
-   "lon": -123.41492,
-   "start": "2026-11-03T15:57:01.297-08:00",
-   "updated": "2026-11-03T15:58:13-08:00",
+   "place": "I-5, 1 mile South of Portland, Intersection with Victory Blvd",
+   "route": "I5",
+   "milepost": 305.97,
+   "lat": 45.58477,
+   "lon": -122.67959,
+   "start": "2026-11-12T17:19:40.987-08:00",
+   "updated": "2026-11-12T17:23:16-08:00",
    "source": "ODOT TripCheck"
   },
   {
@@ -95,6 +95,19 @@
    "source": "ODOT TripCheck"
   },
   {
+   "title": "Road construction is occurring causing minimal delay to traffic. Use caution and watch for workers.",
+   "desc": "Timber felling is occurring, prepare to slow or stop. Watch for workers, use caution, and prepare to slow down in the work zone.",
+   "impact": "No to Minimum Delay",
+   "place": "ORE202, 5 miles North of Birkenfeld",
+   "route": "OR202",
+   "milepost": 36.0,
+   "lat": 45.98244,
+   "lon": -123.41492,
+   "start": "2026-11-03T15:57:01.297-08:00",
+   "updated": "2026-11-03T15:58:13-08:00",
+   "source": "ODOT TripCheck"
+  },
+  {
    "title": "Road construction is occurring. Prepare to slow. Watch for workers.",
    "desc": "Expect crews working during the day with shoulder closures as needed. OR 6 traffic will use the roundabout. Traffic entering and exiting the north side of NW Aerts Road will use the roundabout. The south side of NW Aerts Road will temporarily close at the roundabout. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=OR6-Aerts",
    "impact": "Estimated delay under 20 minutes",
@@ -147,7 +160,7 @@
    "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 122,
+ "odot_active_statewide": 123,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
   "alerts": [],
