@@ -1,58 +1,126 @@
 {
- "fetched_at": "2026-11-13T21:49:09Z",
+ "fetched_at": "2026-11-13T21:54:56Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.20834,
+   "lon": -123.42728,
+   "sog_kn": 2.5,
+   "cog": 184.5,
+   "heading": 181,
+   "nav_status": 3,
+   "updated": "2026-11-13 21:55:08.796559262 +0000 UTC"
+  },
   {
    "mmsi": 367466760,
    "name": "MARINA",
-   "lat": 46.19953,
+   "lat": 46.19952,
    "lon": -123.385,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-13 21:55:11.037910683 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.9101,
    "sog_kn": 0,
-   "cog": 314,
+   "cog": 23,
+   "heading": 72,
+   "nav_status": 0,
+   "updated": "2026-11-13 21:55:11.357991689 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.64327,
+   "lon": -122.75281,
+   "sog_kn": 0,
+   "cog": 299.8,
    "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-13 21:49:56.786932019 +0000 UTC"
-  },
-  {
-   "mmsi": 368257130,
-   "name": "TRIUMPH VII",
-   "lat": 46.00985,
-   "lon": -122.84833,
-   "sog_kn": 0,
-   "cog": 301.6,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-13 21:49:58.520607714 +0000 UTC"
-  },
-  {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.74416,
-   "lon": -122.76295,
-   "type_code": 52,
-   "destination": "XX XXX>US^0UJQ",
-   "updated": "2026-11-13 21:50:05.179759173 +0000 UTC"
+   "updated": "2026-11-13 21:55:12.285139481 +0000 UTC"
   },
   {
    "mmsi": 367608420,
    "name": "PETER J BRIX",
-   "lat": 46.08974,
-   "lon": -122.92906,
+   "lat": 46.08975,
+   "lon": -122.92892,
    "sog_kn": 0,
-   "cog": 239.2,
+   "cog": 238.9,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-13 21:50:05.847956062 +0000 UTC"
+   "updated": "2026-11-13 21:55:12.923953135 +0000 UTC"
   },
   {
-   "mmsi": 367667060,
-   "name": "GRANITE POINT",
-   "lat": 45.64731,
-   "lon": -122.73992,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.17258,
+   "lon": -123.21616,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-13 21:55:14.942942894 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09671,
+   "lon": -122.93433,
+   "sog_kn": 6.6,
+   "cog": 106.4,
+   "heading": 110,
+   "nav_status": 3,
+   "updated": "2026-11-13 21:55:35.763004856 +0000 UTC",
    "type_code": 52,
-   "destination": "SRT PASCO",
-   "updated": "2026-11-13 21:50:19.942276049 +0000 UTC"
+   "destination": "LONGVIEW"
+  },
+  {
+   "mmsi": 352006982,
+   "name": "MOSHILL",
+   "lat": 45.63363,
+   "lon": -122.70107,
+   "sog_kn": 0,
+   "cog": 200.7,
+   "heading": 126,
+   "nav_status": 5,
+   "updated": "2026-11-13 21:55:26.089702784 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.18876,
+   "lon": -123.15254,
+   "sog_kn": 9.7,
+   "cog": 98.7,
+   "heading": 99,
+   "nav_status": 0,
+   "updated": "2026-11-13 21:55:28.509114874 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10787,
+   "lon": -122.95903,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-13 21:55:36.956007216 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.1534,
+   "lon": -123.37715,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-13 21:55:37.553955022 +0000 UTC"
   }
  ]
 }
