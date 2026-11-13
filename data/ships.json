@@ -1,115 +1,104 @@
 {
- "fetched_at": "2026-11-13T00:18:23Z",
+ "fetched_at": "2026-11-13T00:19:02Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 14 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.65471,
+   "lon": -122.76137,
+   "sog_kn": 4,
+   "cog": 240.9,
+   "heading": 224,
+   "nav_status": 12,
+   "updated": "2026-11-13 00:19:34.505437422 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.0965,
+   "lon": -122.9295,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-13 00:19:35.357439388 +0000 UTC"
+  },
   {
    "mmsi": 368083770,
    "name": "SUPPORT",
-   "lat": 46.00893,
-   "lon": -122.84823,
+   "lat": 46.0089,
+   "lon": -122.84836,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-13 00:18:25.693890009 +0000 UTC"
+   "updated": "2026-11-13 00:19:36.284924522 +0000 UTC"
   },
   {
-   "mmsi": 367347000,
-   "name": "WENDY SEAA",
-   "lat": 46.19949,
-   "lon": -123.38508,
-   "type_code": 30,
-   "destination": "CATHLAMET,WA",
-   "updated": "2026-11-13 00:18:26.293938692 +0000 UTC"
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.14005,
+   "lon": -123.38241,
+   "sog_kn": 8.3,
+   "cog": 344.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-13 00:19:36.463490685 +0000 UTC"
   },
   {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 46.06453,
-   "lon": -122.88668,
-   "sog_kn": 6.6,
-   "cog": 160.4,
-   "heading": 164,
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08065,
+   "lon": -122.90287,
+   "sog_kn": 0.4,
+   "cog": 88.1,
+   "heading": 228,
+   "nav_status": 0,
+   "updated": "2026-11-13 00:19:36.57196988 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08977,
+   "lon": -122.92903,
+   "sog_kn": 0,
+   "cog": 289.4,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-13 00:19:42.827856706 +0000 UTC"
+  },
+  {
+   "mmsi": 368327640,
+   "name": "CAPT. STEVE",
+   "lat": 45.98761,
+   "lon": -122.84019,
+   "sog_kn": 4.1,
+   "cog": 27.8,
+   "heading": 7,
    "nav_status": 12,
-   "updated": "2026-11-13 00:18:30.332917535 +0000 UTC"
+   "updated": "2026-11-13 00:19:46.298931752 +0000 UTC"
   },
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.9101,
-   "sog_kn": 0.1,
-   "cog": 166.7,
-   "heading": 72,
-   "nav_status": 0,
-   "updated": "2026-11-13 00:18:30.916347663 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58754,
-   "lon": -122.77066,
-   "sog_kn": 0,
-   "cog": 206,
-   "heading": 140,
-   "nav_status": 5,
-   "updated": "2026-11-13 00:18:31.664569787 +0000 UTC"
-  },
-  {
-   "mmsi": 367575580,
-   "name": "DIANE B.",
-   "lat": 46.16285,
-   "lon": -123.40493,
-   "sog_kn": 7.1,
-   "cog": 135.9,
-   "heading": 134,
-   "nav_status": 5,
-   "updated": "2026-11-13 00:18:35.709861379 +0000 UTC"
-  },
-  {
-   "mmsi": 352006999,
-   "name": "WABI SABI",
-   "lat": 46.1758,
-   "lon": -123.10786,
-   "sog_kn": 0,
-   "cog": 145.8,
-   "heading": 285,
-   "nav_status": 1,
-   "updated": "2026-11-13 00:18:41.31771011 +0000 UTC"
-  },
-  {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 46.044,
-   "lon": -122.87692,
-   "sog_kn": 0,
-   "cog": 125.2,
-   "heading": 180,
-   "nav_status": 5,
-   "updated": "2026-11-13 00:18:44.15378922 +0000 UTC"
-  },
-  {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.6435,
-   "lon": -122.75284,
-   "sog_kn": 0,
-   "cog": 238.6,
-   "heading": 225,
-   "nav_status": 5,
-   "updated": "2026-11-13 00:18:44.358211448 +0000 UTC"
-  },
-  {
-   "mmsi": 368442720,
-   "name": "RUSTLER",
-   "lat": 45.60836,
-   "lon": -122.68621,
-   "sog_kn": 0,
-   "cog": 360,
+   "mmsi": 368257130,
+   "name": "TRIUMPH VII",
+   "lat": 46.03591,
+   "lon": -122.87698,
+   "sog_kn": 29.2,
+   "cog": 162.8,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-13 00:18:47.397112185 +0000 UTC"
+   "nav_status": 15,
+   "updated": "2026-11-13 00:19:47.129940705 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.09073,
+   "lon": -122.93212,
+   "sog_kn": 0,
+   "cog": 246.9,
+   "heading": 114,
+   "nav_status": 5,
+   "updated": "2026-11-13 00:19:47.876098097 +0000 UTC"
   },
   {
    "mmsi": 367602150,
@@ -117,41 +106,32 @@
    "lat": 45.61108,
    "lon": -122.61291,
    "sog_kn": 0,
-   "cog": 191.9,
+   "cog": 109.1,
    "heading": 133,
    "nav_status": 15,
-   "updated": "2026-11-13 00:18:49.189585694 +0000 UTC"
+   "updated": "2026-11-13 00:19:49.177485247 +0000 UTC"
   },
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58077,
-   "lon": -122.76007,
-   "type_code": 31,
-   "destination": "PDX PTSI",
-   "updated": "2026-11-13 00:18:50.213894971 +0000 UTC"
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08056,
+   "lon": -122.90304,
+   "sog_kn": 0.1,
+   "cog": 63.1,
+   "heading": 123,
+   "nav_status": 0,
+   "updated": "2026-11-13 00:19:53.316162624 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.09649,
-   "lon": -122.92951,
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.20618,
+   "lon": -123.38661,
    "sog_kn": 0,
-   "cog": 80.5,
-   "heading": 67,
-   "nav_status": 3,
-   "updated": "2026-11-13 00:18:53.379039249 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19999,
-   "lon": -123.38542,
-   "sog_kn": 0,
-   "cog": 178.8,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-13 00:18:54.652764288 +0000 UTC"
+   "cog": 159.3,
+   "heading": 184,
+   "nav_status": 5,
+   "updated": "2026-11-13 00:19:56.408107281 +0000 UTC"
   }
  ]
 }
