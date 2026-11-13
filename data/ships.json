@@ -1,68 +1,37 @@
 {
- "fetched_at": "2026-11-13T03:18:37Z",
+ "fetched_at": "2026-11-13T03:19:18Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.07818,
-   "lon": -122.90263,
-   "type_code": 69,
-   "updated": "2026-11-13 03:18:46.188246329 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.13721,
-   "lon": -123.37891,
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08038,
+   "lon": -122.90317,
    "sog_kn": 0,
-   "cog": 195.4,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-13 03:18:47.31440855 +0000 UTC"
+   "cog": 131.1,
+   "heading": 115,
+   "nav_status": 5,
+   "updated": "2026-11-13 03:19:51.876875845 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08036,
-   "lon": -122.90326,
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.63535,
+   "lon": -122.70846,
    "type_code": 52,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-13 03:18:48.98280773 +0000 UTC"
-  },
-  {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 45.63568,
-   "lon": -122.70901,
-   "sog_kn": 5.5,
-   "cog": 124.2,
-   "heading": 125,
-   "nav_status": 0,
-   "updated": "2026-11-13 03:19:12.197964097 +0000 UTC",
-   "type_code": 70,
-   "destination": "USVAN"
+   "updated": "2026-11-13 03:19:51.956617085 +0000 UTC"
   },
   {
    "mmsi": 367513150,
    "name": "COLUMBIA",
-   "lat": 45.63502,
-   "lon": -122.70801,
-   "sog_kn": 5.5,
-   "cog": 123,
+   "lat": 45.63419,
+   "lon": -122.70624,
+   "sog_kn": 5.3,
+   "cog": 124.3,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-13 03:18:59.567439922 +0000 UTC"
-  },
-  {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 46.044,
-   "lon": -122.87693,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-13 03:19:06.906446533 +0000 UTC"
+   "updated": "2026-11-13 03:19:59.294601858 +0000 UTC"
   },
   {
    "mmsi": 368410780,
@@ -70,10 +39,83 @@
    "lat": 46.10353,
    "lon": -122.91008,
    "sog_kn": 0,
-   "cog": 11.9,
+   "cog": 288,
    "heading": 73,
    "nav_status": 0,
-   "updated": "2026-11-13 03:19:10.063411822 +0000 UTC"
+   "updated": "2026-11-13 03:20:10.137372231 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58729,
+   "lon": -122.77008,
+   "sog_kn": 0,
+   "cog": 335.3,
+   "heading": 138,
+   "nav_status": 5,
+   "updated": "2026-11-13 03:20:11.074667836 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.38541,
+   "sog_kn": 0,
+   "cog": 180.5,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-13 03:20:13.745510838 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64539,
+   "lon": -122.73505,
+   "sog_kn": 0,
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-13 03:20:14.435705541 +0000 UTC"
+  },
+  {
+   "mmsi": 431300000,
+   "name": "TRITON HIGHWAY",
+   "lat": 46.1833,
+   "lon": -123.42938,
+   "sog_kn": 13.4,
+   "cog": 343.5,
+   "heading": 346,
+   "nav_status": 0,
+   "updated": "2026-11-13 03:20:17.306062559 +0000 UTC"
+  },
+  {
+   "mmsi": 367575580,
+   "name": "DIANE B.",
+   "lat": 46.12165,
+   "lon": -122.98729,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-13 03:20:17.732362164 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.6473,
+   "lon": -122.73993,
+   "type_code": 52,
+   "destination": "SRT PASCO",
+   "updated": "2026-11-13 03:20:18.997869682 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16174,
+   "lon": -123.07445,
+   "sog_kn": 7.6,
+   "cog": 126,
+   "heading": 125,
+   "nav_status": 3,
+   "updated": "2026-11-13 03:20:20.714139275 +0000 UTC"
   }
  ]
 }
