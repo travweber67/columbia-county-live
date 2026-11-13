@@ -1,56 +1,95 @@
 {
- "fetched_at": "2026-11-13T22:49:09Z",
+ "fetched_at": "2026-11-13T22:55:02Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58131,
+   "lon": -122.76066,
+   "sog_kn": 0,
+   "cog": 228.4,
+   "heading": 122,
+   "nav_status": 5,
+   "updated": "2026-11-13 22:56:05.757512705 +0000 UTC",
+   "type_code": 57,
+   "destination": "PASCO"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 92.1,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-13 22:55:59.106913613 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.6319,
+   "lon": -122.70707,
+   "sog_kn": 6.5,
+   "cog": 120.3,
+   "heading": 119,
+   "nav_status": 0,
+   "updated": "2026-11-13 22:56:06.354036721 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08985,
+   "lon": -122.92902,
+   "sog_kn": 0,
+   "cog": 210.7,
+   "heading": 100,
+   "nav_status": 0,
+   "updated": "2026-11-13 22:56:07.722302315 +0000 UTC"
+  },
   {
    "mmsi": 636024922,
    "name": "VERACITY",
-   "lat": 46.15065,
-   "lon": -123.3896,
-   "sog_kn": 11.9,
-   "cog": 127.4,
-   "heading": 115,
+   "lat": 46.14506,
+   "lon": -123.36355,
+   "type_code": 70,
+   "destination": "KALAMA USA",
+   "updated": "2026-11-13 22:56:10.363918394 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.9101,
+   "sog_kn": 0.1,
+   "cog": 262.6,
+   "heading": 71,
    "nav_status": 0,
-   "updated": "2026-11-13 22:50:26.81348134 +0000 UTC"
+   "updated": "2026-11-13 22:56:10.536794537 +0000 UTC"
   },
   {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 45.63859,
-   "lon": -122.78157,
-   "sog_kn": 6.2,
-   "cog": 44.8,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-13 22:50:32.957433273 +0000 UTC"
-  },
-  {
-   "mmsi": 368257130,
-   "name": "TRIUMPH VII",
-   "lat": 46.00988,
-   "lon": -122.84835,
-   "type_code": 50,
-   "updated": "2026-11-13 22:50:38.76075393 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08112,
-   "lon": -122.90378,
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58728,
+   "lon": -122.77005,
    "sog_kn": 0,
-   "cog": 165,
-   "heading": 123,
-   "nav_status": 0,
-   "updated": "2026-11-13 22:50:43.625687895 +0000 UTC"
+   "cog": 357.3,
+   "heading": 139,
+   "nav_status": 5,
+   "updated": "2026-11-13 22:56:13.94882818 +0000 UTC"
   },
   {
    "mmsi": 367669550,
    "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35743,
-   "type_code": 30,
-   "updated": "2026-11-13 22:50:51.985275213 +0000 UTC"
+   "lat": 46.17719,
+   "lon": -123.35744,
+   "sog_kn": 0,
+   "cog": 229.8,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-13 22:56:14.995973988 +0000 UTC"
   }
  ]
 }
