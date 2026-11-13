@@ -1,113 +1,90 @@
 {
- "fetched_at": "2026-11-13T09:49:01Z",
+ "fetched_at": "2026-11-13T09:54:04Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08073,
-   "lon": -122.90346,
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64787,
+   "lon": -122.74099,
+   "sog_kn": 0,
+   "cog": 111.6,
+   "heading": 111,
+   "nav_status": 5,
+   "updated": "2026-11-13 09:54:19.522130421 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08074,
+   "lon": -122.90312,
    "sog_kn": 0.2,
-   "cog": 25.3,
-   "heading": 511,
+   "cog": 96.2,
+   "heading": 158,
    "nav_status": 0,
-   "updated": "2026-11-13 09:49:28.814993114 +0000 UTC"
+   "updated": "2026-11-13 09:54:23.107929632 +0000 UTC"
   },
   {
-   "mmsi": 367327440,
-   "name": "KATHRYN B.",
-   "lat": 45.60926,
-   "lon": -122.63877,
-   "sog_kn": 9.5,
-   "cog": 286.9,
-   "heading": 511,
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08985,
+   "lon": -122.929,
+   "sog_kn": 0,
+   "cog": 334.5,
+   "heading": 100,
    "nav_status": 0,
-   "updated": "2026-11-13 09:49:41.163046775 +0000 UTC",
-   "type_code": 31,
-   "destination": "LONGVIEW"
+   "updated": "2026-11-13 09:54:27.268200444 +0000 UTC"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15973,
-   "lon": -123.40541,
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.63486,
+   "lon": -122.70453,
+   "sog_kn": 4.8,
+   "cog": 110.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-13 09:54:28.144690025 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79316,
+   "lon": -122.84322,
+   "type_code": 57,
+   "destination": "US^0UWG>?? ???",
+   "updated": "2026-11-13 09:54:28.630248626 +0000 UTC"
+  },
+  {
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10893,
+   "lon": -122.96126,
+   "sog_kn": 0.1,
+   "cog": 339.1,
+   "heading": 130,
+   "nav_status": 5,
+   "updated": "2026-11-13 09:54:32.055381721 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37712,
+   "type_code": 99,
+   "updated": "2026-11-13 09:54:37.258030576 +0000 UTC"
+  },
+  {
+   "mmsi": 368442720,
+   "name": "RUSTLER",
+   "lat": 45.60837,
+   "lon": -122.68623,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 134,
-   "nav_status": 0,
-   "updated": "2026-11-13 09:49:34.69185403 +0000 UTC"
-  },
-  {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.64347,
-   "lon": -122.75289,
-   "sog_kn": 0,
-   "cog": 215,
-   "heading": 224,
-   "nav_status": 5,
-   "updated": "2026-11-13 09:49:34.937079165 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.65174,
-   "lon": -122.76621,
-   "sog_kn": 9.4,
-   "cog": 32.3,
-   "heading": 34,
-   "nav_status": 5,
-   "updated": "2026-11-13 09:49:36.72925867 +0000 UTC"
-  },
-  {
-   "mmsi": 368327640,
-   "name": "CAPT. STEVE",
-   "lat": 45.98577,
-   "lon": -122.83635,
-   "sog_kn": 0,
-   "cog": 157.4,
-   "heading": 152,
-   "nav_status": 12,
-   "updated": "2026-11-13 09:49:43.66880824 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08051,
-   "lon": -122.90335,
-   "type_code": 52,
-   "destination": "PORTLAND",
-   "updated": "2026-11-13 09:49:43.811503969 +0000 UTC"
-  },
-  {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.1996,
-   "lon": -123.38505,
-   "sog_kn": 0,
-   "cog": 198,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-13 09:49:47.478375382 +0000 UTC"
-  },
-  {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.09124,
-   "lon": -122.92203,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-13 09:49:50.142707807 +0000 UTC"
-  },
-  {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.6527,
-   "lon": -122.75275,
-   "type_code": 52,
-   "destination": "VANCOUVER",
-   "updated": "2026-11-13 09:49:51.340148084 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-13 09:54:37.882361392 +0000 UTC"
   }
  ]
 }
