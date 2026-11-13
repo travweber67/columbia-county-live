@@ -5484,6 +5484,22 @@ const LANG_KEY = 'ccl-lang-v1';
 const LANG_ES = {
   __title: 'Columbia County Live — Carreteras, ríos, clima y ferry para el condado de Columbia, Oregón',
   tabtoday: 'Hoy',
+  helpview: 'Ayuda comunitaria',
+  helph2: '🤝 Ayuda comunitaria',
+  helpintro: 'Comida gratuita, líneas de crisis, ayuda con el alquiler, las facturas de servicios y los pañales, apoyo para familias, veteranos y recuperación — la ayuda que este condado ya ofrece, reunida en un solo lugar. Todo aquí es gratuito, con una excepción honesta: el centro de salud cobra según los ingresos, y su anuncio lo dice. Toca cualquier número de teléfono para llamar. Cada anuncio se verificó contra el sitio web propio del servicio.',
+  help911: 'En una emergencia, llama al 911.',
+  helpsafe: '📞 Línea de crisis de SAFE — (503) 397-6161 · 24/7',
+  helpmh: '📞 Crisis de salud mental — (503) 782-4499 · 24/7',
+  helpfoodh: '🍞 Comida — despensas y comidas gratuitas',
+  helpcrisish: '🛟 Crisis y seguridad',
+  helpmoneyh: '🏠 Ayuda con dinero y vivienda',
+  helpfamilyh: '👶 Familia y salud',
+  helpvetsh: '🎖️ Veteranos, ayuda legal y recuperación',
+  dwhelpfood: 'Comida gratuita',
+  dwhelpcrisis: 'Crisis y seguridad',
+  dwhelpmoney: 'Ayuda con dinero y vivienda',
+  dwhelpfamily: 'Familia y salud',
+  dwhelpvets: 'Veteranos, legal y recuperación',
   tabtravel: 'Viajes',
   taboutdoors: 'Aire libre',
   tabmore: 'Eventos y más',
@@ -6874,7 +6890,7 @@ initDark();
    hidden, so every switch to Travel calls invalidateSize(). The last
    view is remembered (ccl-view-v1). */
 const VIEW_KEY = 'ccl-view-v1';
-const VIEW_IDS = ['today', 'travel', 'outdoors', 'more', 'emergency'];
+const VIEW_IDS = ['today', 'travel', 'outdoors', 'more', 'emergency', 'help'];
 let cclViewCur = 'today';
 
 function cclParentOf(el) { return el ? (el.parentNode || el.parent || null) : null; }

@@ -2666,3 +2666,9 @@ html[data-theme="dark"] .getapp-other summary{color:#bfe3c8}
 /* Town panel lines. */
 .town-line{margin:6px 0}
 /* ============ END REFINEMENTS BATCH 1 ============ */
+
+/* ---------- Community Help section (v64, shipped 2026-11-12) ----------
+   The section reuses the directory card styles (.dir-list / .dir-item)
+   verbatim; only the intro card's quick-call row is new. */
+.help-quick{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 2px}
+.help-quick .share-btn{text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
