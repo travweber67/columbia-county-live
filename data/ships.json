@@ -1,48 +1,60 @@
 {
- "fetched_at": "2026-11-14T00:50:11Z",
+ "fetched_at": "2026-11-14T00:55:11Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368257130,
-   "name": "TRIUMPH VII",
-   "lat": 46.00987,
-   "lon": -122.84834,
-   "type_code": 50,
-   "updated": "2026-11-14 00:50:36.717951345 +0000 UTC"
-  },
-  {
-   "mmsi": 636024922,
-   "name": "VERACITY",
-   "lat": 46.05055,
-   "lon": -122.88149,
-   "sog_kn": 12.9,
-   "cog": 176,
-   "heading": 176,
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08098,
+   "lon": -122.90405,
+   "sog_kn": 0.1,
+   "cog": 173.2,
+   "heading": 337,
    "nav_status": 0,
-   "updated": "2026-11-14 00:50:40.097330223 +0000 UTC"
+   "updated": "2026-11-14 00:55:30.869672084 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.09644,
-   "lon": -122.93001,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37716,
    "sog_kn": 0,
-   "cog": 76.9,
-   "heading": 69,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-14 00:55:36.408055493 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.0814,
+   "lon": -122.90405,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 333,
    "nav_status": 3,
-   "updated": "2026-11-14 00:50:43.628574781 +0000 UTC"
+   "updated": "2026-11-14 00:55:41.270515235 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35744,
+   "mmsi": 563331600,
+   "name": "BELLE LUNE",
+   "lat": 46.17121,
+   "lon": -123.0988,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-14 00:55:44.444136896 +0000 UTC"
+  },
+  {
+   "mmsi": 636015993,
+   "name": "SIEM NEWTON",
+   "lat": 45.63298,
+   "lon": -122.73787,
    "sog_kn": 0,
-   "cog": 300.2,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-14 00:50:46.482878862 +0000 UTC"
+   "cog": 312,
+   "heading": 136,
+   "nav_status": 0,
+   "updated": "2026-11-14 00:55:47.074382496 +0000 UTC"
   }
  ]
 }
