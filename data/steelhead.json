@@ -1,14 +1,14 @@
 {
- "fetched_at": "2026-11-14T07:49:16Z",
+ "fetched_at": "2026-11-14T08:19:16Z",
  "status": "ok",
- "note": "MRMS basin rainfall current",
+ "note": "MRMS grids still fresh \u2014 reusing the last good pull",
  "source": "NOAA MRMS radar-gauge rainfall (QPE), archived grids served by Iowa State University's IEM, averaged over each creek's basin",
  "valid_time": "2026-11-14T06:00:00Z",
  "basins": {
   "wilson": {
    "p24_in": 0.92,
    "p72_in": 0.92,
-   "days_since_flush": 3,
+   "days_since_flush": 1,
    "first_flush": false
   },
   "nehalem": {
@@ -20,8 +20,8 @@
   "nf_nehalem": {
    "p24_in": 0.78,
    "p72_in": 0.78,
-   "days_since_flush": null,
-   "first_flush": true
+   "days_since_flush": 1,
+   "first_flush": false
   },
   "big_creek": {
    "p24_in": 0.65,
