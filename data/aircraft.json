@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-14T00:00:05Z",
+ "fetched_at": "2026-11-14T00:05:11Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
@@ -7,11 +7,21 @@
    "hex": "a04f7e",
    "callsign": "GFY1193",
    "type": "AS50",
-   "alt_ft": 1675,
-   "gs_kn": 72.3,
-   "track": 194.42,
-   "lat": 45.926605,
-   "lon": -122.801089
+   "alt_ft": 1650,
+   "gs_kn": 76.0,
+   "track": 153.43,
+   "lat": 45.887844,
+   "lon": -122.794258
+  },
+  {
+   "hex": "406d78",
+   "callsign": "BAW71K",
+   "type": "B789",
+   "alt_ft": 6325,
+   "gs_kn": 222.7,
+   "track": 296.68,
+   "lat": 45.699354,
+   "lon": -122.620193
   }
  ]
 }
