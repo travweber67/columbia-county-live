@@ -1,49 +1,88 @@
 {
- "fetched_at": "2026-11-14T01:10:13Z",
+ "fetched_at": "2026-11-14T01:15:14Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368257130,
+   "name": "TRIUMPH VII",
+   "lat": 46.00986,
+   "lon": -122.84838,
+   "type_code": 50,
+   "updated": "2026-11-14 01:15:32.28519613 +0000 UTC"
+  },
   {
    "mmsi": 367384780,
    "name": "CAROLYN DOROTHY",
-   "lat": 46.08986,
-   "lon": -122.92898,
+   "lat": 46.08982,
+   "lon": -122.92899,
    "sog_kn": 0,
    "cog": 178.5,
-   "heading": 109,
+   "heading": 110,
    "nav_status": 0,
-   "updated": "2026-11-14 01:10:37.526000064 +0000 UTC"
+   "updated": "2026-11-14 01:15:37.559666159 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.16417,
-   "lon": -123.07873,
-   "sog_kn": 1.1,
-   "cog": 298.9,
-   "heading": 301,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 223.9,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-14 01:15:39.098330196 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09643,
+   "lon": -122.93034,
+   "sog_kn": 0,
+   "cog": 13.6,
+   "heading": 69,
    "nav_status": 3,
-   "updated": "2026-11-14 01:10:41.366769693 +0000 UTC"
+   "updated": "2026-11-14 01:15:42.764471014 +0000 UTC"
   },
   {
-   "mmsi": 367327440,
-   "name": "KATHRYN B.",
-   "lat": 45.61788,
-   "lon": -122.67568,
-   "sog_kn": 7.1,
-   "cog": 111.7,
+   "mmsi": 352006999,
+   "name": "WABI SABI",
+   "lat": 46.09902,
+   "lon": -122.93941,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-14 01:15:45.641616593 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64346,
+   "lon": -122.75293,
+   "sog_kn": 0,
+   "cog": 213.9,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-14 01:15:47.374163456 +0000 UTC"
+  },
+  {
+   "mmsi": 212138000,
+   "name": "ALKIMOS HERACLES",
+   "lat": 46.02724,
+   "lon": -122.86948,
+   "type_code": 70,
+   "destination": "JP CHB > US KAL",
+   "updated": "2026-11-14 01:15:50.143236026 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.98615,
+   "lon": -122.83887,
+   "sog_kn": 4.4,
+   "cog": 143.3,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-14 01:10:54.34882765 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 45.98242,
-   "lon": -122.8336,
-   "type_code": 50,
-   "destination": "--",
-   "updated": "2026-11-14 01:10:55.706200757 +0000 UTC"
+   "updated": "2026-11-14 01:15:52.065489288 +0000 UTC"
   }
  ]
 }
