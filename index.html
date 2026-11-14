@@ -30,12 +30,12 @@
 if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
-<link rel="manifest" href="manifest.webmanifest?v=73">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=73">
+<link rel="manifest" href="manifest.webmanifest?v=74">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=74">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=73">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=73">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=73">
+<link rel="stylesheet" href="style.css?v=74">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=74">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=74">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
      only page backgrounds first paint needs — warm them with the hero.
      Every other view's photo is lazy-attached by app.js. -->
@@ -167,17 +167,6 @@ document.documentElement.setAttribute("data-theme",t);})();
   </aside>
 </div>
 
-<!-- v5: YOUR PINS — the top of Today. Pinned cards render here as live
-     copies in pin order; the originals never move (pins are shortcuts,
-     not moves). The zone is hidden while nothing is pinned. -->
-<section class="frontpage" id="frontpage" hidden aria-label="Your pins — live copies of the cards you pinned, at the top of Today">
-  <div class="frontpage-head">
-    <h2 data-i18n="pinsh2">📌 Your pins</h2>
-    <button class="pin-clear" id="frontpage-clear" type="button" data-i18n="pinsclear">Unpin all</button>
-  </div>
-  <div class="frontpage-list" id="frontpage-list"></div>
-</section>
-
 <!-- v3: the glance board is one CONTINUOUS full-width strip — all four
      live answers flow right-to-left in a single repeating stream
      (the marquee pattern from Travis's own portfolio sites). It breaks
@@ -258,6 +247,20 @@ document.documentElement.setAttribute("data-theme",t);})();
     </div>
     <p class="founding-foot" data-i18n="fsfoot">Every founding sponsor keeps a permanent &ldquo;Founding Sponsor &middot; 2026&rdquo; badge and a place on the Community Partners wall below — even if they later change tiers. Founding closes January 31, 2027 — after that, no new founding sponsors ever.</p>
   </div>
+</section>
+
+<!-- v74: YOUR PINS — below the founding sponsor panel on Today
+     (moved in v74 at Travis's call: the founding sponsor's paid top
+     spot comes first; the pins render directly underneath the panel).
+     Pinned cards render here as live
+     copies in pin order; the originals never move (pins are shortcuts,
+     not moves). The zone is hidden while nothing is pinned. -->
+<section class="frontpage" id="frontpage" hidden aria-label="Your pins — live copies of the cards you pinned, below the founding sponsors on Today">
+  <div class="frontpage-head">
+    <h2 data-i18n="pinsh2">📌 Your pins</h2>
+    <button class="pin-clear" id="frontpage-clear" type="button" data-i18n="pinsclear">Unpin all</button>
+  </div>
+  <div class="frontpage-list" id="frontpage-list"></div>
 </section>
 
 <section class="finder" id="finder-card" aria-label="Find anything on this page">
@@ -1859,7 +1862,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=73"></script>
+<script src="app.js?v=74"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>
