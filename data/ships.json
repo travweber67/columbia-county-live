@@ -1,66 +1,78 @@
 {
- "fetched_at": "2026-11-14T19:46:32Z",
+ "fetched_at": "2026-11-14T19:49:25Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08159,
+   "lon": -122.90496,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 280,
+   "nav_status": 3,
+   "updated": "2026-11-14 19:50:06.575961262 +0000 UTC"
+  },
   {
    "mmsi": 368202070,
    "name": "TERILYN",
-   "lat": 46.15194,
+   "lat": 46.15193,
    "lon": -123.37798,
-   "type_code": 52,
-   "destination": "US^02SX>02A3",
-   "updated": "2026-11-14 19:46:35.785283352 +0000 UTC"
+   "sog_kn": 0,
+   "cog": 23.6,
+   "heading": 24,
+   "nav_status": 0,
+   "updated": "2026-11-14 19:50:08.750468662 +0000 UTC"
   },
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64354,
-   "lon": -122.75242,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.15979,
+   "lon": -123.07204,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-14 19:50:16.430551145 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.12384,
+   "lon": -122.99089,
+   "sog_kn": 6.5,
+   "cog": 140.5,
+   "heading": 142,
+   "nav_status": 3,
+   "updated": "2026-11-14 19:50:16.773595356 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09073,
+   "lon": -122.9321,
    "sog_kn": 0,
-   "cog": 249.8,
+   "cog": 266.4,
    "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-14 19:46:37.668398716 +0000 UTC"
+   "updated": "2026-11-14 19:50:17.350850689 +0000 UTC"
   },
   {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58728,
-   "lon": -122.77006,
-   "type_code": 31,
-   "destination": "US^02SY>0UJ9",
-   "updated": "2026-11-14 19:46:41.112241944 +0000 UTC"
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64729,
+   "lon": -122.73994,
+   "type_code": 52,
+   "destination": "SRT PASCO",
+   "updated": "2026-11-14 19:50:22.321315614 +0000 UTC"
   },
   {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 45.99853,
-   "lon": -122.85165,
-   "sog_kn": 0,
-   "cog": 258.8,
-   "heading": 158,
-   "nav_status": 1,
-   "updated": "2026-11-14 19:46:51.123062288 +0000 UTC"
-  },
-  {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.5813,
-   "lon": -122.76065,
-   "sog_kn": 0,
-   "cog": 10.1,
-   "heading": 122,
-   "nav_status": 5,
-   "updated": "2026-11-14 19:46:54.920421031 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15342,
-   "lon": -123.37713,
-   "type_code": 99,
-   "updated": "2026-11-14 19:46:56.142172989 +0000 UTC"
+   "mmsi": 355980000,
+   "name": "LUGANO STAR",
+   "lat": 46.26603,
+   "lon": -123.51932,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-14 19:50:34.952451198 +0000 UTC"
   }
  ]
 }
