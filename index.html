@@ -30,12 +30,12 @@
 if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
-<link rel="manifest" href="manifest.webmanifest?v=66">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=66">
+<link rel="manifest" href="manifest.webmanifest?v=67">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=67">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=66">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=66">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=66">
+<link rel="stylesheet" href="style.css?v=67">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=67">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=67">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
      only page backgrounds first paint needs — warm them with the hero.
      Every other view's photo is lazy-attached by app.js. -->
@@ -225,20 +225,21 @@ document.documentElement.setAttribute("data-theme",t);})();
   <div class="founding-inner">
     <p class="founding-eyebrow" data-i18n="fseyebrow">Presented by our Founding Sponsors</p>
     <!-- v55: the panel is the three founding spots themselves, shown
-         exactly as a prospect would ask to see them — spot 1 RESERVED
-         (generic held state; a local business is deciding, nothing is confirmed — the sponsor's own name and card join the
-         panel only if they confirm and approve their preview), spots 2 and 3
+         exactly as a prospect would ask to see them — spot 1 is OREGON TRAIL LANES
+         (v67, 2026-11-13: Kellie Jo confirmed and approved her Option B card — logo only, no photo —
+         and her free 30-day pilot started the same day; no Founding badge on her directory listing,
+         which stays unchanged), spots 2 and 3
          open invitations. The two house cells that used to fill this
          grid now live permanently in Today's flow (before Tonight &
          Tomorrow and before the County Briefing — the same spots the
          v6 phone mover used to carry them to). -->
     <div class="founding-cells">
       <article class="founding-cell taken">
-        <div class="ghost-logo claimed" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fs1box">Spot reserved</span></div>
-        <p class="cell-eyebrow" data-i18n="fs1eyebrow">Founding Sponsor · Spot 1 of 3 — Reserved</p>
-        <h3 data-i18n="fs1h3">This spot is reserved</h3>
-        <p data-i18n="fs1p">We are holding this spot for a local business while they decide. Their name joins this panel only if they confirm and approve their card — the other two spots are still open.</p>
-        <a class="founding-cta alt" href="sponsor.html#founding" data-i18n="fs1cta">See the two spots still open &rarr;</a>
+        <div class="otl-logo-box"><img src="img/preview-otl-logo.png" alt="Oregon Trail Lanes logo"></div>
+        <p class="cell-eyebrow">Founding Sponsor · Spot 1 of 3</p>
+        <h3>Oregon Trail Lanes</h3>
+        <p>Keep it Rolling!<br>735 S Columbia River Hwy<br>503-397-1011</p>
+        <a class="founding-cta" href="https://www.oregontraillanes.com/" target="_blank" rel="noopener">Visit Oregon Trail Lanes &rarr;</a>
       </article>
       <article class="founding-cell invite">
         <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
@@ -1797,7 +1798,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=66"></script>
+<script src="app.js?v=67"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>
