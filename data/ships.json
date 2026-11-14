@@ -1,58 +1,65 @@
 {
- "fetched_at": "2026-11-14T10:30:49Z",
+ "fetched_at": "2026-11-14T10:35:49Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.19952,
-   "lon": -123.38502,
-   "type_code": 30,
-   "destination": "CATHLAMET WA",
-   "updated": "2026-11-14 10:30:52.630510941 +0000 UTC"
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.60107,
+   "lon": -122.77523,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-14 10:35:54.335305483 +0000 UTC"
   },
   {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 45.64343,
-   "lon": -122.75284,
+   "mmsi": 563331600,
+   "name": "BELLE LUNE",
+   "lat": 46.17047,
+   "lon": -123.09985,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-14 10:36:07.793421255 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64728,
+   "lon": -122.73996,
    "sog_kn": 0,
-   "cog": 198.2,
+   "cog": 208.4,
+   "heading": 16,
+   "nav_status": 5,
+   "updated": "2026-11-14 10:36:13.677208319 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65017,
+   "lon": -122.74761,
+   "sog_kn": 0,
+   "cog": 211.8,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-14 10:31:01.415661407 +0000 UTC"
+   "nav_status": 3,
+   "updated": "2026-11-14 10:36:18.737163686 +0000 UTC"
   },
   {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.64837,
-   "lon": -122.74263,
-   "sog_kn": 0,
-   "cog": 167.5,
-   "heading": 110,
-   "nav_status": 12,
-   "updated": "2026-11-14 10:31:05.190857307 +0000 UTC"
-  },
-  {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.09072,
-   "lon": -122.93213,
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08973,
+   "lon": -122.92904,
    "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-14 10:31:05.391464769 +0000 UTC"
+   "destination": "US^0UJB>0UJB",
+   "updated": "2026-11-14 10:36:20.007073957 +0000 UTC"
   },
   {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.64355,
-   "lon": -122.75294,
-   "sog_kn": 0,
-   "cog": 194.4,
-   "heading": 231,
-   "nav_status": 5,
-   "updated": "2026-11-14 10:31:19.303286768 +0000 UTC"
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00903,
+   "lon": -122.84833,
+   "type_code": 31,
+   "destination": "HARBOROPPS-",
+   "updated": "2026-11-14 10:36:22.152905586 +0000 UTC"
   }
  ]
 }
