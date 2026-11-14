@@ -1,6 +1,38 @@
 {
- "fetched_at": "2026-11-14T01:49:13Z",
- "status": "error",
- "note": "AISStream error: _ssl.c:1064: The handshake operation timed out",
- "ships": []
+ "fetched_at": "2026-11-14T02:00:16Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.15716,
+   "lon": -123.0613,
+   "sog_kn": 6.9,
+   "cog": 294.9,
+   "heading": 298,
+   "nav_status": 3,
+   "updated": "2026-11-14 02:00:54.580349882 +0000 UTC"
+  },
+  {
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 45.63012,
+   "lon": -122.69532,
+   "sog_kn": 0,
+   "cog": 60.6,
+   "heading": 127,
+   "nav_status": 5,
+   "updated": "2026-11-14 02:00:55.430545632 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.64324,
+   "lon": -122.75267,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-14 02:00:59.907732084 +0000 UTC"
+  }
+ ]
 }
