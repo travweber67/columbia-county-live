@@ -1,77 +1,97 @@
 {
- "fetched_at": "2026-11-14T09:10:42Z",
+ "fetched_at": "2026-11-14T09:15:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368257130,
-   "name": "TRIUMPH VII",
-   "lat": 46.00989,
-   "lon": -122.84834,
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.79532,
+   "lon": -122.84076,
+   "sog_kn": 0.4,
+   "cog": 165.6,
+   "heading": 64,
+   "nav_status": 0,
+   "updated": "2026-11-14 09:15:52.287014929 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.04402,
+   "lon": -122.87692,
    "sog_kn": 0,
-   "cog": 301.6,
+   "cog": 125.2,
+   "heading": 180,
+   "nav_status": 5,
+   "updated": "2026-11-14 09:15:53.217332414 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60756,
+   "lon": -122.67748,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-14 09:10:48.406263524 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-14 09:15:55.95068102 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64568,
+   "lon": -122.73488,
+   "type_code": 79,
+   "updated": "2026-11-14 09:15:58.255683386 +0000 UTC"
+  },
+  {
+   "mmsi": 477050900,
+   "name": "MING DE",
+   "lat": 45.99856,
+   "lon": -122.8516,
+   "type_code": 70,
+   "destination": "CN QDG",
+   "updated": "2026-11-14 09:15:59.194445705 +0000 UTC"
+  },
+  {
+   "mmsi": 212138000,
+   "name": "ALKIMOS HERACLES",
+   "lat": 46.02725,
+   "lon": -122.86948,
+   "type_code": 70,
+   "destination": "JP CHB > US KAL",
+   "updated": "2026-11-14 09:16:00.72922751 +0000 UTC"
   },
   {
    "mmsi": 367047180,
    "name": "SUNDIAL",
    "lat": 45.98994,
    "lon": -122.84091,
-   "type_code": 0,
-   "destination": "VANCOUVER",
-   "updated": "2026-11-14 09:10:54.557283814 +0000 UTC"
-  },
-  {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09668,
-   "lon": -122.92961,
    "sog_kn": 0,
-   "cog": 226.5,
-   "heading": 68,
-   "nav_status": 3,
-   "updated": "2026-11-14 09:10:55.492646566 +0000 UTC"
+   "cog": 37.7,
+   "heading": 333,
+   "nav_status": 5,
+   "updated": "2026-11-14 09:16:05.27097684 +0000 UTC"
   },
   {
    "mmsi": 367727410,
    "name": "AMY B",
    "lat": 45.79316,
-   "lon": -122.84322,
+   "lon": -122.84324,
+   "type_code": 57,
+   "destination": "US^0UWG>?? ???",
+   "updated": "2026-11-14 09:16:06.977082575 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.64724,
+   "lon": -122.73959,
    "sog_kn": 0,
-   "cog": 181.4,
-   "heading": 218,
-   "nav_status": 12,
-   "updated": "2026-11-14 09:11:05.414689447 +0000 UTC"
-  },
-  {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64568,
-   "lon": -122.73485,
-   "type_code": 79,
-   "updated": "2026-11-14 09:11:06.30983615 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35743,
-   "sog_kn": 0,
-   "cog": 296.1,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-14 09:11:06.756228905 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58756,
-   "lon": -122.77066,
-   "type_code": 52,
-   "destination": "PORTLAND,OR",
-   "updated": "2026-11-14 09:11:13.697636185 +0000 UTC"
+   "cog": 335.1,
+   "heading": 284,
+   "nav_status": 0,
+   "updated": "2026-11-14 09:16:10.541377694 +0000 UTC"
   }
  ]
 }
