@@ -1,51 +1,88 @@
 {
- "fetched_at": "2026-11-14T20:41:36Z",
+ "fetched_at": "2026-11-14T20:46:36Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65005,
-   "lon": -122.74762,
+   "mmsi": 636024633,
+   "name": "PAVO LEADER",
+   "lat": 45.64054,
+   "lon": -122.71739,
    "sog_kn": 0,
-   "cog": 300.4,
+   "cog": 301,
+   "heading": 296,
+   "nav_status": 5,
+   "updated": "2026-11-14 20:46:39.898962912 +0000 UTC"
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.6473,
+   "lon": -122.74137,
+   "sog_kn": 0,
+   "cog": 127.7,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-14 20:41:40.296977652 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-14 20:46:42.707183376 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.08193,
-   "lon": -122.90473,
-   "sog_kn": 0.2,
-   "cog": 53.3,
-   "heading": 330,
-   "nav_status": 3,
-   "updated": "2026-11-14 20:41:47.348076675 +0000 UTC"
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64567,
+   "lon": -122.73485,
+   "type_code": 79,
+   "updated": "2026-11-14 20:46:47.322674308 +0000 UTC"
   },
   {
-   "mmsi": 338205428,
-   "name": "CLAIRE B",
-   "lat": 45.79308,
-   "lon": -122.84445,
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.0088,
+   "lon": -122.84886,
    "sog_kn": 0,
-   "cog": 81.5,
-   "heading": 224,
+   "cog": 360,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-14 20:42:05.134263774 +0000 UTC"
+   "updated": "2026-11-14 20:46:47.667591419 +0000 UTC"
   },
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 46.15983,
-   "lon": -123.40532,
-   "sog_kn": 0.3,
-   "cog": 134.5,
-   "heading": 134,
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.63007,
+   "lon": -122.70584,
+   "type_code": 0,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-14 20:46:54.921714545 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09686,
+   "lon": -122.92893,
+   "sog_kn": 0,
+   "cog": 171,
+   "heading": 68,
+   "nav_status": 3,
+   "updated": "2026-11-14 20:46:55.565728426 +0000 UTC"
+  },
+  {
+   "mmsi": 352006982,
+   "name": "MOSHILL",
+   "lat": 45.63367,
+   "lon": -122.70101,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-14 20:46:56.801851315 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08155,
+   "lon": -122.90461,
+   "sog_kn": 0,
+   "cog": 342.6,
+   "heading": 145,
    "nav_status": 0,
-   "updated": "2026-11-14 20:42:10.080087196 +0000 UTC"
+   "updated": "2026-11-14 20:47:04.634444561 +0000 UTC"
   }
  ]
 }
