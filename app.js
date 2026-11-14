@@ -314,6 +314,11 @@ async function loadAlerts() {
 /* ---------- forecast (NWS points → gridpoint forecast) ---------- */
 const forecastUrlCache = {};
 let currentTown = TOWNS[0];
+/* v71 — one county-wide forecast: the St. Helens gridpoint stands
+   in for all of Columbia County and the town picker is gone, so
+   loadForecast always uses this town and labels read Columbia County. */
+const COUNTY_TOWN = { name: 'Columbia County', lat: TOWNS[0].lat, lon: TOWNS[0].lon };
+
 /* ---------- 7-day strip (top of the forecast card) ----------
    The same NWS gridpoint response the period list below uses carries
    14 periods — seven full days of day/night pairs. This groups them by
@@ -370,6 +375,7 @@ function renderWeekStrip(periods) {
   }).join('');
 }
 async function loadForecast(town) {
+  town = COUNTY_TOWN; /* v71: county-wide only — no town picker */
   currentTown = town;
   document.querySelectorAll('.town-btn').forEach(b => {
     b.classList.toggle('active', b.dataset.town === town.name);
@@ -402,18 +408,6 @@ async function loadForecast(town) {
       + '<a href="https://forecast.weather.gov/MapClick.php?lat=' + town.lat + '&lon=' + town.lon
       + '" target="_blank" rel="noopener">weather.gov for ' + esc(town.name) + '</a>.</p>';
   }
-}
-function initTownPicker() {
-  const wrap = $('town-picker');
-  TOWNS.forEach(t => {
-    const b = document.createElement('button');
-    b.className = 'town-btn' + (t === currentTown ? ' active' : '');
-    b.textContent = t.name;
-    if (b.setAttribute) b.setAttribute('aria-pressed', t === currentTown ? 'true' : 'false');
-    b.dataset.town = t.name;
-    b.addEventListener('click', () => loadForecast(t));
-    wrap.appendChild(b);
-  });
 }
 
 /* ---------- river levels (USGS NWIS) ---------- */
@@ -3104,7 +3098,7 @@ function renderFreshness() {
 /* ---------- go ---------- */
 initMap();
 initMapTools();
-initTownPicker();
+/* v71: no town picker — initTownPicker removed */
 initShare();
 initInstallCard();
 initGetApp();
@@ -8673,3 +8667,20 @@ function emWireCoords() {
   });
 }
 /* ---------- END REFINEMENTS BATCH 1 module ---------- */
+
+/* ---------- v71: the forecast pin button lives in the standalone
+   head above the pills (initPins looks for a .card-head inside the card,
+   and the forecast card no longer has one), wired to the same pin store. */
+(function () {
+  var head = document.querySelector('.forecast-head');
+  if (!head || !$('forecast-card')) return;
+  head.classList.add('has-pin');
+  var b = document.createElement('button');
+  b.type = 'button';
+  b.className = 'pin-btn';
+  b.dataset.pinFor = 'forecast-card';
+  b.addEventListener('click', function () { window.CCLPins.toggle('cards', 'forecast-card'); });
+  head.appendChild(b);
+  pinBtns['forecast-card'] = b;
+  if (typeof pinPaint === 'function') pinPaint();
+})();

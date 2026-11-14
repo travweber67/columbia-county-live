@@ -355,22 +355,33 @@ h2{font-weight:700;letter-spacing:-.01em}
    low temp, condition picture, precipitation chance, day name. The
    days that don't fit sit off to the right, reached by swiping
    sideways — never all seven squeezed into the card width.
-   Pill text is pinned to the dark ink palette in BOTH themes: the
-   frosted surface itself is light glass, so theme-flipped text
-   (near-white at dusk) would wash out on it. */
+   v3 (Travis, 2026-11-13): the pills wear the SAME etched-glass
+   recipe as the site's cards — the card gradient, blur and border
+   verbatim, per theme — so they read as green glass like the rest
+   of the page instead of bright white capsules. Text therefore
+   rides the theme variables (--text / --muted) exactly like card
+   text; the rain % keeps its blue, brightened at dusk to hold on
+   the deep green. Today keeps its orange accent border. */
 .forecast-week{display:flex;gap:10px;margin:0 0 12px;padding:4px 2px 8px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;scroll-snap-type:x proximity}
 .forecast-week::-webkit-scrollbar{display:none}
 .forecast-week:empty{display:none}
 .forecast-week .loading{margin:2px 0}
-.wx-day{flex:0 0 auto;width:76px;height:158px;border-radius:40px;padding:13px 6px 11px;display:flex;flex-direction:column;align-items:center;text-align:center;color:#1e2b1f;background:rgba(255,255,255,.22);-webkit-backdrop-filter:blur(14px) saturate(1.5);backdrop-filter:blur(14px) saturate(1.5);border:1px solid rgba(255,255,255,.45);box-shadow:0 4px 14px rgba(20,40,30,.18),inset 0 1px 0 rgba(255,255,255,.5);scroll-snap-align:start}
-.wx-day.wx-today{background:rgba(255,255,255,.36);border-color:rgba(232,93,4,.85);box-shadow:0 4px 14px rgba(20,40,30,.18),inset 0 1px 0 rgba(255,255,255,.6),0 0 0 1px rgba(232,93,4,.25)}
+.wx-day{flex:0 0 auto;width:76px;height:158px;border-radius:40px;padding:13px 6px 11px;display:flex;flex-direction:column;align-items:center;text-align:center;color:var(--text);background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));-webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);border:1px solid rgba(255,255,255,.6);box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 4px 14px rgba(20,40,30,.18);scroll-snap-align:start}
+.wx-day.wx-today{background:linear-gradient(180deg,rgba(253,250,240,.95),rgba(249,244,229,.88));border-color:rgba(232,93,4,.85);box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 4px 14px rgba(20,40,30,.18),0 0 0 1px rgba(232,93,4,.25)}
 .wx-temps{display:block;font-variant-numeric:tabular-nums;line-height:1.15}
 .wx-hi{display:block;font-size:1.02rem;font-weight:800}
-.wx-lo{display:block;font-size:.8rem;font-weight:600;color:rgba(30,43,31,.55)}
+.wx-lo{display:block;font-size:.8rem;font-weight:600;color:var(--muted)}
 .wx-ico{width:38px;height:38px;border-radius:10px;display:block;margin:9px auto 0}
 .wx-pop{display:block;height:16px;line-height:16px;margin-top:auto;font-size:.7rem;font-weight:700;color:#1f6fb2;white-space:nowrap}
-.wx-dow{display:block;margin-top:3px;font-size:.76rem;font-weight:800;letter-spacing:.03em;color:#1e2b1f;text-transform:uppercase}
+.wx-dow{display:block;margin-top:3px;font-size:.76rem;font-weight:800;letter-spacing:.03em;color:var(--text);text-transform:uppercase}
 .wx-day.wx-today .wx-dow{color:#b0511c}
+/* dusk: the pills take the dark card glass verbatim (deep green),
+   with the rain blue brightened and Today's label on --warm so both
+   hold on the green */
+html[data-theme="dark"] .wx-day{background:linear-gradient(180deg,rgba(26,43,32,.85),rgba(13,23,16,.77));border-color:rgba(196,226,196,.18);box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 4px 14px rgba(0,0,0,.35)}
+html[data-theme="dark"] .wx-day.wx-today{background:linear-gradient(180deg,rgba(40,66,50,.92),rgba(20,34,24,.86));border-color:rgba(232,93,4,.85);box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 4px 14px rgba(0,0,0,.35),0 0 0 1px rgba(232,93,4,.25)}
+html[data-theme="dark"] .wx-pop{color:#8ecdf5}
+html[data-theme="dark"] .wx-day.wx-today .wx-dow{color:#f0a35e}
 @media (max-width:560px){
   .forecast-week{gap:8px;padding-right:36px;-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}
 }
@@ -2731,3 +2742,14 @@ html[data-theme="dark"] .getapp-other summary{color:#bfe3c8}
    verbatim; only the intro card's quick-call row is new. */
 .help-quick{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 2px}
 .help-quick .share-btn{text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+
+/* ===== v71 — forecast: floating pills, one county-wide forecast =====
+   The 7-day pill strip leaves the Forecast card and floats on the page
+   background under its own heading block; the card (period list) starts
+   below the pills. No town picker: one forecast for Columbia County. */
+.forecast-top{display:flex;flex-direction:column;gap:8px;padding:2px 2px 0}
+.forecast-head{margin-bottom:0}
+.forecast-head h2{color:#fff;text-shadow:0 1px 10px rgba(12,26,16,.55)}
+.forecast-head .updated{color:rgba(255,255,255,.88);text-shadow:0 1px 6px rgba(12,26,16,.55)}
+.wx-place{margin:0;font-size:.84rem;font-weight:700;letter-spacing:.02em;color:#fff;text-shadow:0 1px 8px rgba(12,26,16,.6)}
+.forecast-top .forecast-week{margin:0;padding-bottom:4px}
