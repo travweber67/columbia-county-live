@@ -681,7 +681,16 @@ function incidentRow(i) {
    "Link to Additional Information: https://…" tail in the description —
    splitIncidentDesc pulls that URL out so it renders as one tidy link
    and never as body text. incidentRow above is NOT touched: the Bend
-   Run pass cards still render with it. */
+   Run pass cards still render with it.
+   PREVIEW v2 (2026-11-13): the list no longer lives inside the Roads
+   card — the heading floats on the background (.incidents-top, the
+   v71 forecast-top pattern) and the cards stand alone on the photo.
+   The expand control is a stacked double chevron + a tiny "See more"
+   label (Travis: make it obvious the card opens); expanded, the
+   chevron flips and the label reads "See less". The incidents block
+   is its own pinnable unit (incidents-card in PIN_CARDS): initPins
+   grows the 📌 button in the floating head, and the pinned copy
+   carries the heading + the live alert cards. */
 function splitIncidentDesc(desc) {
   let text = String(desc || '');
   let url = '';
@@ -691,6 +700,11 @@ function splitIncidentDesc(desc) {
     text = text.replace(/Link to Additional Information:\s*/i, ' ').replace(m[0], ' ');
   }
   return { text: text.replace(/\s+/g, ' ').trim(), url };
+}
+
+function alertToggleLabel(open) {
+  if (langCur === 'es') return open ? 'Ver menos' : 'Ver más';
+  return open ? 'See less' : 'See more';
 }
 
 function incidentCard(i) {
@@ -714,7 +728,10 @@ function incidentCard(i) {
     + '<span class="alert-title">' + esc(i.title) + '</span>'
     + (meta.length ? '<span class="alert-meta">' + esc(meta.join(' · ')) + '</span>' : '')
     + '</span>'
-    + '<span class="alert-chev" aria-hidden="true">▾</span>'
+    + '<span class="alert-toggle">'
+    + '<svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg>'
+    + '<span class="alert-toggle-label">' + alertToggleLabel(false) + '</span>'
+    + '</span>'
     + '</button>'
     + '<div class="alert-more"><div class="alert-more-in"><div class="alert-body">';
   if (parts.text) h += '<p class="alert-desc">' + esc(parts.text) + '</p>';
@@ -735,6 +752,8 @@ function wireAlertCards(root) {
       if (!card) return;
       const open = card.classList.toggle('open');
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      const lbl = card.querySelector('.alert-toggle-label');
+      if (lbl) lbl.textContent = alertToggleLabel(open);
     });
   });
 }
@@ -6519,7 +6538,7 @@ window.CCLPins = {
    it is the page's anchor, and a Leaflet container does not need the
    adventure. */
 const PIN_CARDS = ['since-card', 'home-card', 'commute-card', 'go-card', 'plan-card', 'schools-card', 'briefing-card',
-  'roads-card', 'drive-card', 'routeahead-card', 'ferry-card', 'ships-card', 'aircraft-card', 'bend-card',
+  'roads-card', 'incidents-card', 'drive-card', 'routeahead-card', 'ferry-card', 'ships-card', 'aircraft-card', 'bend-card',
   'alerts-card', 'forecast-card', 'sky-card', 'dark-card', 'rivers-card', 'tides-card',
   'fish-card', 'tracker-card', 'steelhead-card', 'almanac-card',
   'quakes-card', 'fires-card', 'air-card',

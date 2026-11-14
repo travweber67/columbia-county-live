@@ -2806,3 +2806,55 @@ html[data-theme="dark"] .route-pill{
   font-weight:700;font-size:.85rem;color:var(--accent);text-decoration:none;
 }
 .alert-link:hover{text-decoration:underline}
+
+/* ---------- PREVIEW v2 (travel redesign, 2026-11-13): incidents float ----------
+   Travis: no cards on top of cards. The incidents leave the Roads
+   card entirely — the heading row floats on the page background like
+   .forecast-top (white over the photo, no box), and each alert card
+   stands alone on the background with the photo showing between
+   cards. The expand control is a stacked double chevron with a tiny
+   "See more / See less" label under it, accent-colored so it reads
+   as tappable in both themes. */
+.incidents-top{display:flex;flex-direction:column;gap:2px;padding:2px 2px 0}
+.incidents-head{margin-bottom:0}
+.incidents-head h3{
+  margin:0;font-size:1.05rem;line-height:1.25;
+  color:#fff;text-shadow:0 1px 10px rgba(12,26,16,.55);
+}
+.incidents-list{display:block}
+.incidents-list .incident-scope{
+  color:rgba(255,255,255,.94);text-shadow:0 1px 6px rgba(12,26,16,.6);
+}
+.incidents-list .loading,.incidents-list .status-note{
+  color:#fff;text-shadow:0 1px 8px rgba(12,26,16,.65);
+}
+.incidents-list .no-alerts{text-shadow:0 1px 8px rgba(12,26,16,.5)}
+.alert-toggle{
+  display:flex;flex-direction:column;align-items:center;gap:1px;
+  flex:0 0 auto;padding-top:2px;
+}
+.alert-toggle .alert-chev{
+  width:23px;height:23px;padding:0;
+  color:var(--accent);
+  transition:transform .25s ease;
+}
+.alert-toggle-label{
+  font-size:.64rem;font-weight:600;letter-spacing:.03em;line-height:1.1;
+  color:var(--muted);white-space:nowrap;
+}
+/* The pinned copy of the incidents block (Today pins zone) reads as
+   one glass card, like every other pin copy; inside it the heading
+   and notes ride the card's theme colors, not the over-photo white. */
+[data-pin-copy="incidents-card"]{
+  background:linear-gradient(180deg,rgba(255,255,255,.52),rgba(255,255,255,.30));
+  border:1px solid var(--border);border-radius:14px;
+  box-shadow:0 1px 2px rgba(20,32,16,.05);
+  padding:12px 14px;
+}
+html[data-theme="dark"] [data-pin-copy="incidents-card"]{
+  background:linear-gradient(180deg,rgba(52,84,62,.45),rgba(22,36,26,.45));
+  border-color:rgba(196,226,196,.16);
+  box-shadow:0 1px 2px rgba(0,0,0,.3);
+}
+[data-pin-copy="incidents-card"] .incidents-head h3{color:var(--text);text-shadow:none}
+[data-pin-copy="incidents-card"] .incident-scope{color:var(--muted);text-shadow:none}

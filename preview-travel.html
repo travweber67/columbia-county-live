@@ -491,8 +491,6 @@ document.documentElement.setAttribute("data-theme",t);})();
         <span class="updated" id="roads-updated"></span>
       </div>
       <div id="bridge-body" class="panel-body"><p class="loading">Loading Lewis &amp; Clark Bridge status…</p></div>
-      <h3 class="subhead" data-i18n="incidentsh3">Highway incidents — ODOT TripCheck</h3>
-      <div id="incidents-body" class="panel-body"><p class="loading">Loading incidents…</p></div>
       <h3 class="subhead" data-i18n="myrouteh3">📷 My Route — your commute cameras, in driving order</h3>
       <div id="myroute-body" class="panel-body"><p class="loading">Loading route cameras…</p></div>
       <h3 class="subhead" data-i18n="camerash3">Road cameras</h3>
@@ -501,6 +499,19 @@ document.documentElement.setAttribute("data-theme",t);})();
     </div>
 
     
+
+    <!-- PREVIEW travel redesign v2 (2026-11-13): the incidents leave the
+         Roads card — no card-within-card. The heading floats on the page
+         background (the v71 .forecast-top pattern) and each alert is one
+         standalone glass card. The block is its own pinnable unit
+         (incidents-card): initPins grows its 📌 button in the floating
+         head, and the pinned copy carries the heading + the alert cards. -->
+    <div class="incidents-top" id="incidents-card">
+      <div class="card-head incidents-head">
+        <h3 data-i18n="incidentsh3">Highway incidents — ODOT TripCheck</h3>
+      </div>
+      <div id="incidents-body" class="incidents-list"><p class="loading">Loading incidents…</p></div>
+    </div>
 
     <div class="card" id="routeahead-card">
       <div class="card-head">
@@ -1863,7 +1874,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 <!-- PREVIEW-ONLY screenshot helper (travel redesign preview, 2026-11-13):
-     opens the Travel view on the roads card's incident list so headless
+     opens the Travel view on the floating incident list so headless
      captures show it; ?expand=1 also opens the first incident card.
      NOT part of the proposed change — remove before any ship. -->
 <script>
@@ -1879,7 +1890,7 @@ window.addEventListener('load', function () {
           if (btn) btn.click();
         }
         setTimeout(function () {
-          var el = document.querySelector('#roads-card .subhead');
+          var el = document.querySelector('.incidents-head');
           if (el && el.scrollIntoView) el.scrollIntoView();
         }, 400);
         return;
