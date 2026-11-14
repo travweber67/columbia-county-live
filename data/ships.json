@@ -1,60 +1,82 @@
 {
- "fetched_at": "2026-11-14T18:36:27Z",
+ "fetched_at": "2026-11-14T18:41:26Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.01493,
+   "lon": -122.86026,
+   "sog_kn": 9.3,
+   "cog": 146.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-14 18:41:23.563349431 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.63181,
+   "lon": -122.81965,
+   "sog_kn": 5.3,
+   "cog": 160.4,
+   "heading": 155,
+   "nav_status": 12,
+   "updated": "2026-11-14 18:41:29.195173746 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19948,
+   "lon": -123.38509,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-14 18:41:47.539431617 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.0815,
+   "lon": -122.90464,
+   "sog_kn": 0.2,
+   "cog": 180.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-14 18:41:53.77038233 +0000 UTC"
+  },
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
-   "lat": 46.08156,
-   "lon": -122.90451,
+   "lat": 46.08145,
+   "lon": -122.90453,
    "sog_kn": 0,
-   "cog": 181.9,
-   "heading": 163,
+   "cog": 171.1,
+   "heading": 117,
    "nav_status": 0,
-   "updated": "2026-11-14 18:36:44.253826605 +0000 UTC"
+   "updated": "2026-11-14 18:41:54.557251998 +0000 UTC"
   },
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19999,
-   "lon": -123.38544,
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09679,
+   "lon": -122.92906,
    "sog_kn": 0,
-   "cog": 185.3,
+   "cog": 179,
+   "heading": 71,
+   "nav_status": 3,
+   "updated": "2026-11-14 18:41:55.479885397 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37715,
+   "sog_kn": 0,
+   "cog": 191.2,
    "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-14 18:36:44.679663972 +0000 UTC"
-  },
-  {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 46.044,
-   "lon": -122.87691,
-   "sog_kn": 0,
-   "cog": 125.2,
-   "heading": 180,
-   "nav_status": 5,
-   "updated": "2026-11-14 18:36:59.715841729 +0000 UTC"
-  },
-  {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 45.63026,
-   "lon": -122.69564,
-   "sog_kn": 0,
-   "cog": 304.5,
-   "heading": 127,
-   "nav_status": 5,
-   "updated": "2026-11-14 18:37:00.828357712 +0000 UTC"
-  },
-  {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59407,
-   "lon": -122.7721,
-   "type_code": 70,
-   "destination": "NOT AVAILABLE",
-   "updated": "2026-11-14 18:37:03.316929379 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-14 18:41:57.185445139 +0000 UTC"
   }
  ]
 }
