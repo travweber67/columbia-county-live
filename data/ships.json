@@ -1,27 +1,131 @@
 {
- "fetched_at": "2026-11-14T05:10:26Z",
+ "fetched_at": "2026-11-14T05:15:27Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08122,
-   "lon": -122.90412,
-   "sog_kn": 0.2,
-   "cog": 256.8,
-   "heading": 511,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16588,
+   "lon": -123.08207,
+   "sog_kn": 0.6,
+   "cog": 99.6,
+   "heading": 124,
+   "nav_status": 3,
+   "updated": "2026-11-14 05:15:31.704055554 +0000 UTC"
+  },
+  {
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10893,
+   "lon": -122.96127,
+   "sog_kn": 0,
+   "cog": 117.7,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-14 05:15:32.063764755 +0000 UTC"
+  },
+  {
+   "mmsi": 368327640,
+   "name": "CAPT. STEVE",
+   "lat": 45.64267,
+   "lon": -122.77132,
+   "sog_kn": 0,
+   "cog": 67.6,
+   "heading": 229,
+   "nav_status": 12,
+   "updated": "2026-11-14 05:15:33.919352077 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64727,
+   "lon": -122.73997,
+   "type_code": 52,
+   "destination": "SRT PASCO",
+   "updated": "2026-11-14 05:15:36.821895733 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.63819,
+   "lon": -122.7292,
+   "sog_kn": 0,
+   "cog": 201.1,
+   "heading": 117,
    "nav_status": 0,
-   "updated": "2026-11-14 05:10:37.669366427 +0000 UTC"
+   "updated": "2026-11-14 05:15:36.914900985 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.601,
+   "lon": -122.77404,
+   "sog_kn": 0,
+   "cog": 31.6,
+   "heading": 277,
+   "nav_status": 5,
+   "updated": "2026-11-14 05:15:40.495714686 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
+   "type_code": 30,
+   "updated": "2026-11-14 05:15:51.924510282 +0000 UTC"
+  },
+  {
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 45.6303,
+   "lon": -122.69565,
+   "sog_kn": 0,
+   "cog": 304.5,
+   "heading": 127,
+   "nav_status": 5,
+   "updated": "2026-11-14 05:15:53.030560873 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.6076,
+   "lon": -122.67751,
+   "type_code": 50,
+   "updated": "2026-11-14 05:15:53.889603376 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09643,
+   "lon": -122.93035,
+   "sog_kn": 0,
+   "cog": 202.4,
+   "heading": 68,
+   "nav_status": 3,
+   "updated": "2026-11-14 05:15:55.537194242 +0000 UTC"
   },
   {
    "mmsi": 367384780,
    "name": "CAROLYN DOROTHY",
    "lat": 46.08984,
    "lon": -122.92901,
-   "type_code": 52,
-   "destination": "CSR OPS",
-   "updated": "2026-11-14 05:10:41.744737279 +0000 UTC"
+   "sog_kn": 0,
+   "cog": 180.5,
+   "heading": 98,
+   "nav_status": 0,
+   "updated": "2026-11-14 05:15:59.180556915 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.64723,
+   "lon": -122.73956,
+   "sog_kn": 0,
+   "cog": 242.7,
+   "heading": 285,
+   "nav_status": 0,
+   "updated": "2026-11-14 05:15:59.514830265 +0000 UTC"
   }
  ]
 }
