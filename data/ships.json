@@ -1,49 +1,67 @@
 {
- "fetched_at": "2026-11-14T11:05:51Z",
+ "fetched_at": "2026-11-14T11:10:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10794,
-   "lon": -122.95899,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.63781,
+   "lon": -122.72816,
+   "type_code": 52,
+   "destination": "PDX/VANC.OPS.",
+   "updated": "2026-11-14 11:11:01.033718768 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64569,
+   "lon": -122.7349,
+   "sog_kn": 0.1,
+   "cog": 0,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-14 11:11:07.18729468 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64357,
+   "lon": -122.75294,
+   "type_code": 52,
+   "destination": "US^0UUT>0UW8",
+   "updated": "2026-11-14 11:11:11.540894475 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58754,
+   "lon": -122.77048,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-14 11:11:13.753841186 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.15014,
+   "lon": -123.38916,
+   "sog_kn": 8.1,
+   "cog": 124.4,
+   "heading": 120,
+   "nav_status": 3,
+   "updated": "2026-11-14 11:11:21.173196074 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.65839,
+   "lon": -122.75734,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-14 11:05:56.069899599 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.009,
-   "lon": -122.84826,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-14 11:06:01.518575113 +0000 UTC"
-  },
-  {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.15103,
-   "lon": -123.37724,
-   "sog_kn": 0.2,
-   "cog": 319.8,
-   "heading": 305,
-   "nav_status": 0,
-   "updated": "2026-11-14 11:06:08.858963246 +0000 UTC"
-  },
-  {
-   "mmsi": 367347000,
-   "name": "WENDY SEAA",
-   "lat": 46.19949,
-   "lon": -123.38507,
-   "type_code": 30,
-   "destination": "CATHLAMET,WA",
-   "updated": "2026-11-14 11:06:20.603957115 +0000 UTC"
+   "cog": 4.5,
+   "heading": 155,
+   "nav_status": 5,
+   "updated": "2026-11-14 11:11:21.180222912 +0000 UTC"
   }
  ]
 }
