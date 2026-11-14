@@ -5812,7 +5812,6 @@ const LANG_ES = {
   footerdisc: 'Esta página reúne datos públicos por conveniencia. Antes de viajar con clima severo o agua alta, confirma las condiciones con las fuentes oficiales enlazadas arriba.',
   pinsh2: '📌 Tus fijadas',
   pinsclear: 'Desfijar todo',
-  pinsnote: 'Las tarjetas que fijaste, aquí arriba en el orden en que las fijaste — copias en vivo que se actualizan cuando cambian las lecturas, mientras las originales se quedan donde pertenecen. Toca una copia para saltar a la tarjeta real; toca su botón <strong>📌 Fijada</strong> para desfijarla.',
   installh2: 'Pon Columbia County Live en tu pantalla de inicio',
   installp: 'Instalada, se abre en pantalla completa como una app — sin barra de direcciones, con su propio ícono y el condado a un toque. Gratis, y se sigue actualizando todo el día.',
   installcardbtn: '📱 Instalar la app',
