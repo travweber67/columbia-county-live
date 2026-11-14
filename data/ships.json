@@ -1,60 +1,67 @@
 {
- "fetched_at": "2026-11-14T08:30:38Z",
+ "fetched_at": "2026-11-14T08:35:40Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09665,
-   "lon": -122.92971,
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59405,
+   "lon": -122.7721,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 68,
-   "nav_status": 3,
-   "updated": "2026-11-14 08:30:54.336811714 +0000 UTC"
+   "cog": 338.3,
+   "heading": 149,
+   "nav_status": 5,
+   "updated": "2026-11-14 08:35:42.870695611 +0000 UTC"
   },
   {
    "mmsi": 367061930,
    "name": "TEBENKOF",
-   "lat": 46.2,
+   "lat": 46.19996,
    "lon": -123.3855,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-14 08:35:47.983984982 +0000 UTC"
+  },
+  {
+   "mmsi": 368327640,
+   "name": "CAPT. STEVE",
+   "lat": 45.64266,
+   "lon": -122.77139,
    "sog_kn": 0,
-   "cog": 19.2,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-14 08:30:59.331012691 +0000 UTC"
+   "cog": 67.6,
+   "heading": 228,
+   "nav_status": 12,
+   "updated": "2026-11-14 08:35:53.30761367 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.16678,
-   "lon": -123.08404,
-   "sog_kn": 1,
-   "cog": 143.9,
-   "heading": 128,
-   "nav_status": 3,
-   "updated": "2026-11-14 08:31:05.279794188 +0000 UTC"
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.64838,
+   "lon": -122.74264,
+   "sog_kn": 0,
+   "cog": 259.5,
+   "heading": 111,
+   "nav_status": 12,
+   "updated": "2026-11-14 08:35:56.120282911 +0000 UTC"
   },
   {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.09071,
-   "lon": -122.93213,
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19953,
+   "lon": -123.38502,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-14 08:36:11.295386745 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08973,
+   "lon": -122.929,
    "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-14 08:31:05.693642656 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10793,
-   "lon": -122.95898,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-14 08:31:07.52154333 +0000 UTC"
+   "destination": "US^0UJB>0UJB",
+   "updated": "2026-11-14 08:36:11.563385706 +0000 UTC"
   }
  ]
 }
