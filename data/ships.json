@@ -1,117 +1,69 @@
 {
- "fetched_at": "2026-11-14T10:45:51Z",
+ "fetched_at": "2026-11-14T10:49:18Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08113,
-   "lon": -122.90418,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.2,
+   "lon": -123.3854,
+   "sog_kn": 0,
+   "cog": 20.4,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-14 10:49:56.447355399 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64569,
+   "lon": -122.73488,
    "sog_kn": 0.1,
-   "cog": 321.9,
-   "heading": 110,
-   "nav_status": 0,
-   "updated": "2026-11-14 10:46:19.74568268 +0000 UTC",
+   "cog": 0,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-14 10:50:08.518036942 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.63027,
+   "lon": -122.78817,
+   "type_code": 57,
+   "destination": "VANCOUER,WA",
+   "updated": "2026-11-14 10:50:11.761359034 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09075,
+   "lon": -122.9321,
+   "sog_kn": 0,
+   "cog": 220.5,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-14 10:50:13.780453319 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09663,
+   "lon": -122.92964,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 67,
+   "nav_status": 3,
+   "updated": "2026-11-14 10:50:15.951720749 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64729,
+   "lon": -122.73996,
    "type_code": 52,
-   "destination": "US^03F8>02T9"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00873,
-   "lon": -122.84886,
-   "sog_kn": 0.1,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-14 10:46:06.892969909 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10792,
-   "lon": -122.95898,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-14 10:46:07.593291157 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.82321,
-   "lon": -122.79563,
-   "sog_kn": 9.4,
-   "cog": 12.2,
-   "heading": 16,
-   "nav_status": 0,
-   "updated": "2026-11-14 10:46:09.418397788 +0000 UTC"
-  },
-  {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 45.64727,
-   "lon": -122.74124,
-   "sog_kn": 0,
-   "cog": 127.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-14 10:46:12.872125079 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.19114,
-   "lon": -123.16194,
-   "sog_kn": 0.4,
-   "cog": 331.7,
-   "heading": 78,
-   "nav_status": 3,
-   "updated": "2026-11-14 10:46:17.671783561 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.08138,
-   "lon": -122.90457,
-   "sog_kn": 0.3,
-   "cog": 19.4,
-   "heading": 295,
-   "nav_status": 3,
-   "updated": "2026-11-14 10:46:18.292113284 +0000 UTC"
-  },
-  {
-   "mmsi": 636024633,
-   "name": "PAVO LEADER",
-   "lat": 45.64053,
-   "lon": -122.7174,
-   "type_code": 70,
-   "destination": "US VAN",
-   "updated": "2026-11-14 10:46:18.717866258 +0000 UTC"
-  },
-  {
-   "mmsi": 338205428,
-   "name": "CLAIRE B",
-   "lat": 45.81822,
-   "lon": -122.79313,
-   "sog_kn": 4.4,
-   "cog": 187.7,
-   "heading": 179,
-   "nav_status": 0,
-   "updated": "2026-11-14 10:46:22.304371525 +0000 UTC"
-  },
-  {
-   "mmsi": 368327640,
-   "name": "CAPT. STEVE",
-   "lat": 45.63904,
-   "lon": -122.71578,
-   "sog_kn": 7,
-   "cog": 116.3,
-   "heading": 121,
-   "nav_status": 12,
-   "updated": "2026-11-14 10:46:23.245368473 +0000 UTC"
+   "destination": "SRT PASCO",
+   "updated": "2026-11-14 10:50:21.234500097 +0000 UTC"
   }
  ]
 }
