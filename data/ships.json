@@ -1,62 +1,133 @@
 {
- "fetched_at": "2026-11-14T23:31:53Z",
+ "fetched_at": "2026-11-14T23:36:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.6454,
-   "lon": -122.73503,
+   "mmsi": 367425910,
+   "name": "SEA HORSE",
+   "lat": 46.15218,
+   "lon": -123.37768,
+   "sog_kn": 0.1,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-14 23:37:06.949684891 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.04402,
+   "lon": -122.87691,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-14 23:37:07.535087275 +0000 UTC"
+  },
+  {
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 45.63031,
+   "lon": -122.69562,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-14 23:37:14.958004573 +0000 UTC"
+  },
+  {
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 45.64308,
+   "lon": -122.77132,
+   "type_code": 70,
+   "destination": "KRYOS",
+   "updated": "2026-11-14 23:37:15.388643862 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09697,
+   "lon": -122.92932,
    "sog_kn": 0,
-   "cog": 30.4,
-   "heading": 112,
+   "cog": 0,
+   "heading": 66,
+   "nav_status": 3,
+   "updated": "2026-11-14 23:37:15.897768995 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64355,
+   "lon": -122.75296,
+   "sog_kn": 0,
+   "cog": 205.7,
+   "heading": 229,
    "nav_status": 5,
-   "updated": "2026-11-14 23:32:14.575848962 +0000 UTC"
+   "updated": "2026-11-14 23:37:20.349924272 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.64204,
+   "lon": -122.74091,
+   "sog_kn": 0,
+   "cog": 270.1,
+   "heading": 118,
+   "nav_status": 12,
+   "updated": "2026-11-14 23:37:24.856987293 +0000 UTC"
   },
   {
    "mmsi": 636015993,
    "name": "SIEM NEWTON",
-   "lat": 45.633,
-   "lon": -122.73783,
+   "lat": 45.63303,
+   "lon": -122.73787,
    "sog_kn": 0,
    "cog": 317,
    "heading": 136,
    "nav_status": 0,
-   "updated": "2026-11-14 23:32:18.336334877 +0000 UTC"
+   "updated": "2026-11-14 23:37:27.161480756 +0000 UTC"
   },
   {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.5873,
-   "lon": -122.77009,
-   "sog_kn": 0,
-   "cog": 52.2,
-   "heading": 138,
-   "nav_status": 5,
-   "updated": "2026-11-14 23:32:23.84363055 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16554,
+   "lon": -123.08465,
+   "sog_kn": 0.7,
+   "cog": 314.9,
+   "heading": 305,
+   "nav_status": 3,
+   "updated": "2026-11-14 23:37:28.746480059 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08157,
-   "lon": -122.90469,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37716,
    "sog_kn": 0,
-   "cog": 326.7,
-   "heading": 137,
-   "nav_status": 0,
-   "updated": "2026-11-14 23:32:25.092431476 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00884,
-   "lon": -122.84876,
-   "sog_kn": 0,
-   "cog": 360,
+   "cog": 0,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-14 23:32:26.867605903 +0000 UTC"
+   "updated": "2026-11-14 23:37:29.95020966 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.14802,
+   "lon": -123.27517,
+   "sog_kn": 2.2,
+   "cog": 75.8,
+   "heading": 67,
+   "nav_status": 3,
+   "updated": "2026-11-14 23:37:30.102197826 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.65168,
+   "lon": -122.7511,
+   "sog_kn": 0,
+   "cog": 331.3,
+   "heading": 315,
+   "nav_status": 0,
+   "updated": "2026-11-14 23:37:30.148302489 +0000 UTC"
   }
  ]
 }
