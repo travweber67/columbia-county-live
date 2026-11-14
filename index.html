@@ -30,12 +30,12 @@
 if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
-<link rel="manifest" href="manifest.webmanifest?v=68">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=68">
+<link rel="manifest" href="manifest.webmanifest?v=69">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=69">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=68">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=68">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=68">
+<link rel="stylesheet" href="style.css?v=69">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=69">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=69">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
      only page backgrounds first paint needs — warm them with the hero.
      Every other view's photo is lazy-attached by app.js. -->
@@ -234,12 +234,13 @@ document.documentElement.setAttribute("data-theme",t);})();
          Tomorrow and before the County Briefing — the same spots the
          v6 phone mover used to carry them to). -->
     <div class="founding-cells">
-      <article class="founding-cell taken">
+      <article class="founding-cell taken" data-otl-cell>
         <div class="otl-logo-box"><img src="img/preview-otl-logo.png" alt="Oregon Trail Lanes logo"></div>
         <p class="cell-eyebrow">Founding Sponsor · Spot 1 of 3</p>
         <h3>Oregon Trail Lanes <span class="dir-badge" data-i18n="dirfounding">Founding business</span></h3>
         <p>Keep it Rolling!<br>735 S Columbia River Hwy<br><a class="otl-tel" href="tel:+15033971011">503-397-1011</a></p>
         <a class="founding-cta" href="https://www.oregontraillanes.com/" target="_blank" rel="noopener">Visit Oregon Trail Lanes &rarr;</a>
+        <button class="otl-more" type="button" data-otl-open aria-haspopup="dialog" aria-controls="otl-sheet" aria-expanded="false">See hours &amp; what&rsquo;s on &rarr;</button>
       </article>
       <article class="founding-cell invite">
         <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
@@ -744,7 +745,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <section class="sponsor-top" aria-label="Sponsor spotlight — the local businesses that keep this page free">
   <p class="cell-eyebrow">Sponsor spotlight</p>
   <h2>The local businesses that keep this page free</h2>
-  <p>Columbia County Live carries no ad network and no paywall — a small number of local businesses fund it with named spots like this one. The first three become Founding Sponsors: their names stay on the Today page for good, at a $49/mo rate that never rises while they&rsquo;re with us. <strong>1 spot reserved, 2 still open.</strong></p>
+  <p>Columbia County Live carries no ad network and no paywall — a small number of local businesses fund it with named spots like this one. The first three become Founding Sponsors: their names stay on the Today page for good, at a $49/mo rate that never rises while they&rsquo;re with us. <strong>Spot 1 filled by Oregon Trail Lanes — 2 still open.</strong></p>
   <a class="founding-cta" href="sponsor.html#founding">See the founding sponsor spots &rarr;</a>
 </section>
 
@@ -830,6 +831,7 @@ document.documentElement.setAttribute("data-theme",t);})();
         <h3>Oregon Trail Lanes</h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirother">Other local services</span></p>
         <p class="dir-desc" data-i18n="dirotldesc">Bowling, leagues and birthday parties on Columbia River Highway.</p>
+        <button class="otl-more dir-otl-more" type="button" data-otl-open aria-haspopup="dialog" aria-controls="otl-sheet" aria-expanded="false">See hours &amp; what&rsquo;s on &rarr;</button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033971011">&#128222; (503) 397-1011</a>
@@ -1222,6 +1224,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <footer class="site-footer">
   <section class="partners-wall" aria-label="Community partners">
     <h2>Community Partners — the local businesses that fund this site</h2>
+    <p class="partners-first"><strong>Oregon Trail Lanes</strong> <span class="dir-badge">Founding Sponsor · 2026</span> · St. Helens</p>
     <p class="partners-empty"><a href="sponsor.html">Your logo here — become a partner &rarr;</a></p>
   </section>
   <p data-i18n="footerbyline"><strong>Columbia County Live</strong> — by <strong>Nomad Development Group</strong></p>
@@ -1750,6 +1753,59 @@ document.documentElement.setAttribute("data-theme",t);})();
   </div>
 </aside>
 
+<!-- v69: Oregon Trail Lanes FULL sponsor card. Her approved Option B
+     preview (section 2) promised visitors "the bigger card visitors open
+     from the panel and the directory" — this is that card, its content
+     mirrored word for word from the preview she approved. It opens as a
+     sheet (the Get-the-app sheet pattern) from the Spot 1 panel cell and
+     from her directory listing; her listing itself, photo included,
+     stays unchanged. -->
+<div class="sheet-backdrop" id="otl-backdrop" hidden></div>
+<aside class="getapp-sheet otl-sheet" id="otl-sheet" hidden role="dialog" aria-modal="true" aria-labelledby="otl-sheet-title">
+  <div class="getapp-head">
+    <span class="getapp-title" id="otl-sheet-title">Oregon Trail Lanes</span>
+    <button class="drawer-close" id="otl-close" type="button" aria-label="Close the Oregon Trail Lanes card">✕</button>
+  </div>
+  <div class="otl-sheet-body">
+    <article class="otl-card">
+      <div class="otl-body">
+        <div class="otl-logo-box" style="margin-bottom:16px"><img src="img/preview-otl-logo.png" alt="Oregon Trail Lanes logo"></div>
+        <h3>Oregon Trail Lanes <span class="dir-badge">Founding Sponsor · 2026</span></h3>
+        <p class="otl-tag">Keep it Rolling!</p>
+        <p class="otl-blurb">Your Lanes. Your People. Your Place. A warm, welcoming twelve-lane bowling center where league bowlers, families, and friends come together for fun, connection, and lasting memories — with a pro shop, snack bar, and lounge with Oregon Lottery.</p>
+        <div class="otl-grid">
+          <div>
+            <h4>Hours</h4>
+            <table class="otl-hours">
+              <tr><td>Monday – Thursday</td><td>9 AM – 10 PM</td></tr>
+              <tr><td>Friday – Saturday</td><td>9 AM – 11 PM</td></tr>
+              <tr><td>Sunday</td><td>9 AM – 9 PM</td></tr>
+            </table>
+            <p class="small" style="margin-top:8px">Closed Thanksgiving and Christmas. Hours can change with snowy weather — call ahead on storm days.</p>
+          </div>
+          <div>
+            <h4>What’s on</h4>
+            <ul class="otl-list">
+              <li>Open play every day — $6.00 a game, $4.75 shoe rental</li>
+              <li>Bowling leagues for every level, beginners welcome</li>
+              <li>Birthday parties — $75 per lane per hour, shoes and party time included, we do the clean up</li>
+              <li>Business events and family reunions</li>
+              <li>Cosmic bowling and special events</li>
+              <li>Kids Bowl Free program</li>
+              <li>Private and group bowling lessons</li>
+            </ul>
+          </div>
+        </div>
+        <div class="otl-actions">
+          <a class="founding-cta" style="background:var(--accent);border-color:var(--accent);color:#fff" href="tel:+15033971011">Call (503) 397-1011</a>
+          <a class="founding-cta alt" style="color:var(--accent-dark);border-color:var(--accent)" href="https://www.oregontraillanes.com/" target="_blank" rel="noopener">oregontraillanes.com</a>
+          <a class="founding-cta alt" style="color:var(--accent-dark);border-color:var(--accent)" href="https://www.google.com/maps/search/?api=1&amp;query=Oregon+Trail+Lanes+735+S+Columbia+River+Hwy+St+Helens+OR" target="_blank" rel="noopener">735 S Columbia River Hwy, St. Helens</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</aside>
+
 <div class="wall-overlay" id="wall-overlay" hidden role="dialog" aria-modal="true" aria-label="County wall display — the county's answers, big and rotating">
   <button class="wall-exit" id="wall-exit" type="button" aria-label="Exit wall display">✕</button>
   <div class="wall-scene" id="wall-scene"></div>
@@ -1798,7 +1854,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=68"></script>
+<script src="app.js?v=69"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>

@@ -2948,6 +2948,52 @@ function initGetApp() {
   });
   window.CCLOpenGetApp = openSheet;
 }
+/* ---------- Oregon Trail Lanes full sponsor card sheet (v69) ----------
+   Same sheet mechanics as Get the app. The full card is the one her
+   approved preview promised — "the bigger card visitors open from
+   the panel and the directory": the Spot 1 panel cell opens it (tap
+   anywhere on the cell except its links/buttons), and so does the
+   "See hours & what's on" button on her panel cell and on her
+   directory listing. */
+function initOtlCard() {
+  const sheet = $('otl-sheet');
+  if (!sheet) return;
+  const backdrop = $('otl-backdrop');
+  const closeBtn = $('otl-close');
+  const openBtns = Array.from(document.querySelectorAll('[data-otl-open]'));
+  let lastFocus = null;
+  function openSheet() {
+    lastFocus = document.activeElement;
+    sheet.hidden = false;
+    if (backdrop) backdrop.hidden = false;
+    requestAnimationFrame(() => {
+      sheet.classList.add('open');
+      if (backdrop) backdrop.classList.add('open');
+    });
+    document.body.classList.add('sponsor-on');
+    openBtns.forEach(b => b.setAttribute('aria-expanded', 'true'));
+    if (closeBtn) closeBtn.focus();
+  }
+  function closeSheet() {
+    if (sheet.hidden) return;
+    sheet.classList.remove('open');
+    if (backdrop) backdrop.classList.remove('open');
+    document.body.classList.remove('sponsor-on');
+    openBtns.forEach(b => b.setAttribute('aria-expanded', 'false'));
+    setTimeout(() => { sheet.hidden = true; if (backdrop) backdrop.hidden = true; }, 320);
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  openBtns.forEach(b => b.addEventListener('click', openSheet));
+  const cell = document.querySelector('[data-otl-cell]');
+  if (cell) cell.addEventListener('click', e => {
+    if (e.target.closest('a, button')) return;
+    openSheet();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', closeSheet);
+  if (backdrop) backdrop.addEventListener('click', closeSheet);
+  document.addEventListener('keydown', ev => { if (ev.key === 'Escape') closeSheet(); });
+}
+
 
 /* ---------- end-of-Today signpost (v40) ---------- */
 function initSignpost() {
@@ -3004,6 +3050,7 @@ initTownPicker();
 initShare();
 initInstallCard();
 initGetApp();
+initOtlCard();
 initSignpost();
 initEventFilters();
 initSkyFilters();
@@ -5504,11 +5551,6 @@ const LANG_ES = {
   taboutdoors: 'Aire libre',
   tabmore: 'Eventos y más',
   fseyebrow: 'Presentado por nuestros patrocinadores fundadores',
-  fs1box: 'Lugar reservado',
-  fs1eyebrow: 'Patrocinador fundador · Lugar 1 de 3 — Reservado',
-  fs1h3: 'Este lugar está reservado',
-  fs1p: 'Estamos apartando este lugar para un negocio local mientras decide. Su nombre se suma a este panel solo si confirma y aprueba su tarjeta — los otros dos lugares siguen disponibles.',
-  fs1cta: 'Ver los dos lugares que quedan &rarr;',
   fslogohere: 'Tu logo aquí',
   fs2eyebrow: 'Patrocinador fundador · Lugar 2 de 3 — Disponible',
   fs2h3: 'Tu negocio aquí',
@@ -7660,8 +7702,8 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
   if (!overlay) return;
   var PHOTO_MS = 16000;      // dwell per photo — a slow ambient cycle
   var QUIET = [
-    { en: 'Presented by — your business here · Founding Sponsor · $49/mo · 1 spot reserved, 2 open',
-      es: 'Presentado por — su negocio aquí · Patrocinador Fundador · $49/mes · 1 lugar reservado, 2 disponibles' },
+    { en: 'Presented by Oregon Trail Lanes · Founding Sponsor · $49/mo · 2 founding spots still open',
+      es: 'Presentado por Oregon Trail Lanes · Patrocinador Fundador · $49/mes · 2 lugares fundadores aún disponibles' },
     { en: 'These photographs come from the county itself — share yours from the Events & More tab',
       es: 'Estas fotografías vienen del propio condado — comparte la tuya desde la pestaña Eventos y Más' },
     null /* a beat of nothing — the quiet line rests every third photo */
