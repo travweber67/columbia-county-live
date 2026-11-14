@@ -314,6 +314,10 @@ async function loadAlerts() {
 /* ---------- forecast (NWS points → gridpoint forecast) ---------- */
 const forecastUrlCache = {};
 let currentTown = TOWNS[0];
+/* PREVIEW v2 — one county-wide forecast: the St. Helens gridpoint stands
+   in for all of Columbia County and the town picker is gone, so
+   loadForecast always uses this town and labels read Columbia County. */
+const COUNTY_TOWN = { name: 'Columbia County', lat: TOWNS[0].lat, lon: TOWNS[0].lon };
 /* ---------- 7-day strip (top of the forecast card) ----------
    The same NWS gridpoint response the period list below uses carries
    14 periods — seven full days of day/night pairs. This groups them by
@@ -370,6 +374,7 @@ function renderWeekStrip(periods) {
   }).join('');
 }
 async function loadForecast(town) {
+  town = COUNTY_TOWN; /* PREVIEW v2: county-wide only — no town picker */
   currentTown = town;
   document.querySelectorAll('.town-btn').forEach(b => {
     b.classList.toggle('active', b.dataset.town === town.name);
@@ -402,18 +407,6 @@ async function loadForecast(town) {
       + '<a href="https://forecast.weather.gov/MapClick.php?lat=' + town.lat + '&lon=' + town.lon
       + '" target="_blank" rel="noopener">weather.gov for ' + esc(town.name) + '</a>.</p>';
   }
-}
-function initTownPicker() {
-  const wrap = $('town-picker');
-  TOWNS.forEach(t => {
-    const b = document.createElement('button');
-    b.className = 'town-btn' + (t === currentTown ? ' active' : '');
-    b.textContent = t.name;
-    if (b.setAttribute) b.setAttribute('aria-pressed', t === currentTown ? 'true' : 'false');
-    b.dataset.town = t.name;
-    b.addEventListener('click', () => loadForecast(t));
-    wrap.appendChild(b);
-  });
 }
 
 /* ---------- river levels (USGS NWIS) ---------- */
@@ -3006,6 +2999,52 @@ function initGetApp() {
   });
   window.CCLOpenGetApp = openSheet;
 }
+/* ---------- Oregon Trail Lanes full sponsor card sheet (v69) ----------
+   Same sheet mechanics as Get the app. The full card is the one her
+   approved preview promised — "the bigger card visitors open from
+   the panel and the directory": the Spot 1 panel cell opens it (tap
+   anywhere on the cell except its links/buttons), and so does the
+   "See hours & what's on" button on her panel cell and on her
+   directory listing. */
+function initOtlCard() {
+  const sheet = $('otl-sheet');
+  if (!sheet) return;
+  const backdrop = $('otl-backdrop');
+  const closeBtn = $('otl-close');
+  const openBtns = Array.from(document.querySelectorAll('[data-otl-open]'));
+  let lastFocus = null;
+  function openSheet() {
+    lastFocus = document.activeElement;
+    sheet.hidden = false;
+    if (backdrop) backdrop.hidden = false;
+    requestAnimationFrame(() => {
+      sheet.classList.add('open');
+      if (backdrop) backdrop.classList.add('open');
+    });
+    document.body.classList.add('sponsor-on');
+    openBtns.forEach(b => b.setAttribute('aria-expanded', 'true'));
+    if (closeBtn) closeBtn.focus();
+  }
+  function closeSheet() {
+    if (sheet.hidden) return;
+    sheet.classList.remove('open');
+    if (backdrop) backdrop.classList.remove('open');
+    document.body.classList.remove('sponsor-on');
+    openBtns.forEach(b => b.setAttribute('aria-expanded', 'false'));
+    setTimeout(() => { sheet.hidden = true; if (backdrop) backdrop.hidden = true; }, 320);
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  openBtns.forEach(b => b.addEventListener('click', openSheet));
+  const cell = document.querySelector('[data-otl-cell]');
+  if (cell) cell.addEventListener('click', e => {
+    if (e.target.closest('a, button')) return;
+    openSheet();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', closeSheet);
+  if (backdrop) backdrop.addEventListener('click', closeSheet);
+  document.addEventListener('keydown', ev => { if (ev.key === 'Escape') closeSheet(); });
+}
+
 
 /* ---------- end-of-Today signpost (v40) ---------- */
 function initSignpost() {
@@ -3058,10 +3097,11 @@ function renderFreshness() {
 /* ---------- go ---------- */
 initMap();
 initMapTools();
-initTownPicker();
+/* PREVIEW v2: no town picker — initTownPicker removed */
 initShare();
 initInstallCard();
 initGetApp();
+initOtlCard();
 initSignpost();
 initEventFilters();
 initSkyFilters();
@@ -5562,11 +5602,6 @@ const LANG_ES = {
   taboutdoors: 'Aire libre',
   tabmore: 'Eventos y más',
   fseyebrow: 'Presentado por nuestros patrocinadores fundadores',
-  fs1box: 'Lugar reservado',
-  fs1eyebrow: 'Patrocinador fundador · Lugar 1 de 3 — Reservado',
-  fs1h3: 'Este lugar está reservado',
-  fs1p: 'Estamos apartando este lugar para un negocio local mientras decide. Su nombre se suma a este panel solo si confirma y aprueba su tarjeta — los otros dos lugares siguen disponibles.',
-  fs1cta: 'Ver los dos lugares que quedan &rarr;',
   fslogohere: 'Tu logo aquí',
   fs2eyebrow: 'Patrocinador fundador · Lugar 2 de 3 — Disponible',
   fs2h3: 'Tu negocio aquí',
@@ -5739,6 +5774,7 @@ const LANG_ES = {
   dirmoving: 'Mudanzas y fletes',
   dirother: 'Otros servicios locales',
   dirfreehelp: 'Ayuda gratuita / apoyo comunitario',
+  dirfounding: 'Negocio fundador',
   dirotldesc: 'Boliche, ligas y fiestas de cumpleaños sobre Columbia River Highway.',
   dirflcdesc: 'Cena comunitaria gratuita todos los martes en la iglesia First Lutheran — las puertas abren a las 5 y la cena se sirve a las 5:30. Todos son bienvenidos: solo tienes que venir, sin trámites ni preguntas. Organizado por Community Meals of Columbia County.',
   dirfh1desc: 'Despensa de alimentos gratuita para las personas del área de St. Helens que necesitan ayuda con alimentos. Abierta de lunes a jueves, de 9 AM a 1 PM, y el primer miércoles del mes por la tarde, de 5 a 7 PM.',
@@ -7717,8 +7753,8 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
   if (!overlay) return;
   var PHOTO_MS = 16000;      // dwell per photo — a slow ambient cycle
   var QUIET = [
-    { en: 'Presented by — your business here · Founding Sponsor · $49/mo · 1 spot reserved, 2 open',
-      es: 'Presentado por — su negocio aquí · Patrocinador Fundador · $49/mes · 1 lugar reservado, 2 disponibles' },
+    { en: 'Presented by Oregon Trail Lanes · Founding Sponsor · $49/mo · 2 founding spots still open',
+      es: 'Presentado por Oregon Trail Lanes · Patrocinador Fundador · $49/mes · 2 lugares fundadores aún disponibles' },
     { en: 'These photographs come from the county itself — share yours from the Events & More tab',
       es: 'Estas fotografías vienen del propio condado — comparte la tuya desde la pestaña Eventos y Más' },
     null /* a beat of nothing — the quiet line rests every third photo */
@@ -8630,3 +8666,21 @@ function emWireCoords() {
   });
 }
 /* ---------- END REFINEMENTS BATCH 1 module ---------- */
+
+
+/* ---------- PREVIEW v2: the forecast pin button lives in the standalone
+   head above the pills (initPins looks for a .card-head inside the card,
+   and the forecast card no longer has one), wired to the same pin store. */
+(function () {
+  var head = document.querySelector('.forecast-head');
+  if (!head || !$('forecast-card')) return;
+  head.classList.add('has-pin');
+  var b = document.createElement('button');
+  b.type = 'button';
+  b.className = 'pin-btn';
+  b.dataset.pinFor = 'forecast-card';
+  b.addEventListener('click', function () { window.CCLPins.toggle('cards', 'forecast-card'); });
+  head.appendChild(b);
+  pinBtns['forecast-card'] = b;
+  if (typeof pinPaint === 'function') pinPaint();
+})();

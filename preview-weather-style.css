@@ -1281,6 +1281,35 @@ h2{font-weight:700;letter-spacing:-.01em}
 /* v67: Oregon Trail Lanes logo box on the Spot 1 panel cell (her approved Option B preview structure) */
 .otl-logo-box{height:118px;border:1.5px solid rgba(233,164,74,.7);border-radius:10px;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center}
 .otl-logo-box img{height:104px;width:104px;border-radius:50%}
+/* v68: tap-to-call number on the Spot 1 panel cell keeps the cell text look */
+.otl-tel{color:inherit;text-decoration:none}
+/* v69: Oregon Trail Lanes full card (CSS ported from her approved
+   preview) + the sheet it opens in + the "See hours & what's on"
+   opener buttons on her panel cell and directory listing. */
+.otl-card{background:var(--panel);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.otl-body{padding:20px}
+.otl-body h3{font-family:var(--display);font-size:1.5rem;margin:0 0 4px}
+.otl-tag{font-weight:700;color:var(--warm);margin:0 0 8px}
+.otl-blurb{margin:0 0 16px;color:var(--text);max-width:620px}
+.otl-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media (max-width:700px){.otl-grid{grid-template-columns:1fr}}
+.otl-grid h4{margin:0 0 8px;font-size:.78rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.otl-hours{width:100%;border-collapse:collapse;font-size:.94rem}
+.otl-hours td{padding:4px 0;border-bottom:1px solid var(--panel-3)}
+.otl-hours td:last-child{text-align:right;font-weight:600}
+.otl-list{margin:0;padding-left:18px;font-size:.94rem}
+.otl-list li{margin:3px 0}
+.otl-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.otl-actions .founding-cta{margin-top:0}
+.otl-sheet{width:min(94vw,620px)}
+.otl-sheet-body{flex:1;overflow-y:auto;padding:16px;-webkit-overflow-scrolling:touch}
+.otl-sheet .otl-card{box-shadow:none}
+body.sponsor-on{overflow:hidden}
+.founding-cell.taken{cursor:pointer}
+.otl-more{display:inline-block;margin-top:10px;background:none;border:none;padding:2px 0;font:inherit;font-size:.88rem;font-weight:700;color:#f3c96b;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.otl-more:hover{color:#ffe1a1}
+.dir-otl-more{color:var(--accent-dark);margin-top:6px}
+.dir-otl-more:hover{color:var(--accent)}
 .ghost-logo.claimed{
   border-style:solid;border-color:rgba(233,164,74,.7);
   background:rgba(233,164,74,.14);color:#f2c078;
@@ -1389,6 +1418,7 @@ html[data-theme="dark"] .dir-empty{background:rgba(240,234,214,.08)}
 .partners-wall{text-align:center;padding:16px 8px 4px}
 .partners-wall h2{font-size:1rem;margin:0 0 8px}
 .partners-empty{margin:0}
+.partners-first{margin:0 0 8px;font-size:1rem}
 .partners-empty a{
   font-weight:800;color:var(--accent-dark);text-decoration:none;
   border-bottom:2px solid var(--warm-fill);padding-bottom:1px;
@@ -2701,3 +2731,15 @@ html[data-theme="dark"] .getapp-other summary{color:#bfe3c8}
    verbatim; only the intro card's quick-call row is new. */
 .help-quick{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 2px}
 .help-quick .share-btn{text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+
+
+/* ===== PREVIEW v2 — forecast: floating pills, one county-wide forecast =====
+   The 7-day pill strip leaves the Forecast card and floats on the page
+   background under its own heading block; the card (period list) starts
+   below the pills. No town picker: one forecast for Columbia County. */
+.forecast-top{display:flex;flex-direction:column;gap:8px;padding:2px 2px 0}
+.forecast-head{margin-bottom:0}
+.forecast-head h2{color:#fff;text-shadow:0 1px 10px rgba(12,26,16,.55)}
+.forecast-head .updated{color:rgba(255,255,255,.88);text-shadow:0 1px 6px rgba(12,26,16,.55)}
+.wx-place{margin:0;font-size:.84rem;font-weight:700;letter-spacing:.02em;color:#fff;text-shadow:0 1px 8px rgba(12,26,16,.6)}
+.forecast-top .forecast-week{margin:0;padding-bottom:4px}
