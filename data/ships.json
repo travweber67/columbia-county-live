@@ -1,6 +1,60 @@
 {
- "fetched_at": "2026-11-14T11:35:52Z",
- "status": "error",
- "note": "AISStream error: timed out",
- "ships": []
+ "fetched_at": "2026-11-14T11:40:53Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08984,
+   "lon": -122.92901,
+   "sog_kn": 0,
+   "cog": 180.5,
+   "heading": 98,
+   "nav_status": 0,
+   "updated": "2026-11-14 11:41:00.306932456 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58756,
+   "lon": -122.77044,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-14 11:41:12.754463936 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64538,
+   "lon": -122.73506,
+   "sog_kn": 0,
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-14 11:41:15.000797895 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65022,
+   "lon": -122.74762,
+   "sog_kn": 0,
+   "cog": 310.9,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-14 11:41:19.495188811 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08137,
+   "lon": -122.90422,
+   "sog_kn": 0.1,
+   "cog": 37.9,
+   "heading": 187,
+   "nav_status": 0,
+   "updated": "2026-11-14 11:41:24.685833967 +0000 UTC"
+  }
+ ]
 }
