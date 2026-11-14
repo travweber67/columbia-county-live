@@ -1,49 +1,82 @@
 {
- "fetched_at": "2026-11-14T12:10:56Z",
+ "fetched_at": "2026-11-14T12:15:56Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.38554,
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.64331,
+   "lon": -122.75279,
+   "type_code": 50,
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-14 12:16:01.911003917 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20003,
+   "lon": -123.38537,
    "sog_kn": 0,
-   "cog": 344.3,
+   "cog": 0,
    "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-14 12:11:01.21929085 +0000 UTC"
+   "nav_status": 8,
+   "updated": "2026-11-14 12:16:04.646108434 +0000 UTC"
   },
   {
    "mmsi": 367608420,
    "name": "PETER J BRIX",
-   "lat": 46.08977,
-   "lon": -122.92904,
+   "lat": 46.08974,
+   "lon": -122.92906,
    "sog_kn": 0,
-   "cog": 241.8,
+   "cog": 234.8,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-14 12:11:05.705496697 +0000 UTC"
+   "updated": "2026-11-14 12:16:05.165054316 +0000 UTC"
   },
   {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.64357,
-   "lon": -122.75293,
-   "type_code": 52,
-   "destination": "US^0UUT>0UW8",
-   "updated": "2026-11-14 12:11:11.412996839 +0000 UTC"
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08982,
+   "lon": -122.929,
+   "sog_kn": 0,
+   "cog": 180.5,
+   "heading": 99,
+   "nav_status": 0,
+   "updated": "2026-11-14 12:16:07.774242787 +0000 UTC"
   },
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60747,
-   "lon": -122.67757,
-   "sog_kn": 0.1,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.16271,
+   "lon": -123.40977,
+   "sog_kn": 0,
    "cog": 360,
-   "heading": 511,
+   "heading": 135,
    "nav_status": 0,
-   "updated": "2026-11-14 12:11:16.294183797 +0000 UTC"
+   "updated": "2026-11-14 12:16:14.256404733 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.64722,
+   "lon": -122.73956,
+   "sog_kn": 0,
+   "cog": 231.2,
+   "heading": 285,
+   "nav_status": 0,
+   "updated": "2026-11-14 12:16:19.890874892 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.14706,
+   "lon": -123.27873,
+   "sog_kn": 1.9,
+   "cog": 86.5,
+   "heading": 83,
+   "nav_status": 3,
+   "updated": "2026-11-14 12:16:27.622354714 +0000 UTC"
   }
  ]
 }
