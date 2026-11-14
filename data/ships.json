@@ -1,38 +1,82 @@
 {
- "fetched_at": "2026-11-14T02:00:16Z",
+ "fetched_at": "2026-11-14T02:05:17Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.15716,
-   "lon": -123.0613,
-   "sog_kn": 6.9,
-   "cog": 294.9,
-   "heading": 298,
-   "nav_status": 3,
-   "updated": "2026-11-14 02:00:54.580349882 +0000 UTC"
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.99071,
+   "lon": -122.84234,
+   "sog_kn": 9.8,
+   "cog": 332.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-14 02:05:41.555165829 +0000 UTC"
   },
   {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 45.63012,
-   "lon": -122.69532,
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.64206,
+   "lon": -122.74093,
    "sog_kn": 0,
-   "cog": 60.6,
-   "heading": 127,
-   "nav_status": 5,
-   "updated": "2026-11-14 02:00:55.430545632 +0000 UTC"
+   "cog": 10.2,
+   "heading": 119,
+   "nav_status": 12,
+   "updated": "2026-11-14 02:05:47.747291258 +0000 UTC",
+   "type_code": 52,
+   "destination": "VANCOUVER"
   },
   {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 45.64324,
-   "lon": -122.75267,
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00896,
+   "lon": -122.84833,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-14 02:05:46.50034089 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.65014,
+   "lon": -122.74978,
+   "sog_kn": 6.8,
+   "cog": 308.7,
+   "heading": 310,
+   "nav_status": 5,
+   "updated": "2026-11-14 02:05:48.463203859 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65019,
+   "lon": -122.74759,
+   "sog_kn": 0,
+   "cog": 229.8,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-14 02:05:48.633991225 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64355,
+   "lon": -122.75233,
    "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-14 02:00:59.907732084 +0000 UTC"
+   "destination": "US^0UU4>02MR",
+   "updated": "2026-11-14 02:05:51.422812978 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79316,
+   "lon": -122.84323,
+   "type_code": 57,
+   "destination": "US^0UWG>?? ???",
+   "updated": "2026-11-14 02:05:54.395216854 +0000 UTC"
   }
  ]
 }
