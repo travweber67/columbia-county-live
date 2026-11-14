@@ -1,64 +1,93 @@
 {
- "fetched_at": "2026-11-14T19:26:30Z",
+ "fetched_at": "2026-11-14T19:31:30Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08163,
-   "lon": -122.90433,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37714,
    "sog_kn": 0,
-   "cog": 167.1,
-   "heading": 131,
-   "nav_status": 5,
-   "updated": "2026-11-14 19:26:35.670035125 +0000 UTC"
-  },
-  {
-   "mmsi": 440576000,
-   "name": "PAN FLOWER",
-   "lat": 45.64308,
-   "lon": -122.7713,
-   "sog_kn": 0,
-   "cog": 203,
-   "heading": 229,
-   "nav_status": 5,
-   "updated": "2026-11-14 19:26:35.724353396 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20003,
-   "lon": -123.38541,
-   "type_code": 99,
-   "destination": "NAKNEK",
-   "updated": "2026-11-14 19:26:55.198442468 +0000 UTC",
-   "sog_kn": 0,
-   "cog": 0,
+   "cog": 349.5,
    "heading": 511,
-   "nav_status": 8
+   "nav_status": 0,
+   "updated": "2026-11-14 19:31:37.542394179 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.15992,
-   "lon": -123.07217,
-   "sog_kn": 1.5,
-   "cog": 281.7,
-   "heading": 274,
-   "nav_status": 3,
-   "updated": "2026-11-14 19:26:54.321845948 +0000 UTC"
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.84031,
+   "lon": -122.78895,
+   "sog_kn": 7.9,
+   "cog": 198.5,
+   "heading": 194,
+   "nav_status": 0,
+   "updated": "2026-11-14 19:31:39.158918402 +0000 UTC"
   },
   {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09683,
-   "lon": -122.92904,
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.57384,
+   "lon": -122.74317,
+   "sog_kn": 6.2,
+   "cog": 136.9,
+   "heading": 137,
+   "nav_status": 12,
+   "updated": "2026-11-14 19:31:46.678746548 +0000 UTC",
+   "type_code": 57,
+   "destination": "US^0UWG>0UJQ"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00882,
+   "lon": -122.84883,
    "sog_kn": 0,
-   "cog": 2.6,
-   "heading": 71,
-   "nav_status": 3,
-   "updated": "2026-11-14 19:26:54.336541261 +0000 UTC"
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-14 19:31:46.07261666 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 271.7,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-14 19:31:47.096159007 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10793,
+   "lon": -122.95901,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-14 19:31:47.180992894 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.6454,
+   "lon": -122.73503,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-14 19:31:57.082722127 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08171,
+   "lon": -122.90425,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-14 19:32:04.162579466 +0000 UTC"
   }
  ]
 }
