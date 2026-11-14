@@ -1,102 +1,70 @@
 {
- "fetched_at": "2026-11-14T14:41:05Z",
+ "fetched_at": "2026-11-14T14:46:05Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 373989000,
-   "name": "AFRICAN CARDINAL",
-   "lat": 45.63925,
-   "lon": -122.77779,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08134,
+   "lon": -122.90428,
+   "sog_kn": 0,
+   "cog": 43.3,
+   "heading": 139,
+   "nav_status": 0,
+   "updated": "2026-11-14 14:46:12.577473523 +0000 UTC"
+  },
+  {
+   "mmsi": 352006982,
+   "name": "MOSHILL",
+   "lat": 45.63368,
+   "lon": -122.70104,
    "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-14 14:41:12.981653919 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58767,
-   "lon": -122.77041,
-   "type_code": 52,
-   "destination": "PORTLAND,OR",
-   "updated": "2026-11-14 14:41:13.622746499 +0000 UTC"
-  },
-  {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60752,
-   "lon": -122.67754,
+   "destination": "US VAN",
+   "updated": "2026-11-14 14:46:26.068229224 +0000 UTC",
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-14 14:41:15.962574702 +0000 UTC"
+   "cog": 357.4,
+   "heading": 126,
+   "nav_status": 5
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.16287,
-   "lon": -123.07777,
-   "sog_kn": 1.6,
-   "cog": 267,
-   "heading": 197,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.62803,
+   "lon": -122.69997,
+   "sog_kn": 0,
+   "cog": 154.3,
+   "heading": 122,
+   "nav_status": 0,
+   "updated": "2026-11-14 14:46:17.397290035 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64569,
+   "lon": -122.73487,
+   "type_code": 79,
+   "updated": "2026-11-14 14:46:19.922347744 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09877,
+   "lon": -122.92312,
+   "sog_kn": 5,
+   "cog": 60.1,
+   "heading": 63,
    "nav_status": 3,
-   "updated": "2026-11-14 14:41:20.545101013 +0000 UTC"
+   "updated": "2026-11-14 14:46:24.955045017 +0000 UTC"
   },
   {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.79314,
-   "lon": -122.84322,
-   "sog_kn": 0,
-   "cog": 205.2,
-   "heading": 215,
-   "nav_status": 12,
-   "updated": "2026-11-14 14:41:24.586984876 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.09022,
-   "lon": -122.93156,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-14 14:41:30.901095867 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08159,
-   "lon": -122.90424,
-   "sog_kn": 0.1,
-   "cog": 241.5,
-   "heading": 127,
-   "nav_status": 5,
-   "updated": "2026-11-14 14:41:31.582877004 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64358,
-   "lon": -122.75233,
-   "sog_kn": 0,
-   "cog": 244.4,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-14 14:41:32.863046996 +0000 UTC"
-  },
-  {
-   "mmsi": 440576000,
-   "name": "PAN FLOWER",
-   "lat": 45.64308,
-   "lon": -122.77127,
-   "sog_kn": 0,
-   "cog": 346.2,
-   "heading": 228,
-   "nav_status": 5,
-   "updated": "2026-11-14 14:41:35.505166757 +0000 UTC"
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58728,
+   "lon": -122.77005,
+   "type_code": 31,
+   "destination": "US^02SY>0UJ9",
+   "updated": "2026-11-14 14:46:39.122735282 +0000 UTC"
   }
  ]
 }
