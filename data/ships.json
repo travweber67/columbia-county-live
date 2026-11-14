@@ -1,81 +1,93 @@
 {
- "fetched_at": "2026-11-14T20:19:25Z",
+ "fetched_at": "2026-11-14T20:21:36Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64567,
-   "lon": -122.73487,
-   "sog_kn": 0.3,
-   "cog": 201,
-   "heading": 112,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.15985,
+   "lon": -123.40534,
+   "sog_kn": 0,
+   "cog": 134.8,
+   "heading": 134,
+   "nav_status": 0,
+   "updated": "2026-11-14 20:21:40.337415785 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79318,
+   "lon": -122.84322,
+   "sog_kn": 0,
+   "cog": 316.3,
+   "heading": 216,
+   "nav_status": 0,
+   "updated": "2026-11-14 20:21:41.706265176 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20001,
+   "lon": -123.3854,
+   "sog_kn": 0,
+   "cog": 179,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-14 20:21:43.495916018 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08175,
+   "lon": -122.90432,
+   "sog_kn": 0.1,
+   "cog": 148.2,
+   "heading": 139,
+   "nav_status": 0,
+   "updated": "2026-11-14 20:21:50.871895891 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.15986,
+   "lon": -123.0722,
+   "sog_kn": 1,
+   "cog": 94.6,
+   "heading": 104,
+   "nav_status": 3,
+   "updated": "2026-11-14 20:21:55.613652794 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19949,
+   "lon": -123.3851,
+   "sog_kn": 0,
+   "cog": 0.9,
+   "heading": 144,
    "nav_status": 5,
-   "updated": "2026-11-14 20:20:07.79084948 +0000 UTC"
+   "updated": "2026-11-14 20:21:57.23144602 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.73408,
+   "lon": -122.7611,
+   "type_code": 52,
+   "destination": "CSR OPS",
+   "updated": "2026-11-14 20:22:07.597462161 +0000 UTC"
   },
   {
    "mmsi": 366986380,
    "name": "DREDGE OREGON",
-   "lat": 46.08184,
-   "lon": -122.90479,
+   "lat": 46.08185,
+   "lon": -122.9048,
    "sog_kn": 0,
    "cog": 360,
    "heading": 319,
    "nav_status": 3,
-   "updated": "2026-11-14 20:20:08.180445783 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.09682,
-   "lon": -122.93268,
-   "sog_kn": 5.8,
-   "cog": 92.1,
-   "heading": 106,
-   "nav_status": 3,
-   "updated": "2026-11-14 20:20:13.729422029 +0000 UTC"
-  },
-  {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.6454,
-   "lon": -122.73504,
-   "sog_kn": 0,
-   "cog": 30.4,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-14 20:20:14.33798762 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00916,
-   "lon": -122.84817,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-14 20:20:18.896769628 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 75.2,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-14 20:20:27.629451691 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64352,
-   "lon": -122.7524,
-   "type_code": 52,
-   "updated": "2026-11-14 20:20:33.350707399 +0000 UTC"
+   "updated": "2026-11-14 20:22:08.160800647 +0000 UTC"
   }
  ]
 }
