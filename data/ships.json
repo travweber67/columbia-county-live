@@ -1,60 +1,62 @@
 {
- "fetched_at": "2026-11-14T16:49:23Z",
+ "fetched_at": "2026-11-14T16:56:16Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08149,
+   "lon": -122.90452,
+   "sog_kn": 0.2,
+   "cog": 191.3,
+   "heading": 80,
+   "nav_status": 5,
+   "updated": "2026-11-14 16:56:30.529926521 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10536,
+   "lon": -122.96179,
+   "sog_kn": 7.3,
+   "cog": 302.3,
+   "heading": 309,
+   "nav_status": 3,
+   "updated": "2026-11-14 16:56:33.385458597 +0000 UTC"
+  },
+  {
    "mmsi": 367380280,
    "name": "WESTERN STAR",
-   "lat": 46.1627,
+   "lat": 46.16271,
    "lon": -123.40978,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 135,
+   "heading": 134,
    "nav_status": 0,
-   "updated": "2026-11-14 16:50:33.960502628 +0000 UTC"
+   "updated": "2026-11-14 16:56:34.094831879 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65017,
-   "lon": -122.74753,
-   "sog_kn": 0,
-   "cog": 343,
-   "heading": 511,
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.77156,
+   "lon": -122.76709,
+   "sog_kn": 5.8,
+   "cog": 338.9,
+   "heading": 336,
+   "nav_status": 5,
+   "updated": "2026-11-14 16:56:38.764679881 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.14729,
+   "lon": -123.28214,
+   "sog_kn": 1.3,
+   "cog": 90.8,
+   "heading": 76,
    "nav_status": 3,
-   "updated": "2026-11-14 16:50:39.083367802 +0000 UTC"
-  },
-  {
-   "mmsi": 352006999,
-   "name": "WABI SABI",
-   "lat": 46.09906,
-   "lon": -122.93943,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-14 16:50:40.535303901 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.62802,
-   "lon": -122.69996,
-   "sog_kn": 0,
-   "cog": 214.4,
-   "heading": 122,
-   "nav_status": 0,
-   "updated": "2026-11-14 16:50:45.402168137 +0000 UTC"
-  },
-  {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.79282,
-   "lon": -122.84366,
-   "sog_kn": 0.1,
-   "cog": 311.5,
-   "heading": 230,
-   "nav_status": 0,
-   "updated": "2026-11-14 16:50:49.596224295 +0000 UTC"
+   "updated": "2026-11-14 16:56:46.526446294 +0000 UTC"
   }
  ]
 }
