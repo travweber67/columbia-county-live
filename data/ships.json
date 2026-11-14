@@ -1,80 +1,95 @@
 {
- "fetched_at": "2026-11-14T07:25:35Z",
+ "fetched_at": "2026-11-14T07:30:35Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64042,
-   "lon": -122.72173,
-   "sog_kn": 9.1,
-   "cog": 284.1,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08128,
+   "lon": -122.90394,
+   "sog_kn": 0,
+   "cog": 294,
+   "heading": 135,
+   "nav_status": 0,
+   "updated": "2026-11-14 07:30:43.57890666 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.09071,
+   "lon": -122.93212,
+   "sog_kn": 0,
+   "cog": 256,
+   "heading": 109,
+   "nav_status": 5,
+   "updated": "2026-11-14 07:30:50.103250961 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64354,
+   "lon": -122.75246,
+   "sog_kn": 0.2,
+   "cog": 104.4,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-14 07:25:47.730115425 +0000 UTC"
-  },
-  {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 45.64733,
-   "lon": -122.74129,
-   "sog_kn": 0,
-   "cog": 127.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-14 07:25:52.524941162 +0000 UTC"
-  },
-  {
-   "mmsi": 367363590,
-   "name": "CLARKSTON",
-   "lat": 45.6474,
-   "lon": -122.73945,
-   "type_code": 52,
-   "destination": "VANCOUER,WA",
-   "updated": "2026-11-14 07:25:55.702384631 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15344,
-   "lon": -123.37712,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-14 07:25:58.008895943 +0000 UTC"
-  },
-  {
-   "mmsi": 368257130,
-   "name": "TRIUMPH VII",
-   "lat": 46.00987,
-   "lon": -122.84833,
-   "sog_kn": 0,
-   "cog": 301.6,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-14 07:25:58.083128394 +0000 UTC"
-  },
-  {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.64724,
-   "lon": -122.73957,
-   "sog_kn": 0,
-   "cog": 251.7,
-   "heading": 285,
-   "nav_status": 0,
-   "updated": "2026-11-14 07:25:59.542156899 +0000 UTC"
+   "updated": "2026-11-14 07:30:50.833569358 +0000 UTC"
   },
   {
    "mmsi": 367310520,
    "name": "JAMES T",
    "lat": 46.09656,
-   "lon": -122.92969,
-   "type_code": 52,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-14 07:26:04.778775993 +0000 UTC"
+   "lon": -122.92973,
+   "sog_kn": 0,
+   "cog": 99,
+   "heading": 69,
+   "nav_status": 3,
+   "updated": "2026-11-14 07:30:54.868874609 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08144,
+   "lon": -122.90435,
+   "sog_kn": 0.4,
+   "cog": 220.1,
+   "heading": 317,
+   "nav_status": 3,
+   "updated": "2026-11-14 07:30:57.14213669 +0000 UTC"
+  },
+  {
+   "mmsi": 367747140,
+   "name": "TRIUMPH VIII",
+   "lat": 45.63815,
+   "lon": -122.74345,
+   "sog_kn": 13.8,
+   "cog": 137,
+   "heading": 132,
+   "nav_status": 0,
+   "updated": "2026-11-14 07:31:05.425104593 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15343,
+   "lon": -123.37711,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-14 07:31:07.376972871 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.62077,
+   "lon": -122.7879,
+   "sog_kn": 0,
+   "cog": 175.4,
+   "heading": 175,
+   "nav_status": 0,
+   "updated": "2026-11-14 07:31:09.416898115 +0000 UTC"
   }
  ]
 }
