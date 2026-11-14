@@ -3443,17 +3443,47 @@ function homeSavePref() {
     else window.localStorage.removeItem(HOME_KEY);
   } catch (e) { /* non-fatal */ }
 }
+/* v75: the Your town card's own composed strings (status label, See
+   events button, events note). langCur is read only through
+   homeLang(): initHome() runs long before the i18n module's
+   `let langCur` executes, so a direct read on the boot path would
+   hit the temporal dead zone and throw. */
+function homeLang() { try { return langCur; } catch (e) { return 'en'; } }
+function homeTownLabelHTML() {
+  return (homeLang() === 'es' ? '🏠 Tu pueblo: ' : '🏠 Your town: ')
+    + '<strong>' + esc(homeTown.name) + '</strong>';
+}
+function homeEventsLabel() {
+  return homeLang() === 'es'
+    ? 'Ver los eventos de ' + homeTown.name + ' →'
+    : 'See ' + homeTown.name + ' events →';
+}
+/* Refresh the card's composed strings in place (no refetch, no
+   flicker) — called by the langSet wrap further down, and once at
+   boot after initLang has applied a stored language pref. */
+function homeLangRefresh() {
+  if (!homeTown) return;
+  const lbl = $('home-status-label');
+  if (lbl) lbl.innerHTML = homeTownLabelHTML();
+  const btn = $('home-events-btn');
+  if (btn) btn.textContent = homeEventsLabel();
+  homeRefreshCalNote();
+}
 function renderHome() {
   const body = $('home-body');
   if (!body) return;
   if (homeTown) {
-    body.innerHTML = '<p class="home-status">🏠 Your town: <strong>' + esc(homeTown.name) + '</strong> — the county, from home. '
+    body.innerHTML = '<p class="home-status"><span id="home-status-label">' + homeTownLabelHTML() + '</span> '
       + '<span id="home-cal-note"></span></p>'
       + '<p class="town-line" id="town-forecast">🌤️ Reading today\'s forecast for ' + esc(homeTown.name) + '…</p>'
       + '<p class="town-line" id="town-river">🌊 Reading the river gauges…</p>'
       + '<div class="home-actions">'
+      + '<button class="share-btn primary" id="home-events-btn" type="button">' + homeEventsLabel() + '</button>'
       + '<button class="share-btn" id="home-change-btn" type="button">Change town</button>'
       + '<button class="share-btn" id="home-clear-btn" type="button">Show the whole county</button></div>';
+    $('home-events-btn').addEventListener('click', () => {
+      cclRouteAnchor({ getAttribute: () => '#events-card' });
+    });
     $('home-change-btn').addEventListener('click', renderHomePicker);
     $('home-clear-btn').addEventListener('click', () => {
       homeTown = null; homeVisitor = false; homeSavePref();
@@ -3507,7 +3537,9 @@ function homeRefreshCalNote() {
   }
   const n = (eventsCache.events || []).filter(ev => (ev.source || '').indexOf(homeTown.name) !== -1).length;
   note.textContent = n
-    ? n + ' upcoming event' + (n === 1 ? '' : 's') + ' from ' + homeTown.name + '\'s calendar below wear a 📍 Your town badge.'
+    ? (homeLang() === 'es'
+      ? homeTown.name + ' tiene ' + n + ' evento' + (n === 1 ? '' : 's') + ' próximo' + (n === 1 ? '' : 's') + ' — ' + (n === 1 ? 'lleva' : 'llevan') + ' una insignia 📍 en la pestaña de Eventos.'
+      : homeTown.name + ' has ' + n + ' upcoming event' + (n === 1 ? '' : 's') + ' — ' + (n === 1 ? 'it wears' : 'they wear') + ' a 📍 Your town badge over in Events.')
     : homeTown.name + '\'s calendar is in our sources — it\'s quiet right now, and its events will wear a 📍 badge when they appear.';
 }
 // Switch the forecast once the boot-time load has settled, so the two loads
@@ -7383,6 +7415,17 @@ langSet = function (lang) {
   langSetGlancePrev(lang);
   updateGlanceRiver();
 };
+
+/* The Your town card composes its status line, events note and See
+   events button in JS, so refresh them when the language flips (same
+   wrap pattern). The boot-time call covers a stored Spanish pref:
+   initHome rendered the card before initLang applied the pref. */
+const langSetHomePrev = langSet;
+langSet = function (lang) {
+  langSetHomePrev(lang);
+  homeLangRefresh();
+};
+homeLangRefresh();
 
 /* ---------- Redesign prototype 2026-11-05: theme toggle wiring ----------
    The theme itself is set before paint by the inline script in
