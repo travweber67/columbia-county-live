@@ -1,82 +1,75 @@
 {
- "fetched_at": "2026-11-14T15:01:07Z",
+ "fetched_at": "2026-11-14T15:06:07Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 352006982,
-   "name": "MOSHILL",
-   "lat": 45.63365,
-   "lon": -122.70106,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.62803,
+   "lon": -122.69995,
+   "type_code": 52,
+   "destination": "PDX/VANC.OPS.",
+   "updated": "2026-11-14 15:06:26.872986733 +0000 UTC",
    "sog_kn": 0,
-   "cog": 357.4,
-   "heading": 126,
-   "nav_status": 5,
-   "updated": "2026-11-14 15:01:26.07637005 +0000 UTC"
+   "cog": 204.6,
+   "heading": 121,
+   "nav_status": 0
   },
   {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00887,
-   "lon": -122.84881,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.16272,
+   "lon": -123.40979,
    "sog_kn": 0,
    "cog": 360,
+   "heading": 135,
+   "nav_status": 0,
+   "updated": "2026-11-14 15:06:14.293099624 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.08217,
+   "lon": -122.90584,
+   "sog_kn": 7.7,
+   "cog": 127.1,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-14 15:01:26.151340234 +0000 UTC"
+   "updated": "2026-11-14 15:06:26.78770305 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.16288,
-   "lon": -123.07932,
-   "sog_kn": 1.1,
-   "cog": 329.5,
-   "heading": 8,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 165.3,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-14 15:06:27.129225419 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.0817,
+   "lon": -122.90449,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 319,
    "nav_status": 3,
-   "updated": "2026-11-14 15:01:27.609410483 +0000 UTC"
+   "updated": "2026-11-14 15:06:27.300934028 +0000 UTC"
   },
   {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08983,
-   "lon": -122.92902,
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58081,
+   "lon": -122.76008,
    "sog_kn": 0,
-   "cog": 22.1,
-   "heading": 100,
-   "nav_status": 0,
-   "updated": "2026-11-14 15:01:29.269802761 +0000 UTC"
-  },
-  {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.09072,
-   "lon": -122.93215,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-14 15:01:32.279544313 +0000 UTC"
-  },
-  {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 45.99851,
-   "lon": -122.8518,
-   "sog_kn": 0,
-   "cog": 258.8,
-   "heading": 159,
-   "nav_status": 1,
-   "updated": "2026-11-14 15:01:46.122037461 +0000 UTC"
-  },
-  {
-   "mmsi": 636015993,
-   "name": "SIEM NEWTON",
-   "lat": 45.63303,
-   "lon": -122.73785,
-   "sog_kn": 0,
-   "cog": 147,
-   "heading": 136,
-   "nav_status": 0,
-   "updated": "2026-11-14 15:01:48.091133746 +0000 UTC"
+   "cog": 92.5,
+   "heading": 123,
+   "nav_status": 5,
+   "updated": "2026-11-14 15:06:32.087245513 +0000 UTC"
   }
  ]
 }
