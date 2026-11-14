@@ -30,12 +30,12 @@
 if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
-<link rel="manifest" href="manifest.webmanifest?v=69">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=69">
+<link rel="manifest" href="manifest.webmanifest?v=70">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=70">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=69">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=69">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=69">
+<link rel="stylesheet" href="style.css?v=70">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=70">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=70">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
      only page backgrounds first paint needs — warm them with the hero.
      Every other view's photo is lazy-attached by app.js. -->
@@ -603,6 +603,7 @@ document.documentElement.setAttribute("data-theme",t);})();
         <h2 data-i18n="forecasth2">🌦️ Forecast</h2>
         <span class="updated" id="forecast-updated"></span>
       </div>
+      <div id="forecast-week" class="forecast-week" aria-label="Seven-day forecast"><p class="loading small">Loading the week…</p></div>
       <div class="town-picker" id="town-picker" role="group" aria-label="Choose a town"></div>
       <div id="forecast-body" class="panel-body"><p class="loading">Loading forecast…</p></div>
     </div>
@@ -1854,7 +1855,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=69"></script>
+<script src="app.js?v=70"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>

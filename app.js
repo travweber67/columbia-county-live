@@ -314,6 +314,61 @@ async function loadAlerts() {
 /* ---------- forecast (NWS points → gridpoint forecast) ---------- */
 const forecastUrlCache = {};
 let currentTown = TOWNS[0];
+/* ---------- 7-day strip (top of the forecast card) ----------
+   The same NWS gridpoint response the period list below uses carries
+   14 periods — seven full days of day/night pairs. This groups them by
+   calendar date into one column per day: weekday, a condition picture
+   matched to the day's own shortForecast text, and the day's high/low.
+   The icons live in img/wx/ as one matching illustrated set. */
+function wxIconFor(text, windStr) {
+  const s = (text || '').toLowerCase();
+  const nums = (String(windStr || '').match(/\d+/g) || []).map(Number);
+  const windMax = nums.length ? Math.max.apply(null, nums) : 0;
+  if (/thunder|t-storm/.test(s)) return ['wx-storm', 'Thunderstorms'];
+  if (/snow|flurr/.test(s)) return ['wx-snow', 'Snow'];
+  if (/rain|shower|drizzle/.test(s)) return ['wx-rain', 'Rain'];
+  if (/fog|mist/.test(s)) return ['wx-fog', 'Fog'];
+  if (/windy/.test(s) || windMax >= 25) return ['wx-wind', 'Windy'];
+  if (/partly/.test(s)) return ['wx-partly', 'Partly cloudy'];
+  if (/sunny|clear|fair/.test(s)) return ['wx-sunny', 'Sunny'];
+  return ['wx-cloudy', 'Cloudy'];
+}
+function wxBuildWeek(periods) {
+  const days = [];
+  const byKey = {};
+  (periods || []).forEach(p => {
+    const d = new Date(p.startTime);
+    if (isNaN(d)) return;
+    const key = d.getFullYear() + '-' + d.getMonth() + '-' + d.getDate();
+    if (!byKey[key]) { byKey[key] = { date: d, hi: null, lo: null, dayText: '', nightText: '', wind: '', pop: null }; days.push(byKey[key]); }
+    const day = byKey[key];
+    if (p.isDaytime) { day.hi = p.temperature; day.dayText = p.shortForecast || ''; day.wind = p.windSpeed || day.wind; }
+    else { day.lo = p.temperature; day.nightText = p.shortForecast || ''; if (!day.wind) day.wind = p.windSpeed || ''; }
+    const pv = p.probabilityOfPrecipitation && p.probabilityOfPrecipitation.value;
+    if (pv != null && (day.pop == null || pv > day.pop)) day.pop = pv;
+  });
+  return days.slice(0, 7);
+}
+function renderWeekStrip(periods) {
+  const el = $('forecast-week');
+  if (!el) return;
+  const days = wxBuildWeek(periods);
+  if (!days.length) { el.innerHTML = ''; return; }
+  const dowNames = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+  el.innerHTML = days.map((d, i) => {
+    const cond = d.dayText || d.nightText;
+    const icon = wxIconFor(cond, d.wind);
+    const dow = i === 0 ? 'Today' : dowNames[d.date.getDay()];
+    const hi = d.hi != null ? d.hi + '°' : '–';
+    const lo = d.lo != null ? d.lo + '°' : '–';
+    const pop = d.pop != null && d.pop > 0 ? '💧 ' + Math.round(d.pop) + '%' : '';
+    return '<div class="wx-day' + (i === 0 ? ' wx-today' : '') + '">'
+      + '<span class="wx-temps"><strong class="wx-hi">' + hi + '</strong><span class="wx-lo">' + lo + '</span></span>'
+      + '<img class="wx-ico" src="img/wx/' + icon[0] + '.png" alt="' + esc(icon[1]) + '" title="' + esc(cond) + '" loading="lazy" decoding="async">'
+      + '<span class="wx-pop">' + pop + '</span>'
+      + '<span class="wx-dow">' + dow + '</span></div>';
+  }).join('');
+}
 async function loadForecast(town) {
   currentTown = town;
   document.querySelectorAll('.town-btn').forEach(b => {
@@ -329,6 +384,7 @@ async function loadForecast(town) {
       forecastUrlCache[town.name] = pts.properties.forecast;
     }
     const fc = await getJSON(forecastUrlCache[town.name]);
+    renderWeekStrip(fc.properties.periods || []);
     const periods = (fc.properties.periods || []).slice(0, 6);
     body.innerHTML = '<div class="forecast-periods">' + periods.map(p =>
       '<div class="period"><h4>' + esc(p.name) + '</h4>'
@@ -340,6 +396,8 @@ async function loadForecast(town) {
       + '</p></div>').join('') + '</div>';
     setUpdated('forecast-updated');
   } catch (e) {
+    const wk = $('forecast-week');
+    if (wk) wk.innerHTML = '';
     body.innerHTML = '<p class="fallback">⚠️ Forecast unavailable right now. See '
       + '<a href="https://forecast.weather.gov/MapClick.php?lat=' + town.lat + '&lon=' + town.lon
       + '" target="_blank" rel="noopener">weather.gov for ' + esc(town.name) + '</a>.</p>';
