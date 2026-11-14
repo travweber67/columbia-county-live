@@ -1,62 +1,111 @@
 {
- "fetched_at": "2026-11-14T23:19:28Z",
+ "fetched_at": "2026-11-14T23:21:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367425910,
-   "name": "SEA HORSE",
-   "lat": 46.15219,
-   "lon": -123.37767,
-   "sog_kn": 0.1,
-   "cog": 360,
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.04402,
+   "lon": -122.87692,
+   "sog_kn": 0,
+   "cog": 125.2,
+   "heading": 180,
+   "nav_status": 5,
+   "updated": "2026-11-14 23:22:03.458159374 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08153,
+   "lon": -122.90466,
+   "sog_kn": 0,
+   "cog": 329.5,
+   "heading": 121,
+   "nav_status": 0,
+   "updated": "2026-11-14 23:22:05.708859245 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09693,
+   "lon": -122.92835,
+   "sog_kn": 0,
+   "cog": 48.2,
+   "heading": 67,
+   "nav_status": 3,
+   "updated": "2026-11-14 23:22:06.419760261 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35744,
+   "sog_kn": 0,
+   "cog": 308.7,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-14 23:22:07.60840453 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.65391,
+   "lon": -122.76267,
+   "sog_kn": 7.6,
+   "cog": 241.1,
+   "heading": 228,
+   "nav_status": 0,
+   "updated": "2026-11-14 23:22:09.316182906 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65015,
+   "lon": -122.74762,
+   "sog_kn": 0,
+   "cog": 264.4,
    "heading": 511,
    "nav_status": 3,
-   "updated": "2026-11-14 23:20:28.069012605 +0000 UTC"
+   "updated": "2026-11-14 23:22:09.764788654 +0000 UTC"
   },
   {
-   "mmsi": 440576000,
-   "name": "PAN FLOWER",
-   "lat": 45.64307,
-   "lon": -122.77133,
-   "sog_kn": 0,
-   "cog": 50.3,
-   "heading": 229,
-   "nav_status": 5,
-   "updated": "2026-11-14 23:20:35.79166146 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.63376,
-   "lon": -122.78743,
-   "sog_kn": 7.9,
-   "cog": 20.8,
-   "heading": 16,
-   "nav_status": 0,
-   "updated": "2026-11-14 23:20:39.969988064 +0000 UTC"
-  },
-  {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59407,
-   "lon": -122.7721,
-   "sog_kn": 0,
-   "cog": 338.3,
-   "heading": 148,
-   "nav_status": 5,
-   "updated": "2026-11-14 23:20:42.787061655 +0000 UTC"
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.65288,
+   "lon": -122.75262,
+   "type_code": 52,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-14 23:22:18.963337558 +0000 UTC"
   },
   {
    "mmsi": 368329050,
    "name": "TOIVO T",
    "lat": 45.612,
    "lon": -122.64535,
-   "sog_kn": 0,
-   "cog": 307.8,
-   "heading": 296,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-14 23:22:25.104010787 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.62706,
+   "lon": -122.78918,
+   "sog_kn": 29.9,
+   "cog": 188.5,
+   "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-14 23:20:51.574308109 +0000 UTC"
+   "updated": "2026-11-14 23:22:29.109720972 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58079,
+   "lon": -122.76008,
+   "type_code": 31,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-14 23:22:31.929095972 +0000 UTC"
   }
  ]
 }
