@@ -6488,6 +6488,31 @@ function pinMakeCopy(id) {
   tag.className = 'pin-copy-tag';
   tag.textContent = langCur === 'es' ? '📌 Copia fijada — toca para abrir la tarjeta en vivo' : '📌 Pinned copy — tap to open the live card';
   copy.insertBefore(tag, copy.firstChild);
+  /* v73: the forecast's 7-day pill strip lives OUTSIDE its card (the
+     standalone block above it, since v71), so a plain card clone pins
+     only the period list — Travis pinned the Forecast for the pills
+     and got just the giant card. The forecast's copy therefore leads
+     with a clone of that whole block (heading, place line, strip);
+     the head handling below finds the block's .card-head first and
+     gives it the copy's unpin button. The clone's block and head
+     classes are renamed (pin-forecast-top, plain card-head) so the
+     page-level wiring that looks up .forecast-top / .forecast-head —
+     the original's pin button — can never land on a copy. Copies are
+     rebuilt from the live DOM on every render, so a pin made before
+     this fix gains the strip on its own: no re-pin, no store change. */
+  if (id === 'forecast-card') {
+    const top = document.querySelector('.forecast-top');
+    if (top) {
+      const topCopy = top.cloneNode(true);
+      topCopy.removeAttribute('id');
+      topCopy.querySelectorAll('[id]').forEach(n => n.removeAttribute('id'));
+      topCopy.classList.remove('forecast-top');
+      topCopy.classList.add('pin-forecast-top');
+      const topHead = topCopy.querySelector('.forecast-head');
+      if (topHead) topHead.classList.remove('forecast-head');
+      copy.insertBefore(topCopy, copy.children[1] || null);
+    }
+  }
   const head = copy.querySelector('.card-head');
   if (head) {
     const stale = head.querySelector('.pin-btn');
@@ -6536,6 +6561,12 @@ function pinRenderZone() {
       }, 400);
     });
     mo.observe(orig, { subtree: true, childList: true, characterData: true });
+    /* v73: the forecast strip lives outside the card — watch it too, so
+       the pinned copy's pills refresh when the original strip does. */
+    if (id === 'forecast-card') {
+      const wk = $('forecast-week');
+      if (wk) mo.observe(wk, { subtree: true, childList: true, characterData: true });
+    }
     pinObservers[id] = mo;
   });
 }

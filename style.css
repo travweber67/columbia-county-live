@@ -2752,3 +2752,12 @@ html[data-theme="dark"] .getapp-other summary{color:#bfe3c8}
 .forecast-head .updated{color:rgba(255,255,255,.88);text-shadow:0 1px 6px rgba(12,26,16,.55)}
 .wx-place{margin:0;font-size:.84rem;font-weight:700;letter-spacing:.02em;color:#fff;text-shadow:0 1px 8px rgba(12,26,16,.6)}
 .forecast-top .forecast-week{margin:0;padding-bottom:4px}
+/* v73: the forecast strip block inside a pinned copy — the same column
+   layout as .forecast-top, but the head and place line ride the card's
+   own theme; the over-photo white stays on the Outdoors original only. */
+.pin-forecast-top{display:flex;flex-direction:column;gap:8px;padding:2px 2px 0}
+.pin-forecast-top .card-head{margin-bottom:0}
+.pin-forecast-top .card-head h2{color:var(--text);text-shadow:none}
+.pin-forecast-top .card-head .updated{color:var(--muted);text-shadow:none}
+.pin-forecast-top .wx-place{color:var(--text);text-shadow:none}
+.pin-forecast-top .forecast-week{margin:0;padding-bottom:4px}
