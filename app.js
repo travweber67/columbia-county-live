@@ -672,6 +672,89 @@ function incidentRow(i) {
     + '<div class="incident-meta">' + esc(meta.join(' · ')) + '</div></div>';
 }
 
+/* ---------- incident cards (v76 — Travis approved the preview) ----------
+   The ODOT list was one long wall of text inside the Roads card. Each
+   incident is now its own glass card standing on the page background,
+   collapsed to a route pill, the headline, and one compact meta line
+   (place · impact); the full description, the since/source line and
+   the project link live behind the tap. ODOT embeds a raw "Link to
+   Additional Information: https://…" tail in the description —
+   splitIncidentDesc pulls that URL out so it renders as one tidy link
+   and never as body text. incidentRow above is NOT touched: the Bend
+   Run pass cards and the bridge box still render with it. The expand
+   control is a stacked double chevron with a tiny "See more" label
+   under it (Travis: make it obvious the card opens); expanded, the
+   chevrons flip and the label reads "See less" (ES: Ver más / Ver
+   menos). The incidents block is its own pinnable unit (incidents-card
+   in PIN_CARDS): initPins grows its 📌 button in the floating head,
+   and the pinned copy carries the heading + the live alert cards. */
+function splitIncidentDesc(desc) {
+  let text = String(desc || '');
+  let url = '';
+  const m = text.match(/https?:\/\/[^\s<]+/);
+  if (m) {
+    url = m[0].replace(/[).,;]+$/, '');
+    text = text.replace(/Link to Additional Information:\s*/i, ' ').replace(m[0], ' ');
+  }
+  return { text: text.replace(/\s+/g, ' ').trim(), url };
+}
+
+function alertToggleLabel(open) {
+  if (langCur === 'es') return open ? 'Ver menos' : 'Ver más';
+  return open ? 'See less' : 'See more';
+}
+
+function incidentCard(i) {
+  const parts = splitIncidentDesc(i.desc);
+  const meta = [];
+  if (i.place) meta.push(i.place);
+  else if (i.route) meta.push(i.route);
+  if (i.impact) meta.push(i.impact);
+  const foot = [];
+  if (i.start) {
+    const sd = new Date(i.start);
+    if (!isNaN(sd)) foot.push('since ' + fmtDayTime(sd));
+  }
+  foot.push('Source: ' + (i.source || 'ODOT TripCheck'));
+  const srcName = /wsdot/i.test(i.source || '') ? 'WSDOT'
+    : /odot/i.test(i.source || '') ? 'ODOT' : '';
+  let h = '<article class="alert-card">'
+    + '<button class="alert-head" type="button" aria-expanded="false">'
+    + '<span class="alert-main">'
+    + (i.route ? '<span class="route-pill">' + esc(i.route) + '</span>' : '')
+    + '<span class="alert-title">' + esc(i.title) + '</span>'
+    + (meta.length ? '<span class="alert-meta">' + esc(meta.join(' · ')) + '</span>' : '')
+    + '</span>'
+    + '<span class="alert-toggle">'
+    + '<svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg>'
+    + '<span class="alert-toggle-label">' + alertToggleLabel(false) + '</span>'
+    + '</span>'
+    + '</button>'
+    + '<div class="alert-more"><div class="alert-more-in"><div class="alert-body">';
+  if (parts.text) h += '<p class="alert-desc">' + esc(parts.text) + '</p>';
+  h += '<div class="alert-foot">' + esc(foot.join(' · ')) + '</div>';
+  if (parts.url) {
+    h += '<a class="alert-link" href="' + esc(parts.url) + '" target="_blank" rel="noopener">More info'
+      + (srcName ? ' from ' + srcName : '') + ' →</a>';
+  }
+  h += '</div></div></div></article>';
+  return h;
+}
+
+function wireAlertCards(root) {
+  if (!root) return;
+  root.querySelectorAll('.alert-head').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.alert-card');
+      if (!card) return;
+      const open = card.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      const lbl = card.querySelector('.alert-toggle-label');
+      if (lbl) lbl.textContent = alertToggleLabel(open);
+    });
+  });
+}
+
 /* ---------- My Route camera strip (build batch 2026-11-04, ADD 1 / R3) ----------
    The most-loved pattern in the DOT-app reviews is cameras grouped by
    route; CCL already had them on the map and in one flat list — this
@@ -768,17 +851,32 @@ function renderRoads(roads, camerasSnap) {
   // the county area (build batch 2026-11-04, research ADD 2 / R1: the
   // verdict and this list used to carry the whole statewide feed count).
   const iEl = $('incidents-body');
+  const scEl = $('incidents-scope');
   const tc = (roads.sources || [])[0] || {};
   if ((roads.incidents || []).length) {
-    const scopeNote = (typeof roads.odot_active_statewide === 'number')
-      ? '<p class="incident-scope">ODOT lists ' + roads.odot_active_statewide
-        + ' active incidents across Oregon right now — these ' + roads.incidents.length
-        + ' are the ones it locates in the county &amp; commute corridors.</p>'
-      : '';
-    iEl.innerHTML = scopeNote + roads.incidents.map(incidentRow).join('');
+    /* v76: the scope note lives in the floating heading column (its
+       own element, #incidents-scope), never in the list — the heading
+       row's 📌 Pin button sits in its own flex space beside that
+       column, so the note can never run under the button. The list
+       itself is cards only. */
+    if (scEl) {
+      if (typeof roads.odot_active_statewide === 'number') {
+        scEl.innerHTML = 'ODOT lists ' + roads.odot_active_statewide
+          + ' active incidents across Oregon right now — these ' + roads.incidents.length
+          + ' are the ones it locates in the county &amp; commute corridors.';
+        scEl.hidden = false;
+      } else {
+        scEl.innerHTML = '';
+        scEl.hidden = true;
+      }
+    }
+    iEl.innerHTML = roads.incidents.map(incidentCard).join('');
+    wireAlertCards(iEl); /* v76: chevron toggles on the incident cards */
   } else if (tc.status === 'ok') {
+    if (scEl) { scEl.innerHTML = ''; scEl.hidden = true; }
     iEl.innerHTML = '<p class="no-alerts">✅ No ODOT incidents reported in the county area in the latest snapshot.</p>';
   } else {
+    if (scEl) { scEl.innerHTML = ''; scEl.hidden = true; }
     iEl.innerHTML = '<p class="status-note">🛠️ The bridge status above and event/ferry panels are live now. ODOT\'s incident feed itself needs ODOT\'s free developer key added to our fetcher — the plumbing is built and waiting on that one signup (it\'s free; it just has to be done by a person). Until then, the snapshot above is WSDOT + county sources only for roads.</p>';
   }
   // Cameras
@@ -822,6 +920,8 @@ async function loadRoads() {
     if (vEl2) { vEl2.className = 'commute-verdict cv-warn'; vEl2.innerHTML = '<div class="cv-head">❔ Corridor status unavailable</div><div class="cv-sub">The road snapshot didn\'t load — check TripCheck or WSDOT directly before you drive.</div>'; }
     $('bridge-body').innerHTML = '<p class="fallback">⚠️ Road snapshot unavailable right now — check <a href="https://www.tripcheck.com/" target="_blank" rel="noopener">TripCheck</a> and <a href="https://wsdot.com/traffic/" target="_blank" rel="noopener">WSDOT</a> directly before you drive.</p>';
     $('incidents-body').innerHTML = '';
+    const scElErr = $('incidents-scope');
+    if (scElErr) { scElErr.innerHTML = ''; scElErr.hidden = true; }
     $('cameras-body').innerHTML = '';
     const mrEl = $('myroute-body');
     if (mrEl) mrEl.innerHTML = '';
@@ -6483,7 +6583,7 @@ window.CCLPins = {
    it is the page's anchor, and a Leaflet container does not need the
    adventure. */
 const PIN_CARDS = ['since-card', 'home-card', 'commute-card', 'go-card', 'plan-card', 'schools-card', 'briefing-card',
-  'roads-card', 'drive-card', 'routeahead-card', 'ferry-card', 'ships-card', 'aircraft-card', 'bend-card',
+  'roads-card', 'incidents-card', 'drive-card', 'routeahead-card', 'ferry-card', 'ships-card', 'aircraft-card', 'bend-card',
   'alerts-card', 'forecast-card', 'sky-card', 'dark-card', 'rivers-card', 'tides-card',
   'fish-card', 'tracker-card', 'steelhead-card', 'almanac-card',
   'quakes-card', 'fires-card', 'air-card',
@@ -7426,6 +7526,18 @@ langSet = function (lang) {
   homeLangRefresh();
 };
 homeLangRefresh();
+
+/* v76: the incident cards' See more / See less toggle labels are baked
+   at render time — refresh them in place on a language flip (same wrap
+   pattern), keeping each card's open state. */
+const langSetIncidentsPrev = langSet;
+langSet = function (lang) {
+  langSetIncidentsPrev(lang);
+  document.querySelectorAll('#incidents-body .alert-card').forEach(card => {
+    const lbl = card.querySelector('.alert-toggle-label');
+    if (lbl) lbl.textContent = alertToggleLabel(card.classList.contains('open'));
+  });
+};
 
 /* ---------- Redesign prototype 2026-11-05: theme toggle wiring ----------
    The theme itself is set before paint by the inline script in

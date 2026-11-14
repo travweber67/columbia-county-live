@@ -30,12 +30,12 @@
 if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
-<link rel="manifest" href="manifest.webmanifest?v=75">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=75">
+<link rel="manifest" href="manifest.webmanifest?v=76">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=76">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=75">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=75">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=75">
+<link rel="stylesheet" href="style.css?v=76">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=76">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=76">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
      only page backgrounds first paint needs — warm them with the hero.
      Every other view's photo is lazy-attached by app.js. -->
@@ -494,8 +494,6 @@ document.documentElement.setAttribute("data-theme",t);})();
         <span class="updated" id="roads-updated"></span>
       </div>
       <div id="bridge-body" class="panel-body"><p class="loading">Loading Lewis &amp; Clark Bridge status…</p></div>
-      <h3 class="subhead" data-i18n="incidentsh3">Highway incidents — ODOT TripCheck</h3>
-      <div id="incidents-body" class="panel-body"><p class="loading">Loading incidents…</p></div>
       <h3 class="subhead" data-i18n="myrouteh3">📷 My Route — your commute cameras, in driving order</h3>
       <div id="myroute-body" class="panel-body"><p class="loading">Loading route cameras…</p></div>
       <h3 class="subhead" data-i18n="camerash3">Road cameras</h3>
@@ -504,6 +502,23 @@ document.documentElement.setAttribute("data-theme",t);})();
     </div>
 
     
+
+    <!-- v76: the incidents leave the Roads card — no card-within-card
+         (Travis). The heading row floats on the page background (the
+         v71 .forecast-top pattern): title + scope note in a left column
+         that wraps, the 📌 Pin button in its own space at the top right
+         of the row, so text can never run under the button. Each alert
+         below is one standalone glass card. The block is its own
+         pinnable unit (incidents-card). -->
+    <div class="incidents-top" id="incidents-card">
+      <div class="card-head incidents-head">
+        <div class="incidents-headcol">
+          <h3 data-i18n="incidentsh3">Highway incidents — ODOT TripCheck</h3>
+          <p class="incident-scope" id="incidents-scope" hidden></p>
+        </div>
+      </div>
+      <div id="incidents-body" class="incidents-list"><p class="loading">Loading incidents…</p></div>
+    </div>
 
     <div class="card" id="routeahead-card">
       <div class="card-head">
@@ -1862,7 +1877,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=75"></script>
+<script src="app.js?v=76"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>
