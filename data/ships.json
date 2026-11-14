@@ -1,48 +1,64 @@
 {
- "fetched_at": "2026-11-14T19:21:30Z",
+ "fetched_at": "2026-11-14T19:26:30Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.63719,
-   "lon": -122.72699,
-   "sog_kn": 0.1,
-   "cog": 72.7,
-   "heading": 297,
-   "nav_status": 0,
-   "updated": "2026-11-14 19:21:35.373137916 +0000 UTC"
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08163,
+   "lon": -122.90433,
+   "sog_kn": 0,
+   "cog": 167.1,
+   "heading": 131,
+   "nav_status": 5,
+   "updated": "2026-11-14 19:26:35.670035125 +0000 UTC"
   },
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.14637,
-   "lon": -123.38408,
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 45.64308,
+   "lon": -122.7713,
+   "sog_kn": 0,
+   "cog": 203,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-14 19:26:35.724353396 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20003,
+   "lon": -123.38541,
    "type_code": 99,
-   "updated": "2026-11-14 19:21:46.347345677 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64352,
-   "lon": -122.75294,
+   "destination": "NAKNEK",
+   "updated": "2026-11-14 19:26:55.198442468 +0000 UTC",
    "sog_kn": 0,
-   "cog": 240.4,
+   "cog": 0,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-14 19:21:53.668241059 +0000 UTC"
+   "nav_status": 8
   },
   {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 46.044,
-   "lon": -122.87691,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.15992,
+   "lon": -123.07217,
+   "sog_kn": 1.5,
+   "cog": 281.7,
+   "heading": 274,
+   "nav_status": 3,
+   "updated": "2026-11-14 19:26:54.321845948 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09683,
+   "lon": -122.92904,
    "sog_kn": 0,
-   "cog": 125.2,
-   "heading": 180,
-   "nav_status": 5,
-   "updated": "2026-11-14 19:21:55.564412347 +0000 UTC"
+   "cog": 2.6,
+   "heading": 71,
+   "nav_status": 3,
+   "updated": "2026-11-14 19:26:54.336541261 +0000 UTC"
   }
  ]
 }
