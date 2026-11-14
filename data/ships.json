@@ -1,69 +1,102 @@
 {
- "fetched_at": "2026-11-14T15:26:09Z",
+ "fetched_at": "2026-11-14T15:31:10Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367667060,
-   "name": "GRANITE POINT",
-   "lat": 45.64729,
-   "lon": -122.73995,
-   "type_code": 52,
-   "destination": "SRT PASCO",
-   "updated": "2026-11-14 15:26:22.489014742 +0000 UTC"
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.6466,
+   "lon": -122.74623,
+   "sog_kn": 5.7,
+   "cog": 302.1,
+   "heading": 307,
+   "nav_status": 5,
+   "updated": "2026-11-14 15:31:18.077500655 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64356,
+   "lon": -122.75296,
+   "sog_kn": 0,
+   "cog": 250.2,
+   "heading": 236,
+   "nav_status": 5,
+   "updated": "2026-11-14 15:31:18.274172588 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.9101,
+   "sog_kn": 0,
+   "cog": 337.9,
+   "heading": 72,
+   "nav_status": 0,
+   "updated": "2026-11-14 15:31:21.148171706 +0000 UTC"
+  },
+  {
+   "mmsi": 352006982,
+   "name": "MOSHILL",
+   "lat": 45.63365,
+   "lon": -122.70107,
+   "sog_kn": 0,
+   "cog": 357.4,
+   "heading": 126,
+   "nav_status": 5,
+   "updated": "2026-11-14 15:31:26.065711653 +0000 UTC"
   },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 46.16248,
-   "lon": -123.07794,
-   "sog_kn": 0.5,
-   "cog": 127.1,
-   "heading": 116,
+   "lat": 46.16154,
+   "lon": -123.07597,
+   "sog_kn": 0.4,
+   "cog": 120.6,
+   "heading": 117,
    "nav_status": 3,
-   "updated": "2026-11-14 15:26:25.328248214 +0000 UTC"
+   "updated": "2026-11-14 15:31:35.569901291 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60752,
+   "lon": -122.67764,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-14 15:31:35.659591366 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10317,
+   "lon": -122.90866,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-14 15:31:38.213798055 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64353,
+   "lon": -122.75245,
+   "sog_kn": 0,
+   "cog": 249.8,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-14 15:31:40.00435575 +0000 UTC"
   },
   {
    "mmsi": 368442390,
    "name": "COWLITZ",
    "lat": 46.08159,
-   "lon": -122.90422,
-   "sog_kn": 0,
-   "cog": 42.7,
-   "heading": 132,
-   "nav_status": 5,
-   "updated": "2026-11-14 15:26:29.811670691 +0000 UTC"
-  },
-  {
-   "mmsi": 367425870,
-   "name": "HUSKY",
-   "lat": 45.64568,
-   "lon": -122.73892,
-   "sog_kn": 7.4,
-   "cog": 113.9,
-   "heading": 112,
-   "nav_status": 0,
-   "updated": "2026-11-14 15:26:34.467416994 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65009,
-   "lon": -122.74768,
-   "sog_kn": 0,
-   "cog": 210.1,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-14 15:26:39.975727226 +0000 UTC"
-  },
-  {
-   "mmsi": 352006999,
-   "name": "WABI SABI",
-   "lat": 46.09907,
-   "lon": -122.93941,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-14 15:26:41.997910254 +0000 UTC"
+   "lon": -122.90423,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-14 15:31:45.21112923 +0000 UTC"
   }
  ]
 }
