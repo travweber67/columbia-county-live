@@ -1,60 +1,46 @@
 {
- "fetched_at": "2026-11-14T08:10:38Z",
+ "fetched_at": "2026-11-14T08:15:38Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08129,
-   "lon": -122.90392,
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.64342,
+   "lon": -122.75283,
    "sog_kn": 0,
-   "cog": 80.7,
-   "heading": 148,
+   "cog": 231.9,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-14 08:15:59.232349763 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08058,
+   "lon": -122.90333,
+   "sog_kn": 0.2,
+   "cog": 289.1,
+   "heading": 137,
    "nav_status": 0,
-   "updated": "2026-11-14 08:10:43.922973913 +0000 UTC"
+   "updated": "2026-11-14 08:16:00.990153085 +0000 UTC"
   },
   {
    "mmsi": 477050900,
    "name": "MING DE",
-   "lat": 45.99852,
-   "lon": -122.85165,
-   "sog_kn": 0,
-   "cog": 258.8,
-   "heading": 156,
-   "nav_status": 1,
-   "updated": "2026-11-14 08:10:45.502031592 +0000 UTC"
+   "lat": 45.99854,
+   "lon": -122.85164,
+   "type_code": 70,
+   "destination": "CN QDG",
+   "updated": "2026-11-14 08:16:08.293814186 +0000 UTC"
   },
   {
-   "mmsi": 352006999,
-   "name": "WABI SABI",
-   "lat": 46.09904,
-   "lon": -122.93937,
-   "sog_kn": 0,
-   "cog": 4,
-   "heading": 110,
-   "nav_status": 5,
-   "updated": "2026-11-14 08:10:47.752686455 +0000 UTC"
-  },
-  {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.98994,
-   "lon": -122.84092,
-   "type_code": 0,
-   "destination": "VANCOUVER",
-   "updated": "2026-11-14 08:10:54.935767633 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.1534,
-   "lon": -123.37713,
-   "sog_kn": 0,
-   "cog": 174.4,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-14 08:11:07.723315524 +0000 UTC"
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.6076,
+   "lon": -122.67757,
+   "type_code": 50,
+   "updated": "2026-11-14 08:16:09.373956963 +0000 UTC"
   }
  ]
 }
