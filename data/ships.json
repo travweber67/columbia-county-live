@@ -1,49 +1,37 @@
 {
- "fetched_at": "2026-11-14T12:15:56Z",
+ "fetched_at": "2026-11-14T12:19:20Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 45.64331,
-   "lon": -122.75279,
-   "type_code": 50,
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-14 12:16:01.911003917 +0000 UTC"
+   "mmsi": 636015993,
+   "name": "SIEM NEWTON",
+   "lat": 45.633,
+   "lon": -122.73775,
+   "sog_kn": 0,
+   "cog": 147,
+   "heading": 136,
+   "nav_status": 0,
+   "updated": "2026-11-14 12:20:08.157076934 +0000 UTC"
   },
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20003,
-   "lon": -123.38537,
-   "sog_kn": 0,
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.6457,
+   "lon": -122.73485,
+   "sog_kn": 0.1,
    "cog": 0,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-14 12:16:04.646108434 +0000 UTC"
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-14 12:20:08.241476126 +0000 UTC"
   },
   {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 46.08974,
-   "lon": -122.92906,
-   "sog_kn": 0,
-   "cog": 234.8,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-14 12:16:05.165054316 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08982,
-   "lon": -122.929,
-   "sog_kn": 0,
-   "cog": 180.5,
-   "heading": 99,
-   "nav_status": 0,
-   "updated": "2026-11-14 12:16:07.774242787 +0000 UTC"
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08159,
+   "lon": -122.90452,
+   "type_code": 33,
+   "updated": "2026-11-14 12:20:09.470497647 +0000 UTC"
   },
   {
    "mmsi": 367380280,
@@ -54,29 +42,69 @@
    "cog": 360,
    "heading": 135,
    "nav_status": 0,
-   "updated": "2026-11-14 12:16:14.256404733 +0000 UTC"
+   "updated": "2026-11-14 12:20:14.274318356 +0000 UTC"
   },
   {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.64722,
-   "lon": -122.73956,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20002,
+   "lon": -123.38542,
    "sog_kn": 0,
-   "cog": 231.2,
-   "heading": 285,
-   "nav_status": 0,
-   "updated": "2026-11-14 12:16:19.890874892 +0000 UTC"
+   "cog": 187.2,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-14 12:20:15.605154473 +0000 UTC"
   },
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.14706,
-   "lon": -123.27873,
-   "sog_kn": 1.9,
-   "cog": 86.5,
-   "heading": 83,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16364,
+   "lon": -123.08069,
+   "sog_kn": 0.7,
+   "cog": 110,
+   "heading": 133,
    "nav_status": 3,
-   "updated": "2026-11-14 12:16:27.622354714 +0000 UTC"
+   "updated": "2026-11-14 12:20:18.656391693 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09073,
+   "lon": -122.93212,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-14 12:20:19.93498121 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64728,
+   "lon": -122.73993,
+   "type_code": 52,
+   "destination": "SRT PASCO",
+   "updated": "2026-11-14 12:20:22.152966131 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08126,
+   "lon": -122.90428,
+   "sog_kn": 0,
+   "cog": 173.9,
+   "heading": 136,
+   "nav_status": 0,
+   "updated": "2026-11-14 12:20:24.676978588 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.63226,
+   "lon": -122.7868,
+   "sog_kn": 6.8,
+   "cog": 203.3,
+   "heading": 202,
+   "nav_status": 12,
+   "updated": "2026-11-14 12:20:25.57181324 +0000 UTC"
   }
  ]
 }
