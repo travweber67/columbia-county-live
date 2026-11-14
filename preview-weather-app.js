@@ -340,10 +340,12 @@ function wxBuildWeek(periods) {
     const d = new Date(p.startTime);
     if (isNaN(d)) return;
     const key = d.getFullYear() + '-' + d.getMonth() + '-' + d.getDate();
-    if (!byKey[key]) { byKey[key] = { date: d, hi: null, lo: null, dayText: '', nightText: '', wind: '' }; days.push(byKey[key]); }
+    if (!byKey[key]) { byKey[key] = { date: d, hi: null, lo: null, dayText: '', nightText: '', wind: '', pop: null }; days.push(byKey[key]); }
     const day = byKey[key];
     if (p.isDaytime) { day.hi = p.temperature; day.dayText = p.shortForecast || ''; day.wind = p.windSpeed || day.wind; }
     else { day.lo = p.temperature; day.nightText = p.shortForecast || ''; if (!day.wind) day.wind = p.windSpeed || ''; }
+    const pv = p.probabilityOfPrecipitation && p.probabilityOfPrecipitation.value;
+    if (pv != null && (day.pop == null || pv > day.pop)) day.pop = pv;
   });
   return days.slice(0, 7);
 }
@@ -359,9 +361,12 @@ function renderWeekStrip(periods) {
     const dow = i === 0 ? 'Today' : dowNames[d.date.getDay()];
     const hi = d.hi != null ? d.hi + '°' : '–';
     const lo = d.lo != null ? d.lo + '°' : '–';
-    return '<div class="wx-day"><span class="wx-dow">' + dow + '</span>'
+    const pop = d.pop != null && d.pop > 0 ? '💧 ' + Math.round(d.pop) + '%' : '';
+    return '<div class="wx-day' + (i === 0 ? ' wx-today' : '') + '">'
+      + '<span class="wx-temps"><strong class="wx-hi">' + hi + '</strong><span class="wx-lo">' + lo + '</span></span>'
       + '<img class="wx-ico" src="preview-' + icon[0] + '.png" alt="' + esc(icon[1]) + '" title="' + esc(cond) + '" loading="lazy" decoding="async">'
-      + '<span class="wx-temps"><strong>' + hi + '</strong><span class="wx-lo">' + lo + '</span></span></div>';
+      + '<span class="wx-pop">' + pop + '</span>'
+      + '<span class="wx-dow">' + dow + '</span></div>';
   }).join('');
 }
 async function loadForecast(town) {

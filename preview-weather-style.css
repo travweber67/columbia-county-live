@@ -349,22 +349,30 @@ h2{font-weight:700;letter-spacing:-.01em}
 .period .temp{font-size:1.15rem;font-weight:800}
 .period p{margin:2px 0 0;color:var(--muted);font-size:.8rem}
 
-/* 7-day strip — top of the forecast card (one column per day:
-   weekday, condition picture, high/low). Icons are one illustrated
-   set on charcoal tiles, so they read the same in day and dusk. */
-.forecast-week{display:flex;gap:6px;margin:0 0 12px}
+/* 7-day strip — top of the forecast card. Tall frosted-glass capsules
+   in a swipeable row (Travis, 2026-11-13, modeled on the Google
+   Weather 10-day card): inside each pill, top to bottom — high temp,
+   low temp, condition picture, precipitation chance, day name. The
+   days that don't fit sit off to the right, reached by swiping
+   sideways — never all seven squeezed into the card width.
+   Pill text is pinned to the dark ink palette in BOTH themes: the
+   frosted surface itself is light glass, so theme-flipped text
+   (near-white at dusk) would wash out on it. */
+.forecast-week{display:flex;gap:10px;margin:0 0 12px;padding:4px 2px 8px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;scroll-snap-type:x proximity}
+.forecast-week::-webkit-scrollbar{display:none}
 .forecast-week:empty{display:none}
 .forecast-week .loading{margin:2px 0}
-.wx-day{flex:1 1 0;min-width:0;background:var(--panel-2);border:1px solid var(--border);border-radius:12px;padding:7px 2px 6px;text-align:center}
-.wx-dow{display:block;font-size:.66rem;font-weight:700;letter-spacing:.04em;color:var(--accent);text-transform:uppercase}
-.wx-ico{width:38px;height:38px;border-radius:9px;display:block;margin:4px auto 3px}
-.wx-temps{display:block;font-size:.78rem;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
-.wx-temps .wx-lo{color:var(--muted);font-weight:600;margin-left:4px}
+.wx-day{flex:0 0 auto;width:76px;height:158px;border-radius:40px;padding:13px 6px 11px;display:flex;flex-direction:column;align-items:center;text-align:center;color:#1e2b1f;background:rgba(255,255,255,.22);-webkit-backdrop-filter:blur(14px) saturate(1.5);backdrop-filter:blur(14px) saturate(1.5);border:1px solid rgba(255,255,255,.45);box-shadow:0 4px 14px rgba(20,40,30,.18),inset 0 1px 0 rgba(255,255,255,.5);scroll-snap-align:start}
+.wx-day.wx-today{background:rgba(255,255,255,.36);border-color:rgba(232,93,4,.85);box-shadow:0 4px 14px rgba(20,40,30,.18),inset 0 1px 0 rgba(255,255,255,.6),0 0 0 1px rgba(232,93,4,.25)}
+.wx-temps{display:block;font-variant-numeric:tabular-nums;line-height:1.15}
+.wx-hi{display:block;font-size:1.02rem;font-weight:800}
+.wx-lo{display:block;font-size:.8rem;font-weight:600;color:rgba(30,43,31,.55)}
+.wx-ico{width:38px;height:38px;border-radius:10px;display:block;margin:9px auto 0}
+.wx-pop{display:block;height:16px;line-height:16px;margin-top:auto;font-size:.7rem;font-weight:700;color:#1f6fb2;white-space:nowrap}
+.wx-dow{display:block;margin-top:3px;font-size:.76rem;font-weight:800;letter-spacing:.03em;color:#1e2b1f;text-transform:uppercase}
+.wx-day.wx-today .wx-dow{color:#b0511c}
 @media (max-width:560px){
-  .forecast-week{gap:4px}
-  .wx-ico{width:31px;height:31px}
-  .wx-temps{font-size:.7rem}
-  .wx-dow{font-size:.6rem}
+  .forecast-week{gap:8px;padding-right:36px;-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}
 }
 
 /* Rivers */
