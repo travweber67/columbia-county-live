@@ -1,106 +1,137 @@
 {
- "fetched_at": "2026-11-14T02:25:19Z",
+ "fetched_at": "2026-11-14T02:30:19Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10892,
+   "lon": -122.9613,
+   "sog_kn": 0,
+   "cog": 200.1,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-14 02:30:32.112534559 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19996,
+   "lon": -123.38553,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-14 02:30:35.857702308 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35744,
+   "sog_kn": 0,
+   "cog": 196.8,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-14 02:30:36.159555621 +0000 UTC"
+  },
   {
    "mmsi": 367767410,
    "name": "MULE",
-   "lat": 46.10791,
+   "lat": 46.1079,
    "lon": -122.95899,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-14 02:25:36.906248259 +0000 UTC"
+   "updated": "2026-11-14 02:30:37.706269715 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.6501,
-   "lon": -122.74758,
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19948,
+   "lon": -123.38507,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-14 02:30:45.399115596 +0000 UTC",
    "sog_kn": 0,
-   "cog": 227.7,
+   "cog": 0.9,
+   "heading": 144,
+   "nav_status": 5
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64728,
+   "lon": -122.74127,
+   "sog_kn": 0,
+   "cog": 127.7,
    "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-14 02:30:42.737808289 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.18674,
+   "lon": -123.1319,
+   "sog_kn": 7.1,
+   "cog": 272.3,
+   "heading": 277,
    "nav_status": 3,
-   "updated": "2026-11-14 02:25:39.905563461 +0000 UTC"
+   "updated": "2026-11-14 02:30:45.894831417 +0000 UTC"
   },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.08097,
-   "lon": -122.90409,
-   "sog_kn": 0.1,
-   "cog": 334.2,
-   "heading": 319,
+   "lat": 46.08088,
+   "lon": -122.90394,
+   "sog_kn": 0.2,
+   "cog": 288.3,
+   "heading": 284,
    "nav_status": 0,
-   "updated": "2026-11-14 02:25:40.403760081 +0000 UTC"
+   "updated": "2026-11-14 02:30:45.978554292 +0000 UTC"
   },
   {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.03859,
-   "lon": -122.87952,
-   "sog_kn": 10,
-   "cog": 352.1,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-14 02:25:41.510358468 +0000 UTC"
-  },
-  {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 45.99851,
-   "lon": -122.85179,
-   "sog_kn": 0,
-   "cog": 258.8,
-   "heading": 161,
-   "nav_status": 1,
-   "updated": "2026-11-14 02:25:45.353672354 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08124,
-   "lon": -122.90388,
-   "sog_kn": 0,
-   "cog": 270.6,
-   "heading": 133,
-   "nav_status": 0,
-   "updated": "2026-11-14 02:25:52.609818049 +0000 UTC"
+   "mmsi": 636015993,
+   "name": "SIEM NEWTON",
+   "lat": 45.63305,
+   "lon": -122.73787,
+   "type_code": 79,
+   "destination": "USPDX",
+   "updated": "2026-11-14 02:30:51.432585053 +0000 UTC"
   },
   {
    "mmsi": 367380280,
    "name": "WESTERN STAR",
-   "lat": 46.15707,
-   "lon": -123.40234,
+   "lat": 46.15706,
+   "lon": -123.40233,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 134,
+   "heading": 132,
    "nav_status": 0,
-   "updated": "2026-11-14 02:25:53.119363475 +0000 UTC"
+   "updated": "2026-11-14 02:30:55.056301378 +0000 UTC"
   },
   {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.64206,
-   "lon": -122.74093,
-   "sog_kn": 0,
-   "cog": 210.7,
-   "heading": 119,
-   "nav_status": 12,
-   "updated": "2026-11-14 02:25:55.670806533 +0000 UTC"
+   "mmsi": 636024633,
+   "name": "PAVO LEADER",
+   "lat": 46.14917,
+   "lon": -123.26954,
+   "sog_kn": 15.3,
+   "cog": 73.7,
+   "heading": 69,
+   "nav_status": 0,
+   "updated": "2026-11-14 02:30:55.966596377 +0000 UTC"
   },
   {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00882,
-   "lon": -122.8489,
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 45.63027,
+   "lon": -122.69564,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-14 02:25:55.933398592 +0000 UTC"
+   "cog": 304.5,
+   "heading": 127,
+   "nav_status": 5,
+   "updated": "2026-11-14 02:30:56.045064551 +0000 UTC"
   }
  ]
 }
