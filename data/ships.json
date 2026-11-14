@@ -1,69 +1,49 @@
 {
- "fetched_at": "2026-11-14T11:00:52Z",
+ "fetched_at": "2026-11-14T11:05:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09668,
-   "lon": -122.92965,
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10794,
+   "lon": -122.95899,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 68,
-   "nav_status": 3,
-   "updated": "2026-11-14 11:00:55.651619238 +0000 UTC"
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-14 11:05:56.069899599 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.009,
+   "lon": -122.84826,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-14 11:06:01.518575113 +0000 UTC"
   },
   {
    "mmsi": 368202070,
    "name": "TERILYN",
-   "lat": 46.15141,
-   "lon": -123.37818,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 112,
+   "lat": 46.15103,
+   "lon": -123.37724,
+   "sog_kn": 0.2,
+   "cog": 319.8,
+   "heading": 305,
    "nav_status": 0,
-   "updated": "2026-11-14 11:00:59.268737629 +0000 UTC"
+   "updated": "2026-11-14 11:06:08.858963246 +0000 UTC"
   },
   {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 45.6303,
-   "lon": -122.69566,
-   "type_code": 70,
-   "destination": "USVAN",
-   "updated": "2026-11-14 11:01:14.202146922 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08986,
-   "lon": -122.92901,
-   "sog_kn": 0,
-   "cog": 180.5,
-   "heading": 97,
-   "nav_status": 0,
-   "updated": "2026-11-14 11:01:18.678701656 +0000 UTC"
-  },
-  {
-   "mmsi": 366396000,
-   "name": "NAT GEO SEA LION",
-   "lat": 46.08958,
-   "lon": -122.92975,
-   "sog_kn": 0,
-   "cog": 283.1,
-   "heading": 111,
-   "nav_status": 5,
-   "updated": "2026-11-14 11:01:20.924905664 +0000 UTC"
-  },
-  {
-   "mmsi": 440576000,
-   "name": "PAN FLOWER",
-   "lat": 45.64308,
-   "lon": -122.77131,
-   "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-14 11:01:21.373344806 +0000 UTC"
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19949,
+   "lon": -123.38507,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-14 11:06:20.603957115 +0000 UTC"
   }
  ]
 }
