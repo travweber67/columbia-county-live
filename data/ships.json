@@ -1,51 +1,69 @@
 {
- "fetched_at": "2026-11-14T15:21:09Z",
+ "fetched_at": "2026-11-14T15:26:09Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.79238,
-   "lon": -122.84433,
-   "sog_kn": 0,
-   "cog": 274.3,
-   "heading": 49,
-   "nav_status": 12,
-   "updated": "2026-11-14 15:21:14.783846796 +0000 UTC"
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64729,
+   "lon": -122.73995,
+   "type_code": 52,
+   "destination": "SRT PASCO",
+   "updated": "2026-11-14 15:26:22.489014742 +0000 UTC"
   },
   {
-   "mmsi": 636015993,
-   "name": "SIEM NEWTON",
-   "lat": 45.63302,
-   "lon": -122.73783,
-   "sog_kn": 0,
-   "cog": 147,
-   "heading": 136,
-   "nav_status": 0,
-   "updated": "2026-11-14 15:21:27.912813479 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16248,
+   "lon": -123.07794,
+   "sog_kn": 0.5,
+   "cog": 127.1,
+   "heading": 116,
+   "nav_status": 3,
+   "updated": "2026-11-14 15:26:25.328248214 +0000 UTC"
   },
   {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08985,
-   "lon": -122.929,
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08159,
+   "lon": -122.90422,
    "sog_kn": 0,
-   "cog": 178.1,
-   "heading": 99,
-   "nav_status": 0,
-   "updated": "2026-11-14 15:21:28.083547732 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58077,
-   "lon": -122.76007,
-   "sog_kn": 0,
-   "cog": 92.5,
-   "heading": 121,
+   "cog": 42.7,
+   "heading": 132,
    "nav_status": 5,
-   "updated": "2026-11-14 15:21:30.386842278 +0000 UTC"
+   "updated": "2026-11-14 15:26:29.811670691 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.64568,
+   "lon": -122.73892,
+   "sog_kn": 7.4,
+   "cog": 113.9,
+   "heading": 112,
+   "nav_status": 0,
+   "updated": "2026-11-14 15:26:34.467416994 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65009,
+   "lon": -122.74768,
+   "sog_kn": 0,
+   "cog": 210.1,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-14 15:26:39.975727226 +0000 UTC"
+  },
+  {
+   "mmsi": 352006999,
+   "name": "WABI SABI",
+   "lat": 46.09907,
+   "lon": -122.93941,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-14 15:26:41.997910254 +0000 UTC"
   }
  ]
 }
