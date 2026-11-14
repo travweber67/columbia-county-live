@@ -1,58 +1,155 @@
 {
- "fetched_at": "2026-11-14T23:06:53Z",
+ "fetched_at": "2026-11-14T23:11:52Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 14 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.65168,
-   "lon": -122.75108,
+   "mmsi": 636015993,
+   "name": "SIEM NEWTON",
+   "lat": 45.63305,
+   "lon": -122.73785,
+   "type_code": 79,
+   "destination": "USPDX",
+   "updated": "2026-11-14 23:12:00.983220906 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.65288,
+   "lon": -122.75261,
    "sog_kn": 0,
-   "cog": 244.8,
-   "heading": 315,
-   "nav_status": 0,
-   "updated": "2026-11-14 23:07:10.816284651 +0000 UTC"
+   "cog": 11,
+   "heading": 138,
+   "nav_status": 12,
+   "updated": "2026-11-14 23:12:06.602723799 +0000 UTC"
   },
   {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.78777,
-   "lon": -122.77978,
-   "sog_kn": 6.8,
-   "cog": 152.5,
-   "heading": 153,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40234,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 133,
    "nav_status": 0,
-   "updated": "2026-11-14 23:07:11.525239791 +0000 UTC"
+   "updated": "2026-11-14 23:12:12.746766392 +0000 UTC"
   },
   {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 45.63031,
-   "lon": -122.69565,
+   "mmsi": 355980000,
+   "name": "LUGANO STAR",
+   "lat": 46.00289,
+   "lon": -122.85119,
    "type_code": 70,
-   "destination": "USVAN",
-   "updated": "2026-11-14 23:07:13.56907318 +0000 UTC"
+   "destination": "USPDX",
+   "updated": "2026-11-14 23:12:14.202910036 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.95711,
+   "lon": -122.81521,
+   "type_code": 57,
+   "destination": "VANCOUER,WA",
+   "updated": "2026-11-14 23:12:15.90815984 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64727,
+   "lon": -122.73991,
+   "sog_kn": 0,
+   "cog": 154.4,
+   "heading": 16,
+   "nav_status": 5,
+   "updated": "2026-11-14 23:12:16.17886455 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.38543,
+   "sog_kn": 0,
+   "cog": 12.2,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-14 23:12:16.834191053 +0000 UTC"
   },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.0815,
+   "lat": 46.08149,
    "lon": -122.90475,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-14 23:07:16.559640988 +0000 UTC"
+   "sog_kn": 0,
+   "cog": 68.5,
+   "heading": 119,
+   "nav_status": 0,
+   "updated": "2026-11-14 23:12:20.769491938 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.08181,
-   "lon": -122.90501,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.15865,
+   "lon": -123.0662,
+   "sog_kn": 6.4,
+   "cog": 109.5,
+   "heading": 113,
+   "nav_status": 0,
+   "updated": "2026-11-14 23:12:21.316828248 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.07431,
+   "lon": -122.88888,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 303,
+   "cog": 142,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-14 23:12:21.317738999 +0000 UTC"
+  },
+  {
+   "mmsi": 563331600,
+   "name": "BELLE LUNE",
+   "lat": 46.1703,
+   "lon": -123.09994,
+   "sog_kn": 0,
+   "cog": 309.9,
+   "heading": 113,
+   "nav_status": 1,
+   "updated": "2026-11-14 23:12:23.441749226 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65016,
+   "lon": -122.74762,
+   "sog_kn": 0,
+   "cog": 276,
+   "heading": 511,
    "nav_status": 3,
-   "updated": "2026-11-14 23:07:30.118324825 +0000 UTC"
+   "updated": "2026-11-14 23:12:28.470701665 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.77876,
+   "lon": -122.77361,
+   "sog_kn": 6.7,
+   "cog": 155.1,
+   "heading": 155,
+   "nav_status": 0,
+   "updated": "2026-11-14 23:12:30.412813842 +0000 UTC"
+  },
+  {
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.15201,
+   "lon": -123.37791,
+   "sog_kn": 0,
+   "cog": 12.6,
+   "heading": 30,
+   "nav_status": 0,
+   "updated": "2026-11-14 23:12:30.92599219 +0000 UTC"
   }
  ]
 }
