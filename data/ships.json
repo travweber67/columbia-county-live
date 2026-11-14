@@ -1,49 +1,62 @@
 {
- "fetched_at": "2026-11-14T05:45:28Z",
+ "fetched_at": "2026-11-14T05:49:14Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.91008,
-   "sog_kn": 0,
-   "cog": 301.8,
-   "heading": 72,
+   "mmsi": 367747140,
+   "name": "TRIUMPH VIII",
+   "lat": 45.64072,
+   "lon": -122.7178,
+   "sog_kn": 1,
+   "cog": 266,
+   "heading": 144,
    "nav_status": 0,
-   "updated": "2026-11-14 05:45:41.723049578 +0000 UTC"
+   "updated": "2026-11-14 05:49:53.760770897 +0000 UTC"
   },
   {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64353,
-   "lon": -122.75291,
+   "mmsi": 636024633,
+   "name": "PAVO LEADER",
+   "lat": 45.70158,
+   "lon": -122.77082,
+   "sog_kn": 12.9,
+   "cog": 195.6,
+   "heading": 195,
+   "nav_status": 0,
+   "updated": "2026-11-14 05:49:59.162811733 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08097,
+   "lon": -122.90387,
    "sog_kn": 0,
-   "cog": 326.5,
+   "cog": 5.9,
+   "heading": 86,
+   "nav_status": 5,
+   "updated": "2026-11-14 05:50:11.702843382 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09076,
+   "lon": -122.93212,
+   "sog_kn": 0,
+   "cog": 318.3,
    "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-14 05:45:44.098542225 +0000 UTC"
-  },
-  {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 46.044,
-   "lon": -122.87691,
-   "sog_kn": 0,
-   "cog": 125.2,
-   "heading": 180,
-   "nav_status": 5,
-   "updated": "2026-11-14 05:45:55.492392696 +0000 UTC"
+   "updated": "2026-11-14 05:50:14.068241591 +0000 UTC"
   },
   {
    "mmsi": 366892350,
    "name": "NAT GEO SEA BIRD",
-   "lat": 46.0897,
-   "lon": -122.92971,
-   "type_code": 66,
-   "destination": "RAINIER",
-   "updated": "2026-11-14 05:46:02.147569069 +0000 UTC"
+   "lat": 46.08971,
+   "lon": -122.92975,
+   "sog_kn": 0,
+   "cog": 72.7,
+   "heading": 108,
+   "nav_status": 5,
+   "updated": "2026-11-14 05:50:18.445378639 +0000 UTC"
   }
  ]
 }
