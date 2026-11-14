@@ -1,82 +1,102 @@
 {
- "fetched_at": "2026-11-14T14:36:05Z",
+ "fetched_at": "2026-11-14T14:41:05Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.64723,
-   "lon": -122.73958,
+   "mmsi": 373989000,
+   "name": "AFRICAN CARDINAL",
+   "lat": 45.63925,
+   "lon": -122.77779,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-14 14:41:12.981653919 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58767,
+   "lon": -122.77041,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-14 14:41:13.622746499 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60752,
+   "lon": -122.67754,
    "sog_kn": 0,
-   "cog": 195.5,
-   "heading": 285,
-   "nav_status": 0,
-   "updated": "2026-11-14 14:36:10.212575981 +0000 UTC"
-  },
-  {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.1995,
-   "lon": -123.38497,
-   "type_code": 30,
-   "destination": "CATHLAMET WA",
-   "updated": "2026-11-14 14:36:16.801364625 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08152,
-   "lon": -122.9041,
-   "sog_kn": 0.1,
-   "cog": 95.6,
-   "heading": 139,
-   "nav_status": 0,
-   "updated": "2026-11-14 14:36:24.112510908 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.1772,
-   "lon": -123.35744,
-   "sog_kn": 0,
-   "cog": 157.3,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-14 14:36:26.268544955 +0000 UTC"
-  },
-  {
-   "mmsi": 636015993,
-   "name": "SIEM NEWTON",
-   "lat": 45.63308,
-   "lon": -122.73785,
-   "sog_kn": 0,
-   "cog": 147,
-   "heading": 136,
-   "nav_status": 0,
-   "updated": "2026-11-14 14:36:28.149376048 +0000 UTC"
-  },
-  {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10891,
-   "lon": -122.96128,
-   "sog_kn": 0,
-   "cog": 175.7,
-   "heading": 129,
-   "nav_status": 5,
-   "updated": "2026-11-14 14:36:31.890730231 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.38552,
-   "sog_kn": 0,
-   "cog": 272.3,
+   "cog": 360,
    "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-14 14:36:33.307028768 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-14 14:41:15.962574702 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16287,
+   "lon": -123.07777,
+   "sog_kn": 1.6,
+   "cog": 267,
+   "heading": 197,
+   "nav_status": 3,
+   "updated": "2026-11-14 14:41:20.545101013 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79314,
+   "lon": -122.84322,
+   "sog_kn": 0,
+   "cog": 205.2,
+   "heading": 215,
+   "nav_status": 12,
+   "updated": "2026-11-14 14:41:24.586984876 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.09022,
+   "lon": -122.93156,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-14 14:41:30.901095867 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08159,
+   "lon": -122.90424,
+   "sog_kn": 0.1,
+   "cog": 241.5,
+   "heading": 127,
+   "nav_status": 5,
+   "updated": "2026-11-14 14:41:31.582877004 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64358,
+   "lon": -122.75233,
+   "sog_kn": 0,
+   "cog": 244.4,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-14 14:41:32.863046996 +0000 UTC"
+  },
+  {
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 45.64308,
+   "lon": -122.77127,
+   "sog_kn": 0,
+   "cog": 346.2,
+   "heading": 228,
+   "nav_status": 5,
+   "updated": "2026-11-14 14:41:35.505166757 +0000 UTC"
   }
  ]
 }
