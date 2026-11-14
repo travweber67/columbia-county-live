@@ -1,29 +1,58 @@
 {
- "fetched_at": "2026-11-14T11:45:53Z",
+ "fetched_at": "2026-11-14T11:49:19Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08986,
-   "lon": -122.929,
-   "sog_kn": 0,
-   "cog": 180.5,
-   "heading": 97,
-   "nav_status": 0,
-   "updated": "2026-11-14 11:46:07.907158817 +0000 UTC"
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.14408,
+   "lon": -123.29704,
+   "sog_kn": 1.2,
+   "cog": 82.8,
+   "heading": 79,
+   "nav_status": 3,
+   "updated": "2026-11-14 11:49:56.785828508 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35744,
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64569,
+   "lon": -122.73486,
+   "sog_kn": 0.1,
+   "cog": 0,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-14 11:50:07.36892983 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00893,
+   "lon": -122.84838,
    "sog_kn": 0,
-   "cog": 334.6,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-14 11:46:25.500322925 +0000 UTC"
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-14 11:50:11.296315162 +0000 UTC"
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64723,
+   "lon": -122.74137,
+   "type_code": 31,
+   "destination": "MCALLS FUEL DOCK",
+   "updated": "2026-11-14 11:50:15.134380756 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.64723,
+   "lon": -122.73957,
+   "type_code": 52,
+   "destination": "BOARDMAN",
+   "updated": "2026-11-14 11:50:20.147483146 +0000 UTC"
   }
  ]
 }

@@ -1,13 +1,13 @@
 {
- "fetched_at": "2026-11-14T11:19:19Z",
+ "fetched_at": "2026-11-14T11:49:19Z",
  "status": "ok",
- "note": "MRMS grids still fresh \u2014 reusing the last good pull",
+ "note": "MRMS basin rainfall current",
  "source": "NOAA MRMS radar-gauge rainfall (QPE), archived grids served by Iowa State University's IEM, averaged over each creek's basin",
- "valid_time": "2026-11-14T09:00:00Z",
+ "valid_time": "2026-11-14T10:00:00Z",
  "basins": {
   "wilson": {
-   "p24_in": 1.06,
-   "p72_in": 1.06,
+   "p24_in": 1.05,
+   "p72_in": 1.07,
    "days_since_flush": 1,
    "first_flush": false
   },
@@ -18,13 +18,13 @@
    "first_flush": true
   },
   "nf_nehalem": {
-   "p24_in": 0.8,
+   "p24_in": 0.79,
    "p72_in": 0.8,
    "days_since_flush": 1,
    "first_flush": false
   },
   "big_creek": {
-   "p24_in": 0.68,
+   "p24_in": 0.67,
    "p72_in": 0.68,
    "days_since_flush": null,
    "first_flush": false
@@ -36,20 +36,20 @@
    "first_flush": true
   },
   "klaskanine": {
-   "p24_in": 0.7,
+   "p24_in": 0.68,
    "p72_in": 0.71,
    "days_since_flush": null,
    "first_flush": false
   },
   "clatskanie": {
-   "p24_in": 0.54,
-   "p72_in": 0.54,
+   "p24_in": 0.55,
+   "p72_in": 0.55,
    "days_since_flush": null,
    "first_flush": false
   },
   "scappoose": {
-   "p24_in": 0.52,
-   "p72_in": 0.52,
+   "p24_in": 0.53,
+   "p72_in": 0.53,
    "days_since_flush": null,
    "first_flush": false
   }
