@@ -1,78 +1,47 @@
 {
- "fetched_at": "2026-11-14T09:00:41Z",
+ "fetched_at": "2026-11-14T09:05:42Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.6435,
-   "lon": -122.75293,
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10793,
+   "lon": -122.95899,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-14 09:05:47.09163922 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.64342,
+   "lon": -122.75282,
    "type_code": 52,
    "destination": "COL RIVER OPS",
-   "updated": "2026-11-14 09:00:48.940627165 +0000 UTC"
-  },
-  {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09668,
-   "lon": -122.92961,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 67,
-   "nav_status": 3,
-   "updated": "2026-11-14 09:00:54.398657256 +0000 UTC"
-  },
-  {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 45.63029,
-   "lon": -122.69562,
-   "sog_kn": 0,
-   "cog": 304.5,
-   "heading": 127,
-   "nav_status": 5,
-   "updated": "2026-11-14 09:00:57.863901845 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.1535,
-   "lon": -123.047,
-   "sog_kn": 1,
-   "cog": 157,
-   "heading": 125,
-   "nav_status": 3,
-   "updated": "2026-11-14 09:00:58.075250384 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65017,
-   "lon": -122.74758,
-   "sog_kn": 0,
-   "cog": 295.5,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-14 09:00:59.081419449 +0000 UTC"
-  },
-  {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.0907,
-   "lon": -122.93213,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-14 09:01:05.235046705 +0000 UTC"
+   "updated": "2026-11-14 09:05:52.554782934 +0000 UTC"
   },
   {
    "mmsi": 357359000,
    "name": "FEDERAL ILLINOIS",
-   "lat": 45.60107,
-   "lon": -122.77512,
+   "lat": 45.60108,
+   "lon": -122.77521,
    "type_code": 70,
    "destination": "US PDX",
-   "updated": "2026-11-14 09:01:15.345319383 +0000 UTC"
+   "updated": "2026-11-14 09:05:53.77813899 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09638,
+   "lon": -122.93024,
+   "sog_kn": 2.5,
+   "cog": 250.3,
+   "heading": 68,
+   "nav_status": 3,
+   "updated": "2026-11-14 09:06:04.836799827 +0000 UTC"
   }
  ]
 }
