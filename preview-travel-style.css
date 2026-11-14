@@ -2758,19 +2758,26 @@ html[data-theme="dark"] .getapp-other summary{color:#bfe3c8}
    (same glass family as .card / .wx-day), separated by a real gap,
    collapsed to pill + headline + one meta line; the chevron button
    expands it. Day + dusk via the theme variables + dark overrides. */
+/* PREVIEW v3 fill (2026-11-13): Travis — v2's glass was too transparent,
+   text washed out over the bright sunset/water photo. Fill raised to the
+   site .card recipe and beyond + the card backdrop blur added:
+   day  rgba(255,255,255,.52)→(.30)  ->  cream rgba(253,250,240,.94)→rgba(249,244,229,.90)
+   dusk rgba(52,84,62,.45)/(22,36,26,.45) -> rgba(26,43,32,.95)→rgba(13,23,16,.92) */
 .alert-card{
-  background:linear-gradient(180deg,rgba(255,255,255,.52),rgba(255,255,255,.30));
-  border:1px solid var(--border);
+  background:linear-gradient(180deg,rgba(253,250,240,.94),rgba(249,244,229,.90));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);
+  backdrop-filter:blur(12px) saturate(1.25);
+  border:1px solid rgba(255,255,255,.65);
   border-radius:14px;
-  box-shadow:0 1px 2px rgba(20,32,16,.05);
+  box-shadow:0 2px 10px rgba(20,32,16,.18);
   margin:0 0 10px;
   overflow:hidden;
 }
 .alert-card:last-child{margin-bottom:2px}
 html[data-theme="dark"] .alert-card{
-  background:linear-gradient(180deg,rgba(52,84,62,.45),rgba(22,36,26,.45));
-  border-color:rgba(196,226,196,.16);
-  box-shadow:0 1px 2px rgba(0,0,0,.3);
+  background:linear-gradient(180deg,rgba(26,43,32,.95),rgba(13,23,16,.92));
+  border-color:rgba(196,226,196,.22);
+  box-shadow:0 2px 10px rgba(0,0,0,.45);
 }
 .alert-head{
   display:flex;align-items:flex-start;gap:10px;width:100%;
