@@ -1,67 +1,117 @@
 {
- "fetched_at": "2026-11-14T10:40:49Z",
+ "fetched_at": "2026-11-14T10:45:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08113,
+   "lon": -122.90418,
+   "sog_kn": 0.1,
+   "cog": 321.9,
+   "heading": 110,
+   "nav_status": 0,
+   "updated": "2026-11-14 10:46:19.74568268 +0000 UTC",
+   "type_code": 52,
+   "destination": "US^03F8>02T9"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00873,
+   "lon": -122.84886,
+   "sog_kn": 0.1,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-14 10:46:06.892969909 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10792,
+   "lon": -122.95898,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-14 10:46:07.593291157 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.82321,
+   "lon": -122.79563,
+   "sog_kn": 9.4,
+   "cog": 12.2,
+   "heading": 16,
+   "nav_status": 0,
+   "updated": "2026-11-14 10:46:09.418397788 +0000 UTC"
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64727,
+   "lon": -122.74124,
+   "sog_kn": 0,
+   "cog": 127.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-14 10:46:12.872125079 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.19114,
+   "lon": -123.16194,
+   "sog_kn": 0.4,
+   "cog": 331.7,
+   "heading": 78,
+   "nav_status": 3,
+   "updated": "2026-11-14 10:46:17.671783561 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08138,
+   "lon": -122.90457,
+   "sog_kn": 0.3,
+   "cog": 19.4,
+   "heading": 295,
+   "nav_status": 3,
+   "updated": "2026-11-14 10:46:18.292113284 +0000 UTC"
+  },
   {
    "mmsi": 636024633,
    "name": "PAVO LEADER",
    "lat": 45.64053,
-   "lon": -122.71736,
+   "lon": -122.7174,
    "type_code": 70,
    "destination": "US VAN",
-   "updated": "2026-11-14 10:40:57.372826032 +0000 UTC"
+   "updated": "2026-11-14 10:46:18.717866258 +0000 UTC"
   },
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.6397,
-   "lon": -122.7171,
-   "type_code": 52,
-   "destination": "PDX/VANC.OPS.",
-   "updated": "2026-11-14 10:40:59.566738786 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.16298,
-   "lon": -123.40943,
-   "sog_kn": 5.3,
-   "cog": 306.3,
-   "heading": 305,
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.81822,
+   "lon": -122.79313,
+   "sog_kn": 4.4,
+   "cog": 187.7,
+   "heading": 179,
    "nav_status": 0,
-   "updated": "2026-11-14 10:41:07.509787467 +0000 UTC"
+   "updated": "2026-11-14 10:46:22.304371525 +0000 UTC"
   },
   {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.64355,
-   "lon": -122.75295,
-   "type_code": 52,
-   "destination": "US^0UUT>0UW8",
-   "updated": "2026-11-14 10:41:11.603645805 +0000 UTC"
-  },
-  {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58731,
-   "lon": -122.77004,
-   "sog_kn": 0,
-   "cog": 357.3,
-   "heading": 141,
-   "nav_status": 5,
-   "updated": "2026-11-14 10:41:17.691022126 +0000 UTC"
-  },
-  {
-   "mmsi": 366892350,
-   "name": "NAT GEO SEA BIRD",
-   "lat": 46.08968,
-   "lon": -122.92971,
-   "sog_kn": 0,
-   "cog": 72.7,
-   "heading": 109,
-   "nav_status": 5,
-   "updated": "2026-11-14 10:41:18.872211258 +0000 UTC"
+   "mmsi": 368327640,
+   "name": "CAPT. STEVE",
+   "lat": 45.63904,
+   "lon": -122.71578,
+   "sog_kn": 7,
+   "cog": 116.3,
+   "heading": 121,
+   "nav_status": 12,
+   "updated": "2026-11-14 10:46:23.245368473 +0000 UTC"
   }
  ]
 }
