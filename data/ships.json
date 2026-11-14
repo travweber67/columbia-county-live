@@ -1,6 +1,60 @@
 {
- "fetched_at": "2026-11-14T14:21:11Z",
+ "fetched_at": "2026-11-14T14:26:04Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 0 vessels with positions inside the county box.",
- "ships": []
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64569,
+   "lon": -122.73486,
+   "sog_kn": 0.1,
+   "cog": 0,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-14 14:26:08.358362305 +0000 UTC"
+  },
+  {
+   "mmsi": 367681630,
+   "name": "VICKI B",
+   "lat": 45.79266,
+   "lon": -122.84481,
+   "sog_kn": 0.6,
+   "cog": 58.9,
+   "heading": 346,
+   "nav_status": 0,
+   "updated": "2026-11-14 14:26:11.782666422 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64728,
+   "lon": -122.73993,
+   "type_code": 52,
+   "destination": "SRT PASCO",
+   "updated": "2026-11-14 14:26:22.355032881 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08127,
+   "lon": -122.90467,
+   "sog_kn": 0.6,
+   "cog": 166.9,
+   "heading": 254,
+   "nav_status": 3,
+   "updated": "2026-11-14 14:26:29.094868941 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08123,
+   "lon": -122.90414,
+   "sog_kn": 0.2,
+   "cog": 93.9,
+   "heading": 70,
+   "nav_status": 0,
+   "updated": "2026-11-14 14:26:34.21872179 +0000 UTC"
+  }
+ ]
 }
