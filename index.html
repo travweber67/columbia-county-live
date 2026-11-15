@@ -31,12 +31,12 @@
 if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
-<link rel="manifest" href="manifest.webmanifest?v=82">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=82">
+<link rel="manifest" href="manifest.webmanifest?v=83">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=83">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=82">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=82">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=82">
+<link rel="stylesheet" href="style.css?v=83">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=83">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=83">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
      only page backgrounds first paint needs — warm them with the hero.
      Every other view's photo is lazy-attached by app.js. -->
@@ -868,6 +868,19 @@ document.documentElement.setAttribute("data-theme",t);})();
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033971011">&#128222; (503) 397-1011</a>
         <span class="dir-addr">735 S Columbia River Hwy</span>
+      </div>
+    </article>
+    <article class="dir-item" data-dircat="other" data-lat="45.85957" data-lng="-122.81905">
+      <!-- Listed from the business's own Add Your Local Service form submission, Nov 14, 2026 (Jennifer Stalker RN). Basic directory listing. Phone, website and description corrected Nov 15, 2026 to match her form response (971-478-1852, biolumemedspas.com, her own description). Address corrected Nov 15, 2026: 2050 Columbia Blvd was unsupported by any source; verified address is 115 N 21st St, St Helens, OR 97051 (her own website + Places listing), map pin updated to the Places coordinates. -->
+      <div class="dir-item-main">
+        <h3>BioLume Med Spas</h3>
+        <p class="dir-meta">St. Helens &middot; <span data-i18n="dirother">Other local services</span></p>
+        <p class="dir-desc">BioLume Med Spas is a locally owned medical aesthetics practice specializing in Botox, dermal fillers, collagen stimulation, and advanced skin rejuvenation. We focus on natural looking results, personalized treatments, and helping our clients look and feel their best.</p>
+      </div>
+      <div class="dir-contact">
+        <a class="dir-call" href="tel:+19714781852">&#128222; (971) 478-1852</a>
+        <a class="dir-call" href="https://biolumemedspas.com" target="_blank" rel="noopener">&#127760; biolumemedspas.com</a>
+        <span class="dir-addr">115 N 21st St, St Helens, OR 97051</span>
       </div>
     </article>
     <article class="dir-item" data-dircat="freehelp" data-lat="45.86735" data-lng="-122.80309">
@@ -1918,7 +1931,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=82"></script>
+<script src="app.js?v=83"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>
