@@ -1,58 +1,84 @@
 {
- "fetched_at": "2026-11-15T02:02:03Z",
+ "fetched_at": "2026-11-15T02:07:13Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.14371,
+   "lon": -123.03738,
+   "sog_kn": 0,
+   "cog": 127.1,
+   "heading": 132,
+   "nav_status": 3,
+   "updated": "2026-11-15 02:07:30.604272077 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.15519,
+   "lon": -123.05491,
+   "sog_kn": 7.4,
+   "cog": 117.4,
+   "heading": 120,
+   "nav_status": 3,
+   "updated": "2026-11-15 02:07:33.266501508 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20003,
+   "lon": -123.38541,
+   "sog_kn": 0,
+   "cog": 10,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-15 02:07:36.008629519 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00885,
+   "lon": -122.84886,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-15 02:07:37.595943405 +0000 UTC"
+  },
+  {
+   "mmsi": 367425910,
+   "name": "SEA HORSE",
+   "lat": 46.15237,
+   "lon": -123.37757,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-15 02:07:38.682392775 +0000 UTC"
+  },
   {
    "mmsi": 369990212,
    "name": "CG29212",
-   "lat": 45.62374,
-   "lon": -122.68433,
-   "sog_kn": 0.1,
-   "cog": 273.4,
+   "lat": 45.62397,
+   "lon": -122.68465,
+   "sog_kn": 0.2,
+   "cog": 336.1,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-15 02:02:44.843326512 +0000 UTC"
+   "updated": "2026-11-15 02:07:44.254369633 +0000 UTC"
   },
   {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58132,
-   "lon": -122.76065,
-   "type_code": 57,
-   "destination": "PASCO",
-   "updated": "2026-11-15 02:02:49.024374508 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65017,
-   "lon": -122.74765,
-   "sog_kn": 0,
-   "cog": 237.2,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-15 02:02:58.359582727 +0000 UTC"
-  },
-  {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 45.99852,
-   "lon": -122.85167,
-   "type_code": 70,
-   "destination": "CN QDG",
-   "updated": "2026-11-15 02:02:59.236604714 +0000 UTC"
-  },
-  {
-   "mmsi": 352006531,
-   "name": "BARISM BETTY",
-   "lat": 46.07743,
-   "lon": -122.89439,
-   "sog_kn": 12,
-   "cog": 145.1,
-   "heading": 148,
-   "nav_status": 0,
-   "updated": "2026-11-15 02:03:00.547973533 +0000 UTC"
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.62299,
+   "lon": -122.78997,
+   "sog_kn": 8.5,
+   "cog": 178.3,
+   "heading": 178,
+   "nav_status": 5,
+   "updated": "2026-11-15 02:07:47.324269015 +0000 UTC"
   }
  ]
 }
