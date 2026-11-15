@@ -31,12 +31,12 @@
 if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
-<link rel="manifest" href="manifest.webmanifest?v=81">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=81">
+<link rel="manifest" href="manifest.webmanifest?v=82">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=82">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=81">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=81">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=81">
+<link rel="stylesheet" href="style.css?v=82">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=82">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=82">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
      only page backgrounds first paint needs — warm them with the hero.
      Every other view's photo is lazy-attached by app.js. -->
@@ -1254,12 +1254,13 @@ document.documentElement.setAttribute("data-theme",t);})();
 </section>
 
 <footer class="site-footer">
-  <section class="partners-wall" aria-label="Community partners">
+  <section class="partners-wall card" aria-label="Community partners">
     <h2>Community Partners — the local businesses that fund this site</h2>
-    <p class="partners-first"><strong>Oregon Trail Lanes</strong> <span class="dir-badge">Founding Sponsor · 2026</span> · St. Helens</p>
+    <p class="partners-first"><strong class="partners-name">Oregon Trail Lanes</strong></p>
+    <p class="partners-meta"><span class="dir-badge">Founding Sponsor · 2026</span><span class="partners-town">· St. Helens</span></p>
     <p class="partners-empty"><a href="sponsor.html">Your logo here — become a partner &rarr;</a></p>
   </section>
-  <p data-i18n="footerbyline"><strong>Columbia County Live</strong> — by <strong>Nomad Development Group</strong></p>
+  <p class="footer-byline" data-i18n="footerbyline"><strong>Columbia County Live</strong> — by <strong>Nomad Development Group</strong></p>
   <p class="cascade-footer"><a class="cascade-footer-link" href="https://travweber67.github.io/cascade-controls-jobs/"><span data-i18n="cascFooter">Also from Nomad: Cascade Controls Jobs — hiring controls techs, or looking for that work? &rarr;</span></a></p>
   <div class="alert-card credits-card" id="credits-card">
     <button class="alert-head" type="button" aria-expanded="false">
@@ -1277,7 +1278,7 @@ document.documentElement.setAttribute("data-theme",t);})();
   <p class="small">Photo credits (via Wikimedia Commons): “<a href="https://commons.wikimedia.org/wiki/File:Lewis_and_Clark_Bridge,_Rainier,_Mt._St._Helens_-_DPLA_-_9f9bd04615f045db5e1e0877c00ebaee.jpg" target="_blank" rel="noopener">Lewis and Clark Bridge, Rainier, Mt. St. Helens</a>” by Gary Halvorson, Oregon State Archives, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Lewis%26ClarkBridgeSP.jpg" target="_blank" rel="noopener">Lewis &amp; Clark Bridge panorama</a>” by Cacophony, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Car_carrier_vessel_passing_underneath_the_Lewis_and_Clark_Bridge.jpg" target="_blank" rel="noopener">Car carrier vessel passing underneath the Lewis and Clark Bridge</a>” by Quintin Soloviev, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:MV_Oscar_B_on_the_Wahkiakum_County_Ferry,_leaving_Puget_Island.jpg" target="_blank" rel="noopener">MV Oscar B on the Wahkiakum County Ferry, leaving Puget Island</a>” by SounderBruce, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Columbia_County_Courthouse,_St._Helens_-_DPLA_-_19e1a4c866aefeec828b9f4739ac770c.jpg" target="_blank" rel="noopener">Columbia County Courthouse, St. Helens</a>” by Gary Halvorson, Oregon State Archives, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Rainier,_Oregon_dock.jpg" target="_blank" rel="noopener">Rainier, Oregon dock</a>” by Kingofthedead, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Photos were resized and compressed for the web; no other changes. Dusk photographs (dark mode and design surfaces, via Wikimedia Commons): “<a href="https://commons.wikimedia.org/wiki/File:Astoria-Megler_Bridge_8_25_2024_837PM.jpg" target="_blank" rel="noopener">Astoria–Megler Bridge at twilight</a>” and “<a href="https://commons.wikimedia.org/wiki/File:Astoria-Megler_Bridge_8_25_2024_855PM.jpg" target="_blank" rel="noopener">at blue hour</a>” by WhyIsThisSoHard575483838, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Astoria-Megler_Bridge_at_sunset_Fletchall_(38349033364).jpg" target="_blank" rel="noopener">Astoria–Megler Bridge at sunset</a>” and “<a href="https://commons.wikimedia.org/wiki/File:Astoria-Megler_Bridge_from_Cannery_Pier_Bill_Cohen_(28914193965).jpg" target="_blank" rel="noopener">from Cannery Pier</a>” by Oregon Dept. of Transportation, <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Sunset_on_the_Columbia_River_(9347706996).jpg" target="_blank" rel="noopener">Sunset on the Columbia River</a>” by Rennett Stowe, CC BY 2.0 · “<a href="https://commons.wikimedia.org/wiki/File:Panoramic_view_to_mouth_of_Columbia_from_Astoria_Column_at_sunset_01.jpg" target="_blank" rel="noopener">Mouth of the Columbia at sunset</a>” and “<a href="https://commons.wikimedia.org/wiki/File:View_from_Astoria_Column_toward_Lewis_and_Clark_River_at_sunset_01.jpg" target="_blank" rel="noopener">Lewis and Clark River at sunset</a>” by Joe Mabel, <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener">CC BY 3.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:SUNSET_AT_THE_MOUTH_OF_THE_COLUMBIA_RIVER,_BETWEEN_ASTORIA_OREGON_AND_THE_STATE_OF_WASHINGTON_-_NARA_-_545019.jpg" target="_blank" rel="noopener">Sunset at the mouth of the Columbia River (1973)</a>” by Gene Daniels / NARA, public domain · “<a href="https://commons.wikimedia.org/wiki/File:Mallard_sunset_on_the_Columbia_River_(53213553235).jpg" target="_blank" rel="noopener">Mallard sunset on the Columbia River</a>” by USFWS Pacific, public domain · “<a href="https://commons.wikimedia.org/wiki/File:Sunset_over_bridge,_Astoria,_Oregon.jpg" target="_blank" rel="noopener">Sunset over the bridge, Astoria</a>” by La jefa, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Mount_St._Helens_from_Johnston_Ridge_at_sunset.jpg" target="_blank" rel="noopener">Mount St. Helens at sunset</a>” and “<a href="https://commons.wikimedia.org/wiki/File:Sunset_glow_3992.jpg" target="_blank" rel="noopener">Sunset glow on the Columbia</a>” by Marshalllee84 / Chris Light, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Mt_Hood_National_Forest,_Trillium_Lake-2_(36379628033).jpg" target="_blank" rel="noopener">Mt. Hood from Trillium Lake</a>” by U.S. Forest Service — Pacific Northwest Region, public domain. Dusk views are of the lower Columbia River generally; they are not captioned as specific Columbia County viewpoints.</p>
     </div></div></div>
   </div>
-  <p class="small" data-i18n="footerdisc">This page assembles public data for convenience. Before traveling in severe weather or high water, confirm conditions with the official sources linked above.</p>
+  <p class="small footer-disc" data-i18n="footerdisc">This page assembles public data for convenience. Before traveling in severe weather or high water, confirm conditions with the official sources linked above.</p>
 </footer>
 
 </section>
@@ -1377,9 +1378,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.86735" data-lng="-122.80309">
       <!-- First free-help listing (Travis confirmed the church 2026-11-09). Schedule verified the same day from Community Meals of Columbia County's own Facebook posts (Nov 2 + Nov 9, 2026): free dinner every Tuesday, doors 5 PM, served 5:30 PM, "no paperwork, no questions". Phone is the church office number from firstlutheransh.org. Added v50. -->
       <div class="dir-item-main">
-        <h3>Community Meals — First Lutheran Church</h3>
+        <h3><a class="dir-web" href="https://firstlutheransh.org" target="_blank" rel="noopener">Community Meals — First Lutheran Church</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirflcdesc">Free community dinner every Tuesday at First Lutheran Church — doors open at 5, dinner served at 5:30. Everyone is welcome: just show up, no paperwork, no questions. Run by Community Meals of Columbia County.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirflcdesc">Free community dinner every Tuesday at First Lutheran Church — doors open at 5, dinner served at 5:30. Everyone is welcome: just show up, no paperwork, no questions. Run by Community Meals of Columbia County.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033970090">&#128222; (503) 397-0090</a>
@@ -1389,9 +1390,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.86009" data-lng="-122.81208">
       <!-- Free help build-out v63 (2026-11-12): Barbara Bullis Memorial HELP Food Pantry, listed on Columbia Pacific Food Bank's own pantry page (cpfoodbank.org/food-pantries/st-helens-area-food-pantry) with address, phone and hours as shown. -->
       <div class="dir-item-main">
-        <h3>Barbara Bullis Memorial HELP Food Pantry</h3>
+        <h3><a class="dir-web" href="https://cpfoodbank.org/food-pantries/st-helens-area-food-pantry" target="_blank" rel="noopener">Barbara Bullis Memorial HELP Food Pantry</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh1desc">Free food pantry for people in the greater St. Helens area who need food assistance. Open Monday through Thursday, 9 AM to 1 PM, and the first Wednesday evening of the month, 5 to 7 PM.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh1desc">Free food pantry for people in the greater St. Helens area who need food assistance. Open Monday through Thursday, 9 AM to 1 PM, and the first Wednesday evening of the month, 5 to 7 PM.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033979708">&#128222; (503) 397-9708</a>
@@ -1401,7 +1402,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.74344" data-lng="-122.88095">
       <!-- Free help build-out v63 (2026-11-12): St. Vincent DePaul Food Pantry, from Columbia Pacific Food Bank's Scappoose pantry page (cpfoodbank.org/food-pantries/scappoose-area-food-pantry). -->
       <div class="dir-item-main">
-        <h3>St. Vincent DePaul Food Pantry</h3>
+        <h3><a class="dir-web" href="https://cpfoodbank.org/food-pantries/scappoose-area-food-pantry" target="_blank" rel="noopener">St. Vincent DePaul Food Pantry</a></h3>
         <p class="dir-meta">Scappoose &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
         <p class="dir-desc" data-i18n="dirfh2desc">Free food pantry for the Scappoose area. Open Tuesdays and Thursdays, 1 to 3 PM.</p>
       </div>
@@ -1415,7 +1416,7 @@ document.documentElement.setAttribute("data-theme",t);})();
       <!-- Photo: Scappoose Foursquare Church's own website (visitsfc.org) — inside the church during a service. Added in the Community Help preview, 2026-11-12. -->
       <img class="dir-photo" src="img/dir-scappoose-foursquare.jpg" alt="Inside Scappoose Foursquare Church in Scappoose" loading="lazy" decoding="async">
       <div class="dir-item-main">
-        <h3>Scappoose Foursquare Church Pantry</h3>
+        <h3><a class="dir-web" href="https://visitsfc.org" target="_blank" rel="noopener">Scappoose Foursquare Church Pantry</a></h3>
         <p class="dir-meta">Scappoose &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
         <p class="dir-desc" data-i18n="dirfh3desc">Free food pantry at Scappoose Foursquare Church. Open Wednesdays at 12 PM.</p>
       </div>
@@ -1427,7 +1428,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="46.08886" data-lng="-122.9316">
       <!-- Free help build-out v63 (2026-11-12): HOPE of Rainier emergency food, from the org's own site (hopeofrainier.com): address, phone and hours as published. -->
       <div class="dir-item-main">
-        <h3>HOPE of Rainier</h3>
+        <h3><a class="dir-web" href="https://hopeofrainier.com" target="_blank" rel="noopener">HOPE of Rainier</a></h3>
         <p class="dir-meta">Rainier &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
         <p class="dir-desc" data-i18n="dirfh4desc">Emergency food assistance for the Rainier community. Open Mondays and Wednesdays, 10 AM to 4 PM, and the last Saturday of the month, 10 AM to 12 PM.</p>
       </div>
@@ -1439,9 +1440,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="46.10353" data-lng="-123.20184">
       <!-- Free help build-out v63 (2026-11-12): Turning Point Community Service Center, Clatskanie — emergency food boxes as listed in Columbia Pacific Food Bank's official Get Fed guide: address, phone, hours and the 97016 service area as published. -->
       <div class="dir-item-main">
-        <h3>Turning Point Community Service Center</h3>
+        <h3><a class="dir-web" href="https://www.turningpointclatskanie.org" target="_blank" rel="noopener">Turning Point Community Service Center</a></h3>
         <p class="dir-meta">Clatskanie &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh5desc">Free emergency food boxes with three to five days of fresh and shelf-stable food for residents of the 97016 zip code. Open Monday, Tuesday and Thursday, 11 AM to 2:30 PM.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh5desc">Free emergency food boxes with three to five days of fresh and shelf-stable food for residents of the 97016 zip code. Open Monday, Tuesday and Thursday, 11 AM to 2:30 PM.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15037283126">&#128222; (503) 728-3126</a>
@@ -1451,7 +1452,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.85654" data-lng="-123.19669">
       <!-- Free help build-out v63 (2026-11-12): Vernonia Cares Food Pantry, as listed in Columbia Pacific Food Bank's official Get Fed guide (address/phone/hours agree with the 211info listing). -->
       <div class="dir-item-main">
-        <h3>Vernonia Cares Food Pantry</h3>
+        <h3><a class="dir-web" href="http://vernoniacares.org" target="_blank" rel="noopener">Vernonia Cares Food Pantry</a></h3>
         <p class="dir-meta">Vernonia &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
         <p class="dir-desc" data-i18n="dirfh6desc">Free food pantry for the Vernonia area. Open Tuesdays and Thursdays, 10 AM to 2 PM.</p>
       </div>
@@ -1485,7 +1486,7 @@ document.documentElement.setAttribute("data-theme",t);})();
       <div class="dir-item-main">
         <h3>SAFE of Columbia County</h3>
         <p class="dir-meta">Columbia County &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh8desc">Free, confidential help for survivors of domestic violence, sexual assault and stalking, including emergency shelter. The crisis line answers 24 hours a day. Office: (503) 397-7110.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh8desc">Free, confidential help for survivors of domestic violence, sexual assault and stalking, including emergency shelter. The crisis line answers 24 hours a day. Office: (503) 397-7110.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033976161">&#128222; (503) 397-6161</a>
@@ -1494,9 +1495,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp">
       <!-- Free help build-out v63 (2026-11-12): Columbia Community Mental Health crisis services — "grant funded and provided at no cost", 24h phone/walk-in/mobile, from CCMH's own crisis page (ccmh1.com/crisis-intervention). Phone-first entry: no street address published on that page, so none shown. -->
       <div class="dir-item-main">
-        <h3>Columbia Community Mental Health</h3>
+        <h3><a class="dir-web" href="https://ccmh1.com" target="_blank" rel="noopener">Columbia Community Mental Health</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh9desc">Free mental health crisis help, 24 hours a day, by phone, walk-in and mobile response. Crisis services are grant funded and cost nothing. Main office: (503) 397-5211.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh9desc">Free mental health crisis help, 24 hours a day, by phone, walk-in and mobile response. Crisis services are grant funded and cost nothing. Main office: (503) 397-5211.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15037824499">&#128222; (503) 782-4499</a>
@@ -1513,9 +1514,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.85978" data-lng="-122.81542">
       <!-- Free help build-out v63 (2026-11-12): Community Action Team housing programs, from CAT's own housing page (cat-team.org/cat/housing): eviction prevention, deposit/rental assistance, homeless services; office hours as published. -->
       <div class="dir-item-main">
-        <h3>Community Action Team — Housing Help</h3>
+        <h3><a class="dir-web" href="https://cat-team.org" target="_blank" rel="noopener">Community Action Team — Housing Help</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh10desc">Help with eviction prevention, rental assistance, deposits and homeless services. Programs are limited and depend on funding. Open Monday to Friday, 8:30 AM to 5 PM (closed 12:30 to 1:30 for lunch).</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh10desc">Help with eviction prevention, rental assistance, deposits and homeless services. Programs are limited and depend on funding. Open Monday to Friday, 8:30 AM to 5 PM (closed 12:30 to 1:30 for lunch).</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033973511">&#128222; (503) 397-3511</a>
@@ -1525,9 +1526,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.85978" data-lng="-122.81542">
       <!-- Free help build-out v63 (2026-11-12): Community Action Team crisis utility assistance (LIHEAP), from CAT's own published 25-26 Crisis LIHEAP form: past-due electric / NW Natural accounts after a medical or unexpected event in the last 90 days; ext. 2023 as published on the form. -->
       <div class="dir-item-main">
-        <h3>Community Action Team — Utility Assistance</h3>
+        <h3><a class="dir-web" href="https://cat-team.org" target="_blank" rel="noopener">Community Action Team — Utility Assistance</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh11desc">Help paying past-due electric and NW Natural gas bills when a shut-off is looming after a medical problem or unexpected event in the last 90 days. Ask for the crisis utility assistance form.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh11desc">Help paying past-due electric and NW Natural gas bills when a shut-off is looming after a medical problem or unexpected event in the last 90 days. Ask for the crisis utility assistance form.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033973511">&#128222; (503) 397-3511 ext. 2023</a>
@@ -1537,13 +1538,30 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.85978" data-lng="-122.81542">
       <!-- Free help build-out v63 (2026-11-12): Community Action Team diaper distribution, from CAT's own published newsletter: up to 200 diapers per child per month while supplies last. -->
       <div class="dir-item-main">
-        <h3>Community Action Team — Free Diapers</h3>
+        <h3><a class="dir-web" href="https://cat-team.org" target="_blank" rel="noopener">Community Action Team — Free Diapers</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
         <p class="dir-desc" data-i18n="dirfh12desc">Free diapers for families in need, up to 200 diapers per child each month while supplies last.</p>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033973511">&#128222; (503) 397-3511</a>
         <span class="dir-addr">125 N 17th St</span>
+      </div>
+    </article>
+    <article class="dir-item" data-dircat="freehelp">
+      <!-- EBT app card (2026-11-14): ebtEDGE is the official Oregon EBT app (FIS); Oregon DHS points cardholders to it and to cardholder.ebtedge.com only. Store links go to the current "ebtEDGE NEW!" listings; the balance line 1-888-997-4447 is the number printed for Oregon EBT cardholders. We never host the app file. -->
+      <div class="dir-item-main">
+        <h3 data-i18n="ebth3">Oregon EBT Card — the ebtEDGE App</h3>
+        <p class="dir-meta">Oregon &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
+        <p class="dir-desc" data-i18n="ebtdesc">The official app for Oregon Trail EBT cards: check your food and cash balances, see deposits and change your PIN. Oregon DHS points to ebtEDGE only — other EBT apps are not official, so don&rsquo;t trust them with your card.</p>
+        <div class="ebt-btns">
+          <a class="share-btn" href="https://play.google.com/store/apps/details?id=com.fis.ebt.nch" target="_blank" rel="noopener" data-i18n="ebtplay">Get it on Google Play</a>
+          <a class="share-btn" href="https://apps.apple.com/us/app/ebtedge-new/id6751549725" target="_blank" rel="noopener" data-i18n="ebtapple">Download on the App Store</a>
+          <a class="share-btn" href="https://cardholder.ebtedge.com" target="_blank" rel="noopener" data-i18n="ebtweb">ebtEDGE website</a>
+        </div>
+      </div>
+      <div class="dir-contact">
+        <a class="dir-call" href="tel:+18889974447">&#128222; 1-888-997-4447</a>
+        <span class="dir-addr" data-i18n="ebtphone">Balance by phone, no smartphone needed</span>
       </div>
     </article>
   </div>
@@ -1557,9 +1575,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.85985" data-lng="-122.8135">
       <!-- Free help build-out v63 (2026-11-12): WIC through Columbia Health Services, from the org's own WIC page (columbia-health.org/wic): address and phone as published. -->
       <div class="dir-item-main">
-        <h3>WIC — Women, Infants and Children</h3>
+        <h3><a class="dir-web" href="https://columbia-health.org" target="_blank" rel="noopener">WIC — Women, Infants and Children</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh13desc">Free healthy food, nutrition education and breastfeeding support for pregnant and postpartum women, infants and children under 5 who qualify. Run by Columbia Health Services.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh13desc">Free healthy food, nutrition education and breastfeeding support for pregnant and postpartum women, infants and children under 5 who qualify. Run by Columbia Health Services.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+18002444870">&#128222; 1-800-244-4870</a>
@@ -1571,9 +1589,9 @@ document.documentElement.setAttribute("data-theme",t);})();
       <!-- Photo: Community Action Team's own website (cat-team.org) — Head Start staff group photo (photo: Zaliah Zalkind). Added in the Community Help preview, 2026-11-12. -->
       <img class="dir-photo" src="img/dir-head-start.jpg" alt="Community Action Team Head Start staff" loading="lazy" decoding="async">
       <div class="dir-item-main">
-        <h3>Head Start — Community Action Team</h3>
+        <h3><a class="dir-web" href="https://www.nworheadstart.org" target="_blank" rel="noopener">Head Start — Community Action Team</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh14desc">Free early learning and development for children from birth to age 5 in low-income families. The St. Helens center serves St. Helens, Scappoose, Warren, Columbia City and Deer Island.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh14desc">Free early learning and development for children from birth to age 5 in low-income families. The St. Helens center serves St. Helens, Scappoose, Warren, Columbia City and Deer Island.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15035563736">&#128222; (503) 556-3736</a>
@@ -1582,9 +1600,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.861382" data-lng="-122.807389">
       <!-- Free help build-out v63 (2026-11-12): Sacagawea Health Center (Columbia Health Services), from the CDC NPIN government listing: address, phone, Mon-Fri hours and "Sliding Scale" payment wording exactly as listed — described as low-cost, never free. Pin coordinates are the listing's own map marker. -->
       <div class="dir-item-main">
-        <h3>Sacagawea Health Center</h3>
+        <h3><a class="dir-web" href="https://columbia-health.org" target="_blank" rel="noopener">Sacagawea Health Center</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh15desc">Low-cost health care on a sliding scale based on income, from Columbia Health Services. Open Monday to Friday, 8 AM to 4:30 PM (closed 12:30 to 1:30 for lunch). Call for an appointment.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh15desc">Low-cost health care on a sliding scale based on income, from Columbia Health Services. Open Monday to Friday, 8 AM to 4:30 PM (closed 12:30 to 1:30 for lunch). Call for an appointment.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+18002444870">&#128222; 1-800-244-4870</a>
@@ -1602,9 +1620,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.85978" data-lng="-122.81542">
       <!-- Free help build-out v63 (2026-11-12): Columbia County Veterans Service Office, from Community Action Team's own VSO page (cat-team.org/cat/vso): address, phone and office hours as published. -->
       <div class="dir-item-main">
-        <h3>Columbia County Veterans Service Office</h3>
+        <h3><a class="dir-web" href="https://cat-team.org" target="_blank" rel="noopener">Columbia County Veterans Service Office</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh16desc">Free help for veterans with VA claims, benefits questions and referrals. Open Monday to Friday, 8:30 AM to 5 PM (closed 12:30 to 1:30 for lunch). Based at Community Action Team.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh16desc">Free help for veterans with VA claims, benefits questions and referrals. Open Monday to Friday, 8:30 AM to 5 PM (closed 12:30 to 1:30 for lunch). Based at Community Action Team.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033666580">&#128222; (503) 366-6580</a>
@@ -1614,9 +1632,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp">
       <!-- Free help build-out v63 (2026-11-12): Oregon Law Center, St. Helens satellite office — free legal help, phone from Oregon Law Help's official referral listing (oregonlawhelp.org). No street address is published for the satellite office, so none is shown. -->
       <div class="dir-item-main">
-        <h3>Oregon Law Center — Free Legal Help</h3>
+        <h3><a class="dir-web" href="https://oregonlawcenter.org" target="_blank" rel="noopener">Oregon Law Center — Free Legal Help</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh17desc">Free legal help for people struggling to make ends meet: housing, jobs, medical care and safety from domestic violence. The St. Helens satellite office serves all of Columbia County.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh17desc">Free legal help for people struggling to make ends meet: housing, jobs, medical care and safety from domestic violence. The St. Helens satellite office serves all of Columbia County.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033971628">&#128222; (503) 397-1628</a>
@@ -1625,7 +1643,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp">
       <!-- Free help build-out v63 (2026-11-12): Alcoholics Anonymous District 18 (Columbia County) — "no dues or fees for A.A. membership" and the district hotline from Oregon Area 58's official hotline page (aa-oregon.org/hotlines). Phone-first entry: meetings move, the hotline is the access point. -->
       <div class="dir-item-main">
-        <h3>Alcoholics Anonymous — District 18</h3>
+        <h3><a class="dir-web" href="https://aa-oregon.org" target="_blank" rel="noopener">Alcoholics Anonymous — District 18</a></h3>
         <p class="dir-meta">Columbia County &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
         <p class="dir-desc" data-i18n="dirfh18desc">Free recovery support with meetings across Columbia County. There are no dues or fees for AA membership. Call the hotline for meeting times and places.</p>
       </div>
@@ -1636,9 +1654,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.85308" data-lng="-122.81724">
       <!-- Free help build-out v63 (2026-11-12): St. Helens Public Library, from the City of St. Helens' own library page (sthelensoregon.gov/library): address, phone and hours as published. -->
       <div class="dir-item-main">
-        <h3>St. Helens Public Library</h3>
+        <h3><a class="dir-web" href="https://www.sthelensoregon.gov/library" target="_blank" rel="noopener">St. Helens Public Library</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh19desc">Free public library: borrow books and movies, use Libby for e-books, and join free programs for kids and adults. Open Monday to Wednesday 10 AM to 7 PM, Thursday 2 to 7 PM, Friday 10 AM to 5 PM, Saturday 10 AM to 2 PM.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh19desc">Free public library: borrow books and movies, use Libby for e-books, and join free programs for kids and adults. Open Monday to Wednesday 10 AM to 7 PM, Thursday 2 to 7 PM, Friday 10 AM to 5 PM, Saturday 10 AM to 2 PM.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033974544">&#128222; (503) 397-4544</a>
@@ -1900,7 +1918,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=81"></script>
+<script src="app.js?v=82"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>

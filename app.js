@@ -5811,6 +5811,12 @@ const LANG_ES = {
   helpintro: 'Comida gratuita, líneas de crisis, ayuda con el alquiler, las facturas de servicios y los pañales, apoyo para familias, veteranos y recuperación — la ayuda que este condado ya ofrece, reunida en un solo lugar. Todo aquí es gratuito, con una excepción honesta: el centro de salud cobra según los ingresos, y su anuncio lo dice. Toca cualquier número de teléfono para llamar. Cada anuncio se verificó contra el sitio web propio del servicio.',
   help911: 'En una emergencia, llama al 911.',
   helpsafe: '📞 Línea de crisis de SAFE — (503) 397-6161 · 24/7',
+  ebth3: 'Tarjeta EBT de Oregon — la app ebtEDGE',
+  ebtdesc: 'La app oficial para las tarjetas EBT Oregon Trail: revisa tus saldos de comida y efectivo, mira tus depósitos y cambia tu PIN. El DHS de Oregon señala solo a ebtEDGE — las demás apps de EBT no son oficiales, no les confíes tu tarjeta.',
+  ebtplay: 'Descargarla en Google Play',
+  ebtapple: 'Descargarla en el App Store',
+  ebtweb: 'Sitio web de ebtEDGE',
+  ebtphone: 'Saldo por teléfono, sin necesidad de smartphone',
   helpmh: '📞 Crisis de salud mental — (503) 782-4499 · 24/7',
   helpfoodh: '🍞 Comida — despensas y comidas gratuitas',
   helpcrisish: '🛟 Crisis y seguridad',
@@ -8522,6 +8528,34 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
   langSet = function (lang) {
     langSetDirPrev(lang);
     renderDir();
+  };
+})();
+
+/* ---------- Community Help entry cards: See more pull-downs (2026-11-14) ----------
+   In the Help view each entry is now its own little card; entries whose
+   description runs long keep it behind the same double-chevron pull-down
+   as the incident cards (labels from alertToggleLabel, EN/ES), while
+   short entries simply show everything. One delegated listener covers
+   every toggle in the view; the langSet wrap re-bakes the labels on a
+   language flip, mirroring the incidents wrap. */
+(function () {
+  document.addEventListener('click', function (e) {
+    var btn = e.target && e.target.closest ? e.target.closest('#view-help .dir-toggle') : null;
+    if (!btn) return;
+    var item = btn.closest('.dir-item');
+    if (!item) return;
+    var open = item.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    var lbl = btn.querySelector('.dir-toggle-label');
+    if (lbl) lbl.textContent = alertToggleLabel(open);
+  });
+  var langSetHelpPrev = langSet;
+  langSet = function (lang) {
+    langSetHelpPrev(lang);
+    document.querySelectorAll('#view-help .dir-item').forEach(function (item) {
+      var lbl = item.querySelector('.dir-toggle-label');
+      if (lbl) lbl.textContent = alertToggleLabel(item.classList.contains('open'));
+    });
   };
 })();
 
