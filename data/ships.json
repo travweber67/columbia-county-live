@@ -1,93 +1,85 @@
 {
- "fetched_at": "2026-11-15T17:18:22Z",
+ "fetched_at": "2026-11-15T17:19:42Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.81273,
+   "lon": -122.82737,
+   "type_code": 52,
+   "destination": "US^02NV>02A0",
+   "updated": "2026-11-15 17:20:23.374611024 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64729,
+   "lon": -122.73992,
+   "type_code": 52,
+   "destination": "SRT PASCO",
+   "updated": "2026-11-15 17:20:23.716199495 +0000 UTC"
+  },
+  {
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 45.64361,
+   "lon": -122.74045,
+   "type_code": 70,
+   "destination": "KRYOS",
+   "updated": "2026-11-15 17:20:25.083453982 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60756,
+   "lon": -122.67757,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-15 17:20:35.148748237 +0000 UTC"
+  },
+  {
+   "mmsi": 563302700,
+   "name": "KEY WEST",
+   "lat": 46.11825,
+   "lon": -122.97881,
+   "type_code": 70,
+   "destination": "LONGVIEW USA",
+   "updated": "2026-11-15 17:20:39.165311375 +0000 UTC"
+  },
+  {
    "mmsi": 368202070,
    "name": "TERILYN",
-   "lat": 46.16702,
-   "lon": -123.4097,
-   "sog_kn": 6.5,
-   "cog": 134.2,
-   "heading": 134,
-   "nav_status": 0,
-   "updated": "2026-11-15 17:18:29.830881343 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.64375,
-   "lon": -122.74111,
-   "sog_kn": 0.8,
-   "cog": 168.4,
-   "heading": 108,
-   "nav_status": 0,
-   "updated": "2026-11-15 17:18:31.674427367 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.63418,
-   "lon": -122.71249,
-   "type_code": 52,
-   "destination": "PDX/VANC.OPS.",
-   "updated": "2026-11-15 17:18:31.843340908 +0000 UTC"
-  },
-  {
-   "mmsi": 636026324,
-   "name": "STAR BELLA",
-   "lat": 46.0272,
-   "lon": -122.86959,
-   "sog_kn": 0,
-   "cog": 82.7,
+   "lat": 46.16422,
+   "lon": -123.40576,
+   "sog_kn": 6.4,
+   "cog": 137.3,
    "heading": 138,
+   "nav_status": 0,
+   "updated": "2026-11-15 17:20:39.268569971 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58078,
+   "lon": -122.76008,
+   "sog_kn": 0,
+   "cog": 142,
+   "heading": 124,
    "nav_status": 5,
-   "updated": "2026-11-15 17:18:36.278183936 +0000 UTC"
+   "updated": "2026-11-15 17:20:42.485872091 +0000 UTC"
   },
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.14578,
-   "lon": -123.28393,
-   "sog_kn": 2.1,
-   "cog": 76.9,
-   "heading": 75,
-   "nav_status": 3,
-   "updated": "2026-11-15 17:18:37.55705869 +0000 UTC"
-  },
-  {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09684,
-   "lon": -122.92835,
-   "sog_kn": 0,
-   "cog": 168.5,
-   "heading": 69,
-   "nav_status": 3,
-   "updated": "2026-11-15 17:18:45.323192016 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35744,
-   "sog_kn": 0,
-   "cog": 289,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-15 17:18:46.006170511 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.09713,
-   "lon": -122.92821,
-   "sog_kn": 0.1,
-   "cog": 349.2,
-   "heading": 69,
-   "nav_status": 3,
-   "updated": "2026-11-15 17:18:54.467553148 +0000 UTC"
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19998,
+   "lon": -123.38539,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-15 17:20:43.935820093 +0000 UTC"
   }
  ]
 }
