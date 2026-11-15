@@ -1,100 +1,80 @@
 {
- "fetched_at": "2026-11-15T06:02:23Z",
+ "fetched_at": "2026-11-15T06:07:23Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.15228,
-   "lon": -123.37769,
+   "mmsi": 366396000,
+   "name": "NAT GEO SEA LION",
+   "lat": 46.08961,
+   "lon": -122.92977,
    "sog_kn": 0,
-   "cog": 14.8,
-   "heading": 34,
-   "nav_status": 0,
-   "updated": "2026-11-15 06:02:29.59607877 +0000 UTC"
+   "cog": 283.1,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-15 06:07:31.719363538 +0000 UTC"
   },
   {
    "mmsi": 367310520,
    "name": "JAMES T",
-   "lat": 46.09704,
-   "lon": -122.92795,
+   "lat": 46.09706,
+   "lon": -122.92798,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-15 06:07:33.801256271 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35744,
    "sog_kn": 0,
-   "cog": 35.8,
-   "heading": 67,
-   "nav_status": 3,
-   "updated": "2026-11-15 06:02:34.162606773 +0000 UTC"
+   "cog": 347.1,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-15 06:07:37.225502157 +0000 UTC"
   },
   {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.0818,
-   "lon": -122.90464,
-   "sog_kn": 0,
-   "cog": 159.2,
-   "heading": 149,
-   "nav_status": 5,
-   "updated": "2026-11-15 06:02:37.741851992 +0000 UTC"
-  },
-  {
-   "mmsi": 563302700,
-   "name": "KEY WEST",
-   "lat": 46.11854,
-   "lon": -122.98041,
-   "type_code": 70,
-   "destination": "LONGVIEW USA",
-   "updated": "2026-11-15 06:02:38.937931109 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.2,
-   "lon": -123.38542,
-   "type_code": 99,
-   "destination": "NAKNEK",
-   "updated": "2026-11-15 06:02:46.19229051 +0000 UTC"
-  },
-  {
-   "mmsi": 352006531,
-   "name": "BARISM BETTY",
-   "lat": 45.66697,
-   "lon": -122.76704,
-   "sog_kn": 0,
-   "cog": 149,
-   "heading": 161,
-   "nav_status": 5,
-   "updated": "2026-11-15 06:02:49.082575771 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08168,
-   "lon": -122.90498,
-   "sog_kn": 0.1,
-   "cog": 347.8,
-   "heading": 338,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.14209,
+   "lon": -123.38342,
+   "sog_kn": 6.9,
+   "cog": 166.4,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-15 06:02:52.078284034 +0000 UTC"
+   "updated": "2026-11-15 06:07:37.945350591 +0000 UTC"
   },
   {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58131,
-   "lon": -122.76063,
-   "type_code": 57,
-   "destination": "PASCO",
-   "updated": "2026-11-15 06:02:52.63014092 +0000 UTC"
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64723,
+   "lon": -122.74131,
+   "sog_kn": 0,
+   "cog": 127.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-15 06:07:42.744541155 +0000 UTC"
+  },
+  {
+   "mmsi": 373989000,
+   "name": "AFRICAN CARDINAL",
+   "lat": 45.63923,
+   "lon": -122.77781,
+   "sog_kn": 0,
+   "cog": 197.6,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-15 06:07:50.873777007 +0000 UTC"
   },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 46.17078,
-   "lon": -123.09104,
-   "sog_kn": 1.2,
-   "cog": 139.7,
-   "heading": 126,
-   "nav_status": 3,
-   "updated": "2026-11-15 06:02:55.491571544 +0000 UTC"
+   "lat": 46.17024,
+   "lon": -123.08989,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-15 06:07:51.346970379 +0000 UTC"
   }
  ]
 }
