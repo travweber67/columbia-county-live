@@ -1,80 +1,62 @@
 {
- "fetched_at": "2026-11-15T19:19:44Z",
+ "fetched_at": "2026-11-15T19:23:31Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.62735,
-   "lon": -122.69871,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
    "sog_kn": 0,
-   "cog": 253.2,
-   "heading": 303,
+   "cog": 150.5,
+   "heading": 132,
+   "nav_status": 15,
+   "updated": "2026-11-15 19:23:39.265810611 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.15935,
+   "lon": -123.40466,
+   "sog_kn": 0.1,
+   "cog": 47.5,
+   "heading": 317,
    "nav_status": 0,
-   "updated": "2026-11-15 19:20:26.36517598 +0000 UTC"
-  },
-  {
-   "mmsi": 366892350,
-   "name": "NAT GEO SEA BIRD",
-   "lat": 46.08967,
-   "lon": -122.92971,
-   "sog_kn": 0,
-   "cog": 72.7,
-   "heading": 109,
-   "nav_status": 5,
-   "updated": "2026-11-15 19:20:27.988285588 +0000 UTC"
-  },
-  {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 45.63027,
-   "lon": -122.69562,
-   "type_code": 70,
-   "destination": "USVAN",
-   "updated": "2026-11-15 19:20:28.650904606 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58752,
-   "lon": -122.77067,
-   "sog_kn": 0,
-   "cog": 16.8,
-   "heading": 138,
-   "nav_status": 0,
-   "updated": "2026-11-15 19:20:30.549833091 +0000 UTC"
+   "updated": "2026-11-15 19:23:39.987209485 +0000 UTC"
   },
   {
    "mmsi": 440576000,
    "name": "PAN FLOWER",
-   "lat": 45.9257,
-   "lon": -122.80609,
-   "type_code": 70,
-   "destination": "KRYOS",
-   "updated": "2026-11-15 19:20:34.621981523 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 219.8,
-   "heading": 133,
-   "nav_status": 15,
-   "updated": "2026-11-15 19:20:39.101000831 +0000 UTC"
-  },
-  {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.8837,
-   "lon": -122.79783,
-   "sog_kn": 10.4,
-   "cog": 330,
-   "heading": 330,
+   "lat": 45.93824,
+   "lon": -122.80492,
+   "sog_kn": 11.3,
+   "cog": 356.6,
+   "heading": 358,
    "nav_status": 0,
-   "updated": "2026-11-15 19:20:41.299818508 +0000 UTC"
+   "updated": "2026-11-15 19:23:52.187423206 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08984,
+   "lon": -122.92902,
+   "sog_kn": 0,
+   "cog": 240.6,
+   "heading": 99,
+   "nav_status": 0,
+   "updated": "2026-11-15 19:23:59.185827854 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.09842,
+   "lon": -122.93781,
+   "sog_kn": 0.1,
+   "cog": 280.9,
+   "heading": 18,
+   "nav_status": 0,
+   "updated": "2026-11-15 19:24:00.384397022 +0000 UTC"
   }
  ]
 }
