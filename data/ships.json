@@ -1,29 +1,47 @@
 {
- "fetched_at": "2026-11-15T19:48:32Z",
+ "fetched_at": "2026-11-15T19:53:33Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 45.64724,
-   "lon": -122.74134,
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08194,
+   "lon": -122.90494,
    "sog_kn": 0,
-   "cog": 127.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-15 19:48:53.269771943 +0000 UTC"
+   "cog": 261.6,
+   "heading": 126,
+   "nav_status": 5,
+   "updated": "2026-11-15 19:53:37.617168889 +0000 UTC"
   },
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.62735,
-   "lon": -122.69872,
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.9101,
    "sog_kn": 0,
-   "cog": 326.3,
-   "heading": 303,
+   "cog": 225.4,
+   "heading": 73,
    "nav_status": 0,
-   "updated": "2026-11-15 19:49:05.662029629 +0000 UTC"
+   "updated": "2026-11-15 19:53:41.709751882 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09045,
+   "lon": -122.9323,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-15 19:53:56.144892176 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64355,
+   "lon": -122.75295,
+   "type_code": 52,
+   "destination": "US^0UUT>0UW8",
+   "updated": "2026-11-15 19:54:03.455229239 +0000 UTC"
   }
  ]
 }
