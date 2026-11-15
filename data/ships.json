@@ -1,55 +1,40 @@
 {
- "fetched_at": "2026-11-15T19:08:29Z",
+ "fetched_at": "2026-11-15T19:13:29Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 45.64727,
-   "lon": -122.74132,
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.58752,
+   "lon": -122.77066,
    "sog_kn": 0,
-   "cog": 127.7,
+   "cog": 16.8,
+   "heading": 139,
+   "nav_status": 0,
+   "updated": "2026-11-15 19:13:50.122492062 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.1079,
+   "lon": -122.95901,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-15 19:08:32.126660464 +0000 UTC"
+   "updated": "2026-11-15 19:13:52.035946639 +0000 UTC"
   },
   {
-   "mmsi": 440576000,
-   "name": "PAN FLOWER",
-   "lat": 45.88832,
-   "lon": -122.80118,
-   "type_code": 70,
-   "destination": "KRYOS",
-   "updated": "2026-11-15 19:08:32.168556643 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64357,
-   "lon": -122.7524,
-   "type_code": 52,
-   "updated": "2026-11-15 19:08:38.869306427 +0000 UTC"
-  },
-  {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.64754,
-   "lon": -122.73981,
-   "sog_kn": 0,
-   "cog": 297.4,
-   "heading": 116,
-   "nav_status": 12,
-   "updated": "2026-11-15 19:08:48.762568406 +0000 UTC"
-  },
-  {
-   "mmsi": 212138000,
-   "name": "ALKIMOS HERACLES",
-   "lat": 46.18593,
-   "lon": -123.12076,
-   "type_code": 70,
-   "destination": "US KAL > JP SBS",
-   "updated": "2026-11-15 19:08:55.910171668 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.14495,
+   "lon": -123.03796,
+   "sog_kn": 5.7,
+   "cog": 334.9,
+   "heading": 328,
+   "nav_status": 3,
+   "updated": "2026-11-15 19:13:58.531206577 +0000 UTC"
   }
  ]
 }
