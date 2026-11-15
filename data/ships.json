@@ -1,60 +1,49 @@
 {
- "fetched_at": "2026-11-15T03:32:11Z",
+ "fetched_at": "2026-11-15T03:37:12Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 563302700,
-   "name": "KEY WEST",
-   "lat": 45.98239,
-   "lon": -122.83967,
-   "type_code": 70,
-   "destination": "LONGVIEW USA",
-   "updated": "2026-11-15 03:32:19.029352554 +0000 UTC"
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.38541,
+   "sog_kn": 0,
+   "cog": 184.4,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-15 03:37:16.164391458 +0000 UTC"
+  },
+  {
+   "mmsi": 367425910,
+   "name": "SEA HORSE",
+   "lat": 46.15248,
+   "lon": -123.37748,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-15 03:37:20.107964096 +0000 UTC"
   },
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
-   "lat": 46.08164,
-   "lon": -122.90483,
+   "lat": 46.08166,
+   "lon": -122.90484,
    "sog_kn": 0,
-   "cog": 265.1,
-   "heading": 137,
+   "cog": 4.9,
+   "heading": 142,
    "nav_status": 0,
-   "updated": "2026-11-15 03:32:24.768984635 +0000 UTC"
+   "updated": "2026-11-15 03:37:24.311140161 +0000 UTC"
   },
   {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.15226,
-   "lon": -123.37773,
-   "sog_kn": 0,
-   "cog": 179.3,
-   "heading": 35,
-   "nav_status": 0,
-   "updated": "2026-11-15 03:32:29.185989268 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08167,
-   "lon": -122.90501,
-   "sog_kn": 0,
-   "cog": 341.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-15 03:32:31.576904557 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08177,
-   "lon": -122.90461,
-   "sog_kn": 0,
-   "cog": 339,
-   "heading": 133,
-   "nav_status": 5,
-   "updated": "2026-11-15 03:32:36.523401342 +0000 UTC"
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.58753,
+   "lon": -122.7707,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-15 03:37:43.047827378 +0000 UTC"
   }
  ]
 }
