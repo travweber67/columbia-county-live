@@ -1,106 +1,90 @@
 {
- "fetched_at": "2026-11-15T18:13:24Z",
+ "fetched_at": "2026-11-15T18:18:25Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 80.1,
+   "heading": 131,
+   "nav_status": 15,
+   "updated": "2026-11-15 18:18:28.561213044 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64566,
+   "lon": -122.73487,
+   "type_code": 79,
+   "updated": "2026-11-15 18:18:28.602677373 +0000 UTC"
+  },
   {
    "mmsi": 357359000,
    "name": "FEDERAL ILLINOIS",
-   "lat": 45.68381,
-   "lon": -122.77513,
-   "sog_kn": 10.4,
-   "cog": 1.2,
-   "heading": 2,
+   "lat": 45.69925,
+   "lon": -122.77214,
+   "sog_kn": 11.4,
+   "cog": 12.5,
+   "heading": 13,
    "nav_status": 0,
-   "updated": "2026-11-15 18:13:30.321376947 +0000 UTC"
+   "updated": "2026-11-15 18:18:41.274436226 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.62734,
+   "lon": -122.69872,
+   "type_code": 52,
+   "destination": "PDX/VANC.OPS.",
+   "updated": "2026-11-15 18:18:34.106690732 +0000 UTC"
+  },
+  {
+   "mmsi": 636026324,
+   "name": "STAR BELLA",
+   "lat": 46.02719,
+   "lon": -122.86959,
+   "sog_kn": 0,
+   "cog": 82.7,
+   "heading": 139,
+   "nav_status": 5,
+   "updated": "2026-11-15 18:18:36.323630834 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00885,
+   "lon": -122.84879,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-15 18:18:37.518000438 +0000 UTC"
   },
   {
    "mmsi": 366986380,
    "name": "DREDGE OREGON",
-   "lat": 46.08212,
+   "lat": 46.08211,
    "lon": -122.90543,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 311,
+   "heading": 312,
    "nav_status": 3,
-   "updated": "2026-11-15 18:13:30.601846586 +0000 UTC"
+   "updated": "2026-11-15 18:18:46.575408983 +0000 UTC"
   },
   {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.64357,
-   "lon": -122.75294,
-   "sog_kn": 0.1,
-   "cog": 71.6,
-   "heading": 234,
-   "nav_status": 5,
-   "updated": "2026-11-15 18:13:30.661579948 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10787,
-   "lon": -122.95903,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.81236,
+   "lon": -122.79378,
+   "sog_kn": 6.9,
+   "cog": 176.3,
+   "heading": 176,
    "nav_status": 0,
-   "updated": "2026-11-15 18:13:31.515978182 +0000 UTC"
-  },
-  {
-   "mmsi": 212138000,
-   "name": "ALKIMOS HERACLES",
-   "lat": 46.09339,
-   "lon": -122.92918,
-   "sog_kn": 7.9,
-   "cog": 295.5,
-   "heading": 296,
-   "nav_status": 0,
-   "updated": "2026-11-15 18:13:31.601325715 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08197,
-   "lon": -122.90549,
-   "sog_kn": 0,
-   "cog": 135.5,
-   "heading": 309,
-   "nav_status": 0,
-   "updated": "2026-11-15 18:13:31.688803183 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19999,
-   "lon": -123.38546,
-   "sog_kn": 0,
-   "cog": 172.1,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-15 18:13:32.953329394 +0000 UTC"
-  },
-  {
-   "mmsi": 366396000,
-   "name": "NAT GEO SEA LION",
-   "lat": 46.08962,
-   "lon": -122.92974,
-   "sog_kn": 0,
-   "cog": 283.1,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-15 18:13:33.068425424 +0000 UTC"
-  },
-  {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09683,
-   "lon": -122.92835,
-   "sog_kn": 0,
-   "cog": 176.9,
-   "heading": 69,
-   "nav_status": 3,
-   "updated": "2026-11-15 18:13:33.991194228 +0000 UTC"
+   "updated": "2026-11-15 18:18:51.173257528 +0000 UTC"
   }
  ]
 }
