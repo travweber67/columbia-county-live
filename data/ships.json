@@ -1,40 +1,89 @@
 {
- "fetched_at": "2026-11-15T20:49:45Z",
+ "fetched_at": "2026-11-15T20:53:37Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10788,
-   "lon": -122.95905,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19998,
+   "lon": -123.38541,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 0,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-15 20:50:41.453667239 +0000 UTC"
+   "nav_status": 8,
+   "updated": "2026-11-15 20:53:43.894679474 +0000 UTC"
   },
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.5808,
-   "lon": -122.76006,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16742,
+   "lon": -123.08824,
+   "sog_kn": 1.3,
+   "cog": 302,
+   "heading": 297,
+   "nav_status": 3,
+   "updated": "2026-11-15 20:53:44.178066588 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19949,
+   "lon": -123.38508,
    "sog_kn": 0,
-   "cog": 142,
-   "heading": 122,
+   "cog": 0.9,
+   "heading": 144,
    "nav_status": 5,
-   "updated": "2026-11-15 20:50:44.948780278 +0000 UTC"
+   "updated": "2026-11-15 20:53:44.746174054 +0000 UTC"
   },
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60757,
-   "lon": -122.67764,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "mmsi": 366396000,
+   "name": "NAT GEO SEA LION",
+   "lat": 46.08958,
+   "lon": -122.92973,
+   "type_code": 68,
+   "destination": "RAINIER",
+   "updated": "2026-11-15 20:53:45.605163111 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 46.1033,
+   "lon": -122.95745,
+   "sog_kn": 10.2,
+   "cog": 296.5,
+   "heading": 296,
    "nav_status": 0,
-   "updated": "2026-11-15 20:50:45.37613061 +0000 UTC"
+   "updated": "2026-11-15 20:53:50.72017618 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.64345,
+   "lon": -122.75289,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-15 20:53:55.861853901 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08984,
+   "lon": -122.92902,
+   "sog_kn": 0.1,
+   "cog": 240.6,
+   "heading": 99,
+   "nav_status": 0,
+   "updated": "2026-11-15 20:53:58.059179068 +0000 UTC"
+  },
+  {
+   "mmsi": 563331600,
+   "name": "BELLE LUNE",
+   "lat": 46.17058,
+   "lon": -123.09994,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-15 20:54:08.683654563 +0000 UTC"
   }
  ]
 }
