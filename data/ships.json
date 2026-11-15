@@ -1,49 +1,77 @@
 {
- "fetched_at": "2026-11-15T16:28:16Z",
+ "fetched_at": "2026-11-15T16:33:17Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367425910,
-   "name": "SEA HORSE",
-   "lat": 46.15206,
-   "lon": -123.37743,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-15 16:28:27.726940773 +0000 UTC"
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09076,
+   "lon": -122.9321,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-15 16:33:26.773677554 +0000 UTC"
   },
   {
-   "mmsi": 366396000,
-   "name": "NAT GEO SEA LION",
-   "lat": 46.08954,
-   "lon": -122.92982,
-   "sog_kn": 0,
-   "cog": 283.1,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-15 16:28:30.838920606 +0000 UTC"
-  },
-  {
-   "mmsi": 636026324,
-   "name": "STAR BELLA",
-   "lat": 46.02717,
-   "lon": -122.86956,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-15 16:28:47.562076088 +0000 UTC"
+   "mmsi": 367681630,
+   "name": "VICKI B",
+   "lat": 45.69672,
+   "lon": -122.77408,
+   "sog_kn": 6,
+   "cog": 196.3,
+   "heading": 194,
+   "nav_status": 0,
+   "updated": "2026-11-15 16:33:26.859446551 +0000 UTC"
   },
   {
    "mmsi": 367602150,
    "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61289,
+   "lat": 45.61108,
+   "lon": -122.61291,
+   "type_code": 0,
+   "updated": "2026-11-15 16:33:33.088741553 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.16271,
+   "lon": -123.40978,
    "sog_kn": 0,
-   "cog": 27.6,
+   "cog": 360,
    "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-15 16:28:49.524379398 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-15 16:33:33.940193876 +0000 UTC"
+  },
+  {
+   "mmsi": 636026324,
+   "name": "STAR BELLA",
+   "lat": 46.02721,
+   "lon": -122.86958,
+   "sog_kn": 0,
+   "cog": 82.7,
+   "heading": 139,
+   "nav_status": 5,
+   "updated": "2026-11-15 16:33:35.67141991 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.6479,
+   "lon": -122.74095,
+   "sog_kn": 0,
+   "cog": 111.7,
+   "heading": 111,
+   "nav_status": 5,
+   "updated": "2026-11-15 16:33:37.778947899 +0000 UTC"
+  },
+  {
+   "mmsi": 352006531,
+   "name": "BARISM BETTY",
+   "lat": 45.66694,
+   "lon": -122.76709,
+   "type_code": 70,
+   "destination": "CNZJG - USPDX",
+   "updated": "2026-11-15 16:33:40.175197517 +0000 UTC"
   }
  ]
 }
