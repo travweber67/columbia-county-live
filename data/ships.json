@@ -1,60 +1,71 @@
 {
- "fetched_at": "2026-11-15T04:07:14Z",
+ "fetched_at": "2026-11-15T04:12:14Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 46.07059,
+   "lon": -122.88852,
+   "sog_kn": 8.1,
+   "cog": 332.8,
+   "heading": 331,
+   "nav_status": 0,
+   "updated": "2026-11-15 04:12:24.769295321 +0000 UTC"
+  },
+  {
+   "mmsi": 367719170,
+   "name": "RYAN POINT",
+   "lat": 45.64388,
+   "lon": -122.73723,
+   "sog_kn": 5.9,
+   "cog": 290.7,
+   "heading": 291,
+   "nav_status": 12,
+   "updated": "2026-11-15 04:12:27.992824169 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64786,
+   "lon": -122.741,
+   "sog_kn": 0,
+   "cog": 112.6,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-15 04:12:31.037118254 +0000 UTC"
+  },
+  {
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10893,
+   "lon": -122.96129,
+   "sog_kn": 0,
+   "cog": 0.9,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-15 04:12:31.939211394 +0000 UTC"
+  },
   {
    "mmsi": 367702780,
    "name": "SARAH",
-   "lat": 45.83831,
-   "lon": -122.78857,
-   "sog_kn": 10.9,
-   "cog": 18.1,
-   "heading": 18,
-   "nav_status": 5,
-   "updated": "2026-11-15 04:07:27.325402099 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.14818,
-   "lon": -123.27852,
-   "sog_kn": 1.2,
-   "cog": 82.7,
-   "heading": 76,
-   "nav_status": 3,
-   "updated": "2026-11-15 04:07:37.602802306 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00885,
-   "lon": -122.84886,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-15 04:07:37.603322446 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.09696,
-   "lon": -122.9282,
+   "lat": 45.85072,
+   "lon": -122.78439,
    "type_code": 52,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-15 04:07:37.773177753 +0000 UTC"
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-15 04:12:36.015138146 +0000 UTC"
   },
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 45.6433,
-   "lon": -122.7528,
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.60094,
+   "lon": -122.77375,
    "sog_kn": 0,
-   "cog": 229.8,
-   "heading": 511,
+   "cog": 26.5,
+   "heading": 277,
    "nav_status": 5,
-   "updated": "2026-11-15 04:07:39.908405385 +0000 UTC"
+   "updated": "2026-11-15 04:12:39.942130842 +0000 UTC"
   }
  ]
 }
