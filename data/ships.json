@@ -1,71 +1,108 @@
 {
- "fetched_at": "2026-11-15T04:37:15Z",
+ "fetched_at": "2026-11-15T04:42:17Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 368121540,
    "name": "RANDY S",
-   "lat": 45.64354,
-   "lon": -122.75295,
-   "sog_kn": 0,
-   "cog": 101.4,
-   "heading": 230,
-   "nav_status": 5,
-   "updated": "2026-11-15 04:37:21.244037794 +0000 UTC"
-  },
-  {
-   "mmsi": 366396000,
-   "name": "NAT GEO SEA LION",
-   "lat": 46.08956,
-   "lon": -122.92976,
-   "sog_kn": 0,
-   "cog": 283.1,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-15 04:37:25.852216856 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.66824,
-   "lon": -122.77114,
-   "sog_kn": 5.9,
-   "cog": 153,
-   "heading": 153,
-   "nav_status": 0,
-   "updated": "2026-11-15 04:37:30.547574026 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08177,
-   "lon": -122.90459,
+   "lat": 45.64356,
+   "lon": -122.75294,
    "type_code": 52,
-   "destination": "PORTLAND",
-   "updated": "2026-11-15 04:37:43.769844916 +0000 UTC"
+   "destination": "US^0UUT>0UW8",
+   "updated": "2026-11-15 04:42:27.767063518 +0000 UTC"
   },
   {
-   "mmsi": 563302700,
-   "name": "KEY WEST",
-   "lat": 46.11045,
-   "lon": -122.96996,
-   "sog_kn": 4,
-   "cog": 317.8,
-   "heading": 319,
-   "nav_status": 0,
-   "updated": "2026-11-15 04:37:45.988175463 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61289,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.38552,
    "sog_kn": 0,
-   "cog": 35.9,
-   "heading": 134,
+   "cog": 313.7,
+   "heading": 511,
    "nav_status": 15,
-   "updated": "2026-11-15 04:37:48.974738757 +0000 UTC"
+   "updated": "2026-11-15 04:42:30.324765038 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.91008,
+   "sog_kn": 0,
+   "cog": 177.8,
+   "heading": 72,
+   "nav_status": 0,
+   "updated": "2026-11-15 04:42:31.690127313 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08166,
+   "lon": -122.90487,
+   "sog_kn": 0.1,
+   "cog": 168.7,
+   "heading": 132,
+   "nav_status": 0,
+   "updated": "2026-11-15 04:42:34.163337541 +0000 UTC"
+  },
+  {
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.64226,
+   "lon": -122.74108,
+   "type_code": 52,
+   "destination": "VANCOUER,WA",
+   "updated": "2026-11-15 04:42:34.506027637 +0000 UTC"
+  },
+  {
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.16809,
+   "lon": -123.41256,
+   "sog_kn": 7.1,
+   "cog": 139.8,
+   "heading": 137,
+   "nav_status": 0,
+   "updated": "2026-11-15 04:42:38.089954281 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.60095,
+   "lon": -122.77373,
+   "sog_kn": 0,
+   "cog": 19.4,
+   "heading": 277,
+   "nav_status": 5,
+   "updated": "2026-11-15 04:42:39.993249467 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08202,
+   "lon": -122.90506,
+   "type_code": 33,
+   "updated": "2026-11-15 04:42:48.329153703 +0000 UTC"
+  },
+  {
+   "mmsi": 367719170,
+   "name": "RYAN POINT",
+   "lat": 45.64236,
+   "lon": -122.74099,
+   "sog_kn": 0,
+   "cog": 223.9,
+   "heading": 119,
+   "nav_status": 12,
+   "updated": "2026-11-15 04:42:48.750657338 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64333,
+   "lon": -122.75286,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-15 04:42:49.604777539 +0000 UTC"
   }
  ]
 }
