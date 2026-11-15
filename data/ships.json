@@ -1,64 +1,78 @@
 {
- "fetched_at": "2026-11-15T00:26:57Z",
+ "fetched_at": "2026-11-15T00:32:09Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.15745,
-   "lon": -123.39738,
-   "sog_kn": 6.9,
-   "cog": 135.4,
+   "mmsi": 367425910,
+   "name": "SEA HORSE",
+   "lat": 46.15216,
+   "lon": -123.37767,
+   "type_code": 33,
+   "updated": "2026-11-15 00:32:35.70968952 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60753,
+   "lon": -122.67751,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-15 00:32:36.303410885 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35744,
+   "type_code": 30,
+   "updated": "2026-11-15 00:33:05.229514598 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 309.9,
    "heading": 134,
-   "nav_status": 0,
-   "updated": "2026-11-15 00:27:08.776569253 +0000 UTC"
+   "nav_status": 15
   },
   {
-   "mmsi": 212138000,
-   "name": "ALKIMOS HERACLES",
-   "lat": 46.02725,
-   "lon": -122.86952,
-   "type_code": 70,
-   "destination": "JP CHB > US KAL",
-   "updated": "2026-11-15 00:27:09.135467552 +0000 UTC"
-  },
-  {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 45.64726,
-   "lon": -122.74139,
-   "type_code": 31,
-   "destination": "MCALLS FUEL DOCK",
-   "updated": "2026-11-15 00:27:11.860108826 +0000 UTC"
-  },
-  {
-   "mmsi": 352006982,
-   "name": "MOSHILL",
-   "lat": 45.63368,
-   "lon": -122.70105,
-   "type_code": 70,
-   "destination": "US VAN",
-   "updated": "2026-11-15 00:27:22.279624951 +0000 UTC"
-  },
-  {
-   "mmsi": 355980000,
-   "name": "LUGANO STAR",
-   "lat": 45.76098,
-   "lon": -122.76161,
-   "sog_kn": 13.2,
-   "cog": 177.9,
-   "heading": 179,
-   "nav_status": 0,
-   "updated": "2026-11-15 00:27:22.362506395 +0000 UTC"
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08168,
+   "lon": -122.90459,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-15 00:33:06.032996778 +0000 UTC"
   },
   {
    "mmsi": 367425950,
    "name": "SEA HAWK",
-   "lat": 45.65014,
-   "lon": -122.74762,
-   "type_code": 33,
-   "updated": "2026-11-15 00:27:23.55643776 +0000 UTC"
+   "lat": 45.65029,
+   "lon": -122.74764,
+   "sog_kn": 0,
+   "cog": 287.7,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-15 00:33:09.322972618 +0000 UTC"
+  },
+  {
+   "mmsi": 212138000,
+   "name": "ALKIMOS HERACLES",
+   "lat": 46.0273,
+   "lon": -122.86952,
+   "sog_kn": 0,
+   "cog": 319.5,
+   "heading": 138,
+   "nav_status": 5,
+   "updated": "2026-11-15 00:33:10.008470037 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.65436,
+   "lon": -122.76019,
+   "type_code": 52,
+   "destination": "CSR OPS",
+   "updated": "2026-11-15 00:33:16.770991641 +0000 UTC"
   }
  ]
 }
