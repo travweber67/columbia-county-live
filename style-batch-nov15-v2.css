@@ -3080,7 +3080,7 @@ html[data-theme="dark"] #forecast-week-card{
 #forecast-week-card .forecast-head .updated{color:rgba(255,255,255,.88);text-shadow:0 1px 6px rgba(12,26,16,.55)}
 #forecast-week-card .wx-place{color:#fff;text-shadow:0 1px 8px rgba(12,26,16,.6)}
 .strip-tools{display:flex;justify-content:flex-end;align-items:center;min-height:32px;margin-top:2px}
-.strip-tools .pin-btn{box-shadow:0 1px 6px rgba(12,26,16,.35)}
+.strip-tools .pin-btn{position:static;box-shadow:0 1px 6px rgba(12,26,16,.35)}
 
 /* R3-2 — Community Help: every entry is a full card; the category
    sections are not. Why it rendered as rows: the v82 mini-card rule
