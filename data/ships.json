@@ -1,56 +1,145 @@
 {
- "fetched_at": "2026-11-15T16:13:16Z",
+ "fetched_at": "2026-11-15T16:18:16Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 13 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58079,
-   "lon": -122.76006,
-   "type_code": 31,
-   "destination": "PTSI PDX",
-   "updated": "2026-11-15 16:13:26.729536556 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.16272,
-   "lon": -123.40978,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 135,
-   "nav_status": 0,
-   "updated": "2026-11-15 16:13:34.658761356 +0000 UTC"
-  },
-  {
-   "mmsi": 367425910,
-   "name": "SEA HORSE",
-   "lat": 46.15207,
-   "lon": -123.37741,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-15 16:13:38.169969688 +0000 UTC"
-  },
-  {
-   "mmsi": 367719170,
-   "name": "RYAN POINT",
-   "lat": 45.6474,
-   "lon": -122.73942,
-   "type_code": 52,
-   "destination": "VANCOUVER WA",
-   "updated": "2026-11-15 16:13:47.507981202 +0000 UTC"
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64569,
+   "lon": -122.73485,
+   "type_code": 79,
+   "updated": "2026-11-15 16:18:19.934591931 +0000 UTC"
   },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 46.16143,
-   "lon": -123.0721,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-15 16:13:48.317715232 +0000 UTC"
+   "lat": 46.16064,
+   "lon": -123.07004,
+   "sog_kn": 1,
+   "cog": 115.6,
+   "heading": 121,
+   "nav_status": 3,
+   "updated": "2026-11-15 16:18:22.323198137 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.63245,
+   "lon": -122.70685,
+   "sog_kn": 0.1,
+   "cog": 77.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-15 16:18:22.408551922 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.63212,
+   "lon": -122.70613,
+   "type_code": 31,
+   "destination": "HARBOROPPS-",
+   "updated": "2026-11-15 16:18:23.518244119 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.63509,
+   "lon": -122.71273,
+   "sog_kn": 6.9,
+   "cog": 300.7,
+   "heading": 298,
+   "nav_status": 0,
+   "updated": "2026-11-15 16:18:31.694246852 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64785,
+   "lon": -122.74099,
+   "sog_kn": 0,
+   "cog": 112,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-15 16:18:34.357381538 +0000 UTC"
+  },
+  {
+   "mmsi": 636026324,
+   "name": "STAR BELLA",
+   "lat": 46.0272,
+   "lon": -122.86957,
+   "sog_kn": 0,
+   "cog": 82.7,
+   "heading": 139,
+   "nav_status": 5,
+   "updated": "2026-11-15 16:18:36.320138336 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00882,
+   "lon": -122.84884,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-15 16:18:37.517144491 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.06875,
+   "lon": -122.88819,
+   "sog_kn": 8.6,
+   "cog": 333.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-15 16:18:39.130893126 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.60095,
+   "lon": -122.77375,
+   "sog_kn": 0,
+   "cog": 111.3,
+   "heading": 277,
+   "nav_status": 5,
+   "updated": "2026-11-15 16:18:40.356767441 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.1157,
+   "lon": -122.97233,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-15 16:18:41.272879289 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.64719,
+   "lon": -122.73955,
+   "sog_kn": 0,
+   "cog": 301.3,
+   "heading": 289,
+   "nav_status": 12,
+   "updated": "2026-11-15 16:18:47.240211388 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 66,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-15 16:18:49.037399644 +0000 UTC"
   }
  ]
 }
