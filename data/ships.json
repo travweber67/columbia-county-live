@@ -1,135 +1,101 @@
 {
- "fetched_at": "2026-11-15T22:43:46Z",
+ "fetched_at": "2026-11-15T22:48:47Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 46.17548,
+   "lon": -123.42276,
+   "sog_kn": 10,
+   "cog": 318.1,
+   "heading": 318,
+   "nav_status": 0,
+   "updated": "2026-11-15 22:48:49.582997491 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.38555,
+   "sog_kn": 0,
+   "cog": 337.8,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-15 22:48:50.223075324 +0000 UTC"
+  },
   {
    "mmsi": 368450870,
    "name": "AMERICAN ENCORE",
-   "lat": 46.19873,
-   "lon": -123.42856,
-   "sog_kn": 10.8,
-   "cog": 9.7,
-   "heading": 10,
+   "lat": 46.21374,
+   "lon": -123.42539,
+   "sog_kn": 11,
+   "cog": 8.2,
+   "heading": 8,
    "nav_status": 0,
-   "updated": "2026-11-15 22:43:52.932163337 +0000 UTC"
+   "updated": "2026-11-15 22:48:52.259788366 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09694,
+   "lon": -122.92794,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 65,
+   "nav_status": 3,
+   "updated": "2026-11-15 22:48:54.361973538 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.58753,
+   "lon": -122.77065,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-15 22:48:55.984141488 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08209,
+   "lon": -122.90542,
+   "type_code": 33,
+   "updated": "2026-11-15 22:48:56.154663118 +0000 UTC"
   },
   {
    "mmsi": 368070380,
    "name": "TOKITAE",
-   "lat": 45.60754,
-   "lon": -122.67767,
+   "lat": 45.60755,
+   "lon": -122.67751,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-15 22:43:55.525312585 +0000 UTC"
+   "updated": "2026-11-15 22:49:05.37816894 +0000 UTC"
   },
   {
-   "mmsi": 373989000,
-   "name": "AFRICAN CARDINAL",
-   "lat": 45.63924,
-   "lon": -122.77779,
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 45.63029,
+   "lon": -122.69565,
    "sog_kn": 0,
-   "cog": 197.6,
-   "heading": 229,
+   "cog": 304.5,
+   "heading": 127,
    "nav_status": 5,
-   "updated": "2026-11-15 22:43:56.976768415 +0000 UTC"
+   "updated": "2026-11-15 22:49:08.273898819 +0000 UTC"
   },
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15342,
-   "lon": -123.37716,
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.15236,
+   "lon": -123.37729,
    "sog_kn": 0,
-   "cog": 2.7,
-   "heading": 511,
+   "cog": 6.8,
+   "heading": 34,
    "nav_status": 0,
-   "updated": "2026-11-15 22:43:57.775148455 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58766,
-   "lon": -122.77045,
-   "sog_kn": 0,
-   "cog": 342.2,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-15 22:44:00.73334274 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.16926,
-   "lon": -123.09179,
-   "sog_kn": 1,
-   "cog": 123.7,
-   "heading": 124,
-   "nav_status": 3,
-   "updated": "2026-11-15 22:44:04.9366126 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10389,
-   "lon": -122.9503,
-   "type_code": 50,
-   "destination": "CR HARBOR OPS",
-   "updated": "2026-11-15 22:44:06.533473199 +0000 UTC"
-  },
-  {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.65678,
-   "lon": -122.75673,
-   "sog_kn": 0.1,
-   "cog": 291.4,
-   "heading": 332,
-   "nav_status": 12,
-   "updated": "2026-11-15 22:44:07.564303148 +0000 UTC"
-  },
-  {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.6454,
-   "lon": -122.73505,
-   "sog_kn": 0,
-   "cog": 30.4,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-15 22:44:14.550282637 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64346,
-   "lon": -122.75288,
-   "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-15 22:44:15.942094328 +0000 UTC"
-  },
-  {
-   "mmsi": 338158000,
-   "name": "WEST VIRGINIA",
-   "lat": 46.03631,
-   "lon": -122.87968,
-   "sog_kn": 10.5,
-   "cog": 172.6,
-   "heading": 168,
-   "nav_status": 0,
-   "updated": "2026-11-15 22:44:16.008214171 +0000 UTC"
-  },
-  {
-   "mmsi": 367513140,
-   "name": "CLEARWATER",
-   "lat": 45.62793,
-   "lon": -122.69977,
-   "sog_kn": 0,
-   "cog": 278.1,
-   "heading": 121,
-   "nav_status": 0,
-   "updated": "2026-11-15 22:44:17.287405227 +0000 UTC"
+   "updated": "2026-11-15 22:49:08.869681392 +0000 UTC"
   }
  ]
 }
