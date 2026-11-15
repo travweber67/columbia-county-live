@@ -1,113 +1,58 @@
 {
- "fetched_at": "2026-11-15T08:22:35Z",
+ "fetched_at": "2026-11-15T08:27:35Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 636026324,
-   "name": "STAR BELLA",
-   "lat": 46.0272,
-   "lon": -122.86957,
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64362,
+   "lon": -122.75233,
+   "sog_kn": 0,
+   "cog": 202.6,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-15 08:27:38.761910015 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.02608,
+   "lon": -122.86867,
+   "sog_kn": 0,
+   "cog": 160.3,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-15 08:27:43.624306562 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10329,
+   "lon": -122.95677,
+   "sog_kn": 8.5,
+   "cog": 294.5,
+   "heading": 297,
+   "nav_status": 3,
+   "updated": "2026-11-15 08:27:44.734353973 +0000 UTC"
+  },
+  {
+   "mmsi": 212138000,
+   "name": "ALKIMOS HERACLES",
+   "lat": 46.02802,
+   "lon": -122.87585,
    "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-15 08:22:47.691041576 +0000 UTC"
+   "destination": "US KAL > JP SBS",
+   "updated": "2026-11-15 08:27:51.903158799 +0000 UTC"
   },
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.61922,
-   "lon": -122.78793,
-   "sog_kn": 0,
-   "cog": 356.6,
-   "heading": 356,
-   "nav_status": 0,
-   "updated": "2026-11-15 08:22:49.151403497 +0000 UTC"
-  },
-  {
-   "mmsi": 366396000,
-   "name": "NAT GEO SEA LION",
-   "lat": 46.08959,
-   "lon": -122.92975,
-   "type_code": 68,
-   "destination": "RAINIER",
-   "updated": "2026-11-15 08:22:49.909848226 +0000 UTC"
-  },
-  {
-   "mmsi": 373989000,
-   "name": "AFRICAN CARDINAL",
-   "lat": 45.63927,
-   "lon": -122.7778,
-   "sog_kn": 0,
-   "cog": 197.6,
-   "heading": 229,
-   "nav_status": 5,
-   "updated": "2026-11-15 08:22:51.361042642 +0000 UTC"
-  },
-  {
-   "mmsi": 352006999,
-   "name": "WABI SABI",
-   "lat": 46.09905,
-   "lon": -122.93937,
-   "sog_kn": 0,
-   "cog": 4,
-   "heading": 110,
-   "nav_status": 5,
-   "updated": "2026-11-15 08:22:54.51705839 +0000 UTC"
-  },
-  {
-   "mmsi": 477050900,
-   "name": "MING DE",
-   "lat": 45.9985,
-   "lon": -122.85179,
-   "sog_kn": 0,
-   "cog": 258.8,
-   "heading": 162,
-   "nav_status": 1,
-   "updated": "2026-11-15 08:22:54.68635067 +0000 UTC"
-  },
-  {
-   "mmsi": 367047150,
-   "name": "CAPTAIN BOB",
-   "lat": 45.61795,
-   "lon": -122.67558,
-   "sog_kn": 7,
-   "cog": 112.9,
-   "heading": 108,
-   "nav_status": 12,
-   "updated": "2026-11-15 08:23:00.548171629 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58755,
-   "lon": -122.77067,
-   "sog_kn": 0,
-   "cog": 179.8,
-   "heading": 135,
-   "nav_status": 0,
-   "updated": "2026-11-15 08:23:01.514490774 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.62805,
-   "lon": -122.6909,
-   "sog_kn": 0.9,
-   "cog": 80.9,
-   "heading": 264,
-   "nav_status": 0,
-   "updated": "2026-11-15 08:23:06.205383947 +0000 UTC"
-  },
-  {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.6457,
-   "lon": -122.73488,
-   "sog_kn": 0.1,
-   "cog": 0,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-15 08:23:07.404580183 +0000 UTC"
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.64334,
+   "lon": -122.75281,
+   "type_code": 50,
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-15 08:28:04.446604871 +0000 UTC"
   }
  ]
 }
