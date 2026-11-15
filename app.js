@@ -5869,11 +5869,11 @@ const LANG_ES = {
   schoolsnote2: 'No existe ninguna fuente automática de cierres para estos distritos, así que este tablero se actualiza a mano en las mañanas de tormenta — y el sitio del propio distrito es siempre la última palabra para tu familia.',
   abouth2: '🌲 Acerca de Columbia County Live',
   aboutp1: 'Columbia County Live es una sola mirada en vivo al condado de Columbia, Oregón — la US-30 y el puente Lewis &amp; Clark, los ríos Columbia y Nehalem, las alertas del clima, el ferry Oscar B y lo que hay en el condado — reunido de fuentes públicas oficiales y actualizado todo el día. Lo construye y lo opera <strong>Nomad Development Group</strong>, un pequeño estudio local, con datos públicos gratuitos y alojamiento gratuito — así es como una página como esta puede existir para un condado de 54,000 personas.',
-  aboutp2: '<strong>Por qué es gratis — y qué se queda gratis.</strong> El centro de esta página son datos de seguridad pública: alertas del clima, niveles de los ríos, estado del puente y del ferry, condiciones de las carreteras. Ese centro es gratis, no lleva patrocinadores, y así se queda — nunca estará detrás de un muro de pago. Esa promesa es la razón de ser de esta página.',
+  aboutp2: '<strong>Por qué es gratis — y qué se queda gratis.</strong> El centro de esta página son datos de seguridad pública: alertas del clima, niveles de los ríos, estado del puente y del ferry, condiciones de las carreteras. Ese centro es gratis, no lleva patrocinadores, y así se queda — nunca estará detrás de un muro de pago. Esa promesa es la razón de ser de esta página. La sección de Ayuda comunitaria mantiene esa misma promesa: la ayuda gratuita del condado — despensas de comida, líneas de crisis, ayuda con el alquiler y las facturas de servicios, apoyo para familias y veteranos — reunida en un solo lugar, gratis para todo el que la necesite.',
   aboutsupporth: 'Apoya este servicio — patrocinadores fundadores',
-  aboutp3: 'Más adelante, un pequeño número de negocios locales podrá apoyar el servicio como patrocinadores fundadores — un lugar con su nombre en esta página, a precios de pueblo pequeño, cuando haya una audiencia real que mostrarles. <strong>Hoy no hay nada en venta.</strong> Si tu negocio u organización quiere ser el primero en enterarse cuando abra el patrocinio fundador, cuéntanos — la lista de interesados que armemos ahora es quien se entera primero.',
-  aboutbtn: '✉️ Escribe a Nomad sobre el patrocinio fundador',
-  aboutnote: 'Ese botón abre un correo a travis@columbiacountylive.com. Incluye el nombre de tu negocio u organización, un nombre de contacto, tu pueblo y lo que te interesa — patrocinador fundador, anunciar un negocio u otra cosa — y te responderemos. Solo interés: sin pago, sin compromiso, nada que comprar todavía.',
+  aboutp3: 'El patrocinio fundador ya está abierto. Solo existirán tres lugares de fundador, y los negocios locales que los ocupen son quienes financian esta página — su apoyo es lo que mantiene gratis para todos el centro de seguridad de arriba. A cambio, cada patrocinador fundador recibe un lugar con su nombre en esta página, una insignia permanente de &ldquo;Patrocinador fundador &middot; 2026&rdquo; y un lugar en el muro de Socios comunitarios de abajo. <strong>Oregon Trail Lanes</strong>, de St. Helens, es nuestro primer patrocinador fundador — gracias. Quedan dos lugares de fundador, y el patrocinio fundador cierra el 31 de enero de 2027; después de esa fecha, no habrá nuevos patrocinadores fundadores, nunca.',
+  aboutbtn: '✉️ Pregunta por el patrocinio',
+  aboutnote: 'Ese botón abre un formulario corto de interés: el nombre de tu negocio u organización, un nombre de contacto, tu pueblo y lo que te interesa — un lugar de patrocinador fundador, anunciar un negocio u otra cosa. Te responderemos. Preguntar no cuesta nada y no compromete a nada: los patrocinadores fundadores empiezan con un periodo de prueba gratuito de 30 días, para que veas tu negocio en la página antes de gastar nada.',
   freshh2: '🕐 ¿Qué tan fresca es esta página?',
   freshspan: 'las edades se actualizan cada 30 s',
   freshnote: 'Cada número aquí nombra su fuente y su edad. Verde es fresco, ámbar está envejeciendo, rojo significa tratar el panel como viejo y revisar la fuente oficial. Si una fuente se queda callada, este tablero lo muestra en vez de esconderlo.',
@@ -5940,6 +5940,8 @@ const LANG_ES = {
   displaybtn: 'Pantalla',
   displaylabel: 'Abrir el modo pantalla — el salvapantallas comunitario',
   footerbyline: '<strong>Columbia County Live</strong> — por <strong>Nomad Development Group</strong>',
+  footercredits: 'Fuentes de datos y créditos de fotos',
+  footercreditsmeta: 'Los datos públicos detrás de esta página y los fotógrafos detrás de sus fotos',
   footerdata: 'Datos: Servicio Meteorológico Nacional · Servicio Geológico de EE. UU. (USGS) · NOAA Tides &amp; Currents (mareas del río) · NOAA nowCOAST (radar) · NIFC WFIGS (incendios forestales) · colaboradores de adsb.fi (aviones, ODbL) · wheretheiss.at (posición de la EEI) · CelesTrak / NORAD (órbita de la EEI, para predicciones de paso) · Open-Meteo / Copernicus CAMS (modelo de calidad del aire) · Fish Passage Center y Columbia Basin Research DART (conteos de peces en las presas — datos del Cuerpo de Ingenieros del Ejército de EE. UU.) · colaboradores de OpenStreetMap. Los datos de captura (carreteras, cámaras, puente, alertas del ferry, eventos, tráfico del río) los recoge un pequeño programa recolector de los operadores oficiales — ODOT TripCheck, WSDOT, el condado de Wahkiakum y los calendarios de las ciudades y el condado — y se etiquetan con la hora en que se recogieron. El modelo de capas de rastreo en vivo está inspirado en God&rsquo;s Eye View (código abierto, de Bilawal Sidhu), cuyo DATA_SOURCES.md nos señaló varias de estas fuentes públicas.',
   footerdisc: 'Esta página reúne datos públicos por conveniencia. Antes de viajar con clima severo o agua alta, confirma las condiciones con las fuentes oficiales enlazadas arriba.',
   pinsh2: '📌 Tus fijadas',
@@ -7375,7 +7377,7 @@ function initSponsorLink() {
   a.href = SPONSOR_FORM_URL;
   a.target = '_blank';
   a.rel = 'noopener';
-  a.textContent = '📋 Founding sponsor interest form';
+  a.textContent = langCur === 'es' ? '📋 Pregunta por el patrocinio' : '📋 Ask about sponsoring';
 }
 initSponsorLink();
 
@@ -7537,6 +7539,29 @@ langSet = function (lang) {
     const lbl = card.querySelector('.alert-toggle-label');
     if (lbl) lbl.textContent = alertToggleLabel(card.classList.contains('open'));
   });
+};
+
+/* v79: the footer's data sources & photo credits ride the same See
+   more / See less pull-down as the incident cards (Travis: the footer
+   credit wall looked bad) — the card is static HTML, so wire it once
+   here and refresh its toggle label on a language flip (same wrap
+   pattern). The safety disclaimer stays OUTSIDE the pull-down,
+   visible at all times. */
+(function initCreditsCard() {
+  const card = document.getElementById('credits-card');
+  if (!card) return;
+  wireAlertCards(card);
+  const lbl = card.querySelector('.alert-toggle-label');
+  if (lbl) lbl.textContent = alertToggleLabel(false);
+})();
+const langSetCreditsPrev = langSet;
+langSet = function (lang) {
+  langSetCreditsPrev(lang);
+  const card = document.getElementById('credits-card');
+  if (card) {
+    const lbl = card.querySelector('.alert-toggle-label');
+    if (lbl) lbl.textContent = alertToggleLabel(card.classList.contains('open'));
+  }
 };
 
 /* ---------- Redesign prototype 2026-11-05: theme toggle wiring ----------

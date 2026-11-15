@@ -31,12 +31,12 @@
 if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
-<link rel="manifest" href="manifest.webmanifest?v=78">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=78">
+<link rel="manifest" href="manifest.webmanifest?v=79">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=79">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=78">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=78">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=78">
+<link rel="stylesheet" href="style.css?v=79">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=79">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=79">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
      only page backgrounds first paint needs — warm them with the hero.
      Every other view's photo is lazy-attached by app.js. -->
@@ -1236,13 +1236,13 @@ document.documentElement.setAttribute("data-theme",t);})();
     <h2 data-i18n="abouth2">🌲 About Columbia County Live</h2>
   </div>
   <p class="card-note" data-i18n="aboutp1">Columbia County Live is one live look at Columbia County, Oregon — US-30 and the Lewis &amp; Clark Bridge, the Columbia and Nehalem rivers, weather alerts, the Oscar B ferry, and what&rsquo;s on around the county — assembled from official public sources and refreshed all day. It is built and run by <strong>Nomad Development Group</strong>, a small local studio, on free public data and free hosting, which is how a page like this can exist for a county of 54,000 at all.</p>
-  <p class="card-note" data-i18n="aboutp2"><strong>Why it&rsquo;s free — and what stays free.</strong> The core of this page is public-safety data: weather alerts, river levels, bridge and ferry status, road conditions. That core is free, carries no sponsor, and stays that way — it will never sit behind a paywall. That promise is the reason the page exists.</p>
+  <p class="card-note" data-i18n="aboutp2"><strong>Why it&rsquo;s free — and what stays free.</strong> The core of this page is public-safety data: weather alerts, river levels, bridge and ferry status, road conditions. That core is free, carries no sponsor, and stays that way — it will never sit behind a paywall. That promise is the reason the page exists. The Community Help section keeps that same promise: the county&rsquo;s free help — food pantries, crisis lines, help with rent and utility bills, support for families and veterans — gathered in one place, free to everyone who needs it.</p>
   <h3 class="subhead" data-i18n="aboutsupporth">Support this service — founding sponsors</h3>
-  <p class="card-note" data-i18n="aboutp3">Down the road, a small number of local businesses will be able to support the service as founding sponsors — a named spot on this page at small-town prices, once there is a real audience to show them. <strong>Nothing is for sale today.</strong> If your business or organization would want first word when founding sponsorship opens, tell us — the interest list we build now is who hears first.</p>
+  <p class="card-note" data-i18n="aboutp3">Founding sponsorship is open now. Only three founding spots will ever exist, and the local businesses that hold them are what fund this page — their support is what keeps the safety core above free for everyone. In return, each founding sponsor gets a named spot on this page, a permanent &ldquo;Founding Sponsor &middot; 2026&rdquo; badge, and a place on the Community Partners wall below. <strong>Oregon Trail Lanes</strong> of St. Helens is our first founding sponsor — thank you. Two founding spots remain, and founding closes January 31, 2027; after that, no new founding sponsors, ever.</p>
   <div class="about-actions">
-    <a class="share-btn primary" id="sponsor-interest-link" data-i18n="aboutbtn" href="mailto:travis@columbiacountylive.com?subject=Columbia%20County%20Live%20—%20founding%20sponsor%20interest">✉️ Email Nomad about founding sponsorship</a>
+    <a class="share-btn primary" id="sponsor-interest-link" data-i18n="aboutbtn" href="mailto:travis@columbiacountylive.com?subject=Columbia%20County%20Live%20—%20ask%20about%20sponsoring">✉️ Ask about sponsoring</a>
   </div>
-  <p class="card-note small" data-i18n="aboutnote">That button opens an email to travis@columbiacountylive.com. Include your business or organization name, a contact name, your town, and what you&rsquo;re interested in — founding sponsor, listing a business, or something else — and we&rsquo;ll write back. Interest only: no payment, no commitment, nothing to buy yet.</p>
+  <p class="card-note small" data-i18n="aboutnote">That button opens a short interest form — your business or organization name, a contact name, your town, and what you&rsquo;re interested in: a founding sponsor spot, listing a business, or something else. We&rsquo;ll write back. Asking costs nothing and commits you to nothing — founding sponsors start with a free 30-day pilot, so you can see your business on the page before you spend anything.</p>
 </section>
 
 <footer class="site-footer">
@@ -1253,9 +1253,23 @@ document.documentElement.setAttribute("data-theme",t);})();
   </section>
   <p data-i18n="footerbyline"><strong>Columbia County Live</strong> — by <strong>Nomad Development Group</strong></p>
   <p class="cascade-footer"><a class="cascade-footer-link" href="https://travweber67.github.io/cascade-controls-jobs/"><span data-i18n="cascFooter">Also from Nomad: Cascade Controls Jobs — hiring controls techs, or looking for that work? &rarr;</span></a></p>
+  <div class="alert-card credits-card" id="credits-card">
+    <button class="alert-head" type="button" aria-expanded="false">
+      <span class="alert-main">
+        <span class="alert-title" data-i18n="footercredits">Data sources &amp; photo credits</span>
+        <span class="alert-meta" data-i18n="footercreditsmeta">The public feeds behind this page, and the photographers behind its pictures</span>
+      </span>
+      <span class="alert-toggle">
+        <svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg>
+        <span class="alert-toggle-label">See more</span>
+      </span>
+    </button>
+    <div class="alert-more"><div class="alert-more-in"><div class="alert-body">
   <p class="small" data-i18n="footerdata">Data: National Weather Service · U.S. Geological Survey · NOAA Tides &amp; Currents (river tides) · NOAA nowCOAST (radar) · NIFC WFIGS (wildfires) · adsb.fi contributors (aircraft, ODbL) · wheretheiss.at (ISS position) · CelesTrak / NORAD (ISS orbit, for pass predictions) · Open-Meteo / Copernicus CAMS (air-quality model) · Fish Passage Center &amp; Columbia Basin Research DART (dam fish counts — U.S. Army Corps of Engineers data) · OpenStreetMap contributors. Snapshot data (roads, cameras, bridge, ferry alerts, events, river traffic) is collected from the official operators — ODOT TripCheck, WSDOT, Wahkiakum County, and the city/county calendars — by a small fetcher program and labeled with the time it was collected. Live-tracking layer model inspired by God's Eye View (open source, by Bilawal Sidhu), whose DATA_SOURCES.md pointed us to several of these public feeds.</p>
-  <p class="small" data-i18n="footerdisc">This page assembles public data for convenience. Before traveling in severe weather or high water, confirm conditions with the official sources linked above.</p>
   <p class="small">Photo credits (via Wikimedia Commons): “<a href="https://commons.wikimedia.org/wiki/File:Lewis_and_Clark_Bridge,_Rainier,_Mt._St._Helens_-_DPLA_-_9f9bd04615f045db5e1e0877c00ebaee.jpg" target="_blank" rel="noopener">Lewis and Clark Bridge, Rainier, Mt. St. Helens</a>” by Gary Halvorson, Oregon State Archives, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Lewis%26ClarkBridgeSP.jpg" target="_blank" rel="noopener">Lewis &amp; Clark Bridge panorama</a>” by Cacophony, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Car_carrier_vessel_passing_underneath_the_Lewis_and_Clark_Bridge.jpg" target="_blank" rel="noopener">Car carrier vessel passing underneath the Lewis and Clark Bridge</a>” by Quintin Soloviev, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:MV_Oscar_B_on_the_Wahkiakum_County_Ferry,_leaving_Puget_Island.jpg" target="_blank" rel="noopener">MV Oscar B on the Wahkiakum County Ferry, leaving Puget Island</a>” by SounderBruce, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Columbia_County_Courthouse,_St._Helens_-_DPLA_-_19e1a4c866aefeec828b9f4739ac770c.jpg" target="_blank" rel="noopener">Columbia County Courthouse, St. Helens</a>” by Gary Halvorson, Oregon State Archives, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Rainier,_Oregon_dock.jpg" target="_blank" rel="noopener">Rainier, Oregon dock</a>” by Kingofthedead, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Photos were resized and compressed for the web; no other changes. Dusk photographs (dark mode and design surfaces, via Wikimedia Commons): “<a href="https://commons.wikimedia.org/wiki/File:Astoria-Megler_Bridge_8_25_2024_837PM.jpg" target="_blank" rel="noopener">Astoria–Megler Bridge at twilight</a>” and “<a href="https://commons.wikimedia.org/wiki/File:Astoria-Megler_Bridge_8_25_2024_855PM.jpg" target="_blank" rel="noopener">at blue hour</a>” by WhyIsThisSoHard575483838, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Astoria-Megler_Bridge_at_sunset_Fletchall_(38349033364).jpg" target="_blank" rel="noopener">Astoria–Megler Bridge at sunset</a>” and “<a href="https://commons.wikimedia.org/wiki/File:Astoria-Megler_Bridge_from_Cannery_Pier_Bill_Cohen_(28914193965).jpg" target="_blank" rel="noopener">from Cannery Pier</a>” by Oregon Dept. of Transportation, <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Sunset_on_the_Columbia_River_(9347706996).jpg" target="_blank" rel="noopener">Sunset on the Columbia River</a>” by Rennett Stowe, CC BY 2.0 · “<a href="https://commons.wikimedia.org/wiki/File:Panoramic_view_to_mouth_of_Columbia_from_Astoria_Column_at_sunset_01.jpg" target="_blank" rel="noopener">Mouth of the Columbia at sunset</a>” and “<a href="https://commons.wikimedia.org/wiki/File:View_from_Astoria_Column_toward_Lewis_and_Clark_River_at_sunset_01.jpg" target="_blank" rel="noopener">Lewis and Clark River at sunset</a>” by Joe Mabel, <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener">CC BY 3.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:SUNSET_AT_THE_MOUTH_OF_THE_COLUMBIA_RIVER,_BETWEEN_ASTORIA_OREGON_AND_THE_STATE_OF_WASHINGTON_-_NARA_-_545019.jpg" target="_blank" rel="noopener">Sunset at the mouth of the Columbia River (1973)</a>” by Gene Daniels / NARA, public domain · “<a href="https://commons.wikimedia.org/wiki/File:Mallard_sunset_on_the_Columbia_River_(53213553235).jpg" target="_blank" rel="noopener">Mallard sunset on the Columbia River</a>” by USFWS Pacific, public domain · “<a href="https://commons.wikimedia.org/wiki/File:Sunset_over_bridge,_Astoria,_Oregon.jpg" target="_blank" rel="noopener">Sunset over the bridge, Astoria</a>” by La jefa, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Mount_St._Helens_from_Johnston_Ridge_at_sunset.jpg" target="_blank" rel="noopener">Mount St. Helens at sunset</a>” and “<a href="https://commons.wikimedia.org/wiki/File:Sunset_glow_3992.jpg" target="_blank" rel="noopener">Sunset glow on the Columbia</a>” by Marshalllee84 / Chris Light, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Mt_Hood_National_Forest,_Trillium_Lake-2_(36379628033).jpg" target="_blank" rel="noopener">Mt. Hood from Trillium Lake</a>” by U.S. Forest Service — Pacific Northwest Region, public domain. Dusk views are of the lower Columbia River generally; they are not captioned as specific Columbia County viewpoints.</p>
+    </div></div></div>
+  </div>
+  <p class="small" data-i18n="footerdisc">This page assembles public data for convenience. Before traveling in severe weather or high water, confirm conditions with the official sources linked above.</p>
 </footer>
 
 </section>
@@ -1878,7 +1892,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=78"></script>
+<script src="app.js?v=79"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>
