@@ -1,49 +1,79 @@
 {
- "fetched_at": "2026-11-15T07:52:32Z",
+ "fetched_at": "2026-11-15T07:57:32Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15343,
+   "lon": -123.37709,
+   "type_code": 99,
+   "updated": "2026-11-15 07:57:43.94772479 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15707,
+   "lon": -123.40234,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 133,
+   "nav_status": 0,
+   "updated": "2026-11-15 07:57:54.355797691 +0000 UTC"
+  },
   {
    "mmsi": 366998830,
    "name": "ROYAL MELBOURNE",
-   "lat": 46.11888,
-   "lon": -122.98063,
-   "type_code": 31,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-15 07:52:35.725409234 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.02895,
-   "lon": -122.87665,
-   "sog_kn": 0.1,
-   "cog": 59.6,
-   "heading": 147,
+   "lat": 46.11883,
+   "lon": -122.98069,
+   "sog_kn": 0,
+   "cog": 240.6,
+   "heading": 132,
    "nav_status": 0,
-   "updated": "2026-11-15 07:52:38.797959063 +0000 UTC"
+   "updated": "2026-11-15 07:58:03.457576692 +0000 UTC"
   },
   {
-   "mmsi": 367047150,
-   "name": "CAPTAIN BOB",
-   "lat": 45.64953,
-   "lon": -122.74886,
-   "sog_kn": 6.4,
-   "cog": 128.8,
-   "heading": 117,
-   "nav_status": 12,
-   "updated": "2026-11-15 07:52:39.564424971 +0000 UTC"
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09674,
+   "lon": -122.92851,
+   "sog_kn": 0,
+   "cog": 83.1,
+   "heading": 72,
+   "nav_status": 3,
+   "updated": "2026-11-15 07:58:03.458184739 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08166,
-   "lon": -122.90495,
-   "sog_kn": 0.1,
-   "cog": 322.9,
-   "heading": 115,
-   "nav_status": 0,
-   "updated": "2026-11-15 07:53:03.455544661 +0000 UTC"
+   "mmsi": 367513140,
+   "name": "CLEARWATER",
+   "lat": 45.63717,
+   "lon": -122.72531,
+   "type_code": 52,
+   "destination": "US^01JQ>0T67",
+   "updated": "2026-11-15 07:58:04.632880891 +0000 UTC"
+  },
+  {
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 45.6303,
+   "lon": -122.69564,
+   "sog_kn": 0,
+   "cog": 304.5,
+   "heading": 127,
+   "nav_status": 5,
+   "updated": "2026-11-15 07:58:05.474959758 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.04401,
+   "lon": -122.87691,
+   "sog_kn": 0,
+   "cog": 125.2,
+   "heading": 180,
+   "nav_status": 5,
+   "updated": "2026-11-15 07:58:05.706556275 +0000 UTC"
   }
  ]
 }
