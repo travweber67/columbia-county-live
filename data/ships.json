@@ -1,67 +1,62 @@
 {
- "fetched_at": "2026-11-15T23:53:52Z",
+ "fetched_at": "2026-11-15T23:58:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10789,
-   "lon": -122.95904,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-15 23:54:01.079965735 +0000 UTC"
-  },
-  {
-   "mmsi": 563331600,
-   "name": "BELLE LUNE",
-   "lat": 46.17053,
-   "lon": -123.10008,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-15 23:54:09.378941261 +0000 UTC"
-  },
-  {
-   "mmsi": 355980000,
-   "name": "LUGANO STAR",
-   "lat": 45.64301,
-   "lon": -122.77143,
-   "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-15 23:54:11.848356209 +0000 UTC"
-  },
-  {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.64356,
-   "lon": -122.75293,
-   "type_code": 52,
-   "destination": "US^0UUT>0UW8",
-   "updated": "2026-11-15 23:54:14.168807831 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65015,
-   "lon": -122.74769,
-   "sog_kn": 0,
-   "cog": 282.9,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-15 23:54:19.524830332 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.17065,
-   "lon": -123.09044,
-   "sog_kn": 0.7,
-   "cog": 118.5,
+   "cog": 207.7,
    "heading": 134,
-   "nav_status": 3,
-   "updated": "2026-11-15 23:54:26.522014653 +0000 UTC"
+   "nav_status": 15,
+   "updated": "2026-11-15 23:58:59.253690544 +0000 UTC"
+  },
+  {
+   "mmsi": 338158000,
+   "name": "WEST VIRGINIA",
+   "lat": 45.8243,
+   "lon": -122.79614,
+   "sog_kn": 12.3,
+   "cog": 194.4,
+   "heading": 189,
+   "nav_status": 0,
+   "updated": "2026-11-15 23:59:21.357989359 +0000 UTC",
+   "type_code": 80,
+   "destination": "COLUMBIA_RIVER"
+  },
+  {
+   "mmsi": 352006531,
+   "name": "BARISM BETTY",
+   "lat": 45.60109,
+   "lon": -122.77444,
+   "sog_kn": 0,
+   "cog": 90.1,
+   "heading": 277,
+   "nav_status": 0,
+   "updated": "2026-11-15 23:59:05.733467833 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64541,
+   "lon": -122.73504,
+   "sog_kn": 0,
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-15 23:59:14.951912616 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.65839,
+   "lon": -122.75735,
+   "type_code": 52,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-15 23:59:20.142580862 +0000 UTC"
   }
  ]
 }
