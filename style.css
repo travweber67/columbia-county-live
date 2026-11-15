@@ -323,6 +323,16 @@ h2{font-weight:700;letter-spacing:-.01em}
 .ferry-next-box .fn-count{font-size:1.3rem;font-weight:800;font-variant-numeric:tabular-nums;line-height:1.2}
 .ferry-next-box .fn-time{color:var(--muted);font-size:.82rem}
 .ferry-next-box.last-boat{border-color:var(--warn)}
+
+/* Ferry at-a-glance mini card (2026-11-14): one status line, a dock-to-
+   dock track with the boat's timetable position on it, then the same
+   next-boat boxes the big ferry card uses. */
+.ferry-mini{margin:2px 0 10px}
+.fm-status{font-size:1.02rem;font-weight:800;letter-spacing:-.01em;margin-bottom:10px}
+.fm-track{display:flex;align-items:center;gap:9px;margin:0 0 12px}
+.fm-dock{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);white-space:nowrap}
+.fm-line{position:relative;flex:1 1 auto;height:4px;border-radius:2px;background:var(--border)}
+.fm-boat{position:absolute;top:50%;transform:translate(-50%,-54%);font-size:1.1rem;line-height:1}
 .fn-last{display:inline-block;color:#23160a;background:var(--warm-fill);font-size:.68rem;font-weight:800;border-radius:999px;padding:1px 8px;margin-left:6px;vertical-align:2px;text-transform:uppercase;letter-spacing:.05em}
 @media (max-width:560px){.ferry-next-grid{grid-template-columns:1fr}}
 

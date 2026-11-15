@@ -2624,6 +2624,7 @@ async function loadFerry() {
     setSnapUpdated('ferry-updated', snap.fetched_at);
     ferryAlertActive = (snap.status === 'ok' && !!snap.alert);
     tickFerryNext();
+    tickFerryMini();
     const el = $('ferry-alert-body');
     if (snap.status === 'ok' && snap.alert) {
       el.innerHTML = '<div class="alert-item severe"><h3>⚠️ Ferry closure alert posted</h3><p>' + esc(snap.alert) + '</p></div>';
@@ -2691,6 +2692,86 @@ function tickFerryNext() {
         + '<div class="fn-time">Departs ' + fmtClock(n.hour, n.minute) + (n.tomorrow ? ' tomorrow' : '') + ' · cash/check fares</div>'
         + '</div>').join('') + '</div>';
 }
+
+/* ---------- ferry at a glance: the little chart card (2026-11-14) ----------
+   Travis asked for a small, clean, separate card that reads at a
+   glance — pin it and the boat is right at the top: where it is now,
+   the next sailing from each side, the last boat of the day. The big
+   ferry card above is untouched; this card derives everything from
+   the same fixed timetable (FERRY_SIDES) and the county alert state.
+   The crossing takes about 12 minutes (the operator's stated
+   average), so from a departure until departure+12 the boat reads as
+   on the river; the rest of the time it is at the dock it last
+   reached. There is NO live tracker — the note under the card says
+   the position comes from the printed timetable. */
+const FERRY_CROSS_MIN = 12;
+const FM_TXT = {
+  en: { onRiver: 'On the river', left: 'left', arrives: 'gets in about', atDock: 'At the dock',
+        nextFromHere: 'next boat from here', tomorrow: 'tomorrow',
+        disrupted: 'Sailings may be disrupted — see the closure alert on the big ferry card above before heading to the landing.',
+        fromSide: 'From', departs: 'Departs', lastBoat: 'Last boat today' },
+  es: { onRiver: 'En el río', left: 'salió a las', arrives: 'llega hacia las', atDock: 'En el muelle',
+        nextFromHere: 'el próximo barco desde aquí sale a las', tomorrow: 'mañana',
+        disrupted: 'Los viajes pueden estar interrumpidos — mira el aviso de cierre en la tarjeta grande del ferry antes de ir al embarcadero.',
+        fromSide: 'Desde', departs: 'Sale', lastBoat: 'Último barco de hoy' }
+};
+function ferrySideShort(side) { return side.key === 'or' ? 'Westport' : 'Puget Island'; }
+function ferryPhase(now) {
+  const nowMin = now.h * 60 + now.m;
+  const sail = [];
+  FERRY_SIDES.forEach(s => {
+    for (let h = s.firstHour; h <= s.lastHour; h++) sail.push({ side: s, dep: h * 60 + s.minute });
+  });
+  sail.sort((a, b) => a.dep - b.dep);
+  let last = null;
+  for (const s of sail) { if (s.dep <= nowMin) last = s; else break; }
+  if (!last) return { state: 'dock', atKey: 'wa' }; // before the first boat: tied up on the Puget Island side, where its day starts
+  const dest = FERRY_SIDES.find(s => s.key !== last.side.key);
+  const arr = last.dep + FERRY_CROSS_MIN;
+  if (nowMin < arr) return { state: 'river', from: last.side, to: dest, dep: last.dep, arr: arr, frac: (nowMin - last.dep) / FERRY_CROSS_MIN };
+  return { state: 'dock', atKey: dest.key };
+}
+function tickFerryMini() {
+  const el = $('ferry-mini-body');
+  if (!el) return;
+  let fmLang = 'en';
+  try { fmLang = langCur; } catch (e) { /* langCur is a let declared further down the file; on the boot path it is still in its TDZ, and this card renders again the moment the ferry feed lands */ }
+  const T = FM_TXT[fmLang === 'es' ? 'es' : 'en'];
+  if (ferryAlertActive) {
+    el.innerHTML = '<div class="fm-status">⚠️ ' + esc(T.disrupted) + '</div>';
+    return;
+  }
+  const now = ptNowParts();
+  const ph = ferryPhase(now);
+  let status, pos;
+  if (ph.state === 'river') {
+    status = '⛴ ' + T.onRiver + ' — ' + ferrySideShort(ph.from) + ' → ' + ferrySideShort(ph.to)
+      + ' · ' + T.left + ' ' + fmtClock(Math.floor(ph.dep / 60), ph.dep % 60)
+      + ', ' + T.arrives + ' ' + fmtClock(Math.floor(ph.arr / 60), ph.arr % 60);
+    pos = ph.from.key === 'or' ? ph.frac : 1 - ph.frac; // the track runs Westport (left) to Puget Island (right)
+  } else {
+    const atSide = FERRY_SIDES.find(s => s.key === ph.atKey);
+    const nx = nextSailing(atSide, now);
+    status = '⚓ ' + T.atDock + ' — ' + ferrySideShort(atSide)
+      + ' · ' + T.nextFromHere + ' ' + fmtClock(nx.hour, nx.minute) + (nx.tomorrow ? ' ' + T.tomorrow : '');
+    pos = ph.atKey === 'or' ? 0 : 1;
+  }
+  const nexts = FERRY_SIDES.map(s => ({ side: s, n: nextSailing(s, now) }));
+  el.innerHTML = '<div class="fm-status">' + esc(status) + '</div>'
+    + '<div class="fm-track" aria-hidden="true"><span class="fm-dock">Westport, OR</span>'
+    + '<span class="fm-line"><span class="fm-boat" style="left:' + Math.round(pos * 100) + '%">⛴️</span></span>'
+    + '<span class="fm-dock">Puget Island, WA</span></div>'
+    + '<div class="ferry-next-grid">' + nexts.map(({ side, n }) =>
+        '<div class="ferry-next-box' + (n.isLast ? ' last-boat' : '') + '">'
+        + '<div class="fn-side">' + esc(T.fromSide) + ' ' + esc(side.label) + (n.isLast ? '<span class="fn-last">' + esc(T.lastBoat) + '</span>' : '') + '</div>'
+        + '<div class="fn-count">' + esc(fmtAway(n.minsAway)) + '</div>'
+        + '<div class="fn-time">' + esc(T.departs) + ' ' + fmtClock(n.hour, n.minute) + (n.tomorrow ? ' ' + esc(T.tomorrow) : '') + '</div>'
+        + '</div>').join('') + '</div>';
+}
+tickFerryMini();
+setInterval(() => { try { tickFerryMini(); } catch (e) { /* keep the big card's tick independent */ } try { tickFerryNext(); } catch (e) { /* ditto */ } }, 30 * 1000);
+var langSetFerryMiniPrev = langSet;
+langSet = function (lang) { langSetFerryMiniPrev(lang); tickFerryMini(); };
 
 /* ---------- snapshot: events ---------- */
 function parseTimeToMinutes(t) {
@@ -5367,6 +5448,7 @@ const FINDER_SECTIONS = [
   { id: 'drive-card',    title: 'Your Commute — drive times', sub: 'How long the drive takes, from your town to St. Johns, Portland or Longview', keys: 'commute drive time minutes how long portland st johns longview traffic trip' },
   { id: 'ships-card',    title: 'Columbia River Traffic',    sub: 'Ships under way on the river right now', keys: 'ship ships vessel ais river traffic boat freighter' },
   { id: 'ferry-card',    title: 'Oscar B Ferry',             sub: 'Next-boat countdown and the leave-by planner', keys: 'ferry boat oscar westport cathlamet puget island sailing crossing leave' },
+  { id: 'ferry-mini-card', title: 'Oscar B Ferry — At a Glance', sub: 'Where the boat is, the next sailings and the last boat', keys: 'ferry boat oscar westport cathlamet puget island next last schedule glance where' },
   { id: 'events-card',   title: 'Events — Next Two Weeks',   sub: 'City and county calendars, with add-to-calendar', keys: 'events calendar meeting meetings library storytime tonight weekend happening' },
   { id: 'alerts-card',   title: 'Weather Alerts',            sub: 'National Weather Service warnings and watches', keys: 'alert alerts warning warnings watch storm flood weather severe' },
   { id: 'forecast-card', title: 'Forecast',                  sub: 'Town forecasts from the National Weather Service', keys: 'forecast weather rain snow temperature wind weekend' },
@@ -5824,6 +5906,8 @@ const LANG_ES = {
   shipsh2: '🚢 Tráfico del río Columbia',
   shipsnote: 'Barcos ordenados por cuándo pasarán por tu pueblo de residencia — St. Helens hasta que elijas uno en «Hazlo tuyo» en la pestaña Hoy. Los tiempos estimados usan la velocidad actual reportada por cada barco, así que un barco que reduce la velocidad llega más tarde. Posiciones en vivo de AISStream, actualizadas más o menos cada cinco minutos.',
   ferryh2: '⛴️ El ferry Oscar B — Westport, OR ↔ Cathlamet, WA',
+  ferryminih2: '⛴️ El ferry Oscar B — de un vistazo',
+  ferryminnote: 'Dónde está el barco sale de su horario impreso: el cruce toma unos 12 minutos y el ferry no tiene rastreador en vivo.',
   ferryplanh3: '🧭 No pierdas el barco — ¿a qué hora tienes que salir?',
   fpdiror: 'Hacia Washington',
   fpdirwa: 'De regreso a Oregón',
@@ -6594,7 +6678,7 @@ window.CCLPins = {
    it is the page's anchor, and a Leaflet container does not need the
    adventure. */
 const PIN_CARDS = ['since-card', 'home-card', 'commute-card', 'go-card', 'plan-card', 'schools-card', 'briefing-card',
-  'roads-card', 'incidents-card', 'drive-card', 'routeahead-card', 'ferry-card', 'ships-card', 'aircraft-card', 'bend-card',
+  'roads-card', 'incidents-card', 'drive-card', 'routeahead-card', 'ferry-card', 'ferry-mini-card', 'ships-card', 'aircraft-card', 'bend-card',
   'alerts-card', 'forecast-card', 'sky-card', 'dark-card', 'rivers-card', 'tides-card',
   'fish-card', 'tracker-card', 'steelhead-card', 'almanac-card',
   'quakes-card', 'fires-card', 'air-card',
