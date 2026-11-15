@@ -1,80 +1,93 @@
 {
- "fetched_at": "2026-11-15T23:23:50Z",
+ "fetched_at": "2026-11-15T23:28:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 45.6434,
-   "lon": -122.75276,
-   "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-15 23:23:55.950940553 +0000 UTC"
+   "mmsi": 373989000,
+   "name": "AFRICAN CARDINAL",
+   "lat": 45.63925,
+   "lon": -122.77782,
+   "sog_kn": 0,
+   "cog": 197.6,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-15 23:28:54.19040014 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09722,
+   "lon": -122.92771,
+   "sog_kn": 0,
+   "cog": 106.7,
+   "heading": 74,
+   "nav_status": 3,
+   "updated": "2026-11-15 23:28:54.644732295 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.79503,
+   "lon": -122.78322,
+   "type_code": 0,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-15 23:28:56.83646749 +0000 UTC"
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64731,
+   "lon": -122.74123,
+   "sog_kn": 0,
+   "cog": 127.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-15 23:29:01.106106075 +0000 UTC"
   },
   {
    "mmsi": 367531220,
    "name": "WATCHMAN",
    "lat": 46.20002,
-   "lon": -123.38542,
+   "lon": -123.38541,
    "sog_kn": 0,
-   "cog": 1.8,
+   "cog": 4.9,
    "heading": 511,
    "nav_status": 8,
-   "updated": "2026-11-15 23:24:04.655366917 +0000 UTC"
+   "updated": "2026-11-15 23:29:04.899923699 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.61362,
+   "lon": -122.78818,
+   "sog_kn": 5.2,
+   "cog": 169.3,
+   "heading": 158,
+   "nav_status": 0,
+   "updated": "2026-11-15 23:29:09.9777186 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20001,
+   "lon": -123.38556,
+   "sog_kn": 0,
+   "cog": 332.1,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-15 23:29:11.256597794 +0000 UTC"
   },
   {
    "mmsi": 367669550,
    "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35742,
+   "lat": 46.17718,
+   "lon": -123.35743,
    "sog_kn": 0,
-   "cog": 4,
-   "heading": 135,
+   "cog": 321.2,
+   "heading": 136,
    "nav_status": 15,
-   "updated": "2026-11-15 23:24:06.364850246 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.61667,
-   "lon": -122.78825,
-   "sog_kn": 0.4,
-   "cog": 4.3,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-15 23:24:10.227224062 +0000 UTC"
-  },
-  {
-   "mmsi": 636015567,
-   "name": "KYRA ZAFIRA",
-   "lat": 46.0884,
-   "lon": -122.91489,
-   "sog_kn": 10.9,
-   "cog": 115.1,
-   "heading": 114,
-   "nav_status": 0,
-   "updated": "2026-11-15 23:24:10.767303875 +0000 UTC"
-  },
-  {
-   "mmsi": 338158000,
-   "name": "WEST VIRGINIA",
-   "lat": 45.93755,
-   "lon": -122.80556,
-   "sog_kn": 12.3,
-   "cog": 177.3,
-   "heading": 176,
-   "nav_status": 0,
-   "updated": "2026-11-15 23:24:11.144673578 +0000 UTC"
-  },
-  {
-   "mmsi": 636026324,
-   "name": "STAR BELLA",
-   "lat": 46.02718,
-   "lon": -122.86957,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-15 23:24:20.443094888 +0000 UTC"
+   "updated": "2026-11-15 23:29:17.207951285 +0000 UTC"
   }
  ]
 }
