@@ -1,60 +1,73 @@
 {
- "fetched_at": "2026-11-15T21:13:39Z",
+ "fetched_at": "2026-11-15T21:18:40Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.17674,
-   "lon": -123.42141,
-   "sog_kn": 0.7,
-   "cog": 66,
-   "heading": 142,
+   "mmsi": 368450870,
+   "name": "AMERICAN ENCORE",
+   "lat": 46.16052,
+   "lon": -123.07259,
+   "sog_kn": 13.7,
+   "cog": 290.2,
+   "heading": 290,
    "nav_status": 0,
-   "updated": "2026-11-15 21:13:49.991391135 +0000 UTC"
+   "updated": "2026-11-15 21:18:47.637853727 +0000 UTC"
   },
   {
-   "mmsi": 369990212,
-   "name": "CG29212",
-   "lat": 46.00836,
-   "lon": -122.85309,
-   "sog_kn": 31.1,
-   "cog": 161.5,
+   "mmsi": 636015567,
+   "name": "KYRA ZAFIRA",
+   "lat": 46.17356,
+   "lon": -123.42128,
+   "sog_kn": 10.9,
+   "cog": 133.8,
+   "heading": 130,
+   "nav_status": 0,
+   "updated": "2026-11-15 21:18:48.575639259 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64351,
+   "lon": -122.75293,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-15 21:18:59.16640585 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 235.3,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-15 21:13:58.615807956 +0000 UTC"
+   "nav_status": 5
   },
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10789,
-   "lon": -122.95904,
-   "type_code": 50,
-   "destination": "CR HARBOR OPS",
-   "updated": "2026-11-15 21:14:06.377039516 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.08213,
-   "lon": -122.90543,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 312,
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.1504,
+   "lon": -123.26736,
+   "sog_kn": 1,
+   "cog": 244.3,
+   "heading": 247,
    "nav_status": 3,
-   "updated": "2026-11-15 21:14:08.945649599 +0000 UTC"
+   "updated": "2026-11-15 21:18:53.442266114 +0000 UTC"
   },
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.91008,
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 45.6303,
+   "lon": -122.69564,
    "sog_kn": 0,
-   "cog": 82.7,
-   "heading": 71,
-   "nav_status": 0,
-   "updated": "2026-11-15 21:14:10.137464609 +0000 UTC"
+   "cog": 304.5,
+   "heading": 127,
+   "nav_status": 5,
+   "updated": "2026-11-15 21:19:05.215043599 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 45.98704,
+   "lon": -122.83916,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-15 21:19:06.922415188 +0000 UTC"
   }
  ]
 }
