@@ -1,49 +1,93 @@
 {
- "fetched_at": "2026-11-15T17:23:21Z",
+ "fetched_at": "2026-11-15T17:28:22Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09683,
+   "lon": -122.92837,
+   "sog_kn": 0,
+   "cog": 170.3,
+   "heading": 71,
+   "nav_status": 3,
+   "updated": "2026-11-15 17:28:25.680437827 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.0821,
+   "lon": -122.90544,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 311,
+   "nav_status": 3,
+   "updated": "2026-11-15 17:28:28.071566841 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64355,
+   "lon": -122.75295,
+   "sog_kn": 0,
+   "cog": 271.1,
+   "heading": 232,
+   "nav_status": 5,
+   "updated": "2026-11-15 17:28:28.242445795 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64787,
+   "lon": -122.74104,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-15 17:28:31.649589434 +0000 UTC"
+  },
   {
    "mmsi": 367531220,
    "name": "WATCHMAN",
-   "lat": 46.19999,
+   "lat": 46.19997,
    "lon": -123.3854,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-15 17:28:54.469045079 +0000 UTC",
    "sog_kn": 0,
-   "cog": 172.9,
+   "cog": 172.1,
    "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-15 17:23:34.095960029 +0000 UTC"
+   "nav_status": 8
   },
   {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.16014,
-   "lon": -123.40081,
-   "sog_kn": 6.3,
-   "cog": 139,
-   "heading": 138,
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.63829,
+   "lon": -122.72195,
+   "sog_kn": 9.6,
+   "cog": 120.7,
+   "heading": 122,
+   "nav_status": 12,
+   "updated": "2026-11-15 17:28:47.520051858 +0000 UTC"
+  },
+  {
+   "mmsi": 636026324,
+   "name": "STAR BELLA",
+   "lat": 46.02721,
+   "lon": -122.86963,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-15 17:28:48.700699038 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.60359,
+   "lon": -122.78258,
+   "sog_kn": 1.4,
+   "cog": 336.7,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-15 17:23:39.269370202 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 46.15813,
-   "lon": -123.40319,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-15 17:23:42.709070539 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.14654,
-   "lon": -123.27974,
-   "sog_kn": 2,
-   "cog": 76.8,
-   "heading": 87,
-   "nav_status": 3,
-   "updated": "2026-11-15 17:23:46.129455421 +0000 UTC"
+   "updated": "2026-11-15 17:28:53.664832755 +0000 UTC"
   }
  ]
 }
