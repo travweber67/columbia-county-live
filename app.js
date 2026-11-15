@@ -397,6 +397,7 @@ async function loadForecast(town) {
       + '<span class="temp">' + p.temperature + '°' + esc(p.temperatureUnit) + '</span>'
       + '<p>' + esc(p.shortForecast) + '</p>'
       + '<p>Wind ' + esc(p.windSpeed) + ' ' + esc(p.windDirection)
+      + (p.windGust && /\d/.test(p.windGust) ? ' · Gusts ' + esc(p.windGust) : '')
       + (p.probabilityOfPrecipitation && p.probabilityOfPrecipitation.value != null
           ? ' · Rain ' + p.probabilityOfPrecipitation.value + '%' : '')
       + '</p></div>').join('') + '</div>';
@@ -1918,57 +1919,65 @@ async function loadFish() {
    the target day's forecast. */
 
 const SH_RIVERS = [
-  { id: 'wilson', name: 'Wilson River', kind: 'gauge', gauge: '14301500',
+  { id: 'wilson', name: 'Wilson River', county: false, kind: 'gauge', gauge: '14301500',
     gaugeLabel: 'Wilson River gauge (USGS)', hardLowQ: 35,
     basin: 'wilson', tau: 1.3,
     season: [[1201, 1214, 0.45], [1215, 131, 0.8], [201, 331, 1.0], [401, 415, 0.72]],
     window: 'its hatchery and wild fish run January–April, wild peak February–March',
     anchor: { key: 'tillamook', lat: 45.4568, lon: -123.8446 },
     sun: { lat: 45.54, lon: -123.62 } },
-  { id: 'nehalem', name: 'Nehalem River', kind: 'gauge', gauge: '14301000',
+  { id: 'nehalem', name: 'Nehalem River', county: true, kind: 'gauge', gauge: '14301000',
     gaugeLabel: 'Nehalem River gauge at Foss (USGS)', rainGauge: '14299800',
     basin: 'nehalem', tau: 1.9,
     season: [[1120, 1130, 0.45], [1201, 131, 0.72], [201, 320, 1.0], [321, 410, 0.72]],
     window: 'its wild run peaks February–March, with fish January–April',
     anchor: { key: 'vernonia', lat: 45.8597, lon: -123.1927 },
     sun: { lat: 45.86, lon: -123.19 } },
-  { id: 'nf_nehalem', name: 'North Fork Nehalem', kind: 'proxy',
+  { id: 'nf_nehalem', name: 'North Fork Nehalem', county: false, kind: 'proxy',
     basin: 'nf_nehalem', tau: 1.3,
     season: [[1110, 1119, 0.45], [1120, 1209, 0.72], [1210, 131, 1.0], [201, 320, 0.72], [321, 331, 0.45]],
     window: 'its hatchery run starts in December; broodstock and wild fish run into March',
     anchor: { key: 'nfnehalem', lat: 46.005, lon: -123.595 },
     sun: { lat: 46.0, lon: -123.6 } },
-  { id: 'big_creek', name: 'Big Creek', kind: 'rain',
+  { id: 'big_creek', name: 'Big Creek', county: false, kind: 'rain',
     basin: 'big_creek', tau: 0.7,
     season: [[1110, 1119, 0.45], [1120, 1209, 0.72], [1210, 131, 1.0], [201, 215, 0.72], [216, 228, 0.45]],
     window: 'it has the region\u2019s earliest hatchery run — fish from December into January',
     anchor: { key: 'knappa', lat: 46.13, lon: -123.60 },
     sun: { lat: 46.14, lon: -123.58 } },
-  { id: 'gnat_creek', name: 'Gnat Creek', kind: 'rain',
+  { id: 'gnat_creek', name: 'Gnat Creek', county: false, kind: 'rain',
     basin: 'gnat_creek', tau: 0.7,
     season: [[1115, 1124, 0.45], [1125, 1219, 0.72], [1220, 205, 1.0], [206, 220, 0.72]],
     window: 'its hatchery fish run late December–February',
     anchor: { key: 'knappa', lat: 46.13, lon: -123.60 },
     sun: { lat: 46.12, lon: -123.55 } },
-  { id: 'klaskanine', name: 'Klaskanine River', kind: 'rain',
+  { id: 'klaskanine', name: 'Klaskanine River', county: false, kind: 'rain',
     basin: 'klaskanine', tau: 0.7,
     season: [[1115, 1124, 0.45], [1125, 1219, 0.72], [1220, 205, 1.0], [206, 225, 0.72]],
     window: 'its hatchery fish run late December–February',
     anchor: { key: 'astoria', lat: 46.1879, lon: -123.8310 },
     sun: { lat: 46.10, lon: -123.75 } },
-  { id: 'clatskanie', name: 'Clatskanie River', kind: 'rain',
+  { id: 'clatskanie', name: 'Clatskanie River', county: true, kind: 'rain',
     basin: 'clatskanie', tau: 1.0,
     season: [[1201, 1214, 0.45], [1215, 131, 0.72], [201, 320, 1.0], [321, 331, 0.72]],
     window: 'its wild fish run January–March',
     anchor: { key: 'clatskanie', lat: 46.1035, lon: -123.2038 },
     sun: { lat: 46.10, lon: -123.20 } },
-  { id: 'scappoose', name: 'Scappoose Creek', kind: 'rain',
+  { id: 'scappoose', name: 'Scappoose Creek', county: true, kind: 'rain',
     basin: 'scappoose', tau: 1.0,
     season: [[1201, 1214, 0.45], [1215, 131, 0.72], [201, 320, 1.0], [321, 331, 0.72]],
     window: 'its wild fish run January–March; a trap at Bonnie Falls counts them, but the counts are published only after the season',
     anchor: { key: 'scappoose', lat: 45.7475, lon: -122.8775 },
     sun: { lat: 45.78, lon: -122.90 } },
 ];
+
+/* County-first ordering (Travis, 2026-11-14): rivers that run through
+   Columbia County list before the out-of-county favourites (the Wilson,
+   the Clatsop creeks) in every render built from this array — the same
+   rule as the St. Johns trip: kept because locals fish them, sorted
+   last because they are not county water. Array.prototype.sort is
+   stable, so the hand-set order inside each group survives. */
+SH_RIVERS.sort((a, b) => (b.county ? 1 : 0) - (a.county ? 1 : 0));
 
 const shState = { fc: {} };
 let shByDay = null; // per-day index results, shared with the answer card
@@ -5366,7 +5375,7 @@ const FINDER_SECTIONS = [
   { id: 'dark-card',     title: 'After Dark — Tonight\u2019s Sky', sub: 'Clouds, moonlight, aurora odds and meteor showers — is tonight worth looking up?', keys: 'stars stargazing night sky dark aurora northern lights meteor meteors shooting star telescope astronomy milky way bundle up tonight' },
   { id: 'rivers-card',   title: 'River Levels',              sub: 'USGS gauges on the Columbia and Nehalem', keys: 'river rivers level levels gauge gauges flood height columbia nehalem' },
   { id: 'tides-card',    title: 'River Tides',               sub: 'Next high and low tide at St. Helens and Wauna', keys: 'tide tides high low slack fishing dock ramp' },
-  { id: 'steelhead-card', title: 'Steelhead — the Small Rivers', sub: 'Is today a good day? Wilson, Nehalem, Big Creek & more', keys: 'steelhead wilson nehalem big creek gnat klaskanine clatskanie scappoose winter fishing river conditions clarity good day' },
+  { id: 'steelhead-card', title: 'Steelhead — the Small Rivers', sub: 'Is today a good day? Nehalem, Clatskanie, Scappoose & more', keys: 'steelhead wilson nehalem big creek gnat klaskanine clatskanie scappoose winter fishing river conditions clarity good day' },
   { id: 'quakes-card',   title: 'Earthquakes — last 30 days', sub: 'USGS earthquakes near the county', keys: 'earthquake earthquakes quake quakes tremor seismic shook' },
   { id: 'fires-card',    title: 'Wildfires',                 sub: 'Interagency wildfire incidents', keys: 'fire fires wildfire wildfires smoke burn burning' },
   { id: 'air-card',      title: 'Air & Smoke',               sub: 'Air Quality Index, fine particles, and the day\u2019s smoke outlook', keys: 'air quality aqi smoke breathe breathing pm25 lungs asthma dust wood stove' },

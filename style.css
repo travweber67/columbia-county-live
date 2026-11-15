@@ -342,7 +342,7 @@ h2{font-weight:700;letter-spacing:-.01em}
 }
 .town-btn:hover{color:var(--text);border-color:var(--accent)}
 .town-btn.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
-.forecast-periods{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.forecast-periods{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:start}
 @media (max-width:560px){.forecast-periods{grid-template-columns:1fr}}
 .period{background:var(--panel-2);border:1px solid var(--border);border-radius:12px;padding:9px 11px}
 .period h4{margin:0 0 2px;font-size:.83rem;color:var(--accent)}
