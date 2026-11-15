@@ -1,95 +1,100 @@
 {
- "fetched_at": "2026-11-15T01:11:59Z",
+ "fetched_at": "2026-11-15T01:16:59Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10355,
-   "lon": -122.91008,
-   "sog_kn": 0,
-   "cog": 247.1,
-   "heading": 74,
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.7403,
+   "lon": -122.76252,
+   "type_code": 31,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-15 01:17:05.36219887 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.60069,
+   "lon": -122.77794,
+   "sog_kn": 8.5,
+   "cog": 331.6,
+   "heading": 331,
    "nav_status": 0,
-   "updated": "2026-11-15 01:12:10.171060945 +0000 UTC"
+   "updated": "2026-11-15 01:17:06.316805201 +0000 UTC"
   },
   {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.64732,
-   "lon": -122.73948,
-   "sog_kn": 0,
-   "cog": 221,
-   "heading": 286,
-   "nav_status": 5,
-   "updated": "2026-11-15 01:12:14.972519902 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 104.6,
-   "heading": 133,
-   "nav_status": 15,
-   "updated": "2026-11-15 01:12:19.155362172 +0000 UTC"
-  },
-  {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.64203,
-   "lon": -122.74089,
-   "sog_kn": 0,
-   "cog": 184,
-   "heading": 120,
-   "nav_status": 12,
-   "updated": "2026-11-15 01:12:24.868863331 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.1653,
-   "lon": -123.08453,
-   "sog_kn": 0.8,
-   "cog": 130.8,
-   "heading": 126,
-   "nav_status": 3,
-   "updated": "2026-11-15 01:12:24.958733462 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.16118,
-   "lon": -123.40696,
-   "sog_kn": 5,
-   "cog": 154,
-   "heading": 337,
-   "nav_status": 0,
-   "updated": "2026-11-15 01:12:26.746953968 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.38551,
-   "sog_kn": 0,
-   "cog": 208.8,
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.59302,
+   "lon": -122.77238,
+   "sog_kn": 8.7,
+   "cog": 333.3,
    "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-15 01:12:32.148697646 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-15 01:17:06.642141601 +0000 UTC"
   },
   {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09696,
-   "lon": -122.92861,
+   "mmsi": 367363590,
+   "name": "CLARKSTON",
+   "lat": 45.70057,
+   "lon": -122.77199,
+   "sog_kn": 8,
+   "cog": 191.2,
+   "heading": 189,
+   "nav_status": 5,
+   "updated": "2026-11-15 01:17:09.033191377 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64356,
+   "lon": -122.75295,
+   "type_code": 52,
+   "destination": "US^0UUT>0UW8",
+   "updated": "2026-11-15 01:17:12.442902085 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.64309,
+   "lon": -122.77315,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-15 01:17:13.979804897 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.64323,
+   "lon": -122.77191,
+   "sog_kn": 0.6,
+   "cog": 170.6,
+   "heading": 149,
+   "nav_status": 0,
+   "updated": "2026-11-15 01:17:21.232684619 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.78162,
+   "lon": -122.77508,
+   "sog_kn": 7.9,
+   "cog": 335.9,
+   "heading": 335,
+   "nav_status": 12,
+   "updated": "2026-11-15 01:17:22.511086013 +0000 UTC"
+  },
+  {
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.15215,
+   "lon": -123.37782,
    "sog_kn": 0,
-   "cog": 7,
-   "heading": 70,
-   "nav_status": 3,
-   "updated": "2026-11-15 01:12:35.111206531 +0000 UTC"
+   "cog": 10.6,
+   "heading": 32,
+   "nav_status": 0,
+   "updated": "2026-11-15 01:17:29.860849784 +0000 UTC"
   }
  ]
 }
