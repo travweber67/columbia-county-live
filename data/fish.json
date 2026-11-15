@@ -1,11 +1,11 @@
 {
- "fetched_at": "2026-11-15T14:49:41Z",
+ "fetched_at": "2026-11-15T15:19:40Z",
  "status": "ok",
  "sources": [
   {
    "name": "Fish Passage Center \u2014 7 Day and YTD Adult Counts (U.S. Army Corps of Engineers counts)",
    "status": "ok",
-   "note": "Page last updated 11-14-2026 05:55:32",
+   "note": "Page last updated 11-15-2026 06:59:22",
    "url": "https://www.fpc.org/currentdaily/HistFishTwo_7day-ytd_Adults.htm"
   },
   {
@@ -21,49 +21,33 @@
    "name": "Bonneville Dam",
    "rm": 146,
    "ytd": {
-    "chinook": 583866,
-    "chinook_jack": 142441,
+    "chinook": 583882,
+    "chinook_jack": 142442,
     "spring_chinook": 88712,
     "summer_chinook": 58510,
-    "fall_chinook": 436644,
-    "coho": 99092,
-    "coho_jack": 14322,
-    "steelhead": 63344,
+    "fall_chinook": 436660,
+    "coho": 99240,
+    "coho_jack": 14336,
+    "steelhead": 63345,
     "shad": 2800954,
     "sockeye": 74033,
-    "chum": 364
+    "chum": 378
    },
-   "latest_date": "2026-11-13",
+   "latest_date": "2026-11-14",
    "counts": {
-    "chinook": 12,
-    "chinook_jack": 5,
+    "chinook": 16,
+    "chinook_jack": 1,
     "spring_chinook": 0,
     "summer_chinook": 0,
-    "fall_chinook": 12,
-    "coho": 101,
+    "fall_chinook": 16,
+    "coho": 148,
     "coho_jack": 14,
-    "steelhead": 7,
+    "steelhead": 1,
     "shad": null,
     "sockeye": 0,
-    "chum": 19
+    "chum": 14
    },
    "recent_days": [
-    {
-     "date": "2026-11-07",
-     "counts": {
-      "chinook": 57,
-      "chinook_jack": 5,
-      "spring_chinook": 0,
-      "summer_chinook": 0,
-      "fall_chinook": 57,
-      "coho": 139,
-      "coho_jack": 20,
-      "steelhead": 1,
-      "shad": null,
-      "sockeye": 0,
-      "chum": 10
-     }
-    },
     {
      "date": "2026-11-08",
      "counts": {
@@ -159,6 +143,22 @@
       "sockeye": 0,
       "chum": 19
      }
+    },
+    {
+     "date": "2026-11-14",
+     "counts": {
+      "chinook": 16,
+      "chinook_jack": 1,
+      "spring_chinook": 0,
+      "summer_chinook": 0,
+      "fall_chinook": 16,
+      "coho": 148,
+      "coho_jack": 14,
+      "steelhead": 1,
+      "shad": null,
+      "sockeye": 0,
+      "chum": 14
+     }
     }
    ]
   },
@@ -185,49 +185,33 @@
    "name": "John Day Dam",
    "rm": 216,
    "ytd": {
-    "chinook": 199740,
-    "chinook_jack": 29866,
+    "chinook": 199755,
+    "chinook_jack": 29870,
     "spring_chinook": 49517,
     "summer_chinook": 42605,
-    "fall_chinook": 107618,
-    "coho": 27688,
-    "coho_jack": 4609,
-    "steelhead": 40202,
+    "fall_chinook": 107633,
+    "coho": 27811,
+    "coho_jack": 4640,
+    "steelhead": 40316,
     "shad": null,
     "sockeye": 61654,
     "chum": 1
    },
-   "latest_date": "2026-11-12",
+   "latest_date": "2026-11-13",
    "counts": {
-    "chinook": 18,
-    "chinook_jack": 8,
+    "chinook": 15,
+    "chinook_jack": 4,
     "spring_chinook": 0,
     "summer_chinook": 0,
-    "fall_chinook": 18,
-    "coho": 121,
-    "coho_jack": 68,
-    "steelhead": 93,
+    "fall_chinook": 15,
+    "coho": 123,
+    "coho_jack": 31,
+    "steelhead": 114,
     "shad": null,
     "sockeye": 0,
     "chum": 0
    },
    "recent_days": [
-    {
-     "date": "2026-11-07",
-     "counts": {
-      "chinook": 58,
-      "chinook_jack": 7,
-      "spring_chinook": 0,
-      "summer_chinook": 0,
-      "fall_chinook": 58,
-      "coho": 49,
-      "coho_jack": 6,
-      "steelhead": 86,
-      "shad": null,
-      "sockeye": 0,
-      "chum": 0
-     }
-    },
     {
      "date": "2026-11-08",
      "counts": {
@@ -303,6 +287,22 @@
       "coho": 121,
       "coho_jack": 68,
       "steelhead": 93,
+      "shad": null,
+      "sockeye": 0,
+      "chum": 0
+     }
+    },
+    {
+     "date": "2026-11-13",
+     "counts": {
+      "chinook": 15,
+      "chinook_jack": 4,
+      "spring_chinook": 0,
+      "summer_chinook": 0,
+      "fall_chinook": 15,
+      "coho": 123,
+      "coho_jack": 31,
+      "steelhead": 114,
       "shad": null,
       "sockeye": 0,
       "chum": 0
@@ -1145,6 +1145,13 @@
     "steelhead": 7,
     "sockeye": null,
     "coho": 101
+   },
+   {
+    "date": "2026-11-14",
+    "chinook": 16,
+    "steelhead": 1,
+    "sockeye": null,
+    "coho": 148
    }
   ],
   "TDA": [
@@ -1667,6 +1674,13 @@
     "steelhead": 93,
     "sockeye": null,
     "coho": 121
+   },
+   {
+    "date": "2026-11-13",
+    "chinook": 15,
+    "steelhead": 114,
+    "sockeye": null,
+    "coho": 123
    }
   ]
  },
