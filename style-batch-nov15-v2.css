@@ -3051,3 +3051,86 @@ html[data-theme="dark"] #forecast-week-card{
 .cell-ribbon{width:48px}
 .dir-ribbon{width:44px}
 .wall-ribbon{width:36px;vertical-align:-11px}
+
+
+/* ===== Round 3 — Travis's review fixes (Nov 15, 2026): NO GROUPING BACKDROPS =====
+   His standing rule, applied everywhere at once: nothing sits behind a
+   group of elements — no shared photo, no big containing card, no
+   black sheet. Every element stands alone as its own card on the plain
+   deep-green base (#223c29), with real gaps where the base shows
+   through. Round 2 separated Travel only; this round finishes the job
+   for the weather strip, Community Help, the footer, and every
+   remaining view backdrop. */
+
+/* R3-1 — the 7-day strip leaves its card entirely. Round 2 (F2) had
+   put the pills inside one big Forecast card; Travis: "you put a card
+   behind the forecast bubbles like I didn't want." The block keeps no
+   background, border, shadow or blur of its own: the heading and the
+   place line float on the base (the original v71 treatment), the pills
+   keep their own individual frosted style, and the pin is no longer a
+   card-header button — it rides a small standalone chip row under the
+   strip (.strip-tools, wired in app-batch-nov15-v2.js). Drag-scroll
+   and the phone swipe ride the strip itself and are untouched. */
+#forecast-week-card{
+  background:none;border:none;border-radius:0;box-shadow:none;
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+  padding:2px 2px 0;
+}
+#forecast-week-card .forecast-head h2{color:#fff;text-shadow:0 1px 10px rgba(12,26,16,.55)}
+#forecast-week-card .forecast-head .updated{color:rgba(255,255,255,.88);text-shadow:0 1px 6px rgba(12,26,16,.55)}
+#forecast-week-card .wx-place{color:#fff;text-shadow:0 1px 8px rgba(12,26,16,.6)}
+.strip-tools{display:flex;justify-content:flex-end;align-items:center;min-height:32px;margin-top:2px}
+.strip-tools .pin-btn{box-shadow:0 1px 6px rgba(12,26,16,.35)}
+
+/* R3-2 — Community Help: every entry is a full card; the category
+   sections are not. Why it rendered as rows: the v82 mini-card rule
+   fills each entry with var(--panel-2), which in the dark theme is
+   #1e2e23 — the same deep green as the big category card behind the
+   list — so on a dark-theme phone the fills all but vanish and only
+   the base .dir-item hairline dividers show: one translucent section
+   with rows running together. Fix: strip the five category sections
+   of their card chrome (their headings float on the base like the
+   other views' headings) and give EVERY entry the site's full
+   standard card recipe, with real gaps between entries. The business
+   directory in Today keeps its divider list — this is scoped to
+   the Help view, as before. */
+#help-food-card,#help-crisis-card,#help-money-card,#help-family-card,#help-vets-card{
+  background:none;border:none;border-radius:0;box-shadow:none;
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+  padding:0 2px;
+}
+#help-food-card .card-head,#help-crisis-card .card-head,#help-money-card .card-head,#help-family-card .card-head,#help-vets-card .card-head{margin:10px 0 12px}
+#help-food-card .card-head h2,#help-crisis-card .card-head h2,#help-money-card .card-head h2,#help-family-card .card-head h2,#help-vets-card .card-head h2{color:#fff;text-shadow:0 1px 10px rgba(12,26,16,.55)}
+#view-help .dir-list{gap:14px}
+#view-help .dir-item{
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);
+  border:1px solid rgba(255,255,255,.6);border-radius:var(--radius);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 2px rgba(20,32,16,.10),0 16px 36px rgba(20,32,16,.18);
+  padding:16px 18px;
+}
+html[data-theme="dark"] #view-help .dir-item{
+  background:linear-gradient(180deg,rgba(26,43,32,.85),rgba(13,23,16,.77));
+  border-color:rgba(196,226,196,.18);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 1px 2px rgba(0,0,0,.4),0 16px 36px rgba(0,0,0,.35);
+}
+#view-help .dir-item.dir-invite{border:1px dashed var(--warm);background:rgba(233,164,74,.10);box-shadow:none}
+
+/* R3-3 — the footer loses its shared sheet. The partners card, the
+   Cascade pill and the credits pull-down already carry their own
+   styling; the byline and the disclaimer are plain lines. With the
+   footer's own backdrop (cream glass by day, near-black at dusk) gone,
+   each part stands separately and the base shows between them. The
+   loose lines take colours that read on the deep-green base. */
+.site-footer{background:transparent;border-top:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+html[data-theme="dark"] .site-footer{background:transparent;border-top:none}
+.footer-byline{color:rgba(255,255,255,.85)}
+.footer-byline strong{color:#fff}
+.footer-disc{color:rgba(255,255,255,.75)}
+
+/* R3-4 — no full-page photo behind any view's cards. Round 2 removed
+   Travel's; the same treatment now covers Today, Outdoors, Events &
+   More and Community Help: plain deep-green base, each card its own
+   frosted glass. The masthead keeps its own photo (a header <img>,
+   not a backdrop), and photos inside individual cards stay. */
+.bg-layer[data-bg-view="today"],.bg-layer[data-bg-view="travel"],.bg-layer[data-bg-view="outdoors"],.bg-layer[data-bg-view="more"],.bg-layer[data-bg-view="help"]{display:none!important}

@@ -6793,16 +6793,14 @@ function pinMakeCopy(id) {
   /* Batch Nov 15 (item 11): the 7-day pill strip is its own pinnable
      unit now (forecast-week-card in PIN_CARDS), so the forecast-card
      copy no longer drags a clone of the strip along — the v73 special
-     case is gone. The strip's own copy wears the card styling so it
-     sits properly in the pin zone. */
-  if (id === 'forecast-week-card') {
-    copy.classList.add('card');
-  }
+     case is gone. (Round 3 supersedes the round-2 note that the
+     strip's copy wears card styling: the copy is card-free like the
+     strip itself, and its unpin chip rides the .strip-tools row.) */
+  copy.querySelectorAll('.pin-btn').forEach(n => n.remove());
   const head = copy.querySelector('.card-head');
-  if (head) {
-    const stale = head.querySelector('.pin-btn');
-    if (stale) stale.remove();
-    head.classList.add('has-pin');
+  const slot = id === 'forecast-week-card' ? (copy.querySelector('.strip-tools') || head) : head;
+  if (slot) {
+    if (slot === head) head.classList.add('has-pin');
     const b = document.createElement('button');
     b.type = 'button';
     b.className = 'pin-btn active';
@@ -6813,7 +6811,7 @@ function pinMakeCopy(id) {
       ev.preventDefault(); ev.stopPropagation();
       window.CCLPins.toggle('cards', id);
     });
-    head.appendChild(b);
+    slot.appendChild(b);
   }
   copy.addEventListener('click', ev => {
     if (ev.target && ev.target.closest && ev.target.closest('.pin-btn')) return; // the unpin button handles itself
@@ -6855,13 +6853,17 @@ function initPins() {
     if (!card) return;
     const head = card.querySelector('.card-head');
     if (!head) return;
-    head.classList.add('has-pin');
+    /* Round 3: the 7-day strip is not a card, so its pin is not a
+       card-header button — it mounts in the small standalone chip row
+       under the strip (.strip-tools) instead. */
+    const slot = id === 'forecast-week-card' ? (card.querySelector('.strip-tools') || head) : head;
+    if (slot === head) head.classList.add('has-pin');
     const b = document.createElement('button');
     b.type = 'button';
     b.className = 'pin-btn';
     b.dataset.pinFor = id;
     b.addEventListener('click', () => window.CCLPins.toggle('cards', id));
-    head.appendChild(b);
+    slot.appendChild(b);
     pinBtns[id] = b;
   });
   const clear = $('frontpage-clear');
