@@ -2774,7 +2774,7 @@ function initShare() {
       const payload = {
         title: 'Columbia County Live',
         text: 'Roads, rivers, weather & the Oscar B ferry for Columbia County, Oregon — one live look:',
-        url: 'https://travweber67.github.io/columbia-county-live/'
+        url: 'https://columbiacountylive.com/'
       };
       if (navigator.share) {
         try { await navigator.share(payload); } catch (e) { /* user dismissed */ }
@@ -3231,7 +3231,7 @@ function buildBriefing() {
     ready++;
   }
   lines.push('');
-  lines.push('Live page (updates all day): https://travweber67.github.io/columbia-county-live/');
+  lines.push('Live page (updates all day): https://columbiacountylive.com/');
   lines.push('Sources: National Weather Service · USGS · ODOT/WSDOT snapshots · city & county calendars. Assembled '
     + fmtTime(now) + ' PT — the live page always has the newest numbers.');
   return { text: lines.join('\n'), ready, rows };
@@ -5647,7 +5647,7 @@ const LANG_ES = {
   aboutsupporth: 'Apoya este servicio — patrocinadores fundadores',
   aboutp3: 'Más adelante, un pequeño número de negocios locales podrá apoyar el servicio como patrocinadores fundadores — un lugar con su nombre en esta página, a precios de pueblo pequeño, cuando haya una audiencia real que mostrarles. <strong>Hoy no hay nada en venta.</strong> Si tu negocio u organización quiere ser el primero en enterarse cuando abra el patrocinio fundador, cuéntanos — la lista de interesados que armemos ahora es quien se entera primero.',
   aboutbtn: '✉️ Escribe a Nomad sobre el patrocinio fundador',
-  aboutnote: 'Ese botón abre un correo a nomadov3rland@gmail.com. Incluye el nombre de tu negocio u organización, un nombre de contacto, tu pueblo y lo que te interesa — patrocinador fundador, anunciar un negocio u otra cosa — y te responderemos. Solo interés: sin pago, sin compromiso, nada que comprar todavía.',
+  aboutnote: 'Ese botón abre un correo a travis@columbiacountylive.com. Incluye el nombre de tu negocio u organización, un nombre de contacto, tu pueblo y lo que te interesa — patrocinador fundador, anunciar un negocio u otra cosa — y te responderemos. Solo interés: sin pago, sin compromiso, nada que comprar todavía.',
   freshh2: '🕐 ¿Qué tan fresca es esta página?',
   freshspan: 'las edades se actualizan cada 30 s',
   freshnote: 'Cada número aquí nombra su fuente y su edad. Verde es fresco, ámbar está envejeciendo, rojo significa tratar el panel como viejo y revisar la fuente oficial. Si una fuente se queda callada, este tablero lo muestra en vez de esconderlo.',
@@ -5665,7 +5665,7 @@ const LANG_ES = {
   saverspinsp: 'Fija las respuestas que te importan con los botones de aquí abajo. El protector de pantalla muestra tus fijadas, lo bastante grandes para leerse desde el otro lado del cuarto. Las fijadas se guardan solo en este aparato, y puedes cambiarlas cuando quieras.',
   savershareh: 'Comparte tu foto del condado',
   saversharep: 'Las fotografías del protector de pantalla vienen del propio condado — y la tuya podría ser una de ellas. Envía una foto que hayas tomado en cualquier lugar del condado de Columbia y, una vez aprobada, se une al conjunto por el que pasan todos los protectores de pantalla, con tu nombre. Gratis, siempre.',
-  saverways: 'Dos maneras fáciles, sin cuenta y sin iniciar sesión: envía tu foto por correo a nomadov3rland@gmail.com con tu nombre y dónde la tomaste, o responde 3 preguntas rápidas en el formulario de fotos y luego envía la foto por correo. Eso es todo.',
+  saverways: 'Dos maneras fáciles, sin cuenta y sin iniciar sesión: envía tu foto por correo a travis@columbiacountylive.com con tu nombre y dónde la tomaste, o responde 3 preguntas rápidas en el formulario de fotos y luego envía la foto por correo. Eso es todo.',
   saveremailbtn: '📧 Envía tu foto por correo',
   saverformbtn: 'Usa el formulario rápido de fotos &rarr;',
   saverreview: 'Una puerta honesta: cada foto la mira una persona antes de unirse al conjunto — el lugar, la imagen y el permiso. Nada aparece automáticamente, y una foto que no es tuya para compartir nunca se publica.',
@@ -6150,7 +6150,7 @@ function goComposeText(rows, v, dep) {
   lines.push("Verdict: " + v.head.split(" ").slice(1).join(" "));
   rows.forEach(r => { lines.push(r.icon + " " + r.label + " — " + r.detail); });
   lines.push("Checked " + fmtDayTime(new Date()) + " · Columbia County Live — conditions change; re-check before you leave.");
-  lines.push("https://travweber67.github.io/columbia-county-live/");
+  lines.push("https://columbiacountylive.com/");
   return lines.join("\n");
 }
 async function renderGo(force) {
@@ -6190,7 +6190,7 @@ function goIcs() {
     "DURATION:PT1H",
     "SUMMARY:" + evcalEscText("🛟 Before you go: " + goTripPlain() + " " + goRoutePhrase()),
     "DESCRIPTION:" + evcalEscText(goLastText),
-    "URL:https://travweber67.github.io/columbia-county-live/",
+    "URL:https://columbiacountylive.com/",
     "END:VEVENT", "END:VCALENDAR"];
   return lines.flatMap(evcalFold).join("\r\n") + "\r\n";
 }
@@ -6610,7 +6610,7 @@ function buildPrintSheet() {
   }
 
   html += '<div class="ps-foot">Paper doesn&rsquo;t update — this sheet is the county as the live page showed it at '
-    + esc(fmtTime(now)) + ' PT. The live page updates all day: <strong>travweber67.github.io/columbia-county-live</strong><br>'
+    + esc(fmtTime(now)) + ' PT. The live page updates all day: <strong>columbiacountylive.com</strong><br>'
     + 'Sources: National Weather Service · USGS · NOAA Tides &amp; Currents · ODOT/WSDOT &amp; Wahkiakum County snapshots · city &amp; county calendars · Open-Meteo/CAMS air model. '
     + 'Columbia County Live is free, no ads, no sign-up — by Nomad Development Group. Post this sheet where neighbors will see it.</div>';
   return html;
@@ -7111,7 +7111,7 @@ loadSteelhead();
    labeled mailto to the studio inbox. Form creation is parked on
    Travis's Google sign-in — instructions in the goal docs. */
 const SPONSOR_FORM_URL = 'https://forms.gle/D4poEqfu1ogoMr4r6'; // LIVE 2026-11-05: founding-sponsor Google Form (created in Travis's Google account; full URL https://docs.google.com/forms/d/e/1FAIpQLSe21yqkUMx6OAdoTdoj6_V9rwdYhIvnOFIygaiOD7ciuJCfbg/viewform); '' would fall back to the interim mailto capture
-const SPONSOR_EMAIL = 'nomadov3rland@gmail.com';
+const SPONSOR_EMAIL = 'travis@columbiacountylive.com';
 function initSponsorLink() {
   const a = $('sponsor-interest-link');
   if (!a || !SPONSOR_FORM_URL) return; // mailto in the HTML is the interim capture
