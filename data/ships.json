@@ -1,49 +1,45 @@
 {
- "fetched_at": "2026-11-15T06:42:26Z",
+ "fetched_at": "2026-11-15T06:47:26Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00902,
+   "lon": -122.84836,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-15 06:47:37.065080527 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64356,
+   "lon": -122.75294,
+   "type_code": 52,
+   "destination": "US^0UUT>0UW8",
+   "updated": "2026-11-15 06:47:53.395095018 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 45.60093,
+   "lon": -122.77374,
+   "type_code": 70,
+   "destination": "BR SFS",
+   "updated": "2026-11-15 06:47:54.332258774 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
    "lat": 45.6435,
-   "lon": -122.74334,
-   "sog_kn": 7.4,
-   "cog": 101.3,
-   "heading": 108,
-   "nav_status": 0,
-   "updated": "2026-11-15 06:42:41.158869892 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 46.11892,
-   "lon": -122.98046,
-   "sog_kn": 0,
-   "cog": 55.9,
-   "heading": 139,
-   "nav_status": 0,
-   "updated": "2026-11-15 06:42:43.548576346 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.61922,
-   "lon": -122.7879,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-15 06:42:59.423806199 +0000 UTC"
-  },
-  {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 45.63033,
-   "lon": -122.69566,
-   "sog_kn": 0,
-   "cog": 304.5,
-   "heading": 127,
-   "nav_status": 5,
-   "updated": "2026-11-15 06:43:00.377493479 +0000 UTC"
+   "lon": -122.75288,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-15 06:47:54.41879556 +0000 UTC"
   }
  ]
 }
