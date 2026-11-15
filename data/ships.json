@@ -1,102 +1,84 @@
 {
- "fetched_at": "2026-11-15T00:41:56Z",
+ "fetched_at": "2026-11-15T00:46:57Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 563331600,
-   "name": "BELLE LUNE",
-   "lat": 46.17006,
-   "lon": -123.10007,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-15 00:42:08.124290197 +0000 UTC"
-  },
-  {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 45.64727,
-   "lon": -122.74131,
-   "sog_kn": 0,
-   "cog": 127.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-15 00:42:12.984308321 +0000 UTC"
-  },
-  {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09696,
-   "lon": -122.92862,
-   "sog_kn": 0,
-   "cog": 0.1,
-   "heading": 68,
-   "nav_status": 3,
-   "updated": "2026-11-15 00:42:14.738398931 +0000 UTC"
-  },
-  {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.64734,
-   "lon": -122.7395,
-   "sog_kn": 0,
-   "cog": 221,
-   "heading": 287,
-   "nav_status": 5,
-   "updated": "2026-11-15 00:42:14.867445147 +0000 UTC"
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.67528,
+   "lon": -122.77073,
+   "type_code": 31,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-15 00:47:16.430871807 +0000 UTC"
   },
   {
    "mmsi": 636015993,
    "name": "SIEM NEWTON",
    "lat": 45.63298,
-   "lon": -122.73788,
+   "lon": -122.73787,
    "sog_kn": 0,
    "cog": 317,
    "heading": 136,
    "nav_status": 0,
-   "updated": "2026-11-15 00:42:16.738686903 +0000 UTC"
+   "updated": "2026-11-15 00:47:17.625761899 +0000 UTC"
   },
   {
-   "mmsi": 367347000,
-   "name": "WENDY SEAA",
-   "lat": 46.19948,
-   "lon": -123.38507,
-   "type_code": 30,
-   "destination": "CATHLAMET,WA",
-   "updated": "2026-11-15 00:42:27.344425343 +0000 UTC"
-  },
-  {
-   "mmsi": 636024922,
-   "name": "VERACITY",
-   "lat": 45.98398,
-   "lon": -122.83531,
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58728,
+   "lon": -122.77006,
    "sog_kn": 0,
-   "cog": 163.1,
-   "heading": 151,
+   "cog": 214.6,
+   "heading": 138,
    "nav_status": 5,
-   "updated": "2026-11-15 00:42:29.552432809 +0000 UTC"
+   "updated": "2026-11-15 00:47:28.659998518 +0000 UTC",
+   "type_code": 31,
+   "destination": "US^02SY>0UJ9"
   },
   {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.63581,
-   "lon": -122.70851,
-   "sog_kn": 0.4,
-   "cog": 163.4,
-   "heading": 124,
-   "nav_status": 12,
-   "updated": "2026-11-15 00:42:30.482597384 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15707,
-   "lon": -123.40234,
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.14819,
+   "lon": -123.27817,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 131,
-   "nav_status": 0,
-   "updated": "2026-11-15 00:42:34.768811071 +0000 UTC"
+   "cog": 229.1,
+   "heading": 255,
+   "nav_status": 3,
+   "updated": "2026-11-15 00:47:26.929873607 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08967,
+   "lon": -122.92973,
+   "sog_kn": 0,
+   "cog": 72.7,
+   "heading": 109,
+   "nav_status": 5,
+   "updated": "2026-11-15 00:47:27.280228182 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08203,
+   "lon": -122.90476,
+   "sog_kn": 0.4,
+   "cog": 64.3,
+   "heading": 341,
+   "nav_status": 3,
+   "updated": "2026-11-15 00:47:28.127146142 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.7154,
+   "lon": -122.76419,
+   "sog_kn": 8.2,
+   "cog": 9.9,
+   "heading": 7,
+   "nav_status": 12,
+   "updated": "2026-11-15 00:47:31.494690171 +0000 UTC"
   }
  ]
 }
