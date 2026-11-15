@@ -1,47 +1,86 @@
 {
- "fetched_at": "2026-11-15T22:33:45Z",
+ "fetched_at": "2026-11-15T22:38:46Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.1534,
-   "lon": -123.37716,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58081,
+   "lon": -122.76006,
+   "type_code": 31,
+   "destination": "PTSI PDX",
+   "updated": "2026-11-15 22:38:47.750338925 +0000 UTC"
+  },
+  {
+   "mmsi": 367425910,
+   "name": "SEA HORSE",
+   "lat": 46.15253,
+   "lon": -123.377,
+   "type_code": 33,
+   "updated": "2026-11-15 22:38:50.800916668 +0000 UTC"
+  },
+  {
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 46.20157,
+   "lon": -123.42772,
+   "sog_kn": 10.7,
+   "cog": 8.3,
+   "heading": 9,
    "nav_status": 0,
-   "updated": "2026-11-15 22:33:57.495611734 +0000 UTC"
+   "updated": "2026-11-15 22:38:52.592272863 +0000 UTC"
   },
   {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 45.63028,
-   "lon": -122.69565,
-   "sog_kn": 0,
-   "cog": 304.5,
-   "heading": 127,
-   "nav_status": 5,
-   "updated": "2026-11-15 22:34:03.701500862 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58759,
-   "lon": -122.77047,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09724,
+   "lon": -122.92782,
    "type_code": 52,
-   "destination": "US^0R88>0UJB",
-   "updated": "2026-11-15 22:34:15.343916984 +0000 UTC"
+   "destination": "LONGVIEW",
+   "updated": "2026-11-15 22:38:52.630717688 +0000 UTC"
   },
   {
-   "mmsi": 338158000,
-   "name": "WEST VIRGINIA",
-   "lat": 46.06694,
-   "lon": -122.88602,
-   "type_code": 80,
-   "destination": "COLUMBIA_RIVER",
-   "updated": "2026-11-15 22:34:18.758385644 +0000 UTC"
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08212,
+   "lon": -122.90542,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 312,
+   "nav_status": 3,
+   "updated": "2026-11-15 22:38:57.969920258 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61202,
+   "lon": -122.64534,
+   "sog_kn": 0,
+   "cog": 209.5,
+   "heading": 295,
+   "nav_status": 5,
+   "updated": "2026-11-15 22:39:00.368756714 +0000 UTC"
+  },
+  {
+   "mmsi": 357359000,
+   "name": "FEDERAL ILLINOIS",
+   "lat": 46.15772,
+   "lon": -123.39924,
+   "sog_kn": 8.9,
+   "cog": 316.5,
+   "heading": 316,
+   "nav_status": 0,
+   "updated": "2026-11-15 22:39:09.904190781 +0000 UTC"
+  },
+  {
+   "mmsi": 367513140,
+   "name": "CLEARWATER",
+   "lat": 45.62793,
+   "lon": -122.69977,
+   "type_code": 52,
+   "destination": "US^01JQ>0T67",
+   "updated": "2026-11-15 22:39:15.71520372 +0000 UTC"
   }
  ]
 }
