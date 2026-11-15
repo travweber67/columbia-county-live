@@ -3001,3 +3001,53 @@ html[data-theme="dark"] [data-pin-copy="incidents-card"]{
 .cascade-footer{text-align:center;margin:0 0 14px}
 .credits-card{margin:0 0 6px}
 .footer-disc{text-align:center;max-width:660px;margin-left:auto;margin-right:auto}
+
+/* ===== Round 2 — Travis's review fixes (Nov 15, 2026) =====
+   F1: on desktop the 7-day pill strip shows all seven days inside
+   its card (wraps instead of hiding the overflow behind a sideways
+   scroll a mouse can't do); wherever the strip still overflows it
+   can be grab-and-pull dragged (see app-batch-nov15.js). The phone
+   swipe is untouched.
+   F2: the forecast strip becomes a real card — the same etched-glass
+   recipe as every other card — so it stands apart from the weather
+   alerts card above it with the standard gap between two edged
+   cards, and its heading/place line take the card's theme colours
+   (the pinned copy's treatment) instead of over-photo white. In
+   Travel's wide columns layout, the bridge card is a column
+   spanner: the ferry card's bottom margin is truncated at the span
+   break, which left the two cards flush — the spanner now carries
+   its own top margin.
+   F3: Travel cards stand on their own. The view's one shared scenic
+   photo no longer runs behind all of them (it made separate cards
+   read as one merged sheet); each Travel card's own frosted
+   background — and its own photo header, where it has one — now
+   ends at its own edges, over the page's deep-green base, with a
+   clear gap to its neighbours. The transparent style stays.
+   F4: the founding ribbon sits a little larger (v2 artwork: transparent
+   background, brighter gold, FS monogram). */
+.bg-layer[data-bg-view="travel"]{display:none!important}
+@media (min-width:900px){
+  #view-travel #roads-card{margin-top:20px}
+  .forecast-week{overflow-x:visible;flex-wrap:wrap;scroll-snap-type:none}
+}
+#forecast-week-card{
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);
+  border:1px solid rgba(255,255,255,.6);border-radius:var(--radius);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 2px rgba(20,32,16,.10),0 16px 36px rgba(20,32,16,.18);
+  padding:18px 20px 14px;
+}
+html[data-theme="dark"] #forecast-week-card{
+  background:linear-gradient(180deg,rgba(26,43,32,.85),rgba(13,23,16,.77));
+  border-color:rgba(196,226,196,.18);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 1px 2px rgba(0,0,0,.4),0 16px 36px rgba(0,0,0,.35);
+}
+#forecast-week-card .forecast-head h2{color:var(--text);text-shadow:none}
+#forecast-week-card .forecast-head .updated{color:var(--muted);text-shadow:none}
+#forecast-week-card .wx-place{color:var(--text);text-shadow:none}
+.forecast-week{cursor:grab}
+.forecast-week.dragging{cursor:grabbing;scroll-snap-type:none;user-select:none}
+.forecast-week img{-webkit-user-drag:none}
+.cell-ribbon{width:48px}
+.dir-ribbon{width:44px}
+.wall-ribbon{width:36px;vertical-align:-11px}

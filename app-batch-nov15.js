@@ -374,6 +374,34 @@ function renderWeekStrip(periods) {
       + '<span class="wx-dow">' + dow + '</span></div>';
   }).join('');
 }
+/* Round 2 (F1): grab-and-pull drag scrolling for the pill strip —
+   a desktop mouse has no swipe, so wherever the strip overflows it
+   can be dragged sideways instead. Delegated on the document so the
+   pinned copy of the strip gets it too; touch keeps native swipe. */
+(function () {
+  let drag = null;
+  document.addEventListener('pointerdown', e => {
+    if (e.pointerType !== 'mouse') return;
+    const strip = e.target && e.target.closest ? e.target.closest('.forecast-week') : null;
+    if (!strip || strip.scrollWidth <= strip.clientWidth + 2) return;
+    drag = { strip, x: e.clientX, left: strip.scrollLeft, moved: false };
+  });
+  document.addEventListener('pointermove', e => {
+    if (!drag) return;
+    const dx = e.clientX - drag.x;
+    if (!drag.moved && Math.abs(dx) < 4) return;
+    drag.moved = true;
+    drag.strip.classList.add('dragging');
+    drag.strip.scrollLeft = drag.left - dx;
+    e.preventDefault();
+  });
+  const endDrag = () => {
+    if (drag) drag.strip.classList.remove('dragging');
+    drag = null;
+  };
+  document.addEventListener('pointerup', endDrag);
+  document.addEventListener('pointercancel', endDrag);
+})();
 async function loadForecast(town) {
   town = COUNTY_TOWN; /* v71: county-wide only — no town picker */
   currentTown = town;
