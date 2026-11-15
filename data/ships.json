@@ -1,73 +1,115 @@
 {
- "fetched_at": "2026-11-14T23:56:54Z",
+ "fetched_at": "2026-11-15T00:01:54Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58134,
+   "lon": -122.76066,
+   "type_code": 57,
+   "destination": "PASCO",
+   "updated": "2026-11-15 00:02:06.413160842 +0000 UTC"
+  },
   {
    "mmsi": 367669550,
    "name": "ALASKA CHALLENGER",
    "lat": 46.17719,
-   "lon": -123.35743,
-   "type_code": 30,
-   "updated": "2026-11-14 23:57:02.447767477 +0000 UTC"
+   "lon": -123.35744,
+   "sog_kn": 0,
+   "cog": 294.1,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-15 00:02:06.682500592 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64568,
+   "lon": -122.73487,
+   "sog_kn": 0.1,
+   "cog": 0,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-15 00:02:07.783404004 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.2,
+   "lon": -123.38555,
+   "sog_kn": 0,
+   "cog": 342.7,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-15 00:02:11.838843481 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64541,
+   "lon": -122.73506,
+   "sog_kn": 0,
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-15 00:02:13.854675015 +0000 UTC"
   },
   {
    "mmsi": 368070380,
    "name": "TOKITAE",
-   "lat": 45.60758,
-   "lon": -122.67767,
-   "type_code": 50,
-   "updated": "2026-11-14 23:57:03.606850716 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15341,
-   "lon": -123.37714,
-   "sog_kn": 0,
-   "cog": 169.3,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-14 23:57:06.882004612 +0000 UTC"
-  },
-  {
-   "mmsi": 367425910,
-   "name": "SEA HORSE",
-   "lat": 46.15218,
-   "lon": -123.37767,
+   "lat": 45.60754,
+   "lon": -122.67758,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-14 23:57:08.943096141 +0000 UTC"
-  },
-  {
-   "mmsi": 352006982,
-   "name": "MOSHILL",
-   "lat": 45.63362,
-   "lon": -122.70105,
-   "type_code": 70,
-   "destination": "US VAN",
-   "updated": "2026-11-14 23:57:23.113953956 +0000 UTC"
-  },
-  {
-   "mmsi": 355980000,
-   "name": "LUGANO STAR",
-   "lat": 45.86337,
-   "lon": -122.78494,
-   "sog_kn": 13.1,
-   "cog": 171.6,
-   "heading": 173,
    "nav_status": 0,
-   "updated": "2026-11-14 23:57:22.312688342 +0000 UTC"
+   "updated": "2026-11-15 00:02:16.38935743 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65009,
-   "lon": -122.74767,
-   "type_code": 33,
-   "updated": "2026-11-14 23:57:22.708681502 +0000 UTC"
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.64241,
+   "lon": -122.77325,
+   "sog_kn": 0.2,
+   "cog": 31,
+   "heading": 134,
+   "nav_status": 0,
+   "updated": "2026-11-15 00:02:17.594759722 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08965,
+   "lon": -122.92973,
+   "sog_kn": 0,
+   "cog": 72.7,
+   "heading": 109,
+   "nav_status": 5,
+   "updated": "2026-11-15 00:02:22.284386168 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.66955,
+   "lon": -122.76884,
+   "sog_kn": 1,
+   "cog": 333.2,
+   "heading": 60,
+   "nav_status": 5,
+   "updated": "2026-11-15 00:02:29.376675447 +0000 UTC"
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64725,
+   "lon": -122.74129,
+   "sog_kn": 0,
+   "cog": 127.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-15 00:02:31.766105859 +0000 UTC"
   }
  ]
 }
