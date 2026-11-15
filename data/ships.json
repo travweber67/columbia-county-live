@@ -1,71 +1,51 @@
 {
- "fetched_at": "2026-11-15T18:53:27Z",
+ "fetched_at": "2026-11-15T18:58:30Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09687,
-   "lon": -122.92835,
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.91008,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 68,
-   "nav_status": 3,
-   "updated": "2026-11-15 18:53:35.185992323 +0000 UTC"
+   "cog": 135.1,
+   "heading": 72,
+   "nav_status": 0,
+   "updated": "2026-11-15 18:58:41.531500981 +0000 UTC"
   },
   {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08193,
-   "lon": -122.90493,
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.64755,
+   "lon": -122.7398,
+   "type_code": 52,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-15 18:59:07.560353481 +0000 UTC",
    "sog_kn": 0,
-   "cog": 125.5,
-   "heading": 125,
+   "cog": 201.9,
+   "heading": 116,
+   "nav_status": 12
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.14566,
+   "lon": -123.28618,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-15 18:58:52.385635542 +0000 UTC"
+  },
+  {
+   "mmsi": 352006999,
+   "name": "WABI SABI",
+   "lat": 46.09905,
+   "lon": -122.93942,
+   "sog_kn": 0,
+   "cog": 4,
+   "heading": 110,
    "nav_status": 5,
-   "updated": "2026-11-15 18:53:39.196424861 +0000 UTC"
-  },
-  {
-   "mmsi": 357359000,
-   "name": "FEDERAL ILLINOIS",
-   "lat": 45.80552,
-   "lon": -122.7925,
-   "sog_kn": 11.9,
-   "cog": 333.6,
-   "heading": 335,
-   "nav_status": 0,
-   "updated": "2026-11-15 18:53:40.107176209 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.93047,
-   "lon": -122.80683,
-   "sog_kn": 9.7,
-   "cog": 183,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-15 18:53:41.7118781 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08182,
-   "lon": -122.90516,
-   "sog_kn": 0,
-   "cog": 53.5,
-   "heading": 128,
-   "nav_status": 0,
-   "updated": "2026-11-15 18:53:43.547627325 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 46.15811,
-   "lon": -123.40322,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-15 18:53:43.741453206 +0000 UTC"
+   "updated": "2026-11-15 18:59:01.757929112 +0000 UTC"
   }
  ]
 }
