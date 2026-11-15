@@ -1,69 +1,133 @@
 {
- "fetched_at": "2026-11-15T21:43:41Z",
+ "fetched_at": "2026-11-15T21:48:42Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08193,
-   "lon": -122.90493,
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19948,
+   "lon": -123.38507,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-15 21:48:49.707401115 +0000 UTC"
+  },
+  {
+   "mmsi": 636015567,
+   "name": "KYRA ZAFIRA",
+   "lat": 46.14307,
+   "lon": -123.30082,
+   "sog_kn": 12.1,
+   "cog": 81.2,
+   "heading": 79,
+   "nav_status": 0,
+   "updated": "2026-11-15 21:48:58.411731024 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08984,
+   "lon": -122.929,
+   "sog_kn": 0,
+   "cog": 240.6,
+   "heading": 100,
+   "nav_status": 0,
+   "updated": "2026-11-15 21:48:59.519647998 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.9101,
    "type_code": 52,
-   "destination": "PORTLAND",
-   "updated": "2026-11-15 21:43:45.153902417 +0000 UTC"
+   "destination": "US^0T0P>035F",
+   "updated": "2026-11-15 21:49:00.128969882 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64329,
+   "lon": -122.75286,
+   "sog_kn": 0,
+   "cog": 357.4,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-15 21:49:00.397083863 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09717,
+   "lon": -122.92791,
+   "sog_kn": 0,
+   "cog": 68.8,
+   "heading": 67,
+   "nav_status": 3,
+   "updated": "2026-11-15 21:49:05.86575826 +0000 UTC"
   },
   {
    "mmsi": 368041480,
    "name": "SAMANTHA S",
-   "lat": 45.98807,
-   "lon": -122.8387,
-   "sog_kn": 0.4,
-   "cog": 198.3,
-   "heading": 119,
-   "nav_status": 0,
-   "updated": "2026-11-15 21:43:47.557431345 +0000 UTC"
+   "lat": 45.9872,
+   "lon": -122.83744,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-15 21:49:09.933958039 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08179,
-   "lon": -122.90517,
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.64304,
+   "lon": -122.75222,
    "sog_kn": 0,
-   "cog": 24.6,
-   "heading": 129,
-   "nav_status": 0,
-   "updated": "2026-11-15 21:43:55.24019955 +0000 UTC"
+   "cog": 300,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-15 21:49:10.540343222 +0000 UTC"
   },
   {
-   "mmsi": 352006999,
-   "name": "WABI SABI",
-   "lat": 46.20042,
-   "lon": -123.42777,
-   "type_code": 70,
-   "destination": "KR YOS",
-   "updated": "2026-11-15 21:44:02.479265738 +0000 UTC"
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10789,
+   "lon": -122.95904,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-15 21:49:11.213905141 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.58754,
+   "lon": -122.77064,
+   "sog_kn": 0,
+   "cog": 31.5,
+   "heading": 137,
+   "nav_status": 0,
+   "updated": "2026-11-15 21:49:11.407698339 +0000 UTC"
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64724,
+   "lon": -122.74129,
+   "sog_kn": 0,
+   "cog": 127.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-15 21:49:12.881967436 +0000 UTC"
   },
   {
    "mmsi": 367061930,
    "name": "TEBENKOF",
-   "lat": 46.2,
-   "lon": -123.38549,
-   "sog_kn": 0,
-   "cog": 348.2,
+   "lat": 46.20003,
+   "lon": -123.38547,
+   "sog_kn": 0.1,
+   "cog": 345.6,
    "heading": 511,
    "nav_status": 15,
-   "updated": "2026-11-15 21:44:11.220295988 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08197,
-   "lon": -122.90546,
-   "sog_kn": 0.1,
-   "cog": 119.7,
-   "heading": 309,
-   "nav_status": 0,
-   "updated": "2026-11-15 21:44:11.324447193 +0000 UTC"
+   "updated": "2026-11-15 21:49:12.969739942 +0000 UTC"
   }
  ]
 }
