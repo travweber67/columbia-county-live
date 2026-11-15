@@ -1,77 +1,89 @@
 {
- "fetched_at": "2026-11-15T16:33:17Z",
+ "fetched_at": "2026-11-15T16:38:18Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 367513220,
    "name": "VANCOUVER",
-   "lat": 46.09076,
-   "lon": -122.9321,
+   "lat": 46.09077,
+   "lon": -122.93209,
    "type_code": 52,
    "destination": "COL RIVER",
-   "updated": "2026-11-15 16:33:26.773677554 +0000 UTC"
+   "updated": "2026-11-15 16:38:22.116849601 +0000 UTC"
+  },
+  {
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.1089,
+   "lon": -122.96129,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-15 16:38:23.313070707 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79271,
+   "lon": -122.84377,
+   "type_code": 52,
+   "destination": "US^02NV>02A0",
+   "updated": "2026-11-15 16:38:23.863913921 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09713,
+   "lon": -122.92823,
+   "sog_kn": 0,
+   "cog": 349.2,
+   "heading": 69,
+   "nav_status": 3,
+   "updated": "2026-11-15 16:38:23.864886523 +0000 UTC"
   },
   {
    "mmsi": 367681630,
    "name": "VICKI B",
-   "lat": 45.69672,
-   "lon": -122.77408,
-   "sog_kn": 6,
-   "cog": 196.3,
-   "heading": 194,
+   "lat": 45.68846,
+   "lon": -122.77555,
+   "sog_kn": 5.9,
+   "cog": 173.7,
+   "heading": 171,
    "nav_status": 0,
-   "updated": "2026-11-15 16:33:26.859446551 +0000 UTC"
+   "updated": "2026-11-15 16:38:29.37007228 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.61291,
-   "type_code": 0,
-   "updated": "2026-11-15 16:33:33.088741553 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.16271,
-   "lon": -123.40978,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65012,
+   "lon": -122.74763,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 135,
-   "nav_status": 0,
-   "updated": "2026-11-15 16:33:33.940193876 +0000 UTC"
+   "cog": 312.7,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-15 16:38:29.79726749 +0000 UTC"
   },
   {
-   "mmsi": 636026324,
-   "name": "STAR BELLA",
-   "lat": 46.02721,
-   "lon": -122.86958,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16348,
+   "lon": -123.0767,
+   "sog_kn": 1.9,
+   "cog": 299.2,
+   "heading": 289,
+   "nav_status": 3,
+   "updated": "2026-11-15 16:38:35.087256732 +0000 UTC"
+  },
+  {
+   "mmsi": 440576000,
+   "name": "PAN FLOWER",
+   "lat": 45.64381,
+   "lon": -122.74114,
    "sog_kn": 0,
-   "cog": 82.7,
-   "heading": 139,
-   "nav_status": 5,
-   "updated": "2026-11-15 16:33:35.67141991 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.6479,
-   "lon": -122.74095,
-   "sog_kn": 0,
-   "cog": 111.7,
-   "heading": 111,
-   "nav_status": 5,
-   "updated": "2026-11-15 16:33:37.778947899 +0000 UTC"
-  },
-  {
-   "mmsi": 352006531,
-   "name": "BARISM BETTY",
-   "lat": 45.66694,
-   "lon": -122.76709,
-   "type_code": 70,
-   "destination": "CNZJG - USPDX",
-   "updated": "2026-11-15 16:33:40.175197517 +0000 UTC"
+   "cog": 298.3,
+   "heading": 115,
+   "nav_status": 1,
+   "updated": "2026-11-15 16:38:48.139147848 +0000 UTC"
   }
  ]
 }
