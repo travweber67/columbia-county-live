@@ -3127,6 +3127,11 @@ html[data-theme="dark"] .site-footer{background:transparent;border-top:none}
 .footer-byline{color:rgba(255,255,255,.85)}
 .footer-byline strong{color:#fff}
 .footer-disc{color:rgba(255,255,255,.75)}
+/* R3-3b: the Cascade pill's day colours were dark green on a near-clear
+   fill, written for the old cream footer sheet; on the bare base they
+   vanish. It takes the on-green treatment in both themes (the dark
+   theme already had it). */
+.cascade-footer-link{color:#dff0e2;background:rgba(244,241,228,.08);border-color:rgba(255,255,255,.35)}
 
 /* R3-4 — no full-page photo behind any view's cards. Round 2 removed
    Travel's; the same treatment now covers Today, Outdoors, Events &
