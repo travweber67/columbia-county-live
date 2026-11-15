@@ -1,58 +1,138 @@
 {
- "fetched_at": "2026-11-15T08:27:35Z",
+ "fetched_at": "2026-11-15T08:32:35Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 13 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64362,
-   "lon": -122.75233,
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.64715,
+   "lon": -122.73958,
    "sog_kn": 0,
-   "cog": 202.6,
+   "cog": 51.1,
+   "heading": 290,
+   "nav_status": 12,
+   "updated": "2026-11-15 08:32:38.867722434 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65018,
+   "lon": -122.74752,
+   "sog_kn": 0,
+   "cog": 244.1,
    "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-15 08:32:39.136922964 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59405,
+   "lon": -122.77208,
+   "sog_kn": 0,
+   "cog": 338.3,
+   "heading": 148,
    "nav_status": 5,
-   "updated": "2026-11-15 08:27:38.761910015 +0000 UTC"
+   "updated": "2026-11-15 08:32:42.295995821 +0000 UTC"
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64735,
+   "lon": -122.7413,
+   "sog_kn": 0,
+   "cog": 127.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-15 08:32:42.780859123 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16451,
+   "lon": -123.07953,
+   "sog_kn": 0.7,
+   "cog": 128.1,
+   "heading": 122,
+   "nav_status": 3,
+   "updated": "2026-11-15 08:32:45.302709005 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64539,
+   "lon": -122.73504,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-15 08:32:45.815446293 +0000 UTC"
   },
   {
    "mmsi": 367608420,
    "name": "PETER J BRIX",
-   "lat": 46.02608,
-   "lon": -122.86867,
-   "sog_kn": 0,
-   "cog": 160.3,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-15 08:27:43.624306562 +0000 UTC"
+   "lat": 46.01695,
+   "lon": -122.86081,
+   "type_code": 52,
+   "destination": "CSR OPS",
+   "updated": "2026-11-15 08:32:47.24108696 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10329,
-   "lon": -122.95677,
-   "sog_kn": 8.5,
-   "cog": 294.5,
-   "heading": 297,
-   "nav_status": 3,
-   "updated": "2026-11-15 08:27:44.734353973 +0000 UTC"
+   "mmsi": 636024922,
+   "name": "VERACITY",
+   "lat": 45.98398,
+   "lon": -122.83531,
+   "type_code": 70,
+   "destination": "KALAMA USA",
+   "updated": "2026-11-15 08:32:47.8744503 +0000 UTC"
   },
   {
    "mmsi": 212138000,
    "name": "ALKIMOS HERACLES",
-   "lat": 46.02802,
-   "lon": -122.87585,
+   "lat": 46.02801,
+   "lon": -122.87581,
    "type_code": 70,
    "destination": "US KAL > JP SBS",
-   "updated": "2026-11-15 08:27:51.903158799 +0000 UTC"
+   "updated": "2026-11-15 08:32:55.006833396 +0000 UTC"
   },
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 45.64334,
-   "lon": -122.75281,
-   "type_code": 50,
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-15 08:28:04.446604871 +0000 UTC"
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.15783,
+   "lon": -123.39791,
+   "type_code": 52,
+   "destination": "US^02SX>02A3",
+   "updated": "2026-11-15 08:32:57.997755906 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37713,
+   "sog_kn": 0,
+   "cog": 167.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-15 08:32:58.654725582 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10355,
+   "lon": -122.91008,
+   "sog_kn": 0.1,
+   "cog": 175.6,
+   "heading": 72,
+   "nav_status": 0,
+   "updated": "2026-11-15 08:33:02.141090739 +0000 UTC"
+  },
+  {
+   "mmsi": 367513140,
+   "name": "CLEARWATER",
+   "lat": 45.61756,
+   "lon": -122.78964,
+   "type_code": 52,
+   "destination": "US^01JQ>0T67",
+   "updated": "2026-11-15 08:33:06.78458175 +0000 UTC"
   }
  ]
 }
