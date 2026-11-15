@@ -1,6 +1,71 @@
 {
- "fetched_at": "2026-11-15T04:32:14Z",
- "status": "error",
- "note": "AISStream error: _ssl.c:1064: The handshake operation timed out",
- "ships": []
+ "fetched_at": "2026-11-15T04:37:15Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64354,
+   "lon": -122.75295,
+   "sog_kn": 0,
+   "cog": 101.4,
+   "heading": 230,
+   "nav_status": 5,
+   "updated": "2026-11-15 04:37:21.244037794 +0000 UTC"
+  },
+  {
+   "mmsi": 366396000,
+   "name": "NAT GEO SEA LION",
+   "lat": 46.08956,
+   "lon": -122.92976,
+   "sog_kn": 0,
+   "cog": 283.1,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-15 04:37:25.852216856 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.66824,
+   "lon": -122.77114,
+   "sog_kn": 5.9,
+   "cog": 153,
+   "heading": 153,
+   "nav_status": 0,
+   "updated": "2026-11-15 04:37:30.547574026 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08177,
+   "lon": -122.90459,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-15 04:37:43.769844916 +0000 UTC"
+  },
+  {
+   "mmsi": 563302700,
+   "name": "KEY WEST",
+   "lat": 46.11045,
+   "lon": -122.96996,
+   "sog_kn": 4,
+   "cog": 317.8,
+   "heading": 319,
+   "nav_status": 0,
+   "updated": "2026-11-15 04:37:45.988175463 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61289,
+   "sog_kn": 0,
+   "cog": 35.9,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-15 04:37:48.974738757 +0000 UTC"
+  }
+ ]
 }
