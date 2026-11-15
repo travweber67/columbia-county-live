@@ -1,60 +1,89 @@
 {
- "fetched_at": "2026-11-15T06:17:24Z",
+ "fetched_at": "2026-11-15T06:19:33Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09079,
+   "lon": -122.93211,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-15 06:20:21.172210747 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09409,
+   "lon": -122.94278,
+   "sog_kn": 0,
+   "cog": 154,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-15 06:20:23.560439075 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.6473,
+   "lon": -122.73993,
+   "type_code": 52,
+   "destination": "SRT PASCO",
+   "updated": "2026-11-15 06:20:23.735048187 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08968,
+   "lon": -122.92973,
+   "sog_kn": 0,
+   "cog": 72.7,
+   "heading": 109,
+   "nav_status": 5,
+   "updated": "2026-11-15 06:20:24.418500186 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58728,
+   "lon": -122.77008,
+   "sog_kn": 0,
+   "cog": 214.6,
+   "heading": 139,
+   "nav_status": 5,
+   "updated": "2026-11-15 06:20:26.803348763 +0000 UTC"
+  },
   {
    "mmsi": 367047150,
    "name": "CAPTAIN BOB",
-   "lat": 45.64668,
-   "lon": -122.73855,
-   "sog_kn": 4.1,
-   "cog": 25.5,
-   "heading": 14,
+   "lat": 45.64739,
+   "lon": -122.73943,
+   "sog_kn": 0,
+   "cog": 315.3,
+   "heading": 286,
    "nav_status": 12,
-   "updated": "2026-11-15 06:17:29.749185509 +0000 UTC"
+   "updated": "2026-11-15 06:20:30.869212238 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.16904,
-   "lon": -123.08757,
-   "sog_kn": 0.5,
-   "cog": 133.8,
-   "heading": 123,
+   "mmsi": 563302700,
+   "name": "KEY WEST",
+   "lat": 46.11856,
+   "lon": -122.9804,
+   "type_code": 70,
+   "destination": "LONGVIEW USA",
+   "updated": "2026-11-15 06:20:38.834695071 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09695,
+   "lon": -122.92836,
+   "sog_kn": 0.3,
+   "cog": 193.7,
+   "heading": 67,
    "nav_status": 3,
-   "updated": "2026-11-15 06:17:45.26470026 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.61921,
-   "lon": -122.78791,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-15 06:17:42.964292587 +0000 UTC"
-  },
-  {
-   "mmsi": 367719170,
-   "name": "RYAN POINT",
-   "lat": 45.64729,
-   "lon": -122.73947,
-   "sog_kn": 0,
-   "cog": 250.4,
-   "heading": 288,
-   "nav_status": 12,
-   "updated": "2026-11-15 06:17:47.226148805 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00882,
-   "lon": -122.84883,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-15 06:17:47.425953127 +0000 UTC"
+   "updated": "2026-11-15 06:20:41.227094302 +0000 UTC"
   }
  ]
 }
