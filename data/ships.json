@@ -1,47 +1,93 @@
 {
- "fetched_at": "2026-11-16T01:29:02Z",
+ "fetched_at": "2026-11-16T01:34:00Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.0821,
+   "lon": -122.90544,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 312,
+   "nav_status": 3,
+   "updated": "2026-11-16 01:33:57.15877015 +0000 UTC"
+  },
   {
    "mmsi": 367047170,
    "name": "MAVERICK",
-   "lat": 46.06311,
-   "lon": -122.88545,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-16 01:29:42.927142138 +0000 UTC"
-  },
-  {
-   "mmsi": 636024633,
-   "name": "PAVO LEADER",
-   "lat": 45.64051,
-   "lon": -122.71743,
-   "type_code": 70,
-   "destination": "US VAN",
-   "updated": "2026-11-16 01:29:45.630755727 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.14957,
-   "lon": -123.27157,
-   "sog_kn": 0.8,
-   "cog": 69.1,
-   "heading": 256,
-   "nav_status": 3,
-   "updated": "2026-11-16 01:29:47.765728411 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08983,
-   "lon": -122.92904,
-   "sog_kn": 0,
-   "cog": 220,
-   "heading": 101,
+   "lat": 46.05367,
+   "lon": -122.88215,
+   "sog_kn": 7,
+   "cog": 169.3,
+   "heading": 172,
    "nav_status": 0,
-   "updated": "2026-11-16 01:29:47.766028855 +0000 UTC"
+   "updated": "2026-11-16 01:34:10.087717719 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.57608,
+   "lon": -122.74542,
+   "type_code": 52,
+   "destination": "US^0R88>0UJB",
+   "updated": "2026-11-16 01:34:13.012352161 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58083,
+   "lon": -122.75976,
+   "sog_kn": 0,
+   "cog": 117.7,
+   "heading": 213,
+   "nav_status": 5,
+   "updated": "2026-11-16 01:34:25.719041697 +0000 UTC"
+  },
+  {
+   "mmsi": 352006982,
+   "name": "MOSHILL",
+   "lat": 45.63365,
+   "lon": -122.70104,
+   "sog_kn": 0,
+   "cog": 199.5,
+   "heading": 126,
+   "nav_status": 5,
+   "updated": "2026-11-16 01:34:26.065565283 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00883,
+   "lon": -122.84883,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-16 01:34:26.878278743 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 358.5,
+   "heading": 137,
+   "nav_status": 15,
+   "updated": "2026-11-16 01:34:27.599302035 +0000 UTC"
+  },
+  {
+   "mmsi": 338158000,
+   "name": "WEST VIRGINIA",
+   "lat": 45.57553,
+   "lon": -122.74482,
+   "sog_kn": 6.7,
+   "cog": 129.6,
+   "heading": 129,
+   "nav_status": 0,
+   "updated": "2026-11-16 01:34:32.718888848 +0000 UTC"
   }
  ]
 }
