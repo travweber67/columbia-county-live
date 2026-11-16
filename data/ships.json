@@ -1,58 +1,91 @@
 {
- "fetched_at": "2026-11-16T06:34:25Z",
+ "fetched_at": "2026-11-16T06:39:26Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64049,
+   "lon": -122.73296,
+   "sog_kn": 8.8,
+   "cog": 292.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-16 06:39:30.526847321 +0000 UTC"
+  },
+  {
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.10892,
+   "lon": -122.96128,
+   "sog_kn": 0,
+   "cog": 327.2,
+   "heading": 130,
+   "nav_status": 5,
+   "updated": "2026-11-16 06:39:32.127335319 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09691,
+   "lon": -122.92757,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-16 06:39:35.534330781 +0000 UTC"
+  },
+  {
+   "mmsi": 636024922,
+   "name": "VERACITY",
+   "lat": 45.98417,
+   "lon": -122.83545,
+   "sog_kn": 0,
+   "cog": 321.2,
+   "heading": 151,
+   "nav_status": 5,
+   "updated": "2026-11-16 06:39:37.923915968 +0000 UTC"
+  },
+  {
+   "mmsi": 636015567,
+   "name": "KYRA ZAFIRA",
+   "lat": 45.63044,
+   "lon": -122.69566,
+   "sog_kn": 0.1,
+   "cog": 20.8,
+   "heading": 127,
+   "nav_status": 5,
+   "updated": "2026-11-16 06:39:42.959747559 +0000 UTC"
+  },
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
    "lat": 46.08181,
    "lon": -122.90516,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-16 06:39:43.640041699 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.1995,
+   "lon": -123.385,
    "sog_kn": 0,
-   "cog": 177.2,
-   "heading": 129,
-   "nav_status": 0,
-   "updated": "2026-11-16 06:34:33.114937295 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.70837,
-   "lon": -122.76901,
-   "type_code": 57,
-   "destination": "US^0UX0>0ZBC",
-   "updated": "2026-11-16 06:34:37.354894836 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 45.98259,
-   "lon": -122.83412,
-   "sog_kn": 0.9,
-   "cog": 44.2,
+   "cog": 253,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 06:34:46.168945056 +0000 UTC"
+   "nav_status": 5,
+   "updated": "2026-11-16 06:39:48.419993521 +0000 UTC"
   },
   {
-   "mmsi": 368257130,
-   "name": "TRIUMPH VII",
-   "lat": 46.00986,
-   "lon": -122.84833,
-   "sog_kn": 0,
-   "cog": 295.8,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-16 06:34:47.789427241 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.14395,
-   "lon": -123.29366,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-16 06:34:51.203180353 +0000 UTC"
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58733,
+   "lon": -122.77043,
+   "type_code": 31,
+   "destination": "US^02SY>0UJ9",
+   "updated": "2026-11-16 06:39:48.954793283 +0000 UTC"
   }
  ]
 }
