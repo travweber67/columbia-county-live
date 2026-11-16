@@ -1449,7 +1449,9 @@ body.sponsor-on{overflow:hidden}
 .dir-call:hover{text-decoration:underline}
 .dir-addr{font-size:.78rem;color:var(--muted)}
 /* Community Help entries as their own little cards (2026-11-14): scoped
-   to the Help view so the business directory keeps its divider list.
+   to the Help view cards; since v92 the same name links and link
+   treatment also cover the directory's free-help entries, where the
+   names carried no links at all.
    The name links to the organization's own website where one is
    verified (the ↗ mark); long descriptions ride the incident cards'
    grid-rows pull-down (.dir-more), short ones show in full. */
@@ -1458,12 +1460,16 @@ body.sponsor-on{overflow:hidden}
   background:var(--panel-2);border:1px solid var(--border);border-radius:12px;
   padding:12px 14px;
 }
-#view-help .dir-item h3 a.dir-web{color:inherit;text-decoration:none}
-#view-help .dir-item h3 a.dir-web::after{
-  content:"↗";font-size:.72em;font-weight:700;color:var(--accent);
-  margin-left:4px;vertical-align:super;
+.dir-item h3 a.dir-web{
+  display:block;padding:4px 0;margin:-4px 0;color:var(--accent-dark);
+  text-decoration:underline;text-decoration-thickness:1.5px;
+  text-underline-offset:3px;
 }
-#view-help .dir-item h3 a.dir-web:hover{text-decoration:underline}
+.dir-item h3 a.dir-web::after{
+  content:"↗";font-size:.8em;font-weight:700;color:var(--accent);
+  margin-left:5px;vertical-align:super;
+}
+.dir-item h3 a.dir-web:hover{text-decoration-thickness:2.5px}
 #view-help .dir-more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease}
 #view-help .dir-item.open .dir-more{grid-template-rows:1fr}
 #view-help .dir-more-in{overflow:hidden;min-height:0}
@@ -1479,7 +1485,9 @@ body.sponsor-on{overflow:hidden}
   background:rgba(233,164,74,.10);
 }
 html[data-theme="dark"] /* Community Help entries as their own little cards (2026-11-14): scoped
-   to the Help view so the business directory keeps its divider list.
+   to the Help view cards; since v92 the same name links and link
+   treatment also cover the directory's free-help entries, where the
+   names carried no links at all.
    The name links to the organization's own website where one is
    verified (the ↗ mark); long descriptions ride the incident cards'
    grid-rows pull-down (.dir-more), short ones show in full. */
@@ -1488,12 +1496,16 @@ html[data-theme="dark"] /* Community Help entries as their own little cards (202
   background:var(--panel-2);border:1px solid var(--border);border-radius:12px;
   padding:12px 14px;
 }
-#view-help .dir-item h3 a.dir-web{color:inherit;text-decoration:none}
-#view-help .dir-item h3 a.dir-web::after{
-  content:"↗";font-size:.72em;font-weight:700;color:var(--accent);
-  margin-left:4px;vertical-align:super;
+.dir-item h3 a.dir-web{
+  display:block;padding:4px 0;margin:-4px 0;color:var(--accent-dark);
+  text-decoration:underline;text-decoration-thickness:1.5px;
+  text-underline-offset:3px;
 }
-#view-help .dir-item h3 a.dir-web:hover{text-decoration:underline}
+.dir-item h3 a.dir-web::after{
+  content:"↗";font-size:.8em;font-weight:700;color:var(--accent);
+  margin-left:5px;vertical-align:super;
+}
+.dir-item h3 a.dir-web:hover{text-decoration-thickness:2.5px}
 #view-help .dir-more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease}
 #view-help .dir-item.open .dir-more{grid-template-rows:1fr}
 #view-help .dir-more-in{overflow:hidden;min-height:0}
