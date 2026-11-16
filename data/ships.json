@@ -1,90 +1,60 @@
 {
- "fetched_at": "2026-11-16T05:19:19Z",
+ "fetched_at": "2026-11-16T05:19:58Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513120,
-   "name": "CASCADES",
-   "lat": 45.63789,
-   "lon": -122.72794,
-   "sog_kn": 0.1,
-   "cog": 216,
-   "heading": 119,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19998,
+   "lon": -123.3854,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-16 05:20:44.82015787 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.0095,
+   "lon": -122.85596,
+   "sog_kn": 8.6,
+   "cog": 153.7,
+   "heading": 152,
+   "nav_status": 0,
+   "updated": "2026-11-16 05:20:47.382358269 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00884,
+   "lon": -122.84879,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-16 05:20:57.189324967 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.6432,
+   "lon": -122.77527,
+   "sog_kn": 7,
+   "cog": 214.7,
+   "heading": 223,
+   "nav_status": 0,
+   "updated": "2026-11-16 05:20:59.16088302 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.80209,
+   "lon": -122.78947,
+   "sog_kn": 5.6,
+   "cog": 160,
+   "heading": 160,
    "nav_status": 12,
-   "updated": "2026-11-16 05:19:22.222360194 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.63738,
-   "lon": -122.72694,
-   "sog_kn": 0,
-   "cog": 25,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 05:19:29.724958678 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58756,
-   "lon": -122.77045,
-   "sog_kn": 0,
-   "cog": 291.1,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 05:19:30.926511672 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.16234,
-   "lon": -123.07457,
-   "sog_kn": 1,
-   "cog": 123.3,
-   "heading": 122,
-   "nav_status": 3,
-   "updated": "2026-11-16 05:19:34.337084748 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.3855,
-   "sog_kn": 0,
-   "cog": 339,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-16 05:19:40.223504829 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08193,
-   "lon": -122.90494,
-   "type_code": 52,
-   "destination": "PORTLAND",
-   "updated": "2026-11-16 05:19:45.173856366 +0000 UTC"
-  },
-  {
-   "mmsi": 367347000,
-   "name": "WENDY SEAA",
-   "lat": 46.19948,
-   "lon": -123.38507,
-   "sog_kn": 0,
-   "cog": 0.9,
-   "heading": 147,
-   "nav_status": 5,
-   "updated": "2026-11-16 05:19:47.977728333 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64355,
-   "lon": -122.75237,
-   "type_code": 52,
-   "updated": "2026-11-16 05:19:50.804104689 +0000 UTC"
+   "updated": "2026-11-16 05:21:06.495837673 +0000 UTC"
   }
  ]
 }
