@@ -1,14 +1,14 @@
 {
- "fetched_at": "2026-11-16T07:50:13Z",
- "status": "ok",
- "note": "MRMS grids still fresh \u2014 reusing the last good pull",
+ "fetched_at": "2026-11-16T08:20:13Z",
+ "status": "partial",
+ "note": "MRMS pull failed ([Errno 122] Disk quota exceeded) \u2014 showing the last good grids",
  "source": "NOAA MRMS radar-gauge rainfall (QPE), archived grids served by Iowa State University's IEM, averaged over each creek's basin",
  "valid_time": "2026-11-16T05:00:00Z",
  "basins": {
   "wilson": {
    "p24_in": 0.53,
    "p72_in": 2.05,
-   "days_since_flush": 2,
+   "days_since_flush": 3,
    "first_flush": false
   },
   "nehalem": {
@@ -20,7 +20,7 @@
   "nf_nehalem": {
    "p24_in": 0.47,
    "p72_in": 1.57,
-   "days_since_flush": 2,
+   "days_since_flush": 3,
    "first_flush": false
   },
   "big_creek": {
