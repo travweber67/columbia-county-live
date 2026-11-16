@@ -1,61 +1,106 @@
 {
- "fetched_at": "2026-11-16T02:59:07Z",
+ "fetched_at": "2026-11-16T03:04:07Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15343,
-   "lon": -123.37713,
-   "type_code": 99,
-   "updated": "2026-11-16 02:59:21.342577171 +0000 UTC"
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35744,
+   "type_code": 30,
+   "updated": "2026-11-16 03:04:16.226622303 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 93.8,
+   "heading": 135,
+   "nav_status": 15
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.149,
+   "lon": -123.27123,
+   "sog_kn": 1.7,
+   "cog": 268.7,
+   "heading": 273,
+   "nav_status": 3,
+   "updated": "2026-11-16 03:04:16.39684106 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65021,
+   "lon": -122.74771,
+   "type_code": 33,
+   "updated": "2026-11-16 03:04:17.166741415 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.65837,
+   "lon": -122.75739,
+   "type_code": 52,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-16 03:04:17.765934729 +0000 UTC"
+  },
+  {
+   "mmsi": 636024633,
+   "name": "PAVO LEADER",
+   "lat": 45.64052,
+   "lon": -122.7174,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-16 03:04:19.756564843 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.6129,
+   "type_code": 0,
+   "updated": "2026-11-16 03:04:22.542655959 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61203,
+   "lon": -122.64538,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-16 03:04:25.273732027 +0000 UTC"
   },
   {
    "mmsi": 367531220,
    "name": "WATCHMAN",
-   "lat": 46.20003,
-   "lon": -123.38536,
+   "lat": 46.20001,
+   "lon": -123.38538,
    "sog_kn": 0,
-   "cog": 344.9,
+   "cog": 345.5,
    "heading": 511,
    "nav_status": 8,
-   "updated": "2026-11-16 02:59:24.815003242 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10797,
-   "lon": -122.959,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 02:59:29.68244929 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58756,
-   "lon": -122.77046,
-   "sog_kn": 0,
-   "cog": 291.1,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 02:59:36.068094416 +0000 UTC",
-   "type_code": 52,
-   "destination": "US^0R88>0UJB"
+   "updated": "2026-11-16 03:04:35.121081437 +0000 UTC"
   },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 46.15244,
-   "lon": -123.04409,
-   "sog_kn": 0.4,
-   "cog": 94.8,
-   "heading": 133,
+   "lat": 46.15307,
+   "lon": -123.04782,
+   "sog_kn": 9.4,
+   "cog": 302.8,
+   "heading": 303,
    "nav_status": 3,
-   "updated": "2026-11-16 02:59:35.482666659 +0000 UTC"
+   "updated": "2026-11-16 03:04:35.172621335 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08211,
+   "lon": -122.90544,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 312,
+   "nav_status": 3,
+   "updated": "2026-11-16 03:04:37.680770271 +0000 UTC"
   }
  ]
 }
