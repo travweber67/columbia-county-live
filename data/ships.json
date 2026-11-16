@@ -1,78 +1,53 @@
 {
- "fetched_at": "2026-11-16T23:05:41Z",
+ "fetched_at": "2026-11-16T23:10:40Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 352006531,
-   "name": "BARISM BETTY",
-   "lat": 45.60112,
-   "lon": -122.77476,
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.71033,
+   "lon": -122.76746,
+   "sog_kn": 8.4,
+   "cog": 193.3,
+   "heading": 190,
+   "nav_status": 0,
+   "updated": "2026-11-16 23:11:04.544691986 +0000 UTC",
+   "type_code": 52,
+   "destination": "CSR OPS"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15705,
+   "lon": -123.40232,
    "sog_kn": 0,
-   "cog": 90.1,
-   "heading": 277,
-   "nav_status": 5,
-   "updated": "2026-11-16 23:06:01.756696976 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08258,
-   "lon": -122.90661,
-   "sog_kn": 6.1,
-   "cog": 125.8,
-   "heading": 511,
+   "cog": 360,
+   "heading": 139,
    "nav_status": 0,
-   "updated": "2026-11-16 23:06:05.104962063 +0000 UTC"
+   "updated": "2026-11-16 23:11:13.881933693 +0000 UTC"
   },
   {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.70548,
-   "lon": -122.76711,
-   "sog_kn": 6.6,
-   "cog": 192.6,
-   "heading": 194,
-   "nav_status": 0,
-   "updated": "2026-11-16 23:06:06.377702487 +0000 UTC"
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09736,
+   "lon": -122.93455,
+   "sog_kn": 0,
+   "cog": 3.6,
+   "heading": 104,
+   "nav_status": 3,
+   "updated": "2026-11-16 23:11:15.083172443 +0000 UTC"
   },
   {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00886,
-   "lon": -122.84884,
-   "type_code": 50,
-   "destination": "--",
-   "updated": "2026-11-16 23:06:11.312900826 +0000 UTC"
-  },
-  {
-   "mmsi": 367513120,
-   "name": "CASCADES",
-   "lat": 45.62702,
-   "lon": -122.79035,
-   "sog_kn": 7.3,
-   "cog": 4.2,
-   "heading": 7,
-   "nav_status": 0,
-   "updated": "2026-11-16 23:06:13.526629305 +0000 UTC"
-  },
-  {
-   "mmsi": 355980000,
-   "name": "LUGANO STAR",
-   "lat": 45.64293,
-   "lon": -122.77157,
-   "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-16 23:06:14.102308543 +0000 UTC"
-  },
-  {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64537,
-   "lon": -122.73504,
-   "type_code": 70,
-   "destination": "PER ORDERS",
-   "updated": "2026-11-16 23:06:22.334344068 +0000 UTC"
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79341,
+   "lon": -122.84306,
+   "sog_kn": 0,
+   "cog": 156.6,
+   "heading": 29,
+   "nav_status": 12,
+   "updated": "2026-11-16 23:11:18.595719805 +0000 UTC"
   }
  ]
 }
