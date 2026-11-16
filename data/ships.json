@@ -1,71 +1,49 @@
 {
- "fetched_at": "2026-11-16T09:20:17Z",
+ "fetched_at": "2026-11-16T09:24:38Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.61201,
-   "lon": -122.64535,
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08198,
+   "lon": -122.90548,
    "sog_kn": 0,
-   "cog": 284.9,
-   "heading": 297,
+   "cog": 308.7,
+   "heading": 310,
+   "nav_status": 0,
+   "updated": "2026-11-16 09:24:50.953925755 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.98539,
+   "lon": -122.83644,
+   "sog_kn": 0,
+   "cog": 38,
+   "heading": 331,
    "nav_status": 5,
-   "updated": "2026-11-16 09:20:58.147554201 +0000 UTC"
+   "updated": "2026-11-16 09:24:56.098442398 +0000 UTC"
   },
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60756,
-   "lon": -122.67758,
+   "mmsi": 636015993,
+   "name": "SIEM NEWTON",
+   "lat": 45.63302,
+   "lon": -122.73785,
+   "type_code": 79,
+   "destination": "KRMAS",
+   "updated": "2026-11-16 09:25:02.145701226 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.91008,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "cog": 40.5,
+   "heading": 72,
    "nav_status": 0,
-   "updated": "2026-11-16 09:21:16.652466814 +0000 UTC"
-  },
-  {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 45.98387,
-   "lon": -122.83563,
-   "sog_kn": 0,
-   "cog": 93.2,
-   "heading": 61,
-   "nav_status": 0,
-   "updated": "2026-11-16 09:21:17.668366295 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.07008,
-   "lon": -122.88937,
-   "sog_kn": 0.6,
-   "cog": 174.3,
-   "heading": 153,
-   "nav_status": 3,
-   "updated": "2026-11-16 09:21:21.952201262 +0000 UTC"
-  },
-  {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 45.64731,
-   "lon": -122.74128,
-   "sog_kn": 0,
-   "cog": 127.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 09:21:22.381699103 +0000 UTC"
-  },
-  {
-   "mmsi": 352006982,
-   "name": "MOSHILL",
-   "lat": 45.63374,
-   "lon": -122.70102,
-   "type_code": 70,
-   "destination": "CA VAN",
-   "updated": "2026-11-16 09:21:23.147635677 +0000 UTC"
+   "updated": "2026-11-16 09:25:11.359607543 +0000 UTC"
   }
  ]
 }
