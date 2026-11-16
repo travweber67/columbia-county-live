@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-16T04:19:13Z",
+ "fetched_at": "2026-11-16T04:19:52Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
@@ -7,41 +7,61 @@
    "hex": "a2adf4",
    "callsign": "ASA1386",
    "type": "B739",
-   "alt_ft": 32250,
-   "gs_kn": 386.7,
-   "track": 185.34,
-   "lat": 46.219063,
-   "lon": -123.10833
+   "alt_ft": 33000,
+   "gs_kn": 385.7,
+   "track": 185.36,
+   "lat": 46.094833,
+   "lon": -123.124918
   },
   {
    "hex": "a7398e",
    "callsign": "ASA779",
    "type": "B738",
-   "alt_ft": 2900,
-   "gs_kn": 210.2,
-   "track": 26.57,
-   "lat": 45.618439,
-   "lon": -122.872099
+   "alt_ft": 2800,
+   "gs_kn": 184.2,
+   "track": 87.51,
+   "lat": 45.667374,
+   "lon": -122.821253
   },
   {
    "hex": "ab148b",
    "callsign": "ASA764",
    "type": "B38M",
-   "alt_ft": 26425,
-   "gs_kn": 467.3,
-   "track": 352.25,
-   "lat": 46.151563,
-   "lon": -122.688103
+   "alt_ft": 24100,
+   "gs_kn": 448.3,
+   "track": 352.05,
+   "lat": 46.29776,
+   "lon": -122.717352
   },
   {
    "hex": "adba0a",
    "callsign": "ASA591",
    "type": "B39M",
-   "alt_ft": 30000,
-   "gs_kn": 489.4,
-   "track": 350.0,
-   "lat": 45.922668,
-   "lon": -122.634687
+   "alt_ft": 27550,
+   "gs_kn": 473.8,
+   "track": 350.28,
+   "lat": 46.077118,
+   "lon": -122.673139
+  },
+  {
+   "hex": "a8a82f",
+   "callsign": "QXE2335",
+   "type": "E75L",
+   "alt_ft": 28000,
+   "gs_kn": 476.1,
+   "track": 350.08,
+   "lat": 45.911407,
+   "lon": -122.631806
+  },
+  {
+   "hex": "ab79de",
+   "callsign": "AAL3230",
+   "type": "A319",
+   "alt_ft": "ground",
+   "gs_kn": 15.5,
+   "track": null,
+   "lat": 45.593809,
+   "lon": -122.613224
   }
  ]
 }

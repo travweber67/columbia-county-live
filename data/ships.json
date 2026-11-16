@@ -1,60 +1,70 @@
 {
- "fetched_at": "2026-11-16T04:19:13Z",
+ "fetched_at": "2026-11-16T04:19:52Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 563302700,
-   "name": "KEY WEST",
-   "lat": 46.10363,
-   "lon": -122.95023,
-   "sog_kn": 0,
-   "cog": 292.2,
-   "heading": 118,
-   "nav_status": 5,
-   "updated": "2026-11-16 04:19:22.091230229 +0000 UTC"
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.6436,
+   "lon": -122.75239,
+   "type_code": 52,
+   "updated": "2026-11-16 04:20:28.545026252 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16047,
+   "lon": -123.07168,
+   "sog_kn": 8.5,
+   "cog": 108.8,
+   "heading": 110,
+   "nav_status": 3,
+   "updated": "2026-11-16 04:20:35.222903306 +0000 UTC"
   },
   {
    "mmsi": 366986380,
    "name": "DREDGE OREGON",
    "lat": 46.0821,
-   "lon": -122.90543,
-   "sog_kn": 0,
-   "cog": 360,
+   "lon": -122.90544,
+   "sog_kn": 0.1,
+   "cog": 214.3,
    "heading": 312,
    "nav_status": 3,
-   "updated": "2026-11-16 04:19:26.874437533 +0000 UTC"
+   "updated": "2026-11-16 04:20:37.951739107 +0000 UTC"
   },
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58078,
-   "lon": -122.76007,
-   "type_code": 31,
-   "destination": "PTSI PDX",
-   "updated": "2026-11-16 04:19:27.204059758 +0000 UTC"
+   "mmsi": 367513120,
+   "name": "CASCADES",
+   "lat": 45.64139,
+   "lon": -122.72691,
+   "sog_kn": 4.6,
+   "cog": 294.6,
+   "heading": 288,
+   "nav_status": 12,
+   "updated": "2026-11-16 04:20:51.951870925 +0000 UTC"
   },
   {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 45.64726,
-   "lon": -122.74133,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40234,
    "sog_kn": 0,
-   "cog": 127.7,
+   "cog": 360,
+   "heading": 131,
+   "nav_status": 0,
+   "updated": "2026-11-16 04:20:54.337047562 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60754,
+   "lon": -122.67775,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-16 04:19:42.739729085 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08193,
-   "lon": -122.90529,
-   "sog_kn": 0,
-   "cog": 273.4,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 04:19:44.709315812 +0000 UTC"
+   "updated": "2026-11-16 04:20:55.618188769 +0000 UTC"
   }
  ]
 }
