@@ -3454,3 +3454,15 @@ html[data-theme="dark"] .dir-empty{
   background:linear-gradient(180deg,rgba(26,43,32,.88),rgba(13,23,16,.82));
   border-color:rgba(196,226,196,.18);color:var(--text);
 }
+
+/* ===== Kneeland demo correction (Nov 16, 2026) — FS ribbon placement =====
+   Travis's review: the badge must never crowd a phone number. Measured on
+   the live layout: in directory items the live top-right ribbon overlaps
+   the phone link at desktop width (ribbon x1163-1207 y811-862 vs phone
+   x1066-1199 y842-865 at 1280px). Panel and sheet ribbons keep the live
+   top-right treatment — there they land on the logo graphic only, with
+   every text element clear. In directory items the ribbon moves over the
+   photo's top-left corner instead, clear of all text at both widths. */
+#pv-sheet .otl-card{position:relative}
+.sheet-ribbon{position:absolute;top:10px;right:10px;width:44px;z-index:3}
+.dir-ribbon{left:10px;right:auto}

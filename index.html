@@ -31,12 +31,12 @@
 if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
-<link rel="manifest" href="manifest.webmanifest?v=92">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=92">
+<link rel="manifest" href="manifest.webmanifest?v=93">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=93">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=92">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=92">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=92">
+<link rel="stylesheet" href="style.css?v=93">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=93">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=93">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
      only page backgrounds first paint needs — warm them with the hero.
      Every other view's photo is lazy-attached by app.js. -->
@@ -224,7 +224,7 @@ document.documentElement.setAttribute("data-theme",t);})();
          v6 phone mover used to carry them to). -->
     <div class="founding-cells">
       <article class="founding-cell taken" data-otl-cell>
-        <img class="founding-ribbon cell-ribbon" src="img/founding-ribbon.png?v=92" alt="Founding Sponsor" title="Founding Sponsor">
+        <img class="founding-ribbon cell-ribbon" src="img/founding-ribbon.png?v=93" alt="Founding Sponsor" title="Founding Sponsor">
         <div class="otl-logo-box"><img src="img/preview-otl-logo.png" alt="Oregon Trail Lanes logo"></div>
         <p class="cell-eyebrow">Founding Sponsor · Spot 1 of 3</p>
         <h3>Oregon Trail Lanes <span class="dir-badge" data-i18n="dirfounding">Founding business</span></h3>
@@ -232,12 +232,14 @@ document.documentElement.setAttribute("data-theme",t);})();
         <a class="founding-cta" href="https://www.oregontraillanes.com/" target="_blank" rel="noopener">Visit Oregon Trail Lanes &rarr;</a>
         <button class="otl-more" type="button" data-otl-open aria-haspopup="dialog" aria-controls="otl-sheet" aria-expanded="false">See hours &amp; what&rsquo;s on &rarr;</button>
       </article>
-      <article class="founding-cell invite">
-        <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
-        <p class="cell-eyebrow" data-i18n="fs2eyebrow">Founding Sponsor · Spot 2 of 3 — Open</p>
-        <h3 data-i18n="fs2h3">Your business here</h3>
-        <p data-i18n="fs2p">One of only three founding spots, ever — your name and logo on the Today page every visitor opens first. $49/mo, locked while you stay, and a free 30-day pilot before you pay anything.</p>
-        <a class="founding-cta" href="sponsor.html#founding" data-i18n="fs2cta">Claim spot 2 &rarr;</a>
+      <article class="founding-cell taken" data-pv-cell>
+        <img class="founding-ribbon cell-ribbon" src="img/founding-ribbon.png?v=93" alt="Founding Sponsor" title="Founding Sponsor">
+        <div class="otl-logo-box"><img src="img/preview-kneeland-brothers-logo.png" alt="Kneeland Brothers Roofing logo" style="border-radius:0"></div>
+        <p class="cell-eyebrow">Founding Sponsor · Spot 2 of 3</p>
+        <h3>Kneeland Brothers LLC</h3>
+        <p>Superior workmanship. Integrity. Guaranteed.<br>33459 SW JP West Rd, Scappoose<br><a class="otl-tel" href="tel:+15033196871">(503) 319-6871</a><br>Malarkey Certified Contractor</p>
+        <a class="founding-cta" href="https://www.kneelandbrothersllc.com/" target="_blank" rel="noopener">Visit Kneeland Brothers LLC &rarr;</a>
+        <button class="otl-more" type="button" data-pv-open aria-haspopup="dialog" aria-controls="pv-sheet" aria-expanded="false">See hours &amp; what&rsquo;s on &rarr;</button>
       </article>
       <article class="founding-cell invite">
         <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
@@ -786,7 +788,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <section class="sponsor-top" aria-label="Sponsor spotlight — the local businesses that keep this page free">
   <p class="cell-eyebrow">Sponsor spotlight</p>
   <h2>The local businesses that keep this page free</h2>
-  <p>Columbia County Live carries no ad network and no paywall — a small number of local businesses fund it with named spots like this one. The first three become Founding Sponsors: their names stay on the Today page for good, at a $49/mo rate that never rises while they&rsquo;re with us. <strong>Spot 1 filled by Oregon Trail Lanes — 2 still open.</strong></p>
+  <p>Columbia County Live carries no ad network and no paywall — a small number of local businesses fund it with named spots like this one. The first three become Founding Sponsors: their names stay on the Today page for good, at a $49/mo rate that never rises while they&rsquo;re with us. <strong>Spots 1 and 2 filled — Oregon Trail Lanes and Kneeland Brothers LLC — 1 still open.</strong></p>
   <a class="founding-cta" href="sponsor.html#founding">See the founding sponsor spots &rarr;</a>
 </section>
 
@@ -870,7 +872,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="fun" data-lat="45.85067" data-lng="-122.83077">
       <!-- Photo: Oregon Trail Lanes' own website (oregontraillanes.com) — league night at the lanes, May 2023. Added v45. -->
       <img class="dir-photo" src="img/dir-oregon-trail-lanes.jpg" alt="League night inside Oregon Trail Lanes in St. Helens" loading="lazy" decoding="async">
-      <img class="founding-ribbon dir-ribbon" src="img/founding-ribbon.png?v=92" alt="Founding Sponsor" title="Founding Sponsor — Oregon Trail Lanes">
+      <img class="founding-ribbon dir-ribbon" src="img/founding-ribbon.png?v=93" alt="Founding Sponsor" title="Founding Sponsor — Oregon Trail Lanes">
       <div class="dir-item-main">
         <h3>Oregon Trail Lanes</h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfun">Bowling &amp; family fun</span></p>
@@ -882,6 +884,21 @@ document.documentElement.setAttribute("data-theme",t);})();
         <span class="dir-addr">735 S Columbia River Hwy</span>
       </div>
     </article>
+    <article class="dir-item" data-dircat="handyman">
+      <img class="dir-photo" src="img/dir-kneeland-brothers.jpg" alt="A new roof by Kneeland Brothers on a Columbia County home" loading="lazy" decoding="async">
+      <img class="founding-ribbon dir-ribbon" src="img/founding-ribbon.png?v=93" alt="Founding Sponsor" title="Founding Sponsor — Kneeland Brothers LLC">
+      <div class="dir-item-main">
+        <h3>Kneeland Brothers LLC</h3>
+        <p class="dir-meta">Scappoose &middot; <span data-i18n="dirhandyman">Handyman &amp; home repair</span></p>
+        <p class="dir-desc">Roof replacement and repair from a family crew born and raised in Columbia County — free estimates, financing, and a warranty on every new roof.</p>
+        <button class="otl-more dir-otl-more" type="button" data-pv-open aria-haspopup="dialog" aria-controls="pv-sheet" aria-expanded="false">See hours &amp; what&rsquo;s on &rarr;</button>
+      </div>
+      <div class="dir-contact">
+        <a class="dir-call" href="tel:+15033196871">&#128222; (503) 319-6871</a>
+        <span class="dir-addr">33459 SW JP West Rd</span>
+      </div>
+    </article>
+
     <article class="dir-item" data-dircat="beauty" data-lat="45.85957" data-lng="-122.81905">
       <!-- Listed from the business's own Add Your Local Service form submission, Nov 14, 2026 (Jennifer Stalker RN). Basic directory listing. Phone, website and description corrected Nov 15, 2026 to match her form response (971-478-1852, biolumemedspas.com, her own description). Address corrected Nov 15, 2026: 2050 Columbia Blvd was unsupported by any source; verified address is 115 N 21st St, St Helens, OR 97051 (her own website + Places listing), map pin updated to the Places coordinates. -->
       <div class="dir-item-main">
@@ -1282,8 +1299,11 @@ document.documentElement.setAttribute("data-theme",t);})();
 <footer class="site-footer">
   <section class="partners-wall card" aria-label="Community partners">
     <h2>Community Partners — the local businesses that fund this site</h2>
-    <p class="partners-first"><strong class="partners-name">Oregon Trail Lanes</strong> <img class="founding-ribbon wall-ribbon" src="img/founding-ribbon.png?v=92" alt="Founding Sponsor" title="Founding Sponsor"></p>
+    <p class="partners-first"><strong class="partners-name">Oregon Trail Lanes</strong> <img class="founding-ribbon wall-ribbon" src="img/founding-ribbon.png?v=93" alt="Founding Sponsor" title="Founding Sponsor"></p>
     <p class="partners-meta"><span class="dir-badge">Founding Sponsor · 2026</span><span class="partners-town">· St. Helens</span></p>
+    <p class="partners-first"><strong class="partners-name">Kneeland Brothers LLC</strong> <img class="founding-ribbon wall-ribbon" src="img/founding-ribbon.png?v=93" alt="Founding Sponsor" title="Founding Sponsor"></p>
+    <p class="partners-meta"><span class="dir-badge">Founding Sponsor · 2026</span><span class="partners-town">· Scappoose</span></p>
+
     <p class="partners-empty"><a href="sponsor.html">Your logo here — become a partner &rarr;</a></p>
   </section>
   <p class="footer-byline" data-i18n="footerbyline"><strong>Columbia County Live</strong> — by <strong>Nomad Development Group</strong></p>
@@ -1896,6 +1916,53 @@ document.documentElement.setAttribute("data-theme",t);})();
   </div>
 </aside>
 
+<div class="sheet-backdrop" id="pv-backdrop" hidden></div>
+<aside class="getapp-sheet otl-sheet" id="pv-sheet" hidden role="dialog" aria-modal="true" aria-labelledby="pv-sheet-title">
+  <div class="getapp-head">
+    <span class="getapp-title" id="pv-sheet-title">Kneeland Brothers LLC</span>
+    <button class="drawer-close" id="pv-close" type="button" aria-label="Close the Kneeland Brothers LLC card">✕</button>
+  </div>
+  <div class="otl-sheet-body">
+    <article class="otl-card">
+      <img class="founding-ribbon sheet-ribbon" src="img/founding-ribbon.png?v=93" alt="Founding Sponsor" title="Founding Sponsor">
+      <div class="otl-body">
+        <div class="otl-logo-box" style="margin-bottom:16px"><img src="img/preview-kneeland-brothers-logo.png" alt="Kneeland Brothers Roofing logo" style="border-radius:0"></div>
+        <h3>Kneeland Brothers LLC <span class="dir-badge">Founding Sponsor · 2026</span></h3>
+        <p class="otl-tag">Superior workmanship. Integrity. Guaranteed.</p>
+        <p class="otl-tag">Malarkey Certified Contractor</p>
+        <p class="otl-blurb">Family owned and operated roofing from folks born and raised in Columbia County. Roof replacement, repair, and maintenance with a warranty on every new roof, free estimates, and financing — from a BBB Accredited, CertainTeed ShingleMaster crew.</p>
+        <div class="otl-grid">
+          <div>
+            <h4>Hours</h4>
+            <table class="otl-hours">
+              <tr><td>Monday – Friday</td><td>8 AM – 5 PM</td></tr>
+            </table>
+            <p class="small" style="margin-top:8px">Office hours by appointment only.</p>
+          </div>
+          <div>
+            <h4>What’s on</h4>
+            <ul class="otl-list">
+              <li>Roof replacement and re-roofing</li>
+              <li>New roof installation</li>
+              <li>Roof repair and leak repair</li>
+              <li>Roof maintenance and upgrades</li>
+              <li>Warranty on every new roof installed</li>
+              <li>Free estimates</li>
+              <li>Financing — buy now, pay over time</li>
+              <li>Malarkey Certified Contractor — 90% of our roofs are Malarkey</li>
+            </ul>
+          </div>
+        </div>
+        <div class="otl-actions">
+          <a class="founding-cta" style="background:var(--accent);border-color:var(--accent);color:#fff" href="tel:+15033196871">Call (503) 319-6871</a>
+          <a class="founding-cta alt" style="color:var(--accent-dark);border-color:var(--accent)" href="https://www.kneelandbrothersllc.com/" target="_blank" rel="noopener">kneelandbrothersllc.com</a>
+          <a class="founding-cta alt" style="color:var(--accent-dark);border-color:var(--accent)" href="https://www.google.com/maps/search/?api=1&amp;query=Kneeland+Brothers+LLC+33459+SW+JP+West+Rd+Scappoose+OR" target="_blank" rel="noopener">33459 SW JP West Rd, Scappoose</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</aside>
+
 <div class="wall-overlay" id="wall-overlay" hidden role="dialog" aria-modal="true" aria-label="County wall display — the county's answers, big and rotating">
   <button class="wall-exit" id="wall-exit" type="button" aria-label="Exit wall display">✕</button>
   <div class="wall-scene" id="wall-scene"></div>
@@ -1944,8 +2011,51 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=92"></script>
+<script src="app.js?v=93"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+
+<script>
+/* Sponsor demo page: this prospect's full-card sheet, wired exactly like
+   the Oregon Trail Lanes sheet in app.js (initOtlCard). */
+(function () {
+  var sheet = document.getElementById('pv-sheet');
+  if (!sheet) return;
+  var backdrop = document.getElementById('pv-backdrop');
+  var closeBtn = document.getElementById('pv-close');
+  var openBtns = Array.prototype.slice.call(document.querySelectorAll('[data-pv-open]'));
+  var lastFocus = null;
+  function openSheet() {
+    lastFocus = document.activeElement;
+    sheet.hidden = false;
+    if (backdrop) backdrop.hidden = false;
+    requestAnimationFrame(function () {
+      sheet.classList.add('open');
+      if (backdrop) backdrop.classList.add('open');
+    });
+    document.body.classList.add('sponsor-on');
+    openBtns.forEach(function (b) { b.setAttribute('aria-expanded', 'true'); });
+    if (closeBtn) closeBtn.focus();
+  }
+  function closeSheet() {
+    if (sheet.hidden) return;
+    sheet.classList.remove('open');
+    if (backdrop) backdrop.classList.remove('open');
+    document.body.classList.remove('sponsor-on');
+    openBtns.forEach(function (b) { b.setAttribute('aria-expanded', 'false'); });
+    setTimeout(function () { sheet.hidden = true; if (backdrop) backdrop.hidden = true; }, 320);
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  openBtns.forEach(function (b) { b.addEventListener('click', openSheet); });
+  var cell = document.querySelector('[data-pv-cell]');
+  if (cell) cell.addEventListener('click', function (e) {
+    if (e.target.closest('a, button')) return;
+    openSheet();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', closeSheet);
+  if (backdrop) backdrop.addEventListener('click', closeSheet);
+  document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') closeSheet(); });
+})();
+</script>
 </body>
 </html>
