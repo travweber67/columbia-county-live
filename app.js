@@ -5884,11 +5884,11 @@ const LANG_ES = {
   fslogohere: 'Tu logo aquí',
   fs2eyebrow: 'Patrocinador fundador · Lugar 2 de 3 — Disponible',
   fs2h3: 'Tu negocio aquí',
-  fs2p: 'Uno de solo tres lugares fundadores, para siempre — tu nombre y logo en el panel que todo visitante ve primero. $49/mes, bloqueado mientras te quedes, y una prueba gratuita de 30 días antes de pagar algo.',
+  fs2p: 'Uno de solo tres lugares fundadores, para siempre — tu nombre y logo en la página Hoy que todo visitante abre primero. $49/mes, bloqueado mientras te quedes, y una prueba gratuita de 30 días antes de pagar algo.',
   fs2cta: 'Reclama el lugar 2 &rarr;',
   fs3eyebrow: 'Patrocinador fundador · Lugar 3 de 3 — Disponible',
   fs3h3: 'Tu negocio aquí',
-  fs3p: 'Uno de solo tres lugares fundadores, para siempre — tu nombre y logo en el panel que todo visitante ve primero. $49/mes, bloqueado mientras te quedes, y una prueba gratuita de 30 días antes de pagar algo.',
+  fs3p: 'Uno de solo tres lugares fundadores, para siempre — tu nombre y logo en la página Hoy que todo visitante abre primero. $49/mes, bloqueado mientras te quedes, y una prueba gratuita de 30 días antes de pagar algo.',
   fs3cta: 'Reclama el lugar 3 &rarr;',
   fsfoot: 'Cada patrocinador fundador conserva una insignia permanente de «Patrocinador Fundador · 2026» y un lugar en el muro de Socios Comunitarios de abajo — aunque después cambie de nivel. El período fundador cierra el 31 de enero de 2027 — después de eso, nunca más habrá patrocinadores fundadores nuevos.',
   commuteh2: '🚗 El veredicto del viaje',
@@ -9067,3 +9067,46 @@ function emWireCoords() {
    button there) and the detailed forecast card carries its own
    .card-head again, so initPins grows its button inside the card.
    Two separate pins, two separate cards. */
+
+/* ---------- v90: founding spots 2 and 3 weave through Today on phones ----------
+   Travis (2026-11-15): on a phone the founding panel stacked all three
+   spots at the top of Today — a wall of ads before any content. Now, at
+   the founding grid's own breakpoint (760px, where the panel's three
+   columns become one), spot 1 keeps the panel and spots 2 and 3 move
+   down the view to the natural breaks the v6 mover first used: spot 2
+   just before the County Watch house cell (after the commute / before-
+   you-go cluster), spot 3 just before the nonprofit house cell (after
+   Tonight & Tomorrow and Schools). Each stands as its own in-flow
+   deep-green glass card — content, sponsor, content, sponsor. Wider
+   than 760px nothing moves at all: the cells never leave the panel and
+   the desktop layout is exactly as it was. The move is structural: it
+   carries whichever cells hold spots 2 and 3, open invitations or
+   filled sponsors alike, and every link, ribbon and button rides along
+   because the nodes themselves move — nothing is copied or rebuilt. */
+(function () {
+  var grid = document.querySelector('#founding-panel .founding-cells');
+  var watch = document.getElementById('founding-cell-watch');
+  var nonprofit = document.getElementById('founding-cell-nonprofit');
+  if (!grid || !watch || !nonprofit || !window.matchMedia) return;
+  var cells = grid.querySelectorAll(':scope > .founding-cell');
+  if (cells.length < 3) return;
+  var spot2 = cells[1];
+  var spot3 = cells[2];
+  var mq = window.matchMedia('(max-width: 760px)');
+  function weave() {
+    spot2.classList.add('in-flow');
+    spot3.classList.add('in-flow');
+    watch.parentNode.insertBefore(spot2, watch);
+    nonprofit.parentNode.insertBefore(spot3, nonprofit);
+  }
+  function restore() {
+    spot2.classList.remove('in-flow');
+    spot3.classList.remove('in-flow');
+    grid.appendChild(spot2);
+    grid.appendChild(spot3);
+  }
+  function apply() { if (mq.matches) { weave(); } else { restore(); } }
+  if (mq.addEventListener) { mq.addEventListener('change', apply); }
+  else if (mq.addListener) { mq.addListener(apply); }
+  apply();
+})();
