@@ -3373,3 +3373,49 @@ html[data-theme="dark"] .incidents-list .status-note{
   border-color:rgba(196,226,196,.35);
 }
 html[data-theme="dark"] .status-note{background:#1b2a20;color:var(--text)}
+
+/* V89 — the transparent invite card (Travis's phone, 2026-11-15:
+   "you can barely see it... you got to fix that"). The directory's
+   "Your service here" invite kept a 10% orange tint and a stripped
+   shadow while every real listing around it took the standard
+   frosted glass in v87 — floating over the section photo, its text
+   all but vanished. The invite now wears the same glass as its
+   sibling listings, keeping only the dashed warm border as its
+   distinction. Both directory contexts carried the override (the
+   Events & More #dir-list and the Help view rule), so both are
+   fixed. The directory's empty-state note (.dir-empty) had the
+   same light-on-light defect in the dark theme — an 8% cream fill
+   with muted text over the photo — and takes the glass too.
+   Audit note: the founding sponsor cells and the Featured Local
+   invite card are NOT this defect — the cells sit on the founding
+   panel's own dark scrim, and the featured card's fill is the
+   opaque themed panel; both verified readable in the v89 QC. */
+#dir-list .dir-item.dir-invite{
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);
+  border:1px dashed var(--warm);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 2px rgba(20,32,16,.10),0 16px 36px rgba(20,32,16,.18);
+}
+html[data-theme="dark"] #dir-list .dir-item.dir-invite{
+  background:linear-gradient(180deg,rgba(26,43,32,.85),rgba(13,23,16,.77));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 1px 2px rgba(0,0,0,.4),0 16px 36px rgba(0,0,0,.35);
+}
+#view-help .dir-item.dir-invite{
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);
+  border:1px dashed var(--warm);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 2px rgba(20,32,16,.10),0 16px 36px rgba(20,32,16,.18);
+}
+html[data-theme="dark"] #view-help .dir-item.dir-invite{
+  background:linear-gradient(180deg,rgba(26,43,32,.85),rgba(13,23,16,.77));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 1px 2px rgba(0,0,0,.4),0 16px 36px rgba(0,0,0,.35);
+}
+.dir-empty{
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);
+  border:1px solid rgba(255,255,255,.6);
+}
+html[data-theme="dark"] .dir-empty{
+  background:linear-gradient(180deg,rgba(26,43,32,.88),rgba(13,23,16,.82));
+  border-color:rgba(196,226,196,.18);color:var(--text);
+}
