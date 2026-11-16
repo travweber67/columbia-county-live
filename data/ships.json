@@ -1,71 +1,106 @@
 {
- "fetched_at": "2026-11-16T02:09:03Z",
+ "fetched_at": "2026-11-16T02:14:03Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10789,
-   "lon": -122.95899,
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.15278,
+   "lon": -123.37724,
+   "sog_kn": 0.1,
+   "cog": 327.1,
+   "heading": 209,
+   "nav_status": 0,
+   "updated": "2026-11-16 02:14:08.742093369 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15707,
+   "lon": -123.40234,
    "sog_kn": 0,
    "cog": 360,
+   "heading": 135,
+   "nav_status": 0,
+   "updated": "2026-11-16 02:14:13.518900565 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.63967,
+   "lon": -122.7252,
+   "sog_kn": 2.9,
+   "cog": 113.6,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-16 02:09:10.100682008 +0000 UTC"
+   "updated": "2026-11-16 02:14:24.956772131 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.64036,
+   "lon": -122.72733,
+   "sog_kn": 3,
+   "cog": 114.4,
+   "heading": 109,
+   "nav_status": 0,
+   "updated": "2026-11-16 02:14:25.381230089 +0000 UTC"
+  },
+  {
+   "mmsi": 636015567,
+   "name": "KYRA ZAFIRA",
+   "lat": 45.64046,
+   "lon": -122.72674,
+   "sog_kn": 3,
+   "cog": 113.8,
+   "heading": 112,
+   "nav_status": 0,
+   "updated": "2026-11-16 02:14:28.968951175 +0000 UTC"
   },
   {
    "mmsi": 367425950,
    "name": "SEA HAWK",
-   "lat": 45.65011,
-   "lon": -122.74759,
+   "lat": 45.6501,
+   "lon": -122.74756,
    "sog_kn": 0,
-   "cog": 229.2,
+   "cog": 227,
    "heading": 511,
    "nav_status": 3,
-   "updated": "2026-11-16 02:09:18.692918208 +0000 UTC"
+   "updated": "2026-11-16 02:14:29.734310521 +0000 UTC"
   },
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.62932,
-   "lon": -122.69432,
-   "sog_kn": 0.1,
-   "cog": 135.6,
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10793,
+   "lon": -122.959,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-16 02:09:24.734800083 +0000 UTC"
+   "updated": "2026-11-16 02:14:29.820437966 +0000 UTC"
   },
   {
-   "mmsi": 367513140,
-   "name": "CLEARWATER",
-   "lat": 45.62907,
-   "lon": -122.69239,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19997,
+   "lon": -123.38553,
    "sog_kn": 0,
-   "cog": 199.4,
-   "heading": 305,
+   "cog": 224.1,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-16 02:14:30.308413206 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.63024,
+   "lon": -122.69594,
+   "sog_kn": 0,
+   "cog": 1.5,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-16 02:09:27.739250747 +0000 UTC"
-  },
-  {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10891,
-   "lon": -122.96129,
-   "sog_kn": 0,
-   "cog": 194.4,
-   "heading": 129,
-   "nav_status": 5,
-   "updated": "2026-11-16 02:09:32.071803152 +0000 UTC"
-  },
-  {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59407,
-   "lon": -122.77212,
-   "type_code": 70,
-   "destination": "NOT AVAILABLE",
-   "updated": "2026-11-16 02:09:34.310649073 +0000 UTC"
+   "updated": "2026-11-16 02:14:30.550621206 +0000 UTC"
   }
  ]
 }
