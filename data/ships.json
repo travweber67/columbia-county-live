@@ -1,49 +1,73 @@
 {
- "fetched_at": "2026-11-16T09:04:37Z",
+ "fetched_at": "2026-11-16T09:09:37Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08182,
-   "lon": -122.90517,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-16 09:04:57.207512186 +0000 UTC"
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.9982,
+   "lon": -122.85146,
+   "sog_kn": 0.6,
+   "cog": 67.2,
+   "heading": 202,
+   "nav_status": 0,
+   "updated": "2026-11-16 09:09:44.103679063 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19948,
+   "lon": -123.38511,
+   "sog_kn": 0,
+   "cog": 0.9,
+   "heading": 147,
+   "nav_status": 5,
+   "updated": "2026-11-16 09:09:54.419861404 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.14355,
+   "lon": -123.29992,
+   "sog_kn": 0.2,
+   "cog": 97.7,
+   "heading": 85,
+   "nav_status": 3,
+   "updated": "2026-11-16 09:09:55.207195052 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64355,
+   "lon": -122.75236,
+   "sog_kn": 0,
+   "cog": 150.8,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-16 09:10:04.830293039 +0000 UTC"
   },
   {
    "mmsi": 367425910,
    "name": "SEA HORSE",
-   "lat": 46.15246,
-   "lon": -123.37769,
+   "lat": 46.15244,
+   "lon": -123.3777,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 3,
-   "updated": "2026-11-16 09:04:59.081260935 +0000 UTC"
+   "updated": "2026-11-16 09:10:08.436968062 +0000 UTC"
   },
   {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.15224,
-   "lon": -123.3778,
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 45.98393,
+   "lon": -122.83564,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 14,
+   "cog": 342.2,
+   "heading": 67,
    "nav_status": 0,
-   "updated": "2026-11-16 09:05:08.811149523 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58759,
-   "lon": -122.7705,
-   "sog_kn": 0,
-   "cog": 291.1,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 09:05:08.975022506 +0000 UTC"
+   "updated": "2026-11-16 09:10:08.759741704 +0000 UTC"
   }
  ]
 }
