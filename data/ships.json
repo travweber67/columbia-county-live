@@ -1,69 +1,49 @@
 {
- "fetched_at": "2026-11-16T21:55:34Z",
+ "fetched_at": "2026-11-16T22:00:36Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19948,
+   "lon": -123.385,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-16 22:01:00.020693263 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.66111,
+   "lon": -122.76056,
+   "sog_kn": 0,
+   "cog": 210.3,
+   "heading": 335,
+   "nav_status": 0,
+   "updated": "2026-11-16 22:01:06.386188694 +0000 UTC"
+  },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 46.06913,
-   "lon": -122.88884,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-16 21:55:50.123135203 +0000 UTC"
+   "lat": 46.063,
+   "lon": -122.885,
+   "sog_kn": 7.5,
+   "cog": 159.9,
+   "heading": 161,
+   "nav_status": 3,
+   "updated": "2026-11-16 22:01:09.19241933 +0000 UTC"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15705,
-   "lon": -123.40233,
+   "mmsi": 367645170,
+   "name": "CROWN POINT",
+   "lat": 45.65204,
+   "lon": -122.75184,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 134,
-   "nav_status": 0,
-   "updated": "2026-11-16 21:55:53.196468579 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.66129,
-   "lon": -122.76034,
-   "sog_kn": 0,
-   "cog": 349.2,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 21:55:55.928354997 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.79342,
-   "lon": -122.84305,
-   "sog_kn": 0,
-   "cog": 231.5,
-   "heading": 34,
+   "cog": 212,
+   "heading": 47,
    "nav_status": 12,
-   "updated": "2026-11-16 21:56:05.311877355 +0000 UTC"
-  },
-  {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64569,
-   "lon": -122.73486,
-   "sog_kn": 0.1,
-   "cog": 0,
-   "heading": 113,
-   "nav_status": 5,
-   "updated": "2026-11-16 21:56:08.335192108 +0000 UTC"
-  },
-  {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 45.64713,
-   "lon": -122.73967,
-   "type_code": 31,
-   "destination": "XX XXX>?? ???",
-   "updated": "2026-11-16 21:56:15.211472493 +0000 UTC"
+   "updated": "2026-11-16 22:01:13.451577249 +0000 UTC"
   }
  ]
 }
