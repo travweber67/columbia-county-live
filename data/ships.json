@@ -1,91 +1,71 @@
 {
- "fetched_at": "2026-11-16T21:30:33Z",
+ "fetched_at": "2026-11-16T21:35:33Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.6104,
+   "lon": -122.78515,
+   "sog_kn": 7.6,
+   "cog": 338,
+   "heading": 336,
+   "nav_status": 12,
+   "updated": "2026-11-16 21:35:55.883583558 +0000 UTC"
+  },
   {
    "mmsi": 367513230,
    "name": "WILLAMETTE",
    "lat": 45.66111,
-   "lon": -122.76056,
-   "type_code": 52,
-   "destination": "PDX/VANC.OPS.",
-   "updated": "2026-11-16 21:30:35.713416202 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19998,
-   "lon": -123.38541,
+   "lon": -122.76057,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-16 21:30:43.98894239 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.14778,
-   "lon": -123.27979,
-   "sog_kn": 4.6,
-   "cog": 293.4,
-   "heading": 276,
-   "nav_status": 3,
-   "updated": "2026-11-16 21:30:46.067864403 +0000 UTC"
-  },
-  {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.85577,
-   "lon": -122.79514,
-   "sog_kn": 6.1,
-   "cog": 15,
-   "heading": 16,
+   "cog": 347.3,
+   "heading": 335,
    "nav_status": 0,
-   "updated": "2026-11-16 21:30:47.159223893 +0000 UTC"
+   "updated": "2026-11-16 21:35:56.995049697 +0000 UTC"
   },
   {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 45.64346,
-   "lon": -122.75246,
-   "sog_kn": 0,
-   "cog": 300.5,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 21:30:52.169835978 +0000 UTC"
-  },
-  {
-   "mmsi": 368328430,
-   "name": "MCR 8",
-   "lat": 45.58493,
-   "lon": -122.76646,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-16 21:30:58.158589282 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.9101,
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.6434,
+   "lon": -122.75283,
    "type_code": 52,
-   "destination": "US^0T0P>035F",
-   "updated": "2026-11-16 21:31:01.567902341 +0000 UTC"
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-16 21:35:57.932127078 +0000 UTC"
   },
   {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58756,
-   "lon": -122.77047,
+   "mmsi": 352006531,
+   "name": "BARISM BETTY",
+   "lat": 45.60112,
+   "lon": -122.77475,
    "sog_kn": 0,
-   "cog": 273.8,
-   "heading": 319,
+   "cog": 90.1,
+   "heading": 278,
    "nav_status": 5,
-   "updated": "2026-11-16 21:31:06.304123487 +0000 UTC"
+   "updated": "2026-11-16 21:35:58.102987519 +0000 UTC"
+  },
+  {
+   "mmsi": 368136580,
+   "name": "ORIN L GREEN",
+   "lat": 46.08206,
+   "lon": -122.90584,
+   "sog_kn": 0.2,
+   "cog": 202.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-16 21:35:59.209433449 +0000 UTC"
+  },
+  {
+   "mmsi": 367645170,
+   "name": "CROWN POINT",
+   "lat": 45.64908,
+   "lon": -122.74703,
+   "sog_kn": 5.4,
+   "cog": 290.8,
+   "heading": 280,
+   "nav_status": 12,
+   "updated": "2026-11-16 21:36:06.119961146 +0000 UTC"
   }
  ]
 }
