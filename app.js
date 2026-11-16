@@ -3809,7 +3809,59 @@ initHome();
    Registration failure is silent: the site works exactly as before without it. */
 function initOffline() {
   if ('serviceWorker' in navigator) {
-    try { navigator.serviceWorker.register('sw.js').catch(() => {}); } catch (e) { /* no worker, no problem */ }
+    try {
+      /* Update path (v86). Register with updateViaCache 'none' so the
+         browser always asks the network whether sw.js changed, and ask
+         again every time the app returns to the foreground — an
+         installed app kept alive in recents otherwise runs the old
+         build indefinitely. When a new worker takes over, the page
+         never reloads itself: it offers one small toast, and the
+         refresh happens only on the tap. */
+      /* Arm the toast for any controller change AFTER the first claim:
+         a first-ever visit starts uncontrolled, and its own install
+         claiming the page is not an update — but a later change in the
+         same session is, so the flag flips instead of staying false. */
+      let updateArmed = !!navigator.serviceWorker.controller;
+      let updateToastShown = false;
+      const showUpdateToast = () => {
+        if (updateToastShown || $('update-toast')) return;
+        updateToastShown = true;
+        const es = homeLang() === 'es';
+        const bar = document.createElement('div');
+        bar.id = 'update-toast';
+        bar.className = 'update-toast';
+        bar.setAttribute('role', 'status');
+        const msg = document.createElement('span');
+        msg.className = 'update-toast-msg';
+        msg.textContent = es ? 'Hay una versión nueva del sitio.' : 'A fresh version is ready — tap to refresh';
+        const go = document.createElement('button');
+        go.type = 'button';
+        go.className = 'update-toast-go';
+        go.textContent = es ? 'Actualizar' : 'Refresh';
+        go.addEventListener('click', () => { window.location.reload(); });
+        const no = document.createElement('button');
+        no.type = 'button';
+        no.className = 'update-toast-no';
+        no.setAttribute('aria-label', es ? 'Descartar' : 'Dismiss');
+        no.textContent = '✕';
+        no.addEventListener('click', () => { bar.remove(); });
+        bar.append(msg, go, no);
+        document.body.appendChild(bar);
+      };
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!updateArmed) { updateArmed = true; return; }
+        showUpdateToast();
+      });
+      navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' })
+        .then((reg) => {
+          document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'visible') {
+              try { reg.update().catch(() => {}); } catch (e) { /* older browser */ }
+            }
+          });
+        })
+        .catch(() => {});
+    } catch (e) { /* no worker, no problem */ }
   }
   const note = $('offline-note');
   if (!note) return;

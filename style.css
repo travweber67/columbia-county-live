@@ -664,6 +664,29 @@ html[data-theme="dark"] .wx-day.wx-today .wx-dow{color:#f0a35e}
 .offline-note a{color:var(--accent-dark);text-decoration:underline}
 @media (max-width:920px){.offline-note{width:calc(100% - 24px)}}
 
+/* Update toast (v86): a new service worker has taken over — offer the
+   refresh, never force it. Same cream-and-border voice as the offline
+   note; floats clear of the phone tab bar. */
+.update-toast{
+  position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:1300;
+  width:max-content;max-width:calc(100% - 24px);
+  display:flex;align-items:center;gap:12px;
+  background:#fff6dd;border:1px solid #e6cf87;border-radius:999px;
+  color:#6d5200;font-size:.92rem;padding:9px 10px 9px 18px;
+  box-shadow:0 8px 28px rgba(43,52,30,.25);
+}
+.update-toast-msg{min-width:0}
+.update-toast-go{
+  font:inherit;font-weight:700;cursor:pointer;white-space:nowrap;
+  background:var(--accent);color:#fff;border:1px solid var(--accent-dark);
+  border-radius:999px;padding:7px 14px;
+}
+.update-toast-no{
+  font:inherit;cursor:pointer;background:none;border:none;color:#6d5200;
+  font-size:1rem;line-height:1;padding:6px 8px;
+}
+@media (max-width:899px){.update-toast{bottom:96px}}
+
 /* Tonight & tomorrow — the evening planning brief (X20 R5) */
 .plan-card{border-left:4px solid #8b7fd4}
 .plan-lines{list-style:none;margin:0;padding:0;display:grid;gap:9px}
@@ -1564,6 +1587,8 @@ html[data-theme="dark"] .hero-img{filter:saturate(.88) contrast(1.04) brightness
 html[data-theme="dark"] .alert-banner{background:rgba(179,53,43,.18);border-color:#8c453c;color:#ffc9c0}
 html[data-theme="dark"] .alert-banner strong{color:#ffd9d3}
 html[data-theme="dark"] .offline-note{background:rgba(233,164,74,.13);border-color:#8a6d2f;color:#f5d9a0}
+html[data-theme="dark"] .update-toast{background:rgba(40,32,10,.96);border-color:#8a6d2f;color:#f5d9a0}
+html[data-theme="dark"] .update-toast-no{color:#f5d9a0}
 html[data-theme="dark"] .quake-mag.hot{border-color:#8c453c;color:#ff9d8a;background:rgba(179,53,43,.18)}
 html[data-theme="dark"] .commute-verdict.cv-bad,
 html[data-theme="dark"] .go-verdict.go-bad,
