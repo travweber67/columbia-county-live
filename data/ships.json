@@ -1,73 +1,97 @@
 {
- "fetched_at": "2026-11-16T11:14:48Z",
+ "fetched_at": "2026-11-16T11:19:49Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.1529,
+   "lon": -123.37759,
+   "sog_kn": 0.2,
+   "cog": 325.2,
+   "heading": 111,
+   "nav_status": 0,
+   "updated": "2026-11-16 11:19:39.3093375 +0000 UTC"
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64728,
+   "lon": -122.74124,
+   "sog_kn": 0,
+   "cog": 127.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-16 11:20:18.904151789 +0000 UTC",
+   "type_code": 31,
+   "destination": "MCALLS FUEL DOCK"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64569,
+   "lon": -122.73486,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-16 11:20:08.578121237 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00879,
+   "lon": -122.84881,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-16 11:20:13.619887825 +0000 UTC"
+  },
   {
    "mmsi": 366972000,
    "name": "ESSAYONS",
-   "lat": 46.14273,
-   "lon": -123.35111,
-   "sog_kn": 10.3,
-   "cog": 280.6,
-   "heading": 281,
+   "lat": 46.14562,
+   "lon": -123.3671,
+   "sog_kn": 5.5,
+   "cog": 313.2,
+   "heading": 356,
    "nav_status": 3,
-   "updated": "2026-11-16 11:14:56.68096937 +0000 UTC"
+   "updated": "2026-11-16 11:20:14.126055929 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.08211,
-   "lon": -122.90543,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35744,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 312,
-   "nav_status": 3,
-   "updated": "2026-11-16 11:14:57.960935229 +0000 UTC"
+   "cog": 302.7,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-16 11:20:16.472210461 +0000 UTC"
+  },
+  {
+   "mmsi": 538006098,
+   "name": "ANTARES",
+   "lat": 45.98402,
+   "lon": -122.83523,
+   "sog_kn": 0,
+   "cog": 229.5,
+   "heading": 153,
+   "nav_status": 5,
+   "updated": "2026-11-16 11:20:17.177992738 +0000 UTC"
   },
   {
    "mmsi": 367425910,
    "name": "SEA HORSE",
    "lat": 46.15297,
-   "lon": -123.37745,
-   "sog_kn": 0.7,
-   "cog": 117.8,
+   "lon": -123.37691,
+   "sog_kn": 0.1,
+   "cog": 360,
    "heading": 511,
    "nav_status": 3,
-   "updated": "2026-11-16 11:15:08.102400191 +0000 UTC"
-  },
-  {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.15307,
-   "lon": -123.37811,
-   "sog_kn": 0.6,
-   "cog": 79.5,
-   "heading": 129,
-   "nav_status": 0,
-   "updated": "2026-11-16 11:15:08.71405958 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10355,
-   "lon": -122.91008,
-   "sog_kn": 0.1,
-   "cog": 89,
-   "heading": 72,
-   "nav_status": 0,
-   "updated": "2026-11-16 11:15:10.172904822 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58764,
-   "lon": -122.77046,
-   "sog_kn": 0,
-   "cog": 288.3,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 11:15:19.551919183 +0000 UTC"
+   "updated": "2026-11-16 11:20:18.390952816 +0000 UTC"
   }
  ]
 }
