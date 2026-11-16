@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-16T19:25:25Z",
+ "fetched_at": "2026-11-16T19:30:26Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
@@ -8,40 +8,60 @@
    "callsign": "N549SR",
    "type": "SR22",
    "alt_ft": 4800,
-   "gs_kn": 126.3,
-   "track": 188.19,
-   "lat": 46.133919,
-   "lon": -123.206383
+   "gs_kn": 144.8,
+   "track": 67.68,
+   "lat": 46.179199,
+   "lon": -123.169734
   },
   {
-   "hex": "a91af0",
-   "callsign": "EJA686",
-   "type": "C56X",
-   "alt_ft": 38925,
-   "gs_kn": 448.3,
-   "track": 357.95,
-   "lat": 45.945831,
-   "lon": -122.84892
+   "hex": "a4ca6a",
+   "callsign": "ASA658",
+   "type": "B739",
+   "alt_ft": 32125,
+   "gs_kn": 407.2,
+   "track": 175.63,
+   "lat": 46.255979,
+   "lon": -123.12838
   },
   {
-   "hex": "a5823e",
-   "callsign": "GTI4602",
-   "type": "B744",
-   "alt_ft": 15700,
-   "gs_kn": 388.7,
-   "track": 318.02,
-   "lat": 45.852278,
-   "lon": -122.68158
+   "hex": "acc1eb",
+   "callsign": "ASA792",
+   "type": "B39M",
+   "alt_ft": 27600,
+   "gs_kn": 474.5,
+   "track": 352.13,
+   "lat": 46.126611,
+   "lon": -122.684189
   },
   {
-   "hex": "a8c9dc",
-   "callsign": "N6655J",
-   "type": "P28A",
-   "alt_ft": 2300,
-   "gs_kn": 106.5,
-   "track": 140.33,
-   "lat": 45.901484,
-   "lon": -122.673889
+   "hex": "a08d51",
+   "callsign": "N13461",
+   "type": "C172",
+   "alt_ft": 175,
+   "gs_kn": 75.8,
+   "track": 126.42,
+   "lat": 45.623932,
+   "lon": -122.675551
+  },
+  {
+   "hex": "a8042c",
+   "callsign": "N61531",
+   "type": "C172",
+   "alt_ft": "ground",
+   "gs_kn": 11.2,
+   "track": null,
+   "lat": 45.62138,
+   "lon": -122.661248
+  },
+  {
+   "hex": "a445d9",
+   "callsign": "DAL1714",
+   "type": "B738",
+   "alt_ft": 31625,
+   "gs_kn": 495.7,
+   "track": 349.89,
+   "lat": 45.866455,
+   "lon": -122.62082
   }
  ]
 }
