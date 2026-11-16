@@ -1,71 +1,58 @@
 {
- "fetched_at": "2026-11-16T05:54:22Z",
+ "fetched_at": "2026-11-16T05:59:24Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368257130,
-   "name": "TRIUMPH VII",
-   "lat": 46.00986,
-   "lon": -122.84832,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.61289,
    "sog_kn": 0,
-   "cog": 61.8,
-   "heading": 511,
+   "cog": 323.6,
+   "heading": 134,
    "nav_status": 15,
-   "updated": "2026-11-16 05:54:28.933750944 +0000 UTC"
+   "updated": "2026-11-16 05:59:28.707200434 +0000 UTC"
   },
   {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58753,
-   "lon": -122.77066,
-   "sog_kn": 0,
-   "cog": 234.9,
-   "heading": 138,
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64543,
+   "lon": -122.73505,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-16 05:59:31.78243124 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.00761,
+   "lon": -122.85461,
+   "sog_kn": 0.1,
+   "cog": 52,
+   "heading": 158,
    "nav_status": 0,
-   "updated": "2026-11-16 05:54:30.635753095 +0000 UTC"
+   "updated": "2026-11-16 05:59:55.598412708 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.0818,
-   "lon": -122.90515,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.62131,
+   "lon": -122.78817,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-16 05:59:43.979688694 +0000 UTC"
+  },
+  {
+   "mmsi": 352006531,
+   "name": "BARISM BETTY",
+   "lat": 45.60108,
+   "lon": -122.77442,
    "sog_kn": 0,
-   "cog": 19.3,
-   "heading": 131,
-   "nav_status": 0,
-   "updated": "2026-11-16 05:54:33.374908624 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 45.99015,
-   "lon": -122.84123,
-   "sog_kn": 0,
-   "cog": 27.7,
-   "heading": 152,
-   "nav_status": 0,
-   "updated": "2026-11-16 05:54:48.471006508 +0000 UTC"
-  },
-  {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.19947,
-   "lon": -123.38492,
-   "type_code": 30,
-   "destination": "CATHLAMET WA",
-   "updated": "2026-11-16 05:54:50.145303105 +0000 UTC"
-  },
-  {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09678,
-   "lon": -122.92799,
-   "sog_kn": 0,
-   "cog": 20.9,
-   "heading": 65,
-   "nav_status": 3,
-   "updated": "2026-11-16 05:54:54.784153964 +0000 UTC"
+   "cog": 90.1,
+   "heading": 278,
+   "nav_status": 5,
+   "updated": "2026-11-16 05:59:56.045589893 +0000 UTC"
   }
  ]
 }
