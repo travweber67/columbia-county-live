@@ -3017,15 +3017,17 @@ html[data-theme="dark"] [data-pin-copy="incidents-card"]{
    spanner: the ferry card's bottom margin is truncated at the span
    break, which left the two cards flush — the spanner now carries
    its own top margin.
-   F3: Travel cards stand on their own. The view's one shared scenic
-   photo no longer runs behind all of them (it made separate cards
-   read as one merged sheet); each Travel card's own frosted
-   background — and its own photo header, where it has one — now
-   ends at its own edges, over the page's deep-green base, with a
-   clear gap to its neighbours. The transparent style stays.
+   F3: Travel cards stand on their own. Each Travel card's own frosted
+   background — and its own photo header, where it has one — ends at
+   its own edges, with a clear gap to its neighbours; nothing solid
+   sits behind the group of them. The transparent style stays.
    F4: the founding ribbon sits a little larger (v2 artwork: transparent
-   background, brighter gold, FS monogram). */
-.bg-layer[data-bg-view="travel"]{display:none!important}
+   background, brighter gold, FS monogram).
+   R4 (round 4): the rule that hid Travel's background photo lived
+   here in round 2 and is REMOVED — Travis's corrected design (Nov 15):
+   every view keeps its one background picture and the frosted cards
+   float over the top of it. What he rejects is only a solid sheet
+   behind a group of cards, and cards merged without gaps. */
 @media (min-width:900px){
   #view-travel #roads-card{margin-top:20px}
   .forecast-week{overflow-x:visible;flex-wrap:wrap;scroll-snap-type:none}
@@ -3054,13 +3056,14 @@ html[data-theme="dark"] #forecast-week-card{
 
 
 /* ===== Round 3 — Travis's review fixes (Nov 15, 2026): NO GROUPING BACKDROPS =====
-   His standing rule, applied everywhere at once: nothing sits behind a
-   group of elements — no shared photo, no big containing card, no
-   black sheet. Every element stands alone as its own card on the plain
-   deep-green base (#223c29), with real gaps where the base shows
-   through. Round 2 separated Travel only; this round finishes the job
-   for the weather strip, Community Help, the footer, and every
-   remaining view backdrop. */
+   His standing rule, applied everywhere at once: no solid card or
+   sheet sits behind a group of elements, and no elements merge or
+   touch without gaps. Every element stands alone as its own frosted
+   card with real gaps between. Round 2 separated Travel only; this
+   round finishes the job for the weather strip, Community Help, the
+   footer, and every remaining view. (Round 4 correction, same day:
+   the views' background PHOTOS stay — see the R3-4 note below. What
+   was removed here is grouping sheets, never the pictures.) */
 
 /* R3-1 — the 7-day strip leaves its card entirely. Round 2 (F2) had
    put the pills inside one big Forecast card; Travis: "you put a card
@@ -3133,9 +3136,42 @@ html[data-theme="dark"] .site-footer{background:transparent;border-top:none}
    theme already had it). */
 .cascade-footer-link{color:#dff0e2;background:rgba(244,241,228,.08);border-color:rgba(255,255,255,.35)}
 
-/* R3-4 — no full-page photo behind any view's cards. Round 2 removed
-   Travel's; the same treatment now covers Today, Outdoors, Events &
-   More and Community Help: plain deep-green base, each card its own
-   frosted glass. The masthead keeps its own photo (a header <img>,
-   not a backdrop), and photos inside individual cards stay. */
-.bg-layer[data-bg-view="today"],.bg-layer[data-bg-view="travel"],.bg-layer[data-bg-view="outdoors"],.bg-layer[data-bg-view="more"],.bg-layer[data-bg-view="help"]{display:none!important}
+/* R3-4 — SUPERSEDED by Round 4 (Travis, Nov 15, after seeing the
+   round-3 screenshots): this block hid every view's background photo,
+   and that was wrong. His design, in his words: every card should
+   "just be a frosted card like frosted glass all over one background
+   picture, like we currently have it" — one background picture per
+   view (as live v83 has), frosted cards floating over the top of it,
+   each card separate with real gaps. The display:none rule that
+   lived here is REMOVED; the .bg-layer photos render exactly as in
+   live v83. What stays rejected is only (a) a solid card/sheet
+   behind a group of cards and (b) merged or touching elements —
+   the R3-1/R3-2/R3-3 fixes above all stand. */
+
+/* ===== Round 4 — freshness "See more" toggle visibility (Nov 15) =====
+   Travis, reviewing the round-3 screenshots: "I can't see the See
+   more with the little arrows for this section." He was right: the
+   toggle was a bare 23px chevron with a small MUTED label (the
+   .alert-toggle-label colour overrides the button's accent), 2px of
+   padding and no background — easy to miss in the card's corner, and
+   in the expanded state it sits at the foot of a long card. Fix: the
+   toggle becomes a small frosted chip in the same corner — its own
+   pill background and border so it reads as a button against the
+   card, a 26px chevron, and a .74rem label in the accent colour.
+   The card gains bottom padding so the chip never crowds the last
+   source row. It is a button, not a backdrop: nothing groups
+   behind it. */
+.freshness-card{padding-bottom:60px}
+.fresh-toggle{
+  right:14px;bottom:12px;padding:8px 13px 7px;gap:2px;
+  background:linear-gradient(180deg,rgba(253,250,240,.94),rgba(249,244,229,.88));
+  border:1px solid rgba(255,255,255,.65);border-radius:999px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 2px 8px rgba(20,32,16,.25);
+}
+html[data-theme="dark"] .fresh-toggle{
+  background:linear-gradient(180deg,rgba(26,43,32,.94),rgba(13,23,16,.9));
+  border-color:rgba(196,226,196,.35);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 2px 8px rgba(0,0,0,.45);
+}
+.fresh-toggle .alert-chev{width:26px;height:26px;padding:0}
+.fresh-toggle-label{font-size:.74rem;color:var(--accent)}
