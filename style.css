@@ -3196,3 +3196,115 @@ html[data-theme="dark"] .fresh-toggle{
 }
 .fresh-toggle .alert-chev{width:26px;height:26px;padding:0}
 .fresh-toggle-label{font-size:.74rem;color:var(--accent)}
+/* ===== v87 — Travis's phone review of live v86 (Nov 15, 2026) =====
+   His words, looking at the live site: the forecast bubbles had a
+   green frosted card around them again "like I asked you to take off
+   before"; in the Events tab the services and businesses were "still
+   together" in one sheet instead of separate cards; and the
+   Also-from-Nomad bubble was "too clear, not frosted green like the
+   rest." Four fixes below; nothing else moves. */
+
+/* V87-1 — the forecast strip's backing panel is gone in BOTH themes.
+   Round 3 (R3-1) stripped it with a plain #forecast-week-card rule,
+   but the round-2 dark rule — html[data-theme="dark"]
+   #forecast-week-card — outranks that rule on specificity, so on a
+   dark-theme phone the panel never actually left: the pills sat
+   inside the round-2 card while their heading wore the R3-1 white.
+   This twin carries the same specificity as the round-2 dark rule
+   and comes later in the file, so it wins: no background, border,
+   shadow or blur behind the pills, ever. The pills keep their own
+   individual frosted style; the heading and place line keep the
+   R3-1 over-photo white; the pin keeps riding .strip-tools. */
+html[data-theme="dark"] #forecast-week-card{
+  background:none;border:none;border-radius:0;box-shadow:none;
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+  padding:2px 2px 0;
+}
+
+/* V87-2 — Events & More: the Local Services directory leaves its
+   shared card. The same operation R3-2 ran on the Help view,
+   applied to the directory Travis screenshotted: the section keeps
+   no chrome of its own — its pier photo stands alone as a picture
+   with rounded corners, the heading and notes float on the view's
+   background photo — and EVERY entry, business or free help,
+   becomes a full standard frosted card with real gaps between
+   entries. The map keeps its own box, the filter chips keep their
+   own pills, the add-yourself button keeps its own styling. */
+#services-card{
+  background:none;border:none;border-radius:0;box-shadow:none;
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+  padding:0 2px;overflow:visible;
+}
+#services-card .card-photo{margin:0 0 14px;border-radius:var(--radius);overflow:hidden}
+#services-card .card-head h2{color:#fff;text-shadow:0 1px 10px rgba(12,26,16,.55)}
+#services-card .card-note{color:rgba(255,255,255,.88);text-shadow:0 1px 6px rgba(12,26,16,.55)}
+#dir-list{gap:14px}
+#dir-list .dir-item{
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);
+  border:1px solid rgba(255,255,255,.6);border-radius:var(--radius);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 2px rgba(20,32,16,.10),0 16px 36px rgba(20,32,16,.18);
+  padding:16px 18px;
+}
+html[data-theme="dark"] #dir-list .dir-item{
+  background:linear-gradient(180deg,rgba(26,43,32,.85),rgba(13,23,16,.77));
+  border-color:rgba(196,226,196,.18);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 1px 2px rgba(0,0,0,.4),0 16px 36px rgba(0,0,0,.35);
+}
+#dir-list .dir-item.dir-invite{border:1px dashed var(--warm);background:rgba(233,164,74,.10);box-shadow:none}
+
+/* V87-3 — audit find, same defect class in the same view: the
+   Events list was hairline rows inside the events card. The card
+   steps aside the same way — courthouse photo standing alone, the
+   heading, filter pills and notes floating on the background — and
+   each event becomes its own frosted card under its day heading.
+   (The pinned copy on Today keeps the site's pin-copy convention —
+   one standalone glass card — like the incidents copy before it.) */
+#events-card{
+  background:none;border:none;border-radius:0;box-shadow:none;
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+  padding:0 2px;overflow:visible;
+}
+#events-card .card-photo{margin:0 0 14px;border-radius:var(--radius);overflow:hidden}
+#events-card .card-head h2{color:#fff;text-shadow:0 1px 10px rgba(12,26,16,.55)}
+#events-card .card-head .updated{color:rgba(255,255,255,.88);text-shadow:0 1px 6px rgba(12,26,16,.55)}
+#events-card .card-note{color:rgba(255,255,255,.88);text-shadow:0 1px 6px rgba(12,26,16,.55)}
+#events-card .card-note a{color:#fff}
+#events-body .event-date{margin:16px 0 8px;text-shadow:0 1px 8px rgba(12,26,16,.6)}
+#events-body .event-date:first-child{margin-top:2px}
+#events-body .event-row{
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);
+  border:1px solid rgba(255,255,255,.6);border-radius:var(--radius);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 2px rgba(20,32,16,.10),0 16px 36px rgba(20,32,16,.18);
+  padding:11px 14px;margin:0 0 10px;
+}
+html[data-theme="dark"] #events-body .event-row{
+  background:linear-gradient(180deg,rgba(26,43,32,.85),rgba(13,23,16,.77));
+  border-color:rgba(196,226,196,.18);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 1px 2px rgba(0,0,0,.4),0 16px 36px rgba(0,0,0,.35);
+}
+#events-body .loading,#events-body .status-note{color:rgba(255,255,255,.92);text-shadow:0 1px 8px rgba(12,26,16,.6)}
+#events-body .no-alerts{text-shadow:0 1px 8px rgba(12,26,16,.6)}
+#events-body .event-row-home{border-left:3px solid var(--warm-fill)}
+
+/* V87-4 — the Also-from-Nomad bubble takes the standard card glass.
+   R3-3b left it at a near-clear fill (rgba(244,241,228,.08), no
+   blur) once the footer's shared sheet went away; against the
+   view's photo it read as plain glass next to the frosted cards.
+   Now it wears the same recipe as every other card — cream glass by
+   day, deep-green glass at dusk, same blur, border and shadow —
+   keeping its pill shape, padding and type exactly as they were. */
+.cascade-footer-link{
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);
+  border:1px solid rgba(255,255,255,.6);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 2px rgba(20,32,16,.10),0 16px 36px rgba(20,32,16,.18);
+  color:var(--accent-dark,#1e4228);
+}
+html[data-theme="dark"] .cascade-footer-link{
+  background:linear-gradient(180deg,rgba(26,43,32,.85),rgba(13,23,16,.77));
+  border-color:rgba(196,226,196,.18);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 1px 2px rgba(0,0,0,.4),0 16px 36px rgba(0,0,0,.35);
+  color:#bfe3c8;
+}

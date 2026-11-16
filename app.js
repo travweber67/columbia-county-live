@@ -2669,7 +2669,7 @@ function tickFerryNext() {
         '<div class="ferry-next-box' + (n.isLast ? ' last-boat' : '') + '">'
         + '<div class="fn-side">From ' + esc(side.label) + (n.isLast ? '<span class="fn-last">Last boat today</span>' : '') + '</div>'
         + '<div class="fn-count">' + esc(fmtAway(n.minsAway)) + '</div>'
-        + '<div class="fn-time">Departs ' + fmtClock(n.hour, n.minute) + (n.tomorrow ? ' tomorrow' : '') + ' · cash/check fares</div>'
+        + '<div class="fn-time">Departs ' + fmtClock(n.hour, n.minute) + (n.tomorrow ? ' tomorrow' : '') + ' · cash only</div>'
         + '</div>').join('') + '</div>';
 }
 
@@ -4832,7 +4832,7 @@ function renderFerryPlan(force) {
     const tight = minsLeft <= 15;
     let html = '<div class="fp-verdict' + (tight ? ' fp-tight' : '') + '">'
       + '<div class="fp-leave">Be at the Puget Island dock by <span class="fp-time">' + fpClock(leg.dockBy) + '</span> <span class="fp-away">(' + esc(fmtAway(minsLeft)) + ')</span></div>'
-      + '<div class="fp-sub">For the <strong>' + fpClock(leg.dep) + '</strong> boat to Westport — across in about ' + FP_CROSS + ' minutes, docking around <strong>' + fpClock(leg.dep + FP_CROSS) + '</strong>. Fares are cash or check.'
+      + '<div class="fp-sub">For the <strong>' + fpClock(leg.dep) + '</strong> boat to Westport — across in about ' + FP_CROSS + ' minutes, docking around <strong>' + fpClock(leg.dep + FP_CROSS) + '</strong>. Fares are cash only.'
       + (tight ? ' That\'s tight — head for the dock now.' : '') + '</div></div>';
     if (legs.length > 1) {
       html += '<p class="fp-next">Running late? Next boat: <strong>' + fpClock(legs[1].dep) + '</strong> — be at the dock by ' + fpClock(legs[1].dockBy) + '.</p>';
@@ -5951,13 +5951,13 @@ const LANG_ES = {
   ferryplanh3: '🧭 No pierdas el barco — ¿a qué hora tienes que salir?',
   fpdiror: 'Hacia Washington',
   fpdirwa: 'De regreso a Oregón',
-  fpnote: 'Los tiempos de manejo son típicos para la US-30 / OR-47 en condiciones normales — tu viaje variará, y el barco no espera. El plan añade 10 minutos de margen en el muelle para estacionar, pagar (solo efectivo o cheque) y cargar.',
+  fpnote: 'Los tiempos de manejo son típicos para la US-30 / OR-47 en condiciones normales — tu viaje variará, y el barco no espera. El plan añade 10 minutos de margen en el muelle para estacionar, pagar (solo efectivo) y cargar.',
   ferrynote: 'El último ferry del Bajo Columbia, operado por el condado de Wahkiakum. Navega con horario fijo — no hay rastreador en vivo, así que el horario de abajo <em>es</em> el estado, todos los días del año. La línea de alertas de arriba la lee nuestro recolector de la página oficial del ferry del condado.',
   ferrybox1h: 'Desde Puget Island (lado de WA)',
   ferrybox1p: 'Cada hora en punto, <strong>5:00 AM – 10:00 PM</strong>',
   ferrybox2h: 'Desde Westport (lado de OR)',
   ferrybox2p: 'Cada hora y cuarto, <strong>5:15 AM – 10:15 PM</strong>',
-  ferrybox3h: 'Tarifas (solo efectivo / cheque)',
+  ferrybox3h: 'Tarifas (solo efectivo)',
   ferrybox3p: 'Auto $6 · Motocicleta $4 · Bicicleta $3 · A pie $2',
   ferrybridge: '¿Puente cerrado? El ferry históricamente extiende su horario durante los cierres del puente Lewis &amp; Clark — confirma en la página del condado antes de contar con ello.',
   ferrylink: 'Página oficial del ferry — Condado de Wahkiakum →',
@@ -6433,7 +6433,7 @@ function goCheckBoat(src, dep) {
   const slack = leaveBy - leaveMin;
   const boatStr = fmtClock(boat.h, boat.min);
   const detail = "Leave " + town.name + " by " + fpClock(leaveBy) + " — " + drive
-    + " min drive plus 10 min at the dock for parking, fares (cash or check), and loading.";
+    + " min drive plus 10 min at the dock for parking, fares (cash only), and loading.";
   if (boat.isLast) return { state: "warn", icon: "⚠️", label: "Your boat is the last boat — " + boatStr + " from Westport",
     detail: detail + " Miss it and the next sailing is " + fmtClock(side.firstHour, side.minute) + " the next morning." };
   if (slack <= 10) return { state: "warn", icon: "⚠️", label: "Tight for the " + boatStr + " boat",
