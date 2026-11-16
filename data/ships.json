@@ -1,6 +1,102 @@
 {
- "fetched_at": "2026-11-16T19:30:26Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-16T19:35:25Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 309.8,
+   "heading": 136,
+   "nav_status": 15,
+   "updated": "2026-11-16 19:35:39.066390145 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.04769,
+   "lon": -122.88213,
+   "sog_kn": 4.6,
+   "cog": 175.9,
+   "heading": 175,
+   "nav_status": 3,
+   "updated": "2026-11-16 19:35:45.311420913 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19957,
+   "lon": -123.38497,
+   "sog_kn": 0,
+   "cog": 70,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-16 19:35:50.166294812 +0000 UTC",
+   "type_code": 30,
+   "destination": "CATHLAMET WA"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59412,
+   "lon": -122.7721,
+   "type_code": 70,
+   "destination": "NOT AVAILABLE",
+   "updated": "2026-11-16 19:35:47.74274812 +0000 UTC"
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64725,
+   "lon": -122.74131,
+   "sog_kn": 0,
+   "cog": 127.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-16 19:35:52.218845763 +0000 UTC"
+  },
+  {
+   "mmsi": 538006098,
+   "name": "ANTARES",
+   "lat": 45.98398,
+   "lon": -122.83517,
+   "type_code": 70,
+   "destination": "USKAM",
+   "updated": "2026-11-16 19:35:54.768720128 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60761,
+   "lon": -122.67767,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-16 19:35:55.538153996 +0000 UTC"
+  },
+  {
+   "mmsi": 368458550,
+   "name": "SKAGIT",
+   "lat": 45.5858,
+   "lon": -122.76787,
+   "sog_kn": 0.6,
+   "cog": 135.8,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-16 19:35:56.944270415 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.64344,
+   "lon": -122.75287,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-16 19:35:57.187127926 +0000 UTC"
+  }
+ ]
 }
