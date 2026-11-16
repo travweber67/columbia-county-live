@@ -1,66 +1,40 @@
 {
- "fetched_at": "2026-11-16T01:39:01Z",
+ "fetched_at": "2026-11-16T01:44:01Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.03392,
+   "lon": -122.87847,
+   "sog_kn": 7.2,
+   "cog": 160.8,
+   "heading": 152,
+   "nav_status": 0,
+   "updated": "2026-11-16 01:44:19.983452314 +0000 UTC"
+  },
   {
    "mmsi": 367310520,
    "name": "JAMES T",
-   "lat": 46.16032,
-   "lon": -123.07044,
-   "sog_kn": 6.6,
-   "cog": 292.5,
-   "heading": 296,
+   "lat": 46.1659,
+   "lon": -123.08209,
+   "sog_kn": 6.7,
+   "cog": 304.2,
+   "heading": 309,
    "nav_status": 3,
-   "updated": "2026-11-16 01:39:06.29660311 +0000 UTC"
+   "updated": "2026-11-16 01:44:24.76166334 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.17208,
-   "lon": -123.09664,
-   "sog_kn": 2,
-   "cog": 130.9,
-   "heading": 125,
-   "nav_status": 3,
-   "updated": "2026-11-16 01:39:12.95135456 +0000 UTC"
-  },
-  {
-   "mmsi": 367513140,
-   "name": "CLEARWATER",
-   "lat": 45.62793,
-   "lon": -122.69977,
-   "type_code": 52,
-   "destination": "US^01JQ>0T67",
-   "updated": "2026-11-16 01:39:15.599718973 +0000 UTC"
-  },
-  {
-   "mmsi": 352006982,
-   "name": "MOSHILL",
-   "lat": 45.63366,
-   "lon": -122.70104,
-   "type_code": 70,
-   "destination": "US VAN",
-   "updated": "2026-11-16 01:39:22.259788495 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65012,
-   "lon": -122.74765,
-   "type_code": 33,
-   "updated": "2026-11-16 01:39:23.624279145 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08982,
-   "lon": -122.92901,
-   "sog_kn": 0,
-   "cog": 220,
-   "heading": 101,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.08187,
+   "lon": -122.90527,
+   "sog_kn": 0.1,
+   "cog": 227,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-16 01:39:29.271857537 +0000 UTC"
+   "updated": "2026-11-16 01:44:28.959688238 +0000 UTC"
   }
  ]
 }
