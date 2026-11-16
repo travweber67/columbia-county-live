@@ -1,91 +1,40 @@
 {
- "fetched_at": "2026-11-16T06:39:26Z",
+ "fetched_at": "2026-11-16T06:44:27Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08195,
+   "lon": -122.90492,
+   "sog_kn": 0,
+   "cog": 179.9,
+   "heading": 126,
+   "nav_status": 5,
+   "updated": "2026-11-16 06:44:40.522937964 +0000 UTC"
+  },
   {
    "mmsi": 368440320,
    "name": "HEATHER S",
-   "lat": 45.64049,
-   "lon": -122.73296,
-   "sog_kn": 8.8,
-   "cog": 292.6,
+   "lat": 45.64411,
+   "lon": -122.75015,
+   "sog_kn": 8.5,
+   "cog": 266.3,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-16 06:39:30.526847321 +0000 UTC"
+   "updated": "2026-11-16 06:44:41.113275186 +0000 UTC"
   },
   {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10892,
-   "lon": -122.96128,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.0819,
+   "lon": -122.90531,
    "sog_kn": 0,
-   "cog": 327.2,
-   "heading": 130,
-   "nav_status": 5,
-   "updated": "2026-11-16 06:39:32.127335319 +0000 UTC"
-  },
-  {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09691,
-   "lon": -122.92757,
-   "sog_kn": 0,
-   "cog": 0,
+   "cog": 60.6,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-16 06:39:35.534330781 +0000 UTC"
-  },
-  {
-   "mmsi": 636024922,
-   "name": "VERACITY",
-   "lat": 45.98417,
-   "lon": -122.83545,
-   "sog_kn": 0,
-   "cog": 321.2,
-   "heading": 151,
-   "nav_status": 5,
-   "updated": "2026-11-16 06:39:37.923915968 +0000 UTC"
-  },
-  {
-   "mmsi": 636015567,
-   "name": "KYRA ZAFIRA",
-   "lat": 45.63044,
-   "lon": -122.69566,
-   "sog_kn": 0.1,
-   "cog": 20.8,
-   "heading": 127,
-   "nav_status": 5,
-   "updated": "2026-11-16 06:39:42.959747559 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08181,
-   "lon": -122.90516,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-16 06:39:43.640041699 +0000 UTC"
-  },
-  {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.1995,
-   "lon": -123.385,
-   "sog_kn": 0,
-   "cog": 253,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-16 06:39:48.419993521 +0000 UTC"
-  },
-  {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58733,
-   "lon": -122.77043,
-   "type_code": 31,
-   "destination": "US^02SY>0UJ9",
-   "updated": "2026-11-16 06:39:48.954793283 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-16 06:44:44.782014267 +0000 UTC"
   }
  ]
 }
