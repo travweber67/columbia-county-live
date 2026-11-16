@@ -1,29 +1,102 @@
 {
- "fetched_at": "2026-11-16T10:39:45Z",
+ "fetched_at": "2026-11-16T10:44:45Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35744,
-   "sog_kn": 0,
-   "cog": 209.9,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-16 10:40:07.09163798 +0000 UTC"
-  },
-  {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 45.64729,
-   "lon": -122.74131,
-   "sog_kn": 0,
-   "cog": 127.7,
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00886,
+   "lon": -122.84886,
+   "sog_kn": 0.1,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-16 10:40:11.391765317 +0000 UTC"
+   "updated": "2026-11-16 10:44:52.389021541 +0000 UTC",
+   "type_code": 50,
+   "destination": "--"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64361,
+   "lon": -122.75296,
+   "type_code": 52,
+   "destination": "US^0UU4>02MR",
+   "updated": "2026-11-16 10:44:51.962682107 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08182,
+   "lon": -122.90517,
+   "sog_kn": 0,
+   "cog": 313.9,
+   "heading": 131,
+   "nav_status": 0,
+   "updated": "2026-11-16 10:44:54.611611098 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.14489,
+   "lon": -123.29404,
+   "sog_kn": 1.2,
+   "cog": 51.7,
+   "heading": 66,
+   "nav_status": 3,
+   "updated": "2026-11-16 10:44:58.514233322 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64845,
+   "lon": -122.74408,
+   "sog_kn": 0,
+   "cog": 109.8,
+   "heading": 109,
+   "nav_status": 0,
+   "updated": "2026-11-16 10:44:59.643547217 +0000 UTC"
+  },
+  {
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.15253,
+   "lon": -123.3777,
+   "type_code": 52,
+   "destination": "US^02SX>02A3",
+   "updated": "2026-11-16 10:45:00.838017214 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37714,
+   "sog_kn": 0,
+   "cog": 299.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-16 10:45:06.981694546 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.1079,
+   "lon": -122.95899,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-16 10:45:10.574848605 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 45.63256,
+   "lon": -122.70664,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-16 10:45:12.783079138 +0000 UTC"
   }
  ]
 }
