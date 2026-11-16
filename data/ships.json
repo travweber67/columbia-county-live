@@ -1,95 +1,104 @@
 {
- "fetched_at": "2026-11-16T05:44:20Z",
+ "fetched_at": "2026-11-16T05:49:21Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.16194,
-   "lon": -123.07318,
-   "sog_kn": 2.3,
-   "cog": 291.6,
-   "heading": 287,
-   "nav_status": 3,
-   "updated": "2026-11-16 05:44:26.137142113 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10791,
-   "lon": -122.95901,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 05:44:30.463218144 +0000 UTC"
-  },
   {
    "mmsi": 367513120,
    "name": "CASCADES",
    "lat": 45.63792,
-   "lon": -122.72801,
+   "lon": -122.72802,
    "sog_kn": 0,
-   "cog": 0.9,
-   "heading": 117,
+   "cog": 254.4,
+   "heading": 118,
    "nav_status": 12,
-   "updated": "2026-11-16 05:44:32.710284036 +0000 UTC"
+   "updated": "2026-11-16 05:49:33.081314399 +0000 UTC"
   },
   {
    "mmsi": 367310520,
    "name": "JAMES T",
-   "lat": 46.09707,
+   "lat": 46.09708,
    "lon": -122.92786,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-16 05:49:44.772833123 +0000 UTC",
    "sog_kn": 0,
    "cog": 13.3,
-   "heading": 69,
-   "nav_status": 3,
-   "updated": "2026-11-16 05:44:34.473897111 +0000 UTC"
+   "heading": 68,
+   "nav_status": 3
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65009,
-   "lon": -122.74758,
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.99014,
+   "lon": -122.84122,
    "sog_kn": 0,
-   "cog": 304.6,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-16 05:44:48.919230896 +0000 UTC"
+   "cog": 27.7,
+   "heading": 152,
+   "nav_status": 0,
+   "updated": "2026-11-16 05:49:38.258918208 +0000 UTC"
   },
   {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08193,
-   "lon": -122.90493,
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.7772,
+   "lon": -122.77313,
+   "sog_kn": 4.5,
+   "cog": 164.7,
+   "heading": 156,
+   "nav_status": 12,
+   "updated": "2026-11-16 05:49:42.537316466 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.65013,
+   "lon": -122.75566,
+   "type_code": 52,
+   "destination": "PDX/VANC.OPS.",
+   "updated": "2026-11-16 05:49:40.33520113 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16367,
+   "lon": -123.07794,
+   "sog_kn": 2,
+   "cog": 304.2,
+   "heading": 94,
+   "nav_status": 3,
+   "updated": "2026-11-16 05:49:41.883972653 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64349,
+   "lon": -122.75243,
    "sog_kn": 0,
-   "cog": 305.5,
-   "heading": 125,
+   "cog": 298,
+   "heading": 137,
    "nav_status": 5,
-   "updated": "2026-11-16 05:44:40.471841229 +0000 UTC"
+   "updated": "2026-11-16 05:49:46.203502134 +0000 UTC"
   },
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.2,
-   "lon": -123.3854,
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.00873,
+   "lon": -122.85543,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-16 05:49:50.14523278 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09679,
+   "lon": -122.92799,
    "sog_kn": 0,
    "cog": 0,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-16 05:44:44.824850559 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08181,
-   "lon": -122.90515,
-   "sog_kn": 0,
-   "cog": 343.3,
-   "heading": 130,
-   "nav_status": 0,
-   "updated": "2026-11-16 05:44:53.299974828 +0000 UTC"
+   "heading": 66,
+   "nav_status": 3,
+   "updated": "2026-11-16 05:49:54.325853888 +0000 UTC"
   }
  ]
 }
