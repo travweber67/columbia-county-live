@@ -1,87 +1,68 @@
 {
- "fetched_at": "2026-11-16T07:19:29Z",
+ "fetched_at": "2026-11-16T07:20:09Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513150,
-   "name": "COLUMBIA",
-   "lat": 45.64348,
-   "lon": -122.75286,
-   "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-16 07:19:24.960049858 +0000 UTC"
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64441,
+   "lon": -122.73393,
+   "sog_kn": 5.7,
+   "cog": 104.2,
+   "heading": 103,
+   "nav_status": 12,
+   "updated": "2026-11-16 07:21:18.540384243 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.61291,
+   "mmsi": 352006982,
+   "name": "MOSHILL",
+   "lat": 45.63366,
+   "lon": -122.70104,
+   "type_code": 70,
+   "destination": "CA VAN",
+   "updated": "2026-11-16 07:21:23.1434388 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64356,
+   "lon": -122.75302,
    "sog_kn": 0,
-   "cog": 199.8,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-16 07:19:38.699046503 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08194,
-   "lon": -122.90493,
-   "type_code": 52,
-   "destination": "PORTLAND",
-   "updated": "2026-11-16 07:19:45.180171263 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.07172,
-   "lon": -122.89075,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-16 07:19:50.128473597 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.20001,
-   "lon": -123.3855,
-   "sog_kn": 0.1,
-   "cog": 3.9,
+   "cog": 344.9,
    "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-16 07:19:52.508004449 +0000 UTC"
-  },
-  {
-   "mmsi": 373989000,
-   "name": "AFRICAN CARDINAL",
-   "lat": 45.63925,
-   "lon": -122.7778,
-   "sog_kn": 0,
-   "cog": 197.6,
-   "heading": 229,
-   "nav_status": 5,
-   "updated": "2026-11-16 07:19:57.301299835 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.63759,
-   "lon": -122.72828,
-   "type_code": 52,
-   "destination": "PDX/VANC.OPS.",
-   "updated": "2026-11-16 07:19:57.386059558 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 45.99013,
-   "lon": -122.84124,
-   "sog_kn": 0,
-   "cog": 287.1,
-   "heading": 153,
    "nav_status": 0,
-   "updated": "2026-11-16 07:19:59.189471732 +0000 UTC"
+   "updated": "2026-11-16 07:21:29.752313556 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20001,
+   "lon": -123.38538,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-16 07:21:34.156286876 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65007,
+   "lon": -122.74759,
+   "type_code": 33,
+   "updated": "2026-11-16 07:21:39.76396416 +0000 UTC"
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64732,
+   "lon": -122.74123,
+   "sog_kn": 0,
+   "cog": 127.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-16 07:21:41.063246747 +0000 UTC"
   }
  ]
 }
