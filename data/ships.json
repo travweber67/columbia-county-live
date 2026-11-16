@@ -1,59 +1,58 @@
 {
- "fetched_at": "2026-11-16T19:15:24Z",
+ "fetched_at": "2026-11-16T19:20:00Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 355980000,
-   "name": "LUGANO STAR",
-   "lat": 45.64273,
-   "lon": -122.77191,
+   "mmsi": 636024922,
+   "name": "VERACITY",
+   "lat": 45.99864,
+   "lon": -122.85169,
+   "type_code": 70,
+   "destination": "PHIL",
+   "updated": "2026-11-16 19:21:00.791915462 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09719,
+   "lon": -122.93442,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-16 19:21:01.839785781 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15705,
+   "lon": -123.40233,
    "sog_kn": 0,
-   "cog": 219.5,
-   "heading": 228,
-   "nav_status": 5,
-   "updated": "2026-11-16 19:15:21.322102408 +0000 UTC"
-  },
-  {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10892,
-   "lon": -122.96127,
-   "sog_kn": 0,
-   "cog": 21.9,
-   "heading": 129,
-   "nav_status": 5,
-   "updated": "2026-11-16 19:15:32.068383948 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61291,
-   "type_code": 0,
-   "updated": "2026-11-16 19:15:34.755622188 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08186,
-   "lon": -122.90536,
-   "sog_kn": 0.1,
-   "cog": 195.9,
-   "heading": 113,
+   "cog": 360,
+   "heading": 131,
    "nav_status": 0,
-   "updated": "2026-11-16 19:15:41.243334566 +0000 UTC"
+   "updated": "2026-11-16 19:21:13.616753493 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.08209,
-   "lon": -122.90567,
-   "sog_kn": 0.5,
-   "cog": 211.1,
-   "heading": 298,
-   "nav_status": 3,
-   "updated": "2026-11-16 19:15:47.30427849 +0000 UTC"
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58747,
+   "lon": -122.77072,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 138,
+   "nav_status": 5,
+   "updated": "2026-11-16 19:21:16.1853674 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64323,
+   "lon": -122.74582,
+   "sog_kn": 0,
+   "cog": 72.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-16 19:21:36.741129075 +0000 UTC"
   }
  ]
 }
