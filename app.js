@@ -374,6 +374,34 @@ function renderWeekStrip(periods) {
       + '<span class="wx-dow">' + dow + '</span></div>';
   }).join('');
 }
+/* Round 2 (F1): grab-and-pull drag scrolling for the pill strip —
+   a desktop mouse has no swipe, so wherever the strip overflows it
+   can be dragged sideways instead. Delegated on the document so the
+   pinned copy of the strip gets it too; touch keeps native swipe. */
+(function () {
+  let drag = null;
+  document.addEventListener('pointerdown', e => {
+    if (e.pointerType !== 'mouse') return;
+    const strip = e.target && e.target.closest ? e.target.closest('.forecast-week') : null;
+    if (!strip || strip.scrollWidth <= strip.clientWidth + 2) return;
+    drag = { strip, x: e.clientX, left: strip.scrollLeft, moved: false };
+  });
+  document.addEventListener('pointermove', e => {
+    if (!drag) return;
+    const dx = e.clientX - drag.x;
+    if (!drag.moved && Math.abs(dx) < 4) return;
+    drag.moved = true;
+    drag.strip.classList.add('dragging');
+    drag.strip.scrollLeft = drag.left - dx;
+    e.preventDefault();
+  });
+  const endDrag = () => {
+    if (drag) drag.strip.classList.remove('dragging');
+    drag = null;
+  };
+  document.addEventListener('pointerup', endDrag);
+  document.addEventListener('pointercancel', endDrag);
+})();
 async function loadForecast(town) {
   town = COUNTY_TOWN; /* v71: county-wide only — no town picker */
   currentTown = town;
@@ -756,6 +784,21 @@ function wireAlertCards(root) {
   });
 }
 
+/* ---------- freshness board collapse (batch Nov 15, item 14) ----------
+   The per-source list tucks behind the little double-chevron in the
+   corner of the freshness card. Wired by delegation on document so the
+   original card and any pinned copy behave the same way. */
+document.addEventListener('click', e => {
+  const btn = e.target && e.target.closest ? e.target.closest('.fresh-toggle') : null;
+  if (!btn) return;
+  const card = btn.closest('.freshness-card');
+  if (!card) return;
+  const open = card.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  const lbl = btn.querySelector('.fresh-toggle-label');
+  if (lbl) lbl.textContent = alertToggleLabel(open);
+});
+
 /* ---------- My Route camera strip (build batch 2026-11-04, ADD 1 / R3) ----------
    The most-loved pattern in the DOT-app reviews is cameras grouped by
    route; CCL already had them on the map and in one flat list — this
@@ -880,24 +923,34 @@ function renderRoads(roads, camerasSnap) {
     if (scEl) { scEl.innerHTML = ''; scEl.hidden = true; }
     iEl.innerHTML = '<p class="status-note">🛠️ The bridge status above and event/ferry panels are live now. ODOT\'s incident feed itself needs ODOT\'s free developer key added to our fetcher — the plumbing is built and waiting on that one signup (it\'s free; it just has to be done by a person). Until then, the snapshot above is WSDOT + county sources only for roads.</p>';
   }
-  // Cameras
+  // Cameras — batch Nov 15 (item 9): the main grid keeps only the cameras
+  // that matter to county drivers — US-30, Cornelius Pass (OR-127), the
+  // I-5 Columbia crossing and OR-47 out of Vernonia (Stub Stewart) — and
+  // sorts the in-county cameras first (stable sort: feed order is kept
+  // inside each group; cameras without coordinates ride with the
+  // out-of-county group). The cut is keyed to the route so it survives
+  // feed refreshes. My Route below still reads the full snapshot; the
+  // map markers follow the grid.
   const cEl = $('cameras-body');
   const cams = (camerasSnap && camerasSnap.cameras) || [];
-  if (cams.length) {
+  const GRID_ROUTES = { US30: 1, OR127: 1, I5: 1, OR47: 1 };
+  const gridCams = cams.filter(c => GRID_ROUTES[c.route])
+    .sort((a, b) => (inBox(b.lat, b.lon) ? 1 : 0) - (inBox(a.lat, a.lon) ? 1 : 0));
+  if (gridCams.length) {
     // TripCheck stills live at static URLs that update in place — without a
     // per-snapshot cache-buster, browsers/CDNs keep serving the first frame
     // they cached. Key the bust to this snapshot's fetched_at: a fresh
     // snapshot yields fresh stills, an unchanged one stays cached.
     const camBust = encodeURIComponent((camerasSnap && camerasSnap.fetched_at) || 'live');
     const camSrc = u => esc(u + (u.indexOf('?') >= 0 ? '&' : '?') + 'snap=' + camBust);
-    cEl.innerHTML = '<div class="camera-grid">' + cams.map(c =>
+    cEl.innerHTML = '<div class="camera-grid">' + gridCams.map(c =>
       '<figure class="camera-fig">'
       + (c.image_url ? '<img loading="lazy" src="' + camSrc(c.image_url) + '" alt="Road camera: ' + esc(c.name) + '" onerror="this.parentNode.classList.add(\'cam-dead\');this.remove();">' : '')
       + '<figcaption>' + esc(c.name) + (c.route ? ' · ' + esc(c.route) : '') + '</figcaption></figure>').join('') + '</div>'
       + '<p class="card-note small">Camera stills are the latest snapshot frame; the fetcher refreshes the list every run.</p>';
     if (map && !renderRoads._camsDrawn) {
       renderRoads._camsDrawn = true;
-      cams.forEach(c => {
+      gridCams.forEach(c => {
         if (c.lat != null && c.lon != null) {
           L.circleMarker([c.lat, c.lon], { radius: 4, color: '#0b1220', weight: 1, fillColor: '#f59e0b', fillOpacity: 0.9 })
             .addTo(map).bindPopup('<strong>📷 ' + esc(c.name) + '</strong>');
@@ -5444,7 +5497,8 @@ initWatch();
    exact row). The index is built client-side. */
 const FINDER_SECTIONS = [
   { id: 'map',           title: 'Live map',                  sub: 'Radar, planes, ships, fires, the ISS — on one map', keys: 'map radar layers explore' },
-  { id: 'roads-card',    title: 'US-30, the Bridge & Roads', sub: 'Commute verdict, bridge status, incidents, cameras', keys: 'bridge road highway us-30 commute drive driving closure closed traffic longview cameras detour cornelius pass' },
+  { id: 'roads-card',    title: 'US-30, the Bridge & Roads', sub: 'Bridge status, work zones and corridor alerts', keys: 'bridge road highway us-30 commute drive driving closure closed traffic longview detour cornelius pass' },
+  { id: 'cameras-card',  title: 'Road cameras',              sub: 'My Route cameras and the county camera grid', keys: 'camera cameras cam photos stills us-30 cornelius pass i-5 interstate st johns rainier millard' },
   { id: 'drive-card',    title: 'Your Commute — drive times', sub: 'How long the drive takes, from your town to St. Johns, Portland or Longview', keys: 'commute drive time minutes how long portland st johns longview traffic trip' },
   { id: 'ships-card',    title: 'Columbia River Traffic',    sub: 'Ships under way on the river right now', keys: 'ship ships vessel ais river traffic boat freighter' },
   { id: 'ferry-card',    title: 'Oscar B Ferry',             sub: 'Next-boat countdown and the leave-by planner', keys: 'ferry boat oscar westport cathlamet puget island sailing crossing leave' },
@@ -5452,6 +5506,7 @@ const FINDER_SECTIONS = [
   { id: 'events-card',   title: 'Events — Next Two Weeks',   sub: 'City and county calendars, with add-to-calendar', keys: 'events calendar meeting meetings library storytime tonight weekend happening' },
   { id: 'alerts-card',   title: 'Weather Alerts',            sub: 'National Weather Service warnings and watches', keys: 'alert alerts warning warnings watch storm flood weather severe' },
   { id: 'forecast-card', title: 'Forecast',                  sub: 'Town forecasts from the National Weather Service', keys: 'forecast weather rain snow temperature wind weekend' },
+  { id: 'forecast-week-card', title: 'Forecast — the week',  sub: 'The seven-day forecast pills', keys: 'forecast week seven day pills outlook weather' },
   { id: 'aircraft-card', title: 'Aircraft Overhead',         sub: 'Planes over the county right now, from community ADS-B receivers', keys: 'plane planes aircraft flight flights overhead adsb low local ground traffic' },
   { id: 'sky-card',      title: 'In the Sky Right Now',      sub: 'The ISS, and when to see the station pass', keys: 'iss station satellite sky look up passes pass' },
   { id: 'dark-card',     title: 'After Dark — Tonight\u2019s Sky', sub: 'Clouds, moonlight, aurora odds and meteor showers — is tonight worth looking up?', keys: 'stars stargazing night sky dark aurora northern lights meteor meteors shooting star telescope astronomy milky way bundle up tonight' },
@@ -6005,6 +6060,8 @@ const LANG_ES = {
   dirtutoring: 'Tutorías',
   dirmoving: 'Mudanzas y fletes',
   dirother: 'Otros servicios locales',
+  dirfun: 'Boliche y diversión familiar',
+  dirbeauty: 'Salud y belleza',
   dirfreehelp: 'Ayuda gratuita / apoyo comunitario',
   dirfounding: 'Negocio fundador',
   dirotldesc: 'Boliche, ligas y fiestas de cumpleaños sobre Columbia River Highway.',
@@ -6684,8 +6741,8 @@ window.CCLPins = {
    it is the page's anchor, and a Leaflet container does not need the
    adventure. */
 const PIN_CARDS = ['since-card', 'home-card', 'commute-card', 'go-card', 'plan-card', 'schools-card', 'briefing-card',
-  'roads-card', 'incidents-card', 'drive-card', 'routeahead-card', 'ferry-card', 'ferry-mini-card', 'ships-card', 'aircraft-card', 'bend-card',
-  'alerts-card', 'forecast-card', 'sky-card', 'dark-card', 'rivers-card', 'tides-card',
+  'roads-card', 'cameras-card', 'incidents-card', 'drive-card', 'routeahead-card', 'ferry-card', 'ferry-mini-card', 'ships-card', 'aircraft-card', 'bend-card',
+  'alerts-card', 'forecast-week-card', 'forecast-card', 'sky-card', 'dark-card', 'rivers-card', 'tides-card',
   'fish-card', 'tracker-card', 'steelhead-card', 'almanac-card',
   'quakes-card', 'fires-card', 'air-card',
   'events-card', 'freshness-card', 'watch-card', 'saver-card', 'about-card'];
@@ -6733,24 +6790,17 @@ function pinMakeCopy(id) {
      the original's pin button — can never land on a copy. Copies are
      rebuilt from the live DOM on every render, so a pin made before
      this fix gains the strip on its own: no re-pin, no store change. */
-  if (id === 'forecast-card') {
-    const top = document.querySelector('.forecast-top');
-    if (top) {
-      const topCopy = top.cloneNode(true);
-      topCopy.removeAttribute('id');
-      topCopy.querySelectorAll('[id]').forEach(n => n.removeAttribute('id'));
-      topCopy.classList.remove('forecast-top');
-      topCopy.classList.add('pin-forecast-top');
-      const topHead = topCopy.querySelector('.forecast-head');
-      if (topHead) topHead.classList.remove('forecast-head');
-      copy.insertBefore(topCopy, copy.children[1] || null);
-    }
-  }
+  /* Batch Nov 15 (item 11): the 7-day pill strip is its own pinnable
+     unit now (forecast-week-card in PIN_CARDS), so the forecast-card
+     copy no longer drags a clone of the strip along — the v73 special
+     case is gone. (Round 3 supersedes the round-2 note that the
+     strip's copy wears card styling: the copy is card-free like the
+     strip itself, and its unpin chip rides the .strip-tools row.) */
+  copy.querySelectorAll('.pin-btn').forEach(n => n.remove());
   const head = copy.querySelector('.card-head');
-  if (head) {
-    const stale = head.querySelector('.pin-btn');
-    if (stale) stale.remove();
-    head.classList.add('has-pin');
+  const slot = id === 'forecast-week-card' ? (copy.querySelector('.strip-tools') || head) : head;
+  if (slot) {
+    if (slot === head) head.classList.add('has-pin');
     const b = document.createElement('button');
     b.type = 'button';
     b.className = 'pin-btn active';
@@ -6761,7 +6811,7 @@ function pinMakeCopy(id) {
       ev.preventDefault(); ev.stopPropagation();
       window.CCLPins.toggle('cards', id);
     });
-    head.appendChild(b);
+    slot.appendChild(b);
   }
   copy.addEventListener('click', ev => {
     if (ev.target && ev.target.closest && ev.target.closest('.pin-btn')) return; // the unpin button handles itself
@@ -6794,12 +6844,6 @@ function pinRenderZone() {
       }, 400);
     });
     mo.observe(orig, { subtree: true, childList: true, characterData: true });
-    /* v73: the forecast strip lives outside the card — watch it too, so
-       the pinned copy's pills refresh when the original strip does. */
-    if (id === 'forecast-card') {
-      const wk = $('forecast-week');
-      if (wk) mo.observe(wk, { subtree: true, childList: true, characterData: true });
-    }
     pinObservers[id] = mo;
   });
 }
@@ -6809,13 +6853,17 @@ function initPins() {
     if (!card) return;
     const head = card.querySelector('.card-head');
     if (!head) return;
-    head.classList.add('has-pin');
+    /* Round 3: the 7-day strip is not a card, so its pin is not a
+       card-header button — it mounts in the small standalone chip row
+       under the strip (.strip-tools) instead. */
+    const slot = id === 'forecast-week-card' ? (card.querySelector('.strip-tools') || head) : head;
+    if (slot === head) head.classList.add('has-pin');
     const b = document.createElement('button');
     b.type = 'button';
     b.className = 'pin-btn';
     b.dataset.pinFor = id;
     b.addEventListener('click', () => window.CCLPins.toggle('cards', id));
-    head.appendChild(b);
+    slot.appendChild(b);
     pinBtns[id] = b;
   });
   const clear = $('frontpage-clear');
@@ -7798,7 +7846,16 @@ langSet = function (lang) {
     if (!el) return 0;
     var cs = window.getComputedStyle(el);
     var ruler = document.createElement('span');
-    ruler.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap;' +
+    /* batch Nov 15 (item 12): the ruler rides position:fixed at the
+       viewport origin instead of absolute at the end of <body>. An
+       absolutely-positioned ruler sits at the very bottom of the page
+       while it is attached, and the lock loop's forced layouts with it
+       there perturbed the scrollable overflow — parked at the bottom
+       of a long view, the browser clamped the scroll up by the ruler's
+       height (~57px) on the next pass: the Outdoors bottom pop. A
+       fixed ruler never contributes to the document's overflow, and
+       the measurement (same font, same text) is identical. */
+    ruler.style.cssText = 'position:fixed;top:0;left:0;visibility:hidden;white-space:nowrap;' +
       'font-family:' + cs.fontFamily + ';font-size:' + cs.fontSize +
       ';font-weight:' + cs.fontWeight + ';letter-spacing:' + cs.letterSpacing +
       ';text-transform:' + cs.textTransform;
@@ -9005,19 +9062,9 @@ function emWireCoords() {
 }
 /* ---------- END REFINEMENTS BATCH 1 module ---------- */
 
-/* ---------- v71: the forecast pin button lives in the standalone
-   head above the pills (initPins looks for a .card-head inside the card,
-   and the forecast card no longer has one), wired to the same pin store. */
-(function () {
-  var head = document.querySelector('.forecast-head');
-  if (!head || !$('forecast-card')) return;
-  head.classList.add('has-pin');
-  var b = document.createElement('button');
-  b.type = 'button';
-  b.className = 'pin-btn';
-  b.dataset.pinFor = 'forecast-card';
-  b.addEventListener('click', function () { window.CCLPins.toggle('cards', 'forecast-card'); });
-  head.appendChild(b);
-  pinBtns['forecast-card'] = b;
-  if (typeof pinPaint === 'function') pinPaint();
-})();
+/* ---------- Batch Nov 15 (item 11): the v71 forecast-head pin hack is
+   retired. The pill strip is now its own pinnable unit (forecast-week-
+   card, whose .forecast-head is a .card-head, so initPins grows its
+   button there) and the detailed forecast card carries its own
+   .card-head again, so initPins grows its button inside the card.
+   Two separate pins, two separate cards. */

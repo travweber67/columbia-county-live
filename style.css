@@ -2960,3 +2960,218 @@ html[data-theme="dark"] [data-pin-copy="incidents-card"]{
 }
 [data-pin-copy="incidents-card"] .incidents-head h3{color:var(--text);text-shadow:none}
 [data-pin-copy="incidents-card"] .incident-scope{color:var(--muted);text-shadow:none}
+
+/* ================================================================
+   BATCH NOV 15 PREVIEW (items 9-15) — appended overrides
+   ================================================================ */
+
+/* Item 11: detailed forecast periods stay two-wide on phones too —
+   half the scrolling, no tall full-width slabs. */
+@media (max-width:560px){
+  .forecast-periods{grid-template-columns:1fr 1fr;gap:6px}
+  .period{padding:7px 8px}
+  .period h4{font-size:.78rem}
+  .period .temp{font-size:1.02rem}
+  .period p{font-size:.74rem;line-height:1.35}
+}
+
+/* Item 14: freshness board collapse — the source list tucks behind
+   the little double-chevron in the card's corner. */
+.freshness-card{position:relative;padding-bottom:42px}
+.freshness-card.open .fresh-more{grid-template-rows:1fr}
+.fresh-toggle{position:absolute;right:12px;bottom:8px;display:flex;flex-direction:column;align-items:center;gap:1px;background:none;border:0;margin:0;padding:2px 4px;color:var(--accent);cursor:pointer;font:inherit}
+.fresh-toggle .alert-chev{transition:transform .3s ease}
+.freshness-card.open .fresh-toggle .alert-chev{transform:rotate(180deg)}
+.fresh-toggle-label{font-size:.68rem;font-weight:700;line-height:1}
+
+/* Item 15: the golden founding ribbon. */
+.founding-cell{position:relative}
+.founding-ribbon{height:auto;filter:drop-shadow(0 3px 6px rgba(0,0,0,.45))}
+.cell-ribbon{position:absolute;top:10px;right:10px;width:40px;z-index:3}
+.dir-item{position:relative}
+.dir-ribbon{position:absolute;top:10px;right:10px;width:36px;z-index:3}
+.wall-ribbon{display:inline-block;width:30px;vertical-align:-9px;margin-left:6px;filter:drop-shadow(0 2px 4px rgba(0,0,0,.35))}
+
+/* Item 15: footer stack — separated parts, one rhythm, and a
+   partners card that reads as the premium showcase it is. */
+.partners-wall.card{border:1px solid rgba(217,164,65,.55);padding:20px;background:linear-gradient(155deg,rgba(217,164,65,.12),rgba(217,164,65,.02) 58%),var(--panel)}
+.partners-wall h2{font-size:1.08rem}
+.partners-name{font-size:1.24rem}
+.footer-byline{text-align:center;color:var(--muted);margin:2px 0 12px}
+.cascade-footer{text-align:center;margin:0 0 14px}
+.credits-card{margin:0 0 6px}
+.footer-disc{text-align:center;max-width:660px;margin-left:auto;margin-right:auto}
+
+/* ===== Round 2 — Travis's review fixes (Nov 15, 2026) =====
+   F1: on desktop the 7-day pill strip shows all seven days inside
+   its card (wraps instead of hiding the overflow behind a sideways
+   scroll a mouse can't do); wherever the strip still overflows it
+   can be grab-and-pull dragged (see app-batch-nov15.js). The phone
+   swipe is untouched.
+   F2: the forecast strip becomes a real card — the same etched-glass
+   recipe as every other card — so it stands apart from the weather
+   alerts card above it with the standard gap between two edged
+   cards, and its heading/place line take the card's theme colours
+   (the pinned copy's treatment) instead of over-photo white. In
+   Travel's wide columns layout, the bridge card is a column
+   spanner: the ferry card's bottom margin is truncated at the span
+   break, which left the two cards flush — the spanner now carries
+   its own top margin.
+   F3: Travel cards stand on their own. Each Travel card's own frosted
+   background — and its own photo header, where it has one — ends at
+   its own edges, with a clear gap to its neighbours; nothing solid
+   sits behind the group of them. The transparent style stays.
+   F4: the founding ribbon sits a little larger (v2 artwork: transparent
+   background, brighter gold, FS monogram).
+   R4 (round 4): the rule that hid Travel's background photo lived
+   here in round 2 and is REMOVED — Travis's corrected design (Nov 15):
+   every view keeps its one background picture and the frosted cards
+   float over the top of it. What he rejects is only a solid sheet
+   behind a group of cards, and cards merged without gaps. */
+@media (min-width:900px){
+  #view-travel #roads-card{margin-top:20px}
+  .forecast-week{overflow-x:visible;flex-wrap:wrap;scroll-snap-type:none}
+}
+#forecast-week-card{
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);
+  border:1px solid rgba(255,255,255,.6);border-radius:var(--radius);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 2px rgba(20,32,16,.10),0 16px 36px rgba(20,32,16,.18);
+  padding:18px 20px 14px;
+}
+html[data-theme="dark"] #forecast-week-card{
+  background:linear-gradient(180deg,rgba(26,43,32,.85),rgba(13,23,16,.77));
+  border-color:rgba(196,226,196,.18);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 1px 2px rgba(0,0,0,.4),0 16px 36px rgba(0,0,0,.35);
+}
+#forecast-week-card .forecast-head h2{color:var(--text);text-shadow:none}
+#forecast-week-card .forecast-head .updated{color:var(--muted);text-shadow:none}
+#forecast-week-card .wx-place{color:var(--text);text-shadow:none}
+.forecast-week{cursor:grab}
+.forecast-week.dragging{cursor:grabbing;scroll-snap-type:none;user-select:none}
+.forecast-week img{-webkit-user-drag:none}
+.cell-ribbon{width:48px}
+.dir-ribbon{width:44px}
+.wall-ribbon{width:36px;vertical-align:-11px}
+
+
+/* ===== Round 3 — Travis's review fixes (Nov 15, 2026): NO GROUPING BACKDROPS =====
+   His standing rule, applied everywhere at once: no solid card or
+   sheet sits behind a group of elements, and no elements merge or
+   touch without gaps. Every element stands alone as its own frosted
+   card with real gaps between. Round 2 separated Travel only; this
+   round finishes the job for the weather strip, Community Help, the
+   footer, and every remaining view. (Round 4 correction, same day:
+   the views' background PHOTOS stay — see the R3-4 note below. What
+   was removed here is grouping sheets, never the pictures.) */
+
+/* R3-1 — the 7-day strip leaves its card entirely. Round 2 (F2) had
+   put the pills inside one big Forecast card; Travis: "you put a card
+   behind the forecast bubbles like I didn't want." The block keeps no
+   background, border, shadow or blur of its own: the heading and the
+   place line float on the base (the original v71 treatment), the pills
+   keep their own individual frosted style, and the pin is no longer a
+   card-header button — it rides a small standalone chip row under the
+   strip (.strip-tools, wired in app-batch-nov15-v2.js). Drag-scroll
+   and the phone swipe ride the strip itself and are untouched. */
+#forecast-week-card{
+  background:none;border:none;border-radius:0;box-shadow:none;
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+  padding:2px 2px 0;
+}
+#forecast-week-card .forecast-head h2{color:#fff;text-shadow:0 1px 10px rgba(12,26,16,.55)}
+#forecast-week-card .forecast-head .updated{color:rgba(255,255,255,.88);text-shadow:0 1px 6px rgba(12,26,16,.55)}
+#forecast-week-card .wx-place{color:#fff;text-shadow:0 1px 8px rgba(12,26,16,.6)}
+.strip-tools{display:flex;justify-content:flex-end;align-items:center;min-height:32px;margin-top:2px}
+.strip-tools .pin-btn{position:static;box-shadow:0 1px 6px rgba(12,26,16,.35)}
+
+/* R3-2 — Community Help: every entry is a full card; the category
+   sections are not. Why it rendered as rows: the v82 mini-card rule
+   fills each entry with var(--panel-2), which in the dark theme is
+   #1e2e23 — the same deep green as the big category card behind the
+   list — so on a dark-theme phone the fills all but vanish and only
+   the base .dir-item hairline dividers show: one translucent section
+   with rows running together. Fix: strip the five category sections
+   of their card chrome (their headings float on the base like the
+   other views' headings) and give EVERY entry the site's full
+   standard card recipe, with real gaps between entries. The business
+   directory in Today keeps its divider list — this is scoped to
+   the Help view, as before. */
+#help-food-card,#help-crisis-card,#help-money-card,#help-family-card,#help-vets-card{
+  background:none;border:none;border-radius:0;box-shadow:none;
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+  padding:0 2px;
+}
+#help-food-card .card-head,#help-crisis-card .card-head,#help-money-card .card-head,#help-family-card .card-head,#help-vets-card .card-head{margin:10px 0 12px}
+#help-food-card .card-head h2,#help-crisis-card .card-head h2,#help-money-card .card-head h2,#help-family-card .card-head h2,#help-vets-card .card-head h2{color:#fff;text-shadow:0 1px 10px rgba(12,26,16,.55)}
+#view-help .dir-list{gap:14px}
+#view-help .dir-item{
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);
+  border:1px solid rgba(255,255,255,.6);border-radius:var(--radius);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 2px rgba(20,32,16,.10),0 16px 36px rgba(20,32,16,.18);
+  padding:16px 18px;
+}
+html[data-theme="dark"] #view-help .dir-item{
+  background:linear-gradient(180deg,rgba(26,43,32,.85),rgba(13,23,16,.77));
+  border-color:rgba(196,226,196,.18);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 1px 2px rgba(0,0,0,.4),0 16px 36px rgba(0,0,0,.35);
+}
+#view-help .dir-item.dir-invite{border:1px dashed var(--warm);background:rgba(233,164,74,.10);box-shadow:none}
+
+/* R3-3 — the footer loses its shared sheet. The partners card, the
+   Cascade pill and the credits pull-down already carry their own
+   styling; the byline and the disclaimer are plain lines. With the
+   footer's own backdrop (cream glass by day, near-black at dusk) gone,
+   each part stands separately and the base shows between them. The
+   loose lines take colours that read on the deep-green base. */
+.site-footer{background:transparent;border-top:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+html[data-theme="dark"] .site-footer{background:transparent;border-top:none}
+.footer-byline{color:rgba(255,255,255,.85)}
+.footer-byline strong{color:#fff}
+.footer-disc{color:rgba(255,255,255,.75)}
+/* R3-3b: the Cascade pill's day colours were dark green on a near-clear
+   fill, written for the old cream footer sheet; on the bare base they
+   vanish. It takes the on-green treatment in both themes (the dark
+   theme already had it). */
+.cascade-footer-link{color:#dff0e2;background:rgba(244,241,228,.08);border-color:rgba(255,255,255,.35)}
+
+/* R3-4 — SUPERSEDED by Round 4 (Travis, Nov 15, after seeing the
+   round-3 screenshots): this block hid every view's background photo,
+   and that was wrong. His design, in his words: every card should
+   "just be a frosted card like frosted glass all over one background
+   picture, like we currently have it" — one background picture per
+   view (as live v83 has), frosted cards floating over the top of it,
+   each card separate with real gaps. The display:none rule that
+   lived here is REMOVED; the .bg-layer photos render exactly as in
+   live v83. What stays rejected is only (a) a solid card/sheet
+   behind a group of cards and (b) merged or touching elements —
+   the R3-1/R3-2/R3-3 fixes above all stand. */
+
+/* ===== Round 4 — freshness "See more" toggle visibility (Nov 15) =====
+   Travis, reviewing the round-3 screenshots: "I can't see the See
+   more with the little arrows for this section." He was right: the
+   toggle was a bare 23px chevron with a small MUTED label (the
+   .alert-toggle-label colour overrides the button's accent), 2px of
+   padding and no background — easy to miss in the card's corner, and
+   in the expanded state it sits at the foot of a long card. Fix: the
+   toggle becomes a small frosted chip in the same corner — its own
+   pill background and border so it reads as a button against the
+   card, a 26px chevron, and a .74rem label in the accent colour.
+   The card gains bottom padding so the chip never crowds the last
+   source row. It is a button, not a backdrop: nothing groups
+   behind it. */
+.freshness-card{padding-bottom:60px}
+.fresh-toggle{
+  right:14px;bottom:12px;padding:8px 13px 7px;gap:2px;
+  background:linear-gradient(180deg,rgba(253,250,240,.94),rgba(249,244,229,.88));
+  border:1px solid rgba(255,255,255,.65);border-radius:999px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 2px 8px rgba(20,32,16,.25);
+}
+html[data-theme="dark"] .fresh-toggle{
+  background:linear-gradient(180deg,rgba(26,43,32,.94),rgba(13,23,16,.9));
+  border-color:rgba(196,226,196,.35);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 2px 8px rgba(0,0,0,.45);
+}
+.fresh-toggle .alert-chev{width:26px;height:26px;padding:0}
+.fresh-toggle-label{font-size:.74rem;color:var(--accent)}
