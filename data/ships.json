@@ -1,73 +1,111 @@
 {
- "fetched_at": "2026-11-16T08:39:35Z",
+ "fetched_at": "2026-11-16T08:44:35Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64786,
-   "lon": -122.74103,
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.99875,
+   "lon": -122.84713,
+   "sog_kn": 2.9,
+   "cog": 7.9,
+   "heading": 325,
+   "nav_status": 0,
+   "updated": "2026-11-16 08:44:38.218351051 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08192,
+   "lon": -122.90494,
    "sog_kn": 0,
-   "cog": 112,
-   "heading": 112,
+   "cog": 261.4,
+   "heading": 126,
    "nav_status": 5,
-   "updated": "2026-11-16 08:39:41.691102416 +0000 UTC"
+   "updated": "2026-11-16 08:44:40.584433742 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10878,
-   "lon": -122.96821,
-   "sog_kn": 8.2,
-   "cog": 307.2,
-   "heading": 309,
-   "nav_status": 3,
-   "updated": "2026-11-16 08:39:43.482363634 +0000 UTC"
-  },
-  {
-   "mmsi": 368257130,
-   "name": "TRIUMPH VII",
-   "lat": 46.00987,
-   "lon": -122.84833,
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64727,
+   "lon": -122.7413,
    "sog_kn": 0,
-   "cog": 324.5,
+   "cog": 127.7,
    "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-16 08:39:46.273014864 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-16 08:44:42.741195061 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64363,
+   "lon": -122.75296,
+   "type_code": 52,
+   "destination": "US^0UU4>02MR",
+   "updated": "2026-11-16 08:44:49.650414518 +0000 UTC"
   },
   {
    "mmsi": 636024922,
    "name": "VERACITY",
-   "lat": 45.99663,
-   "lon": -122.84824,
-   "sog_kn": 1.4,
-   "cog": 355.6,
-   "heading": 331,
-   "nav_status": 5,
-   "updated": "2026-11-16 08:40:05.406204239 +0000 UTC"
+   "lat": 45.99775,
+   "lon": -122.84764,
+   "type_code": 70,
+   "destination": "PHIL",
+   "updated": "2026-11-16 08:44:49.738056663 +0000 UTC"
   },
   {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 45.98245,
-   "lon": -122.83355,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08181,
+   "lon": -122.90517,
+   "sog_kn": 0,
+   "cog": 328,
+   "heading": 129,
+   "nav_status": 0,
+   "updated": "2026-11-16 08:45:03.458657824 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10784,
+   "lon": -122.95902,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-16 08:40:05.746877896 +0000 UTC"
+   "updated": "2026-11-16 08:44:59.932049844 +0000 UTC"
   },
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.14341,
-   "lon": -123.30538,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.64333,
+   "lon": -122.74425,
+   "sog_kn": 0,
+   "cog": 190.4,
+   "heading": 292,
+   "nav_status": 0,
+   "updated": "2026-11-16 08:45:06.639300492 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08967,
+   "lon": -122.92972,
+   "type_code": 66,
+   "destination": "RAINIER",
+   "updated": "2026-11-16 08:45:06.803383838 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.99785,
+   "lon": -122.84883,
    "sog_kn": 0.9,
-   "cog": 81,
-   "heading": 86,
-   "nav_status": 3,
-   "updated": "2026-11-16 08:40:06.515646503 +0000 UTC"
+   "cog": 26,
+   "heading": 317,
+   "nav_status": 0,
+   "updated": "2026-11-16 08:45:07.748682739 +0000 UTC"
   }
  ]
 }
