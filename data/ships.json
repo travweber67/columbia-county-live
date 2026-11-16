@@ -1,18 +1,36 @@
 {
- "fetched_at": "2026-11-16T11:44:50Z",
+ "fetched_at": "2026-11-16T11:49:50Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 1 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.91008,
-   "sog_kn": 0.1,
-   "cog": 213.7,
-   "heading": 73,
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64352,
+   "lon": -122.75289,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-16 11:49:54.770789126 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10793,
+   "lon": -122.95899,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-16 11:45:00.330390674 +0000 UTC"
+   "updated": "2026-11-16 11:50:10.550803995 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08199,
+   "lon": -122.90545,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-16 11:50:14.266505615 +0000 UTC"
   }
  ]
 }
