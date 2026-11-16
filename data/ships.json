@@ -1,49 +1,59 @@
 {
- "fetched_at": "2026-11-16T07:50:13Z",
+ "fetched_at": "2026-11-16T07:54:35Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 45.98247,
-   "lon": -122.83355,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08211,
+   "lon": -122.90545,
+   "type_code": 33,
+   "updated": "2026-11-16 07:54:47.624075956 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.98539,
+   "lon": -122.83646,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "cog": 147.9,
+   "heading": 331,
+   "nav_status": 5,
+   "updated": "2026-11-16 07:54:53.724675809 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.14568,
+   "lon": -123.35062,
+   "sog_kn": 3,
+   "cog": 101.4,
+   "heading": 101,
+   "nav_status": 3,
+   "updated": "2026-11-16 07:54:56.840701599 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.9101,
+   "sog_kn": 0,
+   "cog": 184.4,
+   "heading": 74,
    "nav_status": 0,
-   "updated": "2026-11-16 07:50:57.138088048 +0000 UTC"
+   "updated": "2026-11-16 07:55:00.934433922 +0000 UTC"
   },
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20003,
-   "lon": -123.38536,
-   "sog_kn": 0,
-   "cog": 174.1,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-16 07:51:03.455115939 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.1079,
-   "lon": -122.959,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 07:51:18.814410652 +0000 UTC"
-  },
-  {
-   "mmsi": 352006982,
-   "name": "MOSHILL",
-   "lat": 45.63365,
-   "lon": -122.70104,
-   "type_code": 70,
-   "destination": "CA VAN",
-   "updated": "2026-11-16 07:51:22.313355012 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.06414,
+   "lon": -122.88546,
+   "sog_kn": 1,
+   "cog": 170.8,
+   "heading": 168,
+   "nav_status": 3,
+   "updated": "2026-11-16 07:55:04.093384054 +0000 UTC"
   }
  ]
 }
