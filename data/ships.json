@@ -1,89 +1,69 @@
 {
- "fetched_at": "2026-11-16T21:50:02Z",
+ "fetched_at": "2026-11-16T21:55:34Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.6611,
-   "lon": -122.76056,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.06913,
+   "lon": -122.88884,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-16 21:55:50.123135203 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15705,
+   "lon": -123.40233,
    "sog_kn": 0,
-   "cog": 215.7,
-   "heading": 335,
+   "cog": 360,
+   "heading": 134,
    "nav_status": 0,
-   "updated": "2026-11-16 21:52:36.468838109 +0000 UTC"
+   "updated": "2026-11-16 21:55:53.196468579 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.66129,
+   "lon": -122.76034,
+   "sog_kn": 0,
+   "cog": 349.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-16 21:55:55.928354997 +0000 UTC"
   },
   {
    "mmsi": 367727410,
    "name": "AMY B",
-   "lat": 45.79309,
-   "lon": -122.84346,
-   "sog_kn": 2.4,
-   "cog": 49.2,
-   "heading": 54,
-   "nav_status": 12,
-   "updated": "2026-11-16 21:52:37.672606424 +0000 UTC"
-  },
-  {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.83369,
-   "lon": -122.78915,
-   "sog_kn": 6.7,
-   "cog": 198.4,
-   "heading": 198,
-   "nav_status": 0,
-   "updated": "2026-11-16 21:52:47.508017127 +0000 UTC"
-  },
-  {
-   "mmsi": 636026324,
-   "name": "STAR BELLA",
-   "lat": 46.0272,
-   "lon": -122.86955,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-16 21:52:49.861924898 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.14615,
-   "lon": -123.36466,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-16 21:52:51.349406697 +0000 UTC"
-  },
-  {
-   "mmsi": 636024633,
-   "name": "PAVO LEADER",
-   "lat": 45.63805,
-   "lon": -122.72252,
+   "lat": 45.79342,
+   "lon": -122.84305,
    "sog_kn": 0,
-   "cog": 26,
+   "cog": 231.5,
+   "heading": 34,
+   "nav_status": 12,
+   "updated": "2026-11-16 21:56:05.311877355 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64569,
+   "lon": -122.73486,
+   "sog_kn": 0.1,
+   "cog": 0,
    "heading": 113,
    "nav_status": 5,
-   "updated": "2026-11-16 21:52:55.269796091 +0000 UTC"
+   "updated": "2026-11-16 21:56:08.335192108 +0000 UTC"
   },
   {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.98541,
-   "lon": -122.8363,
-   "type_code": 0,
-   "destination": "VANCOUVER",
-   "updated": "2026-11-16 21:52:57.92063793 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08609,
-   "lon": -122.91749,
-   "sog_kn": 0,
-   "cog": 132.9,
-   "heading": 85,
-   "nav_status": 0,
-   "updated": "2026-11-16 21:53:02.255139033 +0000 UTC"
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64713,
+   "lon": -122.73967,
+   "type_code": 31,
+   "destination": "XX XXX>?? ???",
+   "updated": "2026-11-16 21:56:15.211472493 +0000 UTC"
   }
  ]
 }
