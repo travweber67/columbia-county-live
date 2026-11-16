@@ -1,91 +1,45 @@
 {
- "fetched_at": "2026-11-16T01:13:59Z",
+ "fetched_at": "2026-11-16T01:18:59Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00883,
+   "lon": -122.8489,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-16 01:19:06.601036902 +0000 UTC"
+  },
+  {
+   "mmsi": 538012415,
+   "name": "TOMINI PINE",
+   "lat": 45.63027,
+   "lon": -122.69564,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-16 01:19:13.508031125 +0000 UTC"
+  },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
    "lat": 46.08198,
-   "lon": -122.90548,
-   "sog_kn": 0,
-   "cog": 3.3,
-   "heading": 309,
-   "nav_status": 0,
-   "updated": "2026-11-16 01:14:00.845465307 +0000 UTC"
+   "lon": -122.90549,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-16 01:19:20.16885187 +0000 UTC"
   },
   {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58813,
-   "lon": -122.76803,
-   "sog_kn": 5.3,
-   "cog": 122.8,
-   "heading": 121,
-   "nav_status": 0,
-   "updated": "2026-11-16 01:14:04.087715669 +0000 UTC"
-  },
-  {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64567,
-   "lon": -122.73487,
-   "sog_kn": 0.1,
-   "cog": 0,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-16 01:14:08.101752038 +0000 UTC"
-  },
-  {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64536,
-   "lon": -122.73507,
-   "sog_kn": 0,
-   "cog": 30.4,
-   "heading": 113,
-   "nav_status": 5,
-   "updated": "2026-11-16 01:14:13.904436773 +0000 UTC"
-  },
-  {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 45.64736,
-   "lon": -122.74132,
-   "type_code": 31,
-   "destination": "MCALLS FUEL DOCK",
-   "updated": "2026-11-16 01:14:16.515932027 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.13725,
-   "lon": -123.3789,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 01:14:17.228145614 +0000 UTC"
-  },
-  {
-   "mmsi": 367425910,
-   "name": "SEA HORSE",
-   "lat": 46.15229,
-   "lon": -123.37731,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-16 01:14:28.580643701 +0000 UTC"
-  },
-  {
-   "mmsi": 538008434,
-   "name": "UNION FUJI",
-   "lat": 46.10892,
-   "lon": -122.96131,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-16 01:14:23.375371192 +0000 UTC"
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64347,
+   "lon": -122.75295,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-16 01:19:21.188444539 +0000 UTC"
   }
  ]
 }

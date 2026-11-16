@@ -1,47 +1,77 @@
 {
- "fetched_at": "2026-11-16T01:13:59Z",
+ "fetched_at": "2026-11-16T01:18:59Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
-   "hex": "a97cb5",
-   "callsign": "GTI354",
-   "type": "B77L",
-   "alt_ft": 33000,
-   "gs_kn": 480.4,
-   "track": 130.19,
-   "lat": 46.049613,
-   "lon": -123.519356
-  },
-  {
-   "hex": "a29337",
-   "callsign": "SKW4132",
-   "type": "E75L",
-   "alt_ft": 31450,
-   "gs_kn": 362.9,
-   "track": 175.89,
-   "lat": 45.845901,
-   "lon": -123.279062
+   "hex": "a682ef",
+   "callsign": "ASA657",
+   "type": "B738",
+   "alt_ft": 35000,
+   "gs_kn": 400.3,
+   "track": 177.85,
+   "lat": 45.930038,
+   "lon": -123.023496
   },
   {
    "hex": "ab0e27",
    "callsign": "N811MA",
    "type": "BE58",
-   "alt_ft": 1800,
-   "gs_kn": 149.9,
-   "track": 186.13,
-   "lat": 45.984673,
-   "lon": -122.902267
+   "alt_ft": 3700,
+   "gs_kn": 138.1,
+   "track": 192.12,
+   "lat": 45.796369,
+   "lon": -122.933647
+  },
+  {
+   "hex": "a3f3e5",
+   "callsign": "USC95",
+   "type": "LJ35",
+   "alt_ft": 2850,
+   "gs_kn": 178.7,
+   "track": 150.14,
+   "lat": 45.670818,
+   "lon": -122.807236
+  },
+  {
+   "hex": "a97cb5",
+   "callsign": "GTI354",
+   "type": "B77L",
+   "alt_ft": 33000,
+   "gs_kn": 476.6,
+   "track": 130.58,
+   "lat": 45.6194,
+   "lon": -122.794122
+  },
+  {
+   "hex": "4cc581",
+   "callsign": "ICE665",
+   "type": "A21N",
+   "alt_ft": 5100,
+   "gs_kn": 176.3,
+   "track": 294.82,
+   "lat": 45.724725,
+   "lon": -122.725937
   },
   {
    "hex": "a07155",
    "callsign": "N1279Q",
    "type": "C150",
-   "alt_ft": 900,
-   "gs_kn": 76.3,
-   "track": 148.39,
-   "lat": 45.696396,
-   "lon": -122.717017
+   "alt_ft": 200,
+   "gs_kn": null,
+   "track": null,
+   "lat": 45.622238,
+   "lon": -122.670593
+  },
+  {
+   "hex": "~2b827e",
+   "callsign": "",
+   "type": "",
+   "alt_ft": 200,
+   "gs_kn": 63.2,
+   "track": 113.32,
+   "lat": 45.621007,
+   "lon": -122.668327
   }
  ]
 }
