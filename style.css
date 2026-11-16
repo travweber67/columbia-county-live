@@ -3308,3 +3308,68 @@ html[data-theme="dark"] .cascade-footer-link{
   box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 1px 2px rgba(0,0,0,.4),0 16px 36px rgba(0,0,0,.35);
   color:#bfe3c8;
 }
+
+/* V88 — Events by day (Travis's phone review of live v87, 2026-11-15):
+   "the days should be blocked together on the same card instead of
+   hourly cards." Each day is now ONE frosted card — the standard
+   glass recipe the v87 per-event rows wore — with the date as its
+   header and the day's events as plain rows inside, separated by
+   real padding and the site's hairline. The header's var(--warm)
+   sits on the glass instead of floating over the photo, so it reads
+   clearly in both themes (the floating orange date over the warm
+   photo did not). Rows keep their .event-row markup, so the ＋ Add
+   calendar buttons, home-town badges and finder flash still land.
+   The Today pin copy is untouched: its clone drops the #events-body
+   scoping, so it keeps the pin-copy convention it always had. */
+#events-body .event-day-card{
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);
+  border:1px solid rgba(255,255,255,.6);border-radius:var(--radius);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 2px rgba(20,32,16,.10),0 16px 36px rgba(20,32,16,.18);
+  padding:13px 16px 10px;margin:0 0 12px;
+}
+html[data-theme="dark"] #events-body .event-day-card{
+  background:linear-gradient(180deg,rgba(26,43,32,.85),rgba(13,23,16,.77));
+  border-color:rgba(196,226,196,.18);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 1px 2px rgba(0,0,0,.4),0 16px 36px rgba(0,0,0,.35);
+}
+#events-body .event-day-card .event-date{margin:0 0 2px;text-shadow:none}
+#events-body .event-day-card .event-row{
+  background:none;-webkit-backdrop-filter:none;backdrop-filter:none;
+  border:none;border-bottom:1px solid var(--border);border-radius:0;box-shadow:none;
+  padding:9px 0;margin:0;
+}
+#events-body .event-day-card .event-row:last-child{border-bottom:none;padding-bottom:3px}
+html[data-theme="dark"] #events-body .event-day-card .event-row{background:none;box-shadow:none}
+#events-body .event-day-card .event-row-home{border-left:3px solid var(--warm-fill);padding-left:8px}
+
+/* V88 — the white-on-white note. .status-note's own background is a
+   hard-coded near-white (#f2f7fb), but two floating sections forced
+   white text onto it (the v87 events-body rule and the incidents-list
+   rule) and in the dark theme its var(--muted) text goes pale too —
+   pale text on a near-white box, unreadable (Travis's screenshot of
+   the Facebook-events note). The floating sections' notes now wear
+   the same frosted glass as their cards, and in the dark theme the
+   note's background follows the theme everywhere else, so the class
+   cannot produce light-on-light again. */
+#events-body .status-note{
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);
+  border:1px dashed rgba(122,110,78,.5);
+  color:var(--text);text-shadow:none;
+}
+html[data-theme="dark"] #events-body .status-note{
+  background:linear-gradient(180deg,rgba(26,43,32,.88),rgba(13,23,16,.82));
+  border-color:rgba(196,226,196,.35);
+}
+.incidents-list .status-note{
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);
+  border:1px dashed rgba(122,110,78,.5);
+  color:var(--text);text-shadow:none;
+}
+html[data-theme="dark"] .incidents-list .status-note{
+  background:linear-gradient(180deg,rgba(26,43,32,.88),rgba(13,23,16,.82));
+  border-color:rgba(196,226,196,.35);
+}
+html[data-theme="dark"] .status-note{background:#1b2a20;color:var(--text)}

@@ -2820,16 +2820,31 @@ function renderEvents() {
   let html = '';
   if (shown.length) {
     let lastDate = '';
-    html = shown.map(ev => {
-      const head = ev.date !== lastDate
-        ? '<div class="event-date">' + esc(fmtDay(new Date(ev.date + 'T12:00:00'))) + (ev.date === today ? ' <span class="event-today-badge">Today</span>' : '') + '</div>' : '';
-      lastDate = ev.date;
-      return head + '<div class="event-row"><span class="event-time">' + esc(ev.time || '') + '</span>'
+    /* v88: one card per DAY (Travis, 2026-11-15: "the days should be
+       blocked together on the same card instead of hourly cards") —
+       the date heads its day card and the day's events list inside
+       it. Rows keep their exact .event-row markup, so the ＋ Add
+       calendar buttons, home-town badges and the finder flash —
+       all wired to .event-row inside #events-body — keep working.
+       (lastDate is declared just above, where the old per-event
+       renderer declared it.) */
+    let grouped = '';
+    shown.forEach(ev => {
+      if (ev.date !== lastDate) {
+        if (lastDate) grouped += '</div>';
+        grouped += '<div class="event-day-card"><div class="event-date">'
+          + esc(fmtDay(new Date(ev.date + 'T12:00:00')))
+          + (ev.date === today ? ' <span class="event-today-badge">Today</span>' : '') + '</div>';
+        lastDate = ev.date;
+      }
+      grouped += '<div class="event-row"><span class="event-time">' + esc(ev.time || '') + '</span>'
         + '<span class="event-title">' + (ev.url ? '<a href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(ev.title) + '</a>' : esc(ev.title)) + '</span>'
         + (ev.source === 'Facebook'
           ? '<span class="event-fb-tag">Facebook</span>' + (ev.location ? '<span class="event-src">' + esc(ev.location) + '</span>' : '')
           : '<span class="event-src">' + esc(ev.source || '') + '</span>') + '</div>';
-    }).join('');
+    });
+    if (lastDate) grouped += '</div>';
+    html = grouped;
   } else {
     html = '<p class="no-alerts">' + ({
       today: 'Nothing left on the calendars for today — the full two weeks are under "All".',
