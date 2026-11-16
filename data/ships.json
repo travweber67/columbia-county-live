@@ -1,15 +1,60 @@
 {
- "fetched_at": "2026-11-16T23:00:39Z",
+ "fetched_at": "2026-11-16T23:05:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.08235,
-   "lon": -122.90568,
-   "type_code": 33,
-   "updated": "2026-11-16 23:00:53.699016786 +0000 UTC"
+   "mmsi": 352006531,
+   "name": "BARISM BETTY",
+   "lat": 45.60112,
+   "lon": -122.77476,
+   "sog_kn": 0,
+   "cog": 90.1,
+   "heading": 277,
+   "nav_status": 5,
+   "updated": "2026-11-16 23:06:01.756696976 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.08258,
+   "lon": -122.90661,
+   "sog_kn": 6.1,
+   "cog": 125.8,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-16 23:06:05.104962063 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.70548,
+   "lon": -122.76711,
+   "sog_kn": 6.6,
+   "cog": 192.6,
+   "heading": 194,
+   "nav_status": 0,
+   "updated": "2026-11-16 23:06:06.377702487 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00886,
+   "lon": -122.84884,
+   "type_code": 50,
+   "destination": "--",
+   "updated": "2026-11-16 23:06:11.312900826 +0000 UTC"
+  },
+  {
+   "mmsi": 367513120,
+   "name": "CASCADES",
+   "lat": 45.62702,
+   "lon": -122.79035,
+   "sog_kn": 7.3,
+   "cog": 4.2,
+   "heading": 7,
+   "nav_status": 0,
+   "updated": "2026-11-16 23:06:13.526629305 +0000 UTC"
   },
   {
    "mmsi": 355980000,
@@ -18,69 +63,16 @@
    "lon": -122.77157,
    "type_code": 70,
    "destination": "USPDX",
-   "updated": "2026-11-16 23:00:57.368207236 +0000 UTC"
+   "updated": "2026-11-16 23:06:14.102308543 +0000 UTC"
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19998,
-   "lon": -123.3855,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-16 23:01:00.005686649 +0000 UTC"
-  },
-  {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.09069,
-   "lon": -122.93212,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-16 23:01:06.760141883 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58758,
-   "lon": -122.77042,
-   "sog_kn": 0,
-   "cog": 273.8,
-   "heading": 320,
-   "nav_status": 5,
-   "updated": "2026-11-16 23:01:06.761055939 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10793,
-   "lon": -122.95902,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 23:01:10.508616692 +0000 UTC"
-  },
-  {
-   "mmsi": 367575580,
-   "name": "DIANE B.",
-   "lat": 45.78451,
-   "lon": -122.77741,
-   "sog_kn": 7.1,
-   "cog": 158.5,
-   "heading": 158,
-   "nav_status": 5,
-   "updated": "2026-11-16 23:01:14.87234987 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08201,
-   "lon": -122.90565,
-   "sog_kn": 0.1,
-   "cog": 303.3,
-   "heading": 141,
-   "nav_status": 0,
-   "updated": "2026-11-16 23:01:19.592369787 +0000 UTC"
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64537,
+   "lon": -122.73504,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-16 23:06:22.334344068 +0000 UTC"
   }
  ]
 }
