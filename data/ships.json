@@ -1,42 +1,60 @@
 {
- "fetched_at": "2026-11-16T04:14:13Z",
+ "fetched_at": "2026-11-16T04:19:13Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.13721,
-   "lon": -123.37895,
+   "mmsi": 563302700,
+   "name": "KEY WEST",
+   "lat": 46.10363,
+   "lon": -122.95023,
    "sog_kn": 0,
-   "cog": 196,
+   "cog": 292.2,
+   "heading": 118,
+   "nav_status": 5,
+   "updated": "2026-11-16 04:19:22.091230229 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.0821,
+   "lon": -122.90543,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 312,
+   "nav_status": 3,
+   "updated": "2026-11-16 04:19:26.874437533 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58078,
+   "lon": -122.76007,
+   "type_code": 31,
+   "destination": "PTSI PDX",
+   "updated": "2026-11-16 04:19:27.204059758 +0000 UTC"
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64726,
+   "lon": -122.74133,
+   "sog_kn": 0,
+   "cog": 127.7,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-16 04:14:16.633204395 +0000 UTC"
+   "updated": "2026-11-16 04:19:42.739729085 +0000 UTC"
   },
   {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09668,
-   "lon": -122.92831,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.08193,
+   "lon": -122.90529,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 66,
-   "nav_status": 3,
-   "updated": "2026-11-16 04:14:35.540945179 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.16498,
-   "lon": -123.08398,
-   "sog_kn": 0.6,
-   "cog": 141.3,
-   "heading": 129,
-   "nav_status": 3,
-   "updated": "2026-11-16 04:14:36.307177864 +0000 UTC",
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER"
+   "cog": 273.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-16 04:19:44.709315812 +0000 UTC"
   }
  ]
 }
