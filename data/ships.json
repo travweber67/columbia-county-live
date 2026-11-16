@@ -1,106 +1,102 @@
 {
- "fetched_at": "2026-11-16T03:04:07Z",
+ "fetched_at": "2026-11-16T03:09:08Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35744,
-   "type_code": 30,
-   "updated": "2026-11-16 03:04:16.226622303 +0000 UTC",
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.58753,
+   "lon": -122.77066,
    "sog_kn": 0,
-   "cog": 93.8,
-   "heading": 135,
-   "nav_status": 15
+   "cog": 214.8,
+   "heading": 139,
+   "nav_status": 0,
+   "updated": "2026-11-16 03:09:11.399515894 +0000 UTC"
   },
   {
    "mmsi": 366972000,
    "name": "ESSAYONS",
-   "lat": 46.149,
-   "lon": -123.27123,
-   "sog_kn": 1.7,
-   "cog": 268.7,
-   "heading": 273,
+   "lat": 46.1487,
+   "lon": -123.27415,
+   "sog_kn": 1.4,
+   "cog": 260,
+   "heading": 255,
    "nav_status": 3,
-   "updated": "2026-11-16 03:04:16.39684106 +0000 UTC"
+   "updated": "2026-11-16 03:09:16.006940043 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65021,
-   "lon": -122.74771,
-   "type_code": 33,
-   "updated": "2026-11-16 03:04:17.166741415 +0000 UTC"
-  },
-  {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.65837,
-   "lon": -122.75739,
-   "type_code": 52,
-   "destination": "VANCOUVER",
-   "updated": "2026-11-16 03:04:17.765934729 +0000 UTC"
-  },
-  {
-   "mmsi": 636024633,
-   "name": "PAVO LEADER",
-   "lat": 45.64052,
-   "lon": -122.7174,
+   "mmsi": 636024922,
+   "name": "VERACITY",
+   "lat": 45.98416,
+   "lon": -122.83547,
    "type_code": 70,
-   "destination": "US VAN",
-   "updated": "2026-11-16 03:04:19.756564843 +0000 UTC"
+   "destination": "KALAMA USA",
+   "updated": "2026-11-16 03:09:16.430496673 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.6129,
-   "type_code": 0,
-   "updated": "2026-11-16 03:04:22.542655959 +0000 UTC"
-  },
-  {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.61203,
-   "lon": -122.64538,
-   "type_code": 52,
-   "destination": "US^0UUT>0T9D",
-   "updated": "2026-11-16 03:04:25.273732027 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20001,
-   "lon": -123.38538,
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00878,
+   "lon": -122.84886,
    "sog_kn": 0,
-   "cog": 345.5,
+   "cog": 360,
    "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-16 03:04:35.121081437 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-16 03:09:17.62575327 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.15307,
-   "lon": -123.04782,
-   "sog_kn": 9.4,
-   "cog": 302.8,
-   "heading": 303,
-   "nav_status": 3,
-   "updated": "2026-11-16 03:04:35.172621335 +0000 UTC"
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64728,
+   "lon": -122.73993,
+   "sog_kn": 0,
+   "cog": 159.9,
+   "heading": 16,
+   "nav_status": 5,
+   "updated": "2026-11-16 03:09:23.512603289 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58731,
+   "lon": -122.77044,
+   "type_code": 31,
+   "destination": "US^02SY>0UJ9",
+   "updated": "2026-11-16 03:09:32.136356079 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.88055,
+   "lon": -122.79916,
+   "sog_kn": 6.9,
+   "cog": 159.3,
+   "heading": 143,
+   "nav_status": 0,
+   "updated": "2026-11-16 03:09:35.668744393 +0000 UTC"
   },
   {
    "mmsi": 366986380,
    "name": "DREDGE OREGON",
-   "lat": 46.08211,
-   "lon": -122.90544,
+   "lat": 46.0821,
+   "lon": -122.90543,
    "sog_kn": 0,
    "cog": 360,
    "heading": 312,
    "nav_status": 3,
-   "updated": "2026-11-16 03:04:37.680770271 +0000 UTC"
+   "updated": "2026-11-16 03:09:37.509738447 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09054,
+   "lon": -122.93233,
+   "sog_kn": 0,
+   "cog": 294.9,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-16 03:09:37.723589639 +0000 UTC"
   }
  ]
 }
