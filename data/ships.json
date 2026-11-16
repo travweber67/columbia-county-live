@@ -1,44 +1,80 @@
 {
- "fetched_at": "2026-11-16T18:40:22Z",
+ "fetched_at": "2026-11-16T18:45:22Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65014,
-   "lon": -122.74759,
-   "type_code": 33,
-   "updated": "2026-11-16 18:40:47.745553687 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08189,
-   "lon": -122.9054,
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.9909,
+   "lon": -122.84099,
    "sog_kn": 0,
-   "cog": 263.6,
-   "heading": 511,
+   "cog": 253.8,
+   "heading": 152,
+   "nav_status": 5,
+   "updated": "2026-11-16 18:45:27.988366945 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 46.14613,
+   "lon": -123.36453,
+   "sog_kn": 5.3,
+   "cog": 106.7,
+   "heading": 99,
    "nav_status": 0,
-   "updated": "2026-11-16 18:40:49.612496909 +0000 UTC"
+   "updated": "2026-11-16 18:45:30.72151418 +0000 UTC"
   },
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20002,
-   "lon": -123.38543,
-   "type_code": 99,
-   "destination": "NAKNEK",
-   "updated": "2026-11-16 18:40:53.732362287 +0000 UTC"
+   "mmsi": 352006531,
+   "name": "BARISM BETTY",
+   "lat": 45.60108,
+   "lon": -122.77477,
+   "type_code": 70,
+   "destination": "CNZJG - USPDX",
+   "updated": "2026-11-16 18:45:40.277680004 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08209,
-   "lon": -122.90508,
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19951,
+   "lon": -123.38508,
+   "sog_kn": 0,
+   "cog": 0.9,
+   "heading": 147,
+   "nav_status": 5,
+   "updated": "2026-11-16 18:45:43.610182828 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.0755,
+   "lon": -122.89205,
+   "sog_kn": 2.7,
+   "cog": 305.6,
+   "heading": 214,
+   "nav_status": 3,
+   "updated": "2026-11-16 18:45:45.054623503 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.59987,
+   "lon": -122.77956,
+   "sog_kn": 8,
+   "cog": 151.1,
+   "heading": 151,
+   "nav_status": 0,
+   "updated": "2026-11-16 18:45:47.364941853 +0000 UTC"
+  },
+  {
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.6514,
+   "lon": -122.75235,
    "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-16 18:41:03.453238507 +0000 UTC"
+   "destination": "",
+   "updated": "2026-11-16 18:45:48.729696269 +0000 UTC"
   }
  ]
 }
