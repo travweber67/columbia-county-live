@@ -1,40 +1,90 @@
 {
- "fetched_at": "2026-11-16T09:14:38Z",
+ "fetched_at": "2026-11-16T09:19:37Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64567,
+   "lon": -122.73486,
+   "type_code": 79,
+   "updated": "2026-11-16 09:19:41.720239005 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19948,
+   "lon": -123.38507,
+   "sog_kn": 0,
+   "cog": 0.9,
+   "heading": 146,
+   "nav_status": 5,
+   "updated": "2026-11-16 09:19:43.58574285 +0000 UTC"
+  },
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
-   "lat": 46.0818,
+   "lat": 46.08181,
    "lon": -122.90517,
    "sog_kn": 0,
-   "cog": 308.3,
-   "heading": 128,
+   "cog": 297.6,
+   "heading": 130,
    "nav_status": 0,
-   "updated": "2026-11-16 09:14:43.617101742 +0000 UTC"
+   "updated": "2026-11-16 09:19:43.90321724 +0000 UTC"
   },
   {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 45.64731,
-   "lon": -122.74127,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.1632,
+   "lon": -123.07683,
+   "sog_kn": 8.4,
+   "cog": 306.7,
+   "heading": 308,
+   "nav_status": 3,
+   "updated": "2026-11-16 09:19:44.761594487 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.38552,
    "sog_kn": 0,
-   "cog": 127.7,
+   "cog": 1.7,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-16 09:19:51.080158233 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.64334,
+   "lon": -122.74424,
+   "type_code": 52,
+   "destination": "PDX/VANC.OPS.",
+   "updated": "2026-11-16 09:19:52.489287663 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.91008,
+   "sog_kn": 0.1,
+   "cog": 157.8,
+   "heading": 72,
+   "nav_status": 0,
+   "updated": "2026-11-16 09:20:10.1068669 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10789,
+   "lon": -122.959,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-16 09:14:52.474544128 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.64754,
-   "lon": -122.73978,
-   "sog_kn": 0,
-   "cog": 114.6,
-   "heading": 114,
-   "nav_status": 0,
-   "updated": "2026-11-16 09:14:59.574850372 +0000 UTC"
+   "updated": "2026-11-16 09:20:10.190630069 +0000 UTC"
   }
  ]
 }
