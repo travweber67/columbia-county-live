@@ -28,6 +28,10 @@ const GAUGES = [
   { site: '14243000', label: 'Cowlitz River at Castle Rock, WA', sub: 'Longview commute side of the bridge',          lat: 46.2748, lon: -122.9146 }
 ];
 
+// Latest USGS readings by site, filled in by loadRivers(); the gauge map
+// cards (v91) read this at open time so a tap shows the current level.
+const GAUGE_READINGS = {};
+
 // County bounding box + modest buffer (from county.geojson) — shared scope.
 const BBOX = { s: 45.57, w: -123.52, n: 46.34, e: -122.61 };
 const inBox = (lat, lon) => lat != null && lon != null
@@ -47,7 +51,7 @@ const WFIGS_PERIM_URL = 'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/re
   + 'WFIGS_Interagency_Perimeters_Current/FeatureServer/0/query?where=1%3D1'
   + '&geometry=' + [BBOX.w, BBOX.s, BBOX.e, BBOX.n].join(',')
   + '&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects'
-  + '&outFields=poly_IncidentName,attr_PercentContained&returnGeometry=true&f=geojson';
+  + '&outFields=poly_IncidentName,attr_PercentContained,poly_GISAcres,poly_DateCurrent&returnGeometry=true&f=geojson';
 
 function quakeUrl() {
   const start = new Date(Date.now() - 30 * 24 * 3600 * 1000).toISOString().slice(0, 10);
@@ -104,6 +108,208 @@ const emojiIcon = (ch, size) => (typeof L !== 'undefined')
   ? L.divIcon({ className: 'emoji-pin', html: ch, iconSize: [size || 22, size || 22], iconAnchor: [(size || 22) / 2, (size || 22) / 2] })
   : null;
 
+/* ---------- v91: map info cards (Travis, 2026-11-15) ----------
+   Every dot and pin on the Travel map opens a real frosted card on
+   tap/click and shows a name tooltip on hover (desktop). Card content
+   is rebuilt at open time from the same feed fields the panels use —
+   nothing invented; a feed that carries little still yields what it
+   is, where it is, and its exact coordinates as the last row.
+   Language reads document.documentElement.lang at build time (the
+   LANG_ES pass owns that attribute) — never langCur, which is still
+   in TDZ when initMap() runs at boot. */
+const POP_OPTS = { maxWidth: 284, minWidth: 230, autoPanPadding: [16, 16], className: 'mapcard-pop' };
+const popEs = () => document.documentElement.lang === 'es';
+const popStr = (en, es) => (popEs() ? es : en);
+function popRows(pairs) {
+  const rows = (pairs || []).filter(p => p && p[1] != null && p[1] !== '');
+  if (!rows.length) return '';
+  return '<dl class="mapcard-rows">' + rows.map(p =>
+    '<dt>' + p[0] + '</dt><dd>' + p[1] + '</dd>').join('') + '</dl>';
+}
+function popCard(title, sub, pairs, foot) {
+  return '<div class="mapcard"><div class="mapcard-title">' + title + '</div>'
+    + (sub ? '<div class="mapcard-sub">' + sub + '</div>' : '')
+    + popRows(pairs)
+    + (foot ? '<div class="mapcard-foot">' + foot + '</div>' : '')
+    + '</div>';
+}
+function coordPair(lat, lon, label) {
+  if (lat == null || lon == null || isNaN(lat) || isNaN(lon)) return null;
+  return [label || popStr('Coordinates', 'Coordenadas'),
+    '<span class="mapcard-coords">' + Number(lat).toFixed(5) + ', ' + Number(lon).toFixed(5) + '</span>'];
+}
+function bindCard(marker, buildFn, tip) {
+  marker.bindPopup(buildFn(), POP_OPTS);
+  marker.on('popupopen', e => {
+    try { e.popup.setContent(buildFn()); } catch (err) { /* first build stands */ }
+    // Images inside a card (the camera still) arrive after Leaflet has
+    // measured and panned for the shorter pre-image card; re-measure on
+    // load so autoPan re-runs and the whole card stays on the map.
+    try {
+      const el = e.popup.getElement();
+      if (el) el.querySelectorAll('img').forEach(img => {
+        if (!img.complete) {
+          img.addEventListener('load', () => { try { e.popup.update(); } catch (err) { /* popup already gone */ } }, { once: true });
+        }
+      });
+    } catch (err) { /* the aspect-ratio box already reserves the height */ }
+  });
+  if (tip != null && tip !== '') {
+    marker.bindTooltip(String(tip),
+      { direction: 'top', offset: [0, -4], className: 'maptip', opacity: 1 });
+  }
+  return marker;
+}
+/* AIS ship-type codes are a standard table (ITU); decode only what the
+   code plainly says, otherwise leave the row off. */
+function shipTypeLabel(code) {
+  if (code == null) return null;
+  const c = Number(code);
+  if (c >= 20 && c <= 29) return 'Wing-in-ground craft';
+  if (c === 30) return popStr('Fishing vessel', 'Barco de pesca');
+  if (c === 31 || c === 32) return popStr('Towing vessel', 'Remolcador');
+  if (c === 33) return popStr('Dredging / underwater ops', 'Dragado / obras submarinas');
+  if (c === 34) return popStr('Dive vessel', 'Barco de buceo');
+  if (c === 35) return popStr('Military vessel', 'Buque militar');
+  if (c === 36) return popStr('Sailing vessel', 'Velero');
+  if (c === 37) return popStr('Pleasure craft', 'Embarcación de recreo');
+  if (c >= 40 && c <= 49) return popStr('High-speed craft', 'Embarcación rápida');
+  if (c === 50) return popStr('Pilot vessel', 'Barco de práctico');
+  if (c === 51) return popStr('Search & rescue', 'Búsqueda y rescate');
+  if (c === 52) return popStr('Tug', 'Remolcador');
+  if (c === 53) return popStr('Port tender', 'Lancha portuaria');
+  if (c === 55) return popStr('Law enforcement', 'Patrulla');
+  if (c >= 60 && c <= 69) return popStr('Passenger ship', 'Barco de pasajeros');
+  if (c >= 70 && c <= 79) return popStr('Cargo ship', 'Buque de carga');
+  if (c >= 80 && c <= 89) return popStr('Tanker', 'Buque tanque');
+  if (c >= 90 && c <= 99) return popStr('Other ship type', 'Otro tipo de buque');
+  return null;
+}
+function shipNavLabel(code) {
+  const m = {
+    0: popStr('Under way', 'En marcha'),
+    1: popStr('At anchor', 'Anclado'),
+    5: popStr('Moored', 'Amarrado')
+  };
+  return (code != null && m[code]) || null;
+}
+function aisTime(raw, fallbackIso) {
+  let d = null;
+  if (raw) {
+    const m = String(raw).match(/^(\d{4}-\d{2}-\d{2})[ T](\d{2}:\d{2}:\d{2})/);
+    if (m) d = new Date(m[1] + 'T' + m[2] + 'Z');
+  }
+  if ((!d || isNaN(d)) && fallbackIso) d = new Date(fallbackIso);
+  return (d && !isNaN(d)) ? d : null;
+}
+function gaugeCard(g) {
+  const s = GAUGE_READINGS[g.site];
+  const pairs = [];
+  if (s && s.height != null) {
+    pairs.push([popStr('River level', 'Nivel del río'), num(s.height, 2) + ' ft']);
+    if (s.flow != null) pairs.push([popStr('Flow', 'Caudal'), num(s.flow, s.flow < 100 ? 1 : 0) + ' cfs']);
+    if (s.height24 != null) {
+      const d = s.height - s.height24;
+      pairs.push([popStr('Change in 24 hrs', 'Cambio en 24 h'),
+        (d > 0.05 ? '▲ ' : d < -0.05 ? '▼ ' : '→ ') + num(Math.abs(d), 2) + ' ft']);
+    }
+    if (s.time) pairs.push([popStr('Reading', 'Lectura'), fmtDayTime(s.time) + ' · ' + ago(s.time)]);
+  }
+  pairs.push(coordPair(g.lat, g.lon));
+  return popCard('🌊 ' + esc(g.label), esc(g.sub), pairs,
+    '<a href="https://waterdata.usgs.gov/monitoring-location/' + g.site
+    + '/" target="_blank" rel="noopener">' + popStr('Live data at USGS →', 'Datos en vivo en USGS →') + '</a>'
+    + ' · USGS ' + popStr('gauge', 'medidor') + ' ' + g.site);
+}
+function quakeCard(f) {
+  const c = f.geometry.coordinates, p = f.properties;
+  const pairs = [
+    [popStr('Depth', 'Profundidad'), num(c[2], 1) + ' km'],
+    [popStr('Time', 'Hora'), fmtDay(new Date(p.time)) + ' · ' + fmtTime(new Date(p.time)) + ' (' + ago(new Date(p.time)) + ')']
+  ];
+  if (p.tsunami) pairs.push([popStr('Tsunami', 'Tsunami'), popStr('Flag set by USGS — check tsunami.gov', 'Alerta marcada por USGS — revise tsunami.gov')]);
+  if (p.updated) pairs.push([popStr('Report updated', 'Informe actualizado'), fmtDayTime(new Date(p.updated))]);
+  pairs.push(coordPair(c[1], c[0]));
+  return popCard('🫨 ' + popStr('Earthquake', 'Terremoto') + ' M' + num(p.mag, 1), esc(p.place), pairs,
+    p.url ? '<a href="' + esc(p.url) + '" target="_blank" rel="noopener">USGS event page →</a>' : null);
+}
+function aircraftCard(a, fetchedAt) {
+  const pairs = [];
+  if (a.alt_ft === 'ground') pairs.push([popStr('Altitude', 'Altitud'), popStr('On the ground', 'En tierra')]);
+  else if (a.alt_ft != null) pairs.push([popStr('Altitude', 'Altitud'), num(a.alt_ft, 0) + ' ft']);
+  if (a.gs_kn != null) pairs.push([popStr('Speed', 'Velocidad'), num(a.gs_kn, 0) + ' kt']);
+  if (a.track != null) pairs.push([popStr('Heading', 'Rumbo'), num(a.track, 0) + '°']);
+  if (a.type) pairs.push([popStr('Aircraft type', 'Tipo de avión'), esc(a.type)]);
+  if (a.hex) pairs.push(['ICAO', '<span class="mapcard-coords">' + esc(a.hex) + '</span>']);
+  pairs.push(coordPair(a.lat, a.lon));
+  const d = fetchedAt ? new Date(fetchedAt) : null;
+  return popCard('✈️ ' + esc(a.callsign || a.hex || 'Aircraft'), null, pairs,
+    (d && !isNaN(d)) ? popStr('ADS-B snapshot · collected ', 'ADS-B · recopilado ') + fmtDayTime(d) : 'ADS-B snapshot');
+}
+function issCard(d, lat, lon) {
+  const pairs = [
+    [popStr('Altitude', 'Altitud'), num(d.altitude, 0) + ' km'],
+    [popStr('Velocity', 'Velocidad'), num(d.velocity, 0) + ' km/h']
+  ];
+  if (d.visibility) {
+    pairs.push([popStr('Visibility', 'Visibilidad'),
+      d.visibility === 'eclipsed' ? popStr("In Earth's shadow", 'En la sombra de la Tierra')
+        : popStr('In sunlight', 'A la luz del sol')]);
+  }
+  pairs.push(coordPair(lat, lon));
+  return popCard('🛰️ ' + popStr('International Space Station', 'Estación Espacial Internacional'), null, pairs,
+    d.timestamp ? popStr('Position at ', 'Posición a las ') + fmtDayTime(new Date(d.timestamp * 1000)) : null);
+}
+function shipCard(s, fetchedAt) {
+  const pairs = [];
+  const tl = shipTypeLabel(s.type_code);
+  if (tl) pairs.push([popStr('Type', 'Tipo'), tl]);
+  if (s.sog_kn != null) pairs.push([popStr('Speed', 'Velocidad'), num(s.sog_kn, 1) + ' kt']);
+  if (s.cog != null) pairs.push([popStr('Course', 'Curso'), num(s.cog, 0) + '°']);
+  if (s.heading != null && Number(s.heading) !== 511) pairs.push([popStr('Heading', 'Rumbo'), num(s.heading, 0) + '°']);
+  const nav = shipNavLabel(s.nav_status);
+  if (nav) pairs.push([popStr('Status', 'Estado'), nav]);
+  pairs.push([popStr('Destination', 'Destino'),
+    s.destination ? esc(s.destination) : popStr('Not broadcast', 'No transmitido')]);
+  if (s.mmsi) pairs.push(['MMSI', '<span class="mapcard-coords">' + s.mmsi + '</span>']);
+  pairs.push(coordPair(s.lat, s.lon));
+  const d = aisTime(s.updated, fetchedAt);
+  return popCard('🚢 ' + esc(s.name || ('MMSI ' + s.mmsi)), null, pairs,
+    d ? popStr('Last AIS report ', 'Último informe AIS ') + fmtDayTime(d) + ' · ' + ago(d) : null);
+}
+function cameraCard(c, bust) {
+  const img = c.image_url
+    ? '<img class="mapcard-img" src="' + esc(c.image_url + (c.image_url.indexOf('?') >= 0 ? '&' : '?') + 'snap=' + bust)
+      + '" alt="" onerror="this.remove()">'
+    : '';
+  return '<div class="mapcard"><div class="mapcard-title">📷 ' + esc(c.name) + '</div>' + img
+    + popRows([
+      c.route ? [popStr('Route', 'Ruta'), esc(c.route)] : null,
+      coordPair(c.lat, c.lon)
+    ])
+    + '<div class="mapcard-foot">' + popStr('Latest frame · ODOT TripCheck', 'Última imagen · ODOT TripCheck') + '</div></div>';
+}
+function fireCard(f) {
+  const p = f.properties || {}, c = (f.geometry && f.geometry.coordinates) || [];
+  const pairs = [];
+  if (p.IncidentTypeCategory) {
+    pairs.push([popStr('Type', 'Tipo'),
+      p.IncidentTypeCategory === 'WF' ? popStr('Wildfire', 'Incendio forestal')
+        : p.IncidentTypeCategory === 'RX' ? popStr('Prescribed fire', 'Quema prescrita')
+        : esc(p.IncidentTypeCategory)]);
+  }
+  pairs.push([popStr('Size', 'Tamaño'),
+    p.IncidentSize != null ? num(p.IncidentSize, 0) + ' acres' : popStr('Not yet reported', 'Aún no reportado')]);
+  pairs.push([popStr('Contained', 'Contenido'),
+    p.PercentContained != null ? num(p.PercentContained, 0) + '%' : popStr('Not yet reported', 'Aún no reportado')]);
+  if (p.FireDiscoveryDateTime) {
+    const d = new Date(p.FireDiscoveryDateTime);
+    if (!isNaN(d)) pairs.push([popStr('Discovered', 'Descubierto'), fmtDay(d) + ' · ' + fmtTime(d)]);
+  }
+  pairs.push(coordPair(c[1], c[0]));
+  return popCard('🔥 ' + esc(p.IncidentName || popStr('Unnamed incident', 'Incidente sin nombre')), null, pairs, 'NIFC WFIGS');
+}
+
 /* ---------- clock ---------- */
 function tickClock() {
   const el = $('clock');
@@ -128,31 +334,48 @@ function initMap() {
   }).addTo(map);
 
   // County boundary (geometry from the NWS county zone for ORC009)
+  // interactive:false is load-bearing (v91): the boundary is decorative,
+  // but as an interactive path it lands on top of the town / gauge /
+  // camera dots in the overlay pane and swallows every tap and hover
+  // over the whole county — the dots under it never saw a click.
   fetch('county.geojson').then(r => r.json()).then(gj => {
-    L.geoJSON(gj, { style: { color: '#38bdf8', weight: 2, fillColor: '#38bdf8', fillOpacity: 0.05 } }).addTo(map);
+    L.geoJSON(gj, { interactive: false, style: { color: '#38bdf8', weight: 2, fillColor: '#38bdf8', fillOpacity: 0.05 } }).addTo(map);
   }).catch(() => { /* boundary is decorative; skip silently */ });
 
   // Towns
   TOWNS.forEach(t => {
-    L.circleMarker([t.lat, t.lon], { radius: 5, color: '#0b1220', weight: 1, fillColor: '#38bdf8', fillOpacity: 1 })
-      .addTo(map).bindPopup('<strong>' + esc(t.name) + '</strong><br>Columbia County, Oregon');
+    bindCard(
+      L.circleMarker([t.lat, t.lon], { radius: 5, color: '#0b1220', weight: 1, fillColor: '#38bdf8', fillOpacity: 1 }).addTo(map),
+      () => popCard('📍 ' + esc(t.name), popStr('Columbia County, Oregon', 'Condado de Columbia, Oregón'),
+        [coordPair(t.lat, t.lon)]),
+      t.name);
   });
   // Gauges
   GAUGES.forEach(g => {
-    L.circleMarker([g.lat, g.lon], { radius: 6, color: '#0b1220', weight: 1, fillColor: '#34d399', fillOpacity: 1 })
-      .addTo(map).bindPopup('<strong>' + esc(g.label) + '</strong><br>USGS gauge ' + g.site
-        + '<br><a href="https://waterdata.usgs.gov/monitoring-location/' + g.site + '/" target="_blank" rel="noopener">Live data at USGS →</a>');
+    bindCard(
+      L.circleMarker([g.lat, g.lon], { radius: 6, color: '#0b1220', weight: 1, fillColor: '#34d399', fillOpacity: 1 }).addTo(map),
+      () => gaugeCard(g),
+      g.label);
   });
   // Landmarks: bridge + ferry
   const pin = html => L.divIcon({ className: 'emoji-pin', html: html, iconSize: [22, 22], iconAnchor: [11, 11] });
-  L.marker([46.1058, -122.9607], { icon: pin('🌉') }).addTo(map)
-    .bindPopup('<strong>Lewis &amp; Clark Bridge</strong><br>SR 433 · Rainier ↔ Longview<br><a href="https://wsdot.com/traffic/" target="_blank" rel="noopener">WSDOT traffic →</a>');
-  L.marker([46.1328, -123.3717], { icon: pin('⛴️') }).addTo(map)
-    .bindPopup('<strong>Oscar B Ferry — Westport landing (approx.)</strong><br>Oregon side departs :15 past the hour');
-  L.marker([46.1597, -123.3797], { icon: pin('⛴️') }).addTo(map)
-    .bindPopup('<strong>Oscar B Ferry — Puget Island landing (approx.)</strong><br>WA side departs on the hour');
+  bindCard(L.marker([46.1058, -122.9607], { icon: pin('🌉') }).addTo(map),
+    () => popCard('🌉 Lewis & Clark Bridge', popStr('Rainier, Oregon ↔ Longview, Washington', 'Rainier, Oregón ↔ Longview, Washington'),
+      [[popStr('Route', 'Ruta'), 'SR 433'], coordPair(46.1058, -122.9607)],
+      '<a href="https://wsdot.com/traffic/" target="_blank" rel="noopener">WSDOT traffic →</a>'),
+    'Lewis & Clark Bridge');
+  bindCard(L.marker([46.1328, -123.3717], { icon: pin('⛴️') }).addTo(map),
+    () => popCard('⛴️ Oscar B Ferry — Westport landing', popStr('Oregon side', 'Lado de Oregón'),
+      [[popStr('Departs', 'Salidas'), popStr(':15 past every hour', ':15 de cada hora')],
+       coordPair(46.1328, -123.3717, popStr('Landing (approx.)', 'Embarcadero (aprox.)'))]),
+    'Oscar B Ferry — Westport');
+  bindCard(L.marker([46.1597, -123.3797], { icon: pin('⛴️') }).addTo(map),
+    () => popCard('⛴️ Oscar B Ferry — Puget Island landing', popStr('Washington side', 'Lado de Washington'),
+      [[popStr('Departs', 'Salidas'), popStr('On the hour', 'En punto, cada hora')],
+       coordPair(46.1597, -123.3797, popStr('Landing (approx.)', 'Embarcadero (aprox.)'))]),
+    'Oscar B Ferry — Puget Island');
   L.polyline([[46.1328, -123.3717], [46.1597, -123.3797]],
-    { color: '#fbbf24', weight: 2, dashArray: '5 6' }).addTo(map);
+    { color: '#fbbf24', weight: 2, dashArray: '5 6', interactive: false }).addTo(map);
 
   // Toggleable live layers
   quakeLayer = L.layerGroup().addTo(map);
@@ -242,10 +465,12 @@ function initMapTools() {
       navigator.geolocation.getCurrentPosition(pos => {
         const lat = pos.coords.latitude, lon = pos.coords.longitude;
         if (meMarker) meMarker.remove();
-        meMarker = L.marker([lat, lon], { icon: emojiIcon('📍', 24) }).addTo(map)
-          .bindPopup(inBox(lat, lon)
-            ? '<strong>You are here</strong><br>Inside the Columbia County box.'
-            : '<strong>You are here</strong><br>Outside the Columbia County box — the county is the blue outline.');
+        meMarker = bindCard(L.marker([lat, lon], { icon: emojiIcon('📍', 24) }).addTo(map),
+          () => popCard('📍 ' + popStr('You are here', 'Estás aquí'),
+            inBox(lat, lon)
+              ? popStr('Inside the Columbia County box.', 'Dentro del área del condado de Columbia.')
+              : popStr('Outside the Columbia County box — the county is the blue outline.', 'Fuera del área del condado — el condado es el contorno azul.'),
+            [coordPair(lat, lon)]));
         map.flyTo([lat, lon], 12, { duration: 0.8 });
         // Open the popup once the flight lands — bindPopup alone leaves the
         // "You are here" answer hidden behind a second tap on the pin
@@ -471,6 +696,7 @@ async function loadRivers() {
       }
       if (varCode === '00060') bySite[code].flow = parseFloat(last.value);
     });
+    GAUGES.forEach(g => { if (bySite[g.site]) GAUGE_READINGS[g.site] = bySite[g.site]; });
     const rows = GAUGES.map(g => {
       const s = bySite[g.site];
       if (!s || s.height == null) {
@@ -525,11 +751,13 @@ async function loadQuakes() {
       quakeLayer.clearLayers();
       (d.features || []).forEach(f => {
         const c = f.geometry.coordinates, p = f.properties;
-        L.circleMarker([c[1], c[0]], {
-          radius: Math.max(4, p.mag * 2.4), color: '#7f1d1d', weight: 1,
-          fillColor: '#f87171', fillOpacity: 0.75
-        }).addTo(quakeLayer).bindPopup('<strong>M' + p.mag + '</strong> — ' + esc(p.place)
-          + '<br>' + fmtDayTime(new Date(p.time)) + ' · depth ' + num(c[2], 1) + ' km');
+        bindCard(
+          L.circleMarker([c[1], c[0]], {
+            radius: Math.max(4, p.mag * 2.4), color: '#7f1d1d', weight: 1,
+            fillColor: '#f87171', fillOpacity: 0.75
+          }).addTo(quakeLayer),
+          () => quakeCard(f),
+          'M' + num(p.mag, 1) + ' — ' + (p.place || ''));
       });
     }
     body.innerHTML = feats.length ? feats.map(f => {
@@ -554,10 +782,48 @@ async function loadFires() {
       getJSON(WFIGS_PERIM_URL).catch(() => null)
     ]);
     const feats = (pts && pts.features) || [];
-    if (fireLayer && per && per.features && per.features.length) {
+    if (fireLayer) {
       fireLayer.clearLayers();
-      L.geoJSON(per, { style: { color: '#f97316', weight: 2, fillColor: '#f97316', fillOpacity: 0.25 } })
-        .addTo(fireLayer);
+      if (per && per.features && per.features.length) {
+        L.geoJSON(per, {
+          style: { color: '#f97316', weight: 2, fillColor: '#f97316', fillOpacity: 0.25 },
+          onEachFeature: (feat, layer) => {
+            const p = feat.properties || {};
+            let center = null;
+            try {
+              let ring = null;
+              if (feat.geometry && feat.geometry.type === 'Polygon') ring = feat.geometry.coordinates[0];
+              else if (feat.geometry && feat.geometry.type === 'MultiPolygon') ring = feat.geometry.coordinates[0][0];
+              if (ring && ring.length) {
+                let la = 0, lo = 0;
+                ring.forEach(pt => { lo += pt[0]; la += pt[1]; });
+                center = coordPair(la / ring.length, lo / ring.length,
+                  popStr('Perimeter center (approx.)', 'Centro del perímetro (aprox.)'));
+              }
+            } catch (e) { /* center row is a bonus; the card stands without it */ }
+            bindCard(layer, () => popCard('🔥 ' + esc(p.poly_IncidentName || popStr('Wildfire perimeter', 'Perímetro del incendio')),
+              popStr('Reported fire perimeter — tap the 🔥 point for the incident card', 'Perímetro reportado — toque el punto 🔥 para la ficha del incidente'),
+              [
+                p.attr_PercentContained != null ? [popStr('Contained', 'Contenido'), num(p.attr_PercentContained, 0) + '%'] : null,
+                p.poly_GISAcres != null ? [popStr('Size', 'Tamaño'), num(p.poly_GISAcres, 0) + ' acres'] : null,
+                p.poly_DateCurrent ? [popStr('Perimeter updated', 'Perímetro actualizado'), fmtDay(new Date(p.poly_DateCurrent))] : null,
+                center
+              ], 'NIFC WFIGS'),
+              p.poly_IncidentName || null);
+          }
+        }).addTo(fireLayer);
+      }
+      // Incident points: the 🔥 dots themselves get full cards (v91) —
+      // before, the points feed only fed the list and the map showed
+      // bare perimeters with nothing to tap for details.
+      feats.forEach(f => {
+        const c = f.geometry && f.geometry.coordinates;
+        if (!c) return;
+        bindCard(
+          L.marker([c[1], c[0]], { icon: emojiIcon('🔥', 22) }).addTo(fireLayer),
+          () => fireCard(f),
+          (f.properties && f.properties.IncidentName) || null);
+      });
     }
     if (!pts) throw new Error('points feed failed');
     body.innerHTML = feats.length ? feats.map(f => {
@@ -580,15 +846,16 @@ let currentSkyFilter = 'all';
 function drawSkyMarkers(list) {
   if (!aircraftLayer) return;
   aircraftLayer.clearLayers();
+  const fetchedAt = skyCache && skyCache.fetchedAt;
   list.forEach(a => {
     if (a.lat == null || a.lon == null) return;
     const rot = a.track != null ? ' style="display:inline-block;transform:rotate(' + (Number(a.track) - 45) + 'deg)"' : '';
-    L.marker([a.lat, a.lon], {
-      icon: L.divIcon({ className: 'emoji-pin plane-pin', html: '<span' + rot + '>✈️</span>', iconSize: [20, 20], iconAnchor: [10, 10] })
-    }).addTo(aircraftLayer).bindPopup('<strong>' + esc(a.callsign || a.hex || 'Aircraft') + '</strong>'
-      + (a.type ? '<br>Type ' + esc(a.type) : '')
-      + (a.alt_ft != null && a.alt_ft !== 'ground' ? '<br>' + num(a.alt_ft, 0) + ' ft' : '<br>On the ground')
-      + (a.gs_kn != null ? ' · ' + num(a.gs_kn, 0) + ' kt' : ''));
+    bindCard(
+      L.marker([a.lat, a.lon], {
+        icon: L.divIcon({ className: 'emoji-pin plane-pin', html: '<span' + rot + '>✈️</span>', iconSize: [20, 20], iconAnchor: [10, 10] })
+      }).addTo(aircraftLayer),
+      () => aircraftCard(a, fetchedAt),
+      a.callsign || a.hex || null);
   });
 }
 function renderSkyList() {
@@ -625,8 +892,8 @@ function renderSkyList() {
       + '<span class="sky-alt">' + (a.alt_ft === 'ground' ? 'ground' : (a.alt_ft != null ? num(a.alt_ft, 0) + ' ft' : '')) + '</span></div>'
     ).join('');
 }
-function renderAircraft(list, sourceLabel) {
-  skyCache = { list: list, sourceLabel: sourceLabel };
+function renderAircraft(list, sourceLabel, fetchedAt) {
+  skyCache = { list: list, sourceLabel: sourceLabel, fetchedAt: fetchedAt };
   drawSkyMarkers(list);
   renderSkyList();
 }
@@ -652,7 +919,7 @@ async function loadAircraft() {
   // 2026-11-09 (v54, full-audit defect); the snapshot is the one data route.
   try {
     const snap = await getSnapshot('aircraft.json');
-    renderAircraft(snap.aircraft || [], 'ADS-B snapshot');
+    renderAircraft(snap.aircraft || [], 'ADS-B snapshot', snap.fetched_at);
     setSnapUpdated('sky-updated', snap.fetched_at);
   } catch (e) {
     $('sky-body').innerHTML = '<p class="fallback">⚠️ Aircraft data unavailable right now.</p>';
@@ -665,9 +932,8 @@ async function loadISS() {
     const lat = Number(d.latitude), lon = Number(d.longitude);
     if (issLayer) {
       issLayer.clearLayers();
-      issMarker = L.marker([lat, lon], { icon: emojiIcon('🛰️', 24) }).addTo(issLayer)
-        .bindPopup('<strong>International Space Station</strong><br>' + num(d.altitude, 0)
-          + ' km up · ' + num(d.velocity, 0) + ' km/h');
+      issMarker = bindCard(L.marker([lat, lon], { icon: emojiIcon('🛰️', 24) }).addTo(issLayer),
+        () => issCard(d, lat, lon), 'ISS');
     }
     const here = inBox(lat, lon);
     body.innerHTML = '<p>🛰️ <strong>ISS</strong> is currently over <strong>'
@@ -951,8 +1217,10 @@ function renderRoads(roads, camerasSnap) {
       renderRoads._camsDrawn = true;
       gridCams.forEach(c => {
         if (c.lat != null && c.lon != null) {
-          L.circleMarker([c.lat, c.lon], { radius: 4, color: '#0b1220', weight: 1, fillColor: '#f59e0b', fillOpacity: 0.9 })
-            .addTo(map).bindPopup('<strong>📷 ' + esc(c.name) + '</strong>');
+          bindCard(
+            L.circleMarker([c.lat, c.lon], { radius: 4, color: '#0b1220', weight: 1, fillColor: '#f59e0b', fillOpacity: 0.9 }).addTo(map),
+            () => cameraCard(c, camBust),
+            c.name);
         }
       });
     }
@@ -1420,10 +1688,14 @@ function renderSalmonLayer(model) {
     L.polyline([[a[0], a[1]], [b[0], b[1]]],
       { color: HEAT_COLORS[bk], weight: 7, opacity: 0.85 })
       .addTo(salmonLayer)
-      .bindPopup('<strong>River miles ~' + a[2] + '–' + b[2]
-        + ':</strong> ' + HEAT_WORDS[bk]
-        + ' (estimate)<br>From today\'s dam counts — the Salmon Tracker'
-        + ' card in Outdoors shows the work.');
+      .bindPopup('<div class="mapcard"><div class="mapcard-title">🐟 '
+        + popStr('River miles ~', 'Millas del río ~') + a[2] + '–' + b[2]
+        + '</div><div>' + HEAT_WORDS[bk]
+        + ' (estimate)</div>'
+        + popRows([coordPair((a[0] + b[0]) / 2, (a[1] + b[1]) / 2,
+          popStr('Segment middle', 'Mitad del tramo'))])
+        + '<div class="mapcard-foot">From today\'s dam counts — the Salmon Tracker'
+        + ' card in Outdoors shows the work.</div></div>', POP_OPTS);
   }
 }
 function heatStripHTML(model) {
@@ -2579,10 +2851,9 @@ async function loadShips() {
       shipLayer.clearLayers();
       ships.forEach(s => {
         if (s.lat == null || s.lon == null) return;
-        L.marker([s.lat, s.lon], { icon: emojiIcon('🚢', 22) }).addTo(shipLayer)
-          .bindPopup('<strong>' + esc(s.name || ('MMSI ' + s.mmsi)) + '</strong>'
-            + (s.sog_kn != null ? '<br>' + num(s.sog_kn, 1) + ' kt' : '')
-            + (s.destination ? '<br>Bound for ' + esc(s.destination) : ''));
+        bindCard(L.marker([s.lat, s.lon], { icon: emojiIcon('🚢', 22) }).addTo(shipLayer),
+          () => shipCard(s, snap.fetched_at),
+          s.name || (s.mmsi ? 'MMSI ' + s.mmsi : null));
       });
     }
     if (snap.status === 'ok' && ships.length) {
