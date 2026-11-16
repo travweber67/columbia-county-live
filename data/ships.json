@@ -1,78 +1,51 @@
 {
- "fetched_at": "2026-11-16T11:29:49Z",
+ "fetched_at": "2026-11-16T11:34:49Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.6129,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.73261,
+   "lon": -122.76034,
+   "sog_kn": 8.4,
+   "cog": 9.2,
+   "heading": 2,
+   "nav_status": 0,
+   "updated": "2026-11-16 11:34:58.691706037 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20002,
+   "lon": -123.38541,
    "sog_kn": 0,
-   "cog": 304.7,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-16 11:29:58.507964773 +0000 UTC"
+   "cog": 357.6,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-16 11:35:04.662355379 +0000 UTC"
   },
   {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.9854,
-   "lon": -122.83646,
-   "type_code": 0,
-   "destination": "VANCOUVER",
-   "updated": "2026-11-16 11:29:59.754231115 +0000 UTC"
-  },
-  {
-   "mmsi": 563331600,
-   "name": "BELLE LUNE",
-   "lat": 46.17054,
-   "lon": -123.1001,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-16 11:30:09.408002864 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.20004,
-   "lon": -123.38553,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-16 11:30:12.949650623 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.06284,
-   "lon": -122.88498,
-   "sog_kn": 1.3,
-   "cog": 305,
-   "heading": 304,
-   "nav_status": 3,
-   "updated": "2026-11-16 11:30:14.697764575 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.14665,
-   "lon": -123.35664,
-   "sog_kn": 3.2,
-   "cog": 99.7,
-   "heading": 101,
-   "nav_status": 3,
-   "updated": "2026-11-16 11:30:17.088144574 +0000 UTC"
-  },
-  {
-   "mmsi": 355980000,
-   "name": "LUGANO STAR",
-   "lat": 45.6428,
-   "lon": -122.77183,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.64334,
+   "lon": -122.74423,
    "sog_kn": 0,
-   "cog": 248.7,
-   "heading": 228,
-   "nav_status": 5,
-   "updated": "2026-11-16 11:30:20.41571257 +0000 UTC"
+   "cog": 218.4,
+   "heading": 293,
+   "nav_status": 0,
+   "updated": "2026-11-16 11:35:06.686568468 +0000 UTC"
+  },
+  {
+   "mmsi": 367425910,
+   "name": "SEA HORSE",
+   "lat": 46.15127,
+   "lon": -123.3778,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-16 11:35:14.816072135 +0000 UTC"
   }
  ]
 }
