@@ -1,6 +1,93 @@
 {
- "fetched_at": "2026-11-16T17:00:13Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-16T17:05:13Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367425910,
+   "name": "SEA HORSE",
+   "lat": 46.15129,
+   "lon": -123.37775,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-16 17:05:35.194729104 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.63967,
+   "lon": -122.71575,
+   "sog_kn": 1.6,
+   "cog": 103.4,
+   "heading": 7,
+   "nav_status": 0,
+   "updated": "2026-11-16 17:05:36.472969036 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64383,
+   "lon": -122.7258,
+   "sog_kn": 0,
+   "cog": 334.2,
+   "heading": 116,
+   "nav_status": 12,
+   "updated": "2026-11-16 17:05:38.108687389 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.06929,
+   "lon": -122.88792,
+   "sog_kn": 0.6,
+   "cog": 228.4,
+   "heading": 228,
+   "nav_status": 3,
+   "updated": "2026-11-16 17:05:40.060374773 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.0907,
+   "lon": -122.93212,
+   "sog_kn": 0,
+   "cog": 260.5,
+   "heading": 110,
+   "nav_status": 5,
+   "updated": "2026-11-16 17:05:41.673704961 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00882,
+   "lon": -122.8489,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-16 17:05:42.544423865 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59408,
+   "lon": -122.7721,
+   "sog_kn": 0,
+   "cog": 338.3,
+   "heading": 148,
+   "nav_status": 5,
+   "updated": "2026-11-16 17:05:42.954687479 +0000 UTC"
+  },
+  {
+   "mmsi": 563302700,
+   "name": "KEY WEST",
+   "lat": 46.10354,
+   "lon": -122.94995,
+   "type_code": 70,
+   "destination": "LONGVIEW USA",
+   "updated": "2026-11-16 17:05:47.397069198 +0000 UTC"
+  }
+ ]
 }
