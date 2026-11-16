@@ -1,60 +1,6 @@
 {
- "fetched_at": "2026-11-16T16:25:11Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.07641,
-   "lon": -122.89607,
-   "sog_kn": 0,
-   "cog": 290,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 16:25:31.618828471 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15285,
-   "lon": -123.37773,
-   "sog_kn": 4.4,
-   "cog": 50.9,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 16:25:46.465622052 +0000 UTC"
-  },
-  {
-   "mmsi": 367645170,
-   "name": "CROWN POINT",
-   "lat": 45.6318,
-   "lon": -122.70061,
-   "sog_kn": 4,
-   "cog": 309.9,
-   "heading": 298,
-   "nav_status": 12,
-   "updated": "2026-11-16 16:25:43.823325354 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.64382,
-   "lon": -122.72577,
-   "type_code": 57,
-   "destination": "US^0UX0>?? ???",
-   "updated": "2026-11-16 16:25:47.750016077 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 45.63327,
-   "lon": -122.73772,
-   "sog_kn": 0.2,
-   "cog": 315.1,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 16:25:53.471148882 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-16T16:30:11Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
