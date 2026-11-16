@@ -1,73 +1,106 @@
 {
- "fetched_at": "2026-11-16T02:49:50Z",
+ "fetched_at": "2026-11-16T02:54:06Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513140,
-   "name": "CLEARWATER",
-   "lat": 45.63716,
-   "lon": -122.72727,
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64724,
+   "lon": -122.74128,
    "sog_kn": 0,
-   "cog": 345,
-   "heading": 296,
-   "nav_status": 0,
-   "updated": "2026-11-16 02:50:28.712145397 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.082,
-   "lon": -122.90547,
-   "sog_kn": 0.1,
-   "cog": 125.6,
-   "heading": 310,
-   "nav_status": 0,
-   "updated": "2026-11-16 02:50:29.776623102 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.61292,
-   "sog_kn": 0,
-   "cog": 269.5,
-   "heading": 133,
-   "nav_status": 15,
-   "updated": "2026-11-16 02:50:38.310674488 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58757,
-   "lon": -122.77042,
-   "sog_kn": 0,
-   "cog": 291.1,
+   "cog": 127.7,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-16 02:50:39.162210151 +0000 UTC"
+   "updated": "2026-11-16 02:54:11.305138115 +0000 UTC"
   },
   {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 45.63998,
-   "lon": -122.7188,
-   "sog_kn": 4.1,
-   "cog": 293.3,
-   "heading": 293,
-   "nav_status": 0,
-   "updated": "2026-11-16 02:50:46.246388886 +0000 UTC"
-  },
-  {
-   "mmsi": 352006531,
-   "name": "BARISM BETTY",
-   "lat": 45.60109,
-   "lon": -122.77443,
+   "mmsi": 355980000,
+   "name": "LUGANO STAR",
+   "lat": 45.64291,
+   "lon": -122.77162,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-16 02:54:18.301210038 +0000 UTC",
    "sog_kn": 0,
-   "cog": 90.1,
-   "heading": 278,
+   "cog": 248.1,
+   "heading": 228,
+   "nav_status": 5
+  },
+  {
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.17576,
+   "lon": -123.42172,
+   "sog_kn": 1.7,
+   "cog": 268.4,
+   "heading": 57,
+   "nav_status": 0,
+   "updated": "2026-11-16 02:54:14.403422022 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.9101,
+   "sog_kn": 0,
+   "cog": 214.8,
+   "heading": 73,
+   "nav_status": 0,
+   "updated": "2026-11-16 02:54:21.08181102 +0000 UTC"
+  },
+  {
+   "mmsi": 563331600,
+   "name": "BELLE LUNE",
+   "lat": 46.17066,
+   "lon": -123.09988,
+   "sog_kn": 0,
+   "cog": 11.1,
+   "heading": 127,
+   "nav_status": 1,
+   "updated": "2026-11-16 02:54:25.806430431 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.6479,
+   "lon": -122.74099,
+   "sog_kn": 0,
+   "cog": 111.7,
+   "heading": 111,
    "nav_status": 5,
-   "updated": "2026-11-16 02:50:53.156615095 +0000 UTC"
+   "updated": "2026-11-16 02:54:36.048032652 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.63018,
+   "lon": -122.69633,
+   "sog_kn": 0.7,
+   "cog": 359.2,
+   "heading": 43,
+   "nav_status": 0,
+   "updated": "2026-11-16 02:54:37.927621041 +0000 UTC"
+  },
+  {
+   "mmsi": 636015567,
+   "name": "KYRA ZAFIRA",
+   "lat": 45.63038,
+   "lon": -122.69586,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-16 02:54:38.840820625 +0000 UTC"
+  },
+  {
+   "mmsi": 538006098,
+   "name": "ANTARES",
+   "lat": 46.18271,
+   "lon": -123.42998,
+   "sog_kn": 11.8,
+   "cog": 163.1,
+   "heading": 156,
+   "nav_status": 0,
+   "updated": "2026-11-16 02:54:39.377371591 +0000 UTC"
   }
  ]
 }
