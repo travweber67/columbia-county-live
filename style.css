@@ -528,7 +528,7 @@ html[data-theme="dark"] .wx-day.wx-today .wx-dow{color:#f0a35e}
 .ship-row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--border)}
 .ship-row:last-child{border-bottom:none}
 
-/* Build batch 2026-11-04: My Route strips, incident meta, route-ahead, Bend run */
+/* Build batch 2026-11-04: My Route strips, incident meta, route-ahead */
 .route-group{margin:0 0 12px}
 .route-group:last-child{margin-bottom:2px}
 .route-group-name{font-weight:700;font-size:.85rem;margin:0 0 6px}
@@ -549,8 +549,6 @@ html[data-theme="dark"] .wx-day.wx-today .wx-dow{color:#f0a35e}
 .ra-pop{font-size:.72rem;color:var(--muted)}
 .ra-flags{font-size:.82rem;font-weight:600;margin-top:2px}
 .ra-flags.ra-clear{color:var(--muted);font-weight:400}
-.bend-area{padding:2px 0 10px}
-.bend-wx{font-size:.9rem;margin:4px 0 8px}
 
 /* Sky (aircraft filters/list now live on the Travel tab's aircraft card) */
 .sky-filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
@@ -2329,16 +2327,14 @@ html[data-theme="dark"] .drawer-photo-line{color:#d8dfc8}
   -webkit-backdrop-filter:blur(10px) saturate(1.1);backdrop-filter:blur(10px) saturate(1.1);
 }
 
-/* --- 5 · the Bend run summit pair ------------------------------------
-   Two large lead cameras under the Mt. Hood subhead; the figcaption
-   carries the computed distance from the summit anchor. */
-.bend-summit-note{font-size:.9rem;font-weight:600;margin:8px 0 8px}
-.bend-featured{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 10px}
-.bend-featured .camera-fig img{height:190px}
-.bend-lead figcaption{font-size:.84rem}
-.cam-dist{display:block;font-weight:700;color:var(--accent-dark)}
+/* --- 5 · the Mt. Hood cameras pair ------------------------------------
+   v85: the Bend run card became one simple Mt. Hood card — the two
+   TripCheck cameras (Government Camp + Blue Box Pass) side by side,
+   shown large. */
+.mthood-featured{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 10px}
+.mthood-featured .camera-fig img{height:190px}
 @media (max-width:560px){
-  .bend-featured .camera-fig img{height:118px}
+  .mthood-featured .camera-fig img{height:118px}
 }
 
 /* --- 6 · photo-tops (treatment A) — the Events card's pattern --------
@@ -2385,11 +2381,11 @@ html[data-theme="dark"] .featured-local.photo-behind .featured-card{background:r
 
 /* =====================================================================
    ===== V7 REVISION (Travis, 2026-11-05) =====
-   A real Mt. Hood over the Bend run, saver tiles at parade scale,
+   A real Mt. Hood over the pass card, saver tiles at parade scale,
    a compact phone masthead, and river evenings for dark mode.
    ===================================================================== */
 
-/* --- 1 · the Bend band is Mt. Hood now -------------------------------
+/* --- 1 · the Mt. Hood card's band -------------------------------
    The band file is pre-cropped to the summit (Trillium Lake original,
    U.S. Forest Service, public domain — photos/PHOTOS.md); this just
    frames the peak a touch higher in the strip. */

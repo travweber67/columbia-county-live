@@ -709,8 +709,7 @@ function incidentRow(i) {
    the project link live behind the tap. ODOT embeds a raw "Link to
    Additional Information: https://…" tail in the description —
    splitIncidentDesc pulls that URL out so it renders as one tidy link
-   and never as body text. incidentRow above is NOT touched: the Bend
-   Run pass cards and the bridge box still render with it. The expand
+   and never as body text. incidentRow above is NOT touched: the bridge box still renders with it. The expand
    control is a stacked double chevron with a tiny "See more" label
    under it (Travis: make it obvious the card opens); expanded, the
    chevrons flip and the label reads "See less" (ES: Ver más / Ver
@@ -1045,99 +1044,27 @@ async function loadRouteAhead() {
   body.innerHTML = blocks.join('');
 }
 
-/* ---------- the Bend run (build batch 2026-11-04, Travis's add) ----------
-   Pass cameras + incidents come from the fetcher's passes.json (fast
-   lane); the summit weather is keyless NWS hourly, fetched client-side
-   like the rest of the page's weather. The card's one job, in Travis's
-   words: knowing if there's snow over the pass. */
-const PASS_POINTS = {
-  govcamp: { label: 'Government Camp', lat: 45.3492, lon: -121.7728 },
-  santiam: { label: 'Santiam Pass summit', lat: 44.4237, lon: -121.7868 }
-};
-const passHourlyCache = {};
-async function loadBend() {
-  const body = $('bend-body');
+/* ---------- Mt. Hood cameras (v85, Travis's change 2026-11-15) ----------
+   The Bend run card is gone. In its place, one simple card: the two
+   US-26 TripCheck cameras that show what Mt. Hood is doing right now —
+   Government Camp (pid624, MP 54) and Blue Box Pass Summit (pid1919,
+   MP 64), the high stretch over the mountain. The stills load straight
+   from ODOT TripCheck — the same image URLs the fetcher snapshots
+   carry — with a 10-minute cache-bust bucket, and the card re-renders
+   on the same 10-minute beat the Bend run used. */
+const MTHOOD_CAMS = [
+  { name: 'Government Camp — US-26 at Timberline Hwy · MP 54', url: 'https://www.TripCheck.com/roadcams/cams/GovernmentCamp_pid624.jpg' },
+  { name: 'Blue Box Pass Summit — US-26 · MP 64', url: 'https://www.TripCheck.com/roadcams/cams/Blue%20Box%20Pass_pid1919.JPG' }
+];
+function loadMtHood() {
+  const body = $('mthood-body');
   if (!body) return;
-  let snap = null;
-  try { snap = await getSnapshot('passes.json'); } catch (e) { /* handled below */ }
-  if (snap) setSnapUpdated('bend-updated', snap.fetched_at);
-  const areas = (snap && snap.areas) || [];
-  if (!areas.length) {
-    body.innerHTML = '<p class="status-note">🏔️ Pass conditions ride the fetcher\'s ODOT snapshot — if this note sticks around, that snapshot didn\'t load.</p>';
-    return;
-  }
-  const bust = encodeURIComponent((snap && snap.fetched_at) || 'live');
-  const src = u => esc(u + (u.indexOf('?') >= 0 ? '&' : '?') + 'snap=' + bust);
-  const blocks = await Promise.all(areas.map(async area => {
-    let wx = '';
-    const pt = PASS_POINTS[area.id];
-    if (pt) {
-      try {
-        if (!passHourlyCache[area.id]) {
-          const pts = await getJSON('https://api.weather.gov/points/'
-            + pt.lat.toFixed(4) + ',' + pt.lon.toFixed(4));
-          passHourlyCache[area.id] = pts.properties.forecastHourly;
-        }
-        const fc = await getJSON(passHourlyCache[area.id]);
-        const now = Date.now();
-        const periods = (fc.properties.periods || [])
-          .filter(p => new Date(p.endTime) > now).slice(0, 12);
-        if (periods.length) {
-          const cur = periods[0];
-          const flags = wxFlags(periods);
-          wx = '<p class="bend-wx">🌡️ At the pass now: <strong>' + cur.temperature + '°'
-            + esc(cur.temperatureUnit) + ', ' + esc(cur.shortForecast) + '</strong>'
-            + (flags.length
-                ? ' · Next 12 hours — watch for ' + esc(flags.join(' · '))
-                : ' · No snow or ice flagged in the next 12 hours')
-            + ' <span class="river-sub">(NWS forecast for ' + esc(pt.label) + ')</span></p>';
-        }
-      } catch (e) { /* the weather line is a bonus; cameras + incidents still render */ }
-    }
-    const inc = (area.incidents || []).map(incidentRow).join('');
-    const camFig = (c, lead) =>
-      '<figure class="camera-fig' + (lead ? ' bend-lead' : '') + '">'
-      + (c.image_url ? '<img loading="lazy" src="' + src(c.image_url) + '" alt="Pass camera: ' + esc(c.name) + '" onerror="this.parentNode.classList.add(\'cam-dead\');this.remove();">' : '')
-      + '<figcaption>' + esc(c.name)
-      + (lead ? '<span class="cam-dist">' + c.__distMi.toFixed(1) + ' mi from the summit</span>' : '')
-      + '</figcaption></figure>';
-    /* v6: the Mt. Hood section leads with its SUMMIT PAIR — the two
-       Government Camp cameras nearest the pass summit anchor the code
-       already defines (PASS_POINTS.govcamp), shown large. Selection is
-       computed, never hand-picked: haversine distance from the anchor
-       to each camera's own lat/lon in this same snapshot; the two
-       smallest distances lead and leave the strip, the rest of the
-       cameras follow below as before. Cameras without coordinates in
-       the snapshot simply stay in the strip. */
-    let featured = '';
-    let stripCams = area.cameras || [];
-    if (area.id === 'govcamp' && pt && stripCams.length > 2) {
-      const R = 3958.8, rad = Math.PI / 180;
-      const scored = stripCams.map(c => {
-        if (typeof c.lat !== 'number' || typeof c.lon !== 'number') return { c, d: Infinity };
-        const dp = (c.lat - pt.lat) * rad, dl = (c.lon - pt.lon) * rad;
-        const h = Math.pow(Math.sin(dp / 2), 2)
-          + Math.cos(pt.lat * rad) * Math.cos(c.lat * rad) * Math.pow(Math.sin(dl / 2), 2);
-        return { c, d: 2 * R * Math.asin(Math.sqrt(h)) };
-      }).sort((a, b) => a.d - b.d);
-      const lead = scored.slice(0, 2).filter(s => isFinite(s.d));
-      if (lead.length === 2) {
-        lead.forEach(s => { s.c.__distMi = s.d; });
-        const leadSet = new Set(lead.map(s => s.c));
-        featured = '<p class="bend-summit-note">📍 Closest to the summit — the two Government Camp cameras nearest the pass, shown large. The rest follow below.</p>'
-          + '<div class="bend-featured">' + lead.map(s => camFig(s.c, true)).join('') + '</div>';
-        stripCams = stripCams.filter(c => !leadSet.has(c));
-      }
-    }
-    const cams = stripCams.length
-      ? '<div class="route-strip">' + stripCams.map(c => camFig(c, false)).join('') + '</div>'
-      : '';
-    return '<div class="bend-area"><h3 class="subhead">' + esc(area.name) + '</h3>' + wx
-      + featured
-      + (inc || '<p class="no-alerts">✅ No ODOT incidents reported on this stretch in the latest snapshot.</p>')
-      + cams + '</div>';
-  }));
-  body.innerHTML = blocks.join('');
+  const bust = Math.floor(Date.now() / 600000);
+  body.innerHTML = '<div class="mthood-featured">' + MTHOOD_CAMS.map(c =>
+    '<figure class="camera-fig">'
+    + '<img loading="lazy" src="' + c.url + '?snap=' + bust + '" alt="Mt. Hood camera: ' + esc(c.name) + '" onerror="this.parentNode.classList.add(\'cam-dead\');this.remove();">'
+    + '<figcaption>' + esc(c.name) + '</figcaption></figure>').join('') + '</div>';
+  setUpdated('mthood-updated');
 }
 
 /* ---------- fish counts + salmon tracker (2026-11-04) ----------
@@ -3313,7 +3240,7 @@ const FRESH_ROWS = [
   ['ISS orbit data — pass predictions (CelesTrak)', 'iss-passes-updated', 'live'],
   ['Tonight\u2019s sky — clouds & aurora (Open-Meteo / NOAA SWPC)', 'dark-updated', 'live'],
   ['Fetcher — roads, bridge & cameras (ODOT/WSDOT)', 'roads-updated', 'snapshot'],
-  ['Fetcher — Bend run passes (ODOT)', 'bend-updated', 'snapshot'],
+  ['ODOT TripCheck — Mt. Hood cameras', 'mthood-updated', 'live'],
   ['Fetcher — Oscar B ferry alerts (Wahkiakum Co.)', 'ferry-updated', 'snapshot'],
   ['Fetcher — events (city & county calendars)', 'events-updated', 'snapshot'],
   ['Fetcher — river traffic (AIS)', 'ships-updated', 'snapshot'],
@@ -3359,7 +3286,7 @@ loadAircraft();
 loadISS();
 loadRoads();
 loadRouteAhead();
-loadBend();
+loadMtHood();
 
 loadShips();
 loadFerry();
@@ -3373,7 +3300,7 @@ setInterval(loadFires, 15 * 60 * 1000);
 setInterval(loadAircraft, 45 * 1000);
 setInterval(loadISS, 15 * 1000);
 setInterval(loadRoads, 10 * 60 * 1000);
-setInterval(loadBend, 10 * 60 * 1000);
+setInterval(loadMtHood, 10 * 60 * 1000);
 setInterval(loadFish, 10 * 60 * 1000);
 setInterval(loadCurrents, 30 * 60 * 1000);
 setInterval(loadRouteAhead, 30 * 60 * 1000);
@@ -5960,8 +5887,8 @@ const LANG_ES = {
   myrouteh3: '📷 Mi ruta — las cámaras de tu viaje, en orden de manejo',
   routeaheadh2: '🧭 Ruta por delante — el pronóstico del corredor',
   routeaheadnote: 'Las próximas horas en el corredor de la US-30, pueblo por pueblo — para que el hielo, la niebla o la nieve del camino aparezcan aquí antes que en el parabrisas. Pronóstico por hora del Servicio Meteorológico Nacional.',
-  bendh2: '🏔️ El viaje a Bend — condiciones en los pasos',
-  bendnote: 'Fuera del condado, incluido porque el viaje empieza aquí: las dos rutas que usa este condado para ir a Bend — la US-26 sobre el monte Hood por Government Camp, y la US-20 por el paso Santiam. Cámaras e incidentes de ODOT TripCheck; pronósticos de los pasos del Servicio Meteorológico Nacional. La pregunta que responde esta tarjeta: ¿hay nieve en el paso?',
+  mthoodh2: '🏔️ Monte Hood — cámaras de la US-26',
+  mthoodnote: 'Fuera del condado, se mantiene porque el viaje empieza aquí: las dos cámaras de la US-26 que muestran cómo está la montaña — Government Camp (MP 54) y Blue Box Pass (MP 64), el tramo alto camino a Bend. Imágenes en vivo de ODOT TripCheck, actualizadas cada 10 minutos.',
   camerash3: 'Cámaras de carretera',
   roadsnote: "Los datos de carreteras los recoge nuestro recolector de ODOT TripCheck y WSDOT cada pocos minutos y se muestran con su hora de captura — nunca fingen ser más frescos de lo que son. Detalle oficial completo: <a href=\"https://www.tripcheck.com/\" target=\"_blank\" rel=\"noopener\">TripCheck</a> · <a href=\"https://wsdot.com/traffic/\" target=\"_blank\" rel=\"noopener\">Tráfico de WSDOT</a>. ¿Viajas a Portland? Un cierre de la US-30 suele significar Cornelius Pass o el puente St. Johns — revisa antes de salir, no después.",
   shipsh2: '🚢 Tráfico del río Columbia',
@@ -6142,7 +6069,7 @@ const LANG_ES = {
   dwferry: 'El ferry Oscar B',
   dwships: 'Tráfico del río',
   dwaircraft: 'Aviones sobre el condado',
-  dwbend: 'El viaje a Bend',
+  dwmthood: 'Cámaras del Monte Hood',
   dwalerts: 'Alertas del clima',
   dwforecast: 'Pronóstico',
   dwsky: 'El cielo y la estación espacial',
@@ -6708,6 +6635,11 @@ function cclPinStoreSave() {
     try { fp = JSON.parse(window.localStorage.getItem('ccl-frontpage-v1') || 'null'); } catch (e) { /* none */ }
     if (Array.isArray(fp)) cclPinStore.cards = fp.filter(x => typeof x === 'string');
   }
+  // v85: the Bend run card became the Mt. Hood cameras card — a saved
+  // pin for the old card carries over to the new one.
+  cclPinStore.cards = cclPinStore.cards
+    .map(id => (id === 'bend-card' ? 'mthood-card' : id))
+    .filter((id, i, a) => a.indexOf(id) === i);
 })();
 window.CCLPins = {
   key: CCL_PINS_KEY,
@@ -6741,7 +6673,7 @@ window.CCLPins = {
    it is the page's anchor, and a Leaflet container does not need the
    adventure. */
 const PIN_CARDS = ['since-card', 'home-card', 'commute-card', 'go-card', 'plan-card', 'schools-card', 'briefing-card',
-  'roads-card', 'cameras-card', 'incidents-card', 'drive-card', 'routeahead-card', 'ferry-card', 'ferry-mini-card', 'ships-card', 'aircraft-card', 'bend-card',
+  'roads-card', 'cameras-card', 'incidents-card', 'drive-card', 'routeahead-card', 'ferry-card', 'ferry-mini-card', 'ships-card', 'aircraft-card', 'mthood-card',
   'alerts-card', 'forecast-week-card', 'forecast-card', 'sky-card', 'dark-card', 'rivers-card', 'tides-card',
   'fish-card', 'tracker-card', 'steelhead-card', 'almanac-card',
   'quakes-card', 'fires-card', 'air-card',
