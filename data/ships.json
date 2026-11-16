@@ -1,92 +1,69 @@
 {
- "fetched_at": "2026-11-16T10:04:43Z",
+ "fetched_at": "2026-11-16T10:09:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.15239,
+   "lon": -123.37779,
+   "type_code": 52,
+   "destination": "US^02SX>02A3",
+   "updated": "2026-11-16 10:09:46.544282896 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 46.5,
+   "heading": 133,
+   "nav_status": 15,
+   "updated": "2026-11-16 10:09:47.63832369 +0000 UTC"
+  },
   {
    "mmsi": 367727410,
    "name": "AMY B",
-   "lat": 45.64383,
-   "lon": -122.7258,
+   "lat": 45.64384,
+   "lon": -122.72581,
    "sog_kn": 0,
-   "cog": 180.3,
+   "cog": 143.1,
    "heading": 116,
    "nav_status": 12,
-   "updated": "2026-11-16 10:04:48.376218747 +0000 UTC"
+   "updated": "2026-11-16 10:09:56.429133826 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.64333,
+   "lon": -122.74424,
+   "sog_kn": 0,
+   "cog": 359.6,
+   "heading": 293,
+   "nav_status": 0,
+   "updated": "2026-11-16 10:10:06.33185742 +0000 UTC"
+  },
+  {
+   "mmsi": 352006982,
+   "name": "MOSHILL",
+   "lat": 45.63366,
+   "lon": -122.70106,
+   "type_code": 70,
+   "destination": "CA VAN",
+   "updated": "2026-11-16 10:10:14.296548886 +0000 UTC"
   },
   {
    "mmsi": 366972000,
    "name": "ESSAYONS",
-   "lat": 46.14686,
-   "lon": -123.28293,
-   "sog_kn": 2.7,
-   "cog": 254.2,
-   "heading": 247,
+   "lat": 46.14601,
+   "lon": -123.28775,
+   "sog_kn": 1.9,
+   "cog": 262.2,
+   "heading": 246,
    "nav_status": 3,
-   "updated": "2026-11-16 10:04:50.89437229 +0000 UTC",
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER OPS"
-  },
-  {
-   "mmsi": 366396000,
-   "name": "NAT GEO SEA LION",
-   "lat": 46.08957,
-   "lon": -122.92973,
-   "type_code": 68,
-   "destination": "RAINIER",
-   "updated": "2026-11-16 10:04:51.362321064 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20001,
-   "lon": -123.38536,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-16 10:04:55.228113795 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15343,
-   "lon": -123.37706,
-   "type_code": 99,
-   "updated": "2026-11-16 10:05:03.741860223 +0000 UTC"
-  },
-  {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.7932,
-   "lon": -122.84322,
-   "sog_kn": 0,
-   "cog": 136.4,
-   "heading": 210,
-   "nav_status": 15,
-   "updated": "2026-11-16 10:05:06.296364445 +0000 UTC"
-  },
-  {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64568,
-   "lon": -122.73487,
-   "sog_kn": 0.1,
-   "cog": 0,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-16 10:05:07.404985861 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.0821,
-   "lon": -122.90542,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 312,
-   "nav_status": 3,
-   "updated": "2026-11-16 10:05:08.178442819 +0000 UTC"
+   "updated": "2026-11-16 10:10:15.938227105 +0000 UTC"
   }
  ]
 }
