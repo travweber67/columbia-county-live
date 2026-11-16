@@ -1,82 +1,90 @@
 {
- "fetched_at": "2026-11-16T05:14:18Z",
+ "fetched_at": "2026-11-16T05:19:19Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 367513120,
    "name": "CASCADES",
    "lat": 45.63789,
    "lon": -122.72794,
-   "sog_kn": 0,
-   "cog": 267.6,
+   "sog_kn": 0.1,
+   "cog": 216,
    "heading": 119,
    "nav_status": 12,
-   "updated": "2026-11-16 05:14:22.198547427 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.16536,
-   "lon": -123.0815,
-   "sog_kn": 7.2,
-   "cog": 127.9,
-   "heading": 125,
-   "nav_status": 3,
-   "updated": "2026-11-16 05:14:24.577921289 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00877,
-   "lon": -122.84884,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 05:14:27.269486323 +0000 UTC"
-  },
-  {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58729,
-   "lon": -122.77044,
-   "type_code": 31,
-   "destination": "US^02SY>0UJ9",
-   "updated": "2026-11-16 05:14:37.972438278 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.20003,
-   "lon": -123.3855,
-   "sog_kn": 0,
-   "cog": 357.7,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-16 05:14:40.196027828 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.05434,
-   "lon": -122.88266,
-   "sog_kn": 10.4,
-   "cog": 178,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 05:14:46.431626405 +0000 UTC"
+   "updated": "2026-11-16 05:19:22.222360194 +0000 UTC"
   },
   {
    "mmsi": 368440320,
    "name": "HEATHER S",
-   "lat": 45.63739,
+   "lat": 45.63738,
    "lon": -122.72694,
    "sog_kn": 0,
-   "cog": 218.1,
+   "cog": 25,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-16 05:14:50.151599575 +0000 UTC"
+   "updated": "2026-11-16 05:19:29.724958678 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58756,
+   "lon": -122.77045,
+   "sog_kn": 0,
+   "cog": 291.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-16 05:19:30.926511672 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.16234,
+   "lon": -123.07457,
+   "sog_kn": 1,
+   "cog": 123.3,
+   "heading": 122,
+   "nav_status": 3,
+   "updated": "2026-11-16 05:19:34.337084748 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.3855,
+   "sog_kn": 0,
+   "cog": 339,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-16 05:19:40.223504829 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08193,
+   "lon": -122.90494,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-16 05:19:45.173856366 +0000 UTC"
+  },
+  {
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19948,
+   "lon": -123.38507,
+   "sog_kn": 0,
+   "cog": 0.9,
+   "heading": 147,
+   "nav_status": 5,
+   "updated": "2026-11-16 05:19:47.977728333 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64355,
+   "lon": -122.75237,
+   "type_code": 52,
+   "updated": "2026-11-16 05:19:50.804104689 +0000 UTC"
   }
  ]
 }
