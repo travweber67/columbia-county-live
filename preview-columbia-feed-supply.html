@@ -32,12 +32,12 @@
 if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
-<link rel="manifest" href="manifest.webmanifest?v=82">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=82">
+<link rel="manifest" href="manifest.webmanifest?v=90">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=90">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=82">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=82">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=82">
+<link rel="stylesheet" href="style.css?v=90">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=90">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=90">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
      only page backgrounds first paint needs — warm them with the hero.
      Every other view's photo is lazy-attached by app.js. -->
@@ -225,6 +225,7 @@ document.documentElement.setAttribute("data-theme",t);})();
          v6 phone mover used to carry them to). -->
     <div class="founding-cells">
       <article class="founding-cell taken" data-otl-cell>
+        <img class="founding-ribbon cell-ribbon" src="img/founding-ribbon.png?v=90" alt="Founding Sponsor" title="Founding Sponsor">
         <div class="otl-logo-box"><img src="img/preview-otl-logo.png" alt="Oregon Trail Lanes logo"></div>
         <p class="cell-eyebrow">Founding Sponsor · Spot 1 of 3</p>
         <h3>Oregon Trail Lanes <span class="dir-badge" data-i18n="dirfounding">Founding business</span></h3>
@@ -244,7 +245,7 @@ document.documentElement.setAttribute("data-theme",t);})();
         <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
         <p class="cell-eyebrow" data-i18n="fs3eyebrow">Founding Sponsor · Spot 3 of 3 — Open</p>
         <h3 data-i18n="fs3h3">Your business here</h3>
-        <p data-i18n="fs3p">One of only three founding spots, ever — your name and logo on the panel every visitor sees first. $49/mo, locked while you stay, and a free 30-day pilot before you pay anything.</p>
+        <p data-i18n="fs3p">One of only three founding spots, ever — your name and logo on the Today page every visitor opens first. $49/mo, locked while you stay, and a free 30-day pilot before you pay anything.</p>
         <a class="founding-cta" href="sponsor.html#founding" data-i18n="fs3cta">Claim spot 3 &rarr;</a>
       </article>
     </div>
@@ -490,6 +491,51 @@ document.documentElement.setAttribute("data-theme",t);})();
       <p class="card-note small" data-i18n="drivenote">Typical drive — no live traffic. The time comes from the free OSRM routing service, driving the route at posted speeds in normal conditions — a closure, a bridge lift, or a crash on US-30 will change the real trip.</p>
     </div>
 
+    <div class="card" id="ferry-mini-card">
+      <div class="card-head">
+        <h2 data-i18n="ferryminih2">⛴️ Oscar B Ferry — At a Glance</h2>
+      </div>
+      <div id="ferry-mini-body" class="ferry-mini"><p class="loading">Working out where the boat is…</p></div>
+      <p class="card-note small" data-i18n="ferryminnote">Where the boat is comes from its printed timetable: the crossing takes about 12 minutes and the ferry has no live tracker.</p>
+    </div>
+
+    <div class="card photo-card" id="ferry-card">
+      <div class="card-photo photo-ferry"><img src="img/card-ferry.jpg" alt="The Oscar B ferry crossing the Columbia River, leaving Puget Island" loading="lazy" decoding="async"><img class="photo-night" src="img/dusk/ferry-night.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
+      <div class="card-head">
+        <h2 data-i18n="ferryh2">⛴️ Oscar B Ferry — Westport, OR ↔ Cathlamet, WA</h2>
+        <span class="updated" id="ferry-updated"></span>
+      </div>
+      <div id="ferry-alert-body" class="panel-body"><p class="loading">Checking the county page for ferry closure alerts…</p></div>
+      <div id="ferry-next" class="ferry-next"><p class="loading">Working out the next sailing…</p></div>
+      <div class="ferry-plan" id="ferry-plan">
+        <h3 class="subhead" data-i18n="ferryplanh3">🧭 Catch the boat — when do you need to leave?</h3>
+        <div class="fp-dirs" role="group" aria-label="Which way are you crossing">
+          <button class="fp-dir-btn active" type="button" data-fp-dir="or" aria-pressed="true" data-i18n="fpdiror">Heading to Washington</button>
+          <button class="fp-dir-btn" type="button" data-fp-dir="wa" aria-pressed="false" data-i18n="fpdirwa">Coming back to Oregon</button>
+        </div>
+        <div class="fp-towns" id="fp-towns" aria-label="Where are you leaving from"></div>
+        <div id="fp-body" class="fp-body"><p class="loading">Working out when you'd need to leave…</p></div>
+        <p class="card-note small" data-i18n="fpnote">Drive times are typical for US-30 / OR-47 in normal conditions — your trip will vary, and the boat doesn't wait. The plan adds a 10-minute cushion at the dock for parking, fares (cash only), and loading.</p>
+      </div>
+      <p class="card-note" data-i18n="ferrynote">The last ferry on the Lower Columbia, run by Wahkiakum County. It sails on a fixed schedule — there's no live tracker, so the timetable below <em>is</em> the status, every day of the year. The alert line above is read from the county's official ferry page by our fetcher.</p>
+      <div class="ferry-grid">
+        <div class="ferry-box">
+          <h3 data-i18n="ferrybox1h">From Puget Island (WA side)</h3>
+          <p data-i18n="ferrybox1p">On the hour, <strong>5:00 AM – 10:00 PM</strong></p>
+        </div>
+        <div class="ferry-box">
+          <h3 data-i18n="ferrybox2h">From Westport (OR side)</h3>
+          <p data-i18n="ferrybox2p">Quarter past the hour, <strong>5:15 AM – 10:15 PM</strong></p>
+        </div>
+        <div class="ferry-box">
+          <h3 data-i18n="ferrybox3h">Fares (cash only)</h3>
+          <p data-i18n="ferrybox3p">Car $6 · Motorcycle $4 · Bicycle $3 · Walk-on $2</p>
+        </div>
+      </div>
+      <p class="card-note small" data-i18n="ferrybridge">Bridge closed? The ferry historically runs extended hours during Lewis &amp; Clark Bridge closures — confirm on the county page before counting on it.</p>
+      <a class="text-link" href="https://www.co.wahkiakum.wa.us/252/Ferry" target="_blank" rel="noopener" data-i18n="ferrylink">Official ferry page — Wahkiakum County →</a>
+    </div>
+
     <div class="card photo-card" id="roads-card">
       <div class="card-photo photo-pano"><img src="img/card-bridge-pano.jpg" alt="Panorama of the Lewis and Clark Bridge spanning the Columbia River between Rainier and Longview" loading="lazy" decoding="async"><img class="photo-night" src="img/dusk/roads-night.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
       <div class="card-head">
@@ -497,6 +543,12 @@ document.documentElement.setAttribute("data-theme",t);})();
         <span class="updated" id="roads-updated"></span>
       </div>
       <div id="bridge-body" class="panel-body"><p class="loading">Loading Lewis &amp; Clark Bridge status…</p></div>
+      
+    </div>
+    <div class="card" id="cameras-card">
+      <div class="card-head">
+        <h2>📷 Road cameras</h2>
+      </div>
       <h3 class="subhead" data-i18n="myrouteh3">📷 My Route — your commute cameras, in driving order</h3>
       <div id="myroute-body" class="panel-body"><p class="loading">Loading route cameras…</p></div>
       <h3 class="subhead" data-i18n="camerash3">Road cameras</h3>
@@ -531,51 +583,6 @@ document.documentElement.setAttribute("data-theme",t);})();
       <div id="routeahead-body" class="panel-body"><p class="loading">Loading the corridor forecast…</p></div>
     </div>
 
-    <div class="card" id="ferry-mini-card">
-      <div class="card-head">
-        <h2 data-i18n="ferryminih2">⛴️ Oscar B Ferry — At a Glance</h2>
-      </div>
-      <div id="ferry-mini-body" class="ferry-mini"><p class="loading">Working out where the boat is…</p></div>
-      <p class="card-note small" data-i18n="ferryminnote">Where the boat is comes from its printed timetable: the crossing takes about 12 minutes and the ferry has no live tracker.</p>
-    </div>
-
-    <div class="card photo-card" id="ferry-card">
-      <div class="card-photo photo-ferry"><img src="img/card-ferry.jpg" alt="The Oscar B ferry crossing the Columbia River, leaving Puget Island" loading="lazy" decoding="async"><img class="photo-night" src="img/dusk/ferry-night.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
-      <div class="card-head">
-        <h2 data-i18n="ferryh2">⛴️ Oscar B Ferry — Westport, OR ↔ Cathlamet, WA</h2>
-        <span class="updated" id="ferry-updated"></span>
-      </div>
-      <div id="ferry-alert-body" class="panel-body"><p class="loading">Checking the county page for ferry closure alerts…</p></div>
-      <div id="ferry-next" class="ferry-next"><p class="loading">Working out the next sailing…</p></div>
-      <div class="ferry-plan" id="ferry-plan">
-        <h3 class="subhead" data-i18n="ferryplanh3">🧭 Catch the boat — when do you need to leave?</h3>
-        <div class="fp-dirs" role="group" aria-label="Which way are you crossing">
-          <button class="fp-dir-btn active" type="button" data-fp-dir="or" aria-pressed="true" data-i18n="fpdiror">Heading to Washington</button>
-          <button class="fp-dir-btn" type="button" data-fp-dir="wa" aria-pressed="false" data-i18n="fpdirwa">Coming back to Oregon</button>
-        </div>
-        <div class="fp-towns" id="fp-towns" aria-label="Where are you leaving from"></div>
-        <div id="fp-body" class="fp-body"><p class="loading">Working out when you'd need to leave…</p></div>
-        <p class="card-note small" data-i18n="fpnote">Drive times are typical for US-30 / OR-47 in normal conditions — your trip will vary, and the boat doesn't wait. The plan adds a 10-minute cushion at the dock for parking, fares (cash or check only), and loading.</p>
-      </div>
-      <p class="card-note" data-i18n="ferrynote">The last ferry on the Lower Columbia, run by Wahkiakum County. It sails on a fixed schedule — there's no live tracker, so the timetable below <em>is</em> the status, every day of the year. The alert line above is read from the county's official ferry page by our fetcher.</p>
-      <div class="ferry-grid">
-        <div class="ferry-box">
-          <h3 data-i18n="ferrybox1h">From Puget Island (WA side)</h3>
-          <p data-i18n="ferrybox1p">On the hour, <strong>5:00 AM – 10:00 PM</strong></p>
-        </div>
-        <div class="ferry-box">
-          <h3 data-i18n="ferrybox2h">From Westport (OR side)</h3>
-          <p data-i18n="ferrybox2p">Quarter past the hour, <strong>5:15 AM – 10:15 PM</strong></p>
-        </div>
-        <div class="ferry-box">
-          <h3 data-i18n="ferrybox3h">Fares (cash / check only)</h3>
-          <p data-i18n="ferrybox3p">Car $6 · Motorcycle $4 · Bicycle $3 · Walk-on $2</p>
-        </div>
-      </div>
-      <p class="card-note small" data-i18n="ferrybridge">Bridge closed? The ferry historically runs extended hours during Lewis &amp; Clark Bridge closures — confirm on the county page before counting on it.</p>
-      <a class="text-link" href="https://www.co.wahkiakum.wa.us/252/Ferry" target="_blank" rel="noopener" data-i18n="ferrylink">Official ferry page — Wahkiakum County →</a>
-    </div>
-
     <div class="card photo-card" id="ships-card">
       <div class="card-photo"><img src="img/card-ship.jpg" alt="A car carrier ship passing under the Lewis and Clark Bridge on the Columbia River" loading="lazy" decoding="async"><img class="photo-night" src="img/dusk/ships-night.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
       <div class="card-head">
@@ -600,14 +607,14 @@ document.documentElement.setAttribute("data-theme",t);})();
       <p class="card-note small" data-i18n="aircraftnote">Aircraft: community ADS-B receivers via adsb.fi. Refreshes automatically.</p>
     </div>
 
-    <div class="card photo-card" id="bend-card">
-      <div class="card-photo photo-summit"><img src="img/dusk/band-mthood.jpg" alt="Mt. Hood, seen from Trillium Lake near Government Camp — the mountain US-26 crosses on the Bend run" loading="lazy" decoding="async"></div>
+    <div class="card photo-card" id="mthood-card">
+      <div class="card-photo photo-summit"><img src="img/dusk/band-mthood.jpg" alt="Mt. Hood, seen from Trillium Lake near Government Camp" loading="lazy" decoding="async"></div>
       <div class="card-head">
-        <h2 data-i18n="bendh2">🏔️ The Bend Run — Pass Conditions</h2>
-        <span class="updated" id="bend-updated"></span>
+        <h2 data-i18n="mthoodh2">🏔️ Mt. Hood — US-26 Cameras</h2>
+        <span class="updated" id="mthood-updated"></span>
       </div>
-      <p class="card-note" data-i18n="bendnote">Outside the county, included because the trip starts here: the two ways this county drives to Bend — US-26 over Mt. Hood at Government Camp, and US-20 over Santiam Pass. Cameras and incidents from ODOT TripCheck; pass forecasts from the National Weather Service. The question this card answers: is there snow over the pass?</p>
-      <div id="bend-body" class="panel-body"><p class="loading">Loading pass conditions…</p></div>
+      <p class="card-note" data-i18n="mthoodnote">Outside the county, kept because the drive starts here: the two US-26 cameras that show what the mountain is doing — Government Camp (MP 54) and Blue Box Pass (MP 64), the high stretch on the way to Bend. Live stills from ODOT TripCheck, refreshed every 10 minutes.</p>
+      <div id="mthood-body" class="panel-body"><p class="loading">Loading Mt. Hood cameras…</p></div>
     </div>
 
     
@@ -627,17 +634,19 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <!-- v71: the 7-day pills float on their own above the card;
          one county-wide forecast, no town picker -->
-    <div class="forecast-top">
+    <div class="forecast-top" id="forecast-week-card">
       <div class="card-head forecast-head">
         <h2 data-i18n="forecasth2">🌦️ Forecast</h2>
         <span class="updated" id="forecast-updated"></span>
       </div>
       <p class="wx-place">📍 Columbia County</p>
       <div id="forecast-week" class="forecast-week" aria-label="Seven-day forecast"><p class="loading small">Loading the week…</p></div>
+      <div class="strip-tools" id="forecast-week-tools"></div>
     </div>
 
     <div class="card band-card" id="forecast-card">
       <div class="card-band" aria-hidden="true"><img src="img/dusk/band-mountain.jpg" alt="" loading="lazy" decoding="async"></div>
+      <div class="card-head"><h2>🌦️ Forecast — day &amp; night</h2></div>
       <div id="forecast-body" class="panel-body"><p class="loading">Loading forecast…</p></div>
     </div>
 
@@ -854,22 +863,38 @@ document.documentElement.setAttribute("data-theme",t);})();
     <button class="dir-chip" type="button" data-dirfilter="yard" aria-pressed="false" data-i18n="diryard">Yard &amp; garden</button>
     <button class="dir-chip" type="button" data-dirfilter="tutoring" aria-pressed="false" data-i18n="dirtutoring">Tutoring</button>
     <button class="dir-chip" type="button" data-dirfilter="moving" aria-pressed="false" data-i18n="dirmoving">Moving &amp; hauling</button>
+    <button class="dir-chip" type="button" data-dirfilter="fun" aria-pressed="false" data-i18n="dirfun">Bowling &amp; family fun</button>
+    <button class="dir-chip" type="button" data-dirfilter="beauty" aria-pressed="false" data-i18n="dirbeauty">Health &amp; beauty</button>
     <button class="dir-chip" type="button" data-dirfilter="other" aria-pressed="false" data-i18n="dirother">Other local services</button>
     <button class="dir-chip" type="button" data-dirfilter="freehelp" aria-pressed="false" data-i18n="dirfreehelp">Free help / community support</button>
   </div>
   <div class="dir-list" id="dir-list">
-    <article class="dir-item" data-dircat="other" data-lat="45.85067" data-lng="-122.83077">
+    <article class="dir-item" data-dircat="fun" data-lat="45.85067" data-lng="-122.83077">
       <!-- Photo: Oregon Trail Lanes' own website (oregontraillanes.com) — league night at the lanes, May 2023. Added v45. -->
       <img class="dir-photo" src="img/dir-oregon-trail-lanes.jpg" alt="League night inside Oregon Trail Lanes in St. Helens" loading="lazy" decoding="async">
+      <img class="founding-ribbon dir-ribbon" src="img/founding-ribbon.png?v=90" alt="Founding Sponsor" title="Founding Sponsor — Oregon Trail Lanes">
       <div class="dir-item-main">
         <h3>Oregon Trail Lanes</h3>
-        <p class="dir-meta">St. Helens &middot; <span data-i18n="dirother">Other local services</span></p>
+        <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfun">Bowling &amp; family fun</span></p>
         <p class="dir-desc" data-i18n="dirotldesc">Bowling, leagues and birthday parties on Columbia River Highway.</p>
         <button class="otl-more dir-otl-more" type="button" data-otl-open aria-haspopup="dialog" aria-controls="otl-sheet" aria-expanded="false">See hours &amp; what&rsquo;s on &rarr;</button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033971011">&#128222; (503) 397-1011</a>
         <span class="dir-addr">735 S Columbia River Hwy</span>
+      </div>
+    </article>
+    <article class="dir-item" data-dircat="beauty" data-lat="45.85957" data-lng="-122.81905">
+      <!-- Listed from the business's own Add Your Local Service form submission, Nov 14, 2026 (Jennifer Stalker RN). Basic directory listing. Phone, website and description corrected Nov 15, 2026 to match her form response (971-478-1852, biolumemedspas.com, her own description). Address corrected Nov 15, 2026: 2050 Columbia Blvd was unsupported by any source; verified address is 115 N 21st St, St Helens, OR 97051 (her own website + Places listing), map pin updated to the Places coordinates. -->
+      <div class="dir-item-main">
+        <h3>BioLume Med Spas</h3>
+        <p class="dir-meta">St. Helens &middot; <span data-i18n="dirbeauty">Health &amp; beauty</span></p>
+        <p class="dir-desc">BioLume Med Spas is a locally owned medical aesthetics practice specializing in Botox, dermal fillers, collagen stimulation, and advanced skin rejuvenation. We focus on natural looking results, personalized treatments, and helping our clients look and feel their best.</p>
+      </div>
+      <div class="dir-contact">
+        <a class="dir-call" href="tel:+19714781852">&#128222; (971) 478-1852</a>
+        <a class="dir-call" href="https://biolumemedspas.com" target="_blank" rel="noopener">&#127760; biolumemedspas.com</a>
+        <span class="dir-addr">115 N 21st St, St Helens, OR 97051</span>
       </div>
     </article>
     <article class="dir-item" data-dircat="freehelp" data-lat="45.86735" data-lng="-122.80309">
@@ -1155,7 +1180,8 @@ document.documentElement.setAttribute("data-theme",t);})();
     <span class="updated" data-i18n="freshspan">ages update every 30 sec</span>
   </div>
   <p class="card-note" data-i18n="freshnote">Every number here names its source and its age. Green is fresh, amber is aging, red means treat the panel as stale and check the official source. If a feed ever goes quiet, this board shows it instead of hiding it.</p>
-  <div id="freshness-body" class="panel-body"><p class="loading">Checking source ages…</p></div>
+  <div class="alert-more fresh-more"><div class="alert-more-in"><div id="freshness-body" class="panel-body"><p class="loading">Checking source ages…</p></div></div></div>
+  <button class="fresh-toggle" type="button" aria-expanded="false" aria-label="Show the source list"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label fresh-toggle-label">See more</span></button>
 </section>
 
 <section class="card band-card watch-card" id="watch-card" aria-label="The county watch — get told when a warning posts, the bridge closes, or the ferry puts out an alert">
@@ -1258,7 +1284,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <footer class="site-footer">
   <section class="partners-wall card" aria-label="Community partners">
     <h2>Community Partners — the local businesses that fund this site</h2>
-    <p class="partners-first"><strong class="partners-name">Oregon Trail Lanes</strong></p>
+    <p class="partners-first"><strong class="partners-name">Oregon Trail Lanes</strong> <img class="founding-ribbon wall-ribbon" src="img/founding-ribbon.png?v=90" alt="Founding Sponsor" title="Founding Sponsor"></p>
     <p class="partners-meta"><span class="dir-badge">Founding Sponsor · 2026</span><span class="partners-town">· St. Helens</span></p>
     <p class="partners-empty"><a href="sponsor.html">Your logo here — become a partner &rarr;</a></p>
   </section>
@@ -1694,7 +1720,7 @@ document.documentElement.setAttribute("data-theme",t);})();
       <a class="drawer-link" href="#ferry-card" data-i18n="dwferry">Oscar B ferry</a>
       <a class="drawer-link" href="#ships-card" data-i18n="dwships">River traffic</a>
       <a class="drawer-link" href="#aircraft-card" data-i18n="dwaircraft">Aircraft overhead</a>
-      <a class="drawer-link" href="#bend-card" data-i18n="dwbend">The Bend run</a>
+      <a class="drawer-link" href="#mthood-card" data-i18n="dwmthood">Mt. Hood cameras</a>
     </div>
     <div class="drawer-group">
       <button class="drawer-view" type="button" data-drawer-view="help"><span aria-hidden="true">🤝</span><span data-i18n="helpview">Community Help</span></button>
@@ -1961,7 +1987,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=82"></script>
+<script src="app.js?v=90"></script>
 
 <script>
 /* Sponsor demo page: this prospect's full-card sheet, wired exactly like

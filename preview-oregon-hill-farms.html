@@ -11,6 +11,7 @@
 <meta property="og:title" content="Columbia County Live — Roads, Rivers, Weather & Ferry">
 <meta property="og:description" content="Everything happening in Columbia County, Oregon, one live look: bridge status, river levels, weather alerts, the Oscar B ferry countdown, and this week's events. Free, from official public sources.">
 <meta property="og:url" content="https://columbiacountylive.com/">
+<link rel="canonical" href="https://columbiacountylive.com/">
 <meta property="og:image" content="https://columbiacountylive.com/img/hero-bridge.jpg">
 <meta property="og:image:alt" content="The Lewis and Clark Bridge over the Columbia River with Mount St. Helens behind it">
 <meta name="twitter:card" content="summary_large_image">
@@ -31,12 +32,12 @@
 if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
-<link rel="manifest" href="manifest.webmanifest?v=77">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=77">
+<link rel="manifest" href="manifest.webmanifest?v=90">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=90">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=77">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=77">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=77">
+<link rel="stylesheet" href="style.css?v=90">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=90">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=90">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
      only page backgrounds first paint needs — warm them with the hero.
      Every other view's photo is lazy-attached by app.js. -->
@@ -224,6 +225,7 @@ document.documentElement.setAttribute("data-theme",t);})();
          v6 phone mover used to carry them to). -->
     <div class="founding-cells">
       <article class="founding-cell taken" data-otl-cell>
+        <img class="founding-ribbon cell-ribbon" src="img/founding-ribbon.png?v=90" alt="Founding Sponsor" title="Founding Sponsor">
         <div class="otl-logo-box"><img src="img/preview-otl-logo.png" alt="Oregon Trail Lanes logo"></div>
         <p class="cell-eyebrow">Founding Sponsor · Spot 1 of 3</p>
         <h3>Oregon Trail Lanes <span class="dir-badge" data-i18n="dirfounding">Founding business</span></h3>
@@ -243,7 +245,7 @@ document.documentElement.setAttribute("data-theme",t);})();
         <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
         <p class="cell-eyebrow" data-i18n="fs3eyebrow">Founding Sponsor · Spot 3 of 3 — Open</p>
         <h3 data-i18n="fs3h3">Your business here</h3>
-        <p data-i18n="fs3p">One of only three founding spots, ever — your name and logo on the panel every visitor sees first. $49/mo, locked while you stay, and a free 30-day pilot before you pay anything.</p>
+        <p data-i18n="fs3p">One of only three founding spots, ever — your name and logo on the Today page every visitor opens first. $49/mo, locked while you stay, and a free 30-day pilot before you pay anything.</p>
         <a class="founding-cta" href="sponsor.html#founding" data-i18n="fs3cta">Claim spot 3 &rarr;</a>
       </article>
     </div>
@@ -489,6 +491,51 @@ document.documentElement.setAttribute("data-theme",t);})();
       <p class="card-note small" data-i18n="drivenote">Typical drive — no live traffic. The time comes from the free OSRM routing service, driving the route at posted speeds in normal conditions — a closure, a bridge lift, or a crash on US-30 will change the real trip.</p>
     </div>
 
+    <div class="card" id="ferry-mini-card">
+      <div class="card-head">
+        <h2 data-i18n="ferryminih2">⛴️ Oscar B Ferry — At a Glance</h2>
+      </div>
+      <div id="ferry-mini-body" class="ferry-mini"><p class="loading">Working out where the boat is…</p></div>
+      <p class="card-note small" data-i18n="ferryminnote">Where the boat is comes from its printed timetable: the crossing takes about 12 minutes and the ferry has no live tracker.</p>
+    </div>
+
+    <div class="card photo-card" id="ferry-card">
+      <div class="card-photo photo-ferry"><img src="img/card-ferry.jpg" alt="The Oscar B ferry crossing the Columbia River, leaving Puget Island" loading="lazy" decoding="async"><img class="photo-night" src="img/dusk/ferry-night.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
+      <div class="card-head">
+        <h2 data-i18n="ferryh2">⛴️ Oscar B Ferry — Westport, OR ↔ Cathlamet, WA</h2>
+        <span class="updated" id="ferry-updated"></span>
+      </div>
+      <div id="ferry-alert-body" class="panel-body"><p class="loading">Checking the county page for ferry closure alerts…</p></div>
+      <div id="ferry-next" class="ferry-next"><p class="loading">Working out the next sailing…</p></div>
+      <div class="ferry-plan" id="ferry-plan">
+        <h3 class="subhead" data-i18n="ferryplanh3">🧭 Catch the boat — when do you need to leave?</h3>
+        <div class="fp-dirs" role="group" aria-label="Which way are you crossing">
+          <button class="fp-dir-btn active" type="button" data-fp-dir="or" aria-pressed="true" data-i18n="fpdiror">Heading to Washington</button>
+          <button class="fp-dir-btn" type="button" data-fp-dir="wa" aria-pressed="false" data-i18n="fpdirwa">Coming back to Oregon</button>
+        </div>
+        <div class="fp-towns" id="fp-towns" aria-label="Where are you leaving from"></div>
+        <div id="fp-body" class="fp-body"><p class="loading">Working out when you'd need to leave…</p></div>
+        <p class="card-note small" data-i18n="fpnote">Drive times are typical for US-30 / OR-47 in normal conditions — your trip will vary, and the boat doesn't wait. The plan adds a 10-minute cushion at the dock for parking, fares (cash only), and loading.</p>
+      </div>
+      <p class="card-note" data-i18n="ferrynote">The last ferry on the Lower Columbia, run by Wahkiakum County. It sails on a fixed schedule — there's no live tracker, so the timetable below <em>is</em> the status, every day of the year. The alert line above is read from the county's official ferry page by our fetcher.</p>
+      <div class="ferry-grid">
+        <div class="ferry-box">
+          <h3 data-i18n="ferrybox1h">From Puget Island (WA side)</h3>
+          <p data-i18n="ferrybox1p">On the hour, <strong>5:00 AM – 10:00 PM</strong></p>
+        </div>
+        <div class="ferry-box">
+          <h3 data-i18n="ferrybox2h">From Westport (OR side)</h3>
+          <p data-i18n="ferrybox2p">Quarter past the hour, <strong>5:15 AM – 10:15 PM</strong></p>
+        </div>
+        <div class="ferry-box">
+          <h3 data-i18n="ferrybox3h">Fares (cash only)</h3>
+          <p data-i18n="ferrybox3p">Car $6 · Motorcycle $4 · Bicycle $3 · Walk-on $2</p>
+        </div>
+      </div>
+      <p class="card-note small" data-i18n="ferrybridge">Bridge closed? The ferry historically runs extended hours during Lewis &amp; Clark Bridge closures — confirm on the county page before counting on it.</p>
+      <a class="text-link" href="https://www.co.wahkiakum.wa.us/252/Ferry" target="_blank" rel="noopener" data-i18n="ferrylink">Official ferry page — Wahkiakum County →</a>
+    </div>
+
     <div class="card photo-card" id="roads-card">
       <div class="card-photo photo-pano"><img src="img/card-bridge-pano.jpg" alt="Panorama of the Lewis and Clark Bridge spanning the Columbia River between Rainier and Longview" loading="lazy" decoding="async"><img class="photo-night" src="img/dusk/roads-night.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
       <div class="card-head">
@@ -496,6 +543,12 @@ document.documentElement.setAttribute("data-theme",t);})();
         <span class="updated" id="roads-updated"></span>
       </div>
       <div id="bridge-body" class="panel-body"><p class="loading">Loading Lewis &amp; Clark Bridge status…</p></div>
+      
+    </div>
+    <div class="card" id="cameras-card">
+      <div class="card-head">
+        <h2>📷 Road cameras</h2>
+      </div>
       <h3 class="subhead" data-i18n="myrouteh3">📷 My Route — your commute cameras, in driving order</h3>
       <div id="myroute-body" class="panel-body"><p class="loading">Loading route cameras…</p></div>
       <h3 class="subhead" data-i18n="camerash3">Road cameras</h3>
@@ -530,43 +583,6 @@ document.documentElement.setAttribute("data-theme",t);})();
       <div id="routeahead-body" class="panel-body"><p class="loading">Loading the corridor forecast…</p></div>
     </div>
 
-    <div class="card photo-card" id="ferry-card">
-      <div class="card-photo photo-ferry"><img src="img/card-ferry.jpg" alt="The Oscar B ferry crossing the Columbia River, leaving Puget Island" loading="lazy" decoding="async"><img class="photo-night" src="img/dusk/ferry-night.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
-      <div class="card-head">
-        <h2 data-i18n="ferryh2">⛴️ Oscar B Ferry — Westport, OR ↔ Cathlamet, WA</h2>
-        <span class="updated" id="ferry-updated"></span>
-      </div>
-      <div id="ferry-alert-body" class="panel-body"><p class="loading">Checking the county page for ferry closure alerts…</p></div>
-      <div id="ferry-next" class="ferry-next"><p class="loading">Working out the next sailing…</p></div>
-      <div class="ferry-plan" id="ferry-plan">
-        <h3 class="subhead" data-i18n="ferryplanh3">🧭 Catch the boat — when do you need to leave?</h3>
-        <div class="fp-dirs" role="group" aria-label="Which way are you crossing">
-          <button class="fp-dir-btn active" type="button" data-fp-dir="or" aria-pressed="true" data-i18n="fpdiror">Heading to Washington</button>
-          <button class="fp-dir-btn" type="button" data-fp-dir="wa" aria-pressed="false" data-i18n="fpdirwa">Coming back to Oregon</button>
-        </div>
-        <div class="fp-towns" id="fp-towns" aria-label="Where are you leaving from"></div>
-        <div id="fp-body" class="fp-body"><p class="loading">Working out when you'd need to leave…</p></div>
-        <p class="card-note small" data-i18n="fpnote">Drive times are typical for US-30 / OR-47 in normal conditions — your trip will vary, and the boat doesn't wait. The plan adds a 10-minute cushion at the dock for parking, fares (cash or check only), and loading.</p>
-      </div>
-      <p class="card-note" data-i18n="ferrynote">The last ferry on the Lower Columbia, run by Wahkiakum County. It sails on a fixed schedule — there's no live tracker, so the timetable below <em>is</em> the status, every day of the year. The alert line above is read from the county's official ferry page by our fetcher.</p>
-      <div class="ferry-grid">
-        <div class="ferry-box">
-          <h3 data-i18n="ferrybox1h">From Puget Island (WA side)</h3>
-          <p data-i18n="ferrybox1p">On the hour, <strong>5:00 AM – 10:00 PM</strong></p>
-        </div>
-        <div class="ferry-box">
-          <h3 data-i18n="ferrybox2h">From Westport (OR side)</h3>
-          <p data-i18n="ferrybox2p">Quarter past the hour, <strong>5:15 AM – 10:15 PM</strong></p>
-        </div>
-        <div class="ferry-box">
-          <h3 data-i18n="ferrybox3h">Fares (cash / check only)</h3>
-          <p data-i18n="ferrybox3p">Car $6 · Motorcycle $4 · Bicycle $3 · Walk-on $2</p>
-        </div>
-      </div>
-      <p class="card-note small" data-i18n="ferrybridge">Bridge closed? The ferry historically runs extended hours during Lewis &amp; Clark Bridge closures — confirm on the county page before counting on it.</p>
-      <a class="text-link" href="https://www.co.wahkiakum.wa.us/252/Ferry" target="_blank" rel="noopener" data-i18n="ferrylink">Official ferry page — Wahkiakum County →</a>
-    </div>
-
     <div class="card photo-card" id="ships-card">
       <div class="card-photo"><img src="img/card-ship.jpg" alt="A car carrier ship passing under the Lewis and Clark Bridge on the Columbia River" loading="lazy" decoding="async"><img class="photo-night" src="img/dusk/ships-night.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
       <div class="card-head">
@@ -591,14 +607,14 @@ document.documentElement.setAttribute("data-theme",t);})();
       <p class="card-note small" data-i18n="aircraftnote">Aircraft: community ADS-B receivers via adsb.fi. Refreshes automatically.</p>
     </div>
 
-    <div class="card photo-card" id="bend-card">
-      <div class="card-photo photo-summit"><img src="img/dusk/band-mthood.jpg" alt="Mt. Hood, seen from Trillium Lake near Government Camp — the mountain US-26 crosses on the Bend run" loading="lazy" decoding="async"></div>
+    <div class="card photo-card" id="mthood-card">
+      <div class="card-photo photo-summit"><img src="img/dusk/band-mthood.jpg" alt="Mt. Hood, seen from Trillium Lake near Government Camp" loading="lazy" decoding="async"></div>
       <div class="card-head">
-        <h2 data-i18n="bendh2">🏔️ The Bend Run — Pass Conditions</h2>
-        <span class="updated" id="bend-updated"></span>
+        <h2 data-i18n="mthoodh2">🏔️ Mt. Hood — US-26 Cameras</h2>
+        <span class="updated" id="mthood-updated"></span>
       </div>
-      <p class="card-note" data-i18n="bendnote">Outside the county, included because the trip starts here: the two ways this county drives to Bend — US-26 over Mt. Hood at Government Camp, and US-20 over Santiam Pass. Cameras and incidents from ODOT TripCheck; pass forecasts from the National Weather Service. The question this card answers: is there snow over the pass?</p>
-      <div id="bend-body" class="panel-body"><p class="loading">Loading pass conditions…</p></div>
+      <p class="card-note" data-i18n="mthoodnote">Outside the county, kept because the drive starts here: the two US-26 cameras that show what the mountain is doing — Government Camp (MP 54) and Blue Box Pass (MP 64), the high stretch on the way to Bend. Live stills from ODOT TripCheck, refreshed every 10 minutes.</p>
+      <div id="mthood-body" class="panel-body"><p class="loading">Loading Mt. Hood cameras…</p></div>
     </div>
 
     
@@ -618,17 +634,19 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <!-- v71: the 7-day pills float on their own above the card;
          one county-wide forecast, no town picker -->
-    <div class="forecast-top">
+    <div class="forecast-top" id="forecast-week-card">
       <div class="card-head forecast-head">
         <h2 data-i18n="forecasth2">🌦️ Forecast</h2>
         <span class="updated" id="forecast-updated"></span>
       </div>
       <p class="wx-place">📍 Columbia County</p>
       <div id="forecast-week" class="forecast-week" aria-label="Seven-day forecast"><p class="loading small">Loading the week…</p></div>
+      <div class="strip-tools" id="forecast-week-tools"></div>
     </div>
 
     <div class="card band-card" id="forecast-card">
       <div class="card-band" aria-hidden="true"><img src="img/dusk/band-mountain.jpg" alt="" loading="lazy" decoding="async"></div>
+      <div class="card-head"><h2>🌦️ Forecast — day &amp; night</h2></div>
       <div id="forecast-body" class="panel-body"><p class="loading">Loading forecast…</p></div>
     </div>
 
@@ -845,22 +863,38 @@ document.documentElement.setAttribute("data-theme",t);})();
     <button class="dir-chip" type="button" data-dirfilter="yard" aria-pressed="false" data-i18n="diryard">Yard &amp; garden</button>
     <button class="dir-chip" type="button" data-dirfilter="tutoring" aria-pressed="false" data-i18n="dirtutoring">Tutoring</button>
     <button class="dir-chip" type="button" data-dirfilter="moving" aria-pressed="false" data-i18n="dirmoving">Moving &amp; hauling</button>
+    <button class="dir-chip" type="button" data-dirfilter="fun" aria-pressed="false" data-i18n="dirfun">Bowling &amp; family fun</button>
+    <button class="dir-chip" type="button" data-dirfilter="beauty" aria-pressed="false" data-i18n="dirbeauty">Health &amp; beauty</button>
     <button class="dir-chip" type="button" data-dirfilter="other" aria-pressed="false" data-i18n="dirother">Other local services</button>
     <button class="dir-chip" type="button" data-dirfilter="freehelp" aria-pressed="false" data-i18n="dirfreehelp">Free help / community support</button>
   </div>
   <div class="dir-list" id="dir-list">
-    <article class="dir-item" data-dircat="other" data-lat="45.85067" data-lng="-122.83077">
+    <article class="dir-item" data-dircat="fun" data-lat="45.85067" data-lng="-122.83077">
       <!-- Photo: Oregon Trail Lanes' own website (oregontraillanes.com) — league night at the lanes, May 2023. Added v45. -->
       <img class="dir-photo" src="img/dir-oregon-trail-lanes.jpg" alt="League night inside Oregon Trail Lanes in St. Helens" loading="lazy" decoding="async">
+      <img class="founding-ribbon dir-ribbon" src="img/founding-ribbon.png?v=90" alt="Founding Sponsor" title="Founding Sponsor — Oregon Trail Lanes">
       <div class="dir-item-main">
         <h3>Oregon Trail Lanes</h3>
-        <p class="dir-meta">St. Helens &middot; <span data-i18n="dirother">Other local services</span></p>
+        <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfun">Bowling &amp; family fun</span></p>
         <p class="dir-desc" data-i18n="dirotldesc">Bowling, leagues and birthday parties on Columbia River Highway.</p>
         <button class="otl-more dir-otl-more" type="button" data-otl-open aria-haspopup="dialog" aria-controls="otl-sheet" aria-expanded="false">See hours &amp; what&rsquo;s on &rarr;</button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033971011">&#128222; (503) 397-1011</a>
         <span class="dir-addr">735 S Columbia River Hwy</span>
+      </div>
+    </article>
+    <article class="dir-item" data-dircat="beauty" data-lat="45.85957" data-lng="-122.81905">
+      <!-- Listed from the business's own Add Your Local Service form submission, Nov 14, 2026 (Jennifer Stalker RN). Basic directory listing. Phone, website and description corrected Nov 15, 2026 to match her form response (971-478-1852, biolumemedspas.com, her own description). Address corrected Nov 15, 2026: 2050 Columbia Blvd was unsupported by any source; verified address is 115 N 21st St, St Helens, OR 97051 (her own website + Places listing), map pin updated to the Places coordinates. -->
+      <div class="dir-item-main">
+        <h3>BioLume Med Spas</h3>
+        <p class="dir-meta">St. Helens &middot; <span data-i18n="dirbeauty">Health &amp; beauty</span></p>
+        <p class="dir-desc">BioLume Med Spas is a locally owned medical aesthetics practice specializing in Botox, dermal fillers, collagen stimulation, and advanced skin rejuvenation. We focus on natural looking results, personalized treatments, and helping our clients look and feel their best.</p>
+      </div>
+      <div class="dir-contact">
+        <a class="dir-call" href="tel:+19714781852">&#128222; (971) 478-1852</a>
+        <a class="dir-call" href="https://biolumemedspas.com" target="_blank" rel="noopener">&#127760; biolumemedspas.com</a>
+        <span class="dir-addr">115 N 21st St, St Helens, OR 97051</span>
       </div>
     </article>
     <article class="dir-item" data-dircat="freehelp" data-lat="45.86735" data-lng="-122.80309">
@@ -1146,7 +1180,8 @@ document.documentElement.setAttribute("data-theme",t);})();
     <span class="updated" data-i18n="freshspan">ages update every 30 sec</span>
   </div>
   <p class="card-note" data-i18n="freshnote">Every number here names its source and its age. Green is fresh, amber is aging, red means treat the panel as stale and check the official source. If a feed ever goes quiet, this board shows it instead of hiding it.</p>
-  <div id="freshness-body" class="panel-body"><p class="loading">Checking source ages…</p></div>
+  <div class="alert-more fresh-more"><div class="alert-more-in"><div id="freshness-body" class="panel-body"><p class="loading">Checking source ages…</p></div></div></div>
+  <button class="fresh-toggle" type="button" aria-expanded="false" aria-label="Show the source list"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label fresh-toggle-label">See more</span></button>
 </section>
 
 <section class="card band-card watch-card" id="watch-card" aria-label="The county watch — get told when a warning posts, the bridge closes, or the ferry puts out an alert">
@@ -1237,26 +1272,41 @@ document.documentElement.setAttribute("data-theme",t);})();
     <h2 data-i18n="abouth2">🌲 About Columbia County Live</h2>
   </div>
   <p class="card-note" data-i18n="aboutp1">Columbia County Live is one live look at Columbia County, Oregon — US-30 and the Lewis &amp; Clark Bridge, the Columbia and Nehalem rivers, weather alerts, the Oscar B ferry, and what&rsquo;s on around the county — assembled from official public sources and refreshed all day. It is built and run by <strong>Nomad Development Group</strong>, a small local studio, on free public data and free hosting, which is how a page like this can exist for a county of 54,000 at all.</p>
-  <p class="card-note" data-i18n="aboutp2"><strong>Why it&rsquo;s free — and what stays free.</strong> The core of this page is public-safety data: weather alerts, river levels, bridge and ferry status, road conditions. That core is free, carries no sponsor, and stays that way — it will never sit behind a paywall. That promise is the reason the page exists.</p>
+  <p class="card-note" data-i18n="aboutp2"><strong>Why it&rsquo;s free — and what stays free.</strong> The core of this page is public-safety data: weather alerts, river levels, bridge and ferry status, road conditions. That core is free, carries no sponsor, and stays that way — it will never sit behind a paywall. That promise is the reason the page exists. The Community Help section keeps that same promise: the county&rsquo;s free help — food pantries, crisis lines, help with rent and utility bills, support for families and veterans — gathered in one place, free to everyone who needs it.</p>
   <h3 class="subhead" data-i18n="aboutsupporth">Support this service — founding sponsors</h3>
-  <p class="card-note" data-i18n="aboutp3">Down the road, a small number of local businesses will be able to support the service as founding sponsors — a named spot on this page at small-town prices, once there is a real audience to show them. <strong>Nothing is for sale today.</strong> If your business or organization would want first word when founding sponsorship opens, tell us — the interest list we build now is who hears first.</p>
+  <p class="card-note" data-i18n="aboutp3">Founding sponsorship is open now. Only three founding spots will ever exist, and the local businesses that hold them are what fund this page — their support is what keeps the safety core above free for everyone. In return, each founding sponsor gets a named spot on this page, a permanent &ldquo;Founding Sponsor &middot; 2026&rdquo; badge, and a place on the Community Partners wall below. <strong>Oregon Trail Lanes</strong> of St. Helens is our first founding sponsor — thank you. Two founding spots remain, and founding closes January 31, 2027; after that, no new founding sponsors, ever.</p>
   <div class="about-actions">
-    <a class="share-btn primary" id="sponsor-interest-link" data-i18n="aboutbtn" href="mailto:travis@columbiacountylive.com?subject=Columbia%20County%20Live%20—%20founding%20sponsor%20interest">✉️ Email Nomad about founding sponsorship</a>
+    <a class="share-btn primary" id="sponsor-interest-link" data-i18n="aboutbtn" href="mailto:travis@columbiacountylive.com?subject=Columbia%20County%20Live%20—%20ask%20about%20sponsoring">✉️ Ask about sponsoring</a>
   </div>
-  <p class="card-note small" data-i18n="aboutnote">That button opens an email to travis@columbiacountylive.com. Include your business or organization name, a contact name, your town, and what you&rsquo;re interested in — founding sponsor, listing a business, or something else — and we&rsquo;ll write back. Interest only: no payment, no commitment, nothing to buy yet.</p>
+  <p class="card-note small" data-i18n="aboutnote">That button opens a short interest form — your business or organization name, a contact name, your town, and what you&rsquo;re interested in: a founding sponsor spot, listing a business, or something else. We&rsquo;ll write back. Asking costs nothing and commits you to nothing — founding sponsors start with a free 30-day pilot, so you can see your business on the page before you spend anything.</p>
 </section>
 
 <footer class="site-footer">
-  <section class="partners-wall" aria-label="Community partners">
+  <section class="partners-wall card" aria-label="Community partners">
     <h2>Community Partners — the local businesses that fund this site</h2>
-    <p class="partners-first"><strong>Oregon Trail Lanes</strong> <span class="dir-badge">Founding Sponsor · 2026</span> · St. Helens</p>
+    <p class="partners-first"><strong class="partners-name">Oregon Trail Lanes</strong> <img class="founding-ribbon wall-ribbon" src="img/founding-ribbon.png?v=90" alt="Founding Sponsor" title="Founding Sponsor"></p>
+    <p class="partners-meta"><span class="dir-badge">Founding Sponsor · 2026</span><span class="partners-town">· St. Helens</span></p>
     <p class="partners-empty"><a href="sponsor.html">Your logo here — become a partner &rarr;</a></p>
   </section>
-  <p data-i18n="footerbyline"><strong>Columbia County Live</strong> — by <strong>Nomad Development Group</strong></p>
+  <p class="footer-byline" data-i18n="footerbyline"><strong>Columbia County Live</strong> — by <strong>Nomad Development Group</strong></p>
   <p class="cascade-footer"><a class="cascade-footer-link" href="https://travweber67.github.io/cascade-controls-jobs/"><span data-i18n="cascFooter">Also from Nomad: Cascade Controls Jobs — hiring controls techs, or looking for that work? &rarr;</span></a></p>
+  <div class="alert-card credits-card" id="credits-card">
+    <button class="alert-head" type="button" aria-expanded="false">
+      <span class="alert-main">
+        <span class="alert-title" data-i18n="footercredits">Data sources &amp; photo credits</span>
+        <span class="alert-meta" data-i18n="footercreditsmeta">The public feeds behind this page, and the photographers behind its pictures</span>
+      </span>
+      <span class="alert-toggle">
+        <svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg>
+        <span class="alert-toggle-label">See more</span>
+      </span>
+    </button>
+    <div class="alert-more"><div class="alert-more-in"><div class="alert-body">
   <p class="small" data-i18n="footerdata">Data: National Weather Service · U.S. Geological Survey · NOAA Tides &amp; Currents (river tides) · NOAA nowCOAST (radar) · NIFC WFIGS (wildfires) · adsb.fi contributors (aircraft, ODbL) · wheretheiss.at (ISS position) · CelesTrak / NORAD (ISS orbit, for pass predictions) · Open-Meteo / Copernicus CAMS (air-quality model) · Fish Passage Center &amp; Columbia Basin Research DART (dam fish counts — U.S. Army Corps of Engineers data) · OpenStreetMap contributors. Snapshot data (roads, cameras, bridge, ferry alerts, events, river traffic) is collected from the official operators — ODOT TripCheck, WSDOT, Wahkiakum County, and the city/county calendars — by a small fetcher program and labeled with the time it was collected. Live-tracking layer model inspired by God's Eye View (open source, by Bilawal Sidhu), whose DATA_SOURCES.md pointed us to several of these public feeds.</p>
-  <p class="small" data-i18n="footerdisc">This page assembles public data for convenience. Before traveling in severe weather or high water, confirm conditions with the official sources linked above.</p>
   <p class="small">Photo credits (via Wikimedia Commons): “<a href="https://commons.wikimedia.org/wiki/File:Lewis_and_Clark_Bridge,_Rainier,_Mt._St._Helens_-_DPLA_-_9f9bd04615f045db5e1e0877c00ebaee.jpg" target="_blank" rel="noopener">Lewis and Clark Bridge, Rainier, Mt. St. Helens</a>” by Gary Halvorson, Oregon State Archives, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Lewis%26ClarkBridgeSP.jpg" target="_blank" rel="noopener">Lewis &amp; Clark Bridge panorama</a>” by Cacophony, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Car_carrier_vessel_passing_underneath_the_Lewis_and_Clark_Bridge.jpg" target="_blank" rel="noopener">Car carrier vessel passing underneath the Lewis and Clark Bridge</a>” by Quintin Soloviev, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:MV_Oscar_B_on_the_Wahkiakum_County_Ferry,_leaving_Puget_Island.jpg" target="_blank" rel="noopener">MV Oscar B on the Wahkiakum County Ferry, leaving Puget Island</a>” by SounderBruce, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Columbia_County_Courthouse,_St._Helens_-_DPLA_-_19e1a4c866aefeec828b9f4739ac770c.jpg" target="_blank" rel="noopener">Columbia County Courthouse, St. Helens</a>” by Gary Halvorson, Oregon State Archives, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Rainier,_Oregon_dock.jpg" target="_blank" rel="noopener">Rainier, Oregon dock</a>” by Kingofthedead, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Photos were resized and compressed for the web; no other changes. Dusk photographs (dark mode and design surfaces, via Wikimedia Commons): “<a href="https://commons.wikimedia.org/wiki/File:Astoria-Megler_Bridge_8_25_2024_837PM.jpg" target="_blank" rel="noopener">Astoria–Megler Bridge at twilight</a>” and “<a href="https://commons.wikimedia.org/wiki/File:Astoria-Megler_Bridge_8_25_2024_855PM.jpg" target="_blank" rel="noopener">at blue hour</a>” by WhyIsThisSoHard575483838, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Astoria-Megler_Bridge_at_sunset_Fletchall_(38349033364).jpg" target="_blank" rel="noopener">Astoria–Megler Bridge at sunset</a>” and “<a href="https://commons.wikimedia.org/wiki/File:Astoria-Megler_Bridge_from_Cannery_Pier_Bill_Cohen_(28914193965).jpg" target="_blank" rel="noopener">from Cannery Pier</a>” by Oregon Dept. of Transportation, <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Sunset_on_the_Columbia_River_(9347706996).jpg" target="_blank" rel="noopener">Sunset on the Columbia River</a>” by Rennett Stowe, CC BY 2.0 · “<a href="https://commons.wikimedia.org/wiki/File:Panoramic_view_to_mouth_of_Columbia_from_Astoria_Column_at_sunset_01.jpg" target="_blank" rel="noopener">Mouth of the Columbia at sunset</a>” and “<a href="https://commons.wikimedia.org/wiki/File:View_from_Astoria_Column_toward_Lewis_and_Clark_River_at_sunset_01.jpg" target="_blank" rel="noopener">Lewis and Clark River at sunset</a>” by Joe Mabel, <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener">CC BY 3.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:SUNSET_AT_THE_MOUTH_OF_THE_COLUMBIA_RIVER,_BETWEEN_ASTORIA_OREGON_AND_THE_STATE_OF_WASHINGTON_-_NARA_-_545019.jpg" target="_blank" rel="noopener">Sunset at the mouth of the Columbia River (1973)</a>” by Gene Daniels / NARA, public domain · “<a href="https://commons.wikimedia.org/wiki/File:Mallard_sunset_on_the_Columbia_River_(53213553235).jpg" target="_blank" rel="noopener">Mallard sunset on the Columbia River</a>” by USFWS Pacific, public domain · “<a href="https://commons.wikimedia.org/wiki/File:Sunset_over_bridge,_Astoria,_Oregon.jpg" target="_blank" rel="noopener">Sunset over the bridge, Astoria</a>” by La jefa, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Mount_St._Helens_from_Johnston_Ridge_at_sunset.jpg" target="_blank" rel="noopener">Mount St. Helens at sunset</a>” and “<a href="https://commons.wikimedia.org/wiki/File:Sunset_glow_3992.jpg" target="_blank" rel="noopener">Sunset glow on the Columbia</a>” by Marshalllee84 / Chris Light, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a> · “<a href="https://commons.wikimedia.org/wiki/File:Mt_Hood_National_Forest,_Trillium_Lake-2_(36379628033).jpg" target="_blank" rel="noopener">Mt. Hood from Trillium Lake</a>” by U.S. Forest Service — Pacific Northwest Region, public domain. Dusk views are of the lower Columbia River generally; they are not captioned as specific Columbia County viewpoints.</p>
+    </div></div></div>
+  </div>
+  <p class="small footer-disc" data-i18n="footerdisc">This page assembles public data for convenience. Before traveling in severe weather or high water, confirm conditions with the official sources linked above.</p>
 </footer>
 
 </section>
@@ -1356,9 +1406,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.86735" data-lng="-122.80309">
       <!-- First free-help listing (Travis confirmed the church 2026-11-09). Schedule verified the same day from Community Meals of Columbia County's own Facebook posts (Nov 2 + Nov 9, 2026): free dinner every Tuesday, doors 5 PM, served 5:30 PM, "no paperwork, no questions". Phone is the church office number from firstlutheransh.org. Added v50. -->
       <div class="dir-item-main">
-        <h3>Community Meals — First Lutheran Church</h3>
+        <h3><a class="dir-web" href="https://firstlutheransh.org" target="_blank" rel="noopener">Community Meals — First Lutheran Church</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirflcdesc">Free community dinner every Tuesday at First Lutheran Church — doors open at 5, dinner served at 5:30. Everyone is welcome: just show up, no paperwork, no questions. Run by Community Meals of Columbia County.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirflcdesc">Free community dinner every Tuesday at First Lutheran Church — doors open at 5, dinner served at 5:30. Everyone is welcome: just show up, no paperwork, no questions. Run by Community Meals of Columbia County.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033970090">&#128222; (503) 397-0090</a>
@@ -1368,9 +1418,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.86009" data-lng="-122.81208">
       <!-- Free help build-out v63 (2026-11-12): Barbara Bullis Memorial HELP Food Pantry, listed on Columbia Pacific Food Bank's own pantry page (cpfoodbank.org/food-pantries/st-helens-area-food-pantry) with address, phone and hours as shown. -->
       <div class="dir-item-main">
-        <h3>Barbara Bullis Memorial HELP Food Pantry</h3>
+        <h3><a class="dir-web" href="https://cpfoodbank.org/food-pantries/st-helens-area-food-pantry" target="_blank" rel="noopener">Barbara Bullis Memorial HELP Food Pantry</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh1desc">Free food pantry for people in the greater St. Helens area who need food assistance. Open Monday through Thursday, 9 AM to 1 PM, and the first Wednesday evening of the month, 5 to 7 PM.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh1desc">Free food pantry for people in the greater St. Helens area who need food assistance. Open Monday through Thursday, 9 AM to 1 PM, and the first Wednesday evening of the month, 5 to 7 PM.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033979708">&#128222; (503) 397-9708</a>
@@ -1380,7 +1430,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.74344" data-lng="-122.88095">
       <!-- Free help build-out v63 (2026-11-12): St. Vincent DePaul Food Pantry, from Columbia Pacific Food Bank's Scappoose pantry page (cpfoodbank.org/food-pantries/scappoose-area-food-pantry). -->
       <div class="dir-item-main">
-        <h3>St. Vincent DePaul Food Pantry</h3>
+        <h3><a class="dir-web" href="https://cpfoodbank.org/food-pantries/scappoose-area-food-pantry" target="_blank" rel="noopener">St. Vincent DePaul Food Pantry</a></h3>
         <p class="dir-meta">Scappoose &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
         <p class="dir-desc" data-i18n="dirfh2desc">Free food pantry for the Scappoose area. Open Tuesdays and Thursdays, 1 to 3 PM.</p>
       </div>
@@ -1394,7 +1444,7 @@ document.documentElement.setAttribute("data-theme",t);})();
       <!-- Photo: Scappoose Foursquare Church's own website (visitsfc.org) — inside the church during a service. Added in the Community Help preview, 2026-11-12. -->
       <img class="dir-photo" src="img/dir-scappoose-foursquare.jpg" alt="Inside Scappoose Foursquare Church in Scappoose" loading="lazy" decoding="async">
       <div class="dir-item-main">
-        <h3>Scappoose Foursquare Church Pantry</h3>
+        <h3><a class="dir-web" href="https://visitsfc.org" target="_blank" rel="noopener">Scappoose Foursquare Church Pantry</a></h3>
         <p class="dir-meta">Scappoose &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
         <p class="dir-desc" data-i18n="dirfh3desc">Free food pantry at Scappoose Foursquare Church. Open Wednesdays at 12 PM.</p>
       </div>
@@ -1406,7 +1456,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="46.08886" data-lng="-122.9316">
       <!-- Free help build-out v63 (2026-11-12): HOPE of Rainier emergency food, from the org's own site (hopeofrainier.com): address, phone and hours as published. -->
       <div class="dir-item-main">
-        <h3>HOPE of Rainier</h3>
+        <h3><a class="dir-web" href="https://hopeofrainier.com" target="_blank" rel="noopener">HOPE of Rainier</a></h3>
         <p class="dir-meta">Rainier &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
         <p class="dir-desc" data-i18n="dirfh4desc">Emergency food assistance for the Rainier community. Open Mondays and Wednesdays, 10 AM to 4 PM, and the last Saturday of the month, 10 AM to 12 PM.</p>
       </div>
@@ -1418,9 +1468,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="46.10353" data-lng="-123.20184">
       <!-- Free help build-out v63 (2026-11-12): Turning Point Community Service Center, Clatskanie — emergency food boxes as listed in Columbia Pacific Food Bank's official Get Fed guide: address, phone, hours and the 97016 service area as published. -->
       <div class="dir-item-main">
-        <h3>Turning Point Community Service Center</h3>
+        <h3><a class="dir-web" href="https://www.turningpointclatskanie.org" target="_blank" rel="noopener">Turning Point Community Service Center</a></h3>
         <p class="dir-meta">Clatskanie &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh5desc">Free emergency food boxes with three to five days of fresh and shelf-stable food for residents of the 97016 zip code. Open Monday, Tuesday and Thursday, 11 AM to 2:30 PM.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh5desc">Free emergency food boxes with three to five days of fresh and shelf-stable food for residents of the 97016 zip code. Open Monday, Tuesday and Thursday, 11 AM to 2:30 PM.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15037283126">&#128222; (503) 728-3126</a>
@@ -1430,7 +1480,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.85654" data-lng="-123.19669">
       <!-- Free help build-out v63 (2026-11-12): Vernonia Cares Food Pantry, as listed in Columbia Pacific Food Bank's official Get Fed guide (address/phone/hours agree with the 211info listing). -->
       <div class="dir-item-main">
-        <h3>Vernonia Cares Food Pantry</h3>
+        <h3><a class="dir-web" href="http://vernoniacares.org" target="_blank" rel="noopener">Vernonia Cares Food Pantry</a></h3>
         <p class="dir-meta">Vernonia &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
         <p class="dir-desc" data-i18n="dirfh6desc">Free food pantry for the Vernonia area. Open Tuesdays and Thursdays, 10 AM to 2 PM.</p>
       </div>
@@ -1464,7 +1514,7 @@ document.documentElement.setAttribute("data-theme",t);})();
       <div class="dir-item-main">
         <h3>SAFE of Columbia County</h3>
         <p class="dir-meta">Columbia County &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh8desc">Free, confidential help for survivors of domestic violence, sexual assault and stalking, including emergency shelter. The crisis line answers 24 hours a day. Office: (503) 397-7110.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh8desc">Free, confidential help for survivors of domestic violence, sexual assault and stalking, including emergency shelter. The crisis line answers 24 hours a day. Office: (503) 397-7110.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033976161">&#128222; (503) 397-6161</a>
@@ -1473,9 +1523,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp">
       <!-- Free help build-out v63 (2026-11-12): Columbia Community Mental Health crisis services — "grant funded and provided at no cost", 24h phone/walk-in/mobile, from CCMH's own crisis page (ccmh1.com/crisis-intervention). Phone-first entry: no street address published on that page, so none shown. -->
       <div class="dir-item-main">
-        <h3>Columbia Community Mental Health</h3>
+        <h3><a class="dir-web" href="https://ccmh1.com" target="_blank" rel="noopener">Columbia Community Mental Health</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh9desc">Free mental health crisis help, 24 hours a day, by phone, walk-in and mobile response. Crisis services are grant funded and cost nothing. Main office: (503) 397-5211.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh9desc">Free mental health crisis help, 24 hours a day, by phone, walk-in and mobile response. Crisis services are grant funded and cost nothing. Main office: (503) 397-5211.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15037824499">&#128222; (503) 782-4499</a>
@@ -1492,9 +1542,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.85978" data-lng="-122.81542">
       <!-- Free help build-out v63 (2026-11-12): Community Action Team housing programs, from CAT's own housing page (cat-team.org/cat/housing): eviction prevention, deposit/rental assistance, homeless services; office hours as published. -->
       <div class="dir-item-main">
-        <h3>Community Action Team — Housing Help</h3>
+        <h3><a class="dir-web" href="https://cat-team.org" target="_blank" rel="noopener">Community Action Team — Housing Help</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh10desc">Help with eviction prevention, rental assistance, deposits and homeless services. Programs are limited and depend on funding. Open Monday to Friday, 8:30 AM to 5 PM (closed 12:30 to 1:30 for lunch).</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh10desc">Help with eviction prevention, rental assistance, deposits and homeless services. Programs are limited and depend on funding. Open Monday to Friday, 8:30 AM to 5 PM (closed 12:30 to 1:30 for lunch).</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033973511">&#128222; (503) 397-3511</a>
@@ -1504,9 +1554,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.85978" data-lng="-122.81542">
       <!-- Free help build-out v63 (2026-11-12): Community Action Team crisis utility assistance (LIHEAP), from CAT's own published 25-26 Crisis LIHEAP form: past-due electric / NW Natural accounts after a medical or unexpected event in the last 90 days; ext. 2023 as published on the form. -->
       <div class="dir-item-main">
-        <h3>Community Action Team — Utility Assistance</h3>
+        <h3><a class="dir-web" href="https://cat-team.org" target="_blank" rel="noopener">Community Action Team — Utility Assistance</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh11desc">Help paying past-due electric and NW Natural gas bills when a shut-off is looming after a medical problem or unexpected event in the last 90 days. Ask for the crisis utility assistance form.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh11desc">Help paying past-due electric and NW Natural gas bills when a shut-off is looming after a medical problem or unexpected event in the last 90 days. Ask for the crisis utility assistance form.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033973511">&#128222; (503) 397-3511 ext. 2023</a>
@@ -1516,13 +1566,30 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.85978" data-lng="-122.81542">
       <!-- Free help build-out v63 (2026-11-12): Community Action Team diaper distribution, from CAT's own published newsletter: up to 200 diapers per child per month while supplies last. -->
       <div class="dir-item-main">
-        <h3>Community Action Team — Free Diapers</h3>
+        <h3><a class="dir-web" href="https://cat-team.org" target="_blank" rel="noopener">Community Action Team — Free Diapers</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
         <p class="dir-desc" data-i18n="dirfh12desc">Free diapers for families in need, up to 200 diapers per child each month while supplies last.</p>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033973511">&#128222; (503) 397-3511</a>
         <span class="dir-addr">125 N 17th St</span>
+      </div>
+    </article>
+    <article class="dir-item" data-dircat="freehelp">
+      <!-- EBT app card (2026-11-14): ebtEDGE is the official Oregon EBT app (FIS); Oregon DHS points cardholders to it and to cardholder.ebtedge.com only. Store links go to the current "ebtEDGE NEW!" listings; the balance line 1-888-997-4447 is the number printed for Oregon EBT cardholders. We never host the app file. -->
+      <div class="dir-item-main">
+        <h3 data-i18n="ebth3">Oregon EBT Card — the ebtEDGE App</h3>
+        <p class="dir-meta">Oregon &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
+        <p class="dir-desc" data-i18n="ebtdesc">The official app for Oregon Trail EBT cards: check your food and cash balances, see deposits and change your PIN. Oregon DHS points to ebtEDGE only — other EBT apps are not official, so don&rsquo;t trust them with your card.</p>
+        <div class="ebt-btns">
+          <a class="share-btn" href="https://play.google.com/store/apps/details?id=com.fis.ebt.nch" target="_blank" rel="noopener" data-i18n="ebtplay">Get it on Google Play</a>
+          <a class="share-btn" href="https://apps.apple.com/us/app/ebtedge-new/id6751549725" target="_blank" rel="noopener" data-i18n="ebtapple">Download on the App Store</a>
+          <a class="share-btn" href="https://cardholder.ebtedge.com" target="_blank" rel="noopener" data-i18n="ebtweb">ebtEDGE website</a>
+        </div>
+      </div>
+      <div class="dir-contact">
+        <a class="dir-call" href="tel:+18889974447">&#128222; 1-888-997-4447</a>
+        <span class="dir-addr" data-i18n="ebtphone">Balance by phone, no smartphone needed</span>
       </div>
     </article>
   </div>
@@ -1536,9 +1603,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.85985" data-lng="-122.8135">
       <!-- Free help build-out v63 (2026-11-12): WIC through Columbia Health Services, from the org's own WIC page (columbia-health.org/wic): address and phone as published. -->
       <div class="dir-item-main">
-        <h3>WIC — Women, Infants and Children</h3>
+        <h3><a class="dir-web" href="https://columbia-health.org" target="_blank" rel="noopener">WIC — Women, Infants and Children</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh13desc">Free healthy food, nutrition education and breastfeeding support for pregnant and postpartum women, infants and children under 5 who qualify. Run by Columbia Health Services.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh13desc">Free healthy food, nutrition education and breastfeeding support for pregnant and postpartum women, infants and children under 5 who qualify. Run by Columbia Health Services.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+18002444870">&#128222; 1-800-244-4870</a>
@@ -1550,9 +1617,9 @@ document.documentElement.setAttribute("data-theme",t);})();
       <!-- Photo: Community Action Team's own website (cat-team.org) — Head Start staff group photo (photo: Zaliah Zalkind). Added in the Community Help preview, 2026-11-12. -->
       <img class="dir-photo" src="img/dir-head-start.jpg" alt="Community Action Team Head Start staff" loading="lazy" decoding="async">
       <div class="dir-item-main">
-        <h3>Head Start — Community Action Team</h3>
+        <h3><a class="dir-web" href="https://www.nworheadstart.org" target="_blank" rel="noopener">Head Start — Community Action Team</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh14desc">Free early learning and development for children from birth to age 5 in low-income families. The St. Helens center serves St. Helens, Scappoose, Warren, Columbia City and Deer Island.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh14desc">Free early learning and development for children from birth to age 5 in low-income families. The St. Helens center serves St. Helens, Scappoose, Warren, Columbia City and Deer Island.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15035563736">&#128222; (503) 556-3736</a>
@@ -1561,9 +1628,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.861382" data-lng="-122.807389">
       <!-- Free help build-out v63 (2026-11-12): Sacagawea Health Center (Columbia Health Services), from the CDC NPIN government listing: address, phone, Mon-Fri hours and "Sliding Scale" payment wording exactly as listed — described as low-cost, never free. Pin coordinates are the listing's own map marker. -->
       <div class="dir-item-main">
-        <h3>Sacagawea Health Center</h3>
+        <h3><a class="dir-web" href="https://columbia-health.org" target="_blank" rel="noopener">Sacagawea Health Center</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh15desc">Low-cost health care on a sliding scale based on income, from Columbia Health Services. Open Monday to Friday, 8 AM to 4:30 PM (closed 12:30 to 1:30 for lunch). Call for an appointment.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh15desc">Low-cost health care on a sliding scale based on income, from Columbia Health Services. Open Monday to Friday, 8 AM to 4:30 PM (closed 12:30 to 1:30 for lunch). Call for an appointment.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+18002444870">&#128222; 1-800-244-4870</a>
@@ -1581,9 +1648,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.85978" data-lng="-122.81542">
       <!-- Free help build-out v63 (2026-11-12): Columbia County Veterans Service Office, from Community Action Team's own VSO page (cat-team.org/cat/vso): address, phone and office hours as published. -->
       <div class="dir-item-main">
-        <h3>Columbia County Veterans Service Office</h3>
+        <h3><a class="dir-web" href="https://cat-team.org" target="_blank" rel="noopener">Columbia County Veterans Service Office</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh16desc">Free help for veterans with VA claims, benefits questions and referrals. Open Monday to Friday, 8:30 AM to 5 PM (closed 12:30 to 1:30 for lunch). Based at Community Action Team.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh16desc">Free help for veterans with VA claims, benefits questions and referrals. Open Monday to Friday, 8:30 AM to 5 PM (closed 12:30 to 1:30 for lunch). Based at Community Action Team.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033666580">&#128222; (503) 366-6580</a>
@@ -1593,9 +1660,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp">
       <!-- Free help build-out v63 (2026-11-12): Oregon Law Center, St. Helens satellite office — free legal help, phone from Oregon Law Help's official referral listing (oregonlawhelp.org). No street address is published for the satellite office, so none is shown. -->
       <div class="dir-item-main">
-        <h3>Oregon Law Center — Free Legal Help</h3>
+        <h3><a class="dir-web" href="https://oregonlawcenter.org" target="_blank" rel="noopener">Oregon Law Center — Free Legal Help</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh17desc">Free legal help for people struggling to make ends meet: housing, jobs, medical care and safety from domestic violence. The St. Helens satellite office serves all of Columbia County.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh17desc">Free legal help for people struggling to make ends meet: housing, jobs, medical care and safety from domestic violence. The St. Helens satellite office serves all of Columbia County.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033971628">&#128222; (503) 397-1628</a>
@@ -1604,7 +1671,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp">
       <!-- Free help build-out v63 (2026-11-12): Alcoholics Anonymous District 18 (Columbia County) — "no dues or fees for A.A. membership" and the district hotline from Oregon Area 58's official hotline page (aa-oregon.org/hotlines). Phone-first entry: meetings move, the hotline is the access point. -->
       <div class="dir-item-main">
-        <h3>Alcoholics Anonymous — District 18</h3>
+        <h3><a class="dir-web" href="https://aa-oregon.org" target="_blank" rel="noopener">Alcoholics Anonymous — District 18</a></h3>
         <p class="dir-meta">Columbia County &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
         <p class="dir-desc" data-i18n="dirfh18desc">Free recovery support with meetings across Columbia County. There are no dues or fees for AA membership. Call the hotline for meeting times and places.</p>
       </div>
@@ -1615,9 +1682,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="freehelp" data-lat="45.85308" data-lng="-122.81724">
       <!-- Free help build-out v63 (2026-11-12): St. Helens Public Library, from the City of St. Helens' own library page (sthelensoregon.gov/library): address, phone and hours as published. -->
       <div class="dir-item-main">
-        <h3>St. Helens Public Library</h3>
+        <h3><a class="dir-web" href="https://www.sthelensoregon.gov/library" target="_blank" rel="noopener">St. Helens Public Library</a></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfreehelp">Free help / community support</span></p>
-        <p class="dir-desc" data-i18n="dirfh19desc">Free public library: borrow books and movies, use Libby for e-books, and join free programs for kids and adults. Open Monday to Wednesday 10 AM to 7 PM, Thursday 2 to 7 PM, Friday 10 AM to 5 PM, Saturday 10 AM to 2 PM.</p>
+        <div class="dir-more"><div class="dir-more-in"><p class="dir-desc" data-i18n="dirfh19desc">Free public library: borrow books and movies, use Libby for e-books, and join free programs for kids and adults. Open Monday to Wednesday 10 AM to 7 PM, Thursday 2 to 7 PM, Friday 10 AM to 5 PM, Saturday 10 AM to 2 PM.</p></div></div><button class="dir-toggle" type="button" aria-expanded="false"><span class="alert-toggle"><svg class="alert-chev" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5 12 11l7-6.5"/><path d="M5 12.5 12 19l7-6.5"/></svg><span class="alert-toggle-label dir-toggle-label">See more</span></span></button>
       </div>
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033974544">&#128222; (503) 397-4544</a>
@@ -1653,7 +1720,7 @@ document.documentElement.setAttribute("data-theme",t);})();
       <a class="drawer-link" href="#ferry-card" data-i18n="dwferry">Oscar B ferry</a>
       <a class="drawer-link" href="#ships-card" data-i18n="dwships">River traffic</a>
       <a class="drawer-link" href="#aircraft-card" data-i18n="dwaircraft">Aircraft overhead</a>
-      <a class="drawer-link" href="#bend-card" data-i18n="dwbend">The Bend run</a>
+      <a class="drawer-link" href="#mthood-card" data-i18n="dwmthood">Mt. Hood cameras</a>
     </div>
     <div class="drawer-group">
       <button class="drawer-view" type="button" data-drawer-view="help"><span aria-hidden="true">🤝</span><span data-i18n="helpview">Community Help</span></button>
@@ -1913,7 +1980,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=77"></script>
+<script src="app.js?v=90"></script>
 
 <script>
 /* Sponsor demo page: this prospect's full-card sheet, wired exactly like
