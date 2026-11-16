@@ -1,82 +1,71 @@
 {
- "fetched_at": "2026-11-16T11:54:50Z",
+ "fetched_at": "2026-11-16T11:59:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 45.64729,
-   "lon": -122.74122,
+   "mmsi": 636026324,
+   "name": "STAR BELLA",
+   "lat": 46.0272,
+   "lon": -122.8696,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-16 12:00:01.23578423 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.64334,
+   "lon": -122.74424,
+   "sog_kn": 0.1,
+   "cog": 197.8,
+   "heading": 292,
+   "nav_status": 0,
+   "updated": "2026-11-16 12:00:06.694932085 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37715,
    "sog_kn": 0,
-   "cog": 127.7,
+   "cog": 0,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-16 11:54:53.267537992 +0000 UTC"
+   "updated": "2026-11-16 12:00:07.910771142 +0000 UTC"
   },
   {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 46.08971,
-   "lon": -122.92896,
-   "sog_kn": 0,
-   "cog": 271.5,
-   "heading": 106,
-   "nav_status": 0,
-   "updated": "2026-11-16 11:54:55.569144353 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.7785,
-   "lon": -122.77008,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-16 11:55:04.799837802 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 45.73046,
-   "lon": -122.76211,
-   "sog_kn": 7.6,
-   "cog": 187.2,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 11:55:07.602067742 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.6436,
-   "lon": -122.75296,
-   "sog_kn": 0,
-   "cog": 279.8,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 11:55:09.401489354 +0000 UTC"
-  },
-  {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60756,
-   "lon": -122.67761,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 11:55:16.310140714 +0000 UTC"
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.11249,
+   "lon": -122.9767,
+   "sog_kn": 6.1,
+   "cog": 134.6,
+   "heading": 132,
+   "nav_status": 3,
+   "updated": "2026-11-16 12:00:13.697360728 +0000 UTC"
   },
   {
    "mmsi": 367608420,
    "name": "PETER J BRIX",
-   "lat": 45.58762,
-   "lon": -122.77042,
+   "lat": 45.58764,
+   "lon": -122.77043,
    "sog_kn": 0,
    "cog": 288.3,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-16 11:55:19.635463463 +0000 UTC"
+   "updated": "2026-11-16 12:00:19.666506572 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10793,
+   "lon": -122.95902,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-16 12:00:20.777494209 +0000 UTC"
   }
  ]
 }
