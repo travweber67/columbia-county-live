@@ -1,45 +1,53 @@
 {
- "fetched_at": "2026-11-16T01:18:59Z",
+ "fetched_at": "2026-11-16T01:19:48Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00883,
-   "lon": -122.8489,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20003,
+   "lon": -123.3854,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-16 01:20:45.156663068 +0000 UTC",
+   "type_code": 99,
+   "destination": "NAKNEK"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58079,
+   "lon": -122.76009,
+   "sog_kn": 0,
+   "cog": 142,
+   "heading": 122,
+   "nav_status": 5,
+   "updated": "2026-11-16 01:20:46.47130907 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.6296,
+   "lon": -122.69431,
+   "sog_kn": 0.1,
+   "cog": 107.3,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-16 01:19:06.601036902 +0000 UTC"
+   "updated": "2026-11-16 01:20:54.542671153 +0000 UTC"
   },
   {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 45.63027,
-   "lon": -122.69564,
-   "type_code": 70,
-   "destination": "USVAN",
-   "updated": "2026-11-16 01:19:13.508031125 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08198,
-   "lon": -122.90549,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-16 01:19:20.16885187 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64347,
-   "lon": -122.75295,
-   "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-16 01:19:21.188444539 +0000 UTC"
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19952,
+   "lon": -123.385,
+   "sog_kn": 0,
+   "cog": 219,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-16 01:20:55.892276787 +0000 UTC"
   }
  ]
 }
