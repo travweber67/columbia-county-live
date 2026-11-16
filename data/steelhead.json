@@ -1,55 +1,55 @@
 {
- "fetched_at": "2026-11-16T19:20:00Z",
- "status": "partial",
- "note": "MRMS pull failed ([Errno 122] Disk quota exceeded) \u2014 showing the last good grids",
+ "fetched_at": "2026-11-16T19:50:00Z",
+ "status": "ok",
+ "note": "MRMS basin rainfall current",
  "source": "NOAA MRMS radar-gauge rainfall (QPE), archived grids served by Iowa State University's IEM, averaged over each creek's basin",
- "valid_time": "2026-11-16T17:00:00Z",
+ "valid_time": "2026-11-16T18:00:00Z",
  "basins": {
   "wilson": {
-   "p24_in": 0.2,
-   "p72_in": 1.54,
+   "p24_in": 0.19,
+   "p72_in": 1.48,
    "days_since_flush": 3,
    "first_flush": false
   },
   "nehalem": {
-   "p24_in": 0.2,
-   "p72_in": 1.37,
+   "p24_in": 0.19,
+   "p72_in": 1.27,
    "days_since_flush": null,
    "first_flush": false
   },
   "nf_nehalem": {
    "p24_in": 0.1,
-   "p72_in": 1.08,
+   "p72_in": 1.0,
    "days_since_flush": 3,
    "first_flush": false
   },
   "big_creek": {
    "p24_in": 0.06,
-   "p72_in": 0.87,
+   "p72_in": 0.8,
    "days_since_flush": null,
    "first_flush": false
   },
   "gnat_creek": {
    "p24_in": 0.08,
-   "p72_in": 0.98,
+   "p72_in": 0.88,
    "days_since_flush": null,
    "first_flush": false
   },
   "klaskanine": {
    "p24_in": 0.09,
-   "p72_in": 0.92,
+   "p72_in": 0.89,
    "days_since_flush": null,
    "first_flush": false
   },
   "clatskanie": {
    "p24_in": 0.14,
-   "p72_in": 1.0,
+   "p72_in": 0.92,
    "days_since_flush": null,
    "first_flush": false
   },
   "scappoose": {
-   "p24_in": 0.29,
-   "p72_in": 1.14,
+   "p24_in": 0.25,
+   "p72_in": 1.06,
    "days_since_flush": null,
    "first_flush": false
   }
