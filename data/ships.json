@@ -1,40 +1,51 @@
 {
- "fetched_at": "2026-11-16T06:44:27Z",
+ "fetched_at": "2026-11-16T06:49:27Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08195,
-   "lon": -122.90492,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40234,
    "sog_kn": 0,
-   "cog": 179.9,
-   "heading": 126,
+   "cog": 360,
+   "heading": 130,
+   "nav_status": 0,
+   "updated": "2026-11-16 06:49:33.481477055 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08179,
+   "lon": -122.90518,
+   "sog_kn": 0,
+   "cog": 6.2,
+   "heading": 130,
+   "nav_status": 0,
+   "updated": "2026-11-16 06:49:42.685615938 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 45.6433,
+   "lon": -122.75281,
+   "sog_kn": 0,
+   "cog": 262.8,
+   "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-16 06:44:40.522937964 +0000 UTC"
+   "updated": "2026-11-16 06:49:48.825976639 +0000 UTC"
   },
   {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64411,
-   "lon": -122.75015,
-   "sog_kn": 8.5,
-   "cog": 266.3,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 06:44:41.113275186 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.0819,
-   "lon": -122.90531,
+   "mmsi": 373989000,
+   "name": "AFRICAN CARDINAL",
+   "lat": 45.63926,
+   "lon": -122.7778,
    "sog_kn": 0,
-   "cog": 60.6,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-16 06:44:44.782014267 +0000 UTC"
+   "cog": 197.6,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-16 06:49:58.09076313 +0000 UTC"
   }
  ]
 }
