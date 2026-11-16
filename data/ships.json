@@ -1,51 +1,133 @@
 {
- "fetched_at": "2026-11-16T09:54:42Z",
+ "fetched_at": "2026-11-16T09:59:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 45.95746,
-   "lon": -122.81401,
-   "sog_kn": 7,
-   "cog": 151.6,
-   "heading": 511,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.64334,
+   "lon": -122.74424,
+   "sog_kn": 0.1,
+   "cog": 184.5,
+   "heading": 292,
    "nav_status": 0,
-   "updated": "2026-11-16 09:54:47.509274934 +0000 UTC"
+   "updated": "2026-11-16 09:59:45.532306837 +0000 UTC"
   },
   {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.65679,
-   "lon": -122.76053,
-   "sog_kn": 6.5,
-   "cog": 221.5,
-   "heading": 211,
-   "nav_status": 5,
-   "updated": "2026-11-16 09:54:53.772132958 +0000 UTC"
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19952,
+   "lon": -123.38498,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-16 09:59:50.223177836 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.19066,
+   "lon": -123.16328,
+   "sog_kn": 1.1,
+   "cog": 127.2,
+   "heading": 73,
+   "nav_status": 3,
+   "updated": "2026-11-16 09:59:53.297022919 +0000 UTC"
   },
   {
    "mmsi": 367702780,
    "name": "SARAH",
-   "lat": 46.01857,
-   "lon": -122.86272,
-   "sog_kn": 10.2,
-   "cog": 327,
-   "heading": 328,
+   "lat": 46.0297,
+   "lon": -122.87578,
+   "sog_kn": 10.6,
+   "cog": 326.8,
+   "heading": 329,
    "nav_status": 0,
-   "updated": "2026-11-16 09:54:54.370090517 +0000 UTC"
+   "updated": "2026-11-16 09:59:54.422110914 +0000 UTC"
+  },
+  {
+   "mmsi": 538006098,
+   "name": "ANTARES",
+   "lat": 45.98397,
+   "lon": -122.83516,
+   "type_code": 70,
+   "destination": "USKAM",
+   "updated": "2026-11-16 09:59:54.745439994 +0000 UTC"
+  },
+  {
+   "mmsi": 352006531,
+   "name": "BARISM BETTY",
+   "lat": 45.60107,
+   "lon": -122.7744,
+   "sog_kn": 0,
+   "cog": 90.1,
+   "heading": 278,
+   "nav_status": 5,
+   "updated": "2026-11-16 09:59:56.977149433 +0000 UTC"
+  },
+  {
+   "mmsi": 636015993,
+   "name": "SIEM NEWTON",
+   "lat": 45.633,
+   "lon": -122.73783,
+   "type_code": 79,
+   "destination": "KRINC",
+   "updated": "2026-11-16 10:00:00.977381963 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.0821,
+   "lon": -122.90542,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 312,
+   "nav_status": 3,
+   "updated": "2026-11-16 10:00:08.068022561 +0000 UTC"
   },
   {
    "mmsi": 367384780,
    "name": "CAROLYN DOROTHY",
-   "lat": 46.02419,
-   "lon": -122.86833,
-   "sog_kn": 8.1,
-   "cog": 322.6,
-   "heading": 320,
+   "lat": 46.02861,
+   "lon": -122.86866,
+   "sog_kn": 0.3,
+   "cog": 286.2,
+   "heading": 343,
    "nav_status": 0,
-   "updated": "2026-11-16 09:54:59.151239484 +0000 UTC"
+   "updated": "2026-11-16 10:00:08.229958767 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64758,
+   "lon": -122.7398,
+   "sog_kn": 0,
+   "cog": 115.2,
+   "heading": 115,
+   "nav_status": 0,
+   "updated": "2026-11-16 10:00:10.107599397 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.06495,
+   "lon": -122.88609,
+   "sog_kn": 1,
+   "cog": 349.9,
+   "heading": 344,
+   "nav_status": 3,
+   "updated": "2026-11-16 10:00:13.604718663 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58733,
+   "lon": -122.77041,
+   "sog_kn": 0,
+   "cog": 190.9,
+   "heading": 139,
+   "nav_status": 5,
+   "updated": "2026-11-16 10:00:14.807683066 +0000 UTC"
   }
  ]
 }
