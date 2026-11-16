@@ -1,62 +1,49 @@
 {
- "fetched_at": "2026-11-16T12:20:34Z",
+ "fetched_at": "2026-11-16T12:24:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.20003,
-   "lon": -123.38549,
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.19948,
+   "lon": -123.38507,
+   "type_code": 30,
+   "destination": "CATHLAMET,WA",
+   "updated": "2026-11-16 12:25:05.831388824 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64386,
+   "lon": -122.72577,
    "sog_kn": 0,
-   "cog": 277.1,
-   "heading": 511,
+   "cog": 228.3,
+   "heading": 114,
+   "nav_status": 12,
+   "updated": "2026-11-16 12:25:07.537028439 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79316,
+   "lon": -122.8432,
+   "sog_kn": 0,
+   "cog": 173.6,
+   "heading": 211,
    "nav_status": 15,
-   "updated": "2026-11-16 12:21:12.085444843 +0000 UTC"
+   "updated": "2026-11-16 12:25:07.687219044 +0000 UTC"
   },
   {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.5873,
-   "lon": -122.77046,
-   "sog_kn": 0,
-   "cog": 190.9,
-   "heading": 139,
-   "nav_status": 5,
-   "updated": "2026-11-16 12:21:16.119048179 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.5876,
-   "lon": -122.77039,
-   "sog_kn": 0,
-   "cog": 288.3,
-   "heading": 511,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.64334,
+   "lon": -122.74423,
+   "sog_kn": 0.1,
+   "cog": 192.9,
+   "heading": 292,
    "nav_status": 0,
-   "updated": "2026-11-16 12:21:19.611969778 +0000 UTC"
-  },
-  {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.15418,
-   "lon": -123.39267,
-   "sog_kn": 8.6,
-   "cog": 128.3,
-   "heading": 124,
-   "nav_status": 0,
-   "updated": "2026-11-16 12:21:22.314149647 +0000 UTC"
-  },
-  {
-   "mmsi": 636026324,
-   "name": "STAR BELLA",
-   "lat": 46.02717,
-   "lon": -122.86955,
-   "sog_kn": 0,
-   "cog": 86.9,
-   "heading": 139,
-   "nav_status": 5,
-   "updated": "2026-11-16 12:21:35.743784904 +0000 UTC"
+   "updated": "2026-11-16 12:25:26.313976132 +0000 UTC"
   }
  ]
 }
