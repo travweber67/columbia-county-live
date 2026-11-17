@@ -1,57 +1,77 @@
 {
- "fetched_at": "2026-11-17T04:20:07Z",
+ "fetched_at": "2026-11-17T04:26:04Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
-   "hex": "acb0b6",
-   "callsign": "ASA779",
-   "type": "B39M",
-   "alt_ft": 2850,
-   "gs_kn": 173.2,
-   "track": 92.65,
-   "lat": 45.677536,
-   "lon": -122.863189
+   "hex": "abc96f",
+   "callsign": "GTI756",
+   "type": "B748",
+   "alt_ft": 36000,
+   "gs_kn": 503.6,
+   "track": 332.57,
+   "lat": 45.890544,
+   "lon": -123.346184
+  },
+  {
+   "hex": "a851c3",
+   "callsign": "QXE2176",
+   "type": "E75L",
+   "alt_ft": 15850,
+   "gs_kn": 379.1,
+   "track": 181.21,
+   "lat": 46.040443,
+   "lon": -123.249847
+  },
+  {
+   "hex": "a36ff7",
+   "callsign": "SKW3956",
+   "type": "E75L",
+   "alt_ft": 33925,
+   "gs_kn": 412.2,
+   "track": 175.69,
+   "lat": 45.750934,
+   "lon": -123.074272
   },
   {
    "hex": "a527d5",
    "callsign": "N431LF",
    "type": "B429",
    "alt_ft": 1550,
-   "gs_kn": 143.7,
-   "track": 354.41,
-   "lat": 45.781036,
-   "lon": -122.848987
+   "gs_kn": 146.2,
+   "track": 327.29,
+   "lat": 45.979294,
+   "lon": -122.906665
   },
   {
-   "hex": "a69b92",
-   "callsign": "ASA1397",
+   "hex": "a706ea",
+   "callsign": "ASA1392",
    "type": "B738",
-   "alt_ft": 2075,
-   "gs_kn": 176.8,
-   "track": 118.74,
-   "lat": 45.647635,
-   "lon": -122.757042
+   "alt_ft": 1650,
+   "gs_kn": 187.1,
+   "track": 118.76,
+   "lat": 45.637952,
+   "lon": -122.731842
   },
   {
-   "hex": "a2b6ff",
-   "callsign": "SKW4031",
-   "type": "E75L",
-   "alt_ft": 28750,
-   "gs_kn": 445.7,
-   "track": 350.05,
-   "lat": 46.081967,
-   "lon": -122.67437
-  },
-  {
-   "hex": "0d111a",
-   "callsign": "VOI1870",
+   "hex": "ad45a4",
+   "callsign": "AAL428",
    "type": "A21N",
-   "alt_ft": 925,
-   "gs_kn": 139.7,
-   "track": 119.13,
-   "lat": 45.618942,
-   "lon": -122.657999
+   "alt_ft": 4800,
+   "gs_kn": 217.0,
+   "track": 289.94,
+   "lat": 45.711877,
+   "lon": -122.657753
+  },
+  {
+   "hex": "a57d52",
+   "callsign": "ASA764",
+   "type": "B739",
+   "alt_ft": 34950,
+   "gs_kn": 467.7,
+   "track": 350.28,
+   "lat": 45.860844,
+   "lon": -122.61937
   },
   {
    "hex": "a1087a",
@@ -60,8 +80,8 @@
    "alt_ft": "ground",
    "gs_kn": 0.0,
    "track": null,
-   "lat": 45.579678,
-   "lon": -122.610822
+   "lat": 45.57968,
+   "lon": -122.610821
   }
  ]
 }
