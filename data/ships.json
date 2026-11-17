@@ -1,6 +1,82 @@
 {
- "fetched_at": "2026-11-17T17:08:34Z",
- "status": "key_needed",
- "note": "No keyless live AIS feed for US waters could be verified from here: MarineTraffic's data endpoint returns a 403 bot wall from this network, AISHub/VesselFinder/Global Fishing Watch all require accounts, and the free public AIS APIs that exist (e.g. Finland's Digitraffic) cover other seas. AISStream.io's free tier IS the route: set AISSTREAM_API_KEY (free signup at aisstream.io) and this fetcher collects live Columbia River positions over their websocket.",
- "ships": []
+ "fetched_at": "2026-11-17T17:09:28Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 636015567,
+   "name": "KYRA ZAFIRA",
+   "lat": 45.63045,
+   "lon": -122.69568,
+   "sog_kn": 0,
+   "cog": 132.3,
+   "heading": 127,
+   "nav_status": 5,
+   "updated": "2026-11-17 17:09:42.61285072 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.0771,
+   "lon": -122.89599,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-17 17:09:43.720944384 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.09068,
+   "lon": -122.93212,
+   "sog_kn": 0,
+   "cog": 230.6,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-17 17:09:47.388971908 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19995,
+   "lon": -123.3855,
+   "sog_kn": 0,
+   "cog": 87.8,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-17 17:09:50.801564044 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40234,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 132,
+   "nav_status": 0,
+   "updated": "2026-11-17 17:09:52.338990969 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60754,
+   "lon": -122.67763,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-17 17:09:57.373242994 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 89.1,
+   "heading": 133,
+   "nav_status": 15,
+   "updated": "2026-11-17 17:09:58.827892746 +0000 UTC"
+  }
+ ]
 }
