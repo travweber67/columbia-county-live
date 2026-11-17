@@ -1,62 +1,93 @@
 {
- "fetched_at": "2026-11-17T16:20:21Z",
+ "fetched_at": "2026-11-17T16:22:19Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538004110,
-   "name": "AENEAS",
-   "lat": 46.02723,
-   "lon": -122.86933,
+   "mmsi": 367347000,
+   "name": "WENDY SEAA",
+   "lat": 46.1995,
+   "lon": -123.38507,
    "sog_kn": 0,
-   "cog": 263.7,
-   "heading": 137,
+   "cog": 0.9,
+   "heading": 144,
    "nav_status": 5,
-   "updated": "2026-11-17 16:21:05.149364589 +0000 UTC"
+   "updated": "2026-11-17 16:22:35.507325933 +0000 UTC"
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.20001,
-   "lon": -123.3855,
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.10052,
+   "lon": -122.94218,
+   "sog_kn": 0.2,
+   "cog": 53.9,
+   "heading": 113,
+   "nav_status": 0,
+   "updated": "2026-11-17 16:22:36.681780988 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35742,
    "sog_kn": 0,
-   "cog": 29,
-   "heading": 511,
+   "cog": 326,
+   "heading": 134,
    "nav_status": 15,
-   "updated": "2026-11-17 16:21:11.927696849 +0000 UTC"
+   "updated": "2026-11-17 16:22:45.157353885 +0000 UTC"
   },
   {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.64757,
-   "lon": -122.73978,
-   "sog_kn": 0,
-   "cog": 48.9,
-   "heading": 114,
-   "nav_status": 12,
-   "updated": "2026-11-17 16:21:12.491800262 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00884,
-   "lon": -122.84881,
-   "sog_kn": 0,
-   "cog": 360,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.14723,
+   "lon": -123.38301,
+   "sog_kn": 8.5,
+   "cog": 34.6,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-17 16:21:12.743847152 +0000 UTC"
+   "updated": "2026-11-17 16:22:46.180727572 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64352,
+   "lon": -122.75248,
+   "sog_kn": 0,
+   "cog": 327.4,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-17 16:22:47.317695644 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 46.15986,
+   "lon": -123.40533,
+   "type_code": 57,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-17 16:22:50.143663072 +0000 UTC"
   },
   {
    "mmsi": 369970121,
    "name": "ELTON",
-   "lat": 46.13771,
-   "lon": -123.37815,
-   "sog_kn": 11.8,
-   "cog": 287.2,
-   "heading": 287,
+   "lat": 46.14055,
+   "lon": -123.38241,
+   "sog_kn": 12,
+   "cog": 343.8,
+   "heading": 343,
    "nav_status": 0,
-   "updated": "2026-11-17 16:21:34.657938692 +0000 UTC"
+   "updated": "2026-11-17 16:22:53.178116799 +0000 UTC"
+  },
+  {
+   "mmsi": 636024633,
+   "name": "PAVO LEADER",
+   "lat": 45.63808,
+   "lon": -122.72254,
+   "sog_kn": 0,
+   "cog": 26,
+   "heading": 113,
+   "nav_status": 5,
+   "updated": "2026-11-17 16:23:03.233161646 +0000 UTC"
   }
  ]
 }
