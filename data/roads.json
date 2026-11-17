@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-17T15:57:15Z",
+ "fetched_at": "2026-11-17T16:02:15Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -147,6 +147,19 @@
    "source": "ODOT TripCheck"
   },
   {
+   "title": "Utility work is causing minimal delay to traffic. Use caution.",
+   "desc": "",
+   "impact": "No to Minimum Delay",
+   "place": "ORE47, 2 miles North of Banks",
+   "route": "OR47",
+   "milepost": 82.23,
+   "lat": 45.62933,
+   "lon": -123.12131,
+   "start": "2026-11-11T11:27:20.013-08:00",
+   "updated": "2026-11-17T08:01:24-08:00",
+   "source": "ODOT TripCheck"
+  },
+  {
    "title": "Road maintenance operations are occurring causing minimal delay to traffic. Prepare to slow or move over for worker safety.",
    "desc": "",
    "impact": "No to Minimum Delay",
@@ -160,12 +173,18 @@
    "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 124,
+ "odot_active_statewide": 131,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
-  "alerts": [],
+  "alerts": [
+   {
+    "title": "Maintenance on I-5 northbound from milepost 0 near Interstate Bridge to milepost 20 near N Fork Lewis River will have the right shoulder closed intermittently for vegetation brushing and signage work, use caution in the active work zones beginning at 8:00 am on November 17, 2026 until further notice. ",
+    "desc": "Maintenance on I-5 northbound from milepost 0 near Interstate Bridge to milepost 20 near N Fork Lewis River will have the right shoulder closed intermittently for vegetation brushing and signage work, use caution in the active work zones beginning at 8:00 am on November 17, 2026 until further notice.",
+    "updated": "/Date(1794931320940-0800)/"
+   }
+  ],
   "work_zones": [],
-  "status": "clear",
-  "note": "No WSDOT alerts or work zones found for the bridge in the latest snapshot."
+  "status": "alert",
+  "note": "WSDOT is reporting alert(s) affecting the bridge."
  }
 }
