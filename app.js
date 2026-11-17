@@ -7579,9 +7579,8 @@ initDark();
    chips all name cards, and the page first switches to the view that
    holds the card, then scrolls and flashes as it always did. The Leaflet
    gotcha is handled here too: the map is built while its view may be
-   hidden, so every switch to Travel calls invalidateSize(). The last
-   view is remembered (ccl-view-v1). */
-const VIEW_KEY = 'ccl-view-v1';
+   hidden, so every switch to Travel calls invalidateSize(). Every open
+   starts on Today at the top (see initViews). */
 const VIEW_IDS = ['today', 'travel', 'outdoors', 'more', 'emergency', 'help'];
 let cclViewCur = 'today';
 
@@ -7609,7 +7608,6 @@ function cclShowView(name) {
     b.classList.toggle('active', on);
     if (b.setAttribute) b.setAttribute('aria-pressed', on ? 'true' : 'false');
   });
-  try { window.localStorage.setItem(VIEW_KEY, name); } catch (e) { /* storage unavailable — choice is session-only */ }
   if (name === 'travel' && typeof map !== 'undefined' && map && map.invalidateSize) {
     setTimeout(() => { try { map.invalidateSize(); } catch (e) { /* map still booting */ } }, 60);
   }
@@ -7641,11 +7639,16 @@ function cclRouteAnchor(a) {
   }, 30);
 }
 function initViews() {
-  let start = 'today';
-  try {
-    const p = window.localStorage.getItem(VIEW_KEY);
-    if (p && VIEW_IDS.indexOf(p) !== -1) start = p;
-  } catch (e) { /* storage unavailable */ }
+  /* Always open on Today, at the top (Travis, 2026-11-16): the app used
+     to restore the last view from localStorage ('ccl-view-v1'); that
+     restore is gone — the key is no longer read or written, and any
+     stale saved value is cleared here. Other saved preferences (theme,
+     language, pins, town) are untouched. The browser's own scroll
+     restoration is switched off as well, so a reopen or reload cannot
+     land mid-page either. */
+  try { window.localStorage.removeItem('ccl-view-v1'); } catch (e) { /* storage unavailable */ }
+  try { if ('scrollRestoration' in window.history) window.history.scrollRestoration = 'manual'; } catch (e) { /* older browser */ }
+  const start = 'today';
   document.querySelectorAll('.tab-btn').forEach(b => {
     b.addEventListener('click', () => {
       cclShowView(b.dataset ? b.dataset.viewBtn : null);
@@ -7663,6 +7666,8 @@ function initViews() {
     });
   } catch (e) { /* anchors keep their default jump as a fallback */ }
   cclShowView(start);
+  if (window.scrollTo) { try { window.scrollTo(0, 0); } catch (e) { /* noop */ } }
+  window.addEventListener('load', () => { if (window.scrollTo) { try { window.scrollTo(0, 0); } catch (e) { /* noop */ } } });
 }
 initViews();
 
