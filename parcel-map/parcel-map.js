@@ -12,6 +12,15 @@
  * Both layers are OFF by default; the map behaves exactly as before until
  * a visitor toggles one on. All strings are bilingual (EN/ES) following
  * the site's documentElement.lang pattern (same as offline-map.js).
+ *
+ * v102: (1) the archives are the same files the Offline map download
+ * saves — when a visitor has downloaded the map, both layers read the
+ * on-device OPFS copies and work with no signal; otherwise they stream
+ * from parcel-map/ as before. (2) Parcel data only exists at street
+ * level (tiles start at z13), which made the toggle look dead from the
+ * county-wide view: switching either layer on below z13 now flies the
+ * map to street level (z14, current center) so the lines appear, and
+ * the legend carries a one-line street-level hint.
  */
 (function () {
   'use strict';
@@ -30,6 +39,7 @@
       region: 'Region',
       publicLand: 'Public land',
       privateLand: 'Private land',
+      streetHint: 'Property lines draw at street level',
       ahName: 'Access & Habitat area',
       ahNote: 'Private land open to hunting by agreement through ODFW\u2019s Access & Habitat program. Check current ODFW rules before you go.',
       tmaNote: 'Travel Management Area \u2014 motor vehicle rules apply during hunting season. Check ODFW for the current rules.',
@@ -49,6 +59,7 @@
       region: 'Región',
       publicLand: 'Tierra pública',
       privateLand: 'Tierra privada',
+      streetHint: 'Las líneas de propiedad se dibujan a nivel de calle',
       ahName: 'Área de Acceso y Hábitat',
       ahNote: 'Tierra privada abierta a la caza por acuerdo a través del programa Access & Habitat de ODFW. Verifique las reglas actuales de ODFW antes de ir.',
       tmaNote: 'Área de gestión de viajes: aplican reglas para vehículos motorizados durante la temporada de caza. Consulte a ODFW para conocer las reglas actuales.',
@@ -94,17 +105,64 @@
       + '</div>';
   }
 
+  /* -------- archive sources: downloaded OPFS copies first, else stream.
+     The Offline map download saves these same archives into OPFS under
+     the same file names (ids 'parcels' / 'hunting' in its local record).
+     When a saved copy matches the size in OFFLINE_MAP_CONFIG, read it
+     from the device; otherwise fall back to streaming from parcel-map/. */
+  var pmtilesLibP = null;
+  function loadPmtilesLib() {
+    if (window.pmtiles) return Promise.resolve();
+    if (pmtilesLibP) return pmtilesLibP;
+    pmtilesLibP = new Promise(function (resolve, reject) {
+      var s = document.createElement('script');
+      s.src = 'offline-map/vendor/pmtiles.js';
+      s.onload = resolve;
+      s.onerror = reject;
+      document.head.appendChild(s);
+    });
+    return pmtilesLibP;
+  }
+  async function resolveSource(id, file, size, fallbackUrl) {
+    try {
+      var CFG = window.OFFLINE_MAP_CONFIG;
+      if (!CFG || !file || !size) return fallbackUrl;
+      var recs = {};
+      try { recs = JSON.parse(localStorage.getItem(CFG.storageKey) || '{}'); } catch (e) { return fallbackUrl; }
+      var rec = recs[id];
+      if (!rec || rec.size !== size) return fallbackUrl;
+      await loadPmtilesLib();
+      var root = await navigator.storage.getDirectory();
+      var dir = await root.getDirectoryHandle('packs');
+      var fh = await dir.getFileHandle(file);
+      var blob = await fh.getFile();
+      if (!blob || blob.size !== size) return fallbackUrl;
+      return new window.pmtiles.PMTiles(new window.pmtiles.FileSource(blob));
+    } catch (e) { return fallbackUrl; }
+  }
+  function resolveSourceTimed(id, file, size, fallbackUrl) {
+    var timeout = new Promise(function (res) { setTimeout(function () { res(fallbackUrl); }, 3000); });
+    return Promise.race([resolveSource(id, file, size, fallbackUrl), timeout]);
+  }
+
   var map = null, parcelsView = null, huntingParcelsView = null,
       huntingView = null, huntingGroup = null;
   var selectedId = null, myPopup = null;
 
   function isSel(f) { return selectedId != null && f.props && f.props.id === selectedId; }
 
-  function buildLayers() {
+  function buildLayers(srcs) {
     var PM = window.protomapsL;
+    // NOTE: no minZoom on these layers, deliberately. Leaflet 1.9's
+    // layers control DISABLES an overlay's checkbox whenever the map is
+    // outside the layer's zoom range — from the default county-wide
+    // view the Property lines box sat grey and unclickable with no
+    // explanation (Travis hit exactly this, Nov 17). The archives hold
+    // no tiles below z13 anyway, so nothing draws early; the toggle
+    // stays live at every zoom and onLayerAdd flies the visitor in.
     parcelsView = PM.leafletLayer({
-      url: 'parcel-map/parcels.pmtiles',
-      maxDataZoom: 16, minZoom: 13, zIndex: 262,
+      url: srcs.parcels,
+      maxDataZoom: 16, zIndex: 262,
       paintRules: [{
         dataLayer: 'parcels',
         symbolizer: new PM.PolygonSymbolizer({
@@ -116,8 +174,8 @@
     });
     // Same archive, second view: public/private shading for the hunting layer.
     huntingParcelsView = PM.leafletLayer({
-      url: 'parcel-map/parcels.pmtiles',
-      maxDataZoom: 16, minZoom: 13, zIndex: 258,
+      url: srcs.parcels,
+      maxDataZoom: 16, zIndex: 258,
       paintRules: [{
         dataLayer: 'parcels',
         symbolizer: new PM.PolygonSymbolizer({
@@ -131,7 +189,7 @@
       }]
     });
     huntingView = PM.leafletLayer({
-      url: 'parcel-map/hunting.pmtiles',
+      url: srcs.hunting,
       maxDataZoom: 14, zIndex: 259,
       paintRules: [
         { dataLayer: 'wmu', symbolizer: new PM.PolygonSymbolizer({ fill: 'rgba(179,84,30,0.05)', stroke: '#b3541e', width: 1.8 }) },
@@ -158,6 +216,9 @@
       items.push('<span><i class="pm-sw pm-sw-public"></i>' + t('publicLand') + '</span>');
       items.push('<span><i class="pm-sw pm-sw-private"></i>' + t('privateLand') + '</span>');
       items.push('<span><i class="pm-sw pm-sw-unit"></i>' + t('hunting').replace(/^🦌\s*/, '') + '</span>');
+    }
+    if (hasP || hasH) {
+      items.push('<span class="pm-hint">' + t('streetHint') + '</span>');
     }
     el.innerHTML = items.join('');
     el.style.display = items.length ? '' : 'none';
@@ -268,9 +329,22 @@
   }
 
   /* ---------------------------------------------------------------- init */
+  // Parcel tiles start at z13. Below that the layers can be switched on
+  // but nothing can draw, which reads as a dead toggle from the default
+  // county-wide view. Fix: switching either layer on below the draw
+  // level flies the map to street level around the current center, so
+  // the lines appear in front of the visitor. Never zooms back out.
+  var DRAW_ZOOM = 13, STREET_ZOOM = 14;
+  function onLayerAdd(e) {
+    refreshLegend();
+    if ((e.layer === parcelsView || e.layer === huntingGroup)
+        && map.getZoom() < DRAW_ZOOM) {
+      map.flyTo(map.getCenter(), STREET_ZOOM, { duration: 0.9 });
+    }
+  }
+
   function init() {
     map = window.CCL_MAP;
-    buildLayers();
     // Legend hook: our own span inside the site's map legend.
     var legend = document.querySelector('#map-card .map-legend');
     if (legend && !document.getElementById('pm-legend')) {
@@ -280,18 +354,28 @@
       span.style.display = 'none';
       legend.appendChild(span);
     }
-    map.on('click', onMapClick);
-    map.on('layeradd layerremove', function () { refreshLegend(); });
-    map.on('popupclose', function (ev) {
-      if (myPopup && ev.popup === myPopup && selectedId != null) {
-        selectedId = null;
-        try { parcelsView.rerenderTiles(); } catch (err) { /* noop */ }
-      }
-    });
     new MutationObserver(refreshLabels).observe(document.documentElement, {
       attributes: true, attributeFilter: ['lang']
     });
-    refreshLabels();
+    var CFG = window.OFFLINE_MAP_CONFIG || {};
+    Promise.all([
+      resolveSourceTimed('parcels', CFG.parcelsFile, CFG.parcelsSize, 'parcel-map/parcels.pmtiles'),
+      resolveSourceTimed('hunting', CFG.huntingFile, CFG.huntingSize, 'parcel-map/hunting.pmtiles')
+    ]).then(function (resolved) {
+      try {
+        buildLayers({ parcels: resolved[0], hunting: resolved[1] });
+        map.on('click', onMapClick);
+        map.on('layeradd', onLayerAdd);
+        map.on('layerremove', function () { refreshLegend(); });
+        map.on('popupclose', function (ev) {
+          if (myPopup && ev.popup === myPopup && selectedId != null) {
+            selectedId = null;
+            try { parcelsView.rerenderTiles(); } catch (err) { /* noop */ }
+          }
+        });
+        refreshLabels();
+      } catch (err) { if (window.console) console.error('parcel-map layers failed', err); }
+    });
   }
 
   var tries = 0;

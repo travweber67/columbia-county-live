@@ -4,6 +4,12 @@
  * One shared module, parameterized per site by window.OFFLINE_MAP_CONFIG:
  *   { countyEn, countyEs, packFile, packSize, lowroadsFile, lowroadsSize,
  *     bounds: [w, s, e, n], storageKey }
+ * Optional extra archives (CCL v102): trailsFile/trailsSize,
+ * parcelsFile/parcelsSize/parcelsPath, huntingFile/huntingSize/
+ * huntingPath. When configured they join the same download, so the
+ * normal map's Trails / Property lines / Hunting units layers read the
+ * saved copies from OPFS and work with no signal. Sites that don't
+ * configure them keep the original two-file download.
  *
  * Architecture (same proven pattern as the Oregon OHV Map app):
  *   - Vector basemap in ONE PMTiles archive per county (Protomaps daily
@@ -39,8 +45,8 @@
       redownload: "Finish downloading",
       update: "Update map",
       remove: "Remove from device",
-      sizeNote: "One download, about {MB}. Roads, towns, rivers and place names for the whole county, saved on your device.",
-      scopeNote: "This map works with no signal. Live information (river levels, road cameras, weather, events) still needs a connection and stays on the main pages.",
+      sizeNote: "One download, about {MB}. Roads, trails, property lines, towns, rivers and place names for the whole county, saved on your device.",
+      scopeNote: "This map works with no signal — and so do the trails and property lines on the main map, from this same download. Live information (river levels, road cameras, weather, events) still needs a connection and stays on the main pages.",
       failed: "Download stopped — check your connection and try again.",
       savedToast: "Map saved — it now works with no signal",
       removedToast: "Offline map removed from this device",
@@ -61,8 +67,8 @@
       redownload: "Terminar la descarga",
       update: "Actualizar el mapa",
       remove: "Quitar de este dispositivo",
-      sizeNote: "Una sola descarga, unos {MB}. Carreteras, pueblos, ríos y nombres de lugares de todo el condado, guardados en su dispositivo.",
-      scopeNote: "Este mapa funciona sin señal. La información en vivo (niveles de ríos, cámaras, clima, eventos) sigue necesitando conexión y permanece en las páginas principales.",
+      sizeNote: "Una sola descarga, unos {MB}. Carreteras, senderos, líneas de propiedad, pueblos, ríos y nombres de lugares de todo el condado, guardados en su dispositivo.",
+      scopeNote: "Este mapa funciona sin señal — y también los senderos y las líneas de propiedad del mapa principal, con esta misma descarga. La información en vivo (niveles de ríos, cámaras, clima, eventos) sigue necesitando conexión y permanece en las páginas principales.",
       failed: "La descarga se detuvo — revise su conexión e inténtelo de nuevo.",
       savedToast: "Mapa guardado — ahora funciona sin señal",
       removedToast: "Mapa sin conexión eliminado de este dispositivo",
@@ -84,6 +90,22 @@
     { id: "basemap", file: CFG.packFile, size: CFG.packSize },
     { id: "lowroads", file: CFG.lowroadsFile, size: CFG.lowroadsSize }
   ];
+  /* Optional extra archives (same download, same OPFS folder): the
+     trails pack streams from this module's own packs/ folder; the
+     parcel + hunting archives are served from parcel-map/ (their v101
+     home) — `path` is that site-root-relative URL, the OPFS copy still
+     lands under the plain file name so parcel-map.js / trails-map.js
+     can find it. */
+  if (CFG.trailsFile) FILES.push({ id: "trails", file: CFG.trailsFile, size: CFG.trailsSize });
+  if (CFG.parcelsFile) FILES.push({ id: "parcels", file: CFG.parcelsFile, size: CFG.parcelsSize, path: CFG.parcelsPath });
+  if (CFG.huntingFile) FILES.push({ id: "hunting", file: CFG.huntingFile, size: CFG.huntingSize, path: CFG.huntingPath });
+  function fileUrl(f) {
+    if (f.path) return new URL(f.path, document.baseURI).href;
+    return BASE + "packs/" + f.file;
+  }
+  function totalSize() {
+    return FILES.reduce(function (s, f) { return s + (f.size || 0); }, 0);
+  }
   function fileState(f) {
     var rec = localFiles[f.id];
     if (!rec) return "missing";
@@ -143,7 +165,7 @@
   /* ---------------- style (adapted from the OHV app's basemap) ------- */
   var FONT_MED = ["Noto Sans Medium"];
   var FONT_REG = ["Noto Sans Regular"];
-  function buildStyle(basemapUrl, lowroadsUrl) {
+  function buildStyle(basemapUrl, lowroadsUrl, trailsUrl) {
     var L = [];
     function push(o) { L.push(o); }
     push({ id: "background", type: "background", paint: { "background-color": "#f2efe9" } });
@@ -224,6 +246,15 @@
     push({ id: "rd-path", type: "line", source: "basemap", "source-layer": "roads", minzoom: 11.5,
       filter: ["==", ["get", "kind"], "path"],
       paint: { "line-color": "#9a8a76", "line-width": 1.1, "line-dasharray": [2.5, 2] } });
+    /* named trails (v102): the downloaded trails archive draws over the
+       basemap's generic paths — these are the county's named routes */
+    if (trailsUrl) {
+      push({ id: "trails-line", type: "line", source: "trails", "source-layer": "trails", minzoom: 9.5,
+        layout: { "line-cap": "round", "line-join": "round" },
+        paint: { "line-color": "#7a5a21",
+          "line-width": ["interpolate", ["linear"], ["zoom"], 10, 1.6, 14, 2.8],
+          "line-dasharray": [3, 2] } });
+    }
     push({ id: "bldg", type: "fill", source: "basemap", "source-layer": "buildings", minzoom: 14.5,
       paint: { "fill-color": "#ddd3c4", "fill-outline-color": "#c4b69e" } });
     push({ id: "bound-county", type: "line", source: "basemap", "source-layer": "boundaries", minzoom: 7.5,
@@ -246,6 +277,12 @@
         "text-font": FONT_REG, "text-size": ["interpolate", ["linear"], ["zoom"], 9, 11.5, 14, 14],
         "text-max-angle": 30 },
       paint: { "text-color": "#4a4238", "text-halo-color": "rgba(255,255,255,0.95)", "text-halo-width": 1.8 } });
+    if (trailsUrl) {
+      push({ id: "trails-label", type: "symbol", source: "trails", "source-layer": "trails", minzoom: 12,
+        layout: { "symbol-placement": "line", "text-field": ["get", "name"], "text-font": FONT_REG,
+          "text-size": 11.5, "text-max-angle": 30 },
+        paint: { "text-color": "#5d4517", "text-halo-color": "rgba(255,255,255,0.95)", "text-halo-width": 1.8 } });
+    }
     push({ id: "water-label", type: "symbol", source: "basemap", "source-layer": "water", minzoom: 9,
       filter: ["has", "name"],
       layout: { "symbol-placement": "line", "text-field": ["get", "name"], "text-font": FONT_REG,
@@ -258,13 +295,15 @@
         "text-size": ["match", ["get", "kind"], "city", 16, "town", 14, "village", 12.5, 11.5],
         "text-max-width": 9 },
       paint: { "text-color": "#33302a", "text-halo-color": "rgba(255,255,255,0.95)", "text-halo-width": 2 } });
+    var sources = {
+      basemap: { type: "vector", url: basemapUrl, attribution: "© OpenStreetMap contributors" },
+      lowroads: { type: "vector", url: lowroadsUrl, attribution: "© OpenStreetMap contributors" }
+    };
+    if (trailsUrl) sources.trails = { type: "vector", url: trailsUrl, attribution: "© OpenStreetMap contributors" };
     return {
       version: 8,
       glyphs: BASE + "glyphs/{fontstack}/{range}.pbf",
-      sources: {
-        basemap: { type: "vector", url: basemapUrl, attribution: "© OpenStreetMap contributors" },
-        lowroads: { type: "vector", url: lowroadsUrl, attribution: "© OpenStreetMap contributors" }
-      },
+      sources: sources,
       layers: L
     };
   }
@@ -305,7 +344,7 @@
     overlay.querySelector(".om-title").textContent = t("title") + " — " + countyName();
     overlay.querySelector(".om-close").textContent = "✕ " + t("close");
     overlay.querySelector(".om-note").textContent =
-      t("sizeNote").replace("{MB}", fmtMB(CFG.packSize + CFG.lowroadsSize));
+      t("sizeNote").replace("{MB}", fmtMB(totalSize()));
     overlay.querySelector(".om-scope").textContent = t("scopeNote");
     overlay.querySelector(".om-attrib").textContent = t("attrib");
     refreshCard();
@@ -360,7 +399,7 @@
         return "pmtiles://" + f.file;
       }
     }
-    var u = BASE + "packs/" + f.file;
+    var u = fileUrl(f);
     var p2 = new pmtiles.PMTiles(u);
     protocol.add(p2);
     return "pmtiles://" + u;
@@ -368,7 +407,10 @@
   async function buildMap() {
     var bmUrl = await sourceFor(FILES[0]);
     var lrUrl = await sourceFor(FILES[1]);
-    var style = buildStyle(bmUrl, lrUrl);
+    var trailsEntry = null;
+    for (var i = 0; i < FILES.length; i++) if (FILES[i].id === "trails") trailsEntry = FILES[i];
+    var trUrl = trailsEntry ? await sourceFor(trailsEntry) : null;
+    var style = buildStyle(bmUrl, lrUrl, trUrl);
     if (map) { map.setStyle(style); return; }
     map = new maplibregl.Map({
       container: overlay.querySelector(".om-map"),
@@ -390,7 +432,7 @@
 
   /* ---------------- download / remove (OHV pattern) ---------------- */
   async function downloadFile(f, onProgress) {
-    var url = BASE + "packs/" + f.file;
+    var url = fileUrl(f);
     var res = await fetch(url);
     if (!res.ok) throw new Error("download failed (" + res.status + ")");
     var total = +res.headers.get("Content-Length") || f.size || 0;

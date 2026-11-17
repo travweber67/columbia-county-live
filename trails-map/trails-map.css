@@ -1,0 +1,10 @@
+/* Columbia County Live — Trails overlay.
+   Only the legend swatch needs a style; cards reuse the site's .mapcard CSS. */
+.tm-legend .tm-sw {
+  display: inline-block;
+  width: 15px;
+  height: 0;
+  margin-right: 5px;
+  vertical-align: middle;
+  border-top: 3px dashed #7a5a21;
+}
