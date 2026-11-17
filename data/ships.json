@@ -1,59 +1,82 @@
 {
- "fetched_at": "2026-11-17T06:36:14Z",
+ "fetched_at": "2026-11-17T06:41:15Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58731,
-   "lon": -122.77048,
-   "type_code": 31,
-   "destination": "US^02SY>0UJ9",
-   "updated": "2026-11-17 06:36:14.181758308 +0000 UTC"
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.0821,
+   "lon": -122.90601,
+   "sog_kn": 0.3,
+   "cog": 143.6,
+   "heading": 89,
+   "nav_status": 0,
+   "updated": "2026-11-17 06:41:30.57592629 +0000 UTC"
   },
   {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.0088,
-   "lon": -122.84881,
-   "type_code": 50,
-   "destination": "--",
-   "updated": "2026-11-17 06:36:14.776681509 +0000 UTC"
-  },
-  {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.097,
-   "lon": -122.93474,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 94,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08229,
+   "lon": -122.90642,
+   "sog_kn": 0.6,
+   "cog": 182,
+   "heading": 271,
    "nav_status": 3,
-   "updated": "2026-11-17 06:36:15.958861653 +0000 UTC"
+   "updated": "2026-11-17 06:41:36.36117458 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.0897,
+   "lon": -122.92969,
+   "sog_kn": 0,
+   "cog": 72.7,
+   "heading": 109,
+   "nav_status": 5,
+   "updated": "2026-11-17 06:41:36.928329269 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.61836,
+   "lon": -122.78791,
+   "sog_kn": 0,
+   "cog": 146.6,
+   "heading": 351,
+   "nav_status": 0,
+   "updated": "2026-11-17 06:41:42.543721536 +0000 UTC"
   },
   {
    "mmsi": 368257130,
    "name": "TRIUMPH VII",
-   "lat": 46.00984,
+   "lat": 46.00987,
    "lon": -122.84833,
-   "type_code": 50,
-   "updated": "2026-11-17 06:36:43.485553773 +0000 UTC",
    "sog_kn": 0,
-   "cog": 51.6,
+   "cog": 295.1,
    "heading": 511,
-   "nav_status": 15
+   "nav_status": 15,
+   "updated": "2026-11-17 06:41:45.45601648 +0000 UTC"
   },
   {
-   "mmsi": 636015567,
-   "name": "KYRA ZAFIRA",
-   "lat": 45.63042,
-   "lon": -122.69567,
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08236,
+   "lon": -122.90589,
    "sog_kn": 0.1,
-   "cog": 5.8,
-   "heading": 127,
+   "cog": 185,
+   "heading": 83,
    "nav_status": 5,
-   "updated": "2026-11-17 06:36:42.679210814 +0000 UTC"
+   "updated": "2026-11-17 06:41:47.161375788 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19943,
+   "lon": -123.38493,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-17 06:41:53.121661896 +0000 UTC"
   }
  ]
 }
