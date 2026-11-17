@@ -1,60 +1,93 @@
 {
- "fetched_at": "2026-11-17T22:50:32Z",
+ "fetched_at": "2026-11-17T22:54:54Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 45.6325,
-   "lon": -122.70667,
-   "type_code": 70,
-   "destination": "US VAN",
-   "updated": "2026-11-17 22:51:14.90722797 +0000 UTC"
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09408,
+   "lon": -122.94276,
+   "sog_kn": 0.1,
+   "cog": 295.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-17 22:54:58.21688654 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.61184,
+   "lon": -122.63435,
+   "sog_kn": 0,
+   "cog": 225.2,
+   "heading": 3,
+   "nav_status": 0,
+   "updated": "2026-11-17 22:54:58.302698743 +0000 UTC"
   },
   {
    "mmsi": 367702780,
    "name": "SARAH",
-   "lat": 46.11743,
-   "lon": -122.98012,
-   "sog_kn": 7.1,
-   "cog": 126.1,
-   "heading": 127,
+   "lat": 46.1139,
+   "lon": -122.97323,
+   "sog_kn": 5.3,
+   "cog": 125.2,
+   "heading": 124,
    "nav_status": 0,
-   "updated": "2026-11-17 22:51:19.589728911 +0000 UTC"
+   "updated": "2026-11-17 22:54:59.617204732 +0000 UTC"
   },
   {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09724,
-   "lon": -122.93488,
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.98739,
+   "lon": -122.83731,
    "sog_kn": 0,
-   "cog": 292.6,
-   "heading": 100,
-   "nav_status": 3,
-   "updated": "2026-11-17 22:51:23.174567848 +0000 UTC"
+   "cog": 241.6,
+   "heading": 152,
+   "nav_status": 5,
+   "updated": "2026-11-17 22:55:03.495926427 +0000 UTC"
   },
   {
-   "mmsi": 373989000,
-   "name": "AFRICAN CARDINAL",
-   "lat": 46.14229,
-   "lon": -123.34168,
-   "sog_kn": 12.1,
-   "cog": 276.7,
-   "heading": 277,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.5897,
+   "lon": -122.7729,
+   "sog_kn": 0.1,
+   "cog": 325.2,
+   "heading": 145,
    "nav_status": 0,
-   "updated": "2026-11-17 22:51:24.156879959 +0000 UTC"
+   "updated": "2026-11-17 22:55:16.033593408 +0000 UTC"
   },
   {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 46.15895,
-   "lon": -123.06725,
-   "sog_kn": 6.4,
-   "cog": 110.4,
-   "heading": 109,
-   "nav_status": 12,
-   "updated": "2026-11-17 22:51:36.400643454 +0000 UTC"
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.66276,
+   "lon": -122.76146,
+   "sog_kn": 0,
+   "cog": 36,
+   "heading": 155,
+   "nav_status": 0,
+   "updated": "2026-11-17 22:55:17.29233177 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08277,
+   "lon": -122.90709,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-17 22:55:19.846744632 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.61327,
+   "lon": -122.6558,
+   "sog_kn": 6.1,
+   "cog": 104.9,
+   "heading": 107,
+   "nav_status": 0,
+   "updated": "2026-11-17 22:55:23.046838737 +0000 UTC"
   }
  ]
 }
