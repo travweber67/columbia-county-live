@@ -1,77 +1,51 @@
 {
- "fetched_at": "2026-11-17T00:45:45Z",
+ "fetched_at": "2026-11-17T00:50:03Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09742,
-   "lon": -122.93454,
-   "sog_kn": 0.1,
-   "cog": 167.6,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-17 00:45:54.798651032 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10781,
-   "lon": -122.95906,
-   "sog_kn": 0.1,
-   "cog": 198.1,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-17 00:45:59.238536921 +0000 UTC"
-  },
-  {
-   "mmsi": 367513120,
-   "name": "CASCADES",
-   "lat": 45.63578,
-   "lon": -122.70772,
-   "type_code": 57,
-   "destination": "US^11MS>0T67",
-   "updated": "2026-11-17 00:46:00.773753803 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58756,
-   "lon": -122.77041,
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58079,
+   "lon": -122.76008,
+   "type_code": 31,
+   "destination": "PTSI PDX",
+   "updated": "2026-11-17 00:50:51.269012954 +0000 UTC",
    "sog_kn": 0,
-   "cog": 273.8,
-   "heading": 320,
+   "cog": 150.8,
+   "heading": 124,
+   "nav_status": 5
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08217,
+   "lon": -122.90539,
+   "sog_kn": 0,
+   "cog": 92.5,
+   "heading": 133,
    "nav_status": 5,
-   "updated": "2026-11-17 00:46:06.917988869 +0000 UTC"
+   "updated": "2026-11-17 00:50:49.002812706 +0000 UTC"
   },
   {
-   "mmsi": 368470580,
-   "lat": 46.00885,
-   "lon": -122.84893,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-17 00:46:12.805509993 +0000 UTC"
-  },
-  {
-   "mmsi": 352006982,
-   "name": "MOSHILL",
-   "lat": 46.18113,
-   "lon": -123.42873,
-   "type_code": 70,
-   "destination": "CA VAN",
-   "updated": "2026-11-17 00:46:12.947711549 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58732,
-   "lon": -122.77018,
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64344,
+   "lon": -122.75242,
    "type_code": 52,
-   "destination": "US^0R88>0UJB",
-   "updated": "2026-11-17 00:46:14.091378418 +0000 UTC"
+   "destination": "US^0UU4>02MR",
+   "updated": "2026-11-17 00:50:51.359828749 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19996,
+   "lon": -123.38548,
+   "sog_kn": 0,
+   "cog": 213.3,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-17 00:50:51.510115371 +0000 UTC"
   }
  ]
 }
