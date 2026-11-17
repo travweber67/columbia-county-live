@@ -216,23 +216,46 @@
     new MutationObserver(refreshLabels).observe(document.documentElement, {
       attributes: true, attributeFilter: ['lang']
     });
+    map.on('click', onMapClick);
+    map.on('layeradd layerremove', function () { refreshLegend(); });
+    map.on('popupclose', function (ev) {
+      if (myPopup && ev.popup === myPopup && selectedName != null) {
+        selectedName = null;
+        try { trailsView.rerenderTiles(); } catch (err) { /* noop */ }
+      }
+    });
+    rebuildLayer();
+    /* The offline download set changed (offline-map.js): re-resolve so
+       the layer reads the on-device copy in this same session - or
+       streams again after a Remove. */
+    window.addEventListener('ccl-packs-changed', rebuildLayer);
+  }
+
+  /* (Re)build the layer from a freshly resolved source, preserving
+     on/off state. Resolution races a 3s timeout and falls back to
+     streaming, so a rebuild never hangs on OPFS. */
+  var buildingLayer = false, rebuildQueued = false;
+  function rebuildLayer() {
+    if (buildingLayer) { rebuildQueued = true; return; }
+    buildingLayer = true;
     var CFG = window.OFFLINE_MAP_CONFIG || {};
     resolveSourceTimed('trails', CFG.trailsFile, CFG.trailsSize,
       'offline-map/packs/' + (CFG.trailsFile || 'columbia-trails.pmtiles')
     ).then(function (src) {
       try {
+        var wasOn = trailsView && map.hasLayer(trailsView);
+        if (trailsView) {
+          try { window.CCL_LAYERS_CTL.removeLayer(trailsView); } catch (err) { /* noop */ }
+          if (wasOn) map.removeLayer(trailsView);
+        }
+        selectedName = null;
         buildLayer(src);
-        map.on('click', onMapClick);
-        map.on('layeradd layerremove', function () { refreshLegend(); });
-        map.on('popupclose', function (ev) {
-          if (myPopup && ev.popup === myPopup && selectedName != null) {
-            selectedName = null;
-            try { trailsView.rerenderTiles(); } catch (err) { /* noop */ }
-          }
-        });
+        if (wasOn) map.addLayer(trailsView);
         refreshLabels();
       } catch (err) { if (window.console) console.error('trails-map layer failed', err); }
-    });
+      buildingLayer = false;
+      if (rebuildQueued) { rebuildQueued = false; rebuildLayer(); }
+    }).catch(function () { buildingLayer = false; });
   }
 
   var tries = 0;

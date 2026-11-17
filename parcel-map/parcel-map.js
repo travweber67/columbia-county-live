@@ -298,6 +298,7 @@
   }
 
   function onMapClick(e) {
+    if (!parcelsView) return;
     var hasP = map.hasLayer(parcelsView);
     var hasH = map.hasLayer(huntingGroup);
     if (!hasP && !hasH) return;
@@ -357,25 +358,49 @@
     new MutationObserver(refreshLabels).observe(document.documentElement, {
       attributes: true, attributeFilter: ['lang']
     });
+    map.on('click', onMapClick);
+    map.on('layeradd', onLayerAdd);
+    map.on('layerremove', function () { refreshLegend(); });
+    map.on('popupclose', function (ev) {
+      if (myPopup && ev.popup === myPopup && selectedId != null) {
+        selectedId = null;
+        try { parcelsView.rerenderTiles(); } catch (err) { /* noop */ }
+      }
+    });
+    rebuildLayers();
+    /* The offline download set changed (offline-map.js): re-resolve so
+       layers switched on later in this same session read the on-device
+       copies - or stream again after a Remove. */
+    window.addEventListener('ccl-packs-changed', rebuildLayers);
+  }
+
+  /* (Re)build both layers from freshly resolved sources, preserving
+     on/off state. Sources resolve through a 3s timeout race that falls
+     back to streaming, so a rebuild never hangs on OPFS. */
+  var buildingLayers = false, rebuildQueued = false;
+  function rebuildLayers() {
+    if (buildingLayers) { rebuildQueued = true; return; }
+    buildingLayers = true;
     var CFG = window.OFFLINE_MAP_CONFIG || {};
     Promise.all([
       resolveSourceTimed('parcels', CFG.parcelsFile, CFG.parcelsSize, 'parcel-map/parcels.pmtiles'),
       resolveSourceTimed('hunting', CFG.huntingFile, CFG.huntingSize, 'parcel-map/hunting.pmtiles')
     ]).then(function (resolved) {
       try {
+        var ctl = window.CCL_LAYERS_CTL;
+        var wasP = parcelsView && map.hasLayer(parcelsView);
+        var wasH = huntingGroup && map.hasLayer(huntingGroup);
+        if (parcelsView) { try { ctl.removeLayer(parcelsView); } catch (err) { /* noop */ } if (wasP) map.removeLayer(parcelsView); }
+        if (huntingGroup) { try { ctl.removeLayer(huntingGroup); } catch (err) { /* noop */ } if (wasH) map.removeLayer(huntingGroup); }
+        selectedId = null;
         buildLayers({ parcels: resolved[0], hunting: resolved[1] });
-        map.on('click', onMapClick);
-        map.on('layeradd', onLayerAdd);
-        map.on('layerremove', function () { refreshLegend(); });
-        map.on('popupclose', function (ev) {
-          if (myPopup && ev.popup === myPopup && selectedId != null) {
-            selectedId = null;
-            try { parcelsView.rerenderTiles(); } catch (err) { /* noop */ }
-          }
-        });
+        if (wasP) map.addLayer(parcelsView);
+        if (wasH) map.addLayer(huntingGroup);
         refreshLabels();
       } catch (err) { if (window.console) console.error('parcel-map layers failed', err); }
-    });
+      buildingLayers = false;
+      if (rebuildQueued) { rebuildQueued = false; rebuildLayers(); }
+    }).catch(function () { buildingLayers = false; });
   }
 
   var tries = 0;

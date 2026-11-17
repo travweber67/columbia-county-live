@@ -430,6 +430,14 @@
     window.__offlineMap = { map: map, state: function () { return packState(); } };
   }
 
+  /* The normal-map layers (parcel-map.js / trails-map.js) read these
+     same archives. When the saved set changes, tell them to re-resolve
+     their sources so a layer switched on later in this same session
+     uses the on-device copies (or streams again after a Remove). */
+  function notifyPacksChanged() {
+    try { window.dispatchEvent(new Event("ccl-packs-changed")); } catch (e) { /* noop */ }
+  }
+
   /* ---------------- download / remove (OHV pattern) ---------------- */
   async function downloadFile(f, onProgress) {
     var url = fileUrl(f);
@@ -498,6 +506,7 @@
     fill.style.width = "0%";
     refreshCard();
     if (map) await buildMap(); // re-point the map at the on-device copies
+    notifyPacksChanged();
   }
   async function removePack() {
     for (var i = 0; i < FILES.length; i++) {
@@ -507,6 +516,7 @@
     saveLocal();
     refreshCard();
     if (map) await buildMap(); // back to streaming from the server
+    notifyPacksChanged();
     toast(t("removedToast"));
   }
 
