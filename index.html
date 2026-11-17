@@ -31,12 +31,12 @@
 if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
-<link rel="manifest" href="manifest.webmanifest?v=93">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=93">
+<link rel="manifest" href="manifest.webmanifest?v=94">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=94">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=93">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=93">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=93">
+<link rel="stylesheet" href="style.css?v=94">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=94">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=94">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
      only page backgrounds first paint needs — warm them with the hero.
      Every other view's photo is lazy-attached by app.js. -->
@@ -224,7 +224,7 @@ document.documentElement.setAttribute("data-theme",t);})();
          v6 phone mover used to carry them to). -->
     <div class="founding-cells">
       <article class="founding-cell taken" data-otl-cell>
-        <img class="founding-ribbon cell-ribbon" src="img/founding-ribbon.png?v=93" alt="Founding Sponsor" title="Founding Sponsor">
+        <img class="founding-ribbon cell-ribbon" src="img/founding-ribbon.png?v=94" alt="Founding Sponsor" title="Founding Sponsor">
         <div class="otl-logo-box"><img src="img/preview-otl-logo.png" alt="Oregon Trail Lanes logo"></div>
         <p class="cell-eyebrow">Founding Sponsor · Spot 1 of 3</p>
         <h3>Oregon Trail Lanes <span class="dir-badge" data-i18n="dirfounding">Founding business</span></h3>
@@ -233,7 +233,7 @@ document.documentElement.setAttribute("data-theme",t);})();
         <button class="otl-more" type="button" data-otl-open aria-haspopup="dialog" aria-controls="otl-sheet" aria-expanded="false">See hours &amp; what&rsquo;s on &rarr;</button>
       </article>
       <article class="founding-cell taken" data-pv-cell>
-        <img class="founding-ribbon cell-ribbon" src="img/founding-ribbon.png?v=93" alt="Founding Sponsor" title="Founding Sponsor">
+        <img class="founding-ribbon cell-ribbon" src="img/founding-ribbon.png?v=94" alt="Founding Sponsor" title="Founding Sponsor">
         <div class="otl-logo-box"><img src="img/preview-kneeland-brothers-logo.png" alt="Kneeland Brothers Roofing logo" style="border-radius:0"></div>
         <p class="cell-eyebrow">Founding Sponsor · Spot 2 of 3</p>
         <h3>Kneeland Brothers LLC</h3>
@@ -459,6 +459,7 @@ document.documentElement.setAttribute("data-theme",t);})();
         <button class="map-tool-btn" id="map-near-btn" type="button" data-i18n="mapnear">📍 Near me</button>
         <span class="map-towns" id="map-towns" aria-label="Fly the map to a town"></span>
         <button class="map-tool-btn" id="map-full-btn" type="button" data-i18n="mapfull">⛶ Full screen</button>
+        <button class="map-tool-btn" id="offline-map-btn" type="button"><span id="offline-map-btn-label">⬇ Offline map</span></button>
       </div>
       <div id="map" role="application" aria-label="Map of Columbia County, Oregon"></div>
       <div class="map-legend">
@@ -872,7 +873,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="fun" data-lat="45.85067" data-lng="-122.83077">
       <!-- Photo: Oregon Trail Lanes' own website (oregontraillanes.com) — league night at the lanes, May 2023. Added v45. -->
       <img class="dir-photo" src="img/dir-oregon-trail-lanes.jpg" alt="League night inside Oregon Trail Lanes in St. Helens" loading="lazy" decoding="async">
-      <img class="founding-ribbon dir-ribbon" src="img/founding-ribbon.png?v=93" alt="Founding Sponsor" title="Founding Sponsor — Oregon Trail Lanes">
+      <img class="founding-ribbon dir-ribbon" src="img/founding-ribbon.png?v=94" alt="Founding Sponsor" title="Founding Sponsor — Oregon Trail Lanes">
       <div class="dir-item-main">
         <h3>Oregon Trail Lanes</h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfun">Bowling &amp; family fun</span></p>
@@ -886,7 +887,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     </article>
     <article class="dir-item" data-dircat="handyman">
       <img class="dir-photo" src="img/dir-kneeland-brothers.jpg" alt="A new roof by Kneeland Brothers on a Columbia County home" loading="lazy" decoding="async">
-      <img class="founding-ribbon dir-ribbon" src="img/founding-ribbon.png?v=93" alt="Founding Sponsor" title="Founding Sponsor — Kneeland Brothers LLC">
+      <img class="founding-ribbon dir-ribbon" src="img/founding-ribbon.png?v=94" alt="Founding Sponsor" title="Founding Sponsor — Kneeland Brothers LLC">
       <div class="dir-item-main">
         <h3>Kneeland Brothers LLC</h3>
         <p class="dir-meta">Scappoose &middot; <span data-i18n="dirhandyman">Handyman &amp; home repair</span></p>
@@ -1299,9 +1300,9 @@ document.documentElement.setAttribute("data-theme",t);})();
 <footer class="site-footer">
   <section class="partners-wall card" aria-label="Community partners">
     <h2>Community Partners — the local businesses that fund this site</h2>
-    <p class="partners-first"><strong class="partners-name">Oregon Trail Lanes</strong> <img class="founding-ribbon wall-ribbon" src="img/founding-ribbon.png?v=93" alt="Founding Sponsor" title="Founding Sponsor"></p>
+    <p class="partners-first"><strong class="partners-name">Oregon Trail Lanes</strong> <img class="founding-ribbon wall-ribbon" src="img/founding-ribbon.png?v=94" alt="Founding Sponsor" title="Founding Sponsor"></p>
     <p class="partners-meta"><span class="dir-badge">Founding Sponsor · 2026</span><span class="partners-town">· St. Helens</span></p>
-    <p class="partners-first"><strong class="partners-name">Kneeland Brothers LLC</strong> <img class="founding-ribbon wall-ribbon" src="img/founding-ribbon.png?v=93" alt="Founding Sponsor" title="Founding Sponsor"></p>
+    <p class="partners-first"><strong class="partners-name">Kneeland Brothers LLC</strong> <img class="founding-ribbon wall-ribbon" src="img/founding-ribbon.png?v=94" alt="Founding Sponsor" title="Founding Sponsor"></p>
     <p class="partners-meta"><span class="dir-badge">Founding Sponsor · 2026</span><span class="partners-town">· Scappoose</span></p>
 
     <p class="partners-empty"><a href="sponsor.html">Your logo here — become a partner &rarr;</a></p>
@@ -1924,7 +1925,7 @@ document.documentElement.setAttribute("data-theme",t);})();
   </div>
   <div class="otl-sheet-body">
     <article class="otl-card">
-      <img class="founding-ribbon sheet-ribbon" src="img/founding-ribbon.png?v=93" alt="Founding Sponsor" title="Founding Sponsor">
+      <img class="founding-ribbon sheet-ribbon" src="img/founding-ribbon.png?v=94" alt="Founding Sponsor" title="Founding Sponsor">
       <div class="otl-body">
         <div class="otl-logo-box" style="margin-bottom:16px"><img src="img/preview-kneeland-brothers-logo.png" alt="Kneeland Brothers Roofing logo" style="border-radius:0"></div>
         <h3>Kneeland Brothers LLC <span class="dir-badge">Founding Sponsor · 2026</span></h3>
@@ -2011,7 +2012,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=93"></script>
+<script src="app.js?v=94"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 
@@ -2057,5 +2058,8 @@ document.documentElement.setAttribute("data-theme",t);})();
   document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') closeSheet(); });
 })();
 </script>
+<link rel="stylesheet" href="offline-map/offline-map.css">
+<script>window.OFFLINE_MAP_CONFIG = {countyEn: "Columbia County", countyEs: "Condado de Columbia", packFile: "columbia-county-z15.pmtiles", packSize: 24974733, lowroadsFile: "columbia-lowroads.pmtiles", lowroadsSize: 1540432, bounds: [-123.36, 45.54, -122.7, 46.34], storageKey: "ccl.offlinemap.localFiles"};</script>
+<script src="offline-map/offline-map.js"></script>
 </body>
 </html>
