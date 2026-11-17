@@ -249,12 +249,18 @@
       maxWidth: 284, minWidth: 230, autoPanPadding: [16, 16],
       className: 'mapcard-pop'
     };
-    // Phone widths: the zoom control owns the map's top-left corner.
-    // Give autopan a keep-out there so the card (and its title) is
-    // panned clear of the +/- buttons instead of sliding under them.
-    // Desktop layout is untouched.
+    // Phone widths: the map is only ~340x320, so size the card to fit
+    // INSIDE it. The left autopan padding (48) keeps the card's left
+    // edge clear of the zoom control (which ends 44px into the map),
+    // the capped width leaves room for that padding plus a right
+    // margin, and the compact CSS in parcel-map.css keeps the card
+    // short enough for the shallow map. Desktop layout is untouched.
     if (map && map.getSize().x <= 480) {
-      opts.autoPanPaddingTopLeft = [58, 96];
+      var mx = map.getSize().x;
+      opts.maxWidth = Math.max(210, Math.min(300, mx - 92));
+      opts.minWidth = 200;
+      opts.autoPanPaddingTopLeft = [48, 20];
+      opts.autoPanPaddingBottomRight = [10, 10];
     }
     myPopup = L.popup(opts).setLatLng(latlng).setContent(html);
     myPopup.openOn(map);

@@ -11,6 +11,22 @@
 }
 .pm-hint { font-style: italic; }
 .pm-sw-parcel { background: rgba(245, 197, 66, 0.4); border-color: #92600f; }
+
+/* Phone widths: compact card so the whole popup fits inside the small
+   map. Tighter type and margins; if a very short map still cannot fit
+   the card, the content scrolls internally instead of clipping the
+   disclaimer off the edge of the map. */
+@media (max-width: 480px) {
+  .mapcard-pop .leaflet-popup-content {
+    margin: 10px 12px;
+    max-height: 262px;
+    overflow-y: auto;
+  }
+  .mapcard-pop .mapcard-title { font-size: 15px; line-height: 1.22; }
+  .mapcard-pop .mapcard-addr { font-size: 12px; line-height: 1.3; }
+  .mapcard-pop .mapcard-row { font-size: 13px; }
+  .mapcard-pop .mapcard-note { font-size: 11px; line-height: 1.35; }
+}
 .pm-sw-public { background: rgba(34, 150, 80, 0.45); }
 .pm-sw-private { background: rgba(168, 140, 90, 0.35); }
 .pm-sw-unit { background: rgba(179, 84, 30, 0.3); border-color: #b3541e; }
