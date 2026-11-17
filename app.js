@@ -3102,6 +3102,36 @@ function mergeFbInto(events, fbSnap) {
   });
   return out;
 }
+/* Community events (data/community-events.json): hand-added by the site
+   team from the county Facebook groups - flyers and posts that never
+   become formal Facebook events or calendar entries. Merged last;
+   calendar and Facebook-event entries win date+title collisions.
+   Entries may carry a note (a details line under the row), an img
+   (the event's flyer photo, shown under the row) and a community flag
+   the renderer uses to keep them visible past the 16-row cap. */
+let communityEventsSnapPromise = null;
+function getCommunityEventsSnap() {
+  if (!communityEventsSnapPromise) {
+    communityEventsSnapPromise = getSnapshot('community-events.json').catch(() => null);
+  }
+  return communityEventsSnapPromise;
+}
+function mergeCommunityInto(events, cSnap) {
+  const base = events || [];
+  if (!cSnap || !Array.isArray(cSnap.events)) return base.slice();
+  const seen = new Set(base.map(ev => ev.date + '|' + normalizeEventTitle(ev.title)));
+  const out = base.slice();
+  cSnap.events.forEach(ev => {
+    if (!ev || !ev.date || !ev.title) return;
+    const key = ev.date + '|' + normalizeEventTitle(ev.title);
+    if (seen.has(key)) return; // a calendar or FB-event entry already covers it
+    seen.add(key);
+    out.push({ date: ev.date, time: ev.time || '', title: ev.title, source: ev.source || 'Facebook',
+               url: ev.url || '', location: ev.location || '', note: ev.note || '',
+               img: ev.img || '', community: true });
+  });
+  return out;
+}
 function eventDayDiff(dateStr) {
   const [y, m, d] = dateStr.split('-').map(Number);
   const [ty, tm, td] = todayStrPT().split('-').map(Number);
@@ -3125,7 +3155,14 @@ function renderEvents() {
   const evs = (snap.events || []).slice().sort((a, b) =>
     a.date === b.date ? parseTimeToMinutes(a.time) - parseTimeToMinutes(b.time)
                       : (a.date < b.date ? -1 : 1));
-  const shown = evs.filter(ev => eventMatchesFilter(ev, currentEventFilter)).slice(0, 16);
+  const inFilter = evs.filter(ev => eventMatchesFilter(ev, currentEventFilter));
+  /* The 16-row cap keeps the card compact, but hand-picked community
+     events always render: they were added on purpose, and some (a
+     December fundraiser, a season-long campaign) sort past the cap. */
+  const shown = inFilter.slice(0, 16);
+  inFilter.slice(16).forEach(ev => { if (ev.community) shown.push(ev); });
+  shown.sort((a, b) => a.date === b.date ? parseTimeToMinutes(a.time) - parseTimeToMinutes(b.time)
+                      : (a.date < b.date ? -1 : 1));
   const today = todayStrPT();
   let html = '';
   if (shown.length) {
@@ -3152,6 +3189,8 @@ function renderEvents() {
         + (ev.source === 'Facebook'
           ? '<span class="event-fb-tag">Facebook</span>' + (ev.location ? '<span class="event-src">' + esc(ev.location) + '</span>' : '')
           : '<span class="event-src">' + esc(ev.source || '') + '</span>') + '</div>';
+      if (ev.note) grouped += '<div class="event-note">' + esc(ev.note) + '</div>';
+      if (ev.img) grouped += '<img class="event-photo" src="' + esc(ev.img) + '" alt="' + esc(ev.title) + '" loading="lazy" decoding="async">';
     });
     if (lastDate) grouped += '</div>';
     html = grouped;
@@ -3195,6 +3234,8 @@ async function loadEvents() {
     eventsCache = snap;
     const fbSnap = await getFbEventsSnap();
     eventsCache.events = mergeFbInto(snap.events || [], fbSnap);
+    const cSnap = await getCommunityEventsSnap();
+    eventsCache.events = mergeCommunityInto(eventsCache.events, cSnap);
     renderEvents();
   } catch (e) {
     body.innerHTML = '<p class="fallback">⚠️ Events snapshot unavailable right now.</p>';

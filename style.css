@@ -3385,6 +3385,9 @@ html[data-theme="dark"] #events-body .event-day-card{
 #events-body .event-day-card .event-row:last-child{border-bottom:none;padding-bottom:3px}
 html[data-theme="dark"] #events-body .event-day-card .event-row{background:none;box-shadow:none}
 #events-body .event-day-card .event-row-home{border-left:3px solid var(--warm-fill);padding-left:8px}
+#events-body .event-day-card .event-row:has(+ .event-note),#events-body .event-day-card .event-row:has(+ .event-photo){border-bottom:none;padding-bottom:3px}
+#events-body .event-day-card .event-note{font-size:.83rem;line-height:1.45;opacity:.88;padding:2px 0 8px}
+#events-body .event-day-card .event-photo{display:block;width:100%;height:auto;border-radius:10px;margin:2px 0 10px}
 
 /* V88 — the white-on-white note. .status-note's own background is a
    hard-coded near-white (#f2f7fb), but two floating sections forced
