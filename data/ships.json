@@ -1,37 +1,60 @@
 {
- "fetched_at": "2026-11-17T16:32:19Z",
+ "fetched_at": "2026-11-17T16:37:21Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64349,
-   "lon": -122.74508,
-   "type_code": 52,
-   "updated": "2026-11-17 16:32:40.665445045 +0000 UTC"
+   "mmsi": 372346000,
+   "name": "SIERRA NEVADA HWY",
+   "lat": 45.64643,
+   "lon": -122.75597,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-17 16:37:32.713019803 +0000 UTC"
   },
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 46.0995,
-   "lon": -122.94395,
-   "sog_kn": 1.8,
-   "cog": 331.5,
-   "heading": 16,
-   "nav_status": 0,
-   "updated": "2026-11-17 16:32:40.812656802 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 46.08975,
-   "lon": -122.92897,
+   "mmsi": 563302700,
+   "name": "KEY WEST",
+   "lat": 46.10384,
+   "lon": -122.95091,
    "sog_kn": 0,
-   "cog": 249.8,
-   "heading": 110,
+   "cog": 295.9,
+   "heading": 118,
+   "nav_status": 5,
+   "updated": "2026-11-17 16:37:32.885673505 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64351,
+   "lon": -122.75249,
+   "type_code": 52,
+   "destination": "US^0UU4>02MR",
+   "updated": "2026-11-17 16:37:43.890779849 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 27.5,
+   "heading": 511,
+   "nav_status": 5
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64201,
+   "lon": -122.74977,
+   "sog_kn": 0,
+   "cog": 180.6,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-17 16:32:58.512034953 +0000 UTC"
+   "updated": "2026-11-17 16:37:42.185679469 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 46.09069,
+   "lon": -122.93213,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-17 16:37:52.633463961 +0000 UTC"
   }
  ]
 }
