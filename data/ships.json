@@ -1,84 +1,100 @@
 {
- "fetched_at": "2026-11-17T03:05:57Z",
+ "fetched_at": "2026-11-17T03:10:56Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08211,
-   "lon": -122.90575,
+   "mmsi": 373989000,
+   "name": "AFRICAN CARDINAL",
+   "lat": 45.63925,
+   "lon": -122.77782,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-17 03:11:13.966464313 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20002,
+   "lon": -123.38539,
    "sog_kn": 0,
-   "cog": 292.2,
-   "heading": 135,
+   "cog": 7.4,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-17 03:11:15.648824943 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.13728,
+   "lon": -123.37898,
+   "sog_kn": 0.7,
+   "cog": 118.6,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-17 03:07:34.150558156 +0000 UTC"
+   "updated": "2026-11-17 03:11:26.177865841 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64537,
+   "lon": -122.73505,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-17 03:11:27.36431888 +0000 UTC"
   },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 46.03859,
-   "lon": -122.87983,
-   "sog_kn": 9,
-   "cog": 176.5,
-   "heading": 176,
+   "lat": 46.03283,
+   "lon": -122.87931,
+   "sog_kn": 1.4,
+   "cog": 176.1,
+   "heading": 165,
    "nav_status": 3,
-   "updated": "2026-11-17 03:07:34.404204411 +0000 UTC"
+   "updated": "2026-11-17 03:11:28.958235776 +0000 UTC"
   },
   {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 45.72575,
-   "lon": -122.7616,
-   "sog_kn": 11.4,
-   "cog": 7.6,
-   "heading": 4,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15707,
+   "lon": -123.40234,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 132,
    "nav_status": 0,
-   "updated": "2026-11-17 03:07:37.559588401 +0000 UTC"
+   "updated": "2026-11-17 03:11:34.684938419 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65009,
-   "lon": -122.74763,
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.64329,
+   "lon": -122.75277,
    "sog_kn": 0,
-   "cog": 287.1,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-17 03:07:38.753911511 +0000 UTC"
-  },
-  {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 45.63256,
-   "lon": -122.70665,
-   "sog_kn": 0,
-   "cog": 65.3,
-   "heading": 122,
-   "nav_status": 1,
-   "updated": "2026-11-17 03:07:40.711173258 +0000 UTC"
-  },
-  {
-   "mmsi": 366396000,
-   "name": "NAT GEO SEA LION",
-   "lat": 46.08957,
-   "lon": -122.92975,
-   "sog_kn": 0,
-   "cog": 283.1,
-   "heading": 111,
-   "nav_status": 5,
-   "updated": "2026-11-17 03:07:41.34809142 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.65937,
-   "lon": -122.75924,
-   "sog_kn": 0,
-   "cog": 174.1,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-17 03:07:42.476680262 +0000 UTC"
+   "updated": "2026-11-17 03:11:35.304443105 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08243,
+   "lon": -122.90597,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 319,
+   "nav_status": 3,
+   "updated": "2026-11-17 03:11:37.973284918 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.5941,
+   "lon": -122.77217,
+   "type_code": 70,
+   "destination": "NOT AVAILABLE",
+   "updated": "2026-11-17 03:11:38.713800564 +0000 UTC"
   }
  ]
 }
