@@ -1,27 +1,47 @@
 {
- "fetched_at": "2026-11-17T04:26:04Z",
+ "fetched_at": "2026-11-17T04:31:04Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 45.63254,
-   "lon": -122.70665,
-   "type_code": 70,
-   "destination": "US VAN",
-   "updated": "2026-11-17 04:26:21.390364362 +0000 UTC"
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.58522,
+   "lon": -122.76484,
+   "sog_kn": 6.2,
+   "cog": 132.8,
+   "heading": 130,
+   "nav_status": 12,
+   "updated": "2026-11-17 04:31:27.965438515 +0000 UTC"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.16152,
-   "lon": -123.40803,
-   "sog_kn": 0.3,
-   "cog": 213,
-   "heading": 143,
-   "nav_status": 0,
-   "updated": "2026-11-17 04:26:27.558911364 +0000 UTC"
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.14591,
+   "lon": -123.28215,
+   "sog_kn": 1,
+   "cog": 82.2,
+   "heading": 79,
+   "nav_status": 3,
+   "updated": "2026-11-17 04:31:28.957313732 +0000 UTC"
+  },
+  {
+   "mmsi": 636024633,
+   "name": "PAVO LEADER",
+   "lat": 45.63809,
+   "lon": -122.72249,
+   "type_code": 70,
+   "destination": "US RCH",
+   "updated": "2026-11-17 04:31:33.342817851 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08223,
+   "lon": -122.9057,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-17 04:31:45.123889164 +0000 UTC"
   }
  ]
 }
