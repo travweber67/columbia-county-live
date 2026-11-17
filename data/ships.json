@@ -1,53 +1,6 @@
 {
- "fetched_at": "2026-11-17T14:50:19Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 46.08973,
-   "lon": -122.92896,
-   "sog_kn": 0,
-   "cog": 248.1,
-   "heading": 107,
-   "nav_status": 0,
-   "updated": "2026-11-17 14:51:18.468028523 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08254,
-   "lon": -122.90679,
-   "sog_kn": 0,
-   "cog": 157.2,
-   "heading": 126,
-   "nav_status": 0,
-   "updated": "2026-11-17 14:51:11.312859502 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 239.6,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-17 14:51:28.568837525 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64354,
-   "lon": -122.75292,
-   "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-17 14:51:29.742278161 +0000 UTC",
-   "sog_kn": 0,
-   "cog": 129.7,
-   "heading": 511,
-   "nav_status": 5
-  }
- ]
+ "fetched_at": "2026-11-17T14:57:09Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
