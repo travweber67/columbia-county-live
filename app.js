@@ -6756,8 +6756,8 @@ function goDestPoint() {
 function goImpactRank(impact) {
   const s = (impact || "").toLowerCase();
   if (/clos|detour/.test(s)) return 0;
-  if (/delay/.test(s)) return 1;
   if (/informational/.test(s)) return 3;
+  if (/delay/.test(s) && !/minimum/.test(s)) return 1;
   return 2;
 }
 function goOnRoute(i, a, b) {
