@@ -1106,6 +1106,23 @@ function renderMyRoute(camerasSnap) {
     + '</div></div>').join('');
 }
 
+/* v100: one short reason phrase from a WSDOT headline — drops the
+   schedule tail ("beginning at ...", "until further notice") and the
+   ", use caution ..." advisory tail, then caps at a word boundary.
+   Prefix-only shortening: it never rewords the source, so the phrase
+   can't drift from what WSDOT actually said. */
+function bridgeWhy(text) {
+  let t = (text || '').replace(/\s+/g, ' ').trim();
+  t = t.replace(/\s+beginning at\b.*$/i, '');
+  t = t.replace(/,?\s*use caution\b.*$/i, '');
+  t = t.replace(/\s+until further notice\.?$/i, '');
+  t = t.replace(/[\s,;:.]+$/, '');
+  if (t.length > 120) {
+    const cut = t.slice(0, 120), sp = cut.lastIndexOf(' ');
+    t = (sp > 60 ? cut.slice(0, sp) : cut) + '…';
+  }
+  return t;
+}
 /* ---------- snapshot: roads + bridge + cameras ---------- */
 function renderRoads(roads, camerasSnap) {
   setSnapUpdated('roads-updated', roads.fetched_at);
@@ -1142,9 +1159,29 @@ function renderRoads(roads, camerasSnap) {
   let bh = '<div class="bridge-box bridge-' + esc(b.status || 'unknown') + '">'
     + '<div class="bridge-title">' + icon + ' Lewis &amp; Clark Bridge — '
     + ({ clear: 'no alerts', work: 'work scheduled', alert: 'ALERT posted', unknown: 'status unknown' }[b.status] || 'status unknown')
-    + '</div><p>' + esc(b.note || '') + '</p>';
+    + '</div>';
+  /* v100: one glanceable why-line at the top of the card — the first
+     alert's (or work zone's) reason, shortened by bridgeWhy, plus a
+     "+N more" count, so a visitor no longer has to scroll and piece
+     together what happened on the bridge. The WSDOT bridge feed
+     carries no delay field, so no delay is shown or invented here. */
+  const bAlerts = b.alerts || [], bZones = b.work_zones || [];
+  const whySrc = bAlerts.length ? (bAlerts[0].title || bAlerts[0].desc || '')
+    : bZones.length ? (bZones[0].description || '') : '';
+  const whyN = bAlerts.length ? bAlerts.length + bZones.length : bZones.length;
+  const why = bridgeWhy(whySrc);
+  if (why) {
+    bh += '<p class="bridge-why">' + (bZones.length && !bAlerts.length ? '🚧 ' : '')
+      + esc(why) + (whyN > 1 ? ' · +' + (whyN - 1) + ' more' : '') + '</p>';
+  } else {
+    bh += '<p>' + esc(b.note || '') + '</p>';
+  }
   (b.alerts || []).forEach(a => {
-    bh += '<div class="incident-row"><strong>' + esc(a.title) + '</strong><p>' + esc(a.desc) + '</p></div>';
+    /* v100: the fetcher's desc often repeats the title word for word —
+       print it once, not twice. */
+    const aT = (a.title || '').trim(), aD = (a.desc || '').trim();
+    bh += '<div class="incident-row"><strong>' + esc(aT) + '</strong>'
+      + (aD && aD !== aT ? '<p>' + esc(aD) + '</p>' : '') + '</div>';
   });
   (b.work_zones || []).forEach(z => {
     bh += '<div class="incident-row"><strong>🚧 Work zone</strong> — ' + esc(z.description || (z.roads || []).join(', '))
@@ -6658,8 +6695,13 @@ function goCheckRoads(src, label) {
   const inc = (r.incidents || []).length, wz = (b.work_zones || []).length, al = (b.alerts || []).length;
   if (b.status === "alert" || al > 0) {
     const first = (b.alerts || [])[0] || {};
-    return { state: "bad", block: "bridge", icon: "⛔", label: label + " — bridge alert posted",
-      detail: (first.title || b.note || "An alert is posted for the Lewis & Clark Bridge.")
+    /* v100: name the bridge and give the shortened reason — the raw
+       headline wall used to sit here, and the verdict head named no
+       bridge at all. */
+    const why = bridgeWhy(first.title || first.desc || '');
+    return { state: "bad", block: "bridge", icon: "⛔", label: label + " — Lewis & Clark Bridge alert",
+      detail: "Lewis & Clark Bridge: " + (why || b.note || "An alert is posted.")
+        + (al > 1 ? " · +" + (al - 1) + " more" : "")
         + " If US-30 is blocked: Cornelius Pass or the St. Johns Bridge are the usual detours." };
   }
   if (inc > 0 || wz > 0 || b.status === "work") {
@@ -6799,7 +6841,7 @@ function goVerdict(rows) {
        that time" said nothing) — each bad check tags what kind it is. */
     const bad = rows.find(r => r.state === "bad");
     const heads = {
-      bridge: "⛔ Delay on bridge",
+      bridge: "⛔ Delay on the Lewis & Clark Bridge",
       route: "⛔ Route not clear",
       weather: "⛔ Weather alert on the route",
       ferry: "⛔ Ferry not running",
