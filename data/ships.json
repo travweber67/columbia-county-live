@@ -1,47 +1,111 @@
 {
- "fetched_at": "2026-11-17T06:16:12Z",
+ "fetched_at": "2026-11-17T06:20:09Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 563302700,
-   "name": "KEY WEST",
-   "lat": 46.10386,
-   "lon": -122.95086,
-   "sog_kn": 0,
-   "cog": 295.9,
-   "heading": 118,
-   "nav_status": 5,
-   "updated": "2026-11-17 06:16:29.164068188 +0000 UTC"
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.14498,
+   "lon": -123.38462,
+   "sog_kn": 7.1,
+   "cog": 350.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-17 06:20:58.603862656 +0000 UTC"
   },
   {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64789,
-   "lon": -122.741,
-   "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-17 06:16:32.313732093 +0000 UTC"
+   "mmsi": 636024922,
+   "name": "VERACITY",
+   "lat": 45.99868,
+   "lon": -122.85164,
+   "type_code": 70,
+   "destination": "PHIL",
+   "updated": "2026-11-17 06:21:01.966231366 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.64562,
+   "lon": -122.75364,
+   "type_code": 50,
+   "updated": "2026-11-17 06:21:17.325043397 +0000 UTC",
+   "sog_kn": 1,
+   "cog": 230.2,
+   "heading": 195,
+   "nav_status": 0
   },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.08221,
-   "lon": -122.90606,
-   "sog_kn": 0.1,
-   "cog": 154.6,
-   "heading": 136,
+   "lat": 46.08205,
+   "lon": -122.90584,
+   "sog_kn": 0.3,
+   "cog": 273.6,
+   "heading": 71,
    "nav_status": 0,
-   "updated": "2026-11-17 06:16:42.977344269 +0000 UTC"
+   "updated": "2026-11-17 06:21:10.502973967 +0000 UTC"
   },
   {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.99088,
-   "lon": -122.84115,
-   "type_code": 0,
-   "destination": "VANCOUVER",
-   "updated": "2026-11-17 06:16:57.117481018 +0000 UTC"
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.91008,
+   "sog_kn": 0,
+   "cog": 195.2,
+   "heading": 72,
+   "nav_status": 0,
+   "updated": "2026-11-17 06:21:11.357451084 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.07462,
+   "lon": -122.89358,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-17 06:21:12.099605831 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40233,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 132,
+   "nav_status": 0,
+   "updated": "2026-11-17 06:21:14.295310373 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08219,
+   "lon": -122.90635,
+   "sog_kn": 0.6,
+   "cog": 342,
+   "heading": 261,
+   "nav_status": 3,
+   "updated": "2026-11-17 06:21:21.34483969 +0000 UTC"
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64202,
+   "lon": -122.74985,
+   "sog_kn": 0,
+   "cog": 180.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-17 06:21:21.937292567 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64568,
+   "lon": -122.73486,
+   "type_code": 79,
+   "updated": "2026-11-17 06:21:22.269667667 +0000 UTC"
   }
  ]
 }
