@@ -1,51 +1,60 @@
 {
- "fetched_at": "2026-11-17T13:20:16Z",
+ "fetched_at": "2026-11-17T13:21:59Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.1995,
-   "lon": -123.385,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65016,
+   "lon": -122.74764,
    "sog_kn": 0,
-   "cog": 156,
+   "cog": 56.6,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-17 13:20:54.343454755 +0000 UTC"
+   "nav_status": 3,
+   "updated": "2026-11-17 13:22:19.605958029 +0000 UTC"
   },
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60754,
-   "lon": -122.67759,
+   "mmsi": 563302700,
+   "name": "KEY WEST",
+   "lat": 46.10384,
+   "lon": -122.9509,
+   "type_code": 70,
+   "destination": "LONGVIEW USA",
+   "updated": "2026-11-17 13:22:26.761966492 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.5876,
+   "lon": -122.77037,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "cog": 208,
+   "heading": 140,
    "nav_status": 0,
-   "updated": "2026-11-17 13:20:58.100140327 +0000 UTC"
+   "updated": "2026-11-17 13:22:41.099187023 +0000 UTC"
   },
   {
-   "mmsi": 311008700,
-   "name": "VICTORY RAY",
-   "lat": 45.64056,
-   "lon": -122.71721,
+   "mmsi": 366396000,
+   "name": "NAT GEO SEA LION",
+   "lat": 46.08962,
+   "lon": -122.92976,
    "sog_kn": 0,
-   "cog": 307.6,
-   "heading": 295,
+   "cog": 283.1,
+   "heading": 112,
    "nav_status": 5,
-   "updated": "2026-11-17 13:20:59.911731147 +0000 UTC"
+   "updated": "2026-11-17 13:22:41.524802091 +0000 UTC"
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19998,
-   "lon": -123.38551,
-   "sog_kn": 0,
-   "cog": 317.2,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-17 13:21:11.23896928 +0000 UTC"
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.7639,
+   "lon": -122.7645,
+   "sog_kn": 7,
+   "cog": 159.1,
+   "heading": 164,
+   "nav_status": 12,
+   "updated": "2026-11-17 13:22:42.376841947 +0000 UTC"
   }
  ]
 }
