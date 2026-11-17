@@ -1,60 +1,82 @@
 {
- "fetched_at": "2026-11-17T16:42:21Z",
+ "fetched_at": "2026-11-17T16:47:22Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 46.10053,
-   "lon": -122.94465,
-   "sog_kn": 2,
-   "cog": 80.4,
-   "heading": 91,
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.64667,
+   "lon": -122.73982,
+   "sog_kn": 5,
+   "cog": 57,
+   "heading": 60,
    "nav_status": 0,
-   "updated": "2026-11-17 16:42:47.509212518 +0000 UTC"
+   "updated": "2026-11-17 16:47:35.081233066 +0000 UTC"
   },
   {
-   "mmsi": 338205428,
-   "name": "CLAIRE B",
-   "lat": 45.7789,
-   "lon": -122.77316,
-   "sog_kn": 6.2,
-   "cog": 162.9,
-   "heading": 157,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07636,
+   "lon": -122.8963,
+   "sog_kn": 2.3,
+   "cog": 153.2,
+   "heading": 145,
    "nav_status": 0,
-   "updated": "2026-11-17 16:42:57.404809358 +0000 UTC"
+   "updated": "2026-11-17 16:47:35.249697463 +0000 UTC"
   },
   {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00883,
-   "lon": -122.84888,
+   "mmsi": 368450870,
+   "name": "AMERICAN ENCORE",
+   "lat": 46.00361,
+   "lon": -122.84762,
+   "sog_kn": 0,
+   "cog": 159.8,
+   "heading": 159,
+   "nav_status": 0,
+   "updated": "2026-11-17 16:47:42.335039593 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19955,
+   "lon": -123.385,
+   "sog_kn": 0,
+   "cog": 23,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-17 16:47:50.892359354 +0000 UTC",
+   "type_code": 30,
+   "destination": "CATHLAMET WA"
+  },
+  {
+   "mmsi": 538006098,
+   "name": "ANTARES",
+   "lat": 45.98417,
+   "lon": -122.83528,
+   "type_code": 70,
+   "destination": "USKAM",
+   "updated": "2026-11-17 16:47:54.70486449 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08286,
+   "lon": -122.90698,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-17 16:43:03.606066368 +0000 UTC"
+   "heading": 309,
+   "nav_status": 3,
+   "updated": "2026-11-17 16:47:57.470117392 +0000 UTC"
   },
   {
-   "mmsi": 355980000,
-   "name": "LUGANO STAR",
-   "lat": 45.64288,
-   "lon": -122.77162,
-   "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-17 16:43:05.769428595 +0000 UTC"
-  },
-  {
-   "mmsi": 369970121,
-   "name": "ELTON",
-   "lat": 46.17397,
-   "lon": -123.42224,
-   "sog_kn": 0.6,
-   "cog": 224.6,
-   "heading": 227,
-   "nav_status": 0,
-   "updated": "2026-11-17 16:43:04.964072368 +0000 UTC"
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.64343,
+   "lon": -122.75283,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-17 16:47:59.934837094 +0000 UTC"
   }
  ]
 }
