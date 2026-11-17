@@ -3158,9 +3158,12 @@ function renderEvents() {
   const inFilter = evs.filter(ev => eventMatchesFilter(ev, currentEventFilter));
   /* The 16-row cap keeps the card compact, but hand-picked community
      events always render: they were added on purpose, and some (a
-     December fundraiser, a season-long campaign) sort past the cap. */
+     December fundraiser, a season-long campaign) sort past the cap.
+     Scappoose Public Library events get the same exemption (Travis
+     approved 2026-11-17, after a resident asked for them by name):
+     their full two-week program would otherwise hide past the cap. */
   const shown = inFilter.slice(0, 16);
-  inFilter.slice(16).forEach(ev => { if (ev.community) shown.push(ev); });
+  inFilter.slice(16).forEach(ev => { if (ev.community || ev.source === 'Scappoose Public Library') shown.push(ev); });
   shown.sort((a, b) => a.date === b.date ? parseTimeToMinutes(a.time) - parseTimeToMinutes(b.time)
                       : (a.date < b.date ? -1 : 1));
   const today = todayStrPT();
