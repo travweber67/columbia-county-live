@@ -1,51 +1,87 @@
 {
- "fetched_at": "2026-11-17T06:56:17Z",
+ "fetched_at": "2026-11-17T07:01:17Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 46.04951,
-   "lon": -122.88125,
-   "sog_kn": 7.8,
-   "cog": 176.5,
-   "heading": 175,
-   "nav_status": 0,
-   "updated": "2026-11-17 06:56:40.98032199 +0000 UTC"
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64604,
+   "lon": -122.74508,
+   "type_code": 52,
+   "destination": "US^0UU4>02MR",
+   "updated": "2026-11-17 07:01:34.305286719 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.09704,
-   "lon": -122.93436,
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10789,
+   "lon": -122.95896,
    "sog_kn": 0,
-   "cog": 48.1,
-   "heading": 98,
-   "nav_status": 3,
-   "updated": "2026-11-17 06:56:44.363035126 +0000 UTC"
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-17 07:01:40.530650805 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08236,
+   "lon": -122.90591,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-17 07:01:44.976404021 +0000 UTC"
+  },
+  {
+   "mmsi": 367747140,
+   "name": "TRIUMPH VIII",
+   "lat": 45.64619,
+   "lon": -122.75625,
+   "sog_kn": 4.4,
+   "cog": 145,
+   "heading": 131,
+   "nav_status": 0,
+   "updated": "2026-11-17 07:01:45.964634669 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.6629,
+   "lon": -122.76157,
+   "sog_kn": 0.9,
+   "cog": 147,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-17 07:01:48.898277882 +0000 UTC"
   },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 46.07512,
-   "lon": -122.89352,
-   "sog_kn": 2,
-   "cog": 326.9,
-   "heading": 248,
-   "nav_status": 3,
-   "updated": "2026-11-17 06:56:45.282417718 +0000 UTC"
+   "lat": 46.07473,
+   "lon": -122.89348,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-17 07:01:49.580918959 +0000 UTC"
   },
   {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 46.09069,
-   "lon": -122.93214,
-   "sog_kn": 0,
-   "cog": 260.5,
-   "heading": 111,
-   "nav_status": 5,
-   "updated": "2026-11-17 06:56:45.901510377 +0000 UTC"
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.64715,
+   "lon": -122.7568,
+   "sog_kn": 0.2,
+   "cog": 192.7,
+   "heading": 153,
+   "nav_status": 0,
+   "updated": "2026-11-17 07:01:58.094827128 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.3855,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-17 07:01:59.979856681 +0000 UTC"
   }
  ]
 }
