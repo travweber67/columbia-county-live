@@ -3486,3 +3486,62 @@ html[data-theme="dark"] .dir-empty{
    every other card — no column-span, because span breaks are
    reserved for the Travel map and roads cards, and Outdoors
    deliberately uses none (see the balanced-columns note above). */
+
+/* =====================================================================
+   ===== V106 · SAVER PHONE FIT (Travis's photo, 2026-11-17) =====
+   His phone in landscape: the clock is sized in vw (137px on a 915px
+   phone) while the parade tiles keep their TV-scale type, so in a
+   ~412px-tall viewport the tile stream grows up through the clock and
+   the sponsor tile's words run off the edges. Portrait phones get the
+   same parade type at nearly full screen width, so tile text crowds
+   the frame. Everything below lives inside phone-only media queries
+   and sizes the saver in vh on short screens: the clock zone and the
+   tile strip each get a bounded share of the screen and cannot meet.
+   Desktop / TV saver rendering is untouched.
+   ===================================================================== */
+
+/* --- short landscape: phones held sideways -------------------------- */
+@media (max-width:1023px) and (max-height:540px){
+  .saver-top{padding:10px 16px}
+  .saver-brand{font-size:1rem}
+  .saver-brand img{width:26px;height:26px}
+  .saver-clockbox{top:6vh;padding:0 3vw}
+  .saver-clock{font-size:clamp(2.4rem,16vh,4.2rem);line-height:.95}
+  .saver-date{margin-top:.6vh;font-size:clamp(.9rem,4.2vh,1.15rem)}
+  /* the strip keeps clear of the stacked bottom zone (v10) and its
+     tiles shrink to fit the strip instead of growing through the clock */
+  .saver-answers{bottom:23vh}
+  .saver-scroll-set{gap:12px;padding-right:12px}
+  .saver-scroll-set .saver-answer{width:min(330px,44vw);padding:10px 14px 9px;border-radius:14px}
+  .saver-scroll-set .saver-answer-label{font-size:.78rem;gap:6px}
+  .saver-scroll-set .saver-answer-label img{width:20px;height:20px}
+  .saver-scroll-set .saver-answer-val{font-size:clamp(1.1rem,5.2vh,1.45rem);margin-top:3px;-webkit-line-clamp:2}
+  .saver-scroll-set .saver-answer-val.long{font-size:clamp(.95rem,4.4vh,1.2rem);-webkit-line-clamp:2}
+  .saver-scroll-set .saver-answer-val.xlong{font-size:clamp(.88rem,4vh,1.1rem);-webkit-line-clamp:2}
+  .saver-scroll-set .saver-answer-sub{font-size:.82rem;margin-top:2px}
+  .saver-scroll-set .saver-sponsor .saver-answer-sub{-webkit-line-clamp:4;font-size:.78rem}
+  .saver-sponsor-cta{font-size:.85rem;padding:6px 14px;margin-top:6px}
+  /* static (non-scrolling) tiles get the same compact treatment */
+  .saver-answers:not(.scrolling) .saver-answer{padding:10px 14px 9px}
+  .saver-answers:not(.scrolling) .saver-answer-val{font-size:clamp(1.1rem,5.2vh,1.45rem)}
+  .saver-answers:not(.scrolling) .saver-answer-sub{font-size:.82rem}
+  .saver-exit{top:52px;right:12px;width:40px;height:40px;font-size:1.05rem}
+  .saver-exit-hint{display:none}
+  .saver-bottom .saver-quiet{font-size:.8rem}
+  .saver-bottom .saver-credit-name{font-size:1.05rem}
+  .saver-bottom .saver-credit-loc{font-size:.66rem}
+}
+
+/* --- portrait phones: parade tiles sized to the phone --------------- */
+@media (max-width:640px){
+  .saver-scroll-set{gap:14px;padding-right:14px}
+  .saver-scroll-set .saver-answer{width:min(300px,74vw);padding:16px 18px 14px;border-radius:18px}
+  .saver-scroll-set .saver-answer-label{font-size:.85rem}
+  .saver-scroll-set .saver-answer-label img{width:22px;height:22px}
+  .saver-scroll-set .saver-answer-val{font-size:clamp(1.55rem,7.5vw,2rem)}
+  .saver-scroll-set .saver-answer-val.long{font-size:clamp(1.15rem,5.4vw,1.45rem)}
+  .saver-scroll-set .saver-answer-val.xlong{font-size:clamp(1.02rem,4.8vw,1.3rem)}
+  .saver-scroll-set .saver-answer-sub{font-size:.98rem}
+  .saver-scroll-set .saver-sponsor .saver-answer-sub{-webkit-line-clamp:4;font-size:.9rem}
+  .saver-sponsor-cta{font-size:.92rem;padding:8px 16px}
+}
