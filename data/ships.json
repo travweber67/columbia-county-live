@@ -1,78 +1,62 @@
 {
- "fetched_at": "2026-11-17T19:29:39Z",
+ "fetched_at": "2026-11-17T19:34:39Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367002210,
-   "name": "RACHELEBRUSCO",
-   "lat": 46.20167,
-   "lon": -123.38746,
-   "type_code": 0,
-   "destination": "ABERDEEN, WA",
-   "updated": "2026-11-17 19:29:42.9115832 +0000 UTC"
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.99108,
+   "lon": -122.84634,
+   "sog_kn": 6.4,
+   "cog": 159,
+   "heading": 155,
+   "nav_status": 0,
+   "updated": "2026-11-17 19:35:05.379104136 +0000 UTC"
   },
   {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 46.15984,
-   "lon": -123.40536,
-   "type_code": 57,
-   "destination": "VANCOUVER",
-   "updated": "2026-11-17 19:29:44.415665725 +0000 UTC"
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08287,
+   "lon": -122.90699,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 309,
+   "nav_status": 3,
+   "updated": "2026-11-17 19:35:08.06361658 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.61143,
+   "lon": -122.6343,
+   "sog_kn": 0,
+   "cog": 90.8,
+   "heading": 358,
+   "nav_status": 0,
+   "updated": "2026-11-17 19:35:08.350750125 +0000 UTC"
   },
   {
    "mmsi": 368440320,
    "name": "HEATHER S",
-   "lat": 45.63713,
-   "lon": -122.72137,
-   "sog_kn": 9.4,
-   "cog": 99.1,
+   "lat": 45.63495,
+   "lon": -122.70482,
+   "sog_kn": 9.1,
+   "cog": 130.5,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-17 19:29:48.724472207 +0000 UTC"
+   "updated": "2026-11-17 19:35:08.711561741 +0000 UTC"
   },
   {
-   "mmsi": 538006098,
-   "name": "ANTARES",
-   "lat": 45.9842,
-   "lon": -122.83532,
-   "type_code": 70,
-   "destination": "USKAM",
-   "updated": "2026-11-17 19:29:54.941872443 +0000 UTC"
-  },
-  {
-   "mmsi": 538004110,
-   "name": "AENEAS",
-   "lat": 46.0272,
-   "lon": -122.8694,
-   "sog_kn": 0.1,
-   "cog": 15.4,
-   "heading": 137,
-   "nav_status": 5,
-   "updated": "2026-11-17 19:30:05.32276973 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.6435,
-   "lon": -122.75245,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65014,
+   "lon": -122.74761,
    "sog_kn": 0,
-   "cog": 160.5,
+   "cog": 266.4,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-17 19:30:06.863865022 +0000 UTC"
-  },
-  {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.88389,
-   "lon": -122.79737,
-   "sog_kn": 8.7,
-   "cog": 335.5,
-   "heading": 334,
-   "nav_status": 12,
-   "updated": "2026-11-17 19:30:12.523494725 +0000 UTC"
+   "nav_status": 3,
+   "updated": "2026-11-17 19:35:09.398515363 +0000 UTC"
   }
  ]
 }
