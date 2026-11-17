@@ -1,6 +1,146 @@
 {
- "fetched_at": "2026-11-17T04:01:02Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-17T04:06:02Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 13 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.08224,
+   "lon": -122.9059,
+   "sog_kn": 0.2,
+   "cog": 189.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-17 04:06:21.929152304 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08214,
+   "lon": -122.90579,
+   "sog_kn": 0,
+   "cog": 204.1,
+   "heading": 132,
+   "nav_status": 0,
+   "updated": "2026-11-17 04:06:23.196781549 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64346,
+   "lon": -122.75243,
+   "sog_kn": 0,
+   "cog": 37.3,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-17 04:06:28.47120492 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.62561,
+   "lon": -122.79036,
+   "sog_kn": 6.5,
+   "cog": 193.8,
+   "heading": 190,
+   "nav_status": 12,
+   "updated": "2026-11-17 04:06:30.446732882 +0000 UTC"
+  },
+  {
+   "mmsi": 538008434,
+   "name": "UNION FUJI",
+   "lat": 46.1089,
+   "lon": -122.96129,
+   "sog_kn": 0,
+   "cog": 268.2,
+   "heading": 130,
+   "nav_status": 5,
+   "updated": "2026-11-17 04:06:31.904545629 +0000 UTC"
+  },
+  {
+   "mmsi": 636026324,
+   "name": "STAR BELLA",
+   "lat": 46.02718,
+   "lon": -122.86962,
+   "sog_kn": 0,
+   "cog": 86.9,
+   "heading": 139,
+   "nav_status": 5,
+   "updated": "2026-11-17 04:06:36.282123106 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.0897,
+   "lon": -122.92903,
+   "sog_kn": 0,
+   "cog": 226.8,
+   "heading": 106,
+   "nav_status": 0,
+   "updated": "2026-11-17 04:06:37.776018382 +0000 UTC"
+  },
+  {
+   "mmsi": 636024633,
+   "name": "PAVO LEADER",
+   "lat": 45.63809,
+   "lon": -122.72248,
+   "type_code": 70,
+   "destination": "US RCH",
+   "updated": "2026-11-17 04:06:41.627214628 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.3854,
+   "sog_kn": 0,
+   "cog": 17.9,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-17 04:06:43.59228444 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.38554,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-17 04:06:44.351064725 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.0754,
+   "lon": -122.89423,
+   "sog_kn": 0.4,
+   "cog": 294.8,
+   "heading": 151,
+   "nav_status": 3,
+   "updated": "2026-11-17 04:06:44.959538417 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.0824,
+   "lon": -122.90608,
+   "sog_kn": 0.5,
+   "cog": 223.9,
+   "heading": 308,
+   "nav_status": 3,
+   "updated": "2026-11-17 04:06:48.542346445 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.90487,
+   "lon": -122.80589,
+   "sog_kn": 11.5,
+   "cog": 347.6,
+   "heading": 344,
+   "nav_status": 0,
+   "updated": "2026-11-17 04:06:48.967286179 +0000 UTC"
+  }
+ ]
 }
