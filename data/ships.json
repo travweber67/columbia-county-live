@@ -1,69 +1,84 @@
 {
- "fetched_at": "2026-11-16T23:55:43Z",
+ "fetched_at": "2026-11-17T00:15:45Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 45.63258,
-   "lon": -122.70663,
-   "type_code": 70,
-   "destination": "US VAN",
-   "updated": "2026-11-16 23:56:21.191651139 +0000 UTC"
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.98544,
+   "lon": -122.8363,
+   "type_code": 0,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-17 00:17:16.446641483 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 264.2,
+   "heading": 331,
+   "nav_status": 5
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.09728,
-   "lon": -122.93429,
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.62372,
+   "lon": -122.78964,
+   "sog_kn": 8.7,
+   "cog": 4.6,
+   "heading": 3,
+   "nav_status": 0,
+   "updated": "2026-11-17 00:16:59.127190826 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10791,
+   "lon": -122.95906,
    "sog_kn": 0,
-   "cog": 57.1,
-   "heading": 106,
-   "nav_status": 3,
-   "updated": "2026-11-16 23:56:24.746326346 +0000 UTC"
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-17 00:17:10.136756824 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.98953,
+   "lon": -122.84452,
+   "sog_kn": 5.5,
+   "cog": 169.2,
+   "heading": 164,
+   "nav_status": 0,
+   "updated": "2026-11-17 00:17:10.563816233 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79266,
+   "lon": -122.84483,
+   "sog_kn": 0,
+   "cog": 98.8,
+   "heading": 316,
+   "nav_status": 12,
+   "updated": "2026-11-17 00:17:17.351462437 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64542,
+   "lon": -122.73506,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-17 00:17:17.740088659 +0000 UTC"
   },
   {
    "mmsi": 367001790,
    "name": "TUG RICHARD BRUSCO",
-   "lat": 45.64729,
-   "lon": -122.74133,
+   "lat": 45.64728,
+   "lon": -122.74121,
    "sog_kn": 0,
    "cog": 88.5,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-16 23:56:31.695476102 +0000 UTC"
-  },
-  {
-   "mmsi": 367513120,
-   "name": "CASCADES",
-   "lat": 45.66114,
-   "lon": -122.76062,
-   "sog_kn": 0,
-   "cog": 304.7,
-   "heading": 336,
-   "nav_status": 0,
-   "updated": "2026-11-16 23:56:32.824894561 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10355,
-   "lon": -122.9101,
-   "type_code": 52,
-   "destination": "US^0T0P>035F",
-   "updated": "2026-11-16 23:56:33.346825315 +0000 UTC"
-  },
-  {
-   "mmsi": 366892350,
-   "name": "NAT GEO SEA BIRD",
-   "lat": 46.08966,
-   "lon": -122.92973,
-   "sog_kn": 0,
-   "cog": 72.7,
-   "heading": 108,
-   "nav_status": 5,
-   "updated": "2026-11-16 23:56:39.111881909 +0000 UTC"
+   "updated": "2026-11-17 00:17:23.190983781 +0000 UTC"
   }
  ]
 }
