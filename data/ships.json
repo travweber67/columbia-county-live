@@ -1,84 +1,91 @@
 {
- "fetched_at": "2026-11-17T10:06:38Z",
+ "fetched_at": "2026-11-17T10:11:39Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15707,
-   "lon": -123.40233,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.08196,
+   "lon": -122.90601,
+   "sog_kn": 0.9,
+   "cog": 257.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-17 10:11:52.772191792 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64542,
+   "lon": -122.73503,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-17 10:11:53.483295909 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09753,
+   "lon": -122.93427,
+   "sog_kn": 0.1,
+   "cog": 27.2,
+   "heading": 110,
+   "nav_status": 3,
+   "updated": "2026-11-17 10:11:54.038763448 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08286,
+   "lon": -122.90695,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 134,
-   "nav_status": 0,
-   "updated": "2026-11-17 10:06:54.355848262 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.04223,
-   "lon": -122.88214,
-   "sog_kn": 4.6,
-   "cog": 348.5,
-   "heading": 342,
-   "nav_status": 0,
-   "updated": "2026-11-17 10:06:59.077435673 +0000 UTC"
-  },
-  {
-   "mmsi": 538004110,
-   "name": "AENEAS",
-   "lat": 46.10382,
-   "lon": -122.96095,
-   "sog_kn": 8.2,
-   "cog": 119.5,
-   "heading": 118,
-   "nav_status": 0,
-   "updated": "2026-11-17 10:07:00.467798497 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19999,
-   "lon": -123.38538,
-   "sog_kn": 0,
-   "cog": 167.3,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-17 10:07:05.110397073 +0000 UTC"
+   "heading": 309,
+   "nav_status": 3,
+   "updated": "2026-11-17 10:11:57.118965588 +0000 UTC"
   },
   {
    "mmsi": 367608420,
    "name": "PETER J BRIX",
-   "lat": 45.58758,
-   "lon": -122.77064,
-   "sog_kn": 0,
-   "cog": 274.2,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-17 10:07:05.186984465 +0000 UTC"
+   "lat": 45.58752,
+   "lon": -122.77067,
+   "type_code": 52,
+   "destination": "US^0R88>0UJB",
+   "updated": "2026-11-17 10:11:58.834758009 +0000 UTC"
   },
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 45.64341,
-   "lon": -122.75279,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 45.99161,
+   "lon": -122.84266,
+   "sog_kn": 6.8,
+   "cog": 151,
+   "heading": 151,
    "nav_status": 0,
-   "updated": "2026-11-17 10:07:05.195140674 +0000 UTC"
+   "updated": "2026-11-17 10:12:05.670717713 +0000 UTC"
   },
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.14284,
-   "lon": -123.34344,
-   "sog_kn": 7.9,
-   "cog": 115.8,
-   "heading": 106,
-   "nav_status": 3,
-   "updated": "2026-11-17 10:07:07.669004666 +0000 UTC"
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58735,
+   "lon": -122.77044,
+   "sog_kn": 0,
+   "cog": 220.2,
+   "heading": 138,
+   "nav_status": 5,
+   "updated": "2026-11-17 10:12:07.529915467 +0000 UTC"
+  },
+  {
+   "mmsi": 355980000,
+   "name": "LUGANO STAR",
+   "lat": 45.64308,
+   "lon": -122.77131,
+   "sog_kn": 0,
+   "cog": 317.5,
+   "heading": 228,
+   "nav_status": 5,
+   "updated": "2026-11-17 10:12:18.334174827 +0000 UTC"
   }
  ]
 }
