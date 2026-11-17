@@ -1,60 +1,49 @@
 {
- "fetched_at": "2026-11-17T19:44:40Z",
+ "fetched_at": "2026-11-17T19:49:40Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.64329,
+   "lon": -122.75283,
+   "type_code": 31,
+   "destination": "HARBOROPPS-",
+   "updated": "2026-11-17 19:49:46.114761396 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.38549,
+   "sog_kn": 0,
+   "cog": 4.8,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-17 19:50:02.407916363 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.626,
+   "lon": -122.78942,
+   "sog_kn": 9.3,
+   "cog": 7.7,
+   "heading": 8,
+   "nav_status": 0,
+   "updated": "2026-11-17 19:50:06.93091951 +0000 UTC"
+  },
   {
    "mmsi": 367001790,
    "name": "TUG RICHARD BRUSCO",
-   "lat": 45.64205,
-   "lon": -122.74983,
+   "lat": 45.64204,
+   "lon": -122.74984,
    "sog_kn": 0,
    "cog": 180.6,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-17 19:44:52.145099963 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.60147,
-   "lon": -122.78016,
-   "sog_kn": 10.2,
-   "cog": 332,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-17 19:44:58.023656312 +0000 UTC"
-  },
-  {
-   "mmsi": 356334000,
-   "name": "LAUREL ISLAND",
-   "lat": 46.15197,
-   "lon": -123.39301,
-   "sog_kn": 9.4,
-   "cog": 134.8,
-   "heading": 121,
-   "nav_status": 0,
-   "updated": "2026-11-17 19:45:06.904093787 +0000 UTC"
-  },
-  {
-   "mmsi": 367425870,
-   "name": "HUSKY",
-   "lat": 45.61153,
-   "lon": -122.63434,
-   "type_code": 52,
-   "destination": "US^02AK>0UV5",
-   "updated": "2026-11-17 19:45:14.237612835 +0000 UTC"
-  },
-  {
-   "mmsi": 368450870,
-   "name": "AMERICAN ENCORE",
-   "lat": 46.00361,
-   "lon": -122.84763,
-   "sog_kn": 0,
-   "cog": 70.1,
-   "heading": 160,
-   "nav_status": 0,
-   "updated": "2026-11-17 19:45:21.074198315 +0000 UTC"
+   "updated": "2026-11-17 19:50:12.574591188 +0000 UTC"
   }
  ]
 }
