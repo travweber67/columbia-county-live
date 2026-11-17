@@ -1,89 +1,84 @@
 {
- "fetched_at": "2026-11-17T16:12:17Z",
+ "fetched_at": "2026-11-17T16:17:17Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 372346000,
-   "name": "SIERRA NEVADA HWY",
-   "lat": 45.64644,
-   "lon": -122.75597,
+   "mmsi": 368328430,
+   "name": "MCR 8",
+   "lat": 45.58535,
+   "lon": -122.76699,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-17 16:17:29.293861393 +0000 UTC"
+  },
+  {
+   "mmsi": 563302700,
+   "name": "KEY WEST",
+   "lat": 46.10384,
+   "lon": -122.95086,
    "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-17 16:12:25.907156522 +0000 UTC"
+   "destination": "LONGVIEW USA",
+   "updated": "2026-11-17 16:17:32.155144177 +0000 UTC"
   },
   {
-   "mmsi": 368136580,
-   "name": "ORIN L GREEN",
-   "lat": 46.08145,
-   "lon": -122.90815,
-   "sog_kn": 7.7,
-   "cog": 316.4,
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60766,
+   "lon": -122.67761,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-17 16:12:26.152005762 +0000 UTC"
+   "updated": "2026-11-17 16:17:38.127863601 +0000 UTC"
   },
   {
-   "mmsi": 368450870,
-   "name": "AMERICAN ENCORE",
-   "lat": 46.00361,
-   "lon": -122.84763,
-   "type_code": 60,
-   "destination": "KALAMA, WA",
-   "updated": "2026-11-17 16:12:33.317238387 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.09929,
-   "lon": -122.9422,
-   "sog_kn": 1,
-   "cog": 348.7,
-   "heading": 160,
-   "nav_status": 0,
-   "updated": "2026-11-17 16:12:36.814707071 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 46.08971,
-   "lon": -122.92892,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64744,
+   "lon": -122.73944,
    "sog_kn": 0,
-   "cog": 0.8,
-   "heading": 109,
+   "cog": 285,
+   "heading": 285,
    "nav_status": 0,
-   "updated": "2026-11-17 16:12:36.996897056 +0000 UTC"
+   "updated": "2026-11-17 16:17:46.097381582 +0000 UTC",
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA"
   },
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.13722,
-   "lon": -123.37889,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.0971,
+   "lon": -122.93443,
    "sog_kn": 0,
-   "cog": 149.4,
-   "heading": 511,
+   "cog": 19.9,
+   "heading": 106,
+   "nav_status": 3,
+   "updated": "2026-11-17 16:17:43.81493589 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08984,
+   "lon": -122.92898,
+   "sog_kn": 0,
+   "cog": 208.4,
+   "heading": 107,
    "nav_status": 0,
-   "updated": "2026-11-17 16:12:37.535640513 +0000 UTC"
+   "updated": "2026-11-17 16:17:48.948657491 +0000 UTC"
   },
   {
-   "mmsi": 563331600,
-   "name": "BELLE LUNE",
-   "lat": 46.16902,
-   "lon": -123.09932,
-   "sog_kn": 0.2,
-   "cog": 139.8,
-   "heading": 51,
-   "nav_status": 1,
-   "updated": "2026-11-17 16:12:40.156500896 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.6479,
-   "lon": -122.74099,
-   "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-17 16:12:44.407714784 +0000 UTC"
+   "mmsi": 311008700,
+   "name": "VICTORY RAY",
+   "lat": 45.64056,
+   "lon": -122.7172,
+   "sog_kn": 0,
+   "cog": 307.6,
+   "heading": 295,
+   "nav_status": 5,
+   "updated": "2026-11-17 16:17:57.805935015 +0000 UTC"
   }
  ]
 }
