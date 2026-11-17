@@ -974,6 +974,17 @@ html[data-theme="dark"] .wx-day.wx-today .wx-dow{color:#f0a35e}
 .go-row-bad{border-color:var(--danger)}
 .go-row-warn{border-left:4px solid var(--warn)}
 .go-row-na{border-style:dashed}
+.go-more{display:inline-flex;align-items:center;gap:5px;margin-top:7px;padding:2px 0;background:none;border:0;font:inherit;cursor:pointer}
+.go-more .go-chev{color:var(--accent);transition:transform .25s ease}
+.go-more.open .go-chev{transform:rotate(180deg)}
+.go-more-label{font-size:.78rem;font-weight:600;letter-spacing:.02em;color:var(--muted)}
+.go-notes{margin-top:2px}
+.go-notes-head{font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin:10px 0 1px}
+.go-note{padding:7px 0;border-top:1px solid var(--border)}
+.go-note strong{display:block;font-size:.88rem;font-weight:600;line-height:1.35}
+.go-note-meta{display:block;color:var(--muted);font-size:.8rem;line-height:1.4;margin-top:1px}
+.go-note-desc{display:block;font-size:.84rem;line-height:1.45;margin-top:2px}
+.go-verdict-tap{cursor:pointer}
 .go-actions{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 8px}
 
 /* ---------- Your front page (X20 R18) ---------- */

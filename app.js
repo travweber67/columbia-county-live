@@ -6637,6 +6637,7 @@ let goToName = "Portland";
 let goData = null, goDataAt = 0, goDataTown = "";
 let goRenderSeq = 0;
 let goLastText = "", goLastDep = 0;
+let goNotesOpen = false;
 
 function goTown() {
   return TOWNS.find(t => t.name === goTownName) || currentTown || TOWNS[0];
@@ -6733,6 +6734,116 @@ function goCheckAlerts(src) {
     detail: names.slice(0, 2).join(" · ") + (names.length > 2 ? " · +" + (names.length - 2) + " more" : "")
       + " — read the Weather Alerts card before you leave." };
 }
+
+/* v110: the corridor row's notes — the actual incidents behind the
+   count, listed in the row itself behind See more (Travis, 2026-11-17:
+   the verdict said "check the notes first" and the row said "see the
+   roads card", and neither led anywhere). Corridor matching is
+   geometric, from the coordinates the feed itself carries: an incident
+   is on-route when it sits within ~4 miles of the straight line
+   between the From and To towns and between them along it. Titles and
+   impact wording run as ODOT published them; nothing is reworded into
+   a claim the data doesn't make. Portland / Longview / Kelso are
+   destination-only towns (not in TOWNS), so their endpoints live here. */
+const GO_DEST_COORDS = {
+  "Portland": { lat: 45.5152, lon: -122.6784 },
+  "Longview": { lat: 46.1386, lon: -122.9540 },
+  "Kelso": { lat: 46.1468, lon: -122.9085 }
+};
+function goDestPoint() {
+  return TOWNS.find(t => t.name === goToName) || GO_DEST_COORDS[goToName] || null;
+}
+function goImpactRank(impact) {
+  const s = (impact || "").toLowerCase();
+  if (/clos|detour/.test(s)) return 0;
+  if (/delay/.test(s)) return 1;
+  if (/informational/.test(s)) return 3;
+  return 2;
+}
+function goOnRoute(i, a, b) {
+  if (!i || i.lat == null || i.lon == null || !a || !b) return false;
+  const kx = 111.32 * Math.cos((a.lat + b.lat) / 2 * Math.PI / 180), ky = 110.57;
+  const ax = a.lon * kx, ay = a.lat * ky, bx = b.lon * kx, by = b.lat * ky;
+  const px = i.lon * kx, py = i.lat * ky;
+  const dx = bx - ax, dy = by - ay, len2 = dx * dx + dy * dy;
+  if (!len2) return false;
+  let t = ((px - ax) * dx + (py - ay) * dy) / len2;
+  if (t < -0.05 || t > 1.05) return false;
+  t = Math.max(0, Math.min(1, t));
+  const ex = ax + t * dx - px, ey = ay + t * dy - py;
+  return ex * ex + ey * ey <= 36;
+}
+function goRoadNotes(r) {
+  const a = goTrip === "commute" ? goTown() : null;
+  const b = goTrip === "commute" ? goDestPoint() : null;
+  const items = [];
+  (r.incidents || []).forEach(i => {
+    let desc = splitIncidentDesc(i.desc || "").text || "";
+    if (desc === (i.title || "").trim()) desc = "";
+    if (desc.length > 240) desc = desc.slice(0, 237).replace(/\s+\S*$/, "") + "…";
+    const meta = [];
+    if (i.place) meta.push(i.place); else if (i.route) meta.push(i.route);
+    if (i.impact) meta.push(i.impact);
+    items.push({ title: i.title || "ODOT incident", meta: meta.join(" · "), desc: desc,
+      on: goOnRoute(i, a, b), rank: goImpactRank(i.impact) });
+  });
+  ((r.bridge || {}).work_zones || []).forEach(z => {
+    items.push({ title: "🚧 Work zone — Lewis & Clark Bridge", meta: "SR 433 · Rainier ↔ Longview",
+      desc: z.description || "", on: goToName === "Longview" || goToName === "Kelso", rank: 1 });
+  });
+  items.sort((x, y) => (y.on - x.on) || (x.rank - y.rank));
+  return items;
+}
+function goNotesHtml(notes) {
+  const item = n => "<div class=\"go-note\"><strong>" + esc(n.title) + "</strong>"
+    + (n.meta ? "<span class=\"go-note-meta\">" + esc(n.meta) + "</span>" : "")
+    + (n.desc ? "<span class=\"go-note-desc\">" + esc(n.desc) + "</span>" : "") + "</div>";
+  const on = notes.filter(n => n.on), off = notes.filter(n => !n.on);
+  let h = "<button class=\"go-more\" type=\"button\" aria-expanded=\"false\">"
+    + "<svg class=\"go-chev\" viewBox=\"0 0 24 24\" width=\"17\" height=\"17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 4.5 12 11l7-6.5\"/><path d=\"M5 12.5 12 19l7-6.5\"/></svg>"
+    + "<span class=\"go-more-label\">" + alertToggleLabel(false) + "</span></button>"
+    + "<div class=\"go-notes\" hidden>";
+  if (on.length) h += "<div class=\"go-notes-head\">On your route</div>" + on.map(item).join("");
+  if (off.length) h += "<div class=\"go-notes-head\">" + (on.length ? "Elsewhere in the county snapshot" : "In the county snapshot") + "</div>" + off.map(item).join("");
+  return h + "</div>";
+}
+/* v110: wire the corridor row's See more, and make the warn verdict
+   itself open the same list — the "check the notes first" promise and
+   the control are one thing now. Open state survives re-renders. */
+function goWireNotes(body, v) {
+  const box = body.querySelector(".go-notes");
+  const btn = body.querySelector(".go-more");
+  if (!box || !btn) return;
+  const vd = body.querySelector(".go-verdict");
+  const setOpen = open => {
+    box.hidden = !open;
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    btn.classList.toggle("open", open);
+    const lbl = btn.querySelector(".go-more-label");
+    if (lbl) lbl.textContent = alertToggleLabel(open);
+    if (vd) vd.setAttribute("aria-expanded", open ? "true" : "false");
+    goNotesOpen = open;
+  };
+  btn.addEventListener("click", () => setOpen(box.hidden));
+  if (vd && v && v.cls === "go-warn") {
+    vd.classList.add("go-verdict-tap");
+    vd.setAttribute("role", "button");
+    vd.setAttribute("tabindex", "0");
+    vd.setAttribute("aria-expanded", goNotesOpen ? "true" : "false");
+    const openIt = () => {
+      if (!box.hidden) return;
+      setOpen(true);
+      const row = btn.closest(".go-row");
+      if (row) row.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    };
+    vd.addEventListener("click", openIt);
+    vd.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openIt(); }
+    });
+  }
+  if (goNotesOpen) setOpen(true);
+}
+
 function goCheckRoads(src, label) {
   const r = src.roads;
   if (!r) return { state: "na", icon: "❔", label: label + " — couldn't check",
@@ -6756,7 +6867,8 @@ function goCheckRoads(src, label) {
     if (wz) bits.push(wz + " work zone" + (wz === 1 ? "" : "s"));
     if (b.status === "work") bits.push("bridge work scheduled");
     return { state: "warn", icon: "⚠️", label: label + " — mostly clear, with notes",
-      detail: bits.join(" · ") + " — see the roads card for the details." };
+      detail: bits.join(" · ") + " in the county snapshot.",
+      notes: goRoadNotes(r) };
   }
   if (b.status === "clear") {
     const snapNote = (r.fetched_at && !isNaN(new Date(r.fetched_at))) ? " (" + ago(new Date(r.fetched_at)) + ")" : "";
@@ -6925,8 +7037,11 @@ async function renderGo(force) {
     + "<ul class=\"go-rows\">" + rows.map(r =>
         "<li class=\"go-row go-row-" + r.state + "\"><span class=\"go-row-ico\">" + r.icon + "</span>"
         + "<span class=\"go-row-main\"><strong>" + esc(r.label) + "</strong>"
-        + "<span class=\"go-row-detail\">" + esc(r.detail) + "</span></span></li>"
+        + "<span class=\"go-row-detail\">" + esc(r.detail) + "</span>"
+        + (r.notes && r.notes.length ? goNotesHtml(r.notes) : "")
+        + "</span></li>"
       ).join("") + "</ul>";
+  goWireNotes(body, v);
   const stamp = $("go-updated");
   if (stamp) stamp.textContent = "Checked " + fmtTime(new Date());
   goLastDep = dep.getTime();
