@@ -1,93 +1,80 @@
 {
- "fetched_at": "2026-11-17T08:21:25Z",
+ "fetched_at": "2026-11-17T08:26:26Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 636015567,
-   "name": "KYRA ZAFIRA",
-   "lat": 45.63045,
-   "lon": -122.69563,
-   "sog_kn": 0,
-   "cog": 22.6,
-   "heading": 127,
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.01408,
+   "lon": -122.85466,
+   "sog_kn": 9.2,
+   "cog": 334.8,
+   "heading": 330,
+   "nav_status": 0,
+   "updated": "2026-11-17 08:26:47.085211917 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08268,
+   "lon": -122.9064,
+   "sog_kn": 0.2,
+   "cog": 289.2,
+   "heading": 122,
    "nav_status": 5,
-   "updated": "2026-11-17 08:21:42.581030466 +0000 UTC"
+   "updated": "2026-11-17 08:26:48.474352509 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35744,
-   "sog_kn": 0,
-   "cog": 232.9,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-17 08:21:46.34437113 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.66285,
-   "lon": -122.76168,
-   "sog_kn": 0,
-   "cog": 338,
-   "heading": 156,
-   "nav_status": 0,
-   "updated": "2026-11-17 08:21:47.19901694 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64788,
-   "lon": -122.74096,
-   "sog_kn": 0,
-   "cog": 111.9,
-   "heading": 111,
-   "nav_status": 5,
-   "updated": "2026-11-17 08:21:47.273030433 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08172,
-   "lon": -122.90412,
-   "sog_kn": 1.2,
-   "cog": 43.4,
-   "heading": 283,
-   "nav_status": 0,
-   "updated": "2026-11-17 08:21:51.124915395 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08273,
-   "lon": -122.90658,
-   "sog_kn": 0,
-   "cog": 30.1,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-17 08:21:53.445747307 +0000 UTC"
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09725,
+   "lon": -122.9344,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-17 08:26:51.431779059 +0000 UTC"
   },
   {
    "mmsi": 367653630,
    "name": "OSCAR B",
-   "lat": 46.15341,
+   "lat": 46.15343,
    "lon": -123.37712,
    "sog_kn": 0,
-   "cog": 171.7,
+   "cog": 159.3,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-17 08:21:56.794911775 +0000 UTC"
+   "updated": "2026-11-17 08:26:57.451745544 +0000 UTC"
   },
   {
-   "mmsi": 367047240,
-   "name": "DEFIANCE",
-   "lat": 45.64744,
-   "lon": -122.73944,
-   "type_code": 52,
-   "destination": "VANCOUVER",
-   "updated": "2026-11-17 08:22:01.1198469 +0000 UTC"
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.38549,
+   "sog_kn": 0,
+   "cog": 34.9,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-17 08:26:59.379660367 +0000 UTC"
+  },
+  {
+   "mmsi": 636024922,
+   "name": "VERACITY",
+   "lat": 46.01372,
+   "lon": -122.85511,
+   "type_code": 70,
+   "destination": "PHIL",
+   "updated": "2026-11-17 08:27:04.499231236 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20002,
+   "lon": -123.38539,
+   "sog_kn": 0,
+   "cog": 171.8,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-17 08:27:04.668150717 +0000 UTC"
   }
  ]
 }
