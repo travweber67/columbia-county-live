@@ -2472,6 +2472,13 @@ html[data-theme="dark"] .featured-local.photo-behind .featured-card{background:r
   .saver-scroll-set .saver-answer{width:82vw;padding:20px 22px 18px}
 }
 
+/* v98: Screensaver Sponsor tiles — the invite cards inside the scroll.
+   Same parade glass as the answer tiles, gold edge, founding-cta pill,
+   so a slot reads as an invitation, never as an answer. */
+.saver-scroll-set .saver-sponsor{display:flex;flex-direction:column;text-decoration:none;border-color:rgba(242,192,120,.6)}
+.saver-scroll-set .saver-sponsor .saver-answer-sub{-webkit-line-clamp:3}
+.saver-sponsor-cta{margin-top:auto;align-self:flex-start;display:inline-block;font-weight:800;font-size:clamp(.95rem,2vw,1.15rem);border-radius:999px;padding:10px 20px;background:var(--warm-fill);color:#2a1c08;border:1px solid var(--warm-fill)}
+
 /* --- 3 · compact phone masthead ---------------------------------------
    Travis: the Display and Dark pills eat the phone masthead. At phone
    widths (the same ≤560px line where the clock already hides) both

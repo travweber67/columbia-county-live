@@ -8659,6 +8659,52 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
       tile.appendChild(d);
     }
   }
+  /* v98: Screensaver Sponsor slots (Travis, 2026-11-16) — three paid
+     invite tiles woven into the scrolling stream, $29/mo, claim route
+     sponsor.html#section (the Section Sponsor route). They sit in the
+     gaps AFTER pinned answers, spread as evenly as the pin count
+     allows and numbered in scroll order; the gap choice is cyclic, so
+     no two sponsor tiles ever sit back to back — not even across the
+     loop seam. With only 2 pins, two slots ride (a third could not
+     avoid a seam neighbour); the default pin set shows all three.
+     The static / reduced-motion row stays sponsor-free: the scroll
+     is the product being sold. */
+  var SAVER_SPOTS = 3;
+  function saverSponsorTile(spot) {
+    var es = langCur === 'es';
+    return '<a class="saver-answer saver-sponsor" href="sponsor.html#section" data-saver-sponsor="' + spot + '"'
+      + ' aria-label="' + (es ? 'Patrocinador del protector de pantalla · Lugar ' + spot + ' de 3 — Disponible'
+                              : 'Screensaver Sponsor · Spot ' + spot + ' of 3 — Open') + '">'
+      + '<div class="saver-answer-label"><img src="img/icons/icon-sponsor.png" alt="" aria-hidden="true"> '
+      + (es ? 'Patrocinador del protector de pantalla · Lugar ' + spot + ' de 3'
+            : 'Screensaver Sponsor · Spot ' + spot + ' of 3') + '</div>'
+      + '<div class="saver-answer-val">' + (es ? 'Tu negocio aquí' : 'Your business here') + '</div>'
+      + '<div class="saver-answer-sub">' + (es
+          ? 'Uno de solo tres lugares en el protector de pantalla — tu nombre y logo pasando entre las respuestas, en televisores, tabletas y salas de espera de todo el condado. $29/mes, mes a mes, cancela cuando quieras.'
+          : 'One of only three spots in the screensaver — your name and logo scrolling between the answers, on TVs, tablets and waiting-room screens all over the county. $29/mo, month to month, cancel anytime.') + '</div>'
+      + '<span class="saver-sponsor-cta">' + (es ? 'Reclama este lugar &rarr;' : 'Claim this spot &rarr;') + '</span>'
+      + '</a>';
+  }
+  function saverScrollEntries(shown) {
+    var n = shown.length;
+    var spots = Math.min(SAVER_SPOTS, n);
+    var chosen = [];
+    for (var k = 0; k < spots; k++) {
+      var g = Math.round((k + 0.5) * n / spots) % n;
+      var guard = 0;
+      while (chosen.indexOf(g) >= 0 && guard < n) { g = (g + 1) % n; guard++; }
+      chosen.push(g);
+    }
+    chosen.sort(function (x, y) { return x - y; });
+    var gaps = {};
+    chosen.forEach(function (g, idx) { gaps[g] = idx + 1; });
+    var entries = [];
+    shown.forEach(function (a, i) {
+      entries.push({ a: a });
+      if (gaps[i]) entries.push({ s: gaps[i] });
+    });
+    return entries;
+  }
   function renderSaverAnswers() {
     var wrap = document.getElementById('saver-answers');
     if (!wrap) return;
@@ -8689,14 +8735,16 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
       return;
     }
     if (wrap.dataset.sig === sig && wrap.classList.contains('scrolling')) {
-      var all = wrap.querySelectorAll('.saver-answer');
+      var all = wrap.querySelectorAll('.saver-answer:not(.saver-sponsor)');
       all.forEach(function (tile, i) { patchSaverTile(tile, shown[i % shown.length]); });
       return;
     }
     wrap.dataset.sig = sig;
     wrap.classList.remove('is-static');
     wrap.classList.add('scrolling');
-    var set = shown.map(saverTile).join('');
+    var entries = saverScrollEntries(shown);
+    var set = entries.map(function (e) { return e.a ? saverTile(e.a) : saverSponsorTile(e.s); }).join('');
+    var setHidden = set.replace(/data-saver-sponsor="/g, 'tabindex="-1" data-saver-sponsor="');
     /* v7: the tiles are parade-scale now (~41vw wide, 82vw on phones),
        so the loop is timed by TRACK WIDTH, not answer count — a constant
        ~25px/s drift, the same stately pace v6 had, at any screen size.
@@ -8704,10 +8752,10 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
        ~60px/s on a TV.) One set passing = setW / 25 seconds. */
     var vwSaver = window.innerWidth || 1200;
     var tileWSaver = vwSaver <= 640 ? vwSaver * 0.82 : Math.min(820, vwSaver * 0.41);
-    var dur = Math.max(30, Math.round(shown.length * (tileWSaver + 20) / 25));
+    var dur = Math.max(30, Math.round(entries.length * (tileWSaver + 20) / 25));
     wrap.innerHTML = '<div class="saver-scroll-viewport"><div class="saver-scroll-track" style="animation-duration:' + dur + 's">'
       + '<div class="saver-scroll-set">' + set + '</div>'
-      + '<div class="saver-scroll-set" aria-hidden="true">' + set + '</div>'
+      + '<div class="saver-scroll-set" aria-hidden="true">' + setHidden + '</div>'
       + '</div></div>';
   }
 
