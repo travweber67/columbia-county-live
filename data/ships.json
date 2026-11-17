@@ -1,82 +1,48 @@
 {
- "fetched_at": "2026-11-17T17:14:27Z",
+ "fetched_at": "2026-11-17T17:19:28Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.1372,
-   "lon": -123.37889,
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.64755,
+   "lon": -122.73997,
+   "sog_kn": 0.9,
+   "cog": 255,
+   "heading": 124,
+   "nav_status": 12,
+   "updated": "2026-11-17 17:19:42.21572991 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79317,
+   "lon": -122.84321,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
+   "cog": 241.6,
+   "heading": 213,
    "nav_status": 0,
-   "updated": "2026-11-17 17:14:37.608509621 +0000 UTC"
+   "updated": "2026-11-17 17:19:43.536478181 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35743,
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64344,
+   "lon": -122.74491,
+   "type_code": 52,
+   "updated": "2026-11-17 17:19:54.108999018 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.38552,
    "sog_kn": 0,
-   "cog": 282.8,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-17 17:14:47.079939678 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 45.65095,
-   "lon": -122.75567,
-   "type_code": 31,
-   "destination": "HARBOROPPS-",
-   "updated": "2026-11-17 17:14:48.096705936 +0000 UTC"
-  },
-  {
-   "mmsi": 311008700,
-   "name": "VICTORY RAY",
-   "lat": 45.64055,
-   "lon": -122.71719,
-   "sog_kn": 0,
-   "cog": 307.6,
-   "heading": 296,
-   "nav_status": 5,
-   "updated": "2026-11-17 17:14:58.331874259 +0000 UTC"
-  },
-  {
-   "mmsi": 538004110,
-   "name": "AENEAS",
-   "lat": 46.02717,
-   "lon": -122.86936,
-   "sog_kn": 0,
-   "cog": 92.1,
-   "heading": 136,
-   "nav_status": 5,
-   "updated": "2026-11-17 17:15:05.309264441 +0000 UTC"
-  },
-  {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61225,
-   "lon": -122.64524,
-   "sog_kn": 0,
-   "cog": 360,
+   "cog": 352.9,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-17 17:15:07.730729949 +0000 UTC"
-  },
-  {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58731,
-   "lon": -122.77047,
-   "sog_kn": 0,
-   "cog": 220.2,
-   "heading": 140,
-   "nav_status": 5,
-   "updated": "2026-11-17 17:15:09.349204078 +0000 UTC"
+   "nav_status": 15,
+   "updated": "2026-11-17 17:20:00.628632771 +0000 UTC"
   }
  ]
 }
