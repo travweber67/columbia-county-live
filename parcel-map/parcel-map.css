@@ -1,0 +1,15 @@
+/* Columbia County Live — preview module: property lines + hunting units.
+   Only the legend swatches need styles; cards reuse the site's .mapcard CSS. */
+.pm-legend .pm-sw {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  margin-right: 5px;
+  vertical-align: -1px;
+  border: 1px solid rgba(0, 0, 0, 0.45);
+}
+.pm-sw-parcel { background: rgba(245, 197, 66, 0.4); border-color: #92600f; }
+.pm-sw-public { background: rgba(34, 150, 80, 0.45); }
+.pm-sw-private { background: rgba(168, 140, 90, 0.35); }
+.pm-sw-unit { background: rgba(179, 84, 30, 0.3); border-color: #b3541e; }

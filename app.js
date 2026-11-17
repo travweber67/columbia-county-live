@@ -399,6 +399,8 @@ function initMap() {
     '🛰️ Space station (ISS)': issLayer,
     '🫨 Earthquakes': quakeLayer
   }, { collapsed: true }).addTo(map);
+  window.CCL_MAP = map;
+  window.CCL_LAYERS_CTL = layersCtl;
   /* WS-1d 2026-11-04 (Travis, from his phone): the layers panel used to
      sit permanently open over the map (collapsed:false) — on a phone it
      covered most of the map with no way to shrink it away. Now the panel
