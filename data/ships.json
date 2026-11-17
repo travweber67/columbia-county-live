@@ -1,49 +1,6 @@
 {
- "fetched_at": "2026-11-17T02:30:54Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 372346000,
-   "name": "SIERRA NEVADA HWY",
-   "lat": 46.14345,
-   "lon": -123.35406,
-   "sog_kn": 13.9,
-   "cog": 97.8,
-   "heading": 96,
-   "nav_status": 0,
-   "updated": "2026-11-17 02:31:59.855015739 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08207,
-   "lon": -122.90583,
-   "sog_kn": 0.2,
-   "cog": 192.1,
-   "heading": 130,
-   "nav_status": 0,
-   "updated": "2026-11-17 02:32:02.143339405 +0000 UTC"
-  },
-  {
-   "mmsi": 538012415,
-   "name": "TOMINI PINE",
-   "lat": 45.64382,
-   "lon": -122.74105,
-   "type_code": 70,
-   "destination": "KRPUS",
-   "updated": "2026-11-17 02:32:11.697273405 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 46.02794,
-   "lon": -122.87024,
-   "sog_kn": 7.8,
-   "cog": 210.2,
-   "heading": 193,
-   "nav_status": 0,
-   "updated": "2026-11-17 02:32:11.833030792 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-17T02:35:55Z",
+ "status": "error",
+ "note": "AISStream error: _ssl.c:1064: The handshake operation timed out",
+ "ships": []
 }
