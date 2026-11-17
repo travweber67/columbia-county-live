@@ -1,6 +1,103 @@
 {
- "fetched_at": "2026-11-17T17:34:31Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-17T17:39:30Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64741,
+   "lon": -122.73946,
+   "sog_kn": 0,
+   "cog": 286,
+   "heading": 286,
+   "nav_status": 0,
+   "updated": "2026-11-17 17:39:38.868319439 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.08968,
+   "lon": -122.92899,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-17 17:39:47.15647316 +0000 UTC",
+   "sog_kn": 0.1,
+   "cog": 223,
+   "heading": 108,
+   "nav_status": 0
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35744,
+   "type_code": 30,
+   "updated": "2026-11-17 17:39:48.353213819 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19953,
+   "lon": -123.38503,
+   "sog_kn": 0,
+   "cog": 291,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-17 17:39:48.880759356 +0000 UTC"
+  },
+  {
+   "mmsi": 373989000,
+   "name": "AFRICAN CARDINAL",
+   "lat": 45.63924,
+   "lon": -122.77781,
+   "sog_kn": 0,
+   "cog": 197.6,
+   "heading": 229,
+   "nav_status": 0,
+   "updated": "2026-11-17 17:39:50.729395325 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 46.15986,
+   "lon": -123.40535,
+   "type_code": 57,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-17 17:39:56.119262876 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.08287,
+   "lon": -122.90699,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 309,
+   "nav_status": 3,
+   "updated": "2026-11-17 17:39:57.14113856 +0000 UTC"
+  },
+  {
+   "mmsi": 368450870,
+   "name": "AMERICAN ENCORE",
+   "lat": 46.0036,
+   "lon": -122.84762,
+   "sog_kn": 0,
+   "cog": 160.6,
+   "heading": 160,
+   "nav_status": 0,
+   "updated": "2026-11-17 17:40:03.512779528 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00882,
+   "lon": -122.84884,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-17 17:40:03.663495897 +0000 UTC"
+  }
+ ]
 }
