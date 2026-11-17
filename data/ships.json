@@ -1,27 +1,59 @@
 {
- "fetched_at": "2026-11-17T06:31:13Z",
+ "fetched_at": "2026-11-17T06:36:14Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 45.63254,
-   "lon": -122.70663,
-   "sog_kn": 0,
-   "cog": 65.3,
-   "heading": 123,
-   "nav_status": 1,
-   "updated": "2026-11-17 06:31:46.739926016 +0000 UTC"
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58731,
+   "lon": -122.77048,
+   "type_code": 31,
+   "destination": "US^02SY>0UJ9",
+   "updated": "2026-11-17 06:36:14.181758308 +0000 UTC"
   },
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 45.64329,
-   "lon": -122.75279,
-   "type_code": 31,
-   "destination": "HARBOROPPS-",
-   "updated": "2026-11-17 06:31:53.231816851 +0000 UTC"
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.0088,
+   "lon": -122.84881,
+   "type_code": 50,
+   "destination": "--",
+   "updated": "2026-11-17 06:36:14.776681509 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.097,
+   "lon": -122.93474,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 94,
+   "nav_status": 3,
+   "updated": "2026-11-17 06:36:15.958861653 +0000 UTC"
+  },
+  {
+   "mmsi": 368257130,
+   "name": "TRIUMPH VII",
+   "lat": 46.00984,
+   "lon": -122.84833,
+   "type_code": 50,
+   "updated": "2026-11-17 06:36:43.485553773 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 51.6,
+   "heading": 511,
+   "nav_status": 15
+  },
+  {
+   "mmsi": 636015567,
+   "name": "KYRA ZAFIRA",
+   "lat": 45.63042,
+   "lon": -122.69567,
+   "sog_kn": 0.1,
+   "cog": 5.8,
+   "heading": 127,
+   "nav_status": 5,
+   "updated": "2026-11-17 06:36:42.679210814 +0000 UTC"
   }
  ]
 }
