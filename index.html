@@ -31,12 +31,12 @@
 if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
-<link rel="manifest" href="manifest.webmanifest?v=94">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=94">
+<link rel="manifest" href="manifest.webmanifest?v=95">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=95">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=94">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=94">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=94">
+<link rel="stylesheet" href="style.css?v=95">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=95">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=95">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
      only page backgrounds first paint needs — warm them with the hero.
      Every other view's photo is lazy-attached by app.js. -->
@@ -224,7 +224,7 @@ document.documentElement.setAttribute("data-theme",t);})();
          v6 phone mover used to carry them to). -->
     <div class="founding-cells">
       <article class="founding-cell taken" data-otl-cell>
-        <img class="founding-ribbon cell-ribbon" src="img/founding-ribbon.png?v=94" alt="Founding Sponsor" title="Founding Sponsor">
+        <img class="founding-ribbon cell-ribbon" src="img/founding-ribbon.png?v=95" alt="Founding Sponsor" title="Founding Sponsor">
         <div class="otl-logo-box"><img src="img/preview-otl-logo.png" alt="Oregon Trail Lanes logo"></div>
         <p class="cell-eyebrow">Founding Sponsor · Spot 1 of 3</p>
         <h3>Oregon Trail Lanes <span class="dir-badge" data-i18n="dirfounding">Founding business</span></h3>
@@ -233,7 +233,7 @@ document.documentElement.setAttribute("data-theme",t);})();
         <button class="otl-more" type="button" data-otl-open aria-haspopup="dialog" aria-controls="otl-sheet" aria-expanded="false">See hours &amp; what&rsquo;s on &rarr;</button>
       </article>
       <article class="founding-cell taken" data-pv-cell>
-        <img class="founding-ribbon cell-ribbon" src="img/founding-ribbon.png?v=94" alt="Founding Sponsor" title="Founding Sponsor">
+        <img class="founding-ribbon cell-ribbon" src="img/founding-ribbon.png?v=95" alt="Founding Sponsor" title="Founding Sponsor">
         <div class="otl-logo-box"><img src="img/preview-kneeland-brothers-logo.png" alt="Kneeland Brothers Roofing logo" style="border-radius:0"></div>
         <p class="cell-eyebrow">Founding Sponsor · Spot 2 of 3</p>
         <h3>Kneeland Brothers LLC</h3>
@@ -491,6 +491,16 @@ document.documentElement.setAttribute("data-theme",t);})();
       <div id="drive-body" class="drive-body"><p class="loading">Working out the drive…</p></div>
       <p class="card-note small" data-i18n="drivenote">Typical drive — no live traffic. The time comes from the free OSRM routing service, driving the route at posted speeds in normal conditions — a closure, a bridge lift, or a crash on US-30 will change the real trip.</p>
     </div>
+    <!-- v95: Section Sponsor (Slot B) — Travel spot 1 of 4, open.
+         Inventory of record: SECTION_SPONSORS in app.js. A sale swaps this
+         invite article for a taken cell, founding-panel style. -->
+    <article class="founding-cell invite in-flow section-sponsor" data-section-sponsor="travel" data-spot="1" aria-label="Section sponsor spot — Travel, spot 1 of 4, open">
+      <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
+      <p class="cell-eyebrow" data-i18n="sst1">Section Sponsor &middot; Travel &middot; Spot 1 of 4 &mdash; Open</p>
+      <h3 data-i18n="fs3h3">Your business here</h3>
+      <p data-i18n="sstb">One of only four Section Sponsor spots in Travel &mdash; your name and logo woven between the map, the bridge and the ferry everyone checks before they drive. $29/mo, month to month, cancel anytime.</p>
+      <a class="founding-cta" href="sponsor.html#section" data-i18n="sscta">Claim this spot &rarr;</a>
+    </article>
 
     <div class="card" id="ferry-mini-card">
       <div class="card-head">
@@ -556,6 +566,16 @@ document.documentElement.setAttribute("data-theme",t);})();
       <div id="cameras-body" class="panel-body"><p class="loading">Loading camera list…</p></div>
       <p class="card-note small" data-i18n="roadsnote">Road data is collected by our fetcher from ODOT TripCheck and WSDOT every few minutes and shown with its snapshot time — it never pretends to be fresher than it is. Full official detail: <a href="https://www.tripcheck.com/" target="_blank" rel="noopener">TripCheck</a> · <a href="https://wsdot.com/traffic/" target="_blank" rel="noopener">WSDOT traffic</a>. Commuting to Portland? A US-30 closure usually means Cornelius Pass or the St. Johns Bridge — check before you leave, not after.</p>
     </div>
+    <!-- v95: Section Sponsor (Slot B) — Travel spot 2 of 4, open.
+         Inventory of record: SECTION_SPONSORS in app.js. A sale swaps this
+         invite article for a taken cell, founding-panel style. -->
+    <article class="founding-cell invite in-flow section-sponsor" data-section-sponsor="travel" data-spot="2" aria-label="Section sponsor spot — Travel, spot 2 of 4, open">
+      <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
+      <p class="cell-eyebrow" data-i18n="sst2">Section Sponsor &middot; Travel &middot; Spot 2 of 4 &mdash; Open</p>
+      <h3 data-i18n="fs3h3">Your business here</h3>
+      <p data-i18n="sstb">One of only four Section Sponsor spots in Travel &mdash; your name and logo woven between the map, the bridge and the ferry everyone checks before they drive. $29/mo, month to month, cancel anytime.</p>
+      <a class="founding-cta" href="sponsor.html#section" data-i18n="sscta">Claim this spot &rarr;</a>
+    </article>
 
     
 
@@ -593,6 +613,16 @@ document.documentElement.setAttribute("data-theme",t);})();
       <div id="ships-body" class="panel-body"><p class="loading">Loading river traffic…</p></div>
       <p class="card-note small" data-i18n="shipsnote">Ships sorted by when they'll pass your home town — St. Helens until you pick one under “Your town” on the Today tab. ETAs use each ship's current reported speed, so a ship that slows down arrives later. Live positions from AISStream, refreshed about every five minutes.</p>
     </div>
+    <!-- v95: Section Sponsor (Slot B) — Travel spot 3 of 4, open.
+         Inventory of record: SECTION_SPONSORS in app.js. A sale swaps this
+         invite article for a taken cell, founding-panel style. -->
+    <article class="founding-cell invite in-flow section-sponsor" data-section-sponsor="travel" data-spot="3" aria-label="Section sponsor spot — Travel, spot 3 of 4, open">
+      <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
+      <p class="cell-eyebrow" data-i18n="sst3">Section Sponsor &middot; Travel &middot; Spot 3 of 4 &mdash; Open</p>
+      <h3 data-i18n="fs3h3">Your business here</h3>
+      <p data-i18n="sstb">One of only four Section Sponsor spots in Travel &mdash; your name and logo woven between the map, the bridge and the ferry everyone checks before they drive. $29/mo, month to month, cancel anytime.</p>
+      <a class="founding-cta" href="sponsor.html#section" data-i18n="sscta">Claim this spot &rarr;</a>
+    </article>
 
     <div class="card" id="aircraft-card">
       <div class="card-head">
@@ -617,6 +647,16 @@ document.documentElement.setAttribute("data-theme",t);})();
       <p class="card-note" data-i18n="mthoodnote">Outside the county, kept because the drive starts here: the two US-26 cameras that show what the mountain is doing — Government Camp (MP 54) and Blue Box Pass (MP 64), the high stretch on the way to Bend. Live stills from ODOT TripCheck, refreshed every 10 minutes.</p>
       <div id="mthood-body" class="panel-body"><p class="loading">Loading Mt. Hood cameras…</p></div>
     </div>
+    <!-- v95: Section Sponsor (Slot B) — Travel spot 4 of 4, open.
+         Inventory of record: SECTION_SPONSORS in app.js. A sale swaps this
+         invite article for a taken cell, founding-panel style. -->
+    <article class="founding-cell invite in-flow section-sponsor" data-section-sponsor="travel" data-spot="4" aria-label="Section sponsor spot — Travel, spot 4 of 4, open">
+      <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
+      <p class="cell-eyebrow" data-i18n="sst4">Section Sponsor &middot; Travel &middot; Spot 4 of 4 &mdash; Open</p>
+      <h3 data-i18n="fs3h3">Your business here</h3>
+      <p data-i18n="sstb">One of only four Section Sponsor spots in Travel &mdash; your name and logo woven between the map, the bridge and the ferry everyone checks before they drive. $29/mo, month to month, cancel anytime.</p>
+      <a class="founding-cta" href="sponsor.html#section" data-i18n="sscta">Claim this spot &rarr;</a>
+    </article>
 
     
   </section>
@@ -660,6 +700,16 @@ document.documentElement.setAttribute("data-theme",t);})();
       <div id="iss-passes" class="iss-passes"><p class="loading">Working out when the station passes over the county…</p></div>
       <p class="card-note small" data-i18n="skynote">Aircraft: community ADS-B receivers via adsb.fi. ISS position: wheretheiss.at. Pass times are computed on this page from the station's published orbit. All refresh automatically.</p>
     </div>
+    <!-- v95: Section Sponsor (Slot B) — Outdoors spot 1 of 4, open.
+         Inventory of record: SECTION_SPONSORS in app.js. A sale swaps this
+         invite article for a taken cell, founding-panel style. -->
+    <article class="founding-cell invite in-flow section-sponsor" data-section-sponsor="outdoors" data-spot="1" aria-label="Section sponsor spot — Outdoors, spot 1 of 4, open">
+      <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
+      <p class="cell-eyebrow" data-i18n="sso1">Section Sponsor &middot; Outdoors &middot; Spot 1 of 4 &mdash; Open</p>
+      <h3 data-i18n="fs3h3">Your business here</h3>
+      <p data-i18n="ssob">One of only four Section Sponsor spots in Outdoors &mdash; your name and logo woven between the weather, the rivers and the fishing everyone checks before they head out. $29/mo, month to month, cancel anytime.</p>
+      <a class="founding-cta" href="sponsor.html#section" data-i18n="sscta">Claim this spot &rarr;</a>
+    </article>
 
     <div class="card" id="dark-card">
       <div class="card-head">
@@ -690,6 +740,16 @@ document.documentElement.setAttribute("data-theme",t);})();
       <div id="tides-body" class="panel-body"><p class="loading">Loading NOAA tide predictions…</p></div>
       <p class="card-note small" data-i18n="tidesnote2">Tide <em>predictions</em> from NOAA Tides &amp; Currents (station 9439201 at St. Helens, station 9439099 at Wauna), in feet above mean lower low water. River flow pushes real water off the prediction — a high river runs higher and later — so treat the times as the plan, not a promise.</p>
     </div>
+    <!-- v95: Section Sponsor (Slot B) — Outdoors spot 2 of 4, open.
+         Inventory of record: SECTION_SPONSORS in app.js. A sale swaps this
+         invite article for a taken cell, founding-panel style. -->
+    <article class="founding-cell invite in-flow section-sponsor" data-section-sponsor="outdoors" data-spot="2" aria-label="Section sponsor spot — Outdoors, spot 2 of 4, open">
+      <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
+      <p class="cell-eyebrow" data-i18n="sso2">Section Sponsor &middot; Outdoors &middot; Spot 2 of 4 &mdash; Open</p>
+      <h3 data-i18n="fs3h3">Your business here</h3>
+      <p data-i18n="ssob">One of only four Section Sponsor spots in Outdoors &mdash; your name and logo woven between the weather, the rivers and the fishing everyone checks before they head out. $29/mo, month to month, cancel anytime.</p>
+      <a class="founding-cta" href="sponsor.html#section" data-i18n="sscta">Claim this spot &rarr;</a>
+    </article>
 
     <div class="card band-card" id="fish-card">
       <div class="card-band" aria-hidden="true"><img src="img/dusk/band-river.jpg" alt="" loading="lazy" decoding="async"></div>
@@ -726,6 +786,16 @@ document.documentElement.setAttribute("data-theme",t);})();
       <p class="small" data-i18n="steelhours">General Oregon rule: steelhead angling is legal from one hour before sunrise to one hour after sunset — each river's own regs can add exceptions, so check yours.</p>
       <p class="small" id="steelhead-note"></p>
     </div>
+    <!-- v95: Section Sponsor (Slot B) — Outdoors spot 3 of 4, open.
+         Inventory of record: SECTION_SPONSORS in app.js. A sale swaps this
+         invite article for a taken cell, founding-panel style. -->
+    <article class="founding-cell invite in-flow section-sponsor" data-section-sponsor="outdoors" data-spot="3" aria-label="Section sponsor spot — Outdoors, spot 3 of 4, open">
+      <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
+      <p class="cell-eyebrow" data-i18n="sso3">Section Sponsor &middot; Outdoors &middot; Spot 3 of 4 &mdash; Open</p>
+      <h3 data-i18n="fs3h3">Your business here</h3>
+      <p data-i18n="ssob">One of only four Section Sponsor spots in Outdoors &mdash; your name and logo woven between the weather, the rivers and the fishing everyone checks before they head out. $29/mo, month to month, cancel anytime.</p>
+      <a class="founding-cta" href="sponsor.html#section" data-i18n="sscta">Claim this spot &rarr;</a>
+    </article>
     <section class="card almanac-card" id="almanac-card" aria-label="The county almanac — today's daylight and the moon">
   <div class="card-head">
     <h2 data-i18n="almanach2">🌅 The County Almanac</h2>
@@ -761,6 +831,16 @@ document.documentElement.setAttribute("data-theme",t);})();
       <div id="air-body" class="panel-body"><p class="loading">Checking the air…</p></div>
       <p class="card-note small" data-i18n="airnote2">A modeled estimate from Open-Meteo&rsquo;s atmosphere model (Copernicus CAMS) — there is no official AQI monitor in the county, so read it as a good guide, not a gauge on a pole. Official readings and alerts: <a href="https://www.airnow.gov/" target="_blank" rel="noopener">AirNow</a>.</p>
     </div>
+    <!-- v95: Section Sponsor (Slot B) — Outdoors spot 4 of 4, open.
+         Inventory of record: SECTION_SPONSORS in app.js. A sale swaps this
+         invite article for a taken cell, founding-panel style. -->
+    <article class="founding-cell invite in-flow section-sponsor" data-section-sponsor="outdoors" data-spot="4" aria-label="Section sponsor spot — Outdoors, spot 4 of 4, open">
+      <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
+      <p class="cell-eyebrow" data-i18n="sso4">Section Sponsor &middot; Outdoors &middot; Spot 4 of 4 &mdash; Open</p>
+      <h3 data-i18n="fs3h3">Your business here</h3>
+      <p data-i18n="ssob">One of only four Section Sponsor spots in Outdoors &mdash; your name and logo woven between the weather, the rivers and the fishing everyone checks before they head out. $29/mo, month to month, cancel anytime.</p>
+      <a class="founding-cta" href="sponsor.html#section" data-i18n="sscta">Claim this spot &rarr;</a>
+    </article>
 
 </section>
 
@@ -834,6 +914,16 @@ document.documentElement.setAttribute("data-theme",t);})();
     </article>
   </div>
 </section>
+<!-- v95: Section Sponsor (Slot B) — Events &amp; More spot 1 of 4, open.
+     Inventory of record: SECTION_SPONSORS in app.js. A sale swaps this
+     invite article for a taken cell, founding-panel style. -->
+<article class="founding-cell invite in-flow section-sponsor" data-section-sponsor="more" data-spot="1" aria-label="Section sponsor spot — Events &amp; More, spot 1 of 4, open">
+  <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
+  <p class="cell-eyebrow" data-i18n="ssm1">Section Sponsor &middot; Events &amp; More &middot; Spot 1 of 4 &mdash; Open</p>
+  <h3 data-i18n="fs3h3">Your business here</h3>
+  <p data-i18n="ssmb">One of only four Section Sponsor spots in Events &amp; More &mdash; your name and logo woven between the events, the directory and the weekend everyone checks before they make plans. $29/mo, month to month, cancel anytime.</p>
+  <a class="founding-cta" href="sponsor.html#section" data-i18n="sscta">Claim this spot &rarr;</a>
+</article>
 
 <!-- Micro-business directory (business plan §6 Phase 2 addendum,
      2026-11-05): the tier BELOW sponsors and featured — plain list
@@ -873,7 +963,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="dir-item" data-dircat="fun" data-lat="45.85067" data-lng="-122.83077">
       <!-- Photo: Oregon Trail Lanes' own website (oregontraillanes.com) — league night at the lanes, May 2023. Added v45. -->
       <img class="dir-photo" src="img/dir-oregon-trail-lanes.jpg" alt="League night inside Oregon Trail Lanes in St. Helens" loading="lazy" decoding="async">
-      <img class="founding-ribbon dir-ribbon" src="img/founding-ribbon.png?v=94" alt="Founding Sponsor" title="Founding Sponsor — Oregon Trail Lanes">
+      <img class="founding-ribbon dir-ribbon" src="img/founding-ribbon.png?v=95" alt="Founding Sponsor" title="Founding Sponsor — Oregon Trail Lanes">
       <div class="dir-item-main">
         <h3>Oregon Trail Lanes</h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfun">Bowling &amp; family fun</span></p>
@@ -887,7 +977,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     </article>
     <article class="dir-item" data-dircat="handyman">
       <img class="dir-photo" src="img/dir-kneeland-brothers.jpg" alt="A new roof by Kneeland Brothers on a Columbia County home" loading="lazy" decoding="async">
-      <img class="founding-ribbon dir-ribbon" src="img/founding-ribbon.png?v=94" alt="Founding Sponsor" title="Founding Sponsor — Kneeland Brothers LLC">
+      <img class="founding-ribbon dir-ribbon" src="img/founding-ribbon.png?v=95" alt="Founding Sponsor" title="Founding Sponsor — Kneeland Brothers LLC">
       <div class="dir-item-main">
         <h3>Kneeland Brothers LLC</h3>
         <p class="dir-meta">Scappoose &middot; <span data-i18n="dirhandyman">Handyman &amp; home repair</span></p>
@@ -1189,6 +1279,16 @@ document.documentElement.setAttribute("data-theme",t);})();
   </a>
   <p class="cascade-credit">Robot: NEXBOT by @aximoris (CC BY 4.0)</p>
 </section>
+<!-- v95: Section Sponsor (Slot B) — Events &amp; More spot 2 of 4, open.
+     Inventory of record: SECTION_SPONSORS in app.js. A sale swaps this
+     invite article for a taken cell, founding-panel style. -->
+<article class="founding-cell invite in-flow section-sponsor" data-section-sponsor="more" data-spot="2" aria-label="Section sponsor spot — Events &amp; More, spot 2 of 4, open">
+  <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
+  <p class="cell-eyebrow" data-i18n="ssm2">Section Sponsor &middot; Events &amp; More &middot; Spot 2 of 4 &mdash; Open</p>
+  <h3 data-i18n="fs3h3">Your business here</h3>
+  <p data-i18n="ssmb">One of only four Section Sponsor spots in Events &amp; More &mdash; your name and logo woven between the events, the directory and the weekend everyone checks before they make plans. $29/mo, month to month, cancel anytime.</p>
+  <a class="founding-cta" href="sponsor.html#section" data-i18n="sscta">Claim this spot &rarr;</a>
+</article>
 
 <section class="card freshness-card" id="freshness-card">
   <div class="card-head">
@@ -1215,6 +1315,16 @@ document.documentElement.setAttribute("data-theme",t);})();
   <ul class="watch-log" id="watch-log"></ul>
   <p class="card-note small" data-i18n="watchlimits">Honest limits: the watch only runs while this page is open on this device — closing the tab stops it, and a phone may pause a background tab. It's a convenience, never a replacement for the National Weather Service, NOAA Weather Radio, or Columbia County emergency alerts.</p>
 </section>
+<!-- v95: Section Sponsor (Slot B) — Events &amp; More spot 3 of 4, open.
+     Inventory of record: SECTION_SPONSORS in app.js. A sale swaps this
+     invite article for a taken cell, founding-panel style. -->
+<article class="founding-cell invite in-flow section-sponsor" data-section-sponsor="more" data-spot="3" aria-label="Section sponsor spot — Events &amp; More, spot 3 of 4, open">
+  <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
+  <p class="cell-eyebrow" data-i18n="ssm3">Section Sponsor &middot; Events &amp; More &middot; Spot 3 of 4 &mdash; Open</p>
+  <h3 data-i18n="fs3h3">Your business here</h3>
+  <p data-i18n="ssmb">One of only four Section Sponsor spots in Events &amp; More &mdash; your name and logo woven between the events, the directory and the weekend everyone checks before they make plans. $29/mo, month to month, cancel anytime.</p>
+  <a class="founding-cta" href="sponsor.html#section" data-i18n="sscta">Claim this spot &rarr;</a>
+</article>
 
 <section class="share-bar" id="share-card" aria-label="Keep and share this page">
   <div class="share-copy">
@@ -1296,13 +1406,23 @@ document.documentElement.setAttribute("data-theme",t);})();
   </div>
   <p class="card-note small" data-i18n="aboutnote">That button opens a short interest form — your business or organization name, a contact name, your town, and what you&rsquo;re interested in: a founding sponsor spot, listing a business, or something else. We&rsquo;ll write back. Asking costs nothing and commits you to nothing — founding sponsors start with a free 30-day pilot, so you can see your business on the page before you spend anything.</p>
 </section>
+<!-- v95: Section Sponsor (Slot B) — Events &amp; More spot 4 of 4, open.
+     Inventory of record: SECTION_SPONSORS in app.js. A sale swaps this
+     invite article for a taken cell, founding-panel style. -->
+<article class="founding-cell invite in-flow section-sponsor" data-section-sponsor="more" data-spot="4" aria-label="Section sponsor spot — Events &amp; More, spot 4 of 4, open">
+  <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
+  <p class="cell-eyebrow" data-i18n="ssm4">Section Sponsor &middot; Events &amp; More &middot; Spot 4 of 4 &mdash; Open</p>
+  <h3 data-i18n="fs3h3">Your business here</h3>
+  <p data-i18n="ssmb">One of only four Section Sponsor spots in Events &amp; More &mdash; your name and logo woven between the events, the directory and the weekend everyone checks before they make plans. $29/mo, month to month, cancel anytime.</p>
+  <a class="founding-cta" href="sponsor.html#section" data-i18n="sscta">Claim this spot &rarr;</a>
+</article>
 
 <footer class="site-footer">
   <section class="partners-wall card" aria-label="Community partners">
     <h2>Community Partners — the local businesses that fund this site</h2>
-    <p class="partners-first"><strong class="partners-name">Oregon Trail Lanes</strong> <img class="founding-ribbon wall-ribbon" src="img/founding-ribbon.png?v=94" alt="Founding Sponsor" title="Founding Sponsor"></p>
+    <p class="partners-first"><strong class="partners-name">Oregon Trail Lanes</strong> <img class="founding-ribbon wall-ribbon" src="img/founding-ribbon.png?v=95" alt="Founding Sponsor" title="Founding Sponsor"></p>
     <p class="partners-meta"><span class="dir-badge">Founding Sponsor · 2026</span><span class="partners-town">· St. Helens</span></p>
-    <p class="partners-first"><strong class="partners-name">Kneeland Brothers LLC</strong> <img class="founding-ribbon wall-ribbon" src="img/founding-ribbon.png?v=94" alt="Founding Sponsor" title="Founding Sponsor"></p>
+    <p class="partners-first"><strong class="partners-name">Kneeland Brothers LLC</strong> <img class="founding-ribbon wall-ribbon" src="img/founding-ribbon.png?v=95" alt="Founding Sponsor" title="Founding Sponsor"></p>
     <p class="partners-meta"><span class="dir-badge">Founding Sponsor · 2026</span><span class="partners-town">· Scappoose</span></p>
 
     <p class="partners-empty"><a href="sponsor.html">Your logo here — become a partner &rarr;</a></p>
@@ -1925,7 +2045,7 @@ document.documentElement.setAttribute("data-theme",t);})();
   </div>
   <div class="otl-sheet-body">
     <article class="otl-card">
-      <img class="founding-ribbon sheet-ribbon" src="img/founding-ribbon.png?v=94" alt="Founding Sponsor" title="Founding Sponsor">
+      <img class="founding-ribbon sheet-ribbon" src="img/founding-ribbon.png?v=95" alt="Founding Sponsor" title="Founding Sponsor">
       <div class="otl-body">
         <div class="otl-logo-box" style="margin-bottom:16px"><img src="img/preview-kneeland-brothers-logo.png" alt="Kneeland Brothers Roofing logo" style="border-radius:0"></div>
         <h3>Kneeland Brothers LLC <span class="dir-badge">Founding Sponsor · 2026</span></h3>
@@ -2012,7 +2132,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=94"></script>
+<script src="app.js?v=95"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 

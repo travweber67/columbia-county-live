@@ -3466,3 +3466,15 @@ html[data-theme="dark"] .dir-empty{
 #pv-sheet .otl-card{position:relative}
 .sheet-ribbon{position:absolute;top:10px;right:10px;width:44px;z-index:3}
 .dir-ribbon{left:10px;right:auto}
+
+/* ---------- v95: Section Sponsor cards (Slot B) ----------
+   The founding-cell in-flow glass, spread through Travel, Outdoors
+   and Events & More — each spot its own frosted card floating over
+   the view's one background photo, with real gaps from the view's
+   own gap; never stacked, never on a shared sheet. No new geometry
+   rules on purpose: on phones the views are a single flex column
+   (card takes the full width), and in the desktop multi-column
+   flow (min-width:900px) each sponsor card takes one column like
+   every other card — no column-span, because span breaks are
+   reserved for the Travel map and roads cards, and Outdoors
+   deliberately uses none (see the balanced-columns note above). */

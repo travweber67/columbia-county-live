@@ -6161,6 +6161,22 @@ const LANG_ES = {
   fs3h3: 'Tu negocio aquí',
   fs3p: 'Uno de solo tres lugares fundadores, para siempre — tu nombre y logo en la página Hoy que todo visitante abre primero. $49/mes, bloqueado mientras te quedes, y una prueba gratuita de 30 días antes de pagar algo.',
   fs3cta: 'Reclama el lugar 3 &rarr;',
+  sscta: 'Reclama este lugar &rarr;',
+  sst1: 'Patrocinador de sección · Viajes · Lugar 1 de 4 — Disponible',
+  sst2: 'Patrocinador de sección · Viajes · Lugar 2 de 4 — Disponible',
+  sst3: 'Patrocinador de sección · Viajes · Lugar 3 de 4 — Disponible',
+  sst4: 'Patrocinador de sección · Viajes · Lugar 4 de 4 — Disponible',
+  sso1: 'Patrocinador de sección · Aire libre · Lugar 1 de 4 — Disponible',
+  sso2: 'Patrocinador de sección · Aire libre · Lugar 2 de 4 — Disponible',
+  sso3: 'Patrocinador de sección · Aire libre · Lugar 3 de 4 — Disponible',
+  sso4: 'Patrocinador de sección · Aire libre · Lugar 4 de 4 — Disponible',
+  ssm1: 'Patrocinador de sección · Eventos y más · Lugar 1 de 4 — Disponible',
+  ssm2: 'Patrocinador de sección · Eventos y más · Lugar 2 de 4 — Disponible',
+  ssm3: 'Patrocinador de sección · Eventos y más · Lugar 3 de 4 — Disponible',
+  ssm4: 'Patrocinador de sección · Eventos y más · Lugar 4 de 4 — Disponible',
+  sstb: 'Uno de solo cuatro lugares de Patrocinador de Sección en Viajes — tu nombre y logo entre el mapa, el puente y el ferri que todos revisan antes de manejar. $29/mes, mes a mes, cancela cuando quieras.',
+  ssob: 'Uno de solo cuatro lugares de Patrocinador de Sección en Aire Libre — tu nombre y logo entre el clima, los ríos y la pesca que todos revisan antes de salir. $29/mes, mes a mes, cancela cuando quieras.',
+  ssmb: 'Uno de solo cuatro lugares de Patrocinador de Sección en Eventos y Más — tu nombre y logo entre los eventos, el directorio y el fin de semana que todos revisan antes de hacer planes. $29/mes, mes a mes, cancela cuando quieras.',
   fsfoot: 'Cada patrocinador fundador conserva una insignia permanente de «Patrocinador Fundador · 2026» y un lugar en el muro de Socios Comunitarios de abajo — aunque después cambie de nivel. El período fundador cierra el 31 de enero de 2027 — después de eso, nunca más habrá patrocinadores fundadores nuevos.',
   commuteh2: '🚗 El veredicto del viaje',
   commutenote: 'La respuesta en una línea para manejar ahora mismo. El panorama completo del corredor — puente, incidentes y cámaras — está en la pestaña Viajes.',
@@ -7797,6 +7813,33 @@ function initSponsorLink() {
   a.textContent = langCur === 'es' ? '📋 Pregunta por el patrocinio' : '📋 Ask about sponsoring';
 }
 initSponsorLink();
+
+/* ---------- v95: SECTION SPONSORS (Slot B) — the $29/mo tier inside
+   the views (Travis, 2026-11-16). Four spots woven through each of
+   Travel, Outdoors and Events & More (12 total), spread between the
+   content cards the way the founding house cells weave through Today.
+   No free month on this tier — the 30-day pilot is founding-panel
+   only. The cards themselves are static HTML in index.html (honest
+   open-invite state, no JS needed); this table is the inventory of
+   record. When a spot sells: set `business` here, and swap that
+   article's invite contents for a taken cell (logo box, name, line,
+   link) exactly like the founding panel cells, keeping the
+   data-section-sponsor / data-spot attributes so the spot stays
+   findable. Claim route: sponsor.html#section. */
+const SECTION_SPONSORS = [
+  { section: 'travel',   spot: 1, after: 'drive-card',     business: null },
+  { section: 'travel',   spot: 2, after: 'cameras-card',   business: null },
+  { section: 'travel',   spot: 3, after: 'ships-card',     business: null },
+  { section: 'travel',   spot: 4, after: 'mthood-card',    business: null },
+  { section: 'outdoors', spot: 1, after: 'sky-card',       business: null },
+  { section: 'outdoors', spot: 2, after: 'tides-card',     business: null },
+  { section: 'outdoors', spot: 3, after: 'steelhead-card', business: null },
+  { section: 'outdoors', spot: 4, after: 'air-card',       business: null },
+  { section: 'more',     spot: 1, after: 'featured-local', business: null },
+  { section: 'more',     spot: 2, after: 'cascade-card',   business: null },
+  { section: 'more',     spot: 3, after: 'watch-card',     business: null },
+  { section: 'more',     spot: 4, after: 'about-card',     business: null }
+];
 
 /* EVENT SUBMISSIONS — the "Submit an Event" Google Form (v47). Same
    swap pattern as SPONSOR_FORM_URL / PHOTO_FORM_URL: the constant is
