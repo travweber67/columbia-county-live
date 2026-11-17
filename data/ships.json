@@ -1,51 +1,64 @@
 {
- "fetched_at": "2026-11-17T21:20:29Z",
+ "fetched_at": "2026-11-17T21:24:49Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 45.64327,
-   "lon": -122.75281,
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.98739,
+   "lon": -122.83733,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-17 21:21:47.185188428 +0000 UTC"
+   "cog": 241.6,
+   "heading": 152,
+   "nav_status": 5,
+   "updated": "2026-11-17 21:25:03.619323528 +0000 UTC"
   },
   {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.73854,
-   "lon": -122.76301,
-   "sog_kn": 6.6,
-   "cog": 179.3,
-   "heading": 179,
-   "nav_status": 0,
-   "updated": "2026-11-17 21:21:53.330193588 +0000 UTC"
+   "mmsi": 373989000,
+   "name": "AFRICAN CARDINAL",
+   "lat": 46.10263,
+   "lon": -122.95528,
+   "type_code": 70,
+   "destination": "KRUSN",
+   "updated": "2026-11-17 21:25:12.914669319 +0000 UTC",
+   "sog_kn": 9.4,
+   "cog": 299.9,
+   "heading": 300,
+   "nav_status": 0
   },
   {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 45.79502,
-   "lon": -122.78453,
-   "sog_kn": 8.5,
-   "cog": 153.5,
-   "heading": 337,
-   "nav_status": 0,
-   "updated": "2026-11-17 21:21:55.292242461 +0000 UTC"
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.15008,
+   "lon": -123.04402,
+   "sog_kn": 1.4,
+   "cog": 134,
+   "heading": 127,
+   "nav_status": 3,
+   "updated": "2026-11-17 21:25:25.552569941 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08255,
-   "lon": -122.90667,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35744,
    "sog_kn": 0,
-   "cog": 63.2,
-   "heading": 126,
-   "nav_status": 0,
-   "updated": "2026-11-17 21:22:03.453798931 +0000 UTC"
+   "cog": 338.8,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-17 21:25:17.451422697 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 46.14808,
+   "lon": -123.27003,
+   "sog_kn": 6.5,
+   "cog": 74,
+   "heading": 70,
+   "nav_status": 12,
+   "updated": "2026-11-17 21:25:17.778896841 +0000 UTC"
   }
  ]
 }
