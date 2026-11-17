@@ -34,7 +34,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <link rel="manifest" href="manifest.webmanifest?v=95">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=95">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=96">
+<link rel="stylesheet" href="style.css?v=97">
 <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=95">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=95">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
@@ -241,12 +241,14 @@ document.documentElement.setAttribute("data-theme",t);})();
         <a class="founding-cta" href="https://www.kneelandbrothersllc.com/" target="_blank" rel="noopener">Visit Kneeland Brothers LLC &rarr;</a>
         <button class="otl-more" type="button" data-pv-open aria-haspopup="dialog" aria-controls="pv-sheet" aria-expanded="false">See hours &amp; what&rsquo;s on &rarr;</button>
       </article>
-      <article class="founding-cell invite">
-        <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
-        <p class="cell-eyebrow" data-i18n="fs3eyebrow">Founding Sponsor · Spot 3 of 3 — Open</p>
-        <h3 data-i18n="fs3h3">Your business here</h3>
-        <p data-i18n="fs3p">One of only three founding spots, ever — your name and logo on the Today page every visitor opens first. $49/mo, locked while you stay, and a free 30-day pilot before you pay anything.</p>
-        <a class="founding-cta" href="sponsor.html#founding" data-i18n="fs3cta">Claim spot 3 &rarr;</a>
+      <article class="founding-cell taken" data-cm-cell>
+        <img class="founding-ribbon cell-ribbon" src="img/founding-ribbon.png?v=97" alt="Founding Sponsor" title="Founding Sponsor">
+        <div class="otl-logo-box"><img src="img/preview-cm-renovations-logo.png" alt="C&amp;M Renovations logo" style="border-radius:0"></div>
+        <p class="cell-eyebrow">Founding Sponsor · Spot 3 of 3</p>
+        <h3>C&amp;M Renovations</h3>
+        <p>Fencing, decking &amp; remodeling<br>34797 Pittsburg Road, St. Helens<br><a class="otl-tel" href="tel:+15033968977">(503) 396-8977</a><br>Licensed, bonded &amp; insured · CCB #241111</p>
+        <a class="founding-cta" href="https://cmrenovations.live/" target="_blank" rel="noopener">Visit C&amp;M Renovations &rarr;</a>
+        <button class="otl-more" type="button" data-cm-open aria-haspopup="dialog" aria-controls="cm-sheet" aria-expanded="false">See hours &amp; what&rsquo;s on &rarr;</button>
       </article>
     </div>
     <p class="founding-foot" data-i18n="fsfoot">Every founding sponsor keeps a permanent &ldquo;Founding Sponsor &middot; 2026&rdquo; badge and a place on the Community Partners wall below — even if they later change tiers. Founding closes January 31, 2027 — after that, no new founding sponsors ever.</p>
@@ -869,7 +871,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <section class="sponsor-top" aria-label="Sponsor spotlight — the local businesses that keep this page free">
   <p class="cell-eyebrow">Sponsor spotlight</p>
   <h2>The local businesses that keep this page free</h2>
-  <p>Columbia County Live carries no ad network and no paywall — a small number of local businesses fund it with named spots like this one. The first three become Founding Sponsors: their names stay on the Today page for good, at a $49/mo rate that never rises while they&rsquo;re with us. <strong>Spots 1 and 2 filled — Oregon Trail Lanes and Kneeland Brothers LLC — 1 still open.</strong></p>
+  <p>Columbia County Live carries no ad network and no paywall — a small number of local businesses fund it with named spots like this one. The first three become Founding Sponsors: their names stay on the Today page for good, at a $49/mo rate that never rises while they&rsquo;re with us. <strong>All three founding spots filled — Oregon Trail Lanes, Kneeland Brothers LLC and C&amp;M Renovations.</strong></p>
   <a class="founding-cta" href="sponsor.html#founding">See the founding sponsor spots &rarr;</a>
 </section>
 
@@ -987,6 +989,20 @@ document.documentElement.setAttribute("data-theme",t);})();
       <div class="dir-contact">
         <a class="dir-call" href="tel:+15033196871">&#128222; (503) 319-6871</a>
         <span class="dir-addr">33459 SW JP West Rd</span>
+      </div>
+    </article>
+    <article class="dir-item" data-dircat="handyman" data-lat="45.86043" data-lng="-122.85104">
+      <img class="dir-photo" src="img/dir-cm-renovations.jpg" alt="A new cedar deck by C&amp;M Renovations on a Columbia County home" loading="lazy" decoding="async">
+      <img class="founding-ribbon dir-ribbon" src="img/founding-ribbon.png?v=97" alt="Founding Sponsor" title="Founding Sponsor — C&amp;M Renovations">
+      <div class="dir-item-main">
+        <h3>C&amp;M Renovations</h3>
+        <p class="dir-meta">St. Helens &middot; <span data-i18n="dirremodel">Home repair &amp; remodeling</span></p>
+        <p class="dir-desc">Fencing, decking and remodeling from a licensed, bonded and insured St. Helens crew — Oregon CCB #241111.</p>
+        <button class="otl-more dir-otl-more" type="button" data-cm-open aria-haspopup="dialog" aria-controls="cm-sheet" aria-expanded="false">See hours &amp; what&rsquo;s on &rarr;</button>
+      </div>
+      <div class="dir-contact">
+        <a class="dir-call" href="tel:+15033968977">&#128222; (503) 396-8977</a>
+        <span class="dir-addr">34797 Pittsburg Road</span>
       </div>
     </article>
 
@@ -1400,7 +1416,7 @@ document.documentElement.setAttribute("data-theme",t);})();
   <p class="card-note" data-i18n="aboutp1">Columbia County Live is one live look at Columbia County, Oregon — US-30 and the Lewis &amp; Clark Bridge, the Columbia and Nehalem rivers, weather alerts, the Oscar B ferry, and what&rsquo;s on around the county — assembled from official public sources and refreshed all day. It is built and run by <strong>Nomad Development Group</strong>, a small local studio, on free public data and free hosting, which is how a page like this can exist for a county of 54,000 at all.</p>
   <p class="card-note" data-i18n="aboutp2"><strong>Why it&rsquo;s free — and what stays free.</strong> The core of this page is public-safety data: weather alerts, river levels, bridge and ferry status, road conditions. That core is free, carries no sponsor, and stays that way — it will never sit behind a paywall. That promise is the reason the page exists. The Community Help section keeps that same promise: the county&rsquo;s free help — food pantries, crisis lines, help with rent and utility bills, support for families and veterans — gathered in one place, free to everyone who needs it.</p>
   <h3 class="subhead" data-i18n="aboutsupporth">Support this service — founding sponsors</h3>
-  <p class="card-note" data-i18n="aboutp3">Founding sponsorship is open now. Only three founding spots will ever exist, and the local businesses that hold them are what fund this page — their support is what keeps the safety core above free for everyone. In return, each founding sponsor gets a named spot on this page, a permanent &ldquo;Founding Sponsor &middot; 2026&rdquo; badge, and a place on the Community Partners wall below. <strong>Oregon Trail Lanes</strong> of St. Helens is our first founding sponsor — thank you. Two founding spots remain, and founding closes January 31, 2027; after that, no new founding sponsors, ever.</p>
+  <p class="card-note" data-i18n="aboutp3">The founding sponsorships are now filled. Only three founding spots will ever exist, and the local businesses that hold them are what fund this page — their support is what keeps the safety core above free for everyone. In return, each founding sponsor gets a named spot on this page, a permanent &ldquo;Founding Sponsor &middot; 2026&rdquo; badge, and a place on the Community Partners wall below. <strong>Oregon Trail Lanes</strong> of St. Helens, <strong>Kneeland Brothers LLC</strong> and <strong>C&amp;M Renovations</strong> of St. Helens hold the three spots — thank you. All three founding spots are filled, and founding closes January 31, 2027; after that, no new founding sponsors, ever.</p>
   <div class="about-actions">
     <a class="share-btn primary" id="sponsor-interest-link" data-i18n="aboutbtn" href="mailto:travis@columbiacountylive.com?subject=Columbia%20County%20Live%20—%20ask%20about%20sponsoring">✉️ Ask about sponsoring</a>
   </div>
@@ -1424,8 +1440,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     <p class="partners-meta"><span class="dir-badge">Founding Sponsor · 2026</span><span class="partners-town">· St. Helens</span></p>
     <p class="partners-first"><strong class="partners-name">Kneeland Brothers LLC</strong> <img class="founding-ribbon wall-ribbon" src="img/founding-ribbon.png?v=95" alt="Founding Sponsor" title="Founding Sponsor"></p>
     <p class="partners-meta"><span class="dir-badge">Founding Sponsor · 2026</span><span class="partners-town">· Scappoose</span></p>
+    <p class="partners-first"><strong class="partners-name">C&amp;M Renovations</strong> <img class="founding-ribbon wall-ribbon" src="img/founding-ribbon.png?v=97" alt="Founding Sponsor" title="Founding Sponsor"></p>
+    <p class="partners-meta"><span class="dir-badge">Founding Sponsor · 2026</span><span class="partners-town">· St. Helens</span></p>
 
-    <p class="partners-empty"><a href="sponsor.html">Your logo here — become a partner &rarr;</a></p>
   </section>
   <p class="footer-byline" data-i18n="footerbyline"><strong>Columbia County Live</strong> — by <strong>Nomad Development Group</strong></p>
   <p class="cascade-footer"><a class="cascade-footer-link" href="https://travweber67.github.io/cascade-controls-jobs/"><span data-i18n="cascFooter">Also from Nomad: Cascade Controls Jobs — hiring controls techs, or looking for that work? &rarr;</span></a></p>
@@ -2084,6 +2101,48 @@ document.documentElement.setAttribute("data-theme",t);})();
   </div>
 </aside>
 
+<div class="sheet-backdrop" id="cm-backdrop" hidden></div>
+<aside class="getapp-sheet otl-sheet" id="cm-sheet" hidden role="dialog" aria-modal="true" aria-labelledby="cm-sheet-title">
+  <div class="getapp-head">
+    <span class="getapp-title" id="cm-sheet-title">C&amp;M Renovations</span>
+    <button class="drawer-close" id="cm-close" type="button" aria-label="Close the C&amp;M Renovations card">✕</button>
+  </div>
+  <div class="otl-sheet-body">
+    <article class="otl-card">
+      <img class="founding-ribbon sheet-ribbon" src="img/founding-ribbon.png?v=97" alt="Founding Sponsor" title="Founding Sponsor">
+      <div class="otl-body">
+        <div class="otl-logo-box" style="margin-bottom:16px"><img src="img/preview-cm-renovations-logo.png" alt="C&amp;M Renovations logo" style="border-radius:0"></div>
+        <h3>C&amp;M Renovations <span class="dir-badge">Founding Sponsor · 2026</span></h3>
+        <p class="otl-tag">Fencing, decking &amp; remodeling</p>
+        <p class="otl-blurb">Fencing, decking and remodeling from a St. Helens crew — licensed, bonded and insured, Oregon CCB #241111.</p>
+        <div class="otl-grid">
+          <div>
+            <h4>Hours</h4>
+            <table class="otl-hours">
+              <tr><td>Monday – Friday</td><td>8 AM – 6 PM</td></tr>
+              <tr><td>Saturday</td><td>9 AM – 1 PM</td></tr>
+            </table>
+          </div>
+          <div>
+            <h4>What&rsquo;s on</h4>
+            <ul class="otl-list">
+              <li>Fencing</li>
+              <li>Decking</li>
+              <li>Remodeling</li>
+              <li>Licensed, bonded &amp; insured — Oregon CCB #241111</li>
+            </ul>
+          </div>
+        </div>
+        <div class="otl-actions">
+          <a class="founding-cta" style="background:var(--accent);border-color:var(--accent);color:#fff" href="tel:+15033968977">Call (503) 396-8977</a>
+          <a class="founding-cta alt" style="color:var(--accent-dark);border-color:var(--accent)" href="https://cmrenovations.live/" target="_blank" rel="noopener">cmrenovations.live</a>
+          <a class="founding-cta alt" style="color:var(--accent-dark);border-color:var(--accent)" href="https://www.google.com/maps/search/?api=1&amp;query=C%26M+Renovations+34797+Pittsburg+Road+St+Helens+OR" target="_blank" rel="noopener">34797 Pittsburg Road, St. Helens</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</aside>
+
 <div class="wall-overlay" id="wall-overlay" hidden role="dialog" aria-modal="true" aria-label="County wall display — the county's answers, big and rotating">
   <button class="wall-exit" id="wall-exit" type="button" aria-label="Exit wall display">✕</button>
   <div class="wall-scene" id="wall-scene"></div>
@@ -2132,7 +2191,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=96"></script>
+<script src="app.js?v=97"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 
@@ -2169,6 +2228,48 @@ document.documentElement.setAttribute("data-theme",t);})();
   }
   openBtns.forEach(function (b) { b.addEventListener('click', openSheet); });
   var cell = document.querySelector('[data-pv-cell]');
+  if (cell) cell.addEventListener('click', function (e) {
+    if (e.target.closest('a, button')) return;
+    openSheet();
+  });
+  if (closeBtn) closeBtn.addEventListener('click', closeSheet);
+  if (backdrop) backdrop.addEventListener('click', closeSheet);
+  document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') closeSheet(); });
+})();
+</script>
+<script>
+/* C&M Renovations full-card sheet, wired exactly like the Oregon Trail
+   Lanes sheet in app.js (initOtlCard). */
+(function () {
+  var sheet = document.getElementById('cm-sheet');
+  if (!sheet) return;
+  var backdrop = document.getElementById('cm-backdrop');
+  var closeBtn = document.getElementById('cm-close');
+  var openBtns = Array.prototype.slice.call(document.querySelectorAll('[data-cm-open]'));
+  var lastFocus = null;
+  function openSheet() {
+    lastFocus = document.activeElement;
+    sheet.hidden = false;
+    if (backdrop) backdrop.hidden = false;
+    requestAnimationFrame(function () {
+      sheet.classList.add('open');
+      if (backdrop) backdrop.classList.add('open');
+    });
+    document.body.classList.add('sponsor-on');
+    openBtns.forEach(function (b) { b.setAttribute('aria-expanded', 'true'); });
+    if (closeBtn) closeBtn.focus();
+  }
+  function closeSheet() {
+    if (sheet.hidden) return;
+    sheet.classList.remove('open');
+    if (backdrop) backdrop.classList.remove('open');
+    document.body.classList.remove('sponsor-on');
+    openBtns.forEach(function (b) { b.setAttribute('aria-expanded', 'false'); });
+    setTimeout(function () { sheet.hidden = true; if (backdrop) backdrop.hidden = true; }, 320);
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  openBtns.forEach(function (b) { b.addEventListener('click', openSheet); });
+  var cell = document.querySelector('[data-cm-cell]');
   if (cell) cell.addEventListener('click', function (e) {
     if (e.target.closest('a, button')) return;
     openSheet();

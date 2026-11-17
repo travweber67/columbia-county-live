@@ -6306,7 +6306,7 @@ const LANG_ES = {
   aboutp1: 'Columbia County Live es una sola mirada en vivo al condado de Columbia, Oregón — la US-30 y el puente Lewis &amp; Clark, los ríos Columbia y Nehalem, las alertas del clima, el ferry Oscar B y lo que hay en el condado — reunido de fuentes públicas oficiales y actualizado todo el día. Lo construye y lo opera <strong>Nomad Development Group</strong>, un pequeño estudio local, con datos públicos gratuitos y alojamiento gratuito — así es como una página como esta puede existir para un condado de 54,000 personas.',
   aboutp2: '<strong>Por qué es gratis — y qué se queda gratis.</strong> El centro de esta página son datos de seguridad pública: alertas del clima, niveles de los ríos, estado del puente y del ferry, condiciones de las carreteras. Ese centro es gratis, no lleva patrocinadores, y así se queda — nunca estará detrás de un muro de pago. Esa promesa es la razón de ser de esta página. La sección de Ayuda comunitaria mantiene esa misma promesa: la ayuda gratuita del condado — despensas de comida, líneas de crisis, ayuda con el alquiler y las facturas de servicios, apoyo para familias y veteranos — reunida en un solo lugar, gratis para todo el que la necesite.',
   aboutsupporth: 'Apoya este servicio — patrocinadores fundadores',
-  aboutp3: 'El patrocinio fundador ya está abierto. Solo existirán tres lugares de fundador, y los negocios locales que los ocupen son quienes financian esta página — su apoyo es lo que mantiene gratis para todos el centro de seguridad de arriba. A cambio, cada patrocinador fundador recibe un lugar con su nombre en esta página, una insignia permanente de &ldquo;Patrocinador fundador &middot; 2026&rdquo; y un lugar en el muro de Socios comunitarios de abajo. <strong>Oregon Trail Lanes</strong>, de St. Helens, es nuestro primer patrocinador fundador — gracias. Quedan dos lugares de fundador, y el patrocinio fundador cierra el 31 de enero de 2027; después de esa fecha, no habrá nuevos patrocinadores fundadores, nunca.',
+  aboutp3: 'Los patrocinios fundadores ya están completos. Solo existirán tres lugares de fundador, y los negocios locales que los ocupen son quienes financian esta página — su apoyo es lo que mantiene gratis para todos el centro de seguridad de arriba. A cambio, cada patrocinador fundador recibe un lugar con su nombre en esta página, una insignia permanente de &ldquo;Patrocinador fundador &middot; 2026&rdquo; y un lugar en el muro de Socios comunitarios de abajo. <strong>Oregon Trail Lanes</strong>, de St. Helens, <strong>Kneeland Brothers LLC</strong> y <strong>C&amp;M Renovations</strong>, de St. Helens, ocupan los tres lugares — gracias. Los tres lugares de fundador están llenos, y el patrocinio fundador cierra el 31 de enero de 2027; después de esa fecha, no habrá nuevos patrocinadores fundadores, nunca.',
   aboutbtn: '✉️ Pregunta por el patrocinio',
   aboutnote: 'Ese botón abre un formulario corto de interés: el nombre de tu negocio u organización, un nombre de contacto, tu pueblo y lo que te interesa — un lugar de patrocinador fundador, anunciar un negocio u otra cosa. Te responderemos. Preguntar no cuesta nada y no compromete a nada: los patrocinadores fundadores empiezan con un periodo de prueba gratuito de 30 días, para que veas tu negocio en la página antes de gastar nada.',
   freshh2: '🕐 ¿Qué tan fresca es esta página?',
@@ -6336,6 +6336,7 @@ const LANG_ES = {
   dirchildcare: 'Cuidado infantil',
   dircleaning: 'Limpieza',
   dirhandyman: 'Manitas y reparaciones del hogar',
+  dirremodel: 'Reparación y remodelación del hogar',
   dirpets: 'Cuidado de mascotas',
   diryard: 'Patio y jardín',
   dirtutoring: 'Tutorías',
@@ -8438,8 +8439,8 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
   if (!overlay) return;
   var PHOTO_MS = 16000;      // dwell per photo — a slow ambient cycle
   var QUIET = [
-    { en: 'Presented by Oregon Trail Lanes · Founding Sponsor · $49/mo · 2 founding spots still open',
-      es: 'Presentado por Oregon Trail Lanes · Patrocinador Fundador · $49/mes · 2 lugares fundadores aún disponibles' },
+    { en: 'Presented by Oregon Trail Lanes · Founding Sponsor · $49/mo · all three founding spots now filled',
+      es: 'Presentado por Oregon Trail Lanes · Patrocinador Fundador · $49/mes · los tres lugares fundadores ya están ocupados' },
     { en: 'These photographs come from the county itself — share yours from the Events & More tab',
       es: 'Estas fotografías vienen del propio condado — comparte la tuya desde la pestaña Eventos y Más' },
     null /* a beat of nothing — the quiet line rests every third photo */
