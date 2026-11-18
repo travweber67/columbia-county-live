@@ -1,62 +1,70 @@
 {
- "fetched_at": "2026-11-18T04:05:20Z",
+ "fetched_at": "2026-11-18T04:10:20Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19995,
-   "lon": -123.38557,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.1386,
+   "lon": -123.38147,
+   "type_code": 99,
+   "updated": "2026-11-18 04:10:35.850482596 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.0897,
+   "lon": -122.92899,
    "sog_kn": 0,
-   "cog": 343.4,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-18 04:05:32.294895431 +0000 UTC"
+   "cog": 238.9,
+   "heading": 107,
+   "nav_status": 0,
+   "updated": "2026-11-18 04:10:40.605073924 +0000 UTC"
   },
   {
    "mmsi": 368331640,
    "name": "SCHWEIGER",
-   "lat": 45.59865,
-   "lon": -122.77913,
-   "sog_kn": 7.8,
-   "cog": 149.7,
-   "heading": 144,
+   "lat": 45.59,
+   "lon": -122.77087,
+   "sog_kn": 6.4,
+   "cog": 138.7,
+   "heading": 138,
    "nav_status": 0,
-   "updated": "2026-11-18 04:05:44.160052662 +0000 UTC"
+   "updated": "2026-11-18 04:10:54.344446518 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.06903,
-   "lon": -122.88863,
-   "sog_kn": 0.4,
-   "cog": 344.5,
-   "heading": 65,
-   "nav_status": 3,
-   "updated": "2026-11-18 04:05:46.121098556 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08983,
-   "lon": -122.929,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65016,
+   "lon": -122.74759,
    "sog_kn": 0,
-   "cog": 48.5,
-   "heading": 103,
-   "nav_status": 0,
-   "updated": "2026-11-18 04:05:47.743356438 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08271,
-   "lon": -122.90647,
-   "sog_kn": 0,
-   "cog": 168.2,
+   "cog": 245.3,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-18 04:05:53.920701932 +0000 UTC"
+   "nav_status": 3,
+   "updated": "2026-11-18 04:10:58.760494701 +0000 UTC"
+  },
+  {
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.68581,
+   "lon": -122.77232,
+   "sog_kn": 0,
+   "cog": 103.9,
+   "heading": 192,
+   "nav_status": 1,
+   "updated": "2026-11-18 04:11:02.28049993 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10789,
+   "lon": -122.95905,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 04:11:03.298819813 +0000 UTC"
   }
  ]
 }
