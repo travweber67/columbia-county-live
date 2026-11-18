@@ -1,6 +1,38 @@
 {
- "fetched_at": "2026-11-18T14:20:38Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-18T14:26:20Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10287,
+   "lon": -122.90763,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-18 14:26:27.452873536 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09408,
+   "lon": -122.94275,
+   "sog_kn": 0.1,
+   "cog": 184.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 14:26:27.75341164 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61107,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 224.7,
+   "heading": 136,
+   "nav_status": 15,
+   "updated": "2026-11-18 14:26:28.345069351 +0000 UTC"
+  }
+ ]
 }
