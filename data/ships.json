@@ -1,6 +1,71 @@
 {
- "fetched_at": "2026-11-18T12:06:06Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-18T12:11:07Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.01457,
+   "lon": -122.85778,
+   "sog_kn": 0.6,
+   "cog": 159,
+   "heading": 166,
+   "nav_status": 3,
+   "updated": "2026-11-18 12:11:11.265499656 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.08266,
+   "lon": -122.90678,
+   "sog_kn": 0,
+   "cog": 355,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 12:11:12.461386749 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.08971,
+   "lon": -122.92895,
+   "sog_kn": 0,
+   "cog": 218.1,
+   "heading": 103,
+   "nav_status": 0,
+   "updated": "2026-11-18 12:11:16.041726084 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65012,
+   "lon": -122.7477,
+   "sog_kn": 0,
+   "cog": 31,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-18 12:11:18.771958013 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08254,
+   "lon": -122.90678,
+   "sog_kn": 0.1,
+   "cog": 134.2,
+   "heading": 128,
+   "nav_status": 0,
+   "updated": "2026-11-18 12:11:30.548034839 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19945,
+   "lon": -123.385,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-18 12:11:38.231865775 +0000 UTC"
+  }
+ ]
 }
