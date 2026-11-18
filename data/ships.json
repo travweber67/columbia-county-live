@@ -1,38 +1,62 @@
 {
- "fetched_at": "2026-11-18T04:00:19Z",
+ "fetched_at": "2026-11-18T04:05:20Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19995,
+   "lon": -123.38557,
+   "sog_kn": 0,
+   "cog": 343.4,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-18 04:05:32.294895431 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.59865,
+   "lon": -122.77913,
+   "sog_kn": 7.8,
+   "cog": 149.7,
+   "heading": 144,
+   "nav_status": 0,
+   "updated": "2026-11-18 04:05:44.160052662 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.06903,
+   "lon": -122.88863,
+   "sog_kn": 0.4,
+   "cog": 344.5,
+   "heading": 65,
+   "nav_status": 3,
+   "updated": "2026-11-18 04:05:46.121098556 +0000 UTC"
+  },
   {
    "mmsi": 367384780,
    "name": "CAROLYN DOROTHY",
-   "lat": 46.08985,
-   "lon": -122.92902,
+   "lat": 46.08983,
+   "lon": -122.929,
    "sog_kn": 0,
    "cog": 48.5,
-   "heading": 102,
+   "heading": 103,
    "nav_status": 0,
-   "updated": "2026-11-18 04:00:47.72531013 +0000 UTC"
+   "updated": "2026-11-18 04:05:47.743356438 +0000 UTC"
   },
   {
-   "mmsi": 368450870,
-   "name": "AMERICAN ENCORE",
-   "lat": 45.71665,
-   "lon": -122.76613,
-   "sog_kn": 11.1,
-   "cog": 191,
-   "heading": 191,
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08271,
+   "lon": -122.90647,
+   "sog_kn": 0,
+   "cog": 168.2,
+   "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-18 04:00:53.802796624 +0000 UTC"
-  },
-  {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64539,
-   "lon": -122.73505,
-   "type_code": 70,
-   "destination": "PER ORDERS",
-   "updated": "2026-11-18 04:01:01.218339737 +0000 UTC"
+   "updated": "2026-11-18 04:05:53.920701932 +0000 UTC"
   }
  ]
 }
