@@ -1,111 +1,122 @@
 {
- "fetched_at": "2026-11-18T20:11:47Z",
+ "fetched_at": "2026-11-18T20:16:47Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.09294,
-   "lon": -122.9234,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.01986,
+   "lon": -122.86457,
+   "sog_kn": 1.1,
+   "cog": 130.8,
+   "heading": 130,
+   "nav_status": 3,
+   "updated": "2026-11-18 20:16:56.732787296 +0000 UTC"
+  },
+  {
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 45.69095,
+   "lon": -122.7722,
+   "sog_kn": 0,
+   "cog": 250,
+   "heading": 170,
+   "nav_status": 1,
+   "updated": "2026-11-18 20:16:56.760262278 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65002,
+   "lon": -122.74756,
+   "sog_kn": 0,
+   "cog": 287,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-18 20:17:00.629994543 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 46.16052,
+   "lon": -123.40622,
+   "type_code": 57,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-18 20:17:02.143244419 +0000 UTC"
+  },
+  {
+   "mmsi": 636024633,
+   "name": "PAVO LEADER",
+   "lat": 45.63812,
+   "lon": -122.72248,
+   "sog_kn": 0,
+   "cog": 26,
+   "heading": 114,
+   "nav_status": 5,
+   "updated": "2026-11-18 20:17:09.582180921 +0000 UTC"
+  },
+  {
+   "mmsi": 367309370,
+   "name": "PACIFIC EAGLE",
+   "lat": 46.15454,
+   "lon": -123.25391,
+   "type_code": 52,
+   "destination": "WARRENTON",
+   "updated": "2026-11-18 20:17:12.415740673 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.98385,
+   "lon": -122.83552,
    "sog_kn": 0.1,
-   "cog": 311.1,
+   "cog": 250.2,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-18 20:11:59.67081956 +0000 UTC"
+   "updated": "2026-11-18 20:17:13.017327237 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.98275,
+   "lon": -122.83472,
+   "sog_kn": 0,
+   "cog": 233.3,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 20:17:15.457339821 +0000 UTC"
+  },
+  {
+   "mmsi": 311001605,
+   "name": "SAGA DISCOVERY",
+   "lat": 46.18789,
+   "lon": -123.14404,
+   "sog_kn": 12.1,
+   "cog": 96.8,
+   "heading": 97,
+   "nav_status": 0,
+   "updated": "2026-11-18 20:17:20.098107241 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79318,
+   "lon": -122.84323,
+   "sog_kn": 0,
+   "cog": 333.9,
+   "heading": 216,
+   "nav_status": 0,
+   "updated": "2026-11-18 20:17:23.515912258 +0000 UTC"
   },
   {
    "mmsi": 367061930,
    "name": "TEBENKOF",
-   "lat": 46.2,
-   "lon": -123.38554,
-   "sog_kn": 0,
-   "cog": 20.6,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-18 20:12:00.757708688 +0000 UTC"
-  },
-  {
-   "mmsi": 367667060,
-   "name": "GRANITE POINT",
-   "lat": 45.6473,
-   "lon": -122.73994,
-   "type_code": 52,
-   "destination": "SRT PASCO",
-   "updated": "2026-11-18 20:12:00.950644851 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.65966,
-   "lon": -122.75942,
-   "sog_kn": 0,
-   "cog": 164.8,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-18 20:12:08.797867278 +0000 UTC"
-  },
-  {
-   "mmsi": 563331600,
-   "name": "BELLE LUNE",
-   "lat": 45.9839,
-   "lon": -122.83527,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-18 20:12:11.614724639 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08114,
-   "lon": -122.89749,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-18 20:12:14.175217693 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.0094,
-   "lon": -122.84847,
-   "sog_kn": 3.8,
-   "cog": 211.3,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-18 20:12:14.953479341 +0000 UTC"
-  },
-  {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.61202,
-   "lon": -122.64536,
-   "sog_kn": 0,
-   "cog": 292.3,
-   "heading": 295,
-   "nav_status": 5,
-   "updated": "2026-11-18 20:12:16.818957117 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09311,
-   "lon": -122.9236,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 310,
-   "nav_status": 3,
-   "updated": "2026-11-18 20:12:17.160877957 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58758,
-   "lon": -122.77041,
-   "sog_kn": 0,
-   "cog": 286,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-18 20:12:20.153568637 +0000 UTC"
+   "lat": 46.20001,
+   "lon": -123.38552,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-18 20:17:23.622021536 +0000 UTC"
   }
  ]
 }
