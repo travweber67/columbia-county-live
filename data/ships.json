@@ -1,40 +1,82 @@
 {
- "fetched_at": "2026-11-18T05:21:19Z",
+ "fetched_at": "2026-11-18T05:25:28Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15707,
-   "lon": -123.40234,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 101.5,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-18 05:25:38.874418015 +0000 UTC"
+  },
+  {
+   "mmsi": 355173000,
+   "name": "EVER BEST",
+   "lat": 46.27208,
+   "lon": -123.4828,
+   "sog_kn": 11.6,
+   "cog": 94.5,
+   "heading": 105,
+   "nav_status": 0,
+   "updated": "2026-11-18 05:25:40.102493447 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08271,
+   "lon": -122.90647,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-18 05:25:46.128903144 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09699,
+   "lon": -122.93445,
+   "sog_kn": 0,
+   "cog": 30,
+   "heading": 103,
+   "nav_status": 3,
+   "updated": "2026-11-18 05:25:46.60037955 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.06342,
+   "lon": -122.88563,
+   "sog_kn": 0.9,
+   "cog": 170,
+   "heading": 143,
+   "nav_status": 3,
+   "updated": "2026-11-18 05:25:47.317484197 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 45.63253,
+   "lon": -122.70665,
+   "sog_kn": 0,
+   "cog": 65.3,
+   "heading": 123,
+   "nav_status": 1,
+   "updated": "2026-11-18 05:25:47.673023722 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.6433,
+   "lon": -122.75277,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 133,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-18 05:21:53.166450497 +0000 UTC"
-  },
-  {
-   "mmsi": 374590000,
-   "name": "BORACAY ISLAND",
-   "lat": 45.80613,
-   "lon": -122.79281,
-   "sog_kn": 12.4,
-   "cog": 155.9,
-   "heading": 154,
-   "nav_status": 0,
-   "updated": "2026-11-18 05:21:53.663786595 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58755,
-   "lon": -122.77064,
-   "sog_kn": 0,
-   "cog": 151.5,
-   "heading": 138,
-   "nav_status": 0,
-   "updated": "2026-11-18 05:22:27.792598445 +0000 UTC"
+   "updated": "2026-11-18 05:25:48.682761069 +0000 UTC"
   }
  ]
 }
