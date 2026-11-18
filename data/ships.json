@@ -1,37 +1,106 @@
 {
- "fetched_at": "2026-11-18T06:20:29Z",
+ "fetched_at": "2026-11-18T06:25:34Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08273,
+   "lon": -122.90647,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-18 06:25:46.18977435 +0000 UTC"
+  },
+  {
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.68575,
+   "lon": -122.7722,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-18 06:26:02.736503867 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 344.3,
+   "heading": 197,
+   "nav_status": 1
+  },
   {
    "mmsi": 374590000,
    "name": "BORACAY ISLAND",
-   "lat": 45.69046,
-   "lon": -122.7713,
-   "sog_kn": 1,
-   "cog": 10.9,
-   "heading": 196,
-   "nav_status": 0,
-   "updated": "2026-11-18 06:21:24.048112903 +0000 UTC"
+   "lat": 45.69099,
+   "lon": -122.77133,
+   "sog_kn": 0.3,
+   "cog": 195.7,
+   "heading": 192,
+   "nav_status": 1,
+   "updated": "2026-11-18 06:25:54.27694908 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65017,
-   "lon": -122.74772,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15705,
+   "lon": -123.40233,
    "sog_kn": 0,
-   "cog": 262.3,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-18 06:21:29.319462298 +0000 UTC"
+   "cog": 360,
+   "heading": 132,
+   "nav_status": 0,
+   "updated": "2026-11-18 06:25:54.99877222 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.1772,
-   "lon": -123.35743,
-   "type_code": 30,
-   "updated": "2026-11-18 06:21:45.360575254 +0000 UTC"
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.14007,
+   "lon": -123.02694,
+   "sog_kn": 0.8,
+   "cog": 297.2,
+   "heading": 114,
+   "nav_status": 3,
+   "updated": "2026-11-18 06:25:55.941000048 +0000 UTC"
+  },
+  {
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.64691,
+   "lon": -122.74008,
+   "sog_kn": 6.2,
+   "cog": 253.2,
+   "heading": 253,
+   "nav_status": 5,
+   "updated": "2026-11-18 06:25:56.073916919 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.69072,
+   "lon": -122.76987,
+   "sog_kn": 0.5,
+   "cog": 54.8,
+   "heading": 313,
+   "nav_status": 0,
+   "updated": "2026-11-18 06:25:57.348663971 +0000 UTC"
+  },
+  {
+   "mmsi": 636024633,
+   "name": "PAVO LEADER",
+   "lat": 45.63807,
+   "lon": -122.7225,
+   "sog_kn": 0,
+   "cog": 26,
+   "heading": 113,
+   "nav_status": 5,
+   "updated": "2026-11-18 06:26:04.772285011 +0000 UTC"
+  },
+  {
+   "mmsi": 338158000,
+   "name": "WEST VIRGINIA",
+   "lat": 45.90069,
+   "lon": -122.8062,
+   "sog_kn": 12,
+   "cog": 344.5,
+   "heading": 345,
+   "nav_status": 0,
+   "updated": "2026-11-18 06:26:10.148213052 +0000 UTC"
   }
  ]
 }
