@@ -1,73 +1,78 @@
 {
- "fetched_at": "2026-11-18T00:35:01Z",
+ "fetched_at": "2026-11-18T00:40:03Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367425870,
-   "name": "HUSKY",
-   "lat": 45.61195,
-   "lon": -122.63432,
-   "sog_kn": 0,
-   "cog": 267.3,
-   "heading": 356,
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61202,
+   "lon": -122.64535,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-18 00:40:26.708439611 +0000 UTC"
+  },
+  {
+   "mmsi": 563302700,
+   "name": "KEY WEST",
+   "lat": 46.10344,
+   "lon": -122.94959,
+   "type_code": 70,
+   "destination": "LONGVIEW USA",
+   "updated": "2026-11-18 00:40:27.395499129 +0000 UTC"
+  },
+  {
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.72131,
+   "lon": -122.76195,
+   "sog_kn": 8.6,
+   "cog": 9.8,
+   "heading": 7,
    "nav_status": 0,
-   "updated": "2026-11-18 00:35:16.779886457 +0000 UTC"
+   "updated": "2026-11-18 00:40:47.358179697 +0000 UTC"
   },
   {
    "mmsi": 367727410,
    "name": "AMY B",
-   "lat": 45.79316,
-   "lon": -122.84322,
+   "lat": 45.79317,
+   "lon": -122.84323,
    "sog_kn": 0,
-   "cog": 1.3,
-   "heading": 212,
+   "cog": 118.1,
+   "heading": 213,
    "nav_status": 12,
-   "updated": "2026-11-18 00:35:18.657474079 +0000 UTC"
+   "updated": "2026-11-18 00:40:38.149022396 +0000 UTC"
   },
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20001,
-   "lon": -123.3854,
-   "sog_kn": 0,
-   "cog": 178.5,
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.64965,
+   "lon": -122.76841,
+   "sog_kn": 9.6,
+   "cog": 35.3,
    "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-18 00:35:23.260840913 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.146,
-   "lon": -123.0395,
-   "sog_kn": 2.7,
-   "cog": 312.4,
-   "heading": 134,
-   "nav_status": 3,
-   "updated": "2026-11-18 00:35:24.455671167 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.64754,
-   "lon": -122.73982,
-   "sog_kn": 0.1,
-   "cog": 201.5,
-   "heading": 111,
-   "nav_status": 12,
-   "updated": "2026-11-18 00:35:29.483280483 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-18 00:40:38.230345363 +0000 UTC"
   },
   {
    "mmsi": 367061930,
    "name": "TEBENKOF",
-   "lat": 46.19998,
-   "lon": -123.38555,
+   "lat": 46.19999,
+   "lon": -123.38553,
    "sog_kn": 0,
-   "cog": 356.2,
+   "cog": 344.5,
    "heading": 511,
    "nav_status": 15,
-   "updated": "2026-11-18 00:35:31.058197232 +0000 UTC"
+   "updated": "2026-11-18 00:40:40.110154821 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08257,
+   "lon": -122.9067,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-18 00:40:45.348173855 +0000 UTC"
   }
  ]
 }
