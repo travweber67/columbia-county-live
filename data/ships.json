@@ -1,6 +1,100 @@
 {
- "fetched_at": "2026-11-18T15:26:25Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-18T15:31:26Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 563331600,
+   "name": "BELLE LUNE",
+   "lat": 46.17047,
+   "lon": -123.09911,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-18 15:31:42.932226972 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 9.7,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-18 15:31:45.148935769 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.6454,
+   "lon": -122.73502,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-18 15:31:45.150823459 +0000 UTC"
+  },
+  {
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.68604,
+   "lon": -122.77216,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-18 15:31:50.616296709 +0000 UTC"
+  },
+  {
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.82919,
+   "lon": -122.81416,
+   "sog_kn": 6.1,
+   "cog": 24,
+   "heading": 22,
+   "nav_status": 0,
+   "updated": "2026-11-18 15:31:51.978414657 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.0901,
+   "lon": -122.92273,
+   "sog_kn": 26.6,
+   "cog": 301.8,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 15:31:52.405856435 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.64332,
+   "lon": -122.75283,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 15:32:00.338714666 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58081,
+   "lon": -122.76009,
+   "sog_kn": 0,
+   "cog": 51.2,
+   "heading": 123,
+   "nav_status": 0,
+   "updated": "2026-11-18 15:32:05.303633336 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 56.2,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-18 15:32:08.959868652 +0000 UTC"
+  }
+ ]
 }
