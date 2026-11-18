@@ -1,57 +1,67 @@
 {
- "fetched_at": "2026-11-18T14:01:18Z",
+ "fetched_at": "2026-11-18T14:06:19Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
-   "hex": "a535c2",
-   "callsign": "ASA1412",
-   "type": "B739",
-   "alt_ft": 3200,
-   "gs_kn": 147.1,
-   "track": 117.09,
-   "lat": 45.692744,
-   "lon": -122.871162
-  },
-  {
-   "hex": "a6504b",
-   "callsign": "ASA558",
+   "hex": "a6f96c",
+   "callsign": "ASA710",
    "type": "B738",
-   "alt_ft": 2425,
-   "gs_kn": 145.8,
-   "track": 117.8,
-   "lat": 45.649124,
-   "lon": -122.760956
+   "alt_ft": 3250,
+   "gs_kn": 191.3,
+   "track": 209.78,
+   "lat": 45.709625,
+   "lon": -122.815023
   },
   {
-   "hex": "a11ad4",
-   "callsign": "SKW3040",
-   "type": "E75L",
-   "alt_ft": 850,
-   "gs_kn": 118.2,
-   "track": 119.38,
-   "lat": 45.61116,
-   "lon": -122.662755
+   "hex": "a79768",
+   "callsign": "ASA782",
+   "type": "B738",
+   "alt_ft": 2250,
+   "gs_kn": 127.5,
+   "track": 118.57,
+   "lat": 45.644795,
+   "lon": -122.724632
+  },
+  {
+   "hex": "a51b27",
+   "callsign": "UPS2977",
+   "type": "B752",
+   "alt_ft": "ground",
+   "gs_kn": 0.0,
+   "track": null,
+   "lat": 45.5942,
+   "lon": -122.622042
   },
   {
    "hex": "a0541b",
    "callsign": "AAL1384",
    "type": "A321",
    "alt_ft": "ground",
-   "gs_kn": 15.5,
+   "gs_kn": 0.0,
    "track": null,
-   "lat": 45.594786,
-   "lon": -122.615679
+   "lat": 45.596031,
+   "lon": -122.620585
   },
   {
-   "hex": "a79768",
-   "callsign": "ASA782",
-   "type": "B738",
-   "alt_ft": 5900,
-   "gs_kn": 242.4,
-   "track": 297.52,
-   "lat": 45.69577,
-   "lon": -122.610306
+   "hex": "a36347",
+   "callsign": "AMF1978",
+   "type": "B190",
+   "alt_ft": "ground",
+   "gs_kn": 19.5,
+   "track": 298.12,
+   "lat": 45.591259,
+   "lon": -122.617537
+  },
+  {
+   "hex": "a535c2",
+   "callsign": "ASA1412",
+   "type": "B739",
+   "alt_ft": 150,
+   "gs_kn": 122.7,
+   "track": 119.28,
+   "lat": 45.591888,
+   "lon": -122.613049
   }
  ]
 }
