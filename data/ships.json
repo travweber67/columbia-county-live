@@ -1,82 +1,60 @@
 {
- "fetched_at": "2026-11-18T04:21:07Z",
+ "fetched_at": "2026-11-18T04:25:22Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08983,
-   "lon": -122.92897,
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64347,
+   "lon": -122.75245,
+   "type_code": 52,
+   "destination": "US^0UU4>02MR",
+   "updated": "2026-11-18 04:25:34.388645939 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09685,
+   "lon": -122.93445,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-18 04:25:55.357991721 +0000 UTC",
    "sog_kn": 0,
-   "cog": 48.5,
+   "cog": 10.5,
    "heading": 103,
-   "nav_status": 0,
-   "updated": "2026-11-18 04:21:48.473700618 +0000 UTC"
+   "nav_status": 3
   },
   {
-   "mmsi": 563311600,
-   "name": "STANLEY BAY",
-   "lat": 46.11011,
-   "lon": -122.96337,
-   "sog_kn": 0,
-   "cog": 138.5,
-   "heading": 131,
-   "nav_status": 5,
-   "updated": "2026-11-18 04:21:50.728600419 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.3855,
-   "sog_kn": 0,
-   "cog": 306.6,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-18 04:21:50.813373475 +0000 UTC"
-  },
-  {
-   "mmsi": 368450870,
-   "name": "AMERICAN ENCORE",
-   "lat": 45.65446,
-   "lon": -122.76177,
-   "sog_kn": 11,
-   "cog": 132.1,
-   "heading": 130,
-   "nav_status": 5,
-   "updated": "2026-11-18 04:21:53.202003367 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.65573,
-   "lon": -122.75912,
-   "sog_kn": 8.1,
-   "cog": 290.9,
-   "heading": 280,
-   "nav_status": 0,
-   "updated": "2026-11-18 04:21:56.360686387 +0000 UTC"
-  },
-  {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.58377,
-   "lon": -122.76507,
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.58605,
+   "lon": -122.76809,
    "sog_kn": 0.2,
-   "cog": 206.3,
-   "heading": 298,
-   "nav_status": 0,
-   "updated": "2026-11-18 04:22:13.514918304 +0000 UTC"
+   "cog": 215.9,
+   "heading": 137,
+   "nav_status": 12,
+   "updated": "2026-11-18 04:25:39.933626826 +0000 UTC"
   },
   {
-   "mmsi": 366892350,
-   "name": "NAT GEO SEA BIRD",
-   "lat": 46.08964,
-   "lon": -122.92971,
-   "type_code": 66,
-   "destination": "RAINIER",
-   "updated": "2026-11-18 04:22:15.34487471 +0000 UTC"
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15328,
+   "lon": -123.37718,
+   "sog_kn": 1,
+   "cog": 39,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 04:25:48.3754475 +0000 UTC"
+  },
+  {
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.68584,
+   "lon": -122.77232,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-18 04:25:50.600863128 +0000 UTC"
   }
  ]
 }
