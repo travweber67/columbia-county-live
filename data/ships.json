@@ -1,71 +1,91 @@
 {
- "fetched_at": "2026-11-18T01:30:12Z",
+ "fetched_at": "2026-11-18T01:35:08Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 46.22418,
+   "lon": -123.42742,
+   "sog_kn": 12.8,
+   "cog": 176.9,
+   "heading": 174,
+   "nav_status": 0,
+   "updated": "2026-11-18 01:35:26.227990313 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.6254,
+   "lon": -122.68574,
+   "sog_kn": 0,
+   "cog": 165.8,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 01:35:33.386314315 +0000 UTC"
+  },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 45.8775,
-   "lon": -122.79235,
+   "lat": 45.89293,
+   "lon": -122.80325,
    "sog_kn": 12.6,
-   "cog": 332.3,
-   "heading": 333,
+   "cog": 341.1,
+   "heading": 342,
    "nav_status": 0,
-   "updated": "2026-11-18 01:30:47.270717549 +0000 UTC"
+   "updated": "2026-11-18 01:35:40.035215565 +0000 UTC"
   },
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64541,
-   "lon": -122.73504,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64751,
+   "lon": -122.7398,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-18 01:35:43.959893174 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08984,
+   "lon": -122.92904,
+   "sog_kn": 0,
+   "cog": 48.5,
+   "heading": 101,
+   "nav_status": 0,
+   "updated": "2026-11-18 01:35:47.693819686 +0000 UTC"
+  },
+  {
+   "mmsi": 538004110,
+   "name": "AENEAS",
+   "lat": 46.02719,
+   "lon": -122.8694,
    "type_code": 70,
-   "destination": "PER ORDERS",
-   "updated": "2026-11-18 01:30:52.364699608 +0000 UTC"
+   "destination": "USKAM",
+   "updated": "2026-11-18 01:35:47.855447812 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.09681,
-   "lon": -122.93449,
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08966,
+   "lon": -122.92971,
    "sog_kn": 0,
-   "cog": 342.1,
-   "heading": 110,
-   "nav_status": 3,
-   "updated": "2026-11-18 01:30:55.373128655 +0000 UTC"
+   "cog": 72.7,
+   "heading": 109,
+   "nav_status": 5,
+   "updated": "2026-11-18 01:35:48.889136965 +0000 UTC"
   },
   {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58762,
-   "lon": -122.7704,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08257,
+   "lon": -122.90669,
    "sog_kn": 0,
-   "cog": 310.8,
-   "heading": 511,
+   "cog": 343.7,
+   "heading": 126,
    "nav_status": 0,
-   "updated": "2026-11-18 01:30:59.382277969 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65015,
-   "lon": -122.74757,
-   "sog_kn": 0,
-   "cog": 215.4,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-18 01:31:00.536472704 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 14.3,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-18 01:31:09.183439185 +0000 UTC"
+   "updated": "2026-11-18 01:35:53.347310266 +0000 UTC"
   }
  ]
 }
