@@ -1,16 +1,40 @@
 {
- "fetched_at": "2026-11-18T02:45:12Z",
+ "fetched_at": "2026-11-18T02:50:13Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 1 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 45.64205,
-   "lon": -122.7498,
-   "type_code": 31,
-   "destination": "XX XXX>?? ???",
-   "updated": "2026-11-18 02:45:27.345749493 +0000 UTC"
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.08973,
+   "lon": -122.92898,
+   "sog_kn": 0,
+   "cog": 211.5,
+   "heading": 105,
+   "nav_status": 0,
+   "updated": "2026-11-18 02:50:38.809155129 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59408,
+   "lon": -122.7721,
+   "sog_kn": 0,
+   "cog": 338.3,
+   "heading": 148,
+   "nav_status": 5,
+   "updated": "2026-11-18 02:50:43.506658909 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64468,
+   "lon": -122.74077,
+   "sog_kn": 4.9,
+   "cog": 186.6,
+   "heading": 172,
+   "nav_status": 0,
+   "updated": "2026-11-18 02:50:50.07438336 +0000 UTC"
   }
  ]
 }
