@@ -1,51 +1,77 @@
 {
- "fetched_at": "2026-11-18T15:06:23Z",
+ "fetched_at": "2026-11-18T15:11:23Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368136580,
-   "name": "ORIN L GREEN",
-   "lat": 46.08277,
-   "lon": -122.90706,
+   "mmsi": 367684980,
+   "name": "CHRISTIE",
+   "lat": 45.62542,
+   "lon": -122.78949,
+   "sog_kn": 9.9,
+   "cog": 8,
+   "heading": 7,
+   "nav_status": 0,
+   "updated": "2026-11-18 15:11:36.96408575 +0000 UTC"
+  },
+  {
+   "mmsi": 538004110,
+   "name": "AENEAS",
+   "lat": 46.0272,
+   "lon": -122.8694,
+   "type_code": 70,
+   "destination": "USKAM",
+   "updated": "2026-11-18 15:11:40.526370631 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59408,
+   "lon": -122.7721,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 346.3,
+   "heading": 148,
+   "nav_status": 5,
+   "updated": "2026-11-18 15:11:41.694777053 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.99059,
+   "lon": -122.84053,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-18 15:11:43.998503003 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.2,
+   "lon": -123.38542,
+   "sog_kn": 0,
+   "cog": 0,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-18 15:06:17.344871797 +0000 UTC"
+   "nav_status": 8,
+   "updated": "2026-11-18 15:11:44.770197806 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61291,
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08269,
+   "lon": -122.90646,
    "sog_kn": 0,
-   "cog": 0.2,
-   "heading": 133,
-   "nav_status": 15,
-   "updated": "2026-11-18 15:06:17.86443659 +0000 UTC"
+   "cog": 125.3,
+   "heading": 123,
+   "nav_status": 5,
+   "updated": "2026-11-18 15:11:55.52093286 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.0961,
-   "lon": -122.93376,
-   "sog_kn": 4.5,
-   "cog": 281.2,
-   "heading": 289,
-   "nav_status": 3,
-   "updated": "2026-11-18 15:06:20.934451079 +0000 UTC"
-  },
-  {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.8327,
-   "lon": -122.81143,
-   "sog_kn": 6.6,
-   "cog": 206.5,
-   "heading": 205,
-   "nav_status": 0,
-   "updated": "2026-11-18 15:06:23.588430977 +0000 UTC"
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64569,
+   "lon": -122.73485,
+   "type_code": 79,
+   "updated": "2026-11-18 15:11:58.336704087 +0000 UTC"
   }
  ]
 }
