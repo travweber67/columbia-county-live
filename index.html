@@ -34,7 +34,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <link rel="manifest" href="manifest.webmanifest?v=95">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=95">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=111">
+<link rel="stylesheet" href="style.css?v=112">
 <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=95">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=95">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
@@ -473,7 +473,18 @@ document.documentElement.setAttribute("data-theme",t);})();
         <span data-i18n="legship"><i class="dot dot-ship"></i> Ship (AIS)</span>
         <span data-i18n="legfire"><i class="dot dot-fire"></i> Wildfire</span>
         <span class="legend-note" data-i18n="legnote">Use the layer button (top-right of the map) to toggle radar, aircraft, ships, fires, and the ISS.</span>
+        <span class="legend-note" data-i18n="legpublic">A line on the map means the feature exists and was mapped. It does not mean the road is public.</span>
       </div>
+    </div>
+
+    <div class="card" id="map-report-card">
+      <div class="card-head">
+        <h2 data-i18n="mapreporth2">🗺️ Report a map problem</h2>
+      </div>
+      <p class="card-note" data-i18n="mapreportp">The roads and lines on this map come from OpenStreetMap and county records, and some of it is wrong. If a road shows on your land that should not be there, a name is spelled wrong, or a road is missing or does not exist, tell us where and what is wrong. We will check it against the county records and get it corrected at the source.</p>
+      <p class="card-note small" data-i18n="mapreportfields">Say where it is (nearest road or town), what is wrong, and what it should be. Your name and a way to reach you are optional, they just help us follow up.</p>
+      <p class="card-note small" data-i18n="mapreportguard">Every report is checked against county records before anything changes. A report does not guarantee a road will be removed or renamed.</p>
+      <a class="share-btn primary" id="map-report-link" href="mailto:travis@columbiacountylive.com?subject=Map%20problem%20report&body=Where%20is%20it%20(nearest%20road%20%2F%20town)%3A%0AWhat%20is%20wrong%3A%0AWhat%20it%20should%20be%3A%0A%0AYour%20name%20(optional)%3A%0AContact%20(optional%2C%20email%20or%20phone)%3A" data-i18n="mapreportbtn">Send a report &rarr;</a>
     </div>
 
     <div class="card" id="drive-card">
@@ -2191,7 +2202,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=111"></script>
+<script src="app.js?v=112"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 

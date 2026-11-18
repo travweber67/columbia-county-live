@@ -6319,6 +6319,12 @@ const LANG_ES = {
   legship: '<i class="dot dot-ship"></i> Barco (AIS)',
   legfire: '<i class="dot dot-fire"></i> Incendio forestal',
   legnote: 'Usa el botón de capas (arriba a la derecha del mapa) para activar el radar, los aviones, los barcos, los incendios y la estación espacial.',
+  legpublic: 'Una línea en el mapa significa que el elemento existe y fue mapeado. No significa que el camino sea público.',
+  mapreporth2: '🗺️ Reporta un problema del mapa',
+  mapreportp: 'Los caminos y las líneas de este mapa vienen de OpenStreetMap y de los registros del condado, y parte de eso está mal. Si un camino aparece en tu terreno y no debería estar ahí, un nombre está mal escrito, o un camino falta o no existe, dinos dónde y qué está mal. Lo revisaremos contra los registros del condado y lo corregiremos en la fuente.',
+  mapreportfields: 'Di dónde está (el camino o el pueblo más cercano), qué está mal y qué debería ser. Tu nombre y una forma de contactarte son opcionales, solo ayudan a dar seguimiento.',
+  mapreportguard: 'Cada reporte se revisa contra los registros del condado antes de que cambie algo. Un reporte no garantiza que un camino se elimine o se le cambie el nombre.',
+  mapreportbtn: 'Enviar un reporte →',
   roadsh2: '🚗 La US-30, el puente y las carreteras',
   incidentsh3: 'Incidentes en la carretera — ODOT TripCheck',
   myrouteh3: '📷 Mi ruta — las cámaras de tu viaje, en orden de manejo',
@@ -8092,6 +8098,32 @@ function initServiceLinks() {
   });
 }
 initServiceLinks();
+
+/* MAP PROBLEM REPORTS — the "Report a map problem" card directly
+   under the Travel map (v112, 2026-11-17; Travis directed the build
+   the day the Price Rd / Don Campbell complaint landed). Same swap
+   pattern as EVENT_FORM_URL / SERVICE_FORM_URL: the constant is the
+   single source of truth and the card link in index.html carries the
+   interim capture statically. INTERIM STATE: MAP_FORM_URL is ''
+   because the dedicated Google Form does not exist yet — the
+   google_forms connector is not connected, so no agent can create
+   the form. Until Travis connects it (or creates the form by hand)
+   and the URL lands here, the static mailto on #map-report-link is
+   the capture: it opens the visitor's mail app with the report
+   fields prefilled (where / what is wrong / what it should be /
+   optional name / optional contact) and lands in the travis@ inbox,
+   which the inbox watch reads. Every report passes a human check
+   against county records before anything changes — the guardrail
+   line printed on the card says exactly that to the reporter. */
+const MAP_FORM_URL = ''; // NOT LIVE YET: dedicated Google Form pending (google_forms connector not connected, 2026-11-17); '' keeps the interim mailto capture on #map-report-link
+function initMapReportLink() {
+  const a = $('map-report-link');
+  if (!a || !MAP_FORM_URL) return; // mailto in the HTML is the interim capture
+  a.href = MAP_FORM_URL;
+  a.target = '_blank';
+  a.rel = 'noopener';
+}
+initMapReportLink();
 
 const SCHOOL_STATUS = {
   open:      { en: 'Open',          es: 'Abierto',       cls: 'school-open' },
