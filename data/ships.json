@@ -1,6 +1,51 @@
 {
- "fetched_at": "2026-11-18T16:50:40Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-18T16:56:33Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09304,
+   "lon": -122.92365,
+   "sog_kn": 0.5,
+   "cog": 206.8,
+   "heading": 301,
+   "nav_status": 3,
+   "updated": "2026-11-18 16:56:52.027064733 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 45.64371,
+   "lon": -122.74516,
+   "sog_kn": 0.8,
+   "cog": 199.3,
+   "heading": 180,
+   "nav_status": 0,
+   "updated": "2026-11-18 16:57:06.347995319 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.3855,
+   "sog_kn": 0,
+   "cog": 63.5,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-18 16:57:10.609907139 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09282,
+   "lon": -122.92347,
+   "sog_kn": 0.2,
+   "cog": 196.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 16:57:11.856415155 +0000 UTC"
+  }
+ ]
 }
