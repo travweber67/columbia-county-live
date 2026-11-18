@@ -1,6 +1,86 @@
 {
- "fetched_at": "2026-11-18T15:50:39Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-18T15:56:28Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10793,
+   "lon": -122.95904,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 15:56:31.91865952 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.7928,
+   "lon": -122.84366,
+   "sog_kn": 0,
+   "cog": 200.4,
+   "heading": 230,
+   "nav_status": 0,
+   "updated": "2026-11-18 15:56:33.284541347 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.08977,
+   "lon": -122.92899,
+   "sog_kn": 0,
+   "cog": 357.5,
+   "heading": 108,
+   "nav_status": 0,
+   "updated": "2026-11-18 15:56:35.159922252 +0000 UTC"
+  },
+  {
+   "mmsi": 368201480,
+   "name": "KINANI H",
+   "lat": 46.03405,
+   "lon": -122.87792,
+   "sog_kn": 6.6,
+   "cog": 156.2,
+   "heading": 152,
+   "nav_status": 11,
+   "updated": "2026-11-18 15:56:37.636439796 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.02202,
+   "lon": -122.86711,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-18 15:56:47.817080752 +0000 UTC",
+   "sog_kn": 0.8,
+   "cog": 132,
+   "heading": 147,
+   "nav_status": 3
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65025,
+   "lon": -122.74769,
+   "sog_kn": 0,
+   "cog": 347.4,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-18 15:56:48.899968569 +0000 UTC"
+  },
+  {
+   "mmsi": 311008700,
+   "name": "VICTORY RAY",
+   "lat": 45.64056,
+   "lon": -122.71719,
+   "sog_kn": 0,
+   "cog": 307.6,
+   "heading": 295,
+   "nav_status": 5,
+   "updated": "2026-11-18 15:56:57.969376865 +0000 UTC"
+  }
+ ]
 }
