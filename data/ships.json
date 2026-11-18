@@ -1,6 +1,82 @@
 {
- "fetched_at": "2026-11-18T14:31:20Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-18T14:36:21Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20002,
+   "lon": -123.38538,
+   "sog_kn": 0,
+   "cog": 6.7,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-18 14:36:34.88375303 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08981,
+   "lon": -122.92906,
+   "sog_kn": 0,
+   "cog": 137.8,
+   "heading": 102,
+   "nav_status": 0,
+   "updated": "2026-11-18 14:36:39.079326697 +0000 UTC"
+  },
+  {
+   "mmsi": 636024633,
+   "name": "PAVO LEADER",
+   "lat": 45.63791,
+   "lon": -122.72263,
+   "type_code": 70,
+   "destination": "US RCH",
+   "updated": "2026-11-18 14:36:40.867857513 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60755,
+   "lon": -122.67755,
+   "sog_kn": 0,
+   "cog": 233.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 14:36:43.941846037 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.64711,
+   "lon": -122.73959,
+   "sog_kn": 0,
+   "cog": 262.8,
+   "heading": 294,
+   "nav_status": 5,
+   "updated": "2026-11-18 14:36:44.711205154 +0000 UTC"
+  },
+  {
+   "mmsi": 352006113,
+   "name": "BELFORTUNE",
+   "lat": 46.18381,
+   "lon": -123.11889,
+   "sog_kn": 4.8,
+   "cog": 127.3,
+   "heading": 135,
+   "nav_status": 0,
+   "updated": "2026-11-18 14:37:01.647008514 +0000 UTC"
+  },
+  {
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.2062,
+   "lon": -123.38662,
+   "sog_kn": 0,
+   "cog": 139,
+   "heading": 182,
+   "nav_status": 5,
+   "updated": "2026-11-18 14:37:03.465466111 +0000 UTC"
+  }
+ ]
 }
