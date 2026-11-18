@@ -1,81 +1,89 @@
 {
- "fetched_at": "2026-11-18T05:50:29Z",
+ "fetched_at": "2026-11-18T05:55:31Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.14112,
-   "lon": -123.03,
-   "sog_kn": 2.6,
-   "cog": 293.3,
-   "heading": 109,
+   "mmsi": 366396000,
+   "name": "NAT GEO SEA LION",
+   "lat": 46.08958,
+   "lon": -122.92978,
+   "sog_kn": 0,
+   "cog": 283.1,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-18 05:55:45.293687779 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 45.63253,
+   "lon": -122.70665,
+   "sog_kn": 0,
+   "cog": 65.3,
+   "heading": 123,
+   "nav_status": 1,
+   "updated": "2026-11-18 05:55:53.400075102 +0000 UTC"
+  },
+  {
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 45.70929,
+   "lon": -122.76816,
+   "sog_kn": 4.5,
+   "cog": 188.9,
+   "heading": 187,
+   "nav_status": 0,
+   "updated": "2026-11-18 05:55:54.597828174 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64351,
+   "lon": -122.7529,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-18 05:55:59.375731748 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64542,
+   "lon": -122.73506,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-18 05:56:03.343562344 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09714,
+   "lon": -122.93443,
+   "sog_kn": 0,
+   "cog": 10.5,
+   "heading": 114,
    "nav_status": 3,
-   "updated": "2026-11-18 05:51:14.875676145 +0000 UTC"
+   "updated": "2026-11-18 05:56:04.809163064 +0000 UTC"
   },
   {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08987,
-   "lon": -122.92902,
+   "mmsi": 636024633,
+   "name": "PAVO LEADER",
+   "lat": 45.63808,
+   "lon": -122.72247,
    "sog_kn": 0,
-   "cog": 215.2,
-   "heading": 102,
-   "nav_status": 0,
-   "updated": "2026-11-18 05:51:19.479834432 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65013,
-   "lon": -122.74762,
-   "type_code": 33,
-   "updated": "2026-11-18 05:51:29.637961928 +0000 UTC"
-  },
-  {
-   "mmsi": 367047240,
-   "name": "DEFIANCE",
-   "lat": 45.64714,
-   "lon": -122.73959,
-   "sog_kn": 0,
-   "cog": 294.2,
-   "heading": 294,
+   "cog": 26,
+   "heading": 114,
    "nav_status": 5,
-   "updated": "2026-11-18 05:51:31.773838705 +0000 UTC"
+   "updated": "2026-11-18 05:56:05.19998299 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08256,
-   "lon": -122.90667,
-   "sog_kn": 0,
-   "cog": 332.5,
-   "heading": 127,
-   "nav_status": 0,
-   "updated": "2026-11-18 05:51:32.882132839 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08267,
-   "lon": -122.90682,
-   "sog_kn": 0,
-   "cog": 325.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-18 05:51:33.10288804 +0000 UTC"
-  },
-  {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.19957,
-   "lon": -123.3852,
-   "sog_kn": 0,
-   "cog": 315,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-18 05:51:36.813687374 +0000 UTC"
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10796,
+   "lon": -122.95905,
+   "type_code": 50,
+   "destination": "CR HARBOR OPS",
+   "updated": "2026-11-18 05:56:08.163662127 +0000 UTC"
   }
  ]
 }
