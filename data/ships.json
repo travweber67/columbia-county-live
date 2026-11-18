@@ -1,6 +1,82 @@
 {
- "fetched_at": "2026-11-18T10:20:34Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-18T10:25:59Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.68594,
+   "lon": -122.77255,
+   "sog_kn": 0.1,
+   "cog": 102,
+   "heading": 161,
+   "nav_status": 1,
+   "updated": "2026-11-18 10:26:02.3056359 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35744,
+   "sog_kn": 0,
+   "cog": 229.5,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-18 10:26:06.313786136 +0000 UTC"
+  },
+  {
+   "mmsi": 636024633,
+   "name": "PAVO LEADER",
+   "lat": 45.63795,
+   "lon": -122.72261,
+   "sog_kn": 0,
+   "cog": 26,
+   "heading": 114,
+   "nav_status": 5,
+   "updated": "2026-11-18 10:26:09.21775181 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64538,
+   "lon": -122.73507,
+   "sog_kn": 0,
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-18 10:26:14.945702503 +0000 UTC"
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64214,
+   "lon": -122.74967,
+   "type_code": 31,
+   "destination": "XX XXX>?? ???",
+   "updated": "2026-11-18 10:26:15.367090604 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61292,
+   "sog_kn": 0,
+   "cog": 337.3,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-18 10:26:18.689979392 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.65965,
+   "lon": -122.75947,
+   "sog_kn": 0.3,
+   "cog": 41.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 10:26:27.052322814 +0000 UTC"
+  }
+ ]
 }
