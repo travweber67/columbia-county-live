@@ -1,6 +1,62 @@
 {
- "fetched_at": "2026-11-18T09:50:33Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-18T09:55:56Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 45.69105,
+   "lon": -122.77169,
+   "sog_kn": 0,
+   "cog": 193.7,
+   "heading": 185,
+   "nav_status": 1,
+   "updated": "2026-11-18 09:55:53.664992281 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40234,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 134,
+   "nav_status": 0,
+   "updated": "2026-11-18 09:55:53.873389272 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09765,
+   "lon": -122.93427,
+   "sog_kn": 0,
+   "cog": 13.4,
+   "heading": 118,
+   "nav_status": 3,
+   "updated": "2026-11-18 09:56:04.62647977 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.08265,
+   "lon": -122.90687,
+   "sog_kn": 0,
+   "cog": 182.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 09:56:22.082510167 +0000 UTC"
+  },
+  {
+   "mmsi": 355173000,
+   "name": "EVER BEST",
+   "lat": 45.82188,
+   "lon": -122.79656,
+   "sog_kn": 10.2,
+   "cog": 183.7,
+   "heading": 182,
+   "nav_status": 0,
+   "updated": "2026-11-18 09:56:31.297900056 +0000 UTC"
+  }
+ ]
 }
