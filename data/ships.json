@@ -1,51 +1,60 @@
 {
- "fetched_at": "2026-11-18T14:41:21Z",
+ "fetched_at": "2026-11-18T14:46:22Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40233,
+   "mmsi": 563302700,
+   "name": "KEY WEST",
+   "lat": 46.10379,
+   "lon": -122.95057,
+   "sog_kn": 0,
+   "cog": 291.6,
+   "heading": 118,
+   "nav_status": 5,
+   "updated": "2026-11-18 14:46:39.914561536 +0000 UTC"
+  },
+  {
+   "mmsi": 636015567,
+   "name": "KYRA ZAFIRA",
+   "lat": 46.12667,
+   "lon": -122.99596,
+   "sog_kn": 10.8,
+   "cog": 318.1,
+   "heading": 317,
+   "nav_status": 0,
+   "updated": "2026-11-18 14:46:41.534119367 +0000 UTC"
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64203,
+   "lon": -122.74977,
+   "sog_kn": 0,
+   "cog": 180.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 14:46:42.480649676 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10787,
+   "lon": -122.95906,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 132,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-18 14:41:33.907601017 +0000 UTC"
+   "updated": "2026-11-18 14:46:42.86957434 +0000 UTC"
   },
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.98715,
-   "lon": -122.83736,
-   "sog_kn": 0.1,
-   "cog": 61.5,
-   "heading": 151,
-   "nav_status": 0,
-   "updated": "2026-11-18 14:41:40.827216606 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.5808,
-   "lon": -122.76008,
-   "sog_kn": 0,
-   "cog": 51.2,
-   "heading": 122,
-   "nav_status": 0,
-   "updated": "2026-11-18 14:41:55.578411051 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 205.3,
-   "heading": 133,
-   "nav_status": 15,
-   "updated": "2026-11-18 14:41:57.632353384 +0000 UTC"
+   "mmsi": 355173000,
+   "name": "EVER BEST",
+   "lat": 45.63928,
+   "lon": -122.77779,
+   "type_code": 79,
+   "destination": "USPDX",
+   "updated": "2026-11-18 14:46:47.163459071 +0000 UTC"
   }
  ]
 }
