@@ -1,6 +1,68 @@
 {
- "fetched_at": "2026-11-18T01:00:03Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-18T01:05:04Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58746,
+   "lon": -122.77056,
+   "type_code": 52,
+   "destination": "US^0R88>0UJB",
+   "updated": "2026-11-18 01:05:14.255261406 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.38542,
+   "sog_kn": 0,
+   "cog": 134.7,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-18 01:05:15.647201248 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.08262,
+   "lon": -122.90679,
+   "type_code": 69,
+   "updated": "2026-11-18 01:05:17.747916786 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60754,
+   "lon": -122.6775,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 01:05:29.689721383 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.58754,
+   "lon": -122.77064,
+   "sog_kn": 0,
+   "cog": 150.9,
+   "heading": 140,
+   "nav_status": 0,
+   "updated": "2026-11-18 01:05:36.854168356 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.08962,
+   "lon": -122.92902,
+   "sog_kn": 0,
+   "cog": 210.2,
+   "heading": 104,
+   "nav_status": 0,
+   "updated": "2026-11-18 01:05:40.00987649 +0000 UTC"
+  }
+ ]
 }
