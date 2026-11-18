@@ -1,40 +1,83 @@
 {
- "fetched_at": "2026-11-18T08:10:43Z",
+ "fetched_at": "2026-11-18T08:15:44Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 46.09698,
-   "lon": -122.93541,
-   "sog_kn": 5.7,
-   "cog": 299.6,
-   "heading": 293,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15343,
+   "lon": -123.3771,
+   "type_code": 99,
+   "updated": "2026-11-18 08:15:54.948371731 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58417,
+   "lon": -122.76618,
+   "sog_kn": 0,
+   "cog": 214.1,
+   "heading": 146,
+   "nav_status": 5,
+   "updated": "2026-11-18 08:15:56.780552708 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64382,
+   "lon": -122.72581,
+   "sog_kn": 0,
+   "cog": 346.5,
+   "heading": 116,
    "nav_status": 12,
-   "updated": "2026-11-18 08:10:55.638860311 +0000 UTC"
+   "updated": "2026-11-18 08:16:08.754385826 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08985,
+   "lon": -122.92904,
+   "type_code": 52,
+   "destination": "CSR OPS",
+   "updated": "2026-11-18 08:16:12.996043996 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65007,
+   "lon": -122.74753,
+   "type_code": 33,
+   "updated": "2026-11-18 08:16:13.02148212 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.08972,
+   "lon": -122.92897,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-18 08:16:16.663768109 +0000 UTC"
   },
   {
    "mmsi": 366986380,
    "name": "DREDGE OREGON",
    "lat": 46.08287,
-   "lon": -122.90697,
+   "lon": -122.90699,
    "sog_kn": 0,
    "cog": 360,
    "heading": 309,
    "nav_status": 3,
-   "updated": "2026-11-18 08:11:17.242864005 +0000 UTC"
+   "updated": "2026-11-18 08:16:17.201416588 +0000 UTC"
   },
   {
-   "mmsi": 538006098,
-   "name": "ANTARES",
-   "lat": 45.98415,
-   "lon": -122.83529,
-   "sog_kn": 0,
-   "cog": 124.5,
-   "heading": 153,
-   "nav_status": 5,
-   "updated": "2026-11-18 08:11:17.316758408 +0000 UTC"
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 46.09545,
+   "lon": -122.93681,
+   "type_code": 57,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-18 08:16:19.736573198 +0000 UTC"
   }
  ]
 }
