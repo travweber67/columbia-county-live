@@ -8666,8 +8666,8 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
   if (!overlay) return;
   var PHOTO_MS = 16000;      // dwell per photo — a slow ambient cycle
   var QUIET = [
-    { en: 'Presented by Oregon Trail Lanes · Founding Sponsor · $49/mo · all three founding spots now filled',
-      es: 'Presentado por Oregon Trail Lanes · Patrocinador Fundador · $49/mes · los tres lugares fundadores ya están ocupados' },
+    { en: 'Presented by Oregon Trail Lanes · Founding Sponsor · $49/mo',
+      es: 'Presentado por Oregon Trail Lanes · Patrocinador Fundador · $49/mes' },
     { en: 'These photographs come from the county itself — share yours from the Events & More tab',
       es: 'Estas fotografías vienen del propio condado — comparte la tuya desde la pestaña Eventos y Más' },
     null /* a beat of nothing — the quiet line rests every third photo */
