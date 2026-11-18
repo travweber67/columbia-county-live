@@ -1,69 +1,60 @@
 {
- "fetched_at": "2026-11-18T05:10:27Z",
+ "fetched_at": "2026-11-18T05:15:27Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366396000,
-   "name": "NAT GEO SEA LION",
-   "lat": 46.08955,
-   "lon": -122.92973,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08258,
+   "lon": -122.90667,
    "sog_kn": 0,
-   "cog": 283.1,
-   "heading": 112,
+   "cog": 318.2,
+   "heading": 127,
+   "nav_status": 0,
+   "updated": "2026-11-18 05:15:32.868999203 +0000 UTC"
+  },
+  {
+   "mmsi": 338158000,
+   "name": "WEST VIRGINIA",
+   "lat": 45.65917,
+   "lon": -122.76595,
+   "sog_kn": 10,
+   "cog": 344.1,
+   "heading": 342,
+   "nav_status": 0,
+   "updated": "2026-11-18 05:15:33.058217098 +0000 UTC"
+  },
+  {
+   "mmsi": 352006531,
+   "name": "BARISM BETTY",
+   "lat": 45.60103,
+   "lon": -122.77369,
+   "type_code": 70,
+   "destination": "CNZJG - USPDX",
+   "updated": "2026-11-18 05:15:41.112581366 +0000 UTC"
+  },
+  {
+   "mmsi": 636015567,
+   "name": "KYRA ZAFIRA",
+   "lat": 45.63033,
+   "lon": -122.69542,
+   "sog_kn": 0.1,
+   "cog": 45,
+   "heading": 127,
    "nav_status": 5,
-   "updated": "2026-11-18 05:10:49.95035243 +0000 UTC"
+   "updated": "2026-11-18 05:15:42.901636819 +0000 UTC"
   },
   {
    "mmsi": 374590000,
    "name": "BORACAY ISLAND",
-   "lat": 45.84198,
-   "lon": -122.78659,
+   "lat": 45.82673,
+   "lon": -122.79563,
    "sog_kn": 12.2,
-   "cog": 203.2,
-   "heading": 202,
+   "cog": 198.7,
+   "heading": 189,
    "nav_status": 0,
-   "updated": "2026-11-18 05:10:53.368824876 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58079,
-   "lon": -122.76008,
-   "sog_kn": 0,
-   "cog": 51.2,
-   "heading": 123,
-   "nav_status": 0,
-   "updated": "2026-11-18 05:10:54.734055849 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.13967,
-   "lon": -123.02536,
-   "type_code": 33,
-   "destination": "US LOG",
-   "updated": "2026-11-18 05:10:56.444281916 +0000 UTC"
-  },
-  {
-   "mmsi": 367309370,
-   "name": "PACIFIC EAGLE",
-   "lat": 46.10338,
-   "lon": -122.91017,
-   "type_code": 52,
-   "destination": "WARRENTON",
-   "updated": "2026-11-18 05:11:03.356494945 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58753,
-   "lon": -122.77067,
-   "sog_kn": 0,
-   "cog": 151.5,
-   "heading": 139,
-   "nav_status": 0,
-   "updated": "2026-11-18 05:11:06.869087485 +0000 UTC"
+   "updated": "2026-11-18 05:15:43.07165704 +0000 UTC"
   }
  ]
 }
