@@ -1,91 +1,37 @@
 {
- "fetched_at": "2026-11-18T07:10:38Z",
+ "fetched_at": "2026-11-18T07:15:39Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58417,
+   "lon": -122.76617,
+   "sog_kn": 0,
+   "cog": 23.5,
+   "heading": 146,
+   "nav_status": 5,
+   "updated": "2026-11-18 07:16:00.743314825 +0000 UTC",
+   "type_code": 52,
+   "destination": "US^00D5>0UHN"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65007,
+   "lon": -122.74761,
+   "type_code": 33,
+   "updated": "2026-11-18 07:16:13.540305261 +0000 UTC"
+  },
   {
    "mmsi": 367384780,
    "name": "CAROLYN DOROTHY",
    "lat": 46.08985,
-   "lon": -122.92903,
+   "lon": -122.92904,
    "type_code": 52,
    "destination": "CSR OPS",
-   "updated": "2026-11-18 07:10:51.347677515 +0000 UTC"
-  },
-  {
-   "mmsi": 366396000,
-   "name": "NAT GEO SEA LION",
-   "lat": 46.08957,
-   "lon": -122.92974,
-   "type_code": 68,
-   "destination": "RAINIER",
-   "updated": "2026-11-18 07:10:52.007321438 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15344,
-   "lon": -123.37711,
-   "sog_kn": 0,
-   "cog": 11.8,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-18 07:10:57.212318194 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.2,
-   "lon": -123.3854,
-   "sog_kn": 0,
-   "cog": 15.7,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-18 07:11:04.041433178 +0000 UTC"
-  },
-  {
-   "mmsi": 636024633,
-   "name": "PAVO LEADER",
-   "lat": 45.63805,
-   "lon": -122.72252,
-   "sog_kn": 0,
-   "cog": 26,
-   "heading": 113,
-   "nav_status": 5,
-   "updated": "2026-11-18 07:11:05.215752324 +0000 UTC"
-  },
-  {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64568,
-   "lon": -122.73485,
-   "sog_kn": 0.1,
-   "cog": 0,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-18 07:11:07.709207619 +0000 UTC"
-  },
-  {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.61367,
-   "lon": -122.70173,
-   "sog_kn": 4.2,
-   "cog": 116.4,
-   "heading": 115,
-   "nav_status": 0,
-   "updated": "2026-11-18 07:11:16.388604773 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 321.5,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-18 07:11:19.233729761 +0000 UTC"
+   "updated": "2026-11-18 07:16:13.719320414 +0000 UTC"
   }
  ]
 }
