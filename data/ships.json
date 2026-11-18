@@ -1,91 +1,85 @@
 {
- "fetched_at": "2026-11-18T18:01:39Z",
+ "fetched_at": "2026-11-18T18:06:38Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00902,
-   "lon": -122.84836,
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.98259,
+   "lon": -122.83478,
+   "sog_kn": 0.2,
+   "cog": 320.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 18:07:03.317182988 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.98427,
+   "lon": -122.83618,
+   "sog_kn": 0.5,
+   "cog": 253.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 18:07:04.514209676 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58078,
+   "lon": -122.76004,
+   "sog_kn": 0,
+   "cog": 51.2,
+   "heading": 119,
+   "nav_status": 0,
+   "updated": "2026-11-18 18:07:05.689256265 +0000 UTC"
+  },
+  {
+   "mmsi": 338925360,
+   "lat": 45.64308,
+   "lon": -122.73554,
+   "sog_kn": 25.8,
+   "cog": 99.4,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-18 18:07:06.464101086 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.64335,
+   "lon": -122.7528,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-18 18:01:58.184792797 +0000 UTC"
+   "updated": "2026-11-18 18:07:11.773593938 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 185.8,
-   "heading": 132,
-   "nav_status": 15,
-   "updated": "2026-11-18 18:01:58.597938811 +0000 UTC"
-  },
-  {
-   "mmsi": 367425870,
-   "name": "HUSKY",
-   "lat": 45.61224,
-   "lon": -122.63433,
-   "sog_kn": 0,
-   "cog": 81.8,
-   "heading": 352,
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08004,
+   "lon": -122.9063,
+   "sog_kn": 0.7,
+   "cog": 54,
+   "heading": 315,
    "nav_status": 0,
-   "updated": "2026-11-18 18:02:01.316941885 +0000 UTC"
+   "updated": "2026-11-18 18:07:22.177053897 +0000 UTC",
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09308,
-   "lon": -122.92362,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 307,
-   "nav_status": 3,
-   "updated": "2026-11-18 18:02:07.802196486 +0000 UTC"
-  },
-  {
-   "mmsi": 369970121,
-   "name": "ELTON",
-   "lat": 46.25949,
-   "lon": -123.45242,
-   "sog_kn": 10.3,
-   "cog": 141.4,
-   "heading": 141,
+   "mmsi": 367002210,
+   "name": "RACHELEBRUSCO",
+   "lat": 46.21371,
+   "lon": -123.41905,
+   "sog_kn": 8.6,
+   "cog": 317.8,
+   "heading": 318,
    "nav_status": 0,
-   "updated": "2026-11-18 18:02:10.780355446 +0000 UTC"
-  },
-  {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 45.64203,
-   "lon": -122.74981,
-   "type_code": 31,
-   "destination": "XX XXX>?? ???",
-   "updated": "2026-11-18 18:02:15.318251383 +0000 UTC"
-  },
-  {
-   "mmsi": 563331600,
-   "name": "BELLE LUNE",
-   "lat": 46.13787,
-   "lon": -123.01822,
-   "sog_kn": 12.9,
-   "cog": 114.4,
-   "heading": 115,
-   "nav_status": 0,
-   "updated": "2026-11-18 18:02:20.944594967 +0000 UTC"
-  },
-  {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 45.63033,
-   "lon": -122.69569,
-   "type_code": 70,
-   "destination": "US VAN",
-   "updated": "2026-11-18 18:02:22.579289224 +0000 UTC"
+   "updated": "2026-11-18 18:07:15.459483287 +0000 UTC"
   }
  ]
 }
