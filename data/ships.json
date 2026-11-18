@@ -1,69 +1,62 @@
 {
- "fetched_at": "2026-11-18T00:25:01Z",
+ "fetched_at": "2026-11-18T00:30:02Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65014,
-   "lon": -122.74758,
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79316,
+   "lon": -122.84322,
    "sog_kn": 0,
-   "cog": 278.9,
+   "cog": 18.9,
+   "heading": 211,
+   "nav_status": 12,
+   "updated": "2026-11-18 00:30:18.538239095 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.68119,
+   "lon": -122.77498,
+   "sog_kn": 12.1,
+   "cog": 354,
+   "heading": 354,
+   "nav_status": 0,
+   "updated": "2026-11-18 00:30:28.183786695 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.64351,
+   "lon": -122.75292,
+   "sog_kn": 0,
+   "cog": 268.4,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-18 00:25:18.682618964 +0000 UTC"
+   "nav_status": 5,
+   "updated": "2026-11-18 00:30:31.531121322 +0000 UTC"
+  },
+  {
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64199,
+   "lon": -122.74982,
+   "sog_kn": 0,
+   "cog": 180.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 00:30:32.874246926 +0000 UTC"
   },
   {
    "mmsi": 366998830,
    "name": "ROYAL MELBOURNE",
-   "lat": 45.5808,
-   "lon": -122.76009,
-   "type_code": 31,
-   "destination": "PTSI PDX",
-   "updated": "2026-11-18 00:25:20.213649689 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.09675,
-   "lon": -122.93459,
-   "type_code": 52,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-18 00:25:36.340468992 +0000 UTC"
-  },
-  {
-   "mmsi": 563302700,
-   "name": "KEY WEST",
-   "lat": 46.10341,
-   "lon": -122.94964,
+   "lat": 45.58078,
+   "lon": -122.76008,
    "sog_kn": 0,
-   "cog": 126.7,
-   "heading": 118,
-   "nav_status": 5,
-   "updated": "2026-11-18 00:25:36.547810847 +0000 UTC"
-  },
-  {
-   "mmsi": 338205428,
-   "name": "CLAIRE B",
-   "lat": 45.68588,
-   "lon": -122.77401,
-   "sog_kn": 8.7,
-   "cog": 11.8,
-   "heading": 11,
+   "cog": 51.2,
+   "heading": 121,
    "nav_status": 0,
-   "updated": "2026-11-18 00:25:36.768423837 +0000 UTC"
-  },
-  {
-   "mmsi": 367047240,
-   "name": "DEFIANCE",
-   "lat": 45.64782,
-   "lon": -122.74863,
-   "sog_kn": 6.8,
-   "cog": 141,
-   "heading": 137,
-   "nav_status": 0,
-   "updated": "2026-11-18 00:25:37.025306096 +0000 UTC"
+   "updated": "2026-11-18 00:30:45.337726576 +0000 UTC"
   }
  ]
 }
