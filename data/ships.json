@@ -1,6 +1,57 @@
 {
- "fetched_at": "2026-11-18T11:46:05Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-18T11:50:35Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.64334,
+   "lon": -122.75281,
+   "type_code": 31,
+   "destination": "HARBOROPPS-",
+   "updated": "2026-11-18 11:50:54.494839873 +0000 UTC"
+  },
+  {
+   "mmsi": 352006531,
+   "name": "BARISM BETTY",
+   "lat": 45.60103,
+   "lon": -122.77371,
+   "sog_kn": 0,
+   "cog": 105.6,
+   "heading": 277,
+   "nav_status": 5,
+   "updated": "2026-11-18 11:51:07.89057101 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58761,
+   "lon": -122.77047,
+   "sog_kn": 0,
+   "cog": 285.7,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-18 11:51:19.584789966 +0000 UTC"
+  },
+  {
+   "mmsi": 368201480,
+   "name": "KINANI H",
+   "lat": 46.14251,
+   "lon": -123.30919,
+   "sog_kn": 5,
+   "cog": 82.5,
+   "heading": 80,
+   "nav_status": 11,
+   "updated": "2026-11-18 11:51:28.133770649 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.6129,
+   "type_code": 0,
+   "updated": "2026-11-18 11:51:35.541294199 +0000 UTC"
+  }
+ ]
 }
