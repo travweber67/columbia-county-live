@@ -1,6 +1,84 @@
 {
- "fetched_at": "2026-11-18T17:20:40Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-18T17:26:35Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.99078,
+   "lon": -122.84146,
+   "sog_kn": 0,
+   "cog": 152.8,
+   "heading": 152,
+   "nav_status": 5,
+   "updated": "2026-11-18 17:26:48.366517541 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64384,
+   "lon": -122.72579,
+   "sog_kn": 0,
+   "cog": 194.5,
+   "heading": 118,
+   "nav_status": 12,
+   "updated": "2026-11-18 17:26:56.993968318 +0000 UTC"
+  },
+  {
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.64733,
+   "lon": -122.7395,
+   "sog_kn": 0,
+   "cog": 288.4,
+   "heading": 288,
+   "nav_status": 0,
+   "updated": "2026-11-18 17:26:57.161890522 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.91238,
+   "lon": -122.80702,
+   "sog_kn": 0.1,
+   "cog": 174.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 17:26:59.300375819 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09281,
+   "lon": -122.92342,
+   "sog_kn": 0,
+   "cog": 317.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 17:27:09.208381104 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15707,
+   "lon": -123.40234,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 130,
+   "nav_status": 0,
+   "updated": "2026-11-18 17:27:13.982168096 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.08979,
+   "lon": -122.92898,
+   "sog_kn": 0,
+   "cog": 218.1,
+   "heading": 109,
+   "nav_status": 0,
+   "updated": "2026-11-18 17:27:16.022553614 +0000 UTC"
+  }
+ ]
 }
