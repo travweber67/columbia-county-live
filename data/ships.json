@@ -1,6 +1,48 @@
 {
- "fetched_at": "2026-11-18T01:10:04Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-18T01:15:04Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20004,
+   "lon": -123.38542,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-18 01:15:33.653423294 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.61291,
+   "type_code": 0,
+   "updated": "2026-11-18 01:15:34.638890449 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.96447,
+   "lon": -122.82249,
+   "sog_kn": 7.1,
+   "cog": 146.4,
+   "heading": 145,
+   "nav_status": 12,
+   "updated": "2026-11-18 01:15:35.137784124 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35745,
+   "sog_kn": 0,
+   "cog": 235.4,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-18 01:15:46.389446595 +0000 UTC"
+  }
+ ]
 }
