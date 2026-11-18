@@ -1,62 +1,73 @@
 {
- "fetched_at": "2026-11-18T00:30:02Z",
+ "fetched_at": "2026-11-18T00:35:01Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.61195,
+   "lon": -122.63432,
+   "sog_kn": 0,
+   "cog": 267.3,
+   "heading": 356,
+   "nav_status": 0,
+   "updated": "2026-11-18 00:35:16.779886457 +0000 UTC"
+  },
   {
    "mmsi": 367727410,
    "name": "AMY B",
    "lat": 45.79316,
    "lon": -122.84322,
    "sog_kn": 0,
-   "cog": 18.9,
-   "heading": 211,
+   "cog": 1.3,
+   "heading": 212,
    "nav_status": 12,
-   "updated": "2026-11-18 00:30:18.538239095 +0000 UTC"
+   "updated": "2026-11-18 00:35:18.657474079 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.68119,
-   "lon": -122.77498,
-   "sog_kn": 12.1,
-   "cog": 354,
-   "heading": 354,
-   "nav_status": 0,
-   "updated": "2026-11-18 00:30:28.183786695 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.64351,
-   "lon": -122.75292,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20001,
+   "lon": -123.3854,
    "sog_kn": 0,
-   "cog": 268.4,
+   "cog": 178.5,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-18 00:30:31.531121322 +0000 UTC"
+   "nav_status": 8,
+   "updated": "2026-11-18 00:35:23.260840913 +0000 UTC"
   },
   {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 45.64199,
-   "lon": -122.74982,
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.146,
+   "lon": -123.0395,
+   "sog_kn": 2.7,
+   "cog": 312.4,
+   "heading": 134,
+   "nav_status": 3,
+   "updated": "2026-11-18 00:35:24.455671167 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64754,
+   "lon": -122.73982,
+   "sog_kn": 0.1,
+   "cog": 201.5,
+   "heading": 111,
+   "nav_status": 12,
+   "updated": "2026-11-18 00:35:29.483280483 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.38555,
    "sog_kn": 0,
-   "cog": 180.6,
+   "cog": 356.2,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-18 00:30:32.874246926 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58078,
-   "lon": -122.76008,
-   "sog_kn": 0,
-   "cog": 51.2,
-   "heading": 121,
-   "nav_status": 0,
-   "updated": "2026-11-18 00:30:45.337726576 +0000 UTC"
+   "nav_status": 15,
+   "updated": "2026-11-18 00:35:31.058197232 +0000 UTC"
   }
  ]
 }
