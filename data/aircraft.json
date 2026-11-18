@@ -1,117 +1,127 @@
 {
- "fetched_at": "2026-11-18T21:46:53Z",
+ "fetched_at": "2026-11-18T21:50:44Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
+  {
+   "hex": "a68ca7",
+   "callsign": "IDD521",
+   "type": "G280",
+   "alt_ft": 42900,
+   "gs_kn": 434.4,
+   "track": 172.86,
+   "lat": 46.162262,
+   "lon": -123.231298
+  },
   {
    "hex": "a8e49a",
    "callsign": "QXE2052",
    "type": "E75L",
    "alt_ft": 31000,
-   "gs_kn": 399.2,
-   "track": 178.13,
-   "lat": 46.301135,
-   "lon": -123.180908
+   "gs_kn": 406.2,
+   "track": 178.17,
+   "lat": 45.777832,
+   "lon": -123.156068
   },
   {
    "hex": "ac530f",
    "callsign": "N89312",
    "type": "C152",
-   "alt_ft": 1075,
-   "gs_kn": 100.8,
-   "track": 306.53,
-   "lat": 45.587631,
-   "lon": -123.094639
+   "alt_ft": 1175,
+   "gs_kn": 78.0,
+   "track": 67.38,
+   "lat": 45.570419,
+   "lon": -123.116075
   },
   {
    "hex": "a9e944",
    "callsign": "N738FD",
    "type": "C172",
-   "alt_ft": 625,
-   "gs_kn": 73.4,
-   "track": 162.55,
-   "lat": 45.786667,
-   "lon": -122.865534
-  },
-  {
-   "hex": "a04f7e",
-   "callsign": "PT-TCG",
-   "type": "AS50",
-   "alt_ft": "ground",
-   "gs_kn": 10.8,
-   "track": 19.69,
-   "lat": 45.777683,
-   "lon": -122.862737
+   "alt_ft": 650,
+   "gs_kn": 74.8,
+   "track": 171.54,
+   "lat": 45.792598,
+   "lon": -122.867661
   },
   {
    "hex": "a6fc4d",
    "callsign": "N5494P",
    "type": "C152",
-   "alt_ft": 600,
-   "gs_kn": 66.3,
-   "track": 168.69,
-   "lat": 45.752838,
-   "lon": -122.85716
-  },
-  {
-   "hex": "adb6fb",
-   "callsign": "N983HC",
-   "type": "R22",
-   "alt_ft": 1700,
-   "gs_kn": 64.2,
-   "track": 52.59,
-   "lat": 45.854645,
-   "lon": -122.802831
-  },
-  {
-   "hex": "a6157b",
-   "callsign": "N491TC",
-   "type": "DA40",
-   "alt_ft": 1500,
-   "gs_kn": 120.4,
-   "track": 209.33,
-   "lat": 45.851394,
-   "lon": -122.78231
+   "alt_ft": 50,
+   "gs_kn": 58.1,
+   "track": 169.08,
+   "lat": 45.775048,
+   "lon": -122.862991
   },
   {
    "hex": "a8042c",
    "callsign": "N61531",
    "type": "C172",
-   "alt_ft": 1125,
-   "gs_kn": 72.8,
-   "track": 159.08,
-   "lat": 45.778244,
-   "lon": -122.772954
+   "alt_ft": 1000,
+   "gs_kn": 80.1,
+   "track": 347.01,
+   "lat": 45.793343,
+   "lon": -122.85022
   },
   {
-   "hex": "a43632",
-   "callsign": "N3700Q",
-   "type": "P28R",
-   "alt_ft": 2700,
-   "gs_kn": 117.2,
-   "track": 140.19,
-   "lat": 45.815176,
-   "lon": -122.697441
+   "hex": "a6157b",
+   "callsign": "N491TC",
+   "type": "DA40",
+   "alt_ft": 1175,
+   "gs_kn": 103.8,
+   "track": 324.01,
+   "lat": 45.766017,
+   "lon": -122.83992
   },
   {
-   "hex": "aaf831",
-   "callsign": "ASA785",
-   "type": "B38M",
-   "alt_ft": 23925,
-   "gs_kn": 435.2,
-   "track": 352.07,
-   "lat": 46.1147,
-   "lon": -122.682116
+   "hex": "adb6fb",
+   "callsign": "N983HC",
+   "type": "R22",
+   "alt_ft": 950,
+   "gs_kn": 68.3,
+   "track": 140.95,
+   "lat": 45.791248,
+   "lon": -122.749763
   },
   {
-   "hex": "a6f5b5",
-   "callsign": "ASA1358",
+   "hex": "a7888c",
+   "callsign": "ASA1865",
    "type": "B738",
-   "alt_ft": 75,
-   "gs_kn": 145.5,
-   "track": 119.21,
-   "lat": 45.593588,
-   "lon": -122.617447
+   "alt_ft": 24250,
+   "gs_kn": 441.5,
+   "track": 351.8,
+   "lat": 46.143311,
+   "lon": -122.687274
+  },
+  {
+   "hex": "a83920",
+   "callsign": "QXE2265",
+   "type": "E75L",
+   "alt_ft": 29700,
+   "gs_kn": 482.2,
+   "track": 350.09,
+   "lat": 46.009552,
+   "lon": -122.656592
+  },
+  {
+   "hex": "a9d770",
+   "callsign": "N733NV",
+   "type": "C172",
+   "alt_ft": 700,
+   "gs_kn": 79.4,
+   "track": 49.09,
+   "lat": 45.620541,
+   "lon": -122.637634
+  },
+  {
+   "hex": "aaf006",
+   "callsign": "N80347",
+   "type": "C172",
+   "alt_ft": 1700,
+   "gs_kn": 102.0,
+   "track": 7.89,
+   "lat": 45.752518,
+   "lon": -122.620418
   }
  ]
 }
