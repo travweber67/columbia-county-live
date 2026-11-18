@@ -1,6 +1,40 @@
 {
- "fetched_at": "2026-11-18T09:20:33Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-18T09:25:52Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64569,
+   "lon": -122.73488,
+   "sog_kn": 0.2,
+   "cog": 0,
+   "heading": 113,
+   "nav_status": 5,
+   "updated": "2026-11-18 09:26:07.809880583 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64383,
+   "lon": -122.7258,
+   "sog_kn": 0,
+   "cog": 59.6,
+   "heading": 117,
+   "nav_status": 12,
+   "updated": "2026-11-18 09:26:08.747937301 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64546,
+   "lon": -122.73505,
+   "sog_kn": 0,
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-18 09:26:14.94880745 +0000 UTC"
+  }
+ ]
 }
