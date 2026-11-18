@@ -1,71 +1,45 @@
 {
- "fetched_at": "2026-11-18T06:55:37Z",
+ "fetched_at": "2026-11-18T07:00:37Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.09735,
-   "lon": -122.93437,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.38552,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-18 07:01:03.755980258 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61289,
    "sog_kn": 0,
-   "cog": 18.9,
-   "heading": 118,
-   "nav_status": 3,
-   "updated": "2026-11-18 06:55:43.975763003 +0000 UTC"
+   "cog": 295.3,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-18 07:01:08.897968357 +0000 UTC"
   },
   {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08271,
-   "lon": -122.90646,
-   "type_code": 52,
-   "destination": "PORTLAND",
-   "updated": "2026-11-18 06:55:46.368328859 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08253,
-   "lon": -122.90676,
-   "sog_kn": 0.1,
-   "cog": 138.2,
-   "heading": 128,
-   "nav_status": 0,
-   "updated": "2026-11-18 06:56:00.785249954 +0000 UTC"
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64539,
+   "lon": -122.73504,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-18 07:01:10.644212745 +0000 UTC"
   },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 46.0656,
-   "lon": -122.88661,
-   "sog_kn": 0.6,
-   "cog": 166.1,
-   "heading": 164,
-   "nav_status": 3,
-   "updated": "2026-11-18 06:56:06.869431071 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58753,
-   "lon": -122.77065,
-   "sog_kn": 0,
-   "cog": 151.5,
-   "heading": 137,
-   "nav_status": 0,
-   "updated": "2026-11-18 06:56:07.697188641 +0000 UTC"
-  },
-  {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64568,
-   "lon": -122.73486,
-   "sog_kn": 0.4,
-   "cog": 186.1,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-18 06:56:08.721002484 +0000 UTC"
+   "lat": 46.06374,
+   "lon": -122.88574,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-18 07:01:11.402291255 +0000 UTC"
   }
  ]
 }
