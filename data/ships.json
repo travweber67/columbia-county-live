@@ -1,69 +1,104 @@
 {
- "fetched_at": "2026-11-18T19:16:43Z",
+ "fetched_at": "2026-11-18T19:20:42Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.11014,
+   "lon": -122.96336,
+   "sog_kn": 0,
+   "cog": 117.1,
+   "heading": 131,
+   "nav_status": 5,
+   "updated": "2026-11-18 19:21:50.813379294 +0000 UTC"
+  },
+  {
+   "mmsi": 367002210,
+   "name": "RACHELEBRUSCO",
+   "lat": 46.16925,
+   "lon": -123.41208,
+   "sog_kn": 5.3,
+   "cog": 314.8,
+   "heading": 315,
+   "nav_status": 0,
+   "updated": "2026-11-18 19:21:54.398912652 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.61212,
+   "lon": -122.63447,
+   "sog_kn": 0.3,
+   "cog": 189,
+   "heading": 2,
+   "nav_status": 0,
+   "updated": "2026-11-18 19:22:01.045185959 +0000 UTC"
+  },
+  {
+   "mmsi": 366888830,
+   "name": "KAHU",
+   "lat": 45.61235,
+   "lon": -122.64663,
+   "sog_kn": 0,
+   "cog": 228.9,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-18 19:22:03.912620165 +0000 UTC"
+  },
   {
    "mmsi": 366972000,
    "name": "ESSAYONS",
-   "lat": 46.14648,
-   "lon": -123.03771,
-   "sog_kn": 1.7,
-   "cog": 129.2,
-   "heading": 128,
+   "lat": 46.14533,
+   "lon": -123.03785,
+   "sog_kn": 2.5,
+   "cog": 306.4,
+   "heading": 307,
    "nav_status": 3,
-   "updated": "2026-11-18 19:16:54.960681301 +0000 UTC"
-  },
-  {
-   "mmsi": 538006098,
-   "name": "ANTARES",
-   "lat": 46.09415,
-   "lon": -122.93013,
-   "sog_kn": 10.3,
-   "cog": 293.5,
-   "heading": 296,
-   "nav_status": 0,
-   "updated": "2026-11-18 19:16:57.014600266 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 46.08972,
-   "lon": -122.92898,
-   "type_code": 52,
-   "destination": "PORTLAND,OR",
-   "updated": "2026-11-18 19:17:02.144672262 +0000 UTC"
+   "updated": "2026-11-18 19:22:05.148680394 +0000 UTC"
   },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.09145,
-   "lon": -122.91785,
-   "sog_kn": 3.9,
-   "cog": 131.6,
-   "heading": 128,
+   "lat": 46.09221,
+   "lon": -122.92253,
+   "sog_kn": 0.9,
+   "cog": 274.9,
+   "heading": 291,
    "nav_status": 0,
-   "updated": "2026-11-18 19:17:11.35385091 +0000 UTC"
+   "updated": "2026-11-18 19:22:07.879265011 +0000 UTC"
   },
   {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 45.98333,
-   "lon": -122.83654,
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.64334,
+   "lon": -122.75284,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 19:22:11.298848026 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.98349,
+   "lon": -122.83567,
    "type_code": 52,
-   "destination": "COL RIVER",
-   "updated": "2026-11-18 19:17:12.545018287 +0000 UTC"
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-18 19:22:11.552285743 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.09252,
-   "lon": -122.92108,
-   "sog_kn": 1.6,
-   "cog": 115.4,
-   "heading": 119,
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08985,
+   "lon": -122.92899,
+   "sog_kn": 0,
+   "cog": 176.2,
+   "heading": 109,
    "nav_status": 0,
-   "updated": "2026-11-18 19:17:14.166993084 +0000 UTC"
+   "updated": "2026-11-18 19:22:18.375974809 +0000 UTC"
   }
  ]
 }
