@@ -1,44 +1,6 @@
 {
- "fetched_at": "2026-11-18T09:15:51Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35744,
-   "type_code": 30,
-   "updated": "2026-11-18 09:16:08.655230388 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 45.64358,
-   "lon": -122.7529,
-   "type_code": 52,
-   "destination": "COL RIVER",
-   "updated": "2026-11-18 09:16:12.941959791 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08985,
-   "lon": -122.92902,
-   "type_code": 52,
-   "destination": "CSR OPS",
-   "updated": "2026-11-18 09:16:12.954803113 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.14731,
-   "lon": -123.03944,
-   "sog_kn": 3.8,
-   "cog": 128.2,
-   "heading": 130,
-   "nav_status": 3,
-   "updated": "2026-11-18 09:16:16.92732434 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-18T09:20:33Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
