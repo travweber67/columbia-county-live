@@ -1,70 +1,93 @@
 {
- "fetched_at": "2026-11-18T04:10:20Z",
+ "fetched_at": "2026-11-18T04:15:20Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.1386,
-   "lon": -123.38147,
-   "type_code": 99,
-   "updated": "2026-11-18 04:10:35.850482596 +0000 UTC"
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.73828,
+   "lon": -122.76345,
+   "sog_kn": 5.7,
+   "cog": 185.4,
+   "heading": 185,
+   "nav_status": 12,
+   "updated": "2026-11-18 04:15:37.821624084 +0000 UTC"
   },
   {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 46.0897,
-   "lon": -122.92899,
-   "sog_kn": 0,
-   "cog": 238.9,
-   "heading": 107,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64718,
+   "lon": -122.74285,
+   "sog_kn": 8.5,
+   "cog": 296.5,
+   "heading": 295,
    "nav_status": 0,
-   "updated": "2026-11-18 04:10:40.605073924 +0000 UTC"
+   "updated": "2026-11-18 04:15:44.136843437 +0000 UTC"
   },
   {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.59,
-   "lon": -122.77087,
-   "sog_kn": 6.4,
-   "cog": 138.7,
-   "heading": 138,
-   "nav_status": 0,
-   "updated": "2026-11-18 04:10:54.344446518 +0000 UTC"
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.64713,
+   "lon": -122.73959,
+   "type_code": 52,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-18 04:15:46.611763989 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65016,
-   "lon": -122.74759,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
    "sog_kn": 0,
-   "cog": 245.3,
-   "heading": 511,
+   "cog": 121.8,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-18 04:15:47.804578377 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08984,
+   "lon": -122.92901,
+   "sog_kn": 0,
+   "cog": 48.5,
+   "heading": 103,
+   "nav_status": 0,
+   "updated": "2026-11-18 04:15:48.978087355 +0000 UTC"
+  },
+  {
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.11011,
+   "lon": -122.96336,
+   "sog_kn": 0,
+   "cog": 138.5,
+   "heading": 131,
+   "nav_status": 5,
+   "updated": "2026-11-18 04:15:50.707393963 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.069,
+   "lon": -122.88875,
+   "sog_kn": 0.9,
+   "cog": 169.9,
+   "heading": 157,
    "nav_status": 3,
-   "updated": "2026-11-18 04:10:58.760494701 +0000 UTC"
+   "updated": "2026-11-18 04:15:51.986142685 +0000 UTC"
   },
   {
-   "mmsi": 356334000,
-   "name": "LAUREL ISLAND",
-   "lat": 45.68581,
-   "lon": -122.77232,
-   "sog_kn": 0,
-   "cog": 103.9,
-   "heading": 192,
-   "nav_status": 1,
-   "updated": "2026-11-18 04:11:02.28049993 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.10789,
-   "lon": -122.95905,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-18 04:11:03.298819813 +0000 UTC"
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.61973,
+   "lon": -122.7881,
+   "sog_kn": 3.3,
+   "cog": 163.4,
+   "heading": 170,
+   "nav_status": 12,
+   "updated": "2026-11-18 04:15:55.573891003 +0000 UTC"
   }
  ]
 }
