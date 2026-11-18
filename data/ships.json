@@ -1,62 +1,90 @@
 {
- "fetched_at": "2026-11-18T20:31:48Z",
+ "fetched_at": "2026-11-18T20:36:49Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 46.08972,
-   "lon": -122.92899,
+   "mmsi": 563331600,
+   "name": "BELLE LUNE",
+   "lat": 45.98389,
+   "lon": -122.83525,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-18 20:37:02.322168323 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.61291,
    "sog_kn": 0,
-   "cog": 332.9,
-   "heading": 104,
-   "nav_status": 0,
-   "updated": "2026-11-18 20:33:05.762490571 +0000 UTC"
+   "cog": 96.6,
+   "heading": 131,
+   "nav_status": 15,
+   "updated": "2026-11-18 20:37:09.154158651 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09151,
-   "lon": -122.91676,
-   "sog_kn": 0.1,
-   "cog": 112.4,
-   "heading": 126,
-   "nav_status": 0,
-   "updated": "2026-11-18 20:33:11.095968461 +0000 UTC"
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09288,
+   "lon": -122.92343,
+   "type_code": 69,
+   "updated": "2026-11-18 20:37:14.164839017 +0000 UTC"
   },
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.14823,
-   "lon": -123.04003,
-   "sog_kn": 1.8,
-   "cog": 304.6,
-   "heading": 299,
-   "nav_status": 3,
-   "updated": "2026-11-18 20:33:24.449060895 +0000 UTC"
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 45.60095,
+   "lon": -122.77682,
+   "sog_kn": 0,
+   "cog": 286.3,
+   "heading": 7,
+   "nav_status": 0,
+   "updated": "2026-11-18 20:37:16.214359261 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.65967,
+   "lon": -122.75944,
+   "sog_kn": 0,
+   "cog": 164.8,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 20:37:17.408659877 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.61218,
+   "lon": -122.63455,
+   "sog_kn": 0,
+   "cog": 94.2,
+   "heading": 357,
+   "nav_status": 0,
+   "updated": "2026-11-18 20:37:20.565577638 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00888,
+   "lon": -122.84889,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 20:37:24.494048276 +0000 UTC"
   },
   {
    "mmsi": 538006098,
    "name": "ANTARES",
-   "lat": 46.16633,
-   "lon": -123.23223,
-   "sog_kn": 11.9,
-   "cog": 234.1,
+   "lat": 46.15838,
+   "lon": -123.24798,
+   "sog_kn": 12.3,
+   "cog": 234.6,
    "heading": 237,
    "nav_status": 0,
-   "updated": "2026-11-18 20:33:25.560685604 +0000 UTC"
-  },
-  {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.58493,
-   "lon": -122.7664,
-   "sog_kn": 0,
-   "cog": 231.7,
-   "heading": 313,
-   "nav_status": 0,
-   "updated": "2026-11-18 20:33:25.903072632 +0000 UTC"
+   "updated": "2026-11-18 20:37:25.942233243 +0000 UTC"
   }
  ]
 }
