@@ -8104,18 +8104,10 @@ initServiceLinks();
    the day the Price Rd / Don Campbell complaint landed). Same swap
    pattern as EVENT_FORM_URL / SERVICE_FORM_URL: the constant is the
    single source of truth and the card link in index.html carries the
-   interim capture statically. INTERIM STATE: MAP_FORM_URL is ''
-   because the dedicated Google Form does not exist yet — the
-   google_forms connector is not connected, so no agent can create
-   the form. Until Travis connects it (or creates the form by hand)
-   and the URL lands here, the static mailto on #map-report-link is
-   the capture: it opens the visitor's mail app with the report
-   fields prefilled (where / what is wrong / what it should be /
-   optional name / optional contact) and lands in the travis@ inbox,
-   which the inbox watch reads. Every report passes a human check
+   interim capture statically. LIVE STATE (2026-11-17): the dedicated Google Form exists and MAP_FORM_URL below points at it, so initMapReportLink swaps #map-report-link to the form; the static mailto in index.html remains only as the fallback capture if the constant is ever emptied. Form responses are read back through the google_forms connector. Every report passes a human check
    against county records before anything changes — the guardrail
    line printed on the card says exactly that to the reporter. */
-const MAP_FORM_URL = ''; // NOT LIVE YET: dedicated Google Form pending (google_forms connector not connected, 2026-11-17); '' keeps the interim mailto capture on #map-report-link
+const MAP_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScEPTIw6mVJfTUUJIFEWiahVobvSlCwm-T3so0yzRzWjm7xUw/viewform'; // LIVE 2026-11-17: dedicated Report a Map Problem Google Form, created in Travis's Google account via the google_forms connector; an empty constant would fall back to the interim mailto capture
 function initMapReportLink() {
   const a = $('map-report-link');
   if (!a || !MAP_FORM_URL) return; // mailto in the HTML is the interim capture
