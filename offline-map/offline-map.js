@@ -46,7 +46,7 @@
       update: "Update map",
       remove: "Remove from device",
       sizeNote: "One download, about {MB}. Roads, trails, property lines, towns, rivers and place names for the whole county, saved on your device.",
-      scopeNote: "This map works with no signal — and so do the trails and property lines on the main map, from this same download. Live information (river levels, road cameras, weather, events) still needs a connection and stays on the main pages.",
+      scopeNote: "This map works with no signal — and so do the trails and property lines on the main map, from this same download. Live information (river levels, road cameras, weather, events) still needs a connection and stays on the main pages. Dashed tan lines are private roads and driveways — a line means the lane exists, not that it is open to the public.",
       failed: "Download stopped — check your connection and try again.",
       savedToast: "Map saved — it now works with no signal",
       removedToast: "Offline map removed from this device",
@@ -68,7 +68,7 @@
       update: "Actualizar el mapa",
       remove: "Quitar de este dispositivo",
       sizeNote: "Una sola descarga, unos {MB}. Carreteras, senderos, líneas de propiedad, pueblos, ríos y nombres de lugares de todo el condado, guardados en su dispositivo.",
-      scopeNote: "Este mapa funciona sin señal — y también los senderos y las líneas de propiedad del mapa principal, con esta misma descarga. La información en vivo (niveles de ríos, cámaras, clima, eventos) sigue necesitando conexión y permanece en las páginas principales.",
+      scopeNote: "Este mapa funciona sin señal — y también los senderos y las líneas de propiedad del mapa principal, con esta misma descarga. La información en vivo (niveles de ríos, cámaras, clima, eventos) sigue necesitando conexión y permanece en las páginas principales. Las líneas discontinuas color canela son caminos y entradas privadas: la línea significa que el camino existe, no que es público.",
       failed: "La descarga se detuvo — revise su conexión e inténtelo de nuevo.",
       savedToast: "Mapa guardado — ahora funciona sin señal",
       removedToast: "Mapa sin conexión eliminado de este dispositivo",
@@ -97,6 +97,7 @@
      lands under the plain file name so parcel-map.js / trails-map.js
      can find it. */
   if (CFG.trailsFile) FILES.push({ id: "trails", file: CFG.trailsFile, size: CFG.trailsSize });
+  if (CFG.statusFile) FILES.push({ id: "status", file: CFG.statusFile, size: CFG.statusSize });
   if (CFG.parcelsFile) FILES.push({ id: "parcels", file: CFG.parcelsFile, size: CFG.parcelsSize, path: CFG.parcelsPath });
   if (CFG.huntingFile) FILES.push({ id: "hunting", file: CFG.huntingFile, size: CFG.huntingSize, path: CFG.huntingPath });
   function fileUrl(f) {
@@ -165,7 +166,7 @@
   /* ---------------- style (adapted from the OHV app's basemap) ------- */
   var FONT_MED = ["Noto Sans Medium"];
   var FONT_REG = ["Noto Sans Regular"];
-  function buildStyle(basemapUrl, lowroadsUrl, trailsUrl) {
+  function buildStyle(basemapUrl, lowroadsUrl, trailsUrl, statusUrl) {
     var L = [];
     function push(o) { L.push(o); }
     push({ id: "background", type: "background", paint: { "background-color": "#f2efe9" } });
@@ -192,27 +193,36 @@
       paint: { "line-color": "#8fb8dd",
         "line-width": ["match", ["get", "kind"], "river", 1.8, "canal", 1.1, 0.9] } });
     /* low-roads overlay (z8-11.99): minor roads + tracks the basemap
-       tiles don't carry below zoom 12 */
+       tiles don't carry below zoom 12. Lines tagged access=private /
+       destination / permit (the tag survives the build since the Nov
+       2026 sweep) draw as private lanes in lr-private instead of as
+       public roads — a mapped road is not a right of public access. */
     var lrOpt = { minzoom: 7.5, maxzoom: 11.99 };
+    var PRIVF = ["in", ["get", "access"], ["literal", ["private", "destination", "permit"]]];
+    var PUBF = ["!", PRIVF];
     push({ id: "lr-case", type: "line", source: "lowroads", "source-layer": "lowroads", ...lrOpt,
-      filter: ["in", ["get", "cls"], ["literal", ["minor", "track"]]],
+      filter: ["all", ["in", ["get", "cls"], ["literal", ["minor", "track"]]], PUBF],
       layout: { "line-cap": "round", "line-join": "round" },
       paint: { "line-color": "rgba(110,100,85,0.5)",
         "line-width": ["interpolate", ["linear"], ["zoom"], 8, 1.5, 11, 2.4, 12, 3.2] } });
     push({ id: "lr-major", type: "line", source: "lowroads", "source-layer": "lowroads", ...lrOpt,
-      filter: ["==", ["get", "cls"], "major"],
+      filter: ["all", ["==", ["get", "cls"], "major"], PUBF],
       layout: { "line-cap": "round", "line-join": "round" },
       paint: { "line-color": "#f2cd85",
         "line-width": ["interpolate", ["linear"], ["zoom"], 8, 1.2, 11, 2.2, 12, 3] } });
     push({ id: "lr-minor", type: "line", source: "lowroads", "source-layer": "lowroads", ...lrOpt,
-      filter: ["==", ["get", "cls"], "minor"],
+      filter: ["all", ["==", ["get", "cls"], "minor"], PUBF],
       layout: { "line-cap": "round", "line-join": "round" },
       paint: { "line-color": "#ffffff",
         "line-width": ["interpolate", ["linear"], ["zoom"], 8, 0.9, 11, 1.7, 12, 2.4] } });
     push({ id: "lr-track", type: "line", source: "lowroads", "source-layer": "lowroads", ...lrOpt,
-      filter: ["==", ["get", "cls"], "track"],
+      filter: ["all", ["==", ["get", "cls"], "track"], PUBF],
       layout: { "line-join": "round" },
       paint: { "line-color": "#a98a68", "line-width": ["interpolate", ["linear"], ["zoom"], 8, 0.9, 11, 1.5, 12, 2], "line-dasharray": [4, 2] } });
+    push({ id: "lr-private", type: "line", source: "lowroads", "source-layer": "lowroads", ...lrOpt,
+      filter: ["all", ["in", ["get", "cls"], ["literal", ["minor", "track"]]], PRIVF],
+      layout: { "line-join": "round" },
+      paint: { "line-color": "#b39b72", "line-width": ["interpolate", ["linear"], ["zoom"], 8, 0.9, 11, 1.6, 12, 2.2], "line-dasharray": [4, 2.5] } });
     /* roads from the basemap archive */
     var roadPaint = { motorway: "#e0822a", trunk: "#e8a34c", primary: "#f0bc66", secondary: "#f5d189" };
     push({ id: "rd-case", type: "line", source: "basemap", "source-layer": "roads",
@@ -255,6 +265,28 @@
           "line-width": ["interpolate", ["linear"], ["zoom"], 10, 1.6, 14, 2.8],
           "line-dasharray": [3, 2] } });
     }
+    /* road-status overlay (v113): status from the county road list +
+       OSM access tags. Private lines draw dashed over the basemap road
+       so a private lane no longer reads as a public road. The pack
+       currently ships private lines only; the st-paper style is ready
+       for county-PU (undeveloped right-of-way) lines once each is
+       segment-verified — name-level PU proved unreliable (county list
+       marks whole names PU where OSM's line also covers built city
+       segments, e.g. C Street, Clatskanie). */
+    if (statusUrl) {
+      push({ id: "st-paper", type: "line", source: "status", "source-layer": "status", minzoom: 11,
+        filter: ["==", ["get", "status"], "paper"],
+        layout: { "line-join": "round" },
+        paint: { "line-color": "rgba(176,86,58,0.75)", "line-width": ["interpolate", ["linear"], ["zoom"], 11, 1.4, 15, 2.4], "line-dasharray": [1.2, 2.2] } });
+      push({ id: "st-private-case", type: "line", source: "status", "source-layer": "status", minzoom: 11,
+        filter: ["==", ["get", "status"], "private"],
+        layout: { "line-cap": "round", "line-join": "round" },
+        paint: { "line-color": "rgba(122,96,58,0.45)", "line-width": ["interpolate", ["linear"], ["zoom"], 11, 2.6, 15, 4.6] } });
+      push({ id: "st-private", type: "line", source: "status", "source-layer": "status", minzoom: 11,
+        filter: ["==", ["get", "status"], "private"],
+        layout: { "line-join": "round" },
+        paint: { "line-color": "#e8dcc0", "line-width": ["interpolate", ["linear"], ["zoom"], 11, 1.5, 15, 2.8], "line-dasharray": [4, 2.5] } });
+    }
     push({ id: "bldg", type: "fill", source: "basemap", "source-layer": "buildings", minzoom: 14.5,
       paint: { "fill-color": "#ddd3c4", "fill-outline-color": "#c4b69e" } });
     push({ id: "bound-county", type: "line", source: "basemap", "source-layer": "boundaries", minzoom: 7.5,
@@ -267,7 +299,7 @@
         "line-width": ["interpolate", ["linear"], ["zoom"], 5, 1.9, 9, 2.8, 13, 3.6] } });
     /* labels */
     push({ id: "lr-label", type: "symbol", source: "lowroads", "source-layer": "lowroads",
-      minzoom: 10.5, maxzoom: 11.99, filter: ["has", "name"],
+      minzoom: 10.5, maxzoom: 11.99, filter: ["all", ["has", "name"], PUBF],
       layout: { "symbol-placement": "line", "text-field": ["get", "name"], "text-font": FONT_REG,
         "text-size": 11.5, "text-max-angle": 30 },
       paint: { "text-color": "#4a4238", "text-halo-color": "rgba(255,255,255,0.95)", "text-halo-width": 1.8 } });
@@ -300,6 +332,7 @@
       lowroads: { type: "vector", url: lowroadsUrl, attribution: "© OpenStreetMap contributors" }
     };
     if (trailsUrl) sources.trails = { type: "vector", url: trailsUrl, attribution: "© OpenStreetMap contributors" };
+    if (statusUrl) sources.status = { type: "vector", url: statusUrl, attribution: "© OpenStreetMap contributors" };
     return {
       version: 8,
       glyphs: BASE + "glyphs/{fontstack}/{range}.pbf",
@@ -410,7 +443,10 @@
     var trailsEntry = null;
     for (var i = 0; i < FILES.length; i++) if (FILES[i].id === "trails") trailsEntry = FILES[i];
     var trUrl = trailsEntry ? await sourceFor(trailsEntry) : null;
-    var style = buildStyle(bmUrl, lrUrl, trUrl);
+    var statusEntry = null;
+    for (var j = 0; j < FILES.length; j++) if (FILES[j].id === "status") statusEntry = FILES[j];
+    var stUrl = statusEntry ? await sourceFor(statusEntry) : null;
+    var style = buildStyle(bmUrl, lrUrl, trUrl, stUrl);
     if (map) { map.setStyle(style); return; }
     map = new maplibregl.Map({
       container: overlay.querySelector(".om-map"),
