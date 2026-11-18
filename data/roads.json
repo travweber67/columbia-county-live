@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-18T18:16:39Z",
+ "fetched_at": "2026-11-18T18:20:41Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -16,6 +16,19 @@
   }
  ],
  "incidents": [
+  {
+   "title": "A disabled vehicle has the left shoulder closed, causing minimal delay to traffic. Use caution.",
+   "desc": "",
+   "impact": "No to Minimum Delay",
+   "place": "I-5, Oregon Washington Border",
+   "route": "I5",
+   "milepost": 308.0,
+   "lat": 45.61306,
+   "lon": -122.67808,
+   "start": "2026-11-18T10:18:47.65-08:00",
+   "updated": "2026-11-18T10:19:35-08:00",
+   "source": "ODOT TripCheck"
+  },
   {
    "title": "Road construction is occurring. Prepare to slow. Watch for workers.",
    "desc": "Expect crews working during the day with shoulder closures as needed. OR 6 traffic will use the roundabout. Traffic entering and exiting the north side of NW Aerts Road will use the roundabout. The south side of NW Aerts Road will temporarily close at the roundabout. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=OR6-Aerts",
@@ -160,7 +173,7 @@
    "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 144,
+ "odot_active_statewide": 142,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
   "alerts": [],
