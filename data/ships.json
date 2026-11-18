@@ -1,69 +1,102 @@
 {
- "fetched_at": "2026-11-18T20:56:50Z",
+ "fetched_at": "2026-11-18T21:01:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15342,
-   "lon": -123.37715,
+   "mmsi": 440086000,
+   "name": "SM KWANGYANG",
+   "lat": 45.83097,
+   "lon": -122.79355,
+   "sog_kn": 12.5,
+   "cog": 197,
+   "heading": 195,
+   "nav_status": 0,
+   "updated": "2026-11-18 21:02:04.003714247 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.09267,
+   "lon": -122.92201,
+   "sog_kn": 0.2,
+   "cog": 323.5,
+   "heading": 123,
+   "nav_status": 5,
+   "updated": "2026-11-18 21:02:08.696302696 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.3855,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 359.8,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-18 21:02:10.060199122 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.65967,
+   "lon": -122.75941,
+   "sog_kn": 0,
+   "cog": 164.8,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-18 20:56:57.911561097 +0000 UTC"
+   "updated": "2026-11-18 21:02:19.145577983 +0000 UTC"
   },
   {
-   "mmsi": 366892350,
-   "name": "NAT GEO SEA BIRD",
-   "lat": 46.08968,
-   "lon": -122.9297,
-   "type_code": 66,
-   "destination": "RAINIER",
-   "updated": "2026-11-18 20:57:06.784707142 +0000 UTC"
+   "mmsi": 367719170,
+   "name": "RYAN POINT",
+   "lat": 45.6474,
+   "lon": -122.73943,
+   "type_code": 52,
+   "destination": "VANCOUVER WA",
+   "updated": "2026-11-18 21:02:21.347432351 +0000 UTC"
   },
   {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.7932,
-   "lon": -122.84362,
-   "sog_kn": 2.3,
-   "cog": 59.9,
-   "heading": 59,
-   "nav_status": 12,
-   "updated": "2026-11-18 20:57:08.006212664 +0000 UTC"
-  },
-  {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59405,
-   "lon": -122.77208,
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 45.63035,
+   "lon": -122.69569,
    "type_code": 70,
-   "destination": "NOT AVAILABLE",
-   "updated": "2026-11-18 20:57:08.217031623 +0000 UTC"
+   "destination": "US VAN",
+   "updated": "2026-11-18 21:02:21.623405911 +0000 UTC"
   },
   {
-   "mmsi": 369970121,
-   "name": "ELTON",
-   "lat": 46.24485,
-   "lon": -123.43409,
-   "sog_kn": 9.5,
-   "cog": 143.3,
-   "heading": 143,
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00882,
+   "lon": -122.84887,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-18 20:57:16.368886542 +0000 UTC"
+   "updated": "2026-11-18 21:02:23.351108201 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.21621,
-   "lon": -123.42763,
-   "sog_kn": 8.8,
-   "cog": 172.2,
-   "heading": 175,
-   "nav_status": 3,
-   "updated": "2026-11-18 20:57:21.659185803 +0000 UTC"
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 45.60078,
+   "lon": -122.77718,
+   "sog_kn": 0.3,
+   "cog": 252.9,
+   "heading": 10,
+   "nav_status": 0,
+   "updated": "2026-11-18 21:02:24.573329282 +0000 UTC"
+  },
+  {
+   "mmsi": 311008700,
+   "name": "VICTORY RAY",
+   "lat": 46.09741,
+   "lon": -122.93901,
+   "sog_kn": 7.2,
+   "cog": 301.4,
+   "heading": 301,
+   "nav_status": 0,
+   "updated": "2026-11-18 21:02:25.510720668 +0000 UTC"
   }
  ]
 }
