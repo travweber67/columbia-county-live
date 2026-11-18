@@ -6260,7 +6260,6 @@ const LANG_ES = {
   sstb: 'Uno de solo cuatro lugares de Patrocinador de Sección en Viajes — tu nombre y logo entre el mapa, el puente y el ferri que todos revisan antes de manejar. $29/mes, mes a mes, cancela cuando quieras.',
   ssob: 'Uno de solo cuatro lugares de Patrocinador de Sección en Aire Libre — tu nombre y logo entre el clima, los ríos y la pesca que todos revisan antes de salir. $29/mes, mes a mes, cancela cuando quieras.',
   ssmb: 'Uno de solo cuatro lugares de Patrocinador de Sección en Eventos y Más — tu nombre y logo entre los eventos, el directorio y el fin de semana que todos revisan antes de hacer planes. $29/mes, mes a mes, cancela cuando quieras.',
-  fsfoot: 'Cada patrocinador fundador conserva una insignia permanente de «Patrocinador Fundador · 2026» y un lugar en el muro de Socios Comunitarios de abajo — aunque después cambie de nivel. El período fundador cierra el 31 de enero de 2027 — después de eso, nunca más habrá patrocinadores fundadores nuevos.',
   commuteh2: '🚗 El veredicto del viaje',
   commutenote: 'La respuesta en una línea para manejar ahora mismo. El panorama completo del corredor — puente, incidentes y cámaras — está en la pestaña Viajes.',
   driveh2: '🧭 Tu viaje — ¿cuánto dura el manejo?',
