@@ -1,29 +1,78 @@
 {
- "fetched_at": "2026-11-18T02:55:13Z",
+ "fetched_at": "2026-11-18T03:00:14Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19997,
-   "lon": -123.38548,
-   "sog_kn": 0,
-   "cog": 156.2,
+   "mmsi": 369990212,
+   "name": "CG29212",
+   "lat": 45.57105,
+   "lon": -122.73714,
+   "sog_kn": 31.6,
+   "cog": 129.7,
    "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-18 02:55:40.092547454 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-18 03:00:28.568741519 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61289,
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.13956,
+   "lon": -123.02146,
+   "type_code": 33,
+   "destination": "US LOG",
+   "updated": "2026-11-18 03:00:31.208872861 +0000 UTC"
+  },
+  {
+   "mmsi": 636024633,
+   "name": "PAVO LEADER",
+   "lat": 45.63809,
+   "lon": -122.72252,
+   "type_code": 70,
+   "destination": "US RCH",
+   "updated": "2026-11-18 03:00:40.443017744 +0000 UTC"
+  },
+  {
+   "mmsi": 563331600,
+   "name": "BELLE LUNE",
+   "lat": 46.17075,
+   "lon": -123.0999,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-18 03:00:43.910817564 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.65451,
+   "lon": -122.75901,
+   "sog_kn": 3.4,
+   "cog": 308.1,
+   "heading": 269,
+   "nav_status": 12,
+   "updated": "2026-11-18 03:00:45.102936713 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.3854,
    "sog_kn": 0,
-   "cog": 235,
-   "heading": 133,
-   "nav_status": 15,
-   "updated": "2026-11-18 02:55:48.142308456 +0000 UTC"
+   "cog": 295.6,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-18 03:00:45.459740469 +0000 UTC"
+  },
+  {
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.11012,
+   "lon": -122.96339,
+   "sog_kn": 0,
+   "cog": 138.5,
+   "heading": 131,
+   "nav_status": 5,
+   "updated": "2026-11-18 03:00:50.224333771 +0000 UTC"
   }
  ]
 }
