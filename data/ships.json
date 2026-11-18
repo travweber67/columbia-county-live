@@ -1,45 +1,53 @@
 {
- "fetched_at": "2026-11-18T06:00:32Z",
+ "fetched_at": "2026-11-18T06:05:32Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19998,
-   "lon": -123.38548,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-18 06:00:48.995055746 +0000 UTC"
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64695,
+   "lon": -122.73928,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-18 06:06:09.092088933 +0000 UTC",
+   "sog_kn": 0.3,
+   "cog": 254.2,
+   "heading": 310,
+   "nav_status": 0
   },
   {
-   "mmsi": 563331600,
-   "name": "BELLE LUNE",
-   "lat": 46.1706,
-   "lon": -123.10011,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-18 06:00:52.409744005 +0000 UTC"
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 45.69911,
+   "lon": -122.77005,
+   "sog_kn": 3.4,
+   "cog": 187,
+   "heading": 187,
+   "nav_status": 0,
+   "updated": "2026-11-18 06:05:54.90314909 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08986,
+   "lon": -122.92899,
+   "sog_kn": 0,
+   "cog": 215.2,
+   "heading": 100,
+   "nav_status": 0,
+   "updated": "2026-11-18 06:05:57.989087671 +0000 UTC"
   },
   {
    "mmsi": 366986380,
    "name": "DREDGE OREGON",
-   "lat": 46.08291,
-   "lon": -122.90699,
+   "lat": 46.08287,
+   "lon": -122.90698,
    "sog_kn": 0,
    "cog": 360,
    "heading": 309,
    "nav_status": 3,
-   "updated": "2026-11-18 06:00:56.782259488 +0000 UTC"
-  },
-  {
-   "mmsi": 563311600,
-   "name": "STANLEY BAY",
-   "lat": 46.11012,
-   "lon": -122.96336,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-18 06:01:12.806809546 +0000 UTC"
+   "updated": "2026-11-18 06:06:07.715421438 +0000 UTC"
   }
  ]
 }
