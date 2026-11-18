@@ -1,58 +1,6 @@
 {
- "fetched_at": "2026-11-18T02:10:09Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.61201,
-   "lon": -122.64535,
-   "type_code": 52,
-   "destination": "US^0UUT>0T9D",
-   "updated": "2026-11-18 02:10:26.215857401 +0000 UTC"
-  },
-  {
-   "mmsi": 311008700,
-   "name": "VICTORY RAY",
-   "lat": 45.64055,
-   "lon": -122.7172,
-   "type_code": 70,
-   "destination": "US VAN",
-   "updated": "2026-11-18 02:10:29.338400479 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.62354,
-   "lon": -122.68424,
-   "sog_kn": 0,
-   "cog": 281.8,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-18 02:10:31.469379365 +0000 UTC"
-  },
-  {
-   "mmsi": 563302700,
-   "name": "KEY WEST",
-   "lat": 46.10342,
-   "lon": -122.9496,
-   "sog_kn": 0,
-   "cog": 126.7,
-   "heading": 118,
-   "nav_status": 5,
-   "updated": "2026-11-18 02:10:31.895399099 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.1374,
-   "lon": -123.3792,
-   "sog_kn": 3.3,
-   "cog": 121.9,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-18 02:10:37.612266677 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-18T02:15:09Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
