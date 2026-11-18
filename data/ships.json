@@ -1,6 +1,100 @@
 {
- "fetched_at": "2026-11-18T16:06:28Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-18T16:11:29Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.0897,
+   "lon": -122.92972,
+   "sog_kn": 0,
+   "cog": 72.7,
+   "heading": 109,
+   "nav_status": 5,
+   "updated": "2026-11-18 16:11:46.070993116 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.6473,
+   "lon": -122.73995,
+   "type_code": 52,
+   "destination": "SRT PASCO",
+   "updated": "2026-11-18 16:11:47.843185798 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 99.9,
+   "heading": 136,
+   "nav_status": 15,
+   "updated": "2026-11-18 16:11:48.395896415 +0000 UTC"
+  },
+  {
+   "mmsi": 367684980,
+   "name": "CHRISTIE",
+   "lat": 45.61178,
+   "lon": -122.64503,
+   "sog_kn": 0.1,
+   "cog": 209.3,
+   "heading": 297,
+   "nav_status": 0,
+   "updated": "2026-11-18 16:11:56.219334545 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.64038,
+   "lon": -122.71516,
+   "sog_kn": 0,
+   "cog": 163.8,
+   "heading": 297,
+   "nav_status": 0,
+   "updated": "2026-11-18 16:11:58.212307067 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.98613,
+   "lon": -122.83652,
+   "sog_kn": 0,
+   "cog": 29.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-18 16:11:59.318412441 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.64354,
+   "lon": -122.75277,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-18 16:12:01.740947386 +0000 UTC"
+  },
+  {
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.2062,
+   "lon": -123.38663,
+   "sog_kn": 0,
+   "cog": 288.8,
+   "heading": 183,
+   "nav_status": 5,
+   "updated": "2026-11-18 16:12:02.320633298 +0000 UTC"
+  },
+  {
+   "mmsi": 563331600,
+   "name": "BELLE LUNE",
+   "lat": 46.17104,
+   "lon": -123.09699,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-18 16:12:10.411322753 +0000 UTC"
+  }
+ ]
 }
