@@ -1,51 +1,60 @@
 {
- "fetched_at": "2026-11-19T10:02:48Z",
+ "fetched_at": "2026-11-19T10:07:49Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15341,
-   "lon": -123.37713,
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64729,
+   "lon": -122.73993,
    "sog_kn": 0,
-   "cog": 174.5,
+   "cog": 79.3,
+   "heading": 16,
+   "nav_status": 5,
+   "updated": "2026-11-19 10:07:56.740018364 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.20011,
+   "lon": -123.42746,
+   "sog_kn": 1.5,
+   "cog": 192.2,
+   "heading": 190,
+   "nav_status": 3,
+   "updated": "2026-11-19 10:07:59.410968963 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58757,
+   "lon": -122.77066,
+   "sog_kn": 0,
+   "cog": 227.7,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-19 10:02:56.813832082 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58759,
-   "lon": -122.77038,
-   "sog_kn": 0,
-   "cog": 278,
-   "heading": 139,
-   "nav_status": 0,
-   "updated": "2026-11-19 10:03:06.992566664 +0000 UTC"
-  },
-  {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.93317,
-   "lon": -122.80677,
-   "sog_kn": 8.8,
-   "cog": 357,
-   "heading": 353,
-   "nav_status": 12,
-   "updated": "2026-11-19 10:03:16.359970147 +0000 UTC"
+   "updated": "2026-11-19 10:08:14.768834235 +0000 UTC"
   },
   {
    "mmsi": 367315790,
    "name": "LORI B.",
-   "lat": 46.1457,
-   "lon": -123.03757,
-   "sog_kn": 5.1,
-   "cog": 129,
-   "heading": 128,
+   "lat": 46.14171,
+   "lon": -123.02946,
+   "sog_kn": 5,
+   "cog": 123.2,
+   "heading": 118,
    "nav_status": 0,
-   "updated": "2026-11-19 10:03:17.384992458 +0000 UTC"
+   "updated": "2026-11-19 10:08:16.950893046 +0000 UTC"
+  },
+  {
+   "mmsi": 563338800,
+   "name": "ISHIZUCHI STAR",
+   "lat": 45.63159,
+   "lon": -122.6974,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-19 10:08:20.911128482 +0000 UTC"
   }
  ]
 }
