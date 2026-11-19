@@ -1,49 +1,67 @@
 {
- "fetched_at": "2026-11-19T11:47:56Z",
+ "fetched_at": "2026-11-19T11:50:55Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.10788,
-   "lon": -122.95898,
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00885,
+   "lon": -122.84888,
    "sog_kn": 0,
-   "cog": 333.9,
+   "cog": 360,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-19 11:48:11.233462169 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.02276,
-   "lon": -122.86821,
-   "sog_kn": 2.4,
-   "cog": 137.2,
-   "heading": 129,
-   "nav_status": 3,
-   "updated": "2026-11-19 11:48:26.935119916 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58763,
-   "lon": -122.7704,
-   "sog_kn": 0,
-   "cog": 278,
-   "heading": 140,
    "nav_status": 0,
-   "updated": "2026-11-19 11:48:27.023262585 +0000 UTC"
+   "updated": "2026-11-19 11:51:43.699261694 +0000 UTC"
   },
   {
-   "mmsi": 563311600,
-   "name": "STANLEY BAY",
-   "lat": 46.11012,
-   "lon": -122.9634,
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 46.09065,
+   "lon": -122.93209,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-19 11:51:44.414090137 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 45.63015,
+   "lon": -122.69529,
    "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-19 11:48:27.191734039 +0000 UTC"
+   "destination": "US VAN",
+   "updated": "2026-11-19 11:51:45.620056551 +0000 UTC"
+  },
+  {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 46.16361,
+   "lon": -123.23674,
+   "sog_kn": 4.1,
+   "cog": 51.6,
+   "heading": 54,
+   "nav_status": 0,
+   "updated": "2026-11-19 11:51:47.386847045 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09279,
+   "lon": -122.9233,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-19 11:51:49.517977045 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58751,
+   "lon": -122.7707,
+   "sog_kn": 0,
+   "cog": 306.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 11:51:54.464047357 +0000 UTC"
   }
  ]
 }
