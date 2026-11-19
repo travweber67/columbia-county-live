@@ -1,60 +1,66 @@
 {
- "fetched_at": "2026-11-19T22:33:48Z",
+ "fetched_at": "2026-11-19T22:38:48Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00906,
-   "lon": -122.84822,
-   "sog_kn": 0.1,
-   "cog": 4.4,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-19 22:33:58.494330989 +0000 UTC"
-  },
-  {
-   "mmsi": 538011643,
-   "name": "YASA CAMELLIA",
-   "lat": 45.7146,
-   "lon": -122.76343,
-   "type_code": 70,
-   "destination": "USLOG",
-   "updated": "2026-11-19 22:34:02.439920174 +0000 UTC"
-  },
-  {
-   "mmsi": 368201480,
-   "name": "KINANI H",
-   "lat": 45.91058,
-   "lon": -122.80559,
-   "sog_kn": 0,
-   "cog": 71.5,
-   "heading": 176,
-   "nav_status": 11,
-   "updated": "2026-11-19 22:34:07.792819489 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58757,
-   "lon": -122.77074,
-   "sog_kn": 0,
-   "cog": 307.5,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-19 22:34:14.690808777 +0000 UTC"
-  },
   {
    "mmsi": 368070380,
    "name": "TOKITAE",
-   "lat": 45.60752,
-   "lon": -122.67758,
+   "lat": 45.60751,
+   "lon": -122.67764,
+   "type_code": 50,
+   "updated": "2026-11-19 22:38:59.546958727 +0000 UTC"
+  },
+  {
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.68578,
+   "lon": -122.77199,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-19 22:38:59.946604343 +0000 UTC"
+  },
+  {
+   "mmsi": 368136580,
+   "name": "ORIN L GREEN",
+   "lat": 46.09405,
+   "lon": -122.9428,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-19 22:34:19.997683795 +0000 UTC"
+   "updated": "2026-11-19 22:39:07.740498048 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09054,
+   "lon": -122.93232,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-19 22:39:20.288598294 +0000 UTC"
+  },
+  {
+   "mmsi": 367327440,
+   "name": "KATHRYN B.",
+   "lat": 45.71082,
+   "lon": -122.76773,
+   "sog_kn": 7.6,
+   "cog": 12.8,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 22:39:23.005897123 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.09282,
+   "lon": -122.92171,
+   "sog_kn": 1.1,
+   "cog": 89.9,
+   "heading": 132,
+   "nav_status": 5,
+   "updated": "2026-11-19 22:39:23.525375868 +0000 UTC"
   }
  ]
 }
