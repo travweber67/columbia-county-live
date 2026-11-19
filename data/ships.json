@@ -1,49 +1,58 @@
 {
- "fetched_at": "2026-11-19T03:57:22Z",
+ "fetched_at": "2026-11-19T04:02:23Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09308,
-   "lon": -122.92362,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 309,
-   "nav_status": 3,
-   "updated": "2026-11-19 03:57:30.161810417 +0000 UTC"
-  },
   {
    "mmsi": 367425950,
    "name": "SEA HAWK",
-   "lat": 45.6502,
-   "lon": -122.74767,
+   "lat": 45.65017,
+   "lon": -122.74764,
    "sog_kn": 0,
-   "cog": 307.2,
+   "cog": 282.9,
    "heading": 511,
    "nav_status": 3,
-   "updated": "2026-11-19 03:57:40.039048929 +0000 UTC"
+   "updated": "2026-11-19 04:02:49.716678277 +0000 UTC"
   },
   {
-   "mmsi": 367047240,
-   "name": "DEFIANCE",
-   "lat": 45.65832,
-   "lon": -122.75718,
+   "mmsi": 311001605,
+   "name": "SAGA DISCOVERY",
+   "lat": 45.63755,
+   "lon": -122.70914,
+   "type_code": 79,
+   "destination": "US VAN",
+   "updated": "2026-11-19 04:02:53.127646125 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79228,
+   "lon": -122.84448,
    "sog_kn": 0,
-   "cog": 151.6,
-   "heading": 151,
-   "nav_status": 0,
-   "updated": "2026-11-19 03:57:44.909118546 +0000 UTC"
+   "cog": 271.4,
+   "heading": 49,
+   "nav_status": 12,
+   "updated": "2026-11-19 04:02:58.083440247 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.09279,
-   "lon": -122.9233,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-19 03:57:49.000080612 +0000 UTC"
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.65472,
+   "lon": -122.75443,
+   "sog_kn": 0,
+   "cog": 54.2,
+   "heading": 329,
+   "nav_status": 0,
+   "updated": "2026-11-19 04:03:06.869011971 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08968,
+   "lon": -122.92972,
+   "type_code": 66,
+   "destination": "RAINIER",
+   "updated": "2026-11-19 04:03:08.148017362 +0000 UTC"
   }
  ]
 }
