@@ -1,24 +1,36 @@
 {
- "fetched_at": "2026-11-19T16:20:59Z",
+ "fetched_at": "2026-11-19T16:23:20Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61289,
-   "type_code": 0,
-   "updated": "2026-11-19 16:21:38.970840746 +0000 UTC"
+   "mmsi": 355173000,
+   "name": "EVER BEST",
+   "lat": 45.63925,
+   "lon": -122.7778,
+   "type_code": 79,
+   "destination": "USPDX",
+   "updated": "2026-11-19 16:23:34.543076902 +0000 UTC"
   },
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20002,
-   "lon": -123.3854,
-   "type_code": 99,
-   "destination": "NAKNEK",
-   "updated": "2026-11-19 16:21:41.61385871 +0000 UTC"
+   "mmsi": 366396000,
+   "name": "NAT GEO SEA LION",
+   "lat": 46.08962,
+   "lon": -122.92971,
+   "type_code": 68,
+   "destination": "RAINIER",
+   "updated": "2026-11-19 16:23:39.457882992 +0000 UTC"
+  },
+  {
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 46.10262,
+   "lon": -122.95723,
+   "sog_kn": 8.6,
+   "cog": 120.5,
+   "heading": 120,
+   "nav_status": 12,
+   "updated": "2026-11-19 16:23:42.87599727 +0000 UTC"
   },
   {
    "mmsi": 367380280,
@@ -27,63 +39,39 @@
    "lon": -123.40976,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 136,
+   "heading": 135,
    "nav_status": 0,
-   "updated": "2026-11-19 16:21:53.217416657 +0000 UTC"
+   "updated": "2026-11-19 16:23:53.110987333 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58753,
+   "lon": -122.77072,
+   "sog_kn": 0.1,
+   "cog": 196.3,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 16:23:53.538964102 +0000 UTC"
   },
   {
    "mmsi": 367764250,
    "name": "PJ BRIX",
-   "lat": 45.58759,
-   "lon": -122.77036,
+   "lat": 45.58761,
+   "lon": -122.7704,
    "sog_kn": 0,
    "cog": 278,
    "heading": 141,
    "nav_status": 0,
-   "updated": "2026-11-19 16:21:55.958977862 +0000 UTC"
+   "updated": "2026-11-19 16:23:55.927369611 +0000 UTC"
   },
   {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.99434,
-   "lon": -122.84676,
-   "sog_kn": 5.8,
-   "cog": 164.4,
-   "heading": 165,
-   "nav_status": 0,
-   "updated": "2026-11-19 16:21:57.143111818 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09193,
-   "lon": -122.91875,
-   "sog_kn": 4.1,
-   "cog": 138.7,
-   "heading": 137,
-   "nav_status": 0,
-   "updated": "2026-11-19 16:21:58.508648004 +0000 UTC"
-  },
-  {
-   "mmsi": 369990212,
-   "lat": 45.57055,
-   "lon": -122.72243,
-   "sog_kn": 0,
-   "cog": 23.2,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-19 16:21:58.509841574 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64788,
-   "lon": -122.74101,
-   "sog_kn": 0,
-   "cog": 112.1,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-19 16:21:59.449593729 +0000 UTC"
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09289,
+   "lon": -122.92345,
+   "type_code": 69,
+   "updated": "2026-11-19 16:24:00.364161566 +0000 UTC"
   }
  ]
 }
