@@ -1,104 +1,84 @@
 {
- "fetched_at": "2026-11-19T07:32:35Z",
+ "fetched_at": "2026-11-19T07:37:36Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.25939,
-   "lon": -123.46763,
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.05997,
+   "lon": -122.88466,
+   "sog_kn": 10.9,
+   "cog": 346.8,
+   "heading": 343,
+   "nav_status": 0,
+   "updated": "2026-11-19 07:37:47.714430261 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 45.64352,
+   "lon": -122.75243,
    "type_code": 52,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-19 07:33:04.698619074 +0000 UTC",
-   "sog_kn": 0,
-   "cog": 43.6,
-   "heading": 123,
-   "nav_status": 3
-  },
-  {
-   "mmsi": 311001605,
-   "name": "SAGA DISCOVERY",
-   "lat": 45.63749,
-   "lon": -122.70913,
-   "type_code": 79,
-   "destination": "US VAN",
-   "updated": "2026-11-19 07:32:52.259027143 +0000 UTC"
-  },
-  {
-   "mmsi": 366888830,
-   "name": "KAHU",
-   "lat": 45.61167,
-   "lon": -122.6442,
-   "type_code": 52,
-   "destination": "PDX",
-   "updated": "2026-11-19 07:32:52.784757538 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.63342,
-   "lon": -122.70702,
-   "sog_kn": 7.6,
-   "cog": 309.4,
-   "heading": 307,
-   "nav_status": 0,
-   "updated": "2026-11-19 07:32:57.303174358 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.21589,
-   "lon": -123.42557,
-   "sog_kn": 1.1,
-   "cog": 10.1,
-   "heading": 166,
-   "nav_status": 3,
-   "updated": "2026-11-19 07:32:59.693774052 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15343,
-   "lon": -123.37713,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-19 07:33:06.525682973 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.64194,
-   "lon": -122.74867,
-   "sog_kn": 0.3,
-   "cog": 30.8,
-   "heading": 231,
-   "nav_status": 0,
-   "updated": "2026-11-19 07:33:08.13631161 +0000 UTC"
-  },
-  {
-   "mmsi": 368201480,
-   "name": "KINANI H",
-   "lat": 45.91058,
-   "lon": -122.80556,
-   "sog_kn": 0,
-   "cog": 71.5,
-   "heading": 176,
-   "nav_status": 11,
-   "updated": "2026-11-19 07:33:09.61104048 +0000 UTC"
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-19 07:37:51.469252879 +0000 UTC"
   },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
    "lat": 46.09306,
    "lon": -122.92312,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-19 07:38:11.412306844 +0000 UTC",
    "sog_kn": 0,
-   "cog": 162.2,
+   "cog": 75.4,
    "heading": 127,
+   "nav_status": 0
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60753,
+   "lon": -122.67759,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-19 07:33:11.375592552 +0000 UTC"
+   "updated": "2026-11-19 07:38:01.004401346 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09054,
+   "lon": -122.93232,
+   "sog_kn": 0,
+   "cog": 180.7,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-19 07:38:06.719091813 +0000 UTC",
+   "type_code": 52,
+   "destination": "COL RIVER"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.64323,
+   "lon": -122.74423,
+   "sog_kn": 0.1,
+   "cog": 225.5,
+   "heading": 291,
+   "nav_status": 0,
+   "updated": "2026-11-19 07:38:06.464579391 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.25939,
+   "lon": -123.46762,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-19 07:38:16.623897338 +0000 UTC"
   }
  ]
 }
