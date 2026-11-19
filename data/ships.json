@@ -1,54 +1,60 @@
 {
- "fetched_at": "2026-11-19T08:57:44Z",
+ "fetched_at": "2026-11-19T09:02:45Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.2,
-   "lon": -123.38539,
-   "type_code": 99,
-   "destination": "NAKNEK",
-   "updated": "2026-11-19 08:57:49.653861853 +0000 UTC"
+   "mmsi": 538004110,
+   "name": "AENEAS",
+   "lat": 46.17255,
+   "lon": -123.21599,
+   "sog_kn": 13,
+   "cog": 245.9,
+   "heading": 243,
+   "nav_status": 0,
+   "updated": "2026-11-19 09:02:57.646834321 +0000 UTC"
+  },
+  {
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.20619,
+   "lon": -123.38665,
+   "sog_kn": 0,
+   "cog": 353.4,
+   "heading": 183,
+   "nav_status": 5,
+   "updated": "2026-11-19 09:02:59.856960914 +0000 UTC"
   },
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
    "lat": 46.09279,
    "lon": -122.92331,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-19 08:57:49.739320518 +0000 UTC"
-  },
-  {
-   "mmsi": 367047240,
-   "name": "DEFIANCE",
-   "lat": 45.65832,
-   "lon": -122.75719,
    "sog_kn": 0,
-   "cog": 150.2,
-   "heading": 150,
+   "cog": 342.4,
+   "heading": 125,
    "nav_status": 0,
-   "updated": "2026-11-19 08:57:55.543285664 +0000 UTC"
+   "updated": "2026-11-19 09:03:04.723831894 +0000 UTC"
   },
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.65713,
-   "lon": -122.75588,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-19 08:58:05.954403933 +0000 UTC"
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 46.23473,
+   "lon": -123.42861,
+   "sog_kn": 4.5,
+   "cog": 167.3,
+   "heading": 170,
+   "nav_status": 0,
+   "updated": "2026-11-19 09:03:10.595482553 +0000 UTC"
   },
   {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.78464,
-   "lon": -122.77449,
-   "type_code": 57,
-   "destination": "VANCOUVER",
-   "updated": "2026-11-19 08:58:16.687406179 +0000 UTC"
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.64329,
+   "lon": -122.75277,
+   "type_code": 31,
+   "destination": "HARBOROPPS-",
+   "updated": "2026-11-19 09:03:20.422070255 +0000 UTC"
   }
  ]
 }
