@@ -1,71 +1,93 @@
 {
- "fetched_at": "2026-11-19T00:02:03Z",
+ "fetched_at": "2026-11-19T00:07:04Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00882,
-   "lon": -122.84884,
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08982,
+   "lon": -122.92901,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "cog": 225.1,
+   "heading": 99,
    "nav_status": 0,
-   "updated": "2026-11-19 00:02:23.339727231 +0000 UTC"
+   "updated": "2026-11-19 00:07:11.335611786 +0000 UTC"
   },
   {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.0905,
-   "lon": -122.93236,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.01941,
+   "lon": -122.86378,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-19 00:07:34.545784183 +0000 UTC",
+   "sog_kn": 1.1,
+   "cog": 150.6,
+   "heading": 141,
+   "nav_status": 3
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 46.13893,
+   "lon": -123.01884,
+   "sog_kn": 5,
+   "cog": 116.1,
+   "heading": 117,
+   "nav_status": 12,
+   "updated": "2026-11-19 00:07:16.027764781 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58413,
+   "lon": -122.76623,
+   "type_code": 52,
+   "destination": "US^00D5>0UHN",
+   "updated": "2026-11-19 00:07:22.431562548 +0000 UTC"
+  },
+  {
+   "mmsi": 440086000,
+   "name": "SM KWANGYANG",
+   "lat": 45.63983,
+   "lon": -122.7471,
    "sog_kn": 0,
-   "cog": 294.3,
-   "heading": 511,
+   "cog": 239.3,
+   "heading": 136,
    "nav_status": 5,
-   "updated": "2026-11-19 00:02:23.767414006 +0000 UTC"
+   "updated": "2026-11-19 00:07:26.575663076 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.09644,
-   "lon": -122.93253,
-   "sog_kn": 8.2,
-   "cog": 102.7,
-   "heading": 100,
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.20881,
+   "lon": -123.42636,
+   "sog_kn": 1.9,
+   "cog": 3.1,
+   "heading": 3,
    "nav_status": 3,
-   "updated": "2026-11-19 00:02:24.366272973 +0000 UTC"
+   "updated": "2026-11-19 00:07:29.69880696 +0000 UTC"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15707,
-   "lon": -123.40234,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 133,
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64347,
+   "lon": -122.75287,
+   "type_code": 52,
+   "destination": "US^0UU4>02MR",
+   "updated": "2026-11-19 00:07:35.317499041 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.14556,
+   "lon": -123.38429,
+   "sog_kn": 8.1,
+   "cog": 199.3,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-19 00:02:34.006158246 +0000 UTC"
-  },
-  {
-   "mmsi": 367425870,
-   "name": "HUSKY",
-   "lat": 45.61228,
-   "lon": -122.63434,
-   "sog_kn": 0,
-   "cog": 230.1,
-   "heading": 359,
-   "nav_status": 0,
-   "updated": "2026-11-19 00:02:40.146911462 +0000 UTC"
-  },
-  {
-   "mmsi": 367315790,
-   "name": "LORI B.",
-   "lat": 46.14882,
-   "lon": -123.27319,
-   "type_code": 31,
-   "destination": "PORTLAND",
-   "updated": "2026-11-19 00:02:49.958342059 +0000 UTC"
+   "updated": "2026-11-19 00:07:36.337330824 +0000 UTC"
   }
  ]
 }
