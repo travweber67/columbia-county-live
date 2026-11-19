@@ -1,53 +1,40 @@
 {
- "fetched_at": "2026-11-19T20:28:38Z",
+ "fetched_at": "2026-11-19T20:33:38Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.00902,
+   "lon": -122.8483,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 20:33:59.343654616 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.17755,
+   "lon": -123.10633,
+   "sog_kn": 1.3,
+   "cog": 127.2,
+   "heading": 130,
+   "nav_status": 3,
+   "updated": "2026-11-19 20:34:06.611033733 +0000 UTC"
+  },
   {
    "mmsi": 367602150,
    "name": "LUNA",
-   "lat": 45.6111,
+   "lat": 45.61109,
    "lon": -122.61291,
    "sog_kn": 0,
-   "cog": 346.1,
-   "heading": 131,
+   "cog": 225,
+   "heading": 132,
    "nav_status": 15,
-   "updated": "2026-11-19 20:28:49.498235898 +0000 UTC"
-  },
-  {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 46.15316,
-   "lon": -123.39119,
-   "sog_kn": 7.5,
-   "cog": 126.8,
-   "heading": 125,
-   "nav_status": 5,
-   "updated": "2026-11-19 20:28:50.776434499 +0000 UTC"
-  },
-  {
-   "mmsi": 366396000,
-   "name": "NAT GEO SEA LION",
-   "lat": 46.08959,
-   "lon": -122.9297,
-   "type_code": 68,
-   "destination": "RAINIER",
-   "updated": "2026-11-19 20:28:59.479647612 +0000 UTC",
-   "sog_kn": 0,
-   "cog": 283.1,
-   "heading": 112,
-   "nav_status": 5
-  },
-  {
-   "mmsi": 538011643,
-   "name": "YASA CAMELLIA",
-   "lat": 45.7951,
-   "lon": -122.78341,
-   "sog_kn": 12.9,
-   "cog": 147,
-   "heading": 148,
-   "nav_status": 0,
-   "updated": "2026-11-19 20:28:54.112068532 +0000 UTC"
+   "updated": "2026-11-19 20:34:07.36199304 +0000 UTC"
   }
  ]
 }
