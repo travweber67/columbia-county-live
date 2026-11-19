@@ -1,37 +1,84 @@
 {
- "fetched_at": "2026-11-19T21:03:40Z",
+ "fetched_at": "2026-11-19T21:08:44Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35743,
-   "type_code": 30,
-   "updated": "2026-11-19 21:03:52.628509342 +0000 UTC"
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.38549,
+   "sog_kn": 0,
+   "cog": 354,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-19 21:09:03.575117849 +0000 UTC"
+  },
+  {
+   "mmsi": 367684980,
+   "name": "CHRISTIE",
+   "lat": 45.5743,
+   "lon": -122.74076,
+   "sog_kn": 9.7,
+   "cog": 123.9,
+   "heading": 126,
+   "nav_status": 0,
+   "updated": "2026-11-19 21:09:05.714338276 +0000 UTC"
   },
   {
    "mmsi": 368201480,
    "name": "KINANI H",
    "lat": 45.91059,
-   "lon": -122.80559,
+   "lon": -122.80557,
    "sog_kn": 0,
    "cog": 71.5,
    "heading": 177,
    "nav_status": 11,
-   "updated": "2026-11-19 21:04:07.751469342 +0000 UTC"
+   "updated": "2026-11-19 21:09:17.144181977 +0000 UTC"
   },
   {
-   "mmsi": 367327440,
-   "name": "KATHRYN B.",
-   "lat": 45.60482,
-   "lon": -122.61091,
-   "sog_kn": 6.7,
-   "cog": 281.1,
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.00897,
+   "lon": -122.84831,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-19 21:04:13.90113638 +0000 UTC"
+   "updated": "2026-11-19 21:09:18.598130564 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09309,
+   "lon": -122.9236,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 310,
+   "nav_status": 3,
+   "updated": "2026-11-19 21:09:28.151842596 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 85.9,
+   "heading": 136,
+   "nav_status": 15,
+   "updated": "2026-11-19 21:09:28.405749823 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.73982,
+   "lon": -122.76177,
+   "sog_kn": 9.1,
+   "cog": 358.2,
+   "heading": 356,
+   "nav_status": 0,
+   "updated": "2026-11-19 21:09:29.695702923 +0000 UTC"
   }
  ]
 }
