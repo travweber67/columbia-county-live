@@ -1,6 +1,62 @@
 {
- "fetched_at": "2026-11-19T21:21:03Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-19T21:23:42Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367604190,
+   "name": "RENE",
+   "lat": 45.79316,
+   "lon": -122.84313,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 21:23:59.40787049 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.00898,
+   "lon": -122.8484,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 21:24:10.669662327 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09136,
+   "lon": -122.91957,
+   "sog_kn": 7.7,
+   "cog": 100,
+   "heading": 84,
+   "nav_status": 0,
+   "updated": "2026-11-19 21:24:11.095564482 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.10788,
+   "lon": -122.95898,
+   "sog_kn": 0,
+   "cog": 285,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-19 21:24:15.521724227 +0000 UTC"
+  },
+  {
+   "mmsi": 368136580,
+   "name": "ORIN L GREEN",
+   "lat": 46.09298,
+   "lon": -122.92366,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 21:24:22.621269204 +0000 UTC"
+  }
+ ]
 }
