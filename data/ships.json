@@ -1,101 +1,89 @@
 {
- "fetched_at": "2026-11-19T17:51:01Z",
+ "fetched_at": "2026-11-19T17:53:27Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09282,
+   "lon": -122.92347,
+   "sog_kn": 1.5,
+   "cog": 208.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 17:53:37.907895903 +0000 UTC"
+  },
+  {
+   "mmsi": 355173000,
+   "name": "EVER BEST",
+   "lat": 45.63928,
+   "lon": -122.77781,
+   "sog_kn": 0,
+   "cog": 13.5,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-19 17:53:38.166181733 +0000 UTC"
+  },
+  {
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.64733,
+   "lon": -122.73951,
+   "type_code": 52,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-19 17:53:40.598803269 +0000 UTC"
+  },
   {
    "mmsi": 367310520,
    "name": "JAMES T",
-   "lat": 46.26525,
-   "lon": -123.4577,
-   "sog_kn": 1.7,
-   "cog": 311.8,
-   "heading": 321,
+   "lat": 46.26534,
+   "lon": -123.45783,
+   "sog_kn": 0,
+   "cog": 319.8,
+   "heading": 323,
    "nav_status": 3,
-   "updated": "2026-11-19 17:51:43.902137329 +0000 UTC"
+   "updated": "2026-11-19 17:53:42.126560265 +0000 UTC"
   },
   {
-   "mmsi": 538011643,
-   "name": "YASA CAMELLIA",
-   "lat": 46.1863,
-   "lon": -123.17533,
-   "sog_kn": 13.7,
-   "cog": 64.2,
-   "heading": 64,
-   "nav_status": 0,
-   "updated": "2026-11-19 17:51:54.737785212 +0000 UTC"
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 45.88934,
+   "lon": -122.80146,
+   "sog_kn": 11,
+   "cog": 157.2,
+   "heading": 153,
+   "nav_status": 12,
+   "updated": "2026-11-19 17:53:42.946219846 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35745,
-   "type_code": 30,
-   "updated": "2026-11-19 17:52:00.618444848 +0000 UTC"
+   "mmsi": 352006113,
+   "name": "BELFORTUNE",
+   "lat": 46.09907,
+   "lon": -122.93943,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-19 17:53:43.72274847 +0000 UTC"
   },
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.6075,
-   "lon": -122.67751,
-   "sog_kn": 0.1,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-19 17:52:00.631194413 +0000 UTC"
+   "mmsi": 636024633,
+   "name": "PAVO LEADER",
+   "lat": 46.07098,
+   "lon": -122.88881,
+   "type_code": 70,
+   "destination": "US RCH",
+   "updated": "2026-11-19 17:53:44.134747997 +0000 UTC"
   },
   {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.5856,
-   "lon": -122.76813,
+   "mmsi": 563338800,
+   "name": "ISHIZUCHI STAR",
+   "lat": 45.63159,
+   "lon": -122.69741,
    "sog_kn": 0,
-   "cog": 269.5,
-   "heading": 134,
-   "nav_status": 0,
-   "updated": "2026-11-19 17:52:05.324535217 +0000 UTC"
-  },
-  {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61246,
-   "lon": -122.64598,
-   "sog_kn": 0,
-   "cog": 55.7,
-   "heading": 121,
-   "nav_status": 0,
-   "updated": "2026-11-19 17:52:05.669273979 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.58945,
-   "lon": -122.76751,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-19 17:52:06.276294908 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 258.7,
-   "heading": 131,
-   "nav_status": 15,
-   "updated": "2026-11-19 17:52:08.238183676 +0000 UTC"
-  },
-  {
-   "mmsi": 367684980,
-   "name": "CHRISTIE",
-   "lat": 45.57445,
-   "lon": -122.74213,
-   "sog_kn": 9.2,
-   "cog": 306.7,
-   "heading": 309,
-   "nav_status": 0,
-   "updated": "2026-11-19 17:52:09.926395139 +0000 UTC"
+   "cog": 49.6,
+   "heading": 307,
+   "nav_status": 5,
+   "updated": "2026-11-19 17:53:49.509897722 +0000 UTC"
   }
  ]
 }
