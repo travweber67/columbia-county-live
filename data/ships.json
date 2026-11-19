@@ -1,38 +1,85 @@
 {
- "fetched_at": "2026-11-19T00:17:04Z",
+ "fetched_at": "2026-11-19T00:20:46Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64355,
-   "lon": -122.7529,
-   "sog_kn": 0,
-   "cog": 135,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65014,
+   "lon": -122.74767,
+   "type_code": 33,
+   "updated": "2026-11-19 00:21:30.561063373 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
+   "type_code": 0,
+   "updated": "2026-11-19 00:21:35.421286029 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09286,
+   "lon": -122.92345,
+   "sog_kn": 0.1,
+   "cog": 297.1,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-19 00:17:29.148973562 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-19 00:21:41.738345157 +0000 UTC"
   },
   {
-   "mmsi": 374590000,
-   "name": "BORACAY ISLAND",
-   "lat": 45.6911,
-   "lon": -122.77166,
-   "type_code": 70,
-   "destination": "MX ZLO >> US VAN",
-   "updated": "2026-11-19 00:17:29.575607511 +0000 UTC"
+   "mmsi": 563338800,
+   "name": "ISHIZUCHI STAR",
+   "lat": 46.26119,
+   "lon": -123.45583,
+   "sog_kn": 12,
+   "cog": 137.6,
+   "heading": 139,
+   "nav_status": 0,
+   "updated": "2026-11-19 00:21:42.42125967 +0000 UTC"
   },
   {
-   "mmsi": 355173000,
-   "name": "EVER BEST",
-   "lat": 45.63926,
-   "lon": -122.77781,
+   "mmsi": 367315790,
+   "name": "LORI B.",
+   "lat": 46.14363,
+   "lon": -123.33622,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-19 00:21:43.373965179 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35744,
    "sog_kn": 0,
-   "cog": 359.4,
-   "heading": 229,
+   "cog": 332.5,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-19 00:21:46.65657489 +0000 UTC"
+  },
+  {
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.63948,
+   "lon": -122.72418,
+   "type_code": 52,
+   "destination": "US^10M4>02MP",
+   "updated": "2026-11-19 00:21:53.226156633 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64791,
+   "lon": -122.741,
+   "sog_kn": 0,
+   "cog": 112.1,
+   "heading": 112,
    "nav_status": 5,
-   "updated": "2026-11-19 00:17:34.702672508 +0000 UTC"
+   "updated": "2026-11-19 00:21:57.439494148 +0000 UTC"
   }
  ]
 }
