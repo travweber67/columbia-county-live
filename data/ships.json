@@ -1,49 +1,6 @@
 {
- "fetched_at": "2026-11-19T13:23:03Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 46.15074,
-   "lon": -123.26804,
-   "sog_kn": 8.1,
-   "cog": 246.2,
-   "heading": 252,
-   "nav_status": 12,
-   "updated": "2026-11-19 13:23:26.949897937 +0000 UTC"
-  },
-  {
-   "mmsi": 355173000,
-   "name": "EVER BEST",
-   "lat": 45.63926,
-   "lon": -122.77782,
-   "type_code": 79,
-   "destination": "USPDX",
-   "updated": "2026-11-19 13:23:37.048354469 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.09276,
-   "lon": -122.92329,
-   "sog_kn": 0,
-   "cog": 158.9,
-   "heading": 128,
-   "nav_status": 0,
-   "updated": "2026-11-19 13:23:43.588825609 +0000 UTC"
-  },
-  {
-   "mmsi": 368201480,
-   "name": "KINANI H",
-   "lat": 45.91057,
-   "lon": -122.80556,
-   "sog_kn": 0,
-   "cog": 71.5,
-   "heading": 176,
-   "nav_status": 11,
-   "updated": "2026-11-19 13:23:46.184300203 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-19T13:28:04Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
