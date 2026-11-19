@@ -1,29 +1,91 @@
 {
- "fetched_at": "2026-11-19T09:32:47Z",
+ "fetched_at": "2026-11-19T09:37:47Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.09279,
-   "lon": -122.92331,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65009,
+   "lon": -122.74759,
    "sog_kn": 0,
-   "cog": 176.1,
-   "heading": 124,
-   "nav_status": 0,
-   "updated": "2026-11-19 09:33:13.79596428 +0000 UTC"
+   "cog": 186.9,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-19 09:37:59.081334444 +0000 UTC"
+  },
+  {
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 45.69106,
+   "lon": -122.7716,
+   "sog_kn": 0,
+   "cog": 338.1,
+   "heading": 189,
+   "nav_status": 1,
+   "updated": "2026-11-19 09:37:59.900642791 +0000 UTC"
   },
   {
    "mmsi": 368010320,
    "name": "RICHARD O",
-   "lat": 46.19604,
-   "lon": -123.42984,
-   "sog_kn": 4.8,
-   "cog": 186.7,
-   "heading": 186,
+   "lat": 46.18996,
+   "lon": -123.43076,
+   "sog_kn": 4.6,
+   "cog": 185.8,
+   "heading": 182,
    "nav_status": 0,
-   "updated": "2026-11-19 09:33:17.876254011 +0000 UTC"
+   "updated": "2026-11-19 09:38:02.253680064 +0000 UTC"
+  },
+  {
+   "mmsi": 538004110,
+   "name": "AENEAS",
+   "lat": 46.14957,
+   "lon": -123.38623,
+   "sog_kn": 12.3,
+   "cog": 293.1,
+   "heading": 298,
+   "nav_status": 0,
+   "updated": "2026-11-19 09:38:05.189038315 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19998,
+   "lon": -123.38536,
+   "sog_kn": 0,
+   "cog": 177.1,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-19 09:38:06.306367192 +0000 UTC"
+  },
+  {
+   "mmsi": 367315790,
+   "name": "LORI B.",
+   "lat": 46.16408,
+   "lon": -123.08133,
+   "sog_kn": 5.4,
+   "cog": 122.9,
+   "heading": 122,
+   "nav_status": 0,
+   "updated": "2026-11-19 09:38:06.722360831 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 46.09065,
+   "lon": -122.93206,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-19 09:38:18.503515024 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 45.63023,
+   "lon": -122.6955,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-19 09:38:22.773366919 +0000 UTC"
   }
  ]
 }
