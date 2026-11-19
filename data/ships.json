@@ -1,16 +1,78 @@
 {
- "fetched_at": "2026-11-19T09:20:53Z",
+ "fetched_at": "2026-11-19T09:27:46Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 1 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 563338800,
-   "name": "ISHIZUCHI STAR",
-   "lat": 45.6316,
-   "lon": -122.69741,
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64787,
+   "lon": -122.74099,
+   "sog_kn": 0,
+   "cog": 111.5,
+   "heading": 111,
+   "nav_status": 5,
+   "updated": "2026-11-19 09:28:01.799655457 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.64332,
+   "lon": -122.75278,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 09:28:10.120232475 +0000 UTC"
+  },
+  {
+   "mmsi": 367315790,
+   "name": "LORI B.",
+   "lat": 46.17159,
+   "lon": -123.1009,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-19 09:28:11.747059589 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58755,
+   "lon": -122.77068,
+   "sog_kn": 0,
+   "cog": 216,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 09:28:13.914012823 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59408,
+   "lon": -122.77217,
    "type_code": 70,
-   "destination": "US VAN",
-   "updated": "2026-11-19 09:21:45.294198566 +0000 UTC"
+   "destination": "NOT AVAILABLE",
+   "updated": "2026-11-19 09:28:15.234976255 +0000 UTC"
+  },
+  {
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.20618,
+   "lon": -123.38666,
+   "type_code": 30,
+   "destination": "",
+   "updated": "2026-11-19 09:28:16.664870421 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.61292,
+   "sog_kn": 0,
+   "cog": 169.2,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-19 09:28:17.925655323 +0000 UTC"
   }
  ]
 }
