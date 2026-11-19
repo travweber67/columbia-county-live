@@ -1,59 +1,71 @@
 {
- "fetched_at": "2026-11-19T17:03:23Z",
+ "fetched_at": "2026-11-19T17:08:23Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61291,
-   "type_code": 0,
-   "updated": "2026-11-19 17:03:35.282652904 +0000 UTC"
-  },
-  {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.58585,
-   "lon": -122.76848,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
    "sog_kn": 0,
-   "cog": 29.5,
+   "cog": 270.7,
    "heading": 134,
-   "nav_status": 0,
-   "updated": "2026-11-19 17:03:35.538859776 +0000 UTC"
+   "nav_status": 15,
+   "updated": "2026-11-19 17:08:45.126820963 +0000 UTC"
   },
   {
-   "mmsi": 367315790,
-   "name": "LORI B.",
-   "lat": 45.62795,
-   "lon": -122.6926,
-   "sog_kn": 3.7,
-   "cog": 127.1,
-   "heading": 124,
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.809,
+   "lon": -122.79185,
+   "type_code": 52,
+   "destination": "",
+   "updated": "2026-11-19 17:08:48.710785985 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.13938,
+   "lon": -123.38227,
+   "sog_kn": 7.7,
+   "cog": 146.8,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-19 17:03:46.288707329 +0000 UTC"
+   "updated": "2026-11-19 17:08:56.82239119 +0000 UTC"
   },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.09045,
-   "lon": -122.91615,
-   "sog_kn": 0.8,
-   "cog": 337.3,
-   "heading": 63,
+   "lat": 46.09154,
+   "lon": -122.91798,
+   "sog_kn": 0.5,
+   "cog": 130.3,
+   "heading": 313,
    "nav_status": 0,
-   "updated": "2026-11-19 17:03:47.26184256 +0000 UTC"
+   "updated": "2026-11-19 17:08:57.417658397 +0000 UTC"
   },
   {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.93291,
-   "lon": -122.80663,
-   "sog_kn": 6.1,
-   "cog": 185.1,
-   "heading": 186,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.0094,
+   "lon": -122.8569,
+   "sog_kn": 0,
+   "cog": 353.7,
+   "heading": 306,
+   "nav_status": 3,
+   "updated": "2026-11-19 17:08:58.013887581 +0000 UTC"
+  },
+  {
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 46.14893,
+   "lon": -123.38433,
+   "sog_kn": 11.5,
+   "cog": 113.1,
+   "heading": 106,
    "nav_status": 0,
-   "updated": "2026-11-19 17:03:57.214766306 +0000 UTC"
+   "updated": "2026-11-19 17:08:58.536263304 +0000 UTC"
   }
  ]
 }
