@@ -1,60 +1,113 @@
 {
- "fetched_at": "2026-11-19T07:52:38Z",
+ "fetched_at": "2026-11-19T07:57:38Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.19952,
-   "lon": -123.38502,
-   "type_code": 30,
-   "destination": "CATHLAMET WA",
-   "updated": "2026-11-19 07:52:56.748936698 +0000 UTC"
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.07452,
+   "lon": -122.89785,
+   "sog_kn": 5.5,
+   "cog": 138.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 07:57:48.757184963 +0000 UTC"
   },
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.64322,
-   "lon": -122.74423,
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 45.63023,
+   "lon": -122.69551,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-19 07:57:49.005285132 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09279,
+   "lon": -122.92331,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-19 07:57:49.782463323 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.65304,
+   "lon": -122.76473,
+   "sog_kn": 7.6,
+   "cog": 30.9,
+   "heading": 27,
+   "nav_status": 12,
+   "updated": "2026-11-19 07:57:55.671043886 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20001,
+   "lon": -123.38538,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-19 07:57:56.31079166 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64789,
+   "lon": -122.74101,
    "sog_kn": 0,
-   "cog": 267.8,
-   "heading": 290,
+   "cog": 112,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-19 07:57:57.275380168 +0000 UTC"
+  },
+  {
+   "mmsi": 538004110,
+   "name": "AENEAS",
+   "lat": 46.10009,
+   "lon": -122.94849,
+   "sog_kn": 9.7,
+   "cog": 296,
+   "heading": 294,
    "nav_status": 0,
-   "updated": "2026-11-19 07:53:07.499069049 +0000 UTC"
+   "updated": "2026-11-19 07:58:06.339437374 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09308,
+   "lon": -122.92361,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 309,
+   "nav_status": 3,
+   "updated": "2026-11-19 07:58:07.702845835 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08982,
+   "lon": -122.92904,
+   "sog_kn": 0,
+   "cog": 262.9,
+   "heading": 97,
+   "nav_status": 0,
+   "updated": "2026-11-19 07:58:13.934967542 +0000 UTC",
+   "type_code": 52,
+   "destination": "CSR OPS"
   },
   {
    "mmsi": 367653630,
    "name": "OSCAR B",
-   "lat": 46.15344,
-   "lon": -123.37711,
+   "lat": 46.15342,
+   "lon": -123.37712,
    "sog_kn": 0,
    "cog": 0,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-19 07:53:08.447466129 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09305,
-   "lon": -122.92312,
-   "sog_kn": 0.2,
-   "cog": 284,
-   "heading": 131,
-   "nav_status": 0,
-   "updated": "2026-11-19 07:53:11.323708585 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.65665,
-   "lon": -122.75731,
-   "sog_kn": 1.6,
-   "cog": 120.7,
-   "heading": 318,
-   "nav_status": 0,
-   "updated": "2026-11-19 07:53:13.702441484 +0000 UTC"
+   "updated": "2026-11-19 07:58:09.607571984 +0000 UTC"
   }
  ]
 }
