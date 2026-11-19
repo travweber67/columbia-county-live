@@ -1,71 +1,40 @@
 {
- "fetched_at": "2026-11-19T20:43:39Z",
+ "fetched_at": "2026-11-19T20:48:39Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368136580,
-   "name": "ORIN L GREEN",
-   "lat": 46.09299,
-   "lon": -122.92369,
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.6111,
+   "lon": -122.63453,
+   "sog_kn": 0,
+   "cog": 101.4,
+   "heading": 2,
+   "nav_status": 0,
+   "updated": "2026-11-19 20:48:54.571300546 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37717,
+   "sog_kn": 0,
+   "cog": 171.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 20:49:06.949817761 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.00895,
+   "lon": -122.84827,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-19 20:43:46.347264378 +0000 UTC"
-  },
-  {
-   "mmsi": 366888830,
-   "name": "KAHU",
-   "lat": 45.61167,
-   "lon": -122.64422,
-   "sog_kn": 0,
-   "cog": 287.7,
-   "heading": 117,
-   "nav_status": 5,
-   "updated": "2026-11-19 20:43:48.225540252 +0000 UTC"
-  },
-  {
-   "mmsi": 356334000,
-   "name": "LAUREL ISLAND",
-   "lat": 45.68328,
-   "lon": -122.77081,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-19 20:43:50.95605841 +0000 UTC"
-  },
-  {
-   "mmsi": 374590000,
-   "name": "BORACAY ISLAND",
-   "lat": 45.68828,
-   "lon": -122.77085,
-   "sog_kn": 0,
-   "cog": 43,
-   "heading": 327,
-   "nav_status": 1,
-   "updated": "2026-11-19 20:44:06.571293829 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.09347,
-   "lon": -122.93277,
-   "sog_kn": 28.8,
-   "cog": 275.9,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-19 20:44:06.741269607 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08194,
-   "lon": -122.90499,
-   "sog_kn": 6.8,
-   "cog": 308,
-   "heading": 308,
-   "nav_status": 0,
-   "updated": "2026-11-19 20:44:10.501134145 +0000 UTC"
+   "updated": "2026-11-19 20:49:19.746047412 +0000 UTC"
   }
  ]
 }
