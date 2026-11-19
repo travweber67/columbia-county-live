@@ -1,6 +1,57 @@
 {
- "fetched_at": "2026-11-19T13:18:03Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-19T13:20:56Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20001,
+   "lon": -123.38551,
+   "sog_kn": 0,
+   "cog": 271.9,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-19 13:21:32.218265738 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
+   "type_code": 0,
+   "updated": "2026-11-19 13:21:35.419506688 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08985,
+   "lon": -122.92904,
+   "sog_kn": 0,
+   "cog": 262.9,
+   "heading": 99,
+   "nav_status": 0,
+   "updated": "2026-11-19 13:21:38.853746257 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.38544,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-19 13:21:55.219990572 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00886,
+   "lon": -122.84882,
+   "type_code": 50,
+   "destination": "--",
+   "updated": "2026-11-19 13:21:55.980714592 +0000 UTC"
+  }
+ ]
 }
