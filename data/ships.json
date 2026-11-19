@@ -1,62 +1,60 @@
 {
- "fetched_at": "2026-11-19T21:23:42Z",
+ "fetched_at": "2026-11-19T21:28:43Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.61124,
+   "lon": -122.6345,
+   "type_code": 52,
+   "destination": "US^02AK>0UV5",
+   "updated": "2026-11-19 21:28:57.30448793 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15705,
+   "lon": -123.40234,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 135,
+   "nav_status": 0,
+   "updated": "2026-11-19 21:28:59.610429935 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 45.63014,
+   "lon": -122.69531,
+   "sog_kn": 0,
+   "cog": 103.4,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-19 21:28:59.784045522 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.64326,
+   "lon": -122.75281,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 21:29:12.581857891 +0000 UTC"
+  },
+  {
    "mmsi": 367604190,
    "name": "RENE",
-   "lat": 45.79316,
-   "lon": -122.84313,
+   "lat": 45.79315,
+   "lon": -122.84312,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-19 21:23:59.40787049 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00898,
-   "lon": -122.8484,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-19 21:24:10.669662327 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.09136,
-   "lon": -122.91957,
-   "sog_kn": 7.7,
-   "cog": 100,
-   "heading": 84,
-   "nav_status": 0,
-   "updated": "2026-11-19 21:24:11.095564482 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.10788,
-   "lon": -122.95898,
-   "sog_kn": 0,
-   "cog": 285,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-19 21:24:15.521724227 +0000 UTC"
-  },
-  {
-   "mmsi": 368136580,
-   "name": "ORIN L GREEN",
-   "lat": 46.09298,
-   "lon": -122.92366,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-19 21:24:22.621269204 +0000 UTC"
+   "updated": "2026-11-19 21:29:17.702014107 +0000 UTC"
   }
  ]
 }
