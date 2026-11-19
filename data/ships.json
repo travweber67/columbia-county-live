@@ -1,29 +1,49 @@
 {
- "fetched_at": "2026-11-19T06:32:33Z",
+ "fetched_at": "2026-11-19T06:37:33Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.10829,
-   "lon": -122.9589,
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.6433,
+   "lon": -122.75281,
    "sog_kn": 0,
-   "cog": 216.6,
+   "cog": 360,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-19 06:33:09.370290806 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-19 06:37:52.599937321 +0000 UTC",
+   "type_code": 31,
+   "destination": "HARBOROPPS-"
   },
   {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64569,
-   "lon": -122.73487,
-   "sog_kn": 0.1,
-   "cog": 0,
-   "heading": 113,
-   "nav_status": 5,
-   "updated": "2026-11-19 06:33:10.481059252 +0000 UTC"
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.68593,
+   "lon": -122.77219,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-19 06:37:50.628464719 +0000 UTC"
+  },
+  {
+   "mmsi": 366888830,
+   "name": "KAHU",
+   "lat": 45.61167,
+   "lon": -122.64422,
+   "type_code": 52,
+   "destination": "PDX",
+   "updated": "2026-11-19 06:37:51.309794558 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.7823,
+   "lon": -122.77663,
+   "sog_kn": 5.7,
+   "cog": 153.4,
+   "heading": 153,
+   "nav_status": 12,
+   "updated": "2026-11-19 06:37:58.184262958 +0000 UTC"
   }
  ]
 }
