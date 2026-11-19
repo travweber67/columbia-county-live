@@ -1,49 +1,6 @@
 {
- "fetched_at": "2026-11-19T19:48:35Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367047240,
-   "name": "DEFIANCE",
-   "lat": 45.64702,
-   "lon": -122.74094,
-   "sog_kn": 0.1,
-   "cog": 290.7,
-   "heading": 20,
-   "nav_status": 0,
-   "updated": "2026-11-19 19:48:55.893457628 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.59883,
-   "lon": -122.77959,
-   "sog_kn": 4.3,
-   "cog": 158.8,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-19 19:48:57.272941764 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.00759,
-   "lon": -122.85608,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-19 19:49:10.231217726 +0000 UTC"
-  },
-  {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.64541,
-   "lon": -122.77238,
-   "sog_kn": 6.5,
-   "cog": 221.4,
-   "heading": 226,
-   "nav_status": 0,
-   "updated": "2026-11-19 19:49:17.143969702 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-19T19:51:02Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
