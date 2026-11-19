@@ -1,60 +1,71 @@
 {
- "fetched_at": "2026-11-19T02:07:12Z",
+ "fetched_at": "2026-11-19T02:12:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 352006113,
-   "name": "BELFORTUNE",
-   "lat": 46.09907,
-   "lon": -122.93941,
+   "mmsi": 368201480,
+   "name": "KINANI H",
+   "lat": 45.91056,
+   "lon": -122.80557,
    "sog_kn": 0,
-   "cog": 346.6,
-   "heading": 109,
-   "nav_status": 5,
-   "updated": "2026-11-19 02:07:26.79080699 +0000 UTC"
+   "cog": 71.5,
+   "heading": 176,
+   "nav_status": 11,
+   "updated": "2026-11-19 02:13:27.358994194 +0000 UTC"
   },
   {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09778,
-   "lon": -122.93441,
-   "sog_kn": 0,
-   "cog": 8.1,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-19 02:07:34.466927794 +0000 UTC"
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.64831,
+   "lon": -122.74243,
+   "sog_kn": 0.1,
+   "cog": 70,
+   "heading": 109,
+   "nav_status": 12,
+   "updated": "2026-11-19 02:13:29.086456536 +0000 UTC"
   },
   {
    "mmsi": 440086000,
    "name": "SM KWANGYANG",
-   "lat": 45.63982,
+   "lat": 45.63983,
    "lon": -122.7471,
    "type_code": 74,
    "destination": "USPDX",
-   "updated": "2026-11-19 02:07:35.469592487 +0000 UTC"
+   "updated": "2026-11-19 02:13:35.510330458 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 46.09888,
+   "lon": -122.93952,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-19 02:13:37.990478773 +0000 UTC"
   },
   {
    "mmsi": 366888830,
    "name": "KAHU",
-   "lat": 45.61165,
-   "lon": -122.64422,
+   "lat": 45.61167,
+   "lon": -122.64423,
    "sog_kn": 0,
-   "cog": 37.1,
-   "heading": 117,
+   "cog": 269.5,
+   "heading": 118,
    "nav_status": 5,
-   "updated": "2026-11-19 02:07:37.454184181 +0000 UTC"
+   "updated": "2026-11-19 02:13:51.468483544 +0000 UTC",
+   "type_code": 52,
+   "destination": "PDX"
   },
   {
    "mmsi": 367602150,
    "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.61291,
+   "lat": 45.61109,
+   "lon": -122.6129,
    "sog_kn": 0,
-   "cog": 40.9,
-   "heading": 133,
+   "cog": 38.8,
+   "heading": 134,
    "nav_status": 15,
-   "updated": "2026-11-19 02:07:37.88061293 +0000 UTC"
+   "updated": "2026-11-19 02:13:47.468221621 +0000 UTC"
   },
   {
    "mmsi": 356334000,
@@ -63,18 +74,27 @@
    "lon": -122.77225,
    "type_code": 70,
    "destination": "US PDX",
-   "updated": "2026-11-19 02:07:51.363374159 +0000 UTC"
+   "updated": "2026-11-19 02:13:50.615186839 +0000 UTC"
   },
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.99093,
-   "lon": -122.84097,
-   "sog_kn": 0.4,
-   "cog": 66.6,
-   "heading": 170,
-   "nav_status": 12,
-   "updated": "2026-11-19 02:07:53.241165939 +0000 UTC"
+   "mmsi": 563338800,
+   "name": "ISHIZUCHI STAR",
+   "lat": 46.16748,
+   "lon": -123.08755,
+   "sog_kn": 11.9,
+   "cog": 126.8,
+   "heading": 127,
+   "nav_status": 0,
+   "updated": "2026-11-19 02:13:52.178907168 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.64332,
+   "lon": -122.75278,
+   "type_code": 31,
+   "destination": "HARBOROPPS-",
+   "updated": "2026-11-19 02:13:53.348322736 +0000 UTC"
   }
  ]
 }
