@@ -1,25 +1,62 @@
 {
- "fetched_at": "2026-11-19T18:18:28Z",
+ "fetched_at": "2026-11-19T18:21:01Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368201480,
-   "name": "KINANI H",
-   "lat": 45.91058,
-   "lon": -122.8056,
-   "type_code": 31,
-   "destination": "WOODLAND WA",
-   "updated": "2026-11-19 18:18:42.342692438 +0000 UTC"
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 211.7,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-19 18:21:49.307820921 +0000 UTC"
   },
   {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 45.64353,
-   "lon": -122.75244,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-19 18:19:09.308542538 +0000 UTC"
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20001,
+   "lon": -123.3854,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-19 18:22:15.768461577 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.14841,
+   "lon": -123.38202,
+   "sog_kn": 8.7,
+   "cog": 35,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 18:21:57.186415486 +0000 UTC"
+  },
+  {
+   "mmsi": 563338800,
+   "name": "ISHIZUCHI STAR",
+   "lat": 45.6316,
+   "lon": -122.69742,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-19 18:22:12.000237106 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00881,
+   "lon": -122.84882,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 18:22:13.546568853 +0000 UTC"
   }
  ]
 }
