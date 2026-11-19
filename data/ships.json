@@ -1,49 +1,100 @@
 {
- "fetched_at": "2026-11-19T20:51:03Z",
+ "fetched_at": "2026-11-19T20:53:40Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58081,
-   "lon": -122.76004,
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09043,
+   "lon": -122.91715,
+   "sog_kn": 1.6,
+   "cog": 281.3,
+   "heading": 6,
+   "nav_status": 0,
+   "updated": "2026-11-19 20:53:59.556629249 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64787,
+   "lon": -122.74099,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-19 20:54:02.26401013 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
    "sog_kn": 0,
-   "cog": 60.9,
-   "heading": 121,
+   "cog": 185.6,
+   "heading": 136,
+   "nav_status": 15,
+   "updated": "2026-11-19 20:54:09.282907918 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64569,
+   "lon": -122.73487,
+   "sog_kn": 0.1,
+   "cog": 0,
+   "heading": 112,
    "nav_status": 5,
-   "updated": "2026-11-19 20:51:46.535480229 +0000 UTC"
+   "updated": "2026-11-19 20:54:10.732917548 +0000 UTC"
   },
   {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61291,
-   "lon": -122.64708,
-   "sog_kn": 2.4,
-   "cog": 103.4,
-   "heading": 120,
-   "nav_status": 0,
-   "updated": "2026-11-19 20:51:54.628903869 +0000 UTC"
-  },
-  {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.62274,
-   "lon": -122.78837,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.26557,
+   "lon": -123.45838,
    "sog_kn": 0,
-   "cog": 38.6,
-   "heading": 3,
-   "nav_status": 0,
-   "updated": "2026-11-19 20:51:57.955475022 +0000 UTC"
+   "cog": 351.5,
+   "heading": 326,
+   "nav_status": 3,
+   "updated": "2026-11-19 20:54:14.146277717 +0000 UTC"
   },
   {
-   "mmsi": 311001605,
-   "name": "SAGA DISCOVERY",
-   "lat": 45.63751,
-   "lon": -122.70916,
-   "type_code": 79,
-   "destination": "US VAN",
-   "updated": "2026-11-19 20:52:15.395031187 +0000 UTC"
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.70034,
+   "lon": -122.77151,
+   "type_code": 52,
+   "destination": "US^02NV>?? ???",
+   "updated": "2026-11-19 20:54:14.744765214 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58729,
+   "lon": -122.77042,
+   "type_code": 31,
+   "destination": "US^02SY>0UJ9",
+   "updated": "2026-11-19 20:54:15.174817575 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.38542,
+   "sog_kn": 0,
+   "cog": 182.3,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-19 20:54:15.753804544 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.9875,
+   "lon": -122.83749,
+   "sog_kn": 0,
+   "cog": 353.4,
+   "heading": 62,
+   "nav_status": 5,
+   "updated": "2026-11-19 20:54:21.2818747 +0000 UTC"
   }
  ]
 }
