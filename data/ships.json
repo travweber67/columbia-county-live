@@ -1,60 +1,49 @@
 {
- "fetched_at": "2026-11-19T21:28:43Z",
+ "fetched_at": "2026-11-19T21:33:44Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367425870,
-   "name": "HUSKY",
-   "lat": 45.61124,
-   "lon": -122.6345,
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58485,
+   "lon": -122.7664,
+   "sog_kn": 0,
+   "cog": 48.7,
+   "heading": 314,
+   "nav_status": 0,
+   "updated": "2026-11-19 21:33:55.546473406 +0000 UTC"
+  },
+  {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.62272,
+   "lon": -122.7884,
+   "sog_kn": 0,
+   "cog": 38.6,
+   "heading": 4,
+   "nav_status": 0,
+   "updated": "2026-11-19 21:33:56.937284734 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08991,
+   "lon": -122.92046,
+   "sog_kn": 0.7,
+   "cog": 141,
+   "heading": 272,
+   "nav_status": 0,
+   "updated": "2026-11-19 21:34:24.900492316 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.26558,
+   "lon": -123.45838,
    "type_code": 52,
-   "destination": "US^02AK>0UV5",
-   "updated": "2026-11-19 21:28:57.30448793 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15705,
-   "lon": -123.40234,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 135,
-   "nav_status": 0,
-   "updated": "2026-11-19 21:28:59.610429935 +0000 UTC"
-  },
-  {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 45.63014,
-   "lon": -122.69531,
-   "sog_kn": 0,
-   "cog": 103.4,
-   "heading": 129,
-   "nav_status": 5,
-   "updated": "2026-11-19 21:28:59.784045522 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 45.64326,
-   "lon": -122.75281,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-19 21:29:12.581857891 +0000 UTC"
-  },
-  {
-   "mmsi": 367604190,
-   "name": "RENE",
-   "lat": 45.79315,
-   "lon": -122.84312,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-19 21:29:17.702014107 +0000 UTC"
+   "destination": "LONGVIEW",
+   "updated": "2026-11-19 21:34:25.265497433 +0000 UTC"
   }
  ]
 }
