@@ -1,62 +1,49 @@
 {
- "fetched_at": "2026-11-19T19:08:32Z",
+ "fetched_at": "2026-11-19T19:13:33Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08475,
-   "lon": -122.90322,
-   "sog_kn": 0.5,
-   "cog": 133.3,
-   "heading": 130,
+   "mmsi": 440086000,
+   "name": "SM KWANGYANG",
+   "lat": 45.63982,
+   "lon": -122.7471,
+   "type_code": 74,
+   "destination": "USPDX",
+   "updated": "2026-11-19 19:13:36.380213619 +0000 UTC"
+  },
+  {
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 46.03185,
+   "lon": -122.87766,
+   "sog_kn": 13,
+   "cog": 162,
+   "heading": 152,
    "nav_status": 0,
-   "updated": "2026-11-19 19:08:50.173746507 +0000 UTC"
+   "updated": "2026-11-19 19:13:35.528933092 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.00904,
+   "lon": -122.84819,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 19:13:41.335255896 +0000 UTC"
   },
   {
    "mmsi": 338616000,
    "name": "DUBLIN SEA",
-   "lat": 45.67296,
-   "lon": -122.77271,
-   "sog_kn": 9.4,
-   "cog": 163.5,
+   "lat": 45.66092,
+   "lon": -122.76654,
+   "sog_kn": 9,
+   "cog": 160.2,
    "heading": 160,
    "nav_status": 12,
-   "updated": "2026-11-19 19:08:54.780269722 +0000 UTC"
-  },
-  {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.5856,
-   "lon": -122.76812,
-   "sog_kn": 0,
-   "cog": 239.2,
-   "heading": 134,
-   "nav_status": 0,
-   "updated": "2026-11-19 19:08:55.63375029 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08403,
-   "lon": -122.90144,
-   "sog_kn": 0.5,
-   "cog": 76.9,
-   "heading": 333,
-   "nav_status": 0,
-   "updated": "2026-11-19 19:09:13.814486793 +0000 UTC"
-  },
-  {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.67542,
-   "lon": -122.7697,
-   "sog_kn": 6.1,
-   "cog": 345.1,
-   "heading": 344,
-   "nav_status": 0,
-   "updated": "2026-11-19 19:09:14.237505079 +0000 UTC"
+   "updated": "2026-11-19 19:13:54.386277463 +0000 UTC"
   }
  ]
 }
