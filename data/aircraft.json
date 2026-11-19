@@ -1,67 +1,57 @@
 {
- "fetched_at": "2026-11-19T16:03:18Z",
+ "fetched_at": "2026-11-19T16:08:18Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
-   "hex": "a12732",
-   "callsign": "UAL499",
-   "type": "B38M",
-   "alt_ft": 37000,
-   "gs_kn": 473.1,
-   "track": 178.79,
-   "lat": 45.647919,
-   "lon": -123.362866
+   "hex": "a12bc1",
+   "callsign": "N175AA",
+   "type": "C25B",
+   "alt_ft": 17275,
+   "gs_kn": 289.9,
+   "track": 6.54,
+   "lat": 45.813309,
+   "lon": -123.112391
   },
   {
    "hex": "a79386",
    "callsign": "ASA2684",
    "type": "A333",
-   "alt_ft": 3625,
-   "gs_kn": 201.7,
-   "track": 296.82,
-   "lat": 45.730218,
-   "lon": -122.706161
-  },
-  {
-   "hex": "a0d5d6",
-   "callsign": "FDX3604",
-   "type": "B763",
-   "alt_ft": "ground",
-   "gs_kn": 0.0,
-   "track": null,
-   "lat": 45.592936,
-   "lon": -122.621841
-  },
-  {
-   "hex": "a83569",
-   "callsign": "QXE2476",
-   "type": "E75L",
-   "alt_ft": "ground",
-   "gs_kn": 0.0,
-   "track": null,
-   "lat": 45.595963,
-   "lon": -122.620652
+   "alt_ft": 1700,
+   "gs_kn": 161.1,
+   "track": 118.95,
+   "lat": 45.634735,
+   "lon": -122.723582
   },
   {
    "hex": "a4b7d3",
    "callsign": "AAL2384",
    "type": "A21N",
    "alt_ft": "ground",
-   "gs_kn": 0.0,
+   "gs_kn": 0.9,
    "track": null,
-   "lat": 45.596241,
-   "lon": -122.619438
+   "lat": 45.595001,
+   "lon": -122.621038
   },
   {
    "hex": "a1d433",
    "callsign": "ASA927",
    "type": "A21N",
    "alt_ft": "ground",
+   "gs_kn": 4.2,
+   "track": null,
+   "lat": 45.596317,
+   "lon": -122.620083
+  },
+  {
+   "hex": "ad4744",
+   "callsign": "ASA294",
+   "type": "B39M",
+   "alt_ft": "ground",
    "gs_kn": 0.2,
    "track": null,
-   "lat": 45.595601,
-   "lon": -122.617825
+   "lat": 45.595928,
+   "lon": -122.618643
   }
  ]
 }
