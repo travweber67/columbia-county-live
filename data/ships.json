@@ -1,62 +1,85 @@
 {
- "fetched_at": "2026-11-19T00:57:07Z",
+ "fetched_at": "2026-11-19T01:02:07Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35744,
-   "sog_kn": 0,
-   "cog": 213.7,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-19 00:57:26.678723534 +0000 UTC"
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64567,
+   "lon": -122.73486,
+   "type_code": 79,
+   "updated": "2026-11-19 01:02:33.452961664 +0000 UTC"
   },
   {
-   "mmsi": 367315790,
-   "name": "LORI B.",
-   "lat": 46.13804,
-   "lon": -123.3813,
-   "sog_kn": 0.1,
-   "cog": 79.4,
-   "heading": 126,
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.63869,
+   "lon": -122.72674,
+   "sog_kn": 7.6,
+   "cog": 115.4,
+   "heading": 114,
    "nav_status": 0,
-   "updated": "2026-11-19 00:57:28.65502803 +0000 UTC"
+   "updated": "2026-11-19 01:02:35.584865221 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.0931,
+   "lon": -122.92361,
+   "type_code": 33,
+   "updated": "2026-11-19 01:02:37.324643447 +0000 UTC"
   },
   {
    "mmsi": 367425950,
    "name": "SEA HAWK",
-   "lat": 45.65007,
-   "lon": -122.74766,
+   "lat": 45.65013,
+   "lon": -122.74763,
    "sog_kn": 0,
-   "cog": 255.3,
+   "cog": 216.5,
    "heading": 511,
    "nav_status": 3,
-   "updated": "2026-11-19 00:57:29.752310309 +0000 UTC"
+   "updated": "2026-11-19 01:02:38.760348382 +0000 UTC"
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.2,
-   "lon": -123.38554,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09279,
+   "lon": -122.9233,
    "sog_kn": 0,
-   "cog": 197,
-   "heading": 511,
+   "cog": 316.6,
+   "heading": 128,
+   "nav_status": 0,
+   "updated": "2026-11-19 01:02:43.945782259 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 55,
+   "heading": 134,
    "nav_status": 15,
-   "updated": "2026-11-19 00:57:30.774803909 +0000 UTC"
+   "updated": "2026-11-19 01:02:49.029977018 +0000 UTC"
   },
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.21253,
-   "lon": -123.42658,
-   "sog_kn": 0,
-   "cog": 204.3,
-   "heading": 187,
-   "nav_status": 3,
-   "updated": "2026-11-19 00:57:39.136253687 +0000 UTC"
+   "mmsi": 367315790,
+   "name": "LORI B.",
+   "lat": 46.13795,
+   "lon": -123.38068,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-19 01:02:50.773006015 +0000 UTC"
+  },
+  {
+   "mmsi": 311001605,
+   "name": "SAGA DISCOVERY",
+   "lat": 45.63754,
+   "lon": -122.70912,
+   "type_code": 79,
+   "destination": "US VAN",
+   "updated": "2026-11-19 01:02:53.162894011 +0000 UTC"
   }
  ]
 }
