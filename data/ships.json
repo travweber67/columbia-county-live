@@ -1,50 +1,82 @@
 {
- "fetched_at": "2026-11-19T08:12:39Z",
+ "fetched_at": "2026-11-19T08:17:40Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.20758,
+   "lon": -123.42689,
+   "type_code": 33,
+   "destination": "US LOG",
+   "updated": "2026-11-19 08:17:54.921284991 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.01675,
+   "lon": -122.86046,
+   "sog_kn": 1.1,
+   "cog": 169.6,
+   "heading": 156,
+   "nav_status": 3,
+   "updated": "2026-11-19 08:17:59.210391764 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09285,
+   "lon": -122.92344,
+   "sog_kn": 0.1,
+   "cog": 347.3,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 08:18:00.411169238 +0000 UTC"
+  },
   {
    "mmsi": 367061930,
    "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.38549,
+   "lat": 46.19998,
+   "lon": -123.38553,
    "sog_kn": 0,
-   "cog": 3.6,
+   "cog": 21.2,
    "heading": 511,
    "nav_status": 15,
-   "updated": "2026-11-19 08:13:01.743613217 +0000 UTC",
-   "type_code": 30,
-   "destination": "FISHMN TMNL"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09309,
-   "lon": -122.92364,
-   "type_code": 33,
-   "updated": "2026-11-19 08:12:52.098322818 +0000 UTC"
-  },
-  {
-   "mmsi": 367315790,
-   "name": "LORI B.",
-   "lat": 46.15936,
-   "lon": -123.24452,
-   "sog_kn": 5.3,
-   "cog": 50.2,
-   "heading": 50,
-   "nav_status": 0,
-   "updated": "2026-11-19 08:13:06.433757425 +0000 UTC"
+   "updated": "2026-11-19 08:18:01.247813407 +0000 UTC"
   },
   {
    "mmsi": 367384780,
    "name": "CAROLYN DOROTHY",
-   "lat": 46.08984,
-   "lon": -122.92904,
+   "lat": 46.08985,
+   "lon": -122.929,
    "sog_kn": 0,
    "cog": 262.9,
-   "heading": 97,
+   "heading": 98,
    "nav_status": 0,
-   "updated": "2026-11-19 08:13:10.747665142 +0000 UTC"
+   "updated": "2026-11-19 08:18:17.486287046 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61289,
+   "sog_kn": 0,
+   "cog": 355.7,
+   "heading": 136,
+   "nav_status": 15,
+   "updated": "2026-11-19 08:18:18.245323109 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.62986,
+   "lon": -122.78888,
+   "sog_kn": 6.1,
+   "cog": 193.1,
+   "heading": 191,
+   "nav_status": 12,
+   "updated": "2026-11-19 08:18:18.57746352 +0000 UTC"
   }
  ]
 }
