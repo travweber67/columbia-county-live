@@ -1,29 +1,69 @@
 {
- "fetched_at": "2026-11-19T04:57:26Z",
+ "fetched_at": "2026-11-19T05:02:27Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.65195,
+   "lon": -122.75778,
+   "sog_kn": 7.6,
+   "cog": 130.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 05:02:33.972866541 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64539,
+   "lon": -122.73504,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-19 05:02:35.354171637 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.14366,
+   "lon": -123.32072,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-19 05:02:35.839507687 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.62884,
+   "lon": -122.69205,
+   "sog_kn": 0,
+   "cog": 303.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 05:02:38.414799636 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59405,
+   "lon": -122.77213,
+   "sog_kn": 0,
+   "cog": 346.3,
+   "heading": 149,
+   "nav_status": 5,
+   "updated": "2026-11-19 05:02:41.486727352 +0000 UTC"
+  },
   {
    "mmsi": 367602150,
    "name": "LUNA",
    "lat": 45.61109,
-   "lon": -122.61289,
+   "lon": -122.6129,
    "sog_kn": 0,
-   "cog": 249.3,
-   "heading": 134,
+   "cog": 268.5,
+   "heading": 132,
    "nav_status": 15,
-   "updated": "2026-11-19 04:57:37.699611196 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.80672,
-   "lon": -122.79075,
-   "sog_kn": 6.1,
-   "cog": 165.9,
-   "heading": 163,
-   "nav_status": 12,
-   "updated": "2026-11-19 04:57:55.580835281 +0000 UTC"
+   "updated": "2026-11-19 05:03:09.130062958 +0000 UTC"
   }
  ]
 }
