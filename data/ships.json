@@ -1,71 +1,56 @@
 {
- "fetched_at": "2026-11-19T08:47:43Z",
+ "fetched_at": "2026-11-19T08:50:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58081,
-   "lon": -122.76006,
-   "sog_kn": 0,
-   "cog": 51.2,
-   "heading": 122,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.6502,
+   "lon": -122.74762,
+   "type_code": 33,
+   "updated": "2026-11-19 08:51:31.97002641 +0000 UTC"
+  },
+  {
+   "mmsi": 538004110,
+   "name": "AENEAS",
+   "lat": 46.18921,
+   "lon": -123.16236,
+   "sog_kn": 12.4,
+   "cog": 257.5,
+   "heading": 255,
    "nav_status": 0,
-   "updated": "2026-11-19 08:48:05.721479489 +0000 UTC"
+   "updated": "2026-11-19 08:51:35.301944384 +0000 UTC"
   },
   {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64568,
-   "lon": -122.73486,
-   "sog_kn": 0.2,
-   "cog": 339.6,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-19 08:48:10.922576378 +0000 UTC"
-  },
-  {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 46.25099,
-   "lon": -123.44351,
-   "type_code": 31,
-   "destination": "PORTLAND OR ASHGROVE",
-   "updated": "2026-11-19 08:48:15.344849863 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08984,
-   "lon": -122.92902,
+   "mmsi": 311001605,
+   "name": "SAGA DISCOVERY",
+   "lat": 45.63741,
+   "lon": -122.7091,
    "sog_kn": 0,
-   "cog": 262.9,
-   "heading": 98,
+   "cog": 309.5,
+   "heading": 303,
+   "nav_status": 5,
+   "updated": "2026-11-19 08:51:46.443358518 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37712,
+   "type_code": 99,
+   "updated": "2026-11-19 08:51:51.344473604 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58751,
+   "lon": -122.77069,
+   "sog_kn": 0,
+   "cog": 316.4,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-19 08:48:18.69048732 +0000 UTC"
-  },
-  {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58733,
-   "lon": -122.77045,
-   "sog_kn": 0,
-   "cog": 351.1,
-   "heading": 137,
-   "nav_status": 5,
-   "updated": "2026-11-19 08:48:19.628928943 +0000 UTC"
-  },
-  {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.612,
-   "lon": -122.64535,
-   "sog_kn": 0,
-   "cog": 303.8,
-   "heading": 296,
-   "nav_status": 5,
-   "updated": "2026-11-19 08:48:20.389993074 +0000 UTC"
+   "updated": "2026-11-19 08:51:53.557369012 +0000 UTC"
   }
  ]
 }
