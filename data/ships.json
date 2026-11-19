@@ -1,38 +1,71 @@
 {
- "fetched_at": "2026-11-18T23:57:03Z",
+ "fetched_at": "2026-11-19T00:02:03Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 46.14658,
-   "lon": -123.03699,
-   "type_code": 57,
-   "destination": "VANCOUVER",
-   "updated": "2026-11-18 23:57:23.392702667 +0000 UTC"
-  },
-  {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.5842,
-   "lon": -122.76615,
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00882,
+   "lon": -122.84884,
    "sog_kn": 0,
-   "cog": 258,
-   "heading": 146,
-   "nav_status": 5,
-   "updated": "2026-11-18 23:57:30.644574159 +0000 UTC"
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 00:02:23.339727231 +0000 UTC"
   },
   {
-   "mmsi": 311001605,
-   "name": "SAGA DISCOVERY",
-   "lat": 45.65538,
-   "lon": -122.76238,
-   "sog_kn": 9.1,
-   "cog": 148.5,
-   "heading": 141,
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.0905,
+   "lon": -122.93236,
+   "sog_kn": 0,
+   "cog": 294.3,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-19 00:02:23.767414006 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09644,
+   "lon": -122.93253,
+   "sog_kn": 8.2,
+   "cog": 102.7,
+   "heading": 100,
+   "nav_status": 3,
+   "updated": "2026-11-19 00:02:24.366272973 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15707,
+   "lon": -123.40234,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 133,
    "nav_status": 0,
-   "updated": "2026-11-18 23:57:40.438805372 +0000 UTC"
+   "updated": "2026-11-19 00:02:34.006158246 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.61228,
+   "lon": -122.63434,
+   "sog_kn": 0,
+   "cog": 230.1,
+   "heading": 359,
+   "nav_status": 0,
+   "updated": "2026-11-19 00:02:40.146911462 +0000 UTC"
+  },
+  {
+   "mmsi": 367315790,
+   "name": "LORI B.",
+   "lat": 46.14882,
+   "lon": -123.27319,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-19 00:02:49.958342059 +0000 UTC"
   }
  ]
 }
