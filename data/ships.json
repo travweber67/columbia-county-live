@@ -1,82 +1,89 @@
 {
- "fetched_at": "2026-11-19T01:37:10Z",
+ "fetched_at": "2026-11-19T01:42:11Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09305,
-   "lon": -122.92314,
-   "sog_kn": 0.1,
-   "cog": 314.3,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09307,
+   "lon": -122.92362,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 306,
+   "nav_status": 3,
+   "updated": "2026-11-19 01:42:26.890324477 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.612,
+   "lon": -122.64535,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-19 01:42:27.436085239 +0000 UTC"
+  },
+  {
+   "mmsi": 563331600,
+   "name": "BELLE LUNE",
+   "lat": 45.98384,
+   "lon": -122.8353,
+   "sog_kn": 0,
+   "cog": 343.8,
+   "heading": 152,
+   "nav_status": 5,
+   "updated": "2026-11-19 01:42:30.384701959 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58078,
+   "lon": -122.76008,
+   "sog_kn": 0,
+   "cog": 51.2,
+   "heading": 124,
+   "nav_status": 0,
+   "updated": "2026-11-19 01:42:33.968622846 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58417,
+   "lon": -122.76622,
+   "type_code": 52,
+   "destination": "US^00D5>0UHN",
+   "updated": "2026-11-19 01:42:36.786653275 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.21129,
+   "lon": -123.42529,
+   "type_code": 33,
+   "destination": "US LOG",
+   "updated": "2026-11-19 01:42:40.922959814 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.02755,
+   "lon": -122.87263,
+   "sog_kn": 1.3,
+   "cog": 316.1,
    "heading": 126,
-   "nav_status": 0,
-   "updated": "2026-11-19 01:37:22.717116206 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.10358,
-   "lon": -122.95095,
-   "sog_kn": 0.1,
-   "cog": 301.2,
-   "heading": 31,
-   "nav_status": 0,
-   "updated": "2026-11-19 01:37:28.528276652 +0000 UTC"
-  },
-  {
-   "mmsi": 366888830,
-   "name": "KAHU",
-   "lat": 45.61165,
-   "lon": -122.64423,
-   "sog_kn": 0,
-   "cog": 170.1,
-   "heading": 115,
-   "nav_status": 5,
-   "updated": "2026-11-19 01:37:34.106334948 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.09293,
-   "lon": -122.92312,
-   "sog_kn": 0.1,
-   "cog": 183.8,
-   "heading": 121,
-   "nav_status": 5,
-   "updated": "2026-11-19 01:37:34.141823615 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15341,
-   "lon": -123.37713,
-   "sog_kn": 0,
-   "cog": 193.5,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-19 01:37:47.176500504 +0000 UTC"
-  },
-  {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61182,
-   "lon": -122.64462,
-   "sog_kn": 0,
-   "cog": 300.9,
-   "heading": 115,
-   "nav_status": 0,
-   "updated": "2026-11-19 01:37:37.861407978 +0000 UTC"
+   "nav_status": 3,
+   "updated": "2026-11-19 01:42:47.79225626 +0000 UTC"
   },
   {
    "mmsi": 563311600,
    "name": "STANLEY BAY",
-   "lat": 46.1101,
-   "lon": -122.96337,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-19 01:37:39.915122723 +0000 UTC"
+   "lat": 46.11011,
+   "lon": -122.96338,
+   "sog_kn": 0,
+   "cog": 117.1,
+   "heading": 131,
+   "nav_status": 5,
+   "updated": "2026-11-19 01:42:50.095094853 +0000 UTC"
   }
  ]
 }
