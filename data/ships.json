@@ -1,6 +1,47 @@
 {
- "fetched_at": "2026-11-19T14:48:11Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-19T14:50:58Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 46.14549,
+   "lon": -123.28836,
+   "type_code": 57,
+   "destination": "US PDX",
+   "updated": "2026-11-19 14:51:45.344252549 +0000 UTC"
+  },
+  {
+   "mmsi": 311001605,
+   "name": "SAGA DISCOVERY",
+   "lat": 45.63751,
+   "lon": -122.70914,
+   "sog_kn": 0,
+   "cog": 309.5,
+   "heading": 303,
+   "nav_status": 5,
+   "updated": "2026-11-19 14:51:46.46483001 +0000 UTC"
+  },
+  {
+   "mmsi": 367315790,
+   "name": "LORI B.",
+   "lat": 45.80254,
+   "lon": -122.78861,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-19 14:52:01.067061065 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.58757,
+   "lon": -122.77039,
+   "sog_kn": 0,
+   "cog": 278,
+   "heading": 141,
+   "nav_status": 0,
+   "updated": "2026-11-19 14:52:07.826362321 +0000 UTC"
+  }
+ ]
 }
