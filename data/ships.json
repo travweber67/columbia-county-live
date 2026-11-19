@@ -1,124 +1,77 @@
 {
- "fetched_at": "2026-11-19T08:37:42Z",
+ "fetched_at": "2026-11-19T08:42:42Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 46.2559,
+   "lon": -123.44946,
+   "type_code": 31,
+   "destination": "PORTLAND OR ASHGROVE",
+   "updated": "2026-11-19 08:43:00.163945429 +0000 UTC"
+  },
   {
    "mmsi": 367653630,
    "name": "OSCAR B",
-   "lat": 46.15342,
-   "lon": -123.37711,
+   "lat": 46.15341,
+   "lon": -123.37712,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 161.6,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-19 08:37:47.398891438 +0000 UTC"
+   "updated": "2026-11-19 08:43:06.472001527 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.64323,
+   "lon": -122.74422,
+   "sog_kn": 0,
+   "cog": 44.7,
+   "heading": 289,
+   "nav_status": 0,
+   "updated": "2026-11-19 08:43:16.184214863 +0000 UTC"
   },
   {
    "mmsi": 367309480,
    "name": "W E IVANOFF",
-   "lat": 46.09304,
-   "lon": -122.92314,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-19 08:37:50.260351325 +0000 UTC"
-  },
-  {
-   "mmsi": 366396000,
-   "name": "NAT GEO SEA LION",
-   "lat": 46.08961,
-   "lon": -122.92972,
+   "lat": 46.09305,
+   "lon": -122.92315,
    "sog_kn": 0,
-   "cog": 283.1,
-   "heading": 111,
-   "nav_status": 5,
-   "updated": "2026-11-19 08:37:53.800451776 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58081,
-   "lon": -122.76008,
-   "sog_kn": 0,
-   "cog": 51.2,
-   "heading": 122,
+   "cog": 310.4,
+   "heading": 125,
    "nav_status": 0,
-   "updated": "2026-11-19 08:37:54.306901133 +0000 UTC"
+   "updated": "2026-11-19 08:43:19.935916819 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65018,
-   "lon": -122.74759,
-   "sog_kn": 0,
-   "cog": 318.6,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-19 08:37:59.172847491 +0000 UTC"
-  },
-  {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61222,
-   "lon": -122.64526,
-   "sog_kn": 0,
-   "cog": 358.7,
-   "heading": 213,
-   "nav_status": 5,
-   "updated": "2026-11-19 08:38:04.716380573 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00898,
-   "lon": -122.84832,
-   "type_code": 50,
-   "destination": "CR HARBOR OPS",
-   "updated": "2026-11-19 08:38:06.340351743 +0000 UTC"
-  },
-  {
-   "mmsi": 636024633,
-   "name": "PAVO LEADER",
-   "lat": 45.63798,
-   "lon": -122.7226,
-   "sog_kn": 0,
-   "cog": 127.7,
-   "heading": 114,
-   "nav_status": 5,
-   "updated": "2026-11-19 08:38:09.412670422 +0000 UTC"
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58733,
+   "lon": -122.77043,
+   "type_code": 31,
+   "destination": "US^02SY>0UJ9",
+   "updated": "2026-11-19 08:43:21.131577312 +0000 UTC"
   },
   {
    "mmsi": 367061930,
    "name": "TEBENKOF",
-   "lat": 46.2,
-   "lon": -123.3855,
+   "lat": 46.19997,
+   "lon": -123.38553,
    "sog_kn": 0,
-   "cog": 7.1,
+   "cog": 6.2,
    "heading": 511,
    "nav_status": 15,
-   "updated": "2026-11-19 08:38:11.116441919 +0000 UTC"
+   "updated": "2026-11-19 08:43:21.278147571 +0000 UTC"
   },
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60758,
-   "lon": -122.67763,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-19 08:38:11.136795804 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.25937,
-   "lon": -123.46761,
-   "sog_kn": 0,
-   "cog": 43.6,
-   "heading": 124,
-   "nav_status": 3,
-   "updated": "2026-11-19 08:38:15.610759305 +0000 UTC"
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64567,
+   "lon": -122.73486,
+   "type_code": 79,
+   "updated": "2026-11-19 08:43:23.179399885 +0000 UTC"
   }
  ]
 }
