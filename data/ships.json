@@ -1,38 +1,40 @@
 {
- "fetched_at": "2026-11-19T13:43:05Z",
+ "fetched_at": "2026-11-19T13:48:05Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 46.01363,
-   "lon": -122.85672,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-19 13:43:11.926400028 +0000 UTC"
+   "lat": 46.01382,
+   "lon": -122.85678,
+   "sog_kn": 0.4,
+   "cog": 337,
+   "heading": 162,
+   "nav_status": 3,
+   "updated": "2026-11-19 13:48:25.834968961 +0000 UTC"
   },
   {
-   "mmsi": 367001790,
-   "name": "TUG RICHARD BRUSCO",
-   "lat": 46.17689,
-   "lon": -123.42313,
-   "sog_kn": 8.4,
-   "cog": 319.3,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-19 13:43:11.965852313 +0000 UTC"
-  },
-  {
-   "mmsi": 563338800,
-   "name": "ISHIZUCHI STAR",
-   "lat": 45.63158,
-   "lon": -122.69742,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.62905,
+   "lon": -122.69225,
    "sog_kn": 0,
-   "cog": 346,
-   "heading": 307,
-   "nav_status": 5,
-   "updated": "2026-11-19 13:43:28.025354492 +0000 UTC"
+   "cog": 96.6,
+   "heading": 306,
+   "nav_status": 0,
+   "updated": "2026-11-19 13:48:27.11209929 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.5876,
+   "lon": -122.77038,
+   "sog_kn": 0,
+   "cog": 278,
+   "heading": 141,
+   "nav_status": 0,
+   "updated": "2026-11-19 13:48:46.56590462 +0000 UTC"
   }
  ]
 }
