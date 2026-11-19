@@ -1,6 +1,102 @@
 {
- "fetched_at": "2026-11-19T12:27:59Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-19T12:32:59Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.00892,
+   "lon": -122.84837,
+   "type_code": 50,
+   "destination": "CR HARBOR OPS",
+   "updated": "2026-11-19 12:33:04.815178837 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08967,
+   "lon": -122.92973,
+   "type_code": 66,
+   "destination": "RAINIER",
+   "updated": "2026-11-19 12:33:08.020462851 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.16272,
+   "lon": -123.40977,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 134,
+   "nav_status": 0,
+   "updated": "2026-11-19 12:33:13.568975923 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.64328,
+   "lon": -122.75283,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 12:33:19.884846442 +0000 UTC"
+  },
+  {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 46.18688,
+   "lon": -123.17254,
+   "sog_kn": 4.4,
+   "cog": 70.4,
+   "heading": 72,
+   "nav_status": 0,
+   "updated": "2026-11-19 12:33:20.328589576 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.6077,
+   "lon": -122.67757,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 12:33:20.993391515 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09279,
+   "lon": -122.92328,
+   "sog_kn": 0,
+   "cog": 313.7,
+   "heading": 125,
+   "nav_status": 0,
+   "updated": "2026-11-19 12:33:23.21167008 +0000 UTC"
+  },
+  {
+   "mmsi": 367315790,
+   "name": "LORI B.",
+   "lat": 45.99215,
+   "lon": -122.84832,
+   "sog_kn": 5.4,
+   "cog": 157.9,
+   "heading": 158,
+   "nav_status": 0,
+   "updated": "2026-11-19 12:33:27.445765316 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65012,
+   "lon": -122.74766,
+   "sog_kn": 0,
+   "cog": 52.2,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-19 12:33:29.784220424 +0000 UTC"
+  }
+ ]
 }
