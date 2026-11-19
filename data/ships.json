@@ -1,69 +1,47 @@
 {
- "fetched_at": "2026-11-19T11:37:55Z",
+ "fetched_at": "2026-11-19T11:42:56Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00897,
-   "lon": -122.84843,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65017,
+   "lon": -122.74763,
+   "sog_kn": 0,
+   "cog": 302.3,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-19 11:43:19.567375082 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58081,
+   "lon": -122.76005,
+   "type_code": 31,
+   "destination": "PTSI PDX",
+   "updated": "2026-11-19 11:43:19.99145406 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00885,
+   "lon": -122.84886,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-19 11:37:59.397052513 +0000 UTC"
+   "updated": "2026-11-19 11:43:23.322774983 +0000 UTC"
   },
   {
-   "mmsi": 367323610,
-   "name": "MIKETTE",
-   "lat": 46.20619,
-   "lon": -123.38661,
-   "sog_kn": 0,
-   "cog": 115.2,
-   "heading": 183,
-   "nav_status": 5,
-   "updated": "2026-11-19 11:38:02.27346582 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20005,
-   "lon": -123.3854,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-19 11:38:05.11102573 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.6276,
-   "lon": -122.69976,
-   "type_code": 52,
-   "destination": "US^0UU4>02MR",
-   "updated": "2026-11-19 11:38:21.349956474 +0000 UTC"
-  },
-  {
-   "mmsi": 538010986,
-   "name": "GALAXY EXPRESS",
-   "lat": 45.63013,
-   "lon": -122.69529,
-   "type_code": 70,
-   "destination": "US VAN",
-   "updated": "2026-11-19 11:38:23.737052741 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09309,
-   "lon": -122.92361,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 308,
-   "nav_status": 3,
-   "updated": "2026-11-19 11:38:27.297986846 +0000 UTC"
+   "mmsi": 440086000,
+   "name": "SM KWANGYANG",
+   "lat": 45.63983,
+   "lon": -122.7471,
+   "type_code": 74,
+   "destination": "USPDX",
+   "updated": "2026-11-19 11:43:35.778554938 +0000 UTC"
   }
  ]
 }
