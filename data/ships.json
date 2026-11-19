@@ -1,64 +1,6 @@
 {
- "fetched_at": "2026-11-19T12:43:00Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09306,
-   "lon": -122.92313,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-19 12:43:22.676477528 +0000 UTC",
-   "sog_kn": 0,
-   "cog": 97.7,
-   "heading": 125,
-   "nav_status": 0
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.0928,
-   "lon": -122.92329,
-   "sog_kn": 0,
-   "cog": 267.3,
-   "heading": 124,
-   "nav_status": 0,
-   "updated": "2026-11-19 12:43:24.84350551 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19998,
-   "lon": -123.38542,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-19 12:43:27.49350109 +0000 UTC"
-  },
-  {
-   "mmsi": 367315790,
-   "name": "LORI B.",
-   "lat": 45.97866,
-   "lon": -122.8373,
-   "sog_kn": 5.5,
-   "cog": 142.2,
-   "heading": 143,
-   "nav_status": 0,
-   "updated": "2026-11-19 12:43:36.551243548 +0000 UTC"
-  },
-  {
-   "mmsi": 366888830,
-   "name": "KAHU",
-   "lat": 45.61168,
-   "lon": -122.6442,
-   "sog_kn": 0,
-   "cog": 276.1,
-   "heading": 116,
-   "nav_status": 5,
-   "updated": "2026-11-19 12:43:40.259172207 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-19T12:48:01Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
