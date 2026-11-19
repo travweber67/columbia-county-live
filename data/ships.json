@@ -1,68 +1,104 @@
 {
- "fetched_at": "2026-11-19T06:02:32Z",
+ "fetched_at": "2026-11-19T06:07:32Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.63208,
+   "lon": -122.70224,
+   "sog_kn": 2.2,
+   "cog": 357.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 06:07:43.779022842 +0000 UTC"
+  },
   {
    "mmsi": 367315790,
    "name": "LORI B.",
-   "lat": 46.13785,
+   "lat": 46.13786,
    "lon": -123.38092,
-   "type_code": 31,
-   "destination": "PORTLAND",
-   "updated": "2026-11-19 06:02:51.939069558 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35744,
-   "type_code": 30,
-   "updated": "2026-11-19 06:02:57.146159329 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65015,
-   "lon": -122.74762,
    "sog_kn": 0,
-   "cog": 324,
+   "cog": 280.5,
+   "heading": 123,
+   "nav_status": 0,
+   "updated": "2026-11-19 06:07:45.914012546 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.82778,
+   "lon": -122.79269,
+   "sog_kn": 5.6,
+   "cog": 191.5,
+   "heading": 192,
+   "nav_status": 12,
+   "updated": "2026-11-19 06:07:48.048325595 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.61599,
+   "lon": -122.78964,
+   "sog_kn": 8.7,
+   "cog": 163.6,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-19 06:03:00.300817653 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-19 06:07:49.496770651 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09311,
-   "lon": -122.92361,
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64729,
+   "lon": -122.73994,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 309,
-   "nav_status": 3,
-   "updated": "2026-11-19 06:03:08.747630705 +0000 UTC"
+   "cog": 79.3,
+   "heading": 16,
+   "nav_status": 5,
+   "updated": "2026-11-19 06:07:53.510745797 +0000 UTC"
   },
   {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64569,
-   "lon": -122.73485,
-   "sog_kn": 0.3,
-   "cog": 180.6,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-19 06:03:09.348274546 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.02961,
+   "lon": -122.87481,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-19 06:07:53.7444704 +0000 UTC"
   },
   {
    "mmsi": 563338800,
    "name": "ISHIZUCHI STAR",
-   "lat": 45.63245,
-   "lon": -122.70125,
-   "sog_kn": 1,
-   "cog": 126.8,
-   "heading": 131,
+   "lat": 45.63206,
+   "lon": -122.7006,
+   "sog_kn": 0.3,
+   "cog": 306.6,
+   "heading": 288,
    "nav_status": 0,
-   "updated": "2026-11-19 06:03:12.509362885 +0000 UTC"
+   "updated": "2026-11-19 06:07:54.898003932 +0000 UTC"
+  },
+  {
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 45.69106,
+   "lon": -122.77148,
+   "sog_kn": 0,
+   "cog": 338.1,
+   "heading": 191,
+   "nav_status": 1,
+   "updated": "2026-11-19 06:07:59.737782057 +0000 UTC"
+  },
+  {
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.61222,
+   "lon": -122.64523,
+   "sog_kn": 0,
+   "cog": 342.4,
+   "heading": 214,
+   "nav_status": 5,
+   "updated": "2026-11-19 06:08:04.517731066 +0000 UTC"
   }
  ]
 }
