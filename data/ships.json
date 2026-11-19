@@ -1,73 +1,62 @@
 {
- "fetched_at": "2026-11-19T11:22:53Z",
+ "fetched_at": "2026-11-19T11:27:54Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58082,
-   "lon": -122.76007,
-   "sog_kn": 0,
-   "cog": 51.2,
-   "heading": 122,
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 46.14872,
+   "lon": -123.26985,
+   "sog_kn": 4.3,
+   "cog": 74.9,
+   "heading": 74,
    "nav_status": 0,
-   "updated": "2026-11-19 11:23:05.355819033 +0000 UTC"
+   "updated": "2026-11-19 11:27:57.967623666 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.01795,
-   "lon": -122.86144,
-   "sog_kn": 0.9,
-   "cog": 317.1,
-   "heading": 337,
-   "nav_status": 3,
-   "updated": "2026-11-19 11:23:06.550426299 +0000 UTC"
+   "mmsi": 367315790,
+   "name": "LORI B.",
+   "lat": 46.0785,
+   "lon": -122.89782,
+   "sog_kn": 5.2,
+   "cog": 135,
+   "heading": 137,
+   "nav_status": 0,
+   "updated": "2026-11-19 11:28:20.907913816 +0000 UTC",
+   "type_code": 31,
+   "destination": "PORTLAND"
   },
   {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 46.0906,
-   "lon": -122.93201,
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.64334,
+   "lon": -122.75279,
    "sog_kn": 0,
-   "cog": 330.9,
+   "cog": 360,
    "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 11:28:19.89382794 +0000 UTC"
+  },
+  {
+   "mmsi": 636024633,
+   "name": "PAVO LEADER",
+   "lat": 45.63794,
+   "lon": -122.72261,
+   "type_code": 70,
+   "destination": "US RCH",
+   "updated": "2026-11-19 11:28:22.370612192 +0000 UTC"
+  },
+  {
+   "mmsi": 563338800,
+   "name": "ISHIZUCHI STAR",
+   "lat": 45.63158,
+   "lon": -122.69739,
+   "sog_kn": 0,
+   "cog": 346,
+   "heading": 307,
    "nav_status": 5,
-   "updated": "2026-11-19 11:23:20.207201295 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.0931,
-   "lon": -122.92365,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 306,
-   "nav_status": 3,
-   "updated": "2026-11-19 11:23:20.30356102 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09304,
-   "lon": -122.92314,
-   "sog_kn": 0,
-   "cog": 48.1,
-   "heading": 124,
-   "nav_status": 0,
-   "updated": "2026-11-19 11:23:21.367211372 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00895,
-   "lon": -122.84834,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-19 11:23:21.974910302 +0000 UTC"
+   "updated": "2026-11-19 11:28:28.070846581 +0000 UTC"
   }
  ]
 }
