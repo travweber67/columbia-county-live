@@ -1,106 +1,110 @@
 {
- "fetched_at": "2026-11-19T00:27:04Z",
+ "fetched_at": "2026-11-19T00:32:05Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 46.01474,
-   "lon": -122.8579,
-   "sog_kn": 1.7,
-   "cog": 146.4,
-   "heading": 158,
-   "nav_status": 3,
-   "updated": "2026-11-19 00:27:17.184621935 +0000 UTC"
+   "lat": 46.01288,
+   "lon": -122.85588,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-19 00:32:53.400576462 +0000 UTC",
+   "sog_kn": 1.3,
+   "cog": 147.1,
+   "heading": 150,
+   "nav_status": 3
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.38555,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37715,
    "sog_kn": 0,
-   "cog": 3.7,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-19 00:27:20.07670995 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.09285,
-   "lon": -122.92345,
-   "sog_kn": 0.1,
-   "cog": 320.6,
+   "cog": 190.3,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-19 00:27:22.131514298 +0000 UTC"
+   "updated": "2026-11-19 00:32:28.820468909 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00883,
+   "lon": -122.84882,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 00:32:32.828856828 +0000 UTC"
   },
   {
    "mmsi": 366998830,
    "name": "ROYAL MELBOURNE",
-   "lat": 45.58079,
+   "lat": 45.58077,
    "lon": -122.76008,
+   "type_code": 31,
+   "destination": "PTSI PDX",
+   "updated": "2026-11-19 00:32:46.179029316 +0000 UTC",
    "sog_kn": 0,
    "cog": 51.2,
-   "heading": 121,
-   "nav_status": 0,
-   "updated": "2026-11-19 00:27:24.606007209 +0000 UTC"
+   "heading": 123,
+   "nav_status": 0
   },
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64359,
-   "lon": -122.75231,
-   "type_code": 52,
-   "updated": "2026-11-19 00:27:24.948162481 +0000 UTC"
-  },
-  {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.58376,
-   "lon": -122.7625,
-   "sog_kn": 8.6,
-   "cog": 306.4,
-   "heading": 311,
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79343,
+   "lon": -122.84307,
+   "sog_kn": 0,
+   "cog": 242.4,
+   "heading": 30,
    "nav_status": 12,
-   "updated": "2026-11-19 00:27:27.355461795 +0000 UTC"
+   "updated": "2026-11-19 00:32:38.128268782 +0000 UTC"
   },
   {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59415,
-   "lon": -122.77213,
-   "type_code": 70,
-   "destination": "NOT AVAILABLE",
-   "updated": "2026-11-19 00:27:28.445192937 +0000 UTC"
+   "mmsi": 367001790,
+   "name": "TUG RICHARD BRUSCO",
+   "lat": 45.64197,
+   "lon": -122.7498,
+   "sog_kn": 0,
+   "cog": 180.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 00:32:42.390674279 +0000 UTC"
   },
   {
    "mmsi": 367425950,
    "name": "SEA HAWK",
-   "lat": 45.65008,
-   "lon": -122.74759,
-   "type_code": 33,
-   "updated": "2026-11-19 00:27:29.639877271 +0000 UTC"
+   "lat": 45.65013,
+   "lon": -122.74763,
+   "sog_kn": 0,
+   "cog": 279.6,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-19 00:32:49.72611053 +0000 UTC"
   },
   {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.63679,
-   "lon": -122.70943,
-   "sog_kn": 0.3,
-   "cog": 213,
-   "heading": 326,
+   "mmsi": 311001605,
+   "name": "SAGA DISCOVERY",
+   "lat": 45.63721,
+   "lon": -122.70914,
+   "sog_kn": 0.4,
+   "cog": 20.2,
+   "heading": 295,
    "nav_status": 0,
-   "updated": "2026-11-19 00:27:33.139744186 +0000 UTC"
+   "updated": "2026-11-19 00:32:50.443844951 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.61291,
-   "type_code": 0,
-   "updated": "2026-11-19 00:27:38.00466158 +0000 UTC"
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.14835,
+   "lon": -123.04039,
+   "sog_kn": 35,
+   "cog": 301.9,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-19 00:32:54.760220274 +0000 UTC"
   }
  ]
 }
