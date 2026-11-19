@@ -1,66 +1,49 @@
 {
- "fetched_at": "2026-11-19T22:38:48Z",
+ "fetched_at": "2026-11-19T22:43:49Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60751,
-   "lon": -122.67764,
-   "type_code": 50,
-   "updated": "2026-11-19 22:38:59.546958727 +0000 UTC"
+   "mmsi": 368201480,
+   "name": "KINANI H",
+   "lat": 45.91058,
+   "lon": -122.80557,
+   "type_code": 31,
+   "destination": "WOODLAND WA",
+   "updated": "2026-11-19 22:43:53.866854102 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40233,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 136,
+   "nav_status": 0,
+   "updated": "2026-11-19 22:43:59.75813723 +0000 UTC"
   },
   {
    "mmsi": 356334000,
    "name": "LAUREL ISLAND",
-   "lat": 45.68578,
-   "lon": -122.77199,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-19 22:38:59.946604343 +0000 UTC"
+   "lat": 45.6858,
+   "lon": -122.77215,
+   "sog_kn": 0.1,
+   "cog": 321.3,
+   "heading": 184,
+   "nav_status": 1,
+   "updated": "2026-11-19 22:44:02.867419828 +0000 UTC"
   },
   {
-   "mmsi": 368136580,
-   "name": "ORIN L GREEN",
-   "lat": 46.09405,
-   "lon": -122.9428,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09307,
+   "lon": -122.92364,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-19 22:39:07.740498048 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09054,
-   "lon": -122.93232,
-   "type_code": 52,
-   "destination": "COL RIVER",
-   "updated": "2026-11-19 22:39:20.288598294 +0000 UTC"
-  },
-  {
-   "mmsi": 367327440,
-   "name": "KATHRYN B.",
-   "lat": 45.71082,
-   "lon": -122.76773,
-   "sog_kn": 7.6,
-   "cog": 12.8,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-19 22:39:23.005897123 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.09282,
-   "lon": -122.92171,
-   "sog_kn": 1.1,
-   "cog": 89.9,
-   "heading": 132,
-   "nav_status": 5,
-   "updated": "2026-11-19 22:39:23.525375868 +0000 UTC"
+   "heading": 306,
+   "nav_status": 3,
+   "updated": "2026-11-19 22:44:18.439564919 +0000 UTC"
   }
  ]
 }
