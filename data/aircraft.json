@@ -1,47 +1,57 @@
 {
- "fetched_at": "2026-11-19T05:42:30Z",
+ "fetched_at": "2026-11-19T05:47:30Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
-   "hex": "a96ae3",
-   "callsign": "ASA1380",
+   "hex": "a97083",
+   "callsign": "N707W",
+   "type": "C560",
+   "alt_ft": 2550,
+   "gs_kn": 210.9,
+   "track": 172.37,
+   "lat": 45.705453,
+   "lon": -122.770638
+  },
+  {
+   "hex": "a023a5",
+   "callsign": "AAL3163",
+   "type": "A321",
+   "alt_ft": 4050,
+   "gs_kn": 224.5,
+   "track": 297.59,
+   "lat": 45.734268,
+   "lon": -122.713921
+  },
+  {
+   "hex": "a9672c",
+   "callsign": "ASA614",
    "type": "B39M",
-   "alt_ft": 26500,
-   "gs_kn": 429.2,
-   "track": 351.96,
-   "lat": 46.108129,
-   "lon": -122.680618
+   "alt_ft": 24475,
+   "gs_kn": 410.8,
+   "track": 352.17,
+   "lat": 46.136124,
+   "lon": -122.685733
   },
   {
-   "hex": "a2ebbd",
-   "callsign": "ASA315",
+   "hex": "ad2aea",
+   "callsign": "ASA520",
+   "type": "B39M",
+   "alt_ft": 28100,
+   "gs_kn": 436.3,
+   "track": 350.24,
+   "lat": 45.936678,
+   "lon": -122.638527
+  },
+  {
+   "hex": "a2e806",
+   "callsign": "ASA525",
    "type": "B739",
-   "alt_ft": 875,
-   "gs_kn": 144.5,
-   "track": 118.52,
-   "lat": 45.614227,
-   "lon": -122.670727
-  },
-  {
-   "hex": "a0d21f",
-   "callsign": "FDX1807",
-   "type": "B763",
-   "alt_ft": "ground",
-   "gs_kn": 11.2,
-   "track": null,
-   "lat": 45.593087,
-   "lon": -122.622202
-  },
-  {
-   "hex": "a1388c",
-   "callsign": "SKW3106",
-   "type": "E75L",
-   "alt_ft": "ground",
-   "gs_kn": 0.0,
-   "track": null,
-   "lat": 45.595997,
-   "lon": -122.620623
+   "alt_ft": 125,
+   "gs_kn": 141.0,
+   "track": 119.29,
+   "lat": 45.595869,
+   "lon": -122.623421
   },
   {
    "hex": "a18b41",
@@ -50,18 +60,18 @@
    "alt_ft": "ground",
    "gs_kn": 0.0,
    "track": null,
-   "lat": 45.596306,
-   "lon": -122.619715
+   "lat": 45.595938,
+   "lon": -122.620674
   },
   {
-   "hex": "a55ef3",
-   "callsign": "UAL1588",
-   "type": "A320",
-   "alt_ft": 500,
-   "gs_kn": 133.4,
-   "track": 118.68,
-   "lat": 45.603424,
-   "lon": -122.617738
+   "hex": "a83569",
+   "callsign": "QXE2266",
+   "type": "E75L",
+   "alt_ft": "ground",
+   "gs_kn": 0.0,
+   "track": null,
+   "lat": 45.596334,
+   "lon": -122.619919
   }
  ]
 }
