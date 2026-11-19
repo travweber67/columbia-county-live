@@ -1,69 +1,40 @@
 {
- "fetched_at": "2026-11-19T05:37:29Z",
+ "fetched_at": "2026-11-19T05:42:30Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366888830,
-   "name": "KAHU",
-   "lat": 45.61167,
-   "lon": -122.64422,
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.08969,
+   "lon": -122.92902,
    "sog_kn": 0,
-   "cog": 82.8,
-   "heading": 117,
+   "cog": 298.4,
+   "heading": 106,
+   "nav_status": 0,
+   "updated": "2026-11-19 05:42:45.329669747 +0000 UTC"
+  },
+  {
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.11012,
+   "lon": -122.96338,
+   "sog_kn": 0,
+   "cog": 117.1,
+   "heading": 131,
    "nav_status": 5,
-   "updated": "2026-11-19 05:37:40.514606389 +0000 UTC"
-  },
-  {
-   "mmsi": 368201480,
-   "name": "KINANI H",
-   "lat": 45.91059,
-   "lon": -122.8056,
-   "sog_kn": 0,
-   "cog": 71.5,
-   "heading": 176,
-   "nav_status": 11,
-   "updated": "2026-11-19 05:37:46.410550672 +0000 UTC"
-  },
-  {
-   "mmsi": 356334000,
-   "name": "LAUREL ISLAND",
-   "lat": 45.68588,
-   "lon": -122.77214,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-19 05:37:50.668207889 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00901,
-   "lon": -122.84829,
-   "type_code": 50,
-   "destination": "CR HARBOR OPS",
-   "updated": "2026-11-19 05:37:58.347471801 +0000 UTC"
+   "updated": "2026-11-19 05:42:50.104376306 +0000 UTC"
   },
   {
    "mmsi": 367602150,
    "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.6129,
+   "lat": 45.61107,
+   "lon": -122.61291,
    "sog_kn": 0,
-   "cog": 305.4,
+   "cog": 334.8,
    "heading": 133,
    "nav_status": 15,
-   "updated": "2026-11-19 05:37:58.865337575 +0000 UTC"
-  },
-  {
-   "mmsi": 367047240,
-   "name": "DEFIANCE",
-   "lat": 45.65836,
-   "lon": -122.75715,
-   "sog_kn": 0,
-   "cog": 151.9,
-   "heading": 151,
-   "nav_status": 0,
-   "updated": "2026-11-19 05:38:05.351220061 +0000 UTC"
+   "updated": "2026-11-19 05:42:58.813740646 +0000 UTC"
   }
  ]
 }
