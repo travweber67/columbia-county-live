@@ -1,67 +1,115 @@
 {
- "fetched_at": "2026-11-19T22:23:47Z",
+ "fetched_at": "2026-11-19T22:28:47Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.00742,
+   "lon": -122.8562,
+   "sog_kn": 0.1,
+   "cog": 278.6,
+   "heading": 196,
+   "nav_status": 1,
+   "updated": "2026-11-19 22:28:53.765402562 +0000 UTC"
+  },
+  {
+   "mmsi": 355173000,
+   "name": "EVER BEST",
+   "lat": 45.63926,
+   "lon": -122.77783,
+   "sog_kn": 0,
+   "cog": 345.7,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-19 22:28:57.26581468 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09306,
+   "lon": -122.92363,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 307,
+   "nav_status": 3,
+   "updated": "2026-11-19 22:28:57.946187298 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58412,
+   "lon": -122.76497,
+   "sog_kn": 6.4,
+   "cog": 327.4,
+   "heading": 329,
+   "nav_status": 0,
+   "updated": "2026-11-19 22:28:58.215846935 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.26562,
+   "lon": -123.4584,
+   "sog_kn": 0,
+   "cog": 321,
+   "heading": 319,
+   "nav_status": 3,
+   "updated": "2026-11-19 22:29:03.426142824 +0000 UTC"
+  },
+  {
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 45.69101,
+   "lon": -122.77164,
+   "sog_kn": 0,
+   "cog": 294.2,
+   "heading": 180,
+   "nav_status": 1,
+   "updated": "2026-11-19 22:29:08.017834636 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64537,
+   "lon": -122.73506,
+   "sog_kn": 0,
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-19 22:29:15.392381557 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.0915,
+   "lon": -122.91654,
+   "sog_kn": 0,
+   "cog": 36.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-19 22:29:19.708216601 +0000 UTC"
+  },
   {
    "mmsi": 367425950,
    "name": "SEA HAWK",
-   "lat": 45.65014,
-   "lon": -122.74763,
+   "lat": 45.65017,
+   "lon": -122.7476,
    "sog_kn": 0,
-   "cog": 239,
+   "cog": 255.9,
    "heading": 511,
    "nav_status": 3,
-   "updated": "2026-11-19 22:23:58.341611731 +0000 UTC"
+   "updated": "2026-11-19 22:29:19.9626478 +0000 UTC"
   },
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60753,
-   "lon": -122.67773,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-19 22:24:00.987756474 +0000 UTC"
-  },
-  {
-   "mmsi": 352006113,
-   "name": "BELFORTUNE",
-   "lat": 46.09906,
-   "lon": -122.93943,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-19 22:24:02.175714777 +0000 UTC"
-  },
-  {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64568,
-   "lon": -122.73487,
-   "sog_kn": 0.3,
-   "cog": 216.5,
-   "heading": 113,
-   "nav_status": 5,
-   "updated": "2026-11-19 22:24:10.628415446 +0000 UTC"
-  },
-  {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58731,
-   "lon": -122.77041,
-   "type_code": 31,
-   "destination": "US^02SY>0UJ9",
-   "updated": "2026-11-19 22:24:16.177346428 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.18561,
-   "lon": -123.12421,
-   "type_code": 33,
-   "destination": "US LOG",
-   "updated": "2026-11-19 22:24:18.990204664 +0000 UTC"
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19997,
+   "lon": -123.3855,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-19 22:29:22.35499218 +0000 UTC"
   }
  ]
 }
