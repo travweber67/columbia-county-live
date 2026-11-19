@@ -1,6 +1,62 @@
 {
- "fetched_at": "2026-11-19T18:48:31Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-19T18:51:02Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.64909,
+   "lon": -122.74965,
+   "sog_kn": 6.7,
+   "cog": 314.4,
+   "heading": 316,
+   "nav_status": 0,
+   "updated": "2026-11-19 18:51:54.707716456 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.61098,
+   "lon": -122.6346,
+   "sog_kn": 0,
+   "cog": 190.2,
+   "heading": 28,
+   "nav_status": 0,
+   "updated": "2026-11-19 18:51:55.227707251 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35742,
+   "sog_kn": 0,
+   "cog": 241.9,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-19 18:51:56.931795618 +0000 UTC"
+  },
+  {
+   "mmsi": 367575580,
+   "name": "DIANE B.",
+   "lat": 45.60582,
+   "lon": -122.61909,
+   "sog_kn": 7.5,
+   "cog": 286.8,
+   "heading": 286,
+   "nav_status": 5,
+   "updated": "2026-11-19 18:52:05.508821851 +0000 UTC"
+  },
+  {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.75109,
+   "lon": -122.76119,
+   "sog_kn": 6.5,
+   "cog": 178.2,
+   "heading": 179,
+   "nav_status": 0,
+   "updated": "2026-11-19 18:52:09.131406915 +0000 UTC"
+  }
+ ]
 }
