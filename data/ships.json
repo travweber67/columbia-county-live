@@ -1,49 +1,60 @@
 {
- "fetched_at": "2026-11-19T06:37:33Z",
+ "fetched_at": "2026-11-19T06:42:34Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 45.6433,
-   "lon": -122.75281,
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.11011,
+   "lon": -122.96336,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-19 06:37:52.599937321 +0000 UTC",
+   "cog": 117.1,
+   "heading": 131,
+   "nav_status": 5,
+   "updated": "2026-11-19 06:42:50.917697372 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.02375,
+   "lon": -122.86894,
+   "sog_kn": 0.9,
+   "cog": 142.3,
+   "heading": 148,
+   "nav_status": 3,
+   "updated": "2026-11-19 06:42:51.460037212 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58733,
+   "lon": -122.77047,
    "type_code": 31,
-   "destination": "HARBOROPPS-"
+   "destination": "US^02SY>0UJ9",
+   "updated": "2026-11-19 06:43:02.143622518 +0000 UTC"
   },
   {
-   "mmsi": 356334000,
-   "name": "LAUREL ISLAND",
-   "lat": 45.68593,
-   "lon": -122.77219,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-19 06:37:50.628464719 +0000 UTC"
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.0271,
+   "lon": -122.87018,
+   "sog_kn": 0.5,
+   "cog": 183,
+   "heading": 70,
+   "nav_status": 0,
+   "updated": "2026-11-19 06:43:09.264306802 +0000 UTC"
   },
   {
-   "mmsi": 366888830,
-   "name": "KAHU",
-   "lat": 45.61167,
-   "lon": -122.64422,
-   "type_code": 52,
-   "destination": "PDX",
-   "updated": "2026-11-19 06:37:51.309794558 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.7823,
-   "lon": -122.77663,
-   "sog_kn": 5.7,
-   "cog": 153.4,
-   "heading": 153,
-   "nav_status": 12,
-   "updated": "2026-11-19 06:37:58.184262958 +0000 UTC"
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65017,
+   "lon": -122.74772,
+   "sog_kn": 0,
+   "cog": 264.2,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-19 06:43:09.351044789 +0000 UTC"
   }
  ]
 }
