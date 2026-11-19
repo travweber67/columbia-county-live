@@ -1,40 +1,6 @@
 {
- "fetched_at": "2026-11-19T12:12:58Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 45.6433,
-   "lon": -122.75282,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-19 12:13:01.604105889 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58082,
-   "lon": -122.76007,
-   "sog_kn": 0,
-   "cog": 51.2,
-   "heading": 122,
-   "nav_status": 0,
-   "updated": "2026-11-19 12:13:15.14837331 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09305,
-   "lon": -122.92315,
-   "sog_kn": 0.1,
-   "cog": 295.7,
-   "heading": 125,
-   "nav_status": 0,
-   "updated": "2026-11-19 12:13:20.77959409 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-19T12:17:58Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
