@@ -1,75 +1,49 @@
 {
- "fetched_at": "2026-11-19T19:43:35Z",
+ "fetched_at": "2026-11-19T19:48:35Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366888830,
-   "name": "KAHU",
-   "lat": 45.61167,
-   "lon": -122.6442,
-   "type_code": 52,
-   "destination": "PDX",
-   "updated": "2026-11-19 19:43:51.766883054 +0000 UTC"
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.64702,
+   "lon": -122.74094,
+   "sog_kn": 0.1,
+   "cog": 290.7,
+   "heading": 20,
+   "nav_status": 0,
+   "updated": "2026-11-19 19:48:55.893457628 +0000 UTC"
   },
   {
    "mmsi": 368286340,
    "name": "SHAVER",
-   "lat": 45.60574,
-   "lon": -122.78398,
-   "type_code": 52,
-   "updated": "2026-11-19 19:43:52.816959882 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15343,
-   "lon": -123.37714,
-   "sog_kn": 0,
-   "cog": 358.2,
+   "lat": 45.59883,
+   "lon": -122.77959,
+   "sog_kn": 4.3,
+   "cog": 158.8,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-19 19:43:57.908421143 +0000 UTC"
+   "updated": "2026-11-19 19:48:57.272941764 +0000 UTC"
   },
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.62852,
-   "lon": -122.69215,
-   "sog_kn": 6.8,
-   "cog": 291,
-   "heading": 286,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.00759,
+   "lon": -122.85608,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-19 19:49:10.231217726 +0000 UTC"
+  },
+  {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.64541,
+   "lon": -122.77238,
+   "sog_kn": 6.5,
+   "cog": 221.4,
+   "heading": 226,
    "nav_status": 0,
-   "updated": "2026-11-19 19:44:06.358886005 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09049,
-   "lon": -122.93234,
-   "type_code": 52,
-   "destination": "COL RIVER",
-   "updated": "2026-11-19 19:44:08.148250057 +0000 UTC"
-  },
-  {
-   "mmsi": 367575580,
-   "name": "DIANE B.",
-   "lat": 45.63695,
-   "lon": -122.71211,
-   "sog_kn": 7.1,
-   "cog": 300.2,
-   "heading": 298,
-   "nav_status": 5,
-   "updated": "2026-11-19 19:44:15.512471016 +0000 UTC"
-  },
-  {
-   "mmsi": 368201480,
-   "name": "KINANI H",
-   "lat": 45.91058,
-   "lon": -122.80557,
-   "type_code": 31,
-   "destination": "WOODLAND WA",
-   "updated": "2026-11-19 19:44:16.544027509 +0000 UTC"
+   "updated": "2026-11-19 19:49:17.143969702 +0000 UTC"
   }
  ]
 }
