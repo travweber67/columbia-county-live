@@ -1,38 +1,60 @@
 {
- "fetched_at": "2026-11-20T03:51:09Z",
+ "fetched_at": "2026-11-20T03:54:12Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
    "lat": 46.19999,
-   "lon": -123.3854,
+   "lon": -123.38551,
    "sog_kn": 0,
-   "cog": 7.3,
+   "cog": 348.9,
    "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-20 03:52:04.639525335 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.62787,
-   "lon": -122.69995,
-   "type_code": 52,
-   "destination": "PDX/VANC.OPS.",
-   "updated": "2026-11-20 03:52:19.466575552 +0000 UTC"
+   "nav_status": 15,
+   "updated": "2026-11-20 03:54:21.555556487 +0000 UTC"
   },
   {
    "mmsi": 366986380,
    "name": "DREDGE OREGON",
-   "lat": 46.09307,
-   "lon": -122.92363,
+   "lat": 46.09309,
+   "lon": -122.92364,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 309,
+   "heading": 307,
    "nav_status": 3,
-   "updated": "2026-11-20 03:52:28.172841195 +0000 UTC"
+   "updated": "2026-11-20 03:54:28.102246641 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58417,
+   "lon": -122.76617,
+   "sog_kn": 0,
+   "cog": 259.3,
+   "heading": 145,
+   "nav_status": 5,
+   "updated": "2026-11-20 03:54:30.471625154 +0000 UTC"
+  },
+  {
+   "mmsi": 368201480,
+   "name": "KINANI H",
+   "lat": 45.91057,
+   "lon": -122.80556,
+   "sog_kn": 0,
+   "cog": 71.5,
+   "heading": 175,
+   "nav_status": 11,
+   "updated": "2026-11-20 03:54:39.452329395 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.08963,
+   "lon": -122.9291,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-20 03:54:40.596624344 +0000 UTC"
   }
  ]
 }
