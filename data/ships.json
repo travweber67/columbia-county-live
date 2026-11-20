@@ -1,66 +1,75 @@
 {
- "fetched_at": "2026-11-20T06:49:28Z",
+ "fetched_at": "2026-11-20T06:51:12Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.09407,
-   "lon": -122.94275,
-   "sog_kn": 0.1,
-   "cog": 243,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 06:49:47.670314619 +0000 UTC"
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15707,
+   "lon": -123.40234,
+   "type_code": 99,
+   "destination": "",
+   "updated": "2026-11-20 06:51:59.777195373 +0000 UTC"
   },
   {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 45.64356,
-   "lon": -122.75244,
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.6473,
+   "lon": -122.73995,
    "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-20 06:49:47.794692055 +0000 UTC"
+   "destination": "SRT PASCO",
+   "updated": "2026-11-20 06:52:01.343699523 +0000 UTC"
   },
   {
-   "mmsi": 356334000,
-   "name": "LAUREL ISLAND",
-   "lat": 45.68589,
-   "lon": -122.77243,
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64788,
+   "lon": -122.74098,
+   "sog_kn": 0,
+   "cog": 111.6,
+   "heading": 111,
+   "nav_status": 5,
+   "updated": "2026-11-20 06:52:05.672416451 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64541,
+   "lon": -122.73504,
    "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-20 06:49:50.612676737 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64346,
-   "lon": -122.75278,
-   "type_code": 52,
-   "updated": "2026-11-20 06:49:51.75325546 +0000 UTC"
+   "destination": "PER ORDERS",
+   "updated": "2026-11-20 06:52:07.889427075 +0000 UTC"
   },
   {
    "mmsi": 367608420,
    "name": "PETER J BRIX",
-   "lat": 45.5875,
-   "lon": -122.77071,
+   "lat": 45.58754,
+   "lon": -122.77074,
    "sog_kn": 0,
-   "cog": 324.5,
+   "cog": 249.6,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-20 06:49:54.284812136 +0000 UTC"
+   "updated": "2026-11-20 06:52:13.904150585 +0000 UTC"
   },
   {
-   "mmsi": 563331600,
-   "name": "BELLE LUNE",
-   "lat": 45.98378,
-   "lon": -122.83515,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65019,
+   "lon": -122.74765,
    "sog_kn": 0,
-   "cog": 343.8,
-   "heading": 152,
-   "nav_status": 0,
-   "updated": "2026-11-20 06:49:54.713406862 +0000 UTC"
+   "cog": 243,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-20 06:52:19.512947613 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.61289,
+   "type_code": 0,
+   "updated": "2026-11-20 06:52:20.799191922 +0000 UTC"
   }
  ]
 }
