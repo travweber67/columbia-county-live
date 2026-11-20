@@ -1,40 +1,47 @@
 {
- "fetched_at": "2026-11-20T04:21:11Z",
+ "fetched_at": "2026-11-20T04:24:14Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.3855,
-   "sog_kn": 0,
-   "cog": 300.4,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15262,
+   "lon": -123.37748,
+   "sog_kn": 5.1,
+   "cog": 23.9,
    "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-20 04:22:00.020640569 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-20 04:24:26.979993055 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.26569,
-   "lon": -123.45844,
-   "sog_kn": 0,
-   "cog": 316.5,
-   "heading": 312,
-   "nav_status": 3,
-   "updated": "2026-11-20 04:22:05.15121105 +0000 UTC"
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.11011,
+   "lon": -122.96336,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-20 04:24:29.107020254 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 277.7,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-20 04:22:09.252533363 +0000 UTC"
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.64345,
+   "lon": -122.75288,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-20 04:24:46.174221077 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.78238,
+   "lon": -122.776,
+   "sog_kn": 6.3,
+   "cog": 146.2,
+   "heading": 148,
+   "nav_status": 0,
+   "updated": "2026-11-20 04:24:49.875060199 +0000 UTC"
   }
  ]
 }
