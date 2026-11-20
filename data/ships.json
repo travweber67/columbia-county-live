@@ -1,29 +1,49 @@
 {
- "fetched_at": "2026-11-20T11:44:51Z",
+ "fetched_at": "2026-11-20T11:49:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 311001605,
-   "name": "SAGA DISCOVERY",
-   "lat": 46.17486,
-   "lon": -123.10668,
-   "sog_kn": 0,
-   "cog": 218.4,
-   "heading": 126,
-   "nav_status": 1,
-   "updated": "2026-11-20 11:44:55.501317676 +0000 UTC"
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09305,
+   "lon": -122.92315,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-20 11:50:00.654205607 +0000 UTC"
   },
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15344,
-   "lon": -123.37715,
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.68592,
+   "lon": -122.7721,
+   "sog_kn": 0.1,
+   "cog": 239.6,
+   "heading": 191,
+   "nav_status": 1,
+   "updated": "2026-11-20 11:50:02.274364409 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09046,
+   "lon": -122.93227,
    "sog_kn": 0,
-   "cog": 180.7,
+   "cog": 207.2,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 11:45:06.934190055 +0000 UTC"
+   "nav_status": 5,
+   "updated": "2026-11-20 11:50:14.905345192 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20003,
+   "lon": -123.38539,
+   "sog_kn": 0,
+   "cog": 192.8,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-20 11:50:25.059624552 +0000 UTC"
   }
  ]
 }
