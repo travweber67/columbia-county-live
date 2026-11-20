@@ -1,6 +1,93 @@
 {
- "fetched_at": "2026-11-20T21:51:29Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-20T21:55:39Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.16575,
+   "lon": -123.08333,
+   "sog_kn": 11.1,
+   "cog": 309.1,
+   "heading": 310,
+   "nav_status": 0,
+   "updated": "2026-11-20 21:55:54.805794109 +0000 UTC"
+  },
+  {
+   "mmsi": 355173000,
+   "name": "EVER BEST",
+   "lat": 45.63927,
+   "lon": -122.77779,
+   "sog_kn": 0,
+   "cog": 344.9,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-20 21:55:59.107474749 +0000 UTC"
+  },
+  {
+   "mmsi": 563338800,
+   "name": "ISHIZUCHI STAR",
+   "lat": 45.63171,
+   "lon": -122.69772,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-20 21:56:02.433557925 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08566,
+   "lon": -122.91188,
+   "sog_kn": 0.9,
+   "cog": 275.1,
+   "heading": 88,
+   "nav_status": 0,
+   "updated": "2026-11-20 21:56:10.257099848 +0000 UTC"
+  },
+  {
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.63482,
+   "lon": -122.70327,
+   "sog_kn": 0,
+   "cog": 127,
+   "heading": 126,
+   "nav_status": 12,
+   "updated": "2026-11-20 21:56:11.114548294 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09409,
+   "lon": -122.94281,
+   "sog_kn": 0.1,
+   "cog": 132.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-20 21:56:11.272159199 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.25935,
+   "lon": -123.4675,
+   "sog_kn": 0,
+   "cog": 32.1,
+   "heading": 113,
+   "nav_status": 3,
+   "updated": "2026-11-20 21:56:14.805500623 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.18333,
+   "lon": -123.11719,
+   "sog_kn": 1.1,
+   "cog": 122.6,
+   "heading": 126,
+   "nav_status": 3,
+   "updated": "2026-11-20 21:56:17.248652094 +0000 UTC"
+  }
+ ]
 }
