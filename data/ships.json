@@ -1,106 +1,93 @@
 {
- "fetched_at": "2026-11-20T03:29:10Z",
+ "fetched_at": "2026-11-20T03:34:11Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15342,
-   "lon": -123.37714,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40233,
+   "type_code": 99,
+   "destination": "",
+   "updated": "2026-11-20 03:34:27.393157853 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61201,
+   "lon": -122.64535,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-20 03:34:27.670903804 +0000 UTC"
+  },
+  {
+   "mmsi": 352006113,
+   "name": "BELFORTUNE",
+   "lat": 46.09906,
+   "lon": -122.93939,
    "sog_kn": 0,
-   "cog": 339.2,
-   "heading": 511,
+   "cog": 274.5,
+   "heading": 108,
+   "nav_status": 5,
+   "updated": "2026-11-20 03:34:35.866398243 +0000 UTC",
+   "type_code": 70,
+   "destination": "US LOG"
+  },
+  {
+   "mmsi": 338570000,
+   "name": "BAYPORT",
+   "lat": 45.59256,
+   "lon": -122.77344,
+   "sog_kn": 8.2,
+   "cog": 323.6,
+   "heading": 328,
    "nav_status": 0,
-   "updated": "2026-11-20 03:29:09.303069038 +0000 UTC"
+   "updated": "2026-11-20 03:34:35.44439646 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.99996,
-   "lon": -122.8482,
-   "sog_kn": 0.5,
-   "cog": 102.8,
-   "heading": 133,
-   "nav_status": 3,
-   "updated": "2026-11-20 03:29:09.535098826 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.63833,
-   "lon": -122.72911,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20001,
+   "lon": -123.38553,
    "sog_kn": 0,
-   "cog": 180.7,
+   "cog": 14,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 03:29:10.23703254 +0000 UTC"
+   "nav_status": 15,
+   "updated": "2026-11-20 03:34:40.071494675 +0000 UTC"
   },
   {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00882,
-   "lon": -122.8488,
+   "mmsi": 366888830,
+   "name": "KAHU",
+   "lat": 45.61167,
+   "lon": -122.64422,
+   "sog_kn": 0,
+   "cog": 11.9,
+   "heading": 116,
+   "nav_status": 5,
+   "updated": "2026-11-20 03:34:40.821158433 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.6433,
+   "lon": -122.75283,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-20 03:29:12.451677872 +0000 UTC"
+   "updated": "2026-11-20 03:34:42.681724289 +0000 UTC"
   },
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.07026,
-   "lon": -122.89435,
-   "sog_kn": 7.6,
-   "cog": 334.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 03:29:14.755625924 +0000 UTC"
-  },
-  {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64539,
-   "lon": -122.73505,
-   "sog_kn": 0,
-   "cog": 30.4,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-20 03:29:14.99014824 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 46.09065,
-   "lon": -122.93207,
-   "sog_kn": 0,
-   "cog": 258.7,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-20 03:29:22.099205667 +0000 UTC"
-  },
-  {
-   "mmsi": 369702000,
-   "name": "COASTAL RELIANCE",
-   "lat": 46.16067,
-   "lon": -123.40377,
-   "sog_kn": 8.7,
-   "cog": 139.3,
-   "heading": 136,
-   "nav_status": 0,
-   "updated": "2026-11-20 03:29:33.422395187 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65012,
-   "lon": -122.74766,
-   "sog_kn": 0,
-   "cog": 277.5,
-   "heading": 511,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.99989,
+   "lon": -122.84732,
+   "sog_kn": 1.9,
+   "cog": 15.2,
+   "heading": 331,
    "nav_status": 3,
-   "updated": "2026-11-20 03:29:39.108474845 +0000 UTC"
+   "updated": "2026-11-20 03:34:53.268713194 +0000 UTC"
   }
  ]
 }
