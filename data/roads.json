@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-20T20:51:28Z",
+ "fetched_at": "2026-11-20T20:55:37Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -12,22 +12,21 @@
   },
   {
    "name": "WSDOT Highway Alerts (free code)",
-   "status": "error",
-   "note": "HTTP 0"
+   "status": "ok"
   }
  ],
  "incidents": [
   {
-   "title": "A crash has the WB right lane closed at Mallory. Prepare to slow or move over for worker safety.",
+   "title": "A crash has the both WB and the EB right lanes closed at Mallory. Prepare to slow or move over for worker safety.",
    "desc": "",
-   "impact": "Estimated delay under 20 minutes",
+   "impact": "Estimated delay of 20 minutes - 2 hours",
    "place": "US30BP, 1 mile East of Intersection with Pacific Highway I-5",
    "route": "US30BY",
    "milepost": 6.07,
    "lat": 45.57722,
    "lon": -122.66334,
    "start": "2026-11-20T12:25:48.3-08:00",
-   "updated": "2026-11-20T12:33:34-08:00",
+   "updated": "2026-11-20T12:54:31-08:00",
    "source": "ODOT TripCheck"
   },
   {
