@@ -1,62 +1,53 @@
 {
- "fetched_at": "2026-11-20T01:23:59Z",
+ "fetched_at": "2026-11-20T01:29:00Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.95376,
-   "lon": -122.81303,
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64537,
+   "lon": -122.73506,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-20 01:29:14.815947889 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5
+  },
+  {
+   "mmsi": 367315790,
+   "name": "LORI B.",
+   "lat": 45.63682,
+   "lon": -122.71271,
+   "sog_kn": 9.8,
+   "cog": 302.6,
+   "heading": 303,
+   "nav_status": 0,
+   "updated": "2026-11-20 01:29:17.325313255 +0000 UTC"
+  },
+  {
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.83479,
+   "lon": -122.80971,
    "sog_kn": 6.1,
-   "cog": 155.8,
-   "heading": 159,
-   "nav_status": 12,
-   "updated": "2026-11-20 01:24:13.671834098 +0000 UTC"
+   "cog": 212.4,
+   "heading": 208,
+   "nav_status": 0,
+   "updated": "2026-11-20 01:29:18.281461751 +0000 UTC"
   },
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00898,
-   "lon": -122.84828,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09306,
+   "lon": -122.92315,
+   "sog_kn": 0.1,
+   "cog": 122.7,
+   "heading": 124,
    "nav_status": 0,
-   "updated": "2026-11-20 01:24:18.606845077 +0000 UTC"
-  },
-  {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.62274,
-   "lon": -122.78839,
-   "sog_kn": 0,
-   "cog": 74.8,
-   "heading": 4,
-   "nav_status": 0,
-   "updated": "2026-11-20 01:24:27.311918362 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.63803,
-   "lon": -122.72829,
-   "sog_kn": 0,
-   "cog": 211,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 01:24:29.359545639 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40233,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 139,
-   "nav_status": 0,
-   "updated": "2026-11-20 01:24:29.428938389 +0000 UTC"
+   "updated": "2026-11-20 01:29:21.464650366 +0000 UTC"
   }
  ]
 }
