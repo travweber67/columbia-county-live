@@ -1,18 +1,84 @@
 {
- "fetched_at": "2026-11-20T09:59:42Z",
+ "fetched_at": "2026-11-20T10:04:42Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 1 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368201480,
-   "name": "KINANI H",
-   "lat": 45.91057,
-   "lon": -122.80556,
+   "mmsi": 366888830,
+   "name": "KAHU",
+   "lat": 45.61167,
+   "lon": -122.64423,
    "sog_kn": 0,
-   "cog": 71.5,
-   "heading": 176,
-   "nav_status": 11,
-   "updated": "2026-11-20 10:00:06.516606309 +0000 UTC"
+   "cog": 155.2,
+   "heading": 117,
+   "nav_status": 5,
+   "updated": "2026-11-20 10:04:52.464474435 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.61919,
+   "lon": -122.788,
+   "type_code": 0,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-20 10:04:58.351972966 +0000 UTC"
+  },
+  {
+   "mmsi": 367047150,
+   "name": "CAPTAIN BOB",
+   "lat": 45.61322,
+   "lon": -122.65917,
+   "sog_kn": 7.1,
+   "cog": 284.9,
+   "heading": 285,
+   "nav_status": 12,
+   "updated": "2026-11-20 10:04:58.948363391 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19997,
+   "lon": -123.38544,
+   "sog_kn": 0,
+   "cog": 174.1,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-20 10:05:05.128300244 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.64709,
+   "lon": -122.73909,
+   "sog_kn": 4,
+   "cog": 352,
+   "heading": 340,
+   "nav_status": 12,
+   "updated": "2026-11-20 10:05:08.168877845 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 46.09062,
+   "lon": -122.93209,
+   "sog_kn": 0,
+   "cog": 159.7,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-20 10:05:14.911171755 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09048,
+   "lon": -122.93235,
+   "sog_kn": 0,
+   "cog": 179.8,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-20 10:05:19.87740876 +0000 UTC",
+   "type_code": 52,
+   "destination": "COL RIVER"
   }
  ]
 }
