@@ -34,7 +34,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <link rel="manifest" href="manifest.webmanifest?v=95">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=95">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=121">
+<link rel="stylesheet" href="style.css?v=122">
 <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=95">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=95">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
@@ -293,14 +293,6 @@ document.documentElement.setAttribute("data-theme",t);})();
     <h2 data-i18n="homeh2">📍 Your town</h2>
   </div>
   <div id="home-body" class="panel-body"><p class="loading">Loading your town picker…</p></div>
-</section>
-
-<section class="card commute-card" id="commute-card" aria-label="The commute verdict — is the drive okay right now">
-  <div class="card-head">
-    <h2 data-i18n="commuteh2">🚗 The Commute Verdict</h2>
-  </div>
-  <div id="commute-verdict" class="commute-verdict"><p class="loading">Checking the corridor…</p></div>
-  <p class="card-note small" data-i18n="commutenote">The one-line answer for the drive right now. The full corridor picture — bridge, incidents, and cameras — lives on the Travel tab.</p>
 </section>
 
 <section class="card go-card" id="go-card" aria-label="Before you go — a go or no-go check for the drive, the ferry, or the river">
@@ -877,13 +869,6 @@ document.documentElement.setAttribute("data-theme",t);})();
     <a class="rail-cta" href="#watch-card">Start the County Watch &rarr;</a>
   </aside>
 </div>
-
-<section class="sponsor-top" aria-label="Sponsor spotlight — the local businesses that keep this page free">
-  <p class="cell-eyebrow">Sponsor spotlight</p>
-  <h2>The local businesses that keep this page free</h2>
-  <p>Columbia County Live carries no ad network and no paywall — a small number of local businesses fund it with named spots like this one. The first three become Founding Sponsors: their names stay on the Today page for good, at a $49/mo rate that never rises while they&rsquo;re with us. <strong>All three founding spots filled — Oregon Trail Lanes, Kneeland Brothers LLC and C&amp;M Renovations.</strong></p>
-  <a class="founding-cta" href="sponsor.html#founding">See the founding sponsor spots &rarr;</a>
-</section>
 
 <div class="card photo-card" id="events-card">
       <div class="card-photo photo-courthouse"><img src="img/card-courthouse.jpg" alt="The historic Columbia County Courthouse in St. Helens, Oregon" loading="lazy" decoding="async"><img class="photo-night" src="img/dusk/events-night.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
@@ -1888,7 +1873,6 @@ document.documentElement.setAttribute("data-theme",t);})();
   <nav class="drawer-nav" aria-label="Views and sections">
     <div class="drawer-group">
       <button class="drawer-view" type="button" data-drawer-view="today"><img src="img/icons/icon-today.png" alt="" aria-hidden="true"><span data-i18n="tabtoday">Today</span></button>
-      <a class="drawer-link" href="#commute-card" data-i18n="dwcommute">The commute verdict</a>
       <a class="drawer-link" href="#go-card" data-i18n="dwgo">Before you go</a>
       <a class="drawer-link" href="#plan-card" data-i18n="dwplan">Tonight &amp; tomorrow</a>
       <a class="drawer-link" href="#schools-card" data-i18n="dwschools">Schools — closures &amp; delays</a>
@@ -2218,7 +2202,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=121"></script>
+<script src="app.js?v=122"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 

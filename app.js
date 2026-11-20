@@ -1130,32 +1130,6 @@ function renderRoads(roads, camerasSnap) {
   setSnapUpdated('roads-updated', roads.fetched_at);
   // Bridge block
   const b = roads.bridge || {};
-  // Commute verdict — one synthesized sentence from everything the snapshot knows
-  const vEl = $('commute-verdict');
-  if (vEl) {
-    const incCount = (roads.incidents || []).length;
-    const wzCount = (b.work_zones || []).length;
-    const alertCount = (b.alerts || []).length;
-    const odotPending = (((roads.sources || [])[0]) || {}).status !== 'ok';
-    let level, head;
-    if (b.status === 'alert' || alertCount > 0) {
-      level = 'bad'; head = '⛔ Trouble on the corridor — read the bridge alert before you leave';
-    } else if (incCount > 0 || wzCount > 0) {
-      const n = incCount + wzCount;
-      level = 'warn'; head = '⚠️ Mostly clear — ' + n + (n === 1 ? ' thing' : ' things') + ' to know below';
-    } else if (b.status === 'work') {
-      level = 'warn'; head = '⚠️ Bridge work scheduled — expect possible delays';
-    } else {
-      level = 'ok'; head = '✅ Clear run right now';
-    }
-    const parts = [];
-    parts.push('Lewis & Clark Bridge: ' + (alertCount ? alertCount + ' alert(s) posted' : wzCount ? 'work zones posted' : 'no alerts'));
-    if (incCount) parts.push(incCount + ' ODOT incident(s) in the county area');
-    if (odotPending) parts.push('ODOT incident feed still pending its free key — verdict is from bridge + WSDOT sources');
-    if (level !== 'ok') parts.push('US-30 blocked? Cornelius Pass or the St. Johns Bridge are the usual detours');
-    vEl.className = 'commute-verdict cv-' + level;
-    vEl.innerHTML = '<div class="cv-head">' + esc(head) + '</div><div class="cv-sub">' + esc(parts.join(' · ')) + '</div>';
-  }
   const bEl = $('bridge-body');
   const icon = { clear: '✅', work: '🚧', alert: '⛔', unknown: '❔' }[b.status] || '❔';
   let bh = '<div class="bridge-box bridge-' + esc(b.status || 'unknown') + '">'
@@ -1276,8 +1250,6 @@ async function loadRoads() {
     ]);
     renderRoads(roads, cams);
   } catch (e) {
-    const vEl2 = $('commute-verdict');
-    if (vEl2) { vEl2.className = 'commute-verdict cv-warn'; vEl2.innerHTML = '<div class="cv-head">❔ Corridor status unavailable</div><div class="cv-sub">The road snapshot didn\'t load — check TripCheck or WSDOT directly before you drive.</div>'; }
     $('bridge-body').innerHTML = '<p class="fallback">⚠️ Road snapshot unavailable right now — check <a href="https://www.tripcheck.com/" target="_blank" rel="noopener">TripCheck</a> and <a href="https://wsdot.com/traffic/" target="_blank" rel="noopener">WSDOT</a> directly before you drive.</p>';
     $('incidents-body').innerHTML = '';
     const scElErr = $('incidents-scope');
@@ -3938,17 +3910,6 @@ function buildBriefing() {
       ready++;
     }
   }
-  // Commute verdict — the headline sentence from the roads card
-  const cv = $('commute-verdict');
-  if (cv) {
-    const head = cv.querySelector('.cv-head');
-    if (head && !briefingPending(head.textContent)) {
-      const t = briefingClean(head.textContent);
-      lines.push('🚗 Commute: ' + t);
-      rows.push({ icon: '🚗', label: 'Commute', body: t });
-      ready++;
-    }
-  }
   // Bridge + river — the same glance tiles at the top of the page
   const bv = briefingClean(($('glance-bridge-val') || {}).textContent);
   if (bv && !briefingPending(bv)) { lines.push('🌉 Lewis & Clark Bridge: ' + bv + '.'); rows.push({ icon: '🌉', label: 'Lewis & Clark Bridge', body: bv + '.' }); ready++; }
@@ -4764,18 +4725,6 @@ function buildSpokenBriefing() {
       const extra = paras.length > 1 ? briefingClean(paras[1].textContent) : '';
       lines.push(voiceClean(currentTown.name + ' forecast' + (name ? ', ' + name : '') + ': '
         + temp + (short ? '. ' + short : '') + (extra ? '. ' + extra : '') + '.'));
-      ready++;
-    }
-  }
-  // Commute verdict — the headline, plus its specifics when it isn't clear
-  const cv = $('commute-verdict');
-  if (cv) {
-    const head = cv.querySelector('.cv-head');
-    if (head && !briefingPending(head.textContent)) {
-      let line = 'Commute: ' + voiceClean(head.textContent) + '.';
-      const sub = cv.querySelector('.cv-sub');
-      if (sub && /(cv-warn|cv-bad)/.test(cv.className)) line += ' ' + voiceClean(sub.textContent) + '.';
-      lines.push(line);
       ready++;
     }
   }
@@ -5608,15 +5557,6 @@ function wallNowScene() {
   return { kind: 'now', kicker: '🌲 Columbia County Live', head: time, sub: sub, src: 'National Weather Service forecast' };
 }
 
-function wallDriveScene() {
-  const cv = $('commute-verdict');
-  const head = cv ? wallTxt(cv.querySelector('.cv-head')) : '';
-  if (!head || briefingPending(head)) return null;
-  const bv = wallTxt($('glance-bridge-val'));
-  return { kind: 'drive', kicker: '🚗 The drive — US-30 & the bridge', head: head,
-    sub: (bv && !briefingPending(bv)) ? 'Lewis & Clark Bridge: ' + bv : '', src: 'ODOT / WSDOT snapshots, as labeled on the page' };
-}
-
 function wallRiverScene() {
   const rv = wallTxt($('glance-river-val'));
   if (!rv || briefingPending(rv)) return null;
@@ -5664,7 +5604,7 @@ function wallEventScene() {
 function wallBuildScenes() {
   const a = wallAlertScenes();
   const base = [];
-  [wallNowScene(), wallDriveScene(), wallRiverScene(), wallFerryScene(), wallLightScene(), wallEventScene()]
+  [wallNowScene(), wallRiverScene(), wallFerryScene(), wallLightScene(), wallEventScene()]
     .forEach(s => { if (s) base.push(s); });
   if (!a.scenes.length) return base;
   if (!a.severe) {
@@ -6383,8 +6323,6 @@ const LANG_ES = {
   sstb: 'Uno de solo cuatro lugares de Patrocinador de Sección en Viajes — tu nombre y logo entre el mapa, el puente y el ferri que todos revisan antes de manejar. $29/mes, mes a mes, cancela cuando quieras.',
   ssob: 'Uno de solo cuatro lugares de Patrocinador de Sección en Aire Libre — tu nombre y logo entre el clima, los ríos y la pesca que todos revisan antes de salir. $29/mes, mes a mes, cancela cuando quieras.',
   ssmb: 'Uno de solo cuatro lugares de Patrocinador de Sección en Eventos y Más — tu nombre y logo entre los eventos, el directorio y el fin de semana que todos revisan antes de hacer planes. $29/mes, mes a mes, cancela cuando quieras.',
-  commuteh2: '🚗 El veredicto del viaje',
-  commutenote: 'La respuesta en una línea para manejar ahora mismo. El panorama completo del corredor — puente, incidentes y cámaras — está en la pestaña Viajes.',
   driveh2: '🧭 Tu viaje — ¿cuánto dura el manejo?',
   drivefrom: 'Desde',
   driveto: 'Hasta',
@@ -6623,7 +6561,6 @@ const LANG_ES = {
   signposttravel: '🚢 Ferry y carreteras en Viajes',
   signpostoutdoors: '🎣 Aire libre',
   signpostmore: '📅 Eventos y más',
-  dwcommute: 'El veredicto del viaje',
   dwdrive: 'Tu viaje — tiempos de manejo',
   dwgo: 'Antes de salir',
   dwplan: 'Esta noche y mañana',
@@ -7359,7 +7296,7 @@ window.CCLPins = {
    card in its home view. The map card is deliberately not pinnable:
    it is the page's anchor, and a Leaflet container does not need the
    adventure. */
-const PIN_CARDS = ['since-card', 'home-card', 'commute-card', 'go-card', 'plan-card', 'schools-card', 'briefing-card',
+const PIN_CARDS = ['since-card', 'home-card', 'go-card', 'plan-card', 'schools-card', 'briefing-card',
   'roads-card', 'cameras-card', 'incidents-card', 'drive-card', 'routeahead-card', 'ferry-card', 'ferry-mini-card', 'ships-card', 'aircraft-card', 'mthood-card',
   'alerts-card', 'forecast-week-card', 'forecast-card', 'sky-card', 'dark-card', 'rivers-card', 'tides-card',
   'fish-card', 'tracker-card', 'steelhead-card', 'almanac-card',
@@ -7559,14 +7496,9 @@ function buildPrintSheet() {
       if (rows) blocks += psBlock('🌦️ Forecast — ' + esc(currentTown.name), rows);
     }
   }
-  // The drive — commute verdict headline + the bridge glance tile
+  // The drive — the bridge glance tile
   {
     let rows = '';
-    const cv = $('commute-verdict');
-    if (cv) {
-      const head = cv.querySelector('.cv-head');
-      if (head && !briefingPending(head.textContent)) rows += psRow('Verdict', esc(briefingClean(head.textContent)));
-    }
     const bv = briefingClean(($('glance-bridge-val') || {}).textContent);
     if (bv && !briefingPending(bv)) rows += psRow('Lewis &amp; Clark Bridge', esc(bv));
     if (rows) blocks += psBlock('🚗 The drive — US-30 &amp; the bridge', rows);
