@@ -1,6 +1,51 @@
 {
- "fetched_at": "2026-11-20T16:15:15Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-20T16:20:14Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08574,
+   "lon": -122.91437,
+   "sog_kn": 3.8,
+   "cog": 306.7,
+   "heading": 127,
+   "nav_status": 0,
+   "updated": "2026-11-20 16:20:31.750583958 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09293,
+   "lon": -122.92339,
+   "sog_kn": 0,
+   "cog": 337.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-20 16:20:32.72093203 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.25933,
+   "lon": -123.46792,
+   "sog_kn": 0,
+   "cog": 223.9,
+   "heading": 112,
+   "nav_status": 3,
+   "updated": "2026-11-20 16:20:45.513919267 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 208,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-20 16:20:48.980835868 +0000 UTC"
+  }
+ ]
 }
