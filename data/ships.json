@@ -1,6 +1,51 @@
 {
- "fetched_at": "2026-11-20T17:25:19Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-20T17:30:20Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.00286,
+   "lon": -122.85121,
+   "sog_kn": 0.6,
+   "cog": 164.5,
+   "heading": 161,
+   "nav_status": 3,
+   "updated": "2026-11-20 17:30:32.259636724 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.64329,
+   "lon": -122.7528,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-20 17:30:46.137608359 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.26565,
+   "lon": -123.4589,
+   "sog_kn": 0.5,
+   "cog": 303.3,
+   "heading": 30,
+   "nav_status": 3,
+   "updated": "2026-11-20 17:31:01.069548135 +0000 UTC"
+  },
+  {
+   "mmsi": 367047150,
+   "name": "CAPTAIN BOB",
+   "lat": 45.63787,
+   "lon": -122.71391,
+   "sog_kn": 5.9,
+   "cog": 118.8,
+   "heading": 119,
+   "nav_status": 5,
+   "updated": "2026-11-20 17:31:01.218706676 +0000 UTC"
+  }
+ ]
 }
