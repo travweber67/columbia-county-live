@@ -1,73 +1,83 @@
 {
- "fetched_at": "2026-11-20T07:34:30Z",
+ "fetched_at": "2026-11-20T07:39:31Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 367602150,
    "name": "LUNA",
    "lat": 45.61107,
    "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 280.1,
-   "heading": 133,
-   "nav_status": 15,
-   "updated": "2026-11-20 07:34:48.799768032 +0000 UTC"
+   "type_code": 0,
+   "updated": "2026-11-20 07:39:38.734104329 +0000 UTC"
   },
   {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58757,
-   "lon": -122.77067,
-   "sog_kn": 0,
-   "cog": 321.6,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 07:34:53.548738263 +0000 UTC"
-  },
-  {
-   "mmsi": 563331600,
-   "name": "BELLE LUNE",
-   "lat": 46.013,
-   "lon": -122.85533,
-   "sog_kn": 8.4,
-   "cog": 329.5,
-   "heading": 329,
-   "nav_status": 0,
-   "updated": "2026-11-20 07:34:54.399991202 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64349,
-   "lon": -122.75277,
-   "sog_kn": 0,
-   "cog": 219.1,
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.16681,
+   "lon": -123.08615,
+   "sog_kn": 5,
+   "cog": 300.4,
    "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-20 07:34:56.33884384 +0000 UTC"
+   "updated": "2026-11-20 07:39:37.96505988 +0000 UTC"
   },
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00904,
-   "lon": -122.84829,
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.62275,
+   "lon": -122.78844,
+   "sog_kn": 0,
+   "cog": 43.7,
+   "heading": 3,
+   "nav_status": 0,
+   "updated": "2026-11-20 07:39:37.965690897 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09308,
+   "lon": -122.92362,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 07:34:59.349238918 +0000 UTC"
+   "heading": 309,
+   "nav_status": 3,
+   "updated": "2026-11-20 07:39:47.271815275 +0000 UTC"
   },
   {
-   "mmsi": 374590000,
-   "name": "BORACAY ISLAND",
-   "lat": 45.69094,
-   "lon": -122.77234,
-   "sog_kn": 0,
-   "cog": 294.2,
-   "heading": 163,
-   "nav_status": 1,
-   "updated": "2026-11-20 07:35:05.665792049 +0000 UTC"
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09279,
+   "lon": -122.9233,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-20 07:39:48.715383964 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58417,
+   "lon": -122.76618,
+   "type_code": 52,
+   "destination": "US^00D5>0UHN",
+   "updated": "2026-11-20 07:39:53.322204716 +0000 UTC"
+  },
+  {
+   "mmsi": 311001605,
+   "name": "SAGA DISCOVERY",
+   "lat": 46.16822,
+   "lon": -123.09253,
+   "type_code": 79,
+   "destination": "US LOG",
+   "updated": "2026-11-20 07:40:02.143012627 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35742,
+   "type_code": 30,
+   "updated": "2026-11-20 07:40:03.365463013 +0000 UTC"
   }
  ]
 }
