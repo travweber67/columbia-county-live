@@ -1,47 +1,80 @@
 {
- "fetched_at": "2026-11-20T08:51:12Z",
+ "fetched_at": "2026-11-20T08:54:38Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367667060,
-   "name": "GRANITE POINT",
-   "lat": 45.64731,
-   "lon": -122.73992,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20004,
+   "lon": -123.38549,
+   "sog_kn": 0.1,
+   "cog": 358.7,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-20 08:54:51.56258808 +0000 UTC",
+   "type_code": 30,
+   "destination": "FISHMN TMNL"
+  },
+  {
+   "mmsi": 563331600,
+   "name": "BELLE LUNE",
+   "lat": 46.15908,
+   "lon": -123.06674,
+   "sog_kn": 11.9,
+   "cog": 290,
+   "heading": 290,
+   "nav_status": 0,
+   "updated": "2026-11-20 08:54:56.104006217 +0000 UTC"
+  },
+  {
+   "mmsi": 369702000,
+   "name": "COASTAL RELIANCE",
+   "lat": 45.60477,
+   "lon": -122.78302,
+   "type_code": 89,
+   "destination": "USPDX",
+   "updated": "2026-11-20 08:55:03.342950614 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.08972,
+   "lon": -122.92902,
    "type_code": 52,
-   "destination": "SRT PASCO",
-   "updated": "2026-11-20 08:52:03.343488313 +0000 UTC"
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-20 08:55:04.542472429 +0000 UTC"
   },
   {
-   "mmsi": 367575580,
-   "name": "DIANE B.",
-   "lat": 45.75443,
-   "lon": -122.76073,
-   "sog_kn": 8.9,
-   "cog": 356.8,
-   "heading": 355,
-   "nav_status": 5,
-   "updated": "2026-11-20 08:52:08.856805768 +0000 UTC"
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64356,
+   "lon": -122.75245,
+   "sog_kn": 0.1,
+   "cog": 317.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-20 08:55:10.532984822 +0000 UTC"
   },
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.10793,
-   "lon": -122.95897,
-   "type_code": 50,
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-20 08:52:16.364561195 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40234,
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00883,
+   "lon": -122.84886,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 131,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-20 08:52:19.52085552 +0000 UTC"
+   "updated": "2026-11-20 08:55:13.811372916 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.5808,
+   "lon": -122.76008,
+   "type_code": 31,
+   "destination": "PTSI PDX",
+   "updated": "2026-11-20 08:55:18.896088772 +0000 UTC"
   }
  ]
 }
