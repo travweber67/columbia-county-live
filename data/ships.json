@@ -1,6 +1,40 @@
 {
- "fetched_at": "2026-11-20T00:21:07Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-20T00:28:56Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.64867,
+   "lon": -122.74558,
+   "sog_kn": 0,
+   "cog": 106.9,
+   "heading": 106,
+   "nav_status": 12,
+   "updated": "2026-11-20 00:29:07.102408041 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 46.09062,
+   "lon": -122.93208,
+   "sog_kn": 0,
+   "cog": 271.1,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-20 00:29:19.809459082 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79319,
+   "lon": -122.8433,
+   "sog_kn": 0,
+   "cog": 331.5,
+   "heading": 205,
+   "nav_status": 0,
+   "updated": "2026-11-20 00:29:29.692958474 +0000 UTC"
+  }
+ ]
 }
