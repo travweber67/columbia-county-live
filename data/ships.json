@@ -1,69 +1,38 @@
 {
- "fetched_at": "2026-11-20T20:50:36Z",
+ "fetched_at": "2026-11-20T20:51:28Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 45.62784,
-   "lon": -122.70031,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-20 20:51:00.606978962 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.9989,
+   "lon": -122.84841,
+   "sog_kn": 2.6,
+   "cog": 85,
+   "heading": 29,
+   "nav_status": 3,
+   "updated": "2026-11-20 20:53:03.568618177 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09134,
+   "lon": -122.92354,
+   "sog_kn": 9,
+   "cog": 158.4,
+   "heading": 156,
+   "nav_status": 0,
+   "updated": "2026-11-20 20:53:10.509779867 +0000 UTC"
   },
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
-   "lat": 46.09218,
-   "lon": -122.92305,
-   "sog_kn": 5.6,
-   "cog": 142.9,
-   "heading": 145,
-   "nav_status": 0,
-   "updated": "2026-11-20 20:51:01.2719945 +0000 UTC"
-  },
-  {
-   "mmsi": 367323610,
-   "name": "MIKETTE",
-   "lat": 46.20619,
-   "lon": -123.38661,
-   "type_code": 30,
-   "destination": "",
-   "updated": "2026-11-20 20:51:02.337136202 +0000 UTC"
-  },
-  {
-   "mmsi": 366892350,
-   "name": "NAT GEO SEA BIRD",
-   "lat": 46.08967,
-   "lon": -122.92971,
-   "sog_kn": 0,
-   "cog": 72.7,
-   "heading": 109,
-   "nav_status": 5,
-   "updated": "2026-11-20 20:51:02.350732818 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35743,
-   "sog_kn": 0,
-   "cog": 223.4,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-20 20:51:06.922006147 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.64383,
-   "lon": -122.72579,
-   "sog_kn": 0,
-   "cog": 178.4,
-   "heading": 114,
-   "nav_status": 12,
-   "updated": "2026-11-20 20:51:19.638760423 +0000 UTC"
+   "lat": 46.08959,
+   "lon": -122.92059,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-20 20:53:12.945794796 +0000 UTC"
   }
  ]
 }
