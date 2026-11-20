@@ -3565,3 +3565,134 @@ html[data-theme="dark"] .dir-empty{
   .saver-scroll-set .saver-sponsor .saver-answer-sub{-webkit-line-clamp:4;font-size:.9rem}
   .saver-sponsor-cta{font-size:.92rem;padding:8px 16px}
 }
+
+/* ============ Events as cards (Nov 19, 2026, shipped v121) ============
+   The Keep It Local events pattern restyled to this site's system:
+   mini-month card (desktop) / swipeable day-pill strip (mobile) for
+   picking a day, then ONE frosted card per event — every card its own
+   glass panel with real gaps, nothing grouped under a shared sheet.
+   The ＋ Add button lives inside its card's action row, so it can
+   never hang off the edge the way the old flex row let it. */
+#events-body{overflow-x:clip}
+.cev-wrap{display:grid;grid-template-columns:300px minmax(0,1fr);gap:14px;align-items:start}
+.cev-side{min-width:0}
+.cev-mini{
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);
+  border:1px solid rgba(255,255,255,.6);border-radius:var(--radius);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 2px rgba(20,32,16,.10),0 16px 36px rgba(20,32,16,.18);
+  padding:14px 14px 10px;
+}
+html[data-theme="dark"] .cev-mini{
+  background:linear-gradient(180deg,rgba(26,43,32,.85),rgba(13,23,16,.77));
+  border-color:rgba(196,226,196,.18);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 1px 2px rgba(0,0,0,.4),0 16px 36px rgba(0,0,0,.35);
+}
+.cev-mini-head{font-weight:800;font-size:.95rem;color:var(--accent-dark);margin:0 0 6px;text-align:center}
+html[data-theme="dark"] .cev-mini-head{color:#bfe3c8}
+.cev-mini-cal{width:100%;border-collapse:collapse}
+.cev-mini-cal th{font-size:.66rem;color:var(--muted);font-weight:700;padding:4px 0;text-transform:uppercase;letter-spacing:.05em}
+.cev-mini-cal td{text-align:center;font-size:.83rem;padding:3px 0;color:var(--text)}
+.cev-mini-cal td button{
+  font:inherit;font-weight:800;cursor:pointer;color:#fff;background:var(--accent);
+  border:none;width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;padding:0;
+}
+.cev-mini-cal td button:hover{background:var(--accent-2)}
+.cev-mini-cal td.today button{box-shadow:0 0 0 2px var(--warm-fill)}
+.cev-mini-cal td.sel button{background:var(--warm-fill);color:#23160a}
+.cev-pills{display:none}
+.cev-list-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:2px 0 12px}
+.cev-list-h{font-size:1.05rem;color:#fff;text-shadow:0 1px 10px rgba(12,26,16,.55)}
+.cev-reset{
+  font:inherit;font-size:.78rem;font-weight:700;cursor:pointer;color:var(--accent-dark);
+  background:linear-gradient(180deg,rgba(253,250,240,.92),rgba(249,244,229,.85));
+  border:1px solid rgba(255,255,255,.6);border-radius:999px;padding:5px 12px;
+}
+.cev-reset:hover{color:var(--accent)}
+.cev-none{color:rgba(255,255,255,.92);text-shadow:0 1px 8px rgba(12,26,16,.6);font-size:.92rem}
+.cev-card{
+  display:flex;gap:14px;box-sizing:border-box;max-width:100%;
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);
+  border:1px solid rgba(255,255,255,.6);border-radius:var(--radius);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 2px rgba(20,32,16,.10),0 16px 36px rgba(20,32,16,.18);
+  padding:14px 16px;margin:0 0 12px;
+}
+html[data-theme="dark"] .cev-card{
+  background:linear-gradient(180deg,rgba(26,43,32,.85),rgba(13,23,16,.77));
+  border-color:rgba(196,226,196,.18);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 1px 2px rgba(0,0,0,.4),0 16px 36px rgba(0,0,0,.35);
+}
+.cev-card-home{border-left:3px solid var(--warm-fill)}
+.cev-badge{
+  flex:0 0 auto;width:58px;height:fit-content;text-align:center;color:#fdfaf0;
+  background:linear-gradient(180deg,var(--accent),var(--accent-dark));
+  border-radius:10px;padding:8px 2px 7px;display:flex;flex-direction:column;align-items:center;gap:0;
+  box-shadow:0 2px 8px rgba(20,32,16,.25);
+}
+.cev-mon{font-size:.64rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;opacity:.85}
+.cev-daynum{font-family:var(--display);font-size:1.5rem;line-height:1.05;font-weight:700}
+.cev-dow{font-size:.64rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;opacity:.85}
+.cev-main{flex:1 1 auto;min-width:0}
+.cev-title{font-size:1.02rem;font-weight:700;line-height:1.3;overflow-wrap:break-word}
+.cev-title a{color:var(--text);text-decoration:none}
+.cev-title a:hover{color:var(--accent);text-decoration:underline}
+.cev-when{font-size:.86rem;color:var(--muted);margin:3px 0 0}
+.cev-place{font-size:.86rem;color:var(--muted);margin:2px 0 0;overflow-wrap:break-word}
+.cev-note{font-size:.88rem;line-height:1.45;margin:6px 0 0;overflow-wrap:break-word}
+.cev-photo{display:block;width:100%;height:auto;border-radius:10px;margin:9px 0 2px}
+.cev-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;margin-top:11px}
+.cev-actions .evcal-btn{align-self:center}
+.cev-src{
+  font-size:.72rem;color:var(--muted);white-space:nowrap;
+  border:1px solid var(--border);border-radius:999px;padding:2px 8px;background:rgba(255,255,255,.35);
+}
+html[data-theme="dark"] .cev-src{background:rgba(255,255,255,.06)}
+.cev-more-wrap{text-align:center;margin:4px 0 2px}
+.cev-more{
+  font:inherit;font-size:.88rem;font-weight:700;cursor:pointer;color:var(--accent-dark);
+  background:linear-gradient(180deg,rgba(253,250,240,.92),rgba(249,244,229,.85));
+  border:1px solid rgba(255,255,255,.6);border-radius:999px;padding:9px 20px;
+  box-shadow:0 1px 2px rgba(20,32,16,.10),0 8px 20px rgba(20,32,16,.14);
+}
+.cev-more:hover{color:var(--accent)}
+.cev-more-n{color:var(--muted);font-weight:600}
+#events-body .cev-card.finder-flash-row{animation:finderFlashRow 1.3s ease-in-out 2}
+@media (prefers-reduced-motion: reduce){
+  #events-body .cev-card.finder-flash-row{animation:none;background:rgba(245,183,77,.35)}
+}
+@media (max-width:900px){
+  .cev-wrap{grid-template-columns:minmax(0,1fr)}
+  .cev-mini{display:none}
+  .cev-pills{
+    display:flex;gap:8px;overflow-x:auto;max-width:100%;padding:4px 2px 10px;margin-bottom:2px;
+    scrollbar-width:none;-webkit-overflow-scrolling:touch;
+  }
+  .cev-pills::-webkit-scrollbar{display:none}
+  .cev-pill{
+    flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:1px;min-width:52px;
+    padding:8px 6px 7px;border-radius:14px;cursor:pointer;font:inherit;color:var(--text);
+    background:linear-gradient(180deg,rgba(253,250,240,.88),rgba(249,244,229,.8));
+    -webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);
+    border:1px solid rgba(255,255,255,.6);box-shadow:0 1px 2px rgba(20,32,16,.10);
+  }
+  html[data-theme="dark"] .cev-pill{
+    background:linear-gradient(180deg,rgba(26,43,32,.88),rgba(13,23,16,.8));
+    border-color:rgba(196,226,196,.18);
+  }
+  .cev-pill-dow{font-size:.66rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+  .cev-pill-num{font-size:1.12rem;font-weight:800;line-height:1.15;color:var(--accent-dark)}
+  html[data-theme="dark"] .cev-pill-num{color:#bfe3c8}
+  .cev-pill-dot{width:6px;height:6px;border-radius:50%;background:var(--accent-2);margin-top:2px}
+  .cev-pill.today{box-shadow:inset 0 0 0 2px var(--warm-fill)}
+  .cev-pill.sel{background:var(--accent);border-color:var(--accent)}
+  .cev-pill.sel .cev-pill-dow{color:rgba(255,255,255,.75)}
+  .cev-pill.sel .cev-pill-num{color:#fff}
+  .cev-pill.sel .cev-pill-dot{background:var(--warm-fill)}
+}
+@media (max-width:480px){
+  .cev-card{gap:11px;padding:12px}
+  .cev-badge{width:50px}
+  .cev-daynum{font-size:1.3rem}
+  .cev-title{font-size:.98rem}
+}
