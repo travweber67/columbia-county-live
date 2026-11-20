@@ -1,58 +1,6 @@
 {
- "fetched_at": "2026-11-20T16:05:14Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09045,
-   "lon": -122.9324,
-   "type_code": 52,
-   "destination": "COL RIVER",
-   "updated": "2026-11-20 16:05:20.127943902 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15707,
-   "lon": -123.40234,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 134,
-   "nav_status": 0,
-   "updated": "2026-11-20 16:05:39.924211578 +0000 UTC"
-  },
-  {
-   "mmsi": 440086000,
-   "name": "SM KWANGYANG",
-   "lat": 46.14276,
-   "lon": -123.30911,
-   "sog_kn": 13.9,
-   "cog": 261.1,
-   "heading": 264,
-   "nav_status": 0,
-   "updated": "2026-11-20 16:05:48.965956112 +0000 UTC"
-  },
-  {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 46.17071,
-   "lon": -123.21936,
-   "type_code": 0,
-   "destination": "VANCOUVER",
-   "updated": "2026-11-20 16:05:51.342767251 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58751,
-   "lon": -122.77073,
-   "sog_kn": 0,
-   "cog": 179.6,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 16:05:54.286380219 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-20T16:10:14Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
