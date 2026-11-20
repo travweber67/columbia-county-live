@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-20T21:10:38Z",
+ "fetched_at": "2026-11-20T21:15:38Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -17,19 +17,6 @@
  ],
  "incidents": [
   {
-   "title": "A crash has the both WB and the EB right lanes closed at Mallory. Prepare to slow or move over for worker safety.",
-   "desc": "",
-   "impact": "Estimated delay of 20 minutes - 2 hours",
-   "place": "US30BP, 1 mile East of Intersection with Pacific Highway I-5",
-   "route": "US30BY",
-   "milepost": 6.07,
-   "lat": 45.57722,
-   "lon": -122.66334,
-   "start": "2026-11-20T12:25:48.3-08:00",
-   "updated": "2026-11-20T12:54:31-08:00",
-   "source": "ODOT TripCheck"
-  },
-  {
    "title": "A crash has occurred. Prepare to slow or move over for worker safety.",
    "desc": "",
    "impact": "Estimated delay under 20 minutes",
@@ -40,6 +27,19 @@
    "lon": -122.66334,
    "start": "2026-11-20T12:56:00.443-08:00",
    "updated": "2026-11-20T12:56:30-08:00",
+   "source": "ODOT TripCheck"
+  },
+  {
+   "title": "A crash has occurred with minimal delay to traffic. Prepare to slow or move over for worker safety.",
+   "desc": "",
+   "impact": "No to Minimum Delay",
+   "place": "US30BP, 1 mile East of Intersection with Pacific Highway I-5",
+   "route": "US30BY",
+   "milepost": 6.07,
+   "lat": 45.57722,
+   "lon": -122.66334,
+   "start": "2026-11-20T12:25:48.3-08:00",
+   "updated": "2026-11-20T13:13:57-08:00",
    "source": "ODOT TripCheck"
   },
   {
@@ -173,7 +173,7 @@
    "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 131,
+ "odot_active_statewide": 130,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
   "alerts": [],
