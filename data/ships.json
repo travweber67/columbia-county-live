@@ -1,66 +1,73 @@
 {
- "fetched_at": "2026-11-20T06:39:27Z",
+ "fetched_at": "2026-11-20T06:44:27Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65013,
-   "lon": -122.74759,
-   "type_code": 33,
-   "updated": "2026-11-20 06:39:34.0129342 +0000 UTC"
+   "mmsi": 311001605,
+   "name": "SAGA DISCOVERY",
+   "lat": 46.08644,
+   "lon": -122.90884,
+   "sog_kn": 9.8,
+   "cog": 301,
+   "heading": 299,
+   "nav_status": 0,
+   "updated": "2026-11-20 06:44:36.5840887 +0000 UTC"
   },
   {
-   "mmsi": 355322000,
-   "name": "AMIS ACE",
-   "lat": 46.17274,
-   "lon": -123.0966,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-20 06:39:34.164218805 +0000 UTC"
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.60797,
+   "lon": -122.63071,
+   "sog_kn": 5.7,
+   "cog": 102.2,
+   "heading": 100,
+   "nav_status": 0,
+   "updated": "2026-11-20 06:44:56.470005603 +0000 UTC",
+   "type_code": 52,
+   "destination": "US^02NV>02A0"
   },
   {
    "mmsi": 367047180,
    "name": "SUNDIAL",
-   "lat": 45.62009,
-   "lon": -122.78787,
+   "lat": 45.62089,
+   "lon": -122.78815,
    "sog_kn": 0,
-   "cog": 12,
-   "heading": 354,
+   "cog": 341.6,
+   "heading": 84,
    "nav_status": 12,
-   "updated": "2026-11-20 06:39:43.562474573 +0000 UTC"
+   "updated": "2026-11-20 06:44:43.498198741 +0000 UTC"
   },
   {
-   "mmsi": 338570000,
-   "name": "BAYPORT",
-   "lat": 46.08672,
-   "lon": -122.91066,
-   "sog_kn": 10.5,
-   "cog": 303.6,
-   "heading": 301,
-   "nav_status": 0,
-   "updated": "2026-11-20 06:39:45.084151855 +0000 UTC"
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 269.4,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-20 06:44:49.211698775 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.09278,
-   "lon": -122.9233,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-20 06:39:49.60813399 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 45.98373,
-   "lon": -122.83538,
-   "sog_kn": 0.1,
-   "cog": 268.4,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15343,
+   "lon": -123.37712,
+   "sog_kn": 0,
+   "cog": 7.4,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-20 06:39:55.067997814 +0000 UTC"
+   "updated": "2026-11-20 06:44:56.811464723 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64726,
+   "lon": -122.73993,
+   "type_code": 52,
+   "destination": "SRT PASCO",
+   "updated": "2026-11-20 06:45:02.186832211 +0000 UTC"
   }
  ]
 }
