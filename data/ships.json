@@ -1,53 +1,86 @@
 {
- "fetched_at": "2026-11-20T01:29:00Z",
+ "fetched_at": "2026-11-20T01:34:00Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64537,
-   "lon": -122.73506,
-   "type_code": 70,
-   "destination": "PER ORDERS",
-   "updated": "2026-11-20 01:29:14.815947889 +0000 UTC",
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35742,
    "sog_kn": 0,
-   "cog": 30.4,
-   "heading": 112,
-   "nav_status": 5
+   "cog": 241.8,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-20 01:34:08.143432667 +0000 UTC"
   },
   {
-   "mmsi": 367315790,
-   "name": "LORI B.",
-   "lat": 45.63682,
-   "lon": -122.71271,
-   "sog_kn": 9.8,
-   "cog": 302.6,
-   "heading": 303,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.63878,
+   "lon": -122.73061,
+   "sog_kn": 1.6,
+   "cog": 127.8,
+   "heading": 120,
    "nav_status": 0,
-   "updated": "2026-11-20 01:29:17.325313255 +0000 UTC"
+   "updated": "2026-11-20 01:34:08.288046643 +0000 UTC"
   },
   {
-   "mmsi": 338205428,
-   "name": "CLAIRE B",
-   "lat": 45.83479,
-   "lon": -122.80971,
-   "sog_kn": 6.1,
-   "cog": 212.4,
-   "heading": 208,
-   "nav_status": 0,
-   "updated": "2026-11-20 01:29:18.281461751 +0000 UTC"
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.63047,
+   "lon": -122.70666,
+   "sog_kn": 0.2,
+   "cog": 28.7,
+   "heading": 118,
+   "nav_status": 12,
+   "updated": "2026-11-20 01:34:08.380122944 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09306,
-   "lon": -122.92315,
-   "sog_kn": 0.1,
-   "cog": 122.7,
-   "heading": 124,
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.62272,
+   "lon": -122.78835,
+   "sog_kn": 0,
+   "cog": 74.8,
+   "heading": 4,
    "nav_status": 0,
-   "updated": "2026-11-20 01:29:21.464650366 +0000 UTC"
+   "updated": "2026-11-20 01:34:33.116245337 +0000 UTC",
+   "type_code": 31,
+   "destination": "PORTLAND OR ASHGROVE"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.7932,
+   "lon": -122.84331,
+   "sog_kn": 0,
+   "cog": 332,
+   "heading": 206,
+   "nav_status": 0,
+   "updated": "2026-11-20 01:34:09.365699822 +0000 UTC"
+  },
+  {
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 45.71468,
+   "lon": -122.76356,
+   "sog_kn": 0,
+   "cog": 197.1,
+   "heading": 189,
+   "nav_status": 1,
+   "updated": "2026-11-20 01:34:13.494000267 +0000 UTC"
+  },
+  {
+   "mmsi": 440086000,
+   "name": "SM KWANGYANG",
+   "lat": 45.63983,
+   "lon": -122.7471,
+   "sog_kn": 0,
+   "cog": 324.7,
+   "heading": 136,
+   "nav_status": 5,
+   "updated": "2026-11-20 01:34:27.374321111 +0000 UTC"
   }
  ]
 }
