@@ -1,6 +1,82 @@
 {
- "fetched_at": "2026-11-20T18:30:25Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-20T18:35:26Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 636013613,
+   "name": "LONDON 2012",
+   "lat": 46.18491,
+   "lon": -123.17871,
+   "sog_kn": 13.7,
+   "cog": 63.3,
+   "heading": 60,
+   "nav_status": 0,
+   "updated": "2026-11-20 18:35:43.090888243 +0000 UTC"
+  },
+  {
+   "mmsi": 367513150,
+   "name": "COLUMBIA",
+   "lat": 45.57934,
+   "lon": -122.75185,
+   "sog_kn": 8.5,
+   "cog": 119.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-20 18:35:47.191500239 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 45.64364,
+   "lon": -122.74503,
+   "sog_kn": 1,
+   "cog": 182.1,
+   "heading": 140,
+   "nav_status": 0,
+   "updated": "2026-11-20 18:35:49.764438007 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08209,
+   "lon": -122.9058,
+   "sog_kn": 0.3,
+   "cog": 210.3,
+   "heading": 222,
+   "nav_status": 0,
+   "updated": "2026-11-20 18:35:53.348389528 +0000 UTC"
+  },
+  {
+   "mmsi": 367002210,
+   "name": "RACHELEBRUSCO",
+   "lat": 46.2012,
+   "lon": -123.38696,
+   "sog_kn": 0,
+   "cog": 314.5,
+   "heading": 228,
+   "nav_status": 0,
+   "updated": "2026-11-20 18:35:56.164897148 +0000 UTC"
+  },
+  {
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 45.66698,
+   "lon": -122.76696,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-20 18:36:01.716290779 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.38551,
+   "sog_kn": 0.1,
+   "cog": 23.9,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-20 18:36:02.347441388 +0000 UTC"
+  }
+ ]
 }
