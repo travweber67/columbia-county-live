@@ -1,49 +1,42 @@
 {
- "fetched_at": "2026-11-20T06:04:24Z",
+ "fetched_at": "2026-11-20T06:09:24Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64346,
-   "lon": -122.75269,
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 45.5951,
+   "lon": -122.77867,
+   "type_code": 57,
+   "destination": "US PDX",
+   "updated": "2026-11-20 06:09:46.003502353 +0000 UTC",
    "sog_kn": 0,
-   "cog": 219.1,
+   "cog": 224.5,
+   "heading": 148,
+   "nav_status": 5
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65013,
+   "lon": -122.74764,
+   "sog_kn": 0,
+   "cog": 290.2,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-20 06:04:56.257831346 +0000 UTC"
+   "nav_status": 3,
+   "updated": "2026-11-20 06:09:58.033980008 +0000 UTC"
   },
   {
-   "mmsi": 355173000,
-   "name": "EVER BEST",
-   "lat": 45.63925,
-   "lon": -122.77783,
-   "sog_kn": 0,
-   "cog": 340.1,
-   "heading": 228,
-   "nav_status": 5,
-   "updated": "2026-11-20 06:04:58.910283963 +0000 UTC"
-  },
-  {
-   "mmsi": 356334000,
-   "name": "LAUREL ISLAND",
-   "lat": 45.68589,
-   "lon": -122.77214,
-   "sog_kn": 0,
-   "cog": 96.3,
-   "heading": 189,
-   "nav_status": 1,
-   "updated": "2026-11-20 06:05:02.749783756 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.10792,
-   "lon": -122.95901,
-   "type_code": 50,
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-20 06:05:04.620891812 +0000 UTC"
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79499,
+   "lon": -122.84103,
+   "sog_kn": 1.8,
+   "cog": 237.7,
+   "heading": 45,
+   "nav_status": 12,
+   "updated": "2026-11-20 06:10:00.870884289 +0000 UTC"
   }
  ]
 }
