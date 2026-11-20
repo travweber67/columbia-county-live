@@ -1,62 +1,6 @@
 {
- "fetched_at": "2026-11-20T21:50:39Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.38553,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-20 21:50:51.666351757 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.18427,
-   "lon": -123.11925,
-   "sog_kn": 1.4,
-   "cog": 139.1,
-   "heading": 122,
-   "nav_status": 3,
-   "updated": "2026-11-20 21:50:57.082131969 +0000 UTC"
-  },
-  {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 45.65608,
-   "lon": -122.75882,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-20 21:51:07.934948247 +0000 UTC",
-   "sog_kn": 5.6,
-   "cog": 315.1,
-   "heading": 320,
-   "nav_status": 0
-  },
-  {
-   "mmsi": 368327640,
-   "name": "CAPT. STEVE",
-   "lat": 45.64497,
-   "lon": -122.7724,
-   "sog_kn": 8.2,
-   "cog": 219.5,
-   "heading": 219,
-   "nav_status": 12,
-   "updated": "2026-11-20 21:51:14.998684077 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.80254,
-   "lon": -122.78723,
-   "sog_kn": 7,
-   "cog": 340.7,
-   "heading": 339,
-   "nav_status": 12,
-   "updated": "2026-11-20 21:51:21.31873194 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-20T21:51:29Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
