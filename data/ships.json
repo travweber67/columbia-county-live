@@ -1,48 +1,49 @@
 {
- "fetched_at": "2026-11-20T22:21:30Z",
+ "fetched_at": "2026-11-20T22:25:42Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 563236100,
-   "name": "XH DEEP COVER",
-   "lat": 45.63023,
-   "lon": -122.69561,
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58081,
+   "lon": -122.76008,
+   "type_code": 31,
+   "destination": "PORTLAND PTSI",
+   "updated": "2026-11-20 22:26:00.591917989 +0000 UTC"
+  },
+  {
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 45.69099,
+   "lon": -122.77133,
    "sog_kn": 0,
-   "cog": 10.6,
-   "heading": 128,
+   "cog": 178.8,
+   "heading": 194,
+   "nav_status": 1,
+   "updated": "2026-11-20 22:26:09.598515604 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.04449,
+   "lon": -122.88323,
+   "sog_kn": 1.2,
+   "cog": 341.4,
+   "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-20 22:22:57.935750942 +0000 UTC"
+   "updated": "2026-11-20 22:26:18.030995655 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.08219,
-   "lon": -122.90784,
-   "sog_kn": 0.5,
-   "cog": 40.9,
-   "heading": 205,
-   "nav_status": 0,
-   "updated": "2026-11-20 22:23:02.103662042 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.14713,
-   "lon": -123.38327,
-   "type_code": 99,
-   "updated": "2026-11-20 22:23:02.253981224 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.63829,
-   "lon": -122.72909,
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09052,
+   "lon": -122.93232,
    "sog_kn": 0,
-   "cog": 226,
-   "heading": 116,
-   "nav_status": 0,
-   "updated": "2026-11-20 22:23:06.788451898 +0000 UTC"
+   "cog": 222.9,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-20 22:26:18.557807943 +0000 UTC"
   }
  ]
 }
