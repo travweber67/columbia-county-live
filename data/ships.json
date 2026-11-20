@@ -1,8 +1,39 @@
 {
- "fetched_at": "2026-11-20T05:54:23Z",
+ "fetched_at": "2026-11-20T05:59:23Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 46.14903,
+   "lon": -123.26802,
+   "sog_kn": 12.5,
+   "cog": 77.2,
+   "heading": 67,
+   "nav_status": 0,
+   "updated": "2026-11-20 05:59:38.948547169 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79227,
+   "lon": -122.84448,
+   "sog_kn": 0,
+   "cog": 124.1,
+   "heading": 48,
+   "nav_status": 12,
+   "updated": "2026-11-20 05:59:41.156939993 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.08974,
+   "lon": -122.92897,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-20 05:59:42.949731241 +0000 UTC"
+  },
   {
    "mmsi": 368201480,
    "name": "KINANI H",
@@ -12,73 +43,7 @@
    "cog": 71.5,
    "heading": 176,
    "nav_status": 11,
-   "updated": "2026-11-20 05:54:28.072601703 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09305,
-   "lon": -122.92312,
-   "sog_kn": 0.1,
-   "cog": 117,
-   "heading": 126,
-   "nav_status": 0,
-   "updated": "2026-11-20 05:54:30.577109964 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 46.00879,
-   "lon": -122.84886,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 05:54:33.959631055 +0000 UTC"
-  },
-  {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.62271,
-   "lon": -122.78842,
-   "sog_kn": 0,
-   "cog": 33.6,
-   "heading": 4,
-   "nav_status": 0,
-   "updated": "2026-11-20 05:54:36.772704063 +0000 UTC"
-  },
-  {
-   "mmsi": 369702000,
-   "name": "COASTAL RELIANCE",
-   "lat": 46.06155,
-   "lon": -122.88392,
-   "sog_kn": 10.8,
-   "cog": 166.2,
-   "heading": 164,
-   "nav_status": 0,
-   "updated": "2026-11-20 05:54:44.200173443 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15343,
-   "lon": -123.37714,
-   "sog_kn": 0,
-   "cog": 10.3,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 05:54:46.249663996 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.009,
-   "lon": -122.84825,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 05:54:48.71981609 +0000 UTC"
+   "updated": "2026-11-20 05:59:47.371346909 +0000 UTC"
   }
  ]
 }
