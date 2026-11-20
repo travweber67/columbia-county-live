@@ -1,53 +1,71 @@
 {
- "fetched_at": "2026-11-20T23:45:48Z",
+ "fetched_at": "2026-11-20T23:50:48Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.0929,
-   "lon": -122.9234,
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.2062,
+   "lon": -123.38663,
+   "type_code": 30,
+   "destination": "",
+   "updated": "2026-11-20 23:50:59.746779565 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.38542,
    "sog_kn": 0,
-   "cog": 312.1,
+   "cog": 183.1,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 23:46:02.277564387 +0000 UTC"
+   "nav_status": 8,
+   "updated": "2026-11-20 23:51:03.653647503 +0000 UTC"
   },
   {
    "mmsi": 367047120,
    "name": "REBEL",
-   "lat": 45.62825,
-   "lon": -122.69134,
-   "sog_kn": 0.1,
-   "cog": 351.8,
-   "heading": 278,
+   "lat": 45.62869,
+   "lon": -122.692,
+   "sog_kn": 1.1,
+   "cog": 320.3,
+   "heading": 314,
    "nav_status": 12,
-   "updated": "2026-11-20 23:46:04.076106958 +0000 UTC"
+   "updated": "2026-11-20 23:51:04.348373483 +0000 UTC"
   },
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.98774,
-   "lon": -122.83801,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-20 23:46:11.191839572 +0000 UTC",
-   "sog_kn": 4.7,
-   "cog": 137.9,
-   "heading": 144,
-   "nav_status": 12
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58762,
-   "lon": -122.77041,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09279,
+   "lon": -122.9233,
    "sog_kn": 0,
-   "cog": 302.9,
-   "heading": 140,
+   "cog": 326.3,
+   "heading": 126,
    "nav_status": 0,
-   "updated": "2026-11-20 23:46:11.55620141 +0000 UTC"
+   "updated": "2026-11-20 23:51:04.513172712 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08966,
+   "lon": -122.9297,
+   "sog_kn": 0,
+   "cog": 72.7,
+   "heading": 109,
+   "nav_status": 5,
+   "updated": "2026-11-20 23:51:05.150049319 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64349,
+   "lon": -122.75249,
+   "sog_kn": 0,
+   "cog": 3.7,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-20 23:51:19.513085209 +0000 UTC"
   }
  ]
 }
