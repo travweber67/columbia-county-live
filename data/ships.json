@@ -1,40 +1,93 @@
 {
- "fetched_at": "2026-11-20T22:51:36Z",
+ "fetched_at": "2026-11-20T22:55:45Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00899,
-   "lon": -122.84829,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40233,
    "sog_kn": 0,
    "cog": 360,
+   "heading": 134,
+   "nav_status": 0,
+   "updated": "2026-11-20 22:55:49.205376617 +0000 UTC"
+  },
+  {
+   "mmsi": 368201480,
+   "name": "KINANI H",
+   "lat": 45.91025,
+   "lon": -122.80557,
+   "sog_kn": 0,
+   "cog": 197.5,
+   "heading": 3,
+   "nav_status": 11,
+   "updated": "2026-11-20 22:55:56.775618483 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15343,
+   "lon": -123.37714,
+   "sog_kn": 0,
+   "cog": 14.8,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-20 22:52:25.915803696 +0000 UTC"
+   "updated": "2026-11-20 22:55:58.655825741 +0000 UTC"
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19996,
-   "lon": -123.38552,
-   "sog_kn": 0,
-   "cog": 346.2,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09406,
+   "lon": -122.9428,
+   "sog_kn": 0.2,
+   "cog": 297.7,
    "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-20 22:52:42.206266911 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-20 22:56:03.442602 +0000 UTC"
   },
   {
-   "mmsi": 366888830,
-   "name": "KAHU",
-   "lat": 45.61165,
-   "lon": -122.64422,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20001,
+   "lon": -123.3854,
    "sog_kn": 0,
-   "cog": 319.3,
-   "heading": 117,
+   "cog": 20.1,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-20 22:56:05.70485362 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09308,
+   "lon": -122.92362,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 308,
+   "nav_status": 3,
+   "updated": "2026-11-20 22:56:09.629877105 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64538,
+   "lon": -122.73504,
+   "sog_kn": 0,
+   "cog": 30.4,
+   "heading": 112,
    "nav_status": 5,
-   "updated": "2026-11-20 22:52:45.800610418 +0000 UTC"
+   "updated": "2026-11-20 22:56:13.798785634 +0000 UTC"
+  },
+  {
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.62761,
+   "lon": -122.69187,
+   "type_code": 52,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-20 22:56:14.091053928 +0000 UTC"
   }
  ]
 }
