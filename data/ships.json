@@ -1,40 +1,122 @@
 {
- "fetched_at": "2026-11-20T03:14:10Z",
+ "fetched_at": "2026-11-20T03:19:09Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60757,
-   "lon": -122.67756,
+   "mmsi": 368201480,
+   "name": "KINANI H",
+   "lat": 45.91058,
+   "lon": -122.80558,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "cog": 71.5,
+   "heading": 175,
+   "nav_status": 11,
+   "updated": "2026-11-20 03:19:16.202092788 +0000 UTC"
+  },
+  {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.6227,
+   "lon": -122.78839,
+   "sog_kn": 0,
+   "cog": 71.3,
+   "heading": 4,
    "nav_status": 0,
-   "updated": "2026-11-20 03:14:30.2847639 +0000 UTC"
+   "updated": "2026-11-20 03:19:18.362697472 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58079,
+   "lon": -122.76006,
+   "type_code": 31,
+   "destination": "PTSI PDX",
+   "updated": "2026-11-20 03:19:18.898745037 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08983,
+   "lon": -122.92905,
+   "sog_kn": 0,
+   "cog": 180.6,
+   "heading": 99,
+   "nav_status": 5,
+   "updated": "2026-11-20 03:19:27.457177682 +0000 UTC"
+  },
+  {
+   "mmsi": 352006113,
+   "name": "BELFORTUNE",
+   "lat": 46.09909,
+   "lon": -122.93941,
+   "sog_kn": 0,
+   "cog": 274.5,
+   "heading": 109,
+   "nav_status": 5,
+   "updated": "2026-11-20 03:19:30.308555086 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.09296,
+   "lon": -122.92312,
+   "sog_kn": 0,
+   "cog": 141.5,
+   "heading": 121,
+   "nav_status": 5,
+   "updated": "2026-11-20 03:19:35.351115255 +0000 UTC"
+  },
+  {
+   "mmsi": 440086000,
+   "name": "SM KWANGYANG",
+   "lat": 45.63983,
+   "lon": -122.7471,
+   "type_code": 74,
+   "destination": "USPDX",
+   "updated": "2026-11-20 03:19:35.72273288 +0000 UTC"
+  },
+  {
+   "mmsi": 369702000,
+   "name": "COASTAL RELIANCE",
+   "lat": 46.18026,
+   "lon": -123.42869,
+   "sog_kn": 10.2,
+   "cog": 148.3,
+   "heading": 140,
+   "nav_status": 0,
+   "updated": "2026-11-20 03:19:36.880065336 +0000 UTC"
   },
   {
    "mmsi": 367653630,
    "name": "OSCAR B",
-   "lat": 46.13717,
-   "lon": -123.3789,
-   "sog_kn": 0.1,
-   "cog": 186,
+   "lat": 46.14367,
+   "lon": -123.38388,
+   "sog_kn": 7.7,
+   "cog": 341.9,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-20 03:14:37.773041264 +0000 UTC"
+   "updated": "2026-11-20 03:19:36.968290127 +0000 UTC"
   },
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00902,
-   "lon": -122.84821,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.65198,
+   "lon": -122.7572,
+   "sog_kn": 7.6,
+   "cog": 127.2,
+   "heading": 129,
    "nav_status": 0,
-   "updated": "2026-11-20 03:14:40.797143207 +0000 UTC"
+   "updated": "2026-11-20 03:19:37.561969582 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.26568,
+   "lon": -123.45843,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-20 03:19:39.016581346 +0000 UTC"
   }
  ]
 }
