@@ -1,6 +1,71 @@
 {
- "fetched_at": "2026-11-20T13:30:00Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-20T13:35:00Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64383,
+   "lon": -122.72578,
+   "sog_kn": 0,
+   "cog": 309.8,
+   "heading": 116,
+   "nav_status": 12,
+   "updated": "2026-11-20 13:34:50.070771381 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37715,
+   "sog_kn": 0,
+   "cog": 309.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-20 13:34:57.230649462 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.59449,
+   "lon": -122.77666,
+   "sog_kn": 0.6,
+   "cog": 249.8,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-20 13:35:06.275584877 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 282.8,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-20 13:35:18.90880144 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.00896,
+   "lon": -122.8483,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-20 13:35:29.148819778 +0000 UTC"
+  },
+  {
+   "mmsi": 366396000,
+   "name": "NAT GEO SEA LION",
+   "lat": 46.08956,
+   "lon": -122.92975,
+   "type_code": 68,
+   "destination": "RAINIER",
+   "updated": "2026-11-20 13:35:32.145772069 +0000 UTC"
+  }
+ ]
 }
