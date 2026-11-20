@@ -1,106 +1,66 @@
 {
- "fetched_at": "2026-11-20T05:49:23Z",
+ "fetched_at": "2026-11-20T05:51:11Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.009,
-   "lon": -122.84823,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37716,
+   "type_code": 99,
+   "updated": "2026-11-20 05:51:53.298498999 +0000 UTC"
+  },
+  {
+   "mmsi": 311001605,
+   "name": "SAGA DISCOVERY",
+   "lat": 45.94984,
+   "lon": -122.80649,
+   "type_code": 79,
+   "destination": "US LOG",
+   "updated": "2026-11-20 05:52:02.247410787 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19952,
+   "lon": -123.38502,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 203,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 05:49:30.769956936 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19998,
-   "lon": -123.38549,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-20 05:49:31.695725233 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.5876,
-   "lon": -122.77037,
-   "sog_kn": 0,
-   "cog": 119.1,
-   "heading": 138,
    "nav_status": 5,
-   "updated": "2026-11-20 05:49:32.138097704 +0000 UTC"
+   "updated": "2026-11-20 05:52:03.442572612 +0000 UTC"
   },
   {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.62008,
-   "lon": -122.78789,
-   "sog_kn": 0.3,
-   "cog": 63.2,
-   "heading": 2,
-   "nav_status": 12,
-   "updated": "2026-11-20 05:49:34.181337169 +0000 UTC"
+   "mmsi": 563338800,
+   "name": "ISHIZUCHI STAR",
+   "lat": 45.63174,
+   "lon": -122.6977,
+   "sog_kn": 0,
+   "cog": 48.6,
+   "heading": 307,
+   "nav_status": 5,
+   "updated": "2026-11-20 05:52:06.443512421 +0000 UTC"
   },
   {
-   "mmsi": 338570000,
-   "name": "BAYPORT",
-   "lat": 45.95951,
-   "lon": -122.81214,
-   "sog_kn": 10.8,
-   "cog": 333.6,
-   "heading": 330,
-   "nav_status": 0,
-   "updated": "2026-11-20 05:49:34.523074089 +0000 UTC"
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.64468,
+   "lon": -122.7369,
+   "type_code": 52,
+   "destination": "US^02NV>02A0",
+   "updated": "2026-11-20 05:52:08.724804485 +0000 UTC"
   },
   {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 46.02799,
-   "lon": -122.87532,
-   "sog_kn": 8.8,
-   "cog": 147.6,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65017,
+   "lon": -122.74761,
+   "sog_kn": 0,
+   "cog": 319.8,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 05:49:34.654607901 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.25867,
-   "lon": -123.46156,
-   "type_code": 52,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-20 05:49:39.133076948 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.08773,
-   "lon": -122.91223,
-   "type_code": 52,
-   "destination": "COL RIVER",
-   "updated": "2026-11-20 05:49:45.956776399 +0000 UTC"
-  },
-  {
-   "mmsi": 356334000,
-   "name": "LAUREL ISLAND",
-   "lat": 45.6858,
-   "lon": -122.77226,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-20 05:49:50.64957253 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64346,
-   "lon": -122.75278,
-   "type_code": 52,
-   "updated": "2026-11-20 05:49:52.496600689 +0000 UTC"
+   "nav_status": 3,
+   "updated": "2026-11-20 05:52:19.594409643 +0000 UTC"
   }
  ]
 }
