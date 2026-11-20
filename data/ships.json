@@ -1,6 +1,62 @@
 {
- "fetched_at": "2026-11-20T14:00:01Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-20T14:05:02Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 45.64354,
+   "lon": -122.75243,
+   "sog_kn": 0,
+   "cog": 119.6,
+   "heading": 141,
+   "nav_status": 0,
+   "updated": "2026-11-20 14:05:19.950194787 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09306,
+   "lon": -122.92314,
+   "sog_kn": 0.1,
+   "cog": 114.1,
+   "heading": 123,
+   "nav_status": 0,
+   "updated": "2026-11-20 14:05:21.147307265 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65009,
+   "lon": -122.74763,
+   "sog_kn": 0,
+   "cog": 163.6,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-20 14:05:29.340306865 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.99351,
+   "lon": -122.84551,
+   "sog_kn": 2.5,
+   "cog": 2.6,
+   "heading": 118,
+   "nav_status": 3,
+   "updated": "2026-11-20 14:05:29.510115665 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64382,
+   "lon": -122.7258,
+   "sog_kn": 0,
+   "cog": 301.6,
+   "heading": 115,
+   "nav_status": 12,
+   "updated": "2026-11-20 14:05:31.730854603 +0000 UTC"
+  }
+ ]
 }
