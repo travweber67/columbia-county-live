@@ -1,62 +1,6 @@
 {
- "fetched_at": "2026-11-20T17:35:21Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08398,
-   "lon": -122.90847,
-   "sog_kn": 0.1,
-   "cog": 333,
-   "heading": 127,
-   "nav_status": 0,
-   "updated": "2026-11-20 17:35:44.712936975 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15342,
-   "lon": -123.37713,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 17:35:47.761337318 +0000 UTC"
-  },
-  {
-   "mmsi": 338205428,
-   "name": "CLAIRE B",
-   "lat": 45.68606,
-   "lon": -122.86589,
-   "sog_kn": 4.9,
-   "cog": 171.4,
-   "heading": 175,
-   "nav_status": 0,
-   "updated": "2026-11-20 17:35:57.31899412 +0000 UTC"
-  },
-  {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.71404,
-   "lon": -122.76357,
-   "sog_kn": 0,
-   "cog": 180.8,
-   "heading": 197,
-   "nav_status": 0,
-   "updated": "2026-11-20 17:36:01.925032591 +0000 UTC"
-  },
-  {
-   "mmsi": 366892350,
-   "name": "NAT GEO SEA BIRD",
-   "lat": 46.08969,
-   "lon": -122.92971,
-   "sog_kn": 0,
-   "cog": 72.7,
-   "heading": 109,
-   "nav_status": 5,
-   "updated": "2026-11-20 17:36:02.876356889 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-20T17:40:21Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
