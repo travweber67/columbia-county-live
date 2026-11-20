@@ -1,68 +1,60 @@
 {
- "fetched_at": "2026-11-20T02:09:03Z",
+ "fetched_at": "2026-11-20T02:14:04Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.09293,
-   "lon": -122.92312,
-   "type_code": 52,
-   "destination": "PORTLAND",
-   "updated": "2026-11-20 02:09:15.11263288 +0000 UTC"
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.58759,
+   "lon": -122.77035,
+   "sog_kn": 0,
+   "cog": 345.7,
+   "heading": 140,
+   "nav_status": 0,
+   "updated": "2026-11-20 02:14:17.313496686 +0000 UTC"
   },
   {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58746,
-   "lon": -122.77075,
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58081,
+   "lon": -122.76005,
+   "type_code": 31,
+   "destination": "PTSI PDX",
+   "updated": "2026-11-20 02:14:27.487575226 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00877,
+   "lon": -122.84888,
    "sog_kn": 0,
-   "cog": 342.4,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-20 02:09:23.673473193 +0000 UTC"
+   "updated": "2026-11-20 02:14:34.030027068 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.98752,
+   "lon": -122.83741,
+   "sog_kn": 0,
+   "cog": 211.9,
+   "heading": 153,
+   "nav_status": 5,
+   "updated": "2026-11-20 02:14:37.531807127 +0000 UTC"
   },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 46.00986,
-   "lon": -122.85424,
-   "sog_kn": 1,
-   "cog": 158.2,
-   "heading": 163,
+   "lat": 46.01008,
+   "lon": -122.85408,
+   "sog_kn": 0.9,
+   "cog": 340.3,
+   "heading": 137,
    "nav_status": 3,
-   "updated": "2026-11-20 02:09:30.043390665 +0000 UTC"
-  },
-  {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.5842,
-   "lon": -122.76615,
-   "sog_kn": 0,
-   "cog": 80.8,
-   "heading": 145,
-   "nav_status": 5,
-   "updated": "2026-11-20 02:09:30.716211991 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.6129,
-   "type_code": 0,
-   "updated": "2026-11-20 02:09:39.20672158 +0000 UTC"
-  },
-  {
-   "mmsi": 338616000,
-   "name": "DUBLIN SEA",
-   "lat": 45.59514,
-   "lon": -122.77866,
-   "sog_kn": 0,
-   "cog": 224.5,
-   "heading": 148,
-   "nav_status": 5,
-   "updated": "2026-11-20 02:09:41.56703581 +0000 UTC"
+   "updated": "2026-11-20 02:14:38.875512879 +0000 UTC"
   }
  ]
 }
