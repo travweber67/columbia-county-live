@@ -1,6 +1,40 @@
 {
- "fetched_at": "2026-11-20T05:09:18Z",
- "status": "error",
- "note": "AISStream error: timed out",
- "ships": []
+ "fetched_at": "2026-11-20T05:14:19Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368201480,
+   "name": "KINANI H",
+   "lat": 45.91058,
+   "lon": -122.80559,
+   "sog_kn": 0,
+   "cog": 71.5,
+   "heading": 176,
+   "nav_status": 11,
+   "updated": "2026-11-20 05:14:36.405989723 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.98751,
+   "lon": -122.83742,
+   "sog_kn": 0,
+   "cog": 262.5,
+   "heading": 153,
+   "nav_status": 5,
+   "updated": "2026-11-20 05:14:39.934750244 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.6188,
+   "lon": -122.78792,
+   "sog_kn": 0,
+   "cog": 181.3,
+   "heading": 170,
+   "nav_status": 12,
+   "updated": "2026-11-20 05:14:53.275342822 +0000 UTC"
+  }
+ ]
 }
