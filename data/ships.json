@@ -1,51 +1,67 @@
 {
- "fetched_at": "2026-11-20T11:59:52Z",
+ "fetched_at": "2026-11-20T12:04:52Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09306,
-   "lon": -122.9236,
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 45.63017,
+   "lon": -122.69536,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 306,
+   "cog": 309.3,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-20 12:05:05.376497057 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.17967,
+   "lon": -123.11027,
+   "sog_kn": 1,
+   "cog": 123.9,
+   "heading": 130,
    "nav_status": 3,
-   "updated": "2026-11-20 11:59:59.858561421 +0000 UTC"
+   "updated": "2026-11-20 12:05:17.218988231 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.09278,
-   "lon": -122.92329,
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 45.66696,
+   "lon": -122.76696,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-20 12:05:21.345890351 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58744,
+   "lon": -122.77069,
    "sog_kn": 0,
-   "cog": 310.7,
-   "heading": 122,
-   "nav_status": 0,
-   "updated": "2026-11-20 12:00:04.651740396 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58758,
-   "lon": -122.77041,
-   "sog_kn": 0,
-   "cog": 231.2,
-   "heading": 141,
-   "nav_status": 0,
-   "updated": "2026-11-20 12:00:22.82840538 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64945,
-   "lon": -122.76852,
-   "sog_kn": 1.8,
-   "cog": 36.7,
+   "cog": 327.8,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-20 12:00:29.38307083 +0000 UTC"
+   "updated": "2026-11-20 12:05:24.561760312 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64382,
+   "lon": -122.72581,
+   "type_code": 57,
+   "destination": "US^0UX0>?? ???",
+   "updated": "2026-11-20 12:05:26.299477598 +0000 UTC"
+  },
+  {
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 45.69113,
+   "lon": -122.77157,
+   "type_code": 70,
+   "destination": "MX ZLO >> US VAN",
+   "updated": "2026-11-20 12:05:32.405756086 +0000 UTC"
   }
  ]
 }
