@@ -1,59 +1,102 @@
 {
- "fetched_at": "2026-11-20T11:09:48Z",
+ "fetched_at": "2026-11-20T11:14:49Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20002,
-   "lon": -123.38542,
-   "type_code": 99,
-   "destination": "NAKNEK",
-   "updated": "2026-11-20 11:10:16.79859649 +0000 UTC",
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.6473,
+   "lon": -122.73994,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 83,
+   "heading": 16,
+   "nav_status": 5,
+   "updated": "2026-11-20 11:15:00.939736168 +0000 UTC"
+  },
+  {
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.20622,
+   "lon": -123.38666,
+   "type_code": 30,
+   "destination": "",
+   "updated": "2026-11-20 11:15:03.365256869 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09279,
+   "lon": -122.92333,
+   "sog_kn": 0,
+   "cog": 324.9,
+   "heading": 125,
+   "nav_status": 0,
+   "updated": "2026-11-20 11:15:04.610293675 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.65889,
+   "lon": -122.76339,
+   "sog_kn": 8.2,
+   "cog": 152.2,
+   "heading": 153,
+   "nav_status": 0,
+   "updated": "2026-11-20 11:15:06.40096301 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.63833,
+   "lon": -122.74495,
+   "sog_kn": 0.1,
+   "cog": 305.6,
    "heading": 511,
-   "nav_status": 8
+   "nav_status": 0,
+   "updated": "2026-11-20 11:15:13.142717057 +0000 UTC"
+  },
+  {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.62272,
+   "lon": -122.78836,
+   "sog_kn": 0,
+   "cog": 133.9,
+   "heading": 4,
+   "nav_status": 0,
+   "updated": "2026-11-20 11:15:26.178350316 +0000 UTC"
   },
   {
    "mmsi": 367047240,
    "name": "DEFIANCE",
-   "lat": 45.65356,
-   "lon": -122.76101,
-   "sog_kn": 8.5,
-   "cog": 297.3,
-   "heading": 292,
-   "nav_status": 0,
-   "updated": "2026-11-20 11:10:05.260853126 +0000 UTC"
+   "lat": 45.64648,
+   "lon": -122.77051,
+   "type_code": 52,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-20 11:15:27.440158179 +0000 UTC"
   },
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.10792,
-   "lon": -122.95904,
-   "type_code": 50,
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-20 11:10:15.332057841 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.08981,
-   "lon": -122.92904,
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58418,
+   "lon": -122.76618,
    "sog_kn": 0,
-   "cog": 269.1,
-   "heading": 100,
+   "cog": 298.9,
+   "heading": 146,
    "nav_status": 5,
-   "updated": "2026-11-20 11:10:24.613117586 +0000 UTC"
+   "updated": "2026-11-20 11:15:27.988951851 +0000 UTC"
   },
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15343,
-   "lon": -123.37714,
-   "type_code": 99,
-   "updated": "2026-11-20 11:10:25.009090061 +0000 UTC"
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09311,
+   "lon": -122.92363,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 306,
+   "nav_status": 3,
+   "updated": "2026-11-20 11:15:28.788138468 +0000 UTC"
   }
  ]
 }
