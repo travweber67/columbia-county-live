@@ -1,111 +1,42 @@
 {
- "fetched_at": "2026-11-20T00:53:58Z",
+ "fetched_at": "2026-11-20T00:58:59Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.98751,
-   "lon": -122.83747,
-   "sog_kn": 1,
-   "cog": 130,
-   "heading": 137,
-   "nav_status": 5,
-   "updated": "2026-11-20 00:54:15.459930048 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.10819,
-   "lon": -122.95897,
-   "sog_kn": 0,
-   "cog": 293.4,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-20 00:54:16.569661641 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00907,
-   "lon": -122.84826,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.16183,
+   "lon": -123.40729,
+   "sog_kn": 3.1,
+   "cog": 163.7,
+   "heading": 147,
    "nav_status": 0,
-   "updated": "2026-11-20 00:54:20.185081015 +0000 UTC"
+   "updated": "2026-11-20 00:59:12.733813443 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 46.09065,
+   "lon": -122.93208,
+   "sog_kn": 0,
+   "cog": 207.7,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-20 00:59:23.672446057 +0000 UTC"
   },
   {
    "mmsi": 367061930,
    "name": "TEBENKOF",
-   "lat": 46.19997,
-   "lon": -123.38554,
+   "lat": 46.19999,
+   "lon": -123.3855,
    "type_code": 30,
    "destination": "FISHMN TMNL",
-   "updated": "2026-11-20 00:54:21.342228671 +0000 UTC"
-  },
-  {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.61202,
-   "lon": -122.64535,
+   "updated": "2026-11-20 00:59:31.090664235 +0000 UTC",
    "sog_kn": 0,
-   "cog": 250.6,
-   "heading": 298,
-   "nav_status": 5,
-   "updated": "2026-11-20 00:54:21.944769196 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58749,
-   "lon": -122.7708,
-   "sog_kn": 0,
-   "cog": 343.6,
+   "cog": 185.8,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 00:54:23.411271528 +0000 UTC"
-  },
-  {
-   "mmsi": 563311600,
-   "name": "STANLEY BAY",
-   "lat": 46.1101,
-   "lon": -122.96338,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-20 00:54:27.327571541 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.18425,
-   "lon": -123.11938,
-   "sog_kn": 0.9,
-   "cog": 108.1,
-   "heading": 113,
-   "nav_status": 3,
-   "updated": "2026-11-20 00:54:28.068122611 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15344,
-   "lon": -123.37712,
-   "sog_kn": 0,
-   "cog": 11.3,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 00:54:28.182318985 +0000 UTC"
-  },
-  {
-   "mmsi": 374590000,
-   "name": "BORACAY ISLAND",
-   "lat": 45.69103,
-   "lon": -122.77167,
-   "type_code": 70,
-   "destination": "MX ZLO >> US VAN",
-   "updated": "2026-11-20 00:54:28.543434476 +0000 UTC"
+   "nav_status": 15
   }
  ]
 }
