@@ -1,6 +1,86 @@
 {
- "fetched_at": "2026-11-20T15:45:12Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-20T15:50:13Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367047150,
+   "name": "CAPTAIN BOB",
+   "lat": 45.64753,
+   "lon": -122.73984,
+   "type_code": 0,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-20 15:50:20.590686835 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 46.09067,
+   "lon": -122.93208,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-20 15:50:20.714074548 +0000 UTC"
+  },
+  {
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.63369,
+   "lon": -122.70608,
+   "sog_kn": 7.3,
+   "cog": 310.4,
+   "heading": 312,
+   "nav_status": 0,
+   "updated": "2026-11-20 15:50:42.309495365 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09339,
+   "lon": -122.92352,
+   "sog_kn": 2.1,
+   "cog": 299.6,
+   "heading": 291,
+   "nav_status": 0,
+   "updated": "2026-11-20 15:50:51.351093196 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.63015,
+   "lon": -122.69622,
+   "sog_kn": 0.4,
+   "cog": 295,
+   "heading": 58,
+   "nav_status": 0,
+   "updated": "2026-11-20 15:50:57.464304652 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08984,
+   "lon": -122.92905,
+   "type_code": 52,
+   "destination": "CSR OPS",
+   "updated": "2026-11-20 15:50:57.62543696 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35743,
+   "type_code": 30,
+   "updated": "2026-11-20 15:50:58.003897301 +0000 UTC"
+  },
+  {
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.79653,
+   "lon": -122.80008,
+   "sog_kn": 4.5,
+   "cog": 186.7,
+   "heading": 187,
+   "nav_status": 0,
+   "updated": "2026-11-20 15:50:58.175770011 +0000 UTC"
+  }
+ ]
 }
