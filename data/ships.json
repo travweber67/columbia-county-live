@@ -1,82 +1,110 @@
 {
- "fetched_at": "2026-11-20T09:14:39Z",
+ "fetched_at": "2026-11-20T09:19:39Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 563331600,
-   "name": "BELLE LUNE",
-   "lat": 46.18836,
-   "lon": -123.14462,
-   "type_code": 70,
-   "destination": "KOBE",
-   "updated": "2026-11-20 09:14:44.121036829 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35744,
-   "sog_kn": 0,
-   "cog": 267.1,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-20 09:14:46.341119669 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.61292,
-   "sog_kn": 0,
-   "cog": 258.5,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-20 09:14:47.365485468 +0000 UTC"
-  },
-  {
-   "mmsi": 311001605,
-   "name": "SAGA DISCOVERY",
-   "lat": 46.17484,
-   "lon": -123.10678,
-   "sog_kn": 0.1,
-   "cog": 218.4,
-   "heading": 124,
-   "nav_status": 1,
-   "updated": "2026-11-20 09:14:55.856167779 +0000 UTC"
-  },
-  {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64568,
-   "lon": -122.73487,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-20 09:15:07.020188235 +0000 UTC"
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.09293,
+   "lon": -122.92313,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-20 09:19:47.675577585 +0000 UTC"
   },
   {
    "mmsi": 368470580,
    "name": "ASSIST",
-   "lat": 46.00884,
-   "lon": -122.84892,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 09:15:13.563224132 +0000 UTC"
+   "lat": 46.00886,
+   "lon": -122.84889,
+   "type_code": 50,
+   "destination": "--",
+   "updated": "2026-11-20 09:19:48.499906264 +0000 UTC"
   },
   {
-   "mmsi": 369702000,
-   "name": "COASTAL RELIANCE",
-   "lat": 45.58435,
-   "lon": -122.76345,
-   "sog_kn": 1.7,
-   "cog": 131.2,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09289,
+   "lon": -122.92344,
+   "sog_kn": 0,
+   "cog": 235.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-20 09:19:52.497602029 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64279,
+   "lon": -122.75199,
+   "type_code": 52,
+   "updated": "2026-11-20 09:19:59.454486682 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 219.1,
+   "heading": 511,
+   "nav_status": 5
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65007,
+   "lon": -122.7476,
+   "sog_kn": 0,
+   "cog": 232.6,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-20 09:19:59.108789098 +0000 UTC"
+  },
+  {
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 45.63018,
+   "lon": -122.69536,
+   "sog_kn": 0,
+   "cog": 309.3,
+   "heading": 129,
+   "nav_status": 5,
+   "updated": "2026-11-20 09:20:04.836108705 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37713,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-20 09:20:06.964596578 +0000 UTC"
+  },
+  {
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 45.71471,
+   "lon": -122.76401,
+   "type_code": 70,
+   "destination": "USLOG",
+   "updated": "2026-11-20 09:20:07.021856176 +0000 UTC"
+  },
+  {
+   "mmsi": 338570000,
+   "name": "BAYPORT",
+   "lat": 46.21794,
+   "lon": -123.42497,
+   "type_code": 33,
+   "destination": "USAST ASTORIA",
+   "updated": "2026-11-20 09:20:09.108046252 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09306,
+   "lon": -122.92312,
+   "sog_kn": 0.1,
+   "cog": 305.1,
    "heading": 125,
    "nav_status": 0,
-   "updated": "2026-11-20 09:15:13.903303582 +0000 UTC"
+   "updated": "2026-11-20 09:20:10.524900482 +0000 UTC"
   }
  ]
 }
