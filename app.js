@@ -6455,6 +6455,7 @@ const LANG_ES = {
   dirfh17desc: 'Ayuda legal gratuita para personas con dificultades económicas: vivienda, empleo, atención médica y seguridad frente a la violencia doméstica. La oficina satélite de St. Helens atiende a todo el condado de Columbia.',
   dirfh18desc: 'Apoyo gratuito para la recuperación, con reuniones en todo el condado de Columbia. La membresía de AA no tiene cuotas ni cargos. Llame a la línea de ayuda para conocer horarios y lugares de reunión.',
   dirfh19desc: 'Biblioteca pública gratuita: pida prestados libros y películas, use Libby para libros electrónicos y participe en programas gratuitos para niños y adultos. Abierta de lunes a miércoles de 10 AM a 7 PM, jueves de 2 a 7 PM, viernes de 10 AM a 5 PM y sábado de 10 AM a 2 PM.',
+  dirfh20desc: 'Mercado gratuito en la Biblioteca Pública de Scappoose y Heritage Park: ofrezca cosas que ya no necesita y llévese lo que necesite, todo es gratis. Se realiza el tercer sábado de cada mes, de 11 AM a 2 PM.',
   dirinviteh: 'Tu servicio aquí',
   dirinvitep: '¿Limpias casas, cuidas niños, paseas perros, arreglas lo que se rompe? Sé uno de los primeros nombres del directorio — los anuncios son gratis.',
   dirlistcta: 'Anuncia tu servicio &rarr;',
