@@ -1,58 +1,141 @@
 {
- "fetched_at": "2026-11-20T21:35:38Z",
+ "fetched_at": "2026-11-20T21:40:38Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 13 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 311001605,
-   "name": "SAGA DISCOVERY",
-   "lat": 46.17403,
-   "lon": -123.10236,
-   "sog_kn": 0.4,
-   "cog": 347.6,
-   "heading": 257,
-   "nav_status": 1,
-   "updated": "2026-11-20 21:35:54.871181091 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58753,
-   "lon": -122.77068,
-   "type_code": 52,
-   "destination": "US^0R88>0UJB",
-   "updated": "2026-11-20 21:36:05.99977684 +0000 UTC"
-  },
-  {
-   "mmsi": 636013613,
-   "name": "LONDON 2012",
-   "lat": 46.04439,
-   "lon": -122.88276,
-   "type_code": 70,
-   "destination": "KR INC>US KAM",
-   "updated": "2026-11-20 21:36:08.562809747 +0000 UTC"
-  },
-  {
-   "mmsi": 367425870,
-   "name": "HUSKY",
-   "lat": 45.6106,
-   "lon": -122.63435,
-   "sog_kn": 0,
-   "cog": 76.2,
-   "heading": 2,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.62798,
+   "lon": -122.69986,
+   "sog_kn": 0.1,
+   "cog": 12.3,
+   "heading": 117,
    "nav_status": 0,
-   "updated": "2026-11-20 21:36:09.100264432 +0000 UTC"
+   "updated": "2026-11-20 21:40:57.274340543 +0000 UTC"
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19997,
-   "lon": -123.38553,
+   "mmsi": 563236100,
+   "name": "XH DEEP COVER",
+   "lat": 45.63024,
+   "lon": -122.69558,
    "sog_kn": 0,
-   "cog": 6.7,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-20 21:36:20.56110215 +0000 UTC"
+   "cog": 10.6,
+   "heading": 128,
+   "nav_status": 5,
+   "updated": "2026-11-20 21:40:57.954448773 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.71795,
+   "lon": -122.76526,
+   "sog_kn": 8.1,
+   "cog": 8.9,
+   "heading": 6,
+   "nav_status": 12,
+   "updated": "2026-11-20 21:40:59.722384076 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08332,
+   "lon": -122.90906,
+   "sog_kn": 1.7,
+   "cog": 317.4,
+   "heading": 345,
+   "nav_status": 0,
+   "updated": "2026-11-20 21:40:59.856153517 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64538,
+   "lon": -122.73504,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-20 21:41:15.295004914 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19953,
+   "lon": -123.38498,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-20 21:41:02.145926212 +0000 UTC"
+  },
+  {
+   "mmsi": 366396000,
+   "name": "NAT GEO SEA LION",
+   "lat": 46.08967,
+   "lon": -122.92975,
+   "sog_kn": 0,
+   "cog": 283.1,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-20 21:41:02.295067164 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15339,
+   "lon": -123.37716,
+   "type_code": 99,
+   "updated": "2026-11-20 21:41:12.01408356 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.00926,
+   "lon": -122.84869,
+   "type_code": 50,
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-20 21:41:19.162017385 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15705,
+   "lon": -123.40234,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 135,
+   "nav_status": 0,
+   "updated": "2026-11-20 21:41:19.919335918 +0000 UTC"
+  },
+  {
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 45.66697,
+   "lon": -122.76695,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-20 21:41:20.141137789 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.78499,
+   "lon": -122.77597,
+   "sog_kn": 6.9,
+   "cog": 334.3,
+   "heading": 332,
+   "nav_status": 12,
+   "updated": "2026-11-20 21:41:21.28506743 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.38544,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-20 21:41:24.042823196 +0000 UTC"
   }
  ]
 }
