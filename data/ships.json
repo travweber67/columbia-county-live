@@ -1,6 +1,112 @@
 {
- "fetched_at": "2026-11-20T17:40:21Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-20T17:45:21Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.00896,
+   "lon": -122.84833,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-20 17:45:29.632118195 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.57331,
+   "lon": -122.74184,
+   "sog_kn": 6.5,
+   "cog": 317.1,
+   "heading": 313,
+   "nav_status": 0,
+   "updated": "2026-11-20 17:45:33.412447188 +0000 UTC"
+  },
+  {
+   "mmsi": 338616000,
+   "name": "DUBLIN SEA",
+   "lat": 46.16246,
+   "lon": -123.07655,
+   "sog_kn": 10.7,
+   "cog": 304.9,
+   "heading": 304,
+   "nav_status": 12,
+   "updated": "2026-11-20 17:45:40.60324059 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.08357,
+   "lon": -122.90761,
+   "sog_kn": 8.3,
+   "cog": 138.7,
+   "heading": 140,
+   "nav_status": 0,
+   "updated": "2026-11-20 17:45:43.726950389 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 292.5,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-20 17:45:46.287566241 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 46.16176,
+   "lon": -123.40825,
+   "sog_kn": 0,
+   "cog": 254.9,
+   "heading": 314,
+   "nav_status": 12,
+   "updated": "2026-11-20 17:45:47.088547091 +0000 UTC"
+  },
+  {
+   "mmsi": 368201480,
+   "name": "KINANI H",
+   "lat": 45.91058,
+   "lon": -122.80556,
+   "sog_kn": 0,
+   "cog": 104.1,
+   "heading": 176,
+   "nav_status": 11,
+   "updated": "2026-11-20 17:45:47.741846379 +0000 UTC"
+  },
+  {
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.11011,
+   "lon": -122.96334,
+   "sog_kn": 0,
+   "cog": 350.2,
+   "heading": 131,
+   "nav_status": 5,
+   "updated": "2026-11-20 17:45:50.725049947 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37716,
+   "type_code": 99,
+   "updated": "2026-11-20 17:45:52.347051414 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.18829,
+   "lon": -123.14397,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-20 17:45:52.603824024 +0000 UTC"
+  }
+ ]
 }
