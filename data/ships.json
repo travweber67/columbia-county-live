@@ -1,85 +1,82 @@
 {
- "fetched_at": "2026-11-20T12:21:15Z",
+ "fetched_at": "2026-11-20T12:24:54Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.87503,
+   "lon": -122.79139,
+   "sog_kn": 8.8,
+   "cog": 332,
+   "heading": 329,
+   "nav_status": 12,
+   "updated": "2026-11-20 12:25:06.340937609 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64789,
+   "lon": -122.741,
+   "sog_kn": 0,
+   "cog": 112.1,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-20 12:25:07.450362037 +0000 UTC"
+  },
   {
    "mmsi": 367061930,
    "name": "TEBENKOF",
-   "lat": 46.19997,
-   "lon": -123.38551,
+   "lat": 46.20006,
+   "lon": -123.38549,
    "sog_kn": 0,
-   "cog": 236.5,
+   "cog": 314,
    "heading": 511,
    "nav_status": 15,
-   "updated": "2026-11-20 12:22:10.694914487 +0000 UTC"
+   "updated": "2026-11-20 12:25:11.119852222 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65012,
-   "lon": -122.74762,
-   "sog_kn": 0,
-   "cog": 61.5,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-20 12:22:18.309617885 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00895,
-   "lon": -122.84835,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 12:22:19.77439637 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.66126,
-   "lon": -122.76019,
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09306,
+   "lon": -122.92313,
    "type_code": 52,
-   "destination": "US^0UU4>02MR",
-   "updated": "2026-11-20 12:22:22.844671274 +0000 UTC"
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-20 12:25:23.23912752 +0000 UTC"
   },
   {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64569,
-   "lon": -122.73488,
-   "type_code": 79,
-   "updated": "2026-11-20 12:22:24.717916428 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.64314,
-   "lon": -122.77058,
-   "sog_kn": 1,
-   "cog": 227.2,
-   "heading": 224,
-   "nav_status": 0,
-   "updated": "2026-11-20 12:22:25.570869038 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15338,
-   "lon": -123.3772,
-   "type_code": 99,
-   "updated": "2026-11-20 12:22:27.564356839 +0000 UTC"
-  },
-  {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.61199,
-   "lon": -122.64536,
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08985,
+   "lon": -122.92904,
+   "sog_kn": 0,
+   "cog": 227,
+   "heading": 99,
+   "nav_status": 5,
+   "updated": "2026-11-20 12:25:27.336048756 +0000 UTC",
    "type_code": 52,
-   "destination": "US^0UUT>0T9D",
-   "updated": "2026-11-20 12:22:28.305315211 +0000 UTC"
+   "destination": "CSR OPS"
+  },
+  {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.62274,
+   "lon": -122.7884,
+   "sog_kn": 0,
+   "cog": 129.7,
+   "heading": 3,
+   "nav_status": 0,
+   "updated": "2026-11-20 12:25:28.189226367 +0000 UTC"
+  },
+  {
+   "mmsi": 367047150,
+   "name": "CAPTAIN BOB",
+   "lat": 45.64752,
+   "lon": -122.73983,
+   "type_code": 0,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-20 12:25:28.356475307 +0000 UTC"
   }
  ]
 }
