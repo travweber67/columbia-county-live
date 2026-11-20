@@ -1,115 +1,82 @@
 {
- "fetched_at": "2026-11-20T09:09:39Z",
+ "fetched_at": "2026-11-20T09:14:39Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.09286,
-   "lon": -122.92344,
+   "mmsi": 563331600,
+   "name": "BELLE LUNE",
+   "lat": 46.18836,
+   "lon": -123.14462,
+   "type_code": 70,
+   "destination": "KOBE",
+   "updated": "2026-11-20 09:14:44.121036829 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35744,
    "sog_kn": 0,
-   "cog": 274.9,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 09:09:51.510948861 +0000 UTC"
+   "cog": 267.1,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-20 09:14:46.341119669 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.61292,
+   "sog_kn": 0,
+   "cog": 258.5,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-20 09:14:47.365485468 +0000 UTC"
+  },
+  {
+   "mmsi": 311001605,
+   "name": "SAGA DISCOVERY",
+   "lat": 46.17484,
+   "lon": -123.10678,
+   "sog_kn": 0.1,
+   "cog": 218.4,
+   "heading": 124,
+   "nav_status": 1,
+   "updated": "2026-11-20 09:14:55.856167779 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64568,
+   "lon": -122.73487,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-20 09:15:07.020188235 +0000 UTC"
   },
   {
    "mmsi": 368470580,
    "name": "ASSIST",
    "lat": 46.00884,
-   "lon": -122.84888,
+   "lon": -122.84892,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-20 09:09:53.188956809 +0000 UTC"
+   "updated": "2026-11-20 09:15:13.563224132 +0000 UTC"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15705,
-   "lon": -123.40233,
-   "type_code": 99,
-   "destination": "",
-   "updated": "2026-11-20 09:09:54.327352999 +0000 UTC"
-  },
-  {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.5842,
-   "lon": -122.76618,
-   "type_code": 52,
-   "destination": "US^00D5>0UHN",
-   "updated": "2026-11-20 09:09:54.75471388 +0000 UTC"
-  },
-  {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.62275,
-   "lon": -122.78843,
-   "sog_kn": 0,
-   "cog": 43.7,
-   "heading": 4,
+   "mmsi": 369702000,
+   "name": "COASTAL RELIANCE",
+   "lat": 45.58435,
+   "lon": -122.76345,
+   "sog_kn": 1.7,
+   "cog": 131.2,
+   "heading": 125,
    "nav_status": 0,
-   "updated": "2026-11-20 09:09:56.802730906 +0000 UTC"
-  },
-  {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.19952,
-   "lon": -123.38503,
-   "type_code": 30,
-   "destination": "CATHLAMET WA",
-   "updated": "2026-11-20 09:10:03.032140545 +0000 UTC",
-   "sog_kn": 0,
-   "cog": 229,
-   "heading": 511,
-   "nav_status": 5
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.66008,
-   "lon": -122.75953,
-   "sog_kn": 0.1,
-   "cog": 167.3,
-   "heading": 156,
-   "nav_status": 0,
-   "updated": "2026-11-20 09:10:06.877281116 +0000 UTC"
-  },
-  {
-   "mmsi": 338570000,
-   "name": "BAYPORT",
-   "lat": 46.18985,
-   "lon": -123.43101,
-   "sog_kn": 11.1,
-   "cog": 4.6,
-   "heading": 11,
-   "nav_status": 0,
-   "updated": "2026-11-20 09:10:14.128820851 +0000 UTC"
-  },
-  {
-   "mmsi": 538011643,
-   "name": "YASA CAMELLIA",
-   "lat": 45.7147,
-   "lon": -122.76414,
-   "sog_kn": 0,
-   "cog": 197.1,
-   "heading": 178,
-   "nav_status": 1,
-   "updated": "2026-11-20 09:10:14.639447558 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.009,
-   "lon": -122.84833,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 09:10:18.529936508 +0000 UTC"
+   "updated": "2026-11-20 09:15:13.903303582 +0000 UTC"
   }
  ]
 }
