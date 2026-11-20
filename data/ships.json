@@ -1,40 +1,36 @@
 {
- "fetched_at": "2026-11-20T11:51:16Z",
+ "fetched_at": "2026-11-20T11:54:51Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047240,
-   "name": "DEFIANCE",
-   "lat": 45.58241,
-   "lon": -122.75914,
-   "sog_kn": 7.4,
-   "cog": 121.7,
-   "heading": 123,
-   "nav_status": 0,
-   "updated": "2026-11-20 11:51:56.737028678 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64787,
-   "lon": -122.74099,
-   "sog_kn": 0,
-   "cog": 112,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-20 11:52:08.096021465 +0000 UTC"
-  },
-  {
    "mmsi": 367727410,
    "name": "AMY B",
    "lat": 45.64383,
-   "lon": -122.7258,
+   "lon": -122.72581,
    "sog_kn": 0,
-   "cog": 220.2,
-   "heading": 115,
+   "cog": 243.5,
+   "heading": 114,
    "nav_status": 12,
-   "updated": "2026-11-20 11:52:10.068376162 +0000 UTC"
+   "updated": "2026-11-20 11:55:10.074148808 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.98808,
+   "lon": -122.84291,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-20 11:55:14.849936031 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58079,
+   "lon": -122.76005,
+   "type_code": 31,
+   "destination": "PTSI PDX",
+   "updated": "2026-11-20 11:55:19.033082141 +0000 UTC"
   }
  ]
 }
