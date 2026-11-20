@@ -1,29 +1,40 @@
 {
- "fetched_at": "2026-11-20T07:54:32Z",
+ "fetched_at": "2026-11-20T07:59:32Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 563331600,
-   "name": "BELLE LUNE",
-   "lat": 46.06122,
-   "lon": -122.88355,
-   "sog_kn": 10.5,
-   "cog": 344.7,
-   "heading": 345,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09111,
+   "lon": -122.9179,
+   "sog_kn": 4,
+   "cog": 254.4,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-20 07:55:05.270922583 +0000 UTC"
+   "updated": "2026-11-20 07:59:54.038453941 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61291,
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 46.08831,
+   "lon": -122.91969,
+   "sog_kn": 9.4,
+   "cog": 288.3,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-20 07:59:55.111730843 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65017,
+   "lon": -122.74763,
    "sog_kn": 0,
-   "cog": 231.4,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-20 07:55:07.501229189 +0000 UTC"
+   "cog": 220.2,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-20 08:00:00.771899248 +0000 UTC"
   }
  ]
 }
