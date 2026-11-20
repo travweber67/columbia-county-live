@@ -1,6 +1,47 @@
 {
- "fetched_at": "2026-11-20T15:20:10Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-20T15:21:18Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09306,
+   "lon": -122.92363,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 307,
+   "nav_status": 3,
+   "updated": "2026-11-20 15:22:18.282462692 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64383,
+   "lon": -122.7258,
+   "type_code": 57,
+   "destination": "US^0UX0>?? ???",
+   "updated": "2026-11-20 15:22:25.791115453 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61201,
+   "lon": -122.64536,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-20 15:22:28.008563386 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.61164,
+   "lon": -122.63451,
+   "sog_kn": 0,
+   "cog": 334.8,
+   "heading": 0,
+   "nav_status": 0,
+   "updated": "2026-11-20 15:22:28.350156416 +0000 UTC"
+  }
+ ]
 }
