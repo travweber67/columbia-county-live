@@ -1,6 +1,86 @@
 {
- "fetched_at": "2026-11-20T14:50:06Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-20T14:51:17Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.26417,
+   "lon": -123.46069,
+   "sog_kn": 2.4,
+   "cog": 249.5,
+   "heading": 82,
+   "nav_status": 3,
+   "updated": "2026-11-20 14:52:07.702767682 +0000 UTC"
+  },
+  {
+   "mmsi": 311001605,
+   "name": "SAGA DISCOVERY",
+   "lat": 46.17466,
+   "lon": -123.10675,
+   "type_code": 79,
+   "destination": "US LOG",
+   "updated": "2026-11-20 14:52:12.949961926 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.03164,
+   "lon": -122.87607,
+   "sog_kn": 9.2,
+   "cog": 326,
+   "heading": 329,
+   "nav_status": 3,
+   "updated": "2026-11-20 14:52:18.598051857 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35743,
+   "type_code": 30,
+   "updated": "2026-11-20 14:52:22.3543154 +0000 UTC"
+  },
+  {
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 45.66695,
+   "lon": -122.76696,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-20 14:52:23.549058321 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.1853,
+   "lon": -123.12317,
+   "sog_kn": 1,
+   "cog": 107,
+   "heading": 108,
+   "nav_status": 3,
+   "updated": "2026-11-20 14:52:26.066726772 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64353,
+   "lon": -122.75289,
+   "sog_kn": 0,
+   "cog": 84.8,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-20 14:52:26.361087477 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61201,
+   "lon": -122.64536,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-20 14:52:28.104962122 +0000 UTC"
+  }
+ ]
 }
