@@ -1,60 +1,71 @@
 {
- "fetched_at": "2026-11-20T03:54:12Z",
+ "fetched_at": "2026-11-20T03:59:12Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.38551,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35743,
    "sog_kn": 0,
-   "cog": 348.9,
-   "heading": 511,
+   "cog": 259.5,
+   "heading": 136,
    "nav_status": 15,
-   "updated": "2026-11-20 03:54:21.555556487 +0000 UTC"
+   "updated": "2026-11-20 03:59:25.940224073 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09309,
-   "lon": -122.92364,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 307,
+   "cog": 247.4,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-20 03:59:28.939645547 +0000 UTC"
+  },
+  {
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 45.69099,
+   "lon": -122.7716,
+   "type_code": 70,
+   "destination": "MX ZLO >> US VAN",
+   "updated": "2026-11-20 03:59:30.317869038 +0000 UTC"
+  },
+  {
+   "mmsi": 338570000,
+   "name": "BAYPORT",
+   "lat": 45.64336,
+   "lon": -122.77542,
+   "sog_kn": 9.4,
+   "cog": 48.7,
+   "heading": 49,
+   "nav_status": 0,
+   "updated": "2026-11-20 03:59:34.584146984 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65018,
+   "lon": -122.74758,
+   "sog_kn": 0,
+   "cog": 279.4,
+   "heading": 511,
    "nav_status": 3,
-   "updated": "2026-11-20 03:54:28.102246641 +0000 UTC"
+   "updated": "2026-11-20 03:59:38.849346722 +0000 UTC"
   },
   {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.58417,
-   "lon": -122.76617,
-   "sog_kn": 0,
-   "cog": 259.3,
-   "heading": 145,
-   "nav_status": 5,
-   "updated": "2026-11-20 03:54:30.471625154 +0000 UTC"
-  },
-  {
-   "mmsi": 368201480,
-   "name": "KINANI H",
-   "lat": 45.91057,
-   "lon": -122.80556,
-   "sog_kn": 0,
-   "cog": 71.5,
-   "heading": 175,
-   "nav_status": 11,
-   "updated": "2026-11-20 03:54:39.452329395 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 46.08963,
-   "lon": -122.9291,
-   "type_code": 52,
-   "destination": "PORTLAND,OR",
-   "updated": "2026-11-20 03:54:40.596624344 +0000 UTC"
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.82247,
+   "lon": -122.79416,
+   "sog_kn": 5.9,
+   "cog": 197.1,
+   "heading": 194,
+   "nav_status": 0,
+   "updated": "2026-11-20 03:59:39.084939894 +0000 UTC"
   }
  ]
 }
