@@ -1,40 +1,82 @@
 {
- "fetched_at": "2026-11-20T07:59:32Z",
+ "fetched_at": "2026-11-20T08:04:33Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 563331600,
+   "name": "BELLE LUNE",
+   "lat": 46.08466,
+   "lon": -122.9048,
+   "sog_kn": 10.2,
+   "cog": 308,
+   "heading": 306,
+   "nav_status": 0,
+   "updated": "2026-11-20 08:04:45.377646967 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37713,
+   "sog_kn": 0,
+   "cog": 164.3,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-20 08:04:46.57438325 +0000 UTC"
+  },
+  {
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.64749,
+   "lon": -122.73945,
+   "sog_kn": 0,
+   "cog": 285.3,
+   "heading": 285,
+   "nav_status": 0,
+   "updated": "2026-11-20 08:04:48.875752441 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19952,
+   "lon": -123.38498,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-20 08:04:48.945578417 +0000 UTC"
+  },
+  {
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.68593,
+   "lon": -122.77276,
+   "sog_kn": 0,
+   "cog": 5.2,
+   "heading": 167,
+   "nav_status": 1,
+   "updated": "2026-11-20 08:05:02.786176523 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40234,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 131,
+   "nav_status": 0,
+   "updated": "2026-11-20 08:05:08.322052448 +0000 UTC"
+  },
   {
    "mmsi": 367496010,
    "name": "DELIVERANCE",
-   "lat": 46.09111,
-   "lon": -122.9179,
-   "sog_kn": 4,
-   "cog": 254.4,
+   "lat": 46.09408,
+   "lon": -122.94276,
+   "sog_kn": 0.1,
+   "cog": 169.4,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-20 07:59:54.038453941 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 46.08831,
-   "lon": -122.91969,
-   "sog_kn": 9.4,
-   "cog": 288.3,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 07:59:55.111730843 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65017,
-   "lon": -122.74763,
-   "sog_kn": 0,
-   "cog": 220.2,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-20 08:00:00.771899248 +0000 UTC"
+   "updated": "2026-11-20 08:05:08.327925963 +0000 UTC"
   }
  ]
 }
