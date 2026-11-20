@@ -1,51 +1,80 @@
 {
- "fetched_at": "2026-11-20T06:29:25Z",
+ "fetched_at": "2026-11-20T06:34:26Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00902,
-   "lon": -122.84831,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "mmsi": 352006113,
+   "name": "BELFORTUNE",
+   "lat": 46.09907,
+   "lon": -122.93943,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-20 06:34:35.238344901 +0000 UTC"
+  },
+  {
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 46.18207,
+   "lon": -123.11191,
+   "sog_kn": 11.8,
+   "cog": 125.2,
+   "heading": 133,
    "nav_status": 0,
-   "updated": "2026-11-20 06:29:29.237568422 +0000 UTC"
+   "updated": "2026-11-20 06:34:50.940379887 +0000 UTC"
   },
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15342,
-   "lon": -123.37713,
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.98562,
+   "lon": -122.83626,
+   "sog_kn": 0.8,
+   "cog": 330.3,
+   "heading": 330,
+   "nav_status": 12,
+   "updated": "2026-11-20 06:34:52.39183372 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.62009,
+   "lon": -122.78799,
+   "sog_kn": 0.1,
+   "cog": 185.1,
+   "heading": 350,
+   "nav_status": 12,
+   "updated": "2026-11-20 06:34:53.675381307 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64344,
+   "lon": -122.75278,
    "sog_kn": 0,
-   "cog": 12,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-20 06:29:39.576115555 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.0314,
-   "lon": -122.87632,
-   "sog_kn": 7,
-   "cog": 337.6,
-   "heading": 338,
-   "nav_status": 3,
-   "updated": "2026-11-20 06:29:39.577258539 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64362,
-   "lon": -122.75232,
-   "sog_kn": 0,
-   "cog": 293,
+   "cog": 219.1,
    "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-20 06:29:40.071467308 +0000 UTC"
+   "updated": "2026-11-20 06:34:56.308699821 +0000 UTC"
+  },
+  {
+   "mmsi": 355173000,
+   "name": "EVER BEST",
+   "lat": 45.63925,
+   "lon": -122.77781,
+   "sog_kn": 0,
+   "cog": 110.8,
+   "heading": 228,
+   "nav_status": 5,
+   "updated": "2026-11-20 06:34:57.341328362 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.66009,
+   "lon": -122.75954,
+   "type_code": 52,
+   "destination": "PDX/VANC.OPS.",
+   "updated": "2026-11-20 06:35:01.092504162 +0000 UTC"
   }
  ]
 }
