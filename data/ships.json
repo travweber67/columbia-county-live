@@ -1,6 +1,73 @@
 {
- "fetched_at": "2026-11-20T19:05:28Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-20T19:10:28Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.2593,
+   "lon": -123.46749,
+   "sog_kn": 0.2,
+   "cog": 340.6,
+   "heading": 106,
+   "nav_status": 3,
+   "updated": "2026-11-20 19:10:46.15354431 +0000 UTC"
+  },
+  {
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.57556,
+   "lon": -122.74733,
+   "sog_kn": 6.3,
+   "cog": 128.8,
+   "heading": 126,
+   "nav_status": 0,
+   "updated": "2026-11-20 19:10:48.285582804 +0000 UTC"
+  },
+  {
+   "mmsi": 636013613,
+   "name": "LONDON 2012",
+   "lat": 46.13681,
+   "lon": -123.01596,
+   "sog_kn": 13.2,
+   "cog": 115.5,
+   "heading": 116,
+   "nav_status": 0,
+   "updated": "2026-11-20 19:10:52.12440945 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20004,
+   "lon": -123.3854,
+   "sog_kn": 0,
+   "cog": 16.5,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-20 19:10:56.449304994 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 46.15984,
+   "lon": -123.40535,
+   "sog_kn": 0,
+   "cog": 252.1,
+   "heading": 134,
+   "nav_status": 12,
+   "updated": "2026-11-20 19:10:56.99540039 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79318,
+   "lon": -122.84321,
+   "sog_kn": 0,
+   "cog": 284.1,
+   "heading": 215,
+   "nav_status": 0,
+   "updated": "2026-11-20 19:10:58.404639665 +0000 UTC"
+  }
+ ]
 }
