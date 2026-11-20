@@ -1,73 +1,82 @@
 {
- "fetched_at": "2026-11-20T06:59:28Z",
+ "fetched_at": "2026-11-20T07:04:28Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40234,
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.62089,
+   "lon": -122.78815,
+   "sog_kn": 0,
+   "cog": 341.6,
+   "heading": 84,
+   "nav_status": 12,
+   "updated": "2026-11-20 07:04:34.848311483 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.18806,
+   "lon": -123.17356,
+   "sog_kn": 3.8,
+   "cog": 256.4,
+   "heading": 255,
+   "nav_status": 3,
+   "updated": "2026-11-20 07:04:36.803389205 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.96577,
+   "lon": -122.82337,
+   "sog_kn": 8.4,
+   "cog": 143.7,
+   "heading": 141,
+   "nav_status": 12,
+   "updated": "2026-11-20 07:04:41.674750838 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 45.98369,
+   "lon": -122.8357,
+   "sog_kn": 0.3,
+   "cog": 264,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-20 07:04:43.670324155 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09277,
+   "lon": -122.92331,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-20 07:04:45.345428653 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09305,
+   "lon": -122.92315,
+   "sog_kn": 0.1,
+   "cog": 127,
+   "heading": 125,
+   "nav_status": 0,
+   "updated": "2026-11-20 07:04:50.113646104 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60755,
+   "lon": -122.67753,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 133,
-   "nav_status": 0,
-   "updated": "2026-11-20 06:59:39.928755561 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35742,
-   "sog_kn": 0,
-   "cog": 215,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-20 06:59:47.857057468 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 45.98255,
-   "lon": -122.83452,
-   "sog_kn": 0,
-   "cog": 262.2,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-20 06:59:48.715281901 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.66009,
-   "lon": -122.75953,
-   "sog_kn": 0,
-   "cog": 167.8,
-   "heading": 157,
-   "nav_status": 0,
-   "updated": "2026-11-20 06:59:55.456982072 +0000 UTC"
-  },
-  {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.62273,
-   "lon": -122.78838,
-   "sog_kn": 0,
-   "cog": 43.7,
-   "heading": 3,
-   "nav_status": 0,
-   "updated": "2026-11-20 06:59:58.441133214 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.6501,
-   "lon": -122.7476,
-   "sog_kn": 0,
-   "cog": 271,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-20 06:59:59.213288676 +0000 UTC"
+   "updated": "2026-11-20 07:04:50.795778191 +0000 UTC"
   }
  ]
 }
