@@ -1,49 +1,84 @@
 {
- "fetched_at": "2026-11-20T22:35:42Z",
+ "fetched_at": "2026-11-20T22:40:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08379,
+   "lon": -122.90961,
+   "sog_kn": 5.4,
+   "cog": 255.7,
+   "heading": 301,
+   "nav_status": 0,
+   "updated": "2026-11-20 22:40:57.266781497 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.04445,
+   "lon": -122.88327,
+   "sog_kn": 0.7,
+   "cog": 157.6,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-20 22:40:57.320514748 +0000 UTC"
+  },
+  {
+   "mmsi": 366396000,
+   "name": "NAT GEO SEA LION",
+   "lat": 46.08957,
+   "lon": -122.92975,
+   "sog_kn": 0,
+   "cog": 283.1,
+   "heading": 110,
+   "nav_status": 5,
+   "updated": "2026-11-20 22:41:02.787474981 +0000 UTC"
+  },
   {
    "mmsi": 338931000,
    "name": "US GOV VESSEL",
-   "lat": 45.64538,
-   "lon": -122.73506,
-   "type_code": 70,
-   "destination": "PER ORDERS",
-   "updated": "2026-11-20 22:35:56.18447257 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.17938,
-   "lon": -123.10877,
-   "sog_kn": 1.1,
-   "cog": 123.9,
-   "heading": 129,
-   "nav_status": 3,
-   "updated": "2026-11-20 22:35:57.926976064 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65014,
-   "lon": -122.74766,
+   "lat": 45.64542,
+   "lon": -122.73504,
    "sog_kn": 0,
-   "cog": 247.4,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-20 22:36:09.362567028 +0000 UTC"
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-20 22:41:14.320579118 +0000 UTC"
   },
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.8904,
-   "lon": -122.80176,
-   "sog_kn": 7.8,
-   "cog": 338.8,
-   "heading": 341,
-   "nav_status": 12,
-   "updated": "2026-11-20 22:36:20.922221069 +0000 UTC"
+   "mmsi": 538010986,
+   "name": "GALAXY EXPRESS",
+   "lat": 46.14947,
+   "lon": -123.26837,
+   "sog_kn": 11.9,
+   "cog": 250.1,
+   "heading": 256,
+   "nav_status": 0,
+   "updated": "2026-11-20 22:41:16.511973039 +0000 UTC"
+  },
+  {
+   "mmsi": 440245000,
+   "name": "GLOVIS SUMMIT",
+   "lat": 46.26428,
+   "lon": -123.46087,
+   "sog_kn": 13.3,
+   "cog": 126.9,
+   "heading": 127,
+   "nav_status": 0,
+   "updated": "2026-11-20 22:41:19.686484728 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09309,
+   "lon": -122.92362,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 309,
+   "nav_status": 3,
+   "updated": "2026-11-20 22:41:26.972876902 +0000 UTC"
   }
  ]
 }
