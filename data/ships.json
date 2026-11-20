@@ -1,27 +1,59 @@
 {
- "fetched_at": "2026-11-20T11:04:48Z",
+ "fetched_at": "2026-11-20T11:09:48Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 355322000,
-   "name": "AMIS ACE",
-   "lat": 45.66694,
-   "lon": -122.76706,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-20 11:05:04.665711162 +0000 UTC"
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20002,
+   "lon": -123.38542,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-20 11:10:16.79859649 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09306,
-   "lon": -122.92312,
-   "sog_kn": 0,
-   "cog": 233.7,
-   "heading": 125,
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.65356,
+   "lon": -122.76101,
+   "sog_kn": 8.5,
+   "cog": 297.3,
+   "heading": 292,
    "nav_status": 0,
-   "updated": "2026-11-20 11:05:29.809920015 +0000 UTC"
+   "updated": "2026-11-20 11:10:05.260853126 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.10792,
+   "lon": -122.95904,
+   "type_code": 50,
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-20 11:10:15.332057841 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.08981,
+   "lon": -122.92904,
+   "sog_kn": 0,
+   "cog": 269.1,
+   "heading": 100,
+   "nav_status": 5,
+   "updated": "2026-11-20 11:10:24.613117586 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15343,
+   "lon": -123.37714,
+   "type_code": 99,
+   "updated": "2026-11-20 11:10:25.009090061 +0000 UTC"
   }
  ]
 }
