@@ -10063,8 +10063,9 @@ function evsIsSpecial(ev) {
    good one"): every scroller card gets its OWN picture. The old code
    rotated six town photos across all ten cards, so four cards wore
    town-st-helens and four wore town-vernonia. Now each event walks a
-   candidate chain and buildEventScroller hands out the first
-   candidate not already used in the visible set:
+   candidate chain and buildEventScroller hands out the
+   least-recently-used candidate (never the previous card's picture
+   when avoidable), so repeats stay spaced across the full set:
      1. the event's own img from its data (community-events flyer
         photos — the only per-event photos the data carries),
      2. EVS_BY_TITLE — a dedicated image for known recurring/special
@@ -10141,11 +10142,24 @@ function evsCandidatesFor(ev) {
   EVS_GENERIC.forEach(push);
   return out;
 }
-function evsImgFor(ev, used) {
+function evsImgFor(ev, state) {
+  /* Least-recently-used assignment (Travis, 2026-11-21: the scroller
+     now carries EVERY upcoming event, so the set outgrows the picture
+     library and repeats are unavoidable — space them as far apart as
+     the pool allows and never repeat the previous card's picture when
+     the event has any other candidate). state = { last:{}, prev:null,
+     n:0 }; last[p] is the hand-out index when p was last used. */
   var cands = evsCandidatesFor(ev);
-  for (var i = 0; i < cands.length; i++)
-    if (!used[cands[i]]) { used[cands[i]] = 1; return cands[i]; }
-  return cands[0]; /* reachable only if a set outgrows the whole library */
+  var best = null, bestLast = Infinity;
+  for (var i = 0; i < cands.length; i++) {
+    if (cands[i] === state.prev && cands.length > 1) continue;
+    var last = (state.last[cands[i]] === undefined) ? -1 : state.last[cands[i]];
+    if (last < bestLast) { bestLast = last; best = cands[i]; }
+  }
+  if (best === null) best = cands[0];
+  state.last[best] = state.n++;
+  state.prev = best;
+  return best;
 }
 function buildEventScroller() {
   var track = document.getElementById('ev-scroll-track');
@@ -10163,13 +10177,14 @@ function buildEventScroller() {
     var k = evcalKeyOf(ev);
     if (seen[k]) return;
     seen[k] = 1;
-    if (picked.length < 10) picked.push(ev);
+    picked.push(ev); /* EVERY upcoming event (Travis, 2026-11-21: the
+      home scroller carries the full set — no 10-card cap) */
   });
   if (!picked.length) {
     track.innerHTML = '<p class="loading">Nothing coming up right now.</p>';
     return;
   }
-  var evsUsed = {};
+  var evsUsed = { last: {}, prev: null, n: 0 };
   var html = picked.map(function (ev, i) {
     var when = fmtDay(new Date(ev.date + 'T12:00:00')) + (ev.time ? ' · ' + esc(ev.time) : '');
     return '<a class="evs-card" href="#events-card" data-evkey="' + esc(evcalKeyOf(ev)) + '">'
