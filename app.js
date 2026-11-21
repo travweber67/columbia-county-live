@@ -6066,10 +6066,8 @@ const FINDER_SECTIONS = [
   { id: 'forecast-week-card', title: 'Forecast — the week',  sub: 'The seven-day forecast pills', keys: 'forecast week seven day pills outlook weather' },
   { id: 'aircraft-card', title: 'Aircraft Overhead',         sub: 'Planes over the county right now, from community ADS-B receivers', keys: 'plane planes aircraft flight flights overhead adsb low local ground traffic' },
   { id: 'sky-card',      title: 'In the Sky Right Now',      sub: 'The ISS, and when to see the station pass', keys: 'iss station satellite sky look up passes pass' },
-  { id: 'dark-card',     title: 'After Dark — Tonight\u2019s Sky', sub: 'Clouds, moonlight, aurora odds and meteor showers — is tonight worth looking up?', keys: 'stars stargazing night sky dark aurora northern lights meteor meteors shooting star telescope astronomy milky way bundle up tonight' },
   { id: 'rivers-card',   title: 'River Levels',              sub: 'USGS gauges on the Columbia and Nehalem', keys: 'river rivers level levels gauge gauges flood height columbia nehalem' },
   { id: 'tides-card',    title: 'River Tides',               sub: 'Next high and low tide at St. Helens and Wauna', keys: 'tide tides high low slack fishing dock ramp' },
-  { id: 'steelhead-card', title: 'Steelhead — the Small Rivers', sub: 'Is today a good day? Nehalem, Clatskanie, Scappoose & more', keys: 'steelhead wilson nehalem big creek gnat klaskanine clatskanie scappoose winter fishing river conditions clarity good day' },
   { id: 'quakes-card',   title: 'Earthquakes — last 30 days', sub: 'USGS earthquakes near the county', keys: 'earthquake earthquakes quake quakes tremor seismic shook' },
   { id: 'fires-card',    title: 'Wildfires',                 sub: 'Interagency wildfire incidents', keys: 'fire fires wildfire wildfires smoke burn burning' },
   { id: 'air-card',      title: 'Air & Smoke',               sub: 'Air Quality Index, fine particles, and the day\u2019s smoke outlook', keys: 'air quality aqi smoke breathe breathing pm25 lungs asthma dust wood stove' },
@@ -6724,7 +6722,7 @@ const LANG_ES = {
   goh2: '¿Vas a salir?',
   godrive: 'Manejando',
   goferry: 'Tomar el ferry',
-  evscrollh2: 'Pasando en el condado',
+  evscrollh2: 'Eventos en el condado',
   newsscrollh2: 'Buenas noticias del condado',
   dwplan: 'Esta noche y mañana',
   dwschools: 'Escuelas — cierres y retrasos',
@@ -7395,8 +7393,8 @@ window.CCLPins = {
    adventure. */
 const PIN_CARDS = ['since-card', 'home-card', 'go-card', 'schools-card', 'briefing-card',
   'roads-card', 'cameras-card', 'incidents-card', 'drive-card', 'routeahead-card', 'ferry-card', 'ferry-mini-card', 'ships-card', 'aircraft-card', 'mthood-card',
-  'alerts-card', 'forecast-week-card', 'forecast-card', 'sky-card', 'dark-card', 'rivers-card', 'tides-card',
-  'fish-card', 'tracker-card', 'steelhead-card', 'almanac-card',
+  'alerts-card', 'forecast-week-card', 'forecast-card', 'sky-card', 'rivers-card', 'tides-card',
+  'fish-card', 'tracker-card', 'almanac-card',
   'quakes-card', 'fires-card', 'air-card',
   'events-card', 'freshness-card', 'watch-card', 'saver-card', 'about-card'];
 const pinBtns = {};        // card id -> its pin button on the ORIGINAL card
@@ -8417,7 +8415,7 @@ const SECTION_SPONSORS = [
   { section: 'travel',   spot: 4, after: 'mthood-card',    business: null },
   { section: 'outdoors', spot: 1, after: 'sky-card',       business: null },
   { section: 'outdoors', spot: 2, after: 'tides-card',     business: null },
-  { section: 'outdoors', spot: 3, after: 'steelhead-card', business: null },
+  { section: 'outdoors', spot: 3, after: 'tracker-card', business: null },
   { section: 'outdoors', spot: 4, after: 'air-card',       business: null },
   { section: 'more',     spot: 1, after: 'add-event-card', business: null }, /* Item 4k(4): moved up under the Add-an-event card, restyled as the KIL-style strip */
   { section: 'more',     spot: 2, after: 'cascade-card',   business: null },
@@ -10462,43 +10460,63 @@ function renderNewsList() {
     return;
   }
   list.innerHTML = newsStoriesCache.map(function (st, i) {
-    return '<button class="news-row" type="button" data-news-idx="' + i + '">'
-      + '<img class="news-row-img" src="' + esc(st.img || '') + '" alt="" loading="lazy" decoding="async">'
+    return '<div class="news-row" data-news-idx="' + i + '">'
+      + '<button class="news-row-head" type="button" data-news-toggle="' + i + '" aria-expanded="false">'
+      + (st.img ? '<img class="news-row-img" src="' + esc(st.img) + '" alt="" loading="lazy" decoding="async">' : '')
       + '<span class="news-row-main"><span class="nws-when">' + esc(newsWhen(st)) + (st.source ? ' · ' + esc(st.source) : '') + '</span>'
       + '<span class="news-row-title">' + esc(st.title || '') + '</span></span>'
-      + '<span class="news-row-arrow" aria-hidden="true">\u203a</span></button>';
+      + '<span class="news-row-more">' + (es ? 'Ver más' : 'See more') + '</span>'
+      + '<span class="news-row-arrow" aria-hidden="true">›</span></button>'
+      + '<div class="news-row-detail" hidden>'
+      + (st.summary ? '<p class="news-story-summary">' + esc(st.summary) + '</p>' : '')
+      + '<p class="news-story-credit">' + (es ? 'Historia de ' : 'Story from ') + esc(st.source || '') + (es ? ', reunida por Oregon Civic Newsstand.' : ', gathered by the Oregon Civic Newsstand.') + '</p>'
+      + '<a class="news-readfull" href="' + esc(st.url || '') + '" target="_blank" rel="noopener">' + (es ? 'Leer la historia completa →' : 'Read the full story →') + '</a>'
+      + '</div></div>';
   }).join('');
-  list.querySelectorAll('.news-row').forEach(function (row) {
-    row.addEventListener('click', function () { openNewsStory(parseInt(row.getAttribute('data-news-idx'), 10)); });
-  });
+  if (!list._newsWired) {
+    list._newsWired = true;
+    list.addEventListener('click', function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest('[data-news-toggle]') : null;
+      if (btn && list.contains(btn)) toggleNewsRow(btn);
+    });
+  }
+}
+function toggleNewsRow(btn) {
+  var card = btn.closest('.news-row');
+  if (!card) return;
+  var detail = card.querySelector('.news-row-detail');
+  if (!detail) return;
+  var es = (typeof langCur !== 'undefined' && langCur === 'es');
+  var open = detail.hidden;
+  detail.hidden = !open;
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  card.classList.toggle('open', open);
+  var lbl = btn.querySelector('.news-row-more');
+  if (lbl) lbl.textContent = open ? (es ? 'Ver menos' : 'See less') : (es ? 'Ver más' : 'See more');
 }
 function openNewsStory(i) {
-  var st = newsStoriesCache[i];
-  var box = document.getElementById('news-story');
+  /* Today scroller cards land here (v143): the story expands inline
+     in the News view list and scrolls into view — no page swap. */
   var list = document.getElementById('news-list');
-  if (!st || !box) return;
-  var es = (typeof langCur !== 'undefined' && langCur === 'es');
-  box.innerHTML = '<button class="news-back" type="button" id="news-back-btn">' + (es ? '\u2039 Todas las historias' : '\u2039 All stories') + '</button>'
-    + (st.img ? '<img class="news-story-img" src="' + esc(st.img) + '" alt="">' : '')
-    + '<h3 class="news-story-title">' + esc(st.title || '') + '</h3>'
-    + '<p class="news-story-meta">' + esc(newsWhen(st)) + (st.source ? ' · ' + esc(st.source) : '') + '</p>'
-    + (st.summary ? '<p class="news-story-summary">' + esc(st.summary) + '</p>' : '')
-    + '<p class="news-story-credit">' + (es ? 'Historia de ' : 'Story from ') + esc(st.source || '') + (es ? ', reunida por Oregon Civic Newsstand.' : ', gathered by the Oregon Civic Newsstand.') + '</p>'
-    + '<a class="news-readfull" href="' + esc(st.url || '') + '" target="_blank" rel="noopener">' + (es ? 'Leer la historia completa \u2192' : 'Read the full story \u2192') + '</a>';
-  if (list) list.hidden = true;
-  box.hidden = false;
-  var back = document.getElementById('news-back-btn');
-  if (back) back.addEventListener('click', closeNewsStory);
-  var card = document.getElementById('news-card');
-  if (card) card.scrollIntoView({ block: 'start' });
+  if (!list) return;
+  var card = list.querySelector('.news-row[data-news-idx="' + i + '"]');
+  if (!card) return;
+  var btn = card.querySelector('[data-news-toggle]');
+  var detail = card.querySelector('.news-row-detail');
+  if (btn && detail && detail.hidden) toggleNewsRow(btn);
+  card.scrollIntoView({ block: 'start' });
 }
 function closeNewsStory() {
   var box = document.getElementById('news-story');
   var list = document.getElementById('news-list');
   if (box) { box.hidden = true; box.innerHTML = ''; }
-  if (list) list.hidden = false;
-  var card = document.getElementById('news-card');
-  if (card) card.scrollIntoView({ block: 'start' });
+  if (list) {
+    list.hidden = false;
+    list.querySelectorAll('.news-row.open').forEach(function (card) {
+      var btn = card.querySelector('[data-news-toggle]');
+      if (btn) toggleNewsRow(btn);
+    });
+  }
 }
 /* NEWS RANKING (Travis, 2026-11-21 — BOTH county sites): the feed
    leads with the most INTERESTING stories, not just the newest.

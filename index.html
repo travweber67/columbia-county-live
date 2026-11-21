@@ -34,7 +34,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <link rel="manifest" href="manifest.webmanifest?v=95">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=95">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=171">
+<link rel="stylesheet" href="style.css?v=172">
 <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=95">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=95">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
@@ -279,14 +279,17 @@ document.documentElement.setAttribute("data-theme",t);})();
      the Events view. Cards are built by app.js buildEventScroller()
      from the same events data; the pills ticker under the header is
      a different element and stays as it is. -->
-<section class="ev-scroll" id="ev-scroll" aria-label="Happening in the county — newest and special events, scrolling">
+<section class="ev-scroll" id="ev-scroll" aria-label="Events around the county — newest and special events, scrolling">
   <div class="ev-scroll-head">
     <img class="card-ico" src="img/icons/icon-events.png" alt="" aria-hidden="true">
-    <h2 data-i18n="evscrollh2">Happening in the county</h2>
-    <span class="sc-arrows" aria-hidden="false"><button class="sc-arrow" type="button" data-for="ev-scroll-viewport" data-dir="-1" aria-label="Scroll events back">&#8249;</button><button class="sc-arrow" type="button" data-for="ev-scroll-viewport" data-dir="1" aria-label="Scroll events forward">&#8250;</button></span>
+    <h2 data-i18n="evscrollh2">Events around the county</h2>
   </div>
-  <div class="ev-scroll-viewport" id="ev-scroll-viewport">
-    <div class="ev-scroll-track" id="ev-scroll-track"><p class="loading">Loading events…</p></div>
+  <div class="sc-rail">
+    <div class="ev-scroll-viewport" id="ev-scroll-viewport">
+      <div class="ev-scroll-track" id="ev-scroll-track"><p class="loading">Loading events…</p></div>
+    </div>
+    <button class="sc-arrow sc-edge sc-edge-prev" type="button" data-for="ev-scroll-viewport" data-dir="-1" aria-label="Scroll events back">&#8249;</button>
+    <button class="sc-arrow sc-edge sc-edge-next" type="button" data-for="ev-scroll-viewport" data-dir="1" aria-label="Scroll events forward">&#8250;</button>
   </div>
 </section>
 
@@ -815,16 +818,6 @@ document.documentElement.setAttribute("data-theme",t);})();
       <a class="founding-cta" href="sponsor.html#section" data-i18n="sscta">Claim this spot &rarr;</a>
     </article>
 
-    <div class="card" id="dark-card">
-      <div class="card-head">
-        <img class="card-ico" src="img/icons/icon-night.png" alt="" aria-hidden="true"><h2>After Dark — Tonight&rsquo;s Sky</h2>
-        <span class="updated" id="dark-updated"></span>
-      </div>
-      <p class="card-note">Everything above is the sky <em>right now</em>. This card answers the evening question — <em>is tonight worth going out to look up?</em> Clouds, moonlight, the space station, the northern lights and the meteor showers, weighed together for your home town (or St. Helens if you haven&rsquo;t picked one).</p>
-      <div id="dark-body" class="panel-body"><p class="loading">Reading tonight&rsquo;s sky…</p></div>
-      <p class="card-note small">Cloud cover: Open-Meteo&rsquo;s forecast model. Northern lights: NOAA&rsquo;s Space Weather Prediction Center Kp forecast — at our latitude they usually need Kp 5 or better, a dark spot, and a clear northern horizon. Moon and darkness are figured on this page, like the Almanac. And a forecast is a forecast — the sky gets the last word.</p>
-    </div>
-
     <div class="card photo-card" id="rivers-card">
       <div class="card-photo photo-dock"><img src="img/card-dock.jpg" alt="A dock on the Columbia River at Rainier, Oregon, under a stormy sky, with a ship and the Lewis and Clark Bridge in the distance" loading="lazy" decoding="async"><img class="photo-night" src="img/dusk/rivers-night.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
       <div class="card-head">
@@ -881,15 +874,6 @@ document.documentElement.setAttribute("data-theme",t);})();
     </div>
     </div>
 
-    <div class="card band-card" id="steelhead-card">
-      <div class="card-band" aria-hidden="true"><img src="img/dusk/band-river.jpg" alt="" loading="lazy" decoding="async"></div>
-      <div class="card-head"><img class="card-ico" src="img/icons/icon-fish.png" alt="" aria-hidden="true"><h2 data-i18n="steelh2">Steelhead — the Small Rivers</h2><span class="updated" id="steelhead-updated"></span></div>
-      <p class="small" data-i18n="steelnote">Is today a good day to fish for steelhead? No counts exist for these creeks mid-season — the hatchery traps are counted, but the numbers are published after the fact — so this judges the day, not the fish: run timing, flow, water clarity, cold and weather. Tap a river for the full breakdown.</p>
-      <p class="sh-target" id="steelhead-target"></p>
-      <div id="steelhead-rows"><p class="small">Checking the creeks…</p></div>
-      <p class="small" data-i18n="steelhours">General Oregon rule: steelhead angling is legal from one hour before sunrise to one hour after sunset — each river's own regs can add exceptions, so check yours.</p>
-      <p class="small" id="steelhead-note"></p>
-    </div>
     <!-- v95: Section Sponsor (Slot B) — Outdoors spot 3 of 4, open.
          Inventory of record: SECTION_SPONSORS in app.js. A sale swaps this
          invite article for a taken cell, founding-panel style. -->
@@ -2050,12 +2034,10 @@ document.documentElement.setAttribute("data-theme",t);})();
       <a class="drawer-link" href="#alerts-card" data-i18n="dwalerts">Weather alerts</a>
       <a class="drawer-link" href="#forecast-card" data-i18n="dwforecast">Forecast</a>
       <a class="drawer-link" href="#sky-card" data-i18n="dwsky">Sky &amp; the ISS</a>
-      <a class="drawer-link" href="#dark-card" data-i18n="dwdark">After dark</a>
       <a class="drawer-link" href="#rivers-card" data-i18n="dwrivers">River levels</a>
       <a class="drawer-link" href="#tides-card" data-i18n="dwtides">River tides</a>
       <a class="drawer-link" href="#fish-card" data-i18n="dwfish">Fish counts</a>
       <a class="drawer-link" href="#tracker-card" data-i18n="dwtracker">Salmon tracker</a>
-      <a class="drawer-link" href="#steelhead-card" data-i18n="dwsteelhead">Steelhead</a>
       <a class="drawer-link" href="#almanac-card" data-i18n="dwalmanac">The Almanac</a>
       <a class="drawer-link" href="#quakes-card" data-i18n="dwquakes">Earthquakes</a>
       <a class="drawer-link" href="#fires-card" data-i18n="dwfires">Wildfires</a>
@@ -2350,7 +2332,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=153"></script>
+<script src="app.js?v=154"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 

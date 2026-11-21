@@ -5504,3 +5504,78 @@ body.rd-home .dir-addcard .share-btn{display:inline-block;text-decoration:none}
    would wash the stripe out to pale green-grey in dark mode. */
 #events-body .cev-card.cev-k-comm{border-left:4px solid #dd7a2e}
 #events-body .cev-card.cev-k-muni{border-left:4px solid #4a7196}
+
+/* ===== v143 (Travis, 2026-11-21 — the five-fix batch) =====
+   (1) The events scroller's arrows leave the head and ride the
+   scroller's own edges: plain \2039 \203a indicators at mid-height,
+   no circle, no button face. Desktop only; phones keep swiping.
+   (2) The glance strip (the orange ticker pills) rides on its own
+   layer above the sponsor rails, and Today's rails start below the
+   strip — the "Never miss a change" / community-notice cards can
+   never cover the ticker again, at rest or mid-scroll.
+   (3) The schools band on desktop becomes a real picture height
+   cropped on the bus's body instead of a thin slice of its top.
+   (4) The Cascade Controls Jobs cross-promo gets its dark house
+   ground back: the redesign's generic light frost had overridden
+   the v36 dark blue, leaving white/pale text on a near-white card.
+   (5) Outdoors cuts (HTML/app.js side): Steelhead and After Dark
+   cards removed; sponsor spots re-checked for even spacing.
+   (6) News view stories expand inline on a See more toggle with
+   the story's full held text, source credit and outbound link —
+   no more page-swap detail (Travis: a click in the feed should
+   pull the story down right there). */
+/* (1) edge arrows */
+.sc-rail{position:relative}
+.sc-arrow.sc-edge{
+  position:absolute;top:50%;transform:translateY(-50%);z-index:6;
+  width:40px;height:72px;padding:0;display:none;
+  background:none;border:none;border-radius:0;box-shadow:none;
+  color:#b95e06;font-size:2.1rem;font-weight:800;line-height:1;cursor:pointer;
+  text-shadow:0 1px 0 rgba(255,255,255,.85),0 0 12px rgba(255,255,255,.7);
+}
+.sc-edge-prev{left:0}
+.sc-edge-next{right:0}
+@media (min-width:900px){ .sc-arrow.sc-edge{display:block} }
+.sc-arrow.sc-edge:hover{background:none;color:#e85d04}
+html[data-theme="dark"] .sc-arrow.sc-edge,
+html[data-theme="dark"] body.rd-home .sc-arrow.sc-edge{
+  background:none;color:#f5a83d;
+  text-shadow:0 1px 3px rgba(0,0,0,.6),0 0 12px rgba(0,0,0,.4);
+}
+/* (2) ticker on its own layer; Today's rails start below it */
+.glance-strip{position:relative;z-index:6}
+@media (min-width:1440px){
+  #view-today .rail-zone{top:146px}
+}
+/* (3) schools band, desktop */
+@media (min-width:900px){
+  .schools-card .card-band{height:300px}
+  .schools-card .card-band img{object-position:center 70%}
+}
+/* (4) cascade card ground + text contrast */
+body.rd-home .cascade-card,
+html[data-theme="dark"] body.rd-home .cascade-card{
+  background:linear-gradient(135deg,#1e4359,#132e47);
+  border-color:#0d2237;
+}
+body.rd-home .cascade-title{text-shadow:0 1px 3px rgba(6,17,28,.5)}
+body.rd-home .cascade-eyebrow{text-shadow:0 1px 2px rgba(6,17,28,.45)}
+body.rd-home .cascade-copy{color:#d9e6f0;text-shadow:0 1px 2px rgba(6,17,28,.45)}
+body.rd-home .cascade-credit{color:#a9c2d4}
+/* (6) news rows expand inline: the row becomes a container, its head
+   is the toggle button, the story's full held text drops down
+   underneath (Fix 8) */
+.news-row{display:block;padding:0;overflow:hidden}
+.news-row-head{
+  display:flex;gap:12px;align-items:center;text-align:left;width:100%;
+  background:none;border:none;padding:10px 12px;cursor:pointer;
+  font:inherit;color:inherit;
+}
+.news-row-detail{padding:0 14px 12px}
+.news-row-more{
+  margin-left:auto;font-weight:800;color:#b95e06;font-size:.85rem;
+  white-space:nowrap;flex:none;
+}
+.news-row-arrow{margin-left:2px;transition:transform .15s ease}
+.news-row.open .news-row-arrow{transform:rotate(90deg)}
+html[data-theme="dark"] body.rd-home .news-row-more{color:#ffa04d}
