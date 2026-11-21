@@ -1,62 +1,47 @@
 {
- "fetched_at": "2026-11-21T09:26:31Z",
+ "fetched_at": "2026-11-21T09:31:31Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40234,
+   "mmsi": 366888830,
+   "name": "KAHU",
+   "lat": 45.61168,
+   "lon": -122.64423,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 134,
-   "nav_status": 0,
-   "updated": "2026-11-21 09:26:39.112817355 +0000 UTC"
+   "cog": 22.4,
+   "heading": 116,
+   "nav_status": 5,
+   "updated": "2026-11-21 09:31:54.086591463 +0000 UTC"
   },
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 45.64331,
-   "lon": -122.75278,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19996,
+   "lon": -123.3855,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 349.8,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-21 09:26:39.321081942 +0000 UTC"
+   "nav_status": 15,
+   "updated": "2026-11-21 09:32:01.667879466 +0000 UTC"
   },
   {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 46.08973,
-   "lon": -122.92907,
-   "sog_kn": 0,
-   "cog": 218.1,
-   "heading": 105,
-   "nav_status": 5,
-   "updated": "2026-11-21 09:26:39.965885175 +0000 UTC"
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.80151,
+   "lon": -122.78836,
+   "type_code": 52,
+   "destination": "PDX/VANC.OPS.",
+   "updated": "2026-11-21 09:32:03.483085703 +0000 UTC"
   },
   {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 46.18373,
-   "lon": -123.11718,
-   "sog_kn": 9.9,
-   "cog": 299.1,
-   "heading": 299,
-   "nav_status": 0,
-   "updated": "2026-11-21 09:26:52.634013176 +0000 UTC"
-  },
-  {
-   "mmsi": 538009633,
-   "name": "EVER ZENITH",
-   "lat": 46.09915,
-   "lon": -122.93935,
-   "sog_kn": 0,
-   "cog": 353.6,
-   "heading": 107,
-   "nav_status": 5,
-   "updated": "2026-11-21 09:26:57.132734126 +0000 UTC"
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 45.71469,
+   "lon": -122.76364,
+   "type_code": 70,
+   "destination": "USLOG",
+   "updated": "2026-11-21 09:32:08.168516082 +0000 UTC"
   }
  ]
 }
