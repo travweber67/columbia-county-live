@@ -1,71 +1,80 @@
 {
- "fetched_at": "2026-11-21T14:31:54Z",
+ "fetched_at": "2026-11-21T14:36:54Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 563338800,
+   "name": "ISHIZUCHI STAR",
+   "lat": 45.63145,
+   "lon": -122.69714,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-21 14:37:05.430399378 +0000 UTC"
+  },
+  {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.62276,
+   "lon": -122.78841,
+   "sog_kn": 0,
+   "cog": 54.6,
+   "heading": 4,
+   "nav_status": 0,
+   "updated": "2026-11-21 14:37:06.539496345 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19997,
+   "lon": -123.38549,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-21 14:37:11.868892668 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 349.2,
+   "heading": 511,
+   "nav_status": 15
+  },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 45.99052,
-   "lon": -122.84372,
-   "sog_kn": 0.6,
-   "cog": 192,
-   "heading": 151,
-   "nav_status": 3,
-   "updated": "2026-11-21 14:31:59.404129702 +0000 UTC"
+   "lat": 45.98968,
+   "lon": -122.84322,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-21 14:37:11.746552783 +0000 UTC"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40233,
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 45.71469,
+   "lon": -122.76352,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 133,
-   "nav_status": 0,
-   "updated": "2026-11-21 14:31:59.88086633 +0000 UTC"
+   "cog": 205.6,
+   "heading": 193,
+   "nav_status": 1,
+   "updated": "2026-11-21 14:37:23.373097778 +0000 UTC"
   },
   {
-   "mmsi": 440245000,
-   "name": "GLOVIS SUMMIT",
-   "lat": 45.64643,
-   "lon": -122.7557,
-   "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-21 14:32:01.985349166 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.2,
-   "lon": -123.38542,
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 45.66695,
+   "lon": -122.76694,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-21 14:32:15.607928222 +0000 UTC"
+   "cog": 288.6,
+   "heading": 161,
+   "nav_status": 1,
+   "updated": "2026-11-21 14:37:24.099397214 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09309,
-   "lon": -122.92361,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 309,
-   "nav_status": 3,
-   "updated": "2026-11-21 14:32:18.308627729 +0000 UTC"
-  },
-  {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60747,
-   "lon": -122.67766,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-21 14:32:21.354880649 +0000 UTC"
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.0897,
+   "lon": -122.92896,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-21 14:37:25.739748659 +0000 UTC"
   }
  ]
 }
