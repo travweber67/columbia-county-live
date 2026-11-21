@@ -1,38 +1,69 @@
 {
- "fetched_at": "2026-11-21T23:52:28Z",
+ "fetched_at": "2026-11-21T23:53:14Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.64928,
-   "lon": -122.83,
-   "sog_kn": 4.3,
-   "cog": 127.2,
-   "heading": 129,
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.08818,
+   "lon": -122.91524,
+   "sog_kn": 4.4,
+   "cog": 128,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-21 23:52:45.268366768 +0000 UTC"
+   "updated": "2026-11-21 23:53:56.82204668 +0000 UTC"
   },
   {
-   "mmsi": 355173000,
-   "name": "EVER BEST",
-   "lat": 45.63927,
-   "lon": -122.77782,
+   "mmsi": 368126190,
+   "name": "GERONIMO",
+   "lat": 45.60267,
+   "lon": -122.78212,
+   "sog_kn": 6.5,
+   "cog": 155.9,
+   "heading": 156,
+   "nav_status": 11,
+   "updated": "2026-11-21 23:53:59.702849703 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09051,
+   "lon": -122.93241,
    "sog_kn": 0,
-   "cog": 321.7,
-   "heading": 228,
+   "cog": 285.1,
+   "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-21 23:52:47.403166623 +0000 UTC"
+   "updated": "2026-11-21 23:54:00.882763614 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64338,
+   "lon": -122.75245,
+   "type_code": 52,
+   "destination": "US^0UU4>02MR",
+   "updated": "2026-11-21 23:54:02.142631997 +0000 UTC"
+  },
+  {
+   "mmsi": 366396000,
+   "name": "NAT GEO SEA LION",
+   "lat": 46.08957,
+   "lon": -122.92975,
+   "type_code": 68,
+   "destination": "RAINIER",
+   "updated": "2026-11-21 23:54:10.906561883 +0000 UTC"
   },
   {
    "mmsi": 366998830,
    "name": "ROYAL MELBOURNE",
-   "lat": 46.10616,
-   "lon": -122.95662,
-   "type_code": 31,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-21 23:53:02.255584474 +0000 UTC"
+   "lat": 46.10615,
+   "lon": -122.95664,
+   "sog_kn": 0,
+   "cog": 206.5,
+   "heading": 119,
+   "nav_status": 0,
+   "updated": "2026-11-21 23:54:18.973446239 +0000 UTC"
   }
  ]
 }
