@@ -1,29 +1,80 @@
 {
- "fetched_at": "2026-11-21T05:36:13Z",
+ "fetched_at": "2026-11-21T05:41:14Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.61817,
+   "lon": -122.78788,
+   "sog_kn": 0.6,
+   "cog": 355.2,
+   "heading": 358,
+   "nav_status": 12,
+   "updated": "2026-11-21 05:41:23.421220899 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40234,
+   "type_code": 99,
+   "destination": "",
+   "updated": "2026-11-21 05:41:29.295193867 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64539,
+   "lon": -122.73506,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-21 05:41:32.575625754 +0000 UTC"
+  },
   {
    "mmsi": 367310520,
    "name": "JAMES T",
-   "lat": 46.26583,
-   "lon": -123.45897,
+   "lat": 46.26584,
+   "lon": -123.45895,
    "sog_kn": 0,
    "cog": 67.5,
-   "heading": 45,
+   "heading": 46,
    "nav_status": 3,
-   "updated": "2026-11-21 05:36:33.362426933 +0000 UTC"
+   "updated": "2026-11-21 05:41:36.87129705 +0000 UTC"
   },
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 46.0989,
-   "lon": -122.93972,
-   "sog_kn": 0,
-   "cog": 42.5,
-   "heading": 36,
+   "mmsi": 636023225,
+   "name": "SWEET PEA LEADER",
+   "lat": 45.8908,
+   "lon": -122.80343,
+   "sog_kn": 13.5,
+   "cog": 156.7,
+   "heading": 155,
    "nav_status": 0,
-   "updated": "2026-11-21 05:36:49.057447773 +0000 UTC"
+   "updated": "2026-11-21 05:41:45.127884165 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.0091,
+   "lon": -122.84824,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 05:41:46.678670942 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.66458,
+   "lon": -122.76749,
+   "sog_kn": 10.8,
+   "cog": 336.3,
+   "heading": 337,
+   "nav_status": 0,
+   "updated": "2026-11-21 05:41:47.730830705 +0000 UTC"
   }
  ]
 }
