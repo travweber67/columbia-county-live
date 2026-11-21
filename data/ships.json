@@ -1,56 +1,100 @@
 {
- "fetched_at": "2026-11-21T11:51:30Z",
+ "fetched_at": "2026-11-21T11:56:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64344,
-   "lon": -122.75272,
-   "type_code": 52,
-   "updated": "2026-11-21 11:52:10.941319558 +0000 UTC"
+   "mmsi": 311001605,
+   "name": "SAGA DISCOVERY",
+   "lat": 46.17462,
+   "lon": -123.107,
+   "type_code": 79,
+   "destination": "US LOG",
+   "updated": "2026-11-21 11:56:52.621007007 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65011,
-   "lon": -122.74763,
-   "type_code": 33,
-   "updated": "2026-11-21 11:52:15.349253902 +0000 UTC"
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.09296,
+   "lon": -122.92309,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-21 11:56:52.645508678 +0000 UTC"
   },
   {
    "mmsi": 367047180,
    "name": "SUNDIAL",
-   "lat": 45.70347,
-   "lon": -122.77043,
+   "lat": 45.7159,
+   "lon": -122.76617,
    "sog_kn": 9.3,
-   "cog": 15.9,
-   "heading": 14,
+   "cog": 14.9,
+   "heading": 12,
    "nav_status": 12,
-   "updated": "2026-11-21 11:52:21.011004074 +0000 UTC"
+   "updated": "2026-11-21 11:57:17.035938059 +0000 UTC"
+  },
+  {
+   "mmsi": 538009633,
+   "name": "EVER ZENITH",
+   "lat": 46.09915,
+   "lon": -122.93938,
+   "sog_kn": 0,
+   "cog": 223.9,
+   "heading": 107,
+   "nav_status": 5,
+   "updated": "2026-11-21 11:56:58.623965407 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.13796,
+   "lon": -123.01827,
+   "sog_kn": 11.5,
+   "cog": 116.3,
+   "heading": 115,
+   "nav_status": 0,
+   "updated": "2026-11-21 11:57:06.536609256 +0000 UTC"
+  },
+  {
+   "mmsi": 440245000,
+   "name": "GLOVIS SUMMIT",
+   "lat": 45.64641,
+   "lon": -122.7557,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-21 11:57:13.028144839 +0000 UTC"
   },
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
-   "lat": 46.09279,
-   "lon": -122.92329,
+   "lat": 46.0928,
+   "lon": -122.92328,
    "sog_kn": 0,
-   "cog": 157.6,
-   "heading": 124,
+   "cog": 215.3,
+   "heading": 123,
    "nav_status": 0,
-   "updated": "2026-11-21 11:52:23.20077394 +0000 UTC"
+   "updated": "2026-11-21 11:57:13.792994187 +0000 UTC"
   },
   {
-   "mmsi": 355322000,
-   "name": "AMIS ACE",
-   "lat": 45.66697,
-   "lon": -122.76691,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.89456,
+   "lon": -122.80459,
+   "sog_kn": 5.5,
+   "cog": 162.2,
+   "heading": 162,
+   "nav_status": 12,
+   "updated": "2026-11-21 11:57:16.097150964 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64351,
+   "lon": -122.75242,
    "sog_kn": 0,
-   "cog": 288.6,
-   "heading": 161,
-   "nav_status": 1,
-   "updated": "2026-11-21 11:52:27.1606607 +0000 UTC"
+   "cog": 144.7,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-21 11:57:21.084433185 +0000 UTC"
   }
  ]
 }
