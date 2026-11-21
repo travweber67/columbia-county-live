@@ -1,47 +1,78 @@
 {
- "fetched_at": "2026-11-21T09:31:31Z",
+ "fetched_at": "2026-11-21T09:36:32Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
-  {
-   "mmsi": 366888830,
-   "name": "KAHU",
-   "lat": 45.61168,
-   "lon": -122.64423,
-   "sog_kn": 0,
-   "cog": 22.4,
-   "heading": 116,
-   "nav_status": 5,
-   "updated": "2026-11-21 09:31:54.086591463 +0000 UTC"
-  },
   {
    "mmsi": 367061930,
    "name": "TEBENKOF",
    "lat": 46.19996,
-   "lon": -123.3855,
-   "sog_kn": 0,
-   "cog": 349.8,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-21 09:32:01.667879466 +0000 UTC"
+   "lon": -123.38551,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-21 09:36:41.31422423 +0000 UTC"
   },
   {
    "mmsi": 367513230,
    "name": "WILLAMETTE",
-   "lat": 45.80151,
-   "lon": -122.78836,
+   "lat": 45.78883,
+   "lon": -122.77942,
+   "sog_kn": 10.5,
+   "cog": 154.2,
+   "heading": 156,
+   "nav_status": 0,
+   "updated": "2026-11-21 09:37:09.327279094 +0000 UTC",
    "type_code": 52,
-   "destination": "PDX/VANC.OPS.",
-   "updated": "2026-11-21 09:32:03.483085703 +0000 UTC"
+   "destination": "PDX/VANC.OPS."
   },
   {
-   "mmsi": 538011643,
-   "name": "YASA CAMELLIA",
-   "lat": 45.71469,
-   "lon": -122.76364,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 348.6,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-21 09:36:46.426134873 +0000 UTC"
+  },
+  {
+   "mmsi": 636023225,
+   "name": "SWEET PEA LEADER",
+   "lat": 45.59762,
+   "lon": -122.77508,
    "type_code": 70,
-   "destination": "USLOG",
-   "updated": "2026-11-21 09:32:08.168516082 +0000 UTC"
+   "destination": "US PDX",
+   "updated": "2026-11-21 09:36:50.985071659 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58077,
+   "lon": -122.7601,
+   "type_code": 31,
+   "destination": "PORTLAND PTSI",
+   "updated": "2026-11-21 09:36:55.731865362 +0000 UTC"
+  },
+  {
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 45.69101,
+   "lon": -122.7718,
+   "type_code": 70,
+   "destination": "MX ZLO >> US VAN",
+   "updated": "2026-11-21 09:37:01.258653773 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.00366,
+   "lon": -122.85127,
+   "sog_kn": 1.2,
+   "cog": 350.4,
+   "heading": 339,
+   "nav_status": 3,
+   "updated": "2026-11-21 09:37:03.085353863 +0000 UTC"
   }
  ]
 }
