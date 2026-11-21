@@ -9514,6 +9514,17 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
   capBtn.addEventListener('click', function () {
     capOpen = !capOpen;
     applyCap();
+    /* Collapsing from the bottom of the expanded list would strand
+       the reader at the foot of the page (Travis, 2026-11-21):
+       ride back up to the top of the services card. Expanding
+       never moves the scroll position. */
+    if (!capOpen) {
+      var card = document.getElementById('services-card');
+      if (card) {
+        try { card.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        catch (e) { try { card.scrollIntoView(); } catch (e2) { /* no scroll */ } }
+      }
+    }
   });
   function applyCap() {
     var items = list.querySelectorAll('.dir-item');
@@ -9627,6 +9638,15 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
     btn.addEventListener('click', function () {
       open = !open;
       apply();
+      /* Same scroll trap as the directory cap: collapsing from the
+         bottom strands the reader at the foot of the page — ride
+         back up to this list's card heading (Travis, 2026-11-21).
+         Expanding never moves the scroll position. */
+      if (!open) {
+        var card = list.closest('section.card') || list;
+        try { card.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        catch (e) { try { card.scrollIntoView(); } catch (e2) { /* no scroll */ } }
+      }
     });
     apply();
     reapply.push(apply);
