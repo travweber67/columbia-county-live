@@ -2666,46 +2666,43 @@ html[data-theme="dark"] .featured-local.photo-behind .featured-card{background:r
 .strip-track{backface-visibility:hidden;-webkit-backface-visibility:hidden}
 
 /* =====================================================================
-   ===== V36 (2026-11-05 — Travis's directive) =====
-   Cross-promo for Cascade Controls Jobs, Nomad's other project.
-   Deliberately NOT sponsor styling: no founding/featured glass, no
-   sponsor language — a plain house card in the site's bone/forest/rust
-   palette, honestly labelled "our other project". Three spots: a
-   compact mini-card in Events & More (real screenshot of the Cascade
-   homepage as a small cropped thumbnail), a drawer entry, and a slim
-   footer link. Paid sponsor inventory is untouched.
-   V37 (Travis's feedback on v36): the card read like an entire page —
-   it is now a small horizontal advertisement like the little cards
-   sponsors pay for, and the drawer's separate "More from Nomad"
-   section is gone: Cascade is one tiny muted link under About.
+   ===== V146 (2026-11-21 — Travis's directive) =====
+   Sister-site cross-promo: Tillamook County Live takes the spot the
+   Cascade Controls Jobs card held from v36 to v145 (the job-board
+   operation was cut 2026-11-21; the two county sites now promote
+   each other). Deliberately NOT sponsor styling: no founding/featured
+   glass, no sponsor language — a plain house postcard in Tillamook's
+   coastal green and lighthouse gold, honestly labelled "our sister
+   site". Three spots, as before: this card in Events & More, a drawer
+   entry, and a slim footer link (the footer/drawer keep their
+   original classes; only their text and links changed). Paid sponsor
+   inventory is untouched. The stage photo is the Cape Meares
+   Lighthouse, Tillamook County Live's own branding image.
    ===================================================================== */
-.cascade-card{padding:0;overflow:hidden;background:linear-gradient(135deg,#1e4359,#132e47);border:1px solid #0d2237;box-shadow:0 10px 26px rgba(10,25,40,.35)}
-/* v59: robot stage on top of the card — poster still as the passive
-   underlay (never a black box), live viewer above it, pointer-events
-   off so the stage never traps touch scrolling. The orange rule is
-   the seam: stage above it, card body below, one connected object. */
-.cascade-stage{position:relative;height:320px;background:#121517;border-bottom:3px solid #e8760a;overflow:hidden}
-.cascade-poster{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center 30%}
-.cascade-promo{display:block;text-decoration:none;color:#eef3f7}
-.cascade-promo:hover .cascade-title{text-decoration:underline}
-.cascade-promo:hover .cascade-cta{background:#f08212}
-.cascade-promo:focus-visible{outline:3px solid #f5a83d;outline-offset:-3px}
-.cascade-body{display:block;padding:14px 18px 2px}
-.cascade-eyebrow{display:block;font-size:.72rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#f5a83d;margin-bottom:5px}
-.cascade-title{display:block;font-family:var(--sans);font-size:1.22rem;font-weight:800;line-height:1.15;margin-bottom:5px;color:#fff}
-.cascade-copy{display:block;font-size:.92rem;line-height:1.4;color:#c7d5e0;margin-bottom:10px}
-.cascade-cta{display:inline-block;font-weight:800;color:#fff;background:#e8760a;padding:7px 14px;border-radius:8px}
-html[data-theme="dark"] .cascade-cta{color:#fff}
-.cascade-credit{margin:0;padding:4px 18px 12px;font-size:.72rem;color:#8fa9bd}
+.sister-card{padding:0;overflow:hidden;background:linear-gradient(135deg,#17573a,#0d3323);border:1px solid #082a1b;box-shadow:0 10px 26px rgba(7,28,18,.35)}
+/* The lighthouse stage sits on TOP of the card as a postcard header.
+   Still image only. The gold rule is the seam: stage above it, card
+   body below, one connected object. */
+.sister-stage{position:relative;height:320px;background:#0a1f14;border-bottom:3px solid #e8b34b;overflow:hidden}
+.sister-poster{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center 42%}
+.sister-promo{display:block;text-decoration:none;color:#f2f5ec}
+.sister-promo:hover .sister-title{text-decoration:underline}
+.sister-promo:hover .sister-cta{background:#f08212}
+.sister-promo:focus-visible{outline:3px solid #f5c15c;outline-offset:-3px}
+.sister-body{display:block;padding:14px 18px 2px}
+.sister-eyebrow{display:block;font-size:.72rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#f0c169;margin-bottom:5px}
+.sister-title{display:block;font-family:var(--sans);font-size:1.22rem;font-weight:800;line-height:1.15;margin-bottom:5px;color:#fff}
+.sister-copy{display:block;font-size:.92rem;line-height:1.4;color:#cfe3d2;margin-bottom:10px}
+.sister-cta{display:inline-block;font-weight:800;color:#fff;background:#e8760a;padding:7px 14px;border-radius:8px}
+html[data-theme="dark"] .sister-cta{color:#fff}
+.sister-credit{margin:0;padding:4px 18px 12px;font-size:.72rem;color:#9db8a6}
 @media (max-width:640px){
-  /* v59: phone keeps the same stacked unit, shorter stage; the body
-     copy stays visible now (the robot carries no text, unlike the
-     retired v38 title-card banner). */
-  .cascade-stage{height:250px}
-  .cascade-body{padding:12px 14px 2px}
-  .cascade-eyebrow{font-size:.68rem}
-  .cascade-title{font-size:1.08rem}
-  .cascade-credit{padding:4px 14px 10px}
+  /* Phone keeps the same stacked unit, shorter stage. */
+  .sister-stage{height:250px}
+  .sister-body{padding:12px 14px 2px}
+  .sister-eyebrow{font-size:.68rem}
+  .sister-title{font-size:1.08rem}
+  .sister-credit{padding:4px 14px 10px}
 }
 /* v48: the two Nomad cross-promos (Cascade Controls Jobs + the website
    portfolio) sit together as a small quiet footer pair at the very bottom
@@ -5552,16 +5549,16 @@ html[data-theme="dark"] body.rd-home .sc-arrow.sc-edge{
   .schools-card .card-band{height:300px}
   .schools-card .card-band img{object-position:center 70%}
 }
-/* (4) cascade card ground + text contrast */
-body.rd-home .cascade-card,
-html[data-theme="dark"] body.rd-home .cascade-card{
-  background:linear-gradient(135deg,#1e4359,#132e47);
-  border-color:#0d2237;
+/* (4) sister card ground + text contrast */
+body.rd-home .sister-card,
+html[data-theme="dark"] body.rd-home .sister-card{
+  background:linear-gradient(135deg,#17573a,#0d3323);
+  border-color:#082a1b;
 }
-body.rd-home .cascade-title{text-shadow:0 1px 3px rgba(6,17,28,.5)}
-body.rd-home .cascade-eyebrow{text-shadow:0 1px 2px rgba(6,17,28,.45)}
-body.rd-home .cascade-copy{color:#d9e6f0;text-shadow:0 1px 2px rgba(6,17,28,.45)}
-body.rd-home .cascade-credit{color:#a9c2d4}
+body.rd-home .sister-title{text-shadow:0 1px 3px rgba(4,18,10,.5)}
+body.rd-home .sister-eyebrow{text-shadow:0 1px 2px rgba(4,18,10,.45)}
+body.rd-home .sister-copy{color:#e2efe4;text-shadow:0 1px 2px rgba(4,18,10,.45)}
+body.rd-home .sister-credit{color:#b3cdb9}
 /* (6) news rows expand inline: the row becomes a container, its head
    is the toggle button, the story's full held text drops down
    underneath (Fix 8) */

@@ -6756,12 +6756,12 @@ const LANG_ES = {
   dwfresh: '¿Qué tan fresca es esta página?',
   dwabout: 'Acerca de',
   dwbecome: 'Hazte patrocinador',
-  cascEyebrow: 'De Nomad Development Group — nuestro otro proyecto',
-  cascTitle: 'Cascade Controls Jobs',
-  cascCopy: '¿Contratas técnicos de controles — o buscas ese trabajo? Una bolsa de trabajo del Pacífico Noroeste para técnicos de controles y mantenimiento industrial.',
-  cascCta: 'Ver los empleos y anuncios &rarr;',
-  cascFooter: 'También de Nomad: Cascade Controls Jobs — ¿contratas técnicos de controles, o buscas ese trabajo? &rarr;',
-  cascDrawerLink: 'También nuestro: Cascade Controls Jobs &rarr;',
+  sisEyebrow: 'De Nomad Development Group — nuestro sitio hermano',
+  sisTitle: 'Tillamook County Live',
+  sisCopy: '¿Vas a la costa? La página en vivo del condado de Tillamook: condiciones de la barra, mareas, cámaras de carretera, eventos y noticias de los pueblos de playa, de Rockaway Beach a Pacific City.',
+  sisCta: 'Visita Tillamook County Live &rarr;',
+  sisFooter: 'También de Nomad: Tillamook County Live — la página en vivo de la costa: barra, mareas, eventos y más &rarr;',
+  sisDrawerLink: 'También nuestro: Tillamook County Live &rarr;',
   webPromoHead: '¿Necesita un sitio web?',
   webPromoLink: 'Vea otros sitios creados por Nomad Development Group &rarr;',
   dwphototitle: 'Comparte tu foto del condado',
@@ -8456,7 +8456,7 @@ const SECTION_SPONSORS = [
   { section: 'outdoors', spot: 3, after: 'tracker-card', business: null },
   { section: 'outdoors', spot: 4, after: 'air-card',       business: null },
   { section: 'more',     spot: 1, after: 'add-event-card', business: null }, /* Item 4k(4): moved up under the Add-an-event card, restyled as the KIL-style strip */
-  { section: 'more',     spot: 2, after: 'cascade-card',   business: null },
+  { section: 'more',     spot: 2, after: 'sister-card',   business: null },
   { section: 'more',     spot: 3, after: 'watch-card',     business: null },
   { section: 'more',     spot: 4, after: 'about-card',     business: null }
 ];

@@ -34,7 +34,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <link rel="manifest" href="manifest.webmanifest?v=95">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=95">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=173">
+<link rel="stylesheet" href="style.css?v=174">
 <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=95">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=95">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
@@ -1392,28 +1392,27 @@ document.documentElement.setAttribute("data-theme",t);})();
   </div>
 </section>
 
-<!-- Cross-promo (2026-11-05, Travis's directive): Cascade Controls Jobs,
-     Nomad Development Group's other project. NOT a sponsor placement —
-     labelled as ours, placed below the services directory and above
-     every utility card that follows.
-     v59 (2026-11-11, Travis directed): the screenshot thumb is retired —
-     the Nomad Bot sits on TOP of the card as a mascot header. Still
-     image only (a rendered portrait of NEXBOT by @aximoris, CC BY 4.0):
-     the live 3D scene was retired the same day because it froze phones.
-     The card body below carries the same pitch + link as before. -->
-<section class="card cascade-card" id="cascade-card" aria-label="Cascade Controls Jobs — our other project from Nomad Development Group">
-  <div class="cascade-stage" aria-hidden="true">
-    <img class="cascade-poster" src="nomad-bot-poster.jpg" alt="" decoding="async">
+<!-- Cross-promo (2026-11-21, Travis's directive): Tillamook County
+     Live, our sister site on the coast, takes the spot the Cascade
+     Controls Jobs card held (the job-board operation was cut
+     2026-11-21; the two county sites now cross-promote each other).
+     NOT a sponsor placement — labelled as ours, placed below the
+     services directory and above every utility card that follows.
+     The stage photo is the Cape Meares Lighthouse, Tillamook County
+     Live's own branding image, shared across both Nomad sites. -->
+<section class="card sister-card" id="sister-card" aria-label="Tillamook County Live — our sister site on the Oregon coast">
+  <div class="sister-stage" aria-hidden="true">
+    <img class="sister-poster" src="img/tillamook-lighthouse.jpg" alt="" decoding="async">
   </div>
-  <a class="cascade-promo" href="https://travweber67.github.io/cascade-controls-jobs/">
-    <span class="cascade-body">
-      <span class="cascade-eyebrow" data-i18n="cascEyebrow">From Nomad Development Group — our other project</span>
-      <span class="cascade-title" data-i18n="cascTitle">Cascade Controls Jobs</span>
-      <span class="cascade-copy" data-i18n="cascCopy">Hiring controls techs — or looking for that work? A Pacific Northwest job board for controls &amp; industrial maintenance technicians.</span>
-      <span class="cascade-cta" data-i18n="cascCta">See the jobs &amp; postings &rarr;</span>
+  <a class="sister-promo" href="https://tillamookcountylive.com">
+    <span class="sister-body">
+      <span class="sister-eyebrow" data-i18n="sisEyebrow">From Nomad Development Group — our sister site</span>
+      <span class="sister-title" data-i18n="sisTitle">Tillamook County Live</span>
+      <span class="sister-copy" data-i18n="sisCopy">Heading to the coast? Tillamook County's own live page: bar conditions, tides, road cams, events and beach-town news, from Rockaway Beach to Pacific City.</span>
+      <span class="sister-cta" data-i18n="sisCta">Visit Tillamook County Live &rarr;</span>
     </span>
   </a>
-  <p class="cascade-credit">Robot: NEXBOT by @aximoris (CC BY 4.0)</p>
+  <p class="sister-credit">Photo: Cape Meares Lighthouse, Tillamook County</p>
 </section>
 <!-- v95: Section Sponsor (Slot B) — Events &amp; More spot 2 of 4, open.
      Inventory of record: SECTION_SPONSORS in app.js. A sale swaps this
@@ -1565,7 +1564,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
   </section>
   <p class="footer-byline" data-i18n="footerbyline"><strong>Columbia County Live</strong> — by <strong>Nomad Development Group</strong></p>
-  <p class="cascade-footer"><a class="cascade-footer-link" href="https://travweber67.github.io/cascade-controls-jobs/"><span data-i18n="cascFooter">Also from Nomad: Cascade Controls Jobs — hiring controls techs, or looking for that work? &rarr;</span></a></p>
+  <p class="cascade-footer"><a class="cascade-footer-link" href="https://tillamookcountylive.com"><span data-i18n="sisFooter">Also from Nomad: Tillamook County Live — the coast's own live page: bar conditions, tides, events &rarr;</span></a></p>
   <div class="alert-card credits-card" id="credits-card">
     <button class="alert-head" type="button" aria-expanded="false">
       <span class="alert-main">
@@ -2061,7 +2060,7 @@ document.documentElement.setAttribute("data-theme",t);})();
       <a class="drawer-link" href="#em-coords-card">Get my coordinates</a>
     </div>
     <div class="drawer-foot">
-      <a class="drawer-foot-link" href="https://travweber67.github.io/cascade-controls-jobs/"><span data-i18n="cascDrawerLink">Also ours: Cascade Controls Jobs &rarr;</span></a>
+      <a class="drawer-foot-link" href="https://tillamookcountylive.com"><span data-i18n="sisDrawerLink">Also ours: Tillamook County Live &rarr;</span></a>
       <span class="drawer-foot-head" data-i18n="webPromoHead">Need a website built?</span>
       <a class="drawer-foot-link" href="https://nomadov3rland-cloud.github.io/"><span data-i18n="webPromoLink">Check out other sites built by Nomad Development Group &rarr;</span></a>
     </div>
@@ -2332,7 +2331,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=155"></script>
+<script src="app.js?v=156"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 
