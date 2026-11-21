@@ -1,71 +1,40 @@
 {
- "fetched_at": "2026-11-21T22:52:26Z",
+ "fetched_at": "2026-11-21T22:53:13Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.64841,
+   "lon": -122.74448,
+   "sog_kn": 0.1,
+   "cog": 253.7,
+   "heading": 287,
+   "nav_status": 12,
+   "updated": "2026-11-21 22:53:50.009452865 +0000 UTC"
+  },
+  {
+   "mmsi": 367707180,
+   "name": "DISPATCHER",
+   "lat": 45.59671,
+   "lon": -122.77628,
+   "sog_kn": 9.4,
+   "cog": 145.5,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-21 22:53:57.344115078 +0000 UTC"
+  },
   {
    "mmsi": 366998830,
    "name": "ROYAL MELBOURNE",
-   "lat": 46.10068,
-   "lon": -122.94212,
+   "lat": 46.10064,
+   "lon": -122.94213,
    "sog_kn": 0,
    "cog": 25.3,
-   "heading": 115,
-   "nav_status": 0,
-   "updated": "2026-11-21 22:52:40.09411571 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.25918,
-   "lon": -123.46766,
-   "sog_kn": 0,
-   "cog": 30.2,
-   "heading": 99,
-   "nav_status": 3,
-   "updated": "2026-11-21 22:52:44.722466009 +0000 UTC"
-  },
-  {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 46.14675,
-   "lon": -123.04134,
-   "sog_kn": 6.8,
-   "cog": 133.6,
-   "heading": 133,
-   "nav_status": 12,
-   "updated": "2026-11-21 22:52:47.101872631 +0000 UTC"
-  },
-  {
-   "mmsi": 366396000,
-   "name": "NAT GEO SEA LION",
-   "lat": 46.08961,
-   "lon": -122.92969,
-   "type_code": 68,
-   "destination": "RAINIER",
-   "updated": "2026-11-21 22:52:53.419483633 +0000 UTC"
-  },
-  {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58077,
-   "lon": -122.75936,
-   "sog_kn": 0,
-   "cog": 248.2,
-   "heading": 118,
-   "nav_status": 12,
-   "updated": "2026-11-21 22:52:54.445765071 +0000 UTC"
-  },
-  {
-   "mmsi": 366888830,
-   "name": "KAHU",
-   "lat": 45.61165,
-   "lon": -122.64422,
-   "sog_kn": 0,
-   "cog": 339.2,
    "heading": 116,
-   "nav_status": 5,
-   "updated": "2026-11-21 22:52:55.218837433 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-21 22:53:58.591624899 +0000 UTC"
   }
  ]
 }
