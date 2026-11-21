@@ -1,49 +1,90 @@
 {
- "fetched_at": "2026-11-21T22:32:24Z",
+ "fetched_at": "2026-11-21T22:37:25Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.64763,
-   "lon": -122.75711,
-   "sog_kn": 0,
-   "cog": 73.3,
-   "heading": 187,
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 46.10076,
+   "lon": -122.9493,
+   "sog_kn": 2.7,
+   "cog": 294.1,
+   "heading": 314,
    "nav_status": 0,
-   "updated": "2026-11-21 22:32:46.377611193 +0000 UTC"
+   "updated": "2026-11-21 22:38:00.699968164 +0000 UTC"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40234,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37713,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 135,
-   "nav_status": 0,
-   "updated": "2026-11-21 22:32:52.351426239 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.09294,
-   "lon": -122.92308,
-   "type_code": 52,
-   "destination": "PORTLAND",
-   "updated": "2026-11-21 22:33:00.592015272 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.0905,
-   "lon": -122.93232,
-   "sog_kn": 0,
-   "cog": 255.5,
+   "cog": 28.3,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-21 22:33:04.630353833 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-21 22:37:46.239490002 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64668,
+   "lon": -122.75567,
+   "sog_kn": 0,
+   "cog": 321.8,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 22:37:55.831871994 +0000 UTC",
+   "type_code": 52
+  },
+  {
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.68391,
+   "lon": -122.77427,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-21 22:37:50.676101524 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.61165,
+   "lon": -122.63453,
+   "sog_kn": 0,
+   "cog": 231.9,
+   "heading": 357,
+   "nav_status": 0,
+   "updated": "2026-11-21 22:37:53.805459919 +0000 UTC"
+  },
+  {
+   "mmsi": 368126190,
+   "name": "GERONIMO",
+   "lat": 45.76119,
+   "lon": -122.76167,
+   "sog_kn": 9.1,
+   "cog": 176.3,
+   "heading": 175,
+   "nav_status": 11,
+   "updated": "2026-11-21 22:37:59.374110632 +0000 UTC"
+  },
+  {
+   "mmsi": 440245000,
+   "name": "GLOVIS SUMMIT",
+   "lat": 45.64641,
+   "lon": -122.75572,
+   "type_code": 70,
+   "destination": "USTIW",
+   "updated": "2026-11-21 22:38:01.242384886 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 46.10067,
+   "lon": -122.94212,
+   "type_code": 31,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-21 22:38:03.57758138 +0000 UTC"
   }
  ]
 }
