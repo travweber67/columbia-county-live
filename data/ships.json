@@ -1,6 +1,56 @@
 {
- "fetched_at": "2026-11-21T21:52:21Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-21T21:52:45Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.59732,
+   "lon": -122.7779,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-21 21:53:27.774686814 +0000 UTC"
+  },
+  {
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 45.68816,
+   "lon": -122.77134,
+   "type_code": 70,
+   "destination": "MX ZLO >> US VAN",
+   "updated": "2026-11-21 21:53:34.334694782 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.98445,
+   "lon": -122.84053,
+   "sog_kn": 0.7,
+   "cog": 151.9,
+   "heading": 151,
+   "nav_status": 3,
+   "updated": "2026-11-21 21:53:40.806910414 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.09396,
+   "lon": -122.93485,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-21 21:53:45.938464125 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60761,
+   "lon": -122.6777,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 21:53:50.208802111 +0000 UTC"
+  }
+ ]
 }
