@@ -1,56 +1,71 @@
 {
- "fetched_at": "2026-11-21T00:21:32Z",
+ "fetched_at": "2026-11-21T00:25:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 636013613,
-   "name": "LONDON 2012",
-   "lat": 46.04435,
-   "lon": -122.88272,
-   "type_code": 70,
-   "destination": "KR INC>US KAM",
-   "updated": "2026-11-21 00:22:31.909679576 +0000 UTC"
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.07605,
+   "lon": -122.89869,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-21 00:26:02.145889146 +0000 UTC"
   },
   {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.62274,
-   "lon": -122.7884,
-   "type_code": 31,
-   "destination": "PORTLAND OR ASHGROVE",
-   "updated": "2026-11-21 00:22:32.898012048 +0000 UTC"
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.6339,
+   "lon": -122.71159,
+   "sog_kn": 8.1,
+   "cog": 296.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 00:26:02.762092958 +0000 UTC"
   },
   {
-   "mmsi": 352006113,
-   "name": "BELFORTUNE",
-   "lat": 46.09906,
-   "lon": -122.93942,
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.68602,
+   "lon": -122.77228,
+   "sog_kn": 0.1,
+   "cog": 358.3,
+   "heading": 185,
+   "nav_status": 1,
+   "updated": "2026-11-21 00:26:02.878743773 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20001,
+   "lon": -123.3855,
    "sog_kn": 0,
-   "cog": 274.5,
-   "heading": 109,
-   "nav_status": 5,
-   "updated": "2026-11-21 00:22:36.551237866 +0000 UTC"
+   "cog": 354.9,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-21 00:26:11.867011459 +0000 UTC"
   },
   {
    "mmsi": 367047120,
    "name": "REBEL",
-   "lat": 45.64131,
-   "lon": -122.73886,
-   "sog_kn": 0,
-   "cog": 283.7,
-   "heading": 303,
+   "lat": 45.64223,
+   "lon": -122.74057,
+   "sog_kn": 5.1,
+   "cog": 308.2,
+   "heading": 313,
    "nav_status": 12,
-   "updated": "2026-11-21 00:22:45.325512131 +0000 UTC"
+   "updated": "2026-11-21 00:26:13.61456791 +0000 UTC"
   },
   {
-   "mmsi": 366396000,
-   "name": "NAT GEO SEA LION",
-   "lat": 46.08958,
-   "lon": -122.92973,
-   "type_code": 68,
-   "destination": "RAINIER",
-   "updated": "2026-11-21 00:22:53.573956127 +0000 UTC"
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.98719,
+   "lon": -122.83738,
+   "sog_kn": 0,
+   "cog": 152.2,
+   "heading": 152,
+   "nav_status": 12,
+   "updated": "2026-11-21 00:26:30.864166605 +0000 UTC"
   }
  ]
 }
