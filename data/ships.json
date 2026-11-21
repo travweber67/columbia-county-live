@@ -1,40 +1,97 @@
 {
- "fetched_at": "2026-11-21T01:55:59Z",
+ "fetched_at": "2026-11-21T02:00:59Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.2,
+   "lon": -123.3854,
+   "sog_kn": 0,
+   "cog": 191.6,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-21 02:01:44.717868323 +0000 UTC"
+  },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 45.99193,
-   "lon": -122.84434,
+   "lat": 45.98957,
+   "lon": -122.84442,
    "sog_kn": 1,
-   "cog": 165.8,
-   "heading": 164,
+   "cog": 151,
+   "heading": 147,
    "nav_status": 3,
-   "updated": "2026-11-21 01:56:14.739683898 +0000 UTC"
+   "updated": "2026-11-21 02:01:48.795950367 +0000 UTC"
   },
   {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09049,
-   "lon": -122.93228,
+   "mmsi": 366888830,
+   "name": "KAHU",
+   "lat": 45.61167,
+   "lon": -122.64422,
    "sog_kn": 0,
-   "cog": 230.8,
-   "heading": 511,
+   "cog": 69.2,
+   "heading": 117,
    "nav_status": 5,
-   "updated": "2026-11-21 01:56:22.06891646 +0000 UTC"
+   "updated": "2026-11-21 02:01:50.485134959 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35743,
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.59386,
+   "lon": -122.77387,
+   "sog_kn": 7.4,
+   "cog": 330,
+   "heading": 326,
+   "nav_status": 0,
+   "updated": "2026-11-21 02:01:56.947792091 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58076,
+   "lon": -122.76009,
    "sog_kn": 0,
-   "cog": 243.2,
-   "heading": 135,
+   "cog": 82.1,
+   "heading": 123,
+   "nav_status": 0,
+   "updated": "2026-11-21 02:02:02.272903372 +0000 UTC",
+   "type_code": 31,
+   "destination": "PORTLAND PTSI"
+  },
+  {
+   "mmsi": 368201480,
+   "name": "KINANI H",
+   "lat": 45.91025,
+   "lon": -122.80558,
+   "sog_kn": 0,
+   "cog": 98,
+   "heading": 3,
+   "nav_status": 11,
+   "updated": "2026-11-21 02:02:07.697431496 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.95208,
+   "lon": -122.81163,
+   "sog_kn": 8.6,
+   "cog": 343.1,
+   "heading": 344,
+   "nav_status": 0,
+   "updated": "2026-11-21 02:02:08.827425773 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.38552,
+   "sog_kn": 0,
+   "cog": 228.3,
+   "heading": 511,
    "nav_status": 15,
-   "updated": "2026-11-21 01:56:37.390477651 +0000 UTC"
+   "updated": "2026-11-21 02:02:11.851198374 +0000 UTC"
   }
  ]
 }
