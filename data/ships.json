@@ -1,15 +1,18 @@
 {
- "fetched_at": "2026-11-21T22:27:24Z",
+ "fetched_at": "2026-11-21T22:32:24Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65011,
-   "lon": -122.74755,
-   "type_code": 33,
-   "updated": "2026-11-21 22:27:36.790609462 +0000 UTC"
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.64763,
+   "lon": -122.75711,
+   "sog_kn": 0,
+   "cog": 73.3,
+   "heading": 187,
+   "nav_status": 0,
+   "updated": "2026-11-21 22:32:46.377611193 +0000 UTC"
   },
   {
    "mmsi": 367380280,
@@ -18,77 +21,29 @@
    "lon": -123.40234,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 131,
+   "heading": 135,
    "nav_status": 0,
-   "updated": "2026-11-21 22:27:40.61220659 +0000 UTC"
-  },
-  {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.6484,
-   "lon": -122.74448,
-   "sog_kn": 0,
-   "cog": 317,
-   "heading": 288,
-   "nav_status": 12,
-   "updated": "2026-11-21 22:27:41.398611646 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19999,
-   "lon": -123.38546,
-   "sog_kn": 0,
-   "cog": 350.2,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-21 22:27:43.531543799 +0000 UTC"
+   "updated": "2026-11-21 22:32:52.351426239 +0000 UTC"
   },
   {
    "mmsi": 368442390,
    "name": "COWLITZ",
-   "lat": 46.08741,
-   "lon": -122.91582,
-   "sog_kn": 7.8,
-   "cog": 316.5,
-   "heading": 314,
+   "lat": 46.09294,
+   "lon": -122.92308,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-21 22:33:00.592015272 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.0905,
+   "lon": -122.93232,
+   "sog_kn": 0,
+   "cog": 255.5,
+   "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-21 22:27:46.344802706 +0000 UTC"
-  },
-  {
-   "mmsi": 538011643,
-   "name": "YASA CAMELLIA",
-   "lat": 46.09489,
-   "lon": -122.93345,
-   "sog_kn": 5.7,
-   "cog": 295.7,
-   "heading": 297,
-   "nav_status": 0,
-   "updated": "2026-11-21 22:27:49.512082757 +0000 UTC"
-  },
-  {
-   "mmsi": 636013613,
-   "name": "LONDON 2012",
-   "lat": 46.04437,
-   "lon": -122.88277,
-   "sog_kn": 0,
-   "cog": 305,
-   "heading": 173,
-   "nav_status": 1,
-   "updated": "2026-11-21 22:27:57.049867279 +0000 UTC",
-   "type_code": 70,
-   "destination": "KR INC>US KAM"
-  },
-  {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.62271,
-   "lon": -122.7884,
-   "sog_kn": 0,
-   "cog": 186.9,
-   "heading": 4,
-   "nav_status": 0,
-   "updated": "2026-11-21 22:27:57.270624808 +0000 UTC"
+   "updated": "2026-11-21 22:33:04.630353833 +0000 UTC"
   }
  ]
 }
