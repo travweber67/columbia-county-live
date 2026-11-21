@@ -1,90 +1,57 @@
 {
- "fetched_at": "2026-11-21T07:51:24Z",
+ "fetched_at": "2026-11-21T07:52:09Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 46.0765,
-   "lon": -122.89447,
-   "sog_kn": 10.5,
-   "cog": 140.5,
-   "heading": 139,
-   "nav_status": 0,
-   "updated": "2026-11-21 07:51:36.92322631 +0000 UTC"
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 45.59614,
+   "lon": -122.77422,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-21 07:52:41.8157013 +0000 UTC"
   },
   {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.15602,
-   "lon": -123.05943,
-   "sog_kn": 1.6,
-   "cog": 288.9,
-   "heading": 305,
-   "nav_status": 3,
-   "updated": "2026-11-21 07:51:37.586475355 +0000 UTC"
-  },
-  {
-   "mmsi": 367667060,
-   "name": "GRANITE POINT",
-   "lat": 45.64728,
-   "lon": -122.73992,
-   "sog_kn": 0,
-   "cog": 287.2,
-   "heading": 16,
-   "nav_status": 5,
-   "updated": "2026-11-21 07:51:37.671166986 +0000 UTC"
-  },
-  {
-   "mmsi": 636023225,
-   "name": "SWEET PEA LEADER",
-   "lat": 45.59759,
-   "lon": -122.77504,
-   "sog_kn": 0,
-   "cog": 87.4,
-   "heading": 329,
-   "nav_status": 0,
-   "updated": "2026-11-21 07:51:44.831690675 +0000 UTC"
-  },
-  {
-   "mmsi": 563311600,
-   "name": "STANLEY BAY",
-   "lat": 46.11012,
-   "lon": -122.96336,
-   "sog_kn": 0,
-   "cog": 199,
-   "heading": 131,
-   "nav_status": 5,
-   "updated": "2026-11-21 07:51:50.783248992 +0000 UTC"
-  },
-  {
-   "mmsi": 311001605,
-   "name": "SAGA DISCOVERY",
-   "lat": 46.17526,
-   "lon": -123.10574,
+   "mmsi": 355173000,
+   "name": "EVER BEST",
+   "lat": 45.63926,
+   "lon": -122.77781,
    "type_code": 79,
-   "destination": "US LOG",
-   "updated": "2026-11-21 07:51:53.74575335 +0000 UTC"
+   "destination": "USPDX",
+   "updated": "2026-11-21 07:52:47.705142888 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35744,
-   "type_code": 30,
-   "updated": "2026-11-21 07:51:55.512174657 +0000 UTC"
-  },
-  {
-   "mmsi": 563338800,
-   "name": "ISHIZUCHI STAR",
-   "lat": 45.63144,
-   "lon": -122.69715,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15344,
+   "lon": -123.37714,
    "sog_kn": 0,
-   "cog": 151.2,
-   "heading": 307,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 07:53:00.157760733 +0000 UTC",
+   "type_code": 99
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.61827,
+   "lon": -122.78766,
+   "type_code": 0,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-21 07:52:59.576151528 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.63043,
+   "lon": -122.70541,
+   "sog_kn": 0,
+   "cog": 315.3,
+   "heading": 120,
    "nav_status": 5,
-   "updated": "2026-11-21 07:52:00.633202624 +0000 UTC"
+   "updated": "2026-11-21 07:53:00.763208497 +0000 UTC"
   }
  ]
 }
