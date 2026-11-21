@@ -1,62 +1,6 @@
 {
- "fetched_at": "2026-11-21T02:56:03Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 374590000,
-   "name": "BORACAY ISLAND",
-   "lat": 45.69109,
-   "lon": -122.77175,
-   "sog_kn": 0,
-   "cog": 178.8,
-   "heading": 185,
-   "nav_status": 1,
-   "updated": "2026-11-21 02:56:16.499676835 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 45.64329,
-   "lon": -122.75278,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-21 02:56:22.069353213 +0000 UTC"
-  },
-  {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 45.66351,
-   "lon": -122.7653,
-   "sog_kn": 1.2,
-   "cog": 3.9,
-   "heading": 251,
-   "nav_status": 0,
-   "updated": "2026-11-21 02:56:38.895083444 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15707,
-   "lon": -123.40233,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 137,
-   "nav_status": 0,
-   "updated": "2026-11-21 02:56:39.466487507 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09306,
-   "lon": -122.92314,
-   "sog_kn": 0.1,
-   "cog": 138.1,
-   "heading": 124,
-   "nav_status": 0,
-   "updated": "2026-11-21 02:56:41.85654311 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-21T03:01:03Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
