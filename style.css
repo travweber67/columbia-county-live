@@ -5579,3 +5579,16 @@ body.rd-home .cascade-credit{color:#a9c2d4}
 .news-row-arrow{margin-left:2px;transition:transform .15s ease}
 .news-row.open .news-row-arrow{transform:rotate(90deg)}
 html[data-theme="dark"] body.rd-home .news-row-more{color:#ffa04d}
+
+/* ===== v144 (Travis, 2026-11-21 — Fix 1 refinement) =====
+   The edge arrows leave the card row entirely: on desktop the
+   scroller rail narrows by 54px a side and the arrows sit in those
+   gutters, bigger (48x96, 2.9rem glyphs), fully visible, never on
+   top of the first or last card. Phones keep swiping (the arrows
+   stay hidden below 900px, as in v143). */
+@media (min-width:900px){
+  .sc-rail{margin:0 54px}
+  .sc-arrow.sc-edge{width:48px;height:96px;font-size:2.9rem}
+  .sc-edge-prev{left:-54px}
+  .sc-edge-next{right:-54px}
+}
