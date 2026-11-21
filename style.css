@@ -5499,5 +5499,8 @@ body.rd-home .dir-addcard .share-btn{display:inline-block;text-decoration:none}
 }
 .cev-kind-comm{background:#fbe3c2;color:#8a4300;border-color:#eec27f}
 .cev-kind-muni{background:#d9e7f3;color:#2c4f73;border-color:#a9c3dc}
-.cev-card.cev-k-comm{border-left:4px solid #dd7a2e}
-.cev-card.cev-k-muni{border-left:4px solid #4a7196}
+/* ID-scoped: the legacy dark rule (html[data-theme="dark"] .cev-card)
+   sets border-color at higher specificity than a two-class rule, and
+   would wash the stripe out to pale green-grey in dark mode. */
+#events-body .cev-card.cev-k-comm{border-left:4px solid #dd7a2e}
+#events-body .cev-card.cev-k-muni{border-left:4px solid #4a7196}
