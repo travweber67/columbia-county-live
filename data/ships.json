@@ -1,60 +1,45 @@
 {
- "fetched_at": "2026-11-21T08:22:11Z",
+ "fetched_at": "2026-11-21T08:26:27Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00897,
-   "lon": -122.84824,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09287,
+   "lon": -122.92344,
+   "type_code": 69,
+   "updated": "2026-11-21 08:26:34.544358798 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09308,
+   "lon": -122.92362,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-21 08:22:55.72525555 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 217.5,
-   "heading": 136,
-   "nav_status": 15,
-   "updated": "2026-11-21 08:22:58.481962381 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65023,
-   "lon": -122.74762,
-   "sog_kn": 0,
-   "cog": 314.3,
-   "heading": 511,
+   "heading": 308,
    "nav_status": 3,
-   "updated": "2026-11-21 08:22:59.481395827 +0000 UTC"
+   "updated": "2026-11-21 08:26:38.257126784 +0000 UTC"
   },
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 45.64331,
-   "lon": -122.75277,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "mmsi": 367646810,
+   "name": "EMERY ZIDELL",
+   "lat": 46.01901,
+   "lon": -122.86171,
+   "sog_kn": 8.9,
+   "cog": 137.8,
+   "heading": 140,
    "nav_status": 0,
-   "updated": "2026-11-21 08:23:09.113062728 +0000 UTC"
+   "updated": "2026-11-21 08:26:42.736854958 +0000 UTC"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15707,
-   "lon": -123.40234,
-   "type_code": 99,
-   "destination": "",
-   "updated": "2026-11-21 08:23:12.90564886 +0000 UTC"
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
+   "type_code": 30,
+   "updated": "2026-11-21 08:26:55.620771211 +0000 UTC"
   }
  ]
 }
