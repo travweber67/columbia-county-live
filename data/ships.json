@@ -1,82 +1,89 @@
 {
- "fetched_at": "2026-11-21T21:37:20Z",
+ "fetched_at": "2026-11-21T21:42:20Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366855000,
-   "name": "FLORIDA",
-   "lat": 46.15326,
-   "lon": -123.39415,
-   "sog_kn": 10.5,
-   "cog": 137.5,
-   "heading": 126,
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 46.10061,
+   "lon": -122.94214,
+   "type_code": 31,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-21 21:42:34.583674665 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09276,
+   "lon": -122.92327,
+   "sog_kn": 0,
+   "cog": 143.3,
+   "heading": 129,
    "nav_status": 0,
-   "updated": "2026-11-21 21:37:32.856517825 +0000 UTC"
+   "updated": "2026-11-21 21:42:36.177452868 +0000 UTC"
   },
   {
    "mmsi": 367380280,
    "name": "WESTERN STAR",
-   "lat": 46.15706,
+   "lat": 46.15705,
    "lon": -123.40234,
    "sog_kn": 0,
    "cog": 360,
    "heading": 134,
    "nav_status": 0,
-   "updated": "2026-11-21 21:37:38.771666658 +0000 UTC"
+   "updated": "2026-11-21 21:42:40.003229118 +0000 UTC"
   },
   {
-   "mmsi": 367645170,
-   "name": "CROWN POINT",
-   "lat": 45.63341,
-   "lon": -122.71285,
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09297,
+   "lon": -122.92361,
    "sog_kn": 0,
-   "cog": 111.1,
-   "heading": 295,
-   "nav_status": 12,
-   "updated": "2026-11-21 21:37:40.137161235 +0000 UTC"
+   "cog": 212.1,
+   "heading": 309,
+   "nav_status": 0,
+   "updated": "2026-11-21 21:42:40.371434797 +0000 UTC"
   },
   {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 46.09417,
-   "lon": -122.93741,
-   "sog_kn": 0.3,
-   "cog": 224.1,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19997,
+   "lon": -123.38545,
+   "sog_kn": 0,
+   "cog": 199.2,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-21 21:42:44.859058839 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.08677,
+   "lon": -122.91066,
+   "sog_kn": 25.8,
+   "cog": 300.1,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-21 21:37:49.95045322 +0000 UTC"
+   "updated": "2026-11-21 21:42:47.282376148 +0000 UTC"
   },
   {
-   "mmsi": 366888830,
-   "name": "KAHU",
-   "lat": 45.61165,
-   "lon": -122.64422,
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 45.68813,
+   "lon": -122.77111,
+   "type_code": 70,
+   "destination": "MX ZLO >> US VAN",
+   "updated": "2026-11-21 21:42:59.742985625 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.09461,
+   "lon": -122.93881,
    "type_code": 52,
-   "destination": "PDX",
-   "updated": "2026-11-21 21:37:52.882653255 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.66227,
-   "lon": -122.76059,
-   "sog_kn": 0.1,
-   "cog": 215.7,
-   "heading": 155,
-   "nav_status": 0,
-   "updated": "2026-11-21 21:37:57.291123283 +0000 UTC"
-  },
-  {
-   "mmsi": 563236100,
-   "name": "XH DEEP COVER",
-   "lat": 45.63024,
-   "lon": -122.6956,
-   "sog_kn": 0,
-   "cog": 206.8,
-   "heading": 128,
-   "nav_status": 5,
-   "updated": "2026-11-21 21:37:58.152231591 +0000 UTC"
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-21 21:43:03.342958494 +0000 UTC"
   }
  ]
 }
