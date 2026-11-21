@@ -1,36 +1,49 @@
 {
- "fetched_at": "2026-11-21T22:12:23Z",
+ "fetched_at": "2026-11-21T22:17:23Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 563311600,
-   "name": "STANLEY BAY",
-   "lat": 46.1101,
-   "lon": -122.96335,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-21 22:12:27.997063244 +0000 UTC"
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.65872,
+   "lon": -122.76081,
+   "sog_kn": 8,
+   "cog": 178.8,
+   "heading": 178,
+   "nav_status": 0,
+   "updated": "2026-11-21 22:17:47.14132658 +0000 UTC"
   },
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64537,
-   "lon": -122.73506,
-   "type_code": 70,
-   "destination": "PER ORDERS",
-   "updated": "2026-11-21 22:12:35.675004645 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.25917,
-   "lon": -123.46763,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35744,
    "sog_kn": 0,
-   "cog": 30.2,
-   "heading": 99,
-   "nav_status": 3,
-   "updated": "2026-11-21 22:12:57.665453909 +0000 UTC"
+   "cog": 317.1,
+   "heading": 133,
+   "nav_status": 15,
+   "updated": "2026-11-21 22:17:56.444514226 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 46.10067,
+   "lon": -122.94213,
+   "sog_kn": 0,
+   "cog": 36.1,
+   "heading": 117,
+   "nav_status": 0,
+   "updated": "2026-11-21 22:17:59.850360693 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 46.18607,
+   "lon": -123.12509,
+   "type_code": 0,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-21 22:18:02.192223062 +0000 UTC"
   }
  ]
 }
