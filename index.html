@@ -34,7 +34,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <link rel="manifest" href="manifest.webmanifest?v=95">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=95">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=167">
+<link rel="stylesheet" href="style.css?v=168">
 <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=95">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=95">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
@@ -1051,8 +1051,11 @@ document.documentElement.setAttribute("data-theme",t);})();
     <img class="card-ico" src="img/icons/icon-search.png" alt="" aria-hidden="true"><h2 data-i18n="dirh2">Local services — the little guys</h2>
   </div>
   <p class="card-note" data-i18n="dirintro">Babysitters, cleaners, handymen, pet sitters, tutors — the one-person businesses this county runs on, in one plain list. The storefronts sit up top as sponsors and featured businesses; this shelf is for the smallest operators. Tap a category to narrow it down.</p>
-  <div class="dir-add">
-    <a class="share-btn primary svc-form-link" id="service-add-link" href="https://forms.gle/D4poEqfu1ogoMr4r6" target="_blank" rel="noopener" data-i18n="diradd">Run a one-person business? Add yourself — it&rsquo;s free &rarr;</a>
+  <div class="dir-addcard dir-addcard-top">
+    <span class="dir-addcard-ribbon" data-i18n="diraddrib">Free to list</span>
+    <h3 data-i18n="diraddh">Run a local business?</h3>
+    <p data-i18n="diraddp">Adding yourself to the directory is free. It takes one short form, and every listing is read by a person before it appears, nothing posts automatically. Want to sit at the top where people see you first? Featured puts your listing above the rest for $29/mo.</p>
+    <a class="share-btn primary svc-form-link" id="service-add-link" href="https://forms.gle/D4poEqfu1ogoMr4r6" target="_blank" rel="noopener" data-i18n="diraddcta">Add your business — free</a>
   </div>
   <div id="dir-map" class="dir-map" aria-label="Map of the listed local businesses"></div>
   <p class="card-note small dir-map-hint" data-i18n="dirmaphint">Tap a pin to find the business in the list below.</p>
@@ -1386,9 +1389,11 @@ document.documentElement.setAttribute("data-theme",t);})();
   </div>
   <p class="dir-empty" id="dir-empty" hidden></p>
   <p class="card-note small dir-honest" data-i18n="dirhonest"><strong>Listings are advertisements, not endorsements.</strong> We haven&rsquo;t vetted these services — for in-home services especially, check references before you book.</p>
-  <div class="dir-actions">
-    <a class="share-btn primary svc-form-link" href="https://forms.gle/D4poEqfu1ogoMr4r6" target="_blank" rel="noopener" data-i18n="dircta">List your service — it&rsquo;s free &rarr;</a>
-    <p class="card-note small" data-i18n="dirctanote">One short form made just for this shelf. Every listing is read by a person and checked before it appears — nothing posts automatically, and there&rsquo;s no payment to make.</p>
+  <div class="dir-addcard dir-addcard-bottom">
+    <span class="dir-addcard-ribbon" data-i18n="diraddrib">Free to list</span>
+    <h3 data-i18n="diraddh">Run a local business?</h3>
+    <p data-i18n="diraddp">Adding yourself to the directory is free. It takes one short form, and every listing is read by a person before it appears, nothing posts automatically. Want to sit at the top where people see you first? Featured puts your listing above the rest for $29/mo.</p>
+    <a class="share-btn primary svc-form-link" href="https://forms.gle/D4poEqfu1ogoMr4r6" target="_blank" rel="noopener" data-i18n="diraddcta">Add your business — free</a>
   </div>
 </section>
 
@@ -2334,7 +2339,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=147"></script>
+<script src="app.js?v=148"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 

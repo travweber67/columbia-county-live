@@ -5426,3 +5426,42 @@ html[data-theme="dark"] body.rd-home #help-vets-card .card-head h2{color:#f2f0e9
 html[data-theme="dark"] body.rd-home .footer-byline{color:#cfccc2}
 html[data-theme="dark"] body.rd-home .footer-byline strong{color:#f2f0e9}
 html[data-theme="dark"] body.rd-home .footer-disc{color:#cfccc2}
+
+/* ---- 5i. DIRECTORY ADD CARD (Travis, 2026-11-21; ships as
+   ccl-v136): the directory's two plain "add yourself" spots — top
+   of the services card and bottom, after the list — become ONE
+   designed card in both places: frosted glass over the card's
+   marble with dark ink in both themes (the standing frosted rule),
+   and a gold ribbon banner across the top echoing the founding
+   sponsor ribbon language. Both placements live OUTSIDE #dir-list,
+   so the v134 cap logic (which only toggles .dir-item rows) can
+   never hide or move the card: it stays visible at the top and the
+   bottom of the directory section, capped or expanded. The CTA is
+   a .svc-form-link, so initServiceLinks keeps re-pointing it at
+   the dedicated service form exactly like the old spots. ---- */
+body.rd-home .dir-addcard{
+  position:relative;margin:18px 0 14px;padding:30px 16px 16px;
+  background:linear-gradient(180deg,rgba(253,250,240,.88),rgba(249,244,229,.78));
+  -webkit-backdrop-filter:blur(10px) saturate(1.2);backdrop-filter:blur(10px) saturate(1.2);
+  border:1px solid rgba(255,255,255,.65);border-radius:var(--radius);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 8px 22px rgba(20,40,30,.20);
+  color:#241708;
+}
+body.rd-home .dir-addcard-top{margin-top:22px}
+body.rd-home .dir-addcard-bottom{margin:16px 0 4px}
+body.rd-home .dir-addcard-ribbon{
+  position:absolute;top:-11px;left:50%;transform:translateX(-50%);
+  background:linear-gradient(180deg,#ecca63,#d2a13a);
+  color:#2b1d05;font-size:.68rem;font-weight:800;letter-spacing:.14em;
+  text-transform:uppercase;white-space:nowrap;
+  padding:5px 16px;border-radius:3px;box-shadow:0 3px 8px rgba(20,40,30,.30);
+}
+body.rd-home .dir-addcard-ribbon::before,
+body.rd-home .dir-addcard-ribbon::after{
+  content:"";position:absolute;bottom:-5px;border:3px solid transparent;
+}
+body.rd-home .dir-addcard-ribbon::before{left:3px;border-top-color:#8a6420;border-right-color:#8a6420}
+body.rd-home .dir-addcard-ribbon::after{right:3px;border-top-color:#8a6420;border-left-color:#8a6420}
+body.rd-home .dir-addcard h3{margin:0 0 6px;font-size:1.12rem;color:#241708;text-shadow:none}
+body.rd-home .dir-addcard p{margin:0 0 13px;font-size:.92rem;line-height:1.5;color:#3d2c17;text-shadow:none}
+body.rd-home .dir-addcard .share-btn{display:inline-block;text-decoration:none}
