@@ -5394,3 +5394,30 @@ html[data-theme="dark"] body.rd-home .cascade-footer-link{
 html[data-theme="dark"] body.rd-home .wx-bare-head h2{color:#f2f0e9}
 html[data-theme="dark"] body.rd-home .wx-bare-head .updated{color:#b9bcc2}
 html[data-theme="dark"] body.rd-home .wx-place{color:#cfccc2}
+
+/* ---- 5h. GROUND-TEXT CLASS, DARK HALF (Travis, 2026-11-21;
+   ships as ccl-v132): the v130 ground-text fix set the bare-ground
+   headings/notes to the theme vars — right in light mode, but on
+   rd-home those vars carry DARK ink in both themes (cards keep dark
+   ink by design), so in dark mode the same lines went dark on
+   charcoal. They flip light here with 5c's own values, completing
+   the class: Events head + notes + list lines, Local services head
+   + notes, the five Help heads, the footer byline/disclaimer. ---- */
+html[data-theme="dark"] body.rd-home #events-card .card-head h2{color:#f2f0e9;text-shadow:none}
+html[data-theme="dark"] body.rd-home #events-card .card-head .updated{color:#b9bcc2;text-shadow:none}
+html[data-theme="dark"] body.rd-home #events-card .card-note{color:#cfccc2;text-shadow:none}
+html[data-theme="dark"] body.rd-home #events-card .card-note a{color:#ffb066}
+html[data-theme="dark"] body.rd-home #events-body .loading,
+html[data-theme="dark"] body.rd-home #events-body .status-note{color:#cfccc2;text-shadow:none}
+html[data-theme="dark"] body.rd-home .cev-list-h{color:#f2f0e9;text-shadow:none}
+html[data-theme="dark"] body.rd-home .cev-none{color:#cfccc2;text-shadow:none}
+html[data-theme="dark"] body.rd-home #services-card .card-head h2{color:#f2f0e9;text-shadow:none}
+html[data-theme="dark"] body.rd-home #services-card .card-note{color:#cfccc2;text-shadow:none}
+html[data-theme="dark"] body.rd-home #help-food-card .card-head h2,
+html[data-theme="dark"] body.rd-home #help-crisis-card .card-head h2,
+html[data-theme="dark"] body.rd-home #help-money-card .card-head h2,
+html[data-theme="dark"] body.rd-home #help-family-card .card-head h2,
+html[data-theme="dark"] body.rd-home #help-vets-card .card-head h2{color:#f2f0e9;text-shadow:none}
+html[data-theme="dark"] body.rd-home .footer-byline{color:#cfccc2}
+html[data-theme="dark"] body.rd-home .footer-byline strong{color:#f2f0e9}
+html[data-theme="dark"] body.rd-home .footer-disc{color:#cfccc2}
