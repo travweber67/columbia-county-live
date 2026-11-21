@@ -1,132 +1,70 @@
 {
- "fetched_at": "2026-11-21T22:02:23Z",
+ "fetched_at": "2026-11-21T22:07:23Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 12 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 46.10065,
-   "lon": -122.94211,
-   "sog_kn": 0,
-   "cog": 36.1,
-   "heading": 116,
-   "nav_status": 0,
-   "updated": "2026-11-21 22:02:40.124263622 +0000 UTC"
-  },
-  {
-   "mmsi": 368126190,
-   "name": "GERONIMO",
-   "lat": 45.84675,
-   "lon": -122.78531,
-   "sog_kn": 9.6,
-   "cog": 190.6,
-   "heading": 190,
-   "nav_status": 11,
-   "updated": "2026-11-21 22:02:40.465351397 +0000 UTC"
-  },
   {
    "mmsi": 367496010,
    "name": "DELIVERANCE",
-   "lat": 46.09264,
-   "lon": -122.93122,
-   "type_code": 69,
-   "updated": "2026-11-21 22:02:49.053419431 +0000 UTC",
-   "sog_kn": 26.9,
-   "cog": 275.3,
+   "lat": 46.09407,
+   "lon": -122.94275,
+   "sog_kn": 0.1,
+   "cog": 162.3,
    "heading": 511,
-   "nav_status": 0
+   "nav_status": 0,
+   "updated": "2026-11-21 22:08:07.636219818 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09311,
+   "lon": -122.92361,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 309,
+   "nav_status": 3,
+   "updated": "2026-11-21 22:07:46.213296044 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.64638,
+   "lon": -122.7405,
+   "sog_kn": 7,
+   "cog": 302.6,
+   "heading": 304,
+   "nav_status": 12,
+   "updated": "2026-11-21 22:07:49.655166706 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64349,
+   "lon": -122.75274,
+   "type_code": 52,
+   "updated": "2026-11-21 22:07:53.651280478 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.64748,
+   "lon": -122.77046,
+   "sog_kn": 9.3,
+   "cog": 209.1,
+   "heading": 212,
+   "nav_status": 12,
+   "updated": "2026-11-21 22:08:05.194026409 +0000 UTC"
   },
   {
    "mmsi": 368251260,
    "name": "MISS GINGER",
-   "lat": 45.61208,
-   "lon": -122.64599,
-   "type_code": 33,
-   "destination": "VANCOUVER WA",
-   "updated": "2026-11-21 22:02:43.539003851 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.25918,
-   "lon": -123.46768,
+   "lat": 45.61206,
+   "lon": -122.64602,
    "sog_kn": 0,
-   "cog": 30.2,
-   "heading": 98,
-   "nav_status": 3,
-   "updated": "2026-11-21 22:02:44.836926356 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40233,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 132,
-   "nav_status": 0,
-   "updated": "2026-11-21 22:02:50.580897359 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 46.09063,
-   "lon": -122.93217,
-   "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-21 22:03:02.264136556 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08302,
-   "lon": -122.90823,
-   "type_code": 52,
-   "destination": "PORTLAND",
-   "updated": "2026-11-21 22:03:04.813393129 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.61179,
-   "lon": -122.78693,
-   "sog_kn": 6.4,
-   "cog": 344,
-   "heading": 338,
-   "nav_status": 12,
-   "updated": "2026-11-21 22:03:06.330139751 +0000 UTC"
-  },
-  {
-   "mmsi": 367646810,
-   "name": "EMERY ZIDELL",
-   "lat": 45.59337,
-   "lon": -122.77704,
-   "sog_kn": 0,
-   "cog": 285,
-   "heading": 145,
-   "nav_status": 5,
-   "updated": "2026-11-21 22:03:08.118307182 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.14863,
-   "lon": -123.38217,
-   "sog_kn": 8,
-   "cog": 214.8,
+   "cog": 227.1,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-21 22:03:08.44894891 +0000 UTC"
-  },
-  {
-   "mmsi": 366892350,
-   "name": "NAT GEO SEA BIRD",
-   "lat": 46.08968,
-   "lon": -122.92974,
-   "type_code": 66,
-   "destination": "RAINIER",
-   "updated": "2026-11-21 22:03:09.314491204 +0000 UTC"
+   "nav_status": 5,
+   "updated": "2026-11-21 22:08:08.066151818 +0000 UTC"
   }
  ]
 }
