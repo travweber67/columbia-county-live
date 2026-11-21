@@ -1,49 +1,58 @@
 {
- "fetched_at": "2026-11-21T19:02:09Z",
+ "fetched_at": "2026-11-21T19:07:09Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20003,
-   "lon": -123.38542,
-   "sog_kn": 0,
-   "cog": 16.9,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.1417,
+   "lon": -123.38322,
+   "sog_kn": 8.3,
+   "cog": 164.3,
    "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-21 19:02:43.65727575 +0000 UTC"
-  },
-  {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 46.15984,
-   "lon": -123.40534,
-   "sog_kn": 0,
-   "cog": 239,
-   "heading": 134,
-   "nav_status": 12,
-   "updated": "2026-11-21 19:02:48.36686848 +0000 UTC"
-  },
-  {
-   "mmsi": 311001605,
-   "name": "SAGA DISCOVERY",
-   "lat": 46.17253,
-   "lon": -123.10378,
-   "type_code": 79,
-   "destination": "US LOG",
-   "updated": "2026-11-21 19:02:53.130818071 +0000 UTC"
-  },
-  {
-   "mmsi": 338205428,
-   "name": "CLAIRE B",
-   "lat": 45.61786,
-   "lon": -122.79503,
-   "sog_kn": 4.2,
-   "cog": 123.9,
-   "heading": 123,
    "nav_status": 0,
-   "updated": "2026-11-21 19:02:53.349294115 +0000 UTC"
+   "updated": "2026-11-21 19:07:36.436912615 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.62439,
+   "lon": -122.81166,
+   "sog_kn": 7.3,
+   "cog": 313.3,
+   "heading": 312,
+   "nav_status": 12,
+   "updated": "2026-11-21 19:07:42.611720512 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09289,
+   "lon": -122.92343,
+   "sog_kn": 0.1,
+   "cog": 262.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 19:07:46.509284255 +0000 UTC"
+  },
+  {
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.68578,
+   "lon": -122.77252,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-21 19:07:51.369411284 +0000 UTC"
+  },
+  {
+   "mmsi": 366888830,
+   "name": "KAHU",
+   "lat": 45.61167,
+   "lon": -122.64423,
+   "type_code": 52,
+   "destination": "PDX",
+   "updated": "2026-11-21 19:07:52.739403052 +0000 UTC"
   }
  ]
 }
