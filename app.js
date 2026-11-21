@@ -9746,7 +9746,7 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
   }
   function build() {
     if (map || typeof L === 'undefined') return;
-    map = L.map('dir-map', { scrollWheelZoom: false });
+    map = L.map('dir-map', { scrollWheelZoom: false }).setView([46.02, -122.98], 10);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors', maxZoom: 18
     }).addTo(map);
@@ -9770,8 +9770,8 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
       item._dirMarker = m;
       pts.push([lat, lng]);
     });
-    if (pts.length === 1) map.setView(pts[0], 14);
-    else if (pts.length > 1) map.fitBounds(L.latLngBounds(pts).pad(0.15));
+    if (pts.length === 1) { map.setView(pts[0], 14); map._dirPoint = pts[0]; }
+    else if (pts.length > 1) { map._dirBounds = L.latLngBounds(pts).pad(0.15); map.fitBounds(map._dirBounds); }
     else map.setView([46.02, -122.98], 10);
     syncPins();
     setTimeout(function () { try { map.invalidateSize(); } catch (e) {} }, 250);
@@ -9787,9 +9787,25 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
     cclShowView = function (name) {
       prevShow(name);
       if (name === 'more') {
+        var wasBuilt = !!map;
         setTimeout(function () {
           build();
           if (map) { try { map.invalidateSize(); } catch (e) {} }
+          if (!wasBuilt && map) {
+            /* First build happens mid-slide, when Leaflet can measure
+               a hidden/animating container and the fitBounds lands at
+               world zoom (Travis, 2026-11-21: the services map opened
+               "out of orbit"). Once the slide has settled, size again
+               and re-apply the stored fit — the same settle treatment
+               the main map's switch hook gets (item 4v hookDelay). */
+            setTimeout(function () {
+              try {
+                map.invalidateSize();
+                if (map._dirBounds) map.fitBounds(map._dirBounds);
+                else if (map._dirPoint) map.setView(map._dirPoint, 14);
+              } catch (e) {}
+            }, 900);
+          }
         }, 60);
       }
     };

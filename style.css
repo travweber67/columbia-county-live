@@ -4509,6 +4509,24 @@ body.rd-home .go-row-warn{border-left:4px solid var(--warn)}
 .wx-today-bare .wx-place{color:var(--muted);text-shadow:none}
 #events-card .card-head h2{color:var(--text);text-shadow:none}
 #events-card .card-head .updated{color:var(--muted);text-shadow:none}
+/* Contrast fix, the whole class (Travis, 2026-11-21): the white
+   text above was one instance. The V87/R3 step-aside era floated
+   headings and notes on the view's background PHOTO and set them
+   white with a shadow; the redesign ground is bare light grey by
+   day and charcoal by night, so EVERY heading and explainer/body
+   line that sits directly on that ground takes ground ink here —
+   the theme vars flip with the ground, so dark mode keeps its
+   light-on-charcoal. Text on paint, photos and card surfaces is
+   not touched. */
+#events-card .card-note{color:var(--muted);text-shadow:none}
+#events-card .card-note a{color:var(--accent-dark)}
+#events-body .loading,#events-body .status-note{color:var(--muted);text-shadow:none}
+#services-card .card-head h2{color:var(--text);text-shadow:none}
+#services-card .card-note{color:var(--muted);text-shadow:none}
+#help-food-card .card-head h2,#help-crisis-card .card-head h2,#help-money-card .card-head h2,#help-family-card .card-head h2,#help-vets-card .card-head h2{color:var(--text);text-shadow:none}
+.footer-byline{color:var(--muted)}
+.footer-byline strong{color:var(--text)}
+.footer-disc{color:var(--muted)}
 
 /* ---- 3p. UNPIN EXIT (Travis, 2026-11-20 22:25): the leaving pinned
    copy slides right + fades while its height collapses; transitions
