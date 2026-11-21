@@ -1,81 +1,67 @@
 {
- "fetched_at": "2026-11-21T10:01:34Z",
+ "fetched_at": "2026-11-21T10:06:34Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15342,
-   "lon": -123.37712,
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.00916,
+   "lon": -122.8483,
    "sog_kn": 0,
-   "cog": 183,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-21 10:01:47.700439471 +0000 UTC"
+   "updated": "2026-11-21 10:06:47.148948969 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.0928,
+   "lon": -122.92331,
+   "sog_kn": 0,
+   "cog": 273.3,
+   "heading": 125,
+   "nav_status": 0,
+   "updated": "2026-11-21 10:06:55.315285303 +0000 UTC"
+  },
+  {
+   "mmsi": 563338800,
+   "name": "ISHIZUCHI STAR",
+   "lat": 45.63146,
+   "lon": -122.69717,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-21 10:07:05.7480591 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 248.7,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-21 10:07:08.636735179 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.70445,
+   "lon": -122.77077,
+   "type_code": 52,
+   "destination": "PDX/VANC.OPS.",
+   "updated": "2026-11-21 10:07:09.907705002 +0000 UTC"
   },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 46.00344,
-   "lon": -122.85132,
-   "sog_kn": 0.5,
-   "cog": 355.2,
-   "heading": 343,
-   "nav_status": 3,
-   "updated": "2026-11-21 10:01:48.468385815 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64342,
-   "lon": -122.75266,
-   "type_code": 52,
-   "updated": "2026-11-21 10:01:52.710314632 +0000 UTC"
-  },
-  {
-   "mmsi": 563236100,
-   "name": "XH DEEP COVER",
-   "lat": 45.63025,
-   "lon": -122.69562,
-   "sog_kn": 0,
-   "cog": 223.1,
-   "heading": 130,
-   "nav_status": 5,
-   "updated": "2026-11-21 10:01:57.310601893 +0000 UTC"
-  },
-  {
-   "mmsi": 367006570,
-   "name": "JEFFREY S",
-   "lat": 45.98819,
-   "lon": -122.84349,
-   "sog_kn": 8,
-   "cog": 161.8,
-   "heading": 157,
-   "nav_status": 0,
-   "updated": "2026-11-21 10:02:01.014332319 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.24813,
-   "lon": -123.43478,
-   "sog_kn": 1.4,
-   "cog": 137.9,
-   "heading": 150,
-   "nav_status": 3,
-   "updated": "2026-11-21 10:02:06.903610345 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15707,
-   "lon": -123.40234,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 133,
-   "nav_status": 0,
-   "updated": "2026-11-21 10:02:09.379394385 +0000 UTC"
+   "lat": 46.00483,
+   "lon": -122.85179,
+   "type_code": 33,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-21 10:07:12.400839657 +0000 UTC"
   }
  ]
 }
