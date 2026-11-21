@@ -1,48 +1,71 @@
 {
- "fetched_at": "2026-11-21T05:56:15Z",
+ "fetched_at": "2026-11-21T06:01:16Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 45.64331,
-   "lon": -122.75277,
-   "sog_kn": 0,
-   "cog": 360,
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.6201,
+   "lon": -122.78789,
+   "sog_kn": 0.3,
+   "cog": 113.2,
+   "heading": 354,
+   "nav_status": 12,
+   "updated": "2026-11-21 06:01:36.871112344 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.1524,
+   "lon": -123.37774,
+   "sog_kn": 6.6,
+   "cog": 216.3,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-21 05:56:27.937020852 +0000 UTC"
+   "updated": "2026-11-21 06:01:39.49268643 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.99162,
+   "lon": -122.84199,
+   "sog_kn": 1.6,
+   "cog": 180.1,
+   "heading": 349,
+   "nav_status": 12,
+   "updated": "2026-11-21 06:01:58.187199427 +0000 UTC"
   },
   {
    "mmsi": 367496010,
    "name": "DELIVERANCE",
-   "lat": 46.09282,
-   "lon": -122.92349,
-   "type_code": 69,
-   "updated": "2026-11-21 05:56:31.570247429 +0000 UTC"
-  },
-  {
-   "mmsi": 538009633,
-   "name": "EVER ZENITH",
-   "lat": 46.15405,
-   "lon": -123.05292,
-   "sog_kn": 10.8,
-   "cog": 129,
-   "heading": 127,
-   "nav_status": 0,
-   "updated": "2026-11-21 05:56:46.116425679 +0000 UTC"
-  },
-  {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60757,
-   "lon": -122.67755,
+   "lat": 46.09284,
+   "lon": -122.92342,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 65.1,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-21 05:56:49.938266444 +0000 UTC"
+   "updated": "2026-11-21 06:01:59.294281385 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40234,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 132,
+   "nav_status": 0,
+   "updated": "2026-11-21 06:02:00.358716398 +0000 UTC"
+  },
+  {
+   "mmsi": 440245000,
+   "name": "GLOVIS SUMMIT",
+   "lat": 45.64642,
+   "lon": -122.75572,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-21 06:02:01.241779073 +0000 UTC"
   }
  ]
 }
