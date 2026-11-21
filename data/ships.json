@@ -1,44 +1,47 @@
 {
- "fetched_at": "2026-11-21T13:16:50Z",
+ "fetched_at": "2026-11-21T13:21:31Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.1373,
-   "lon": -123.37913,
-   "type_code": 99,
-   "updated": "2026-11-21 13:17:11.402076556 +0000 UTC"
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.59865,
+   "lon": -122.77776,
+   "type_code": 31,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-21 13:22:20.153372716 +0000 UTC"
   },
   {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64348,
-   "lon": -122.75245,
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 45.66697,
+   "lon": -122.76695,
+   "sog_kn": 0,
+   "cog": 288.6,
+   "heading": 161,
+   "nav_status": 1,
+   "updated": "2026-11-21 13:22:23.517867244 +0000 UTC"
+  },
+  {
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 45.97556,
+   "lon": -122.83205,
+   "sog_kn": 9.1,
+   "cog": 140.3,
+   "heading": 139,
+   "nav_status": 0,
+   "updated": "2026-11-21 13:22:25.746281587 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64788,
+   "lon": -122.74099,
    "type_code": 52,
-   "destination": "US^0UU4>02MR",
-   "updated": "2026-11-21 13:17:15.167818167 +0000 UTC"
-  },
-  {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.91811,
-   "lon": -122.80872,
-   "sog_kn": 9.6,
-   "cog": 6.9,
-   "heading": 8,
-   "nav_status": 12,
-   "updated": "2026-11-21 13:17:18.486651313 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58757,
-   "lon": -122.77073,
-   "type_code": 52,
-   "destination": "US^0R88>0UJB",
-   "updated": "2026-11-21 13:17:23.893413368 +0000 UTC"
+   "destination": "RIVERGATE",
+   "updated": "2026-11-21 13:22:34.568781757 +0000 UTC"
   }
  ]
 }
