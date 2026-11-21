@@ -26,9 +26,10 @@
 <script>
 /* Redesign prototype: set the theme before first paint (no flash).
    Priority: ?theme=dark|light preview override (not stored) > saved
-   choice (localStorage "ccl-theme") > OS prefers-color-scheme > light. */
+   choice (localStorage "ccl-theme") > light (fixed default; the OS
+   prefers-color-scheme is no longer consulted — Travis, 2026-11-21). */
 (function(){var t=null;try{var q=new URLSearchParams(location.search).get("theme");if(q==="dark"||q==="light")t=q;if(!t)t=localStorage.getItem("ccl-theme");if(t!=="dark"&&t!=="light")t=null;}catch(e){}
-if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
+if(!t)t="light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
 <link rel="manifest" href="manifest.webmanifest?v=95">
@@ -1554,7 +1555,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <footer class="site-footer">
   <section class="partners-wall card" aria-label="Community partners">
-    <h2>Community Partners — the local businesses that fund this site</h2>
+    <h2>Community Partners — thank you to the local businesses who make this possible</h2>
     <p class="partners-first"><strong class="partners-name">Oregon Trail Lanes</strong> <img class="founding-ribbon wall-ribbon" src="img/founding-ribbon.png?v=95" alt="Founding Sponsor" title="Founding Sponsor"></p>
     <p class="partners-meta"><span class="dir-badge">Founding Sponsor · 2026</span><span class="partners-town">· St. Helens</span></p>
     <p class="partners-first"><strong class="partners-name">Kneeland Brothers LLC</strong> <img class="founding-ribbon wall-ribbon" src="img/founding-ribbon.png?v=95" alt="Founding Sponsor" title="Founding Sponsor"></p>
