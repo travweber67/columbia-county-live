@@ -8121,6 +8121,7 @@ function animateViewSwap(prev, name, token, dir) {
   /* Item 4i: body.view-anim suspends card backdrop-filter while the
      views move (style.css 4i); timings .32s out / .52s in. */
   document.body.classList.add('view-anim');
+  setTimeout(cclFinishViewSwap, 1600); /* ccl-v145 backstop: never strand the incoming view at opacity:0 */
   out.classList.add('view-leaving');
   if (rev) out.classList.add('rev');
   setTimeout(() => {
@@ -8142,6 +8143,43 @@ function animateViewSwap(prev, name, token, dir) {
     }, 520);
   }, 320);
 }
+/* ccl-v145 (2026-11-21): finish-the-swap guarantee, ported from
+   TCL v32. The animated view swap above and the hero swap both park
+   content at opacity:0 (.view-entering, .hero-enter) and rely on
+   chained setTimeout phases to bring it back. When a phone stalls
+   those timers (page freeze, backgrounding, a heavily throttled
+   low-battery browser), the hero and the incoming view stay
+   invisible while the fixed tab bar — which no animation touches —
+   paints fine: a white screen with working pills (the bug Travis
+   hit on Tillamook's Events & More, 2026-11-21). This finisher
+   completes any in-flight swap to its exact end state; it runs when
+   the page becomes visible again and as a 1600ms backstop on every
+   animated swap. No swap in flight: no-op. */
+function cclSwapInFlight() {
+  return !!(viewAnimBusy || document.querySelector('.view-entering, .view-leaving, .hero-exit, .hero-enter'));
+}
+function cclFinishViewSwap() {
+  if (!cclSwapInFlight()) return;
+  viewAnimToken++;
+  VIEW_IDS.forEach(v => {
+    const sec = $('view-' + v);
+    if (!sec) return;
+    const on = v === cclViewCur;
+    sec.hidden = !on;
+    sec.classList.toggle('view-active', on);
+    sec.classList.remove('view-leaving', 'view-entering', 'view-enter-go', 'rev', 'cv-skip');
+  });
+  document.body.classList.remove('view-anim');
+  viewAnimBusy = false;
+  const hero = document.querySelector('header.hero');
+  if (hero) {
+    hero.classList.remove('hero-exit', 'hero-enter', 'hero-enter-go', 'rev');
+    hero.style.height = '';
+  }
+}
+document.addEventListener('visibilitychange', () => { if (!document.hidden) cclFinishViewSwap(); });
+window.addEventListener('pageshow', cclFinishViewSwap);
+window.addEventListener('focus', cclFinishViewSwap);
 function cclShowView(name) {
   if (VIEW_IDS.indexOf(name) === -1) name = 'today';
   const prevView = cclViewCur;
