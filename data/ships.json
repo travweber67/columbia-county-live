@@ -1,75 +1,77 @@
 {
- "fetched_at": "2026-11-21T20:02:13Z",
+ "fetched_at": "2026-11-21T20:07:14Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19997,
+   "lon": -123.38552,
+   "sog_kn": 0,
+   "cog": 14.2,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-21 20:07:49.889366166 +0000 UTC"
+  },
   {
    "mmsi": 368286340,
    "name": "SHAVER",
-   "lat": 45.70958,
-   "lon": -122.76642,
-   "sog_kn": 7.9,
-   "cog": 202.3,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-21 20:02:21.104965778 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 46.09061,
-   "lon": -122.93207,
-   "sog_kn": 0,
-   "cog": 279.2,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-21 20:02:28.004248854 +0000 UTC"
+   "lat": 45.69868,
+   "lon": -122.77081,
+   "type_code": 52,
+   "updated": "2026-11-21 20:07:53.211809143 +0000 UTC"
   },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 46.00059,
-   "lon": -122.85003,
-   "sog_kn": 0.7,
-   "cog": 14.9,
-   "heading": 340,
+   "lat": 46.00185,
+   "lon": -122.8508,
+   "sog_kn": 1.1,
+   "cog": 336.8,
+   "heading": 346,
    "nav_status": 3,
-   "updated": "2026-11-21 20:02:46.825219717 +0000 UTC"
+   "updated": "2026-11-21 20:07:54.328037507 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09296,
-   "lon": -122.92364,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.62783,
+   "lon": -122.70009,
    "type_code": 52,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-21 20:02:40.376746173 +0000 UTC",
-   "sog_kn": 0.1,
-   "cog": 289.8,
-   "heading": 306,
-   "nav_status": 0
+   "destination": "PDX/VANC.OPS.",
+   "updated": "2026-11-21 20:07:54.492050685 +0000 UTC"
   },
   {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.62273,
-   "lon": -122.7884,
-   "sog_kn": 0,
-   "cog": 31.4,
-   "heading": 4,
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.09024,
+   "lon": -122.93157,
+   "type_code": 31,
+   "destination": "HARBOROPPS-",
+   "updated": "2026-11-21 20:07:54.746938467 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07594,
+   "lon": -122.9007,
+   "sog_kn": 2.2,
+   "cog": 315.5,
+   "heading": 315,
    "nav_status": 0,
-   "updated": "2026-11-21 20:02:36.37363132 +0000 UTC"
+   "updated": "2026-11-21 20:07:55.140225792 +0000 UTC"
   },
   {
-   "mmsi": 368126190,
-   "name": "GERONIMO",
-   "lat": 46.12383,
-   "lon": -122.99224,
-   "sog_kn": 10.2,
-   "cog": 135.4,
-   "heading": 136,
-   "nav_status": 11,
-   "updated": "2026-11-21 20:02:48.755175905 +0000 UTC"
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.14121,
+   "lon": -123.38334,
+   "sog_kn": 7.4,
+   "cog": 166.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 20:07:56.291892161 +0000 UTC"
   }
  ]
 }
