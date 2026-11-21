@@ -1,62 +1,98 @@
 {
- "fetched_at": "2026-11-21T14:11:53Z",
+ "fetched_at": "2026-11-21T14:16:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.64311,
-   "lon": -122.74433,
-   "sog_kn": 0,
-   "cog": 119.2,
-   "heading": 290,
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60752,
+   "lon": -122.67755,
+   "sog_kn": 0.1,
+   "cog": 360,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-21 14:12:06.463753675 +0000 UTC"
+   "updated": "2026-11-21 14:17:00.628725166 +0000 UTC"
   },
   {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.6457,
-   "lon": -122.73488,
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.6435,
+   "lon": -122.75278,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 165.2,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-21 14:17:05.731359021 +0000 UTC"
+  },
+  {
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 45.69099,
+   "lon": -122.77158,
+   "sog_kn": 0,
+   "cog": 193.7,
+   "heading": 194,
+   "nav_status": 1,
+   "updated": "2026-11-21 14:17:13.392588058 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64538,
+   "lon": -122.73504,
+   "sog_kn": 0,
+   "cog": 30.4,
    "heading": 112,
    "nav_status": 5,
-   "updated": "2026-11-21 14:12:06.548138719 +0000 UTC"
+   "updated": "2026-11-21 14:17:13.990231349 +0000 UTC"
   },
   {
-   "mmsi": 367006570,
-   "name": "JEFFREY S",
-   "lat": 45.67671,
-   "lon": -122.77191,
-   "sog_kn": 0.1,
-   "cog": 349.1,
-   "heading": 176,
-   "nav_status": 1,
-   "updated": "2026-11-21 14:12:07.676492333 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09308,
-   "lon": -122.9236,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 309,
-   "nav_status": 3,
-   "updated": "2026-11-21 14:12:08.087629607 +0000 UTC"
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 45.66698,
+   "lon": -122.76688,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-21 14:17:15.458416263 +0000 UTC"
   },
   {
    "mmsi": 367047180,
    "name": "SUNDIAL",
-   "lat": 46.05213,
-   "lon": -122.88144,
-   "sog_kn": 10,
-   "cog": 348.8,
-   "heading": 348,
+   "lat": 46.06603,
+   "lon": -122.88671,
+   "sog_kn": 10.1,
+   "cog": 341.8,
+   "heading": 341,
    "nav_status": 12,
-   "updated": "2026-11-21 14:12:09.354095779 +0000 UTC"
+   "updated": "2026-11-21 14:17:17.765325612 +0000 UTC"
+  },
+  {
+   "mmsi": 636013613,
+   "name": "LONDON 2012",
+   "lat": 46.04438,
+   "lon": -122.8827,
+   "type_code": 70,
+   "destination": "KR INC>US KAM",
+   "updated": "2026-11-21 14:17:19.213454072 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.38551,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-21 14:17:22.367689977 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64789,
+   "lon": -122.74099,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-21 14:17:24.943361624 +0000 UTC"
   }
  ]
 }
