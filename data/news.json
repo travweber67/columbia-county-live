@@ -1,10 +1,15 @@
 {
- "fetched_at": "2026-11-21T17:41:41Z",
+ "fetched_at": "2026-11-21T17:52:48Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Columbia County week view",
    "status": "ok",
-   "note": "Republishes the county's newsrooms (Columbia County Spotlight et al.) filtered to Columbia County, with headline, link, date, categories and the story's own photo. CCL filter applied: picture required, no politics, no heavy news, county-local only."
+   "note": "Republishes the county's newsrooms (Columbia County Spotlight et al.) filtered to Columbia County, with headline, link, date, categories and the story's own photo. CCL filter applied: picture required for the main flow, no politics, no heavy news, county-local only; no-picture stories passing every other filter are collected in news-candidates.json for the second-chance picture pass (Travis, 2026-11-21)."
+  },
+  {
+   "name": "Second-chance pictures (agent pass)",
+   "status": "ok",
+   "note": "3 stories from data/news-extra.json merged: real local stories that had no source photo, given a sourced openly-licensed photo or a generated generic subject image by the agent pass (Travis, 2026-11-21). Each carries img_origin / img_credit in its record."
   }
  ],
  "stories": [
@@ -33,6 +38,16 @@
    "summary": "A Scappoose holiday tradition will return to the Watts House with a few new additions this year. A grand opening for the 2026 iteration of Whoville is set for 5-8 […]"
   },
   {
+   "title": "PAM’S PERSPECTIVES: The true Miracle on 34th Street",
+   "source": "Columbia County Spotlight",
+   "url": "https://columbiacountyspotlight.com/2026/11/19/pams-perspectives-the-true-miracle-on-34th-street/",
+   "img": "img/news/miracle-34th-street.jpg",
+   "date": "2026-11-19",
+   "summary": "1947. A memorable year. A baby girl named Pam was born on a hot summer day in June. The year that the movie “Miracle on 34th Street” came out. The […]",
+   "img_origin": "generated",
+   "img_credit": "Generated illustration — generic subject art, not a photo of the story's subject (second-chance picture pass, 2026-11-21)."
+  },
+  {
    "title": "Scappoose Senior Center sets holiday bazaar",
    "source": "Columbia County Spotlight",
    "url": "https://columbiacountyspotlight.com/2026/11/18/scappoose-senior-center-sets-holiday-bazaar/",
@@ -55,6 +70,26 @@
    "img": "https://columbiacountyspotlight.com/wp-content/uploads/sites/27/2026/11/news_restaurantinspections_022026_SPL-01.jpg",
    "date": "2026-11-17",
    "summary": "Columbia County inspectors found 15 local restaurants with food safety violations in October. The county public health department inspects facilities that serve food on a semiannual, unannounced basis to look […]"
+  },
+  {
+   "title": "Scappoose is on to the state semifinals after a 42-20 win over Estacada",
+   "source": "Columbia County Spotlight",
+   "url": "https://columbiacountyspotlight.com/2026/11/16/scappoose-is-on-to-the-state-semifinals/",
+   "img": "img/news/scappoose-semifinal-win.jpg",
+   "date": "2026-11-16",
+   "summary": "Scappoose is on to the state semifinals. The Indians defeated Estacada 42-20 on Friday, Nov. 13, at Scappoose High School in the 4A state quarterfinals, and in the process set […]",
+   "img_origin": "generated",
+   "img_credit": "Generated illustration — generic subject art, not a photo of the story's subject (second-chance picture pass, 2026-11-21)."
+  },
+  {
+   "title": "Marist ends Scappoose’s state title run with a 4-0 win in the 4A State Championship Game",
+   "source": "Columbia County Spotlight",
+   "url": "https://columbiacountyspotlight.com/2026/11/14/marist-ends-scappooses-state-title-run-with-a-4-0-win-in-the-4a-state-championship-game/",
+   "img": "img/news/scappoose-title-run.jpg",
+   "date": "2026-11-14",
+   "summary": "It simply wasn’t meant to be. Despite all of the success that the Scappoose High School girls soccer team experienced throughout the course of the season and en route to […]",
+   "img_origin": "generated",
+   "img_credit": "Generated illustration — generic subject art, not a photo of the story's subject (second-chance picture pass, 2026-11-21)."
   },
   {
    "title": "Head out to holiday markets!",
