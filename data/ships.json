@@ -1,6 +1,86 @@
 {
- "fetched_at": "2026-11-21T19:27:12Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-21T19:37:12Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60755,
+   "lon": -122.67769,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 19:37:30.418152627 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.71114,
+   "lon": -122.76575,
+   "sog_kn": 0,
+   "cog": 5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 19:37:32.195415077 +0000 UTC"
+  },
+  {
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.5723,
+   "lon": -122.74253,
+   "sog_kn": 6.2,
+   "cog": 135.5,
+   "heading": 134,
+   "nav_status": 0,
+   "updated": "2026-11-21 19:37:33.028644227 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.62783,
+   "lon": -122.70008,
+   "sog_kn": 0,
+   "cog": 10.1,
+   "heading": 126,
+   "nav_status": 0,
+   "updated": "2026-11-21 19:37:55.785494138 +0000 UTC",
+   "type_code": 52,
+   "destination": "PDX/VANC.OPS."
+  },
+  {
+   "mmsi": 368126190,
+   "name": "GERONIMO",
+   "lat": 46.16298,
+   "lon": -123.07802,
+   "sog_kn": 10.2,
+   "cog": 123.3,
+   "heading": 123,
+   "nav_status": 11,
+   "updated": "2026-11-21 19:37:48.748652616 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09287,
+   "lon": -122.9234,
+   "sog_kn": 0,
+   "cog": 299.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 19:37:48.989125126 +0000 UTC"
+  },
+  {
+   "mmsi": 538012272,
+   "name": "PERSEUS I",
+   "lat": 46.14463,
+   "lon": -123.29392,
+   "sog_kn": 13.2,
+   "cog": 82.2,
+   "heading": 80,
+   "nav_status": 0,
+   "updated": "2026-11-21 19:37:52.598438769 +0000 UTC"
+  }
+ ]
 }
