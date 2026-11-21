@@ -1,6 +1,40 @@
 {
- "fetched_at": "2026-11-21T01:51:25Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-21T01:55:59Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.99193,
+   "lon": -122.84434,
+   "sog_kn": 1,
+   "cog": 165.8,
+   "heading": 164,
+   "nav_status": 3,
+   "updated": "2026-11-21 01:56:14.739683898 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09049,
+   "lon": -122.93228,
+   "sog_kn": 0,
+   "cog": 230.8,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-21 01:56:22.06891646 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 243.2,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-21 01:56:37.390477651 +0000 UTC"
+  }
+ ]
 }
