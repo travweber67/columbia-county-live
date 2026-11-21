@@ -10110,18 +10110,98 @@ function emWireCoords() {
    soonest upcoming; duplicates by event key removed; cap 10. Each
    card links to its own event card in the Events view. */
 var glanceNextEvKey = null;
-var EVS_POOL = ['img/photo-river-bridge.jpg', 'img/town-default.jpg', 'img/card-heading-out.jpg',
-  'img/town-rainier.jpg', 'img/town-st-helens.jpg', 'img/town-vernonia.jpg'];
 function evsIsSpecial(ev) {
   return /free|giveaway|giving tree|bazaar|boutique|market|tree lighting|breakfast with santa|photos with santa/i
     .test((ev.title || '') + ' ' + (ev.note || ''));
 }
-function evsImgFor(ev, i) {
-  if (ev.img) return ev.img;
-  var t = (ev.title || '').toLowerCase();
-  if (/tree lighting/.test(t)) return 'img/town-scappoose.jpg';
-  if (/santa|bazaar|boutique|market|shop/.test(t)) return i % 2 ? 'img/town-vernonia.jpg' : 'img/town-st-helens.jpg';
-  return EVS_POOL[i % EVS_POOL.length];
+/* EVENT IMAGES (Travis, 2026-11-21 — "a lot of the same picture for
+   different events; generate one if you don't have or can't find a
+   good one"): every scroller card gets its OWN picture. The old code
+   rotated six town photos across all ten cards, so four cards wore
+   town-st-helens and four wore town-vernonia. Now each event walks a
+   candidate chain and buildEventScroller hands out the first
+   candidate not already used in the visible set:
+     1. the event's own img from its data (community-events flyer
+        photos — the only per-event photos the data carries),
+     2. EVS_BY_TITLE — a dedicated image for known recurring/special
+        events, matched on the title,
+     3. EVS_CATS — category image sets matched on title + note,
+     4. EVS_SEASONAL for holiday-flavoured titles,
+     5. EVS_GENERIC — real local town photos.
+   The img/events/ev-*.jpg files are generated subject imagery (one
+   per event type, authorized by Travis 2026-11-21; generic subjects
+   only, never a fabricated photo of a real venue). This assignment
+   lives in code on purpose: the fetchers only rewrite data/*.json,
+   so it survives every events refresh. */
+var EVS_DIR = 'img/events/';
+var EVS_BY_TITLE = [
+  [/columbia arts guild holiday bazaar/, 'ev-arts-bazaar.jpg'],
+  [/holiday church bazaar/, 'ev-church-bazaar.jpg'],
+  [/lions'? bazaar with santa/, 'ev-santa-bazaar.jpg'],
+  [/lions bazaar/, 'ev-lions-bazaar.jpg'],
+  [/band bazaar/, 'ev-band-bazaar.jpg'],
+  [/winter street market/, 'ev-street-market.jpg'],
+  [/really free market/, 'ev-free-market.jpg'],
+  [/free community shop/, 'ev-free-shop.jpg'],
+  [/soccer shoot/, 'ev-soccer-shoot.jpg'],
+  [/hoop shoot/, 'ev-hoop-shoot.jpg'],
+  [/scappoose christmas tree lighting|whoville/, 'ev-tree-lighting.jpg'],
+  [/annual christmas lighting/, 'ev-tree-lighting-park.jpg'],
+  [/free family photos with santa/, 'ev-santa-photos.jpg'],
+  [/santa pictures/, 'ev-santa-pictures.jpg'],
+  [/wonderland bazaar/, 'ev-wonderland-bazaar.jpg'],
+  [/christmas in the country bazaar/, 'ev-country-bazaar.jpg'],
+  [/thanksgiving meal giveaway/, 'ev-thanksgiving-meal.jpg'],
+  [/turkey trot/, 'ev-turkey-trot.jpg'],
+  [/shop for a cause/, 'ev-sip-shop.jpg']
+];
+var EVS_CATS = [
+  [/santa/, ['ev-santa-photos.jpg', 'ev-santa-pictures.jpg', 'ev-santa-bazaar.jpg']],
+  [/tree lighting|christmas lighting/, ['ev-tree-lighting.jpg', 'ev-tree-lighting-park.jpg']],
+  [/wreath/, ['ev-wreath.jpg', 'ev-bazaar-gifts.jpg', 'ev-country-bazaar.jpg']],
+  [/story ?time|lapsit|toddler/, ['ev-storytime.jpg', 'ev-kids-music.jpg']],
+  [/lego/, ['ev-lego.jpg', 'ev-kids-music.jpg', 'ev-storytime.jpg']],
+  [/music and movement|music & movement/, ['ev-kids-music.jpg', 'ev-storytime.jpg']],
+  [/bazaar|boutique|craft fair|holiday kick off|anniverday|minis on main/, ['ev-arts-bazaar.jpg', 'ev-church-bazaar.jpg', 'ev-lions-bazaar.jpg', 'ev-street-market.jpg', 'ev-band-bazaar.jpg', 'ev-wonderland-bazaar.jpg', 'ev-country-bazaar.jpg', 'ev-bazaar-gifts.jpg']],
+  [/market|shop/, ['ev-street-market.jpg', 'ev-sip-shop.jpg', 'ev-arts-bazaar.jpg', 'ev-bazaar-gifts.jpg']],
+  [/produce distribution|food bank/, ['ev-produce.jpg', 'ev-thanksgiving-meal.jpg', 'ev-community-meal.jpg']],
+  [/free|giveaway|giving tree/, ['ev-free-market.jpg', 'ev-free-shop.jpg', 'ev-produce.jpg', 'ev-thanksgiving-meal.jpg']],
+  [/tasting|whiskey|brew|wine/, ['ev-sip-shop.jpg', 'ev-community-meal.jpg']],
+  [/lunch|soup|friendsgiving|breakfast|dinner|meal/, ['ev-community-meal.jpg', 'ev-thanksgiving-meal.jpg', 'ev-produce.jpg']],
+  [/soccer|hoop|basketball|trot|fun run|shoot/, ['ev-soccer-shoot.jpg', 'ev-hoop-shoot.jpg', 'ev-turkey-trot.jpg']],
+  [/fiber|knit|crochet/, ['ev-fiber.jpg']],
+  [/ukulele|open mic|karaoke|line dancing|jam|concert|holy night/, ['ev-open-mic.jpg', 'ev-kids-music.jpg']],
+  [/bible|hebrews|faith|worship/, ['ev-bible-study.jpg', 'ev-church-bazaar.jpg']],
+  [/bingo|board game/, ['ev-bingo.jpg', 'ev-community-meal.jpg']],
+  [/book/, ['ev-bible-study.jpg', 'ev-community-meal.jpg']],
+  [/pawdicure|pet|dog|vaccine/, ['ev-pet-care.jpg']],
+  [/maker|teen|tween|drop-in|pok/, ['ev-lego.jpg', 'ev-fiber.jpg', 'ev-kids-music.jpg']]
+];
+var EVS_SEASONAL = ['img/events/ev-tree-lighting.jpg', 'img/events/ev-wreath.jpg',
+  'img/events/ev-bazaar-gifts.jpg', 'img/events/ev-wonderland-bazaar.jpg'];
+var EVS_GENERIC = ['img/town-default.jpg', 'img/photo-river-bridge.jpg', 'img/town-rainier.jpg',
+  'img/town-st-helens.jpg', 'img/town-vernonia.jpg', 'img/town-scappoose.jpg',
+  'img/card-heading-out.jpg', 'img/hero-events.jpg', 'img/town-clatskanie.jpg',
+  'img/town-columbia-city.jpg', 'img/town-warren.jpg', 'img/card-courthouse.jpg'];
+function evsCandidatesFor(ev) {
+  var out = [], seen = {};
+  function push(p) { if (p && !seen[p]) { seen[p] = 1; out.push(p); } }
+  var tt = (ev.title || '').toLowerCase();
+  var t = tt + ' ' + (ev.note || '').toLowerCase();
+  if (ev.img) push(ev.img);
+  for (var i = 0; i < EVS_BY_TITLE.length; i++)
+    if (EVS_BY_TITLE[i][0].test(tt)) { push(EVS_DIR + EVS_BY_TITLE[i][1]); break; }
+  for (var j = 0; j < EVS_CATS.length; j++)
+    if (EVS_CATS[j][0].test(t)) EVS_CATS[j][1].forEach(function (n) { push(EVS_DIR + n); });
+  if (/christmas|holiday|thanksgiving/.test(t) && !/closed|closure|cancel/.test(tt)) EVS_SEASONAL.forEach(push);
+  EVS_GENERIC.forEach(push);
+  return out;
+}
+function evsImgFor(ev, used) {
+  var cands = evsCandidatesFor(ev);
+  for (var i = 0; i < cands.length; i++)
+    if (!used[cands[i]]) { used[cands[i]] = 1; return cands[i]; }
+  return cands[0]; /* reachable only if a set outgrows the whole library */
 }
 function buildEventScroller() {
   var track = document.getElementById('ev-scroll-track');
@@ -10145,10 +10225,11 @@ function buildEventScroller() {
     track.innerHTML = '<p class="loading">Nothing coming up right now.</p>';
     return;
   }
+  var evsUsed = {};
   var html = picked.map(function (ev, i) {
     var when = fmtDay(new Date(ev.date + 'T12:00:00')) + (ev.time ? ' · ' + esc(ev.time) : '');
     return '<a class="evs-card" href="#events-card" data-evkey="' + esc(evcalKeyOf(ev)) + '">'
-      + '<img class="evs-img" src="' + esc(evsImgFor(ev, i)) + '" alt="" loading="lazy" decoding="async">'
+      + '<img class="evs-img" src="' + esc(evsImgFor(ev, evsUsed)) + '" alt="" loading="lazy" decoding="async">'
       + '<span class="evs-body"><span class="evs-when">' + when
       + (evsIsSpecial(ev) ? ' <span class="evs-tag">Special</span>' : '') + '</span>'
       + '<span class="evs-title">' + esc(ev.title || '') + '</span>'
