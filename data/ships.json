@@ -1,6 +1,51 @@
 {
- "fetched_at": "2026-11-21T18:02:06Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-21T18:07:06Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 45.71459,
+   "lon": -122.7635,
+   "sog_kn": 0,
+   "cog": 205.6,
+   "heading": 202,
+   "nav_status": 1,
+   "updated": "2026-11-21 18:07:23.668705385 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.61112,
+   "lon": -122.63453,
+   "sog_kn": 0,
+   "cog": 280.8,
+   "heading": 3,
+   "nav_status": 0,
+   "updated": "2026-11-21 18:07:24.540682321 +0000 UTC"
+  },
+  {
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 45.66696,
+   "lon": -122.76694,
+   "sog_kn": 0,
+   "cog": 288.6,
+   "heading": 161,
+   "nav_status": 1,
+   "updated": "2026-11-21 18:07:25.819463672 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 46.00919,
+   "lon": -122.84867,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 18:07:43.939023671 +0000 UTC"
+  }
+ ]
 }
