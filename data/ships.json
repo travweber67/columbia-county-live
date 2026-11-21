@@ -1,26 +1,51 @@
 {
- "fetched_at": "2026-11-21T08:21:27Z",
+ "fetched_at": "2026-11-21T08:22:11Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.00897,
+   "lon": -122.84824,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 08:22:55.72525555 +0000 UTC"
+  },
   {
    "mmsi": 367602150,
    "name": "LUNA",
    "lat": 45.61109,
    "lon": -122.6129,
-   "type_code": 0,
-   "updated": "2026-11-21 08:21:39.797614716 +0000 UTC"
+   "sog_kn": 0,
+   "cog": 217.5,
+   "heading": 136,
+   "nav_status": 15,
+   "updated": "2026-11-21 08:22:58.481962381 +0000 UTC"
   },
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58082,
-   "lon": -122.76007,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65023,
+   "lon": -122.74762,
    "sog_kn": 0,
-   "cog": 82.1,
-   "heading": 123,
+   "cog": 314.3,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-21 08:22:59.481395827 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.64331,
+   "lon": -122.75277,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-21 08:21:48.756013785 +0000 UTC"
+   "updated": "2026-11-21 08:23:09.113062728 +0000 UTC"
   },
   {
    "mmsi": 367380280,
@@ -29,67 +54,7 @@
    "lon": -123.40234,
    "type_code": 99,
    "destination": "",
-   "updated": "2026-11-21 08:21:49.699459956 +0000 UTC"
-  },
-  {
-   "mmsi": 563311600,
-   "name": "STANLEY BAY",
-   "lat": 46.11012,
-   "lon": -122.96336,
-   "sog_kn": 0,
-   "cog": 199,
-   "heading": 131,
-   "nav_status": 5,
-   "updated": "2026-11-21 08:21:50.745862065 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 46.08678,
-   "lon": -122.90965,
-   "sog_kn": 9.6,
-   "cog": 305.7,
-   "heading": 305,
-   "nav_status": 0,
-   "updated": "2026-11-21 08:21:50.80560102 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.09294,
-   "lon": -122.92311,
-   "type_code": 52,
-   "destination": "PORTLAND",
-   "updated": "2026-11-21 08:21:52.670502603 +0000 UTC"
-  },
-  {
-   "mmsi": 367646810,
-   "name": "EMERY ZIDELL",
-   "lat": 46.02776,
-   "lon": -122.87289,
-   "sog_kn": 8.5,
-   "cog": 137.7,
-   "heading": 139,
-   "nav_status": 0,
-   "updated": "2026-11-21 08:21:53.706980157 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.15425,
-   "lon": -123.05469,
-   "type_code": 33,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-21 08:21:54.651876812 +0000 UTC"
-  },
-  {
-   "mmsi": 368201480,
-   "name": "KINANI H",
-   "lat": 46.22021,
-   "lon": -123.4245,
-   "type_code": 31,
-   "destination": "SEATTLE",
-   "updated": "2026-11-21 08:22:00.595820172 +0000 UTC"
+   "updated": "2026-11-21 08:23:12.90564886 +0000 UTC"
   }
  ]
 }
