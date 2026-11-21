@@ -1,38 +1,29 @@
 {
- "fetched_at": "2026-11-21T00:15:50Z",
+ "fetched_at": "2026-11-21T00:20:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20003,
-   "lon": -123.38542,
-   "sog_kn": 0,
-   "cog": 185,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.9875,
+   "lon": -122.83785,
+   "sog_kn": 1.4,
+   "cog": 132.4,
+   "heading": 148,
+   "nav_status": 12,
+   "updated": "2026-11-21 00:21:11.862085292 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.14665,
+   "lon": -123.38366,
+   "sog_kn": 7.7,
+   "cog": 37.4,
    "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-21 00:16:04.340383467 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.71352,
-   "lon": -122.76667,
-   "type_code": 57,
-   "destination": "PDX/VANC.OPS.",
-   "updated": "2026-11-21 00:16:14.256042363 +0000 UTC"
-  },
-  {
-   "mmsi": 368201480,
-   "name": "KINANI H",
-   "lat": 45.91026,
-   "lon": -122.80559,
-   "sog_kn": 0,
-   "cog": 197.5,
-   "heading": 3,
-   "nav_status": 11,
-   "updated": "2026-11-21 00:16:19.06877804 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-21 00:21:17.944861612 +0000 UTC"
   }
  ]
 }
