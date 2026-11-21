@@ -1,51 +1,40 @@
 {
- "fetched_at": "2026-11-21T01:25:56Z",
+ "fetched_at": "2026-11-21T01:30:56Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368251260,
-   "name": "MISS GINGER",
-   "lat": 45.61208,
-   "lon": -122.64604,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.61291,
    "sog_kn": 0,
-   "cog": 239,
+   "cog": 308.9,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-21 01:31:09.94759626 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79316,
+   "lon": -122.8432,
+   "sog_kn": 0,
+   "cog": 323,
+   "heading": 214,
+   "nav_status": 12,
+   "updated": "2026-11-21 01:31:19.750882026 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.64333,
+   "lon": -122.7528,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-21 01:26:05.35096825 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58078,
-   "lon": -122.76008,
-   "sog_kn": 0,
-   "cog": 82.1,
-   "heading": 120,
    "nav_status": 0,
-   "updated": "2026-11-21 01:26:18.961244757 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09048,
-   "lon": -122.93234,
-   "sog_kn": 0,
-   "cog": 238.1,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-21 01:26:23.744537263 +0000 UTC"
-  },
-  {
-   "mmsi": 440245000,
-   "name": "GLOVIS SUMMIT",
-   "lat": 46.01162,
-   "lon": -122.85464,
-   "sog_kn": 10.9,
-   "cog": 149.7,
-   "heading": 151,
-   "nav_status": 0,
-   "updated": "2026-11-21 01:26:25.667024505 +0000 UTC"
+   "updated": "2026-11-21 01:31:21.372810383 +0000 UTC"
   }
  ]
 }
