@@ -3085,7 +3085,7 @@ function mergeFbInto(events, fbSnap) {
     if (seen.has(key)) return; // the calendar version wins
     seen.add(key);
     out.push({ date: ev.date, time: ev.time || '', title: ev.title, source: 'Facebook',
-               url: ev.url || '', location: ev.location || '' });
+               url: ev.url || '', location: ev.location || '', kind: 'comm' });
   });
   return out;
 }
@@ -3115,7 +3115,7 @@ function mergeCommunityInto(events, cSnap) {
     seen.add(key);
     out.push({ date: ev.date, time: ev.time || '', title: ev.title, source: ev.source || 'Facebook',
                url: ev.url || '', location: ev.location || '', note: ev.note || '',
-               img: ev.img || '', community: true });
+               img: ev.img || '', community: true, kind: 'comm' });
   });
   return out;
 }
@@ -3146,6 +3146,38 @@ function eventMatchesFilter(ev, filter) {
    presentation changed. */
 let cevDay = null;      // 'YYYY-MM-DD' picked in the mini-month / pill strip
 let cevOpen = false;    // "See more events" expanded
+/* Calendar split (Travis, 2026-11-21): municipal vs community, told
+   apart at a glance. Classification is by SOURCE FILE, stamped at
+   merge time: entries from the official city/county calendar feed
+   (data/events.json) are municipal; Facebook events and community
+   submissions are stamped kind:'comm' by their merge functions.
+   Anything unstamped defaults to municipal. Both kinds wear a color
+   pill (steel blue = City & County, warm orange = Community) plus a
+   matching left stripe on the card, and the chips above the list
+   filter to one kind. 'All' stays strictly chronological. */
+let cevKind = 'all';    // 'all' | 'comm' | 'muni'
+function evKindOf(ev) { return ev && ev.kind === 'comm' ? 'comm' : 'muni'; }
+function cevKindLabel(kind) {
+  if (kind === 'muni') return langCur === 'es' ? 'Ciudad y Condado' : 'City & County';
+  return langCur === 'es' ? 'Comunidad' : 'Community';
+}
+function cevKindBar() {
+  const opts = [['all', langCur === 'es' ? 'Todo' : 'All'],
+                ['comm', cevKindLabel('comm')],
+                ['muni', cevKindLabel('muni')]];
+  let h = '<div class="cev-kindbar" role="group" aria-label="Show events by kind">';
+  opts.forEach(function (o) {
+    h += '<button type="button" class="cev-kind-chip" data-cev-kind="' + o[0]
+      + '" aria-pressed="' + (cevKind === o[0]) + '">' + esc(o[1]) + '</button>';
+  });
+  h += '</div>';
+  h += '<p class="cev-legend"><span class="cev-dot cev-dot-comm" aria-hidden="true"></span>'
+    + esc(cevKindLabel('comm'))
+    + '<span class="cev-legend-sep" aria-hidden="true">·</span>'
+    + '<span class="cev-dot cev-dot-muni" aria-hidden="true"></span>'
+    + esc(cevKindLabel('muni')) + '</p>';
+  return h;
+}
 const CEV_FIRST = 8;
 const CEV_MON3 = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const CEV_DOW3 = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -3157,7 +3189,7 @@ function cevLongDate(dateStr) {
 function cevCard(ev, today) {
   const p = cevParts(ev.date);
   const dow = new Date(ev.date + 'T12:00:00').getDay();
-  let h = '<article class="cev-card" data-evkey="' + esc(evcalKeyOf(ev)) + '">';
+  let h = '<article class="cev-card cev-k-' + evKindOf(ev) + '" data-evkey="' + esc(evcalKeyOf(ev)) + '">';
   h += '<div class="cev-badge" aria-hidden="true"><span class="cev-mon">' + CEV_MON3[p.m - 1] + '</span>'
     + '<span class="cev-daynum">' + p.d + '</span><span class="cev-dow">' + CEV_DOW3[dow] + '</span></div>';
   h += '<div class="cev-main">';
@@ -3174,6 +3206,7 @@ function cevCard(ev, today) {
     h += '<button type="button" class="evcal-btn" data-evcal="' + esc(evcalKeyOf(ev))
       + '" title="Add this event to your calendar">＋ Add</button>';
   }
+  h += '<span class="cev-kind cev-kind-' + evKindOf(ev) + '">' + esc(cevKindLabel(evKindOf(ev))) + '</span>';
   if (ev.source === 'Facebook') h += '<span class="event-fb-tag">Facebook</span>';
   else if (ev.source) h += '<span class="cev-src">' + esc(ev.source) + '</span>';
   h += '</div></div></article>';
@@ -3236,14 +3269,19 @@ function renderEvents() {
     a.date === b.date ? parseTimeToMinutes(a.time) - parseTimeToMinutes(b.time)
                       : (a.date < b.date ? -1 : 1));
   const inFilter = evs.filter(ev => eventMatchesFilter(ev, currentEventFilter));
+  /* Calendar split: the kind chips narrow the same merged list by
+     source kind before the cap below, so each kind view gets its own
+     full set. 'All' is the untouched chronological merge. */
+  const kindShown = cevKind === 'all' ? inFilter
+    : inFilter.filter(ev => evKindOf(ev) === cevKind);
   /* The 16-row cap keeps the card compact, but hand-picked community
      events always render: they were added on purpose, and some (a
      December fundraiser, a season-long campaign) sort past the cap.
      Scappoose Public Library events get the same exemption (Travis
      approved 2026-11-17, after a resident asked for them by name):
      their full two-week program would otherwise hide past the cap. */
-  const shown = inFilter.slice(0, 16);
-  inFilter.slice(16).forEach(ev => { if (ev.community || ev.source === 'Scappoose Public Library') shown.push(ev); });
+  const shown = kindShown.slice(0, 16);
+  kindShown.slice(16).forEach(ev => { if (ev.community || ev.source === 'Scappoose Public Library') shown.push(ev); });
   shown.sort((a, b) => a.date === b.date ? parseTimeToMinutes(a.time) - parseTimeToMinutes(b.time)
                       : (a.date < b.date ? -1 : 1));
   const today = todayStrPT();
@@ -3252,7 +3290,7 @@ function renderEvents() {
      handler in initEvCal resolves them through evcalByKey. */
   evcalByKey = {};
   (snap.events || []).forEach(ev => { evcalByKey[evcalKeyOf(ev)] = ev; });
-  let html = '';
+  let html = cevKindBar();
   if (shown.length) {
     let list = shown;
     if (cevDay) list = shown.filter(ev => ev.date === cevDay);
@@ -3277,11 +3315,17 @@ function renderEvents() {
     }
     html += '</div></div>';
   } else {
-    html = '<p class="no-alerts">' + ({
+    html += '<p class="no-alerts">' + (cevKind === 'muni'
+      ? (langCur === 'es' ? 'Nada en los calendarios de la ciudad o el condado por ahora.'
+                          : 'Nothing from the city or county calendars right now.')
+      : cevKind === 'comm'
+      ? (langCur === 'es' ? 'No hay eventos de la comunidad por ahora.'
+                          : 'No community events right now.')
+      : ({
       today: 'Nothing left on the calendars for today — the full two weeks are under "All".',
       weekend: 'Nothing on the calendars this weekend in the current snapshot — try "Next 7 days".',
       week: 'Nothing on the calendars in the next 7 days in the current snapshot.'
-    }[currentEventFilter] || 'No upcoming events found on the city calendars for the next two weeks.') + '</p>';
+    }[currentEventFilter] || 'No upcoming events found on the city calendars for the next two weeks.')) + '</p>';
   }
   const county = (snap.sources || []).find(s => /Columbia County/.test(s.name));
   if (county && county.status === 'blocked_needs_browser') {
@@ -3308,6 +3352,12 @@ function initCevNav() {
   body.addEventListener('click', e => {
     const t = e && e.target;
     if (!t || typeof t.closest !== 'function') return;
+    const kindBtn = t.closest('[data-cev-kind]');
+    if (kindBtn) {
+      cevKind = kindBtn.getAttribute('data-cev-kind') || 'all';
+      renderEvents();
+      return;
+    }
     const dayBtn = t.closest('[data-cev-day]');
     if (dayBtn) {
       const ds = dayBtn.getAttribute('data-cev-day');

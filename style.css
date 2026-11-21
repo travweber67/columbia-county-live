@@ -5465,3 +5465,39 @@ body.rd-home .dir-addcard-ribbon::after{right:3px;border-top-color:#8a6420;borde
 body.rd-home .dir-addcard h3{margin:0 0 6px;font-size:1.12rem;color:#241708;text-shadow:none}
 body.rd-home .dir-addcard p{margin:0 0 13px;font-size:.92rem;line-height:1.5;color:#3d2c17;text-shadow:none}
 body.rd-home .dir-addcard .share-btn{display:inline-block;text-decoration:none}
+
+/* ---- CALENDAR SPLIT: Community vs City & County (Travis, 2026-11-21) ----
+   Color-coded kinds so the two read at a glance: Community wears the
+   warm orange, City & County (municipal) a cool steel blue — pill on
+   every card plus a matching left stripe, chips + legend above the
+   list. The card surface is a light marble wash in BOTH themes on
+   rd-home (dark mode swaps the paint to green but keeps the wash and
+   the dark ink), so these tints and inks are stated once and hold in
+   light and dark alike. */
+.cev-kindbar{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px}
+.cev-kind-chip{
+  font:inherit;font-size:.8rem;font-weight:700;cursor:pointer;color:#5b3a17;
+  background:linear-gradient(180deg,rgba(253,250,240,.92),rgba(249,244,229,.85));
+  border:1px solid rgba(255,255,255,.6);border-radius:999px;padding:6px 14px;
+  box-shadow:0 1px 2px rgba(20,32,16,.10),0 4px 10px rgba(20,32,16,.10);
+}
+.cev-kind-chip:hover{color:#2b1d05}
+.cev-kind-chip[aria-pressed="true"]{background:#33383e;color:#fff;border-color:transparent}
+.cev-kind-chip[data-cev-kind="comm"][aria-pressed="true"]{background:#f0a95c;color:#3d2000}
+.cev-kind-chip[data-cev-kind="muni"][aria-pressed="true"]{background:#4a7196;color:#fff}
+.cev-legend{
+  display:flex;flex-wrap:wrap;align-items:center;gap:6px;
+  font-size:.78rem;font-weight:600;color:var(--muted);margin:0 0 12px;
+}
+.cev-dot{flex:0 0 auto;width:9px;height:9px;border-radius:50%}
+.cev-dot-comm{background:#dd7a2e}
+.cev-dot-muni{background:#4a7196}
+.cev-legend-sep{opacity:.6;margin:0 2px}
+.cev-kind{
+  font-size:.68rem;font-weight:800;letter-spacing:.03em;white-space:nowrap;
+  padding:2px 8px;border-radius:999px;border:1px solid;align-self:center;
+}
+.cev-kind-comm{background:#fbe3c2;color:#8a4300;border-color:#eec27f}
+.cev-kind-muni{background:#d9e7f3;color:#2c4f73;border-color:#a9c3dc}
+.cev-card.cev-k-comm{border-left:4px solid #dd7a2e}
+.cev-card.cev-k-muni{border-left:4px solid #4a7196}
