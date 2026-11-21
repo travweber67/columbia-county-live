@@ -1,7 +1,7 @@
 {
- "fetched_at": "2026-11-21T14:06:53Z",
+ "fetched_at": "2026-11-21T14:11:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
    "mmsi": 367513230,
@@ -9,21 +9,54 @@
    "lat": 45.64311,
    "lon": -122.74433,
    "sog_kn": 0,
-   "cog": 186.2,
+   "cog": 119.2,
    "heading": 290,
    "nav_status": 0,
-   "updated": "2026-11-21 14:07:06.44183635 +0000 UTC"
+   "updated": "2026-11-21 14:12:06.463753675 +0000 UTC"
   },
   {
-   "mmsi": 538011643,
-   "name": "YASA CAMELLIA",
-   "lat": 45.7146,
-   "lon": -122.76353,
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.6457,
+   "lon": -122.73488,
    "sog_kn": 0,
-   "cog": 205.6,
-   "heading": 203,
+   "cog": 0,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-21 14:12:06.548138719 +0000 UTC"
+  },
+  {
+   "mmsi": 367006570,
+   "name": "JEFFREY S",
+   "lat": 45.67671,
+   "lon": -122.77191,
+   "sog_kn": 0.1,
+   "cog": 349.1,
+   "heading": 176,
    "nav_status": 1,
-   "updated": "2026-11-21 14:07:22.582129714 +0000 UTC"
+   "updated": "2026-11-21 14:12:07.676492333 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09308,
+   "lon": -122.9236,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 309,
+   "nav_status": 3,
+   "updated": "2026-11-21 14:12:08.087629607 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 46.05213,
+   "lon": -122.88144,
+   "sog_kn": 10,
+   "cog": 348.8,
+   "heading": 348,
+   "nav_status": 12,
+   "updated": "2026-11-21 14:12:09.354095779 +0000 UTC"
   }
  ]
 }
