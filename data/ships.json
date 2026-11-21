@@ -1,6 +1,82 @@
 {
- "fetched_at": "2026-11-21T16:12:00Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-21T16:17:01Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 45.69105,
+   "lon": -122.7717,
+   "sog_kn": 0,
+   "cog": 193.7,
+   "heading": 191,
+   "nav_status": 1,
+   "updated": "2026-11-21 16:17:17.255209567 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.01184,
+   "lon": -122.85402,
+   "sog_kn": 8.7,
+   "cog": 146.8,
+   "heading": 150,
+   "nav_status": 3,
+   "updated": "2026-11-21 16:17:28.093918764 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65022,
+   "lon": -122.74764,
+   "sog_kn": 0,
+   "cog": 318.6,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-21 16:17:29.288475593 +0000 UTC"
+  },
+  {
+   "mmsi": 636023225,
+   "name": "SWEET PEA LEADER",
+   "lat": 45.59763,
+   "lon": -122.77508,
+   "sog_kn": 0,
+   "cog": 87.4,
+   "heading": 329,
+   "nav_status": 5,
+   "updated": "2026-11-21 16:17:29.712245511 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09292,
+   "lon": -122.92344,
+   "sog_kn": 0,
+   "cog": 317.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 16:17:34.207102651 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61289,
+   "sog_kn": 0,
+   "cog": 288.4,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-21 16:17:41.494676788 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 46.08972,
+   "lon": -122.92902,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-21 16:17:45.956263184 +0000 UTC"
+  }
+ ]
 }
