@@ -1,29 +1,70 @@
 {
- "fetched_at": "2026-11-21T06:56:21Z",
+ "fetched_at": "2026-11-21T07:01:21Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.6544,
-   "lon": -122.76605,
-   "sog_kn": 6.1,
-   "cog": 190.8,
-   "heading": 195,
-   "nav_status": 12,
-   "updated": "2026-11-21 06:56:25.685264866 +0000 UTC"
+   "mmsi": 352006113,
+   "name": "BELFORTUNE",
+   "lat": 46.16128,
+   "lon": -123.0745,
+   "sog_kn": 11.1,
+   "cog": 299.2,
+   "heading": 306,
+   "nav_status": 0,
+   "updated": "2026-11-21 07:01:32.686158233 +0000 UTC"
   },
   {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 46.09063,
-   "lon": -122.93207,
-   "sog_kn": 0,
-   "cog": 214.2,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.25921,
+   "lon": -123.46778,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-21 07:01:40.396289982 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.00073,
+   "lon": -122.848,
+   "sog_kn": 0.8,
+   "cog": 157.7,
+   "heading": 153,
+   "nav_status": 3,
+   "updated": "2026-11-21 07:01:41.188860398 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.61097,
+   "lon": -122.7847,
+   "sog_kn": 0.9,
+   "cog": 174.1,
    "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 07:01:53.709315176 +0000 UTC",
+   "type_code": 52
+  },
+  {
+   "mmsi": 355173000,
+   "name": "EVER BEST",
+   "lat": 45.63925,
+   "lon": -122.77784,
+   "sog_kn": 0,
+   "cog": 359.3,
+   "heading": 228,
    "nav_status": 5,
-   "updated": "2026-11-21 06:56:26.118748598 +0000 UTC"
+   "updated": "2026-11-21 07:01:59.422585817 +0000 UTC"
+  },
+  {
+   "mmsi": 440245000,
+   "name": "GLOVIS SUMMIT",
+   "lat": 45.64642,
+   "lon": -122.75571,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-21 07:02:01.417894058 +0000 UTC"
   }
  ]
 }
