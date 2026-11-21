@@ -1,6 +1,58 @@
 {
- "fetched_at": "2026-11-21T17:32:05Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-21T17:39:23Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15705,
+   "lon": -123.40233,
+   "type_code": 99,
+   "destination": "",
+   "updated": "2026-11-21 17:40:00.733538086 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 46.01586,
+   "lon": -122.8584,
+   "sog_kn": 10.4,
+   "cog": 321.1,
+   "heading": 321,
+   "nav_status": 3,
+   "updated": "2026-11-21 17:40:09.118162031 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19996,
+   "lon": -123.38552,
+   "sog_kn": 0,
+   "cog": 25.8,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-21 17:40:11.854576496 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64788,
+   "lon": -122.74098,
+   "sog_kn": 0.1,
+   "cog": 111.7,
+   "heading": 111,
+   "nav_status": 5,
+   "updated": "2026-11-21 17:40:12.876874432 +0000 UTC"
+  },
+  {
+   "mmsi": 538009633,
+   "name": "EVER ZENITH",
+   "lat": 46.09915,
+   "lon": -122.9394,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-21 17:40:21.172276602 +0000 UTC"
+  }
+ ]
 }
