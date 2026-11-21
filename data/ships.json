@@ -1,27 +1,49 @@
 {
- "fetched_at": "2026-11-21T11:41:42Z",
+ "fetched_at": "2026-11-21T11:46:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64789,
-   "lon": -122.74097,
-   "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-21 11:41:47.863630797 +0000 UTC"
+   "mmsi": 366888830,
+   "name": "KAHU",
+   "lat": 45.61167,
+   "lon": -122.64422,
+   "sog_kn": 0,
+   "cog": 189.1,
+   "heading": 116,
+   "nav_status": 5,
+   "updated": "2026-11-21 11:46:51.449951776 +0000 UTC"
   },
   {
-   "mmsi": 366892350,
-   "name": "NAT GEO SEA BIRD",
-   "lat": 46.08968,
-   "lon": -122.92973,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.91119,
+   "lon": -122.81011,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-21 11:46:56.282648036 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.59805,
+   "lon": -122.77664,
+   "sog_kn": 5.7,
+   "cog": 340.7,
+   "heading": 339,
+   "nav_status": 0,
+   "updated": "2026-11-21 11:47:14.148093479 +0000 UTC"
+  },
+  {
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 45.69105,
+   "lon": -122.77152,
    "sog_kn": 0,
-   "cog": 72.7,
-   "heading": 109,
-   "nav_status": 5,
-   "updated": "2026-11-21 11:42:04.478045243 +0000 UTC"
+   "cog": 193.7,
+   "heading": 194,
+   "nav_status": 1,
+   "updated": "2026-11-21 11:47:17.82180136 +0000 UTC"
   }
  ]
 }
