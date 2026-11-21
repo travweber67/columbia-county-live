@@ -1,99 +1,62 @@
 {
- "fetched_at": "2026-11-21T12:56:48Z",
+ "fetched_at": "2026-11-21T13:01:48Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.64311,
-   "lon": -122.74433,
+   "mmsi": 366888830,
+   "name": "KAHU",
+   "lat": 45.61167,
+   "lon": -122.64423,
+   "type_code": 52,
+   "destination": "PDX",
+   "updated": "2026-11-21 13:01:55.258951832 +0000 UTC",
    "sog_kn": 0,
-   "cog": 357.1,
-   "heading": 289,
+   "cog": 359.7,
+   "heading": 116,
+   "nav_status": 5
+  },
+  {
+   "mmsi": 367006570,
+   "name": "JEFFREY S",
+   "lat": 45.67632,
+   "lon": -122.77206,
+   "sog_kn": 0.2,
+   "cog": 337.6,
+   "heading": 142,
    "nav_status": 0,
-   "updated": "2026-11-21 12:56:57.037459613 +0000 UTC"
+   "updated": "2026-11-21 13:02:00.872705105 +0000 UTC"
   },
   {
-   "mmsi": 367646810,
-   "name": "EMERY ZIDELL",
-   "lat": 45.59336,
-   "lon": -122.77704,
-   "sog_kn": 0,
-   "cog": 243.7,
-   "heading": 144,
-   "nav_status": 5,
-   "updated": "2026-11-21 12:56:58.467963899 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 265.9,
-   "heading": 131,
-   "nav_status": 15,
-   "updated": "2026-11-21 12:56:58.810442913 +0000 UTC"
-  },
-  {
-   "mmsi": 356334000,
-   "name": "LAUREL ISLAND",
-   "lat": 45.68597,
-   "lon": -122.77217,
+   "mmsi": 440245000,
+   "name": "GLOVIS SUMMIT",
+   "lat": 45.64642,
+   "lon": -122.75571,
    "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-21 12:57:00.155906065 +0000 UTC"
-  },
-  {
-   "mmsi": 563236100,
-   "name": "XH DEEP COVER",
-   "lat": 45.63025,
-   "lon": -122.6956,
-   "type_code": 70,
-   "destination": "US VAN",
-   "updated": "2026-11-21 12:57:02.358013316 +0000 UTC"
+   "destination": "USPDX",
+   "updated": "2026-11-21 13:02:01.274084112 +0000 UTC"
   },
   {
    "mmsi": 368286340,
    "name": "SHAVER",
-   "lat": 45.64346,
-   "lon": -122.75264,
-   "type_code": 52,
-   "updated": "2026-11-21 12:57:03.342127271 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15339,
-   "lon": -123.3772,
+   "lat": 45.64335,
+   "lon": -122.7526,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 165.2,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-21 12:57:17.866909857 +0000 UTC"
+   "nav_status": 5,
+   "updated": "2026-11-21 13:02:05.029548181 +0000 UTC"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15707,
-   "lon": -123.40233,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17721,
+   "lon": -123.35742,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 133,
-   "nav_status": 0,
-   "updated": "2026-11-21 12:57:18.696224952 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 46.02452,
-   "lon": -122.86915,
-   "sog_kn": 8.4,
-   "cog": 138.5,
-   "heading": 137,
-   "nav_status": 0,
-   "updated": "2026-11-21 12:57:18.918080714 +0000 UTC"
+   "cog": 346.1,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-21 13:02:07.124657452 +0000 UTC"
   }
  ]
 }
