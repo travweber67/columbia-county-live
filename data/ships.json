@@ -1,40 +1,53 @@
 {
- "fetched_at": "2026-11-21T11:31:41Z",
+ "fetched_at": "2026-11-21T11:36:42Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 563236100,
-   "name": "XH DEEP COVER",
-   "lat": 45.63027,
-   "lon": -122.69559,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.62746,
+   "lon": -122.69863,
    "sog_kn": 0,
-   "cog": 223.1,
-   "heading": 128,
-   "nav_status": 5,
-   "updated": "2026-11-21 11:31:57.325270701 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58076,
-   "lon": -122.76009,
-   "sog_kn": 0,
-   "cog": 82.1,
-   "heading": 123,
+   "cog": 75.8,
+   "heading": 302,
    "nav_status": 0,
-   "updated": "2026-11-21 11:32:11.329406646 +0000 UTC"
+   "updated": "2026-11-21 11:36:56.082070826 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35742,
+   "mmsi": 366972000,
+   "name": "ESSAYONS",
+   "lat": 46.17329,
+   "lon": -123.09764,
+   "sog_kn": 12.1,
+   "cog": 129.8,
+   "heading": 128,
+   "nav_status": 0,
+   "updated": "2026-11-21 11:36:56.849235249 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19995,
+   "lon": -123.38549,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-21 11:37:11.858547158 +0000 UTC",
    "sog_kn": 0,
-   "cog": 227.7,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-21 11:32:15.273484778 +0000 UTC"
+   "cog": 332.6,
+   "heading": 511,
+   "nav_status": 15
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40233,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 133,
+   "nav_status": 0,
+   "updated": "2026-11-21 11:37:09.726326832 +0000 UTC"
   }
  ]
 }
