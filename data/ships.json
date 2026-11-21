@@ -1,49 +1,69 @@
 {
- "fetched_at": "2026-11-21T01:10:54Z",
+ "fetched_at": "2026-11-21T01:15:54Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.25925,
-   "lon": -123.46775,
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60748,
+   "lon": -122.67757,
    "sog_kn": 0,
-   "cog": 28.7,
-   "heading": 107,
-   "nav_status": 3,
-   "updated": "2026-11-21 01:11:04.663284049 +0000 UTC"
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 01:16:11.54774797 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08969,
+   "lon": -122.92968,
+   "type_code": 66,
+   "destination": "RAINIER",
+   "updated": "2026-11-21 01:16:18.194261536 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.612,
+   "lon": -122.64537,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-21 01:16:28.554076948 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58078,
+   "lon": -122.7601,
+   "sog_kn": 0,
+   "cog": 82.1,
+   "heading": 121,
+   "nav_status": 0,
+   "updated": "2026-11-21 01:16:29.588590131 +0000 UTC"
   },
   {
    "mmsi": 366986380,
    "name": "DREDGE OREGON",
-   "lat": 46.09308,
+   "lat": 46.09307,
    "lon": -122.92361,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 308,
+   "heading": 307,
    "nav_status": 3,
-   "updated": "2026-11-21 01:11:07.850743822 +0000 UTC"
+   "updated": "2026-11-21 01:16:30.093899533 +0000 UTC"
   },
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64537,
-   "lon": -122.73505,
-   "type_code": 70,
-   "destination": "PER ORDERS",
-   "updated": "2026-11-21 01:11:15.111432773 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35742,
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.65969,
+   "lon": -122.75941,
    "sog_kn": 0,
-   "cog": 202,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-21 01:11:27.452444188 +0000 UTC"
+   "cog": 95.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 01:16:34.252878116 +0000 UTC"
   }
  ]
 }
