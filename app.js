@@ -463,7 +463,7 @@ function initMapTools() {
   if (nearBtn) {
     nearBtn.addEventListener('click', () => {
       if (!map || !navigator.geolocation) return;
-      nearBtn.textContent = '📍 Locating…';
+      nearBtn.textContent = 'Locating…';
       navigator.geolocation.getCurrentPosition(pos => {
         const lat = pos.coords.latitude, lon = pos.coords.longitude;
         if (meMarker) meMarker.remove();
@@ -2058,7 +2058,7 @@ function renderDayPlan() {
       : 'the forecast still loading, so this call leans on the'
         + ' tide alone for now';
   }
-  const why = '<p class="quad-why">🎣 <strong>' + quadDayLabel(quadDay)
+  const why = '<p class="quad-why"><strong>' + quadDayLabel(quadDay)
     + ': ' + QUAD_CORNERS[call].name + '.</strong> The river has '
     + tidePhrase + ' at Walker Island, with ' + wxPhrase + ' — '
     + QUAD_CORNERS[call].line + '</p>';
@@ -3527,7 +3527,7 @@ function initShare() {
         try {
           await navigator.clipboard.writeText(payload.url);
           shareBtn.textContent = '✅ Link copied — paste it anywhere';
-          setTimeout(() => { shareBtn.textContent = '📤 Share this page'; }, 3500);
+          setTimeout(() => { shareBtn.textContent = 'Share this page'; }, 3500);
         } catch (e) { /* clipboard unavailable */ }
       }
     });
@@ -4918,7 +4918,7 @@ function voiceSetBtn(on) {
   const btn = $('briefing-listen-btn');
   if (!btn) return;
   btn.classList.toggle('speaking', on);
-  btn.textContent = on ? '⏹ Stop the briefing' : '🔊 Hear the briefing';
+  btn.textContent = on ? 'Stop the briefing' : 'Hear the briefing';
   if (btn.setAttribute) btn.setAttribute('aria-pressed', on ? 'true' : 'false');
 }
 function voiceStop() {
@@ -5248,7 +5248,7 @@ function renderPasses() {
     let count = '';
     if (vis.start <= now) count = ' — <strong>it\'s overhead right now, look up!</strong>';
     else if (vis.start - now < 3 * 3600e3) count = ' — starts <strong>' + passAway(vis.start - now) + '</strong>';
-    h += '<p class="iss-pass-hero">👀 <strong>Next pass you can actually see: '
+    h += '<p class="iss-pass-hero"><strong>Next pass you can actually see: '
       + esc(fmtDayTime(new Date(vis.start))) + '</strong>' + count + '<br>'
       + 'Rises in the ' + passCompass(vis.riseAz) + ' at ' + fmtTime(new Date(vis.start))
       + ', climbs to <strong>' + Math.round(vis.peakEl) + '° up</strong> in the ' + passCompass(vis.peakAz)
@@ -5935,7 +5935,7 @@ function watchRenderState() {
   const state = $('watch-state'), status = $('watch-status'), btn = $('watch-btn');
   if (!state || !status || !btn) return;
   const watching = !!watchTimer;
-  state.textContent = watching ? '🔔 Watching' : 'Not watching';
+  state.textContent = watching ? 'Watching' : 'Not watching';
   btn.textContent = watching ? '⏹ Stop watching' : '🔔 Start watching';
   let notifLine;
   if (!('Notification' in window)) notifLine = 'This browser doesn\'t offer notifications to web pages, so the watch reports in the log' + (watchVoiceOn() ? ' and out loud' : '') + ' only.';
@@ -8430,7 +8430,7 @@ function initSponsorLink() {
   a.href = SPONSOR_FORM_URL;
   a.target = '_blank';
   a.rel = 'noopener';
-  a.textContent = langCur === 'es' ? '📋 Pregunta por el patrocinio' : '📋 Ask about sponsoring';
+  a.textContent = langCur === 'es' ? 'Pregunta por el patrocinio' : 'Ask about sponsoring';
 }
 initSponsorLink();
 
