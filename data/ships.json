@@ -1,70 +1,36 @@
 {
- "fetched_at": "2026-11-21T22:07:23Z",
+ "fetched_at": "2026-11-21T22:12:23Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.09407,
-   "lon": -122.94275,
-   "sog_kn": 0.1,
-   "cog": 162.3,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-21 22:08:07.636219818 +0000 UTC"
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.1101,
+   "lon": -122.96335,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-21 22:12:27.997063244 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09311,
-   "lon": -122.92361,
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64537,
+   "lon": -122.73506,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-21 22:12:35.675004645 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.25917,
+   "lon": -123.46763,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 309,
+   "cog": 30.2,
+   "heading": 99,
    "nav_status": 3,
-   "updated": "2026-11-21 22:07:46.213296044 +0000 UTC"
-  },
-  {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.64638,
-   "lon": -122.7405,
-   "sog_kn": 7,
-   "cog": 302.6,
-   "heading": 304,
-   "nav_status": 12,
-   "updated": "2026-11-21 22:07:49.655166706 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64349,
-   "lon": -122.75274,
-   "type_code": 52,
-   "updated": "2026-11-21 22:07:53.651280478 +0000 UTC"
-  },
-  {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.64748,
-   "lon": -122.77046,
-   "sog_kn": 9.3,
-   "cog": 209.1,
-   "heading": 212,
-   "nav_status": 12,
-   "updated": "2026-11-21 22:08:05.194026409 +0000 UTC"
-  },
-  {
-   "mmsi": 368251260,
-   "name": "MISS GINGER",
-   "lat": 45.61206,
-   "lon": -122.64602,
-   "sog_kn": 0,
-   "cog": 227.1,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-21 22:08:08.066151818 +0000 UTC"
+   "updated": "2026-11-21 22:12:57.665453909 +0000 UTC"
   }
  ]
 }
