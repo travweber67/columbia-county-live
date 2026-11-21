@@ -1,49 +1,71 @@
 {
- "fetched_at": "2026-11-21T00:50:53Z",
+ "fetched_at": "2026-11-21T00:51:39Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 46.09065,
-   "lon": -122.93207,
-   "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-21 00:51:16.546161837 +0000 UTC"
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.90829,
+   "lon": -122.80893,
+   "sog_kn": 7,
+   "cog": 171.3,
+   "heading": 169,
+   "nav_status": 12,
+   "updated": "2026-11-21 00:52:35.678732994 +0000 UTC"
   },
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.09301,
-   "lon": -122.92344,
-   "sog_kn": 0,
-   "cog": 239.2,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-21 00:51:21.482804861 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.99078,
+   "lon": -122.84597,
+   "sog_kn": 1,
+   "cog": 183.2,
+   "heading": 156,
+   "nav_status": 3,
+   "updated": "2026-11-21 00:52:39.279224641 +0000 UTC"
   },
   {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.612,
-   "lon": -122.64537,
+   "mmsi": 366888830,
+   "name": "KAHU",
+   "lat": 45.61165,
+   "lon": -122.64422,
    "sog_kn": 0,
-   "cog": 239.5,
-   "heading": 298,
+   "cog": 137.5,
+   "heading": 116,
    "nav_status": 5,
-   "updated": "2026-11-21 00:51:29.332173546 +0000 UTC"
+   "updated": "2026-11-21 00:52:49.276603682 +0000 UTC"
   },
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58075,
-   "lon": -122.76008,
+   "mmsi": 563338800,
+   "name": "ISHIZUCHI STAR",
+   "lat": 45.63172,
+   "lon": -122.6977,
    "sog_kn": 0,
-   "cog": 82.1,
-   "heading": 121,
+   "cog": 48.6,
+   "heading": 307,
+   "nav_status": 5,
+   "updated": "2026-11-21 00:52:52.251432761 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.69398,
+   "lon": -122.77308,
+   "sog_kn": 6.5,
+   "cog": 191.7,
+   "heading": 192,
    "nav_status": 0,
-   "updated": "2026-11-21 00:51:29.487285242 +0000 UTC"
+   "updated": "2026-11-21 00:52:58.086030071 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40234,
+   "type_code": 99,
+   "destination": "",
+   "updated": "2026-11-21 00:53:00.627920449 +0000 UTC"
   }
  ]
 }
