@@ -8054,7 +8054,7 @@ function heroSetContent(view) {
   const es = (typeof langCur !== 'undefined' && langCur === 'es');
   hero.setAttribute('data-view', cfg ? view : 'today');
   if (!cfg) {
-    if (img && img.getAttribute('src') !== 'img/hero-bridge.jpg') img.src = 'img/hero-bridge.jpg';
+    if (img && img.getAttribute('src') !== 'img/hero-vernonia.jpg') img.src = 'img/hero-vernonia.jpg';
     if (titleToday) titleToday.hidden = false;
     if (vhead) vhead.hidden = true;
     if (finder) finder.hidden = false;
