@@ -3646,6 +3646,11 @@ html[data-theme="dark"] .cev-src{background:rgba(255,255,255,.06)}
 }
 .cev-more:hover{color:var(--accent)}
 .cev-more-n{color:var(--muted);font-weight:600}
+/* List caps (Travis, 2026-11-21): rows past the cap in the directory
+   and Community Help lists hide via this class — never the hidden
+   attribute, so the category filter and the map pin sync keep
+   covering the full set. */
+.dir-list .dir-item.cap-off{display:none}
 #events-body .cev-card.finder-flash-row{animation:finderFlashRow 1.3s ease-in-out 2}
 @media (prefers-reduced-motion: reduce){
   #events-body .cev-card.finder-flash-row{animation:none;background:rgba(245,183,77,.35)}

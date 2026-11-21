@@ -9477,6 +9477,7 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
     } else {
       emptyEl.hidden = true;
     }
+    applyCap();
   }
 
   wrap.querySelectorAll('.dir-chip').forEach(function (btn) {
@@ -9491,6 +9492,63 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
       renderDir();
     });
   });
+
+  /* LIST CAP (Travis, 2026-11-21 — the Tillamook treatment): in the
+     unfiltered "all" view the directory shows the founding entries
+     plus the first 6 regular listings; the rest sit behind a See
+     more / See less toggle (expand in place). VISUAL ONLY: capping
+     toggles a .cap-off class, never the hidden attribute, so the
+     category filter above and the map's pin sync (which keys off
+     hidden) keep covering the FULL set — and the moment a category
+     chip is picked, the cap lifts and every match shows. A map pin
+     tap on a capped row (the pin handler adds .dir-flash) expands
+     the list so the row can be flashed and seen. */
+  var capOpen = false;
+  var capWrap = document.createElement('div');
+  capWrap.className = 'cev-more-wrap';
+  var capBtn = document.createElement('button');
+  capBtn.type = 'button';
+  capBtn.className = 'cev-more';
+  capWrap.appendChild(capBtn);
+  list.after(capWrap);
+  capBtn.addEventListener('click', function () {
+    capOpen = !capOpen;
+    applyCap();
+  });
+  function applyCap() {
+    var items = list.querySelectorAll('.dir-item');
+    var regular = 0, capped = 0;
+    items.forEach(function (item) {
+      var off = false;
+      if (cur === 'all' && !capOpen && !item.classList.contains('dir-founding')) {
+        regular++;
+        if (regular > 6) off = true;
+      }
+      item.classList.toggle('cap-off', off);
+      if (off) capped++;
+    });
+    capWrap.hidden = !(cur === 'all' && (capped > 0 || capOpen));
+    capBtn.setAttribute('aria-expanded', capOpen ? 'true' : 'false');
+    var es = (typeof langCur !== 'undefined' && langCur === 'es');
+    capBtn.innerHTML = capOpen
+      ? (es ? 'Ver menos' : 'See less')
+      : (es ? 'Ver más <span class="cev-more-n">(' + capped + ' más)</span>'
+            : 'See more <span class="cev-more-n">(' + capped + ' more)</span>');
+  }
+  if (window.MutationObserver) {
+    var capMo = new MutationObserver(function (muts) {
+      muts.forEach(function (m) {
+        if (m.target.classList.contains('dir-flash') && m.target.classList.contains('cap-off')) {
+          capOpen = true;
+          applyCap();
+          try { m.target.scrollIntoView({ block: 'nearest' }); } catch (e) { /* older browser */ }
+        }
+      });
+    });
+    list.querySelectorAll('.dir-item').forEach(function (item) {
+      capMo.observe(item, { attributes: true, attributeFilter: ['class'] });
+    });
+  }
 
   renderDir();
 
@@ -9529,6 +9587,57 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
       if (lbl) lbl.textContent = alertToggleLabel(item.classList.contains('open'));
     });
   };
+})();
+
+/* ---------- Community Help LIST CAPS (Travis, 2026-11-21 — the
+   Tillamook treatment, same rule as the directory cap above): each
+   Help list shows its first 6 entries; any beyond that sit behind a
+   See more / See less toggle that expands in place. Lists at or
+   under 6 entries are untouched and get no toggle. Visual only —
+   entries are hidden with the .cap-off class, and each entry's own
+   description pull-down keeps working either way. ---------- */
+(function () {
+  var CAP = 6;
+  var reapply = [];
+  document.querySelectorAll('#view-help .dir-list').forEach(function (list) {
+    var items = Array.prototype.slice.call(list.querySelectorAll('.dir-item'));
+    if (items.length <= CAP) return;
+    var open = false;
+    var wrap = document.createElement('div');
+    wrap.className = 'cev-more-wrap';
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'cev-more';
+    wrap.appendChild(btn);
+    list.after(wrap);
+    function apply() {
+      var capped = 0;
+      items.forEach(function (item, i) {
+        var off = !open && i >= CAP;
+        item.classList.toggle('cap-off', off);
+        if (off) capped++;
+      });
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      var es = (typeof langCur !== 'undefined' && langCur === 'es');
+      btn.innerHTML = open
+        ? (es ? 'Ver menos' : 'See less')
+        : (es ? 'Ver más <span class="cev-more-n">(' + capped + ' más)</span>'
+              : 'See more <span class="cev-more-n">(' + capped + ' more)</span>');
+    }
+    btn.addEventListener('click', function () {
+      open = !open;
+      apply();
+    });
+    apply();
+    reapply.push(apply);
+  });
+  if (reapply.length) {
+    var langSetCapPrev = langSet;
+    langSet = function (lang) {
+      langSetCapPrev(lang);
+      reapply.forEach(function (f) { f(); });
+    };
+  }
 })();
 
 /* ---------- v55: founding house cells live in the flow ----------
