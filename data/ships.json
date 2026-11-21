@@ -1,40 +1,6 @@
 {
- "fetched_at": "2026-11-21T17:02:03Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07206,
-   "lon": -122.89503,
-   "sog_kn": 0.2,
-   "cog": 231.4,
-   "heading": 286,
-   "nav_status": 0,
-   "updated": "2026-11-21 17:02:27.275431776 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00909,
-   "lon": -122.8483,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-21 17:02:46.069072679 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15707,
-   "lon": -123.40234,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 130,
-   "nav_status": 0,
-   "updated": "2026-11-21 17:02:48.606944868 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-21T17:07:04Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
