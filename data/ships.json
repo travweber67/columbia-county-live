@@ -1,62 +1,84 @@
 {
- "fetched_at": "2026-11-21T02:51:03Z",
+ "fetched_at": "2026-11-21T02:51:58Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58758,
-   "lon": -122.7704,
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.59469,
+   "lon": -122.77817,
    "sog_kn": 0,
-   "cog": 302.9,
-   "heading": 139,
+   "cog": 255.7,
+   "heading": 147,
    "nav_status": 0,
-   "updated": "2026-11-21 02:51:22.129048078 +0000 UTC"
+   "updated": "2026-11-21 02:52:54.389051663 +0000 UTC"
   },
   {
-   "mmsi": 636013613,
-   "name": "LONDON 2012",
-   "lat": 46.0444,
-   "lon": -122.88274,
+   "mmsi": 366888830,
+   "name": "KAHU",
+   "lat": 45.61167,
+   "lon": -122.6442,
    "sog_kn": 0,
-   "cog": 309.6,
-   "heading": 174,
-   "nav_status": 1,
-   "updated": "2026-11-21 02:51:24.931511196 +0000 UTC"
+   "cog": 30.3,
+   "heading": 117,
+   "nav_status": 5,
+   "updated": "2026-11-21 02:52:52.705512737 +0000 UTC"
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19997,
-   "lon": -123.38555,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.0928,
+   "lon": -122.92329,
    "sog_kn": 0,
-   "cog": 357.5,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-21 02:51:30.425192922 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.09407,
-   "lon": -122.94278,
-   "sog_kn": 0,
-   "cog": 262.2,
-   "heading": 511,
+   "cog": 324.1,
+   "heading": 125,
    "nav_status": 0,
-   "updated": "2026-11-21 02:51:33.006819609 +0000 UTC"
+   "updated": "2026-11-21 02:52:59.747237508 +0000 UTC",
+   "type_code": 52,
+   "destination": "US^03F8>02T9"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15707,
-   "lon": -123.40233,
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 45.66228,
+   "lon": -122.7641,
+   "sog_kn": 1.9,
+   "cog": 331.2,
+   "heading": 329,
+   "nav_status": 0,
+   "updated": "2026-11-21 02:52:56.870257424 +0000 UTC"
+  },
+  {
+   "mmsi": 563236100,
+   "name": "XH DEEP COVER",
+   "lat": 45.63024,
+   "lon": -122.69561,
+   "sog_kn": 0,
+   "cog": 187.5,
+   "heading": 128,
+   "nav_status": 5,
+   "updated": "2026-11-21 02:52:57.292155463 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.0931,
+   "lon": -122.92362,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 134,
-   "nav_status": 0,
-   "updated": "2026-11-21 02:51:39.493672408 +0000 UTC"
+   "heading": 307,
+   "nav_status": 3,
+   "updated": "2026-11-21 02:52:57.910458525 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.1995,
+   "lon": -123.38502,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-21 02:53:02.168595085 +0000 UTC"
   }
  ]
 }
