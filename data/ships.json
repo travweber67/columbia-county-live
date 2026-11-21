@@ -1,60 +1,88 @@
 {
- "fetched_at": "2026-11-21T21:27:19Z",
+ "fetched_at": "2026-11-21T21:32:19Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.62271,
-   "lon": -122.78845,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.66227,
+   "lon": -122.76058,
+   "type_code": 57,
+   "destination": "PDX/VANC.OPS.",
+   "updated": "2026-11-21 21:32:32.028126423 +0000 UTC"
+  },
+  {
+   "mmsi": 636023225,
+   "name": "SWEET PEA LEADER",
+   "lat": 45.59763,
+   "lon": -122.77506,
    "sog_kn": 0,
-   "cog": 97.1,
-   "heading": 4,
-   "nav_status": 0,
-   "updated": "2026-11-21 21:27:46.130829832 +0000 UTC"
-  },
-  {
-   "mmsi": 311001605,
-   "name": "SAGA DISCOVERY",
-   "lat": 46.17381,
-   "lon": -123.10733,
-   "type_code": 79,
-   "destination": "US LOG",
-   "updated": "2026-11-21 21:27:46.544852222 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.94101,
-   "lon": -122.80576,
-   "sog_kn": 10,
-   "cog": 175.8,
-   "heading": 177,
-   "nav_status": 0,
-   "updated": "2026-11-21 21:27:53.157387935 +0000 UTC"
-  },
-  {
-   "mmsi": 367575580,
-   "name": "DIANE B.",
-   "lat": 46.09884,
-   "lon": -122.92314,
-   "sog_kn": 0.1,
-   "cog": 188,
-   "heading": 65,
+   "cog": 87.4,
+   "heading": 329,
    "nav_status": 5,
-   "updated": "2026-11-21 21:27:57.152600486 +0000 UTC"
+   "updated": "2026-11-21 21:32:32.137029548 +0000 UTC"
   },
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 46.10065,
-   "lon": -122.94213,
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.009,
+   "lon": -122.84829,
    "sog_kn": 0,
-   "cog": 36.1,
-   "heading": 118,
+   "cog": 360,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-21 21:28:00.19703038 +0000 UTC"
+   "updated": "2026-11-21 21:32:36.518596998 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 46.15919,
+   "lon": -123.24409,
+   "sog_kn": 7.5,
+   "cog": 54.1,
+   "heading": 52,
+   "nav_status": 12,
+   "updated": "2026-11-21 21:32:46.425440435 +0000 UTC"
+  },
+  {
+   "mmsi": 366855000,
+   "name": "FLORIDA",
+   "lat": 46.16337,
+   "lon": -123.40685,
+   "sog_kn": 10.4,
+   "cog": 137.4,
+   "heading": 137,
+   "nav_status": 0,
+   "updated": "2026-11-21 21:32:50.335251318 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.61472,
+   "lon": -122.66494,
+   "sog_kn": 9.2,
+   "cog": 292.3,
+   "heading": 293,
+   "nav_status": 12,
+   "updated": "2026-11-21 21:32:54.436421558 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60759,
+   "lon": -122.67757,
+   "type_code": 50,
+   "updated": "2026-11-21 21:32:59.979799931 +0000 UTC"
+  },
+  {
+   "mmsi": 563236100,
+   "name": "XH DEEP COVER",
+   "lat": 45.63024,
+   "lon": -122.6956,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-21 21:33:01.775774499 +0000 UTC"
   }
  ]
 }
