@@ -1,6 +1,82 @@
 {
- "fetched_at": "2026-11-21T20:32:15Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-21T20:37:15Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 45.66694,
+   "lon": -122.76701,
+   "sog_kn": 0,
+   "cog": 288.6,
+   "heading": 161,
+   "nav_status": 1,
+   "updated": "2026-11-21 20:37:25.167599748 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09308,
+   "lon": -122.92359,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 309,
+   "nav_status": 3,
+   "updated": "2026-11-21 20:37:26.897740661 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 46.10066,
+   "lon": -122.94214,
+   "sog_kn": 0,
+   "cog": 36.1,
+   "heading": 116,
+   "nav_status": 0,
+   "updated": "2026-11-21 20:37:29.515458305 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35744,
+   "sog_kn": 0,
+   "cog": 261.2,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-21 20:37:38.773828065 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.63544,
+   "lon": -122.71022,
+   "sog_kn": 8,
+   "cog": 301.9,
+   "heading": 298,
+   "nav_status": 0,
+   "updated": "2026-11-21 20:37:46.899883653 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.07773,
+   "lon": -122.90244,
+   "sog_kn": 1.6,
+   "cog": 144.6,
+   "heading": 138,
+   "nav_status": 0,
+   "updated": "2026-11-21 20:37:50.069761812 +0000 UTC"
+  },
+  {
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.11009,
+   "lon": -122.96337,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-21 20:37:51.358504922 +0000 UTC"
+  }
+ ]
 }
