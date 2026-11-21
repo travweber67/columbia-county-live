@@ -1,16 +1,29 @@
 {
- "fetched_at": "2026-11-21T10:11:35Z",
+ "fetched_at": "2026-11-21T10:16:35Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 1 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64537,
-   "lon": -122.73505,
-   "type_code": 70,
-   "destination": "PER ORDERS",
-   "updated": "2026-11-21 10:11:49.824516813 +0000 UTC"
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19997,
+   "lon": -123.38546,
+   "sog_kn": 0,
+   "cog": 183.5,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-21 10:16:53.668368813 +0000 UTC"
+  },
+  {
+   "mmsi": 368251260,
+   "name": "MISS GINGER",
+   "lat": 45.61211,
+   "lon": -122.646,
+   "sog_kn": 0,
+   "cog": 235.8,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-21 10:17:01.96200418 +0000 UTC"
   }
  ]
 }
