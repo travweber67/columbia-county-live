@@ -1,40 +1,111 @@
 {
- "fetched_at": "2026-11-21T20:47:17Z",
+ "fetched_at": "2026-11-21T20:52:17Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 45.85773,
+   "lon": -122.78374,
+   "sog_kn": 11,
+   "cog": 3.3,
+   "heading": 4,
+   "nav_status": 0,
+   "updated": "2026-11-21 20:52:30.805582136 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79316,
+   "lon": -122.84321,
+   "sog_kn": 0,
+   "cog": 268.5,
+   "heading": 212,
+   "nav_status": 0,
+   "updated": "2026-11-21 20:52:35.195888524 +0000 UTC"
+  },
+  {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.62274,
+   "lon": -122.78837,
+   "type_code": 31,
+   "destination": "PORTLAND OR ASHGROVE",
+   "updated": "2026-11-21 20:52:35.844295384 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 46.10066,
+   "lon": -122.94213,
+   "sog_kn": 0,
+   "cog": 36.1,
+   "heading": 119,
+   "nav_status": 0,
+   "updated": "2026-11-21 20:52:39.274229872 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19997,
+   "lon": -123.38545,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-21 20:52:41.305500141 +0000 UTC"
+  },
   {
    "mmsi": 538012272,
    "name": "PERSEUS I",
-   "lat": 46.11104,
-   "lon": -122.97429,
-   "sog_kn": 10,
-   "cog": 137.8,
-   "heading": 135,
+   "lat": 46.10383,
+   "lon": -122.9605,
+   "sog_kn": 7.4,
+   "cog": 123.6,
+   "heading": 125,
    "nav_status": 0,
-   "updated": "2026-11-21 20:47:32.994046403 +0000 UTC"
+   "updated": "2026-11-21 20:52:42.322604141 +0000 UTC"
   },
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60759,
-   "lon": -122.67756,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.25928,
+   "lon": -123.46738,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-21 20:47:39.392096963 +0000 UTC"
+   "cog": 344.1,
+   "heading": 97,
+   "nav_status": 3,
+   "updated": "2026-11-21 20:52:44.813219897 +0000 UTC"
   },
   {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 46.03755,
-   "lon": -122.87944,
-   "sog_kn": 10.1,
-   "cog": 174.9,
-   "heading": 171,
-   "nav_status": 0,
-   "updated": "2026-11-21 20:47:40.880385611 +0000 UTC"
+   "mmsi": 355173000,
+   "name": "EVER BEST",
+   "lat": 45.63924,
+   "lon": -122.77782,
+   "type_code": 79,
+   "destination": "USPDX",
+   "updated": "2026-11-21 20:52:45.308862397 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 262.6,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-21 20:52:47.108365434 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20001,
+   "lon": -123.38552,
+   "sog_kn": 0,
+   "cog": 357.8,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-21 20:52:51.111810022 +0000 UTC"
   }
  ]
 }
