@@ -1,70 +1,58 @@
 {
- "fetched_at": "2026-11-21T16:42:02Z",
+ "fetched_at": "2026-11-21T16:47:02Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64348,
+   "lon": -122.75251,
+   "type_code": 52,
+   "destination": "US^0UU4>02MR",
+   "updated": "2026-11-21 16:47:15.330097438 +0000 UTC"
+  },
   {
    "mmsi": 367531220,
    "name": "WATCHMAN",
    "lat": 46.2,
-   "lon": -123.38542,
+   "lon": -123.38543,
    "sog_kn": 0,
    "cog": 0,
    "heading": 511,
    "nav_status": 8,
-   "updated": "2026-11-21 16:42:15.779934042 +0000 UTC"
+   "updated": "2026-11-21 16:47:16.070583366 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.07464,
+   "lon": -122.8978,
+   "sog_kn": 0,
+   "cog": 50.1,
+   "heading": 144,
+   "nav_status": 5,
+   "updated": "2026-11-21 16:47:18.6458266 +0000 UTC"
   },
   {
    "mmsi": 367602150,
    "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61291,
+   "lat": 45.61108,
+   "lon": -122.6129,
    "sog_kn": 0,
-   "cog": 255.2,
-   "heading": 134,
+   "cog": 308.6,
+   "heading": 133,
    "nav_status": 15,
-   "updated": "2026-11-21 16:42:21.611063901 +0000 UTC"
+   "updated": "2026-11-21 16:47:22.481685482 +0000 UTC"
   },
   {
-   "mmsi": 440245000,
-   "name": "GLOVIS SUMMIT",
-   "lat": 45.64642,
-   "lon": -122.75571,
-   "sog_kn": 0,
-   "cog": 63.4,
-   "heading": 137,
-   "nav_status": 5,
-   "updated": "2026-11-21 16:42:22.984792756 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07244,
-   "lon": -122.89535,
-   "sog_kn": 6,
-   "cog": 110.1,
-   "heading": 138,
-   "nav_status": 0,
-   "updated": "2026-11-21 16:42:24.761760934 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.26588,
-   "lon": -123.45879,
-   "sog_kn": 0,
-   "cog": 39.9,
-   "heading": 34,
-   "nav_status": 3,
-   "updated": "2026-11-21 16:42:24.834864543 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15342,
-   "lon": -123.37713,
-   "type_code": 99,
-   "updated": "2026-11-21 16:42:37.20192125 +0000 UTC"
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.76135,
+   "lon": -122.81933,
+   "type_code": 52,
+   "destination": "",
+   "updated": "2026-11-21 16:47:44.838816022 +0000 UTC"
   }
  ]
 }
