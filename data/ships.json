@@ -1,6 +1,84 @@
 {
- "fetched_at": "2026-11-21T18:22:07Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-21T18:27:07Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 440245000,
+   "name": "GLOVIS SUMMIT",
+   "lat": 45.64642,
+   "lon": -122.75569,
+   "sog_kn": 0.1,
+   "cog": 4.3,
+   "heading": 137,
+   "nav_status": 5,
+   "updated": "2026-11-21 18:27:22.969805767 +0000 UTC"
+  },
+  {
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.65361,
+   "lon": -122.84128,
+   "sog_kn": 5.1,
+   "cog": 125.4,
+   "heading": 118,
+   "nav_status": 0,
+   "updated": "2026-11-21 18:27:23.480209753 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.00898,
+   "lon": -122.84826,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 18:27:35.327514544 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09309,
+   "lon": -122.92359,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 308,
+   "nav_status": 3,
+   "updated": "2026-11-21 18:27:49.756201023 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20001,
+   "lon": -123.38552,
+   "sog_kn": 0.1,
+   "cog": 20.8,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-21 18:27:49.938516819 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.63102,
+   "lon": -122.70753,
+   "sog_kn": 2.2,
+   "cog": 329.3,
+   "heading": 155,
+   "nav_status": 12,
+   "updated": "2026-11-21 18:27:50.008172296 +0000 UTC"
+  },
+  {
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.11012,
+   "lon": -122.96335,
+   "sog_kn": 0,
+   "cog": 236.2,
+   "heading": 131,
+   "nav_status": 5,
+   "updated": "2026-11-21 18:27:50.707248602 +0000 UTC"
+  }
+ ]
 }
