@@ -1,27 +1,38 @@
 {
- "fetched_at": "2026-11-21T16:52:03Z",
+ "fetched_at": "2026-11-21T16:57:03Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 46.03502,
-   "lon": -122.87791,
-   "sog_kn": 8.4,
-   "cog": 349.8,
-   "heading": 352,
-   "nav_status": 0,
-   "updated": "2026-11-21 16:52:29.600971029 +0000 UTC"
+   "mmsi": 563236100,
+   "name": "XH DEEP COVER",
+   "lat": 45.63023,
+   "lon": -122.6956,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-21 16:57:31.366657783 +0000 UTC"
   },
   {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.6479,
-   "lon": -122.741,
-   "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-21 16:52:33.778875865 +0000 UTC"
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58733,
+   "lon": -122.77045,
+   "sog_kn": 0,
+   "cog": 326.4,
+   "heading": 137,
+   "nav_status": 5,
+   "updated": "2026-11-21 16:57:36.547035551 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09309,
+   "lon": -122.92361,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 308,
+   "nav_status": 3,
+   "updated": "2026-11-21 16:57:46.529330749 +0000 UTC"
   }
  ]
 }
