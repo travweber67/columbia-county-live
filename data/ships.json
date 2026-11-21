@@ -1,49 +1,71 @@
 {
- "fetched_at": "2026-11-21T22:17:23Z",
+ "fetched_at": "2026-11-21T22:22:23Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.65872,
-   "lon": -122.76081,
-   "sog_kn": 8,
-   "cog": 178.8,
-   "heading": 178,
-   "nav_status": 0,
-   "updated": "2026-11-21 22:17:47.14132658 +0000 UTC"
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61202,
+   "lon": -122.64534,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-21 22:22:28.73694919 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35744,
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 45.66692,
+   "lon": -122.76702,
    "sog_kn": 0,
-   "cog": 317.1,
-   "heading": 133,
-   "nav_status": 15,
-   "updated": "2026-11-21 22:17:56.444514226 +0000 UTC"
+   "cog": 288.6,
+   "heading": 162,
+   "nav_status": 1,
+   "updated": "2026-11-21 22:22:30.187797614 +0000 UTC"
   },
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 46.10067,
-   "lon": -122.94213,
+   "mmsi": 538012272,
+   "name": "PERSEUS I",
+   "lat": 46.0944,
+   "lon": -122.93716,
+   "sog_kn": 0.1,
+   "cog": 146.6,
+   "heading": 112,
+   "nav_status": 1,
+   "updated": "2026-11-21 22:22:34.119877107 +0000 UTC",
+   "type_code": 70,
+   "destination": "US KAM"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.61152,
+   "lon": -122.63453,
    "sog_kn": 0,
-   "cog": 36.1,
-   "heading": 117,
+   "cog": 174.2,
+   "heading": 2,
    "nav_status": 0,
-   "updated": "2026-11-21 22:17:59.850360693 +0000 UTC"
+   "updated": "2026-11-21 22:22:34.970859817 +0000 UTC"
   },
   {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 46.18607,
-   "lon": -123.12509,
-   "type_code": 0,
-   "destination": "VANCOUVER",
-   "updated": "2026-11-21 22:18:02.192223062 +0000 UTC"
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.6484,
+   "lon": -122.74448,
+   "sog_kn": 0,
+   "cog": 249.7,
+   "heading": 288,
+   "nav_status": 12,
+   "updated": "2026-11-21 22:22:41.282843199 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08966,
+   "lon": -122.92972,
+   "type_code": 66,
+   "destination": "RAINIER",
+   "updated": "2026-11-21 22:22:51.460979841 +0000 UTC"
   }
  ]
 }
