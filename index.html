@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Columbia County Live — Roads, Rivers, Weather &amp; Ferry for Columbia County, Oregon</title>
 <meta name="description" content="One live map for Columbia County, Oregon: US-30 and Lewis & Clark Bridge status, Columbia & Nehalem river levels, weather alerts, earthquakes, wildfires, aircraft and river traffic overhead and under way, the Oscar B ferry, events, and town forecasts. Free, from official public sources.">
 <meta property="og:type" content="website">
@@ -34,7 +34,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <link rel="manifest" href="manifest.webmanifest?v=95">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=95">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=123">
+<link rel="stylesheet" href="style.css?v=160">
 <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=95">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=95">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
@@ -43,7 +43,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <link rel="preload" as="image" href="img/bg/bg-day-6.jpg">
 <link rel="preload" as="image" href="img/bg/bg-dusk-2.jpg">
 </head>
-<body>
+<body class="rd-home">
 
 <!-- v4: full-page county photo background — CALM. One strong static
      photo per view (portfolio pattern: imagery changes only when the
@@ -113,35 +113,53 @@ document.documentElement.setAttribute("data-theme",t);})();
          promise paragraph and the tagline are retired — the drawer menu
          (logo button, top-left) carries every jump now, and the language
          toggle lives in the drawer too. -->
-    <h1 class="hero-title" data-i18n="herotitle">Everything happening in the county, <em>one live look.</em></h1>
+    <h1 class="hero-title" id="hero-title-today" data-i18n="herotitle">Everything happening in the county, <em>one live look.</em></h1>
+    <!-- REDESIGN ITEM 2c (Travis, 2026-11-20): the header card changes
+         with the view. Travel / Outdoors / Events & More swap the Today
+         headline for the section name + a short local tagline over
+         their own photo; the logo button and wordmark up top never
+         change. The finder stays on Today AND Travel; the status spots
+         are Today's only. app.js heroApplyView drives it, with the
+         slide transition: the old card exits left, the new one comes
+         in from the top-right, and the whole view slides with it. -->
+    <div class="hero-view-head" id="hero-view-head" hidden>
+      <p class="hero-view-name" id="hero-view-name">Travel</p>
+      <p class="hero-view-tag" id="hero-view-tag"></p>
+    </div>
+    <!-- REDESIGN ITEM 2 (Travis, 2026-11-20): the "Live view" status
+         row is GONE. In its place, on the photo at the bottom of the
+         card: the finder (moved up from under the founding panel —
+         same input, same results, hint row deleted) and three plain
+         text status SPOTS that are also links: Bridge, Weather,
+         Highway. Plain words, no pills, no icons; a spot turns red
+         when its thing is not clear (app.js setSpot). -->
+    <section class="finder hero-finder" id="finder-card" aria-label="Find anything on this page">
+      <div class="finder-box">
+        <span class="finder-icon" aria-hidden="true"><img src="img/icons/icon-search.png" alt=""></span>
+        <input id="finder-input" type="search" enterkeyhint="go" autocomplete="off" spellcheck="false"
+          placeholder="Find anything — try &ldquo;ferry&rdquo;, &ldquo;high tide&rdquo;, &ldquo;storytime&rdquo;, a town&hellip;"
+          aria-label="Search this page: sections, towns, and events">
+      </div>
+      <div id="finder-results" class="finder-results" hidden></div>
+    </section>
+    <div class="hero-status" aria-label="Live status — tap a word to jump to the details">
+      <a class="hero-spot" id="spot-bridge" href="#roads-card">Bridge —</a>
+      <a class="hero-spot" id="spot-weather" href="#alerts-card">Weather —</a>
+      <a class="hero-spot" id="spot-highway" href="#roads-card">Highway —</a>
+    </div>
   </div>
 </header>
 
 <nav class="tabbar" id="tabbar" aria-label="Page sections">
   <button class="tab-btn active" type="button" data-view-btn="today" aria-pressed="true"><span class="tab-ico" aria-hidden="true"><img src="img/icons/icon-today.png" alt=""></span><span data-i18n="tabtoday">Today</span></button>
+  <button class="tab-btn" type="button" data-view-btn="more" aria-pressed="false"><span class="tab-ico" aria-hidden="true"><img src="img/icons/icon-events.png" alt=""></span><span data-i18n="tabmore">Events &amp; More</span></button>
   <button class="tab-btn" type="button" data-view-btn="travel" aria-pressed="false"><span class="tab-ico" aria-hidden="true"><img src="img/icons/icon-travel.png" alt=""></span><span data-i18n="tabtravel">Travel</span></button>
   <button class="tab-btn" type="button" data-view-btn="outdoors" aria-pressed="false"><span class="tab-ico" aria-hidden="true"><img src="img/icons/icon-outdoors.png" alt=""></span><span data-i18n="taboutdoors">Outdoors</span></button>
-  <button class="tab-btn" type="button" data-view-btn="more" aria-pressed="false"><span class="tab-ico" aria-hidden="true"><img src="img/icons/icon-events.png" alt=""></span><span data-i18n="tabmore">Events &amp; More</span></button>
 </nav>
-
-<div class="sticky-bar" id="sticky-bar">
-  <!-- v4: the green bar no longer repeats the masthead's name — it
-       says what this bar is: the live view, condensed. -->
-  <span class="sticky-brand"><img class="sticky-ico" src="img/icons/icon-logo-courthouse.png" alt="" aria-hidden="true"> Live view</span>
-  <a class="sticky-pill" id="sticky-weather" href="#alerts-card">⚠️ Weather —</a>
-  <a class="sticky-pill" id="sticky-bridge" href="#roads-card">🌉 Bridge —</a>
-  <nav class="sticky-links" aria-label="Jump to a section">
-    <a href="#rivers-card" data-i18n="stickyriver">River</a>
-    <a href="#ferry-card" data-i18n="stickyferry">Ferry</a>
-    <a href="#events-card" data-i18n="stickyevents">Events</a>
-    <a href="#services-card" data-i18n="stickybiz">Businesses</a>
-    <a href="#sky-card" data-i18n="stickysky">Sky</a>
-  </nav>
-</div>
 
 <div id="alert-banner" class="alert-banner" hidden></div>
 
-<div id="offline-note" class="offline-note" data-i18n="offlinenote" hidden>📶 You&rsquo;re offline — this phone is showing the last readings it collected. Their real ages are on the <a href="#freshness-card">freshness board</a> below; confirm with official sources before you travel.</div>
+<div id="offline-note" class="offline-note" data-i18n="offlinenote" hidden>You&rsquo;re offline — this phone is showing the last readings it collected. Their real ages are on the <a href="#freshness-card">freshness board</a> below; confirm with official sources before you travel.</div>
 
 <main class="views">
 
@@ -234,23 +252,41 @@ document.documentElement.setAttribute("data-theme",t);})();
       </article>
       <article class="founding-cell taken" data-pv-cell>
         <img class="founding-ribbon cell-ribbon" src="img/founding-ribbon.png?v=95" alt="Founding Sponsor" title="Founding Sponsor">
-        <div class="otl-logo-box"><img src="img/preview-kneeland-brothers-logo.png" alt="Kneeland Brothers Roofing logo" style="border-radius:0"></div>
+        <div class="otl-logo-box"><img src="img/preview-kneeland-brothers-logo.png" alt="Kneeland Brothers Roofing logo"></div>
         <p class="cell-eyebrow">Founding Sponsor · 2026</p>
-        <h3>Kneeland Brothers LLC</h3>
+        <h3>Kneeland Brothers LLC <span class="dir-badge" data-i18n="dirfounding">Founding business</span></h3>
         <p>Superior workmanship. Integrity. Guaranteed.<br>33459 SW JP West Rd, Scappoose<br><a class="otl-tel" href="tel:+15033196871">(503) 319-6871</a><br>Malarkey Certified Contractor</p>
         <a class="founding-cta" href="https://www.kneelandbrothersllc.com/" target="_blank" rel="noopener">Visit Kneeland Brothers LLC &rarr;</a>
         <button class="otl-more" type="button" data-pv-open aria-haspopup="dialog" aria-controls="pv-sheet" aria-expanded="false">See hours &amp; what&rsquo;s on &rarr;</button>
       </article>
       <article class="founding-cell taken" data-cm-cell>
-        <img class="founding-ribbon cell-ribbon" src="img/founding-ribbon.png?v=98" alt="Founding Sponsor" title="Founding Sponsor">
-        <div class="otl-logo-box"><img src="img/preview-cm-renovations-logo.png" alt="C&amp;M Renovations logo" style="border-radius:0"></div>
+        <img class="founding-ribbon cell-ribbon" src="img/founding-ribbon.png?v=95" alt="Founding Sponsor" title="Founding Sponsor">
+        <div class="otl-logo-box"><img src="img/preview-cm-renovations-logo.png" alt="C&amp;M Renovations logo"></div>
         <p class="cell-eyebrow">Founding Sponsor · 2026</p>
-        <h3>C&amp;M Renovations</h3>
+        <h3>C&amp;M Renovations <span class="dir-badge" data-i18n="dirfounding">Founding business</span></h3>
         <p>Fencing, decking &amp; remodeling<br>34797 Pittsburg Road, St. Helens<br><a class="otl-tel" href="tel:+15033968977">(503) 396-8977</a><br>Licensed, bonded &amp; insured · CCB #241111</p>
         <a class="founding-cta" href="https://cmrenovations.live/" target="_blank" rel="noopener">Visit C&amp;M Renovations &rarr;</a>
         <button class="otl-more" type="button" data-cm-open aria-haspopup="dialog" aria-controls="cm-sheet" aria-expanded="false">See hours &amp; what&rsquo;s on &rarr;</button>
       </article>
     </div>
+  </div>
+</section>
+
+<!-- REDESIGN ITEM 2 (Travis, 2026-11-20): the event-cards scroller —
+     a second, separate scroller under the founding panel (whose first
+     card is Oregon Trail Lanes): newest + special events as picture
+     cards drifting right-to-left, each one linking to its event in
+     the Events view. Cards are built by app.js buildEventScroller()
+     from the same events data; the pills ticker under the header is
+     a different element and stays as it is. -->
+<section class="ev-scroll" id="ev-scroll" aria-label="Happening in the county — newest and special events, scrolling">
+  <div class="ev-scroll-head">
+    <img class="card-ico" src="img/icons/icon-events.png" alt="" aria-hidden="true">
+    <h2 data-i18n="evscrollh2">Happening in the county</h2>
+    <span class="sc-arrows" aria-hidden="false"><button class="sc-arrow" type="button" data-for="ev-scroll-viewport" data-dir="-1" aria-label="Scroll events back">&#8249;</button><button class="sc-arrow" type="button" data-for="ev-scroll-viewport" data-dir="1" aria-label="Scroll events forward">&#8250;</button></span>
+  </div>
+  <div class="ev-scroll-viewport" id="ev-scroll-viewport">
+    <div class="ev-scroll-track" id="ev-scroll-track"><p class="loading">Loading events…</p></div>
   </div>
 </section>
 
@@ -262,49 +298,53 @@ document.documentElement.setAttribute("data-theme",t);})();
      not moves). The zone is hidden while nothing is pinned. -->
 <section class="frontpage" id="frontpage" hidden aria-label="Your pins — live copies of the cards you pinned, below the founding sponsors on Today">
   <div class="frontpage-head">
-    <h2 data-i18n="pinsh2">📌 Your pins</h2>
+    <img class="card-ico" src="img/icons/icon-pin.png" alt="" aria-hidden="true"><h2 data-i18n="pinsh2">Your pins</h2>
     <button class="pin-clear" id="frontpage-clear" type="button" data-i18n="pinsclear">Unpin all</button>
   </div>
   <div class="frontpage-list" id="frontpage-list"></div>
 </section>
 
-<section class="finder" id="finder-card" aria-label="Find anything on this page">
-  <div class="finder-box">
-    <span class="finder-icon" aria-hidden="true">🔎</span>
-    <input id="finder-input" type="search" enterkeyhint="go" autocomplete="off" spellcheck="false"
-      placeholder="Find anything — try &ldquo;ferry&rdquo;, &ldquo;high tide&rdquo;, &ldquo;storytime&rdquo;, a town&hellip;"
-      aria-label="Search this page: sections, towns, and events">
-  </div>
-  <div id="finder-results" class="finder-results" hidden></div>
-  <p class="finder-hint" data-i18n="finderhint">One search across every card on this page, all seven towns, and the events calendars — tap a result and the page takes you straight there.</p>
-</section>
+<!-- REDESIGN ITEM 2: the finder moved up onto the header photo card
+     (same #finder-card / #finder-input / #finder-results ids, up in
+     the hero). Its hint row is deleted outright — the in-bar
+     placeholder is the only hint now. -->
 
 
 <section class="card since-card" id="since-card" hidden aria-label="What changed since your last visit">
   <div class="card-head">
-    <h2 data-i18n="sinceh2">🧭 Since you were away</h2>
+    <img class="card-ico" src="img/icons/icon-compass.png" alt="" aria-hidden="true"><h2 data-i18n="sinceh2">Since you were away</h2>
     <button class="since-dismiss" id="since-dismiss" type="button" aria-label="Dismiss this briefing">✕</button>
   </div>
   <div id="since-body" class="panel-body"><p class="loading">Checking what changed…</p></div>
 </section>
 
-<section class="card home-card" id="home-card" aria-label="Your town">
+<section class="card home-card photo-behind" id="home-card" aria-label="Your town">
+  <!-- REDESIGN ITEM 2: the card carries a real photo of the picked
+       town (app.js homePhotoApply swaps it with the pick; no pick =
+       Beaver Falls, a Columbia County waterfall). -->
+  <div class="card-bgphoto" aria-hidden="true"><img id="home-bg-img" src="img/town-default.jpg" alt=""></div>
   <div class="card-head">
-    <h2 data-i18n="homeh2">📍 Your town</h2>
+    <img class="card-ico" src="img/icons/icon-pin.png" alt="" aria-hidden="true">
+    <h2 data-i18n="homeh2">Your town</h2>
   </div>
   <div id="home-body" class="panel-body"><p class="loading">Loading your town picker…</p></div>
+  <p class="photo-credit" id="home-photo-credit">Beaver Falls, Columbia County — photo by DJ Cane, CC BY-SA 4.0, Wikimedia Commons</p>
 </section>
 
-<section class="card go-card" id="go-card" aria-label="Before you go — a go or no-go check for the drive, the ferry, or the river">
+<section class="card go-card photo-behind" id="go-card" aria-label="Heading out? — a go or no-go check for the drive or the ferry">
+  <!-- REDESIGN ITEM 2: photo background (driving the Lewis & Clark
+       Bridge), explanation blurb and sources footnote removed, card
+       renamed "Heading out?", modes are just Driving / Catching the
+       ferry — the On the river mode is gone. -->
+  <div class="card-bgphoto" aria-hidden="true"><img src="img/card-heading-out.jpg" alt=""></div>
   <div class="card-head">
-    <h2>🛟 Before You Go</h2>
+    <img class="card-ico" src="img/icons/icon-road.png" alt="" aria-hidden="true">
+    <h2 data-i18n="goh2">Heading out?</h2>
     <span class="updated" id="go-updated"></span>
   </div>
-  <p class="card-note">The last look before the keys. Pick the trip, where you're headed, and when you're leaving, and this card runs the page's own live checks — weather alerts, the corridor, the forecast for that hour, the boat math or the tide window, and how much light you'll have — then answers with one verdict. Take the answer with you: copy it, or drop the trip in your calendar.</p>
   <div class="go-trips" id="go-trips" role="group" aria-label="What kind of trip">
-    <button class="go-trip-btn active" type="button" data-go-trip="commute" aria-pressed="true">🚗 The drive</button>
-    <button class="go-trip-btn" type="button" data-go-trip="ferry" aria-pressed="false">⛴️ Catch the ferry</button>
-    <button class="go-trip-btn" type="button" data-go-trip="river" aria-pressed="false">🎣 On the river</button>
+    <button class="go-trip-btn active" type="button" data-go-trip="commute" aria-pressed="true"><img class="btn-ico" src="img/icons/icon-car.png" alt="" aria-hidden="true"><span data-i18n="godrive">Driving</span></button>
+    <button class="go-trip-btn" type="button" data-go-trip="ferry" aria-pressed="false"><img class="btn-ico" src="img/icons/icon-ferry.png" alt="" aria-hidden="true"><span data-i18n="goferry">Catching the ferry</span></button>
   </div>
   <div class="go-whenrow">
     <label class="go-field">Leaving
@@ -344,11 +384,11 @@ document.documentElement.setAttribute("data-theme",t);})();
   </div>
   <div id="go-body" class="go-body"><p class="loading">Running the checks…</p></div>
   <div class="go-actions">
-    <button class="share-btn primary" id="go-copy-btn" type="button">📋 Copy the check</button>
-    <button class="share-btn" id="go-cal-btn" type="button">📅 Add this trip to my calendar</button>
+    <button class="share-btn primary" id="go-copy-btn" type="button"><img class="btn-ico" src="img/icons/icon-clipboard.png" alt="" aria-hidden="true">Copy the check</button>
+    <button class="share-btn" id="go-cal-btn" type="button"><img class="btn-ico" src="img/icons/icon-calendar.png" alt="" aria-hidden="true">Add this trip to my calendar</button>
   </div>
   <p class="install-help" id="go-note" hidden></p>
-  <p class="card-note small">The checks use the same official sources as the rest of this page, at the moment you look. A green verdict is a snapshot, not a promise — weather, the corridor, and the river can all change after you've left.</p>
+  <p class="photo-credit">Driving the Lewis &amp; Clark Bridge — photo by Prashkan90, CC BY-SA 3.0, Wikimedia Commons</p>
 </section>
 
 <!-- v55: the founding panel's County Watch house cell lives here in
@@ -361,34 +401,52 @@ document.documentElement.setAttribute("data-theme",t);})();
   <a class="founding-cta alt" href="#watch-card">Start the County Watch &rarr;</a>
 </article>
 
-<section class="card plan-card" id="plan-card" aria-label="Tonight and tomorrow — the evening planning brief">
-  <div class="card-head">
-    <h2 data-i18n="planh2">🌙 Tonight &amp; tomorrow</h2>
-    <span class="updated" id="plan-updated"></span>
+<!-- REDESIGN ITEM 2b (Travis, 2026-11-20): the Tonight & tomorrow
+     card is REMOVED from Today. In its place: the same scrolling
+     forecast pills that run on the Outdoors view — same component,
+     same data, same look (app.js mirrors #forecast-week into
+     #forecast-week-today). The pills now also live inside the merged
+     Outdoors weather card — the duplication is intentional per
+     Travis's paired directions and is flagged in the build report. -->
+<section class="wx-today-bare" id="today-wx-card" aria-label="Forecast — the week, scrolling pills">
+  <div class="wx-bare-head">
+    <img class="card-ico" src="img/icons/icon-weather.png" alt="" aria-hidden="true"><h2 data-i18n="forecasth2">Forecast</h2>
+    <span class="updated" id="forecast-updated-today"></span>
   </div>
-  <p class="card-note" data-i18n="plannote">The evening check — what to sort out before bed: tonight's weather, tomorrow morning's drive, the first Oscar B sailings, and what's on tomorrow. Assembled from the same official sources as the rest of this page.</p>
-  <div id="plan-body" class="panel-body"><p class="loading">Looking ahead to tonight and tomorrow…</p></div>
+  <p class="wx-place"><img class="inline-ico" src="img/icons/icon-pin.png" alt="" aria-hidden="true"> Columbia County</p>
+  <div id="forecast-week-today" class="forecast-week" aria-label="Seven-day forecast"><p class="loading small">Loading the week…</p></div>
 </section>
 
 <section class="card band-card schools-card" id="schools-card" aria-label="School closures and delays — the Columbia County districts">
-      <div class="card-band" aria-hidden="true"><img src="img/dusk/events-night.jpg" alt="" loading="lazy" decoding="async"></div>
+      <div class="card-band" aria-hidden="true"><img src="img/card-schools.jpg" alt="" loading="lazy" decoding="async"></div>
   <div class="card-head">
     <img class="card-ico" src="img/icons/icon-school.png" alt="" aria-hidden="true"><h2 data-i18n="schoolsh2">Schools — Closures &amp; Delays</h2>
     <span class="updated" id="schools-updated"></span>
   </div>
-  <p class="card-note" data-i18n="schoolsnote">On storm mornings the districts decide early — St. Helens aims to decide by 6:00 AM — and post first on their own sites and apps. This card is a hand-updated storm-day board: in quiet weather it stands by and shows where each district posts; on a storm morning it carries that morning&rsquo;s report for every district, checked against the district&rsquo;s own posting before it goes up here.</p>
+  <!-- REDESIGN ITEM 2d (Travis, 2026-11-20): the long explanation is
+       summarized to ONE line; the full text lives under a See more
+       expander. The district list is a chart on its own solid surface
+       inside the card — district name, status underneath it, and the
+       colors talk: no report yet = bright green, late start = yellow,
+       closed = bright red. Data wiring unchanged. -->
+  <p class="card-note" data-i18n="schoolsnote1">Storm mornings, the districts decide early and post on their own sites first — this board mirrors their call for every district in the county.</p>
+  <details class="see-more schools-more">
+    <summary data-i18n="seemore">See more</summary>
+    <p class="card-note" data-i18n="schoolsnote">On storm mornings the districts decide early — St. Helens aims to decide by 6:00 AM — and post first on their own sites and apps. This card is a hand-updated storm-day board: in quiet weather it stands by and shows where each district posts; on a storm morning it carries that morning&rsquo;s report for every district, checked against the district&rsquo;s own posting before it goes up here.</p>
+    <p class="card-note small" data-i18n="schoolsnote2">No automated closure feed exists for these districts, so this board is updated by hand on storm mornings — and a district&rsquo;s own site is always the final word for your family.</p>
+  </details>
   <div id="schools-body" class="panel-body">
-    <p class="schools-dormant">✅ No closure or delay report is posted for today — this board is standing by for the next storm morning. Regular school days need no report.</p>
+    <p class="schools-dormant">No closure or delay report is posted for today — this board is standing by for the next storm morning. Regular school days need no report.</p>
     <ul class="schools-list">
-      <li class="school-row"><span class="school-main"><span class="school-name">St. Helens School District</span></span><span class="school-pill school-none">No report yet</span><a class="school-link" href="https://www.sthelens.k12.or.us/parent-info/school-closure-information" target="_blank" rel="noopener">Closure info →</a></li>
-      <li class="school-row"><span class="school-main"><span class="school-name">Scappoose School District</span></span><span class="school-pill school-none">No report yet</span><a class="school-link" href="https://www.scappoosek12.org/" target="_blank" rel="noopener">District site →</a></li>
-      <li class="school-row"><span class="school-main"><span class="school-name">Rainier School District</span></span><span class="school-pill school-none">No report yet</span><a class="school-link" href="https://www.rainier.k12.or.us/" target="_blank" rel="noopener">District site →</a></li>
-      <li class="school-row"><span class="school-main"><span class="school-name">Clatskanie School District</span></span><span class="school-pill school-none">No report yet</span><a class="school-link" href="https://www.csd.k12.or.us/" target="_blank" rel="noopener">District site →</a></li>
-      <li class="school-row"><span class="school-main"><span class="school-name">Vernonia School District</span></span><span class="school-pill school-none">No report yet</span><a class="school-link" href="https://www.vernoniak12.org/" target="_blank" rel="noopener">District site →</a></li>
-      <li class="school-row"><span class="school-main"><span class="school-name">Northwest Regional ESD (NWRESD)</span><span class="school-sub">Regional programs follow NWRESD&rsquo;s own notices</span></span><span class="school-pill school-none">No report yet</span><a class="school-link" href="https://www.nwresd.org/" target="_blank" rel="noopener">NWRESD site →</a></li>
+      <li class="school-row"><span class="school-main"><span class="school-name">St. Helens School District</span><span class="school-status school-none"><span class="school-dot" aria-hidden="true"></span>No report yet</span></span><a class="school-link" href="https://www.sthelens.k12.or.us/parent-info/school-closure-information" target="_blank" rel="noopener">Closure info →</a></li>
+      <li class="school-row"><span class="school-main"><span class="school-name">Scappoose School District</span><span class="school-status school-none"><span class="school-dot" aria-hidden="true"></span>No report yet</span></span><a class="school-link" href="https://www.scappoosek12.org/" target="_blank" rel="noopener">District site →</a></li>
+      <li class="school-row"><span class="school-main"><span class="school-name">Rainier School District</span><span class="school-status school-none"><span class="school-dot" aria-hidden="true"></span>No report yet</span></span><a class="school-link" href="https://www.rainier.k12.or.us/" target="_blank" rel="noopener">District site →</a></li>
+      <li class="school-row"><span class="school-main"><span class="school-name">Clatskanie School District</span><span class="school-status school-none"><span class="school-dot" aria-hidden="true"></span>No report yet</span></span><a class="school-link" href="https://www.csd.k12.or.us/" target="_blank" rel="noopener">District site →</a></li>
+      <li class="school-row"><span class="school-main"><span class="school-name">Vernonia School District</span><span class="school-status school-none"><span class="school-dot" aria-hidden="true"></span>No report yet</span></span><a class="school-link" href="https://www.vernoniak12.org/" target="_blank" rel="noopener">District site →</a></li>
+      <li class="school-row"><span class="school-main"><span class="school-name">Northwest Regional ESD (NWRESD)</span><span class="school-sub">Regional programs follow NWRESD&rsquo;s own notices</span><span class="school-status school-none"><span class="school-dot" aria-hidden="true"></span>No report yet</span></span><a class="school-link" href="https://www.nwresd.org/" target="_blank" rel="noopener">NWRESD site →</a></li>
     </ul>
   </div>
-  <p class="card-note small" data-i18n="schoolsnote2">No automated closure feed exists for these districts, so this board is updated by hand on storm mornings — and a district&rsquo;s own site is always the final word for your family.</p>
+  <p class="photo-credit">A school bus on a snowy road — photo by Coastline09, CC BY-SA 4.0, via Wikimedia Commons</p>
 </section>
 
 <!-- v55: the founding panel's nonprofit house cell lives here in
@@ -401,46 +459,80 @@ document.documentElement.setAttribute("data-theme",t);})();
   <a class="founding-cta alt" href="sponsor.html#community">How community notices work &rarr;</a>
 </article>
 
+<!-- REDESIGN ITEM 2k, BUILT (Travis, 2026-11-20): the NEWS scroller,
+     in Travis's placement for this stretch of Today: Community
+     Notice (above) → this sliding news feed → the County Briefing
+     (below) → the final sponsor card. Same side-sliding picture-card
+     pattern as the events scroller, but every card is a real local
+     news story from data/news.json — built by fetch_news.py from the
+     Oregon Civic Newsstand's Columbia County view, politics and
+     heavy news filtered out at the source, every story carrying its
+     own photo — and each card links OUT to the publisher's story.
+     Cards are built by buildNewsScroller() in app.js; the section
+     hides itself when the snapshot is missing or empty. -->
+<section class="news-scroll" id="news-scroll" aria-label="Good news around the county — local stories, scrolling" hidden>
+  <div class="news-scroll-head">
+    <img class="card-ico" src="img/icons/icon-news.png" alt="" aria-hidden="true">
+    <h2 data-i18n="newsscrollh2">Good news around the county</h2>
+  <span class="sc-arrows"><button class="sc-arrow" type="button" data-for="news-scroll-viewport" data-dir="-1" aria-label="Scroll news back">&#8249;</button><button class="sc-arrow" type="button" data-for="news-scroll-viewport" data-dir="1" aria-label="Scroll news forward">&#8250;</button></span>
+  </div>
+  <div class="news-scroll-viewport" id="news-scroll-viewport">
+    <div class="news-scroll-track" id="news-scroll-track"><p class="loading">Loading the good news…</p></div>
+  </div>
+  <!-- REDESIGN ITEM 4k(6) (Travis, 2026-11-20 23:02): the way into
+       the News view — a small row under the scroller (the Events
+       entry card is gone). Opens the story list, returns to Today. -->
+  <button class="nws-seeall" id="news-see-all" type="button">See all the news <span aria-hidden="true">&rarr;</span></button>
+</section>
+
 <section class="card band-card briefing-card" id="briefing-card" aria-label="The county briefing — today's summary, ready to copy and share">
       <div class="card-band" aria-hidden="true"><img src="img/dusk/ticker-panorama.jpg" alt="" loading="lazy" decoding="async"></div>
   <div class="card-head">
-    <h2 data-i18n="briefh2">📋 The County Briefing</h2>
+    <img class="card-ico" src="img/icons/icon-clipboard.png" alt="" aria-hidden="true"><h2 data-i18n="briefh2">The County Briefing</h2>
     <span class="updated" id="briefing-updated"></span>
   </div>
-  <p class="card-note" data-i18n="briefnote">Today's answers in one place — assembled from the live panels on this page and stamped with the time it was put together. Copy it as a note for a family text, the neighborhood group, anywhere the county gathers. Driving? Tap <strong>🔊 Hear the briefing</strong> and your phone reads it aloud instead — weather alerts first.</p>
+  <!-- REDESIGN ITEM 2i (Travis, 2026-11-20): the briefing explainer
+       paragraph is deleted — people know what a briefing is. The
+       briefing content itself is unchanged. -->
   <div class="briefing-view" id="briefing-view"><p class="briefing-loading">Putting today's briefing together…</p></div>
   <div class="briefing-actions">
-    <button class="share-btn primary" id="briefing-copy-btn" type="button" data-i18n="briefcopy">📋 Copy the briefing</button>
-    <button class="share-btn" id="briefing-share-btn" type="button" hidden data-i18n="briefshare">📤 Share as text</button>
-    <button class="share-btn" id="briefing-listen-btn" type="button" hidden data-i18n="brieflisten">🔊 Hear the briefing</button>
+    <button class="share-btn" id="briefing-listen-btn" type="button" hidden ><img class="btn-ico" src="img/icons/icon-speaker.png" alt="" aria-hidden="true"><span data-i18n="brieflisten">Hear the briefing</span></button>
   </div>
   <p class="install-help" id="briefing-note" hidden></p>
 </section>
 
-<!-- v40: end-of-Today signpost. The briefing is the LAST card on Today;
-     a visitor who scrolled to it (Lety, via the 4C's group) had hit a
-     dead end and never found the ferry. This points onward, in words,
-     at the exact spot she got stuck. -->
-<div class="today-signpost" id="today-signpost">
-  <p class="signpost-line" data-i18n="signpostline">That's everything for Today — the rest of the county is one tap away:</p>
-  <div class="signpost-chips">
-    <button class="signpost-chip" type="button" data-signpost-view="travel" data-i18n="signposttravel">🚢 Ferry &amp; roads in Travel</button>
-    <button class="signpost-chip" type="button" data-signpost-view="outdoors" data-i18n="signpostoutdoors">🎣 Outdoors</button>
-    <button class="signpost-chip" type="button" data-signpost-view="more" data-i18n="signpostmore">📅 Events &amp; More</button>
+<!-- REDESIGN ITEM 2j (Travis, 2026-11-20): the end-of-Today signpost
+     pill row (Ferry & roads / Outdoors / Events & More) is REMOVED —
+     redundant with the tab bar and the in-page links. The briefing
+     card is the last card on Today again. (The signpost click wiring
+     in app.js simply finds no buttons now.) -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+<section class="view" id="view-news" data-view="news" aria-label="Local news" hidden>
+
+<div class="card" id="news-card">
+  <button class="news-back" id="news-view-back" type="button" data-i18n="newsbackview">&#8249; Back</button>
+  <div class="card-head">
+    <img class="card-ico" src="img/icons/icon-news.png" alt="" aria-hidden="true"><h2 data-i18n="newsh2">Good news around the county</h2>
+    <span class="updated" id="news-updated"></span>
   </div>
+  <p class="card-note" data-i18n="newsnote">Local stories from the county&rsquo;s own newsrooms, gathered by the Oregon Civic Newsstand. Tap a story to read it here.</p>
+  <div id="news-list" class="news-list"><p class="loading">Loading the news…</p></div>
+  <div id="news-story" class="news-story" hidden></div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 </section>
 
@@ -449,10 +541,10 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card map-card" id="map-card">
       <div class="map-toolbar" id="map-toolbar">
-        <button class="map-tool-btn" id="map-near-btn" type="button" data-i18n="mapnear">📍 Near me</button>
+        <button class="map-tool-btn" id="map-near-btn" type="button" ><img class="btn-ico" src="img/icons/icon-pin.png" alt="" aria-hidden="true"><span data-i18n="mapnear">Near me</span></button>
         <span class="map-towns" id="map-towns" aria-label="Fly the map to a town"></span>
-        <button class="map-tool-btn" id="map-full-btn" type="button" data-i18n="mapfull">⛶ Full screen</button>
-        <button class="map-tool-btn" id="offline-map-btn" type="button"><span id="offline-map-btn-label">⬇ Offline map</span></button>
+        <button class="map-tool-btn" id="map-full-btn" type="button" ><img class="btn-ico" src="img/icons/icon-expand.png" alt="" aria-hidden="true"><span data-i18n="mapfull">Full screen</span></button>
+        <button class="map-tool-btn" id="offline-map-btn" type="button"><img class="btn-ico" src="img/icons/icon-download.png" alt="" aria-hidden="true"><span id="offline-map-btn-label">Offline map</span></button>
       </div>
       <div id="map" role="application" aria-label="Map of Columbia County, Oregon"></div>
       <div class="map-legend">
@@ -470,7 +562,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card" id="map-report-card">
       <div class="card-head">
-        <h2 data-i18n="mapreporth2">🗺️ Report a map problem</h2>
+        <img class="card-ico" src="img/icons/icon-map.png" alt="" aria-hidden="true"><h2 data-i18n="mapreporth2">Report a map problem</h2>
       </div>
       <p class="card-note" data-i18n="mapreportp">The roads and lines on this map come from OpenStreetMap and county records, and some of it is wrong. If a road shows on your land that should not be there, a name is spelled wrong, or a road is missing or does not exist, tell us where and what is wrong. We will check it against the county records and get it corrected at the source.</p>
       <p class="card-note small" data-i18n="mapreportfields">Say where it is (nearest road or town), what is wrong, and what it should be. Your name and a way to reach you are optional, they just help us follow up.</p>
@@ -480,7 +572,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card" id="drive-card">
       <div class="card-head">
-        <h2 data-i18n="driveh2">🧭 Your Commute — how long's the drive?</h2>
+        <img class="card-ico" src="img/icons/icon-compass.png" alt="" aria-hidden="true"><h2 data-i18n="driveh2">Your Commute — how long's the drive?</h2>
       </div>
       <div class="drive-controls">
         <div class="drive-row">
@@ -508,7 +600,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card" id="ferry-mini-card">
       <div class="card-head">
-        <h2 data-i18n="ferryminih2">⛴️ Oscar B Ferry — At a Glance</h2>
+        <img class="card-ico" src="img/icons/icon-ferry.png" alt="" aria-hidden="true"><h2 data-i18n="ferryminih2">Oscar B Ferry — At a Glance</h2>
       </div>
       <div id="ferry-mini-body" class="ferry-mini"><p class="loading">Working out where the boat is…</p></div>
       <p class="card-note small" data-i18n="ferryminnote">Where the boat is comes from its printed timetable: the crossing takes about 12 minutes and the ferry has no live tracker.</p>
@@ -517,13 +609,13 @@ document.documentElement.setAttribute("data-theme",t);})();
     <div class="card photo-card" id="ferry-card">
       <div class="card-photo photo-ferry"><img src="img/card-ferry.jpg" alt="The Oscar B ferry crossing the Columbia River, leaving Puget Island" loading="lazy" decoding="async"><img class="photo-night" src="img/dusk/ferry-night.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
       <div class="card-head">
-        <h2 data-i18n="ferryh2">⛴️ Oscar B Ferry — Westport, OR ↔ Cathlamet, WA</h2>
+        <img class="card-ico" src="img/icons/icon-ferry.png" alt="" aria-hidden="true"><h2 data-i18n="ferryh2">Oscar B Ferry — Westport, OR ↔ Cathlamet, WA</h2>
         <span class="updated" id="ferry-updated"></span>
       </div>
       <div id="ferry-alert-body" class="panel-body"><p class="loading">Checking the county page for ferry closure alerts…</p></div>
       <div id="ferry-next" class="ferry-next"><p class="loading">Working out the next sailing…</p></div>
       <div class="ferry-plan" id="ferry-plan">
-        <h3 class="subhead" data-i18n="ferryplanh3">🧭 Catch the boat — when do you need to leave?</h3>
+        <img class="inline-ico" src="img/icons/icon-compass.png" alt="" aria-hidden="true"><h3 class="subhead" data-i18n="ferryplanh3">Catch the boat — when do you need to leave?</h3>
         <div class="fp-dirs" role="group" aria-label="Which way are you crossing">
           <button class="fp-dir-btn active" type="button" data-fp-dir="or" aria-pressed="true" data-i18n="fpdiror">Heading to Washington</button>
           <button class="fp-dir-btn" type="button" data-fp-dir="wa" aria-pressed="false" data-i18n="fpdirwa">Coming back to Oregon</button>
@@ -554,7 +646,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <div class="card photo-card" id="roads-card">
       <div class="card-photo photo-pano"><img src="img/card-bridge-pano.jpg" alt="Panorama of the Lewis and Clark Bridge spanning the Columbia River between Rainier and Longview" loading="lazy" decoding="async"><img class="photo-night" src="img/dusk/roads-night.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
       <div class="card-head">
-        <h2 data-i18n="roadsh2">🚗 US-30, the Bridge &amp; Roads</h2>
+        <img class="card-ico" src="img/icons/icon-car.png" alt="" aria-hidden="true"><h2 data-i18n="roadsh2">US-30, the Bridge &amp; Roads</h2>
         <span class="updated" id="roads-updated"></span>
       </div>
       <div id="bridge-body" class="panel-body"><p class="loading">Loading Lewis &amp; Clark Bridge status…</p></div>
@@ -562,9 +654,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     </div>
     <div class="card" id="cameras-card">
       <div class="card-head">
-        <h2>📷 Road cameras</h2>
+        <img class="card-ico" src="img/icons/icon-camera.png" alt="" aria-hidden="true"><h2>Road cameras</h2>
       </div>
-      <h3 class="subhead" data-i18n="myrouteh3">📷 My Route — your commute cameras, in driving order</h3>
+      <img class="inline-ico" src="img/icons/icon-camera.png" alt="" aria-hidden="true"><h3 class="subhead" data-i18n="myrouteh3">My Route — your commute cameras, in driving order</h3>
       <div id="myroute-body" class="panel-body"><p class="loading">Loading route cameras…</p></div>
       <h3 class="subhead" data-i18n="camerash3">Road cameras</h3>
       <div id="cameras-body" class="panel-body"><p class="loading">Loading camera list…</p></div>
@@ -602,7 +694,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card" id="routeahead-card">
       <div class="card-head">
-        <h2 data-i18n="routeaheadh2">🧭 Route Ahead — the Corridor Forecast</h2>
+        <img class="card-ico" src="img/icons/icon-compass.png" alt="" aria-hidden="true"><h2 data-i18n="routeaheadh2">Route Ahead — the Corridor Forecast</h2>
       </div>
       <p class="card-note" data-i18n="routeaheadnote">The next stretch of hours on the US-30 corridor, town by town — so ice, fog, or snow on the drive shows up here before it shows up on the windshield. Hourly from the National Weather Service.</p>
       <div id="routeahead-body" class="panel-body"><p class="loading">Loading the corridor forecast…</p></div>
@@ -611,7 +703,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <div class="card photo-card" id="ships-card">
       <div class="card-photo"><img src="img/card-ship.jpg" alt="A car carrier ship passing under the Lewis and Clark Bridge on the Columbia River" loading="lazy" decoding="async"><img class="photo-night" src="img/dusk/ships-night.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
       <div class="card-head">
-        <h2 data-i18n="shipsh2">🚢 Columbia River Traffic</h2>
+        <img class="card-ico" src="img/icons/icon-ship.png" alt="" aria-hidden="true"><h2 data-i18n="shipsh2">Columbia River Traffic</h2>
         <span class="updated" id="ships-updated"></span>
       </div>
       <div id="ships-body" class="panel-body"><p class="loading">Loading river traffic…</p></div>
@@ -630,7 +722,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card" id="aircraft-card">
       <div class="card-head">
-        <h2 data-i18n="aircrafth2">✈️ Aircraft Overhead</h2>
+        <img class="card-ico" src="img/icons/icon-plane.png" alt="" aria-hidden="true"><h2 data-i18n="aircrafth2">Aircraft Overhead</h2>
         <span class="updated" id="sky-updated"></span>
       </div>
       <div class="sky-filters" id="sky-filters" role="group" aria-label="Filter aircraft">
@@ -645,7 +737,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <div class="card photo-card" id="mthood-card">
       <div class="card-photo photo-summit"><img src="img/dusk/band-mthood.jpg" alt="Mt. Hood, seen from Trillium Lake near Government Camp" loading="lazy" decoding="async"></div>
       <div class="card-head">
-        <h2 data-i18n="mthoodh2">🏔️ Mt. Hood — US-26 Cameras</h2>
+        <img class="card-ico" src="img/icons/icon-mountain.png" alt="" aria-hidden="true"><h2 data-i18n="mthoodh2">Mt. Hood — US-26 Cameras</h2>
         <span class="updated" id="mthood-updated"></span>
       </div>
       <p class="card-note" data-i18n="mthoodnote">Outside the county, kept because the drive starts here: the two US-26 cameras that show what the mountain is doing — Government Camp (MP 54) and Blue Box Pass (MP 64), the high stretch on the way to Bend. Live stills from ODOT TripCheck, refreshed every 10 minutes.</p>
@@ -667,31 +759,44 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="view" id="view-outdoors" data-view="outdoors" aria-label="Outdoors — weather, rivers and sky" hidden>
 
+    <!-- REDESIGN ITEM 2: forecast and weather alerts are ONE card now.
+         The alerts card is the single outer card; the 7-day forecast
+         block and the day & night forecast live inside it as sections,
+         keeping their own ids (pins, anchors and app.js wiring are
+         unchanged). -->
     <div class="card band-card" id="alerts-card">
       <div class="card-band" aria-hidden="true"><img src="img/dusk/band-sky.jpg" alt="" loading="lazy" decoding="async"></div>
       <div class="card-head">
-        <h2 data-i18n="alertsh2">⚠️ Weather Alerts</h2>
+        <img class="card-ico" src="img/icons/icon-alert.png" alt="" aria-hidden="true">
+        <h2 data-i18n="alertsh2">Weather Alerts</h2>
         <span class="updated" id="alerts-updated"></span>
       </div>
       <div id="alerts-body" class="panel-body"><p class="loading">Loading alerts from the National Weather Service…</p></div>
       <a class="text-link" href="https://www.weather.gov/pqr/" target="_blank" rel="noopener" data-i18n="alertslink">National Weather Service — Portland office →</a>
     </div>
 
-    <!-- v71: the 7-day pills float on their own above the card;
-         one county-wide forecast, no town picker -->
-    <div class="forecast-top" id="forecast-week-card">
-      <div class="card-head forecast-head">
-        <h2 data-i18n="forecasth2">🌦️ Forecast</h2>
+    <!-- REDESIGN ITEM 4o (Travis, 2026-11-20 23:17): the merged
+         Outdoors weather card is UN-MERGED into three pieces —
+         (1) Weather Alerts in their own card (above, #alerts-card),
+         (2) the forecast pills floating BARE here, exactly like
+         Today (pills float in BOTH views — the settled rule), and
+         (3) the day/night forecast detail in its own card (below).
+         All inner ids are unchanged, so the renderers never noticed. -->
+    <section class="wx-today-bare" id="forecast-week-card" aria-label="Forecast — the week, scrolling pills">
+      <div class="wx-bare-head">
+        <img class="card-ico" src="img/icons/icon-weather.png" alt="" aria-hidden="true"><h2 data-i18n="forecasth2">Forecast</h2>
         <span class="updated" id="forecast-updated"></span>
       </div>
-      <p class="wx-place">📍 Columbia County</p>
+      <p class="wx-place"><img class="inline-ico" src="img/icons/icon-pin.png" alt="" aria-hidden="true"> Columbia County</p>
       <div id="forecast-week" class="forecast-week" aria-label="Seven-day forecast"><p class="loading small">Loading the week…</p></div>
       <div class="strip-tools" id="forecast-week-tools"></div>
-    </div>
+    </section>
 
-    <div class="card band-card" id="forecast-card">
-      <div class="card-band" aria-hidden="true"><img src="img/dusk/band-mountain.jpg" alt="" loading="lazy" decoding="async"></div>
-      <div class="card-head"><h2>🌦️ Forecast — day &amp; night</h2></div>
+    <div class="card" id="forecast-card">
+      <div class="card-head">
+        <img class="card-ico" src="img/icons/icon-night.png" alt="" aria-hidden="true">
+        <h3 class="wx-subhead">Forecast — day &amp; night</h3>
+      </div>
       <div id="forecast-body" class="panel-body"><p class="loading">Loading forecast…</p></div>
     </div>
 
@@ -717,7 +822,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card" id="dark-card">
       <div class="card-head">
-        <h2>🌌 After Dark — Tonight&rsquo;s Sky</h2>
+        <img class="card-ico" src="img/icons/icon-night.png" alt="" aria-hidden="true"><h2>After Dark — Tonight&rsquo;s Sky</h2>
         <span class="updated" id="dark-updated"></span>
       </div>
       <p class="card-note">Everything above is the sky <em>right now</em>. This card answers the evening question — <em>is tonight worth going out to look up?</em> Clouds, moonlight, the space station, the northern lights and the meteor showers, weighed together for your home town (or St. Helens if you haven&rsquo;t picked one).</p>
@@ -728,7 +833,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <div class="card photo-card" id="rivers-card">
       <div class="card-photo photo-dock"><img src="img/card-dock.jpg" alt="A dock on the Columbia River at Rainier, Oregon, under a stormy sky, with a ship and the Lewis and Clark Bridge in the distance" loading="lazy" decoding="async"><img class="photo-night" src="img/dusk/rivers-night.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
       <div class="card-head">
-        <h2 data-i18n="riversh2">🌊 River Levels</h2>
+        <img class="card-ico" src="img/icons/icon-river.png" alt="" aria-hidden="true"><h2 data-i18n="riversh2">River Levels</h2>
         <span class="updated" id="rivers-updated"></span>
       </div>
       <div id="rivers-body" class="panel-body"><p class="loading">Loading USGS gauge readings…</p></div>
@@ -737,7 +842,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card" id="tides-card">
       <div class="card-head">
-        <h2 data-i18n="tidesh2">🌊 River Tides</h2>
+        <img class="card-ico" src="img/icons/icon-river.png" alt="" aria-hidden="true"><h2 data-i18n="tidesh2">River Tides</h2>
         <span class="updated" id="tides-updated"></span>
       </div>
       <p class="card-note" data-i18n="tidesnote">The Columbia is a tidal river the whole way past St. Helens — the ocean reaches up the channel twice a day. For the boat ramp, the dock, the river beach, or a fishing hour, here is the next turn of the tide at the county's two NOAA stations.</p>
@@ -769,7 +874,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <div class="card band-card" id="tracker-card">
       <div class="card-band" aria-hidden="true"><img src="img/dusk/band-river.jpg" alt="" loading="lazy" decoding="async"></div>
       <div class="card-head">
-        <h2 data-i18n="trackerh2">🎣 Salmon Tracker</h2>
+        <img class="card-ico" src="img/icons/icon-fish.png" alt="" aria-hidden="true"><h2 data-i18n="trackerh2">Salmon Tracker</h2>
         <span class="updated" id="tracker-updated"></span>
       </div>
       <div id="tracker-body" class="panel-body"><p class="loading">Plotting the runs…</p></div>
@@ -783,7 +888,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card band-card" id="steelhead-card">
       <div class="card-band" aria-hidden="true"><img src="img/dusk/band-river.jpg" alt="" loading="lazy" decoding="async"></div>
-      <div class="card-head"><h2 data-i18n="steelh2">🎣 Steelhead — the Small Rivers</h2><span class="updated" id="steelhead-updated"></span></div>
+      <div class="card-head"><img class="card-ico" src="img/icons/icon-fish.png" alt="" aria-hidden="true"><h2 data-i18n="steelh2">Steelhead — the Small Rivers</h2><span class="updated" id="steelhead-updated"></span></div>
       <p class="small" data-i18n="steelnote">Is today a good day to fish for steelhead? No counts exist for these creeks mid-season — the hatchery traps are counted, but the numbers are published after the fact — so this judges the day, not the fish: run timing, flow, water clarity, cold and weather. Tap a river for the full breakdown.</p>
       <p class="sh-target" id="steelhead-target"></p>
       <div id="steelhead-rows"><p class="small">Checking the creeks…</p></div>
@@ -802,7 +907,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     </article>
     <section class="card almanac-card" id="almanac-card" aria-label="The county almanac — today's daylight and the moon">
   <div class="card-head">
-    <h2 data-i18n="almanach2">🌅 The County Almanac</h2>
+    <img class="card-ico" src="img/icons/icon-sunrise.png" alt="" aria-hidden="true"><h2 data-i18n="almanach2">The County Almanac</h2>
     <span class="updated" id="almanac-updated"></span>
   </div>
   <div id="almanac-body" class="panel-body"><p class="loading">Working out today's light…</p></div>
@@ -811,7 +916,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card" id="quakes-card">
       <div class="card-head">
-        <h2 data-i18n="quakesh2">🫨 Earthquakes — last 30 days</h2>
+        <img class="card-ico" src="img/icons/icon-quake.png" alt="" aria-hidden="true"><h2 data-i18n="quakesh2">Earthquakes — last 30 days</h2>
         <span class="updated" id="quakes-updated"></span>
       </div>
       <div id="quakes-body" class="panel-body"><p class="loading">Loading USGS earthquake data…</p></div>
@@ -819,7 +924,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card" id="fires-card">
       <div class="card-head">
-        <h2 data-i18n="firesh2">🔥 Wildfires</h2>
+        <img class="card-ico" src="img/icons/icon-fire.png" alt="" aria-hidden="true"><h2 data-i18n="firesh2">Wildfires</h2>
         <span class="updated" id="fires-updated"></span>
       </div>
       <div id="fires-body" class="panel-body"><p class="loading">Loading interagency wildfire data (NIFC WFIGS)…</p></div>
@@ -828,7 +933,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card" id="air-card">
       <div class="card-head">
-        <h2 data-i18n="airh2">🌫️ Air &amp; Smoke</h2>
+        <img class="card-ico" src="img/icons/icon-air.png" alt="" aria-hidden="true"><h2 data-i18n="airh2">Air &amp; Smoke</h2>
         <span class="updated" id="air-updated"></span>
       </div>
       <p class="card-note" data-i18n="airnote">The other invisible thing over the county — what&rsquo;s in the air you&rsquo;re breathing. Wood-stove smoke on still winter nights, wildfire smoke in summer. Here&rsquo;s the Air Quality Index for the town on the Forecast card above, and where the model says it goes from here.</p>
@@ -870,6 +975,31 @@ document.documentElement.setAttribute("data-theme",t);})();
   </aside>
 </div>
 
+<a class="add-event-card" id="add-event-card" href="https://forms.gle/dWzcBcnf79Qq5XQQA" target="_blank" rel="noopener" aria-label="Add an event — it's free">
+    <img class="card-ico" src="img/icons/icon-calendar.png" alt="" aria-hidden="true">
+    <span class="aec-main"><strong data-i18n="addeventh">Add an event — it&rsquo;s free</strong><span class="aec-sub" data-i18n="addeventsub">Run a local business or group? Put it on the county calendar.</span></span>
+    <span class="aec-arrow" aria-hidden="true">&rarr;</span>
+  </a>
+
+<!-- REDESIGN ITEM 4k(4) (Travis, 2026-11-20 23:02): the Events & More
+     Section Sponsor spot 1 MOVED up to here, directly under the
+     Add-an-event card, and restyled on the Keep It Local demo's
+     addstrip — a ribbon on one side, the pitch in the middle, the
+     claim button on the other side. Inventory of record:
+     SECTION_SPONSORS in app.js (more, spot 1). -->
+<article class="sponsor-strip section-sponsor" data-section-sponsor="more" data-spot="1" aria-label="Section sponsor spot — Events and More, spot 1 of 4, open">
+  <span class="ss-ribbon">First 30 days free</span>
+  <div class="ss-main">
+    <h3 data-i18n="fs3h3">Your business here</h3>
+    <p data-i18n="ssmb">One of only four Section Sponsor spots in Events &amp; More — your name and logo woven between the events, the directory and the weekend everyone checks before they make plans. $29/mo, month to month, cancel anytime.</p>
+  </div>
+  <a class="founding-cta ss-btn" href="sponsor.html#section" data-i18n="sscta">Claim this spot &rarr;</a>
+</article>
+
+<!-- REDESIGN ITEM 4k(5) (Travis, 2026-11-20 23:02): the Local news
+     entry card that stood here is REMOVED — the News view is now
+     entered from Today's "See all the news" row (item 4k(6)). -->
+
 <div class="card photo-card" id="events-card">
       <div class="card-photo photo-courthouse"><img src="img/card-courthouse.jpg" alt="The historic Columbia County Courthouse in St. Helens, Oregon" loading="lazy" decoding="async"><img class="photo-night" src="img/dusk/events-night.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
       <div class="card-head">
@@ -905,16 +1035,11 @@ document.documentElement.setAttribute("data-theme",t);})();
     </article>
   </div>
 </section>
-<!-- v95: Section Sponsor (Slot B) — Events &amp; More spot 1 of 4, open.
-     Inventory of record: SECTION_SPONSORS in app.js. A sale swaps this
-     invite article for a taken cell, founding-panel style. -->
-<article class="founding-cell invite in-flow section-sponsor" data-section-sponsor="more" data-spot="1" aria-label="Section sponsor spot — Events &amp; More, spot 1 of 4, open">
-  <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
-  <p class="cell-eyebrow" data-i18n="ssm1">Section Sponsor &middot; Events &amp; More &middot; Spot 1 of 4 &mdash; Open</p>
-  <h3 data-i18n="fs3h3">Your business here</h3>
-  <p data-i18n="ssmb">One of only four Section Sponsor spots in Events &amp; More &mdash; your name and logo woven between the events, the directory and the weekend everyone checks before they make plans. $29/mo, month to month, cancel anytime.</p>
-  <a class="founding-cta" href="sponsor.html#section" data-i18n="sscta">Claim this spot &rarr;</a>
-</article>
+<!-- v95: Section Sponsor (Slot B) — Events & More spot 1 of 4.
+     REDESIGN ITEM 4k(4): this spot's invite MOVED up under the
+     Add-an-event card as the KIL-style sponsor strip (same
+     data-section-sponsor / data-spot attributes; inventory of
+     record: SECTION_SPONSORS in app.js). -->
 
 <!-- Micro-business directory (business plan §6 Phase 2 addendum,
      2026-11-05): the tier BELOW sponsors and featured — plain list
@@ -951,12 +1076,12 @@ document.documentElement.setAttribute("data-theme",t);})();
     <button class="dir-chip" type="button" data-dirfilter="freehelp" aria-pressed="false" data-i18n="dirfreehelp">Free help / community support</button>
   </div>
   <div class="dir-list" id="dir-list">
-    <article class="dir-item" data-dircat="fun" data-lat="45.85067" data-lng="-122.83077">
+    <article class="dir-item dir-founding" data-dircat="fun" data-lat="45.85067" data-lng="-122.83077">
       <!-- Photo: Oregon Trail Lanes' own website (oregontraillanes.com) — league night at the lanes, May 2023. Added v45. -->
       <img class="dir-photo" src="img/dir-oregon-trail-lanes.jpg" alt="League night inside Oregon Trail Lanes in St. Helens" loading="lazy" decoding="async">
       <img class="founding-ribbon dir-ribbon" src="img/founding-ribbon.png?v=95" alt="Founding Sponsor" title="Founding Sponsor — Oregon Trail Lanes">
       <div class="dir-item-main">
-        <h3>Oregon Trail Lanes</h3>
+        <h3>Oregon Trail Lanes <span class="dir-badge">Founding Sponsor &middot; 2026</span></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirfun">Bowling &amp; family fun</span></p>
         <p class="dir-desc" data-i18n="dirotldesc">Bowling, leagues and birthday parties on Columbia River Highway.</p>
         <button class="otl-more dir-otl-more" type="button" data-otl-open aria-haspopup="dialog" aria-controls="otl-sheet" aria-expanded="false">See hours &amp; what&rsquo;s on &rarr;</button>
@@ -966,11 +1091,11 @@ document.documentElement.setAttribute("data-theme",t);})();
         <span class="dir-addr">735 S Columbia River Hwy</span>
       </div>
     </article>
-    <article class="dir-item" data-dircat="handyman">
+    <article class="dir-item dir-founding" data-dircat="handyman">
       <img class="dir-photo" src="img/dir-kneeland-brothers.jpg" alt="A new roof by Kneeland Brothers on a Columbia County home" loading="lazy" decoding="async">
       <img class="founding-ribbon dir-ribbon" src="img/founding-ribbon.png?v=95" alt="Founding Sponsor" title="Founding Sponsor — Kneeland Brothers LLC">
       <div class="dir-item-main">
-        <h3>Kneeland Brothers LLC</h3>
+        <h3>Kneeland Brothers LLC <span class="dir-badge">Founding Sponsor &middot; 2026</span></h3>
         <p class="dir-meta">Scappoose &middot; <span data-i18n="dirhandyman">Handyman &amp; home repair</span></p>
         <p class="dir-desc">Roof replacement and repair from a family crew born and raised in Columbia County — free estimates, financing, and a warranty on every new roof.</p>
         <button class="otl-more dir-otl-more" type="button" data-pv-open aria-haspopup="dialog" aria-controls="pv-sheet" aria-expanded="false">See hours &amp; what&rsquo;s on &rarr;</button>
@@ -980,11 +1105,11 @@ document.documentElement.setAttribute("data-theme",t);})();
         <span class="dir-addr">33459 SW JP West Rd</span>
       </div>
     </article>
-    <article class="dir-item" data-dircat="handyman" data-lat="45.86043" data-lng="-122.85104">
+    <article class="dir-item dir-founding" data-dircat="handyman" data-lat="45.86043" data-lng="-122.85104">
       <img class="dir-photo" src="img/dir-cm-renovations.jpg" alt="A new cedar deck by C&amp;M Renovations on a Columbia County home" loading="lazy" decoding="async">
       <img class="founding-ribbon dir-ribbon" src="img/founding-ribbon.png?v=98" alt="Founding Sponsor" title="Founding Sponsor — C&amp;M Renovations">
       <div class="dir-item-main">
-        <h3>C&amp;M Renovations</h3>
+        <h3>C&amp;M Renovations <span class="dir-badge">Founding Sponsor &middot; 2026</span></h3>
         <p class="dir-meta">St. Helens &middot; <span data-i18n="dirremodel">Home repair &amp; remodeling</span></p>
         <p class="dir-desc">Fencing, decking and remodeling from a licensed, bonded and insured St. Helens crew — Oregon CCB #241111.</p>
         <button class="otl-more dir-otl-more" type="button" data-cm-open aria-haspopup="dialog" aria-controls="cm-sheet" aria-expanded="false">See hours &amp; what&rsquo;s on &rarr;</button>
@@ -1308,7 +1433,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card freshness-card" id="freshness-card">
   <div class="card-head">
-    <h2 data-i18n="freshh2">🕐 How fresh is this page?</h2>
+    <img class="card-ico" src="img/icons/icon-clock.png" alt="" aria-hidden="true"><h2 data-i18n="freshh2">How fresh is this page?</h2>
     <span class="updated" data-i18n="freshspan">ages update every 30 sec</span>
   </div>
   <p class="card-note" data-i18n="freshnote">Every number here names its source and its age. Green is fresh, amber is aging, red means treat the panel as stale and check the official source. If a feed ever goes quiet, this board shows it instead of hiding it.</p>
@@ -1319,13 +1444,13 @@ document.documentElement.setAttribute("data-theme",t);})();
 <section class="card band-card watch-card" id="watch-card" aria-label="The county watch — get told when a warning posts, the bridge closes, or the ferry puts out an alert">
       <div class="card-band" aria-hidden="true"><img src="img/dusk/ships-night.jpg" alt="" loading="lazy" decoding="async"></div>
   <div class="card-head">
-    <h2 data-i18n="watchh2">🔔 The County Watch</h2>
+    <img class="card-ico" src="img/icons/icon-bell.png" alt="" aria-hidden="true"><h2 data-i18n="watchh2">The County Watch</h2>
     <span class="updated" id="watch-state">Not watching</span>
   </div>
   <p class="card-note" data-i18n="watchnote">Everything else on this page waits for you to come and look. The watch doesn't. Leave this page open — in a tab, installed on your home screen, or up on the wall — and it checks the National Weather Service, the bridge, and the ferry every two minutes. If a new warning posts, the bridge closes, or the ferry puts out an alert while you're not looking, it tells you: a notification on this device where the browser offers them, a line in the log below, and — if you tick the box — it says new warnings out loud.</p>
   <div id="watch-status" class="watch-status"><p class="loading">Setting up the watch…</p></div>
   <div class="watch-actions">
-    <button class="share-btn primary" id="watch-btn" type="button" data-i18n="watchbtn">🔔 Start watching</button>
+    <button class="share-btn primary" id="watch-btn" type="button" ><img class="btn-ico" src="img/icons/icon-bell.png" alt="" aria-hidden="true"><span data-i18n="watchbtn">Start watching</span></button>
     <label class="watch-voice"><input type="checkbox" id="watch-voice"> 🔊 Also say new warnings out loud</label>
   </div>
   <ul class="watch-log" id="watch-log"></ul>
@@ -1348,11 +1473,11 @@ document.documentElement.setAttribute("data-theme",t);})();
     <p data-i18n="sharep">Free, no ads, no sign-up. Put it on your home screen like an app, send it to a neighbor who drives US-30 — or prop a tablet on the counter and tap <strong>Wall display</strong>: the county's answers, big and rotating, made for the screen that's already on.</p>
   </div>
   <div class="share-actions">
-    <button class="share-btn primary" id="share-btn" type="button" data-i18n="sharebtn">📤 Share this page</button>
-    <button class="share-btn" id="install-btn" type="button" data-i18n="installbtn">📱 Add to home screen</button>
-    <button class="share-btn" id="wall-btn" type="button" data-i18n="wallbtn">📺 Wall display</button>
-    <button class="share-btn" id="saver-btn" type="button" data-i18n="saverbtn">🖥️ Screensaver</button>
-    <button class="share-btn" id="print-btn" type="button">🖨️ Print the county sheet</button>
+    <button class="share-btn primary" id="share-btn" type="button" ><img class="btn-ico" src="img/icons/icon-share.png" alt="" aria-hidden="true"><span data-i18n="sharebtn">Share this page</span></button>
+    <button class="share-btn" id="install-btn" type="button" ><img class="btn-ico" src="img/icons/icon-phone.png" alt="" aria-hidden="true"><span data-i18n="installbtn">Add to home screen</span></button>
+    <button class="share-btn" id="wall-btn" type="button" ><img class="btn-ico" src="img/icons/icon-monitor.png" alt="" aria-hidden="true"><span data-i18n="wallbtn">Wall display</span></button>
+    <button class="share-btn" id="saver-btn" type="button" ><img class="btn-ico" src="img/icons/icon-monitor.png" alt="" aria-hidden="true"><span data-i18n="saverbtn">Screensaver</span></button>
+    <button class="share-btn" id="print-btn" type="button"><img class="btn-ico" src="img/icons/icon-printer.png" alt="" aria-hidden="true">Print the county sheet</button>
   </div>
   <p class="print-note">🖨️ The county sheet is one printed page with today&rsquo;s answers — made for the fridge door, the library bulletin board, and the shop counter. Posting it where neighbors pass by is this site&rsquo;s favorite kind of advertising.</p>
   <p class="lang-note" data-i18n="langnote">🌎 ¿Hablas español? Tap the courthouse logo up top to open the menu, then tap <strong>En español</strong> — this page&rsquo;s headings, buttons and notes switch to Spanish. Live readings, alerts and event listings keep arriving in English from their official sources.</p>
@@ -1373,7 +1498,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <div>
       <h2 data-i18n="installh2">Put Columbia County Live on your home screen</h2>
       <p class="card-note" data-i18n="installp">Installed, it opens full-screen like an app — no address bar, its own icon, the county one tap away. Free, and it still updates itself all day.</p>
-      <button class="share-btn primary" id="install-card-btn" type="button" data-i18n="installcardbtn">📱 Install the app</button>
+      <button class="share-btn primary" id="install-card-btn" type="button" ><img class="btn-ico" src="img/icons/icon-phone.png" alt="" aria-hidden="true"><span data-i18n="installcardbtn">Install the app</span></button>
     </div>
   </div>
 </section>
@@ -1381,11 +1506,11 @@ document.documentElement.setAttribute("data-theme",t);})();
 <section class="card saver-card photo-behind" id="saver-card" aria-label="The community screensaver — county photos and your pinned answers, made for TVs, tablets and waiting rooms">
   <div class="card-bgphoto" aria-hidden="true"><img src="img/bg/bg-dusk-2.jpg" alt="" loading="lazy" decoding="async"></div>
   <div class="card-head">
-    <h2 data-i18n="saverh2">📸 The Community Screensaver</h2>
+    <img class="card-ico" src="img/icons/icon-camera.png" alt="" aria-hidden="true"><h2 data-i18n="saverh2">The Community Screensaver</h2>
   </div>
   <p class="card-note" data-i18n="saverp1">The wall display rotates the county&rsquo;s answers. The screensaver is the quieter room: county photographs, changing slowly, with the clock and just the answers you pin — made to be left running on a kitchen tablet, a shop counter, or the TV in a waiting room. It refreshes itself from the same live sources as this page, never asks for anything, and leaves with one tap.</p>
   <div class="saver-actions">
-    <button class="share-btn primary" id="saver-start-btn" type="button" data-i18n="saverstart">🖥️ Start the screensaver</button>
+    <button class="share-btn primary" id="saver-start-btn" type="button" ><img class="btn-ico" src="img/icons/icon-monitor.png" alt="" aria-hidden="true"><span data-i18n="saverstart">Start the screensaver</span></button>
     <p class="saver-tip" data-i18n="savertip">Putting it on a TV or an office screen? Open this page with <strong>?display=1</strong> added to the end of the address and the screensaver starts by itself — bookmark that address on the TV&rsquo;s browser and it just comes up.</p>
   </div>
   <h3 class="subhead" data-i18n="saverpinsh">Your answers on the screen</h3>
@@ -1411,7 +1536,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card about-card" id="about-card" aria-label="About Columbia County Live — what it is, why it is free, and supporting it">
   <div class="card-head">
-    <h2 data-i18n="abouth2">🌲 About Columbia County Live</h2>
+    <img class="card-ico" src="img/icons/icon-tree.png" alt="" aria-hidden="true"><h2 data-i18n="abouth2">About Columbia County Live</h2>
   </div>
   <p class="card-note" data-i18n="aboutp1">Columbia County Live is one live look at Columbia County, Oregon — US-30 and the Lewis &amp; Clark Bridge, the Columbia and Nehalem rivers, weather alerts, the Oscar B ferry, and what&rsquo;s on around the county — assembled from official public sources and refreshed all day. It is built and run by <strong>Nomad Development Group</strong>, a small local studio, on free public data and free hosting, which is how a page like this can exist for a county of 54,000 at all.</p>
   <p class="card-note" data-i18n="aboutp2"><strong>Why it&rsquo;s free — and what stays free.</strong> The core of this page is public-safety data: weather alerts, river levels, bridge and ferry status, road conditions. That core is free, carries no sponsor, and stays that way — it will never sit behind a paywall. That promise is the reason the page exists. The Community Help section keeps that same promise: the county&rsquo;s free help — food pantries, crisis lines, help with rent and utility bills, support for families and veterans — gathered in one place, free to everyone who needs it.</p>
@@ -1477,7 +1602,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card" id="em-map-card" aria-label="Emergency map — road closures and incidents">
   <div class="card-head">
-    <h2>🚨 Emergency map — closures &amp; incidents</h2>
+    <img class="card-ico" src="img/icons/icon-siren.png" alt="" aria-hidden="true"><h2>Emergency map — closures &amp; incidents</h2>
     <span class="updated" id="em-map-updated"></span>
   </div>
   <div class="panel-body">
@@ -1488,7 +1613,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card" id="em-status-card" aria-label="County status board">
   <div class="card-head">
-    <h2>📋 County status board</h2>
+    <img class="card-ico" src="img/icons/icon-clipboard.png" alt="" aria-hidden="true"><h2>County status board</h2>
     <span class="updated" id="em-status-updated"></span>
   </div>
   <div class="panel-body">
@@ -1506,7 +1631,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card" id="em-contacts-card" aria-label="Emergency contacts and official links">
   <div class="card-head">
-    <h2>☎️ Emergency contacts &amp; official links</h2>
+    <img class="card-ico" src="img/icons/icon-call.png" alt="" aria-hidden="true"><h2>Emergency contacts &amp; official links</h2>
   </div>
   <div class="panel-body">
     <p class="em-big"><strong>In an emergency, call 911.</strong></p>
@@ -1519,7 +1644,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card" id="em-coords-card" aria-label="Your coordinates">
   <div class="card-head">
-    <h2>📍 Your coordinates</h2>
+    <img class="card-ico" src="img/icons/icon-pin.png" alt="" aria-hidden="true"><h2>Your coordinates</h2>
   </div>
   <div class="panel-body">
     <p class="card-note">If you ever have to tell a dispatcher or a tow truck exactly where you are: tap the button, read the numbers out loud, or copy and paste them into a text. GPS works without cell signal.</p>
@@ -1542,7 +1667,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card" id="help-intro-card" aria-label="About this section">
   <div class="card-head">
-    <h2 data-i18n="helph2">🤝 Community Help</h2>
+    <img class="card-ico" src="img/icons/icon-help.png" alt="" aria-hidden="true"><h2 data-i18n="helph2">Community Help</h2>
   </div>
   <div class="panel-body">
     <p class="card-note" data-i18n="helpintro">Free food, crisis lines, help with rent, power bills and diapers, support for families, veterans and recovery — the help this county already offers, gathered in one place. Everything here is free, with one honest exception: the health center charges on a sliding scale, and its listing says so. Tap any phone number to call. Every listing was checked against the service&rsquo;s own website.</p>
@@ -1556,7 +1681,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card" id="help-food-card" aria-label="🍞 Food — free pantries & meals">
   <div class="card-head">
-    <h2 data-i18n="helpfoodh">🍞 Food — free pantries &amp; meals</h2>
+    <img class="card-ico" src="img/icons/icon-food.png" alt="" aria-hidden="true"><h2 data-i18n="helpfoodh">Food — free pantries &amp; meals</h2>
   </div>
   <div class="dir-list">
     <article class="dir-item" data-dircat="freehelp" data-lat="45.86735" data-lng="-122.80309">
@@ -1685,7 +1810,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card" id="help-crisis-card" aria-label="🛟 Crisis & safety">
   <div class="card-head">
-    <h2 data-i18n="helpcrisish">🛟 Crisis &amp; safety</h2>
+    <img class="card-ico" src="img/icons/icon-lifebuoy.png" alt="" aria-hidden="true"><h2 data-i18n="helpcrisish">Crisis &amp; safety</h2>
   </div>
   <div class="dir-list">
     <article class="dir-item" data-dircat="freehelp">
@@ -1715,7 +1840,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card" id="help-money-card" aria-label="🏠 Money & housing help">
   <div class="card-head">
-    <h2 data-i18n="helpmoneyh">🏠 Money &amp; housing help</h2>
+    <img class="card-ico" src="img/icons/icon-house.png" alt="" aria-hidden="true"><h2 data-i18n="helpmoneyh">Money &amp; housing help</h2>
   </div>
   <div class="dir-list">
     <article class="dir-item" data-dircat="freehelp" data-lat="45.85978" data-lng="-122.81542">
@@ -1776,7 +1901,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card" id="help-family-card" aria-label="👶 Family & health">
   <div class="card-head">
-    <h2 data-i18n="helpfamilyh">👶 Family &amp; health</h2>
+    <img class="card-ico" src="img/icons/icon-family.png" alt="" aria-hidden="true"><h2 data-i18n="helpfamilyh">Family &amp; health</h2>
   </div>
   <div class="dir-list">
     <article class="dir-item" data-dircat="freehelp" data-lat="45.85985" data-lng="-122.8135">
@@ -1821,7 +1946,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card" id="help-vets-card" aria-label="🎖️ Veterans, legal & recovery">
   <div class="card-head">
-    <h2 data-i18n="helpvetsh">🎖️ Veterans, legal &amp; recovery</h2>
+    <img class="card-ico" src="img/icons/icon-medal.png" alt="" aria-hidden="true"><h2 data-i18n="helpvetsh">Veterans, legal &amp; recovery</h2>
   </div>
   <div class="dir-list">
     <article class="dir-item" data-dircat="freehelp" data-lat="45.85978" data-lng="-122.81542">
@@ -1884,10 +2009,11 @@ document.documentElement.setAttribute("data-theme",t);})();
   <nav class="drawer-nav" aria-label="Views and sections">
     <div class="drawer-group">
       <button class="drawer-view" type="button" data-drawer-view="today"><img src="img/icons/icon-today.png" alt="" aria-hidden="true"><span data-i18n="tabtoday">Today</span></button>
-      <a class="drawer-link" href="#go-card" data-i18n="dwgo">Before you go</a>
-      <a class="drawer-link" href="#plan-card" data-i18n="dwplan">Tonight &amp; tomorrow</a>
+      <a class="drawer-link" href="#go-card" data-i18n="dwgo">Heading out?</a>
+      <a class="drawer-link" href="#today-wx-card" data-i18n="forecasth2">Forecast</a>
       <a class="drawer-link" href="#schools-card" data-i18n="dwschools">Schools — closures &amp; delays</a>
       <a class="drawer-link" href="#briefing-card" data-i18n="dwbriefing">The County Briefing</a>
+      <a class="drawer-link" href="#news-card" data-i18n="dwnews">Local news</a>
     </div>
     <div class="drawer-group">
       <button class="drawer-view" type="button" data-drawer-view="travel"><img src="img/icons/icon-travel.png" alt="" aria-hidden="true"><span data-i18n="tabtravel">Travel</span></button>
@@ -1901,7 +2027,7 @@ document.documentElement.setAttribute("data-theme",t);})();
       <a class="drawer-link" href="#mthood-card" data-i18n="dwmthood">Mt. Hood cameras</a>
     </div>
     <div class="drawer-group">
-      <button class="drawer-view" type="button" data-drawer-view="help"><span aria-hidden="true">🤝</span><span data-i18n="helpview">Community Help</span></button>
+      <button class="drawer-view" type="button" data-drawer-view="help"><span aria-hidden="true"><img class="btn-ico" src="img/icons/icon-help.png" alt=""></span><span data-i18n="helpview">Community Help</span></button>
       <a class="drawer-link" href="#help-food-card" data-i18n="dwhelpfood">Free food</a>
       <a class="drawer-link" href="#help-crisis-card" data-i18n="dwhelpcrisis">Crisis &amp; safety</a>
       <a class="drawer-link" href="#help-money-card" data-i18n="dwhelpmoney">Money &amp; housing help</a>
@@ -1935,7 +2061,7 @@ document.documentElement.setAttribute("data-theme",t);})();
       <a class="drawer-link" href="#about-card" data-i18n="dwabout">About</a>
     </div>
     <div class="drawer-group drawer-em-group">
-      <button class="drawer-view drawer-emergency" type="button" data-drawer-view="emergency"><span aria-hidden="true">🚨</span><span data-i18n="emview">Emergency</span></button>
+      <button class="drawer-view drawer-emergency" type="button" data-drawer-view="emergency"><span aria-hidden="true"><img class="btn-ico" src="img/icons/icon-siren.png" alt=""></span><span data-i18n="emview">Emergency</span></button>
       <a class="drawer-link" href="#em-map-card">Emergency map — closures &amp; incidents</a>
       <a class="drawer-link" href="#em-status-card">County status board</a>
       <a class="drawer-link" href="#em-contacts-card">Emergency contacts &amp; links</a>
@@ -1954,19 +2080,19 @@ document.documentElement.setAttribute("data-theme",t);})();
          the screensaver start, so the old "Start the screensaver"
          drawer row is retired; the saver card keeps its own buttons. -->
     <div class="drawer-util-btns" role="group" aria-label="Get the app, display mode, and light or dark mode">
-      <button class="drawer-util-btn" id="drawer-getapp-btn" type="button" aria-haspopup="dialog" aria-controls="getapp-sheet" aria-expanded="false" aria-label="Get the app — put Columbia County Live on your home screen"><span class="getapp-ico" aria-hidden="true">📱</span><span data-i18n="getappbtn">Get the app</span></button>
+      <button class="drawer-util-btn" id="drawer-getapp-btn" type="button" aria-haspopup="dialog" aria-controls="getapp-sheet" aria-expanded="false" aria-label="Get the app — put Columbia County Live on your home screen"><span class="getapp-ico" aria-hidden="true"><img class="btn-ico" src="img/icons/icon-phone.png" alt=""></span><span data-i18n="getappbtn">Get the app</span></button>
       <button class="drawer-util-btn" id="drawer-display-btn" type="button" aria-label="Open display mode — the community screensaver"><svg class="theme-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M12 16.5v3M8.8 21h6.4"/></svg><span data-i18n="displaybtn">Display</span></button>
       <button class="drawer-util-btn" id="drawer-theme-btn" type="button" aria-pressed="false" aria-label="Switch to dark mode"><img class="theme-ico" src="img/icons/icon-theme.png" alt="" aria-hidden="true"><span id="drawer-theme-label">Dark</span></button>
     </div>
     <a class="drawer-action" href="sponsor.html"><img class="drawer-action-img" src="img/icons/icon-sponsor.png" alt="" aria-hidden="true"><span data-i18n="dwbecome">Become a sponsor</span></a>
     <a class="drawer-action drawer-photo" href="#photo-form">
-      <span class="drawer-action-ico" aria-hidden="true">📸</span>
+      <span class="drawer-action-ico" aria-hidden="true"><img class="btn-ico" src="img/icons/icon-camera.png" alt=""></span>
       <span class="drawer-photo-text">
         <span class="drawer-photo-title" data-i18n="dwphototitle">Share your county photo</span>
         <span class="drawer-photo-line" data-i18n="dwphotoline">Got a shot of the county you love? Send it in — the good ones join the community screensaver, with your name signed on them like a painting.</span>
       </span>
     </a>
-    <button class="drawer-action lang-pill" id="lang-btn" type="button">🌎 En español</button>
+    <button class="drawer-action lang-pill" id="lang-btn" type="button">En español</button>
   </div>
   </nav>
 </aside>
@@ -1985,7 +2111,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <button class="drawer-close" id="getapp-close" type="button" aria-label="Close the install steps">✕</button>
   </div>
   <div class="getapp-body">
-    <button class="share-btn primary getapp-install" id="getapp-install" type="button" hidden data-i18n="getappinstall">📱 Install now — one tap</button>
+    <button class="share-btn primary getapp-install" id="getapp-install" type="button" hidden ><img class="btn-ico" src="img/icons/icon-phone.png" alt="" aria-hidden="true"><span data-i18n="getappinstall">Install now — one tap</span></button>
     <div class="getapp-step0" id="getapp-step0-fb" hidden>
       <p data-i18n="gastep0fb"><strong>First — you're inside Facebook's browser, and it can't add home-screen apps.</strong> Tap the three dots at the top corner and choose <strong>Open in external browser</strong> or <strong>Open in Chrome</strong>. Then follow the steps below.</p>
     </div>
@@ -2086,7 +2212,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="otl-card">
       <img class="founding-ribbon sheet-ribbon" src="img/founding-ribbon.png?v=95" alt="Founding Sponsor" title="Founding Sponsor">
       <div class="otl-body">
-        <div class="otl-logo-box" style="margin-bottom:16px"><img src="img/preview-kneeland-brothers-logo.png" alt="Kneeland Brothers Roofing logo" style="border-radius:0"></div>
+        <div class="otl-logo-box" style="margin-bottom:16px"><img src="img/preview-kneeland-brothers-logo.png" alt="Kneeland Brothers Roofing logo"></div>
         <h3>Kneeland Brothers LLC <span class="dir-badge">Founding Sponsor · 2026</span></h3>
         <p class="otl-tag">Superior workmanship. Integrity. Guaranteed.</p>
         <p class="otl-tag">Malarkey Certified Contractor</p>
@@ -2133,7 +2259,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <article class="otl-card">
       <img class="founding-ribbon sheet-ribbon" src="img/founding-ribbon.png?v=98" alt="Founding Sponsor" title="Founding Sponsor">
       <div class="otl-body">
-        <div class="otl-logo-box" style="margin-bottom:16px"><img src="img/preview-cm-renovations-logo.png" alt="C&amp;M Renovations logo" style="border-radius:0"></div>
+        <div class="otl-logo-box" style="margin-bottom:16px"><img src="img/preview-cm-renovations-logo.png" alt="C&amp;M Renovations logo"></div>
         <h3>C&amp;M Renovations <span class="dir-badge">Founding Sponsor · 2026</span></h3>
         <p class="otl-tag">Fencing, decking &amp; remodeling</p>
         <p class="otl-blurb">Fencing, decking and remodeling from a St. Helens crew — licensed, bonded and insured, Oregon CCB #241111.</p>
@@ -2213,7 +2339,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=123"></script>
+<script src="app.js?v=138"></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 

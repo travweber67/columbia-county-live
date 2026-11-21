@@ -3686,3 +3686,1536 @@ html[data-theme="dark"] .cev-src{background:rgba(255,255,255,.06)}
   .cev-daynum{font-size:1.3rem}
   .cev-title{font-size:.98rem}
 }
+
+/* =====================================================================
+   REDESIGN ITEM 1 (Travis, 2026-11-20) — homepage only (body.rd-home).
+   The full-bleed top bar is retired. The bridge photo now lives inside
+   ONE rounded card at the top of the page, carrying everything the top
+   area carried: the brand (logo = menu button) + wordmark, the clock,
+   the headline, and the live status row (the old green sticky bar,
+   moved inside the card in the HTML — same IDs, same app.js wiring).
+   The page background is a flat soft grey: the full-page photo layers
+   are off on this page. The card is in normal flow and scrolls away
+   with the page at every width — not sticky, not fixed. Everything
+   below the header is untouched by this layer.
+   ===================================================================== */
+body.rd-home{background:#f4f5f7}
+html:has(> body.rd-home){background:#f4f5f7}
+body.rd-home .page-bg{display:none}
+html[data-theme="dark"] body.rd-home{background:#242628}
+html[data-theme="dark"]:has(> body.rd-home){background:#242628}
+
+/* the hero becomes a card: inset from the page edges, aligned with the
+   content column below (1200px column minus its 20px side padding),
+   rounded corners, a soft lift off the grey */
+body.rd-home .hero{
+  max-width:1160px;width:calc(100% - 40px);
+  margin:16px auto 0;
+  border:1px solid rgba(255,255,255,.35);
+  border-radius:22px;
+  box-shadow:0 14px 34px rgba(23,32,27,.22);
+}
+@media (max-width:899px){
+  body.rd-home .hero{width:calc(100% - 24px);margin-top:12px;border-radius:18px}
+}
+
+/* the live status row inside the card: static (scrolls with the card),
+   translucent dark glass on the photo instead of the solid green band */
+body.rd-home .hero .sticky-bar{
+  position:static;
+  margin-top:14px;
+  background:rgba(9,22,13,.48);
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:14px;
+  padding:8px 12px;
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+}
+
+/* =====================================================================
+   REDESIGN ITEM 2 (Travis, 2026-11-20) — homepage layer (body.rd-home).
+   Mobile first. Contents: hero finder + status spots, ticker pills,
+   modern selects, icon image helpers, Heading out? photo card, Your
+   town photo card, merged weather card sections, event-cards scroller.
+   ===================================================================== */
+
+/* --- hero: finder on the photo, status spots under it --- */
+body.rd-home .hero-finder{margin-top:16px;position:relative;z-index:3}
+body.rd-home .hero-finder .finder-box{
+  background:rgba(255,255,255,.95);
+  border:1px solid rgba(255,255,255,.7);
+  box-shadow:0 8px 22px rgba(10,20,14,.30);
+}
+html[data-theme="dark"] body.rd-home .hero-finder .finder-box{background:rgba(24,28,26,.92)}
+body.rd-home .hero-finder .finder-icon{display:inline-flex}
+body.rd-home .hero-finder .finder-icon img{width:23px;height:23px;border-radius:50%;display:block}
+body.rd-home .hero-finder .finder-results{box-shadow:0 16px 34px rgba(10,20,14,.38)}
+body.rd-home .hero-status{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:13px}
+body.rd-home .hero-spot{
+  color:#fff;font-weight:650;font-size:.99rem;text-decoration:none;
+  text-shadow:0 1px 7px rgba(0,0,0,.6);letter-spacing:.01em;
+}
+body.rd-home .hero-spot.bad{color:#ff7a6b;font-weight:750}
+body.rd-home .hero-spot:hover{text-decoration:underline}
+@media (min-width:900px){
+  body.rd-home .hero-status{gap:6px 30px}
+  body.rd-home .hero-spot{font-size:1.05rem}
+}
+
+/* --- ticker: separate ombre pills, a little bigger and taller --- */
+body.rd-home .strip-item.glance-tile{
+  margin:9px 10px 9px 0;padding:10px 20px 10px 13px;
+  border-right:none;border-radius:999px;
+  background:linear-gradient(135deg,#ffb347 0%,#ff7a1a 55%,#e85d04 100%);
+  box-shadow:0 5px 16px rgba(232,93,4,.35);
+}
+body.rd-home .glance-strip .glance-label{color:rgba(255,255,255,.88)}
+body.rd-home .glance-strip .strip-sep{color:rgba(255,255,255,.65)}
+body.rd-home .glance-strip .glance-sub{color:rgba(255,255,255,.78)}
+body.rd-home .glance-strip .glance-val{color:#fff;font-size:1.14rem}
+body.rd-home .glance-strip .glance-val.ok{color:#fff}
+body.rd-home .glance-strip .glance-val.warn{color:#fff3d6}
+body.rd-home .glance-strip .glance-val.bad{color:#ffe3de}
+@media (min-width:900px){
+  body.rd-home .strip-item.glance-tile{padding:12px 24px 12px 15px;margin:11px 12px 11px 0}
+  body.rd-home .glance-strip .glance-val{font-size:1.3rem}
+}
+
+/* --- modern dropdowns --- */
+body.rd-home select{
+  appearance:none;-webkit-appearance:none;
+  border:1px solid var(--border);border-radius:12px;
+  background-color:var(--panel-2);color:var(--text);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5 11 1.5' fill='none' stroke='%235a665e' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 12px center;background-size:12px 8px;
+  padding:10px 36px 10px 14px;font:inherit;cursor:pointer;
+}
+html[data-theme="dark"] body.rd-home select{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5 11 1.5' fill='none' stroke='%23c8d2ca' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+body.rd-home select:focus-visible{outline:2px solid var(--accent-dark);outline-offset:1px}
+
+/* --- icon image helpers (real icons in place of emoji) --- */
+.btn-ico{width:22px;height:22px;border-radius:50%;vertical-align:-6px;margin-right:7px}
+.inline-ico{width:19px;height:19px;border-radius:50%;vertical-align:-4px}
+.inc-ico{width:21px;height:21px;border-radius:50%;vertical-align:-5px;margin-right:2px}
+.verdict-ico{width:30px;height:30px;border-radius:50%;vertical-align:-8px;margin-right:9px}
+.go-ico{width:24px;height:24px;border-radius:50%;display:block}
+.drawer-action-ico .btn-ico,.getapp-ico .btn-ico{margin-right:0}
+
+/* --- Heading out? photo card --- */
+body.rd-home .go-card{padding-bottom:32px}
+body.rd-home .go-card .card-bgphoto::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(8,18,12,.36),rgba(8,18,12,.55));
+}
+body.rd-home .go-card .card-head h2{color:#fff;text-shadow:0 1px 9px rgba(0,0,0,.55)}
+body.rd-home .go-card .updated{color:rgba(255,255,255,.88);text-shadow:0 1px 6px rgba(0,0,0,.5)}
+body.rd-home .go-card .go-field{color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.55)}
+body.rd-home .go-card .loading{color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+body.rd-home .go-card .install-help{color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+body.rd-home .go-card .go-trip-btn{background:rgba(255,255,255,.92)}
+body.rd-home .go-card .go-trip-btn.active{background:var(--accent);color:#fff}
+
+/* --- Your town photo card --- */
+body.rd-home #home-card{padding-bottom:32px}
+body.rd-home #home-card .card-bgphoto::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(8,18,12,.32),rgba(8,18,12,.52));
+}
+body.rd-home #home-card .card-head h2{color:#fff;text-shadow:0 1px 9px rgba(0,0,0,.55)}
+body.rd-home #home-card .home-status,
+body.rd-home #home-card .town-line,
+body.rd-home #home-card .card-note{color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.55)}
+body.rd-home #home-card .home-linkbtn{color:#ffd9a8}
+.photo-credit{
+  position:absolute;right:12px;bottom:9px;z-index:2;margin:0;
+  font-size:.62rem;line-height:1.3;text-align:right;max-width:82%;
+  color:rgba(255,255,255,.88);text-shadow:0 1px 4px rgba(0,0,0,.65);
+}
+
+/* --- merged weather card (Outdoors): forecast sections inside --- */
+#alerts-card #forecast-week-card{margin-top:16px;border-top:1px solid var(--border);padding-top:14px}
+#alerts-card #forecast-card{margin-top:14px;border-top:1px solid var(--border);padding-top:12px}
+.wx-subhead{font-size:1.08rem;font-weight:700;margin:0}
+
+/* --- event-cards scroller (second scroller, under the founding panel) --- */
+.ev-scroll{margin:18px 0 4px}
+.ev-scroll-head{display:flex;align-items:center;gap:9px;margin:0 2px 10px}
+.ev-scroll-head h2{font-size:1.15rem;margin:0}
+.ev-scroll-viewport{overflow:hidden}
+.ev-scroll-track{display:flex;width:max-content;animation:evsScroll 55s linear infinite;will-change:transform}
+@keyframes evsScroll{to{transform:translateX(-50%)}}
+.ev-scroll:hover .ev-scroll-track,.ev-scroll:focus-within .ev-scroll-track{animation-play-state:paused}
+.evs-card{
+  flex:none;width:198px;margin-right:12px;
+  background:var(--panel);border:1px solid var(--border);border-radius:16px;
+  overflow:hidden;text-decoration:none;color:var(--text);
+  box-shadow:0 6px 16px rgba(23,32,27,.10);
+  display:flex;flex-direction:column;
+}
+.evs-img{width:100%;height:88px;object-fit:cover;display:block}
+.evs-body{padding:9px 12px 11px;display:flex;flex-direction:column;gap:2px}
+.evs-when{font-size:.68rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--accent-dark)}
+.evs-tag{background:linear-gradient(135deg,#ffb347,#e85d04);color:#fff;border-radius:999px;padding:1px 7px;font-size:.6rem;margin-left:5px;vertical-align:1px;white-space:nowrap}
+.evs-title{font-weight:700;font-size:.93rem;line-height:1.25}
+.evs-loc{font-size:.76rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media (min-width:900px){
+  .evs-card{width:234px}
+  .evs-img{height:106px}
+  .evs-title{font-size:.97rem}
+}
+@media (prefers-reduced-motion:reduce){
+  .ev-scroll-track{animation:none}
+  .ev-scroll-viewport{overflow-x:auto}
+}
+
+/* --- news scroller (item 2k built, under the Community Notice cell):
+   same side-sliding picture-card pattern as the event scroller;
+   cards link out to the publisher's story --- */
+.news-scroll{margin:18px 0 4px}
+.news-scroll-head{display:flex;align-items:center;gap:9px;margin:0 2px 10px}
+.news-scroll-head h2{font-size:1.15rem;margin:0}
+.news-scroll-viewport{overflow:hidden}
+.news-scroll-track{display:flex;width:max-content;animation:evsScroll 55s linear infinite;will-change:transform}
+.news-scroll:hover .news-scroll-track,.news-scroll:focus-within .news-scroll-track{animation-play-state:paused}
+.nws-card{
+  flex:none;width:198px;margin-right:12px;
+  background:var(--panel);border:1px solid var(--border);border-radius:16px;
+  overflow:hidden;text-decoration:none;color:var(--text);
+  box-shadow:0 6px 16px rgba(23,32,27,.10);
+  display:flex;flex-direction:column;
+}
+.nws-img{width:100%;height:88px;object-fit:cover;display:block}
+.nws-body{padding:9px 12px 11px;display:flex;flex-direction:column;gap:2px}
+.nws-when{font-size:.68rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--accent-dark)}
+.nws-title{font-weight:700;font-size:.93rem;line-height:1.25}
+.nws-loc{font-size:.76rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media (min-width:900px){
+  .nws-card{width:234px}
+  .nws-img{height:106px}
+  .nws-title{font-size:.97rem}
+}
+@media (prefers-reduced-motion:reduce){
+  .news-scroll-track{animation:none}
+  .news-scroll-viewport{overflow-x:auto}
+}
+
+/* ---- REDESIGN ITEM 2c: per-view header card + view slide transition
+   (Travis, 2026-11-20). Section name + tagline over each view's own
+   photo; tab switches slide the whole view out left / in from the
+   right while the header card exits left and enters from the
+   top-right. Transforms only — no layout reflow; the card's height
+   is JS-animated between its two natural heights. ---- */
+.hero-view-name{
+  font-family:var(--display);font-weight:800;letter-spacing:-.015em;
+  font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.08;margin-top:16px;color:#fff;
+  text-shadow:0 2px 20px rgba(0,0,0,.55);
+}
+.hero-view-tag{
+  margin:8px 0 6px;max-width:36em;color:#f2f7ee;
+  font-size:clamp(.98rem,2.2vw,1.12rem);line-height:1.45;
+  text-shadow:0 1px 14px rgba(0,0,0,.6);
+}
+header.hero[data-view="travel"] .hero-img-night,
+header.hero[data-view="outdoors"] .hero-img-night,
+header.hero[data-view="more"] .hero-img-night{display:none}
+.hero.hero-exit{
+  transform:translateX(-64px);opacity:0;
+  transition:transform .23s ease-in,opacity .23s ease-in;
+}
+.hero.hero-enter{transform:translate(54px,-32px);opacity:0}
+.hero.hero-enter.hero-enter-go{
+  transform:none;opacity:1;
+  transition:transform .36s cubic-bezier(.22,.9,.3,1),opacity .36s ease-out,height .36s ease;
+}
+.view-leaving{
+  transform:translateX(-56px);opacity:0;
+  transition:transform .24s ease-in,opacity .24s ease-in;
+}
+.view-entering{transform:translateX(56px);opacity:0}
+.view-entering.view-enter-go{
+  transform:none;opacity:1;
+  transition:transform .36s cubic-bezier(.22,.9,.3,1),opacity .36s ease-out;
+}
+body{overflow-x:clip}
+@media (prefers-reduced-motion: reduce){
+  .hero.hero-exit,.hero.hero-enter.hero-enter-go,
+  .view-leaving,.view-entering.view-enter-go{transition:none}
+}
+
+/* ---- REDESIGN ITEM 2d: schools closures card (Travis, 2026-11-20).
+   One-line summary up top, the full explanation under a See more
+   expander, and the district list as a chart on its own SOLID surface
+   inside the card — name, status underneath, colors doing the
+   talking: no report yet = bright green, late start = yellow,
+   closed = bright red. ---- */
+.schools-more{margin:0 0 10px}
+.schools-more summary{
+  display:inline-flex;align-items:center;gap:6px;cursor:pointer;
+  font-weight:700;font-size:.88rem;color:var(--accent-2);
+  padding:6px 2px;min-height:36px;list-style:none;
+}
+.schools-more summary::-webkit-details-marker{display:none}
+.schools-more summary::after{content:"▾";font-size:.8em;transition:transform .2s ease}
+.schools-more[open ] summary::after{transform:rotate(180deg)}
+.schools-more .card-note{margin-top:2px}
+.schools-list{
+  background:var(--panel);border:1px solid var(--border);border-radius:14px;
+  padding:2px 14px;box-shadow:0 6px 18px rgba(20,40,25,.10);
+}
+.school-row{padding:11px 0;align-items:center}
+.school-status{
+  display:inline-flex;align-items:center;gap:7px;margin-top:3px;
+  font-size:.87rem;font-weight:800;letter-spacing:.01em;
+  background:transparent;border:none;padding:0;border-radius:0;white-space:normal;
+}
+.school-dot{width:10px;height:10px;border-radius:50%;flex:0 0 auto;background:currentColor}
+.school-status.school-none,.school-status.school-open{color:#0f9d58}
+.school-status.school-none .school-dot,.school-status.school-open .school-dot{background:#22c55e;box-shadow:0 0 0 3px rgba(34,197,94,.18)}
+.school-status.school-delayed{color:#a86e00}
+.school-status.school-delayed .school-dot{background:#f5b301;box-shadow:0 0 0 3px rgba(245,179,1,.20)}
+.school-status.school-closed{color:#d61f1f}
+.school-status.school-closed .school-dot{background:#f52222;box-shadow:0 0 0 3px rgba(245,34,34,.16)}
+html[data-theme="dark"] .school-status.school-none,
+html[data-theme="dark"] .school-status.school-open{color:#4ade80;background:transparent}
+html[data-theme="dark"] .school-status.school-delayed{color:#fbbf24;background:transparent}
+html[data-theme="dark"] .school-status.school-closed{color:#ff7b72;background:transparent}
+
+/* ---- REDESIGN ITEM 2e: founding sponsor cards — no photo, ombre
+   (Travis, 2026-11-20). The founding panel's sunset photo and dark
+   scrim are replaced by a white-dominant white-to-orange ombre;
+   layout, content, wording and placement unchanged — background
+   treatment only. The block is light by design in both themes, with
+   dark text flipped in for the light ground. ---- */
+.founding-panel{
+  background:linear-gradient(155deg,#ffffff 0%,#fff9ee 42%,#ffdfae 76%,#ff9e45 100%);
+}
+.founding-inner{background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;color:#2c2418}
+.founding-eyebrow{color:#b05e00}
+.founding-cell{background:rgba(255,255,255,.78);border-color:rgba(176,94,0,.30)}
+.founding-cell.invite{background:rgba(255,255,255,.92);border-color:rgba(233,140,30,.65)}
+.founding-cell.taken{background:rgba(255,255,255,.68);border-color:rgba(233,140,30,.45)}
+.founding-cell p{color:#5d5342}
+.cell-eyebrow{color:#b05e00}
+.ghost-logo{border-color:rgba(122,90,30,.45);background:rgba(255,255,255,.55);color:#7a6748}
+.ghost-logo.claimed{border-color:rgba(233,140,30,.6);background:rgba(255,170,60,.18);color:#b05e00}
+.otl-more{color:#b05e00}
+.otl-more:hover{color:#8a4a00}
+.founding-cta.alt{background:transparent;color:#7a4a00;border-color:rgba(150,90,10,.55)}
+.founding-foot{color:#7d7261}
+
+/* ---- REDESIGN ITEM 2g: two fixes (Travis, 2026-11-20 20:47).
+   (1) The header status spots are THREE EVEN SECTIONS in one row
+   across the card's bottom — equal widths, no wrapping/stacking at
+   any width. (2) The founding cells read as separate cards again:
+   solid white with an orange-tinted border and a soft shadow, so
+   the ombre shows in the gaps between them instead of the cells
+   blending into one mass. ---- */
+body.rd-home .hero-status{flex-wrap:nowrap;gap:6px 10px}
+body.rd-home .hero-spot{flex:1 1 0;text-align:center;white-space:nowrap}
+@media (max-width:480px){ body.rd-home .hero-spot{font-size:.93rem} }
+.founding-cell{background:#ffffff;border-color:rgba(176,94,0,.38);box-shadow:0 4px 14px rgba(150,85,10,.13)}
+.founding-cell.invite{background:#fffdf6;border-color:rgba(233,140,30,.7)}
+.founding-cell.taken{background:#ffffff;border-color:rgba(233,140,30,.5)}
+
+/* ---- REDESIGN ITEM 2i: county briefing card (Travis, 2026-11-20).
+   Explainer deleted (HTML). The briefing rows now sit on one solid
+   surface inside the card (same chart language as the schools
+   list), row icons are the generated image icons, and "Today around
+   the county" renders today's events as individual clickable
+   calendar-style cards instead of a bare count. ---- */
+.briefing-view{
+  background:var(--panel);border:1px solid var(--border);border-radius:14px;
+  padding:6px 16px 10px;box-shadow:0 6px 18px rgba(20,40,25,.10);
+}
+.briefing-ico{display:inline-flex;flex:0 0 auto}
+.briefing-ico img{width:26px;height:26px;display:block}
+.brief-ev-grid{display:grid;grid-template-columns:1fr;gap:8px;margin-top:9px}
+@media (min-width:680px){ .brief-ev-grid{grid-template-columns:1fr 1fr} }
+.brief-ev-card{
+  display:flex;gap:11px;align-items:flex-start;text-decoration:none;color:inherit;
+  background:var(--panel-2);border:1px solid var(--border);border-radius:12px;
+  padding:10px 12px;transition:border-color .15s ease, transform .15s ease;
+}
+.brief-ev-card:hover{border-color:var(--warm-fill);transform:translateY(-1px)}
+.bec-time{
+  flex:0 0 auto;font-weight:800;font-size:.8rem;color:#b05e00;
+  background:rgba(255,158,69,.16);border-radius:8px;padding:3px 8px;white-space:nowrap;
+}
+.bec-main{display:flex;flex-direction:column;gap:1px;min-width:0}
+.bec-title{font-weight:700;font-size:.94rem;line-height:1.3}
+.bec-loc{font-size:.82rem;color:var(--muted)}
+
+/* ---- REDESIGN ITEM 2l: founding background = paint, not gradient
+   (Travis, 2026-11-20 20:54 — replaces the 2e ombre). White with
+   orange paint fluidly mixed in: a generated marbled-paint texture
+   (img/founding-paint.jpg) on the founding panel, in place of the
+   smooth gradient. Cells stay solid white with real gaps; layout,
+   content and spacing unchanged. ---- */
+.founding-panel{
+  background:#fff8f0 url("img/founding-paint.jpg") center/cover no-repeat;
+}
+
+/* ---- REDESIGN ITEM 2m: tab bar active color (Travis, 2026-11-20
+   20:57). The green on the bottom tab buttons is out — the active
+   tab now wears the redesign's soft orange (the ticker-pill ombre),
+   white text, warm shadow. Applies to the active/selected state
+   only; the bar itself and inactive tabs are unchanged, both
+   themes. ---- */
+.tab-btn.active{
+  background:linear-gradient(135deg,#ffb347 0%,#ff7a1a 55%,#e85d04 100%);
+  border-color:#e85d04;color:#fff;
+  box-shadow:0 3px 10px rgba(232,93,4,.35);
+}
+
+/* ---- REDESIGN ITEM 2n: the tab bar becomes four floating pills
+   (Travis, 2026-11-20 20:58, with the 20:57 color fix). No more
+   connected bar: the bar itself is transparent and borderless, and
+   each view button is its own pill with real gaps, floating over
+   the page. The bar is pinned to the very bottom at a CONSTANT
+   height at every scroll position — the old height:auto bar could
+   grow/stretch at the top of the page; height is now explicit and
+   the buttons have a fixed height. Active pill = soft orange ombre
+   (2m); inactive pills are solid with a soft shadow. ---- */
+@media (max-width:899px){
+  .tabbar{
+    position:fixed;left:0;right:0;bottom:0;top:auto;z-index:1200;
+    height:calc(68px + env(safe-area-inset-bottom));
+    padding:7px 10px calc(7px + env(safe-area-inset-bottom));
+    display:flex;align-items:center;justify-content:space-between;gap:8px;
+    background:transparent;border:none;box-shadow:none;
+    backdrop-filter:none;-webkit-backdrop-filter:none;
+  }
+  .tab-btn{
+    flex:1 1 0;height:54px;border-radius:999px;
+    flex-direction:column;gap:1px;padding:4px 2px;
+    font-size:.68rem;font-weight:700;
+    background:rgba(255,255,255,.97);color:var(--muted);
+    border:1px solid var(--border);
+    box-shadow:0 6px 16px rgba(30,40,20,.18);
+  }
+  .tab-btn .tab-ico img{width:20px;height:20px;display:block}
+  .tab-btn.active{
+    background:linear-gradient(135deg,#ffb347 0%,#ff7a1a 55%,#e85d04 100%);
+    border-color:#e85d04;color:#fff;
+    box-shadow:0 6px 16px rgba(232,93,4,.42);
+  }
+  html[data-theme="dark"] .tab-btn{background:rgba(26,34,28,.97)}
+  html[data-theme="dark"] .tab-btn.active{
+    background:linear-gradient(135deg,#ffb347 0%,#ff7a1a 55%,#e85d04 100%);color:#fff;
+  }
+  body{padding-bottom:calc(80px + env(safe-area-inset-bottom))}
+}
+@media (min-width:900px){
+  .tabbar{background:transparent;border-bottom:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+  .tab-btn{
+    background:rgba(255,255,255,.92);border-color:var(--border);
+    box-shadow:0 3px 10px rgba(30,40,20,.10);
+  }
+  html[data-theme="dark"] .tab-btn{background:rgba(26,34,28,.92)}
+}
+
+/* ---- REDESIGN ITEM 2o: card glow flavors (Travis, 2026-11-20
+   20:59). The page is one grey ground and every card floats on it,
+   so shadows carry the depth — in three rotating flavors, assigned
+   by card family (logged in BUILD-LIST.md):
+   ORANGE glow — the hero, the founding sponsor panel, Heading out?,
+   and the featured-local card (the warm/action family).
+   BLACKISH-GREY — the right-to-left scrolling feed cards (event
+   scroller cards + ticker pills) and the Your town photo card.
+   REGULAR GREY — everything else keeps the standard soft shadow;
+   the schools/briefing inner surfaces already wear it.
+   A glow here is a colored shadow only — never a blur over content. ---- */
+body.rd-home .hero{box-shadow:0 18px 42px rgba(255,122,26,.30),0 4px 12px rgba(30,40,20,.16)}
+.founding-panel{box-shadow:0 16px 38px rgba(255,122,26,.32),0 4px 12px rgba(30,40,20,.14)}
+#go-card{box-shadow:0 16px 38px rgba(255,122,26,.30),0 4px 12px rgba(30,40,20,.16)}
+.featured-local{box-shadow:0 14px 34px rgba(255,122,26,.28),0 4px 12px rgba(30,40,20,.12)}
+.evs-card,.nws-card{box-shadow:0 12px 28px rgba(22,24,28,.48),0 2px 6px rgba(22,24,28,.35)}
+body.rd-home .strip-item.glance-tile{box-shadow:0 10px 24px rgba(22,24,28,.45),0 2px 6px rgba(22,24,28,.32)}
+#home-card{box-shadow:0 14px 32px rgba(22,24,28,.42),0 4px 10px rgba(22,24,28,.25)}
+
+/* ---- REDESIGN ITEM 2p: no boxes around floating elements
+   (Travis, 2026-11-20 21:01). The scrolling strip's dark full-width
+   band — background, top/bottom border lines, shadow, blur — is
+   REMOVED: the pills float directly on the page grey like
+   everything else. The full-width breakout stays (the scroll track
+   needs the width), but it is now invisible: no container, no
+   lines crossing the page. ---- */
+.glance-strip{
+  background:transparent;border-top:none;border-bottom:none;box-shadow:none;
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+}
+
+/* ---- REDESIGN ITEM 2q: page background gradient (Travis,
+   2026-11-20 21:02). The light grey is no longer dead flat: a soft
+   radial lightening sits toward the TOP-LEFT corner (fixed to the
+   viewport, so the corner glow stays put while the page scrolls).
+   Gentle only — it reads as light grey everywhere. Light theme
+   only; dark theme's ground is unchanged. ---- */
+body.rd-home{
+  background:#f4f5f7 linear-gradient(135deg, #fcfdfe 0%, #f4f5f7 52%, #e8ecf0 100%) fixed no-repeat;
+}
+
+/* ---- REDESIGN ITEM 2r: slide-in panels FLOAT (Travis, 2026-11-20
+   21:04). The right-side slide-in sheets (business/listing detail,
+   get-the-app, and the menu drawer — same pattern) no longer run
+   full height: they are inset from the top and bottom, keep contact
+   with the right edge, and their left side floats free with rounded
+   left corners and a deep soft shadow. Backdrops unchanged. ---- */
+.getapp-sheet,.drawer{
+  top:12px;bottom:12px;height:auto;
+  border-radius:18px 0 0 18px;
+  box-shadow:-22px 20px 54px rgba(20,30,16,.38),-6px 0 20px rgba(20,30,16,.20);
+}
+
+/* ---- FIX (QC round 5): the hero's [hidden] elements must actually
+   hide. The status row is display:flex by rule, which overrides the
+   hidden attribute — on Travel/Outdoors/Events the Today-only spots
+   (and on Today, the view headline block) leaked through. Any
+   [hidden] element inside the hero now wins. ---- */
+.hero [hidden]{display:none!important}
+
+/* ---- REDESIGN ITEM 2s: sponsor cards = greyish frosted glass
+   (Travis, 2026-11-20 21:06 — refines 2e/2g/2l). The orange-white
+   paint mix stays as the sponsor area's BACKDROP (the panel
+   surface); the sponsor cards themselves are no longer solid
+   white — they are translucent GREY FROSTED GLASS floating over
+   the paint, still separate with real gaps, content fully
+   readable (dark text on the frost; logo boxes keep their white
+   ground). Scoped to the founding panel; in-flow house cells
+   elsewhere keep their solid treatment. ---- */
+.founding-panel .founding-cell{
+  background:rgba(84,90,98,.32);
+  -webkit-backdrop-filter:blur(14px) saturate(1.05);
+  backdrop-filter:blur(14px) saturate(1.05);
+  border-color:rgba(255,255,255,.55);
+  box-shadow:0 8px 22px rgba(60,45,20,.18);
+}
+.founding-panel .founding-cell.invite{
+  background:rgba(96,100,106,.26);
+  border-color:rgba(255,170,80,.75);
+}
+.founding-panel .founding-cell.taken{
+  background:rgba(84,90,98,.32);
+  border-color:rgba(255,255,255,.55);
+}
+
+/* ---- REDESIGN ITEM 2t: reverse-direction slides (Travis,
+   2026-11-20). Tab order is Today → Events → Travel → Outdoors;
+   going BACKWARD in that order mirrors the motion: the old view
+   exits right, the new one enters from the left, and the header
+   card enters from the top-left instead of the top-right. ---- */
+.hero.hero-exit.rev{transform:translateX(64px)}
+.hero.hero-enter.rev{transform:translate(-54px,-32px)}
+.view-leaving.rev{transform:translateX(56px)}
+.view-entering.rev{transform:translateX(-56px)}
+
+/* --- item 2u follow-through: the schools card's photo band shows ---
+   The v1 band retirement (.card-band{display:none}) predates this
+   redesign, where cards carry their own pictures again. Scoped to the
+   schools card only: its band carries the crossing photo (2u). The
+   credit line becomes a static muted line under the chart — the
+   absolute white .photo-credit treatment is for full-photo cards. */
+.schools-card .card-band{display:block}
+.schools-card .photo-credit{position:static;text-align:right;max-width:none;margin-top:8px;color:#8a8474;text-shadow:none}
+
+/* =====================================================================
+   REDESIGN FIX BATCH (Travis, 2026-11-20 21:56–22:15) — items 3a–3o.
+   Appended as one late layer so it wins over the item-2 rules it
+   revises. Logged in BUILD-LIST.md.
+   ===================================================================== */
+
+/* ---- 3a. GREEN OUT (decorative): the accent family flips from green
+   to orange/warm neutrals, light + dark. Functional status colors are
+   NOT touched: school-closure status (bright green/yellow/red), the
+   go-verdict states, freshness dots and alert reds keep their meaning.
+   The generated icon set was hue-shifted green→orange in the same
+   pass (img/icons/*.png). ---- */
+body.rd-home{
+  --accent:#b95e06; --accent-dark:#8a4400; --accent-2:#d97706;
+  --muted:#6b5d54; --text:#2b211b;
+}
+html[data-theme="dark"] body.rd-home{
+  --accent:#f0a35e; --accent-dark:#ffc98a; --accent-2:#ffb347;
+  --muted:#b8a89c; --text:#f5efe8;
+  --panel:#211a16; --panel-2:#2e231c; --panel-3:#42312a; --border:#463a2d;
+}
+::selection{background:rgba(255,158,69,.45)}
+.pulse-dot{background:#ff7a1a;box-shadow:0 0 0 0 rgba(255,122,26,.45)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,122,26,.45)}70%{box-shadow:0 0 0 8px rgba(255,122,26,0)}100%{box-shadow:0 0 0 0 rgba(255,122,26,0)}}
+
+/* ---- 3b. BACKGROUND: REALLY light (Travis: "still too dark").
+   Near-white diagonal, lightest top-left → slightly deeper
+   bottom-right, fixed to the viewport. Dark theme keeps its ground. */
+body.rd-home{
+  background:#fbfcfd linear-gradient(135deg,#ffffff 0%,#fafbfc 48%,#edf0f3 100%) fixed no-repeat;
+}
+
+/* ---- 3c. SHADOW EMPHASIS (Travis 22:14): every card unmistakably
+   FLOATS. The three glow flavors (2o) all deepen a notch; the
+   standard card shadow deepens too. Sliding layers (3d) get the
+   strongest treatment of all. ---- */
+body.rd-home .card{
+  box-shadow:0 14px 34px rgba(35,30,22,.20),0 4px 10px rgba(35,30,22,.12);
+}
+body.rd-home .hero{box-shadow:0 24px 54px rgba(255,122,26,.38),0 6px 16px rgba(35,30,22,.20)}
+.founding-panel{box-shadow:0 22px 48px rgba(255,122,26,.40),0 6px 14px rgba(35,30,22,.18)}
+#go-card{box-shadow:0 22px 48px rgba(255,122,26,.38),0 6px 14px rgba(35,30,22,.18)}
+.evs-card,.nws-card{box-shadow:0 12px 28px rgba(23,26,30,.30),0 4px 10px rgba(23,26,30,.18)}
+.glance-tile{box-shadow:0 10px 24px rgba(23,26,30,.30),0 3px 8px rgba(23,26,30,.18)}
+
+/* ---- 3d. SHADOWS ON SLIDING LAYERS (Travis 22:14): view slides and
+   slide-in sheets/drawer carry a pronounced shadow while moving and
+   after they land, so they read as floating layers over the page. */
+.view-entering,.view-leaving{box-shadow:-18px 0 44px rgba(35,30,22,.22);border-radius:18px}
+.getapp-sheet,.drawer,#otl-sheet,#pv-sheet,#cm-sheet{
+  box-shadow:-30px 26px 68px rgba(25,20,12,.48),-8px 0 26px rgba(25,20,12,.28);
+}
+
+/* ---- 3e. TAB BAR: no bar, ever (Travis 22:02). The dark-theme rule
+   at ~1617 outranked 2n's transparent rule — that was the "square"
+   behind the pills. Transparent in both themes, all widths, with
+   !important so no earlier layer can resurrect it. viewport-fit=cover
+   (index.html meta) lets the safe-area inset the bar's height uses
+   actually resolve on real devices. ---- */
+.tabbar,.tabbar:hover{
+  background:transparent !important;border:none !important;box-shadow:none !important;
+  -webkit-backdrop-filter:none !important;backdrop-filter:none !important;
+}
+html[data-theme="dark"] .tabbar{background:transparent !important}
+@media (max-width:899px){
+  .tabbar{position:fixed !important;left:0;right:0;bottom:0 !important;top:auto !important}
+}
+
+/* ---- 3f. TAB PILLS = MARBLED ORANGE (Travis 22:09): the active pill
+   wears the white-and-orange paint mix, not the solid ombre. Dark
+   label text + a white halo behind the icon keep it legible over
+   the marbling. Inactive pills: clean near-white (light) / warm
+   charcoal (dark) — the old dark-green pill ground is gone. ---- */
+.tab-btn.active{
+  background:linear-gradient(rgba(255,253,248,.42),rgba(255,253,248,.42)),url("img/founding-paint.jpg") center/cover no-repeat !important;
+  color:#3a2408 !important;border-color:#e85d04 !important;
+  box-shadow:0 8px 20px rgba(232,93,4,.40),0 3px 8px rgba(35,30,22,.18) !important;
+  text-shadow:0 1px 0 rgba(255,255,255,.65);
+}
+.tab-btn.active .tab-ico{
+  background:rgba(255,255,255,.82);border-radius:50%;padding:2px;
+  box-shadow:0 1px 4px rgba(90,50,0,.35);
+}
+html[data-theme="dark"] .tab-btn.active{color:#3a2408 !important}
+@media (max-width:899px){
+  html[data-theme="dark"] .tab-btn{background:rgba(38,30,24,.96);color:#d8c9b8}
+}
+@media (min-width:900px){
+  html[data-theme="dark"] .tab-btn{background:rgba(38,30,24,.94);color:#d8c9b8}
+}
+
+/* ---- 3g. SCROLLERS: no auto-scroll, stays where left, edge fade
+   (Travis 21:56 + 22:05). Both feeds become plain swipe/click
+   viewports; the left/right edges fade out instead of cutting off.
+   Desktop gets arrow buttons in the head (wired in app.js). ---- */
+.ev-scroll-viewport,.news-scroll-viewport{
+  overflow-x:auto;overflow-y:hidden;scrollbar-width:none;
+  scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 26px,#000 calc(100% - 26px),transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 26px,#000 calc(100% - 26px),transparent);
+}
+.ev-scroll-viewport::-webkit-scrollbar,.news-scroll-viewport::-webkit-scrollbar{display:none}
+.ev-scroll-track,.news-scroll-track{animation:none !important;width:auto;will-change:auto}
+.evs-card,.nws-card{scroll-snap-align:start}
+.sc-arrows{display:none;margin-left:auto;gap:6px}
+@media (min-width:900px){ .sc-arrows{display:inline-flex} }
+.sc-arrow{
+  width:34px;height:34px;border-radius:50%;cursor:pointer;
+  border:1px solid rgba(232,93,4,.55);background:rgba(255,255,255,.92);
+  color:#b95e06;font-size:1.25rem;font-weight:800;line-height:1;
+  box-shadow:0 4px 12px rgba(35,30,22,.18);
+}
+.sc-arrow:hover{background:#fff3e2}
+html[data-theme="dark"] .sc-arrow{background:rgba(38,30,24,.95);color:#f0a35e}
+
+/* ---- 3h. FORECAST PILLS (Travis 21:56): Today = bare pills floating
+   on the page background, no card behind them; every pill wears the
+   orange-white paint mix. Outdoors keeps its merged weather card
+   (Travis's earlier direction) but the pills sit FLAT inside it —
+   the inner forecast card's own surface is removed. ---- */
+.wx-today-bare{margin:18px 0 4px}
+.wx-bare-head{display:flex;align-items:center;gap:9px;margin:0 2px 6px}
+.wx-bare-head h2{font-size:1.15rem;margin:0}
+.wx-bare-head .updated{margin-left:auto}
+.wx-day,html[data-theme="dark"] .wx-day{
+  background:linear-gradient(rgba(255,252,246,.45),rgba(255,252,246,.45)),url("img/founding-paint.jpg") center/cover no-repeat;
+  color:#2b211b;border-color:rgba(255,255,255,.65);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 8px 20px rgba(35,30,22,.20);
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+}
+.wx-day .wx-pop{color:#0b5fa5}
+.wx-day.wx-today,html[data-theme="dark"] .wx-day.wx-today{
+  background:linear-gradient(rgba(255,252,246,.40),rgba(255,252,246,.40)),url("img/founding-paint.jpg") center/cover no-repeat;
+  border-color:rgba(232,93,4,.9);box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 8px 20px rgba(35,30,22,.20),0 0 0 2px rgba(232,93,4,.35);
+}
+.wx-day.wx-today .wx-dow,html[data-theme="dark"] .wx-day.wx-today .wx-dow{color:#b0511c}
+#alerts-card #forecast-week-card{
+  background:transparent;border:none;border-radius:0;box-shadow:none;
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+}
+
+/* ---- 3i. BRIEFING FLATTENED (Travis 21:58): ONE card. The card
+   itself carries the paint mix; the rows sit directly on it (the
+   solid inner surface is gone); today's event mini-cards float as
+   frosted glass over the paint, sponsor-panel pattern. The card is
+   light by design in both themes, so its text is dark by rule. ---- */
+#briefing-card{
+  background:#fff8f0 url("img/founding-paint.jpg") center/cover no-repeat;
+  color:#2c2418;border-left:4px solid #e85d04;
+}
+#briefing-card h2,#briefing-card .updated{color:#2c2418;text-shadow:none}
+.briefing-view{
+  background:transparent;border:none;border-radius:0;box-shadow:none;
+  padding:0;min-height:0;
+}
+.brief-ev-card{
+  background:rgba(255,255,255,.55);
+  -webkit-backdrop-filter:blur(10px) saturate(1.1);backdrop-filter:blur(10px) saturate(1.1);
+  border-color:rgba(255,255,255,.6);color:#2c2418;
+  box-shadow:0 8px 20px rgba(60,45,20,.18);
+}
+.brief-ev-card .bec-loc{color:#5d5342}
+#briefing-card .briefing-row,#briefing-card .briefing-view{color:#2c2418}
+#briefing-card .briefing-label{color:#8a6a4a}
+#briefing-card .briefing-items li::before{color:#b05e00}
+#briefing-card .briefing-foot{color:#5d5342}
+
+/* ---- 3j. SPONSOR UNIFORMITY (Travis 22:01): on phones the v90 weave
+   moves spots 2+3 out of the panel into the Today flow, where the old
+   in-flow treatment (white card, cream name text) made them look
+   broken next to OTL. In-flow cells now carry OTL's exact treatment:
+   the paint mix behind greyish frosted glass, dark readable text,
+   the same logo box. Panel cells: logos present identically
+   (contain-fit in the shared circular box). ---- */
+.founding-cell.in-flow{
+  background:linear-gradient(rgba(84,90,98,.32),rgba(84,90,98,.32)),url("img/founding-paint.jpg") center/cover no-repeat;
+  -webkit-backdrop-filter:blur(14px) saturate(1.05);backdrop-filter:blur(14px) saturate(1.05);
+  border:1px solid rgba(255,255,255,.55);border-radius:16px;
+  box-shadow:0 14px 32px rgba(60,45,20,.24);color:#2c2418;
+}
+.founding-cell.in-flow h3{color:#2c2418}
+.founding-cell.in-flow p{color:#4a4234}
+.founding-cell.in-flow .cell-eyebrow{color:#b05e00}
+.founding-cell.in-flow .otl-tel{color:#8a4400}
+.founding-panel .otl-logo-box img{
+  width:104px;height:104px;object-fit:contain;border-radius:50%;background:#fff;
+}
+/* "See hours & what's on" — BRIGHTER everywhere (Travis 22:01). */
+.otl-more{color:#e85d04 !important;font-weight:800}
+.otl-more:hover{color:#c24e00 !important}
+.dir-otl-more{color:#e85d04 !important;font-weight:800}
+
+/* ---- 3k. GREEN BUTTONS + HEADING-OUT NOTE CARDS → MARBLE
+   (Travis 22:11): primary green buttons and the little check/note
+   cards inside Heading out? wear the same orange-white marble,
+   dark text. The go-verdict's go/warn/bad COLORS are meaning
+   (go / caution / stop) and stay — flagged in the report. ---- */
+.share-btn.primary,#briefing-listen-btn,body.rd-home .go-trip-btn.active{
+  background:linear-gradient(rgba(255,252,246,.45),rgba(255,252,246,.45)),url("img/founding-paint.jpg") center/cover no-repeat;
+  color:#3a2408;border-color:#e85d04;font-weight:800;
+}
+body.rd-home .go-row{
+  background:linear-gradient(rgba(255,252,246,.45),rgba(255,252,246,.45)),url("img/founding-paint.jpg") center/cover no-repeat;
+  color:#2b211b;border-color:rgba(232,93,4,.35);
+  box-shadow:0 8px 20px rgba(35,30,22,.20);
+}
+body.rd-home .go-row .go-row-detail{color:#5d5342}
+body.rd-home .go-row-bad{border-color:var(--danger)}
+body.rd-home .go-row-warn{border-left:4px solid var(--warn)}
+
+/* ---- 3l. NEWS VIEW (Travis 21:56): story list + in-app story.
+   The News hero uses the paint mix (no suitable openly licensed
+   news photo exists — the picture-less card rule, item 3m). ---- */
+.news-list{display:flex;flex-direction:column;gap:10px;margin-top:10px}
+.news-row{
+  display:flex;gap:12px;align-items:center;text-align:left;width:100%;
+  background:var(--panel);border:1px solid var(--border);border-radius:14px;
+  padding:10px 12px;cursor:pointer;font:inherit;color:var(--text);
+  box-shadow:0 8px 20px rgba(35,30,22,.14);
+}
+.news-row-img{width:84px;height:64px;object-fit:cover;border-radius:10px;flex:none}
+.news-row-main{display:flex;flex-direction:column;gap:2px;min-width:0}
+.news-row-title{font-weight:700;font-size:.98rem;line-height:1.3}
+.news-row-arrow{margin-left:auto;font-size:1.5rem;color:#b95e06;flex:none}
+.news-story-img{width:100%;max-height:340px;object-fit:cover;border-radius:14px;display:block;margin:10px 0}
+.news-story-title{font-size:1.35rem;line-height:1.25;margin:6px 0 4px}
+.news-story-meta{color:var(--muted);font-size:.85rem;margin:0 0 10px}
+.news-story-summary{font-size:1rem;line-height:1.55}
+.news-story-credit{color:var(--muted);font-size:.82rem}
+.news-readfull{
+  display:inline-block;margin-top:8px;font-weight:800;color:#b95e06;
+  background:linear-gradient(rgba(255,252,246,.45),rgba(255,252,246,.45)),url("img/founding-paint.jpg") center/cover no-repeat;
+  border:1px solid #e85d04;border-radius:999px;padding:9px 16px;text-decoration:none;
+}
+.news-back{
+  background:none;border:none;font:inherit;font-weight:800;color:#b95e06;
+  cursor:pointer;padding:6px 0;font-size:.95rem;
+}
+
+/* ---- 3m. ADD-AN-EVENT thin card — Events view, near the top
+   (Travis 22:06, placement corrected 22:07: Events tab, NOT Today). */
+.add-event-card{
+  display:flex;align-items:center;gap:12px;text-decoration:none;
+  background:linear-gradient(rgba(255,252,246,.45),rgba(255,252,246,.45)),url("img/founding-paint.jpg") center/cover no-repeat;
+  color:#2c2418;border:1px solid rgba(232,93,4,.5);border-radius:16px;
+  padding:12px 16px;margin:0 0 16px;
+  box-shadow:0 14px 32px rgba(255,122,26,.30),0 4px 10px rgba(35,30,22,.14);
+}
+.add-event-card .aec-main{display:flex;flex-direction:column;gap:1px}
+.add-event-card .aec-sub{font-size:.85rem;color:#5d5342}
+.add-event-card .aec-arrow{margin-left:auto;font-size:1.3rem;font-weight:800;color:#b95e06}
+
+/* ---- 3n. DESKTOP HOVER POP (Travis 22:09): cards lift toward the
+   viewer on hover — subtle scale + deeper shadow. Desktop pointers
+   only; reduced motion opts out. ---- */
+@media (hover:hover) and (min-width:900px){
+  .card,.evs-card,.nws-card,.founding-cell,.brief-ev-card,.news-row,.add-event-card{
+    transition:transform .18s ease,box-shadow .18s ease;
+  }
+  .card:hover,.evs-card:hover,.nws-card:hover,.founding-cell:hover,.brief-ev-card:hover,.news-row:hover,.add-event-card:hover{
+    transform:translateY(-3px) scale(1.012);
+    box-shadow:0 26px 54px rgba(35,30,22,.30),0 8px 18px rgba(35,30,22,.18);
+  }
+}
+@media (prefers-reduced-motion:reduce){
+  .card:hover,.evs-card:hover,.nws-card:hover,.founding-cell:hover,.brief-ev-card:hover,.news-row:hover,.add-event-card:hover{transform:none}
+}
+
+/* ---- 3o. TOWN CARD BACKGROUND SLIDE (Travis, 2026-11-20 22:20):
+   only the photo layer moves; the card's text/content never does.
+   Old photo exits left, the picked town's photo enters from the
+   right, both under the card's static scrim + text. ---- */
+#home-card .card-bgphoto{overflow:hidden}
+#home-card .card-bgphoto img.town-slide-out{position:relative;z-index:0}
+#home-card .card-bgphoto img.town-slide-in{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  transform:translateX(102%);
+}
+#home-card .card-bgphoto img.town-slide-out.town-slide-go{
+  transform:translateX(-102%);transition:transform .4s ease;
+}
+#home-card .card-bgphoto img.town-slide-in.town-slide-go{
+  transform:translateX(0);transition:transform .4s ease;
+}
+/* Contrast fixes spotted in this batch's QC (headings that sat white
+   on the new light ground): the bare Today forecast's place line and
+   the Events card's head (its photo is a block above the head, not
+   behind it). */
+.wx-today-bare .wx-place{color:var(--muted);text-shadow:none}
+#events-card .card-head h2{color:var(--text);text-shadow:none}
+#events-card .card-head .updated{color:var(--muted);text-shadow:none}
+
+/* ---- 3p. UNPIN EXIT (Travis, 2026-11-20 22:25): the leaving pinned
+   copy slides right + fades while its height collapses; transitions
+   live here, the JS only sets the end states. ---- */
+.pin-copy.pin-leaving{
+  overflow:hidden;pointer-events:none;
+  transition:transform .32s ease-in,opacity .32s ease-in,height .36s ease,margin .36s ease,padding .36s ease;
+}
+
+/* ---- 3p-2. PIN SETTLE keyframes (companion to the FLIP above). ---- */
+@keyframes pinSettle{0%{transform:translateY(7px)}55%{transform:translateY(-5px)}100%{transform:translateY(0)}}
+.pin-copy.pin-settle{animation:pinSettle .5s cubic-bezier(.25,.9,.30,1.2)}
+@media (prefers-reduced-motion:reduce){ .pin-copy.pin-settle{animation:none} }
+
+/* ---- 3q. FORECAST PILL TEXT REDO (Travis, 2026-11-20 22:26): the
+   marble swirls fought the text. Treatment: a stronger white wash
+   over the paint (marble still shows, softer), near-black warm text
+   at heavier weights, a faint white halo behind the glyphs, the low
+   temp in deep warm brown instead of grey, rain chance in deep
+   blue at 800, and the condition icon on a soft white backing. ---- */
+.wx-day,html[data-theme="dark"] .wx-day{
+  background:linear-gradient(rgba(255,252,246,.45),rgba(255,252,246,.45)),url("img/founding-paint.jpg") center/cover no-repeat;
+  color:#241708;text-shadow:0 1px 0 rgba(255,255,255,.8);
+}
+.wx-day.wx-today,html[data-theme="dark"] .wx-day.wx-today{
+  background:linear-gradient(rgba(255,252,246,.45),rgba(255,252,246,.45)),url("img/founding-paint.jpg") center/cover no-repeat;
+}
+.wx-day .wx-dow{color:#241708;font-weight:800}
+.wx-day .wx-hi{color:#241708}
+.wx-day .wx-lo{color:#574433;font-weight:700}
+.wx-day .wx-pop{color:#0a4f86;font-weight:800}
+.wx-day .wx-ico{background:rgba(255,255,255,.6);box-shadow:0 2px 6px rgba(35,30,22,.18)}
+
+/* ---- 3r. SCHOOLS BAND REFRAME (Travis, 2026-11-20 22:27): the
+   84px band sliced the bus in half. The schools band is now a real
+   picture height and the crop sits on the bus. ---- */
+.schools-card .card-band{height:172px}
+.schools-card .card-band img{object-position:center 64%}
+@media (max-width:560px){ .schools-card .card-band{height:152px} }
+
+/* ---- 3s. BIGGER (Travis, 2026-11-20 22:28): scroller cards grow in
+   width AND height (bigger pictures, roomier titles); the page's
+   cards scale up a notch — more vertical room and presence, same
+   layout, order and gaps. ---- */
+.evs-card,.nws-card{width:236px}
+.evs-img,.nws-img{height:132px}
+.evs-body,.nws-body{padding:12px 14px 14px;gap:3px}
+.evs-title,.nws-title{font-size:1.02rem}
+@media (min-width:900px){
+  .evs-card,.nws-card{width:276px}
+  .evs-img,.nws-img{height:156px}
+  .evs-title,.nws-title{font-size:1.06rem}
+}
+/* (scope correction, Travis 22:29: the general card scale-up is OUT — only the two scroller feeds grow.) */
+
+/* ---- 3t. BRIEFING "…AND N MORE TODAY" LINE (Travis, 2026-11-20
+   22:30): the muted small line vanished on the paint. It now sits
+   on its own frosted chip — same family as the briefing's frosted
+   event cards — in deep orange-brown, bold. ---- */
+#briefing-card .briefing-more{
+  display:inline-block;margin-top:8px;padding:5px 12px;border-radius:999px;
+  background:rgba(255,255,255,.60);
+  -webkit-backdrop-filter:blur(8px) saturate(1.1);backdrop-filter:blur(8px) saturate(1.1);
+  border:1px solid rgba(255,255,255,.65);
+  color:#7a3c00;font-weight:700;font-size:.88rem;
+  box-shadow:0 4px 12px rgba(60,45,20,.16);
+}
+
+/* ---- 3u. BACKGROUND SETTLED (Travis, 2026-11-20 22:33, final
+   word): REALLY LIGHT GREY — the light end of grey, unmistakably
+   grey rather than white. Diagonal as before, lightest top-left.
+   SETTLED VALUES: #f2f3f5 (top-left) → #e9ebee (mid) → #dde1e6
+   (bottom-right), fixed to the viewport. ---- */
+body.rd-home{
+  background:#e9ebee linear-gradient(135deg,#f2f3f5 0%,#e9ebee 48%,#dde1e6 100%) fixed no-repeat;
+}
+
+/* ---- 3v. CARD EDGES (Travis, 2026-11-20 22:32): cards get a fine
+   light rim + an inset top highlight and a hairline of shade at
+   the bottom edge, layered WITH the deepened outer shadows — the
+   cards read as physical floating objects with thickness. ---- */
+body.rd-home .card{
+  border:1px solid rgba(255,255,255,.70);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),inset 0 -2px 3px rgba(35,30,22,.07),0 14px 34px rgba(35,30,22,.20),0 4px 10px rgba(35,30,22,.12);
+}
+html[data-theme="dark"] body.rd-home .card{
+  border-color:rgba(255,255,255,.16);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.14),inset 0 -2px 3px rgba(0,0,0,.25),0 14px 34px rgba(0,0,0,.45),0 4px 10px rgba(0,0,0,.35);
+}
+.evs-card,.nws-card,.news-row{
+  border:1px solid rgba(255,255,255,.70);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),inset 0 -2px 3px rgba(35,30,22,.07),0 12px 28px rgba(23,26,30,.30),0 4px 10px rgba(23,26,30,.18);
+}
+
+/* ---- 3w. NEWS SHAPE FINAL (Travis, 2026-11-20 22:35–22:36): News
+   is its OWN full view (story list + reader) but has NO bottom
+   pill. Entered from Today's news scroller and from the entry card
+   inside Events & More; its Back button returns to whichever view
+   the reader came from, and while in News the Events & More pill
+   stays lit (News lives under its umbrella). ---- */
+.news-entry-card{
+  display:flex;align-items:center;gap:12px;width:100%;text-align:left;
+  font:inherit;cursor:pointer;text-decoration:none;
+  background:linear-gradient(rgba(255,252,246,.45),rgba(255,252,246,.45)),url("img/founding-paint.jpg") center/cover no-repeat;
+  color:#2c2418;border:1px solid rgba(232,93,4,.5);border-radius:16px;
+  padding:12px 16px;margin:0 0 16px;
+  box-shadow:0 14px 32px rgba(255,122,26,.30),0 4px 10px rgba(35,30,22,.14);
+}
+.news-entry-card .aec-main{display:flex;flex-direction:column;gap:1px}
+.news-entry-card .aec-sub{font-size:.85rem;color:#5d5342}
+.news-entry-card .aec-arrow{margin-left:auto;font-size:1.3rem;font-weight:800;color:#b95e06}
+#news-view-back{margin-bottom:6px}
+/* pin settle, container edition (see app.js pinRenderZoneNow) */
+#frontpage-list.pin-settling [data-pin-copy]{animation:pinSettle .5s cubic-bezier(.25,.9,.30,1.2)}
+@media (prefers-reduced-motion:reduce){ #frontpage-list.pin-settling [data-pin-copy]{animation:none} }
+
+/* ---- 3x. COUNTY WATCH HOUSE CELL READABILITY (Travis, 2026-11-20
+   22:37): the "Never miss a change" cell's orange-on-marble blended
+   badly. New treatment — deliberately NOT bright orange: a clean
+   near-solid warm-white frosted surface, ink text, deep-brown
+   eyebrow, and the "Start the County Watch" button as a solid
+   deep ink-brown pill with white text. ---- */
+#founding-cell-watch{
+  background:rgba(255,253,248,.94);
+  -webkit-backdrop-filter:blur(10px) saturate(1.05);backdrop-filter:blur(10px) saturate(1.05);
+  border:1px solid rgba(122,60,0,.28);color:#2c2418;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 14px 32px rgba(60,45,20,.22);
+}
+#founding-cell-watch .cell-eyebrow{color:#7a3c00}
+#founding-cell-watch h3{color:#2c2418}
+#founding-cell-watch p{color:#3d3428}
+#founding-cell-watch .founding-cta{
+  background:#3a2a18;border-color:#3a2a18;color:#fff;
+}
+#founding-cell-watch .founding-cta:hover{background:#57402a;color:#fff}
+
+/* =====================================================================
+   ITEM 4 — DARK THEME ALIGNMENT + STEER BATCH (Travis, 2026-11-20
+   22:45–22:57; cache-busts style.css v152 / app.js v136).
+   Travis's phone carries the saved DARK theme on this origin, and the
+   whole item-2/3 redesign was built and QC'd in the light theme only:
+   in dark, the homepage still wore the legacy look (flat #242628
+   ground from item 1, dark-green glass cards, cream text, a darkened
+   hero photo with its dusk twin, charcoal tab pills). The redesign is
+   a LIGHT design, so on the homepage (body.rd-home) the dark theme
+   now renders the SAME design as the light theme: the settled
+   light-grey ground, light glass cards, ink text, the orange accent
+   family. Meaning colors (school status, go verdicts, alert reds)
+   keep their meaning — they take their light-surface values, exactly
+   as in the light theme. sponsor.html is not rd-home and keeps its
+   own dark theme (flagged in the report).
+   ===================================================================== */
+
+/* ---- 4a. GROUND (also the SEAM fix, Travis 22:52): the settled
+   light-grey gradient in BOTH themes, on the body AND on the html
+   canvas, one continuous fixed layer — no legacy body background
+   (the #101b13 480px-stop gradient, the transparent body, the
+   #242628 flat, the #223c29 canvas) can show an edge at any scroll
+   depth. The glance strip's legacy band edges are stripped at
+   rd-home scope too, so nothing draws a line where the ticker ends. */
+body.rd-home{
+  background:#e9ebee linear-gradient(135deg,#f2f3f5 0%,#e9ebee 48%,#dde1e6 100%) fixed no-repeat;
+}
+html:has(> body.rd-home){background:#e9ebee}
+html[data-theme="dark"] body.rd-home{
+  background:#e9ebee linear-gradient(135deg,#f2f3f5 0%,#e9ebee 48%,#dde1e6 100%) fixed no-repeat;
+}
+html[data-theme="dark"]:has(> body.rd-home){background:#e9ebee;color-scheme:light}
+body.rd-home .glance-strip{
+  background:transparent;border-top:none;border-bottom:none;box-shadow:none;
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+}
+
+/* ---- 4b. VARIABLES: the dark homepage takes the LIGHT values (the
+   item-3a orange family included), so every var()-driven surface —
+   cards, panels, drawer, footer, directory, forms — renders the
+   light design in dark too. ---- */
+html[data-theme="dark"] body.rd-home{
+  --bg:#f1ecdc; --panel:#fbf8ee; --panel-2:#f0ead6; --panel-3:#e3dcc2;
+  --border:#d9d1b6; --text:#2b211b; --muted:#6b5d54;
+  --accent:#b95e06; --accent-dark:#8a4400; --accent-2:#d97706;
+  --warm:#b0511c; --warm-fill:#e9a44a; --warn:#b0511c; --danger:#b3352b;
+  --sponsor-bg:#f6ead0;
+  --shadow:0 1px 2px rgba(43,52,30,.06),0 10px 28px rgba(43,52,30,.07);
+  color-scheme:light;
+}
+
+/* ---- 4c. EXPLICIT DARK SURFACES on the homepage → light values.
+   The legacy dark block set these by raw color, not by variable, so
+   each is re-stated with its light-theme declaration. The .card rule
+   also carries the final pooled shadow (see 4e). ---- */
+html[data-theme="dark"] body.rd-home .card{
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);
+  backdrop-filter:blur(12px) saturate(1.25);
+  border:1px solid rgba(255,255,255,.70);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),inset 0 -2px 3px rgba(35,30,22,.07),0 4px 10px rgba(35,30,22,.12),0 16px 38px rgba(35,30,22,.22),0 30px 60px rgba(35,30,22,.13);
+}
+html[data-theme="dark"] body.rd-home .featured-local{
+  background:linear-gradient(180deg,rgba(250,238,214,.88),rgba(246,234,208,.78));
+  border-color:#e3cd96;
+}
+html[data-theme="dark"] body.rd-home .featured-card{background:rgba(253,250,240,.88)}
+html[data-theme="dark"] body.rd-home .featured-card.invite{border-color:#dfb96a}
+html[data-theme="dark"] body.rd-home .featured-event{background:rgba(246,234,208,.85);border-color:#dfb96a}
+html[data-theme="dark"] body.rd-home .finder-box{background:rgba(251,248,238,.82)}
+html[data-theme="dark"] body.rd-home .finder-results{background:rgba(251,248,238,.9)}
+html[data-theme="dark"] body.rd-home .hero-finder .finder-box{background:rgba(255,255,255,.95)}
+html[data-theme="dark"] body.rd-home .site-footer{background:rgba(247,242,226,.84);border-top-color:rgba(255,255,255,.5)}
+html[data-theme="dark"] body.rd-home .drawer{background:rgba(251,248,238,.92);color:var(--text);border-left-color:var(--border)}
+html[data-theme="dark"] body.rd-home .drawer-head{border-bottom-color:var(--border)}
+html[data-theme="dark"] body.rd-home .drawer-group + .drawer-group{border-top-color:var(--border)}
+html[data-theme="dark"] body.rd-home .drawer-view{color:var(--accent-dark)}
+html[data-theme="dark"] body.rd-home .sponsor-top{background:linear-gradient(180deg,rgba(250,238,214,.9),rgba(246,234,208,.82))}
+html[data-theme="dark"] body.rd-home .sponsor-top .cell-eyebrow{color:var(--warm)}
+html[data-theme="dark"] body.rd-home .rail-card{
+  background:linear-gradient(180deg,rgba(253,250,240,.9),rgba(249,244,229,.82));
+  border-color:rgba(255,255,255,.6);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 2px rgba(20,32,16,.10),0 16px 36px rgba(20,32,16,.18);
+}
+html[data-theme="dark"] body.rd-home .rail-card p{color:var(--muted)}
+html[data-theme="dark"] body.rd-home .rail-card .cell-eyebrow{color:var(--warm)}
+html[data-theme="dark"] body.rd-home .rail-cta{color:var(--accent-dark);border-color:var(--accent)}
+html[data-theme="dark"] body.rd-home .card-photo{background:#ddd5ba}
+html[data-theme="dark"] body.rd-home .card-band{background:transparent}
+html[data-theme="dark"] body.rd-home .dir-empty{background:var(--panel-2)}
+html[data-theme="dark"] body.rd-home .sc-arrow{background:rgba(255,255,255,.92);color:#b95e06}
+html[data-theme="dark"] body.rd-home .saver-chip.on .saver-chip-state{color:#b0511c}
+html[data-theme="dark"] body.rd-home .finder-hint{background:rgba(247,242,226,.68);border-color:rgba(255,255,255,.45)}
+html[data-theme="dark"] body.rd-home select{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5 11 1.5' fill='none' stroke='%235a665e' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+/* photos: no dark dimming and no dusk twins on the redesign
+   homepage — the same photos as the light design, both themes */
+html[data-theme="dark"] body.rd-home .hero-img{filter:saturate(.86) contrast(1.04) brightness(.95)}
+html[data-theme="dark"] body.rd-home .hero-img-night{opacity:0}
+html[data-theme="dark"] body.rd-home .card-photo .photo-night{opacity:0}
+/* map: daylight tiles + light popups, as in the light theme */
+html[data-theme="dark"] body.rd-home #map{background:#dce7ef}
+html[data-theme="dark"] body.rd-home .leaflet-tile-pane{filter:none}
+html[data-theme="dark"] body.rd-home #map .leaflet-popup-content-wrapper{
+  background:linear-gradient(180deg,rgba(253,250,240,.94),rgba(249,244,229,.88));
+  border-color:rgba(255,255,255,.65);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 10px 28px rgba(20,40,30,.30);color:var(--text);
+}
+html[data-theme="dark"] body.rd-home #map .leaflet-popup-tip{background:rgba(250,245,231,.92)}
+html[data-theme="dark"] body.rd-home #map .leaflet-tooltip.maptip{background:rgba(250,245,231,.95);border-color:rgba(120,110,70,.35);color:#1e2b1f}
+/* status tints: meaning unchanged, light-surface values (the same
+   declarations the light theme uses) */
+html[data-theme="dark"] body.rd-home .alert-banner{background:#fdecec;border-color:#e5a3a3;color:#7c1d1d}
+html[data-theme="dark"] body.rd-home .alert-banner strong{color:#5f1212}
+html[data-theme="dark"] body.rd-home .offline-note{background:#fff6dd;border-color:#e6cf87;color:#6d5200}
+html[data-theme="dark"] body.rd-home .update-toast{background:#fff6dd;border-color:#e6cf87;color:#6d5200}
+html[data-theme="dark"] body.rd-home .update-toast-no{color:#6d5200}
+html[data-theme="dark"] body.rd-home .quake-mag.hot{border-color:#e5a3a3;color:#b32626;background:#fdecec}
+html[data-theme="dark"] body.rd-home .go-verdict.go-bad,
+html[data-theme="dark"] body.rd-home .dark-verdict.dark-bad{background:#fdf1f1}
+html[data-theme="dark"] body.rd-home .sh-good{background:#dff2e2;color:#1d5c2e}
+html[data-theme="dark"] body.rd-home .sh-fair{background:#fdf0d5;color:#7a5410}
+html[data-theme="dark"] body.rd-home .sh-poor{background:#eef1f4;color:#5b7186}
+html[data-theme="dark"] body.rd-home .pill-poor{background:#eef1f4;color:#5b7186}
+html[data-theme="dark"] body.rd-home .seg-weak{background:#fdeeda;color:#7c4a12}
+html[data-theme="dark"] body.rd-home .school-open{background:#dff2e2;color:#1d5c2e}
+html[data-theme="dark"] body.rd-home .school-closed{background:#fdecec;color:#991b1b}
+html[data-theme="dark"] body.rd-home .school-delayed{background:#fdf0d5;color:#7a5410}
+/* forecast rain chance + school status: the dark block's brightened
+   shades were tuned for dark surfaces; on the light pills/chart
+   they wash out, so they take the light values too */
+html[data-theme="dark"] body.rd-home .wx-day .wx-pop{color:#0a4f86}
+html[data-theme="dark"] body.rd-home .school-status.school-none,
+html[data-theme="dark"] body.rd-home .school-status.school-open{color:#0f9d58}
+html[data-theme="dark"] body.rd-home .school-status.school-delayed{color:#a86e00}
+html[data-theme="dark"] body.rd-home .school-status.school-closed{color:#d61f1f}
+/* tab pills: the light near-white pill in dark too (the batch's
+   warm-charcoal dark pill is retired with the rest of the dark look;
+   the active pill keeps its marble from 3f, with a dark shadow) */
+@media (max-width:899px){
+  html[data-theme="dark"] body.rd-home .tab-btn{background:rgba(255,255,255,.97);color:var(--muted)}
+}
+@media (min-width:900px){
+  html[data-theme="dark"] body.rd-home .tab-btn{background:rgba(255,255,255,.92);color:var(--muted)}
+}
+
+/* ---- 4e. SHADOWS — ONE DARK FAMILY (Travis 22:47 + 22:53 + 22:57).
+   The orange glow flavor is RETIRED: hero, founding panel, Heading
+   out?, featured-local and the thin marble cards all carry the dark
+   (blackish) shadow family now. The blackish-grey flavor is DEEPENED
+   (scroller cards, ticker tiles, Your town card) so light cards stop
+   blending into the light grey ground. And every card shadow gains
+   a wide, soft ambient layer: where cards sit near each other their
+   shadows reach into the gap and pool — darker where they overlap,
+   the way real shadows behave. Paint-mix BACKDROPS are untouched;
+   this is shadow color/depth only. ---- */
+body.rd-home .card{
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),inset 0 -2px 3px rgba(35,30,22,.07),0 4px 10px rgba(35,30,22,.12),0 16px 38px rgba(35,30,22,.22),0 30px 60px rgba(35,30,22,.13);
+}
+body.rd-home .hero{box-shadow:0 6px 14px rgba(35,30,22,.20),0 20px 44px rgba(35,30,22,.34),0 34px 68px rgba(35,30,22,.16)}
+.founding-panel{box-shadow:0 6px 14px rgba(35,30,22,.20),0 20px 44px rgba(35,30,22,.34),0 34px 68px rgba(35,30,22,.16)}
+#go-card{box-shadow:0 6px 14px rgba(35,30,22,.20),0 20px 44px rgba(35,30,22,.34),0 34px 68px rgba(35,30,22,.16)}
+.featured-local{box-shadow:0 5px 12px rgba(35,30,22,.18),0 18px 40px rgba(35,30,22,.30),0 30px 60px rgba(35,30,22,.14)}
+.add-event-card{box-shadow:0 5px 12px rgba(35,30,22,.18),0 16px 36px rgba(35,30,22,.30),0 28px 56px rgba(35,30,22,.14)}
+.news-entry-card{box-shadow:0 5px 12px rgba(35,30,22,.18),0 16px 36px rgba(35,30,22,.30),0 28px 56px rgba(35,30,22,.14)}
+.tab-btn.active{box-shadow:0 8px 20px rgba(35,30,22,.35),0 3px 8px rgba(35,30,22,.20) !important}
+.evs-card,.nws-card{
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),inset 0 -2px 3px rgba(35,30,22,.07),0 6px 14px rgba(23,26,30,.26),0 18px 40px rgba(23,26,30,.44);
+}
+#home-card{box-shadow:0 6px 14px rgba(22,24,28,.28),0 18px 40px rgba(22,24,28,.48)}
+body.rd-home .strip-item.glance-tile{box-shadow:0 6px 14px rgba(22,24,28,.34),0 14px 32px rgba(22,24,28,.50)}
+@media (hover:hover) and (min-width:900px){
+  body.rd-home .card:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.85),inset 0 -2px 3px rgba(35,30,22,.07),0 8px 18px rgba(35,30,22,.18),0 26px 54px rgba(35,30,22,.30),0 44px 80px rgba(35,30,22,.16)}
+}
+
+/* ---- 4f. SCHOOLS CARD (Travis 22:47/22:48): the card body carries
+   the orange-white paint mix (briefing pattern); the district chart
+   sits on it as FROSTED GLASS over the paint. The bus photo band on
+   top is untouched, and the status colors stay functional. ---- */
+body.rd-home .schools-card{
+  background:#fff8f0 url("img/founding-paint.jpg") center/cover no-repeat;
+  color:#2c2418;
+}
+html[data-theme="dark"] body.rd-home .schools-card{
+  background:#fff8f0 url("img/founding-paint.jpg") center/cover no-repeat;
+  color:#2c2418;
+}
+body.rd-home .schools-list{
+  background:rgba(255,255,255,.55);
+  -webkit-backdrop-filter:blur(10px) saturate(1.1);backdrop-filter:blur(10px) saturate(1.1);
+  border-color:rgba(255,255,255,.6);
+  box-shadow:0 8px 20px rgba(60,45,20,.18);
+}
+
+/* ---- 4g. SCROLLER CARDS — BIGGER, PAINT BODIES, SUMMARIES
+   (Travis 22:49/22:50/22:56). What's Happening + News cards grow
+   again: on phone a card takes ~70% of the view so only a quarter
+   to a third of the next card peeks in; height scales with it. The
+   body under the photo carries the paint mix under a strong white
+   wash, with the forecast-pill text recipe (near-black heavy title,
+   deep orange-brown when-line, warm-brown details) so date, title,
+   source and the short summary read at a glance. Summaries are real
+   data only (news snapshot summary; the event's own note) — the
+   builders in app.js add the spans; CSS clamps them to two lines. */
+.evs-card,.nws-card{width:min(272px,74vw)}
+.evs-img,.nws-img{height:196px}
+.evs-body,.nws-body{
+  flex:1;
+  background:linear-gradient(rgba(255,252,246,.45),rgba(255,252,246,.45)),url("img/founding-paint.jpg") center/cover no-repeat;
+  color:#2b211b;gap:3px;padding:11px 14px 13px;
+}
+.evs-title,.nws-title{color:#241708;font-weight:800;font-size:1.04rem}
+.evs-when,.nws-when{color:#7a3c00}
+.evs-loc,.nws-loc{color:#574433;font-size:.8rem}
+.evs-sum,.nws-sum{
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  color:#4a3a28;font-size:.9rem;line-height:1.35;
+}
+@media (min-width:900px){
+  .evs-card,.nws-card{width:344px}
+  .evs-img,.nws-img{height:208px}
+  .evs-title,.nws-title{font-size:1.1rem}
+}
+
+/* ---- 4h. READABILITY (Travis 22:51): the "Founding Sponsor · 2026"
+   cell eyebrow gets the deep orange-brown at full weight with a
+   white halo, so it stops blending into the frost; the Community
+   Notice house cell takes the County Watch recipe (3x) — warm-white
+   frost, ink text, solid ink-brown CTA. ---- */
+.founding-panel .founding-cell .cell-eyebrow,
+.founding-cell.in-flow .cell-eyebrow{
+  color:#7a3c00;font-weight:800;text-shadow:0 1px 0 rgba(255,255,255,.65);
+}
+#founding-cell-nonprofit{
+  background:rgba(255,253,248,.94);
+  -webkit-backdrop-filter:blur(10px) saturate(1.05);backdrop-filter:blur(10px) saturate(1.05);
+  border:1px solid rgba(122,60,0,.28);color:#2c2418;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 14px 32px rgba(60,45,20,.22);
+}
+#founding-cell-nonprofit .cell-eyebrow{color:#7a3c00}
+#founding-cell-nonprofit h3{color:#2c2418}
+#founding-cell-nonprofit p{color:#3d3428}
+#founding-cell-nonprofit .founding-cta{
+  background:#3a2a18;border-color:#3a2a18;color:#fff;
+}
+#founding-cell-nonprofit .founding-cta:hover{background:#57402a;color:#fff}
+/* ---- 4i. VIEW-SWITCH SMOOTHNESS (Travis, 2026-11-20 22:59: the
+   Today → Events → Travel slide is glitchy on his phone; slower is
+   fine if it is smoother). What was causing the jank, as far as the
+   code shows: (1) the hero card's HEIGHT was CSS-transitioned
+   between its two natural heights — animating height forces a full
+   page layout + repaint on every frame for 360ms, the classic
+   phone-GPU stutter; (2) ease-in exits accelerate into the cut;
+   (3) every frosted card's backdrop-filter re-samples while the
+   views move. Fixes: the height is no longer transitioned (app.js
+   keeps it locked through the swap and releases it in ONE step at
+   the end; .hero clips with overflow:hidden meanwhile); both phases
+   run slower (.32s out / .52s in) on smooth cubic-bezier curves;
+   the moving layers get will-change so they are composited before
+   the first frame; and backdrop-filter is suspended on cards for
+   the duration of a swap (over the flat grey ground the blur is
+   invisible anyway — it was all cost, no picture). ---- */
+.hero.hero-exit{transition:transform .32s cubic-bezier(.45,0,.55,1),opacity .32s cubic-bezier(.45,0,.55,1)}
+.hero.hero-enter.hero-enter-go{transition:transform .52s cubic-bezier(.22,.9,.26,1),opacity .52s ease-out}
+.view-leaving{transition:transform .32s cubic-bezier(.45,0,.55,1),opacity .32s cubic-bezier(.45,0,.55,1)}
+.view-entering.view-enter-go{transition:transform .52s cubic-bezier(.22,.9,.26,1),opacity .52s ease-out}
+.view-leaving,.view-entering,.hero.hero-exit,.hero.hero-enter{will-change:transform}
+body.view-anim .card,body.view-anim .featured-local,body.view-anim .finder-box,body.view-anim .finder-results{-webkit-backdrop-filter:none;backdrop-filter:none}
+/* ---- 4j. DIRECTORY FOUNDING ROWS (Travis, 2026-11-20 22:59): the
+   three founding businesses sit at the TOP of the directory (they
+   already did in the markup) and now also carry the founding pill
+   by their name — the same dir-badge language as the partners wall
+   — plus a warm featured-row tint with a burnt-orange left edge,
+   small and tasteful. The corner ribbon stays. ---- */
+#dir-list .dir-item.dir-founding{background:linear-gradient(180deg,#fffdf8,#fdf3e3);border-left:4px solid #e8862a}
+.dir-item h3 .dir-badge{background:linear-gradient(135deg,#ffd9a8,#ffb066);color:#42250a}
+/* ---- 4k. EVENTS PAGE BATCH (Travis, 2026-11-20 23:02). ---- */
+/* (1) The sponsor-spots card he likes (#featured-local): its inner
+   cards get the orange marbling, and the heading above them — white
+   text over the vintage photo, hard to see — gets a warm-white
+   frosted chip so it reads at a glance. */
+#featured-local .featured-card,html[data-theme="dark"] #featured-local .featured-card{
+  background:linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),url('img/founding-paint.jpg') center/cover,#fff8f0;
+  color:#2b211b}
+#featured-local .featured-card h3{color:#241708}
+#featured-local .featured-card p{color:#574433}
+#featured-local .featured-card .cell-eyebrow{color:#7a3c00}
+#featured-local .featured-title{
+  display:inline-block;background:rgba(255,253,248,.93);color:#241708;
+  padding:9px 18px;border-radius:14px;box-shadow:0 8px 22px rgba(23,26,30,.30);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+/* (2) The marbling goes to ALL the calendar event cards — the big
+   day cards, the desktop mini-month, and the phone day pills — each
+   under a strong white wash so dates and titles stay crisp. */
+.cev-card,html[data-theme="dark"] .cev-card{
+  background:linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),url('img/founding-paint.jpg') center/cover,#fff8f0}
+.cev-mini,html[data-theme="dark"] .cev-mini{
+  background:linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),url('img/founding-paint.jpg') center/cover,#fff8f0}
+.cev-mini-head,html[data-theme="dark"] .cev-mini-head{color:#7a3c00}
+.cev-pill,html[data-theme="dark"] .cev-pill{
+  background:linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),url('img/founding-paint.jpg') center/cover,#fff8f0}
+/* (3) The Featured Event card (above the calendar) gets the
+   marbling too, and its eyebrow — the hard-to-see text — goes to
+   the strong ink recipe. */
+.featured-event,html[data-theme="dark"] .featured-event{
+  background:linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),url('img/founding-paint.jpg') center/cover,#fff8f0;
+  border-color:rgba(255,255,255,.65)}
+.featured-event .cell-eyebrow{color:#7a3c00}
+.featured-event-body{color:#2b211b}
+/* (4) The moved sponsor spot: a strip under the Add-an-event card,
+   modeled on the Keep It Local demo's addstrip — ribbon on one
+   side, the pitch in the middle, the claim button on the other.
+   (Ribbon copy is Travis's wording; see BUILD-LIST for the open
+   question against the founding-only free-pilot rule.) */
+.sponsor-strip{
+  display:flex;align-items:center;gap:16px;position:relative;overflow:hidden;
+  background:linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),url('img/founding-paint.jpg') center/cover,#fff8f0;
+  border:1px solid rgba(255,255,255,.6);border-radius:18px;padding:18px 20px;margin:0 0 14px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.75),inset 0 -1px 0 rgba(43,33,27,.08),0 4px 10px rgba(23,26,30,.12),0 16px 38px rgba(23,26,30,.22),0 30px 60px rgba(23,26,30,.13)}
+.ss-ribbon{
+  flex:0 0 auto;background:linear-gradient(135deg,#ff9a3c,#e85d04);color:#fff;
+  font-weight:800;font-size:.76rem;letter-spacing:.05em;text-transform:uppercase;
+  padding:9px 13px;border-radius:10px;transform:rotate(-3deg);
+  box-shadow:0 6px 14px rgba(23,26,30,.28);text-align:center;line-height:1.25}
+.ss-main{flex:1 1 auto;min-width:0}
+.ss-main h3{margin:0 0 4px;color:#241708}
+.ss-main p{margin:0;color:#4a3a28;font-size:.9rem;line-height:1.45}
+.ss-btn{flex:0 0 auto;white-space:nowrap}
+@media (max-width:640px){
+  .sponsor-strip{flex-wrap:wrap;gap:12px}
+  .ss-main{flex:1 1 100%;order:3}
+  .ss-ribbon{order:1}
+  .ss-btn{order:2;margin-left:auto}
+}
+/* (6) Today's way into the News view now that the Events entry card
+   is gone: a small "See all the news" row under the news scroller. */
+.nws-seeall{
+  display:flex;align-items:center;justify-content:center;gap:8px;width:100%;
+  margin-top:10px;padding:11px 14px;border-radius:12px;cursor:pointer;
+  background:rgba(255,253,248,.92);border:1px solid rgba(122,60,0,.20);
+  color:#7a3c00;font-weight:800;font-size:.92rem;font-family:var(--sans);
+  box-shadow:0 4px 12px rgba(23,26,30,.14)}
+.nws-seeall:active{transform:translateY(1px)}
+/* ---- 4l. TRAVEL + CARD-TREATMENT BATCH (Travis, 2026-11-20 23:06). ---- */
+/* (4) EVERY card carries a treatment — the orange marbling OR a
+   picture. The marbling becomes the DEFAULT card surface (strong
+   white wash, text unchanged); cards with their own picture or a
+   more specific surface rule keep it (photo bands, the hero, the
+   founding panel, the schools paint, the scroller bodies are all
+   more specific or separate elements). Long cards where a fitting
+   photo is hard to find get the marbling — that is what it is for. */
+.card,html[data-theme="dark"] .card{
+  background:linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),url('img/founding-paint.jpg') center/cover,#fff8f0}
+/* (5) GRAPH EXCEPTION: a chart keeps its own solid card surface so
+   it stays fully visible and readable — the river sparklines and
+   the air-quality scale sit on warm-white, never on the marbling. */
+.river-spark{background:#fffdf8;border:1px solid rgba(122,60,0,.16);border-radius:10px;padding:8px 10px 6px}
+.air-scale{background-color:#fffdf8;border:1px solid rgba(122,60,0,.16);border-radius:10px}
+/* (1) Cameras: the "See more cameras" expander matches the schools
+   See-more pattern. (The ~6-up cut and the I-5 removal live in
+   app.js renderRoads — item 4l.) */
+.cams-more{margin-top:10px}
+.cams-more summary{
+  display:inline-flex;align-items:center;gap:6px;cursor:pointer;
+  font-weight:700;font-size:.88rem;color:var(--accent-2);
+  padding:6px 2px;min-height:36px;list-style:none}
+.cams-more summary::-webkit-details-marker{display:none}
+.cams-more summary::after{content:"▾";font-size:.8em;transition:transform .2s ease}
+.cams-more[open ] summary::after{transform:rotate(180deg)}
+.cams-more .camera-grid{margin-top:10px}
+/* (3) SPONSOR SPACING: one rhythm in every view. Views lay out with
+   a uniform flex/grid gap; sponsor cells carry NO margins of their
+   own, so a sponsor sits exactly as far from its neighbours as any
+   card does — Travel, Events & More and Outdoors alike (Outdoors
+   was Travis's reference for "right"). This also retires the extra
+   14px the sponsor strip carried under itself in 4k. */
+.view>.section-sponsor,.view>.founding-cell.in-flow{margin-top:0;margin-bottom:0}
+.sponsor-strip{margin:0}
+/* ---- 4m. TAB BAR LAYER (companion to the app.js visual-viewport
+   anchor, item 4m): the bar keeps its own composited layer at phone
+   widths so its position never waits on a repaint. ---- */
+@media (max-width:899px){.tabbar{will-change:transform}}
+/* ---- 4n. THE SEAM UNDER THE TICKER (Travis, 2026-11-20 23:11,
+   localized with his phone screenshot: directly below the
+   auto-scrolling ticker feed, right above the founding panel).
+   ACTUAL CAUSE: not the strip container (its background, borders
+   and shadow were removed in item 2n) and not the page ground (4a)
+   — it is the pills' own shadows being CLIPPED. .strip-viewport is
+   overflow:hidden (the marquee needs it); each orange pill carries
+   box-shadow 0 5px 16px, reaching ~21px below the pill, but the
+   pill's bottom margin inside the viewport is only 9px, so every
+   shadow is cut off mid-fade at the viewport's bottom edge —
+   drawing one straight horizontal line the full width of the
+   strip, exactly where Travis saw it. Fix: give the viewport
+   vertical room so the shadows finish their fade INSIDE the clip;
+   the strip is transparent, so the extra room shows the page
+   ground and the feed blends in with no edge. (Top padding covers
+   the smaller top clip too.) ---- */
+.strip-viewport{padding-top:14px;padding-bottom:18px}
+/* ---- 4o. OUTDOORS WEATHER UN-MERGED (Travis, 2026-11-20 23:17):
+   the forecast block moved out of #alerts-card and floats BARE like
+   Today's — its old in-card glass rule (#forecast-week-card, ~line
+   3106: background/border/shadow/padding) is neutralized here, both
+   themes. The pills themselves are unchanged. ---- */
+#forecast-week-card,html[data-theme="dark"] #forecast-week-card{
+  background:none;border:none;border-radius:0;box-shadow:none;
+  -webkit-backdrop-filter:none;backdrop-filter:none;padding:0}
+/* ---- 4p. EVENTS SHADOWS (Travis, 2026-11-20 23:19, phone
+   screenshot). (2) The event cards' shadows ended before reaching
+   the left and right sides: the clipping ancestor is #events-body —
+   its overflow-x:clip cut every card shadow flat at the body's
+   content edge (the cards are full-width inside it, so their side
+   shadows always land outside its box). The clip is removed (the
+   pill strip scrolls itself, the cev grid is minmax-guarded, and
+   body{overflow-x:clip} remains the page-level guard), so shadows
+   now fall naturally on ALL sides; the cards also move from their
+   old green-tinted shadow to the standard dark stack (4e). (1) The
+   calendar day pills (FRI 20 / SAT 21…) carried only a whisper
+   shadow (0 1px 2px) — they now get the same standard stack, and
+   their strip gets the vertical room for those shadows to land. ---- */
+#events-body{overflow-x:visible}
+.cev-card,html[data-theme="dark"] .cev-card{
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.75),inset 0 -1px 0 rgba(43,33,27,.08),0 4px 10px rgba(23,26,30,.12),0 16px 38px rgba(23,26,30,.22),0 30px 60px rgba(23,26,30,.13)}
+.cev-pill,html[data-theme="dark"] .cev-pill{
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.75),inset 0 -1px 0 rgba(43,33,27,.08),0 4px 10px rgba(23,26,30,.12),0 16px 38px rgba(23,26,30,.22),0 30px 60px rgba(23,26,30,.13)}
+.cev-pills{padding-top:8px;padding-bottom:16px}
+/* ---- 4q. SHADOWS ALL THE WAY AROUND (Travis, 2026-11-20 23:23,
+   close-up screenshot): on the scroller cards the shadowing showed
+   only BETWEEN the cards — not on the top or the bottom. Same clip
+   family as the ticker seam (4n): the scroll viewports are
+   overflow-x:auto, which makes overflow-y clip too, and the
+   viewport box is exactly the cards' height, so the top and bottom
+   shadows are guillotined at the viewport's edges while the side
+   shadows (in the gaps) render fully. Fix: internal room — the
+   viewports get vertical padding so top and bottom shadows render
+   like the sides do. AUDIT of the other rows for the same clip:
+   the ticker strip (fixed in 4n), the calendar day-pill strip
+   (fixed in 4p), and the forecast pill strip — same too-tight
+   padding (4px/8px), raised here too, including its in-card and
+   pinned-copy variants. Vertical card stacks don't clip (no
+   overflow), so their shadows already fall all the way around. ---- */
+.ev-scroll-viewport,.news-scroll-viewport{padding-top:18px;padding-bottom:22px}
+.forecast-week{padding-top:14px;padding-bottom:18px}
+.forecast-top .forecast-week,.pin-forecast-top .forecast-week{padding-bottom:18px}
+/* ---- 4r. EVERY-CARD MARBLE — SPECIFICITY CORRECTION (found in
+   qc12 measurements, 2026-11-20): the 4l default used a plain .card
+   selector (0,1,0), but the redesign's own card surfaces live at
+   body.rd-home scope (0,2,1 light / 0,3,1 dark — items 3a/4c), so
+   bare cards kept the old cream glass and the marbling never
+   landed (measured on #news-card). Re-declared here at the winning
+   scope, both themes. More specific surfaces still win: schools
+   paint (4f), the founding panel cells, photo bands. ---- */
+body.rd-home .card,html[data-theme="dark"] body.rd-home .card{
+  background:linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),url('img/founding-paint.jpg') center/cover,#fff8f0}
+/* ---- 4s. TAN → FROSTED GLASS, APP-WIDE (Travis, 2026-11-20 23:36
+   + 23:37): every off-white TAN surface — the unselected selector
+   chips (commute towns, ferry towns, directory filters, home town,
+   plan/signpost/saver chips, filter buttons, Pin buttons, share
+   buttons) and EVERY tan inner panel (ferry timetable + at-a-glance
+   boxes, the bridge status box, alert items, verdict boxes, route
+   badges, camera frames, help rows, finder box/results, news rows)
+   — becomes frosted glass: translucent white + blur, over whatever
+   treatment sits beneath. Selected/active states keep their solid
+   orange (the :not guards below); form inputs/selects, map chrome,
+   the sponsor page and already-treated surfaces (schools list,
+   scroller bodies, founding cells) are out of scope. ---- */
+body.rd-home .drive-chip:not(.active):not([aria-pressed="true"]),
+body.rd-home .fp-town-chip:not(.active):not([aria-pressed="true"]),
+body.rd-home .dir-chip:not(.active):not([aria-pressed="true"]),
+body.rd-home .home-chip:not(.active):not([aria-pressed="true"]),
+body.rd-home .saver-chip:not(.active):not([aria-pressed="true"]),
+body.rd-home .plan-chip:not(.active):not([aria-pressed="true"]),
+body.rd-home .signpost-chip:not(.active):not([aria-pressed="true"]),
+body.rd-home .sky-filter-btn:not(.active):not([aria-pressed="true"]),
+body.rd-home .event-filter-btn:not(.active):not([aria-pressed="true"]),
+body.rd-home .town-btn:not(.active):not([aria-pressed="true"]),
+body.rd-home .fp-dir-btn:not(.active):not([aria-pressed="true"]),
+body.rd-home .go-trip-btn:not(.active):not([aria-pressed="true"]),
+body.rd-home .pin-btn:not(.active),
+body.rd-home .pin-clear,
+body.rd-home .share-btn:not(.primary),
+body.rd-home .map-town-chip,
+body.rd-home .ferry-box,body.rd-home .ferry-next-box,body.rd-home .bridge-box,
+body.rd-home .alert-item,body.rd-home .period,body.rd-home .quake-mag,
+body.rd-home .install-help,body.rd-home .lang-note,body.rd-home .camera-fig,
+body.rd-home .ra-chip,body.rd-home .briefing-row-alert,body.rd-home .iss-pass-hero,
+body.rd-home .fp-verdict,body.rd-home .sh-detail,body.rd-home .alm-verdict,
+body.rd-home .alm-fact,body.rd-home .air-verdict,body.rd-home .dark-verdict,
+body.rd-home .fish-sp,body.rd-home .go-verdict,body.rd-home .go-row,
+body.rd-home .print-note,body.rd-home .schools-report,body.rd-home .school-none,
+body.rd-home .otl-card,body.rd-home .featured-card,body.rd-home .route-pill,
+body.rd-home .link-tile,body.rd-home .share-bar,body.rd-home .finder-box,
+body.rd-home .finder-results,body.rd-home .dir-empty,body.rd-home .news-row,
+body.rd-home .getapp-step0,body.rd-home .getapp-nosee,
+body.rd-home #view-help .dir-item,
+body.rd-home .why-box summary,body.rd-home .wave-details summary,
+html[data-theme="dark"] body.rd-home .finder-box,
+html[data-theme="dark"] body.rd-home .finder-results,
+html[data-theme="dark"] body.rd-home .dir-empty{
+  background:rgba(255,255,255,.52);
+  -webkit-backdrop-filter:blur(12px) saturate(1.15);
+  backdrop-filter:blur(12px) saturate(1.15)}
+/* ---- 4t. TRAFFIC INCIDENT CARDS → MARBLED ORANGE (Travis,
+   2026-11-20 23:37): the Travel incident cards (.alert-card —
+   US30BY / OR127 / OR202 "Traffic Impacts…") were plain cream; the
+   card body now carries the orange marbling like the other treated
+   cards. ---- */
+body.rd-home .alert-card,html[data-theme="dark"] body.rd-home .alert-card{
+  background:linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),url('img/founding-paint.jpg') center/cover,#fff8f0}
+/* ---- 4u. TAB BAR — FINAL STRIP-DOWN + SHADOW-LINE SWEEP (Travis,
+   2026-11-20 23:34, PRIORITY). Tab bar: the 4m visual-viewport
+   anchor is REMOVED (see app.js) — on the real phone its
+   translateY compensation fought Chrome's own toolbar
+   compensation, double-translating the bar (disappear / pop /
+   ride-high). The bar also loses will-change. What remains is the
+   plainest possible mechanism: a direct body child,
+   position:fixed, bottom:0, safe-area padding, no transform, no
+   transition, no JS. This guard makes that state explicit and
+   !important at phone widths. ---- */
+@media (max-width:899px){
+  .tabbar{transform:none!important;transition:none!important;will-change:auto!important}
+}
+/* Shadow lines, sweep round 2: the remaining terminators were
+   shadow REACH vs room — the scroller cards' deepened stack reaches
+   ~58px below the card; 4q's 22px bottom padding still clipped it.
+   Room is now sized to the reach (top 30 / bottom 56), the ticker
+   viewport goes to 16/26 (pill reach 21), the forecast strip to
+   16/26 (pill reach 18), and the in-card day-pill strip to 10/44.
+   Shadows now complete their fade inside every clipped row in the
+   app (audit: ticker 4n, scrollers 4q, day pills 4p, forecast —
+   vertical stacks never clip). */
+.ev-scroll-viewport,.news-scroll-viewport{padding-top:30px;padding-bottom:56px}
+.strip-viewport{padding-top:16px;padding-bottom:26px}
+.forecast-week{padding-top:16px;padding-bottom:26px}
+.forecast-top .forecast-week,.pin-forecast-top .forecast-week{padding-bottom:26px}
+.cev-pills{padding-top:10px;padding-bottom:44px}
+/* ---- 4v. TAB-SWITCH LAG (Travis, 2026-11-20 23:39): switching —
+   especially TO Today, the heaviest view — was laggy. Costs found:
+   (1) every .reveal element in the incoming view animating at once
+   when it becomes visible, on top of the slide; (2) backdrop-filter
+   on the frosted surfaces inside the moving views (4i suspended it
+   on .card only — the frost family from 4s is wider); (3) per-view
+   refresh hooks (map invalidateSize, heat-label fit) firing 60ms
+   into the slide and forcing layout mid-animation; (4) the
+   incoming view rasterizing its full 7000px height for the slide.
+   Fixes: during a swap, reveal animations are suspended (elements
+   snap to rest state — the slide is the motion) and backdrop-filter
+   is suspended on EVERYTHING inside the moving views (over the
+   flat grey ground the blur is invisible anyway); the refresh
+   hooks wait until the animation lands (app.js); and the entering
+   view carries content-visibility:auto for the duration of the
+   slide so the browser only rasters what the slide can show. ---- */
+body.view-anim .view-entering *,body.view-anim .view-leaving *{
+  -webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+body.view-anim .reveal{transition:none!important;animation:none!important}
+.view-entering.cv-skip{content-visibility:auto;contain-intrinsic-size:auto 1200px}
+/* ---- 4w. FOUNDING CARD TEXT — FULL CONTRAST PASS (Travis,
+   2026-11-20 23:41, broadening 4h): ALL text on the three founding
+   cards was blending into the paint. Cause: the cell text colors
+   are legacy from the OLD dark panel — .founding-cell p is pale
+   cream #e6e0c8, .cell-eyebrow pale gold #f2c078, the invite cell's
+   ghost logo pale #e8dfc8 — invisible on the light paint surface.
+   Every text element on the cells now sits in the dark warm-ink
+   family at full contrast, details/taglines semibold; the CTA
+   links go deep orange-brown (the strip's dark pill button keeps
+   its own light text). ---- */
+body.rd-home .founding-cell{color:#2b211b}
+body.rd-home .founding-cell h3{color:#241a12}
+body.rd-home .founding-cell p{color:#453823;font-weight:600}
+body.rd-home .cell-eyebrow{color:#7a3c00}
+body.rd-home .ghost-logo{color:#5d4326;border-color:rgba(93,67,38,.55);background:rgba(255,255,255,.35)}
+body.rd-home .founding-cell .founding-cta:not(.ss-btn){color:#8a3c00;font-weight:800}
