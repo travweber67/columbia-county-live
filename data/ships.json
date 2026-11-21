@@ -1,45 +1,80 @@
 {
- "fetched_at": "2026-11-21T08:26:27Z",
+ "fetched_at": "2026-11-21T08:31:27Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37712,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 08:31:47.680142137 +0000 UTC"
+  },
+  {
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.11012,
+   "lon": -122.96336,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-21 08:31:51.579542809 +0000 UTC"
+  },
   {
    "mmsi": 367496010,
    "name": "DELIVERANCE",
-   "lat": 46.09287,
+   "lat": 46.09286,
    "lon": -122.92344,
-   "type_code": 69,
-   "updated": "2026-11-21 08:26:34.544358798 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09308,
-   "lon": -122.92362,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 308,
-   "nav_status": 3,
-   "updated": "2026-11-21 08:26:38.257126784 +0000 UTC"
-  },
-  {
-   "mmsi": 367646810,
-   "name": "EMERY ZIDELL",
-   "lat": 46.01901,
-   "lon": -122.86171,
-   "sog_kn": 8.9,
-   "cog": 137.8,
-   "heading": 140,
+   "cog": 353.6,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-21 08:26:42.736854958 +0000 UTC"
+   "updated": "2026-11-21 08:31:54.633590137 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35743,
-   "type_code": 30,
-   "updated": "2026-11-21 08:26:55.620771211 +0000 UTC"
+   "mmsi": 563236100,
+   "name": "XH DEEP COVER",
+   "lat": 45.63026,
+   "lon": -122.6956,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-21 08:31:54.907825715 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 45.58226,
+   "lon": -122.75825,
+   "sog_kn": 10.2,
+   "cog": 120.4,
+   "heading": 120,
+   "nav_status": 0,
+   "updated": "2026-11-21 08:31:56.079339752 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19955,
+   "lon": -123.38503,
+   "sog_kn": 0,
+   "cog": 198,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-21 08:31:58.005083914 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.63463,
+   "lon": -122.78597,
+   "sog_kn": 6.4,
+   "cog": 42.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 08:31:58.193545504 +0000 UTC"
   }
  ]
 }
