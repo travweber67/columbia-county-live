@@ -1,27 +1,58 @@
 {
- "fetched_at": "2026-11-21T21:42:20Z",
+ "fetched_at": "2026-11-21T21:47:21Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 46.10061,
-   "lon": -122.94214,
-   "type_code": 31,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-21 21:42:34.583674665 +0000 UTC"
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 46.01148,
+   "lon": -122.85431,
+   "sog_kn": 10.2,
+   "cog": 334.5,
+   "heading": 331,
+   "nav_status": 0,
+   "updated": "2026-11-21 21:47:30.395257107 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.09276,
-   "lon": -122.92327,
-   "sog_kn": 0,
-   "cog": 143.3,
-   "heading": 129,
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.09466,
+   "lon": -122.93442,
+   "sog_kn": 7.9,
+   "cog": 288.8,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-21 21:42:36.177452868 +0000 UTC"
+   "updated": "2026-11-21 21:47:33.385203526 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.63559,
+   "lon": -122.70961,
+   "sog_kn": 9.3,
+   "cog": 301.2,
+   "heading": 299,
+   "nav_status": 12,
+   "updated": "2026-11-21 21:47:36.418331037 +0000 UTC"
+  },
+  {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.6227,
+   "lon": -122.78837,
+   "type_code": 31,
+   "destination": "PORTLAND OR ASHGROVE",
+   "updated": "2026-11-21 21:47:36.786080829 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.09376,
+   "lon": -122.9373,
+   "type_code": 52,
+   "destination": "US^0R88>0UJB",
+   "updated": "2026-11-21 21:47:48.020088484 +0000 UTC"
   },
   {
    "mmsi": 367380280,
@@ -30,60 +61,39 @@
    "lon": -123.40234,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 134,
+   "heading": 131,
    "nav_status": 0,
-   "updated": "2026-11-21 21:42:40.003229118 +0000 UTC"
+   "updated": "2026-11-21 21:47:48.990565684 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09297,
-   "lon": -122.92361,
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.08302,
+   "lon": -122.90819,
+   "sog_kn": 0.6,
+   "cog": 28.2,
+   "heading": 124,
+   "nav_status": 5,
+   "updated": "2026-11-21 21:47:51.975685175 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35745,
+   "type_code": 30,
+   "updated": "2026-11-21 21:47:52.760776699 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09276,
+   "lon": -122.92328,
    "sog_kn": 0,
-   "cog": 212.1,
-   "heading": 309,
+   "cog": 122.7,
+   "heading": 127,
    "nav_status": 0,
-   "updated": "2026-11-21 21:42:40.371434797 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19997,
-   "lon": -123.38545,
-   "sog_kn": 0,
-   "cog": 199.2,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-21 21:42:44.859058839 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.08677,
-   "lon": -122.91066,
-   "sog_kn": 25.8,
-   "cog": 300.1,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-21 21:42:47.282376148 +0000 UTC"
-  },
-  {
-   "mmsi": 374590000,
-   "name": "BORACAY ISLAND",
-   "lat": 45.68813,
-   "lon": -122.77111,
-   "type_code": 70,
-   "destination": "MX ZLO >> US VAN",
-   "updated": "2026-11-21 21:42:59.742985625 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 46.09461,
-   "lon": -122.93881,
-   "type_code": 52,
-   "destination": "PORTLAND,OR",
-   "updated": "2026-11-21 21:43:03.342958494 +0000 UTC"
+   "updated": "2026-11-21 21:47:53.347020275 +0000 UTC"
   }
  ]
 }
