@@ -1,60 +1,73 @@
 {
- "fetched_at": "2026-11-21T19:42:12Z",
+ "fetched_at": "2026-11-21T19:46:15Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.09027,
-   "lon": -122.93156,
+   "mmsi": 366396000,
+   "name": "NAT GEO SEA LION",
+   "lat": 46.08959,
+   "lon": -122.92975,
+   "type_code": 68,
+   "destination": "RAINIER",
+   "updated": "2026-11-21 19:46:53.261917526 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79317,
+   "lon": -122.84321,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 201.9,
+   "heading": 215,
+   "nav_status": 0,
+   "updated": "2026-11-21 19:46:54.737073742 +0000 UTC"
+  },
+  {
+   "mmsi": 563236100,
+   "name": "XH DEEP COVER",
+   "lat": 45.63024,
+   "lon": -122.69559,
+   "sog_kn": 0,
+   "cog": 21.1,
+   "heading": 128,
+   "nav_status": 5,
+   "updated": "2026-11-21 19:46:57.955228869 +0000 UTC"
+  },
+  {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.62275,
+   "lon": -122.78837,
+   "sog_kn": 0,
+   "cog": 222.9,
+   "heading": 4,
+   "nav_status": 0,
+   "updated": "2026-11-21 19:46:57.956260781 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 46.15984,
+   "lon": -123.40534,
+   "sog_kn": 0,
+   "cog": 239,
+   "heading": 134,
+   "nav_status": 12,
+   "updated": "2026-11-21 19:47:00.076131782 +0000 UTC",
+   "type_code": 0,
+   "destination": "VANCOUVER"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37718,
+   "sog_kn": 0,
+   "cog": 0.7,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-21 19:42:30.524841145 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09297,
-   "lon": -122.92363,
-   "sog_kn": 0.2,
-   "cog": 130.1,
-   "heading": 306,
-   "nav_status": 0,
-   "updated": "2026-11-21 19:42:30.953601786 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 46.10066,
-   "lon": -122.94214,
-   "type_code": 31,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-21 19:42:34.19550323 +0000 UTC"
-  },
-  {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.58417,
-   "lon": -122.76613,
-   "sog_kn": 0,
-   "cog": 174.3,
-   "heading": 145,
-   "nav_status": 5,
-   "updated": "2026-11-21 19:42:38.143457788 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40234,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 132,
-   "nav_status": 0,
-   "updated": "2026-11-21 19:42:38.761478454 +0000 UTC"
+   "updated": "2026-11-21 19:47:09.048322266 +0000 UTC"
   }
  ]
 }
