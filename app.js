@@ -1093,10 +1093,7 @@ function renderMyRoute(camerasSnap) {
                 .sort((a, b) => b.lat - a.lat) },
     { label: 'Cornelius Pass Rd (OR-127) — the ridge detour',
       list: cams.filter(c => c.route === 'OR127')
-                .sort((a, b) => a.name.localeCompare(b.name)) },
-    { label: 'I-5 — the Columbia crossing',
-      list: cams.filter(c => c.route === 'I5')
-                .sort((a, b) => a.lat - b.lat) }
+                .sort((a, b) => a.name.localeCompare(b.name)) }
   ].filter(g => g.list.length);
   if (!groups.length) {
     el.innerHTML = '<p class="status-note">No corridor cameras in the latest snapshot.</p>';
