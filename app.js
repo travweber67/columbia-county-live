@@ -8081,7 +8081,12 @@ function heroSetContent(view) {
     if (finder) finder.hidden = false;
     if (spots) spots.hidden = false;
   } else {
-    if (img && img.getAttribute('src') !== cfg.img) img.src = cfg.img;
+    /* Item 5 (Travis, 2026-11-21): the News hero IS the marble paint —
+       in dark mode it wears the green hue twin, like every other
+       marble surface (style.css item 5b). */
+    var heroSrc = cfg.img;
+    if (view === 'news' && document.documentElement.getAttribute('data-theme') === 'dark') heroSrc = 'img/founding-paint-green.jpg';
+    if (img && img.getAttribute('src') !== heroSrc) img.src = heroSrc;
     if (titleToday) titleToday.hidden = true;
     if (vhead) vhead.hidden = false;
     const nm = $('hero-view-name'), tg = $('hero-view-tag');
@@ -8661,13 +8666,16 @@ langSet = function (lang) {
     if (label) label.textContent = dark ? 'Light' : 'Dark';
     btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
     btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
-    if (meta) meta.setAttribute('content', dark ? '#0b120d' : '#1e4228');
+    if (meta) meta.setAttribute('content', dark ? '#2e3036' : '#f1ecdc');
   }
   btn.addEventListener('click', function () {
     var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', next);
     try { localStorage.setItem('ccl-theme', next); } catch (e) {}
     paint();
+    /* Item 5: if the News hero (the marble paint) is on screen, swap
+       its orange/green twin with the theme. */
+    if (typeof heroSetContent === 'function' && typeof heroViewCur !== 'undefined' && heroViewCur === 'news') heroSetContent('news');
   });
   paint();
 })();
