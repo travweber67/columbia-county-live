@@ -1,47 +1,84 @@
 {
- "fetched_at": "2026-11-21T13:21:31Z",
+ "fetched_at": "2026-11-21T13:26:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15309,
+   "lon": -123.37744,
+   "sog_kn": 2.2,
+   "cog": 49.3,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 13:26:57.466269294 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.38553,
+   "sog_kn": 0,
+   "cog": 267.2,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-21 13:27:00.07491182 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08965,
+   "lon": -122.92974,
+   "sog_kn": 0,
+   "cog": 72.7,
+   "heading": 109,
+   "nav_status": 5,
+   "updated": "2026-11-21 13:27:07.541948243 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.9451,
+   "lon": -122.80938,
+   "sog_kn": 9.8,
+   "cog": 348.4,
+   "heading": 346,
+   "nav_status": 12,
+   "updated": "2026-11-21 13:27:18.552331179 +0000 UTC"
+  },
   {
    "mmsi": 366998830,
    "name": "ROYAL MELBOURNE",
-   "lat": 45.59865,
-   "lon": -122.77776,
-   "type_code": 31,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-21 13:22:20.153372716 +0000 UTC"
-  },
-  {
-   "mmsi": 355322000,
-   "name": "AMIS ACE",
-   "lat": 45.66697,
-   "lon": -122.76695,
-   "sog_kn": 0,
-   "cog": 288.6,
-   "heading": 161,
-   "nav_status": 1,
-   "updated": "2026-11-21 13:22:23.517867244 +0000 UTC"
-  },
-  {
-   "mmsi": 366972000,
-   "name": "ESSAYONS",
-   "lat": 45.97556,
-   "lon": -122.83205,
-   "sog_kn": 9.1,
-   "cog": 140.3,
-   "heading": 139,
+   "lat": 45.60785,
+   "lon": -122.78427,
+   "sog_kn": 7.3,
+   "cog": 335.1,
+   "heading": 335,
    "nav_status": 0,
-   "updated": "2026-11-21 13:22:25.746281587 +0000 UTC"
+   "updated": "2026-11-21 13:27:18.893462614 +0000 UTC"
   },
   {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64788,
-   "lon": -122.74099,
-   "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-21 13:22:34.568781757 +0000 UTC"
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60758,
+   "lon": -122.67765,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 13:27:19.844044336 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.64327,
+   "lon": -122.75283,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-21 13:27:23.33207813 +0000 UTC"
   }
  ]
 }
