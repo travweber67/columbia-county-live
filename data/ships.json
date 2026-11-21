@@ -1,47 +1,49 @@
 {
- "fetched_at": "2026-11-21T13:51:31Z",
+ "fetched_at": "2026-11-21T13:56:53Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.62275,
-   "lon": -122.78839,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.2592,
+   "lon": -123.46771,
    "sog_kn": 0,
-   "cog": 110.9,
-   "heading": 4,
+   "cog": 183.7,
+   "heading": 102,
+   "nav_status": 3,
+   "updated": "2026-11-21 13:57:04.596624669 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.6457,
+   "lon": -122.73488,
+   "sog_kn": 0.1,
+   "cog": 0,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-21 13:57:07.048690645 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08967,
+   "lon": -122.92974,
+   "type_code": 66,
+   "destination": "RAINIER",
+   "updated": "2026-11-21 13:57:08.869152717 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.64329,
+   "lon": -122.75281,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-21 13:51:47.466661611 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 46.09057,
-   "lon": -122.93202,
-   "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-21 13:51:48.942816012 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.71942,
-   "lon": -122.76555,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-21 13:52:07.216428892 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.1772,
-   "lon": -123.35745,
-   "sog_kn": 0,
-   "cog": 182.9,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-21 13:52:17.180328852 +0000 UTC"
+   "updated": "2026-11-21 13:57:23.78814396 +0000 UTC"
   }
  ]
 }
