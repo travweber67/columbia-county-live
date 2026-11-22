@@ -1,18 +1,57 @@
 {
- "fetched_at": "2026-11-22T21:49:01Z",
+ "fetched_at": "2026-11-22T21:53:00Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 46.04401,
-   "lon": -122.87678,
-   "sog_kn": 0.1,
-   "cog": 23.1,
-   "heading": 23,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19996,
+   "lon": -123.38554,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-22 21:54:20.144641699 +0000 UTC"
+  },
+  {
+   "mmsi": 366855000,
+   "name": "FLORIDA",
+   "lat": 46.12947,
+   "lon": -122.99945,
+   "sog_kn": 13.3,
+   "cog": 318.6,
+   "heading": 318,
    "nav_status": 0,
-   "updated": "2026-11-22 21:49:19.484572152 +0000 UTC"
+   "updated": "2026-11-22 21:54:21.644910293 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.61289,
+   "type_code": 0,
+   "updated": "2026-11-22 21:54:22.188612133 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58417,
+   "lon": -122.76612,
+   "sog_kn": 0,
+   "cog": 157.8,
+   "heading": 145,
+   "nav_status": 5,
+   "updated": "2026-11-22 21:54:45.388681081 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.61202,
+   "lon": -122.63455,
+   "sog_kn": 0,
+   "cog": 258.5,
+   "heading": 357,
+   "nav_status": 0,
+   "updated": "2026-11-22 21:54:55.49044052 +0000 UTC"
   },
   {
    "mmsi": 367669550,
@@ -20,43 +59,32 @@
    "lat": 46.17719,
    "lon": -123.35743,
    "sog_kn": 0,
-   "cog": 241,
+   "cog": 205.9,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-22 21:54:56.411515489 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40233,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-22 21:49:25.912758551 +0000 UTC"
-  },
-  {
-   "mmsi": 367425870,
-   "name": "HUSKY",
-   "lat": 45.61207,
-   "lon": -122.6345,
-   "sog_kn": 0.3,
-   "cog": 183.5,
-   "heading": 347,
    "nav_status": 0,
-   "updated": "2026-11-22 21:49:35.298756567 +0000 UTC"
+   "updated": "2026-11-22 21:54:58.6742571 +0000 UTC"
   },
   {
-   "mmsi": 355322000,
-   "name": "AMIS ACE",
-   "lat": 45.66686,
-   "lon": -122.76712,
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65015,
+   "lon": -122.7476,
    "sog_kn": 0,
-   "cog": 172.3,
-   "heading": 159,
-   "nav_status": 1,
-   "updated": "2026-11-22 21:49:38.07781378 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61288,
-   "sog_kn": 0,
-   "cog": 307.2,
-   "heading": 133,
-   "nav_status": 15,
-   "updated": "2026-11-22 21:49:42.38281627 +0000 UTC"
+   "cog": 215.7,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-22 21:54:59.191137133 +0000 UTC"
   }
  ]
 }
