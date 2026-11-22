@@ -1,29 +1,51 @@
 {
- "fetched_at": "2026-11-22T11:58:20Z",
+ "fetched_at": "2026-11-22T12:03:20Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64359,
-   "lon": -122.75234,
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.00898,
+   "lon": -122.84833,
    "sog_kn": 0,
-   "cog": 154.8,
+   "cog": 360,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-22 11:58:57.273426125 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-22 12:03:40.742330686 +0000 UTC"
   },
   {
-   "mmsi": 563236100,
-   "name": "XH DEEP COVER",
-   "lat": 45.63024,
-   "lon": -122.6956,
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.77118,
+   "lon": -122.76718,
+   "sog_kn": 9.2,
+   "cog": 338.6,
+   "heading": 337,
+   "nav_status": 12,
+   "updated": "2026-11-22 12:03:46.206384678 +0000 UTC"
+  },
+  {
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.1101,
+   "lon": -122.96336,
    "sog_kn": 0,
-   "cog": 234.6,
-   "heading": 128,
+   "cog": 172.2,
+   "heading": 131,
    "nav_status": 5,
-   "updated": "2026-11-22 11:58:57.96546391 +0000 UTC"
+   "updated": "2026-11-22 12:03:50.812103147 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09307,
+   "lon": -122.9236,
+   "sog_kn": 0.1,
+   "cog": 26.5,
+   "heading": 309,
+   "nav_status": 3,
+   "updated": "2026-11-22 12:04:07.802431087 +0000 UTC"
   }
  ]
 }
