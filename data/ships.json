@@ -1,58 +1,62 @@
 {
- "fetched_at": "2026-11-22T18:18:46Z",
+ "fetched_at": "2026-11-22T18:22:58Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.64189,
+   "lon": -122.77563,
+   "sog_kn": 8.3,
+   "cog": 41.5,
+   "heading": 41,
+   "nav_status": 0,
+   "updated": "2026-11-22 18:23:43.793243423 +0000 UTC"
+  },
+  {
+   "mmsi": 636015972,
+   "name": "STOLT BASUTO",
+   "lat": 46.14596,
+   "lon": -123.2853,
+   "sog_kn": 12.9,
+   "cog": 73.6,
+   "heading": 74,
+   "nav_status": 0,
+   "updated": "2026-11-22 18:23:50.559405937 +0000 UTC"
+  },
+  {
    "mmsi": 367380280,
    "name": "WESTERN STAR",
-   "lat": 46.16095,
-   "lon": -123.40711,
-   "sog_kn": 0.8,
-   "cog": 291.8,
-   "heading": 306,
+   "lat": 46.16097,
+   "lon": -123.40717,
+   "sog_kn": 3.6,
+   "cog": 110.4,
+   "heading": 275,
    "nav_status": 0,
-   "updated": "2026-11-22 18:18:59.553879169 +0000 UTC"
+   "updated": "2026-11-22 18:24:03.784935846 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09315,
-   "lon": -122.92353,
-   "sog_kn": 0.2,
-   "cog": 309.3,
-   "heading": 127,
-   "nav_status": 0,
-   "updated": "2026-11-22 18:19:00.403475192 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58078,
-   "lon": -122.76011,
-   "type_code": 31,
-   "destination": "PTSI PDX",
-   "updated": "2026-11-22 18:19:05.294042978 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65,
-   "lon": -122.74764,
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09053,
+   "lon": -122.93233,
    "sog_kn": 0,
-   "cog": 324.5,
+   "cog": 195.7,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-22 18:19:09.024449961 +0000 UTC"
+   "nav_status": 5,
+   "updated": "2026-11-22 18:24:05.076627756 +0000 UTC"
   },
   {
-   "mmsi": 538010248,
-   "name": "SAFEEN AL AMAL",
-   "lat": 46.12472,
-   "lon": -122.98819,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-22 18:19:20.14642587 +0000 UTC"
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.09292,
+   "lon": -122.92311,
+   "sog_kn": 0,
+   "cog": 45.3,
+   "heading": 124,
+   "nav_status": 5,
+   "updated": "2026-11-22 18:24:06.422554431 +0000 UTC"
   }
  ]
 }
