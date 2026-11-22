@@ -1,40 +1,80 @@
 {
- "fetched_at": "2026-11-22T00:53:18Z",
+ "fetched_at": "2026-11-22T00:57:33Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 311001605,
-   "name": "SAGA DISCOVERY",
-   "lat": 46.17477,
-   "lon": -123.10699,
-   "sog_kn": 0.1,
-   "cog": 359.7,
-   "heading": 123,
-   "nav_status": 1,
-   "updated": "2026-11-22 00:53:54.957010573 +0000 UTC"
-  },
-  {
-   "mmsi": 538009633,
-   "name": "EVER ZENITH",
-   "lat": 46.09915,
-   "lon": -122.93939,
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58418,
+   "lon": -122.76615,
    "sog_kn": 0,
-   "cog": 317.7,
-   "heading": 107,
+   "cog": 123.7,
+   "heading": 144,
    "nav_status": 5,
-   "updated": "2026-11-22 00:53:57.021457081 +0000 UTC"
+   "updated": "2026-11-22 00:57:43.564112287 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61291,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.98891,
+   "lon": -122.84523,
+   "sog_kn": 1.1,
+   "cog": 352.1,
+   "heading": 359,
+   "nav_status": 3,
+   "updated": "2026-11-22 00:57:49.556874298 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65017,
+   "lon": -122.74763,
    "sog_kn": 0,
-   "cog": 196.6,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-22 00:54:11.595092353 +0000 UTC"
+   "cog": 209.5,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-22 00:57:49.793232383 +0000 UTC"
+  },
+  {
+   "mmsi": 366855000,
+   "name": "FLORIDA",
+   "lat": 45.83747,
+   "lon": -122.79001,
+   "type_code": 80,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-22 00:57:52.663113541 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.58304,
+   "lon": -122.75944,
+   "sog_kn": 8.3,
+   "cog": 129.2,
+   "heading": 126,
+   "nav_status": 0,
+   "updated": "2026-11-22 00:57:55.853347296 +0000 UTC"
+  },
+  {
+   "mmsi": 367006570,
+   "name": "JEFFREY S",
+   "lat": 45.67682,
+   "lon": -122.77195,
+   "type_code": 52,
+   "destination": "PORTLAND, OR",
+   "updated": "2026-11-22 00:58:05.350326512 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.62758,
+   "lon": -122.69988,
+   "sog_kn": 0,
+   "cog": 255.9,
+   "heading": 123,
+   "nav_status": 0,
+   "updated": "2026-11-22 00:58:07.537575314 +0000 UTC"
   }
  ]
 }
