@@ -1,60 +1,69 @@
 {
- "fetched_at": "2026-11-22T01:42:36Z",
+ "fetched_at": "2026-11-22T01:47:37Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09308,
-   "lon": -122.9236,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 308,
-   "nav_status": 3,
-   "updated": "2026-11-22 01:42:47.351667325 +0000 UTC"
+   "mmsi": 355173000,
+   "name": "EVER BEST",
+   "lat": 45.63925,
+   "lon": -122.77783,
+   "type_code": 79,
+   "destination": "USPDX",
+   "updated": "2026-11-22 01:47:50.147625232 +0000 UTC"
   },
   {
-   "mmsi": 636023225,
-   "name": "SWEET PEA LEADER",
-   "lat": 45.59763,
-   "lon": -122.77508,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-22 01:42:51.96245663 +0000 UTC"
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.91712,
+   "lon": -122.80935,
+   "sog_kn": 6.1,
+   "cog": 184.1,
+   "heading": 183,
+   "nav_status": 12,
+   "updated": "2026-11-22 01:48:08.28721398 +0000 UTC"
   },
   {
-   "mmsi": 636013613,
-   "name": "LONDON 2012",
-   "lat": 46.04432,
-   "lon": -122.88284,
-   "sog_kn": 0,
-   "cog": 47.5,
-   "heading": 175,
-   "nav_status": 1,
-   "updated": "2026-11-22 01:42:53.590255334 +0000 UTC"
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09277,
+   "lon": -122.92327,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-22 01:48:12.991331839 +0000 UTC"
   },
   {
    "mmsi": 367310520,
    "name": "JAMES T",
-   "lat": 46.26592,
-   "lon": -123.4587,
+   "lat": 46.26591,
+   "lon": -123.45871,
    "sog_kn": 0,
    "cog": 22.9,
-   "heading": 38,
+   "heading": 37,
    "nav_status": 3,
-   "updated": "2026-11-22 01:43:04.663924568 +0000 UTC"
+   "updated": "2026-11-22 01:48:14.100294448 +0000 UTC"
   },
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00907,
-   "lon": -122.84825,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-22 01:43:11.867816672 +0000 UTC"
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.89409,
+   "lon": -122.80382,
+   "sog_kn": 7.4,
+   "cog": 161.7,
+   "heading": 164,
+   "nav_status": 5,
+   "updated": "2026-11-22 01:48:14.275699551 +0000 UTC"
+  },
+  {
+   "mmsi": 367006570,
+   "name": "JEFFREY S",
+   "lat": 45.6768,
+   "lon": -122.77185,
+   "sog_kn": 0.3,
+   "cog": 188.6,
+   "heading": 170,
+   "nav_status": 1,
+   "updated": "2026-11-22 01:48:15.287600578 +0000 UTC"
   }
  ]
 }
