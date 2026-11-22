@@ -1,43 +1,78 @@
 {
- "fetched_at": "2026-11-22T08:52:53Z",
+ "fetched_at": "2026-11-22T08:58:09Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367006570,
-   "name": "JEFFREY S",
-   "lat": 45.6767,
-   "lon": -122.77224,
+   "mmsi": 538009633,
+   "name": "EVER ZENITH",
+   "lat": 46.09915,
+   "lon": -122.93944,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-22 08:58:21.297740998 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61202,
+   "lon": -122.64536,
    "type_code": 52,
-   "destination": "PORTLAND, OR",
-   "updated": "2026-11-22 08:53:30.751606925 +0000 UTC"
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-22 08:58:29.046319863 +0000 UTC"
   },
   {
-   "mmsi": 374590000,
-   "name": "BORACAY ISLAND",
-   "lat": 45.69108,
-   "lon": -122.77221,
-   "type_code": 70,
-   "destination": "MX ZLO >> US VAN",
-   "updated": "2026-11-22 08:53:36.706824345 +0000 UTC"
+   "mmsi": 367513140,
+   "name": "CLEARWATER",
+   "lat": 45.64343,
+   "lon": -122.75285,
+   "sog_kn": 0,
+   "cog": 253.1,
+   "heading": 228,
+   "nav_status": 12,
+   "updated": "2026-11-22 08:58:29.573624468 +0000 UTC"
   },
   {
-   "mmsi": 355322000,
-   "name": "AMIS ACE",
-   "lat": 45.66692,
-   "lon": -122.76702,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-22 08:53:37.992007387 +0000 UTC"
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 46.10622,
+   "lon": -122.95618,
+   "sog_kn": 0,
+   "cog": 316.6,
+   "heading": 124,
+   "nav_status": 5,
+   "updated": "2026-11-22 08:58:29.671226906 +0000 UTC"
   },
   {
-   "mmsi": 538090648,
-   "name": "PAGANELLA",
-   "lat": 45.64054,
-   "lon": -122.71731,
-   "type_code": 70,
-   "destination": "USTIW > USVAN",
-   "updated": "2026-11-22 08:53:40.802510362 +0000 UTC"
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.6479,
+   "lon": -122.74098,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-22 08:58:34.52816628 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.0931,
+   "lon": -122.92361,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 310,
+   "nav_status": 3,
+   "updated": "2026-11-22 08:58:37.945507114 +0000 UTC"
+  },
+  {
+   "mmsi": 367646810,
+   "name": "EMERY ZIDELL",
+   "lat": 45.59339,
+   "lon": -122.77704,
+   "sog_kn": 0,
+   "cog": 297.3,
+   "heading": 147,
+   "nav_status": 5,
+   "updated": "2026-11-22 08:58:49.715223436 +0000 UTC"
   }
  ]
 }
