@@ -1,6 +1,106 @@
 {
- "fetched_at": "2026-11-22T21:18:59Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-22T21:23:00Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368257130,
+   "name": "TRIUMPH VII",
+   "lat": 46.17255,
+   "lon": -123.10607,
+   "sog_kn": 0.4,
+   "cog": 191.7,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-22 21:23:50.122969797 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09289,
+   "lon": -122.92346,
+   "sog_kn": 0.1,
+   "cog": 309.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-22 21:23:50.258709358 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.04364,
+   "lon": -122.88314,
+   "sog_kn": 0.2,
+   "cog": 233,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-22 21:23:54.183147926 +0000 UTC"
+  },
+  {
+   "mmsi": 636023225,
+   "name": "SWEET PEA LEADER",
+   "lat": 45.65743,
+   "lon": -122.76505,
+   "sog_kn": 9.2,
+   "cog": 351.9,
+   "heading": 354,
+   "nav_status": 0,
+   "updated": "2026-11-22 21:23:55.61983361 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.94702,
+   "lon": -122.80603,
+   "sog_kn": 9.8,
+   "cog": 167.6,
+   "heading": 174,
+   "nav_status": 3,
+   "updated": "2026-11-22 21:23:56.284028512 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17717,
+   "lon": -123.35744,
+   "sog_kn": 0,
+   "cog": 160.3,
+   "heading": 133,
+   "nav_status": 15,
+   "updated": "2026-11-22 21:23:58.782218895 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 46.08668,
+   "lon": -122.9128,
+   "sog_kn": 8.5,
+   "cog": 297.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-22 21:24:00.396632006 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09315,
+   "lon": -122.92351,
+   "sog_kn": 0,
+   "cog": 245,
+   "heading": 126,
+   "nav_status": 0,
+   "updated": "2026-11-22 21:24:00.959595119 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09277,
+   "lon": -122.92326,
+   "sog_kn": 0,
+   "cog": 122.8,
+   "heading": 128,
+   "nav_status": 0,
+   "updated": "2026-11-22 21:24:03.455351054 +0000 UTC"
+  }
+ ]
 }
