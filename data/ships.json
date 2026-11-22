@@ -1,60 +1,89 @@
 {
- "fetched_at": "2026-11-22T13:13:25Z",
+ "fetched_at": "2026-11-22T13:18:25Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58758,
-   "lon": -122.7704,
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61198,
+   "lon": -122.64538,
    "sog_kn": 0,
-   "cog": 277.9,
-   "heading": 141,
+   "cog": 29.5,
+   "heading": 297,
    "nav_status": 5,
-   "updated": "2026-11-22 13:13:49.820628768 +0000 UTC"
+   "updated": "2026-11-22 13:18:43.36637186 +0000 UTC"
   },
   {
-   "mmsi": 563236100,
-   "name": "XH DEEP COVER",
-   "lat": 45.63024,
-   "lon": -122.69558,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20001,
+   "lon": -123.38551,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-22 13:18:48.949107663 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09314,
+   "lon": -122.92352,
    "sog_kn": 0,
-   "cog": 33.8,
-   "heading": 128,
-   "nav_status": 5,
-   "updated": "2026-11-22 13:13:57.322219788 +0000 UTC"
+   "cog": 176.6,
+   "heading": 127,
+   "nav_status": 0,
+   "updated": "2026-11-22 13:18:50.882954386 +0000 UTC"
   },
   {
-   "mmsi": 366888830,
-   "name": "KAHU",
-   "lat": 45.61165,
-   "lon": -122.6442,
+   "mmsi": 636023225,
+   "name": "SWEET PEA LEADER",
+   "lat": 45.59762,
+   "lon": -122.77507,
+   "type_code": 70,
+   "destination": "CA NWE",
+   "updated": "2026-11-22 13:18:51.228124727 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
    "sog_kn": 0,
-   "cog": 217.9,
-   "heading": 117,
+   "cog": 236.3,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-22 13:18:53.019777227 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09308,
+   "lon": -122.9236,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 309,
+   "nav_status": 3,
+   "updated": "2026-11-22 13:18:57.959877655 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19947,
+   "lon": -123.38507,
+   "sog_kn": 0,
+   "cog": 222,
+   "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-22 13:13:59.464367836 +0000 UTC"
+   "updated": "2026-11-22 13:19:01.884963494 +0000 UTC"
   },
   {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.94044,
-   "lon": -122.80952,
-   "sog_kn": 9.4,
-   "cog": 351.5,
-   "heading": 350,
-   "nav_status": 12,
-   "updated": "2026-11-22 13:14:01.513537801 +0000 UTC"
-  },
-  {
-   "mmsi": 367646810,
-   "name": "EMERY ZIDELL",
-   "lat": 45.59338,
-   "lon": -122.77701,
-   "type_code": 80,
-   "destination": "PORTLAND, OR",
-   "updated": "2026-11-22 13:14:05.746606259 +0000 UTC"
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58078,
+   "lon": -122.76007,
+   "type_code": 31,
+   "destination": "PTSI PDX",
+   "updated": "2026-11-22 13:19:05.386943153 +0000 UTC"
   }
  ]
 }
