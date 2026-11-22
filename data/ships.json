@@ -1,51 +1,60 @@
 {
- "fetched_at": "2026-11-22T12:08:21Z",
+ "fetched_at": "2026-11-22T12:13:21Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.6076,
-   "lon": -122.67763,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.24813,
+   "lon": -123.43491,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-22 12:13:40.049993572 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.1534,
+   "lon": -123.37714,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 0,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-22 12:08:19.884229303 +0000 UTC"
+   "updated": "2026-11-22 12:13:46.100969006 +0000 UTC"
   },
   {
-   "mmsi": 374590000,
-   "name": "BORACAY ISLAND",
-   "lat": 45.69101,
-   "lon": -122.77224,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.38552,
    "sog_kn": 0,
-   "cog": 337.8,
-   "heading": 166,
-   "nav_status": 1,
-   "updated": "2026-11-22 12:08:20.136665142 +0000 UTC"
+   "cog": 230.4,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-22 12:13:49.633395627 +0000 UTC"
   },
   {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59412,
-   "lon": -122.77213,
-   "sog_kn": 0,
-   "cog": 346.3,
-   "heading": 149,
-   "nav_status": 5,
-   "updated": "2026-11-22 12:08:43.507116453 +0000 UTC"
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.68607,
+   "lon": -122.77242,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-22 12:13:51.136454747 +0000 UTC"
   },
   {
-   "mmsi": 311001605,
-   "name": "SAGA DISCOVERY",
-   "lat": 46.17445,
-   "lon": -123.1071,
+   "mmsi": 563236100,
+   "name": "XH DEEP COVER",
+   "lat": 45.6303,
+   "lon": -122.69555,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-22 12:13:57.242343389 +0000 UTC",
    "sog_kn": 0,
-   "cog": 11.1,
-   "heading": 114,
-   "nav_status": 1,
-   "updated": "2026-11-22 12:08:55.560910709 +0000 UTC"
+   "cog": 202,
+   "heading": 128,
+   "nav_status": 5
   }
  ]
 }
