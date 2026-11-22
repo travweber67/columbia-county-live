@@ -1,78 +1,91 @@
 {
- "fetched_at": "2026-11-22T00:17:30Z",
+ "fetched_at": "2026-11-22T00:22:30Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 355173000,
+   "name": "EVER BEST",
+   "lat": 45.63927,
+   "lon": -122.77782,
+   "type_code": 79,
+   "destination": "USPDX",
+   "updated": "2026-11-22 00:22:47.174961899 +0000 UTC"
+  },
+  {
+   "mmsi": 366888830,
+   "name": "KAHU",
+   "lat": 45.61165,
+   "lon": -122.64422,
+   "sog_kn": 0,
+   "cog": 271.9,
+   "heading": 116,
+   "nav_status": 5,
+   "updated": "2026-11-22 00:22:52.893621525 +0000 UTC"
+  },
   {
    "mmsi": 368010320,
    "name": "RICHARD O",
-   "lat": 45.62273,
+   "lat": 45.62268,
    "lon": -122.7884,
    "sog_kn": 0,
    "cog": 211.5,
    "heading": 4,
    "nav_status": 0,
-   "updated": "2026-11-22 00:17:17.564809075 +0000 UTC"
+   "updated": "2026-11-22 00:22:56.80989818 +0000 UTC"
   },
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65008,
-   "lon": -122.74758,
-   "sog_kn": 0,
-   "cog": 254.7,
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.61875,
+   "lon": -122.79419,
+   "type_code": 52,
+   "destination": "US^02NV>0UJQ",
+   "updated": "2026-11-22 00:22:58.53702768 +0000 UTC"
+  },
+  {
+   "mmsi": 368126190,
+   "name": "GERONIMO",
+   "lat": 45.57148,
+   "lon": -122.73758,
+   "sog_kn": 1.9,
+   "cog": 122.7,
+   "heading": 300,
+   "nav_status": 11,
+   "updated": "2026-11-22 00:23:05.516831912 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.14954,
+   "lon": -123.382,
+   "sog_kn": 7.5,
+   "cog": 30.7,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-22 00:17:18.383778001 +0000 UTC"
-  },
-  {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59413,
-   "lon": -122.77223,
-   "type_code": 70,
-   "destination": "NOT AVAILABLE",
-   "updated": "2026-11-22 00:17:19.243654807 +0000 UTC"
-  },
-  {
-   "mmsi": 367006570,
-   "name": "JEFFREY S",
-   "lat": 45.67677,
-   "lon": -122.77204,
-   "type_code": 52,
-   "destination": "PORTLAND, OR",
-   "updated": "2026-11-22 00:17:20.526884477 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.09278,
-   "lon": -122.92327,
-   "sog_kn": 0,
-   "cog": 300.1,
-   "heading": 126,
    "nav_status": 0,
-   "updated": "2026-11-22 00:17:34.095084291 +0000 UTC"
+   "updated": "2026-11-22 00:23:06.982231167 +0000 UTC"
   },
   {
-   "mmsi": 367645170,
-   "name": "CROWN POINT",
-   "lat": 45.64752,
-   "lon": -122.73986,
-   "type_code": 52,
-   "destination": "TBL VANCOUVER",
-   "updated": "2026-11-22 00:17:53.819801318 +0000 UTC"
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 46.10626,
+   "lon": -122.95679,
+   "sog_kn": 0,
+   "cog": 230.2,
+   "heading": 121,
+   "nav_status": 5,
+   "updated": "2026-11-22 00:23:07.564789371 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.99495,
-   "lon": -122.84733,
-   "sog_kn": 1.1,
-   "cog": 185.7,
-   "heading": 169,
-   "nav_status": 3,
-   "updated": "2026-11-22 00:17:58.117615518 +0000 UTC"
+   "mmsi": 366396000,
+   "name": "NAT GEO SEA LION",
+   "lat": 46.08956,
+   "lon": -122.92969,
+   "sog_kn": 0,
+   "cog": 283.1,
+   "heading": 111,
+   "nav_status": 5,
+   "updated": "2026-11-22 00:23:09.100319213 +0000 UTC"
   }
  ]
 }
