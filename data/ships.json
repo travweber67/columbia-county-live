@@ -1,27 +1,93 @@
 {
- "fetched_at": "2026-11-22T19:28:51Z",
+ "fetched_at": "2026-11-22T19:33:52Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367427060,
-   "name": "HEIDI RENEE",
-   "lat": 46.09685,
-   "lon": -122.92929,
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09099,
+   "lon": -122.93238,
+   "sog_kn": 4.6,
+   "cog": 12.1,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-22 19:34:07.711167754 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.2,
+   "lon": -123.38542,
    "sog_kn": 0,
-   "cog": 282.2,
-   "heading": 192,
+   "cog": 11.2,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-22 19:34:15.634049349 +0000 UTC"
+  },
+  {
+   "mmsi": 366855000,
+   "name": "FLORIDA",
+   "lat": 45.72849,
+   "lon": -122.76199,
+   "sog_kn": 14.4,
+   "cog": 13.1,
+   "heading": 12,
+   "nav_status": 0,
+   "updated": "2026-11-22 19:34:16.162410822 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09278,
+   "lon": -122.92328,
+   "sog_kn": 0,
+   "cog": 232.5,
+   "heading": 128,
+   "nav_status": 0,
+   "updated": "2026-11-22 19:34:24.34939664 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.09664,
+   "lon": -122.92937,
+   "sog_kn": 1.7,
+   "cog": 46.6,
+   "heading": 66,
    "nav_status": 3,
-   "updated": "2026-11-22 19:29:22.03628034 +0000 UTC"
+   "updated": "2026-11-22 19:34:24.892655476 +0000 UTC"
+  },
+  {
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 45.66695,
+   "lon": -122.76678,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-22 19:34:26.338610765 +0000 UTC"
   },
   {
    "mmsi": 367061930,
    "name": "TEBENKOF",
-   "lat": 46.19997,
+   "lat": 46.19996,
    "lon": -123.38552,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-22 19:29:22.37945504 +0000 UTC"
+   "sog_kn": 0.1,
+   "cog": 21.9,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-22 19:34:30.487148097 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09317,
+   "lon": -122.92352,
+   "sog_kn": 0.2,
+   "cog": 309.5,
+   "heading": 128,
+   "nav_status": 0,
+   "updated": "2026-11-22 19:34:30.925039048 +0000 UTC"
   }
  ]
 }
