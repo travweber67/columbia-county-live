@@ -1,51 +1,78 @@
 {
- "fetched_at": "2026-11-22T06:22:50Z",
+ "fetched_at": "2026-11-22T06:27:57Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40234,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 138,
-   "nav_status": 0,
-   "updated": "2026-11-22 06:23:32.764502624 +0000 UTC"
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08976,
+   "lon": -122.92902,
+   "type_code": 52,
+   "destination": "US^0R88>0UJB",
+   "updated": "2026-11-22 06:28:16.403901667 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.2593,
-   "lon": -123.46736,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35744,
    "sog_kn": 0,
-   "cog": 56.8,
-   "heading": 94,
-   "nav_status": 3,
-   "updated": "2026-11-22 06:23:34.981962305 +0000 UTC"
+   "cog": 40.9,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-22 06:28:16.895018111 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.11828,
+   "lon": -122.97938,
+   "sog_kn": 0.2,
+   "cog": 67.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-22 06:28:27.163985689 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.612,
+   "lon": -122.64538,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-22 06:28:29.540929607 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09315,
+   "lon": -122.92352,
+   "sog_kn": 0,
+   "cog": 249.5,
+   "heading": 125,
+   "nav_status": 0,
+   "updated": "2026-11-22 06:28:30.908585256 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64789,
+   "lon": -122.741,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-22 06:28:35.175042718 +0000 UTC"
   },
   {
    "mmsi": 367653630,
    "name": "OSCAR B",
-   "lat": 46.14955,
-   "lon": -123.38079,
-   "sog_kn": 8.4,
-   "cog": 36,
+   "lat": 46.15342,
+   "lon": -123.37712,
+   "sog_kn": 0,
+   "cog": 345.9,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-22 06:23:37.624558326 +0000 UTC"
-  },
-  {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.62273,
-   "lon": -122.78841,
-   "sog_kn": 0,
-   "cog": 101.9,
-   "heading": 4,
-   "nav_status": 0,
-   "updated": "2026-11-22 06:23:37.625068865 +0000 UTC"
+   "updated": "2026-11-22 06:28:37.110202736 +0000 UTC"
   }
  ]
 }
