@@ -1,29 +1,60 @@
 {
- "fetched_at": "2026-11-22T20:48:57Z",
+ "fetched_at": "2026-11-22T20:53:00Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.0209,
-   "lon": -122.86113,
-   "sog_kn": 0.1,
-   "cog": 19.5,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-22 20:49:17.162088733 +0000 UTC"
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 46.15988,
+   "lon": -123.40538,
+   "type_code": 0,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-22 20:53:52.606835643 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35743,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.63394,
+   "lon": -122.71491,
    "sog_kn": 0,
-   "cog": 181.2,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-22 20:49:25.600792448 +0000 UTC"
+   "cog": 114,
+   "heading": 114,
+   "nav_status": 5,
+   "updated": "2026-11-22 20:53:53.427937459 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64568,
+   "lon": -122.73488,
+   "sog_kn": 0.2,
+   "cog": 163.5,
+   "heading": 113,
+   "nav_status": 5,
+   "updated": "2026-11-22 20:54:07.254251985 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09315,
+   "lon": -122.92352,
+   "sog_kn": 0.1,
+   "cog": 303.4,
+   "heading": 126,
+   "nav_status": 0,
+   "updated": "2026-11-22 20:54:13.267664738 +0000 UTC"
+  },
+  {
+   "mmsi": 367708380,
+   "name": "JOHNNY PETERSON",
+   "lat": 45.84981,
+   "lon": -122.79771,
+   "sog_kn": 7.9,
+   "cog": 18.2,
+   "heading": 19,
+   "nav_status": 3,
+   "updated": "2026-11-22 20:54:19.789102722 +0000 UTC"
   }
  ]
 }
