@@ -1,51 +1,38 @@
 {
- "fetched_at": "2026-11-22T01:27:35Z",
+ "fetched_at": "2026-11-22T01:37:36Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 563311600,
-   "name": "STANLEY BAY",
-   "lat": 46.1101,
-   "lon": -122.96338,
-   "sog_kn": 0,
-   "cog": 236.2,
-   "heading": 131,
-   "nav_status": 5,
-   "updated": "2026-11-22 01:27:50.97629754 +0000 UTC"
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.09293,
+   "lon": -122.92312,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-22 01:37:47.396949439 +0000 UTC"
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19998,
-   "lon": -123.38551,
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.68606,
+   "lon": -122.77238,
+   "sog_kn": 0.1,
+   "cog": 176.9,
+   "heading": 176,
+   "nav_status": 1,
+   "updated": "2026-11-22 01:38:02.868842472 +0000 UTC"
+  },
+  {
+   "mmsi": 368251260,
+   "name": "MISS GINGER",
+   "lat": 45.61204,
+   "lon": -122.64596,
    "sog_kn": 0,
-   "cog": 237.8,
+   "cog": 247.4,
    "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-22 01:28:02.406554943 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09313,
-   "lon": -122.92354,
-   "sog_kn": 0,
-   "cog": 106.1,
-   "heading": 124,
-   "nav_status": 0,
-   "updated": "2026-11-22 01:28:10.120826978 +0000 UTC"
-  },
-  {
-   "mmsi": 367645170,
-   "name": "CROWN POINT",
-   "lat": 45.62961,
-   "lon": -122.69583,
-   "sog_kn": 6.9,
-   "cog": 125.8,
-   "heading": 127,
-   "nav_status": 12,
-   "updated": "2026-11-22 01:28:11.57083175 +0000 UTC"
+   "nav_status": 5,
+   "updated": "2026-11-22 01:38:06.468428728 +0000 UTC"
   }
  ]
 }
