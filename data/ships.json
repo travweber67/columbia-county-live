@@ -1,40 +1,48 @@
 {
- "fetched_at": "2026-11-22T15:08:33Z",
+ "fetched_at": "2026-11-22T15:18:34Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 636013613,
-   "name": "LONDON 2012",
-   "lat": 46.04438,
-   "lon": -122.88283,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.38542,
    "sog_kn": 0,
-   "cog": 77.3,
-   "heading": 175,
-   "nav_status": 1,
-   "updated": "2026-11-22 15:08:48.339483424 +0000 UTC"
+   "cog": 171.8,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-22 15:18:44.735613134 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.09278,
-   "lon": -122.92327,
-   "sog_kn": 0,
-   "cog": 326.4,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64874,
+   "lon": -122.74606,
+   "sog_kn": 0.5,
+   "cog": 77.9,
    "heading": 123,
    "nav_status": 0,
-   "updated": "2026-11-22 15:09:13.693415923 +0000 UTC"
+   "updated": "2026-11-22 15:18:47.266568139 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.96404,
-   "lon": -122.81818,
-   "sog_kn": 8.7,
-   "cog": 139.4,
-   "heading": 140,
-   "nav_status": 3,
-   "updated": "2026-11-22 15:09:09.163568025 +0000 UTC"
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.0931,
+   "lon": -122.92361,
+   "type_code": 33,
+   "updated": "2026-11-22 15:18:47.565652012 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58725,
+   "lon": -122.77008,
+   "sog_kn": 0,
+   "cog": 89.2,
+   "heading": 139,
+   "nav_status": 5,
+   "updated": "2026-11-22 15:19:08.125260884 +0000 UTC"
   }
  ]
 }
