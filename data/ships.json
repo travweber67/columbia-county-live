@@ -1,51 +1,71 @@
 {
- "fetched_at": "2026-11-22T00:37:31Z",
+ "fetched_at": "2026-11-22T00:42:31Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 356334000,
-   "name": "LAUREL ISLAND",
-   "lat": 45.68608,
-   "lon": -122.77249,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-22 00:37:51.107258195 +0000 UTC"
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 285.4,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-22 00:42:37.259049204 +0000 UTC"
   },
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.01675,
-   "lon": -122.85721,
-   "sog_kn": 23.4,
-   "cog": 142.4,
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58731,
+   "lon": -122.77044,
+   "sog_kn": 0,
+   "cog": 308.6,
+   "heading": 137,
+   "nav_status": 5,
+   "updated": "2026-11-22 00:42:41.238912143 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60732,
+   "lon": -122.67757,
+   "sog_kn": 0.1,
+   "cog": 270.6,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-22 00:37:58.856314435 +0000 UTC"
+   "updated": "2026-11-22 00:42:49.748764993 +0000 UTC"
   },
   {
-   "mmsi": 440245000,
-   "name": "GLOVIS SUMMIT",
-   "lat": 46.00825,
-   "lon": -122.85252,
+   "mmsi": 636023225,
+   "name": "SWEET PEA LEADER",
+   "lat": 45.59762,
+   "lon": -122.77508,
    "type_code": 70,
-   "destination": "USTIW",
-   "updated": "2026-11-22 00:38:06.652480435 +0000 UTC",
-   "sog_kn": 10.2,
-   "cog": 342.2,
-   "heading": 343,
-   "nav_status": 0
+   "destination": "US PDX",
+   "updated": "2026-11-22 00:42:52.421705746 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07922,
-   "lon": -122.89529,
-   "sog_kn": 9.6,
-   "cog": 317.3,
-   "heading": 315,
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.58299,
+   "lon": -122.7605,
+   "sog_kn": 7.5,
+   "cog": 123.3,
+   "heading": 123,
    "nav_status": 0,
-   "updated": "2026-11-22 00:38:07.919246762 +0000 UTC"
+   "updated": "2026-11-22 00:42:55.663727659 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65009,
+   "lon": -122.74757,
+   "sog_kn": 0,
+   "cog": 248.2,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-22 00:42:59.173888511 +0000 UTC"
   }
  ]
 }
