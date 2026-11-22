@@ -1,68 +1,115 @@
 {
- "fetched_at": "2026-11-22T19:08:50Z",
+ "fetched_at": "2026-11-22T19:13:50Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.09283,
-   "lon": -122.92341,
-   "type_code": 69,
-   "updated": "2026-11-22 19:09:02.186125962 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.09293,
-   "lon": -122.92312,
-   "sog_kn": 0,
-   "cog": 332.9,
-   "heading": 124,
-   "nav_status": 5,
-   "updated": "2026-11-22 19:09:10.559321842 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19997,
-   "lon": -123.38553,
-   "sog_kn": 0,
-   "cog": 47.4,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-22 19:09:11.150007139 +0000 UTC"
-  },
-  {
-   "mmsi": 368257130,
-   "name": "TRIUMPH VII",
-   "lat": 46.00984,
-   "lon": -122.84866,
-   "sog_kn": 0,
-   "cog": 325.6,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-22 19:09:12.471602865 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.09276,
-   "lon": -122.92328,
-   "sog_kn": 0,
-   "cog": 328.5,
-   "heading": 128,
-   "nav_status": 0,
-   "updated": "2026-11-22 19:09:13.714689555 +0000 UTC"
-  },
   {
    "mmsi": 563236100,
    "name": "XH DEEP COVER",
-   "lat": 45.63027,
+   "lat": 45.63029,
    "lon": -122.69557,
    "type_code": 70,
    "destination": "US VAN",
-   "updated": "2026-11-22 19:09:31.842977385 +0000 UTC"
+   "updated": "2026-11-22 19:13:57.276025665 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 26.4,
+   "heading": 128,
+   "nav_status": 5
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79555,
+   "lon": -122.84008,
+   "sog_kn": 3.4,
+   "cog": 230.3,
+   "heading": 231,
+   "nav_status": 0,
+   "updated": "2026-11-22 19:13:55.568563996 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.76179,
+   "lon": -122.76355,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-22 19:13:55.645702058 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.13724,
+   "lon": -123.37891,
+   "sog_kn": 0,
+   "cog": 13.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-22 19:13:57.958466725 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.94874,
+   "lon": -122.80696,
+   "sog_kn": 10.8,
+   "cog": 168.1,
+   "heading": 169,
+   "nav_status": 3,
+   "updated": "2026-11-22 19:13:59.72607138 +0000 UTC"
+  },
+  {
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 46.10619,
+   "lon": -122.95617,
+   "type_code": 70,
+   "destination": "USLOG",
+   "updated": "2026-11-22 19:14:08.794480244 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09281,
+   "lon": -122.92339,
+   "sog_kn": 0.1,
+   "cog": 288.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-22 19:14:11.098429643 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.6454,
+   "lon": -122.73504,
+   "sog_kn": 0,
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-22 19:14:13.831053145 +0000 UTC"
+  },
+  {
+   "mmsi": 367427060,
+   "name": "HEIDI RENEE",
+   "lat": 46.09895,
+   "lon": -122.94517,
+   "sog_kn": 5.4,
+   "cog": 115.5,
+   "heading": 298,
+   "nav_status": 3,
+   "updated": "2026-11-22 19:14:15.967776031 +0000 UTC"
+  },
+  {
+   "mmsi": 366855000,
+   "name": "FLORIDA",
+   "lat": 45.65548,
+   "lon": -122.76462,
+   "sog_kn": 11,
+   "cog": 3.5,
+   "heading": 354,
+   "nav_status": 0,
+   "updated": "2026-11-22 19:14:22.372682204 +0000 UTC"
   }
  ]
 }
