@@ -1,40 +1,73 @@
 {
- "fetched_at": "2026-11-22T18:03:45Z",
+ "fetched_at": "2026-11-22T18:08:45Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.12488,
-   "lon": -122.98842,
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.62269,
+   "lon": -122.78837,
+   "sog_kn": 0.1,
+   "cog": 175.9,
+   "heading": 4,
+   "nav_status": 0,
+   "updated": "2026-11-22 18:08:57.117352247 +0000 UTC"
+  },
+  {
+   "mmsi": 367513140,
+   "name": "CLEARWATER",
+   "lat": 45.64343,
+   "lon": -122.75285,
+   "type_code": 52,
+   "destination": "US^01WD>0T67",
+   "updated": "2026-11-22 18:08:59.576314499 +0000 UTC"
+  },
+  {
+   "mmsi": 563236100,
+   "name": "XH DEEP COVER",
+   "lat": 45.63024,
+   "lon": -122.69556,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-22 18:09:01.260419397 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.61006,
+   "lon": -122.78573,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-22 18:09:02.494329381 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08968,
+   "lon": -122.92972,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-22 18:04:14.358294395 +0000 UTC"
+   "cog": 72.7,
+   "heading": 109,
+   "nav_status": 5,
+   "updated": "2026-11-22 18:09:12.793622998 +0000 UTC"
   },
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.04369,
-   "lon": -122.88281,
-   "sog_kn": 0.1,
-   "cog": 83.8,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-22 18:04:14.358735255 +0000 UTC"
+   "mmsi": 636013613,
+   "name": "LONDON 2012",
+   "lat": 46.04437,
+   "lon": -122.88278,
+   "type_code": 70,
+   "destination": "KR INC>US KAM",
+   "updated": "2026-11-22 18:09:16.379237527 +0000 UTC"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15985,
-   "lon": -123.40533,
-   "sog_kn": 0.1,
-   "cog": 145,
-   "heading": 138,
-   "nav_status": 0,
-   "updated": "2026-11-22 18:04:26.167912458 +0000 UTC"
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09288,
+   "lon": -122.92345,
+   "type_code": 69,
+   "updated": "2026-11-22 18:09:23.747504565 +0000 UTC"
   }
  ]
 }
