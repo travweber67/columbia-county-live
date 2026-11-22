@@ -1,36 +1,82 @@
 {
- "fetched_at": "2026-11-22T01:22:34Z",
+ "fetched_at": "2026-11-22T01:23:23Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09049,
+   "lon": -122.93232,
+   "sog_kn": 0,
+   "cog": 240.7,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-22 01:23:57.321924858 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.14896,
+   "lon": -123.38241,
+   "sog_kn": 7.8,
+   "cog": 21.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-22 01:23:57.504354247 +0000 UTC"
+  },
+  {
+   "mmsi": 355173000,
+   "name": "EVER BEST",
+   "lat": 45.63923,
+   "lon": -122.77785,
+   "type_code": 79,
+   "destination": "USPDX",
+   "updated": "2026-11-22 01:24:02.270792507 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64568,
+   "lon": -122.73485,
+   "sog_kn": 0.1,
+   "cog": 0,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-22 01:24:07.941683658 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.009,
+   "lon": -122.84828,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-22 01:24:10.330790842 +0000 UTC"
+  },
+  {
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.68709,
+   "lon": -122.86643,
+   "sog_kn": 7.4,
+   "cog": 351.3,
+   "heading": 347,
+   "nav_status": 0,
+   "updated": "2026-11-22 01:24:18.784034046 +0000 UTC"
+  },
   {
    "mmsi": 367047120,
    "name": "REBEL",
    "lat": 45.64709,
-   "lon": -122.73961,
-   "type_code": 52,
-   "destination": "VANCOUVER",
-   "updated": "2026-11-22 01:22:49.021352438 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 46.10626,
-   "lon": -122.9568,
-   "type_code": 31,
-   "destination": "PTSI PDX",
-   "updated": "2026-11-22 01:23:07.034457438 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.9656,
-   "lon": -122.8217,
-   "sog_kn": 11.5,
-   "cog": 144.3,
-   "heading": 142,
-   "nav_status": 5,
-   "updated": "2026-11-22 01:23:13.586124818 +0000 UTC"
+   "lon": -122.73962,
+   "sog_kn": 0,
+   "cog": 240.1,
+   "heading": 296,
+   "nav_status": 12,
+   "updated": "2026-11-22 01:24:20.155507741 +0000 UTC"
   }
  ]
 }
