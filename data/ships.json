@@ -1,73 +1,82 @@
 {
- "fetched_at": "2026-11-22T19:48:53Z",
+ "fetched_at": "2026-11-22T19:52:59Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.63765,
-   "lon": -122.72807,
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.85022,
+   "lon": -122.78455,
+   "sog_kn": 8.1,
+   "cog": 4.1,
+   "heading": 3,
+   "nav_status": 0,
+   "updated": "2026-11-22 19:53:33.11050956 +0000 UTC"
+  },
+  {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.62274,
+   "lon": -122.78841,
+   "sog_kn": 0,
+   "cog": 150.5,
+   "heading": 4,
+   "nav_status": 0,
+   "updated": "2026-11-22 19:53:36.696846392 +0000 UTC"
+  },
+  {
+   "mmsi": 538090648,
+   "name": "PAGANELLA",
+   "lat": 45.64054,
+   "lon": -122.71732,
+   "sog_kn": 0,
+   "cog": 270.3,
+   "heading": 296,
+   "nav_status": 5,
+   "updated": "2026-11-22 19:53:40.281139179 +0000 UTC"
+  },
+  {
+   "mmsi": 366855000,
+   "name": "FLORIDA",
+   "lat": 45.79856,
+   "lon": -122.78592,
+   "type_code": 80,
+   "destination": "PORT ANGELES",
+   "updated": "2026-11-22 19:53:44.850161615 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.04368,
+   "lon": -122.88277,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-22 19:53:53.763328266 +0000 UTC"
+  },
+  {
+   "mmsi": 538010248,
+   "name": "SAFEEN AL AMAL",
+   "lat": 46.12404,
+   "lon": -122.98612,
    "sog_kn": 0.1,
-   "cog": 310.3,
-   "heading": 116,
-   "nav_status": 0,
-   "updated": "2026-11-22 19:49:05.499662829 +0000 UTC"
+   "cog": 133.2,
+   "heading": 229,
+   "nav_status": 1,
+   "updated": "2026-11-22 19:53:57.174336922 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35744,
-   "sog_kn": 0,
-   "cog": 224.9,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-22 19:49:06.367546481 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.07129,
-   "lon": -122.89082,
-   "sog_kn": 9.3,
-   "cog": 160.2,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-22 19:49:17.540033786 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.09291,
-   "lon": -122.92341,
-   "sog_kn": 0,
-   "cog": 295.1,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-22 19:49:21.642606743 +0000 UTC"
-  },
-  {
-   "mmsi": 368257130,
-   "name": "TRIUMPH VII",
-   "lat": 46.10505,
-   "lon": -122.9608,
-   "sog_kn": 25.2,
-   "cog": 306.2,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-22 19:49:26.942603765 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10129,
-   "lon": -122.91543,
-   "sog_kn": 2.5,
-   "cog": 67.5,
-   "heading": 73,
-   "nav_status": 3,
-   "updated": "2026-11-22 19:49:34.948110359 +0000 UTC"
+   "mmsi": 538009633,
+   "name": "EVER ZENITH",
+   "lat": 46.09916,
+   "lon": -122.93941,
+   "sog_kn": 0.1,
+   "cog": 7.4,
+   "heading": 108,
+   "nav_status": 5,
+   "updated": "2026-11-22 19:53:57.353935778 +0000 UTC"
   }
  ]
 }
