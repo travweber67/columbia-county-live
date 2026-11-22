@@ -1,38 +1,84 @@
 {
- "fetched_at": "2026-11-22T16:22:57Z",
+ "fetched_at": "2026-11-22T16:28:39Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.62274,
-   "lon": -122.78838,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.14183,
+   "lon": -123.33305,
+   "sog_kn": 6.2,
+   "cog": 94.7,
+   "heading": 95,
+   "nav_status": 3,
+   "updated": "2026-11-22 16:28:54.577418517 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 46.14374,
+   "lon": -123.33987,
+   "sog_kn": 8.2,
+   "cog": 267.5,
+   "heading": 268,
+   "nav_status": 12,
+   "updated": "2026-11-22 16:28:55.946934415 +0000 UTC"
+  },
+  {
+   "mmsi": 563236100,
+   "name": "XH DEEP COVER",
+   "lat": 45.63026,
+   "lon": -122.69558,
    "sog_kn": 0,
-   "cog": 237.4,
-   "heading": 4,
-   "nav_status": 0,
-   "updated": "2026-11-22 16:23:47.394414336 +0000 UTC"
-  },
-  {
-   "mmsi": 538010248,
-   "name": "SAFEEN AL AMAL",
-   "lat": 46.12477,
-   "lon": -122.98873,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-22 16:23:56.169120938 +0000 UTC"
-  },
-  {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64567,
-   "lon": -122.73488,
-   "sog_kn": 0.1,
-   "cog": 0,
-   "heading": 113,
+   "cog": 22,
+   "heading": 128,
    "nav_status": 5,
-   "updated": "2026-11-22 16:24:07.681024391 +0000 UTC"
+   "updated": "2026-11-22 16:28:57.797233017 +0000 UTC"
+  },
+  {
+   "mmsi": 367719170,
+   "name": "RYAN POINT",
+   "lat": 45.64741,
+   "lon": -122.73942,
+   "sog_kn": 0,
+   "cog": 328.3,
+   "heading": 285,
+   "nav_status": 12,
+   "updated": "2026-11-22 16:29:07.779061775 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.92103,
+   "lon": -122.80748,
+   "sog_kn": 0.5,
+   "cog": 144.4,
+   "heading": 146,
+   "nav_status": 3,
+   "updated": "2026-11-22 16:29:09.088754092 +0000 UTC"
+  },
+  {
+   "mmsi": 367646810,
+   "name": "EMERY ZIDELL",
+   "lat": 45.67836,
+   "lon": -122.77132,
+   "sog_kn": 0.2,
+   "cog": 266.8,
+   "heading": 185,
+   "nav_status": 0,
+   "updated": "2026-11-22 16:29:11.130394217 +0000 UTC"
+  },
+  {
+   "mmsi": 366396000,
+   "name": "NAT GEO SEA LION",
+   "lat": 46.08962,
+   "lon": -122.9298,
+   "sog_kn": 0,
+   "cog": 283.1,
+   "heading": 111,
+   "nav_status": 5,
+   "updated": "2026-11-22 16:29:15.99565117 +0000 UTC"
   }
  ]
 }
