@@ -1,38 +1,60 @@
 {
- "fetched_at": "2026-11-22T09:13:10Z",
+ "fetched_at": "2026-11-22T09:18:10Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 355173000,
-   "name": "EVER BEST",
-   "lat": 46.13319,
-   "lon": -123.00436,
-   "sog_kn": 10.7,
-   "cog": 319.2,
-   "heading": 310,
-   "nav_status": 0,
-   "updated": "2026-11-22 09:13:35.132185978 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.25914,
-   "lon": -123.46761,
-   "type_code": 52,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-22 09:13:37.536896077 +0000 UTC"
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58733,
+   "lon": -122.77045,
+   "sog_kn": 0,
+   "cog": 200.2,
+   "heading": 137,
+   "nav_status": 5,
+   "updated": "2026-11-22 09:18:38.841564552 +0000 UTC"
   },
   {
    "mmsi": 366998830,
    "name": "ROYAL MELBOURNE",
-   "lat": 45.93065,
-   "lon": -122.80712,
+   "lat": 45.92056,
+   "lon": -122.80988,
    "sog_kn": 7.3,
-   "cog": 183.4,
-   "heading": 184,
+   "cog": 190.9,
+   "heading": 190,
    "nav_status": 0,
-   "updated": "2026-11-22 09:13:39.996267694 +0000 UTC"
+   "updated": "2026-11-22 09:18:41.854378941 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58425,
+   "lon": -122.7662,
+   "sog_kn": 0,
+   "cog": 202,
+   "heading": 145,
+   "nav_status": 5,
+   "updated": "2026-11-22 09:18:44.870468001 +0000 UTC"
+  },
+  {
+   "mmsi": 367513140,
+   "name": "CLEARWATER",
+   "lat": 45.64343,
+   "lon": -122.75285,
+   "sog_kn": 0,
+   "cog": 165.5,
+   "heading": 229,
+   "nav_status": 12,
+   "updated": "2026-11-22 09:18:49.583435992 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58724,
+   "lon": -122.77007,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-22 09:18:51.446947972 +0000 UTC"
   }
  ]
 }
