@@ -1,60 +1,78 @@
 {
- "fetched_at": "2026-11-22T13:38:27Z",
+ "fetched_at": "2026-11-22T13:43:27Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09312,
-   "lon": -122.92351,
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.20618,
+   "lon": -123.38662,
    "sog_kn": 0,
-   "cog": 283.7,
-   "heading": 127,
-   "nav_status": 0,
-   "updated": "2026-11-22 13:38:30.628792476 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61288,
-   "sog_kn": 0,
-   "cog": 272.6,
-   "heading": 131,
-   "nav_status": 15,
-   "updated": "2026-11-22 13:38:32.777610116 +0000 UTC"
-  },
-  {
-   "mmsi": 636023225,
-   "name": "SWEET PEA LEADER",
-   "lat": 45.59763,
-   "lon": -122.77506,
-   "sog_kn": 0,
-   "cog": 87.4,
-   "heading": 329,
+   "cog": 268.7,
+   "heading": 181,
    "nav_status": 5,
-   "updated": "2026-11-22 13:38:38.717877746 +0000 UTC"
+   "updated": "2026-11-22 13:43:40.926576839 +0000 UTC"
   },
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20001,
-   "lon": -123.38542,
-   "type_code": 99,
-   "destination": "NAKNEK",
-   "updated": "2026-11-22 13:38:44.034413491 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40234,
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60756,
+   "lon": -122.67753,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 131,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-22 13:38:49.016498631 +0000 UTC"
+   "updated": "2026-11-22 13:43:40.934849956 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 46.00827,
+   "lon": -122.85502,
+   "sog_kn": 9.3,
+   "cog": 343.5,
+   "heading": 345,
+   "nav_status": 12,
+   "updated": "2026-11-22 13:43:46.52502933 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.09293,
+   "lon": -122.92312,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-22 13:43:48.449873707 +0000 UTC"
+  },
+  {
+   "mmsi": 366888830,
+   "name": "KAHU",
+   "lat": 45.61165,
+   "lon": -122.6442,
+   "type_code": 52,
+   "destination": "PDX",
+   "updated": "2026-11-22 13:43:53.557053621 +0000 UTC"
+  },
+  {
+   "mmsi": 563236100,
+   "name": "XH DEEP COVER",
+   "lat": 45.63025,
+   "lon": -122.69558,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-22 13:43:54.863672705 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.64708,
+   "lon": -122.7396,
+   "sog_kn": 0,
+   "cog": 346.9,
+   "heading": 296,
+   "nav_status": 5,
+   "updated": "2026-11-22 13:44:06.318782026 +0000 UTC"
   }
  ]
 }
