@@ -1,69 +1,49 @@
 {
- "fetched_at": "2026-11-22T12:58:24Z",
+ "fetched_at": "2026-11-22T13:03:24Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.0091,
-   "lon": -122.84826,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 180.6,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-22 13:03:37.324565528 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60758,
+   "lon": -122.67754,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-22 12:58:39.183939628 +0000 UTC"
+   "updated": "2026-11-22 13:03:38.92762148 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.97311,
-   "lon": -122.83332,
-   "sog_kn": 0.2,
-   "cog": 193.1,
-   "heading": 139,
-   "nav_status": 3,
-   "updated": "2026-11-22 12:58:39.367458963 +0000 UTC"
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.11009,
+   "lon": -122.96338,
+   "sog_kn": 0,
+   "cog": 172.2,
+   "heading": 131,
+   "nav_status": 5,
+   "updated": "2026-11-22 13:03:50.780408418 +0000 UTC"
   },
   {
-   "mmsi": 367719170,
-   "name": "RYAN POINT",
-   "lat": 45.60605,
-   "lon": -122.61986,
-   "sog_kn": 7.9,
-   "cog": 280.2,
-   "heading": 281,
-   "nav_status": 12,
-   "updated": "2026-11-22 12:58:56.639004001 +0000 UTC"
-  },
-  {
-   "mmsi": 563338800,
-   "name": "ISHIZUCHI STAR",
-   "lat": 45.63144,
-   "lon": -122.69714,
-   "type_code": 70,
-   "destination": "US VAN",
-   "updated": "2026-11-22 12:58:58.516964146 +0000 UTC"
-  },
-  {
-   "mmsi": 367006570,
-   "name": "JEFFREY S",
-   "lat": 45.67682,
-   "lon": -122.77206,
-   "type_code": 52,
-   "destination": "PORTLAND, OR",
-   "updated": "2026-11-22 12:59:03.403256513 +0000 UTC"
-  },
-  {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.9039,
-   "lon": -122.80847,
-   "sog_kn": 8.2,
-   "cog": 343.4,
-   "heading": 348,
-   "nav_status": 12,
-   "updated": "2026-11-22 12:59:05.42571987 +0000 UTC"
+   "mmsi": 311001605,
+   "name": "SAGA DISCOVERY",
+   "lat": 46.1746,
+   "lon": -123.107,
+   "type_code": 79,
+   "destination": "US LOG",
+   "updated": "2026-11-22 13:03:52.624061137 +0000 UTC"
   }
  ]
 }
