@@ -1,6 +1,58 @@
 {
- "fetched_at": "2026-11-22T22:49:05Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-22T22:53:00Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.09025,
+   "lon": -122.93155,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-22 22:53:50.630272257 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 46.15024,
+   "lon": -123.26807,
+   "type_code": 0,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-22 22:53:51.35712714 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.91474,
+   "lon": -122.80811,
+   "sog_kn": 1.2,
+   "cog": 44.8,
+   "heading": 10,
+   "nav_status": 3,
+   "updated": "2026-11-22 22:53:52.103973396 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.61143,
+   "lon": -122.63461,
+   "sog_kn": 0,
+   "cog": 278.4,
+   "heading": 2,
+   "nav_status": 0,
+   "updated": "2026-11-22 22:53:55.344671482 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64347,
+   "lon": -122.75246,
+   "type_code": 52,
+   "destination": "US^0UU4>02MR",
+   "updated": "2026-11-22 22:54:03.352505052 +0000 UTC"
+  }
+ ]
 }
