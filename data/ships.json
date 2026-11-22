@@ -1,61 +1,91 @@
 {
- "fetched_at": "2026-11-22T03:57:45Z",
+ "fetched_at": "2026-11-22T04:02:46Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09053,
+   "lon": -122.93231,
+   "sog_kn": 0,
+   "cog": 251.2,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-22 04:03:01.581252113 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.09295,
+   "lon": -122.9231,
+   "sog_kn": 0,
+   "cog": 104.4,
+   "heading": 122,
+   "nav_status": 5,
+   "updated": "2026-11-22 04:03:03.583578159 +0000 UTC"
+  },
   {
    "mmsi": 367476050,
    "name": "CLACKAMAS",
    "lat": 46.09278,
-   "lon": -122.92326,
+   "lon": -122.92327,
    "sog_kn": 0,
-   "cog": 224.9,
-   "heading": 127,
+   "cog": 306.1,
+   "heading": 128,
    "nav_status": 0,
-   "updated": "2026-11-22 03:57:54.616111814 +0000 UTC"
+   "updated": "2026-11-22 04:03:04.378023894 +0000 UTC"
   },
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15338,
-   "lon": -123.37715,
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.68605,
+   "lon": -122.77224,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-22 04:03:11.772479452 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19998,
+   "lon": -123.38543,
    "sog_kn": 0,
-   "cog": 206.1,
+   "cog": 203.5,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-22 03:57:57.620367498 +0000 UTC"
+   "nav_status": 8,
+   "updated": "2026-11-22 04:03:13.968109574 +0000 UTC"
   },
   {
-   "mmsi": 366892350,
-   "name": "NAT GEO SEA BIRD",
-   "lat": 46.08968,
-   "lon": -122.92969,
-   "type_code": 66,
-   "destination": "RAINIER",
-   "updated": "2026-11-22 03:57:59.886575132 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35744,
-   "type_code": 30,
-   "updated": "2026-11-22 03:58:16.935826466 +0000 UTC",
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.62275,
+   "lon": -122.78839,
    "sog_kn": 0,
-   "cog": 207.2,
-   "heading": 134,
-   "nav_status": 15
+   "cog": 3.9,
+   "heading": 4,
+   "nav_status": 0,
+   "updated": "2026-11-22 04:03:18.290763362 +0000 UTC"
   },
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00894,
-   "lon": -122.84833,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
+   "mmsi": 538090648,
+   "name": "PAGANELLA",
+   "lat": 46.18348,
+   "lon": -123.11612,
+   "sog_kn": 13.7,
+   "cog": 126,
+   "heading": 128,
    "nav_status": 0,
-   "updated": "2026-11-22 03:58:09.978259387 +0000 UTC"
+   "updated": "2026-11-22 04:03:19.88949507 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 46.09065,
+   "lon": -122.93208,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-22 04:03:21.347692962 +0000 UTC"
   }
  ]
 }
