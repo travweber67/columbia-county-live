@@ -1,58 +1,89 @@
 {
- "fetched_at": "2026-11-22T14:58:33Z",
+ "fetched_at": "2026-11-22T15:03:33Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09309,
-   "lon": -122.9236,
+   "mmsi": 367719170,
+   "name": "RYAN POINT",
+   "lat": 45.64739,
+   "lon": -122.73943,
+   "sog_kn": 0,
+   "cog": 328.3,
+   "heading": 284,
+   "nav_status": 12,
+   "updated": "2026-11-22 15:03:47.465899534 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09315,
+   "lon": -122.92351,
    "sog_kn": 0.1,
-   "cog": 216.1,
-   "heading": 310,
-   "nav_status": 3,
-   "updated": "2026-11-22 14:58:48.1318844 +0000 UTC"
+   "cog": 325,
+   "heading": 127,
+   "nav_status": 0,
+   "updated": "2026-11-22 15:03:52.810020103 +0000 UTC"
+  },
+  {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.62272,
+   "lon": -122.78839,
+   "sog_kn": 0,
+   "cog": 159.6,
+   "heading": 4,
+   "nav_status": 0,
+   "updated": "2026-11-22 15:03:56.84406551 +0000 UTC"
   },
   {
    "mmsi": 367531220,
    "name": "WATCHMAN",
    "lat": 46.19999,
-   "lon": -123.38539,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-22 14:58:53.397932437 +0000 UTC"
+   "lon": -123.3854,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-22 15:03:57.330423395 +0000 UTC"
   },
   {
-   "mmsi": 366888830,
-   "name": "KAHU",
-   "lat": 45.61165,
-   "lon": -122.64422,
-   "sog_kn": 0,
-   "cog": 85.3,
-   "heading": 116,
-   "nav_status": 5,
-   "updated": "2026-11-22 14:58:59.031284352 +0000 UTC"
-  },
-  {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 46.14968,
-   "lon": -123.04358,
-   "type_code": 0,
-   "destination": "VANCOUVER",
-   "updated": "2026-11-22 14:58:59.807817203 +0000 UTC"
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58415,
+   "lon": -122.76615,
+   "type_code": 52,
+   "destination": "US^00D5>0UHN",
+   "updated": "2026-11-22 15:03:58.129031355 +0000 UTC"
   },
   {
    "mmsi": 367047170,
    "name": "MAVERICK",
-   "lat": 45.64907,
-   "lon": -122.74774,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-22 14:59:00.94855313 +0000 UTC"
+   "lat": 45.64884,
+   "lon": -122.74566,
+   "sog_kn": 0,
+   "cog": 108.7,
+   "heading": 108,
+   "nav_status": 0,
+   "updated": "2026-11-22 15:04:06.586214359 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19943,
+   "lon": -123.38502,
+   "sog_kn": 0,
+   "cog": 70,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-22 15:04:07.759463555 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09048,
+   "lon": -122.93238,
+   "type_code": 52,
+   "destination": "COL RIVER",
+   "updated": "2026-11-22 15:04:11.746707509 +0000 UTC"
   }
  ]
 }
