@@ -1,78 +1,49 @@
 {
- "fetched_at": "2026-11-22T02:53:25Z",
+ "fetched_at": "2026-11-22T02:57:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.97453,
+   "lon": -122.83061,
+   "sog_kn": 8.5,
+   "cog": 136.9,
+   "heading": 138,
+   "nav_status": 3,
+   "updated": "2026-11-22 02:57:48.781113154 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09278,
+   "lon": -122.92328,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-22 02:57:55.84959719 +0000 UTC"
+  },
   {
    "mmsi": 367669550,
    "name": "ALASKA CHALLENGER",
    "lat": 46.17719,
-   "lon": -123.35743,
+   "lon": -123.35745,
    "sog_kn": 0,
-   "cog": 347.1,
+   "cog": 228.7,
    "heading": 134,
    "nav_status": 15,
-   "updated": "2026-11-22 02:53:56.348782914 +0000 UTC"
+   "updated": "2026-11-22 02:57:57.164445182 +0000 UTC"
   },
   {
-   "mmsi": 440245000,
-   "name": "GLOVIS SUMMIT",
-   "lat": 46.20118,
-   "lon": -123.42743,
-   "sog_kn": 16,
-   "cog": 9.2,
-   "heading": 9,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09291,
+   "lon": -122.92379,
+   "sog_kn": 4.3,
+   "cog": 107.6,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-22 02:53:58.114700121 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64347,
-   "lon": -122.75256,
-   "type_code": 52,
-   "destination": "US^0UU4>02MR",
-   "updated": "2026-11-22 02:54:01.101589082 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.20001,
-   "lon": -123.38551,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-22 02:54:11.859246673 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 232.1,
-   "heading": 133,
-   "nav_status": 15,
-   "updated": "2026-11-22 02:54:13.063670073 +0000 UTC"
-  },
-  {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.8095,
-   "lon": -122.79348,
-   "sog_kn": 6.5,
-   "cog": 163.5,
-   "heading": 161,
-   "nav_status": 12,
-   "updated": "2026-11-22 02:54:17.313430684 +0000 UTC"
-  },
-  {
-   "mmsi": 374590000,
-   "name": "BORACAY ISLAND",
-   "lat": 45.69109,
-   "lon": -122.77186,
-   "type_code": 70,
-   "destination": "MX ZLO >> US VAN",
-   "updated": "2026-11-22 02:54:23.913852173 +0000 UTC"
+   "updated": "2026-11-22 02:58:04.784752946 +0000 UTC"
   }
  ]
 }
