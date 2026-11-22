@@ -119,6 +119,12 @@
     /* Whole card links to the store; dots, arrows and real links keep their own behavior. */
     card.addEventListener('click', function (ev) {
       if (ev.target.closest('a, button')) return;
+      if (window.goatcounter && window.goatcounter.count) {
+        window.goatcounter.count({
+          path: card.id === 'merch-card-events' ? 'merch-card-events' : 'merch-card-today',
+          event: true
+        });
+      }
       window.open(SHOP_URL, '_blank', 'noopener');
     });
   }
