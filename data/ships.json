@@ -1,49 +1,91 @@
 {
- "fetched_at": "2026-11-22T12:22:55Z",
+ "fetched_at": "2026-11-22T12:28:22Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19997,
+   "lon": -123.38548,
+   "sog_kn": 0,
+   "cog": 127.6,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-22 12:28:54.174063404 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.83151,
+   "lon": -122.79187,
+   "sog_kn": 9.3,
+   "cog": 11.4,
+   "heading": 14,
+   "nav_status": 12,
+   "updated": "2026-11-22 12:28:59.598402693 +0000 UTC",
+   "type_code": 0,
+   "destination": "VANCOUVER"
+  },
+  {
+   "mmsi": 563236100,
+   "name": "XH DEEP COVER",
+   "lat": 45.63029,
+   "lon": -122.69559,
+   "sog_kn": 0,
+   "cog": 34.8,
+   "heading": 128,
+   "nav_status": 5,
+   "updated": "2026-11-22 12:28:57.303642134 +0000 UTC"
+  },
+  {
+   "mmsi": 563338800,
+   "name": "ISHIZUCHI STAR",
+   "lat": 45.63144,
+   "lon": -122.69714,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-22 12:28:59.517233475 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.9309,
+   "lon": -122.80621,
+   "sog_kn": 0.7,
+   "cog": 302.5,
+   "heading": 193,
+   "nav_status": 3,
+   "updated": "2026-11-22 12:28:59.846323913 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19947,
+   "lon": -123.38505,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-22 12:28:59.886241898 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58422,
+   "lon": -122.7661,
+   "type_code": 52,
+   "destination": "US^00D5>0UHN",
+   "updated": "2026-11-22 12:29:02.372093886 +0000 UTC"
+  },
   {
    "mmsi": 367323610,
    "name": "MIKETTE",
-   "lat": 46.20621,
-   "lon": -123.3866,
+   "lat": 46.20622,
+   "lon": -123.38661,
    "sog_kn": 0,
-   "cog": 10.4,
-   "heading": 183,
+   "cog": 180.1,
+   "heading": 181,
    "nav_status": 5,
-   "updated": "2026-11-22 12:23:39.453207247 +0000 UTC"
-  },
-  {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59402,
-   "lon": -122.77215,
-   "sog_kn": 0,
-   "cog": 346.3,
-   "heading": 149,
-   "nav_status": 5,
-   "updated": "2026-11-22 12:23:41.328870033 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35744,
-   "sog_kn": 0,
-   "cog": 196.6,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-22 12:23:46.006153005 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58713,
-   "lon": -122.77016,
-   "type_code": 52,
-   "destination": "PORTLAND,OR",
-   "updated": "2026-11-22 12:23:46.25599552 +0000 UTC"
+   "updated": "2026-11-22 12:29:06.005034906 +0000 UTC"
   }
  ]
 }
