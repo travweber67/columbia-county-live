@@ -1,82 +1,71 @@
 {
- "fetched_at": "2026-11-22T00:27:31Z",
+ "fetched_at": "2026-11-22T00:32:31Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.04207,
-   "lon": -122.88247,
-   "sog_kn": 1.3,
-   "cog": 119.4,
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.64709,
+   "lon": -122.73961,
+   "sog_kn": 0,
+   "cog": 300.3,
+   "heading": 296,
+   "nav_status": 12,
+   "updated": "2026-11-22 00:32:41.783872737 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09057,
+   "lon": -122.93233,
+   "sog_kn": 0,
+   "cog": 283.6,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-22 00:27:40.014156493 +0000 UTC"
-  },
-  {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.58418,
-   "lon": -122.76613,
-   "sog_kn": 0,
-   "cog": 359.8,
-   "heading": 146,
    "nav_status": 5,
-   "updated": "2026-11-22 00:27:42.345403521 +0000 UTC"
+   "updated": "2026-11-22 00:32:57.903012398 +0000 UTC"
   },
   {
-   "mmsi": 636013613,
-   "name": "LONDON 2012",
-   "lat": 46.04436,
-   "lon": -122.88272,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40234,
    "sog_kn": 0,
-   "cog": 47.5,
-   "heading": 175,
-   "nav_status": 1,
-   "updated": "2026-11-22 00:27:48.917853007 +0000 UTC"
+   "cog": 360,
+   "heading": 133,
+   "nav_status": 0,
+   "updated": "2026-11-22 00:32:59.187118005 +0000 UTC"
   },
   {
-   "mmsi": 368126190,
-   "name": "GERONIMO",
-   "lat": 45.57102,
-   "lon": -122.73627,
-   "sog_kn": 0.2,
-   "cog": 125.8,
-   "heading": 303,
-   "nav_status": 11,
-   "updated": "2026-11-22 00:27:49.659075271 +0000 UTC"
+   "mmsi": 366855000,
+   "name": "FLORIDA",
+   "lat": 45.9131,
+   "lon": -122.8092,
+   "type_code": 80,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-22 00:33:04.530385113 +0000 UTC"
   },
   {
    "mmsi": 368083770,
    "name": "SUPPORT",
-   "lat": 46.04325,
-   "lon": -122.88308,
-   "sog_kn": 4,
-   "cog": 176.8,
+   "lat": 46.04568,
+   "lon": -122.88252,
+   "sog_kn": 1.9,
+   "cog": 347.1,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-22 00:27:57.103844157 +0000 UTC"
+   "updated": "2026-11-22 00:33:05.675921263 +0000 UTC"
   },
   {
-   "mmsi": 367006570,
-   "name": "JEFFREY S",
-   "lat": 45.6768,
-   "lon": -122.77194,
-   "type_code": 52,
-   "destination": "PORTLAND, OR",
-   "updated": "2026-11-22 00:28:05.300303237 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35744,
-   "sog_kn": 0,
-   "cog": 201.8,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-22 00:28:07.079010728 +0000 UTC"
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.6134,
+   "lon": -122.78971,
+   "sog_kn": 7.9,
+   "cog": 330.2,
+   "heading": 327,
+   "nav_status": 0,
+   "updated": "2026-11-22 00:33:10.189018858 +0000 UTC"
   }
  ]
 }
