@@ -1,49 +1,6 @@
 {
- "fetched_at": "2026-11-22T10:43:16Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00905,
-   "lon": -122.84829,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-22 10:43:28.209367465 +0000 UTC"
-  },
-  {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.62273,
-   "lon": -122.78844,
-   "sog_kn": 0,
-   "cog": 158.9,
-   "heading": 4,
-   "nav_status": 0,
-   "updated": "2026-11-22 10:43:37.509828725 +0000 UTC"
-  },
-  {
-   "mmsi": 636023225,
-   "name": "SWEET PEA LEADER",
-   "lat": 45.59763,
-   "lon": -122.77507,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-22 10:43:46.626500806 +0000 UTC"
-  },
-  {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60759,
-   "lon": -122.67766,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-22 10:43:50.820260739 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-22T10:48:16Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
