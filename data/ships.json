@@ -1,73 +1,60 @@
 {
- "fetched_at": "2026-11-22T12:43:23Z",
+ "fetched_at": "2026-11-22T12:48:23Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 636013613,
-   "name": "LONDON 2012",
-   "lat": 46.04437,
-   "lon": -122.88272,
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.95898,
+   "lon": -122.81206,
+   "sog_kn": 11.2,
+   "cog": 336.2,
+   "heading": 336,
+   "nav_status": 3,
+   "updated": "2026-11-22 12:48:48.556627461 +0000 UTC"
+  },
+  {
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.1101,
+   "lon": -122.96338,
+   "sog_kn": 0,
+   "cog": 172.2,
+   "heading": 131,
+   "nav_status": 5,
+   "updated": "2026-11-22 12:48:50.168039899 +0000 UTC"
+  },
+  {
+   "mmsi": 538010248,
+   "name": "SAFEEN AL AMAL",
+   "lat": 46.16796,
+   "lon": -123.4122,
    "type_code": 70,
-   "destination": "KR INC>US KAM",
-   "updated": "2026-11-22 12:43:46.803987652 +0000 UTC"
+   "destination": "US LOG",
+   "updated": "2026-11-22 12:48:52.309250402 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19997,
+   "lon": -123.38545,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-22 12:48:54.527134919 +0000 UTC"
   },
   {
    "mmsi": 367380280,
    "name": "WESTERN STAR",
-   "lat": 46.15706,
+   "lat": 46.15705,
    "lon": -123.40234,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 135,
+   "heading": 134,
    "nav_status": 0,
-   "updated": "2026-11-22 12:43:48.942946999 +0000 UTC"
-  },
-  {
-   "mmsi": 367646810,
-   "name": "EMERY ZIDELL",
-   "lat": 45.59335,
-   "lon": -122.77704,
-   "sog_kn": 0,
-   "cog": 334,
-   "heading": 144,
-   "nav_status": 5,
-   "updated": "2026-11-22 12:43:51.935189976 +0000 UTC"
-  },
-  {
-   "mmsi": 366888830,
-   "name": "KAHU",
-   "lat": 45.61168,
-   "lon": -122.6442,
-   "type_code": 52,
-   "destination": "PDX",
-   "updated": "2026-11-22 12:43:56.47474828 +0000 UTC",
-   "sog_kn": 0,
-   "cog": 211.3,
-   "heading": 117,
-   "nav_status": 5
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.09279,
-   "lon": -122.92326,
-   "sog_kn": 0,
-   "cog": 330.3,
-   "heading": 126,
-   "nav_status": 0,
-   "updated": "2026-11-22 12:43:54.576558141 +0000 UTC"
-  },
-  {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.86989,
-   "lon": -122.78902,
-   "sog_kn": 9.4,
-   "cog": 343.8,
-   "heading": 343,
-   "nav_status": 12,
-   "updated": "2026-11-22 12:44:06.610282934 +0000 UTC"
+   "updated": "2026-11-22 12:49:00.409463434 +0000 UTC"
   }
  ]
 }
