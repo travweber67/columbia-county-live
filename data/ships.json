@@ -1,29 +1,6 @@
 {
- "fetched_at": "2026-11-22T13:48:28Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.58418,
-   "lon": -122.76615,
-   "sog_kn": 0,
-   "cog": 157.2,
-   "heading": 145,
-   "nav_status": 5,
-   "updated": "2026-11-22 13:48:42.536892026 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58726,
-   "lon": -122.77014,
-   "sog_kn": 0,
-   "cog": 295.5,
-   "heading": 139,
-   "nav_status": 5,
-   "updated": "2026-11-22 13:49:07.717759454 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-22T13:52:56Z",
+ "status": "error",
+ "note": "AISStream error: timed out",
+ "ships": []
 }
