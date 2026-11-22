@@ -6644,6 +6644,14 @@ const LANG_ES = {
   dirother: 'Otros servicios locales',
   dirfun: 'Boliche y diversión familiar',
   dirbeauty: 'Salud y belleza',
+  dirdining: 'Comida y bebida',
+  dirshops: 'Tiendas y abarrotes',
+  dirstay: 'Dónde hospedarse',
+  dirauto: 'Autos y combustible',
+  dirpro: 'Servicios y profesionales',
+  dircomm: 'Comunidad y organizaciones',
+  dirrec: 'Aire libre y recreación',
+  dirtrades: 'Oficios y madera',
   dirfreehelp: 'Ayuda gratuita / apoyo comunitario',
   dirfounding: 'Negocio fundador',
   dirotldesc: 'Boliche, ligas y fiestas de cumpleaños sobre Columbia River Highway.',
@@ -9546,6 +9554,26 @@ const PHOTO_FORM_URL = 'https://forms.gle/e1GU1qnuBKCM9KBk9'; // LIVE 2026-11-05
     freehelp: {
       en: 'No free-help listings yet — churches with free food nights, free support services, neighbours helping neighbours. Know one? Add it with the form above — it is free, like everything on this shelf.',
       es: 'Aún no hay anuncios de ayuda gratuita — iglesias con cenas gratuitas, servicios de apoyo sin costo, vecinos ayudando a vecinos. ¿Conoces uno? Agrégalo con el formulario de arriba — es gratis, como todo en este estante.'
+    },
+    dining: {
+      en: 'No places to eat or drink listed yet — the first cafe, kitchen or taproom to join is listed free.',
+      es: 'Aún no hay lugares para comer o beber — el primer café o restaurante que se sume aparece gratis.'
+    },
+    shops: {
+      en: 'No shops listed yet — the first store to join is listed free.',
+      es: 'Aún no hay tiendas — la primera que se sume aparece gratis.'
+    },
+    stay: {
+      en: 'No places to stay listed yet — the first inn, B&B or camp to join is listed free.',
+      es: 'Aún no hay hospedaje — el primero que se sume aparece gratis.'
+    },
+    auto: {
+      en: 'No auto services listed yet — parts, repair or fuel, the first listing is free.',
+      es: 'Aún no hay servicios de autos — el primer anuncio es gratis.'
+    },
+    pro: {
+      en: 'No professional services listed yet — the first listing is free.',
+      es: 'Aún no hay servicios profesionales — el primer anuncio es gratis.'
     }
   };
 
