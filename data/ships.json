@@ -1,60 +1,76 @@
 {
- "fetched_at": "2026-11-22T03:12:43Z",
+ "fetched_at": "2026-11-22T03:17:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.25917,
-   "lon": -123.46773,
-   "sog_kn": 0,
-   "cog": 316.7,
-   "heading": 97,
-   "nav_status": 3,
-   "updated": "2026-11-22 03:12:56.405344195 +0000 UTC"
+   "mmsi": 538012272,
+   "name": "PERSEUS I",
+   "lat": 46.0944,
+   "lon": -122.93716,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-22 03:17:51.474972 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09316,
-   "lon": -122.92353,
+   "mmsi": 355173000,
+   "name": "EVER BEST",
+   "lat": 45.63925,
+   "lon": -122.77781,
+   "type_code": 79,
+   "destination": "USPDX",
+   "updated": "2026-11-22 03:17:52.139299305 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 46.1063,
+   "lon": -122.95679,
+   "type_code": 31,
+   "destination": "PTSI PDX",
+   "updated": "2026-11-22 03:17:59.858086464 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64568,
+   "lon": -122.73488,
    "sog_kn": 0.1,
-   "cog": 97.6,
-   "heading": 126,
-   "nav_status": 0,
-   "updated": "2026-11-22 03:13:01.091220368 +0000 UTC"
+   "cog": 0,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-22 03:18:06.134110842 +0000 UTC"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40233,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.14059,
+   "lon": -123.38269,
+   "sog_kn": 8,
+   "cog": 342.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-22 03:18:06.585227918 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.6129,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 135,
-   "nav_status": 0,
-   "updated": "2026-11-22 03:13:14.994628415 +0000 UTC"
+   "cog": 113.1,
+   "heading": 133,
+   "nav_status": 15,
+   "updated": "2026-11-22 03:18:11.946900992 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09308,
-   "lon": -122.9236,
-   "sog_kn": 0.1,
-   "cog": 9.4,
-   "heading": 308,
-   "nav_status": 3,
-   "updated": "2026-11-22 03:13:16.342961755 +0000 UTC"
-  },
-  {
-   "mmsi": 367646810,
-   "name": "EMERY ZIDELL",
-   "lat": 45.581,
-   "lon": -122.76014,
-   "type_code": 80,
-   "destination": "PORTLAND, OR",
-   "updated": "2026-11-22 03:13:19.929041289 +0000 UTC"
+   "mmsi": 366396000,
+   "name": "NAT GEO SEA LION",
+   "lat": 46.08956,
+   "lon": -122.92973,
+   "type_code": 68,
+   "destination": "RAINIER",
+   "updated": "2026-11-22 03:18:12.045945955 +0000 UTC"
   }
  ]
 }
