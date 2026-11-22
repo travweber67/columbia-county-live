@@ -1,18 +1,58 @@
 {
- "fetched_at": "2026-11-22T14:52:57Z",
+ "fetched_at": "2026-11-22T14:58:33Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 1 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.24807,
-   "lon": -123.43943,
-   "sog_kn": 5.5,
-   "cog": 142,
-   "heading": 142,
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09309,
+   "lon": -122.9236,
+   "sog_kn": 0.1,
+   "cog": 216.1,
+   "heading": 310,
    "nav_status": 3,
-   "updated": "2026-11-22 14:53:56.465124369 +0000 UTC"
+   "updated": "2026-11-22 14:58:48.1318844 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.38539,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-22 14:58:53.397932437 +0000 UTC"
+  },
+  {
+   "mmsi": 366888830,
+   "name": "KAHU",
+   "lat": 45.61165,
+   "lon": -122.64422,
+   "sog_kn": 0,
+   "cog": 85.3,
+   "heading": 116,
+   "nav_status": 5,
+   "updated": "2026-11-22 14:58:59.031284352 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 46.14968,
+   "lon": -123.04358,
+   "type_code": 0,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-22 14:58:59.807817203 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64907,
+   "lon": -122.74774,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-22 14:59:00.94855313 +0000 UTC"
   }
  ]
 }
