@@ -1,46 +1,38 @@
 {
- "fetched_at": "2026-11-22T18:58:49Z",
+ "fetched_at": "2026-11-22T19:03:49Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59407,
-   "lon": -122.77213,
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 46.16242,
+   "lon": -123.40892,
+   "sog_kn": 0,
+   "cog": 356.7,
+   "heading": 313,
+   "nav_status": 12,
+   "updated": "2026-11-22 19:04:06.583475313 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65011,
+   "lon": -122.7476,
+   "sog_kn": 0,
+   "cog": 260.2,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-22 19:04:19.565698723 +0000 UTC"
+  },
+  {
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 45.66697,
+   "lon": -122.76679,
    "type_code": 70,
-   "destination": "NOT AVAILABLE",
-   "updated": "2026-11-22 18:59:21.944294021 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.7273,
-   "lon": -122.76184,
-   "sog_kn": 8.9,
-   "cog": 2.7,
-   "heading": 1,
-   "nav_status": 0,
-   "updated": "2026-11-22 18:59:23.891882027 +0000 UTC"
-  },
-  {
-   "mmsi": 538090732,
-   "name": "NORDIC MERCHANTS",
-   "lat": 46.11853,
-   "lon": -122.97809,
-   "sog_kn": 0.2,
-   "cog": 73.3,
-   "heading": 188,
-   "nav_status": 1,
-   "updated": "2026-11-22 18:59:27.923407534 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15344,
-   "lon": -123.37715,
-   "type_code": 99,
-   "updated": "2026-11-22 18:59:28.636065027 +0000 UTC"
+   "destination": "US PDX",
+   "updated": "2026-11-22 19:04:27.912455106 +0000 UTC"
   }
  ]
 }
