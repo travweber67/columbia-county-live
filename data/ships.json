@@ -1,40 +1,104 @@
 {
- "fetched_at": "2026-11-22T07:38:03Z",
+ "fetched_at": "2026-11-22T07:43:04Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366396000,
-   "name": "NAT GEO SEA LION",
-   "lat": 46.08959,
-   "lon": -122.92975,
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64788,
+   "lon": -122.74099,
    "sog_kn": 0,
-   "cog": 283.1,
+   "cog": 111.9,
    "heading": 111,
    "nav_status": 5,
-   "updated": "2026-11-22 07:38:15.336337292 +0000 UTC"
+   "updated": "2026-11-22 07:43:18.256517509 +0000 UTC"
+  },
+  {
+   "mmsi": 563338800,
+   "name": "ISHIZUCHI STAR",
+   "lat": 45.63144,
+   "lon": -122.69717,
+   "sog_kn": 0,
+   "cog": 151.2,
+   "heading": 307,
+   "nav_status": 5,
+   "updated": "2026-11-22 07:43:23.895901466 +0000 UTC",
+   "type_code": 70,
+   "destination": "US VAN"
+  },
+  {
+   "mmsi": 538090648,
+   "name": "PAGANELLA",
+   "lat": 45.64057,
+   "lon": -122.7174,
+   "sog_kn": 0.1,
+   "cog": 113.3,
+   "heading": 295,
+   "nav_status": 0,
+   "updated": "2026-11-22 07:43:24.419850363 +0000 UTC"
   },
   {
    "mmsi": 367513230,
    "name": "WILLAMETTE",
-   "lat": 45.63954,
-   "lon": -122.71576,
-   "sog_kn": 0.4,
-   "cog": 5.1,
-   "heading": 13,
+   "lat": 45.63978,
+   "lon": -122.71595,
+   "sog_kn": 0.1,
+   "cog": 114.7,
+   "heading": 24,
    "nav_status": 0,
-   "updated": "2026-11-22 07:38:28.284866098 +0000 UTC"
+   "updated": "2026-11-22 07:43:26.88151137 +0000 UTC"
   },
   {
-   "mmsi": 367707180,
-   "name": "DISPATCHER",
-   "lat": 45.61097,
-   "lon": -122.77825,
-   "sog_kn": 0.3,
-   "cog": 99.8,
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09314,
+   "lon": -122.9235,
+   "sog_kn": 0,
+   "cog": 128.7,
+   "heading": 126,
+   "nav_status": 0,
+   "updated": "2026-11-22 07:43:30.499862598 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09277,
+   "lon": -122.92329,
+   "sog_kn": 0,
+   "cog": 343.3,
+   "heading": 129,
+   "nav_status": 0,
+   "updated": "2026-11-22 07:43:33.370635068 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15342,
+   "lon": -123.37715,
+   "sog_kn": 0,
+   "cog": 0,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-22 07:38:34.039231115 +0000 UTC"
+   "updated": "2026-11-22 07:43:36.729052173 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.25911,
+   "lon": -123.46759,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-22 07:43:37.796047615 +0000 UTC"
+  },
+  {
+   "mmsi": 636023225,
+   "name": "SWEET PEA LEADER",
+   "lat": 45.59763,
+   "lon": -122.77508,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-22 07:43:40.594363403 +0000 UTC"
   }
  ]
 }
