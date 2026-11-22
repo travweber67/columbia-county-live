@@ -1,34 +1,49 @@
 {
- "fetched_at": "2026-11-22T08:33:07Z",
+ "fetched_at": "2026-11-22T08:38:07Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367667060,
-   "name": "GRANITE POINT",
-   "lat": 45.64729,
-   "lon": -122.73993,
-   "type_code": 52,
-   "destination": "SRT PASCO",
-   "updated": "2026-11-22 08:33:31.974217845 +0000 UTC"
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15707,
+   "lon": -123.40234,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 134,
+   "nav_status": 0,
+   "updated": "2026-11-22 08:38:13.489968302 +0000 UTC"
   },
   {
-   "mmsi": 366888830,
-   "name": "KAHU",
-   "lat": 45.61167,
-   "lon": -122.64423,
-   "type_code": 52,
-   "destination": "PDX",
-   "updated": "2026-11-22 08:33:33.425628656 +0000 UTC"
+   "mmsi": 366396000,
+   "name": "NAT GEO SEA LION",
+   "lat": 46.08961,
+   "lon": -122.92972,
+   "sog_kn": 0,
+   "cog": 283.1,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-22 08:38:13.747358225 +0000 UTC"
   },
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20001,
-   "lon": -123.38542,
-   "type_code": 99,
-   "destination": "NAKNEK",
-   "updated": "2026-11-22 08:33:36.992941769 +0000 UTC"
+   "mmsi": 367747140,
+   "name": "TRIUMPH VIII",
+   "lat": 45.60761,
+   "lon": -122.68396,
+   "sog_kn": 0.5,
+   "cog": 166,
+   "heading": 125,
+   "nav_status": 0,
+   "updated": "2026-11-22 08:38:25.518362836 +0000 UTC"
+  },
+  {
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.68606,
+   "lon": -122.77263,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-22 08:38:40.602683502 +0000 UTC"
   }
  ]
 }
