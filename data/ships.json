@@ -1,60 +1,97 @@
 {
- "fetched_at": "2026-11-22T09:18:10Z",
+ "fetched_at": "2026-11-22T09:22:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58733,
-   "lon": -122.77045,
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 45.66695,
+   "lon": -122.76694,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-22 09:23:33.322639262 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15343,
+   "lon": -123.37713,
+   "type_code": 99,
+   "updated": "2026-11-22 09:23:34.657550988 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.00911,
+   "lon": -122.8483,
    "sog_kn": 0,
-   "cog": 200.2,
-   "heading": 137,
-   "nav_status": 5,
-   "updated": "2026-11-22 09:18:38.841564552 +0000 UTC"
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-22 09:23:40.607751448 +0000 UTC"
   },
   {
    "mmsi": 366998830,
    "name": "ROYAL MELBOURNE",
-   "lat": 45.92056,
-   "lon": -122.80988,
+   "lat": 45.91046,
+   "lon": -122.81047,
    "sog_kn": 7.3,
-   "cog": 190.9,
-   "heading": 190,
+   "cog": 172.3,
+   "heading": 169,
    "nav_status": 0,
-   "updated": "2026-11-22 09:18:41.854378941 +0000 UTC"
+   "updated": "2026-11-22 09:23:41.874711695 +0000 UTC"
   },
   {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.58425,
-   "lon": -122.7662,
+   "mmsi": 538090648,
+   "name": "PAGANELLA",
+   "lat": 45.64054,
+   "lon": -122.71732,
+   "type_code": 70,
+   "destination": "USTIW > USVAN",
+   "updated": "2026-11-22 09:23:42.961095266 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.25912,
+   "lon": -123.46758,
    "sog_kn": 0,
-   "cog": 202,
-   "heading": 145,
-   "nav_status": 5,
-   "updated": "2026-11-22 09:18:44.870468001 +0000 UTC"
+   "cog": 339.8,
+   "heading": 93,
+   "nav_status": 3,
+   "updated": "2026-11-22 09:23:43.571773073 +0000 UTC"
   },
   {
-   "mmsi": 367513140,
-   "name": "CLEARWATER",
-   "lat": 45.64343,
-   "lon": -122.75285,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.62735,
+   "lon": -122.69872,
+   "sog_kn": 0.1,
+   "cog": 172.3,
+   "heading": 304,
+   "nav_status": 0,
+   "updated": "2026-11-22 09:23:45.098487811 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35744,
    "sog_kn": 0,
-   "cog": 165.5,
-   "heading": 229,
-   "nav_status": 12,
-   "updated": "2026-11-22 09:18:49.583435992 +0000 UTC"
+   "cog": 183.6,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-22 09:23:46.035463797 +0000 UTC"
   },
   {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58724,
-   "lon": -122.77007,
-   "type_code": 52,
-   "destination": "PORTLAND,OR",
-   "updated": "2026-11-22 09:18:51.446947972 +0000 UTC"
+   "mmsi": 636013613,
+   "name": "LONDON 2012",
+   "lat": 46.04437,
+   "lon": -122.8827,
+   "type_code": 70,
+   "destination": "KR INC>US KAM",
+   "updated": "2026-11-22 09:23:52.018882649 +0000 UTC"
   }
  ]
 }
