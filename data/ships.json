@@ -1,78 +1,69 @@
 {
- "fetched_at": "2026-11-22T12:52:56Z",
+ "fetched_at": "2026-11-22T12:58:24Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538012272,
-   "name": "PERSEUS I",
-   "lat": 46.0943,
-   "lon": -122.93723,
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.0091,
+   "lon": -122.84826,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-22 12:58:39.183939628 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.97311,
+   "lon": -122.83332,
+   "sog_kn": 0.2,
+   "cog": 193.1,
+   "heading": 139,
+   "nav_status": 3,
+   "updated": "2026-11-22 12:58:39.367458963 +0000 UTC"
+  },
+  {
+   "mmsi": 367719170,
+   "name": "RYAN POINT",
+   "lat": 45.60605,
+   "lon": -122.61986,
+   "sog_kn": 7.9,
+   "cog": 280.2,
+   "heading": 281,
+   "nav_status": 12,
+   "updated": "2026-11-22 12:58:56.639004001 +0000 UTC"
+  },
+  {
+   "mmsi": 563338800,
+   "name": "ISHIZUCHI STAR",
+   "lat": 45.63144,
+   "lon": -122.69714,
    "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-22 12:53:36.378508204 +0000 UTC"
+   "destination": "US VAN",
+   "updated": "2026-11-22 12:58:58.516964146 +0000 UTC"
   },
   {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.6479,
-   "lon": -122.74098,
+   "mmsi": 367006570,
+   "name": "JEFFREY S",
+   "lat": 45.67682,
+   "lon": -122.77206,
    "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-22 12:53:39.111227806 +0000 UTC"
+   "destination": "PORTLAND, OR",
+   "updated": "2026-11-22 12:59:03.403256513 +0000 UTC"
   },
   {
-   "mmsi": 538090648,
-   "name": "PAGANELLA",
-   "lat": 45.64055,
-   "lon": -122.71732,
-   "sog_kn": 0,
-   "cog": 356.6,
-   "heading": 296,
-   "nav_status": 5,
-   "updated": "2026-11-22 12:53:39.060376923 +0000 UTC"
-  },
-  {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61226,
-   "lon": -122.64522,
-   "type_code": 52,
-   "destination": "US^10M4>02MP",
-   "updated": "2026-11-22 12:53:43.562217569 +0000 UTC"
-  },
-  {
-   "mmsi": 303890000,
-   "name": "NELSON V. BRITTIN",
-   "lat": 45.59403,
-   "lon": -122.77215,
-   "sog_kn": 0,
-   "cog": 346.3,
-   "heading": 149,
-   "nav_status": 5,
-   "updated": "2026-11-22 12:53:43.716693335 +0000 UTC"
-  },
-  {
-   "mmsi": 538009633,
-   "name": "EVER ZENITH",
-   "lat": 46.0991,
-   "lon": -122.93939,
-   "sog_kn": 0,
-   "cog": 213.3,
-   "heading": 108,
-   "nav_status": 5,
-   "updated": "2026-11-22 12:53:57.372954442 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35743,
-   "sog_kn": 0,
-   "cog": 40.8,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-22 12:54:06.327334739 +0000 UTC"
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.9039,
+   "lon": -122.80847,
+   "sog_kn": 8.2,
+   "cog": 343.4,
+   "heading": 348,
+   "nav_status": 12,
+   "updated": "2026-11-22 12:59:05.42571987 +0000 UTC"
   }
  ]
 }
