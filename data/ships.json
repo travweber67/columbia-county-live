@@ -1,84 +1,85 @@
 {
- "fetched_at": "2026-11-22T16:28:39Z",
+ "fetched_at": "2026-11-22T16:33:39Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09278,
+   "lon": -122.92328,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-22 16:33:55.867304047 +0000 UTC"
+  },
+  {
+   "mmsi": 367513140,
+   "name": "CLEARWATER",
+   "lat": 45.64342,
+   "lon": -122.75286,
+   "sog_kn": 0,
+   "cog": 229.3,
+   "heading": 229,
+   "nav_status": 12,
+   "updated": "2026-11-22 16:33:58.196297067 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58413,
+   "lon": -122.76612,
+   "type_code": 52,
+   "destination": "US^00D5>0UHN",
+   "updated": "2026-11-22 16:33:58.405403003 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.62831,
+   "lon": -122.69114,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-22 16:34:08.007982176 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.10798,
+   "lon": -122.95927,
+   "sog_kn": 0.9,
+   "cog": 99.8,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-22 16:34:11.161073717 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64789,
+   "lon": -122.74102,
+   "sog_kn": 0,
+   "cog": 112.1,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-22 16:34:18.588948172 +0000 UTC"
+  },
   {
    "mmsi": 367310520,
    "name": "JAMES T",
-   "lat": 46.14183,
-   "lon": -123.33305,
-   "sog_kn": 6.2,
-   "cog": 94.7,
-   "heading": 95,
-   "nav_status": 3,
-   "updated": "2026-11-22 16:28:54.577418517 +0000 UTC"
+   "lat": 46.14166,
+   "lon": -123.32003,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-22 16:34:20.591937662 +0000 UTC"
   },
   {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 46.14374,
-   "lon": -123.33987,
-   "sog_kn": 8.2,
-   "cog": 267.5,
-   "heading": 268,
-   "nav_status": 12,
-   "updated": "2026-11-22 16:28:55.946934415 +0000 UTC"
-  },
-  {
-   "mmsi": 563236100,
-   "name": "XH DEEP COVER",
-   "lat": 45.63026,
-   "lon": -122.69558,
-   "sog_kn": 0,
-   "cog": 22,
-   "heading": 128,
-   "nav_status": 5,
-   "updated": "2026-11-22 16:28:57.797233017 +0000 UTC"
-  },
-  {
-   "mmsi": 367719170,
-   "name": "RYAN POINT",
-   "lat": 45.64741,
-   "lon": -122.73942,
-   "sog_kn": 0,
-   "cog": 328.3,
-   "heading": 285,
-   "nav_status": 12,
-   "updated": "2026-11-22 16:29:07.779061775 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.92103,
-   "lon": -122.80748,
-   "sog_kn": 0.5,
-   "cog": 144.4,
-   "heading": 146,
-   "nav_status": 3,
-   "updated": "2026-11-22 16:29:09.088754092 +0000 UTC"
-  },
-  {
-   "mmsi": 367646810,
-   "name": "EMERY ZIDELL",
-   "lat": 45.67836,
-   "lon": -122.77132,
-   "sog_kn": 0.2,
-   "cog": 266.8,
-   "heading": 185,
-   "nav_status": 0,
-   "updated": "2026-11-22 16:29:11.130394217 +0000 UTC"
-  },
-  {
-   "mmsi": 366396000,
-   "name": "NAT GEO SEA LION",
-   "lat": 46.08962,
-   "lon": -122.9298,
-   "sog_kn": 0,
-   "cog": 283.1,
-   "heading": 111,
-   "nav_status": 5,
-   "updated": "2026-11-22 16:29:15.99565117 +0000 UTC"
+   "mmsi": 538009633,
+   "name": "EVER ZENITH",
+   "lat": 46.09914,
+   "lon": -122.9394,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-22 16:34:21.333601381 +0000 UTC"
   }
  ]
 }
