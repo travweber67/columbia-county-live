@@ -1,58 +1,61 @@
 {
- "fetched_at": "2026-11-22T03:53:25Z",
+ "fetched_at": "2026-11-22T03:57:45Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.59096,
-   "lon": -122.77053,
-   "sog_kn": 9.8,
-   "cog": 329.3,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09278,
+   "lon": -122.92326,
+   "sog_kn": 0,
+   "cog": 224.9,
+   "heading": 127,
+   "nav_status": 0,
+   "updated": "2026-11-22 03:57:54.616111814 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15338,
+   "lon": -123.37715,
+   "sog_kn": 0,
+   "cog": 206.1,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-22 03:54:00.176888829 +0000 UTC"
+   "updated": "2026-11-22 03:57:57.620367498 +0000 UTC"
   },
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.06999,
-   "lon": -122.89106,
-   "sog_kn": 20.8,
-   "cog": 163.4,
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08968,
+   "lon": -122.92969,
+   "type_code": 66,
+   "destination": "RAINIER",
+   "updated": "2026-11-22 03:57:59.886575132 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35744,
+   "type_code": 30,
+   "updated": "2026-11-22 03:58:16.935826466 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 207.2,
+   "heading": 134,
+   "nav_status": 15
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.00894,
+   "lon": -122.84833,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-22 03:54:01.747675893 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64349,
-   "lon": -122.75245,
-   "type_code": 52,
-   "destination": "US^0UU4>02MR",
-   "updated": "2026-11-22 03:54:03.478774109 +0000 UTC"
-  },
-  {
-   "mmsi": 374590000,
-   "name": "BORACAY ISLAND",
-   "lat": 45.69109,
-   "lon": -122.7718,
-   "type_code": 70,
-   "destination": "MX ZLO >> US VAN",
-   "updated": "2026-11-22 03:54:14.189669561 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.93263,
-   "lon": -122.80568,
-   "sog_kn": 1.4,
-   "cog": 0.6,
-   "heading": 168,
-   "nav_status": 3,
-   "updated": "2026-11-22 03:54:20.071266063 +0000 UTC"
+   "updated": "2026-11-22 03:58:09.978259387 +0000 UTC"
   }
  ]
 }
