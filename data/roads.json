@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-22T15:03:33Z",
+ "fetched_at": "2026-11-22T15:08:33Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -16,6 +16,19 @@
   }
  ],
  "incidents": [
+  {
+   "title": "A crash has occurred with minimal delay to traffic. Prepare to slow or move over for worker safety.",
+   "desc": "",
+   "impact": "No to Minimum Delay",
+   "place": "ORE6, 14 miles West of Glenwood",
+   "route": "OR6",
+   "milepost": 24.98,
+   "lat": 45.59576,
+   "lon": -123.51023,
+   "start": "2026-11-22T07:04:08.98-08:00",
+   "updated": "2026-11-22T07:05:51-08:00",
+   "source": "ODOT TripCheck"
+  },
   {
    "title": "Traffic Impacts: No traffic impacts.",
    "desc": "Project Description: This project improves system operations in the region by replacing and upgrading equipment that is beyond its service life. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=22867",
@@ -121,7 +134,7 @@
    "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 123,
+ "odot_active_statewide": 124,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
   "alerts": [],
