@@ -4012,8 +4012,13 @@ html[data-theme="dark"] .school-status.school-closed{color:#ff7b72;background:tr
    solid white with an orange-tinted border and a soft shadow, so
    the ombre shows in the gaps between them instead of the cells
    blending into one mass. ---- */
-body.rd-home .hero-status{flex-wrap:nowrap;gap:6px 10px}
-body.rd-home .hero-spot{flex:1 1 0;text-align:center;white-space:nowrap}
+/* ccl-v153 (2026-11-22): same hero-spot fit fix as TCL v44 -- the
+   spots wrap inside their own third (min-width:0 + white-space:
+   normal) so the worst-case combo ("Bridge not clear" + "Weather
+   warning" + "Highway not clear") can never push the last spot off
+   the card and clip it mid-word on phones. Look unchanged. */
+body.rd-home .hero-status{flex-wrap:nowrap;gap:6px 10px;align-items:flex-start}
+body.rd-home .hero-spot{flex:1 1 0;min-width:0;text-align:center;white-space:normal;overflow-wrap:break-word;line-height:1.3}
 @media (max-width:480px){ body.rd-home .hero-spot{font-size:.93rem} }
 .founding-cell{background:#ffffff;border-color:rgba(176,94,0,.38);box-shadow:0 4px 14px rgba(150,85,10,.13)}
 .founding-cell.invite{background:#fffdf6;border-color:rgba(233,140,30,.7)}
