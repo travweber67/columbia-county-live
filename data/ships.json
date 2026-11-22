@@ -1,49 +1,49 @@
 {
- "fetched_at": "2026-11-22T13:03:24Z",
+ "fetched_at": "2026-11-22T13:08:25Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
+   "mmsi": 538090648,
+   "name": "PAGANELLA",
+   "lat": 45.64055,
+   "lon": -122.71731,
+   "sog_kn": 0,
+   "cog": 334.3,
+   "heading": 296,
+   "nav_status": 5,
+   "updated": "2026-11-22 13:08:39.723410338 +0000 UTC"
+  },
+  {
    "mmsi": 367669550,
    "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
+   "lat": 46.17719,
    "lon": -123.35743,
    "sog_kn": 0,
-   "cog": 180.6,
+   "cog": 195.2,
    "heading": 134,
    "nav_status": 15,
-   "updated": "2026-11-22 13:03:37.324565528 +0000 UTC"
+   "updated": "2026-11-22 13:08:46.672865275 +0000 UTC"
   },
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60758,
-   "lon": -122.67754,
+   "mmsi": 367513140,
+   "name": "CLEARWATER",
+   "lat": 45.64344,
+   "lon": -122.75285,
+   "type_code": 52,
+   "destination": "US^01WD>0T67",
+   "updated": "2026-11-22 13:08:59.513811092 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09047,
+   "lon": -122.93232,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 103.4,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-22 13:03:38.92762148 +0000 UTC"
-  },
-  {
-   "mmsi": 563311600,
-   "name": "STANLEY BAY",
-   "lat": 46.11009,
-   "lon": -122.96338,
-   "sog_kn": 0,
-   "cog": 172.2,
-   "heading": 131,
    "nav_status": 5,
-   "updated": "2026-11-22 13:03:50.780408418 +0000 UTC"
-  },
-  {
-   "mmsi": 311001605,
-   "name": "SAGA DISCOVERY",
-   "lat": 46.1746,
-   "lon": -123.107,
-   "type_code": 79,
-   "destination": "US LOG",
-   "updated": "2026-11-22 13:03:52.624061137 +0000 UTC"
+   "updated": "2026-11-22 13:09:05.154515232 +0000 UTC"
   }
  ]
 }
