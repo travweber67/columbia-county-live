@@ -1,49 +1,60 @@
 {
- "fetched_at": "2026-11-22T18:43:48Z",
+ "fetched_at": "2026-11-22T18:48:48Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58078,
-   "lon": -122.7601,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19994,
+   "lon": -123.38554,
    "sog_kn": 0,
-   "cog": 110.6,
-   "heading": 124,
-   "nav_status": 5,
-   "updated": "2026-11-22 18:44:04.133537674 +0000 UTC"
+   "cog": 25.5,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-22 18:49:11.182572779 +0000 UTC"
   },
   {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.04367,
-   "lon": -122.88291,
+   "mmsi": 636015972,
+   "name": "STOLT BASUTO",
+   "lat": 46.18926,
+   "lon": -123.16391,
+   "sog_kn": 13.4,
+   "cog": 74.3,
+   "heading": 78,
+   "nav_status": 0,
+   "updated": "2026-11-22 18:49:17.534666792 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64794,
+   "lon": -122.74098,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 112,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-22 18:49:19.116466915 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09286,
+   "lon": -122.92343,
+   "sog_kn": 0,
+   "cog": 247,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-22 18:44:15.161447269 +0000 UTC"
+   "updated": "2026-11-22 18:49:20.199097173 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35743,
-   "sog_kn": 0,
-   "cog": 230.7,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-22 18:44:25.884603489 +0000 UTC"
-  },
-  {
-   "mmsi": 563311600,
-   "name": "STANLEY BAY",
-   "lat": 46.11011,
-   "lon": -122.96336,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-22 18:44:27.561635686 +0000 UTC"
+   "mmsi": 367646810,
+   "name": "EMERY ZIDELL",
+   "lat": 45.67835,
+   "lon": -122.77176,
+   "type_code": 80,
+   "destination": "ANACORTES, WA",
+   "updated": "2026-11-22 18:49:20.19971766 +0000 UTC"
   }
  ]
 }
