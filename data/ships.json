@@ -1,57 +1,47 @@
 {
- "fetched_at": "2026-11-22T15:38:36Z",
+ "fetched_at": "2026-11-22T15:43:36Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 46.18376,
-   "lon": -123.17963,
-   "sog_kn": 9.3,
-   "cog": 244.5,
-   "heading": 245,
-   "nav_status": 12,
-   "updated": "2026-11-22 15:38:46.150142311 +0000 UTC"
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.11011,
+   "lon": -122.96336,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-22 15:43:48.004109313 +0000 UTC"
+  },
+  {
+   "mmsi": 563236100,
+   "name": "XH DEEP COVER",
+   "lat": 45.63026,
+   "lon": -122.69559,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-22 15:43:54.882149137 +0000 UTC"
   },
   {
    "mmsi": 367061930,
    "name": "TEBENKOF",
-   "lat": 46.19996,
-   "lon": -123.38552,
+   "lat": 46.2,
+   "lon": -123.38555,
    "sog_kn": 0,
-   "cog": 33.1,
+   "cog": 31.3,
    "heading": 511,
    "nav_status": 15,
-   "updated": "2026-11-22 15:38:51.091233578 +0000 UTC"
+   "updated": "2026-11-22 15:44:00.944405739 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35744,
-   "type_code": 30,
-   "updated": "2026-11-22 15:38:58.438396938 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.6501,
-   "lon": -122.74758,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09284,
+   "lon": -122.92343,
    "sog_kn": 0,
-   "cog": 358.6,
+   "cog": 318.1,
    "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-22 15:38:59.540925962 +0000 UTC"
-  },
-  {
-   "mmsi": 636013613,
-   "name": "LONDON 2012",
-   "lat": 46.04435,
-   "lon": -122.88305,
-   "type_code": 70,
-   "destination": "KR INC>US KAM",
-   "updated": "2026-11-22 15:39:06.541753045 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-22 15:44:11.857289157 +0000 UTC"
   }
  ]
 }
