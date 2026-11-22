@@ -1,90 +1,104 @@
 {
- "fetched_at": "2026-11-22T00:02:28Z",
+ "fetched_at": "2026-11-22T00:07:29Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.09285,
-   "lon": -122.92343,
-   "type_code": 69,
-   "updated": "2026-11-22 00:02:43.545700628 +0000 UTC"
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.5729,
+   "lon": -122.73831,
+   "type_code": 52,
+   "destination": "",
+   "updated": "2026-11-22 00:07:49.05150938 +0000 UTC",
+   "sog_kn": 7.6,
+   "cog": 315.7,
+   "heading": 310,
+   "nav_status": 0
+  },
+  {
+   "mmsi": 355173000,
+   "name": "EVER BEST",
+   "lat": 45.63925,
+   "lon": -122.77784,
+   "sog_kn": 0,
+   "cog": 321.7,
+   "heading": 228,
+   "nav_status": 5,
+   "updated": "2026-11-22 00:07:45.464196466 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.09294,
+   "lon": -122.92309,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-22 00:07:47.58751243 +0000 UTC"
+  },
+  {
+   "mmsi": 367645170,
+   "name": "CROWN POINT",
+   "lat": 45.64754,
+   "lon": -122.73987,
+   "sog_kn": 0,
+   "cog": 288.6,
+   "heading": 114,
+   "nav_status": 5,
+   "updated": "2026-11-22 00:07:52.352746816 +0000 UTC"
+  },
+  {
+   "mmsi": 563236100,
+   "name": "XH DEEP COVER",
+   "lat": 45.63031,
+   "lon": -122.69558,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-22 00:07:57.300444319 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 206.8,
+   "heading": 128,
+   "nav_status": 5
   },
   {
    "mmsi": 367531220,
    "name": "WATCHMAN",
-   "lat": 46.2,
+   "lat": 46.19999,
    "lon": -123.3854,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 182.4,
    "heading": 511,
    "nav_status": 8,
-   "updated": "2026-11-22 00:02:44.322905336 +0000 UTC"
+   "updated": "2026-11-22 00:07:55.237401442 +0000 UTC"
   },
   {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.26592,
-   "lon": -123.45868,
-   "type_code": 52,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-22 00:02:51.410698739 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 237.1,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-22 00:02:52.769982027 +0000 UTC"
-  },
-  {
-   "mmsi": 311001605,
-   "name": "SAGA DISCOVERY",
-   "lat": 46.17466,
-   "lon": -123.10698,
-   "sog_kn": 0.1,
-   "cog": 359.7,
-   "heading": 119,
-   "nav_status": 1,
-   "updated": "2026-11-22 00:02:55.495431457 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.61102,
-   "lon": -122.78089,
-   "sog_kn": 0,
-   "cog": 88.9,
-   "heading": 511,
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.58409,
+   "lon": -122.76274,
+   "sog_kn": 6.5,
+   "cog": 132,
+   "heading": 128,
    "nav_status": 0,
-   "updated": "2026-11-22 00:03:00.441807472 +0000 UTC"
+   "updated": "2026-11-22 00:08:00.647456408 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.09278,
-   "lon": -122.92327,
-   "sog_kn": 0,
-   "cog": 331.7,
-   "heading": 127,
-   "nav_status": 0,
-   "updated": "2026-11-22 00:03:04.630213371 +0000 UTC"
+   "mmsi": 440245000,
+   "name": "GLOVIS SUMMIT",
+   "lat": 45.90411,
+   "lon": -122.80768,
+   "type_code": 70,
+   "destination": "USTIW",
+   "updated": "2026-11-22 00:08:01.581547915 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 46.0238,
-   "lon": -122.86847,
-   "sog_kn": 9.1,
-   "cog": 139.2,
-   "heading": 139,
-   "nav_status": 3,
-   "updated": "2026-11-22 00:03:08.801743153 +0000 UTC"
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 46.1062,
+   "lon": -122.95614,
+   "type_code": 70,
+   "destination": "USLOG",
+   "updated": "2026-11-22 00:08:08.150494073 +0000 UTC"
   }
  ]
 }
