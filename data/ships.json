@@ -1,40 +1,42 @@
 {
- "fetched_at": "2026-11-22T08:22:52Z",
+ "fetched_at": "2026-11-22T08:28:07Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.62271,
+   "lon": -122.78836,
+   "type_code": 31,
+   "destination": "PORTLAND OR ASHGROVE",
+   "updated": "2026-11-22 08:28:37.570604496 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 78.7,
+   "heading": 4,
+   "nav_status": 0
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.62736,
+   "lon": -122.69872,
+   "sog_kn": 0,
+   "cog": 265.7,
+   "heading": 304,
+   "nav_status": 0,
+   "updated": "2026-11-22 08:28:36.472831112 +0000 UTC"
+  },
+  {
    "mmsi": 367047180,
    "name": "SUNDIAL",
-   "lat": 45.65319,
-   "lon": -122.75638,
+   "lat": 45.64777,
+   "lon": -122.7444,
    "sog_kn": 6.9,
-   "cog": 123.4,
-   "heading": 125,
+   "cog": 114.8,
+   "heading": 114,
    "nav_status": 12,
-   "updated": "2026-11-22 08:23:37.03467445 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.09291,
-   "lon": -122.92342,
-   "sog_kn": 0,
-   "cog": 59.8,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-22 08:23:51.961924665 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.09278,
-   "lon": -122.92328,
-   "sog_kn": 0,
-   "cog": 187,
-   "heading": 125,
-   "nav_status": 0,
-   "updated": "2026-11-22 08:23:54.496874709 +0000 UTC"
+   "updated": "2026-11-22 08:28:46.957224455 +0000 UTC"
   }
  ]
 }
