@@ -1,57 +1,51 @@
 {
- "fetched_at": "2026-11-22T06:58:00Z",
+ "fetched_at": "2026-11-22T07:03:00Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09278,
+   "lon": -122.92329,
+   "sog_kn": 0,
+   "cog": 158,
+   "heading": 126,
+   "nav_status": 0,
+   "updated": "2026-11-22 07:03:12.960572505 +0000 UTC"
+  },
   {
    "mmsi": 538090648,
    "name": "PAGANELLA",
-   "lat": 45.68079,
-   "lon": -122.7749,
-   "sog_kn": 9.8,
-   "cog": 175.3,
-   "heading": 173,
+   "lat": 45.66903,
+   "lon": -122.77138,
+   "sog_kn": 9.1,
+   "cog": 160.2,
+   "heading": 159,
    "nav_status": 0,
-   "updated": "2026-11-22 06:58:15.545876323 +0000 UTC"
+   "updated": "2026-11-22 07:03:15.13588399 +0000 UTC"
   },
   {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15344,
-   "lon": -123.37711,
-   "type_code": 99,
-   "updated": "2026-11-22 06:58:28.629121819 +0000 UTC"
+   "mmsi": 367006570,
+   "name": "JEFFREY S",
+   "lat": 45.67673,
+   "lon": -122.77204,
+   "sog_kn": 0.1,
+   "cog": 183.9,
+   "heading": 164,
+   "nav_status": 1,
+   "updated": "2026-11-22 07:03:16.290050395 +0000 UTC"
   },
   {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.612,
-   "lon": -122.64535,
-   "type_code": 52,
-   "destination": "US^0UUT>0T9D",
-   "updated": "2026-11-22 06:58:28.830944917 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19999,
-   "lon": -123.38541,
-   "sog_kn": 0,
-   "cog": 14.9,
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.644,
+   "lon": -122.73212,
+   "sog_kn": 0.2,
+   "cog": 153.9,
    "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-22 06:58:35.965909084 +0000 UTC"
-  },
-  {
-   "mmsi": 367747140,
-   "name": "TRIUMPH VIII",
-   "lat": 45.641,
-   "lon": -122.71771,
-   "sog_kn": 0.3,
-   "cog": 200,
-   "heading": 247,
    "nav_status": 0,
-   "updated": "2026-11-22 06:58:38.695260682 +0000 UTC"
+   "updated": "2026-11-22 07:03:19.456170879 +0000 UTC"
   }
  ]
 }
