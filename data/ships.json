@@ -1,40 +1,56 @@
 {
- "fetched_at": "2026-11-22T17:22:58Z",
+ "fetched_at": "2026-11-22T17:28:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367646810,
-   "name": "EMERY ZIDELL",
-   "lat": 45.67835,
-   "lon": -122.77172,
-   "sog_kn": 0.1,
-   "cog": 290.2,
-   "heading": 174,
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.09804,
+   "lon": -122.94687,
+   "sog_kn": 28,
+   "cog": 301.9,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-22 17:23:31.88579917 +0000 UTC"
+   "updated": "2026-11-22 17:29:08.286680461 +0000 UTC"
   },
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.61291,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19996,
+   "lon": -123.38551,
    "sog_kn": 0,
-   "cog": 232.8,
-   "heading": 134,
+   "cog": 28.6,
+   "heading": 511,
    "nav_status": 15,
-   "updated": "2026-11-22 17:23:43.328754436 +0000 UTC"
+   "updated": "2026-11-22 17:29:11.522162827 +0000 UTC"
   },
   {
-   "mmsi": 538010248,
-   "name": "SAFEEN AL AMAL",
-   "lat": 46.12474,
-   "lon": -122.98873,
-   "sog_kn": 0,
-   "cog": 80.2,
-   "heading": 138,
-   "nav_status": 1,
-   "updated": "2026-11-22 17:23:51.941772797 +0000 UTC"
+   "mmsi": 538009633,
+   "name": "EVER ZENITH",
+   "lat": 46.09913,
+   "lon": -122.93942,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-22 17:29:16.661887824 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64789,
+   "lon": -122.74096,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-22 17:29:26.157276634 +0000 UTC"
+  },
+  {
+   "mmsi": 367006570,
+   "name": "JEFFREY S",
+   "lat": 45.59339,
+   "lon": -122.77707,
+   "type_code": 52,
+   "destination": "PORTLAND, OR",
+   "updated": "2026-11-22 17:29:28.816077621 +0000 UTC"
   }
  ]
 }

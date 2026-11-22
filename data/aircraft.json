@@ -1,77 +1,47 @@
 {
- "fetched_at": "2026-11-22T17:22:58Z",
+ "fetched_at": "2026-11-22T17:28:43Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
-   "hex": "a14d78",
-   "callsign": "SKW3169",
+   "hex": "ac16da",
+   "callsign": "SWA2371",
+   "type": "B38M",
+   "alt_ft": 2875,
+   "gs_kn": 182.4,
+   "track": 193.96,
+   "lat": 45.73494,
+   "lon": -122.815492
+  },
+  {
+   "hex": "a25cdc",
+   "callsign": "SKW3953",
    "type": "E75L",
-   "alt_ft": 4225,
-   "gs_kn": 180.7,
-   "track": 205.57,
-   "lat": 45.726471,
-   "lon": -122.825474
+   "alt_ft": 19975,
+   "gs_kn": 329.3,
+   "track": 324.77,
+   "lat": 46.069864,
+   "lon": -122.768784
+  },
+  {
+   "hex": "a51968",
+   "callsign": "ASA541",
+   "type": "B739",
+   "alt_ft": 2375,
+   "gs_kn": 170.1,
+   "track": 118.83,
+   "lat": 45.655502,
+   "lon": -122.752579
   },
   {
    "hex": "a8a478",
    "callsign": "QXE2277",
    "type": "E75L",
-   "alt_ft": 3750,
-   "gs_kn": 227.2,
-   "track": 329.6,
-   "lat": 45.570145,
-   "lon": -122.820048
-  },
-  {
-   "hex": "a4943e",
-   "callsign": "UAL1247",
-   "type": "B739",
-   "alt_ft": 2900,
-   "gs_kn": 196.8,
-   "track": 117.22,
-   "lat": 45.66714,
-   "lon": -122.782722
-  },
-  {
-   "hex": "aa8be5",
-   "callsign": "EJA779",
-   "type": "CL35",
-   "alt_ft": 42975,
-   "gs_kn": 455.3,
-   "track": 332.53,
-   "lat": 45.647736,
-   "lon": -122.752522
-  },
-  {
-   "hex": "a17c65",
-   "callsign": "SKW3487",
-   "type": "E75L",
-   "alt_ft": 1625,
-   "gs_kn": 145.0,
-   "track": 118.86,
-   "lat": 45.635345,
-   "lon": -122.725731
-  },
-  {
-   "hex": "a38348",
-   "callsign": "EJM250",
-   "type": "CL60",
-   "alt_ft": 33850,
-   "gs_kn": 454.9,
-   "track": 350.0,
-   "lat": 46.176819,
-   "lon": -122.698662
-  },
-  {
-   "hex": "a1311e",
-   "callsign": "SKW3005",
-   "type": "E75L",
-   "alt_ft": 475,
-   "gs_kn": 129.3,
-   "track": 118.15,
-   "lat": 45.608019,
-   "lon": -122.654457
+   "alt_ft": 575,
+   "gs_kn": 123.5,
+   "track": 118.02,
+   "lat": 45.610565,
+   "lon": -122.660947
   }
  ]
 }
