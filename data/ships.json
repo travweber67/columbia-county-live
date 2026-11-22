@@ -1,78 +1,66 @@
 {
- "fetched_at": "2026-11-22T08:58:09Z",
+ "fetched_at": "2026-11-22T09:03:09Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538009633,
-   "name": "EVER ZENITH",
-   "lat": 46.09915,
-   "lon": -122.93944,
-   "type_code": 70,
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.2062,
+   "lon": -123.38667,
+   "type_code": 30,
+   "destination": "",
+   "updated": "2026-11-22 09:03:14.258483738 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09278,
+   "lon": -122.92329,
+   "sog_kn": 0,
+   "cog": 317.8,
+   "heading": 125,
+   "nav_status": 0,
+   "updated": "2026-11-22 09:03:24.986754285 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.6474,
+   "lon": -122.73945,
+   "sog_kn": 0,
+   "cog": 286.6,
+   "heading": 286,
+   "nav_status": 5,
+   "updated": "2026-11-22 09:03:27.984168181 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61292,
+   "sog_kn": 0,
+   "cog": 212.1,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-22 09:03:32.25519961 +0000 UTC"
+  },
+  {
+   "mmsi": 311001605,
+   "name": "SAGA DISCOVERY",
+   "lat": 46.17247,
+   "lon": -123.10648,
+   "type_code": 79,
    "destination": "US LOG",
-   "updated": "2026-11-22 08:58:21.297740998 +0000 UTC"
+   "updated": "2026-11-22 09:03:38.254117398 +0000 UTC"
   },
   {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.61202,
-   "lon": -122.64536,
-   "type_code": 52,
-   "destination": "US^0UUT>0T9D",
-   "updated": "2026-11-22 08:58:29.046319863 +0000 UTC"
-  },
-  {
-   "mmsi": 367513140,
-   "name": "CLEARWATER",
-   "lat": 45.64343,
-   "lon": -122.75285,
-   "sog_kn": 0,
-   "cog": 253.1,
-   "heading": 228,
-   "nav_status": 12,
-   "updated": "2026-11-22 08:58:29.573624468 +0000 UTC"
-  },
-  {
-   "mmsi": 538011643,
-   "name": "YASA CAMELLIA",
-   "lat": 46.10622,
-   "lon": -122.95618,
-   "sog_kn": 0,
-   "cog": 316.6,
-   "heading": 124,
-   "nav_status": 5,
-   "updated": "2026-11-22 08:58:29.671226906 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.6479,
-   "lon": -122.74098,
-   "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-22 08:58:34.52816628 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.0931,
-   "lon": -122.92361,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 310,
-   "nav_status": 3,
-   "updated": "2026-11-22 08:58:37.945507114 +0000 UTC"
-  },
-  {
-   "mmsi": 367646810,
-   "name": "EMERY ZIDELL",
-   "lat": 45.59339,
-   "lon": -122.77704,
-   "sog_kn": 0,
-   "cog": 297.3,
-   "heading": 147,
-   "nav_status": 5,
-   "updated": "2026-11-22 08:58:49.715223436 +0000 UTC"
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35744,
+   "type_code": 30,
+   "updated": "2026-11-22 09:03:39.419944137 +0000 UTC"
   }
  ]
 }
