@@ -1,82 +1,56 @@
 {
- "fetched_at": "2026-11-22T16:58:41Z",
+ "fetched_at": "2026-11-22T17:03:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367719170,
-   "name": "RYAN POINT",
-   "lat": 45.6474,
-   "lon": -122.7429,
-   "sog_kn": 6.7,
-   "cog": 301,
-   "heading": 316,
-   "nav_status": 12,
-   "updated": "2026-11-22 16:58:54.269414924 +0000 UTC"
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09278,
+   "lon": -122.92329,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-22 17:03:55.650748472 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09315,
+   "lon": -122.92351,
+   "sog_kn": 0,
+   "cog": 358.8,
+   "heading": 127,
+   "nav_status": 0,
+   "updated": "2026-11-22 17:04:01.132111901 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19952,
+   "lon": -123.38498,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-22 17:04:01.542043687 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08967,
+   "lon": -122.92902,
+   "type_code": 52,
+   "destination": "US^0R88>0UJB",
+   "updated": "2026-11-22 17:04:17.158344191 +0000 UTC"
   },
   {
    "mmsi": 367653630,
    "name": "OSCAR B",
-   "lat": 46.1534,
-   "lon": -123.37713,
-   "sog_kn": 0,
-   "cog": 164.9,
+   "lat": 46.14908,
+   "lon": -123.38062,
+   "sog_kn": 7.4,
+   "cog": 218.3,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-22 16:58:55.966448423 +0000 UTC"
-  },
-  {
-   "mmsi": 563236100,
-   "name": "XH DEEP COVER",
-   "lat": 45.63025,
-   "lon": -122.69561,
-   "sog_kn": 0,
-   "cog": 22,
-   "heading": 128,
-   "nav_status": 5,
-   "updated": "2026-11-22 16:58:57.251482982 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09309,
-   "lon": -122.92361,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 309,
-   "nav_status": 3,
-   "updated": "2026-11-22 16:58:58.014762252 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.9725,
-   "lon": -122.83248,
-   "sog_kn": 0.1,
-   "cog": 245.7,
-   "heading": 137,
-   "nav_status": 3,
-   "updated": "2026-11-22 16:58:58.185354133 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40234,
-   "type_code": 99,
-   "destination": "",
-   "updated": "2026-11-22 16:59:01.212855791 +0000 UTC"
-  },
-  {
-   "mmsi": 356334000,
-   "name": "LAUREL ISLAND",
-   "lat": 45.68606,
-   "lon": -122.77225,
-   "sog_kn": 0.1,
-   "cog": 121,
-   "heading": 177,
-   "nav_status": 1,
-   "updated": "2026-11-22 16:59:02.464327262 +0000 UTC"
+   "updated": "2026-11-22 17:04:17.202578098 +0000 UTC"
   }
  ]
 }
