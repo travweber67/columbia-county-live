@@ -1,6 +1,93 @@
 {
- "fetched_at": "2026-11-22T23:49:10Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-22T23:53:01Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09311,
+   "lon": -122.92362,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 307,
+   "nav_status": 3,
+   "updated": "2026-11-22 23:53:48.89564908 +0000 UTC"
+  },
+  {
+   "mmsi": 367708380,
+   "name": "JOHNNY PETERSON",
+   "lat": 45.79303,
+   "lon": -122.84329,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 44,
+   "nav_status": 3,
+   "updated": "2026-11-22 23:53:49.535760166 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.63555,
+   "lon": -122.71287,
+   "type_code": 52,
+   "destination": "PDX/VANC.OPS.",
+   "updated": "2026-11-22 23:53:50.303484753 +0000 UTC"
+  },
+  {
+   "mmsi": 367646810,
+   "name": "EMERY ZIDELL",
+   "lat": 45.67749,
+   "lon": -122.77145,
+   "sog_kn": 0.1,
+   "cog": 256.4,
+   "heading": 165,
+   "nav_status": 1,
+   "updated": "2026-11-22 23:53:51.053388602 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.61081,
+   "lon": -122.63456,
+   "sog_kn": 0,
+   "cog": 302.6,
+   "heading": 2,
+   "nav_status": 0,
+   "updated": "2026-11-22 23:53:55.561430823 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 45.64082,
+   "lon": -122.73395,
+   "sog_kn": 13.1,
+   "cog": 119.7,
+   "heading": 119,
+   "nav_status": 5,
+   "updated": "2026-11-22 23:53:56.868644978 +0000 UTC"
+  },
+  {
+   "mmsi": 367513140,
+   "name": "CLEARWATER",
+   "lat": 45.64343,
+   "lon": -122.75285,
+   "sog_kn": 0,
+   "cog": 53.7,
+   "heading": 228,
+   "nav_status": 12,
+   "updated": "2026-11-22 23:54:09.124801483 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 46.02719,
+   "lon": -122.86992,
+   "sog_kn": 0.6,
+   "cog": 275.5,
+   "heading": 66,
+   "nav_status": 0,
+   "updated": "2026-11-22 23:54:13.053123079 +0000 UTC"
+  }
+ ]
 }
