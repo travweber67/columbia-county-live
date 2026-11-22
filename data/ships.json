@@ -1,56 +1,49 @@
 {
- "fetched_at": "2026-11-22T17:28:43Z",
+ "fetched_at": "2026-11-22T17:33:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367323610,
+   "name": "MIKETTE",
+   "lat": 46.20619,
+   "lon": -123.38662,
+   "sog_kn": 0,
+   "cog": 265,
+   "heading": 184,
+   "nav_status": 5,
+   "updated": "2026-11-22 17:34:00.602767339 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.65143,
+   "lon": -122.75077,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-22 17:34:07.970046664 +0000 UTC"
+  },
   {
    "mmsi": 367767410,
    "name": "MULE",
-   "lat": 46.09804,
-   "lon": -122.94687,
-   "sog_kn": 28,
-   "cog": 301.9,
+   "lat": 46.11832,
+   "lon": -122.97951,
+   "sog_kn": 0.4,
+   "cog": 258.6,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-22 17:29:08.286680461 +0000 UTC"
+   "updated": "2026-11-22 17:34:15.134505789 +0000 UTC"
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19996,
-   "lon": -123.38551,
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37717,
    "sog_kn": 0,
-   "cog": 28.6,
+   "cog": 0,
    "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-22 17:29:11.522162827 +0000 UTC"
-  },
-  {
-   "mmsi": 538009633,
-   "name": "EVER ZENITH",
-   "lat": 46.09913,
-   "lon": -122.93942,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-22 17:29:16.661887824 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64789,
-   "lon": -122.74096,
-   "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-22 17:29:26.157276634 +0000 UTC"
-  },
-  {
-   "mmsi": 367006570,
-   "name": "JEFFREY S",
-   "lat": 45.59339,
-   "lon": -122.77707,
-   "type_code": 52,
-   "destination": "PORTLAND, OR",
-   "updated": "2026-11-22 17:29:28.816077621 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-22 17:34:28.724906102 +0000 UTC"
   }
  ]
 }
