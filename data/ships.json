@@ -1,6 +1,62 @@
 {
- "fetched_at": "2026-11-22T21:44:01Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-22T21:49:01Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 46.04401,
+   "lon": -122.87678,
+   "sog_kn": 0.1,
+   "cog": 23.1,
+   "heading": 23,
+   "nav_status": 0,
+   "updated": "2026-11-22 21:49:19.484572152 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 241,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-22 21:49:25.912758551 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.61207,
+   "lon": -122.6345,
+   "sog_kn": 0.3,
+   "cog": 183.5,
+   "heading": 347,
+   "nav_status": 0,
+   "updated": "2026-11-22 21:49:35.298756567 +0000 UTC"
+  },
+  {
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 45.66686,
+   "lon": -122.76712,
+   "sog_kn": 0,
+   "cog": 172.3,
+   "heading": 159,
+   "nav_status": 1,
+   "updated": "2026-11-22 21:49:38.07781378 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61288,
+   "sog_kn": 0,
+   "cog": 307.2,
+   "heading": 133,
+   "nav_status": 15,
+   "updated": "2026-11-22 21:49:42.38281627 +0000 UTC"
+  }
+ ]
 }
