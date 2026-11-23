@@ -1,18 +1,40 @@
 {
- "fetched_at": "2026-11-23T03:53:03Z",
+ "fetched_at": "2026-11-23T03:54:32Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 1 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367466760,
-   "name": "MARINA",
-   "lat": 46.19952,
-   "lon": -123.38502,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.62694,
+   "lon": -122.69903,
    "sog_kn": 0,
-   "cog": 22,
+   "cog": 238.6,
+   "heading": 304,
+   "nav_status": 0,
+   "updated": "2026-11-23 03:54:46.350736546 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08975,
+   "lon": -122.92904,
+   "sog_kn": 0,
+   "cog": 227.4,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-23 03:54:03.493653304 +0000 UTC"
+   "nav_status": 0,
+   "updated": "2026-11-23 03:55:00.42339232 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10343,
+   "lon": -122.91003,
+   "sog_kn": 0,
+   "cog": 65.8,
+   "heading": 76,
+   "nav_status": 3,
+   "updated": "2026-11-23 03:55:04.697338328 +0000 UTC"
   }
  ]
 }
