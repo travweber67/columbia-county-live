@@ -1,29 +1,104 @@
 {
- "fetched_at": "2026-11-23T03:29:29Z",
+ "fetched_at": "2026-11-23T03:34:29Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61291,
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.61222,
+   "lon": -122.64523,
+   "sog_kn": 0.5,
+   "cog": 333,
+   "heading": 238,
+   "nav_status": 0,
+   "updated": "2026-11-23 03:34:48.168070007 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15339,
+   "lon": -123.37716,
    "sog_kn": 0,
-   "cog": 205.1,
-   "heading": 135,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-23 03:34:48.166430109 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.38554,
+   "sog_kn": 0,
+   "cog": 355.4,
+   "heading": 511,
    "nav_status": 15,
-   "updated": "2026-11-23 03:29:32.262629133 +0000 UTC"
+   "updated": "2026-11-23 03:34:52.019462541 +0000 UTC"
   },
   {
    "mmsi": 367767410,
    "name": "MULE",
-   "lat": 46.04384,
-   "lon": -122.88312,
-   "sog_kn": 2.3,
-   "cog": 1.8,
+   "lat": 46.07258,
+   "lon": -122.8902,
+   "sog_kn": 30.6,
+   "cog": 333.5,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-23 03:29:43.912242637 +0000 UTC"
+   "updated": "2026-11-23 03:34:55.599155736 +0000 UTC"
+  },
+  {
+   "mmsi": 563236100,
+   "name": "XH DEEP COVER",
+   "lat": 45.63025,
+   "lon": -122.69559,
+   "sog_kn": 0,
+   "cog": 72.3,
+   "heading": 128,
+   "nav_status": 5,
+   "updated": "2026-11-23 03:34:57.303896358 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40233,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 133,
+   "nav_status": 0,
+   "updated": "2026-11-23 03:34:58.332037484 +0000 UTC"
+  },
+  {
+   "mmsi": 477113700,
+   "name": "SHANDONG XIN XING",
+   "lat": 46.02716,
+   "lon": -122.86956,
+   "type_code": 70,
+   "destination": "KALAMA USA",
+   "updated": "2026-11-23 03:35:01.088324158 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19998,
+   "lon": -123.38548,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-23 03:35:04.583033365 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.65165,
+   "lon": -122.75109,
+   "sog_kn": 0.4,
+   "cog": 12.5,
+   "heading": 326,
+   "nav_status": 0,
+   "updated": "2026-11-23 03:35:12.974391322 +0000 UTC"
   }
  ]
 }
