@@ -1,6 +1,73 @@
 {
- "fetched_at": "2026-11-23T13:45:16Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-23T13:50:17Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40234,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 136,
+   "nav_status": 0,
+   "updated": "2026-11-23 13:50:20.567915582 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.10291,
+   "lon": -122.94905,
+   "sog_kn": 0,
+   "cog": 102.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-23 13:50:21.392196952 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.65414,
+   "lon": -122.76504,
+   "sog_kn": 0.7,
+   "cog": 329,
+   "heading": 15,
+   "nav_status": 0,
+   "updated": "2026-11-23 13:50:23.722548245 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.68597,
+   "lon": -122.77411,
+   "sog_kn": 8.1,
+   "cog": 1.9,
+   "heading": 2,
+   "nav_status": 0,
+   "updated": "2026-11-23 13:50:52.395900261 +0000 UTC"
+  },
+  {
+   "mmsi": 367646810,
+   "name": "EMERY ZIDELL",
+   "lat": 45.67748,
+   "lon": -122.77155,
+   "sog_kn": 0,
+   "cog": 296.6,
+   "heading": 160,
+   "nav_status": 1,
+   "updated": "2026-11-23 13:50:55.960091343 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09287,
+   "lon": -122.92345,
+   "sog_kn": 0.1,
+   "cog": 184.3,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-23 13:50:58.067166152 +0000 UTC"
+  }
+ ]
 }
