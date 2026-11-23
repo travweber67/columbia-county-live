@@ -1,38 +1,49 @@
 {
- "fetched_at": "2026-11-23T18:30:40Z",
+ "fetched_at": "2026-11-23T18:35:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 374590000,
-   "name": "BORACAY ISLAND",
-   "lat": 45.69102,
-   "lon": -122.77176,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20003,
+   "lon": -123.3854,
+   "sog_kn": 0,
+   "cog": 12.9,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-23 18:36:05.987923161 +0000 UTC"
+  },
+  {
+   "mmsi": 538012272,
+   "name": "PERSEUS I",
+   "lat": 46.0943,
+   "lon": -122.93721,
    "type_code": 70,
-   "destination": "MX ZLO >> US VAN",
-   "updated": "2026-11-23 18:31:00.647591667 +0000 UTC"
+   "destination": "US KAM",
+   "updated": "2026-11-23 18:36:12.149259875 +0000 UTC"
   },
   {
    "mmsi": 367702780,
    "name": "SARAH",
-   "lat": 45.58738,
-   "lon": -122.77013,
-   "sog_kn": 0,
-   "cog": 233.3,
-   "heading": 139,
+   "lat": 45.58732,
+   "lon": -122.77007,
+   "sog_kn": 0.1,
+   "cog": 241.4,
+   "heading": 140,
    "nav_status": 0,
-   "updated": "2026-11-23 18:31:06.282108917 +0000 UTC"
+   "updated": "2026-11-23 18:36:17.317716781 +0000 UTC"
   },
   {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 46.15982,
-   "lon": -123.40529,
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 46.02731,
+   "lon": -122.87002,
    "sog_kn": 0,
-   "cog": 114.2,
-   "heading": 135,
-   "nav_status": 12,
-   "updated": "2026-11-23 18:31:19.071395563 +0000 UTC"
+   "cog": 218.3,
+   "heading": 137,
+   "nav_status": 0,
+   "updated": "2026-11-23 18:36:23.268583207 +0000 UTC"
   }
  ]
 }
