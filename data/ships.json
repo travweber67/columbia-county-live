@@ -1,6 +1,68 @@
 {
- "fetched_at": "2026-11-22T23:59:12Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-23T00:04:11Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.04366,
+   "lon": -122.88285,
+   "sog_kn": 0.3,
+   "cog": 66.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-23 00:04:24.808634292 +0000 UTC"
+  },
+  {
+   "mmsi": 367513140,
+   "name": "CLEARWATER",
+   "lat": 45.64344,
+   "lon": -122.75286,
+   "type_code": 52,
+   "destination": "US^01WD>0T67",
+   "updated": "2026-11-23 00:04:25.161961483 +0000 UTC"
+  },
+  {
+   "mmsi": 538090648,
+   "name": "PAGANELLA",
+   "lat": 45.6705,
+   "lon": -122.77156,
+   "sog_kn": 13.7,
+   "cog": 340.9,
+   "heading": 341,
+   "nav_status": 0,
+   "updated": "2026-11-23 00:04:46.576291405 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65012,
+   "lon": -122.74759,
+   "type_code": 33,
+   "updated": "2026-11-23 00:04:47.743157387 +0000 UTC"
+  },
+  {
+   "mmsi": 563338800,
+   "name": "ISHIZUCHI STAR",
+   "lat": 45.63144,
+   "lon": -122.69716,
+   "sog_kn": 0,
+   "cog": 151.2,
+   "heading": 307,
+   "nav_status": 5,
+   "updated": "2026-11-23 00:04:53.721794209 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09276,
+   "lon": -122.92327,
+   "sog_kn": 0,
+   "cog": 341,
+   "heading": 124,
+   "nav_status": 0,
+   "updated": "2026-11-23 00:04:55.227455336 +0000 UTC"
+  }
+ ]
 }
