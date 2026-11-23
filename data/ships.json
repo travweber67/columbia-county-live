@@ -1,6 +1,37 @@
 {
- "fetched_at": "2026-11-23T14:50:20Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-23T14:53:08Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09309,
+   "lon": -122.92361,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 309,
+   "nav_status": 3,
+   "updated": "2026-11-23 14:53:58.720354071 +0000 UTC"
+  },
+  {
+   "mmsi": 538012272,
+   "name": "PERSEUS I",
+   "lat": 46.09436,
+   "lon": -122.9372,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-23 14:54:02.177072979 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "lat": 45.64328,
+   "lon": -122.75279,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-23 14:54:05.690774105 +0000 UTC"
+  }
+ ]
 }
