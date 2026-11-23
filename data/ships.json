@@ -1,40 +1,50 @@
 {
- "fetched_at": "2026-11-23T06:34:44Z",
+ "fetched_at": "2026-11-23T06:39:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366888830,
-   "name": "KAHU",
-   "lat": 45.61167,
-   "lon": -122.6442,
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09277,
+   "lon": -122.92327,
    "sog_kn": 0,
-   "cog": 269.3,
-   "heading": 116,
-   "nav_status": 5,
-   "updated": "2026-11-23 06:35:00.868895693 +0000 UTC"
+   "cog": 305,
+   "heading": 127,
+   "nav_status": 0,
+   "updated": "2026-11-23 06:39:55.172608819 +0000 UTC"
   },
   {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.97271,
-   "lon": -122.83268,
-   "sog_kn": 0.5,
-   "cog": 133.7,
-   "heading": 140,
-   "nav_status": 3,
-   "updated": "2026-11-23 06:35:07.886547375 +0000 UTC"
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
+   "type_code": 30,
+   "updated": "2026-11-23 06:39:58.685569726 +0000 UTC"
   },
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.6454,
-   "lon": -122.73503,
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09069,
+   "lon": -122.93208,
    "sog_kn": 0,
-   "cog": 30.4,
-   "heading": 112,
+   "cog": 301,
+   "heading": 511,
    "nav_status": 5,
-   "updated": "2026-11-23 06:35:14.177848808 +0000 UTC"
+   "updated": "2026-11-23 06:40:02.207295828 +0000 UTC"
+  },
+  {
+   "mmsi": 367006570,
+   "name": "JEFFREY S",
+   "lat": 45.59343,
+   "lon": -122.7771,
+   "sog_kn": 0,
+   "cog": 163.5,
+   "heading": 145,
+   "nav_status": 0,
+   "updated": "2026-11-23 06:40:09.343572151 +0000 UTC",
+   "type_code": 52,
+   "destination": "PORTLAND, OR"
   }
  ]
 }
