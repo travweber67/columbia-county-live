@@ -1,26 +1,91 @@
 {
- "fetched_at": "2026-11-23T06:14:41Z",
+ "fetched_at": "2026-11-23T06:19:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 338815000,
-   "name": "TRAVIS E WATKINS",
-   "lat": 45.64569,
-   "lon": -122.73486,
-   "type_code": 79,
-   "updated": "2026-11-23 06:14:54.004823065 +0000 UTC"
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.38557,
+   "sog_kn": 0,
+   "cog": 357.8,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-23 06:19:52.53968975 +0000 UTC"
+  },
+  {
+   "mmsi": 366888830,
+   "name": "KAHU",
+   "lat": 45.61165,
+   "lon": -122.64422,
+   "type_code": 52,
+   "destination": "PDX",
+   "updated": "2026-11-23 06:19:53.591040936 +0000 UTC"
+  },
+  {
+   "mmsi": 636013613,
+   "name": "LONDON 2012",
+   "lat": 46.04437,
+   "lon": -122.88288,
+   "sog_kn": 0,
+   "cog": 259.1,
+   "heading": 176,
+   "nav_status": 1,
+   "updated": "2026-11-23 06:19:53.716216515 +0000 UTC"
+  },
+  {
+   "mmsi": 563236100,
+   "name": "XH DEEP COVER",
+   "lat": 45.63035,
+   "lon": -122.69575,
+   "sog_kn": 0,
+   "cog": 152.8,
+   "heading": 128,
+   "nav_status": 5,
+   "updated": "2026-11-23 06:19:57.240695724 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.6471,
+   "lon": -122.73962,
+   "type_code": 52,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-23 06:19:58.800095439 +0000 UTC"
+  },
+  {
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.6861,
+   "lon": -122.77204,
+   "sog_kn": 0.1,
+   "cog": 22.5,
+   "heading": 182,
+   "nav_status": 1,
+   "updated": "2026-11-23 06:20:02.302036813 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.6446,
+   "lon": -122.73738,
+   "sog_kn": 5.9,
+   "cog": 132.1,
+   "heading": 124,
+   "nav_status": 0,
+   "updated": "2026-11-23 06:20:06.391159516 +0000 UTC"
   },
   {
    "mmsi": 366971000,
    "name": "YAQUINA",
-   "lat": 45.93861,
-   "lon": -122.80544,
+   "lat": 45.95546,
+   "lon": -122.80954,
    "sog_kn": 11.9,
-   "cog": 357,
-   "heading": 355,
+   "cog": 342.4,
+   "heading": 343,
    "nav_status": 3,
-   "updated": "2026-11-23 06:14:58.071335406 +0000 UTC"
+   "updated": "2026-11-23 06:20:10.607515035 +0000 UTC"
   },
   {
    "mmsi": 367531220,
@@ -31,18 +96,18 @@
    "cog": 0,
    "heading": 511,
    "nav_status": 8,
-   "updated": "2026-11-23 06:15:03.490192924 +0000 UTC"
+   "updated": "2026-11-23 06:20:16.125574304 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09307,
-   "lon": -122.92362,
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.65949,
+   "lon": -122.75871,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 308,
-   "nav_status": 3,
-   "updated": "2026-11-23 06:15:17.109046195 +0000 UTC"
+   "cog": 129.5,
+   "heading": 334,
+   "nav_status": 0,
+   "updated": "2026-11-23 06:20:16.552142993 +0000 UTC"
   }
  ]
 }
