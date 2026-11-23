@@ -1,62 +1,6 @@
 {
- "fetched_at": "2026-11-23T22:21:00Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 294.5,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-23 22:21:12.644206339 +0000 UTC"
-  },
-  {
-   "mmsi": 368458550,
-   "name": "SKAGIT",
-   "lat": 45.61379,
-   "lon": -122.66452,
-   "sog_kn": 3.2,
-   "cog": 122.8,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-23 22:21:18.855854292 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40234,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 137,
-   "nav_status": 0,
-   "updated": "2026-11-23 22:21:20.623198191 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.64384,
-   "lon": -122.72578,
-   "sog_kn": 0,
-   "cog": 172.3,
-   "heading": 119,
-   "nav_status": 12,
-   "updated": "2026-11-23 22:21:21.163516673 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.0842,
-   "lon": -122.90972,
-   "sog_kn": 0.1,
-   "cog": 32,
-   "heading": 310,
-   "nav_status": 0,
-   "updated": "2026-11-23 22:21:22.635209589 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-23T22:23:12Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
