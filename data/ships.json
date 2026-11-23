@@ -1,6 +1,79 @@
 {
- "fetched_at": "2026-11-23T20:20:50Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-23T20:23:11Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40233,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 130,
+   "nav_status": 0,
+   "updated": "2026-11-23 20:23:59.108580343 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79321,
+   "lon": -122.84321,
+   "type_code": 52,
+   "destination": "US^02NV>?? ???",
+   "updated": "2026-11-23 20:24:03.696388332 +0000 UTC"
+  },
+  {
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.61092,
+   "lon": -122.64565,
+   "sog_kn": 0.4,
+   "cog": 355.2,
+   "heading": 98,
+   "nav_status": 0,
+   "updated": "2026-11-23 20:24:05.027430455 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15072,
+   "lon": -123.37954,
+   "sog_kn": 8.3,
+   "cog": 34.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-23 20:24:08.431690194 +0000 UTC"
+  },
+  {
+   "mmsi": 367681630,
+   "name": "VICKI B",
+   "lat": 45.79401,
+   "lon": -122.84249,
+   "sog_kn": 0,
+   "cog": 112.5,
+   "heading": 208,
+   "nav_status": 0,
+   "updated": "2026-11-23 20:24:16.120549518 +0000 UTC"
+  },
+  {
+   "mmsi": 367301450,
+   "name": "MAMA T",
+   "lat": 45.58097,
+   "lon": -122.76027,
+   "sog_kn": 0,
+   "cog": 17.1,
+   "heading": 123,
+   "nav_status": 15,
+   "updated": "2026-11-23 20:24:18.48113135 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
+   "type_code": 0,
+   "updated": "2026-11-23 20:24:23.26686736 +0000 UTC"
+  }
+ ]
 }
