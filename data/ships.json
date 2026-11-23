@@ -1,62 +1,6 @@
 {
- "fetched_at": "2026-11-23T13:23:07Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 351421000,
-   "name": "ICY BAY",
-   "lat": 46.11982,
-   "lon": -122.98762,
-   "sog_kn": 10.7,
-   "cog": 138,
-   "heading": 134,
-   "nav_status": 0,
-   "updated": "2026-11-23 13:23:57.36959798 +0000 UTC"
-  },
-  {
-   "mmsi": 538010248,
-   "name": "SAFEEN AL AMAL",
-   "lat": 46.1246,
-   "lon": -122.98908,
-   "sog_kn": 0.1,
-   "cog": 245.3,
-   "heading": 131,
-   "nav_status": 1,
-   "updated": "2026-11-23 13:23:59.854608943 +0000 UTC"
-  },
-  {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.95256,
-   "lon": -122.81302,
-   "sog_kn": 8.8,
-   "cog": 339.6,
-   "heading": 338,
-   "nav_status": 12,
-   "updated": "2026-11-23 13:24:09.599329931 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.0931,
-   "lon": -122.92363,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 308,
-   "nav_status": 3,
-   "updated": "2026-11-23 13:24:19.104718247 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 163.3,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-23 13:24:21.702972681 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-23T13:30:15Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
