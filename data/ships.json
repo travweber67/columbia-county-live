@@ -1,60 +1,6 @@
 {
- "fetched_at": "2026-11-23T15:53:09Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 46.17839,
-   "lon": -123.19538,
-   "type_code": 0,
-   "destination": "VANCOUVER",
-   "updated": "2026-11-23 15:53:56.194933531 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 99.5,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-23 15:54:13.421683295 +0000 UTC"
-  },
-  {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.64847,
-   "lon": -122.74371,
-   "sog_kn": 0.8,
-   "cog": 23.5,
-   "heading": 36,
-   "nav_status": 0,
-   "updated": "2026-11-23 15:54:14.107000023 +0000 UTC"
-  },
-  {
-   "mmsi": 367681630,
-   "name": "VICKI B",
-   "lat": 45.79006,
-   "lon": -122.78436,
-   "sog_kn": 5.4,
-   "cog": 153.3,
-   "heading": 151,
-   "nav_status": 0,
-   "updated": "2026-11-23 15:54:17.082584335 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.1534,
-   "lon": -123.37713,
-   "sog_kn": 0,
-   "cog": 185.5,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-23 15:54:17.760278797 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-23T15:55:25Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
