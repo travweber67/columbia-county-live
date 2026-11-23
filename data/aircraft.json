@@ -1,67 +1,57 @@
 {
- "fetched_at": "2026-11-23T18:05:38Z",
+ "fetched_at": "2026-11-23T18:10:39Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
+   "hex": "a262ad",
+   "callsign": "ASA528",
+   "type": "B739",
+   "alt_ft": 34250,
+   "gs_kn": 426.1,
+   "track": 184.04,
+   "lat": 46.060134,
+   "lon": -123.168549
+  },
+  {
    "hex": "a67a8b",
    "callsign": "N5163S",
    "type": "P28A",
-   "alt_ft": 4325,
-   "gs_kn": 86.3,
-   "track": 190.01,
-   "lat": 45.787245,
-   "lon": -122.882767
+   "alt_ft": 3150,
+   "gs_kn": 92.9,
+   "track": 188.04,
+   "lat": 45.67067,
+   "lon": -122.916915
   },
   {
-   "hex": "a0fbd4",
-   "callsign": "N16221",
-   "type": "C150",
-   "alt_ft": 1900,
-   "gs_kn": 109.2,
-   "track": 339.08,
-   "lat": 45.931091,
-   "lon": -122.824201
-  },
-  {
-   "hex": "a5bf6b",
-   "callsign": "N47GV",
-   "type": "B407",
-   "alt_ft": 300,
-   "gs_kn": 59.4,
-   "track": 32.62,
-   "lat": 45.632584,
-   "lon": -122.773691
+   "hex": "~2b9c98",
+   "callsign": "",
+   "type": "",
+   "alt_ft": 2900,
+   "gs_kn": 281.6,
+   "track": 58.06,
+   "lat": 45.654059,
+   "lon": -122.847061
   },
   {
    "hex": "aaf006",
    "callsign": "N80347",
    "type": "C172",
-   "alt_ft": 1400,
-   "gs_kn": 88.5,
-   "track": 137.29,
-   "lat": 45.715601,
-   "lon": -122.732803
+   "alt_ft": 150,
+   "gs_kn": 57.7,
+   "track": 104.04,
+   "lat": 45.621735,
+   "lon": -122.668383
   },
   {
    "hex": "a8042c",
    "callsign": "N61531",
    "type": "C172",
-   "alt_ft": 250,
-   "gs_kn": 53.8,
-   "track": 125.17,
-   "lat": 45.623703,
-   "lon": -122.674747
-  },
-  {
-   "hex": "acb772",
-   "callsign": "N9185H",
-   "type": "C172",
-   "alt_ft": 1600,
-   "gs_kn": 78.0,
-   "track": 139.16,
-   "lat": 45.840408,
-   "lon": -122.616486
+   "alt_ft": 975,
+   "gs_kn": 102.4,
+   "track": 296.06,
+   "lat": 45.628316,
+   "lon": -122.639282
   }
  ]
 }
