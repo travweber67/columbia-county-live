@@ -1,58 +1,49 @@
 {
- "fetched_at": "2026-11-23T01:39:20Z",
+ "fetched_at": "2026-11-23T01:44:20Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.62273,
-   "lon": -122.78838,
+   "mmsi": 367513140,
+   "name": "CLEARWATER",
+   "lat": 45.64355,
+   "lon": -122.75284,
+   "sog_kn": 0.5,
+   "cog": 14.5,
+   "heading": 218,
+   "nav_status": 12,
+   "updated": "2026-11-23 01:44:40.142512699 +0000 UTC"
+  },
+  {
+   "mmsi": 367646810,
+   "name": "EMERY ZIDELL",
+   "lat": 45.6775,
+   "lon": -122.77147,
+   "type_code": 80,
+   "destination": "ANACORTES, WA",
+   "updated": "2026-11-23 01:44:47.854407378 +0000 UTC"
+  },
+  {
+   "mmsi": 367006570,
+   "name": "JEFFREY S",
+   "lat": 45.58104,
+   "lon": -122.76021,
    "sog_kn": 0,
-   "cog": 80.1,
-   "heading": 4,
-   "nav_status": 0,
-   "updated": "2026-11-23 01:39:46.604268012 +0000 UTC"
+   "cog": 213.2,
+   "heading": 127,
+   "nav_status": 5,
+   "updated": "2026-11-23 01:44:58.812957564 +0000 UTC"
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.38553,
-   "sog_kn": 0,
-   "cog": 227.8,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-23 01:39:50.254264304 +0000 UTC"
-  },
-  {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.68589,
-   "lon": -122.77211,
-   "sog_kn": 0,
-   "cog": 113.8,
-   "heading": 174,
-   "nav_status": 0,
-   "updated": "2026-11-23 01:39:53.749149877 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.09278,
-   "lon": -122.92328,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-23 01:39:55.545083874 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.6338,
-   "lon": -122.71316,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-23 01:40:07.191842068 +0000 UTC"
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.96938,
+   "lon": -122.82442,
+   "sog_kn": 11.9,
+   "cog": 310.3,
+   "heading": 310,
+   "nav_status": 3,
+   "updated": "2026-11-23 01:45:05.854962612 +0000 UTC"
   }
  ]
 }
