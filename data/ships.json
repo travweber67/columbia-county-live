@@ -1,49 +1,6 @@
 {
- "fetched_at": "2026-11-23T19:55:49Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10344,
-   "lon": -122.91002,
-   "sog_kn": 0,
-   "cog": 65.8,
-   "heading": 76,
-   "nav_status": 3,
-   "updated": "2026-11-23 19:56:15.647827284 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09245,
-   "lon": -122.92296,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-23 19:56:20.746964771 +0000 UTC"
-  },
-  {
-   "mmsi": 368280990,
-   "name": "CINDY B",
-   "lat": 45.90942,
-   "lon": -122.81457,
-   "sog_kn": 0,
-   "cog": 286.3,
-   "heading": 340,
-   "nav_status": 0,
-   "updated": "2026-11-23 19:56:34.67647204 +0000 UTC"
-  },
-  {
-   "mmsi": 367425870,
-   "name": "HUSKY",
-   "lat": 45.65025,
-   "lon": -122.74809,
-   "sog_kn": 0,
-   "cog": 268.3,
-   "heading": 122,
-   "nav_status": 0,
-   "updated": "2026-11-23 19:56:37.63086155 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-23T20:00:48Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
