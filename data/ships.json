@@ -1,6 +1,60 @@
 {
- "fetched_at": "2026-11-23T00:34:13Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-23T00:39:15Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35744,
+   "sog_kn": 0,
+   "cog": 188.8,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-23 00:39:35.70783118 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61198,
+   "lon": -122.64537,
+   "sog_kn": 0.1,
+   "cog": 204.9,
+   "heading": 297,
+   "nav_status": 5,
+   "updated": "2026-11-23 00:39:45.778009959 +0000 UTC"
+  },
+  {
+   "mmsi": 636023225,
+   "name": "SWEET PEA LEADER",
+   "lat": 46.18961,
+   "lon": -123.15375,
+   "sog_kn": 15.7,
+   "cog": 277.9,
+   "heading": 277,
+   "nav_status": 0,
+   "updated": "2026-11-23 00:39:48.034318892 +0000 UTC"
+  },
+  {
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.11009,
+   "lon": -122.96338,
+   "sog_kn": 0,
+   "cog": 68.2,
+   "heading": 131,
+   "nav_status": 5,
+   "updated": "2026-11-23 00:39:51.393213553 +0000 UTC"
+  },
+  {
+   "mmsi": 368251260,
+   "name": "MISS GINGER",
+   "lat": 45.61209,
+   "lon": -122.64599,
+   "type_code": 33,
+   "destination": "VANCOUVER WA",
+   "updated": "2026-11-23 00:39:52.670837442 +0000 UTC"
+  }
+ ]
 }
