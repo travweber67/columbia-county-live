@@ -1,51 +1,36 @@
 {
- "fetched_at": "2026-11-23T03:04:26Z",
+ "fetched_at": "2026-11-23T03:09:26Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.61291,
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19948,
+   "lon": -123.385,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-23 03:10:02.479506596 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35744,
    "sog_kn": 0,
-   "cog": 229.6,
+   "cog": 346,
    "heading": 134,
    "nav_status": 15,
-   "updated": "2026-11-23 03:05:12.055775502 +0000 UTC"
+   "updated": "2026-11-23 03:10:06.939514051 +0000 UTC"
   },
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09308,
-   "lon": -122.92361,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 307,
-   "nav_status": 3,
-   "updated": "2026-11-23 03:04:58.624305718 +0000 UTC"
-  },
-  {
-   "mmsi": 356334000,
-   "name": "LAUREL ISLAND",
-   "lat": 45.68613,
-   "lon": -122.77239,
-   "sog_kn": 0,
-   "cog": 27.8,
-   "heading": 174,
-   "nav_status": 1,
-   "updated": "2026-11-23 03:05:03.117950847 +0000 UTC"
-  },
-  {
-   "mmsi": 368251260,
-   "name": "MISS GINGER",
-   "lat": 45.61207,
-   "lon": -122.64603,
-   "sog_kn": 0,
-   "cog": 294.7,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-23 03:05:12.732955809 +0000 UTC"
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.0897,
+   "lon": -122.92972,
+   "type_code": 66,
+   "destination": "RAINIER",
+   "updated": "2026-11-23 03:10:11.745410835 +0000 UTC"
   }
  ]
 }
