@@ -1,6 +1,48 @@
 {
- "fetched_at": "2026-11-23T17:50:37Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-23T17:53:11Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09309,
+   "lon": -122.9236,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 308,
+   "nav_status": 3,
+   "updated": "2026-11-23 17:54:06.592418573 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09285,
+   "lon": -122.92343,
+   "sog_kn": 0.1,
+   "cog": 337.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-23 17:54:08.278744696 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.02086,
+   "lon": -122.8611,
+   "sog_kn": 0.1,
+   "cog": 120.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-23 17:54:16.652969365 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
+   "type_code": 0,
+   "updated": "2026-11-23 17:54:23.152498173 +0000 UTC"
+  }
+ ]
 }
