@@ -1,6 +1,38 @@
 {
- "fetched_at": "2026-11-23T13:35:15Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-23T13:40:16Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61203,
+   "lon": -122.64534,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-23 13:40:30.131095847 +0000 UTC"
+  },
+  {
+   "mmsi": 256001000,
+   "name": "DOVER",
+   "lat": 45.74821,
+   "lon": -122.76184,
+   "sog_kn": 12,
+   "cog": 178.2,
+   "heading": 176,
+   "nav_status": 0,
+   "updated": "2026-11-23 13:40:35.854245587 +0000 UTC"
+  },
+  {
+   "mmsi": 538012272,
+   "name": "PERSEUS I",
+   "lat": 46.0943,
+   "lon": -122.9372,
+   "sog_kn": 0,
+   "cog": 350.2,
+   "heading": 112,
+   "nav_status": 1,
+   "updated": "2026-11-23 13:40:41.866660127 +0000 UTC"
+  }
+ ]
 }
