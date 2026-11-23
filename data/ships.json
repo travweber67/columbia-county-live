@@ -1,53 +1,80 @@
 {
- "fetched_at": "2026-11-23T00:19:13Z",
+ "fetched_at": "2026-11-23T00:23:01Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09278,
+   "lon": -122.92328,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-23 00:23:44.431230679 +0000 UTC"
+  },
+  {
+   "mmsi": 538090648,
+   "name": "PAGANELLA",
+   "lat": 45.74461,
+   "lon": -122.76055,
+   "type_code": 70,
+   "destination": "USVAN > USRCH",
+   "updated": "2026-11-23 00:23:47.307257504 +0000 UTC"
+  },
+  {
+   "mmsi": 636023225,
+   "name": "SWEET PEA LEADER",
+   "lat": 46.15935,
+   "lon": -123.0674,
+   "sog_kn": 16.4,
+   "cog": 292,
+   "heading": 290,
+   "nav_status": 0,
+   "updated": "2026-11-23 00:23:52.34021285 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 213.2,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-23 00:23:53.104995622 +0000 UTC"
+  },
   {
    "mmsi": 367047180,
    "name": "SUNDIAL",
-   "lat": 46.1548,
-   "lon": -123.04952,
-   "sog_kn": 7.1,
-   "cog": 122.7,
-   "heading": 123,
+   "lat": 46.1487,
+   "lon": -123.04117,
+   "sog_kn": 6.9,
+   "cog": 145.1,
+   "heading": 138,
    "nav_status": 12,
-   "updated": "2026-11-23 00:19:38.303566558 +0000 UTC"
+   "updated": "2026-11-23 00:23:57.455340156 +0000 UTC"
   },
   {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 46.08227,
-   "lon": -122.90268,
-   "sog_kn": 9.8,
-   "cog": 309.2,
-   "heading": 511,
+   "mmsi": 367006570,
+   "name": "JEFFREY S",
+   "lat": 45.58107,
+   "lon": -122.76021,
+   "sog_kn": 0,
+   "cog": 213.2,
+   "heading": 128,
+   "nav_status": 5,
+   "updated": "2026-11-23 00:23:58.332936803 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.63394,
+   "lon": -122.71491,
+   "sog_kn": 0,
+   "cog": 114.9,
+   "heading": 114,
    "nav_status": 0,
-   "updated": "2026-11-23 00:19:52.122296172 +0000 UTC"
-  },
-  {
-   "mmsi": 366888830,
-   "name": "KAHU",
-   "lat": 45.61167,
-   "lon": -122.64423,
-   "type_code": 52,
-   "destination": "PDX",
-   "updated": "2026-11-23 00:20:01.600432787 +0000 UTC",
-   "sog_kn": 0,
-   "cog": 334.7,
-   "heading": 117,
-   "nav_status": 5
-  },
-  {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.64709,
-   "lon": -122.73961,
-   "sog_kn": 0,
-   "cog": 250.5,
-   "heading": 296,
-   "nav_status": 12,
-   "updated": "2026-11-23 00:19:53.746664138 +0000 UTC"
+   "updated": "2026-11-23 00:24:12.257852798 +0000 UTC"
   }
  ]
 }
