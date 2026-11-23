@@ -1,49 +1,48 @@
 {
- "fetched_at": "2026-11-23T06:09:41Z",
+ "fetched_at": "2026-11-23T06:14:41Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.6076,
-   "lon": -122.67763,
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64569,
+   "lon": -122.73486,
+   "type_code": 79,
+   "updated": "2026-11-23 06:14:54.004823065 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.93861,
+   "lon": -122.80544,
+   "sog_kn": 11.9,
+   "cog": 357,
+   "heading": 355,
+   "nav_status": 3,
+   "updated": "2026-11-23 06:14:58.071335406 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.2,
+   "lon": -123.38539,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-23 06:15:03.490192924 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09307,
+   "lon": -122.92362,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-23 06:09:49.943458988 +0000 UTC"
-  },
-  {
-   "mmsi": 563311600,
-   "name": "STANLEY BAY",
-   "lat": 46.11011,
-   "lon": -122.96336,
-   "sog_kn": 0,
-   "cog": 68.2,
-   "heading": 131,
-   "nav_status": 5,
-   "updated": "2026-11-23 06:09:51.508917607 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.09276,
-   "lon": -122.92327,
-   "type_code": 52,
-   "destination": "US^03F8>02T9",
-   "updated": "2026-11-23 06:09:56.175923091 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 46.09063,
-   "lon": -122.93208,
-   "sog_kn": 0,
-   "cog": 228,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-23 06:10:10.361683306 +0000 UTC"
+   "heading": 308,
+   "nav_status": 3,
+   "updated": "2026-11-23 06:15:17.109046195 +0000 UTC"
   }
  ]
 }
