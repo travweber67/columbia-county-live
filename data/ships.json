@@ -1,37 +1,45 @@
 {
- "fetched_at": "2026-11-23T07:04:46Z",
+ "fetched_at": "2026-11-23T07:09:46Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65014,
-   "lon": -122.74764,
-   "type_code": 33,
-   "updated": "2026-11-23 07:04:32.196447921 +0000 UTC"
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20001,
+   "lon": -123.3855,
+   "sog_kn": 0,
+   "cog": 359.6,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-23 07:10:00.04937672 +0000 UTC"
   },
   {
    "mmsi": 367669550,
    "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35743,
-   "sog_kn": 0,
-   "cog": 229.7,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-23 07:04:38.408949206 +0000 UTC"
+   "lat": 46.17718,
+   "lon": -123.35744,
+   "type_code": 30,
+   "updated": "2026-11-23 07:10:01.783722532 +0000 UTC"
   },
   {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.62133,
-   "lon": -122.68152,
-   "sog_kn": 8.4,
-   "cog": 312.2,
-   "heading": 313,
-   "nav_status": 0,
-   "updated": "2026-11-23 07:05:10.817580805 +0000 UTC"
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64568,
+   "lon": -122.73486,
+   "type_code": 79,
+   "updated": "2026-11-23 07:10:02.411693933 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65017,
+   "lon": -122.74763,
+   "sog_kn": 0,
+   "cog": 200.8,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-23 07:10:19.593099786 +0000 UTC"
   }
  ]
 }
