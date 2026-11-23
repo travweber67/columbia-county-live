@@ -1,40 +1,47 @@
 {
- "fetched_at": "2026-11-23T09:09:56Z",
+ "fetched_at": "2026-11-23T09:14:56Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.38551,
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.0897,
+   "lon": -122.92908,
    "sog_kn": 0,
-   "cog": 356.2,
+   "cog": 204.2,
    "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-23 09:10:11.166040948 +0000 UTC"
-  },
-  {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 46.09065,
-   "lon": -122.9321,
-   "sog_kn": 0,
-   "cog": 179.6,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-23 09:10:12.827021101 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.16045,
-   "lon": -123.40659,
-   "sog_kn": 0.5,
-   "cog": 323.3,
-   "heading": 306,
    "nav_status": 0,
-   "updated": "2026-11-23 09:10:12.929180301 +0000 UTC"
+   "updated": "2026-11-23 09:15:02.107220605 +0000 UTC"
+  },
+  {
+   "mmsi": 367646810,
+   "name": "EMERY ZIDELL",
+   "lat": 45.67751,
+   "lon": -122.77141,
+   "type_code": 80,
+   "destination": "ANACORTES, WA",
+   "updated": "2026-11-23 09:15:12.050999651 +0000 UTC"
+  },
+  {
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 46.10662,
+   "lon": -122.95709,
+   "type_code": 70,
+   "destination": "USLOG",
+   "updated": "2026-11-23 09:15:20.281881577 +0000 UTC"
+  },
+  {
+   "mmsi": 538011145,
+   "name": "FORTUNE BREEZE",
+   "lat": 46.0932,
+   "lon": -122.92914,
+   "sog_kn": 10.5,
+   "cog": 114.7,
+   "heading": 114,
+   "nav_status": 0,
+   "updated": "2026-11-23 09:15:27.604804981 +0000 UTC"
   }
  ]
 }
