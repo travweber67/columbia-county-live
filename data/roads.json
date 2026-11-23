@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-23T06:53:05Z",
+ "fetched_at": "2026-11-23T06:54:46Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -16,6 +16,19 @@
   }
  ],
  "incidents": [
+  {
+   "title": "A crash has occurred. Prepare to slow or move over for worker safety.",
+   "desc": "",
+   "impact": "Estimated delay under 20 minutes",
+   "place": "US30, Rainier",
+   "route": "US30",
+   "milepost": 49.49,
+   "lat": 46.09855,
+   "lon": -122.98575,
+   "start": "2026-11-22T22:51:09.413-08:00",
+   "updated": "2026-11-22T22:53:06-08:00",
+   "source": "ODOT TripCheck"
+  },
   {
    "title": "Road construction is occurring. Prepare to slow. Watch for workers.",
    "desc": "Expect crews working during the day with shoulder closures as needed. OR 6 traffic will use the roundabout. Traffic entering and exiting the north side of NW Aerts Road will use the roundabout. The south side of NW Aerts Road will temporarily close at the roundabout. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=OR6-Aerts",
@@ -121,7 +134,7 @@
    "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 116,
+ "odot_active_statewide": 117,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
   "alerts": [],
