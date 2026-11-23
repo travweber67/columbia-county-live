@@ -1,6 +1,62 @@
 {
- "fetched_at": "2026-11-23T18:20:40Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-23T18:23:10Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 45.6433,
+   "lon": -122.75283,
+   "sog_kn": 0.2,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-23 18:23:36.792039429 +0000 UTC"
+  },
+  {
+   "mmsi": 367425870,
+   "name": "HUSKY",
+   "lat": 45.64995,
+   "lon": -122.74742,
+   "sog_kn": 0,
+   "cog": 336.7,
+   "heading": 32,
+   "nav_status": 0,
+   "updated": "2026-11-23 18:23:57.484158993 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 46.15982,
+   "lon": -123.40531,
+   "sog_kn": 0,
+   "cog": 114.2,
+   "heading": 135,
+   "nav_status": 12,
+   "updated": "2026-11-23 18:23:59.844540821 +0000 UTC"
+  },
+  {
+   "mmsi": 538090732,
+   "name": "NORDIC MERCHANTS",
+   "lat": 46.10355,
+   "lon": -122.95021,
+   "sog_kn": 0,
+   "cog": 33.9,
+   "heading": 119,
+   "nav_status": 5,
+   "updated": "2026-11-23 18:24:02.867718632 +0000 UTC"
+  },
+  {
+   "mmsi": 367681630,
+   "name": "VICKI B",
+   "lat": 45.84618,
+   "lon": -122.78552,
+   "sog_kn": 7.2,
+   "cog": 10.3,
+   "heading": 14,
+   "nav_status": 0,
+   "updated": "2026-11-23 18:24:05.306897954 +0000 UTC"
+  }
+ ]
 }
