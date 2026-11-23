@@ -1,57 +1,51 @@
 {
- "fetched_at": "2026-11-23T07:54:50Z",
+ "fetched_at": "2026-11-23T07:59:50Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09276,
+   "lon": -122.92327,
+   "sog_kn": 0,
+   "cog": 347.1,
+   "heading": 130,
+   "nav_status": 0,
+   "updated": "2026-11-23 08:00:13.665064744 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.6471,
+   "lon": -122.73961,
+   "sog_kn": 0,
+   "cog": 222.6,
+   "heading": 295,
+   "nav_status": 12,
+   "updated": "2026-11-23 08:00:13.849194044 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.0897,
+   "lon": -122.92971,
+   "sog_kn": 0,
+   "cog": 72.7,
+   "heading": 110,
+   "nav_status": 5,
+   "updated": "2026-11-23 08:00:21.754922957 +0000 UTC"
+  },
   {
    "mmsi": 367531220,
    "name": "WATCHMAN",
-   "lat": 46.20003,
-   "lon": -123.38539,
+   "lat": 46.2,
+   "lon": -123.3854,
    "sog_kn": 0,
-   "cog": 18.5,
+   "cog": 0,
    "heading": 511,
    "nav_status": 8,
-   "updated": "2026-11-23 07:55:05.11597414 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.38551,
-   "sog_kn": 0.1,
-   "cog": 346.3,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-23 07:55:12.289473359 +0000 UTC"
-  },
-  {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.5873,
-   "lon": -122.77047,
-   "type_code": 31,
-   "destination": "US^02SY>0UJ9",
-   "updated": "2026-11-23 07:55:21.349551576 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09316,
-   "lon": -122.9235,
-   "sog_kn": 0.1,
-   "cog": 315.2,
-   "heading": 125,
-   "nav_status": 0,
-   "updated": "2026-11-23 07:55:21.500049393 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15343,
-   "lon": -123.37712,
-   "type_code": 99,
-   "updated": "2026-11-23 07:55:22.903763835 +0000 UTC"
+   "updated": "2026-11-23 08:00:25.14360636 +0000 UTC"
   }
  ]
 }
