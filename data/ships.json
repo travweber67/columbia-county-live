@@ -1,6 +1,29 @@
 {
- "fetched_at": "2026-11-23T23:06:03Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-23T23:11:03Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 2.3,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-23 23:11:32.748023936 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 46.14969,
+   "lon": -123.04498,
+   "sog_kn": 7.3,
+   "cog": 131.8,
+   "heading": 130,
+   "nav_status": 12,
+   "updated": "2026-11-23 23:11:38.102187232 +0000 UTC"
+  }
+ ]
 }
