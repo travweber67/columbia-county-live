@@ -1,16 +1,40 @@
 {
- "fetched_at": "2026-11-23T05:14:38Z",
+ "fetched_at": "2026-11-23T05:19:37Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 1 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58755,
-   "lon": -122.77068,
-   "type_code": 31,
-   "destination": "PORTLAND",
-   "updated": "2026-11-23 05:15:00.528845571 +0000 UTC"
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09308,
+   "lon": -122.92362,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 307,
+   "nav_status": 3,
+   "updated": "2026-11-23 05:19:59.726670659 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40234,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 135,
+   "nav_status": 0,
+   "updated": "2026-11-23 05:20:09.366744322 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35744,
+   "sog_kn": 0,
+   "cog": 303.1,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-23 05:20:16.591912118 +0000 UTC"
   }
  ]
 }
