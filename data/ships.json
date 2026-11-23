@@ -1,40 +1,6 @@
 {
- "fetched_at": "2026-11-23T09:53:06Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15343,
-   "lon": -123.3771,
-   "sog_kn": 0,
-   "cog": 14.1,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-23 09:53:59.19310511 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.6595,
-   "lon": -122.7587,
-   "sog_kn": 0,
-   "cog": 302.8,
-   "heading": 334,
-   "nav_status": 0,
-   "updated": "2026-11-23 09:54:06.107953265 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65014,
-   "lon": -122.74758,
-   "sog_kn": 0,
-   "cog": 169.8,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-23 09:54:09.333425916 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-23T09:54:59Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
