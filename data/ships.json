@@ -1,38 +1,58 @@
 {
- "fetched_at": "2026-11-23T04:14:32Z",
+ "fetched_at": "2026-11-23T04:19:34Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 563338800,
+   "name": "ISHIZUCHI STAR",
+   "lat": 45.63145,
+   "lon": -122.69716,
+   "sog_kn": 0,
+   "cog": 151.2,
+   "heading": 307,
+   "nav_status": 5,
+   "updated": "2026-11-23 04:19:53.332685627 +0000 UTC"
+  },
+  {
+   "mmsi": 563236100,
+   "name": "XH DEEP COVER",
+   "lat": 45.63025,
+   "lon": -122.69559,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-23 04:19:54.877927221 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58077,
+   "lon": -122.76007,
+   "type_code": 31,
+   "destination": "PTSI PDX",
+   "updated": "2026-11-23 04:20:04.585205072 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.14009,
+   "lon": -123.38258,
+   "sog_kn": 8.2,
+   "cog": 340.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-23 04:20:07.801699576 +0000 UTC"
+  },
   {
    "mmsi": 367425950,
    "name": "SEA HAWK",
-   "lat": 45.65009,
+   "lat": 45.65012,
    "lon": -122.74756,
    "sog_kn": 0,
-   "cog": 248.8,
+   "cog": 244.6,
    "heading": 511,
    "nav_status": 3,
-   "updated": "2026-11-23 04:14:49.673738324 +0000 UTC"
-  },
-  {
-   "mmsi": 538011643,
-   "name": "YASA CAMELLIA",
-   "lat": 46.10663,
-   "lon": -122.95708,
-   "type_code": 70,
-   "destination": "USLOG",
-   "updated": "2026-11-23 04:14:55.088616955 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.09047,
-   "lon": -122.93145,
-   "sog_kn": 0.9,
-   "cog": 44.6,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-23 04:15:12.036380202 +0000 UTC"
+   "updated": "2026-11-23 04:20:19.56479757 +0000 UTC"
   }
  ]
 }
