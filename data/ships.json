@@ -1,40 +1,58 @@
 {
- "fetched_at": "2026-11-23T01:34:19Z",
+ "fetched_at": "2026-11-23T01:39:20Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00904,
-   "lon": -122.84828,
-   "sog_kn": 0.1,
-   "cog": 291,
-   "heading": 511,
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.62273,
+   "lon": -122.78838,
+   "sog_kn": 0,
+   "cog": 80.1,
+   "heading": 4,
    "nav_status": 0,
-   "updated": "2026-11-23 01:34:29.744279764 +0000 UTC"
+   "updated": "2026-11-23 01:39:46.604268012 +0000 UTC"
   },
   {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.57805,
-   "lon": -122.75002,
-   "sog_kn": 9.1,
-   "cog": 126.2,
-   "heading": 127,
-   "nav_status": 0,
-   "updated": "2026-11-23 01:34:39.216823872 +0000 UTC"
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.38553,
+   "sog_kn": 0,
+   "cog": 227.8,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-23 01:39:50.254264304 +0000 UTC"
   },
   {
    "mmsi": 368380350,
    "name": "TAYA T",
-   "lat": 45.6859,
-   "lon": -122.77216,
+   "lat": 45.68589,
+   "lon": -122.77211,
    "sog_kn": 0,
-   "cog": 18.4,
-   "heading": 172,
+   "cog": 113.8,
+   "heading": 174,
    "nav_status": 0,
-   "updated": "2026-11-23 01:34:43.99520979 +0000 UTC"
+   "updated": "2026-11-23 01:39:53.749149877 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09278,
+   "lon": -122.92328,
+   "type_code": 52,
+   "destination": "US^03F8>02T9",
+   "updated": "2026-11-23 01:39:55.545083874 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.6338,
+   "lon": -122.71316,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-23 01:40:07.191842068 +0000 UTC"
   }
  ]
 }
