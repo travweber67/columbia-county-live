@@ -1,51 +1,6 @@
 {
- "fetched_at": "2026-11-23T12:53:07Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 538009633,
-   "name": "EVER ZENITH",
-   "lat": 46.09917,
-   "lon": -122.93942,
-   "sog_kn": 0,
-   "cog": 209.9,
-   "heading": 108,
-   "nav_status": 5,
-   "updated": "2026-11-23 12:53:57.435111876 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.1128,
-   "lon": -122.97393,
-   "sog_kn": 6.4,
-   "cog": 316.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-23 12:54:00.607649673 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10343,
-   "lon": -122.91003,
-   "sog_kn": 0,
-   "cog": 65.8,
-   "heading": 76,
-   "nav_status": 3,
-   "updated": "2026-11-23 12:54:05.855920053 +0000 UTC"
-  },
-  {
-   "mmsi": 311054300,
-   "name": "GLOVIS CARAVEL",
-   "lat": 46.05743,
-   "lon": -122.88283,
-   "sog_kn": 12,
-   "cog": 165.7,
-   "heading": 166,
-   "nav_status": 0,
-   "updated": "2026-11-23 12:54:22.641425492 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-23T12:55:12Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
