@@ -1,6 +1,46 @@
 {
- "fetched_at": "2026-11-23T18:40:41Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-23T18:45:41Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 538011145,
+   "name": "FORTUNE BREEZE",
+   "lat": 45.62534,
+   "lon": -122.78823,
+   "type_code": 70,
+   "destination": "PORTLAND,USA",
+   "updated": "2026-11-23 18:45:57.349766437 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20001,
+   "lon": -123.38542,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-23 18:46:02.144931709 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "lat": 46.08973,
+   "lon": -122.92897,
+   "sog_kn": 0,
+   "cog": 256.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-23 18:46:11.700550029 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.04369,
+   "lon": -122.88284,
+   "sog_kn": 0.1,
+   "cog": 291.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-23 18:46:11.895750876 +0000 UTC"
+  }
+ ]
 }
