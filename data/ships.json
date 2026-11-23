@@ -1,51 +1,6 @@
 {
- "fetched_at": "2026-11-23T22:05:59Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.61857,
-   "lon": -122.78808,
-   "sog_kn": 1.6,
-   "cog": 238.3,
-   "heading": 134,
-   "nav_status": 0,
-   "updated": "2026-11-23 22:06:13.968398899 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08308,
-   "lon": -122.91088,
-   "sog_kn": 6.8,
-   "cog": 132.3,
-   "heading": 132,
-   "nav_status": 5,
-   "updated": "2026-11-23 22:06:28.956070569 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.67049,
-   "lon": -122.77205,
-   "sog_kn": 10.7,
-   "cog": 160.6,
-   "heading": 159,
-   "nav_status": 0,
-   "updated": "2026-11-23 22:06:29.102947769 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.08485,
-   "lon": -122.90392,
-   "sog_kn": 17.3,
-   "cog": 299.1,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-23 22:06:30.03422422 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-23T22:10:59Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
