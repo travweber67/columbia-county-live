@@ -1,6 +1,84 @@
 {
- "fetched_at": "2026-11-23T20:50:51Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-23T20:53:11Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 121,
+   "heading": 137,
+   "nav_status": 15,
+   "updated": "2026-11-23 20:53:53.097095929 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.0992,
+   "lon": -122.95694,
+   "sog_kn": 6.5,
+   "cog": 127.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-23 20:54:00.756721771 +0000 UTC"
+  },
+  {
+   "mmsi": 538010248,
+   "name": "SAFEEN AL AMAL",
+   "lat": 46.12279,
+   "lon": -122.98865,
+   "sog_kn": 0.1,
+   "cog": 161.9,
+   "heading": 47,
+   "nav_status": 1,
+   "updated": "2026-11-23 20:54:03.454468909 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37718,
+   "sog_kn": 0,
+   "cog": 187.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-23 20:54:08.093645443 +0000 UTC"
+  },
+  {
+   "mmsi": 367513120,
+   "name": "CASCADES",
+   "lat": 45.60362,
+   "lon": -122.78263,
+   "sog_kn": 6.3,
+   "cog": 336.6,
+   "heading": 341,
+   "nav_status": 12,
+   "updated": "2026-11-23 20:54:13.777161715 +0000 UTC"
+  },
+  {
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.79526,
+   "lon": -122.84063,
+   "sog_kn": 0.5,
+   "cog": 63.9,
+   "heading": 47,
+   "nav_status": 0,
+   "updated": "2026-11-23 20:54:16.028325295 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10343,
+   "lon": -122.91,
+   "sog_kn": 0,
+   "cog": 65.8,
+   "heading": 76,
+   "nav_status": 3,
+   "updated": "2026-11-23 20:54:23.197171806 +0000 UTC"
+  }
+ ]
 }
