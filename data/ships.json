@@ -1,18 +1,38 @@
 {
- "fetched_at": "2026-11-23T06:44:44Z",
+ "fetched_at": "2026-11-23T06:49:44Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 1 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 538009633,
-   "name": "EVER ZENITH",
-   "lat": 46.09915,
-   "lon": -122.93943,
+   "mmsi": 563236100,
+   "name": "XH DEEP COVER",
+   "lat": 45.63032,
+   "lon": -122.69576,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-23 06:49:54.90384811 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40234,
    "sog_kn": 0,
-   "cog": 358.1,
-   "heading": 107,
-   "nav_status": 5,
-   "updated": "2026-11-23 06:44:57.170514006 +0000 UTC"
+   "cog": 360,
+   "heading": 132,
+   "nav_status": 0,
+   "updated": "2026-11-23 06:49:59.163007277 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.63055,
+   "lon": -122.70465,
+   "sog_kn": 6.1,
+   "cog": 325,
+   "heading": 309,
+   "nav_status": 0,
+   "updated": "2026-11-23 06:50:06.283317282 +0000 UTC"
   }
  ]
 }
