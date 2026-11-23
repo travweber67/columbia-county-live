@@ -1,6 +1,104 @@
 {
- "fetched_at": "2026-11-23T11:30:05Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-23T11:35:05Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40233,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 134,
+   "nav_status": 0,
+   "updated": "2026-11-23 11:35:25.519234824 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.65949,
+   "lon": -122.75871,
+   "sog_kn": 0,
+   "cog": 169.4,
+   "heading": 334,
+   "nav_status": 0,
+   "updated": "2026-11-23 11:35:26.710794493 +0000 UTC"
+  },
+  {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.62271,
+   "lon": -122.78839,
+   "sog_kn": 0,
+   "cog": 142.8,
+   "heading": 4,
+   "nav_status": 0,
+   "updated": "2026-11-23 11:35:26.948669598 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09311,
+   "lon": -122.9236,
+   "sog_kn": 0.1,
+   "cog": 355.9,
+   "heading": 309,
+   "nav_status": 3,
+   "updated": "2026-11-23 11:35:28.198446666 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.64233,
+   "lon": -122.77359,
+   "sog_kn": 0.6,
+   "cog": 129.3,
+   "heading": 46,
+   "nav_status": 0,
+   "updated": "2026-11-23 11:35:29.761628583 +0000 UTC"
+  },
+  {
+   "mmsi": 538090732,
+   "name": "NORDIC MERCHANTS",
+   "lat": 46.11803,
+   "lon": -122.97991,
+   "sog_kn": 0.2,
+   "cog": 40.8,
+   "heading": 133,
+   "nav_status": 1,
+   "updated": "2026-11-23 11:35:35.5093621 +0000 UTC"
+  },
+  {
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 45.69098,
+   "lon": -122.77289,
+   "type_code": 70,
+   "destination": "MX ZLO >> US VAN",
+   "updated": "2026-11-23 11:35:38.299255409 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59408,
+   "lon": -122.77213,
+   "sog_kn": 0,
+   "cog": 346.3,
+   "heading": 149,
+   "nav_status": 5,
+   "updated": "2026-11-23 11:35:42.560688891 +0000 UTC"
+  },
+  {
+   "mmsi": 351421000,
+   "name": "ICY BAY",
+   "lat": 46.16513,
+   "lon": -123.40835,
+   "sog_kn": 9.7,
+   "cog": 137.9,
+   "heading": 135,
+   "nav_status": 0,
+   "updated": "2026-11-23 11:35:46.483995033 +0000 UTC"
+  }
+ ]
 }
