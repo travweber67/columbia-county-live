@@ -1,18 +1,40 @@
 {
- "fetched_at": "2026-11-23T07:34:48Z",
+ "fetched_at": "2026-11-23T07:39:49Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 1 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.0931,
-   "lon": -122.92362,
+   "mmsi": 538011145,
+   "name": "FORTUNE BREEZE",
+   "lat": 46.1419,
+   "lon": -123.31985,
+   "sog_kn": 11.7,
+   "cog": 88.5,
+   "heading": 88,
+   "nav_status": 0,
+   "updated": "2026-11-23 07:40:04.783609494 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10345,
+   "lon": -122.91,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 308,
+   "cog": 65.8,
+   "heading": 76,
    "nav_status": 3,
-   "updated": "2026-11-23 07:34:57.143545995 +0000 UTC"
+   "updated": "2026-11-23 07:40:23.51251034 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.6367,
+   "lon": -122.71545,
+   "sog_kn": 7.3,
+   "cog": 332.6,
+   "heading": 324,
+   "nav_status": 0,
+   "updated": "2026-11-23 07:40:26.619068622 +0000 UTC"
   }
  ]
 }
