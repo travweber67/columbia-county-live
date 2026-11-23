@@ -1,6 +1,51 @@
 {
- "fetched_at": "2026-11-23T21:45:56Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-23T21:50:57Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 538090732,
+   "name": "NORDIC MERCHANTS",
+   "lat": 46.10355,
+   "lon": -122.95028,
+   "sog_kn": 0.1,
+   "cog": 358.1,
+   "heading": 119,
+   "nav_status": 5,
+   "updated": "2026-11-23 21:51:07.505990558 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08967,
+   "lon": -122.92972,
+   "sog_kn": 0,
+   "cog": 72.7,
+   "heading": 109,
+   "nav_status": 5,
+   "updated": "2026-11-23 21:51:19.599341129 +0000 UTC"
+  },
+  {
+   "mmsi": 367513140,
+   "name": "CLEARWATER",
+   "lat": 45.64337,
+   "lon": -122.7464,
+   "sog_kn": 0.8,
+   "cog": 109.1,
+   "heading": 109,
+   "nav_status": 0,
+   "updated": "2026-11-23 21:51:22.08642102 +0000 UTC"
+  },
+  {
+   "mmsi": 368257130,
+   "name": "TRIUMPH VII",
+   "lat": 46.01128,
+   "lon": -122.8521,
+   "sog_kn": 14.8,
+   "cog": 141.6,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-23 21:51:26.189257866 +0000 UTC"
+  }
+ ]
 }
