@@ -1,29 +1,6 @@
 {
- "fetched_at": "2026-11-24T03:51:24Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.09022,
-   "lon": -122.93165,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-24 03:51:44.801089484 +0000 UTC"
-  },
-  {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.73679,
-   "lon": -122.76237,
-   "sog_kn": 6.3,
-   "cog": 183.1,
-   "heading": 182,
-   "nav_status": 12,
-   "updated": "2026-11-24 03:52:06.548351475 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-24T03:53:15Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
