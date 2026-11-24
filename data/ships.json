@@ -1,62 +1,6 @@
 {
- "fetched_at": "2026-11-24T18:47:35Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367646810,
-   "name": "EMERY ZIDELL",
-   "lat": 45.67756,
-   "lon": -122.77132,
-   "sog_kn": 0.1,
-   "cog": 260.7,
-   "heading": 164,
-   "nav_status": 1,
-   "updated": "2026-11-24 18:48:00.348257869 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20003,
-   "lon": -123.38542,
-   "sog_kn": 0,
-   "cog": 11.4,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-24 18:48:03.404685612 +0000 UTC"
-  },
-  {
-   "mmsi": 369970121,
-   "name": "ELTON",
-   "lat": 46.14413,
-   "lon": -123.30782,
-   "sog_kn": 11.9,
-   "cog": 83.1,
-   "heading": 82,
-   "nav_status": 0,
-   "updated": "2026-11-24 18:48:12.573164076 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.12433,
-   "lon": -122.98866,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-24 18:48:13.084974313 +0000 UTC"
-  },
-  {
-   "mmsi": 368442390,
-   "name": "COWLITZ",
-   "lat": 46.08325,
-   "lon": -122.90998,
-   "sog_kn": 0.4,
-   "cog": 129,
-   "heading": 291,
-   "nav_status": 5,
-   "updated": "2026-11-24 18:48:13.601215141 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-24T18:52:36Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
