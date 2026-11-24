@@ -1,6 +1,67 @@
 {
- "fetched_at": "2026-11-24T10:16:53Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-24T10:21:53Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15343,
+   "lon": -123.37714,
+   "sog_kn": 0,
+   "cog": 6.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-24 10:21:57.114899938 +0000 UTC"
+  },
+  {
+   "mmsi": 367006570,
+   "name": "JEFFREY S",
+   "lat": 45.72348,
+   "lon": -122.76091,
+   "type_code": 52,
+   "destination": "PORTLAND, OR",
+   "updated": "2026-11-24 10:22:06.758719901 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.68427,
+   "lon": -122.77512,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-24 10:22:09.920402285 +0000 UTC"
+  },
+  {
+   "mmsi": 351421000,
+   "name": "ICY BAY",
+   "lat": 45.63025,
+   "lon": -122.69536,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-24 10:22:10.532311517 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.60073,
+   "lon": -122.77561,
+   "sog_kn": 4.4,
+   "cog": 89.2,
+   "heading": 94,
+   "nav_status": 0,
+   "updated": "2026-11-24 10:22:14.783865509 +0000 UTC"
+  },
+  {
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.64745,
+   "lon": -122.73947,
+   "sog_kn": 0,
+   "cog": 285.3,
+   "heading": 285,
+   "nav_status": 12,
+   "updated": "2026-11-24 10:22:17.521030465 +0000 UTC"
+  }
+ ]
 }
