@@ -1,40 +1,62 @@
 {
- "fetched_at": "2026-11-24T06:16:34Z",
+ "fetched_at": "2026-11-24T06:21:35Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.5876,
+   "lon": -122.77047,
+   "sog_kn": 0,
+   "cog": 204.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-24 06:21:54.869010666 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 46.09064,
+   "lon": -122.93206,
+   "type_code": 52,
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-24 06:21:57.967249995 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15707,
+   "lon": -123.40234,
+   "type_code": 99,
+   "destination": "",
+   "updated": "2026-11-24 06:21:59.248989827 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 130,
+   "nav_status": 0
+  },
   {
    "mmsi": 368083770,
    "name": "SUPPORT",
-   "lat": 46.00926,
-   "lon": -122.84863,
-   "sog_kn": 0.2,
-   "cog": 200.7,
+   "lat": 46.00892,
+   "lon": -122.84828,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-24 06:16:53.100367026 +0000 UTC"
+   "updated": "2026-11-24 06:22:03.455746002 +0000 UTC"
   },
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64541,
-   "lon": -122.73503,
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
    "sog_kn": 0,
-   "cog": 30.4,
-   "heading": 112,
-   "nav_status": 5,
-   "updated": "2026-11-24 06:17:16.107557825 +0000 UTC"
-  },
-  {
-   "mmsi": 256001000,
-   "name": "DOVER",
-   "lat": 45.63924,
-   "lon": -122.77789,
-   "sog_kn": 0,
-   "cog": 92.4,
-   "heading": 229,
-   "nav_status": 5,
-   "updated": "2026-11-24 06:17:18.887269209 +0000 UTC"
+   "cog": 333.3,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-24 06:22:12.643495642 +0000 UTC"
   }
  ]
 }
