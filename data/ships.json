@@ -1,62 +1,6 @@
 {
- "fetched_at": "2026-11-24T03:06:20Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 242.2,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-24 03:06:42.145677526 +0000 UTC"
-  },
-  {
-   "mmsi": 367301450,
-   "name": "MAMA T",
-   "lat": 45.58099,
-   "lon": -122.76028,
-   "sog_kn": 0,
-   "cog": 206.1,
-   "heading": 123,
-   "nav_status": 15,
-   "updated": "2026-11-24 03:06:49.486922913 +0000 UTC"
-  },
-  {
-   "mmsi": 371318000,
-   "name": "SHANGHAI HIGHWAY",
-   "lat": 46.09815,
-   "lon": -122.94317,
-   "sog_kn": 9.2,
-   "cog": 115.9,
-   "heading": 117,
-   "nav_status": 0,
-   "updated": "2026-11-24 03:06:50.105828094 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58076,
-   "lon": -122.75934,
-   "sog_kn": 0,
-   "cog": 226,
-   "heading": 119,
-   "nav_status": 0,
-   "updated": "2026-11-24 03:06:53.204627963 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10345,
-   "lon": -122.91001,
-   "sog_kn": 0,
-   "cog": 65.8,
-   "heading": 77,
-   "nav_status": 3,
-   "updated": "2026-11-24 03:06:54.208504029 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-24T03:12:14Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
