@@ -1,62 +1,6 @@
 {
- "fetched_at": "2026-11-24T10:11:53Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 45.58791,
-   "lon": -122.77027,
-   "sog_kn": 3.4,
-   "cog": 81.6,
-   "heading": 253,
-   "nav_status": 0,
-   "updated": "2026-11-24 10:12:11.309354279 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.00896,
-   "lon": -122.8483,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-24 10:12:12.575563533 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58077,
-   "lon": -122.75933,
-   "sog_kn": 0,
-   "cog": 226,
-   "heading": 120,
-   "nav_status": 0,
-   "updated": "2026-11-24 10:12:13.666923632 +0000 UTC"
-  },
-  {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.62272,
-   "lon": -122.78841,
-   "sog_kn": 0,
-   "cog": 222.5,
-   "heading": 4,
-   "nav_status": 0,
-   "updated": "2026-11-24 10:12:17.532677802 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65009,
-   "lon": -122.74756,
-   "sog_kn": 0,
-   "cog": 209.4,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-24 10:12:18.388698618 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-24T10:16:53Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
