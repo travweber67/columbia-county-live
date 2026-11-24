@@ -1,57 +1,67 @@
 {
- "fetched_at": "2026-11-24T02:21:17Z",
+ "fetched_at": "2026-11-24T02:23:14Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
-   "hex": "a24ad3",
-   "callsign": "N247JL",
-   "type": "P180",
-   "alt_ft": 32150,
-   "gs_kn": 392.3,
-   "track": 357.95,
-   "lat": 45.91517,
-   "lon": -122.847679
-  },
-  {
-   "hex": "a2fe8f",
-   "callsign": "SKW4124",
-   "type": "E75L",
-   "alt_ft": 22000,
-   "gs_kn": 372.4,
-   "track": 352.28,
-   "lat": 46.209939,
-   "lon": -122.700325
-  },
-  {
    "hex": "a30bce",
    "callsign": "ASA1455",
    "type": "B739",
-   "alt_ft": 15075,
-   "gs_kn": 374.5,
-   "track": 320.74,
-   "lat": 45.914566,
-   "lon": -122.681982
+   "alt_ft": 20075,
+   "gs_kn": 397.2,
+   "track": 321.54,
+   "lat": 46.114197,
+   "lon": -122.911623
+  },
+  {
+   "hex": "a24ad3",
+   "callsign": "N247JL",
+   "type": "P180",
+   "alt_ft": 27250,
+   "gs_kn": 388.2,
+   "track": 358.08,
+   "lat": 46.170731,
+   "lon": -122.860643
   },
   {
    "hex": "a35254",
    "callsign": "DAL2880",
    "type": "BCS3",
-   "alt_ft": 34375,
-   "gs_kn": 425.0,
-   "track": 350.38,
-   "lat": 45.856096,
-   "lon": -122.618614
+   "alt_ft": 29425,
+   "gs_kn": 431.6,
+   "track": 352.55,
+   "lat": 46.140483,
+   "lon": -122.686317
+  },
+  {
+   "hex": "a5c4e2",
+   "callsign": "ASA612",
+   "type": "B739",
+   "alt_ft": 28000,
+   "gs_kn": 430.2,
+   "track": 350.23,
+   "lat": 45.943241,
+   "lon": -122.639969
+  },
+  {
+   "hex": "c05efc",
+   "callsign": "JZA654",
+   "type": "DH8D",
+   "alt_ft": 5925,
+   "gs_kn": 199.4,
+   "track": 224.19,
+   "lat": 45.827866,
+   "lon": -122.633682
   },
   {
    "hex": "a2f5b8",
    "callsign": "ABX414",
    "type": "B763",
    "alt_ft": "ground",
-   "gs_kn": 21.5,
+   "gs_kn": 0.0,
    "track": null,
-   "lat": 45.591295,
-   "lon": -122.61767
+   "lat": 45.594166,
+   "lon": -122.622076
   }
  ]
 }
