@@ -6469,9 +6469,9 @@ const LANG_ES = {
   ssm2: 'Patrocinador de sección · Eventos y más · Lugar 2 de 4 — Disponible',
   ssm3: 'Patrocinador de sección · Eventos y más · Lugar 3 de 4 — Disponible',
   ssm4: 'Patrocinador de sección · Eventos y más · Lugar 4 de 4 — Disponible',
-  sstb: 'Uno de solo cuatro lugares de Patrocinador de Sección en Viajes — tu nombre y logo entre el mapa, el puente y el ferri que todos revisan antes de manejar. $29/mes, mes a mes, cancela cuando quieras.',
-  ssob: 'Uno de solo cuatro lugares de Patrocinador de Sección en Aire Libre — tu nombre y logo entre el clima, los ríos y la pesca que todos revisan antes de salir. $29/mes, mes a mes, cancela cuando quieras.',
-  ssmb: 'Uno de solo cuatro lugares de Patrocinador de Sección en Eventos y Más — tu nombre y logo entre los eventos, el directorio y el fin de semana que todos revisan antes de hacer planes. $29/mes, mes a mes, cancela cuando quieras.',
+  sstb: 'Uno de solo cuatro lugares de Patrocinador de Sección en Viajes — tu nombre y logo entre el mapa, el puente y el ferri que todos revisan antes de manejar. $49/mes, mes a mes, cancela cuando quieras. Incluye un anuncio destacado en el directorio.',
+  ssob: 'Uno de solo cuatro lugares de Patrocinador de Sección en Aire Libre — tu nombre y logo entre el clima, los ríos y la pesca que todos revisan antes de salir. $49/mes, mes a mes, cancela cuando quieras. Incluye un anuncio destacado en el directorio.',
+  ssmb: 'Uno de solo cuatro lugares de Patrocinador de Sección en Eventos y Más — tu nombre y logo entre los eventos, el directorio y el fin de semana que todos revisan antes de hacer planes. $49/mes, mes a mes, cancela cuando quieras. Incluye un anuncio destacado en el directorio.',
   driveh2: 'Tu viaje — ¿cuánto dura el manejo?',
   drivefrom: 'Desde',
   driveto: 'Hasta',
@@ -8445,7 +8445,9 @@ function initSponsorLink() {
 }
 initSponsorLink();
 
-/* ---------- v95: SECTION SPONSORS (Slot B) — the $29/mo tier inside
+/* ---------- v95: SECTION SPONSORS (Slot B) — the $49/mo tier inside
+   (repriced from $29 on 2026-11-24, Travis decision; the tier now
+   includes a Featured directory listing)
    the views (Travis, 2026-11-16). Four spots woven through each of
    Travel, Outdoors and Events & More (12 total), spread between the
    content cards the way the founding house cells weave through Today.
