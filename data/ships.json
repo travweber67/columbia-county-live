@@ -1,6 +1,40 @@
 {
- "fetched_at": "2026-11-24T01:06:10Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-24T01:11:11Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.60088,
+   "lon": -122.77613,
+   "sog_kn": 0.2,
+   "cog": 336.6,
+   "heading": 3,
+   "nav_status": 0,
+   "updated": "2026-11-24 01:11:41.561475122 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.61649,
+   "lon": -122.67095,
+   "sog_kn": 7.9,
+   "cog": 108.3,
+   "heading": 108,
+   "nav_status": 0,
+   "updated": "2026-11-24 01:11:46.955161794 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09307,
+   "lon": -122.92284,
+   "sog_kn": 0.8,
+   "cog": 317.2,
+   "heading": 46,
+   "nav_status": 3,
+   "updated": "2026-11-24 01:11:49.055671089 +0000 UTC"
+  }
+ ]
 }
