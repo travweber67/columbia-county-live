@@ -1,40 +1,6 @@
 {
- "fetched_at": "2026-11-24T07:11:38Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.79317,
-   "lon": -122.8432,
-   "sog_kn": 0,
-   "cog": 160.3,
-   "heading": 215,
-   "nav_status": 12,
-   "updated": "2026-11-24 07:12:09.307995663 +0000 UTC"
-  },
-  {
-   "mmsi": 366892350,
-   "name": "NAT GEO SEA BIRD",
-   "lat": 46.08968,
-   "lon": -122.92974,
-   "sog_kn": 0,
-   "cog": 72.7,
-   "heading": 109,
-   "nav_status": 5,
-   "updated": "2026-11-24 07:12:22.073460365 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 320.7,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-24 07:12:22.288336629 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-24T07:16:39Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
