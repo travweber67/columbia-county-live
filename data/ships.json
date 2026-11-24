@@ -1,6 +1,46 @@
 {
- "fetched_at": "2026-11-24T02:16:16Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-24T02:21:17Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.0941,
+   "lon": -122.94284,
+   "type_code": 69,
+   "updated": "2026-11-24 02:21:40.493580011 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64566,
+   "lon": -122.73487,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-24 02:21:45.83891527 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19995,
+   "lon": -123.38555,
+   "sog_kn": 0,
+   "cog": 166.5,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-24 02:22:02.445122206 +0000 UTC"
+  },
+  {
+   "mmsi": 367006570,
+   "name": "JEFFREY S",
+   "lat": 45.72359,
+   "lon": -122.76133,
+   "type_code": 52,
+   "destination": "PORTLAND, OR",
+   "updated": "2026-11-24 02:22:06.089867939 +0000 UTC"
+  }
+ ]
 }
