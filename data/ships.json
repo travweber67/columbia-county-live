@@ -1,6 +1,78 @@
 {
- "fetched_at": "2026-11-24T13:47:11Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-24T13:52:11Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65023,
+   "lon": -122.74773,
+   "sog_kn": 0,
+   "cog": 249.4,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-24 13:52:19.54850128 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.6454,
+   "lon": -122.73505,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-24 13:52:20.339868904 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.612,
+   "lon": -122.64537,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-24 13:52:30.557668791 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10344,
+   "lon": -122.90999,
+   "sog_kn": 0,
+   "cog": 65.8,
+   "heading": 76,
+   "nav_status": 3,
+   "updated": "2026-11-24 13:52:43.613273087 +0000 UTC"
+  },
+  {
+   "mmsi": 367708380,
+   "name": "JOHNNY PETERSON",
+   "lat": 45.79297,
+   "lon": -122.84371,
+   "sog_kn": 0.5,
+   "cog": 48.9,
+   "heading": 6,
+   "nav_status": 3,
+   "updated": "2026-11-24 13:52:43.637729784 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 19.4,
+   "heading": 137,
+   "nav_status": 15,
+   "updated": "2026-11-24 13:52:47.633728202 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64729,
+   "lon": -122.73993,
+   "type_code": 52,
+   "destination": "SRT PASCO",
+   "updated": "2026-11-24 13:52:51.343914203 +0000 UTC"
+  }
+ ]
 }
