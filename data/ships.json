@@ -1,19 +1,53 @@
 {
- "fetched_at": "2026-11-24T06:23:15Z",
+ "fetched_at": "2026-11-24T06:26:35Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 1 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.6129,
+   "mmsi": 311001605,
+   "name": "SAGA DISCOVERY",
+   "lat": 46.17465,
+   "lon": -123.107,
    "sog_kn": 0,
-   "cog": 5.3,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-24 06:24:24.576531229 +0000 UTC",
-   "type_code": 0
+   "cog": 23.8,
+   "heading": 119,
+   "nav_status": 1,
+   "updated": "2026-11-24 06:26:55.522584439 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.63402,
+   "lon": -122.73823,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-24 06:27:17.535779219 +0000 UTC",
+   "sog_kn": 1.8,
+   "cog": 80.6,
+   "heading": 117,
+   "nav_status": 0
+  },
+  {
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.58479,
+   "lon": -122.76318,
+   "sog_kn": 8.2,
+   "cog": 306.6,
+   "heading": 309,
+   "nav_status": 12,
+   "updated": "2026-11-24 06:27:17.811629638 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00898,
+   "lon": -122.84829,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-24 06:27:21.974006164 +0000 UTC"
   }
  ]
 }
