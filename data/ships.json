@@ -1,53 +1,93 @@
 {
- "fetched_at": "2026-11-24T21:37:54Z",
+ "fetched_at": "2026-11-24T21:42:48Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 369970121,
-   "name": "ELTON",
-   "lat": 46.14332,
-   "lon": -123.34562,
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19996,
+   "lon": -123.38552,
    "sog_kn": 0,
-   "cog": 292.8,
-   "heading": 264,
+   "cog": 330.5,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-24 21:43:02.408787221 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.04369,
+   "lon": -122.88267,
+   "sog_kn": 0.1,
+   "cog": 270.3,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-24 21:38:09.302203185 +0000 UTC"
+   "updated": "2026-11-24 21:43:02.409388408 +0000 UTC"
   },
   {
-   "mmsi": 366888830,
-   "name": "KAHU",
-   "lat": 45.61165,
-   "lon": -122.6438,
+   "mmsi": 368280980,
+   "name": "CHRISSY",
+   "lat": 45.77955,
+   "lon": -122.77377,
+   "sog_kn": 8.2,
+   "cog": 153.7,
+   "heading": 152,
+   "nav_status": 0,
+   "updated": "2026-11-24 21:43:06.977649054 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19952,
+   "lon": -123.38502,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-24 21:43:08.433705976 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64383,
+   "lon": -122.72578,
    "sog_kn": 0,
-   "cog": 35.1,
-   "heading": 120,
-   "nav_status": 5,
-   "updated": "2026-11-24 21:38:16.21971787 +0000 UTC"
+   "cog": 222.7,
+   "heading": 119,
+   "nav_status": 12,
+   "updated": "2026-11-24 21:43:10.622388793 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09305,
-   "lon": -122.92323,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-24 21:38:27.634943139 +0000 UTC",
-   "sog_kn": 0.4,
-   "cog": 205.5,
-   "heading": 191,
-   "nav_status": 0
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.80422,
+   "lon": -122.81867,
+   "sog_kn": 6.4,
+   "cog": 292.9,
+   "heading": 291,
+   "nav_status": 0,
+   "updated": "2026-11-24 21:43:17.362725819 +0000 UTC"
   },
   {
-   "mmsi": 366396000,
-   "name": "NAT GEO SEA LION",
-   "lat": 46.08959,
-   "lon": -122.92974,
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.08118,
+   "lon": -122.90782,
+   "sog_kn": 0.1,
+   "cog": 71.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-24 21:43:21.457870215 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.6129,
    "sog_kn": 0,
-   "cog": 283.1,
-   "heading": 113,
-   "nav_status": 5,
-   "updated": "2026-11-24 21:38:32.092779427 +0000 UTC"
+   "cog": 123.1,
+   "heading": 123,
+   "nav_status": 15,
+   "updated": "2026-11-24 21:43:22.311447136 +0000 UTC"
   }
  ]
 }
