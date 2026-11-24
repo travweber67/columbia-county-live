@@ -1,84 +1,49 @@
 {
- "fetched_at": "2026-11-24T07:21:39Z",
+ "fetched_at": "2026-11-24T07:23:16Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 314085000,
+   "name": "SOLENT",
+   "lat": 45.6863,
+   "lon": -122.77239,
+   "sog_kn": 0,
+   "cog": 303.2,
+   "heading": 175,
+   "nav_status": 1,
+   "updated": "2026-11-24 07:24:41.426060467 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15343,
+   "lon": -123.37711,
+   "sog_kn": 0,
+   "cog": 18.3,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-24 07:24:48.589691743 +0000 UTC"
+  },
+  {
+   "mmsi": 368126190,
+   "name": "GERONIMO",
+   "lat": 46.09899,
+   "lon": -122.95732,
+   "sog_kn": 0,
+   "cog": 292.7,
+   "heading": 292,
+   "nav_status": 5,
+   "updated": "2026-11-24 07:25:08.134320484 +0000 UTC"
+  },
   {
    "mmsi": 368083770,
    "name": "SUPPORT",
-   "lat": 46.00914,
-   "lon": -122.84825,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-24 07:22:03.482145011 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09296,
-   "lon": -122.92266,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 72,
-   "nav_status": 3,
-   "updated": "2026-11-24 07:22:06.476687907 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35744,
-   "sog_kn": 0,
-   "cog": 208.5,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-24 07:22:07.079064114 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.63533,
-   "lon": -122.78466,
-   "sog_kn": 9.3,
-   "cog": 211.1,
-   "heading": 210,
-   "nav_status": 0,
-   "updated": "2026-11-24 07:22:07.747639889 +0000 UTC"
-  },
-  {
-   "mmsi": 367047240,
-   "name": "DEFIANCE",
-   "lat": 45.64706,
-   "lon": -122.74154,
-   "sog_kn": 0.9,
-   "cog": 161.2,
-   "heading": 89,
-   "nav_status": 12,
-   "updated": "2026-11-24 07:22:11.241803648 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15707,
-   "lon": -123.40234,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 132,
-   "nav_status": 0,
-   "updated": "2026-11-24 07:22:19.646719663 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 45.64024,
-   "lon": -122.77992,
-   "sog_kn": 8.4,
-   "cog": 225.1,
-   "heading": 221,
-   "nav_status": 0,
-   "updated": "2026-11-24 07:22:21.990178283 +0000 UTC"
+   "lat": 46.00896,
+   "lon": -122.84814,
+   "type_code": 31,
+   "destination": "HARBOROPPS-",
+   "updated": "2026-11-24 07:25:16.010034489 +0000 UTC"
   }
  ]
 }
