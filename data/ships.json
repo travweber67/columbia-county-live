@@ -1,6 +1,91 @@
 {
- "fetched_at": "2026-11-24T10:46:55Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-24T10:51:55Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.6418,
+   "lon": -122.73999,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-24 10:52:10.945758344 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20001,
+   "lon": -123.38553,
+   "sog_kn": 0,
+   "cog": 347.6,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-24 10:52:12.082976331 +0000 UTC"
+  },
+  {
+   "mmsi": 368126190,
+   "name": "GERONIMO",
+   "lat": 46.09898,
+   "lon": -122.95732,
+   "sog_kn": 0,
+   "cog": 294.6,
+   "heading": 294,
+   "nav_status": 5,
+   "updated": "2026-11-24 10:52:16.542985633 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10342,
+   "lon": -122.91,
+   "sog_kn": 0,
+   "cog": 65.8,
+   "heading": 76,
+   "nav_status": 3,
+   "updated": "2026-11-24 10:52:24.509996372 +0000 UTC"
+  },
+  {
+   "mmsi": 366971000,
+   "name": "YAQUINA",
+   "lat": 45.63989,
+   "lon": -122.71869,
+   "sog_kn": 1.2,
+   "cog": 137.1,
+   "heading": 131,
+   "nav_status": 3,
+   "updated": "2026-11-24 10:52:29.148922388 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09301,
+   "lon": -122.92293,
+   "sog_kn": 0.2,
+   "cog": 190.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-24 10:52:32.813895764 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.6479,
+   "lon": -122.74099,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-24 10:52:37.983781079 +0000 UTC"
+  },
+  {
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.64744,
+   "lon": -122.73946,
+   "sog_kn": 0,
+   "cog": 285.1,
+   "heading": 285,
+   "nav_status": 12,
+   "updated": "2026-11-24 10:52:38.277367189 +0000 UTC"
+  }
+ ]
 }
