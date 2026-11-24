@@ -1,62 +1,6 @@
 {
- "fetched_at": "2026-11-24T03:21:22Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 563311600,
-   "name": "STANLEY BAY",
-   "lat": 46.11011,
-   "lon": -122.96336,
-   "sog_kn": 0,
-   "cog": 220,
-   "heading": 131,
-   "nav_status": 5,
-   "updated": "2026-11-24 03:21:50.724129369 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.6111,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 296.5,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-24 03:21:51.854892913 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58075,
-   "lon": -122.75934,
-   "sog_kn": 0,
-   "cog": 226,
-   "heading": 119,
-   "nav_status": 0,
-   "updated": "2026-11-24 03:21:53.08324595 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.64385,
-   "lon": -122.73478,
-   "sog_kn": 0.6,
-   "cog": 117.4,
-   "heading": 110,
-   "nav_status": 3,
-   "updated": "2026-11-24 03:22:16.005356577 +0000 UTC"
-  },
-  {
-   "mmsi": 367047180,
-   "name": "SUNDIAL",
-   "lat": 45.78832,
-   "lon": -122.779,
-   "sog_kn": 6.5,
-   "cog": 153.8,
-   "heading": 154,
-   "nav_status": 12,
-   "updated": "2026-11-24 03:22:17.127837388 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-24T03:23:14Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
