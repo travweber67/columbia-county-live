@@ -1,38 +1,6 @@
 {
- "fetched_at": "2026-11-24T20:42:44Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 368126190,
-   "name": "GERONIMO",
-   "lat": 46.09898,
-   "lon": -122.95734,
-   "sog_kn": 0,
-   "cog": 161,
-   "heading": 296,
-   "nav_status": 5,
-   "updated": "2026-11-24 20:43:10.503022806 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35743,
-   "sog_kn": 0,
-   "cog": 276.3,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-24 20:43:16.147031392 +0000 UTC"
-  },
-  {
-   "mmsi": 538010248,
-   "name": "SAFEEN AL AMAL",
-   "lat": 46.12333,
-   "lon": -122.98898,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-24 20:43:23.743678624 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-24T20:47:44Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
