@@ -1,49 +1,6 @@
 {
- "fetched_at": "2026-11-24T21:57:49Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15341,
-   "lon": -123.37712,
-   "sog_kn": 0,
-   "cog": 21.6,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-24 21:58:09.606554139 +0000 UTC"
-  },
-  {
-   "mmsi": 366892350,
-   "name": "NAT GEO SEA BIRD",
-   "lat": 46.08965,
-   "lon": -122.92971,
-   "type_code": 66,
-   "destination": "RAINIER",
-   "updated": "2026-11-24 21:58:17.823906705 +0000 UTC"
-  },
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.64922,
-   "lon": -122.74812,
-   "sog_kn": 2.2,
-   "cog": 322.3,
-   "heading": 85,
-   "nav_status": 0,
-   "updated": "2026-11-24 21:58:22.229021622 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40233,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 131,
-   "nav_status": 0,
-   "updated": "2026-11-24 21:58:29.350333757 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-24T22:02:50Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
