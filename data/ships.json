@@ -1,6 +1,40 @@
 {
- "fetched_at": "2026-11-24T22:47:53Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-24T22:52:54Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20001,
+   "lon": -123.38554,
+   "sog_kn": 0,
+   "cog": 334,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-24 22:53:31.276806854 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 45.99859,
+   "lon": -122.85193,
+   "sog_kn": 0.7,
+   "cog": 33.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-24 22:53:34.538176791 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64509,
+   "lon": -122.74919,
+   "sog_kn": 6.9,
+   "cog": 285.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-24 22:53:38.894891693 +0000 UTC"
+  }
+ ]
 }
