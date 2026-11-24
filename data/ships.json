@@ -1,6 +1,102 @@
 {
- "fetched_at": "2026-11-24T04:23:15Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-24T04:26:26Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58761,
+   "lon": -122.77039,
+   "sog_kn": 0,
+   "cog": 202,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-24 04:26:44.738814383 +0000 UTC"
+  },
+  {
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.6339,
+   "lon": -122.71485,
+   "sog_kn": 0,
+   "cog": 114.3,
+   "heading": 114,
+   "nav_status": 12,
+   "updated": "2026-11-24 04:26:48.129117053 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.61688,
+   "lon": -122.67208,
+   "type_code": 57,
+   "destination": "US^01Q4>0RG1",
+   "updated": "2026-11-24 04:26:51.605609962 +0000 UTC"
+  },
+  {
+   "mmsi": 371318000,
+   "name": "SHANGHAI HIGHWAY",
+   "lat": 45.88561,
+   "lon": -122.79913,
+   "sog_kn": 13.3,
+   "cog": 158.6,
+   "heading": 159,
+   "nav_status": 0,
+   "updated": "2026-11-24 04:26:54.570857017 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15337,
+   "lon": -123.37714,
+   "sog_kn": 0.3,
+   "cog": 8.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-24 04:26:58.654079204 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09322,
+   "lon": -122.92318,
+   "sog_kn": 0.9,
+   "cog": 278.6,
+   "heading": 8,
+   "nav_status": 3,
+   "updated": "2026-11-24 04:27:05.793650579 +0000 UTC"
+  },
+  {
+   "mmsi": 538090732,
+   "name": "NORDIC MERCHANTS",
+   "lat": 46.10375,
+   "lon": -122.95086,
+   "sog_kn": 0,
+   "cog": 325,
+   "heading": 119,
+   "nav_status": 5,
+   "updated": "2026-11-24 04:27:07.882536659 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08968,
+   "lon": -122.92972,
+   "type_code": 66,
+   "destination": "RAINIER",
+   "updated": "2026-11-24 04:27:10.777944419 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60756,
+   "lon": -122.67755,
+   "sog_kn": 0,
+   "cog": 259.3,
+   "heading": 245,
+   "nav_status": 0,
+   "updated": "2026-11-24 04:27:10.781839736 +0000 UTC"
+  }
+ ]
 }
