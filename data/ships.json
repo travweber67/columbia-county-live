@@ -1,29 +1,6 @@
 {
- "fetched_at": "2026-11-24T17:57:32Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35743,
-   "sog_kn": 0,
-   "cog": 278.1,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-24 17:58:16.090905898 +0000 UTC"
-  },
-  {
-   "mmsi": 369970121,
-   "name": "ELTON",
-   "lat": 46.14607,
-   "lon": -123.3621,
-   "sog_kn": 14.9,
-   "cog": 99,
-   "heading": 98,
-   "nav_status": 0,
-   "updated": "2026-11-24 17:58:17.209151797 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-24T18:02:32Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
