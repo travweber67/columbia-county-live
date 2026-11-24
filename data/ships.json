@@ -1,62 +1,6 @@
 {
- "fetched_at": "2026-11-24T21:52:50Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 636025785,
-   "name": "PAN SKY",
-   "lat": 45.64614,
-   "lon": -122.74504,
-   "sog_kn": 8.9,
-   "cog": 111.6,
-   "heading": 111,
-   "nav_status": 0,
-   "updated": "2026-11-24 21:52:42.62582741 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00925,
-   "lon": -122.84867,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-24 21:52:48.164283295 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15339,
-   "lon": -123.37716,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-24 21:53:08.192371589 +0000 UTC"
-  },
-  {
-   "mmsi": 636013613,
-   "name": "LONDON 2012",
-   "lat": 46.04435,
-   "lon": -122.88265,
-   "sog_kn": 0,
-   "cog": 261.5,
-   "heading": 177,
-   "nav_status": 1,
-   "updated": "2026-11-24 21:53:11.899907193 +0000 UTC"
-  },
-  {
-   "mmsi": 256001000,
-   "name": "DOVER",
-   "lat": 45.63923,
-   "lon": -122.77788,
-   "sog_kn": 0,
-   "cog": 92.4,
-   "heading": 229,
-   "nav_status": 5,
-   "updated": "2026-11-24 21:53:22.123114214 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-24T21:53:28Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
