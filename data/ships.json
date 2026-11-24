@@ -1,47 +1,6 @@
 {
- "fetched_at": "2026-11-24T09:26:49Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.09299,
-   "lon": -122.9235,
-   "sog_kn": 0.2,
-   "cog": 213.4,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-24 09:27:03.938909421 +0000 UTC"
-  },
-  {
-   "mmsi": 368126190,
-   "name": "GERONIMO",
-   "lat": 46.09897,
-   "lon": -122.95729,
-   "type_code": 32,
-   "destination": "PORTLAND_OR",
-   "updated": "2026-11-24 09:27:15.11195826 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15343,
-   "lon": -123.37712,
-   "sog_kn": 0,
-   "cog": 358.8,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-24 09:27:17.695378997 +0000 UTC"
-  },
-  {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.64357,
-   "lon": -122.75233,
-   "type_code": 52,
-   "destination": "US^02AK>0T67",
-   "updated": "2026-11-24 09:27:33.715912087 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-24T09:31:50Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
