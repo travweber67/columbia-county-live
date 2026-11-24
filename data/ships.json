@@ -1,6 +1,110 @@
 {
- "fetched_at": "2026-11-24T18:02:32Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-24T18:07:32Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367301450,
+   "name": "MAMA T",
+   "lat": 45.58097,
+   "lon": -122.76028,
+   "sog_kn": 0,
+   "cog": 116.4,
+   "heading": 123,
+   "nav_status": 15,
+   "updated": "2026-11-24 18:07:29.087156428 +0000 UTC"
+  },
+  {
+   "mmsi": 636025785,
+   "name": "PAN SKY",
+   "lat": 46.17147,
+   "lon": -123.21785,
+   "sog_kn": 12.5,
+   "cog": 63.7,
+   "heading": 62,
+   "nav_status": 0,
+   "updated": "2026-11-24 18:07:32.716017635 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09225,
+   "lon": -122.92184,
+   "sog_kn": 0.7,
+   "cog": 267.5,
+   "heading": 331,
+   "nav_status": 0,
+   "updated": "2026-11-24 18:07:40.313098981 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.0437,
+   "lon": -122.88268,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-24 18:07:50.258943151 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09327,
+   "lon": -122.92289,
+   "type_code": 33,
+   "updated": "2026-11-24 18:07:51.580086193 +0000 UTC"
+  },
+  {
+   "mmsi": 367047250,
+   "name": "VOYAGER",
+   "lat": 46.1643,
+   "lon": -123.23309,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-24 18:07:53.373806224 +0000 UTC"
+  },
+  {
+   "mmsi": 366888830,
+   "name": "KAHU",
+   "lat": 45.61167,
+   "lon": -122.64382,
+   "type_code": 52,
+   "destination": "PDX",
+   "updated": "2026-11-24 18:07:54.822883223 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.67415,
+   "lon": -122.77057,
+   "sog_kn": 11.1,
+   "cog": 338.6,
+   "heading": 332,
+   "nav_status": 0,
+   "updated": "2026-11-24 18:07:56.18699795 +0000 UTC"
+  },
+  {
+   "mmsi": 368380350,
+   "name": "TAYA T",
+   "lat": 45.61223,
+   "lon": -122.64527,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-24 18:08:05.299017127 +0000 UTC"
+  },
+  {
+   "mmsi": 368136580,
+   "name": "ORIN L GREEN",
+   "lat": 46.09331,
+   "lon": -122.92302,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-24 18:08:07.957871724 +0000 UTC"
+  }
+ ]
 }
