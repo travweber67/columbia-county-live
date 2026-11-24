@@ -1,84 +1,116 @@
 {
- "fetched_at": "2026-11-24T23:02:54Z",
+ "fetched_at": "2026-11-24T23:07:55Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 46.08976,
+   "lon": -122.92898,
+   "sog_kn": 0,
+   "cog": 20,
+   "heading": 105,
+   "nav_status": 5,
+   "updated": "2026-11-24 23:08:14.105978442 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09301,
+   "lon": -122.92293,
+   "sog_kn": 0.2,
+   "cog": 331.6,
+   "heading": 203,
+   "nav_status": 0,
+   "updated": "2026-11-24 23:08:16.551233539 +0000 UTC"
+  },
+  {
+   "mmsi": 367646810,
+   "name": "EMERY ZIDELL",
+   "lat": 45.67735,
+   "lon": -122.77168,
+   "type_code": 80,
+   "destination": "SEATTLE, WA",
+   "updated": "2026-11-24 23:08:16.632718366 +0000 UTC"
+  },
+  {
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 46.13381,
+   "lon": -123.00785,
+   "sog_kn": 12.8,
+   "cog": 121.7,
+   "heading": 129,
+   "nav_status": 0,
+   "updated": "2026-11-24 23:08:17.741917195 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09333,
+   "lon": -122.92289,
+   "sog_kn": 0.6,
+   "cog": 293.7,
+   "heading": 22,
+   "nav_status": 3,
+   "updated": "2026-11-24 23:08:20.230002922 +0000 UTC",
+   "type_code": 33
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.75661,
+   "lon": -122.76306,
+   "sog_kn": 7.3,
+   "cog": 354.7,
+   "heading": 355,
+   "nav_status": 0,
+   "updated": "2026-11-24 23:08:21.934106052 +0000 UTC"
+  },
   {
    "mmsi": 367602150,
    "name": "LUNA",
    "lat": 45.61108,
    "lon": -122.6129,
    "sog_kn": 0,
-   "cog": 120.3,
-   "heading": 120,
+   "cog": 118.6,
+   "heading": 118,
    "nav_status": 15,
-   "updated": "2026-11-24 23:03:21.632705807 +0000 UTC"
+   "updated": "2026-11-24 23:08:22.172841522 +0000 UTC"
   },
   {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 45.63838,
-   "lon": -122.7819,
-   "sog_kn": 8.5,
-   "cog": 42.5,
-   "heading": 46,
-   "nav_status": 0,
-   "updated": "2026-11-24 23:03:19.753225972 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.9101,
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64384,
+   "lon": -122.72577,
    "sog_kn": 0,
-   "cog": 9.8,
-   "heading": 75,
+   "cog": 137.3,
+   "heading": 117,
+   "nav_status": 12,
+   "updated": "2026-11-24 23:08:30.654437101 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.64353,
+   "lon": -122.77483,
+   "sog_kn": 8,
+   "cog": 224.7,
+   "heading": 225,
    "nav_status": 0,
-   "updated": "2026-11-24 23:03:23.770587511 +0000 UTC"
+   "updated": "2026-11-24 23:08:38.903926358 +0000 UTC"
   },
   {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.62961,
-   "lon": -122.69565,
-   "sog_kn": 7.7,
-   "cog": 127.7,
-   "heading": 128,
-   "nav_status": 0,
-   "updated": "2026-11-24 23:03:27.378570203 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09319,
-   "lon": -122.9226,
-   "sog_kn": 0.4,
-   "cog": 139.2,
-   "heading": 55,
-   "nav_status": 3,
-   "updated": "2026-11-24 23:03:27.450579148 +0000 UTC"
-  },
-  {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.62276,
-   "lon": -122.78845,
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64247,
+   "lon": -122.7715,
    "sog_kn": 0,
-   "cog": 174.5,
-   "heading": 4,
+   "cog": 237.1,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-24 23:03:27.452165384 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35743,
-   "sog_kn": 0,
-   "cog": 236.2,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-24 23:03:28.632513771 +0000 UTC"
+   "updated": "2026-11-24 23:08:40.17478915 +0000 UTC"
   }
  ]
 }
