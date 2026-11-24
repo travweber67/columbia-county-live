@@ -1,47 +1,67 @@
 {
- "fetched_at": "2026-11-24T04:46:28Z",
+ "fetched_at": "2026-11-24T04:51:28Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
+   "hex": "a527d5",
+   "callsign": "N431LF",
+   "type": "B429",
+   "alt_ft": 1875,
+   "gs_kn": 118.1,
+   "track": 158.65,
+   "lat": 46.203049,
+   "lon": -122.980888
+  },
+  {
    "hex": "a9ed9d",
    "callsign": "N739MR",
    "type": "C172",
-   "alt_ft": 2400,
-   "gs_kn": 98.0,
-   "track": 255.82,
-   "lat": 45.72084,
-   "lon": -122.945653
+   "alt_ft": 2450,
+   "gs_kn": 75.5,
+   "track": 173.16,
+   "lat": 45.618353,
+   "lon": -122.965096
   },
   {
-   "hex": "a688ff",
-   "callsign": "ASA1336",
+   "hex": "a3efa2",
+   "callsign": "UAL1811",
    "type": "B738",
-   "alt_ft": 26825,
-   "gs_kn": 423.0,
-   "track": 352.12,
-   "lat": 46.193619,
-   "lon": -122.697054
+   "alt_ft": 3075,
+   "gs_kn": 239.2,
+   "track": 23.14,
+   "lat": 45.619145,
+   "lon": -122.881943
   },
   {
-   "hex": "ada6ed",
-   "callsign": "AAL651",
+   "hex": "ac2ba0",
+   "callsign": "SWA1048",
+   "type": "B38M",
+   "alt_ft": 2300,
+   "gs_kn": 157.9,
+   "track": 118.35,
+   "lat": 45.65229,
+   "lon": -122.744064
+  },
+  {
+   "hex": "a43423",
+   "callsign": "DAL2008",
    "type": "A321",
-   "alt_ft": 600,
-   "gs_kn": 129.8,
-   "track": 118.54,
-   "lat": 45.610703,
-   "lon": -122.661483
+   "alt_ft": 4075,
+   "gs_kn": 241.5,
+   "track": 296.57,
+   "lat": 45.722817,
+   "lon": -122.685837
   },
   {
-   "hex": "a67b07",
-   "callsign": "SCX3062",
-   "type": "B738",
-   "alt_ft": "ground",
-   "gs_kn": 0.0,
-   "track": null,
-   "lat": 45.593983,
-   "lon": -122.622219
+   "hex": "0d0e03",
+   "callsign": "VOI1870",
+   "type": "A21N",
+   "alt_ft": 1000,
+   "gs_kn": 112.4,
+   "track": 119.3,
+   "lat": 45.619217,
+   "lon": -122.658669
   }
  ]
 }
