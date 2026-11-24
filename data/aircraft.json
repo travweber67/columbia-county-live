@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-24T16:27:25Z",
+ "fetched_at": "2026-11-24T16:32:25Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
@@ -8,40 +8,70 @@
    "callsign": "ASA725",
    "type": "B38M",
    "alt_ft": 35000,
-   "gs_kn": 374.1,
-   "track": 178.77,
-   "lat": 46.137876,
-   "lon": -123.377701
+   "gs_kn": 386.1,
+   "track": 178.81,
+   "lat": 45.609089,
+   "lon": -123.361633
   },
   {
    "hex": "aa34e8",
    "callsign": "N757JX",
    "type": "C152",
-   "alt_ft": 2950,
-   "gs_kn": 33.1,
-   "track": 95.19,
-   "lat": 45.581589,
-   "lon": -123.101338
+   "alt_ft": 1700,
+   "gs_kn": 83.0,
+   "track": 178.62,
+   "lat": 45.59285,
+   "lon": -123.142135
   },
   {
-   "hex": "a1388c",
-   "callsign": "SKW3345",
-   "type": "E75L",
-   "alt_ft": 26500,
-   "gs_kn": 472.0,
-   "track": 356.23,
-   "lat": 46.336375,
-   "lon": -122.721748
+   "hex": "ad5e27",
+   "callsign": "SWA3236",
+   "type": "B737",
+   "alt_ft": 39000,
+   "gs_kn": 364.0,
+   "track": 175.75,
+   "lat": 46.120789,
+   "lon": -123.113597
   },
   {
-   "hex": "a2e5ec",
-   "callsign": "SKW4075",
+   "hex": "aaf927",
+   "callsign": "N806LF",
+   "type": "EC35",
+   "alt_ft": 1250,
+   "gs_kn": 134.5,
+   "track": 351.45,
+   "lat": 45.723358,
+   "lon": -122.809463
+  },
+  {
+   "hex": "a2355d",
+   "callsign": "SKW3953",
    "type": "E75L",
-   "alt_ft": 32000,
-   "gs_kn": 478.9,
-   "track": 350.26,
-   "lat": 45.854699,
-   "lon": -122.617996
+   "alt_ft": 3825,
+   "gs_kn": 202.2,
+   "track": 225.4,
+   "lat": 45.776367,
+   "lon": -122.701677
+  },
+  {
+   "hex": "ab3b8b",
+   "callsign": "AMF3118",
+   "type": "BE99",
+   "alt_ft": "ground",
+   "gs_kn": 0.1,
+   "track": 118.12,
+   "lat": 45.594772,
+   "lon": -122.620502
+  },
+  {
+   "hex": "a987b4",
+   "callsign": "CFS8673",
+   "type": "AT76",
+   "alt_ft": "ground",
+   "gs_kn": 6.8,
+   "track": null,
+   "lat": 45.581612,
+   "lon": -122.611851
   }
  ]
 }
