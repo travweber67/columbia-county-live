@@ -1,6 +1,64 @@
 {
- "fetched_at": "2026-11-24T11:47:00Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-24T11:52:00Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.63906,
+   "lon": -122.71926,
+   "sog_kn": 5.6,
+   "cog": 119.1,
+   "heading": 120,
+   "nav_status": 0,
+   "updated": "2026-11-24 11:52:12.891714436 +0000 UTC"
+  },
+  {
+   "mmsi": 538009633,
+   "name": "EVER ZENITH",
+   "lat": 46.09917,
+   "lon": -122.93951,
+   "sog_kn": 0,
+   "cog": 213.4,
+   "heading": 107,
+   "nav_status": 0,
+   "updated": "2026-11-24 11:52:21.179483972 +0000 UTC",
+   "type_code": 70,
+   "destination": "JP HHE"
+  },
+  {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.62271,
+   "lon": -122.78839,
+   "sog_kn": 0,
+   "cog": 139.8,
+   "heading": 4,
+   "nav_status": 0,
+   "updated": "2026-11-24 11:52:27.084646201 +0000 UTC"
+  },
+  {
+   "mmsi": 311054300,
+   "name": "GLOVIS CARAVEL",
+   "lat": 45.64651,
+   "lon": -122.75588,
+   "sog_kn": 0,
+   "cog": 97.1,
+   "heading": 137,
+   "nav_status": 5,
+   "updated": "2026-11-24 11:52:29.377602165 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.09025,
+   "lon": -122.93164,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-24 11:52:36.360968369 +0000 UTC"
+  }
+ ]
 }
