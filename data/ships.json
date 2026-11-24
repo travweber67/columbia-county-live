@@ -1,6 +1,64 @@
 {
- "fetched_at": "2026-11-24T19:53:22Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-24T19:57:41Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.2,
+   "lon": -123.38543,
+   "sog_kn": 0,
+   "cog": 352.6,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-24 19:58:04.656228424 +0000 UTC",
+   "type_code": 99,
+   "destination": "NAKNEK"
+  },
+  {
+   "mmsi": 367006570,
+   "name": "JEFFREY S",
+   "lat": 45.72353,
+   "lon": -122.76122,
+   "sog_kn": 0,
+   "cog": 317,
+   "heading": 192,
+   "nav_status": 1,
+   "updated": "2026-11-24 19:57:51.932086438 +0000 UTC"
+  },
+  {
+   "mmsi": 367708380,
+   "name": "JOHNNY PETERSON",
+   "lat": 45.82834,
+   "lon": -122.79202,
+   "sog_kn": 6.1,
+   "cog": 8.8,
+   "heading": 11,
+   "nav_status": 3,
+   "updated": "2026-11-24 19:57:54.898578867 +0000 UTC"
+  },
+  {
+   "mmsi": 636025785,
+   "name": "PAN SKY",
+   "lat": 46.00044,
+   "lon": -122.85006,
+   "sog_kn": 10.9,
+   "cog": 161.1,
+   "heading": 160,
+   "nav_status": 0,
+   "updated": "2026-11-24 19:58:01.705553742 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.58571,
+   "lon": -122.76508,
+   "sog_kn": 7.5,
+   "cog": 317.9,
+   "heading": 316,
+   "nav_status": 0,
+   "updated": "2026-11-24 19:58:08.75578392 +0000 UTC"
+  }
+ ]
 }
