@@ -1,60 +1,6 @@
 {
- "fetched_at": "2026-11-24T01:53:14Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.0437,
-   "lon": -122.88289,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-24 01:54:20.104779716 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 45.61515,
-   "lon": -122.78876,
-   "sog_kn": 9,
-   "cog": 344.7,
-   "heading": 342,
-   "nav_status": 0,
-   "updated": "2026-11-24 01:54:21.149616263 +0000 UTC"
-  },
-  {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61187,
-   "lon": -122.64408,
-   "sog_kn": 0,
-   "cog": 215.4,
-   "heading": 121,
-   "nav_status": 0,
-   "updated": "2026-11-24 01:54:21.882934352 +0000 UTC"
-  },
-  {
-   "mmsi": 374590000,
-   "name": "BORACAY ISLAND",
-   "lat": 45.69109,
-   "lon": -122.77186,
-   "type_code": 70,
-   "destination": "MX ZLO >> US VAN",
-   "updated": "2026-11-24 01:54:33.344551758 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15345,
-   "lon": -123.3771,
-   "sog_kn": 0,
-   "cog": 14.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-24 01:54:38.203326453 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-24T01:56:14Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
