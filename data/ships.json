@@ -1,51 +1,6 @@
 {
- "fetched_at": "2026-11-24T04:16:26Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64351,
-   "lon": -122.75279,
-   "sog_kn": 0,
-   "cog": 132.5,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-24 04:16:42.825095846 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20001,
-   "lon": -123.3854,
-   "sog_kn": 0,
-   "cog": 195.7,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-24 04:16:55.231760306 +0000 UTC"
-  },
-  {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.62274,
-   "lon": -122.78844,
-   "sog_kn": 0,
-   "cog": 29.2,
-   "heading": 4,
-   "nav_status": 0,
-   "updated": "2026-11-24 04:16:57.933077189 +0000 UTC"
-  },
-  {
-   "mmsi": 367425950,
-   "name": "SEA HAWK",
-   "lat": 45.65009,
-   "lon": -122.74766,
-   "sog_kn": 0,
-   "cog": 240.2,
-   "heading": 511,
-   "nav_status": 3,
-   "updated": "2026-11-24 04:17:08.918657777 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-24T04:21:27Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
