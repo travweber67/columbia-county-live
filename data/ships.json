@@ -1,6 +1,62 @@
 {
- "fetched_at": "2026-11-24T00:31:08Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-24T00:36:08Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64148,
+   "lon": -122.72353,
+   "sog_kn": 5.4,
+   "cog": 285.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-24 00:36:25.615071466 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10346,
+   "lon": -122.91001,
+   "sog_kn": 0,
+   "cog": 65.8,
+   "heading": 76,
+   "nav_status": 3,
+   "updated": "2026-11-24 00:36:26.258241885 +0000 UTC"
+  },
+  {
+   "mmsi": 371318000,
+   "name": "SHANGHAI HIGHWAY",
+   "lat": 46.26714,
+   "lon": -123.51353,
+   "sog_kn": 15.1,
+   "cog": 67.1,
+   "heading": 68,
+   "nav_status": 0,
+   "updated": "2026-11-24 00:36:26.259149209 +0000 UTC"
+  },
+  {
+   "mmsi": 367425950,
+   "name": "SEA HAWK",
+   "lat": 45.65019,
+   "lon": -122.74761,
+   "sog_kn": 0,
+   "cog": 231.8,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-24 00:36:38.691310401 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.62991,
+   "lon": -122.70378,
+   "sog_kn": 0.3,
+   "cog": 185.6,
+   "heading": 348,
+   "nav_status": 0,
+   "updated": "2026-11-24 00:36:42.427145302 +0000 UTC"
+  }
+ ]
 }
