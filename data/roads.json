@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-24T13:37:10Z",
+ "fetched_at": "2026-11-24T13:42:10Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -16,6 +16,19 @@
   }
  ],
  "incidents": [
+  {
+   "title": "Animals are on the roadway. Prepare to slow.",
+   "desc": "",
+   "impact": "Estimated delay under 20 minutes",
+   "place": "ORE202, 1 mile South of Birkenfeld",
+   "route": "OR202",
+   "milepost": 42.0,
+   "lat": 46.00197,
+   "lon": -123.32151,
+   "start": "2026-11-24T05:37:40.423-08:00",
+   "updated": "2026-11-24T05:40:17-08:00",
+   "source": "ODOT TripCheck"
+  },
   {
    "title": "Traffic Impacts: No traffic impacts.",
    "desc": "Project Description: This project improves system operations in the region by replacing and upgrading equipment that is beyond its service life. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=22867",
@@ -134,7 +147,7 @@
    "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 106,
+ "odot_active_statewide": 108,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
   "alerts": [],
