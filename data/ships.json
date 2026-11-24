@@ -1,8 +1,59 @@
 {
- "fetched_at": "2026-11-24T07:56:42Z",
+ "fetched_at": "2026-11-24T08:01:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 46.10604,
+   "lon": -122.95589,
+   "type_code": 70,
+   "destination": "USLOG",
+   "updated": "2026-11-24 08:02:09.187711466 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.58755,
+   "lon": -122.77071,
+   "sog_kn": 0,
+   "cog": 238.7,
+   "heading": 138,
+   "nav_status": 0,
+   "updated": "2026-11-24 08:02:11.732123007 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64541,
+   "lon": -122.73505,
+   "sog_kn": 0,
+   "cog": 30.4,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-24 08:02:14.653114163 +0000 UTC"
+  },
+  {
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.64892,
+   "lon": -122.74562,
+   "sog_kn": 0.9,
+   "cog": 160.4,
+   "heading": 111,
+   "nav_status": 12,
+   "updated": "2026-11-24 08:02:17.226484169 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58077,
+   "lon": -122.75931,
+   "type_code": 31,
+   "destination": "PORTLAND PTSI",
+   "updated": "2026-11-24 08:02:17.384310583 +0000 UTC"
+  },
   {
    "mmsi": 367380280,
    "name": "WESTERN STAR",
@@ -10,31 +61,9 @@
    "lon": -123.40234,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 133,
+   "heading": 136,
    "nav_status": 0,
-   "updated": "2026-11-24 07:56:59.259076361 +0000 UTC"
-  },
-  {
-   "mmsi": 367646810,
-   "name": "EMERY ZIDELL",
-   "lat": 45.67759,
-   "lon": -122.7711,
-   "sog_kn": 0.1,
-   "cog": 75.1,
-   "heading": 168,
-   "nav_status": 1,
-   "updated": "2026-11-24 07:57:01.857066685 +0000 UTC"
-  },
-  {
-   "mmsi": 366971000,
-   "name": "YAQUINA",
-   "lat": 45.64342,
-   "lon": -122.73397,
-   "sog_kn": 4.5,
-   "cog": 288.7,
-   "heading": 293,
-   "nav_status": 3,
-   "updated": "2026-11-24 07:57:18.973463338 +0000 UTC"
+   "updated": "2026-11-24 08:02:19.51901243 +0000 UTC"
   }
  ]
 }
