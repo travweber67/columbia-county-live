@@ -1,6 +1,40 @@
 {
- "fetched_at": "2026-11-24T18:27:34Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-24T18:32:34Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.63274,
+   "lon": -122.70682,
+   "sog_kn": 0,
+   "cog": 24.2,
+   "heading": 121,
+   "nav_status": 1,
+   "updated": "2026-11-24 18:32:32.350587488 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.26718,
+   "lon": -123.51458,
+   "sog_kn": 10.1,
+   "cog": 70.4,
+   "heading": 67,
+   "nav_status": 0,
+   "updated": "2026-11-24 18:32:56.185314405 +0000 UTC"
+  },
+  {
+   "mmsi": 369970121,
+   "name": "ELTON",
+   "lat": 46.14403,
+   "lon": -123.33917,
+   "sog_kn": 10.5,
+   "cog": 281.1,
+   "heading": 279,
+   "nav_status": 0,
+   "updated": "2026-11-24 18:33:09.910821071 +0000 UTC"
+  }
+ ]
 }
