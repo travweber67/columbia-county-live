@@ -1,6 +1,62 @@
 {
- "fetched_at": "2026-11-24T03:53:15Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-24T03:56:24Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.63381,
+   "lon": -122.71491,
+   "sog_kn": 0.2,
+   "cog": 24.4,
+   "heading": 114,
+   "nav_status": 12,
+   "updated": "2026-11-24 03:56:45.053980502 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10342,
+   "lon": -122.91002,
+   "sog_kn": 0,
+   "cog": 65.8,
+   "heading": 77,
+   "nav_status": 3,
+   "updated": "2026-11-24 03:56:46.683685882 +0000 UTC"
+  },
+  {
+   "mmsi": 367513140,
+   "name": "CLEARWATER",
+   "lat": 45.64151,
+   "lon": -122.77733,
+   "sog_kn": 6.4,
+   "cog": 224.1,
+   "heading": 222,
+   "nav_status": 5,
+   "updated": "2026-11-24 03:56:58.063382049 +0000 UTC"
+  },
+  {
+   "mmsi": 367301450,
+   "name": "MAMA T",
+   "lat": 45.58096,
+   "lon": -122.76028,
+   "sog_kn": 0,
+   "cog": 225.9,
+   "heading": 123,
+   "nav_status": 15,
+   "updated": "2026-11-24 03:56:58.462001654 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60765,
+   "lon": -122.6778,
+   "sog_kn": 0.1,
+   "cog": 277,
+   "heading": 257,
+   "nav_status": 0,
+   "updated": "2026-11-24 03:57:11.363167511 +0000 UTC"
+  }
+ ]
 }
