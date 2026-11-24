@@ -1,49 +1,80 @@
 {
- "fetched_at": "2026-11-24T02:46:18Z",
+ "fetched_at": "2026-11-24T02:51:19Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368010320,
-   "name": "RICHARD O",
-   "lat": 45.62277,
-   "lon": -122.78842,
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40233,
    "sog_kn": 0,
-   "cog": 161,
-   "heading": 4,
+   "cog": 360,
+   "heading": 133,
    "nav_status": 0,
-   "updated": "2026-11-24 02:46:37.486827168 +0000 UTC"
+   "updated": "2026-11-24 02:51:40.601774582 +0000 UTC"
   },
   {
-   "mmsi": 538012272,
-   "name": "PERSEUS I",
-   "lat": 46.09439,
-   "lon": -122.93718,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-24 02:46:38.198891512 +0000 UTC"
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09299,
+   "lon": -122.92322,
+   "sog_kn": 0.2,
+   "cog": 10.6,
+   "heading": 221,
+   "nav_status": 0,
+   "updated": "2026-11-24 02:51:44.424035699 +0000 UTC"
+  },
+  {
+   "mmsi": 367047080,
+   "name": "THE CHIEF",
+   "lat": 45.63384,
+   "lon": -122.71385,
+   "type_code": 52,
+   "destination": "US^01Q4>0RG1",
+   "updated": "2026-11-24 02:51:48.147643643 +0000 UTC"
+  },
+  {
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.1101,
+   "lon": -122.96336,
+   "sog_kn": 0,
+   "cog": 220,
+   "heading": 131,
+   "nav_status": 5,
+   "updated": "2026-11-24 02:51:50.712851331 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58734,
+   "lon": -122.77045,
+   "sog_kn": 0,
+   "cog": 123.2,
+   "heading": 138,
+   "nav_status": 5,
+   "updated": "2026-11-24 02:51:50.870771253 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.61854,
+   "lon": -122.78777,
+   "type_code": 52,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-24 02:52:00.59738274 +0000 UTC"
   },
   {
    "mmsi": 367496010,
    "name": "DELIVERANCE",
-   "lat": 46.09409,
-   "lon": -122.94281,
+   "lat": 46.09407,
+   "lon": -122.94282,
    "sog_kn": 0,
-   "cog": 295.1,
+   "cog": 287.4,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-24 02:46:38.273262893 +0000 UTC"
-  },
-  {
-   "mmsi": 368083770,
-   "name": "SUPPORT",
-   "lat": 46.04369,
-   "lon": -122.88257,
-   "sog_kn": 0.1,
-   "cog": 100.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-24 02:46:51.616397203 +0000 UTC"
+   "updated": "2026-11-24 02:52:06.583481351 +0000 UTC"
   }
  ]
 }
