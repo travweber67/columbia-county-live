@@ -1,6 +1,51 @@
 {
- "fetched_at": "2026-11-24T10:31:54Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-24T10:36:54Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 31,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-24 10:37:12.80691019 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20002,
+   "lon": -123.3854,
+   "sog_kn": 0,
+   "cog": 6.2,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-24 10:37:24.777768152 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 45.64351,
+   "lon": -122.75289,
+   "sog_kn": 0,
+   "cog": 333.1,
+   "heading": 232,
+   "nav_status": 5,
+   "updated": "2026-11-24 10:37:33.447774393 +0000 UTC"
+  },
+  {
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.64745,
+   "lon": -122.73945,
+   "sog_kn": 0,
+   "cog": 285.3,
+   "heading": 285,
+   "nav_status": 12,
+   "updated": "2026-11-24 10:37:37.57427369 +0000 UTC"
+  }
+ ]
 }
