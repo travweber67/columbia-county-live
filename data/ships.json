@@ -1,40 +1,112 @@
 {
- "fetched_at": "2026-11-24T02:23:14Z",
+ "fetched_at": "2026-11-24T02:26:17Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.61855,
+   "lon": -122.78777,
+   "sog_kn": 0,
+   "cog": 243.9,
+   "heading": 84,
+   "nav_status": 12,
+   "updated": "2026-11-24 02:26:49.483056064 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64338,
+   "lon": -122.75283,
+   "type_code": 52,
+   "updated": "2026-11-24 02:26:51.651938536 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 189.5,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-24 02:26:52.523502489 +0000 UTC"
+  },
+  {
+   "mmsi": 538009633,
+   "name": "EVER ZENITH",
+   "lat": 46.09917,
+   "lon": -122.93952,
+   "sog_kn": 0,
+   "cog": 191,
+   "heading": 107,
+   "nav_status": 5,
+   "updated": "2026-11-24 02:26:57.140147389 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.64281,
+   "lon": -122.7251,
+   "sog_kn": 18.5,
+   "cog": 290.5,
+   "heading": 282,
+   "nav_status": 0,
+   "updated": "2026-11-24 02:26:59.537615177 +0000 UTC"
+  },
   {
    "mmsi": 367061930,
    "name": "TEBENKOF",
-   "lat": 46.19997,
-   "lon": -123.38553,
+   "lat": 46.19995,
+   "lon": -123.38554,
    "sog_kn": 0,
-   "cog": 184.4,
+   "cog": 162.8,
    "heading": 511,
    "nav_status": 15,
-   "updated": "2026-11-24 02:24:02.558559221 +0000 UTC"
+   "updated": "2026-11-24 02:27:02.432743813 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.82221,
+   "lon": -122.81925,
+   "sog_kn": 6.6,
+   "cog": 228.5,
+   "heading": 234,
+   "nav_status": 12,
+   "updated": "2026-11-24 02:27:02.871726559 +0000 UTC"
   },
   {
    "mmsi": 538010248,
    "name": "SAFEEN AL AMAL",
-   "lat": 46.12472,
-   "lon": -122.98885,
+   "lat": 46.12469,
+   "lon": -122.9889,
    "sog_kn": 0,
    "cog": 41.5,
    "heading": 138,
    "nav_status": 1,
-   "updated": "2026-11-24 02:24:09.621962834 +0000 UTC"
+   "updated": "2026-11-24 02:27:03.757764065 +0000 UTC"
   },
   {
-   "mmsi": 563236100,
-   "name": "XH DEEP COVER",
-   "lat": 45.65181,
-   "lon": -122.76009,
-   "sog_kn": 0.1,
-   "cog": 127.5,
-   "heading": 145,
-   "nav_status": 1,
-   "updated": "2026-11-24 02:24:22.082217663 +0000 UTC"
+   "mmsi": 314085000,
+   "name": "SOLENT",
+   "lat": 46.02288,
+   "lon": -122.86727,
+   "sog_kn": 9.6,
+   "cog": 136.7,
+   "heading": 138,
+   "nav_status": 0,
+   "updated": "2026-11-24 02:27:09.382196894 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08967,
+   "lon": -122.92974,
+   "type_code": 66,
+   "destination": "RAINIER",
+   "updated": "2026-11-24 02:27:10.175121702 +0000 UTC"
   }
  ]
 }
