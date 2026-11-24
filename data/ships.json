@@ -1,49 +1,6 @@
 {
- "fetched_at": "2026-11-24T02:11:16Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.84799,
-   "lon": -122.79812,
-   "type_code": 57,
-   "destination": "US^0UX0>?? ???",
-   "updated": "2026-11-24 02:11:32.447907819 +0000 UTC"
-  },
-  {
-   "mmsi": 367327440,
-   "name": "KATHRYN B.",
-   "lat": 45.60476,
-   "lon": -122.61392,
-   "sog_kn": 6.7,
-   "cog": 100.2,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-24 02:11:39.28685736 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09253,
-   "lon": -122.92364,
-   "sog_kn": 1.4,
-   "cog": 357.6,
-   "heading": 75,
-   "nav_status": 0,
-   "updated": "2026-11-24 02:11:51.75792095 +0000 UTC"
-  },
-  {
-   "mmsi": 368380350,
-   "name": "TAYA T",
-   "lat": 45.61186,
-   "lon": -122.64408,
-   "sog_kn": 0,
-   "cog": 21.2,
-   "heading": 122,
-   "nav_status": 0,
-   "updated": "2026-11-24 02:12:00.53289185 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-24T02:16:16Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
