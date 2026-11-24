@@ -1,51 +1,6 @@
 {
- "fetched_at": "2026-11-24T19:47:40Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 538010248,
-   "name": "SAFEEN AL AMAL",
-   "lat": 46.12469,
-   "lon": -122.98847,
-   "sog_kn": 0.3,
-   "cog": 323.2,
-   "heading": 158,
-   "nav_status": 1,
-   "updated": "2026-11-24 19:48:07.916225599 +0000 UTC"
-  },
-  {
-   "mmsi": 538090732,
-   "name": "NORDIC MERCHANTS",
-   "lat": 46.10377,
-   "lon": -122.95084,
-   "sog_kn": 0,
-   "cog": 48.2,
-   "heading": 119,
-   "nav_status": 5,
-   "updated": "2026-11-24 19:48:13.728539893 +0000 UTC"
-  },
-  {
-   "mmsi": 368280980,
-   "name": "CHRISSY",
-   "lat": 45.79229,
-   "lon": -122.84458,
-   "sog_kn": 0.1,
-   "cog": 292.2,
-   "heading": 50,
-   "nav_status": 0,
-   "updated": "2026-11-24 19:48:16.387753615 +0000 UTC"
-  },
-  {
-   "mmsi": 636024866,
-   "name": "CHAMPION TRADER",
-   "lat": 45.60569,
-   "lon": -122.78051,
-   "sog_kn": 0,
-   "cog": 157.8,
-   "heading": 152,
-   "nav_status": 5,
-   "updated": "2026-11-24 19:48:22.100896679 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-24T19:52:40Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
