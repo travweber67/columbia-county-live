@@ -1,6 +1,72 @@
 {
- "fetched_at": "2026-11-25T07:08:31Z",
+ "fetched_at": "2026-11-25T07:13:32Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 0 vessels with positions inside the county box.",
- "ships": []
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64359,
+   "lon": -122.75286,
+   "sog_kn": 0,
+   "cog": 108.1,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-25 07:13:46.142106977 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58422,
+   "lon": -122.76622,
+   "sog_kn": 0,
+   "cog": 299.8,
+   "heading": 145,
+   "nav_status": 5,
+   "updated": "2026-11-25 07:14:10.59811107 +0000 UTC",
+   "type_code": 52,
+   "destination": "US^00D5>0UHN"
+  },
+  {
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 46.1065,
+   "lon": -122.9568,
+   "sog_kn": 0,
+   "cog": 306.9,
+   "heading": 124,
+   "nav_status": 5,
+   "updated": "2026-11-25 07:14:15.460801901 +0000 UTC",
+   "type_code": 70,
+   "destination": "USLOG"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64566,
+   "lon": -122.73486,
+   "type_code": 79,
+   "updated": "2026-11-25 07:13:49.80472491 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09315,
+   "lon": -122.92321,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-25 07:13:53.846568314 +0000 UTC"
+  },
+  {
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.66727,
+   "lon": -122.76941,
+   "sog_kn": 4.6,
+   "cog": 158.3,
+   "heading": 158,
+   "nav_status": 0,
+   "updated": "2026-11-25 07:13:54.785957422 +0000 UTC"
+  }
+ ]
 }
