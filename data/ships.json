@@ -1,6 +1,115 @@
 {
- "fetched_at": "2026-11-25T04:38:19Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T04:43:20Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 311054300,
+   "name": "GLOVIS CARAVEL",
+   "lat": 45.6465,
+   "lon": -122.75588,
+   "sog_kn": 0,
+   "cog": 97.1,
+   "heading": 137,
+   "nav_status": 5,
+   "updated": "2026-11-25 04:43:34.332712949 +0000 UTC"
+  },
+  {
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64788,
+   "lon": -122.74098,
+   "sog_kn": 0,
+   "cog": 112.1,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-25 04:43:34.733190117 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 76.3,
+   "heading": 121,
+   "nav_status": 15,
+   "updated": "2026-11-25 04:43:42.627932141 +0000 UTC"
+  },
+  {
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 46.10649,
+   "lon": -122.9568,
+   "sog_kn": 0,
+   "cog": 306.9,
+   "heading": 124,
+   "nav_status": 5,
+   "updated": "2026-11-25 04:43:47.214881898 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37712,
+   "sog_kn": 0,
+   "cog": 189.3,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-25 04:43:47.726505287 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.6318,
+   "lon": -122.70134,
+   "sog_kn": 11.8,
+   "cog": 298.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-25 04:43:47.983474359 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 45.9208,
+   "lon": -122.80682,
+   "sog_kn": 7.8,
+   "cog": 190,
+   "heading": 184,
+   "nav_status": 0,
+   "updated": "2026-11-25 04:43:49.014686179 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79314,
+   "lon": -122.84321,
+   "sog_kn": 0,
+   "cog": 347.6,
+   "heading": 212,
+   "nav_status": 12,
+   "updated": "2026-11-25 04:43:50.119087057 +0000 UTC"
+  },
+  {
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 45.66692,
+   "lon": -122.76704,
+   "sog_kn": 0,
+   "cog": 256.1,
+   "heading": 164,
+   "nav_status": 1,
+   "updated": "2026-11-25 04:43:52.169803799 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.04418,
+   "lon": -122.88356,
+   "type_code": 31,
+   "destination": "HARBOROPPS-",
+   "updated": "2026-11-25 04:43:53.359704016 +0000 UTC"
+  }
+ ]
 }
