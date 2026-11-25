@@ -1,6 +1,46 @@
 {
- "fetched_at": "2026-11-25T14:29:05Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T14:34:05Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368126190,
+   "name": "GERONIMO",
+   "lat": 46.09899,
+   "lon": -122.95732,
+   "sog_kn": 0,
+   "cog": 296.7,
+   "heading": 296,
+   "nav_status": 5,
+   "updated": "2026-11-25 14:34:16.033657615 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.1534,
+   "lon": -123.37715,
+   "type_code": 99,
+   "updated": "2026-11-25 14:34:21.223314819 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.612,
+   "lon": -122.64537,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-25 14:34:31.210973264 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09301,
+   "lon": -122.92282,
+   "sog_kn": 0,
+   "cog": 3,
+   "heading": 239,
+   "nav_status": 0,
+   "updated": "2026-11-25 14:34:35.744051821 +0000 UTC"
+  }
+ ]
 }
