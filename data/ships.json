@@ -1,6 +1,70 @@
 {
- "fetched_at": "2026-11-25T06:33:28Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T06:38:29Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367301450,
+   "name": "MAMA T",
+   "lat": 45.58097,
+   "lon": -122.76027,
+   "sog_kn": 0,
+   "cog": 150.9,
+   "heading": 123,
+   "nav_status": 15,
+   "updated": "2026-11-25 06:38:48.816630621 +0000 UTC"
+  },
+  {
+   "mmsi": 311001605,
+   "name": "SAGA DISCOVERY",
+   "lat": 46.17476,
+   "lon": -123.10704,
+   "sog_kn": 0.1,
+   "cog": 36.3,
+   "heading": 121,
+   "nav_status": 1,
+   "updated": "2026-11-25 06:38:55.566902665 +0000 UTC"
+  },
+  {
+   "mmsi": 367047240,
+   "name": "DEFIANCE",
+   "lat": 45.64914,
+   "lon": -122.74656,
+   "sog_kn": 0,
+   "cog": 108.7,
+   "heading": 108,
+   "nav_status": 12,
+   "updated": "2026-11-25 06:38:57.605490397 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.6129,
+   "type_code": 0,
+   "updated": "2026-11-25 06:39:05.461285228 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.64253,
+   "lon": -122.77143,
+   "sog_kn": 0,
+   "cog": 270.2,
+   "heading": 229,
+   "nav_status": 12,
+   "updated": "2026-11-25 06:39:05.557694403 +0000 UTC"
+  },
+  {
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.71083,
+   "lon": -122.76779,
+   "sog_kn": 4.6,
+   "cog": 196.7,
+   "heading": 196,
+   "nav_status": 0,
+   "updated": "2026-11-25 06:39:13.570441902 +0000 UTC"
+  }
+ ]
 }
