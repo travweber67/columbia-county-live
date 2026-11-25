@@ -3100,6 +3100,17 @@ function getCommunityEventsSnap() {
   }
   return communityEventsSnapPromise;
 }
+function evFuzzySame(a, b) {
+  if (!a || !b || a.date !== b.date) return false;
+  const ta = normalizeEventTitle(a.title), tb = normalizeEventTitle(b.title);
+  if (ta === tb) return true;
+  const stop = { the: 1, a: 1, an: 1, of: 1, with: 1, at: 1, and: 1, annual: 1, free: 1, family: 1 };
+  const sig = t => t.split(' ').filter(w => w && !stop[w] && !/^\d+(rd|th|st|nd)?$/.test(w));
+  const sa = sig(ta), sb = sig(tb);
+  if (!sa.length || !sb.length) return false;
+  const inter = sa.filter(w => sb.indexOf(w) >= 0);
+  return inter.length >= 2 && inter.length >= Math.min(sa.length, sb.length) - 1;
+}
 function mergeCommunityInto(events, cSnap) {
   const base = events || [];
   if (!cSnap || !Array.isArray(cSnap.events)) return base.slice();
@@ -3107,6 +3118,18 @@ function mergeCommunityInto(events, cSnap) {
   const out = base.slice();
   cSnap.events.forEach(ev => {
     if (!ev || !ev.date || !ev.title) return;
+    // A bare Facebook scrape of this same event under different wording
+    // (no note, no flyer) loses to the hand-added community entry, which
+    // carries the description and location. (v162: the Scappoose Santa
+    // photos event shipped twice this way - FB title differed, so the
+    // exact-title check above never caught it.)
+    for (let i = out.length - 1; i >= 0; i--) {
+      const o = out[i];
+      if (o && !o.community && o.kind === 'comm' && !o.note && evFuzzySame(o, ev)) {
+        seen.delete(o.date + '|' + normalizeEventTitle(o.title));
+        out.splice(i, 1);
+      }
+    }
     const key = ev.date + '|' + normalizeEventTitle(ev.title);
     if (seen.has(key)) return; // a calendar or FB-event entry already covers it
     seen.add(key);
