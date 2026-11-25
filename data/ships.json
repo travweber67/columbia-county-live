@@ -1,6 +1,62 @@
 {
- "fetched_at": "2026-11-25T12:28:55Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T12:33:55Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 351421000,
+   "name": "ICY BAY",
+   "lat": 45.64378,
+   "lon": -122.74102,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-25 12:34:10.209095478 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15339,
+   "lon": -123.37715,
+   "sog_kn": 0,
+   "cog": 21.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-25 12:34:27.361944919 +0000 UTC"
+  },
+  {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.62271,
+   "lon": -122.78838,
+   "sog_kn": 0,
+   "cog": 59.5,
+   "heading": 4,
+   "nav_status": 0,
+   "updated": "2026-11-25 12:34:35.144039175 +0000 UTC",
+   "type_code": 31,
+   "destination": "PORTLAND OR ASHGROVE"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58734,
+   "lon": -122.77003,
+   "sog_kn": 0,
+   "cog": 257.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-25 12:34:28.40369167 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.38542,
+   "sog_kn": 0,
+   "cog": 17.9,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-25 12:34:34.134310175 +0000 UTC"
+  }
+ ]
 }
