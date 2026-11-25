@@ -758,6 +758,27 @@ a.cev-src-link:hover{text-decoration:underline;color:var(--text)}
 .tchart-pt-now{fill:#f59e0b;font-size:11px;font-weight:800}
 .tchart-turns{margin-top:8px}
 
+
+/* Tide chart — the full three-day curve (fetcher-built data/tide-chart.json).
+   Grown from the river sparkline family: same filled SVG water, same blue,
+   with day lines, the turns marked on the curve and a dashed now line. */
+.tchart-stations{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 6px}
+.tchart-sub{margin-bottom:8px}
+.tchart-now{margin-top:2px}
+.tchart-next{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 12px}
+.tchart-next-box{background:var(--panel-2);border:1px solid var(--border);border-radius:12px;padding:10px 12px;min-width:0}
+.tchart-next-k{display:block;font-size:.76rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.tchart-next-v{display:block;font-size:1.35rem;font-weight:800;font-variant-numeric:tabular-nums;margin:2px 0}
+.tchart-next-t{display:block;font-size:.85rem;color:var(--muted)}
+.tchart-king{display:inline-block;background:#b45309;color:#fff;font-size:.66rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;border-radius:999px;padding:2px 8px;margin-left:6px;vertical-align:2px;white-space:nowrap}
+.tchart-chart{margin:2px 0 4px}
+.tchart-chart svg{width:100%;height:auto;display:block;animation:sparkIn .7s ease both}
+.tchart-axis{fill:var(--muted);font-size:11px}
+.tchart-pt{fill:var(--muted);font-size:11px;font-weight:700}
+.tchart-pt-king{fill:var(--warn);font-size:11px;font-weight:800}
+.tchart-pt-now{fill:#f59e0b;font-size:11px;font-weight:800}
+.tchart-turns{margin-top:8px}
+
 .tide-turn-v{color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
 
 /* ---------- ISS pass predictions (X20 Round 9) ---------- */

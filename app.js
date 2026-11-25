@@ -5175,6 +5175,228 @@ function initTides() {
 }
 initTides();
 
+/* ---------- tide chart: the whole curve, three days ----------
+   Travis asked for it plainly (2026-11-25): a card like the River
+   Levels card, but for the tides — the full predicted curve, not just
+   the next turns the Bay/River Tides card lists. The fetcher pulls
+   NOAA's hourly predictions (plus the high/low turns) into
+   data/tide-chart.json on its normal run; stations whose NOAA feed
+   carries only high/low predictions get their curve drawn through
+   their own predicted turns, exact at every turn. A high tide in the
+   top handful of the year for its station wears a King tide tag —
+   the threshold rides in the data (king_ft, the station's ~99th
+   percentile predicted high for 2026). */
+const TCHART_L = {
+  en: {
+    loading: 'Loading the tide curve…',
+    fail: 'The tide curve couldn\'t load just now — the official predictions live at <a href="https://tidesandcurrents.noaa.gov/" target="_blank" rel="noopener">NOAA Tides &amp; Currents</a>.',
+    stnFail: 'Tide predictions couldn\'t load for this station just now — the official numbers live at ',
+    rising: 'coming in', falling: 'going out',
+    highWord: 'high tide', lowWord: 'low tide',
+    nextHigh: 'Next high tide', nextLow: 'Next low tide',
+    king: 'King tide', today: 'Today', tomorrow: 'Tomorrow', nowMark: 'now',
+    ft: 'ft', predNow: 'predicted height right now'
+  },
+  es: {
+    loading: 'Cargando la curva de mareas…',
+    fail: 'La curva de mareas no cargó esta vez — las predicciones oficiales están en <a href="https://tidesandcurrents.noaa.gov/" target="_blank" rel="noopener">NOAA Tides &amp; Currents</a>.',
+    stnFail: 'Las predicciones no cargaron para esta estación — los números oficiales están en ',
+    rising: 'subiendo', falling: 'bajando',
+    highWord: 'pleamar', lowWord: 'bajamar',
+    nextHigh: 'Próxima pleamar', nextLow: 'Próxima bajamar',
+    king: 'Marea real', today: 'Hoy', tomorrow: 'Mañana', nowMark: 'ahora',
+    ft: 'pies', predNow: 'altura predicha ahora mismo'
+  }
+};
+let tchartData = null;   // parsed data/tide-chart.json, kept as last good
+let tchartStn = null;    // selected station id
+function tchartLang() { try { return homeLang() === 'es' ? 'es' : 'en'; } catch (e) { return 'en'; } }
+function tchartAway(ms, es) {
+  const mins = Math.round(ms / 60000);
+  if (mins < 1) return es ? 'en cualquier momento' : 'any minute now';
+  if (mins < 60) return (es ? 'en ' : 'in ') + mins + ' min';
+  const h = Math.floor(mins / 60), r = mins % 60;
+  return (es ? 'en ' : 'in ') + h + (r ? 'h ' + String(r).padStart(2, '0') + 'm' : (es ? ' h' : ' hr'));
+}
+function tchartDayKey(ms) {
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit'
+  }).formatToParts(new Date(ms));
+  const g = t => (parts.find(p => p.type === t) || {}).value;
+  return g('year') + '-' + g('month') + '-' + g('day');
+}
+function tchartDayLabel(ms, L) {
+  const key = tchartDayKey(ms);
+  if (key === todayStrPT()) return L.today;
+  if (key === tchartDayKey(Date.now() + 864e5)) return L.tomorrow;
+  return new Intl.DateTimeFormat(tchartLang() === 'es' ? 'es' : 'en-US',
+    { timeZone: 'America/Los_Angeles', weekday: 'short' }).format(new Date(ms));
+}
+function tchartIsKing(st, p) { return p && p.type === 'H' && st.king_ft != null && p.v >= st.king_ft; }
+async function loadTideChart() {
+  const body = $('tidechart-body');
+  if (!body) return;
+  try {
+    const d = await getJSON('data/tide-chart.json');
+    if (d && d.stations && d.stations.length) {
+      tchartData = d;
+      if (!tchartStn || !d.stations.some(s => s.id === tchartStn)) {
+        let saved = null;
+        try { saved = localStorage.getItem('tchart-stn'); } catch (e) { /* private mode */ }
+        tchartStn = d.stations.some(s => s.id === saved) ? saved : d.stations[0].id;
+      }
+      setUpdated('tidechart-updated');
+      renderTideChart();
+    } else if (!tchartData) {
+      body.innerHTML = '<p class="fallback">⚠️ ' + TCHART_L[tchartLang()].fail + '</p>';
+    }
+  } catch (e) {
+    if (!tchartData) body.innerHTML = '<p class="fallback">⚠️ ' + TCHART_L[tchartLang()].fail + '</p>';
+    /* else: keep the last good curve on screen */
+  }
+}
+function renderTideChart() {
+  const body = $('tidechart-body');
+  if (!body || !tchartData) return;
+  const es = tchartLang() === 'es', L = TCHART_L[tchartLang()];
+  const st = tchartData.stations.find(s => s.id === tchartStn) || tchartData.stations[0];
+  let html = '<div class="tchart-stations" role="group" aria-label="Tide station">'
+    + tchartData.stations.map(s =>
+      '<button type="button" class="go-trip-btn tchart-stn' + (s.id === st.id ? ' active' : '')
+      + '" data-tchart-stn="' + s.id + '" aria-pressed="' + (s.id === st.id) + '">'
+      + esc(s.label) + '</button>').join('') + '</div>'
+    + '<div class="river-sub tchart-sub">' + esc(st.sub || '') + '</div>';
+  if (st.status !== 'ok' || !st.curve || !st.curve.length || !st.hilo || !st.hilo.length) {
+    body.innerHTML = html + '<p class="fallback">' + L.stnFail
+      + '<a href="https://tidesandcurrents.noaa.gov/stationhome.html?id=' + st.id
+      + '" target="_blank" rel="noopener">NOAA Tides &amp; Currents (' + esc(st.label) + ')</a>.</p>';
+    return;
+  }
+  const now = Date.now();
+  const curve = st.curve, hilo = st.hilo;
+  /* current predicted height: straight interpolation on the curve */
+  let cur = null;
+  for (let i = 0; i < curve.length - 1; i++) {
+    if (curve[i].t <= now && curve[i + 1].t >= now) {
+      const f = (now - curve[i].t) / (curve[i + 1].t - curve[i].t);
+      cur = curve[i].v + (curve[i + 1].v - curve[i].v) * f;
+      break;
+    }
+  }
+  if (cur == null) cur = now < curve[0].t ? curve[0].v : curve[curve.length - 1].v;
+  const nextIdx = hilo.findIndex(p => p.t > now);
+  const next = nextIdx >= 0 ? hilo[nextIdx] : null;
+  const nextHigh = hilo.find(p => p.t > now && p.type === 'H') || null;
+  const nextLow = hilo.find(p => p.t > now && p.type === 'L') || null;
+  /* the now line, in the Bay Tides card's own phrasing */
+  if (next) {
+    const kind = next.type === 'H' ? L.highWord : L.lowWord;
+    const kingNote = tchartIsKing(st, next) && next.type === 'H'
+      ? ' <span class="tchart-king">' + L.king + '</span>' : '';
+    if (next.t - now <= 30 * 60000) {
+      html += '<p class="tide-line tchart-now">🌊 ' + (es ? 'Casi ' : 'About ')
+        + '<strong>' + (es ? 'aguas en calma' : 'slack water') + '</strong> '
+        + (es ? 'ahora — ' : 'now — ') + '<strong>' + kind + ' ' + num(next.v, 1) + ' ' + L.ft + '</strong> '
+        + (es ? 'a las ' : 'at ') + fmtTime(new Date(next.t))
+        + ' (' + tchartAway(next.t - now, es) + ').' + kingNote + '</p>';
+    } else {
+      html += '<p class="tide-line tchart-now">' + (es ? 'La marea está ' : 'The tide is ')
+        + '<strong>' + (next.type === 'H' ? L.rising : L.falling) + '</strong> — '
+        + (es ? 'unas ' : 'about ') + '<strong>' + num(cur, 1) + ' ' + L.ft + '</strong> '
+        + (es ? 'ahora mismo, rumbo a la ' : 'right now, headed for ')
+        + '<strong>' + kind + ' ' + num(next.v, 1) + ' ' + L.ft + '</strong> '
+        + (es ? 'a las ' : 'at ') + fmtTime(new Date(next.t))
+        + ' (' + tchartAway(next.t - now, es) + ').' + kingNote + '</p>';
+    }
+  }
+  /* next high / next low boxes */
+  const box = (p, label) => {
+    if (!p) return '<div class="tchart-next-box"><span class="tchart-next-k">' + label
+      + '</span><span class="tchart-next-t">—</span></div>';
+    return '<div class="tchart-next-box"><span class="tchart-next-k">'
+      + (p.type === 'H' ? '▲ ' : '▼ ') + label
+      + (tchartIsKing(st, p) ? '<span class="tchart-king">' + L.king + '</span>' : '')
+      + '</span><span class="tchart-next-v">' + num(p.v, 1) + ' ' + L.ft + '</span>'
+      + '<span class="tchart-next-t">' + tchartDayLabel(p.t, L) + ' · ' + fmtTime(new Date(p.t))
+      + ' · ' + tchartAway(p.t - now, es) + '</span></div>';
+  };
+  html += '<div class="tchart-next">' + box(nextHigh, L.nextHigh) + box(nextLow, L.nextLow) + '</div>';
+  /* the curve — the river sparkline's family, grown up: filled SVG area,
+     day lines, the turns marked on the water, and a now line */
+  const W = 720, H = 236, padL = 40, padR = 8, padT = 18, padB = 22;
+  const plotW = W - padL - padR, plotH = H - padT - padB;
+  const x0 = curve[0].t, x1 = curve[curve.length - 1].t;
+  let lo = Infinity, hi = -Infinity;
+  curve.concat(hilo).forEach(p => { if (p.v < lo) lo = p.v; if (p.v > hi) hi = p.v; });
+  lo -= 0.7; hi += 0.7;
+  const X = t => padL + (t - x0) / (x1 - x0) * plotW;
+  const Y = v => padT + (hi - v) / (hi - lo) * plotH;
+  const botY = padT + plotH;
+  const pts = curve.map(p => X(p.t).toFixed(1) + ',' + Y(p.v).toFixed(1)).join(' ');
+  let svg = '<div class="tchart-chart"><svg viewBox="0 0 ' + W + ' ' + H
+    + '" role="img" aria-label="' + (es ? 'Altura predicha de la marea, tres días' : 'Predicted tide height, three days') + '">';
+  for (let d = 1; d <= 2; d++) {
+    const mx = X(x0 + d * 864e5);
+    svg += '<line x1="' + mx.toFixed(1) + '" y1="' + padT + '" x2="' + mx.toFixed(1)
+      + '" y2="' + botY + '" stroke="var(--border)" stroke-width="1"></line>';
+  }
+  for (let d = 0; d <= 2; d++) {
+    svg += '<text class="tchart-axis" x="' + (X(x0 + d * 864e5) + 5).toFixed(1) + '" y="' + (H - 6) + '">'
+      + tchartDayLabel(x0 + d * 864e5, L) + '</text>';
+  }
+  svg += '<text class="tchart-axis" x="' + (padL - 5) + '" y="' + (Y(hi - 0.7) + 4).toFixed(1)
+    + '" text-anchor="end">' + num(hi - 0.7, 1) + ' ' + L.ft + '</text>'
+    + '<text class="tchart-axis" x="' + (padL - 5) + '" y="' + (Y(lo + 0.7) + 4).toFixed(1)
+    + '" text-anchor="end">' + num(lo + 0.7, 1) + ' ' + L.ft + '</text>';
+  svg += '<polygon points="' + X(x0).toFixed(1) + ',' + botY + ' ' + pts + ' '
+    + X(x1).toFixed(1) + ',' + botY + '" fill="#53c7de" opacity="0.13"></polygon>'
+    + '<polyline points="' + pts + '" fill="none" stroke="#53c7de" stroke-width="2" stroke-linejoin="round"></polyline>';
+  hilo.forEach(p => {
+    if (p.t < x0 || p.t > x1) return;
+    const king = tchartIsKing(st, p);
+    svg += '<circle cx="' + X(p.t).toFixed(1) + '" cy="' + Y(p.v).toFixed(1) + '" r="3.4" fill="var(--panel)" stroke="'
+      + (king ? 'var(--warn)' : '#53c7de') + '" stroke-width="2"></circle>'
+      + '<text class="' + (king ? 'tchart-pt-king' : 'tchart-pt') + '" x="' + X(p.t).toFixed(1)
+      + '" y="' + (p.type === 'H' ? Y(p.v) - 8 : Y(p.v) + 16).toFixed(1)
+      + '" text-anchor="middle">' + num(p.v, 1) + '</text>';
+  });
+  if (now >= x0 && now <= x1) {
+    const nx = X(now);
+    svg += '<line x1="' + nx.toFixed(1) + '" y1="' + padT + '" x2="' + nx.toFixed(1)
+      + '" y2="' + botY + '" stroke="#f59e0b" stroke-width="1.4" stroke-dasharray="4 3"></line>'
+      + '<circle cx="' + nx.toFixed(1) + '" cy="' + Y(cur).toFixed(1) + '" r="3.6" fill="#f59e0b"></circle>'
+      + '<text class="tchart-pt-now" x="' + Math.max(padL + 14, Math.min(W - 14, nx)).toFixed(1)
+      + '" y="' + (padT - 6) + '" text-anchor="middle">' + L.nowMark + '</text>';
+  }
+  svg += '</svg></div>';
+  html += svg;
+  /* the next turns, as a list */
+  if (nextIdx >= 0) {
+    html += '<ul class="tide-turns tchart-turns">' + hilo.slice(nextIdx, nextIdx + 6).map(p =>
+      '<li><span class="tide-turn-t">' + (p.type === 'H' ? '▲ ' + (es ? 'Pleamar' : 'High') : '▼ ' + (es ? 'Bajamar' : 'Low'))
+      + ' · ' + tchartDayLabel(p.t, L) + ' ' + fmtTime(new Date(p.t)) + '</span>'
+      + '<span class="tide-turn-v">' + num(p.v, 1) + ' ' + L.ft
+      + (tchartIsKing(st, p) ? '<span class="tchart-king">' + L.king + '</span>' : '')
+      + '</span></li>').join('') + '</ul>';
+  }
+  body.innerHTML = html;
+}
+function initTideChart() {
+  const body = $('tidechart-body');
+  if (!body) return;
+  body.addEventListener('click', e => {
+    const b = e.target && e.target.closest ? e.target.closest('[data-tchart-stn]') : null;
+    if (!b) return;
+    tchartStn = b.getAttribute('data-tchart-stn');
+    try { localStorage.setItem('tchart-stn', tchartStn); } catch (err) { /* private mode */ }
+    renderTideChart();
+  });
+  loadTideChart();
+  setInterval(loadTideChart, 30 * 60 * 1000);
+  setInterval(() => { if (tchartData) renderTideChart(); }, 60 * 1000);
+}
+initTideChart();
+
 /* ---------- see the station: ISS pass predictions ---------- */
 /* X20 Round 9. The Sky card always knew where the station IS (a dot on
    the map, a lat/lon line) but never when to LOOK — and the look-up
@@ -6678,6 +6900,9 @@ const LANG_ES = {
   tidesh2: 'Mareas del río',
   tidesnote: 'El Columbia es un río de mareas en todo su paso por St. Helens — el océano sube por el canal dos veces al día. Para la rampa de botes, el muelle, la playa del río o una hora de pesca, aquí está el próximo cambio de marea en las dos estaciones de NOAA del condado.',
   tidesnote2: 'Las <em>predicciones</em> de marea de NOAA Tides &amp; Currents (estación 9439201 en St. Helens, estación 9439099 en Wauna), en pies sobre el nivel medio de la bajamar. El caudal del río empuja el agua real fuera de la predicción — un río alto corre más alto y más tarde — así que toma las horas como el plan, no como una promesa.',
+  tcharth2: 'Gráfico de mareas',
+  tchartnote: 'La curva completa, no solo los cambios — la altura predicha por NOAA hora a hora, desde hoy y por dos días más, en las dos estaciones del río. Elige una estación y mira cómo se mueve el agua.',
+  tchartnote2: 'Las <em>predicciones</em> de marea de NOAA Tides &amp; Currents (St. Helens 9439201, Wauna 9439099), en pies sobre el nivel medio de la bajamar. La etiqueta <strong>Marea real</strong> marca una pleamar entre las más altas de todo el año para esa estación. Son predicciones, no mediciones — un río alto corre más alto y más tarde que la curva.',
   fishh2: 'Conteos de peces — las presas',
   fishnote: 'Cada salmón que va hacia el alto Columbia pasa por la presa Bonneville, donde el Cuerpo de Ingenieros los cuenta en las escalas de peces. El día publicado más reciente suele ir uno o dos días detrás del calendario — los conteos se registran en video y se revisan antes de publicarse.',
   fishnote2: 'Conteos: Cuerpo de Ingenieros del Ejército de EE. UU., publicados por el Fish Passage Center y Columbia Basin Research (DART). Un cero es una respuesta real, no un vacío — significa que los contadores no vieron ninguno ese día.',
