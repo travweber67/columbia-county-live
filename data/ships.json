@@ -1,6 +1,60 @@
 {
- "fetched_at": "2026-11-25T11:23:30Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T11:28:51Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.5873,
+   "lon": -122.77005,
+   "type_code": 52,
+   "destination": "US^0R88>0UJB",
+   "updated": "2026-11-25 11:29:15.937068259 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.09325,
+   "lon": -122.92302,
+   "sog_kn": 0.3,
+   "cog": 80.3,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-25 11:29:24.382193563 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.09048,
+   "lon": -122.93232,
+   "sog_kn": 0,
+   "cog": 210.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-25 11:29:24.72539301 +0000 UTC"
+  },
+  {
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.67596,
+   "lon": -122.86745,
+   "sog_kn": 5.2,
+   "cog": 170.1,
+   "heading": 147,
+   "nav_status": 0,
+   "updated": "2026-11-25 11:29:29.330700086 +0000 UTC"
+  },
+  {
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.63274,
+   "lon": -122.70684,
+   "sog_kn": 0.1,
+   "cog": 236.6,
+   "heading": 120,
+   "nav_status": 1,
+   "updated": "2026-11-25 11:29:32.318790314 +0000 UTC"
+  }
+ ]
 }
