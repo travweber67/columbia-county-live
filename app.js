@@ -6473,11 +6473,11 @@ const LANG_ES = {
   fslogohere: 'Tu logo aquí',
   fs2eyebrow: 'Patrocinador fundador · 2026',
   fs2h3: 'Tu negocio aquí',
-  fs2p: 'Uno de solo tres lugares fundadores, para siempre — tu nombre y logo en la página Hoy que todo visitante abre primero. $49/mes, bloqueado mientras te quedes, y una prueba gratuita de 30 días antes de pagar algo.',
+  fs2p: 'Uno de solo tres lugares fundadores, para siempre — tu nombre y logo en la página Hoy que todo visitante abre primero. $49/mes, bloqueado mientras te quedes.',
   fs2cta: 'Reclama el lugar 2 &rarr;',
   fs3eyebrow: 'Patrocinador fundador · 2026',
   fs3h3: 'Tu negocio aquí',
-  fs3p: 'Uno de solo tres lugares fundadores, para siempre — tu nombre y logo en la página Hoy que todo visitante abre primero. $49/mes, bloqueado mientras te quedes, y una prueba gratuita de 30 días antes de pagar algo.',
+  fs3p: 'Uno de solo tres lugares fundadores, para siempre — tu nombre y logo en la página Hoy que todo visitante abre primero. $49/mes, bloqueado mientras te quedes.',
   fs3cta: 'Reclama el lugar 3 &rarr;',
   sscta: 'Reclama este lugar &rarr;',
   sst1: 'Patrocinador de sección · Viajes · Lugar 1 de 4 — Disponible',
@@ -6631,7 +6631,7 @@ const LANG_ES = {
   aboutsupporth: 'Apoya este servicio — patrocinadores fundadores',
   aboutp3: 'Los patrocinios fundadores ya están completos. Solo existirán tres lugares de fundador, y los negocios locales que los ocupen son quienes financian esta página — su apoyo es lo que mantiene gratis para todos el centro de seguridad de arriba. A cambio, cada patrocinador fundador recibe un lugar con su nombre en esta página, una insignia permanente de &ldquo;Patrocinador fundador &middot; 2026&rdquo; y un lugar en el muro de Socios comunitarios de abajo. <strong>Oregon Trail Lanes</strong>, de St. Helens, <strong>Kneeland Brothers LLC</strong> y <strong>C&amp;M Renovations</strong>, de St. Helens, ocupan los tres lugares — gracias. Los tres lugares de fundador están llenos, y el patrocinio fundador cierra el 31 de enero de 2027; después de esa fecha, no habrá nuevos patrocinadores fundadores, nunca.',
   aboutbtn: 'Pregunta por el patrocinio',
-  aboutnote: 'Ese botón abre un formulario corto de interés: el nombre de tu negocio u organización, un nombre de contacto, tu pueblo y lo que te interesa — un lugar de patrocinador fundador, anunciar un negocio u otra cosa. Te responderemos. Preguntar no cuesta nada y no compromete a nada: los patrocinadores fundadores empiezan con un periodo de prueba gratuito de 30 días, para que veas tu negocio en la página antes de gastar nada.',
+  aboutnote: 'Ese botón abre un formulario corto de interés: el nombre de tu negocio u organización, un nombre de contacto, tu pueblo y lo que te interesa — un lugar de patrocinador fundador, anunciar un negocio u otra cosa. Te responderemos. Preguntar no cuesta nada y no compromete a nada.',
   freshh2: '¿Qué tan fresca es esta página?',
   freshspan: 'las edades se actualizan cada 30 s',
   freshnote: 'Cada número aquí nombra su fuente y su edad. Verde es fresco, ámbar está envejeciendo, rojo significa tratar el panel como viejo y revisar la fuente oficial. Si una fuente se queda callada, este tablero lo muestra en vez de esconderlo.',
@@ -8474,8 +8474,9 @@ initSponsorLink();
    the views (Travis, 2026-11-16). Four spots woven through each of
    Travel, Outdoors and Events & More (12 total), spread between the
    content cards the way the founding house cells weave through Today.
-   No free month on this tier — the 30-day pilot is founding-panel
-   only. The cards themselves are static HTML in index.html (honest
+   No free month on any tier — the founding 30-day pilot was
+   dropped 2026-11-25 (Travis decision); offers already made keep
+   their terms. The cards themselves are static HTML in index.html (honest
    open-invite state, no JS needed); this table is the inventory of
    record. When a spot sells: set `business` here, and swap that
    article's invite contents for a taken cell (logo box, name, line,
