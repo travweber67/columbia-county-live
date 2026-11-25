@@ -1,65 +1,6 @@
 {
- "fetched_at": "2026-11-25T18:59:22Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 366999010,
-   "name": "ISLAND VOYAGER",
-   "lat": 45.89483,
-   "lon": -122.8052,
-   "type_code": 32,
-   "destination": "SEATTLE",
-   "updated": "2026-11-25 18:59:47.453617648 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58733,
-   "lon": -122.77013,
-   "sog_kn": 0,
-   "cog": 116.3,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-25 18:59:48.896721659 +0000 UTC"
-  },
-  {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60748,
-   "lon": -122.67767,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-25 18:59:51.193139335 +0000 UTC"
-  },
-  {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64787,
-   "lon": -122.74098,
-   "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-25 18:59:54.003063689 +0000 UTC"
-  },
-  {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.69032,
-   "lon": -122.77014,
-   "type_code": 57,
-   "destination": "US^0UX0>0ZBC",
-   "updated": "2026-11-25 18:59:59.367574659 +0000 UTC"
-  },
-  {
-   "mmsi": 636024866,
-   "name": "CHAMPION TRADER",
-   "lat": 45.60572,
-   "lon": -122.78051,
-   "type_code": 80,
-   "destination": "CHERRY POINT",
-   "updated": "2026-11-25 19:00:02.147696051 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-25T19:01:31Z",
+ "status": "key_needed",
+ "note": "No keyless live AIS feed for US waters could be verified from here: MarineTraffic's data endpoint returns a 403 bot wall from this network, AISHub/VesselFinder/Global Fishing Watch all require accounts, and the free public AIS APIs that exist (e.g. Finland's Digitraffic) cover other seas. AISStream.io's free tier IS the route: set AISSTREAM_API_KEY (free signup at aisstream.io) and this fetcher collects live Columbia River positions over their websocket.",
+ "ships": []
 }
