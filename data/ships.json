@@ -1,60 +1,6 @@
 {
- "fetched_at": "2026-11-25T18:29:20Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.07206,
-   "lon": -122.89755,
-   "sog_kn": 6.7,
-   "cog": 144.4,
-   "heading": 143,
-   "nav_status": 0,
-   "updated": "2026-11-25 18:29:20.336091262 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 45.67781,
-   "lon": -122.76995,
-   "sog_kn": 22,
-   "cog": 165.7,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-25 18:29:20.775238881 +0000 UTC"
-  },
-  {
-   "mmsi": 368136580,
-   "name": "ORIN L GREEN",
-   "lat": 46.09343,
-   "lon": -122.92283,
-   "sog_kn": 0.6,
-   "cog": 101.6,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-25 18:29:22.587592147 +0000 UTC"
-  },
-  {
-   "mmsi": 636024866,
-   "name": "CHAMPION TRADER",
-   "lat": 45.60572,
-   "lon": -122.78049,
-   "type_code": 80,
-   "destination": "CHERRY POINT",
-   "updated": "2026-11-25 18:29:25.731671733 +0000 UTC"
-  },
-  {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60754,
-   "lon": -122.67759,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-25 18:29:29.57361676 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-25T18:34:20Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
