@@ -1,6 +1,71 @@
 {
- "fetched_at": "2026-11-25T10:38:47Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T10:43:47Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 46.10647,
+   "lon": -122.9568,
+   "sog_kn": 0,
+   "cog": 306.9,
+   "heading": 124,
+   "nav_status": 5,
+   "updated": "2026-11-25 10:43:49.535399757 +0000 UTC"
+  },
+  {
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.63276,
+   "lon": -122.70679,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-25 10:43:50.671713197 +0000 UTC"
+  },
+  {
+   "mmsi": 538012272,
+   "name": "PERSEUS I",
+   "lat": 46.02597,
+   "lon": -122.86799,
+   "sog_kn": 0,
+   "cog": 11.8,
+   "heading": 318,
+   "nav_status": 5,
+   "updated": "2026-11-25 10:44:07.798491279 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09314,
+   "lon": -122.92312,
+   "sog_kn": 0.1,
+   "cog": 210,
+   "heading": 48,
+   "nav_status": 0,
+   "updated": "2026-11-25 10:44:17.097138577 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.61292,
+   "sog_kn": 0,
+   "cog": 345.8,
+   "heading": 121,
+   "nav_status": 15,
+   "updated": "2026-11-25 10:44:21.962784172 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.6076,
+   "lon": -122.67759,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-25 10:44:24.983304053 +0000 UTC"
+  }
+ ]
 }
