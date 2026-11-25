@@ -1,6 +1,71 @@
 {
- "fetched_at": "2026-11-25T13:34:00Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T13:39:01Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09313,
+   "lon": -122.92291,
+   "sog_kn": 0,
+   "cog": 117.3,
+   "heading": 181,
+   "nav_status": 0,
+   "updated": "2026-11-25 13:39:35.326739499 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.0905,
+   "lon": -122.93233,
+   "sog_kn": 0,
+   "cog": 239.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-25 13:39:35.720963096 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58733,
+   "lon": -122.77013,
+   "sog_kn": 0,
+   "cog": 277.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-25 13:39:39.302876223 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09305,
+   "lon": -122.92322,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-25 13:39:45.357900982 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35744,
+   "sog_kn": 0,
+   "cog": 145.2,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-25 13:39:46.078880607 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64361,
+   "lon": -122.75234,
+   "sog_kn": 0.1,
+   "cog": 209.2,
+   "heading": 133,
+   "nav_status": 5,
+   "updated": "2026-11-25 13:39:46.811914352 +0000 UTC"
+  }
+ ]
 }
