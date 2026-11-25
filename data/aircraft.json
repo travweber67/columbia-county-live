@@ -1,67 +1,27 @@
 {
- "fetched_at": "2026-11-25T04:43:20Z",
+ "fetched_at": "2026-11-25T04:48:20Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
-   "hex": "a3539d",
-   "callsign": "SKW3956",
+   "hex": "ad9db0",
+   "callsign": "ASA743",
+   "type": "B39M",
+   "alt_ft": 28325,
+   "gs_kn": 470.8,
+   "track": 350.22,
+   "lat": 46.041916,
+   "lon": -122.664631
+  },
+  {
+   "hex": "a66e3b",
+   "callsign": "SKW6444",
    "type": "E75L",
-   "alt_ft": 35000,
-   "gs_kn": 344.0,
-   "track": 175.67,
-   "lat": 45.594146,
-   "lon": -123.057587
-  },
-  {
-   "hex": "a0b88a",
-   "callsign": "UAL498",
-   "type": "A21N",
-   "alt_ft": 3975,
-   "gs_kn": 213.4,
-   "track": 278.62,
-   "lat": 45.733109,
-   "lon": -122.720568
-  },
-  {
-   "hex": "a8b5ad",
-   "callsign": "QXE2335",
-   "type": "E75L",
-   "alt_ft": 25700,
-   "gs_kn": 491.5,
-   "track": 355.57,
-   "lat": 46.327011,
-   "lon": -122.720501
-  },
-  {
-   "hex": "a535c2",
-   "callsign": "ASA457",
-   "type": "B739",
-   "alt_ft": 850,
-   "gs_kn": 136.1,
-   "track": 119.01,
-   "lat": 45.615421,
-   "lon": -122.674026
-  },
-  {
-   "hex": "ab3c58",
-   "callsign": "DAL1169",
-   "type": "B739",
-   "alt_ft": 27350,
-   "gs_kn": 492.2,
-   "track": 350.17,
-   "lat": 45.929043,
-   "lon": -122.636192
-  },
-  {
-   "hex": "c05efc",
-   "callsign": "JZA654",
-   "type": "DH8D",
-   "alt_ft": 550,
-   "gs_kn": 111.0,
-   "track": 119.1,
-   "lat": 45.607864,
-   "lon": -122.628993
+   "alt_ft": 23200,
+   "gs_kn": 467.9,
+   "track": 354.85,
+   "lat": 46.17577,
+   "lon": -122.658234
   },
   {
    "hex": "aced21",
@@ -70,8 +30,18 @@
    "alt_ft": "ground",
    "gs_kn": 0.0,
    "track": null,
-   "lat": 45.59602,
-   "lon": -122.620605
+   "lat": 45.596008,
+   "lon": -122.620602
+  },
+  {
+   "hex": "a25f6e",
+   "callsign": "FDX1807",
+   "type": "B763",
+   "alt_ft": "ground",
+   "gs_kn": 10.8,
+   "track": null,
+   "lat": 45.582508,
+   "lon": -122.613104
   }
  ]
 }
