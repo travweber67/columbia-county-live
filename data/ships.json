@@ -1,86 +1,81 @@
 {
- "fetched_at": "2026-11-25T10:03:44Z",
+ "fetched_at": "2026-11-25T10:08:45Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
-  {
-   "mmsi": 368126190,
-   "name": "GERONIMO",
-   "lat": 46.09901,
-   "lon": -122.95729,
-   "type_code": 32,
-   "destination": "PORTLAND_OR",
-   "updated": "2026-11-25 10:04:03.456939555 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09047,
-   "lon": -122.9323,
-   "sog_kn": 0,
-   "cog": 223.3,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-25 10:04:05.152331906 +0000 UTC"
-  },
   {
    "mmsi": 367466760,
    "name": "MARINA",
-   "lat": 46.19948,
+   "lat": 46.19953,
    "lon": -123.38503,
-   "type_code": 30,
-   "destination": "CATHLAMET WA",
-   "updated": "2026-11-25 10:04:11.718123274 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.09025,
-   "lon": -122.93157,
-   "sog_kn": 0.1,
-   "cog": 6.4,
+   "sog_kn": 0,
+   "cog": 203,
    "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-25 10:04:11.808103852 +0000 UTC"
+   "nav_status": 5,
+   "updated": "2026-11-25 10:09:01.603244116 +0000 UTC"
   },
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.91012,
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35744,
+   "type_code": 30,
+   "updated": "2026-11-25 10:09:16.110263324 +0000 UTC",
    "sog_kn": 0,
-   "cog": 25.7,
-   "heading": 74,
-   "nav_status": 0,
-   "updated": "2026-11-25 10:04:13.944725382 +0000 UTC"
+   "cog": 188.4,
+   "heading": 134,
+   "nav_status": 15
   },
   {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58755,
-   "lon": -122.77044,
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08967,
+   "lon": -122.92969,
+   "type_code": 66,
+   "destination": "RAINIER",
+   "updated": "2026-11-25 10:09:11.58743417 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.3854,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-25 10:09:16.68129851 +0000 UTC"
+  },
+  {
+   "mmsi": 367301450,
+   "name": "MAMA T",
+   "lat": 45.58097,
+   "lon": -122.76028,
    "sog_kn": 0,
-   "cog": 233.9,
-   "heading": 140,
+   "cog": 231,
+   "heading": 123,
+   "nav_status": 15,
+   "updated": "2026-11-25 10:09:18.499376498 +0000 UTC"
+  },
+  {
+   "mmsi": 367419960,
+   "name": "PALOUSE",
+   "lat": 45.77936,
+   "lon": -122.77364,
+   "sog_kn": 11.9,
+   "cog": 336,
+   "heading": 338,
    "nav_status": 0,
-   "updated": "2026-11-25 10:04:18.983770403 +0000 UTC"
+   "updated": "2026-11-25 10:09:19.947695047 +0000 UTC"
   },
   {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 45.58722,
-   "lon": -122.77013,
-   "type_code": 52,
-   "destination": "US^0R88>0UJB",
-   "updated": "2026-11-25 10:04:19.923859792 +0000 UTC"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.09316,
-   "lon": -122.92295,
-   "type_code": 69,
-   "updated": "2026-11-25 10:04:21.365114431 +0000 UTC"
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.64255,
+   "lon": -122.77138,
+   "sog_kn": 0,
+   "cog": 228.9,
+   "heading": 229,
+   "nav_status": 12,
+   "updated": "2026-11-25 10:09:25.494949 +0000 UTC"
   }
  ]
 }
