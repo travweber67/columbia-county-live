@@ -1,6 +1,60 @@
 {
- "fetched_at": "2026-11-25T21:23:34Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T21:29:32Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58076,
+   "lon": -122.7601,
+   "sog_kn": 0,
+   "cog": 75.8,
+   "heading": 126,
+   "nav_status": 5,
+   "updated": "2026-11-25 21:29:37.724378396 +0000 UTC"
+  },
+  {
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.72804,
+   "lon": -122.85876,
+   "sog_kn": 3,
+   "cog": 29.1,
+   "heading": 29,
+   "nav_status": 0,
+   "updated": "2026-11-25 21:29:42.583497741 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.59662,
+   "lon": -122.77865,
+   "sog_kn": 7.9,
+   "cog": 150.9,
+   "heading": 151,
+   "nav_status": 0,
+   "updated": "2026-11-25 21:30:01.618017656 +0000 UTC"
+  },
+  {
+   "mmsi": 538010248,
+   "name": "SAFEEN AL AMAL",
+   "lat": 46.12505,
+   "lon": -122.98687,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-25 21:30:03.423621232 +0000 UTC"
+  },
+  {
+   "mmsi": 367646810,
+   "name": "EMERY ZIDELL",
+   "lat": 45.67742,
+   "lon": -122.77178,
+   "sog_kn": 0.1,
+   "cog": 240.7,
+   "heading": 152,
+   "nav_status": 1,
+   "updated": "2026-11-25 21:30:07.250132014 +0000 UTC"
+  }
+ ]
 }
