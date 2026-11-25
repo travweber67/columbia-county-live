@@ -615,6 +615,11 @@ html[data-theme="dark"] .wx-day.wx-today .wx-dow{color:#f0a35e}
 .event-title a:hover{color:var(--accent);text-decoration:underline}
 .event-src{color:var(--muted);font-size:.74rem;white-space:nowrap}
 .event-fb-tag{flex:0 0 auto;background:#1877f2;color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.02em;padding:2px 7px;border-radius:999px;white-space:nowrap;align-self:center}
+/* v163: when the tag is a real link (it is, whenever the event has a URL) */
+a.event-fb-tag{cursor:pointer;text-decoration:none}
+a.event-fb-tag:hover{filter:brightness(1.15)}
+a.cev-src-link{text-decoration:none}
+a.cev-src-link:hover{text-decoration:underline;color:var(--text)}
 #events-body .status-note{margin-top:12px}
 @media (max-width:560px){
   .event-src{display:none}
@@ -3634,6 +3639,25 @@ html[data-theme="dark"] .cev-card{
   border:1px solid var(--border);border-radius:999px;padding:2px 8px;background:rgba(255,255,255,.35);
 }
 html[data-theme="dark"] .cev-src{background:rgba(255,255,255,.06)}
+/* v163: event detail expansion + the real source link inside it */
+.cev-card.cev-has-detail{cursor:pointer}
+.cev-details-btn{
+  flex:0 0 auto;align-self:center;min-height:32px;padding:6px 12px;
+  display:inline-flex;align-items:center;
+  font:inherit;font-size:.74rem;font-weight:700;white-space:nowrap;
+  color:var(--accent);background:transparent;border:1px solid var(--accent);
+  border-radius:999px;cursor:pointer;
+}
+.cev-details-btn:hover,.cev-details-btn:focus-visible{background:var(--accent);color:#fff}
+.cev-detail{margin-top:11px;border-top:1px solid var(--border);padding-top:10px}
+.cev-detail-note{font-size:.9rem;line-height:1.55;margin:0 0 10px;overflow-wrap:break-word}
+.cev-src-btn{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:.84rem;font-weight:700;color:#fff;background:var(--accent);
+  border-radius:999px;padding:8px 16px;text-decoration:none;
+}
+.cev-src-btn:hover{filter:brightness(1.08)}
+.cev-src-btn-fb{background:#1877f2}
 .cev-more-wrap{text-align:center;margin:4px 0 2px}
 .cev-more{
   font:inherit;font-size:.88rem;font-weight:700;cursor:pointer;color:var(--accent-dark);
@@ -5496,11 +5520,15 @@ body.rd-home .dir-addcard .share-btn{display:inline-block;text-decoration:none}
 .cev-dot-muni{background:#4a7196}
 .cev-legend-sep{opacity:.6;margin:0 2px}
 .cev-kind{
-  font-size:.68rem;font-weight:800;letter-spacing:.03em;white-space:nowrap;
-  padding:2px 8px;border-radius:999px;border:1px solid;align-self:center;
+  font-size:.7rem;font-weight:800;letter-spacing:.03em;white-space:nowrap;
+  align-self:center;
 }
-.cev-kind-comm{background:#fbe3c2;color:#8a4300;border-color:#eec27f}
-.cev-kind-muni{background:#d9e7f3;color:#2c4f73;border-color:#a9c3dc}
+/* v163: plain attribution text - no pill, no border, nothing that
+   reads as a button (Travis clicked "Community" expecting it to act). */
+.cev-kind-comm{color:#b45f06}
+.cev-kind-muni{color:#2c4f73}
+html[data-theme="dark"] .cev-kind-comm{color:#f0b269}
+html[data-theme="dark"] .cev-kind-muni{color:#9cc3e5}
 /* ID-scoped: the legacy dark rule (html[data-theme="dark"] .cev-card)
    sets border-color at higher specificity than a two-class rule, and
    would wash the stripe out to pale green-grey in dark mode. */

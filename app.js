@@ -3082,7 +3082,8 @@ function mergeFbInto(events, fbSnap) {
     if (seen.has(key)) return; // the calendar version wins
     seen.add(key);
     out.push({ date: ev.date, time: ev.time || '', title: ev.title, source: 'Facebook',
-               url: ev.url || '', location: ev.location || '', kind: 'comm' });
+               url: ev.url || '', location: ev.location || '', note: ev.note || '',
+               fb: true, kind: 'comm' });
   });
   return out;
 }
@@ -3119,13 +3120,15 @@ function mergeCommunityInto(events, cSnap) {
   cSnap.events.forEach(ev => {
     if (!ev || !ev.date || !ev.title) return;
     // A bare Facebook scrape of this same event under different wording
-    // (no note, no flyer) loses to the hand-added community entry, which
-    // carries the description and location. (v162: the Scappoose Santa
-    // photos event shipped twice this way - FB title differed, so the
-    // exact-title check above never caught it.)
+    // loses to the hand-added community entry, which carries the fuller
+    // description and location. (v162: the Scappoose Santa photos event
+    // shipped twice this way - FB title differed, so the exact-title
+    // check above never caught it. Since v163 FB entries may carry a
+    // description of their own, the o.fb flag - not the missing note -
+    // is what marks a scrape.)
     for (let i = out.length - 1; i >= 0; i--) {
       const o = out[i];
-      if (o && !o.community && o.kind === 'comm' && !o.note && evFuzzySame(o, ev)) {
+      if (o && !o.community && o.kind === 'comm' && (o.fb || !o.note) && evFuzzySame(o, ev)) {
         seen.delete(o.date + '|' + normalizeEventTitle(o.title));
         out.splice(i, 1);
       }
@@ -3206,30 +3209,80 @@ function cevLongDate(dateStr) {
   return new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'long', day: 'numeric' })
     .format(new Date(dateStr + 'T12:00:00'));
 }
+/* v163 (Travis, 2026-11-25): a calendar card OPENS its detail on site -
+   the description reads here, without leaving the page - and the source
+   element (the Facebook pill, a city/library name) is a real link to the
+   event's own page. The kind label (Community / City & County) is plain
+   attribution text, styled so it no longer reads as a button. */
+function cevSrcLinkLabel(ev) {
+  const es = langCur === 'es';
+  if (ev.source === 'Facebook') return es ? 'Ver el original en Facebook →' : 'See the original on Facebook →';
+  const s = ev.source || 'the source';
+  return es ? 'Ver el original en ' + s + ' →' : 'See the original at ' + s + ' →';
+}
+function cevToggleDetail(card, force) {
+  if (!card) return;
+  const det = card.querySelector('.cev-detail');
+  if (!det) return;
+  const open = typeof force === 'boolean' ? force : det.hidden;
+  det.hidden = !open;
+  card.classList.toggle('cev-open', open);
+  const btn = card.querySelector('[data-cev-details]');
+  if (btn) {
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.textContent = (langCur === 'es' ? (open ? 'Ocultar' : 'Detalles') : (open ? 'Hide' : 'Details')) + (open ? ' ▴' : ' ▾');
+  }
+}
 function cevCard(ev, today) {
   const p = cevParts(ev.date);
   const dow = new Date(ev.date + 'T12:00:00').getDay();
-  let h = '<article class="cev-card cev-k-' + evKindOf(ev) + '" data-evkey="' + esc(evcalKeyOf(ev)) + '">';
+  const es = langCur === 'es';
+  /* Community notes print inline on the card (the standing layout);
+     any other description waits inside the detail so long Facebook
+     write-ups do not balloon the list. */
+  const detailNote = !!ev.note && !ev.community;
+  const hasDetail = detailNote || !!ev.url;
+  let h = '<article class="cev-card cev-k-' + evKindOf(ev) + (hasDetail ? ' cev-has-detail' : '')
+    + '" data-evkey="' + esc(evcalKeyOf(ev)) + '">';
   h += '<div class="cev-badge" aria-hidden="true"><span class="cev-mon">' + CEV_MON3[p.m - 1] + '</span>'
     + '<span class="cev-daynum">' + p.d + '</span><span class="cev-dow">' + CEV_DOW3[dow] + '</span></div>';
   h += '<div class="cev-main">';
-  h += '<h3 class="cev-title">' + (ev.url
-    ? '<a href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(ev.title) + '</a>'
-    : esc(ev.title)) + '</h3>';
+  h += '<h3 class="cev-title">' + esc(ev.title) + '</h3>';
   h += '<p class="cev-when">' + esc(cevLongDate(ev.date)) + (ev.time ? ' · ' + esc(ev.time) : '')
     + (ev.date === today ? ' <span class="event-today-badge">Today</span>' : '') + '</p>';
   if (ev.location) h += '<p class="cev-place">' + esc(ev.location) + '</p>';
-  if (ev.note) h += '<p class="cev-note">' + esc(ev.note) + '</p>';
+  if (ev.note && ev.community) h += '<p class="cev-note">' + esc(ev.note) + '</p>';
   if (ev.img) h += '<img class="cev-photo" src="' + esc(ev.img) + '" alt="' + esc(ev.title) + '" loading="lazy" decoding="async">';
   h += '<div class="cev-actions">';
   if (!evcalIsCancelled(ev)) {
     h += '<button type="button" class="evcal-btn" data-evcal="' + esc(evcalKeyOf(ev))
       + '" title="Add this event to your calendar">＋ Add</button>';
   }
+  if (hasDetail) {
+    h += '<button type="button" class="cev-details-btn" data-cev-details="1" aria-expanded="false">'
+      + (es ? 'Detalles' : 'Details') + ' ▾</button>';
+  }
   h += '<span class="cev-kind cev-kind-' + evKindOf(ev) + '">' + esc(cevKindLabel(evKindOf(ev))) + '</span>';
-  if (ev.source === 'Facebook') h += '<span class="event-fb-tag">Facebook</span>';
-  else if (ev.source) h += '<span class="cev-src">' + esc(ev.source) + '</span>';
-  h += '</div></div></article>';
+  if (ev.source === 'Facebook') {
+    h += ev.url
+      ? '<a class="event-fb-tag cev-src-link" href="' + esc(ev.url) + '" target="_blank" rel="noopener">Facebook</a>'
+      : '<span class="event-fb-tag">Facebook</span>';
+  } else if (ev.source) {
+    h += ev.url
+      ? '<a class="cev-src cev-src-link" href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(ev.source) + '</a>'
+      : '<span class="cev-src">' + esc(ev.source) + '</span>';
+  }
+  h += '</div>';
+  if (hasDetail) {
+    h += '<div class="cev-detail" hidden>';
+    if (detailNote) h += '<p class="cev-detail-note">' + esc(ev.note) + '</p>';
+    if (ev.url) {
+      h += '<a class="cev-src-btn' + (ev.source === 'Facebook' ? ' cev-src-btn-fb' : '')
+        + '" href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(cevSrcLinkLabel(ev)) + '</a>';
+    }
+    h += '</div>';
+  }
+  h += '</div></article>';
   return h;
 }
 function cevMiniMonth(baseList) {
@@ -3312,14 +3365,20 @@ function renderEvents() {
   (snap.events || []).forEach(ev => { evcalByKey[evcalKeyOf(ev)] = ev; });
   let html = cevKindBar();
   if (shown.length) {
+    /* v163: a picked day lists ALL of that day's events from the full
+       kind-filtered set, not just the ones that survived the 16-row
+       "coming up" cap - picking Nov 28 used to show 2 of its ~8 events
+       and hide the rest entirely, bazaar included. The day markers
+       likewise read the full set, so a day with events always shows
+       its dot. The default coming-up list keeps the cap as designed. */
     let list = shown;
-    if (cevDay) list = shown.filter(ev => ev.date === cevDay);
+    if (cevDay) list = kindShown.filter(ev => ev.date === cevDay);
     const collapsed = !cevDay && !cevOpen && list.length > CEV_FIRST;
     const visible = collapsed ? list.slice(0, CEV_FIRST) : list;
     html += '<div class="cev-wrap">';
-    html += '<div class="cev-mini">' + cevMiniMonth(shown) + '</div>';
+    html += '<div class="cev-mini">' + cevMiniMonth(kindShown) + '</div>';
     html += '<div class="cev-side">';
-    html += '<div class="cev-pills" aria-label="Pick a day">' + cevPills(shown) + '</div>';
+    html += '<div class="cev-pills" aria-label="Pick a day">' + cevPills(kindShown) + '</div>';
     html += '<div class="cev-list-head">' + (cevDay
       ? '<h3 class="cev-list-h">' + esc(cevLongDate(cevDay)) + '</h3>'
         + '<button type="button" class="cev-reset" data-cev-reset="1">‹ Coming up</button>'
@@ -3387,7 +3446,21 @@ function initCevNav() {
       return;
     }
     if (t.closest('[data-cev-reset]')) { cevDay = null; cevOpen = false; renderEvents(); return; }
-    if (t.closest('[data-cev-more]')) { cevOpen = !cevOpen; renderEvents(); }
+    if (t.closest('[data-cev-more]')) { cevOpen = !cevOpen; renderEvents(); return; }
+    /* v163: the Details button toggles its card's detail; any other
+       click on the card's main area does the same. Clicks on links and
+       buttons inside the card (the source link, ＋ Add) keep their own
+       behavior and NEVER toggle the detail - the guard below is what
+       keeps the Facebook link and the card-open action from fighting. */
+    const detBtn = t.closest('[data-cev-details]');
+    if (detBtn) {
+      const card = detBtn.closest('.cev-card');
+      if (card) cevToggleDetail(card);
+      return;
+    }
+    if (t.closest('a, button')) return;
+    const card = t.closest('.cev-card');
+    if (card) cevToggleDetail(card);
   });
 }
 initCevNav();
@@ -10496,6 +10569,7 @@ function evsScrollToKey(key) {
       try { cards[i].scrollIntoView({ behavior: 'smooth', block: 'center' }); }
       catch (e) { cards[i].scrollIntoView(); }
       finderFlashEl(cards[i], false);
+      cevToggleDetail(cards[i], true); /* v163: land on the event OPEN, details showing */
       return;
     }
   }
