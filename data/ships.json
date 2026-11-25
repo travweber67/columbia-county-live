@@ -1,49 +1,73 @@
 {
- "fetched_at": "2026-11-25T09:38:42Z",
+ "fetched_at": "2026-11-25T09:43:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58756,
-   "lon": -122.77066,
-   "type_code": 31,
-   "destination": "PORTLAND",
-   "updated": "2026-11-25 09:39:00.607834011 +0000 UTC"
+   "mmsi": 338205428,
+   "name": "CLAIRE B",
+   "lat": 45.78977,
+   "lon": -122.80265,
+   "type_code": 52,
+   "destination": "",
+   "updated": "2026-11-25 09:44:29.429140882 +0000 UTC",
+   "sog_kn": 4.2,
+   "cog": 205.9,
+   "heading": 205,
+   "nav_status": 0
   },
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.2,
-   "lon": -123.3854,
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.09025,
+   "lon": -122.93157,
    "sog_kn": 0,
-   "cog": 350.1,
+   "cog": 360,
    "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-25 09:39:03.84340269 +0000 UTC",
-   "type_code": 99,
-   "destination": "NAKNEK"
+   "nav_status": 0,
+   "updated": "2026-11-25 09:44:03.457817078 +0000 UTC"
   },
   {
-   "mmsi": 538010248,
-   "name": "SAFEEN AL AMAL",
-   "lat": 46.12501,
-   "lon": -122.98814,
-   "sog_kn": 0,
-   "cog": 80.2,
-   "heading": 150,
-   "nav_status": 1,
-   "updated": "2026-11-25 09:39:14.142675161 +0000 UTC"
-  },
-  {
-   "mmsi": 563338800,
-   "name": "ISHIZUCHI STAR",
-   "lat": 45.63145,
-   "lon": -122.69715,
+   "mmsi": 636013613,
+   "name": "LONDON 2012",
+   "lat": 46.04435,
+   "lon": -122.88277,
    "type_code": 70,
-   "destination": "US VAN",
-   "updated": "2026-11-25 09:39:14.257242221 +0000 UTC"
+   "destination": "KR INC>US KAM",
+   "updated": "2026-11-25 09:44:09.123958135 +0000 UTC"
+  },
+  {
+   "mmsi": 367419960,
+   "name": "PALOUSE",
+   "lat": 45.69823,
+   "lon": -122.7719,
+   "sog_kn": 12,
+   "cog": 11.3,
+   "heading": 11,
+   "nav_status": 0,
+   "updated": "2026-11-25 09:44:10.147358069 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.79316,
+   "lon": -122.84323,
+   "sog_kn": 0,
+   "cog": 12,
+   "heading": 213,
+   "nav_status": 12,
+   "updated": "2026-11-25 09:44:20.809716587 +0000 UTC"
+  },
+  {
+   "mmsi": 256001000,
+   "name": "DOVER",
+   "lat": 45.63923,
+   "lon": -122.77791,
+   "sog_kn": 0,
+   "cog": 92.4,
+   "heading": 229,
+   "nav_status": 5,
+   "updated": "2026-11-25 09:44:25.602423782 +0000 UTC"
   }
  ]
 }
