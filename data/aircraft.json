@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-25T02:28:09Z",
+ "fetched_at": "2026-11-25T02:33:09Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
@@ -7,61 +7,41 @@
    "hex": "ae600b",
    "callsign": "COUGR24",
    "type": "H60",
-   "alt_ft": 1550,
-   "gs_kn": 110.9,
-   "track": 13.03,
-   "lat": 45.668289,
-   "lon": -123.086533
-  },
-  {
-   "hex": "aaf927",
-   "callsign": "N806LF",
-   "type": "EC35",
-   "alt_ft": 1575,
-   "gs_kn": 108.2,
-   "track": 183.71,
-   "lat": 45.694016,
-   "lon": -122.812813
-  },
-  {
-   "hex": "a17c65",
-   "callsign": "SKW3412",
-   "type": "E75L",
-   "alt_ft": 27400,
-   "gs_kn": 508.1,
-   "track": 0.9,
-   "lat": 46.174234,
-   "lon": -122.754158
+   "alt_ft": 1900,
+   "gs_kn": 110.3,
+   "track": 46.47,
+   "lat": 45.769555,
+   "lon": -122.9767
   },
   {
    "hex": "ae04f3",
    "callsign": "PAT936",
    "type": "BE20",
-   "alt_ft": 23975,
-   "gs_kn": 310.4,
-   "track": 326.57,
-   "lat": 45.866913,
-   "lon": -122.737114
+   "alt_ft": 18525,
+   "gs_kn": 317.0,
+   "track": 359.64,
+   "lat": 46.287231,
+   "lon": -122.885363
   },
   {
-   "hex": "a84a55",
-   "callsign": "QXE2087",
+   "hex": "a9d5df",
+   "callsign": "UAL1337",
+   "type": "B738",
+   "alt_ft": 3150,
+   "gs_kn": 170.4,
+   "track": 183.7,
+   "lat": 45.718813,
+   "lon": -122.814034
+  },
+  {
+   "hex": "a13c43",
+   "callsign": "SKW3127",
    "type": "E75L",
-   "alt_ft": 1675,
-   "gs_kn": 142.4,
-   "track": 119.45,
-   "lat": 45.635205,
-   "lon": -122.724632
-  },
-  {
-   "hex": "ad2ea1",
-   "callsign": "ASA1812",
-   "type": "B39M",
-   "alt_ft": 400,
-   "gs_kn": 144.1,
-   "track": 119.05,
-   "lat": 45.603195,
-   "lon": -122.642123
+   "alt_ft": 22000,
+   "gs_kn": 461.2,
+   "track": 354.4,
+   "lat": 46.306023,
+   "lon": -122.717834
   },
   {
    "hex": "a1db3a",
@@ -78,10 +58,10 @@
    "callsign": "FDX3704",
    "type": "B763",
    "alt_ft": "ground",
-   "gs_kn": 16.5,
+   "gs_kn": 0.0,
    "track": null,
-   "lat": 45.585604,
-   "lon": -122.610083
+   "lat": 45.5793,
+   "lon": -122.610269
   }
  ]
 }
