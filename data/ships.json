@@ -1,6 +1,69 @@
 {
- "fetched_at": "2026-11-25T20:34:29Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T20:39:29Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09328,
+   "lon": -122.9225,
+   "sog_kn": 1.1,
+   "cog": 331.8,
+   "heading": 62,
+   "nav_status": 3,
+   "updated": "2026-11-25 20:39:35.978889343 +0000 UTC"
+  },
+  {
+   "mmsi": 366396000,
+   "name": "NAT GEO SEA LION",
+   "lat": 46.0896,
+   "lon": -122.92974,
+   "type_code": 68,
+   "destination": "RAINIER",
+   "updated": "2026-11-25 20:39:45.33119902 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09328,
+   "lon": -122.92302,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-25 20:39:48.037796397 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64356,
+   "lon": -122.75232,
+   "sog_kn": 0,
+   "cog": 220.3,
+   "heading": 135,
+   "nav_status": 5,
+   "updated": "2026-11-25 20:39:49.088685478 +0000 UTC"
+  },
+  {
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.1101,
+   "lon": -122.96335,
+   "sog_kn": 0,
+   "cog": 219.9,
+   "heading": 131,
+   "nav_status": 5,
+   "updated": "2026-11-25 20:39:51.534336192 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 46.16405,
+   "lon": -123.2354,
+   "sog_kn": 7.8,
+   "cog": 54.3,
+   "heading": 57,
+   "nav_status": 12,
+   "updated": "2026-11-25 20:39:55.915309345 +0000 UTC"
+  }
+ ]
 }
