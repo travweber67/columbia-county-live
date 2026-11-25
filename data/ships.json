@@ -1,6 +1,38 @@
 {
- "fetched_at": "2026-11-25T16:23:32Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T16:29:13Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367419960,
+   "name": "PALOUSE",
+   "lat": 45.66671,
+   "lon": -122.76912,
+   "sog_kn": 6.1,
+   "cog": 157.9,
+   "heading": 158,
+   "nav_status": 0,
+   "updated": "2026-11-25 16:29:40.074467122 +0000 UTC"
+  },
+  {
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 45.69108,
+   "lon": -122.77186,
+   "type_code": 70,
+   "destination": "MX ZLO >> US VAN",
+   "updated": "2026-11-25 16:29:42.447115665 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 45.68615,
+   "lon": -122.77295,
+   "sog_kn": 0.1,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-25 16:29:49.891293738 +0000 UTC"
+  }
+ ]
 }
