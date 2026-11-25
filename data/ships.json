@@ -1,6 +1,62 @@
 {
- "fetched_at": "2026-11-25T11:03:49Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T11:08:49Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367425910,
+   "name": "SEA HORSE",
+   "lat": 46.10251,
+   "lon": -122.90947,
+   "sog_kn": 1.4,
+   "cog": 254.3,
+   "heading": 511,
+   "nav_status": 3,
+   "updated": "2026-11-25 11:09:04.968816257 +0000 UTC"
+  },
+  {
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.0905,
+   "lon": -122.93237,
+   "sog_kn": 0,
+   "cog": 323.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-25 11:09:05.498802834 +0000 UTC"
+  },
+  {
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.10255,
+   "lon": -122.90935,
+   "sog_kn": 1.9,
+   "cog": 256.3,
+   "heading": 256,
+   "nav_status": 0,
+   "updated": "2026-11-25 11:09:24.60882572 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 46.0906,
+   "lon": -122.93206,
+   "sog_kn": 0,
+   "cog": 226.2,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-25 11:09:24.810755975 +0000 UTC"
+  },
+  {
+   "mmsi": 351421000,
+   "name": "ICY BAY",
+   "lat": 45.64383,
+   "lon": -122.74099,
+   "sog_kn": 0,
+   "cog": 247.3,
+   "heading": 109,
+   "nav_status": 1,
+   "updated": "2026-11-25 11:09:32.819082346 +0000 UTC"
+  }
+ ]
 }
