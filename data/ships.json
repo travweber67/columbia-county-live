@@ -1,6 +1,107 @@
 {
- "fetched_at": "2026-11-25T20:59:31Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T21:04:31Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367708380,
+   "name": "JOHNNY PETERSON",
+   "lat": 45.79884,
+   "lon": -122.834,
+   "sog_kn": 3.1,
+   "cog": 262.8,
+   "heading": 250,
+   "nav_status": 3,
+   "updated": "2026-11-25 21:04:25.016555288 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19998,
+   "lon": -123.38545,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-25 21:04:25.700277913 +0000 UTC",
+   "type_code": 99,
+   "destination": "NAKNEK"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09312,
+   "lon": -122.92283,
+   "sog_kn": 0.1,
+   "cog": 158,
+   "heading": 221,
+   "nav_status": 0,
+   "updated": "2026-11-25 21:04:25.612128513 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.63449,
+   "lon": -122.7096,
+   "sog_kn": 2.3,
+   "cog": 129.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-25 21:04:25.613621012 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09325,
+   "lon": -122.92307,
+   "sog_kn": 0.3,
+   "cog": 61.9,
+   "heading": 219,
+   "nav_status": 0,
+   "updated": "2026-11-25 21:04:28.087829863 +0000 UTC"
+  },
+  {
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 45.66689,
+   "lon": -122.76714,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-25 21:04:34.416370358 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59407,
+   "lon": -122.77208,
+   "sog_kn": 0,
+   "cog": 346.3,
+   "heading": 149,
+   "nav_status": 5,
+   "updated": "2026-11-25 21:04:47.555366654 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60763,
+   "lon": -122.67766,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-25 21:05:04.546333724 +0000 UTC",
+   "type_code": 50
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15705,
+   "lon": -123.40232,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 131,
+   "nav_status": 0,
+   "updated": "2026-11-25 21:05:00.61024674 +0000 UTC"
+  }
+ ]
 }
