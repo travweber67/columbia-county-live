@@ -1,62 +1,81 @@
 {
- "fetched_at": "2026-11-25T07:53:27Z",
+ "fetched_at": "2026-11-25T07:58:35Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.6454,
-   "lon": -122.73505,
-   "type_code": 70,
-   "destination": "PER ORDERS",
-   "updated": "2026-11-25 07:54:17.871882011 +0000 UTC"
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.91012,
+   "sog_kn": 0,
+   "cog": 48.5,
+   "heading": 73,
+   "nav_status": 0,
+   "updated": "2026-11-25 07:58:54.357571354 +0000 UTC"
   },
   {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09047,
-   "lon": -122.93233,
-   "type_code": 52,
-   "destination": "COL RIVER",
-   "updated": "2026-11-25 07:54:24.367128291 +0000 UTC",
+   "mmsi": 636025785,
+   "name": "PAN SKY",
+   "lat": 45.63813,
+   "lon": -122.71073,
    "sog_kn": 0,
-   "cog": 244.3,
+   "cog": 303,
+   "heading": 121,
+   "nav_status": 5,
+   "updated": "2026-11-25 07:59:00.097179817 +0000 UTC"
+  },
+  {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.62272,
+   "lon": -122.78834,
+   "sog_kn": 0,
+   "cog": 38.6,
+   "heading": 4,
+   "nav_status": 0,
+   "updated": "2026-11-25 07:59:08.117612636 +0000 UTC"
+  },
+  {
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.63355,
+   "lon": -122.70348,
+   "sog_kn": 2.8,
+   "cog": 125.7,
+   "heading": 127,
+   "nav_status": 0,
+   "updated": "2026-11-25 07:59:13.56153683 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.64256,
+   "lon": -122.77142,
+   "sog_kn": 0,
+   "cog": 279,
+   "heading": 229,
+   "nav_status": 12,
+   "updated": "2026-11-25 07:59:14.923374763 +0000 UTC"
+  },
+  {
+   "mmsi": 367425910,
+   "name": "SEA HORSE",
+   "lat": 46.10259,
+   "lon": -122.90899,
+   "type_code": 33,
+   "updated": "2026-11-25 07:59:17.1422711 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00897,
+   "lon": -122.84802,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
-   "nav_status": 0
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35744,
-   "sog_kn": 0,
-   "cog": 301.3,
-   "heading": 135,
-   "nav_status": 15,
-   "updated": "2026-11-25 07:54:26.757539445 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58757,
-   "lon": -122.77042,
-   "sog_kn": 0,
-   "cog": 275.5,
-   "heading": 142,
    "nav_status": 0,
-   "updated": "2026-11-25 07:54:28.295198866 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09306,
-   "lon": -122.92331,
-   "sog_kn": 0,
-   "cog": 183.4,
-   "heading": 80,
-   "nav_status": 0,
-   "updated": "2026-11-25 07:54:29.744651435 +0000 UTC"
+   "updated": "2026-11-25 07:59:17.655359102 +0000 UTC"
   }
  ]
 }
