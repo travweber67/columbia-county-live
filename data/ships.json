@@ -1,6 +1,111 @@
 {
- "fetched_at": "2026-11-25T22:53:35Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T22:59:39Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 567025000,
+   "name": "EAST AYUTTHAYA",
+   "lat": 45.64128,
+   "lon": -122.77892,
+   "sog_kn": 7.7,
+   "cog": 50.7,
+   "heading": 53,
+   "nav_status": 0,
+   "updated": "2026-11-25 22:59:55.698002809 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.63297,
+   "lon": -122.7096,
+   "sog_kn": 8.7,
+   "cog": 120.9,
+   "heading": 118,
+   "nav_status": 0,
+   "updated": "2026-11-25 22:59:57.156855833 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.0933,
+   "lon": -122.9225,
+   "sog_kn": 0.4,
+   "cog": 144.3,
+   "heading": 59,
+   "nav_status": 3,
+   "updated": "2026-11-25 22:59:58.658174009 +0000 UTC"
+  },
+  {
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 45.63033,
+   "lon": -122.69578,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-25 23:00:01.214454766 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.38553,
+   "sog_kn": 0,
+   "cog": 182.6,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-25 23:00:01.440581709 +0000 UTC"
+  },
+  {
+   "mmsi": 636024866,
+   "name": "CHAMPION TRADER",
+   "lat": 45.6057,
+   "lon": -122.7805,
+   "type_code": 80,
+   "destination": "CHERRY POINT",
+   "updated": "2026-11-25 23:00:03.346999452 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.17807,
+   "lon": -123.42462,
+   "sog_kn": 10.6,
+   "cog": 142.8,
+   "heading": 143,
+   "nav_status": 3,
+   "updated": "2026-11-25 23:00:04.631719516 +0000 UTC"
+  },
+  {
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.64753,
+   "lon": -122.73982,
+   "type_code": 0,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-25 23:00:04.782370807 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64384,
+   "lon": -122.72579,
+   "sog_kn": 0,
+   "cog": 198,
+   "heading": 117,
+   "nav_status": 12,
+   "updated": "2026-11-25 23:00:10.154648635 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64582,
+   "lon": -122.74821,
+   "sog_kn": 6.5,
+   "cog": 129.4,
+   "heading": 125,
+   "nav_status": 0,
+   "updated": "2026-11-25 23:00:10.554692169 +0000 UTC"
+  }
+ ]
 }
