@@ -1,6 +1,40 @@
 {
- "fetched_at": "2026-11-25T21:53:34Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T21:59:34Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.0256,
+   "lon": -122.86966,
+   "sog_kn": 26,
+   "cog": 322.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-25 21:59:59.243861362 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58729,
+   "lon": -122.77017,
+   "sog_kn": 0,
+   "cog": 318.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-25 21:59:59.674991432 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 46.13636,
+   "lon": -123.01541,
+   "sog_kn": 7.9,
+   "cog": 119.9,
+   "heading": 123,
+   "nav_status": 12,
+   "updated": "2026-11-25 22:00:15.51926164 +0000 UTC"
+  }
+ ]
 }
