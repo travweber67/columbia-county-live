@@ -1,6 +1,93 @@
 {
- "fetched_at": "2026-11-25T08:13:36Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T08:18:36Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368280990,
+   "name": "CINDY B",
+   "lat": 45.61966,
+   "lon": -122.6813,
+   "sog_kn": 4.3,
+   "cog": 115.2,
+   "heading": 116,
+   "nav_status": 0,
+   "updated": "2026-11-25 08:18:52.699786037 +0000 UTC"
+  },
+  {
+   "mmsi": 367006570,
+   "name": "JEFFREY S",
+   "lat": 45.72361,
+   "lon": -122.76131,
+   "sog_kn": 0,
+   "cog": 14.1,
+   "heading": 190,
+   "nav_status": 1,
+   "updated": "2026-11-25 08:18:53.889153636 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.9101,
+   "type_code": 52,
+   "destination": "US^0UDW>0T9B",
+   "updated": "2026-11-25 08:18:56.209650336 +0000 UTC"
+  },
+  {
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 45.63039,
+   "lon": -122.69581,
+   "sog_kn": 0,
+   "cog": 320.1,
+   "heading": 126,
+   "nav_status": 5,
+   "updated": "2026-11-25 08:18:56.467473099 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58736,
+   "lon": -122.77046,
+   "sog_kn": 0,
+   "cog": 239.5,
+   "heading": 137,
+   "nav_status": 5,
+   "updated": "2026-11-25 08:18:58.326495262 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09306,
+   "lon": -122.92326,
+   "sog_kn": 0.1,
+   "cog": 96.5,
+   "heading": 13,
+   "nav_status": 0,
+   "updated": "2026-11-25 08:19:02.243263813 +0000 UTC"
+  },
+  {
+   "mmsi": 477113700,
+   "name": "SHANDONG XIN XING",
+   "lat": 45.99839,
+   "lon": -122.85186,
+   "sog_kn": 0,
+   "cog": 357.4,
+   "heading": 165,
+   "nav_status": 5,
+   "updated": "2026-11-25 08:19:12.92563523 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.0934,
+   "lon": -122.92294,
+   "sog_kn": 0.6,
+   "cog": 101.1,
+   "heading": 17,
+   "nav_status": 3,
+   "updated": "2026-11-25 08:19:17.126986364 +0000 UTC"
+  }
+ ]
 }
