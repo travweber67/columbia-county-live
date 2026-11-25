@@ -1,6 +1,73 @@
 {
- "fetched_at": "2026-11-25T07:28:33Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T07:33:33Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 45.63037,
+   "lon": -122.6958,
+   "sog_kn": 0,
+   "cog": 320.1,
+   "heading": 126,
+   "nav_status": 5,
+   "updated": "2026-11-25 07:33:56.670871839 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.0931,
+   "lon": -122.92254,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 75,
+   "nav_status": 3,
+   "updated": "2026-11-25 07:33:56.759000336 +0000 UTC"
+  },
+  {
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.21352,
+   "lon": -123.42665,
+   "sog_kn": 8.4,
+   "cog": 183.1,
+   "heading": 186,
+   "nav_status": 0,
+   "updated": "2026-11-25 07:34:04.545204831 +0000 UTC"
+  },
+  {
+   "mmsi": 368126190,
+   "name": "GERONIMO",
+   "lat": 46.09899,
+   "lon": -122.95732,
+   "sog_kn": 0,
+   "cog": 294,
+   "heading": 294,
+   "nav_status": 5,
+   "updated": "2026-11-25 07:34:13.733299582 +0000 UTC"
+  },
+  {
+   "mmsi": 477113700,
+   "name": "SHANDONG XIN XING",
+   "lat": 45.99839,
+   "lon": -122.85185,
+   "sog_kn": 0,
+   "cog": 357.4,
+   "heading": 165,
+   "nav_status": 5,
+   "updated": "2026-11-25 07:34:16.302058574 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.25913,
+   "lon": -123.46761,
+   "sog_kn": 0,
+   "cog": 345.3,
+   "heading": 89,
+   "nav_status": 3,
+   "updated": "2026-11-25 07:34:16.805622386 +0000 UTC"
+  }
+ ]
 }
