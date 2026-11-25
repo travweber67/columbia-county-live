@@ -1,6 +1,100 @@
 {
- "fetched_at": "2026-11-25T06:08:27Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T06:13:27Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 538012072,
+   "name": "DEVBULK ASLAN",
+   "lat": 45.98387,
+   "lon": -122.83527,
+   "sog_kn": 0,
+   "cog": 20.2,
+   "heading": 152,
+   "nav_status": 5,
+   "updated": "2026-11-25 06:13:41.483104408 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58752,
+   "lon": -122.77072,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-25 06:13:45.925355514 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58418,
+   "lon": -122.76612,
+   "sog_kn": 0,
+   "cog": 189.7,
+   "heading": 145,
+   "nav_status": 5,
+   "updated": "2026-11-25 06:13:46.352244508 +0000 UTC"
+  },
+  {
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.63279,
+   "lon": -122.70677,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-25 06:13:50.610934921 +0000 UTC"
+  },
+  {
+   "mmsi": 563338800,
+   "name": "ISHIZUCHI STAR",
+   "lat": 45.63147,
+   "lon": -122.69716,
+   "sog_kn": 0,
+   "cog": 347.1,
+   "heading": 307,
+   "nav_status": 5,
+   "updated": "2026-11-25 06:13:53.115881636 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20001,
+   "lon": -123.38538,
+   "sog_kn": 0,
+   "cog": 344.5,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-25 06:13:53.436764855 +0000 UTC"
+  },
+  {
+   "mmsi": 636025785,
+   "name": "PAN SKY",
+   "lat": 45.63815,
+   "lon": -122.71074,
+   "sog_kn": 0,
+   "cog": 303,
+   "heading": 121,
+   "nav_status": 5,
+   "updated": "2026-11-25 06:13:54.205936286 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.91012,
+   "type_code": 52,
+   "destination": "US^0UDW>0T9B",
+   "updated": "2026-11-25 06:13:54.376379929 +0000 UTC"
+  },
+  {
+   "mmsi": 367301450,
+   "name": "MAMA T",
+   "lat": 45.58097,
+   "lon": -122.76028,
+   "sog_kn": 0,
+   "cog": 152.5,
+   "heading": 123,
+   "nav_status": 15,
+   "updated": "2026-11-25 06:14:08.796375355 +0000 UTC"
+  }
+ ]
 }
