@@ -1,6 +1,84 @@
 {
- "fetched_at": "2026-11-25T07:38:33Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T07:43:34Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58737,
+   "lon": -122.77012,
+   "sog_kn": 0,
+   "cog": 324,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-25 07:43:49.48260794 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64356,
+   "lon": -122.75293,
+   "type_code": 52,
+   "updated": "2026-11-25 07:43:57.191043763 +0000 UTC"
+  },
+  {
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.19088,
+   "lon": -123.42867,
+   "type_code": 52,
+   "destination": "US^02SX>02A3",
+   "updated": "2026-11-25 07:43:59.742954741 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.38549,
+   "sog_kn": 0,
+   "cog": 28.9,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-25 07:44:00.683856755 +0000 UTC"
+  },
+  {
+   "mmsi": 636013613,
+   "name": "LONDON 2012",
+   "lat": 46.04436,
+   "lon": -122.88276,
+   "type_code": 70,
+   "destination": "KR INC>US KAM",
+   "updated": "2026-11-25 07:44:09.124808297 +0000 UTC"
+  },
+  {
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 46.10647,
+   "lon": -122.95679,
+   "type_code": 70,
+   "destination": "USLOG",
+   "updated": "2026-11-25 07:44:10.190100489 +0000 UTC"
+  },
+  {
+   "mmsi": 538011145,
+   "name": "FORTUNE BREEZE",
+   "lat": 45.62538,
+   "lon": -122.78822,
+   "type_code": 70,
+   "destination": "PORTLAND,USA",
+   "updated": "2026-11-25 07:44:12.906892381 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.09026,
+   "lon": -122.93158,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-25 07:44:13.133076922 +0000 UTC"
+  }
+ ]
 }
