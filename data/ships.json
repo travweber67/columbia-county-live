@@ -1,49 +1,6 @@
 {
- "fetched_at": "2026-11-25T06:48:30Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15707,
-   "lon": -123.40234,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 131,
-   "nav_status": 0,
-   "updated": "2026-11-25 06:48:50.164262145 +0000 UTC"
-  },
-  {
-   "mmsi": 538012072,
-   "name": "DEVBULK ASLAN",
-   "lat": 45.98391,
-   "lon": -122.83524,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-25 06:49:03.34460772 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.26565,
-   "lon": -123.45916,
-   "sog_kn": 3,
-   "cog": 222.6,
-   "heading": 41,
-   "nav_status": 3,
-   "updated": "2026-11-25 06:49:03.495437388 +0000 UTC"
-  },
-  {
-   "mmsi": 477113700,
-   "name": "SHANDONG XIN XING",
-   "lat": 45.99838,
-   "lon": -122.85187,
-   "sog_kn": 0,
-   "cog": 357.4,
-   "heading": 164,
-   "nav_status": 5,
-   "updated": "2026-11-25 06:49:14.995240181 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-25T06:53:27Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
