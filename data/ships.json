@@ -1,67 +1,58 @@
 {
- "fetched_at": "2026-11-26T00:29:46Z",
+ "fetched_at": "2026-11-26T00:34:47Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.07479,
-   "lon": -122.89253,
-   "sog_kn": 27,
-   "cog": 326.2,
+   "mmsi": 367047270,
+   "name": "LIBERTY",
+   "lat": 45.64791,
+   "lon": -122.741,
+   "type_code": 52,
+   "destination": "RIVERGATE",
+   "updated": "2026-11-26 00:35:03.764202348 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09312,
+   "lon": -122.92286,
+   "sog_kn": 0.1,
+   "cog": 258.5,
+   "heading": 213,
+   "nav_status": 0,
+   "updated": "2026-11-26 00:35:11.355380332 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.09028,
+   "lon": -122.93151,
+   "sog_kn": 0,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-26 00:30:00.80755824 +0000 UTC"
+   "updated": "2026-11-26 00:35:11.446212447 +0000 UTC"
   },
   {
-   "mmsi": 352002600,
-   "name": "SHARDANA",
-   "lat": 45.63037,
-   "lon": -122.69582,
-   "type_code": 70,
-   "destination": "USVAN",
-   "updated": "2026-11-26 00:30:01.565335536 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64354,
-   "lon": -122.75292,
-   "type_code": 52,
-   "destination": "US^0UU4>02MR",
-   "updated": "2026-11-26 00:30:11.747150555 +0000 UTC"
-  },
-  {
-   "mmsi": 538090732,
-   "name": "NORDIC MERCHANTS",
-   "lat": 46.1034,
-   "lon": -122.95,
-   "type_code": 70,
-   "destination": "USLOG",
-   "updated": "2026-11-26 00:30:14.238672436 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.08633,
-   "lon": -122.91778,
-   "sog_kn": 6.7,
-   "cog": 296.1,
-   "heading": 298,
+   "mmsi": 367315790,
+   "name": "LORI B.",
+   "lat": 46.09663,
+   "lon": -122.92886,
+   "sog_kn": 0.1,
+   "cog": 227,
+   "heading": 202,
    "nav_status": 0,
-   "updated": "2026-11-26 00:30:14.892353221 +0000 UTC"
+   "updated": "2026-11-26 00:35:12.447114855 +0000 UTC"
   },
   {
-   "mmsi": 367727410,
-   "name": "AMY B",
-   "lat": 45.64385,
-   "lon": -122.7258,
-   "sog_kn": 0,
-   "cog": 175.8,
-   "heading": 119,
-   "nav_status": 12,
-   "updated": "2026-11-26 00:30:19.577194261 +0000 UTC"
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15705,
+   "lon": -123.40233,
+   "type_code": 99,
+   "destination": "",
+   "updated": "2026-11-26 00:35:14.14356969 +0000 UTC"
   }
  ]
 }
