@@ -5398,6 +5398,7 @@ function initTideChart() {
 }
 initTideChart();
 
+
 /* ---------- fishing conditions: wind, waves and the tide, one card ----------
    Travis-directed, 2026-11-26. The old next-turn tides card (River
    Tides / Bay Tides) is retired: the Tide Chart card above already
@@ -5423,6 +5424,8 @@ const FISH_L = {
     highWord: 'high tide', lowWord: 'low tide',
     riverLevel: 'River level',
     windChartT: 'Wind — the next 24 hours',
+    windChart10T: 'Wind — the next 10 days',
+    range24: '24 hours', range10: '10 days',
     waveChartT: 'Waves — the next day and a half',
     windWord: 'Wind', gustWord: 'Gusts', nowMark: 'now',
     waveEvery: 'about every', sec: 'sec',
@@ -5438,6 +5441,8 @@ const FISH_L = {
     highWord: 'pleamar', lowWord: 'bajamar',
     riverLevel: 'Nivel del río',
     windChartT: 'Viento — las próximas 24 horas',
+    windChart10T: 'Viento — los próximos 10 días',
+    range24: '24 horas', range10: '10 días',
     waveChartT: 'Olas — el próximo día y medio',
     windWord: 'Viento', gustWord: 'Ráfagas', nowMark: 'ahora',
     waveEvery: 'cada', sec: 'seg',
@@ -5446,6 +5451,7 @@ const FISH_L = {
 };
 let fishwxData = null;    // parsed data/fishing.json, kept as last good
 let fishwxPlace = null;   // selected place id (CCL: river / bar)
+let fishwxRange = '24h';  // wind chart range: '24h' (default) or '10d'
 function fishwxLang() { try { return homeLang() === 'es' ? 'es' : 'en'; } catch (e) { return 'en'; } }
 function fishwxCompass(deg, L) {
   if (deg == null || isNaN(deg)) return '';
@@ -5499,9 +5505,20 @@ function fishwxTiles(place, L, es) {
   }
   return tiles ? '<div class="tchart-next fishwx-tiles">' + tiles + '</div>' : '';
 }
-function fishwxWindChart(place, L) {
-  const s = place.wind_series;
-  if (!s || s.length < 2) return '';
+function fishwxWindChart(place, L, es) {
+  const all = place.wind_series;
+  if (!all || all.length < 2) return '';
+  /* Range toggle (Travis, 2026-11-26): the detailed next-24-hours
+     chart stays the default; the 10-day view plots the same hourly
+     series (NWS first day + Open-Meteo extension from the fetcher)
+     with day separators, a short date label per day and that day's
+     peak wind labeled, so it still reads at a glance on a phone.
+     Hourly points are plotted as-is — never daily averages. */
+  const ten = fishwxRange === '10d';
+  const t0 = all[0].t;
+  const s = all.filter(p => p.t <= t0 + (ten ? 10 : 1) * 24 * 3600000);
+  if (s.length < 2) return '';
+  const title = ten ? L.windChart10T : L.windChartT;
   const now = Date.now();
   const W = 720, H = 216, padL = 42, padR = 10, padT = 20, padB = 22;
   const plotW = W - padL - padR, plotH = H - padT - padB;
@@ -5512,17 +5529,51 @@ function fishwxWindChart(place, L) {
   const X = t => padL + (t - x0) / (x1 - x0) * plotW;
   const Y = v => padT + (hi - v) / hi * plotH;
   const botY = padT + plotH;
-  let svg = '<div class="fishwx-chart-t">' + L.windChartT + '</div>'
+  let svg = '<div class="tchart-stations fishwx-range" role="group" aria-label="' + title + '">'
+    + '<button type="button" class="go-trip-btn tchart-stn' + (ten ? '' : ' active')
+    + '" data-fishwx-range="24h" aria-pressed="' + (!ten) + '">' + L.range24 + '</button>'
+    + '<button type="button" class="go-trip-btn tchart-stn' + (ten ? ' active' : '')
+    + '" data-fishwx-range="10d" aria-pressed="' + ten + '">' + L.range10 + '</button></div>'
+    + '<div class="fishwx-chart-t">' + title + '</div>'
     + '<div class="tchart-chart"><svg viewBox="0 0 ' + W + ' ' + H
-    + '" role="img" aria-label="' + L.windChartT + '">';
+    + '" role="img" aria-label="' + title + '">';
   svg += '<text class="tchart-axis" x="' + (padL - 5) + '" y="' + (Y(hi) + 4).toFixed(1)
     + '" text-anchor="end">' + hi + ' ' + L.mph + '</text>'
     + '<text class="tchart-axis" x="' + (padL - 5) + '" y="' + (Y(0) + 4).toFixed(1)
     + '" text-anchor="end">0</text>';
-  s.forEach((p, i) => {
-    if (i % 6 === 0) svg += '<text class="tchart-axis" x="' + X(p.t).toFixed(1)
-      + '" y="' + (H - 6) + '" text-anchor="middle">' + fmtTime(new Date(p.t)) + '</text>';
-  });
+  let dayGroups = null;
+  if (!ten) {
+    s.forEach((p, i) => {
+      if (i % 6 === 0) svg += '<text class="tchart-axis" x="' + X(p.t).toFixed(1)
+        + '" y="' + (H - 6) + '" text-anchor="middle">' + fmtTime(new Date(p.t)) + '</text>';
+    });
+  } else {
+    /* day separators + short date labels, one group per local day */
+    const groups = [];
+    s.forEach(p => {
+      const d = new Date(p.t);
+      const key = d.getFullYear() + '-' + d.getMonth() + '-' + d.getDate();
+      if (!groups.length || groups[groups.length - 1].key !== key) {
+        groups.push({ key, date: d, first: p, peak: p });
+      }
+      const g = groups[groups.length - 1];
+      if (p.mph > g.peak.mph) g.peak = p;
+    });
+    groups.forEach((g, gi) => {
+      if (gi > 0) {
+        svg += '<line x1="' + X(g.first.t).toFixed(1) + '" y1="' + padT
+          + '" x2="' + X(g.first.t).toFixed(1) + '" y2="' + botY
+          + '" stroke="#8fa89c" stroke-width="1" opacity="0.35"></line>';
+      }
+      const nextT = gi + 1 < groups.length ? groups[gi + 1].first.t : x1;
+      const midX = (X(g.first.t) + X(nextT)) / 2;
+      const lab = g.date.toLocaleDateString(es ? 'es-US' : 'en-US', { weekday: 'short' })
+        + ' ' + g.date.getDate();
+      svg += '<text class="tchart-axis" x="' + midX.toFixed(1)
+        + '" y="' + (H - 6) + '" text-anchor="middle">' + esc(lab) + '</text>';
+    });
+    dayGroups = groups; /* day peaks are drawn after the curve, below */
+  }
   const gpts = s.filter(p => p.gust_mph != null)
     .map(p => X(p.t).toFixed(1) + ',' + Y(p.gust_mph).toFixed(1)).join(' ');
   if (gpts) svg += '<polyline points="' + gpts + '" fill="none" stroke="#1f8a6d"'
@@ -5532,12 +5583,23 @@ function fishwxWindChart(place, L) {
     + X(x1).toFixed(1) + ',' + botY + '" fill="#34c19a" opacity="0.13"></polygon>'
     + '<polyline points="' + pts + '" fill="none" stroke="#34c19a" stroke-width="2"'
     + ' stroke-linejoin="round"></polyline>';
-  let pk = s[0];
-  s.forEach(p => { if (p.mph > pk.mph) pk = p; });
-  svg += '<circle cx="' + X(pk.t).toFixed(1) + '" cy="' + Y(pk.mph).toFixed(1)
-    + '" r="3.4" fill="var(--panel)" stroke="#34c19a" stroke-width="2"></circle>'
-    + '<text class="tchart-pt" x="' + X(pk.t).toFixed(1) + '" y="' + (Y(pk.mph) - 8).toFixed(1)
-    + '" text-anchor="middle">' + pk.mph + ' ' + L.mph + '</text>';
+  if (ten && dayGroups) {
+    /* each day's peak wind, labeled — the number people plan around */
+    dayGroups.forEach(g => {
+      const px = Math.max(padL + 18, Math.min(W - 18, X(g.peak.t)));
+      svg += '<circle cx="' + X(g.peak.t).toFixed(1) + '" cy="' + Y(g.peak.mph).toFixed(1)
+        + '" r="3" fill="var(--panel)" stroke="#34c19a" stroke-width="1.8"></circle>'
+        + '<text class="tchart-pt" x="' + px.toFixed(1) + '" y="' + (Y(g.peak.mph) - 7).toFixed(1)
+        + '" text-anchor="middle">' + g.peak.mph + '</text>';
+    });
+  } else {
+    let pk = s[0];
+    s.forEach(p => { if (p.mph > pk.mph) pk = p; });
+    svg += '<circle cx="' + X(pk.t).toFixed(1) + '" cy="' + Y(pk.mph).toFixed(1)
+      + '" r="3.4" fill="var(--panel)" stroke="#34c19a" stroke-width="2"></circle>'
+      + '<text class="tchart-pt" x="' + X(pk.t).toFixed(1) + '" y="' + (Y(pk.mph) - 8).toFixed(1)
+      + '" text-anchor="middle">' + pk.mph + ' ' + L.mph + '</text>';
+  }
   svg += fishwxNowLine(X, now, x0, x1, padT, botY, W, padL, L);
   svg += '</svg></div>'
     + '<div class="fishwx-legend"><span class="fishwx-leg"><span class="fishwx-swatch"></span>'
@@ -5609,7 +5671,7 @@ function renderFishwx() {
     html += '<div class="river-sub tchart-sub">' + esc(place.sub) + '</div>';
   }
   html += fishwxTiles(place, L, es);
-  html += fishwxWindChart(place, L);
+  html += fishwxWindChart(place, L, es);
   html += fishwxWaveChart(place, L);
   if (place.zones && place.zones.length) {
     html += '<div class="fishwx-zones"><div class="fishwx-chart-t">' + L.outlook + '</div>'
@@ -5639,6 +5701,12 @@ function initFishwx() {
   const body = $('fishwx-body');
   if (!body) return;
   body.addEventListener('click', e => {
+    const r = e.target && e.target.closest ? e.target.closest('[data-fishwx-range]') : null;
+    if (r) {
+      fishwxRange = r.getAttribute('data-fishwx-range') === '10d' ? '10d' : '24h';
+      renderFishwx();
+      return;
+    }
     const b = e.target && e.target.closest ? e.target.closest('[data-fishwx-place]') : null;
     if (!b) return;
     fishwxPlace = b.getAttribute('data-fishwx-place');
@@ -7223,7 +7291,7 @@ const LANG_ES = {
   tcharth2: 'Gráfico de mareas',
   fishwxh2: 'Condiciones de pesca',
   fishwxnote: 'Antes de lanzar: el viento, las olas y la marea en un solo lugar — los números que deciden una hora de pesca, explicados con claridad. El Columbia es un río de mareas en todo su paso por St. Helens; el océano sube por el canal dos veces al día.',
-  fishwxnote2: 'Pronósticos de viento y olas del Servicio Meteorológico Nacional; mediciones de boyas del Centro Nacional de Boyas de la NOAA; mareas de NOAA Tides & Currents; el nivel del río es del USGS. Un pronóstico es un plan, no una promesa — revise el reporte de la barra antes de cruzar.',
+  fishwxnote2: 'Pronósticos de viento y olas del Servicio Meteorológico Nacional, con el pronóstico de viento a 10 días de Open-Meteo; mediciones de boyas del Centro Nacional de Boyas de la NOAA; mareas de NOAA Tides & Currents; el nivel del río es del USGS. Un pronóstico es un plan, no una promesa — revise el reporte de la barra antes de cruzar.',
   tchartnote: 'La curva completa, no solo los cambios — la altura predicha por NOAA hora a hora, desde hoy y por dos días más, en las dos estaciones del río. Elige una estación y mira cómo se mueve el agua.',
   tchartnote2: 'Las <em>predicciones</em> de marea de NOAA Tides &amp; Currents (St. Helens 9439201, Wauna 9439099), en pies sobre el nivel medio de la bajamar. La etiqueta <strong>Marea real</strong> marca una pleamar entre las más altas de todo el año para esa estación. Son predicciones, no mediciones — un río alto corre más alto y más tarde que la curva.',
   fishh2: 'Conteos de peces — las presas',
