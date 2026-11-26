@@ -1,6 +1,74 @@
 {
- "fetched_at": "2026-11-26T13:00:45Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-26T13:05:45Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64718,
+   "lon": -122.73948,
+   "type_code": 52,
+   "destination": "SRT PASCO",
+   "updated": "2026-11-26 13:06:15.985587549 +0000 UTC"
+  },
+  {
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 45.6304,
+   "lon": -122.69577,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-26 13:06:01.389689399 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61106,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 210.6,
+   "heading": 120,
+   "nav_status": 15,
+   "updated": "2026-11-26 13:06:02.328492548 +0000 UTC"
+  },
+  {
+   "mmsi": 367719170,
+   "name": "RYAN POINT",
+   "lat": 45.64758,
+   "lon": -122.73982,
+   "sog_kn": 0,
+   "cog": 89.8,
+   "heading": 114,
+   "nav_status": 12,
+   "updated": "2026-11-26 13:06:11.727180292 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20001,
+   "lon": -123.38553,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-26 13:06:16.750814842 +0000 UTC"
+  },
+  {
+   "mmsi": 538090732,
+   "name": "NORDIC MERCHANTS",
+   "lat": 46.10346,
+   "lon": -122.94999,
+   "type_code": 70,
+   "destination": "USLOG",
+   "updated": "2026-11-26 13:06:16.751942187 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.60136,
+   "lon": -122.77653,
+   "type_code": 31,
+   "destination": "HARBOROPPS-",
+   "updated": "2026-11-26 13:06:18.542413972 +0000 UTC"
+  }
+ ]
 }
