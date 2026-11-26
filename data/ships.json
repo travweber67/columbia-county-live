@@ -1,6 +1,38 @@
 {
- "fetched_at": "2026-11-26T14:50:53Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-26T14:53:41Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 213.4,
+   "heading": 123,
+   "nav_status": 15,
+   "updated": "2026-11-26 14:54:31.81615215 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59412,
+   "lon": -122.77215,
+   "type_code": 70,
+   "destination": "NOT AVAILABLE",
+   "updated": "2026-11-26 14:54:34.548511029 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09353,
+   "lon": -122.92408,
+   "sog_kn": 0,
+   "cog": 236,
+   "heading": 119,
+   "nav_status": 0,
+   "updated": "2026-11-26 14:54:35.747801255 +0000 UTC"
+  }
+ ]
 }
