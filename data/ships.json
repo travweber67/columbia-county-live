@@ -1,93 +1,99 @@
 {
- "fetched_at": "2026-11-26T00:14:45Z",
+ "fetched_at": "2026-11-26T00:19:45Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.04448,
-   "lon": -122.88243,
-   "sog_kn": 0.2,
-   "cog": 174.2,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-26 00:14:59.511442255 +0000 UTC"
+   "mmsi": 366888830,
+   "name": "KAHU",
+   "lat": 45.61165,
+   "lon": -122.64382,
+   "type_code": 52,
+   "destination": "PDX",
+   "updated": "2026-11-26 00:19:54.600890829 +0000 UTC"
   },
   {
-   "mmsi": 368070380,
-   "name": "TOKITAE",
-   "lat": 45.60748,
-   "lon": -122.6776,
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 46.09061,
+   "lon": -122.9321,
+   "sog_kn": 0,
+   "cog": 259.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-26 00:19:54.770100629 +0000 UTC"
+  },
+  {
+   "mmsi": 367575580,
+   "name": "DIANE B.",
+   "lat": 46.09643,
+   "lon": -122.92969,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-26 00:20:07.743563203 +0000 UTC",
+   "sog_kn": 7.7,
+   "cog": 227.4,
+   "heading": 221,
+   "nav_status": 5
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40233,
    "sog_kn": 0,
    "cog": 360,
+   "heading": 135,
+   "nav_status": 0,
+   "updated": "2026-11-26 00:20:08.938206215 +0000 UTC"
+  },
+  {
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 46.1065,
+   "lon": -122.95677,
+   "type_code": 70,
+   "destination": "USLOG",
+   "updated": "2026-11-26 00:20:10.571018748 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64565,
+   "lon": -122.73485,
+   "type_code": 79,
+   "updated": "2026-11-26 00:20:12.443136884 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.18405,
+   "lon": -123.12004,
+   "sog_kn": 10.4,
+   "cog": 115.2,
+   "heading": 122,
+   "nav_status": 3,
+   "updated": "2026-11-26 00:20:15.929957075 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.14325,
+   "lon": -123.38364,
+   "sog_kn": 9.2,
+   "cog": 342.1,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-26 00:15:09.994258558 +0000 UTC"
+   "updated": "2026-11-26 00:20:17.150684737 +0000 UTC"
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19999,
-   "lon": -123.38551,
-   "sog_kn": 0,
-   "cog": 215.8,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-26 00:15:11.135242213 +0000 UTC"
-  },
-  {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.63814,
-   "lon": -122.72903,
-   "sog_kn": 0,
-   "cog": 292.5,
-   "heading": 115,
-   "nav_status": 0,
-   "updated": "2026-11-26 00:15:11.201420167 +0000 UTC"
-  },
-  {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.91912,
-   "lon": -122.8098,
-   "type_code": 57,
-   "destination": "VANCOUVER",
-   "updated": "2026-11-26 00:15:14.107650999 +0000 UTC"
-  },
-  {
-   "mmsi": 567025000,
-   "name": "EAST AYUTTHAYA",
-   "lat": 45.87667,
-   "lon": -122.79226,
-   "sog_kn": 12.1,
-   "cog": 329.9,
-   "heading": 334,
-   "nav_status": 0,
-   "updated": "2026-11-26 00:15:15.059416508 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.07086,
-   "lon": -122.89682,
-   "sog_kn": 6.1,
-   "cog": 324,
-   "heading": 332,
-   "nav_status": 0,
-   "updated": "2026-11-26 00:15:16.482537689 +0000 UTC"
-  },
-  {
-   "mmsi": 538090732,
-   "name": "NORDIC MERCHANTS",
-   "lat": 46.10342,
-   "lon": -122.94997,
-   "sog_kn": 0,
-   "cog": 323.3,
-   "heading": 118,
-   "nav_status": 5,
-   "updated": "2026-11-26 00:15:17.110621843 +0000 UTC"
+   "mmsi": 366396000,
+   "name": "NAT GEO SEA LION",
+   "lat": 46.08953,
+   "lon": -122.92973,
+   "type_code": 68,
+   "destination": "RAINIER",
+   "updated": "2026-11-26 00:20:18.841214138 +0000 UTC"
   }
  ]
 }
