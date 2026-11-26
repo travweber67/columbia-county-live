@@ -1,6 +1,75 @@
 {
- "fetched_at": "2026-11-26T21:16:23Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-26T21:21:24Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 636013613,
+   "name": "LONDON 2012",
+   "lat": 46.0444,
+   "lon": -122.88269,
+   "type_code": 70,
+   "destination": "KR INC>US KAM",
+   "updated": "2026-11-26 21:21:33.294076876 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10333,
+   "lon": -122.91026,
+   "sog_kn": 0,
+   "cog": 83.4,
+   "heading": 91,
+   "nav_status": 3,
+   "updated": "2026-11-26 21:21:34.104265433 +0000 UTC"
+  },
+  {
+   "mmsi": 367047150,
+   "name": "CAPTAIN BOB",
+   "lat": 45.64725,
+   "lon": -122.73951,
+   "type_code": 0,
+   "destination": "PASCO",
+   "updated": "2026-11-26 21:21:38.151435076 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.6075,
+   "lon": -122.6775,
+   "type_code": 50,
+   "updated": "2026-11-26 21:21:46.140803744 +0000 UTC"
+  },
+  {
+   "mmsi": 636020172,
+   "name": "VITA OLYMPIC",
+   "lat": 46.16804,
+   "lon": -123.41239,
+   "sog_kn": 10.9,
+   "cog": 136.3,
+   "heading": 136,
+   "nav_status": 0,
+   "updated": "2026-11-26 21:21:48.9384563 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.1056,
+   "lon": -122.95547,
+   "type_code": 52,
+   "destination": "CSR OPS",
+   "updated": "2026-11-26 21:21:49.706125245 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.14551,
+   "lon": -123.38444,
+   "sog_kn": 4.7,
+   "cog": 16.3,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-26 21:21:57.919052594 +0000 UTC"
+  }
+ ]
 }
