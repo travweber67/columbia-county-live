@@ -1,71 +1,103 @@
 {
- "fetched_at": "2026-11-26T00:39:48Z",
+ "fetched_at": "2026-11-26T00:44:48Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367006570,
-   "name": "JEFFREY S",
-   "lat": 45.72238,
-   "lon": -122.76334,
-   "sog_kn": 0.1,
-   "cog": 283.4,
-   "heading": 89,
+   "mmsi": 256001000,
+   "name": "DOVER",
+   "lat": 45.6324,
+   "lon": -122.70681,
+   "sog_kn": 0,
+   "cog": 11.1,
+   "heading": 118,
    "nav_status": 1,
-   "updated": "2026-11-26 00:40:00.361875093 +0000 UTC"
+   "updated": "2026-11-26 00:45:05.686883921 +0000 UTC"
   },
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.64894,
-   "lon": -122.74554,
-   "sog_kn": 0.1,
-   "cog": 197.2,
-   "heading": 107,
-   "nav_status": 0,
-   "updated": "2026-11-26 00:40:11.45051045 +0000 UTC"
-  },
-  {
-   "mmsi": 368440320,
-   "name": "HEATHER S",
-   "lat": 45.64351,
-   "lon": -122.75296,
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20004,
+   "lon": -123.38539,
    "sog_kn": 0,
-   "cog": 259.5,
+   "cog": 14.4,
    "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-26 00:40:14.771905454 +0000 UTC"
+   "nav_status": 8,
+   "updated": "2026-11-26 00:45:15.933695486 +0000 UTC",
+   "type_code": 99,
+   "destination": "NAKNEK"
   },
   {
-   "mmsi": 477113700,
-   "name": "SHANDONG XIN XING",
-   "lat": 45.99841,
-   "lon": -122.85174,
-   "sog_kn": 0,
-   "cog": 357.4,
-   "heading": 162,
-   "nav_status": 5,
-   "updated": "2026-11-26 00:40:18.451364474 +0000 UTC"
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.85109,
+   "lon": -122.78668,
+   "sog_kn": 8.1,
+   "cog": 185.3,
+   "heading": 186,
+   "nav_status": 12,
+   "updated": "2026-11-26 00:45:05.771184242 +0000 UTC"
   },
   {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.09051,
-   "lon": -122.92187,
-   "sog_kn": 6.7,
-   "cog": 28.8,
-   "heading": 22,
+   "mmsi": 367516730,
+   "name": "CRISTY T",
+   "lat": 45.63217,
+   "lon": -122.70218,
+   "type_code": 0,
+   "updated": "2026-11-26 00:45:05.934598703 +0000 UTC"
+  },
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64136,
+   "lon": -122.73155,
+   "sog_kn": 10,
+   "cog": 319.1,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-26 00:40:20.095398803 +0000 UTC"
+   "updated": "2026-11-26 00:45:06.449834955 +0000 UTC"
   },
   {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 45.60092,
-   "lon": -122.7758,
+   "mmsi": 367513220,
+   "name": "VANCOUVER",
+   "lat": 46.04543,
+   "lon": -122.88114,
+   "sog_kn": 8.3,
+   "cog": 173.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-26 00:45:07.056058224 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 46.08708,
+   "lon": -122.91152,
    "type_code": 52,
-   "destination": "CSR OPS",
-   "updated": "2026-11-26 00:40:21.347442095 +0000 UTC"
+   "destination": "COL RIVER OPS",
+   "updated": "2026-11-26 00:45:13.060149323 +0000 UTC"
+  },
+  {
+   "mmsi": 636024866,
+   "name": "CHAMPION TRADER",
+   "lat": 45.6057,
+   "lon": -122.78053,
+   "sog_kn": 0,
+   "cog": 157.8,
+   "heading": 152,
+   "nav_status": 5,
+   "updated": "2026-11-26 00:45:29.492254139 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64389,
+   "lon": -122.73602,
+   "sog_kn": 7.9,
+   "cog": 289.6,
+   "heading": 293,
+   "nav_status": 12,
+   "updated": "2026-11-26 00:45:30.944772817 +0000 UTC"
   },
   {
    "mmsi": 368083770,
@@ -76,7 +108,16 @@
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-26 00:40:22.675671343 +0000 UTC"
+   "updated": "2026-11-26 00:45:32.136253432 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.63993,
+   "lon": -122.72977,
+   "type_code": 52,
+   "destination": "US^02AK>0T67",
+   "updated": "2026-11-26 00:45:33.338289204 +0000 UTC"
   }
  ]
 }
