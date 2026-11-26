@@ -1,60 +1,6 @@
 {
- "fetched_at": "2026-11-26T12:35:43Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 477113700,
-   "name": "SHANDONG XIN XING",
-   "lat": 45.99841,
-   "lon": -122.85175,
-   "type_code": 70,
-   "destination": "QINGDAO CHINA",
-   "updated": "2026-11-26 12:35:37.173351336 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09316,
-   "lon": -122.92362,
-   "sog_kn": 0.1,
-   "cog": 42.1,
-   "heading": 228,
-   "nav_status": 0,
-   "updated": "2026-11-26 12:35:46.527939253 +0000 UTC"
-  },
-  {
-   "mmsi": 538010248,
-   "name": "SAFEEN AL AMAL",
-   "lat": 46.12201,
-   "lon": -122.98549,
-   "type_code": 70,
-   "destination": "US LOG",
-   "updated": "2026-11-26 12:36:04.191877633 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 46.10065,
-   "lon": -122.94219,
-   "type_code": 31,
-   "destination": "LONGVIEW ANCHORAGE",
-   "updated": "2026-11-26 12:36:18.43743097 +0000 UTC",
-   "sog_kn": 0,
-   "cog": 20.2,
-   "heading": 117,
-   "nav_status": 0
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.00888,
-   "lon": -122.84888,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-26 12:36:14.080426539 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-26T12:40:43Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
