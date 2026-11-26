@@ -5397,6 +5397,77 @@ function initTideChart() {
 }
 initTideChart();
 
+/* ---------- heritage & history: the county's cultural baseline ----------
+   Travis-directed, 2026-11-26. Two data files, two owners:
+   data/heritage.json is HAND-CURATED (same pattern as
+   data/community-events.json — the fetcher never writes it); every item
+   was verified from the source URL stored in its record.
+   data/cultural-count.json is computed by the fetcher at publish time
+   (fetcher/count_cultural.py): unique cultural events across the three
+   event feeds, date >= the count date, plus the heritage item count.
+   The card renders both: one modest counter line, then the list. */
+const HERITAGE_L = {
+  en: {
+    failed: 'The heritage list could not load just now — try again in a bit.',
+    count: (e, h) => e + ' cultural events listed · ' + h + ' heritage items',
+    src: 'Source'
+  },
+  es: {
+    failed: 'La lista patrimonial no pudo cargar en este momento — inténtelo de nuevo en un rato.',
+    count: (e, h) => e + ' eventos culturales en la lista · ' + h + ' lugares patrimoniales',
+    src: 'Fuente'
+  }
+};
+const HERITAGE_TYPES_ES = {
+  'Museum': 'Museo',
+  'Historic building': 'Edificio histórico',
+  'Historic district': 'Distrito histórico',
+  'Historic trail': 'Sendero histórico',
+  'Historic cemeteries': 'Cementerios históricos',
+  'Natural feature': 'Sitio natural'
+};
+let heritageData = null, heritageCountData = null;
+function heritageLang() { return homeLang() === 'es' ? 'es' : 'en'; }
+function renderHeritage() {
+  const body = $('heritage-body');
+  if (!body) return;
+  const L = HERITAGE_L[heritageLang()];
+  const items = (heritageData && heritageData.items) || [];
+  if (!items.length) {
+    body.innerHTML = '<p class="status-note">' + L.failed + '</p>';
+    return;
+  }
+  let html = '<ul class="heritage-list">';
+  items.forEach(it => {
+    const type = heritageLang() === 'es' && HERITAGE_TYPES_ES[it.type]
+      ? HERITAGE_TYPES_ES[it.type] : it.type;
+    html += '<li class="heritage-item">'
+      + '<div class="heritage-name">' + esc(it.name) + '</div>'
+      + '<div class="heritage-meta">' + esc(it.town) + ' · ' + esc(type) + '</div>'
+      + '<p class="heritage-blurb">' + esc(it.blurb) + '</p>'
+      + (it.url ? '<a class="heritage-src" href="' + esc(it.url) + '" target="_blank" rel="noopener">'
+        + L.src + ': ' + esc(it.source || '') + '</a>' : '')
+      + '</li>';
+  });
+  html += '</ul>';
+  body.innerHTML = html;
+  const cEl = $('heritage-count');
+  if (cEl && heritageCountData
+      && typeof heritageCountData.cultural_events === 'number') {
+    cEl.textContent = L.count(heritageCountData.cultural_events,
+      heritageCountData.heritage_items);
+  }
+}
+async function loadHeritage() {
+  try { heritageData = await getJSON('data/heritage.json'); }
+  catch (e) { /* keep null: renderHeritage shows the honest failure note */ }
+  try { heritageCountData = await getJSON('data/cultural-count.json'); }
+  catch (e) { /* counter line simply stays empty */ }
+  renderHeritage();
+}
+loadHeritage();
+setInterval(() => { if (heritageData) renderHeritage(); }, 60 * 1000);
+
 /* ---------- see the station: ISS pass predictions ---------- */
 /* X20 Round 9. The Sky card always knew where the station IS (a dot on
    the map, a lat/lon line) but never when to LOOK — and the look-up
@@ -6880,6 +6951,9 @@ const LANG_ES = {
   ferrybridge: '¿Puente cerrado? El ferry históricamente extiende su horario durante los cierres del puente Lewis &amp; Clark — confirma en la página del condado antes de contar con ello.',
   ferrylink: 'Página oficial del ferry — Condado de Wahkiakum →',
   eventsh2: 'Eventos — Próximas dos semanas',
+  heritageh2: 'Patrimonio e Historia',
+  heritagenote: 'Los lugares que guardan la historia del condado — museos, edificios históricos, cementerios pioneros y sitios emblemáticos, reunidos para el conteo cultural de la Coalición Cultural del Condado de Columbia.',
+  heritagenote2: 'Cada entrada fue verificada con la fuente enlazada.',
   evall: 'Todos',
   evtoday: 'Hoy',
   evweekend: 'Este fin de semana',

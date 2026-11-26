@@ -731,6 +731,19 @@ a.cev-src-link:hover{text-decoration:underline;color:var(--text)}
 @keyframes voicePulse{0%,100%{box-shadow:0 0 0 0 rgba(217,119,6,.4)}50%{box-shadow:0 0 0 7px rgba(217,119,6,0)}}
 @media (prefers-reduced-motion:reduce){.share-btn.speaking{animation:none}}
 
+/* Heritage & History — the county's cultural baseline (2026-11-26).
+   Hand-curated data/heritage.json + fetcher-computed cultural counter.
+   Theme tokens only, so the card follows light and dark like the rest. */
+.heritage-count{font-weight:700;color:var(--accent-dark);font-size:.95rem;margin:2px 0 10px}
+.heritage-list{list-style:none;margin:0;padding:0}
+.heritage-item{padding:11px 0;border-top:1px solid var(--border)}
+.heritage-item:first-child{border-top:none;padding-top:2px}
+.heritage-name{font-family:var(--display);font-size:1.05rem;font-weight:700;color:var(--text);line-height:1.25}
+.heritage-meta{font-size:.78rem;color:var(--muted);margin-top:1px}
+.heritage-blurb{font-size:.9rem;color:var(--text);margin:4px 0 3px}
+.heritage-src{font-size:.8rem;color:var(--accent);text-decoration:none}
+.heritage-src:hover{text-decoration:underline}
+
 /* X20 Round 8 — river tides: the day's other schedule */
 .tide-station{padding:10px 0;border-bottom:1px solid var(--border)}
 .tide-station:last-child{border-bottom:none}
