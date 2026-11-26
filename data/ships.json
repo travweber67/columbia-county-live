@@ -1,42 +1,6 @@
 {
- "fetched_at": "2026-11-26T04:23:37Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17718,
-   "lon": -123.35744,
-   "sog_kn": 0,
-   "cog": 258.3,
-   "heading": 134,
-   "nav_status": 15,
-   "updated": "2026-11-26 04:24:38.417042904 +0000 UTC"
-  },
-  {
-   "mmsi": 563311600,
-   "name": "STANLEY BAY",
-   "lat": 46.1101,
-   "lon": -122.96335,
-   "sog_kn": 0,
-   "cog": 219.9,
-   "heading": 131,
-   "nav_status": 5,
-   "updated": "2026-11-26 04:24:57.438490766 +0000 UTC",
-   "type_code": 70,
-   "destination": "US LOG"
-  },
-  {
-   "mmsi": 367496010,
-   "name": "DELIVERANCE",
-   "lat": 46.06902,
-   "lon": -122.8951,
-   "sog_kn": 11.7,
-   "cog": 145.2,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-26 04:24:51.920539389 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-26T04:30:05Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
