@@ -1,0 +1,419 @@
+{
+ "fetched_at": "2026-11-26T19:28:44Z",
+ "source": "National Weather Service gridpoint forecasts \u00b7 NOAA National Data Buoy Center buoy observations \u00b7 NOAA Tides & Currents predictions \u00b7 USGS gauges",
+ "places": [
+  {
+   "id": "river",
+   "label": "St. Helens & Wauna",
+   "sub": "The river \u2014 the downtown waterfront to the Westport ferry end",
+   "status": "ok",
+   "wind_now": {
+    "mph": 8,
+    "gust_mph": 15,
+    "dir_deg": 170,
+    "src": "forecast",
+    "t": 1795719600000
+   },
+   "wind_series": [
+    {
+     "t": 1795719600000,
+     "mph": 8,
+     "gust_mph": 15,
+     "dir_deg": 170
+    },
+    {
+     "t": 1795723200000,
+     "mph": 8,
+     "gust_mph": 15,
+     "dir_deg": 170
+    },
+    {
+     "t": 1795726800000,
+     "mph": 8,
+     "gust_mph": 15,
+     "dir_deg": 170
+    },
+    {
+     "t": 1795730400000,
+     "mph": 7,
+     "gust_mph": 14,
+     "dir_deg": 170
+    },
+    {
+     "t": 1795734000000,
+     "mph": 6,
+     "gust_mph": 13,
+     "dir_deg": 170
+    },
+    {
+     "t": 1795737600000,
+     "mph": 5,
+     "gust_mph": 10,
+     "dir_deg": 160
+    },
+    {
+     "t": 1795741200000,
+     "mph": 3,
+     "gust_mph": 9,
+     "dir_deg": 170
+    },
+    {
+     "t": 1795744800000,
+     "mph": 2,
+     "gust_mph": 7,
+     "dir_deg": 190
+    },
+    {
+     "t": 1795748400000,
+     "mph": 2,
+     "gust_mph": 6,
+     "dir_deg": 180
+    },
+    {
+     "t": 1795752000000,
+     "mph": 1,
+     "gust_mph": 5,
+     "dir_deg": 160
+    },
+    {
+     "t": 1795755600000,
+     "mph": 1,
+     "gust_mph": 3,
+     "dir_deg": 180
+    },
+    {
+     "t": 1795759200000,
+     "mph": 0,
+     "gust_mph": 3,
+     "dir_deg": 170
+    },
+    {
+     "t": 1795762800000,
+     "mph": 0,
+     "gust_mph": 2,
+     "dir_deg": 0
+    },
+    {
+     "t": 1795766400000,
+     "mph": 0,
+     "gust_mph": 2,
+     "dir_deg": 0
+    },
+    {
+     "t": 1795770000000,
+     "mph": 0,
+     "gust_mph": 2,
+     "dir_deg": 0
+    },
+    {
+     "t": 1795773600000,
+     "mph": 0,
+     "gust_mph": 2,
+     "dir_deg": 0
+    },
+    {
+     "t": 1795777200000,
+     "mph": 0,
+     "gust_mph": 2,
+     "dir_deg": 0
+    },
+    {
+     "t": 1795780800000,
+     "mph": 0,
+     "gust_mph": 2,
+     "dir_deg": 0
+    },
+    {
+     "t": 1795784400000,
+     "mph": 0,
+     "gust_mph": 2,
+     "dir_deg": 0
+    },
+    {
+     "t": 1795788000000,
+     "mph": 0,
+     "gust_mph": 2,
+     "dir_deg": 90
+    },
+    {
+     "t": 1795791600000,
+     "mph": 0,
+     "gust_mph": 2,
+     "dir_deg": 60
+    },
+    {
+     "t": 1795795200000,
+     "mph": 0,
+     "gust_mph": 2,
+     "dir_deg": 0
+    },
+    {
+     "t": 1795798800000,
+     "mph": 0,
+     "gust_mph": 2,
+     "dir_deg": 70
+    },
+    {
+     "t": 1795802400000,
+     "mph": 1,
+     "gust_mph": 3,
+     "dir_deg": 60
+    },
+    {
+     "t": 1795806000000,
+     "mph": 1,
+     "gust_mph": 3,
+     "dir_deg": 60
+    }
+   ],
+   "wave_now": null,
+   "wave_series": [],
+   "tides": [
+    {
+     "label": "St. Helens",
+     "state": "falling",
+     "cur_ft": 1.1,
+     "next": {
+      "type": "L",
+      "v": 1.017,
+      "t": 1795723560000
+     }
+    },
+    {
+     "label": "Wauna",
+     "state": "rising",
+     "cur_ft": 3.9,
+     "next": {
+      "type": "H",
+      "v": 8.299,
+      "t": 1795732980000
+     }
+    }
+   ],
+   "river": {
+    "label": "Columbia River at Port Westward",
+    "ft": 4.71,
+    "t": 1795719000000
+   },
+   "zones": []
+  },
+  {
+   "id": "bar",
+   "label": "Columbia River Bar",
+   "sub": "Buoy 10 and the river mouth \u2014 out here, the bar decides",
+   "status": "ok",
+   "wind_now": {
+    "mph": 20,
+    "gust_mph": 25,
+    "dir_deg": 200,
+    "src": "buoy",
+    "t": 1795719600000
+   },
+   "wind_series": [
+    {
+     "t": 1795719600000,
+     "mph": 29,
+     "gust_mph": 32,
+     "dir_deg": 220
+    },
+    {
+     "t": 1795723200000,
+     "mph": 25,
+     "gust_mph": 30,
+     "dir_deg": 230
+    },
+    {
+     "t": 1795726800000,
+     "mph": 22,
+     "gust_mph": 28,
+     "dir_deg": 230
+    },
+    {
+     "t": 1795730400000,
+     "mph": 20,
+     "gust_mph": 25,
+     "dir_deg": 230
+    },
+    {
+     "t": 1795734000000,
+     "mph": 17,
+     "gust_mph": 23,
+     "dir_deg": 230
+    },
+    {
+     "t": 1795737600000,
+     "mph": 16,
+     "gust_mph": 21,
+     "dir_deg": 230
+    },
+    {
+     "t": 1795741200000,
+     "mph": 15,
+     "gust_mph": 20,
+     "dir_deg": 240
+    },
+    {
+     "t": 1795744800000,
+     "mph": 14,
+     "gust_mph": 18,
+     "dir_deg": 230
+    },
+    {
+     "t": 1795748400000,
+     "mph": 14,
+     "gust_mph": 18,
+     "dir_deg": 240
+    },
+    {
+     "t": 1795752000000,
+     "mph": 14,
+     "gust_mph": 17,
+     "dir_deg": 230
+    },
+    {
+     "t": 1795755600000,
+     "mph": 13,
+     "gust_mph": 17,
+     "dir_deg": 240
+    },
+    {
+     "t": 1795759200000,
+     "mph": 13,
+     "gust_mph": 17,
+     "dir_deg": 240
+    },
+    {
+     "t": 1795762800000,
+     "mph": 12,
+     "gust_mph": 17,
+     "dir_deg": 230
+    },
+    {
+     "t": 1795766400000,
+     "mph": 12,
+     "gust_mph": 16,
+     "dir_deg": 230
+    },
+    {
+     "t": 1795770000000,
+     "mph": 12,
+     "gust_mph": 15,
+     "dir_deg": 240
+    },
+    {
+     "t": 1795773600000,
+     "mph": 10,
+     "gust_mph": 15,
+     "dir_deg": 230
+    },
+    {
+     "t": 1795777200000,
+     "mph": 10,
+     "gust_mph": 15,
+     "dir_deg": 230
+    },
+    {
+     "t": 1795780800000,
+     "mph": 10,
+     "gust_mph": 15,
+     "dir_deg": 230
+    },
+    {
+     "t": 1795784400000,
+     "mph": 10,
+     "gust_mph": 14,
+     "dir_deg": 230
+    },
+    {
+     "t": 1795788000000,
+     "mph": 9,
+     "gust_mph": 13,
+     "dir_deg": 230
+    },
+    {
+     "t": 1795791600000,
+     "mph": 8,
+     "gust_mph": 12,
+     "dir_deg": 210
+    },
+    {
+     "t": 1795795200000,
+     "mph": 7,
+     "gust_mph": 10,
+     "dir_deg": 190
+    },
+    {
+     "t": 1795798800000,
+     "mph": 7,
+     "gust_mph": 9,
+     "dir_deg": 160
+    },
+    {
+     "t": 1795802400000,
+     "mph": 7,
+     "gust_mph": 10,
+     "dir_deg": 120
+    },
+    {
+     "t": 1795806000000,
+     "mph": 7,
+     "gust_mph": 9,
+     "dir_deg": 120
+    }
+   ],
+   "wave_now": {
+    "ft": 14.4,
+    "dir_deg": 211,
+    "period_s": 11.0,
+    "src": "buoy",
+    "t": 1795719000000
+   },
+   "wave_series": [
+    {
+     "t": 1795716000000,
+     "ft": 9.0
+    },
+    {
+     "t": 1795737600000,
+     "ft": 7.0
+    },
+    {
+     "t": 1795770000000,
+     "ft": 8.0
+    },
+    {
+     "t": 1795780800000,
+     "ft": 7.0
+    },
+    {
+     "t": 1795813200000,
+     "ft": 8.0
+    },
+    {
+     "t": 1795824000000,
+     "ft": 7.0
+    },
+    {
+     "t": 1795834800000,
+     "ft": 6.0
+    }
+   ],
+   "tides": [],
+   "river": null,
+   "zones": [
+    {
+     "name": "General Seas",
+     "text": "13 to 16 ft subsiding to 12 ft Friday morning."
+    },
+    {
+     "name": "First Ebb",
+     "text": "Ebb current of 3.57 kt at 525 AM Thursday. Seas 16 to 21 ft."
+    },
+    {
+     "name": "Second Ebb",
+     "text": "Very strong ebb current of 7.19 kt at 534 PM Thursday. Seas 16 to 20 ft."
+    }
+   ]
+  }
+ ]
+}

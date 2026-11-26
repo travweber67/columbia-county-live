@@ -5110,8 +5110,9 @@ function tideAway(ms) {
   return 'in ' + h + (r ? 'h ' + String(r).padStart(2, '0') + 'm' : ' hr');
 }
 async function loadTides() {
-  const body = $('tides-body');
-  if (!body) return;
+  /* The next-turn tides card retired 2026-11-26 — the Tide Chart card
+     carries its content now — but the glance tile still leads with this
+     same tide data, so the loader runs without the card body. */
   let any = false;
   await Promise.all(TIDE_STATIONS.map(async st => {
     try {
@@ -5396,6 +5397,258 @@ function initTideChart() {
   setInterval(() => { if (tchartData) renderTideChart(); }, 60 * 1000);
 }
 initTideChart();
+
+/* ---------- fishing conditions: wind, waves and the tide, one card ----------
+   Travis-directed, 2026-11-26. The old next-turn tides card (River
+   Tides / Bay Tides) is retired: the Tide Chart card above already
+   carries the current height, the state, the next high and low and the
+   next six turns — a superset of everything it showed. This card takes
+   its slot and adds what the chart does not have: the wind (speed +
+   gusts), the waves (height + direction, where real data exists) and
+   the official marine outlook, all from fetcher-built
+   data/fishing.json (NWS gridpoint forecasts, NDBC buoy observations,
+   NOAA tide predictions, USGS gauges where the site carries them).
+   Charts follow the Tide Chart card's family — filled SVG curves, big
+   plain labels, a dashed NOW line — one idea per chart, readable in
+   one look, never a multi-axis data dump. Factual only: no fishing
+   promises, the numbers and the official outlook, plainly labeled. */
+const FISH_L = {
+  en: {
+    fail: 'Fishing conditions couldn\'t load just now — try again in a bit.',
+    compass: ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'],
+    from: 'from the', wind: 'Wind', waves: 'Waves', tide: 'Tide',
+    gustsTo: 'gusts to', mph: 'mph', ft: 'ft',
+    buoyWord: 'buoy reading', fcstWord: 'forecast for this hour',
+    rising: 'coming in', falling: 'going out',
+    highWord: 'high tide', lowWord: 'low tide',
+    riverLevel: 'River level',
+    windChartT: 'Wind — the next 24 hours',
+    waveChartT: 'Waves — the next day and a half',
+    windWord: 'Wind', gustWord: 'Gusts', nowMark: 'now',
+    waveEvery: 'about every', sec: 'sec',
+    outlook: 'The official outlook'
+  },
+  es: {
+    fail: 'Las condiciones de pesca no cargaron esta vez — inténtelo de nuevo en un rato.',
+    compass: ['N', 'NE', 'E', 'SE', 'S', 'SO', 'O', 'NO'],
+    from: 'desde el', wind: 'Viento', waves: 'Olas', tide: 'Marea',
+    gustsTo: 'ráfagas de', mph: 'mph', ft: 'pies',
+    buoyWord: 'medición de la boya', fcstWord: 'pronóstico para esta hora',
+    rising: 'subiendo', falling: 'bajando',
+    highWord: 'pleamar', lowWord: 'bajamar',
+    riverLevel: 'Nivel del río',
+    windChartT: 'Viento — las próximas 24 horas',
+    waveChartT: 'Olas — el próximo día y medio',
+    windWord: 'Viento', gustWord: 'Ráfagas', nowMark: 'ahora',
+    waveEvery: 'cada', sec: 'seg',
+    outlook: 'El pronóstico oficial'
+  }
+};
+let fishwxData = null;    // parsed data/fishing.json, kept as last good
+let fishwxPlace = null;   // selected place id (CCL: river / bar)
+function fishwxLang() { try { return homeLang() === 'es' ? 'es' : 'en'; } catch (e) { return 'en'; } }
+function fishwxCompass(deg, L) {
+  if (deg == null || isNaN(deg)) return '';
+  return L.compass[Math.round((((deg % 360) + 360) % 360) / 45) % 8];
+}
+function fishwxNowLine(X, now, x0, x1, padT, botY, W, padL, L) {
+  if (now < x0 || now > x1) return '';
+  const nx = X(now);
+  return '<line x1="' + nx.toFixed(1) + '" y1="' + padT + '" x2="' + nx.toFixed(1)
+    + '" y2="' + botY + '" stroke="#f59e0b" stroke-width="1.4" stroke-dasharray="4 3"></line>'
+    + '<text class="tchart-pt-now" x="' + Math.max(padL + 14, Math.min(W - 14, nx)).toFixed(1)
+    + '" y="' + (padT - 6) + '" text-anchor="middle">' + L.nowMark + '</text>';
+}
+function fishwxTiles(place, L, es) {
+  const now = Date.now();
+  let tiles = '';
+  const w = place.wind_now;
+  if (w) {
+    tiles += '<div class="tchart-next-box"><span class="tchart-next-k">' + L.wind
+      + ' · ' + (w.src === 'buoy' ? L.buoyWord : L.fcstWord) + '</span>'
+      + '<span class="tchart-next-v">' + w.mph + ' ' + L.mph + '</span>'
+      + '<span class="tchart-next-t">' + L.from + ' ' + fishwxCompass(w.dir_deg, L)
+      + (w.gust_mph ? ' · ' + L.gustsTo + ' ' + w.gust_mph + ' ' + L.mph : '')
+      + '</span></div>';
+  }
+  const wv = place.wave_now;
+  if (wv) {
+    tiles += '<div class="tchart-next-box"><span class="tchart-next-k">' + L.waves
+      + ' · ' + L.buoyWord + '</span>'
+      + '<span class="tchart-next-v">' + num(wv.ft, 1) + ' ' + L.ft + '</span>'
+      + '<span class="tchart-next-t">' + L.from + ' ' + fishwxCompass(wv.dir_deg, L)
+      + (wv.period_s ? ' · ' + L.waveEvery + ' ' + Math.round(wv.period_s) + ' ' + L.sec : '')
+      + '</span></div>';
+  }
+  (place.tides || []).forEach(td => {
+    tiles += '<div class="tchart-next-box"><span class="tchart-next-k">'
+      + esc(td.label) + ' · ' + L.tide + '</span>'
+      + '<span class="tchart-next-v">' + (td.state === 'rising' ? '▲ ' : '▼ ')
+      + (td.state === 'rising' ? L.rising : L.falling)
+      + (td.cur_ft != null ? ' · ' + num(td.cur_ft, 1) + ' ' + L.ft : '') + '</span>'
+      + '<span class="tchart-next-t">' + (td.next.type === 'H' ? L.highWord : L.lowWord)
+      + ' ' + num(td.next.v, 1) + ' ' + L.ft + ' · ' + fmtTime(new Date(td.next.t))
+      + ' (' + tchartAway(td.next.t - now, es) + ')</span></div>';
+  });
+  if (place.river) {
+    tiles += '<div class="tchart-next-box"><span class="tchart-next-k">' + L.riverLevel + '</span>'
+      + '<span class="tchart-next-v">' + num(place.river.ft, 1) + ' ' + L.ft + '</span>'
+      + '<span class="tchart-next-t">' + esc(place.river.label) + ' · '
+      + fmtTime(new Date(place.river.t)) + '</span></div>';
+  }
+  return tiles ? '<div class="tchart-next fishwx-tiles">' + tiles + '</div>' : '';
+}
+function fishwxWindChart(place, L) {
+  const s = place.wind_series;
+  if (!s || s.length < 2) return '';
+  const now = Date.now();
+  const W = 720, H = 216, padL = 42, padR = 10, padT = 20, padB = 22;
+  const plotW = W - padL - padR, plotH = H - padT - padB;
+  const x0 = s[0].t, x1 = s[s.length - 1].t;
+  let hi = 10;
+  s.forEach(p => { hi = Math.max(hi, p.mph, p.gust_mph || 0); });
+  hi = Math.ceil((hi + 4) / 5) * 5;
+  const X = t => padL + (t - x0) / (x1 - x0) * plotW;
+  const Y = v => padT + (hi - v) / hi * plotH;
+  const botY = padT + plotH;
+  let svg = '<div class="fishwx-chart-t">' + L.windChartT + '</div>'
+    + '<div class="tchart-chart"><svg viewBox="0 0 ' + W + ' ' + H
+    + '" role="img" aria-label="' + L.windChartT + '">';
+  svg += '<text class="tchart-axis" x="' + (padL - 5) + '" y="' + (Y(hi) + 4).toFixed(1)
+    + '" text-anchor="end">' + hi + ' ' + L.mph + '</text>'
+    + '<text class="tchart-axis" x="' + (padL - 5) + '" y="' + (Y(0) + 4).toFixed(1)
+    + '" text-anchor="end">0</text>';
+  s.forEach((p, i) => {
+    if (i % 6 === 0) svg += '<text class="tchart-axis" x="' + X(p.t).toFixed(1)
+      + '" y="' + (H - 6) + '" text-anchor="middle">' + fmtTime(new Date(p.t)) + '</text>';
+  });
+  const gpts = s.filter(p => p.gust_mph != null)
+    .map(p => X(p.t).toFixed(1) + ',' + Y(p.gust_mph).toFixed(1)).join(' ');
+  if (gpts) svg += '<polyline points="' + gpts + '" fill="none" stroke="#1f8a6d"'
+    + ' stroke-width="1.6" stroke-dasharray="5 3" stroke-linejoin="round"></polyline>';
+  const pts = s.map(p => X(p.t).toFixed(1) + ',' + Y(p.mph).toFixed(1)).join(' ');
+  svg += '<polygon points="' + X(x0).toFixed(1) + ',' + botY + ' ' + pts + ' '
+    + X(x1).toFixed(1) + ',' + botY + '" fill="#34c19a" opacity="0.13"></polygon>'
+    + '<polyline points="' + pts + '" fill="none" stroke="#34c19a" stroke-width="2"'
+    + ' stroke-linejoin="round"></polyline>';
+  let pk = s[0];
+  s.forEach(p => { if (p.mph > pk.mph) pk = p; });
+  svg += '<circle cx="' + X(pk.t).toFixed(1) + '" cy="' + Y(pk.mph).toFixed(1)
+    + '" r="3.4" fill="var(--panel)" stroke="#34c19a" stroke-width="2"></circle>'
+    + '<text class="tchart-pt" x="' + X(pk.t).toFixed(1) + '" y="' + (Y(pk.mph) - 8).toFixed(1)
+    + '" text-anchor="middle">' + pk.mph + ' ' + L.mph + '</text>';
+  svg += fishwxNowLine(X, now, x0, x1, padT, botY, W, padL, L);
+  svg += '</svg></div>'
+    + '<div class="fishwx-legend"><span class="fishwx-leg"><span class="fishwx-swatch"></span>'
+    + L.windWord + '</span><span class="fishwx-leg"><span class="fishwx-swatch fishwx-swatch-gust"></span>'
+    + L.gustWord + '</span></div>';
+  return svg;
+}
+function fishwxWaveChart(place, L) {
+  const s = place.wave_series;
+  if (!s || s.length < 2) return '';
+  const now = Date.now();
+  const W = 720, H = 216, padL = 42, padR = 10, padT = 20, padB = 22;
+  const plotW = W - padL - padR, plotH = H - padT - padB;
+  const x0 = s[0].t, x1 = s[s.length - 1].t;
+  let hi = 0, lo = Infinity;
+  s.forEach(p => { if (p.ft > hi) hi = p.ft; if (p.ft < lo) lo = p.ft; });
+  lo = Math.max(0, Math.floor(lo) - 1); hi = Math.ceil(hi) + 1;
+  const X = t => padL + (t - x0) / (x1 - x0) * plotW;
+  const Y = v => padT + (hi - v) / (hi - lo) * plotH;
+  const botY = padT + plotH;
+  const pts = s.map(p => X(p.t).toFixed(1) + ',' + Y(p.ft).toFixed(1)).join(' ');
+  let svg = '<div class="fishwx-chart-t">' + L.waveChartT + '</div>'
+    + '<div class="tchart-chart"><svg viewBox="0 0 ' + W + ' ' + H
+    + '" role="img" aria-label="' + L.waveChartT + '">';
+  svg += '<text class="tchart-axis" x="' + (padL - 5) + '" y="' + (Y(hi) + 4).toFixed(1)
+    + '" text-anchor="end">' + hi + ' ' + L.ft + '</text>'
+    + '<text class="tchart-axis" x="' + (padL - 5) + '" y="' + (Y(lo) + 4).toFixed(1)
+    + '" text-anchor="end">' + lo + ' ' + L.ft + '</text>';
+  s.forEach((p, i) => {
+    if (i % 3 === 0) svg += '<text class="tchart-axis" x="' + X(p.t).toFixed(1)
+      + '" y="' + (H - 6) + '" text-anchor="middle">' + fmtTime(new Date(p.t)) + '</text>';
+    svg += '<circle cx="' + X(p.t).toFixed(1) + '" cy="' + Y(p.ft).toFixed(1)
+      + '" r="3.2" fill="var(--panel)" stroke="#53c7de" stroke-width="2"></circle>'
+      + '<text class="tchart-pt" x="' + X(p.t).toFixed(1) + '" y="' + (Y(p.ft) - 8).toFixed(1)
+      + '" text-anchor="middle">' + num(p.ft, 1) + '</text>';
+  });
+  svg += '<polygon points="' + X(x0).toFixed(1) + ',' + botY + ' ' + pts + ' '
+    + X(x1).toFixed(1) + ',' + botY + '" fill="#53c7de" opacity="0.13"></polygon>'
+    + '<polyline points="' + pts + '" fill="none" stroke="#53c7de" stroke-width="2"'
+    + ' stroke-linejoin="round"></polyline>';
+  svg += fishwxNowLine(X, now, x0, x1, padT, botY, W, padL, L);
+  svg += '</svg></div>';
+  return svg;
+}
+function renderFishwx() {
+  const body = $('fishwx-body');
+  if (!body || !fishwxData) return;
+  const es = fishwxLang() === 'es', L = FISH_L[fishwxLang()];
+  const places = fishwxData.places || [];
+  if (!places.length) {
+    body.innerHTML = '<p class="fallback">⚠️ ' + L.fail + '</p>';
+    return;
+  }
+  if (!fishwxPlace || !places.some(p => p.id === fishwxPlace)) {
+    let saved = null;
+    try { saved = localStorage.getItem('fishwx-place'); } catch (e) { /* private mode */ }
+    fishwxPlace = places.some(p => p.id === saved) ? saved : places[0].id;
+  }
+  const place = places.find(p => p.id === fishwxPlace) || places[0];
+  let html = '';
+  if (places.length > 1) {
+    html += '<div class="tchart-stations" role="group" aria-label="Place">'
+      + places.map(p =>
+        '<button type="button" class="go-trip-btn tchart-stn' + (p.id === place.id ? ' active' : '')
+        + '" data-fishwx-place="' + p.id + '" aria-pressed="' + (p.id === place.id) + '">'
+        + esc(p.label) + '</button>').join('') + '</div>'
+      + '<div class="river-sub tchart-sub">' + esc(place.sub || '') + '</div>';
+  } else if (place.sub) {
+    html += '<div class="river-sub tchart-sub">' + esc(place.sub) + '</div>';
+  }
+  html += fishwxTiles(place, L, es);
+  html += fishwxWindChart(place, L);
+  html += fishwxWaveChart(place, L);
+  if (place.zones && place.zones.length) {
+    html += '<div class="fishwx-zones"><div class="fishwx-chart-t">' + L.outlook + '</div>'
+      + place.zones.map(z => '<p class="fishwx-zone"><strong>' + esc(z.name)
+        + ':</strong> ' + esc(z.text) + '</p>').join('') + '</div>';
+  }
+  body.innerHTML = html;
+}
+async function loadFishwx() {
+  const body = $('fishwx-body');
+  if (!body) return;
+  try {
+    const d = await getJSON('data/fishing.json');
+    if (d && d.places && d.places.length) {
+      fishwxData = d;
+      setUpdated('fishwx-updated');
+      renderFishwx();
+    } else if (!fishwxData) {
+      body.innerHTML = '<p class="fallback">⚠️ ' + FISH_L[fishwxLang()].fail + '</p>';
+    }
+  } catch (e) {
+    if (!fishwxData) body.innerHTML = '<p class="fallback">⚠️ ' + FISH_L[fishwxLang()].fail + '</p>';
+    /* else: keep the last good conditions on screen */
+  }
+}
+function initFishwx() {
+  const body = $('fishwx-body');
+  if (!body) return;
+  body.addEventListener('click', e => {
+    const b = e.target && e.target.closest ? e.target.closest('[data-fishwx-place]') : null;
+    if (!b) return;
+    fishwxPlace = b.getAttribute('data-fishwx-place');
+    try { localStorage.setItem('fishwx-place', fishwxPlace); } catch (err) { /* private mode */ }
+    renderFishwx();
+  });
+  loadFishwx();
+  setInterval(loadFishwx, 30 * 60 * 1000);
+  setInterval(() => { if (fishwxData) renderFishwx(); }, 60 * 1000);
+}
+initFishwx();
 
 /* ---------- heritage & history: the county's cultural baseline ----------
    Travis-directed, 2026-11-26. Two data files, two owners:
@@ -6448,7 +6701,7 @@ const FINDER_SECTIONS = [
   { id: 'aircraft-card', title: 'Aircraft Overhead',         sub: 'Planes over the county right now, from community ADS-B receivers', keys: 'plane planes aircraft flight flights overhead adsb low local ground traffic' },
   { id: 'sky-card',      title: 'In the Sky Right Now',      sub: 'The ISS, and when to see the station pass', keys: 'iss station satellite sky look up passes pass' },
   { id: 'rivers-card',   title: 'River Levels',              sub: 'USGS gauges on the Columbia and Nehalem', keys: 'river rivers level levels gauge gauges flood height columbia nehalem' },
-  { id: 'tides-card',    title: 'River Tides',               sub: 'Next high and low tide at St. Helens and Wauna', keys: 'tide tides high low slack fishing dock ramp' },
+  { id: 'fishwx-card',   title: 'Fishing Conditions',        sub: 'Wind, waves and tide for the river and the Columbia River Bar', keys: 'fishing wind waves gusts buoy bar tide conditions surf swell' },
   { id: 'quakes-card',   title: 'Earthquakes — last 30 days', sub: 'USGS earthquakes near the county', keys: 'earthquake earthquakes quake quakes tremor seismic shook' },
   { id: 'fires-card',    title: 'Wildfires',                 sub: 'Interagency wildfire incidents', keys: 'fire fires wildfire wildfires smoke burn burning' },
   { id: 'air-card',      title: 'Air & Smoke',               sub: 'Air Quality Index, fine particles, and the day\u2019s smoke outlook', keys: 'air quality aqi smoke breathe breathing pm25 lungs asthma dust wood stove' },
@@ -6967,6 +7220,9 @@ const LANG_ES = {
   tidesnote: 'El Columbia es un río de mareas en todo su paso por St. Helens — el océano sube por el canal dos veces al día. Para la rampa de botes, el muelle, la playa del río o una hora de pesca, aquí está el próximo cambio de marea en las dos estaciones de NOAA del condado.',
   tidesnote2: 'Las <em>predicciones</em> de marea de NOAA Tides &amp; Currents (estación 9439201 en St. Helens, estación 9439099 en Wauna), en pies sobre el nivel medio de la bajamar. El caudal del río empuja el agua real fuera de la predicción — un río alto corre más alto y más tarde — así que toma las horas como el plan, no como una promesa.',
   tcharth2: 'Gráfico de mareas',
+  fishwxh2: 'Condiciones de pesca',
+  fishwxnote: 'Antes de lanzar: el viento, las olas y la marea en un solo lugar — los números que deciden una hora de pesca, explicados con claridad. El Columbia es un río de mareas en todo su paso por St. Helens; el océano sube por el canal dos veces al día.',
+  fishwxnote2: 'Pronósticos de viento y olas del Servicio Meteorológico Nacional; mediciones de boyas del Centro Nacional de Boyas de la NOAA; mareas de NOAA Tides & Currents; el nivel del río es del USGS. Un pronóstico es un plan, no una promesa — revise el reporte de la barra antes de cruzar.',
   tchartnote: 'La curva completa, no solo los cambios — la altura predicha por NOAA hora a hora, desde hoy y por dos días más, en las dos estaciones del río. Elige una estación y mira cómo se mueve el agua.',
   tchartnote2: 'Las <em>predicciones</em> de marea de NOAA Tides &amp; Currents (St. Helens 9439201, Wauna 9439099), en pies sobre el nivel medio de la bajamar. La etiqueta <strong>Marea real</strong> marca una pleamar entre las más altas de todo el año para esa estación. Son predicciones, no mediciones — un río alto corre más alto y más tarde que la curva.',
   fishh2: 'Conteos de peces — las presas',
@@ -7791,7 +8047,7 @@ window.CCLPins = {
    adventure. */
 const PIN_CARDS = ['since-card', 'home-card', 'go-card', 'schools-card', 'briefing-card',
   'roads-card', 'cameras-card', 'incidents-card', 'drive-card', 'routeahead-card', 'ferry-card', 'ferry-mini-card', 'ships-card', 'aircraft-card', 'mthood-card',
-  'alerts-card', 'forecast-week-card', 'forecast-card', 'sky-card', 'rivers-card', 'tides-card',
+  'alerts-card', 'forecast-week-card', 'forecast-card', 'sky-card', 'rivers-card', 'fishwx-card',
   'fish-card', 'tracker-card', 'almanac-card',
   'quakes-card', 'fires-card', 'air-card',
   'events-card', 'freshness-card', 'watch-card', 'saver-card', 'about-card'];
@@ -8853,7 +9109,7 @@ const SECTION_SPONSORS = [
   { section: 'travel',   spot: 3, after: 'ships-card',     business: null },
   { section: 'travel',   spot: 4, after: 'mthood-card',    business: null },
   { section: 'outdoors', spot: 1, after: 'sky-card',       business: null },
-  { section: 'outdoors', spot: 2, after: 'tides-card',     business: null },
+  { section: 'outdoors', spot: 2, after: 'fishwx-card',     business: null },
   { section: 'outdoors', spot: 3, after: 'tracker-card', business: null },
   { section: 'outdoors', spot: 4, after: 'air-card',       business: null },
   { section: 'more',     spot: 1, after: 'add-event-card', business: null }, /* Item 4k(4): moved up under the Add-an-event card, restyled as the KIL-style strip */

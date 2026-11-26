@@ -755,6 +755,16 @@ a.cev-src-link:hover{text-decoration:underline;color:var(--text)}
    Grown from the river sparkline family: same filled SVG water, same blue,
    with day lines, the turns marked on the curve and a dashed now line. */
 .tchart-stations{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 6px}
+/* ---------- fishing conditions card (2026-11-26) ---------- */
+.fishwx-tiles{margin-top:2px}
+.fishwx-chart-t{font-weight:800;font-size:.95rem;margin:12px 0 2px}
+.fishwx-legend{display:flex;gap:16px;margin:0 0 6px;font-size:.82rem;color:var(--muted)}
+.fishwx-leg{display:inline-flex;align-items:center;gap:6px}
+.fishwx-swatch{display:inline-block;width:18px;height:4px;border-radius:2px;background:#34c19a}
+.fishwx-swatch-gust{background:repeating-linear-gradient(90deg,#1f8a6d 0 5px,transparent 5px 8px);height:3px}
+.fishwx-zones{margin-top:10px}
+.fishwx-zone{font-size:.88rem;margin:4px 0}
+
 .tchart-sub{margin-bottom:8px}
 .tchart-now{margin-top:2px}
 .tchart-next{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 12px}
@@ -777,6 +787,16 @@ html[data-theme="dark"] .tchart-next-box{background:#f5efe0;border-color:rgba(12
    Grown from the river sparkline family: same filled SVG water, same blue,
    with day lines, the turns marked on the curve and a dashed now line. */
 .tchart-stations{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 6px}
+/* ---------- fishing conditions card (2026-11-26) ---------- */
+.fishwx-tiles{margin-top:2px}
+.fishwx-chart-t{font-weight:800;font-size:.95rem;margin:12px 0 2px}
+.fishwx-legend{display:flex;gap:16px;margin:0 0 6px;font-size:.82rem;color:var(--muted)}
+.fishwx-leg{display:inline-flex;align-items:center;gap:6px}
+.fishwx-swatch{display:inline-block;width:18px;height:4px;border-radius:2px;background:#34c19a}
+.fishwx-swatch-gust{background:repeating-linear-gradient(90deg,#1f8a6d 0 5px,transparent 5px 8px);height:3px}
+.fishwx-zones{margin-top:10px}
+.fishwx-zone{font-size:.88rem;margin:4px 0}
+
 .tchart-sub{margin-bottom:8px}
 .tchart-now{margin-top:2px}
 .tchart-next{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 12px}

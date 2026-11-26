@@ -35,7 +35,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <link rel="manifest" href="manifest.webmanifest?v=95">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=95">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=190">
+<link rel="stylesheet" href="style.css?v=191">
 <link rel="stylesheet" href="merch.css?v=3">
 <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=95">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=95">
@@ -212,7 +212,7 @@ document.documentElement.setAttribute("data-theme",t);})();
           <span class="glance-val" id="glance-alerts-val">Checking…</span>
         </span>
       </a>
-      <a class="strip-item glance-tile" href="#tides-card">
+      <a class="strip-item glance-tile" href="#tidechart-card">
         <img class="gl-ico" src="img/icons/icon-river.png" alt="" aria-hidden="true">
         <span class="strip-main">
           <span class="strip-top"><span class="glance-label"><span data-i18n="glriver">Columbia River — Tides</span></span><span class="strip-sep" aria-hidden="true">·</span><span class="glance-sub" id="glance-river-sub">Port Westward gauge · USGS</span></span>
@@ -876,14 +876,14 @@ document.documentElement.setAttribute("data-theme",t);})();
       <p class="card-note small" data-i18n="tchartnote2">Tide <em>predictions</em> from NOAA Tides &amp; Currents (St. Helens 9439201, Wauna 9439099), in feet above mean lower low water. A <strong>King tide</strong> tag marks a high tide in the top handful of the whole year for that station. Predictions, not measurements — a high river runs higher and later than the curve.</p>
     </div>
 
-    <div class="card" id="tides-card">
+    <div class="card" id="fishwx-card">
       <div class="card-head">
-        <img class="card-ico" src="img/icons/icon-river.png" alt="" aria-hidden="true"><h2 data-i18n="tidesh2">River Tides</h2>
-        <span class="updated" id="tides-updated"></span>
+        <img class="card-ico" src="img/icons/icon-fish.png" alt="" aria-hidden="true"><h2 data-i18n="fishwxh2">Fishing Conditions</h2>
+        <span class="updated" id="fishwx-updated"></span>
       </div>
-      <p class="card-note" data-i18n="tidesnote">The Columbia is a tidal river the whole way past St. Helens — the ocean reaches up the channel twice a day. For the boat ramp, the dock, the river beach, or a fishing hour, here is the next turn of the tide at the county's two NOAA stations.</p>
-      <div id="tides-body" class="panel-body"><p class="loading">Loading NOAA tide predictions…</p></div>
-      <p class="card-note small" data-i18n="tidesnote2">Tide <em>predictions</em> from NOAA Tides &amp; Currents (station 9439201 at St. Helens, station 9439099 at Wauna), in feet above mean lower low water. River flow pushes real water off the prediction — a high river runs higher and later — so treat the times as the plan, not a promise.</p>
+      <p class="card-note" data-i18n="fishwxnote">Before you launch: the wind, the waves and the tide in one place — the numbers that decide a fishing hour, laid out plain. The Columbia is a tidal river the whole way past St. Helens; the ocean reaches up the channel twice a day.</p>
+      <div id="fishwx-body" class="panel-body"><p class="loading">Loading wind, waves and tides…</p></div>
+      <p class="card-note small" data-i18n="fishwxnote2">Wind and wave forecasts from the National Weather Service; buoy readings from NOAA's National Data Buoy Center; tides from NOAA Tides &amp; Currents; the river gauge is USGS. A forecast is a plan, not a promise — read the bar report before you cross.</p>
     </div>
     <!-- v95: Section Sponsor (Slot B) — Outdoors spot 2 of 4, open.
          Inventory of record: SECTION_SPONSORS in app.js. A sale swaps this
@@ -2731,7 +2731,7 @@ document.documentElement.setAttribute("data-theme",t);})();
       <a class="drawer-link" href="#forecast-card" data-i18n="dwforecast">Forecast</a>
       <a class="drawer-link" href="#sky-card" data-i18n="dwsky">Sky &amp; the ISS</a>
       <a class="drawer-link" href="#rivers-card" data-i18n="dwrivers">River levels</a>
-      <a class="drawer-link" href="#tides-card" data-i18n="dwtides">River tides</a>
+      <a class="drawer-link" href="#tidechart-card" data-i18n="dwtides">River tides</a>
       <a class="drawer-link" href="#fish-card" data-i18n="dwfish">Fish counts</a>
       <a class="drawer-link" href="#tracker-card" data-i18n="dwtracker">Salmon tracker</a>
       <a class="drawer-link" href="#almanac-card" data-i18n="dwalmanac">The Almanac</a>
@@ -3028,7 +3028,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=175"></script>
+<script src="app.js?v=176"></script>
 <script src="merch.js?v=3" defer></script>
 <script data-goatcounter="https://columbiacountylive.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
