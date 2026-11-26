@@ -1,57 +1,67 @@
 {
- "fetched_at": "2026-11-26T05:35:11Z",
+ "fetched_at": "2026-11-26T05:40:12Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
-   "hex": "a7a4e6",
-   "callsign": "ASA1303",
-   "type": "B738",
-   "alt_ft": 34350,
-   "gs_kn": 422.3,
-   "track": 175.52,
-   "lat": 46.140344,
-   "lon": -123.11602
+   "hex": "a8d365",
+   "callsign": "QXE2356",
+   "type": "E75L",
+   "alt_ft": 34975,
+   "gs_kn": 392.1,
+   "track": 178.98,
+   "lat": 46.061158,
+   "lon": -123.375366
   },
   {
-   "hex": "a13c43",
-   "callsign": "SKW3371",
+   "hex": "a3539d",
+   "callsign": "SKW3997",
    "type": "E75L",
-   "alt_ft": 2950,
-   "gs_kn": 168.3,
-   "track": 103.05,
-   "lat": 45.666824,
-   "lon": -122.82132
+   "alt_ft": 3000,
+   "gs_kn": 148.1,
+   "track": 181.93,
+   "lat": 45.689765,
+   "lon": -122.770088
   },
   {
    "hex": "a0541b",
    "callsign": "AAL2416",
    "type": "A321",
-   "alt_ft": 3525,
-   "gs_kn": 171.1,
-   "track": 214.53,
-   "lat": 45.758057,
-   "lon": -122.798927
+   "alt_ft": 700,
+   "gs_kn": 139.2,
+   "track": 118.77,
+   "lat": 45.612441,
+   "lon": -122.666061
   },
   {
-   "hex": "a3338c",
-   "callsign": "SKW4100",
-   "type": "E75L",
-   "alt_ft": 27650,
-   "gs_kn": 431.0,
-   "track": 356.14,
-   "lat": 46.153006,
-   "lon": -122.706093
-  },
-  {
-   "hex": "a720eb",
-   "callsign": "ASA1387",
-   "type": "B738",
+   "hex": "ad5c30",
+   "callsign": "ASA667",
+   "type": "B39M",
    "alt_ft": "ground",
-   "gs_kn": 14.8,
+   "gs_kn": 0.0,
    "track": null,
-   "lat": 45.593308,
-   "lon": -122.611919
+   "lat": 45.595985,
+   "lon": -122.620636
+  },
+  {
+   "hex": "aaf831",
+   "callsign": "ASA1389",
+   "type": "B38M",
+   "alt_ft": "ground",
+   "gs_kn": 0.0,
+   "track": null,
+   "lat": 45.596299,
+   "lon": -122.619696
+  },
+  {
+   "hex": "a4b5b6",
+   "callsign": "SKW3089",
+   "type": "E75L",
+   "alt_ft": "ground",
+   "gs_kn": 0.0,
+   "track": null,
+   "lat": 45.595834,
+   "lon": -122.618425
   }
  ]
 }
