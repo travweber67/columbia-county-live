@@ -1,45 +1,62 @@
 {
- "fetched_at": "2026-11-26T02:34:55Z",
+ "fetched_at": "2026-11-26T02:39:56Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.64862,
-   "lon": -122.74429,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-26 02:35:12.479199919 +0000 UTC"
+   "mmsi": 367047180,
+   "name": "SUNDIAL",
+   "lat": 45.64899,
+   "lon": -122.74656,
+   "sog_kn": 0.5,
+   "cog": 233,
+   "heading": 99,
+   "nav_status": 12,
+   "updated": "2026-11-26 02:39:58.492346661 +0000 UTC"
   },
   {
-   "mmsi": 538090732,
-   "name": "NORDIC MERCHANTS",
-   "lat": 46.10345,
-   "lon": -122.95001,
-   "type_code": 70,
-   "destination": "USLOG",
-   "updated": "2026-11-26 02:35:22.607506369 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.91012,
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 45.63037,
+   "lon": -122.69582,
    "sog_kn": 0,
-   "cog": 337.5,
-   "heading": 76,
-   "nav_status": 0,
-   "updated": "2026-11-26 02:35:35.23587177 +0000 UTC"
+   "cog": 320.1,
+   "heading": 127,
+   "nav_status": 5,
+   "updated": "2026-11-26 02:40:05.662428504 +0000 UTC"
   },
   {
-   "mmsi": 367575580,
-   "name": "DIANE B.",
-   "lat": 46.0957,
-   "lon": -122.92938,
-   "type_code": 31,
-   "destination": "PORTLAND",
-   "updated": "2026-11-26 02:35:35.573136919 +0000 UTC"
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.5873,
+   "lon": -122.77017,
+   "sog_kn": 0,
+   "cog": 310.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-26 02:40:09.920872513 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58418,
+   "lon": -122.76618,
+   "sog_kn": 0,
+   "cog": 284.5,
+   "heading": 145,
+   "nav_status": 0,
+   "updated": "2026-11-26 02:40:10.466816616 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60754,
+   "lon": -122.67752,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-26 02:40:21.287426781 +0000 UTC"
   }
  ]
 }
