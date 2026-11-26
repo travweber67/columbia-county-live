@@ -1,6 +1,84 @@
 {
- "fetched_at": "2026-11-26T13:10:45Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-26T13:15:45Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09339,
+   "lon": -122.92373,
+   "sog_kn": 0.2,
+   "cog": 124.7,
+   "heading": 121,
+   "nav_status": 0,
+   "updated": "2026-11-26 13:15:58.678809081 +0000 UTC"
+  },
+  {
+   "mmsi": 367516730,
+   "name": "CRISTY T",
+   "lat": 45.61208,
+   "lon": -122.64532,
+   "type_code": 0,
+   "updated": "2026-11-26 13:16:00.771303658 +0000 UTC"
+  },
+  {
+   "mmsi": 314085000,
+   "name": "SOLENT",
+   "lat": 45.60098,
+   "lon": -122.77419,
+   "type_code": 72,
+   "destination": "USLGB",
+   "updated": "2026-11-26 13:16:01.627448386 +0000 UTC"
+  },
+  {
+   "mmsi": 368126190,
+   "name": "GERONIMO",
+   "lat": 46.09896,
+   "lon": -122.95736,
+   "type_code": 32,
+   "destination": "PORTLAND_OR",
+   "updated": "2026-11-26 13:16:03.927466199 +0000 UTC"
+  },
+  {
+   "mmsi": 636013613,
+   "name": "LONDON 2012",
+   "lat": 46.04438,
+   "lon": -122.88272,
+   "type_code": 70,
+   "destination": "KR INC>US KAM",
+   "updated": "2026-11-26 13:16:05.140178924 +0000 UTC"
+  },
+  {
+   "mmsi": 351421000,
+   "name": "ICY BAY",
+   "lat": 45.64378,
+   "lon": -122.74104,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-26 13:16:10.339668421 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64723,
+   "lon": -122.73996,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-26 13:16:17.10443779 +0000 UTC",
+   "sog_kn": 0.5,
+   "cog": 40.5,
+   "heading": 119,
+   "nav_status": 0
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.58756,
+   "lon": -122.77073,
+   "type_code": 52,
+   "destination": "CSR OPS",
+   "updated": "2026-11-26 13:16:11.894468607 +0000 UTC"
+  }
+ ]
 }
