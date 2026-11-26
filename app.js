@@ -5405,16 +5405,16 @@ initTideChart();
    data/cultural-count.json is computed by the fetcher at publish time
    (fetcher/count_cultural.py): unique cultural events across the three
    event feeds, date >= the count date, plus the heritage item count.
-   The card renders both: one modest counter line, then the list. */
+   The card renders the list only. The counts stay on record in
+   data/cultural-count.json for the CCCC baseline; they are NOT
+   displayed on the card (Travis, 2026-11-26: no counter on it). */
 const HERITAGE_L = {
   en: {
     failed: 'The heritage list could not load just now — try again in a bit.',
-    count: (e, h) => e + ' cultural events listed · ' + h + ' heritage items',
     src: 'Source'
   },
   es: {
     failed: 'La lista patrimonial no pudo cargar en este momento — inténtelo de nuevo en un rato.',
-    count: (e, h) => e + ' eventos culturales en la lista · ' + h + ' lugares patrimoniales',
     src: 'Fuente'
   }
 };
@@ -5426,7 +5426,7 @@ const HERITAGE_TYPES_ES = {
   'Historic cemeteries': 'Cementerios históricos',
   'Natural feature': 'Sitio natural'
 };
-let heritageData = null, heritageCountData = null;
+let heritageData = null;
 function heritageLang() { return homeLang() === 'es' ? 'es' : 'en'; }
 function renderHeritage() {
   const body = $('heritage-body');
@@ -5451,18 +5451,10 @@ function renderHeritage() {
   });
   html += '</ul>';
   body.innerHTML = html;
-  const cEl = $('heritage-count');
-  if (cEl && heritageCountData
-      && typeof heritageCountData.cultural_events === 'number') {
-    cEl.textContent = L.count(heritageCountData.cultural_events,
-      heritageCountData.heritage_items);
-  }
 }
 async function loadHeritage() {
   try { heritageData = await getJSON('data/heritage.json'); }
   catch (e) { /* keep null: renderHeritage shows the honest failure note */ }
-  try { heritageCountData = await getJSON('data/cultural-count.json'); }
-  catch (e) { /* counter line simply stays empty */ }
   renderHeritage();
 }
 loadHeritage();
