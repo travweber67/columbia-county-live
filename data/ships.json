@@ -1,6 +1,97 @@
 {
- "fetched_at": "2026-11-26T13:40:47Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-26T13:45:48Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61107,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 121,
+   "heading": 121,
+   "nav_status": 15,
+   "updated": "2026-11-26 13:45:51.958407697 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.60136,
+   "lon": -122.77661,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-26 13:46:07.540246315 +0000 UTC"
+  },
+  {
+   "mmsi": 351421000,
+   "name": "ICY BAY",
+   "lat": 45.64378,
+   "lon": -122.74102,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-26 13:46:10.523763536 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19953,
+   "lon": -123.38497,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-26 13:46:13.647266341 +0000 UTC"
+  },
+  {
+   "mmsi": 368257130,
+   "name": "TRIUMPH VII",
+   "lat": 46.0915,
+   "lon": -122.92316,
+   "type_code": 50,
+   "updated": "2026-11-26 13:46:13.936704914 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19998,
+   "lon": -123.38543,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-26 13:46:14.123144981 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 45.64331,
+   "lon": -122.75281,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-26 13:46:16.005714215 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.5842,
+   "lon": -122.7662,
+   "sog_kn": 0,
+   "cog": 199.2,
+   "heading": 146,
+   "nav_status": 0,
+   "updated": "2026-11-26 13:46:19.602930057 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 45.58732,
+   "lon": -122.7701,
+   "type_code": 52,
+   "destination": "US^0R88>0UJB",
+   "updated": "2026-11-26 13:46:21.383230426 +0000 UTC"
+  }
+ ]
 }
