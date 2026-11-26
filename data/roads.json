@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-26T16:00:58Z",
+ "fetched_at": "2026-11-26T16:05:59Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -16,6 +16,19 @@
   }
  ],
  "incidents": [
+  {
+   "title": "High water is causing minimal delay to traffic. Use caution. Ramps Affected.",
+   "desc": "",
+   "impact": "No to Minimum Delay",
+   "place": "I-5, Portland, Intersection with Columbia Blvd",
+   "route": "I5",
+   "milepost": 305.44,
+   "lat": 45.57696,
+   "lon": -122.6785,
+   "start": "2026-11-26T08:00:13.473-08:00",
+   "updated": "2026-11-26T08:00:40-08:00",
+   "source": "ODOT TripCheck"
+  },
   {
    "title": "Traffic Impacts: No traffic impacts.",
    "desc": "Project Description: This project improves system operations in the region by replacing and upgrading equipment that is beyond its service life. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=22867",
@@ -134,7 +147,7 @@
    "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 113,
+ "odot_active_statewide": 117,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
   "alerts": [],
