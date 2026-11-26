@@ -1,6 +1,82 @@
 {
- "fetched_at": "2026-11-26T13:53:41Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-26T13:55:48Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61107,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 120.6,
+   "heading": 120,
+   "nav_status": 15,
+   "updated": "2026-11-26 13:56:02.242034158 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 45.60137,
+   "lon": -122.7766,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-26 13:56:07.481894087 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60752,
+   "lon": -122.67765,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-26 13:56:10.343110385 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.6435,
+   "lon": -122.75241,
+   "sog_kn": 0,
+   "cog": 1,
+   "heading": 140,
+   "nav_status": 5,
+   "updated": "2026-11-26 13:56:10.917514682 +0000 UTC"
+  },
+  {
+   "mmsi": 563338800,
+   "name": "ISHIZUCHI STAR",
+   "lat": 45.63145,
+   "lon": -122.69716,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-26 13:56:15.181801819 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09339,
+   "lon": -122.92374,
+   "sog_kn": 0,
+   "cog": 155.9,
+   "heading": 120,
+   "nav_status": 0,
+   "updated": "2026-11-26 13:56:18.776977183 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 135.9,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-26 13:56:24.841798436 +0000 UTC"
+  }
+ ]
 }
