@@ -1,47 +1,6 @@
 {
- "fetched_at": "2026-11-26T02:59:57Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 636013613,
-   "name": "LONDON 2012",
-   "lat": 46.04437,
-   "lon": -122.88282,
-   "type_code": 70,
-   "destination": "KR INC>US KAM",
-   "updated": "2026-11-26 03:00:24.154390955 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.01415,
-   "lon": -122.85826,
-   "type_code": 52,
-   "destination": "COL RIVER",
-   "updated": "2026-11-26 03:00:25.922692253 +0000 UTC"
-  },
-  {
-   "mmsi": 367476050,
-   "name": "CLACKAMAS",
-   "lat": 46.09307,
-   "lon": -122.92322,
-   "sog_kn": 0,
-   "cog": 62.3,
-   "heading": 153,
-   "nav_status": 0,
-   "updated": "2026-11-26 03:00:26.695113759 +0000 UTC"
-  },
-  {
-   "mmsi": 366892350,
-   "name": "NAT GEO SEA BIRD",
-   "lat": 46.08966,
-   "lon": -122.92974,
-   "sog_kn": 0,
-   "cog": 72.7,
-   "heading": 109,
-   "nav_status": 5,
-   "updated": "2026-11-26 03:00:34.540750806 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-26T03:04:58Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
