@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-26T21:54:52Z",
+ "fetched_at": "2026-11-26T22:25:21Z",
  "source": "National Weather Service gridpoint forecasts \u00b7 Open-Meteo 10-day wind outlook \u00b7 NOAA National Data Buoy Center buoy observations \u00b7 NOAA Tides & Currents predictions \u00b7 USGS gauges",
  "places": [
   {
@@ -8,19 +8,13 @@
    "sub": "The river \u2014 the downtown waterfront to the Westport ferry end",
    "status": "ok",
    "wind_now": {
-    "mph": 8,
-    "gust_mph": 15,
+    "mph": 7,
+    "gust_mph": 14,
     "dir_deg": 170,
     "src": "forecast",
-    "t": 1795726800000
+    "t": 1795730400000
    },
    "wind_series": [
-    {
-     "t": 1795726800000,
-     "mph": 8,
-     "gust_mph": 15,
-     "dir_deg": 170
-    },
     {
      "t": 1795730400000,
      "mph": 7,
@@ -167,9 +161,9 @@
     },
     {
      "t": 1795816800000,
-     "mph": 5,
-     "gust_mph": 9,
-     "dir_deg": 339
+     "mph": 2,
+     "gust_mph": 6,
+     "dir_deg": 0
     },
     {
      "t": 1795820400000,
@@ -1460,6 +1454,12 @@
      "mph": 3,
      "gust_mph": 3,
      "dir_deg": 105
+    },
+    {
+     "t": 1796594400000,
+     "mph": 3,
+     "gust_mph": 2,
+     "dir_deg": 104
     }
    ],
    "wave_now": null,
@@ -1468,18 +1468,29 @@
     {
      "label": "St. Helens",
      "state": "rising",
-     "cur_ft": 1.6,
+     "cur_ft": 2.0,
      "next": {
       "type": "H",
       "v": 3.814,
       "t": 1795742280000
      }
+    },
+    {
+     "label": "Wauna",
+     "state": "rising",
+     "cur_ft": 8.1,
+     "next": {
+      "type": "H",
+      "v": 8.299,
+      "t": 1795732980000,
+      "king": true
+     }
     }
    ],
    "river": {
     "label": "Columbia River at Port Westward",
-    "ft": 8.02,
-    "t": 1795726200000
+    "ft": 9.17,
+    "t": 1795729800000
    },
    "zones": []
   },
@@ -1490,18 +1501,12 @@
    "status": "ok",
    "wind_now": {
     "mph": 18,
-    "gust_mph": 22,
+    "gust_mph": 20,
     "dir_deg": 240,
     "src": "buoy",
-    "t": 1795727400000
+    "t": 1795729200000
    },
    "wind_series": [
-    {
-     "t": 1795726800000,
-     "mph": 22,
-     "gust_mph": 28,
-     "dir_deg": 230
-    },
     {
      "t": 1795730400000,
      "mph": 20,
@@ -1648,9 +1653,9 @@
     },
     {
      "t": 1795816800000,
-     "mph": 4,
-     "gust_mph": 10,
-     "dir_deg": 294
+     "mph": 9,
+     "gust_mph": 12,
+     "dir_deg": 0
     },
     {
      "t": 1795820400000,
@@ -2941,14 +2946,20 @@
      "mph": 2,
      "gust_mph": 6,
      "dir_deg": 276
+    },
+    {
+     "t": 1796594400000,
+     "mph": 3,
+     "gust_mph": 6,
+     "dir_deg": 275
     }
    ],
    "wave_now": {
-    "ft": 13.1,
-    "dir_deg": 223,
-    "period_s": 12.0,
+    "ft": 13.5,
+    "dir_deg": 231,
+    "period_s": null,
     "src": "buoy",
-    "t": 1795726200000
+    "t": 1795729200000
    },
    "wave_series": [],
    "tides": [],
@@ -2956,15 +2967,15 @@
    "zones": [
     {
      "name": "General Seas",
-     "text": "13 to 16 ft subsiding to 12 ft Friday morning."
+     "text": "14 to 17 ft subsiding to 15 ft Friday evening."
     },
     {
      "name": "First Ebb",
-     "text": "Ebb current of 3.57 kt at 525 AM Thursday. Seas 16 to 21 ft."
+     "text": "Very strong ebb current of 7.19 kt at 534 PM Thursday. Seas 15 to 18 ft."
     },
     {
      "name": "Second Ebb",
-     "text": "Very strong ebb current of 7.19 kt at 534 PM Thursday. Seas 16 to 20 ft."
+     "text": "Ebb current of 3.46 kt at 617 AM Friday. Seas 15 ft."
     }
    ]
   }
