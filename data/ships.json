@@ -1,6 +1,69 @@
 {
- "fetched_at": "2026-11-26T02:09:54Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-26T02:14:54Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00962,
+   "lon": -122.84855,
+   "sog_kn": 4.4,
+   "cog": 122.7,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-26 02:15:04.071475138 +0000 UTC"
+  },
+  {
+   "mmsi": 367496010,
+   "name": "DELIVERANCE",
+   "lat": 46.0933,
+   "lon": -122.92298,
+   "sog_kn": 0,
+   "cog": 273.8,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-26 02:15:08.834479066 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58418,
+   "lon": -122.76615,
+   "sog_kn": 0,
+   "cog": 204.2,
+   "heading": 145,
+   "nav_status": 0,
+   "updated": "2026-11-26 02:15:09.345211069 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64861,
+   "lon": -122.74427,
+   "sog_kn": 0,
+   "cog": 288,
+   "heading": 288,
+   "nav_status": 0,
+   "updated": "2026-11-26 02:15:10.221016979 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.58759,
+   "lon": -122.7707,
+   "type_code": 52,
+   "destination": "CSR OPS",
+   "updated": "2026-11-26 02:15:23.248412627 +0000 UTC"
+  },
+  {
+   "mmsi": 311054300,
+   "name": "GLOVIS CARAVEL",
+   "lat": 45.64651,
+   "lon": -122.75586,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-26 02:15:33.489359946 +0000 UTC"
+  }
+ ]
 }
