@@ -1,6 +1,69 @@
 {
- "fetched_at": "2026-11-26T06:10:14Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-26T06:15:16Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64351,
+   "lon": -122.75244,
+   "type_code": 52,
+   "destination": "US^02AK>0T67",
+   "updated": "2026-11-26 06:15:33.156233163 +0000 UTC"
+  },
+  {
+   "mmsi": 311054300,
+   "name": "GLOVIS CARAVEL",
+   "lat": 45.64651,
+   "lon": -122.75589,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-26 06:15:34.652896913 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64569,
+   "lon": -122.73485,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 112,
+   "nav_status": 5,
+   "updated": "2026-11-26 06:15:46.122335038 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.0934,
+   "lon": -122.92256,
+   "sog_kn": 0.7,
+   "cog": 133.7,
+   "heading": 48,
+   "nav_status": 3,
+   "updated": "2026-11-26 06:15:52.639965021 +0000 UTC"
+  },
+  {
+   "mmsi": 367667060,
+   "name": "GRANITE POINT",
+   "lat": 45.64728,
+   "lon": -122.73991,
+   "sog_kn": 0,
+   "cog": 340,
+   "heading": 16,
+   "nav_status": 5,
+   "updated": "2026-11-26 06:15:56.958646051 +0000 UTC"
+  },
+  {
+   "mmsi": 367006570,
+   "name": "JEFFREY S",
+   "lat": 45.72365,
+   "lon": -122.76159,
+   "sog_kn": 0,
+   "cog": 342.4,
+   "heading": 185,
+   "nav_status": 1,
+   "updated": "2026-11-26 06:15:59.267487237 +0000 UTC"
+  }
+ ]
 }
