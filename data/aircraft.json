@@ -1,67 +1,47 @@
 {
- "fetched_at": "2026-11-26T17:31:05Z",
+ "fetched_at": "2026-11-26T17:36:05Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B network, ODbL). The same feed family God's Eye View uses; direct browser access is CORS-blocked by every keyless ADS-B API tested, so aircraft ride the snapshot pipeline.",
  "aircraft": [
   {
-   "hex": "a6a6b7",
-   "callsign": "ASA541",
-   "type": "B738",
-   "alt_ft": 3400,
-   "gs_kn": 207.9,
-   "track": 136.17,
-   "lat": 45.71347,
-   "lon": -122.857696
+   "hex": "a5320b",
+   "callsign": "ASA725",
+   "type": "B739",
+   "alt_ft": 29000,
+   "gs_kn": 391.1,
+   "track": 178.68,
+   "lat": 46.145045,
+   "lon": -123.377907
+  },
+  {
+   "hex": "a88e2e",
+   "callsign": "QXE2334",
+   "type": "E75L",
+   "alt_ft": 2825,
+   "gs_kn": 227.7,
+   "track": 45.0,
+   "lat": 45.665557,
+   "lon": -122.865051
+  },
+  {
+   "hex": "ac486a",
+   "callsign": "SWA1151",
+   "type": "B38M",
+   "alt_ft": 2275,
+   "gs_kn": 195.5,
+   "track": 118.4,
+   "lat": 45.654245,
+   "lon": -122.749283
   },
   {
    "hex": "c05f04",
    "callsign": "C-GJZN",
    "type": "DH8D",
-   "alt_ft": 4825,
-   "gs_kn": 176.8,
-   "track": 294.39,
-   "lat": 45.758057,
-   "lon": -122.791309
-  },
-  {
-   "hex": "a84a55",
-   "callsign": "QXE2467",
-   "type": "E75L",
-   "alt_ft": 2450,
-   "gs_kn": 189.7,
-   "track": 124.7,
-   "lat": 45.660204,
-   "lon": -122.78904
-  },
-  {
-   "hex": "a25925",
-   "callsign": "SKW4041",
-   "type": "E75L",
-   "alt_ft": 31500,
-   "gs_kn": 386.8,
-   "track": 350.03,
-   "lat": 46.076986,
-   "lon": -122.67334
-  },
-  {
-   "hex": "a79d78",
-   "callsign": "ASA750",
-   "type": "B738",
-   "alt_ft": 225,
-   "gs_kn": 142.4,
-   "track": 119.45,
-   "lat": 45.602921,
-   "lon": -122.64152
-  },
-  {
-   "hex": "a442f3",
-   "callsign": "DAL2980",
-   "type": "B738",
-   "alt_ft": 34575,
-   "gs_kn": 366.6,
-   "track": 349.95,
-   "lat": 45.826163,
-   "lon": -122.610649
+   "alt_ft": 975,
+   "gs_kn": 122.6,
+   "track": 118.24,
+   "lat": 45.621231,
+   "lon": -122.663425
   }
  ]
 }
