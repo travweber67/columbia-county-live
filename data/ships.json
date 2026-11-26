@@ -1,6 +1,82 @@
 {
- "fetched_at": "2026-11-26T16:41:02Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-26T16:46:02Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 351421000,
+   "name": "ICY BAY",
+   "lat": 45.64381,
+   "lon": -122.741,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-26 16:46:10.573974063 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58734,
+   "lon": -122.77048,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 138,
+   "nav_status": 5,
+   "updated": "2026-11-26 16:46:11.340563325 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58755,
+   "lon": -122.77045,
+   "sog_kn": 0,
+   "cog": 298.7,
+   "heading": 137,
+   "nav_status": 0,
+   "updated": "2026-11-26 16:46:12.363812431 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 300.4,
+   "heading": 120,
+   "nav_status": 15,
+   "updated": "2026-11-26 16:46:13.222235204 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64356,
+   "lon": -122.75287,
+   "sog_kn": 0,
+   "cog": 326.1,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-26 16:46:23.118512828 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 46.10068,
+   "lon": -122.94219,
+   "type_code": 31,
+   "destination": "LONGVIEW ANCHORAGE",
+   "updated": "2026-11-26 16:46:38.818678402 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 7.4,
+   "heading": 118,
+   "nav_status": 0
+  },
+  {
+   "mmsi": 311054300,
+   "name": "GLOVIS CARAVEL",
+   "lat": 45.64651,
+   "lon": -122.75589,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-26 16:46:36.947067011 +0000 UTC"
+  }
+ ]
 }
