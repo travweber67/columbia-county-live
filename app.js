@@ -5417,7 +5417,7 @@ const FISH_L = {
     fail: 'Fishing conditions couldn\'t load just now — try again in a bit.',
     compass: ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'],
     from: 'from the', wind: 'Wind', waves: 'Waves', tide: 'Tide',
-    gustsTo: 'gusts to', mph: 'mph', ft: 'ft',
+    gustsTo: 'gusts to', mph: 'mph', ft: 'ft', king: 'King tide',
     buoyWord: 'buoy reading', fcstWord: 'forecast for this hour',
     rising: 'coming in', falling: 'going out',
     highWord: 'high tide', lowWord: 'low tide',
@@ -5432,7 +5432,7 @@ const FISH_L = {
     fail: 'Las condiciones de pesca no cargaron esta vez — inténtelo de nuevo en un rato.',
     compass: ['N', 'NE', 'E', 'SE', 'S', 'SO', 'O', 'NO'],
     from: 'desde el', wind: 'Viento', waves: 'Olas', tide: 'Marea',
-    gustsTo: 'ráfagas de', mph: 'mph', ft: 'pies',
+    gustsTo: 'ráfagas de', mph: 'mph', ft: 'pies', king: 'Marea real',
     buoyWord: 'medición de la boya', fcstWord: 'pronóstico para esta hora',
     rising: 'subiendo', falling: 'bajando',
     highWord: 'pleamar', lowWord: 'bajamar',
@@ -5488,7 +5488,8 @@ function fishwxTiles(place, L, es) {
       + (td.cur_ft != null ? ' · ' + num(td.cur_ft, 1) + ' ' + L.ft : '') + '</span>'
       + '<span class="tchart-next-t">' + (td.next.type === 'H' ? L.highWord : L.lowWord)
       + ' ' + num(td.next.v, 1) + ' ' + L.ft + ' · ' + fmtTime(new Date(td.next.t))
-      + ' (' + tchartAway(td.next.t - now, es) + ')</span></div>';
+      + ' (' + tchartAway(td.next.t - now, es) + ')'
+      + (td.next.king ? ' · 👑 ' + L.king : '') + '</span></div>';
   });
   if (place.river) {
     tiles += '<div class="tchart-next-box"><span class="tchart-next-k">' + L.riverLevel + '</span>'
