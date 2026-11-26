@@ -1,6 +1,87 @@
 {
- "fetched_at": "2026-11-26T00:04:45Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-26T00:09:44Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 311001605,
+   "name": "SAGA DISCOVERY",
+   "lat": 46.17263,
+   "lon": -123.10581,
+   "type_code": 79,
+   "destination": "US LOG",
+   "updated": "2026-11-26 00:10:01.242264223 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08964,
+   "lon": -122.9297,
+   "type_code": 66,
+   "destination": "RAINIER",
+   "updated": "2026-11-26 00:10:03.452543035 +0000 UTC"
+  },
+  {
+   "mmsi": 367006570,
+   "name": "JEFFREY S",
+   "lat": 45.72177,
+   "lon": -122.76317,
+   "type_code": 52,
+   "destination": "PORTLAND, OR",
+   "updated": "2026-11-26 00:10:07.588486153 +0000 UTC"
+  },
+  {
+   "mmsi": 351421000,
+   "name": "ICY BAY",
+   "lat": 45.6438,
+   "lon": -122.741,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-26 00:10:10.585793701 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.06691,
+   "lon": -122.89325,
+   "sog_kn": 8.6,
+   "cog": 155.5,
+   "heading": 153,
+   "nav_status": 0,
+   "updated": "2026-11-26 00:10:16.127400405 +0000 UTC"
+  },
+  {
+   "mmsi": 368126190,
+   "name": "GERONIMO",
+   "lat": 46.09893,
+   "lon": -122.95738,
+   "sog_kn": 0,
+   "cog": 204.2,
+   "heading": 294,
+   "nav_status": 5,
+   "updated": "2026-11-26 00:10:18.686812998 +0000 UTC"
+  },
+  {
+   "mmsi": 367513140,
+   "name": "CLEARWATER",
+   "lat": 45.64374,
+   "lon": -122.75273,
+   "sog_kn": 0.3,
+   "cog": 218.7,
+   "heading": 154,
+   "nav_status": 0,
+   "updated": "2026-11-26 00:10:21.516158051 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20003,
+   "lon": -123.38541,
+   "sog_kn": 0,
+   "cog": 10.2,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-26 00:10:24.4115836 +0000 UTC"
+  }
+ ]
 }
