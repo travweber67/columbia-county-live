@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-26T16:53:42Z",
+ "fetched_at": "2026-11-26T17:01:07Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -16,19 +16,6 @@
   }
  ],
  "incidents": [
-  {
-   "title": "High water is causing minimal delay to traffic. Use caution.",
-   "desc": "",
-   "impact": "No to Minimum Delay",
-   "place": "US30, Portland",
-   "route": "US30",
-   "milepost": 7.59,
-   "lat": 45.59007,
-   "lon": -122.7781,
-   "start": "2026-11-26T08:42:25.637-08:00",
-   "updated": "2026-11-26T08:42:50-08:00",
-   "source": "ODOT TripCheck"
-  },
   {
    "title": "Traffic Impacts: No traffic impacts.",
    "desc": "Project Description: This project improves system operations in the region by replacing and upgrading equipment that is beyond its service life. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=22867",
@@ -53,6 +40,19 @@
    "lon": -123.09797,
    "start": "2026-06-16T07:31:51.18-07:00",
    "updated": "2026-11-25T10:42:42-08:00",
+   "source": "ODOT TripCheck"
+  },
+  {
+   "title": "Road construction is occurring causing minimal delay to traffic. Use caution and watch for workers.",
+   "desc": "Timber felling is occurring, prepare to slow or stop. Watch for workers, use caution, and prepare to slow down in the work zone.",
+   "impact": "No to Minimum Delay",
+   "place": "ORE202, 5 miles North of Birkenfeld",
+   "route": "OR202",
+   "milepost": 36.0,
+   "lat": 45.98244,
+   "lon": -123.41492,
+   "start": "2026-11-03T15:57:01.297-08:00",
+   "updated": "2026-11-23T20:11:54-08:00",
    "source": "ODOT TripCheck"
   },
   {
@@ -121,19 +121,6 @@
    "source": "ODOT TripCheck"
   },
   {
-   "title": "Road construction is occurring causing minimal delay to traffic. Use caution and watch for workers.",
-   "desc": "Timber felling is occurring, prepare to slow or stop. Watch for workers, use caution, and prepare to slow down in the work zone.",
-   "impact": "No to Minimum Delay",
-   "place": "ORE202, 5 miles North of Birkenfeld",
-   "route": "OR202",
-   "milepost": 36.0,
-   "lat": 45.98244,
-   "lon": -123.41492,
-   "start": "2026-11-03T15:57:01.297-08:00",
-   "updated": "2026-11-23T20:11:54-08:00",
-   "source": "ODOT TripCheck"
-  },
-  {
    "title": "Bridge work is occurring causing minimal delay to traffic. Use caution.",
    "desc": "Bridge construction is occurring. Prepare to slow. Watch for workers. 3/11/26 - 11/30/26: MP 38.5 to MP 38.63 (Bridge structure ID: 03113A) portable traffic signal in place with 24-hour lane closure. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=23117",
    "impact": "No to Minimum Delay",
@@ -147,7 +134,7 @@
    "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 110,
+ "odot_active_statewide": 108,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
   "alerts": [],
