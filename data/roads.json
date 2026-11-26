@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-26T16:16:00Z",
+ "fetched_at": "2026-11-26T16:21:00Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -16,6 +16,19 @@
   }
  ],
  "incidents": [
+  {
+   "title": "High water is causing minimal delay to traffic. Use caution. Ramps Affected.",
+   "desc": "",
+   "impact": "No to Minimum Delay",
+   "place": "I-5, Oregon Washington Border",
+   "route": "I5",
+   "milepost": 307.69,
+   "lat": 45.60888,
+   "lon": -122.68079,
+   "start": "2026-11-26T08:17:44.06-08:00",
+   "updated": "2026-11-26T08:18:05-08:00",
+   "source": "ODOT TripCheck"
+  },
   {
    "title": "Traffic Impacts: No traffic impacts.",
    "desc": "Project Description: This project improves system operations in the region by replacing and upgrading equipment that is beyond its service life. Link to Additional Information: https://www.oregon.gov/odot/projects/pages/project-details.aspx?project=22867",
@@ -134,7 +147,7 @@
    "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 116,
+ "odot_active_statewide": 115,
  "bridge": {
   "name": "Lewis & Clark Bridge (SR 433, Rainier <-> Longview)",
   "alerts": [],
