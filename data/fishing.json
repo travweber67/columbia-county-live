@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-26T22:25:21Z",
+ "fetched_at": "2026-11-26T22:55:37Z",
  "source": "National Weather Service gridpoint forecasts \u00b7 Open-Meteo 10-day wind outlook \u00b7 NOAA National Data Buoy Center buoy observations \u00b7 NOAA Tides & Currents predictions \u00b7 USGS gauges",
  "places": [
   {
@@ -1468,7 +1468,7 @@
     {
      "label": "St. Helens",
      "state": "rising",
-     "cur_ft": 2.0,
+     "cur_ft": 2.4,
      "next": {
       "type": "H",
       "v": 3.814,
@@ -1477,13 +1477,12 @@
     },
     {
      "label": "Wauna",
-     "state": "rising",
-     "cur_ft": 8.1,
+     "state": "falling",
+     "cur_ft": 8.2,
      "next": {
-      "type": "H",
-      "v": 8.299,
-      "t": 1795732980000,
-      "king": true
+      "type": "L",
+      "v": -0.814,
+      "t": 1795763220000
      }
     }
    ],
@@ -1500,11 +1499,11 @@
    "sub": "Buoy 10 and the river mouth \u2014 out here, the bar decides",
    "status": "ok",
    "wind_now": {
-    "mph": 18,
+    "mph": 16,
     "gust_mph": 20,
-    "dir_deg": 240,
+    "dir_deg": 250,
     "src": "buoy",
-    "t": 1795729200000
+    "t": 1795731000000
    },
    "wind_series": [
     {
@@ -2959,7 +2958,7 @@
     "dir_deg": 231,
     "period_s": null,
     "src": "buoy",
-    "t": 1795729200000
+    "t": 1795729800000
    },
    "wave_series": [],
    "tides": [],
