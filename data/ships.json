@@ -1,58 +1,82 @@
 {
- "fetched_at": "2026-11-26T00:34:47Z",
+ "fetched_at": "2026-11-26T00:39:48Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367047270,
-   "name": "LIBERTY",
-   "lat": 45.64791,
-   "lon": -122.741,
-   "type_code": 52,
-   "destination": "RIVERGATE",
-   "updated": "2026-11-26 00:35:03.764202348 +0000 UTC"
+   "mmsi": 367006570,
+   "name": "JEFFREY S",
+   "lat": 45.72238,
+   "lon": -122.76334,
+   "sog_kn": 0.1,
+   "cog": 283.4,
+   "heading": 89,
+   "nav_status": 1,
+   "updated": "2026-11-26 00:40:00.361875093 +0000 UTC"
   },
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.09312,
-   "lon": -122.92286,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.64894,
+   "lon": -122.74554,
    "sog_kn": 0.1,
-   "cog": 258.5,
-   "heading": 213,
+   "cog": 197.2,
+   "heading": 107,
    "nav_status": 0,
-   "updated": "2026-11-26 00:35:11.355380332 +0000 UTC"
+   "updated": "2026-11-26 00:40:11.45051045 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64351,
+   "lon": -122.75296,
+   "sog_kn": 0,
+   "cog": 259.5,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-26 00:40:14.771905454 +0000 UTC"
+  },
+  {
+   "mmsi": 477113700,
+   "name": "SHANDONG XIN XING",
+   "lat": 45.99841,
+   "lon": -122.85174,
+   "sog_kn": 0,
+   "cog": 357.4,
+   "heading": 162,
+   "nav_status": 5,
+   "updated": "2026-11-26 00:40:18.451364474 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.09051,
+   "lon": -122.92187,
+   "sog_kn": 6.7,
+   "cog": 28.8,
+   "heading": 22,
+   "nav_status": 0,
+   "updated": "2026-11-26 00:40:20.095398803 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.60092,
+   "lon": -122.7758,
+   "type_code": 52,
+   "destination": "CSR OPS",
+   "updated": "2026-11-26 00:40:21.347442095 +0000 UTC"
   },
   {
    "mmsi": 368083770,
    "name": "SUPPORT",
-   "lat": 46.09028,
+   "lat": 46.09027,
    "lon": -122.93151,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-26 00:35:11.446212447 +0000 UTC"
-  },
-  {
-   "mmsi": 367315790,
-   "name": "LORI B.",
-   "lat": 46.09663,
-   "lon": -122.92886,
-   "sog_kn": 0.1,
-   "cog": 227,
-   "heading": 202,
-   "nav_status": 0,
-   "updated": "2026-11-26 00:35:12.447114855 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15705,
-   "lon": -123.40233,
-   "type_code": 99,
-   "destination": "",
-   "updated": "2026-11-26 00:35:14.14356969 +0000 UTC"
+   "updated": "2026-11-26 00:40:22.675671343 +0000 UTC"
   }
  ]
 }
