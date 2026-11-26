@@ -1,6 +1,67 @@
 {
- "fetched_at": "2026-11-26T00:23:35Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-26T00:29:46Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.07479,
+   "lon": -122.89253,
+   "sog_kn": 27,
+   "cog": 326.2,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-26 00:30:00.80755824 +0000 UTC"
+  },
+  {
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 45.63037,
+   "lon": -122.69582,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-26 00:30:01.565335536 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64354,
+   "lon": -122.75292,
+   "type_code": 52,
+   "destination": "US^0UU4>02MR",
+   "updated": "2026-11-26 00:30:11.747150555 +0000 UTC"
+  },
+  {
+   "mmsi": 538090732,
+   "name": "NORDIC MERCHANTS",
+   "lat": 46.1034,
+   "lon": -122.95,
+   "type_code": 70,
+   "destination": "USLOG",
+   "updated": "2026-11-26 00:30:14.238672436 +0000 UTC"
+  },
+  {
+   "mmsi": 367476050,
+   "name": "CLACKAMAS",
+   "lat": 46.08633,
+   "lon": -122.91778,
+   "sog_kn": 6.7,
+   "cog": 296.1,
+   "heading": 298,
+   "nav_status": 0,
+   "updated": "2026-11-26 00:30:14.892353221 +0000 UTC"
+  },
+  {
+   "mmsi": 367727410,
+   "name": "AMY B",
+   "lat": 45.64385,
+   "lon": -122.7258,
+   "sog_kn": 0,
+   "cog": 175.8,
+   "heading": 119,
+   "nav_status": 12,
+   "updated": "2026-11-26 00:30:19.577194261 +0000 UTC"
+  }
+ ]
 }
