@@ -1,6 +1,49 @@
 {
- "fetched_at": "2026-11-26T11:30:37Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-26T11:35:37Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 256001000,
+   "name": "DOVER",
+   "lat": 45.63254,
+   "lon": -122.70668,
+   "sog_kn": 0,
+   "cog": 11.1,
+   "heading": 118,
+   "nav_status": 1,
+   "updated": "2026-11-26 11:36:03.806998746 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.85342,
+   "lon": -122.78586,
+   "sog_kn": 8.3,
+   "cog": 0.5,
+   "heading": 359,
+   "nav_status": 12,
+   "updated": "2026-11-26 11:36:07.637569537 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.6111,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 210.1,
+   "heading": 120,
+   "nav_status": 15,
+   "updated": "2026-11-26 11:36:13.287591251 +0000 UTC"
+  },
+  {
+   "mmsi": 636024866,
+   "name": "CHAMPION TRADER",
+   "lat": 45.60569,
+   "lon": -122.7805,
+   "type_code": 80,
+   "destination": "CHERRY POINT",
+   "updated": "2026-11-26 11:36:15.534753638 +0000 UTC"
+  }
+ ]
 }
