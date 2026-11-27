@@ -1,6 +1,34 @@
 {
- "fetched_at": "2026-11-27T23:03:29Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T23:08:30Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.38544,
+   "type_code": 99,
+   "destination": "NAKNEK",
+   "updated": "2026-11-27 23:09:01.518558072 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 46.02039,
+   "lon": -122.86487,
+   "type_code": 57,
+   "destination": "VANCOUVER",
+   "updated": "2026-11-27 23:09:05.361067506 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08967,
+   "lon": -122.92969,
+   "type_code": 66,
+   "destination": "RAINIER",
+   "updated": "2026-11-27 23:09:12.457150711 +0000 UTC"
+  }
+ ]
 }
