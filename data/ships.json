@@ -1,49 +1,91 @@
 {
- "fetched_at": "2026-11-27T12:42:37Z",
+ "fetched_at": "2026-11-27T12:47:38Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58733,
-   "lon": -122.77043,
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.65376,
+   "lon": -122.75533,
+   "type_code": 90,
+   "destination": "VANCOUVER,WA,USA",
+   "updated": "2026-11-27 12:47:49.1810621 +0000 UTC"
+  },
+  {
+   "mmsi": 432666000,
+   "name": "AEGEAN HIGHWAY",
+   "lat": 45.5976,
+   "lon": -122.7748,
    "sog_kn": 0,
-   "cog": 340.5,
-   "heading": 138,
+   "cog": 41.3,
+   "heading": 330,
    "nav_status": 5,
-   "updated": "2026-11-27 12:43:11.67714602 +0000 UTC"
+   "updated": "2026-11-27 12:47:58.051646114 +0000 UTC"
   },
   {
-   "mmsi": 440189000,
-   "name": "SM YANTIAN",
-   "lat": 45.66062,
-   "lon": -122.76654,
-   "sog_kn": 6.6,
-   "cog": 153.8,
-   "heading": 152,
+   "mmsi": 636020172,
+   "name": "VITA OLYMPIC",
+   "lat": 46.17475,
+   "lon": -123.11099,
+   "sog_kn": 0.3,
+   "cog": 128.7,
+   "heading": 23,
+   "nav_status": 1,
+   "updated": "2026-11-27 12:47:59.161314062 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.653,
+   "lon": -122.7594,
+   "sog_kn": 5.6,
+   "cog": 143.7,
+   "heading": 139,
    "nav_status": 0,
-   "updated": "2026-11-27 12:43:13.353800197 +0000 UTC"
+   "updated": "2026-11-27 12:48:00.406464316 +0000 UTC"
   },
   {
-   "mmsi": 367646810,
-   "name": "EMERY ZIDELL",
-   "lat": 45.67724,
-   "lon": -122.77115,
-   "type_code": 80,
-   "destination": "SEATTLE, WA",
-   "updated": "2026-11-27 12:43:14.148687703 +0000 UTC"
+   "mmsi": 367645170,
+   "name": "CROWN POINT",
+   "lat": 45.64145,
+   "lon": -122.72991,
+   "sog_kn": 7,
+   "cog": 298.3,
+   "heading": 299,
+   "nav_status": 12,
+   "updated": "2026-11-27 12:48:01.24250288 +0000 UTC"
   },
   {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40234,
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.62757,
+   "lon": -122.69972,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 131,
-   "nav_status": 0,
-   "updated": "2026-11-27 12:43:18.844370269 +0000 UTC"
+   "cog": 134.1,
+   "heading": 124,
+   "nav_status": 5,
+   "updated": "2026-11-27 12:48:01.243808373 +0000 UTC"
+  },
+  {
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 45.63039,
+   "lon": -122.69581,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-27 12:48:01.306803077 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58131,
+   "lon": -122.76065,
+   "sog_kn": 0,
+   "cog": 210.7,
+   "heading": 122,
+   "nav_status": 12,
+   "updated": "2026-11-27 12:48:09.924110988 +0000 UTC"
   }
  ]
 }
