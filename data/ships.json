@@ -1,56 +1,6 @@
 {
- "fetched_at": "2026-11-27T15:37:52Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 45.64345,
-   "lon": -122.75282,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-27 15:38:04.529840422 +0000 UTC"
-  },
-  {
-   "mmsi": 367719170,
-   "name": "RYAN POINT",
-   "lat": 45.63394,
-   "lon": -122.786,
-   "sog_kn": 6.8,
-   "cog": 29.7,
-   "heading": 30,
-   "nav_status": 5,
-   "updated": "2026-11-27 15:38:12.286871947 +0000 UTC"
-  },
-  {
-   "mmsi": 538011145,
-   "name": "FORTUNE BREEZE",
-   "lat": 45.62537,
-   "lon": -122.78823,
-   "type_code": 70,
-   "destination": "PORTLAND,USA",
-   "updated": "2026-11-27 15:38:14.166842873 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.0934,
-   "lon": -122.92373,
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-27 15:38:23.392074862 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 46.08984,
-   "lon": -122.92897,
-   "sog_kn": 0,
-   "cog": 309.5,
-   "heading": 104,
-   "nav_status": 0,
-   "updated": "2026-11-27 15:38:25.513595916 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-27T15:42:52Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
