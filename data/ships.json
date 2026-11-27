@@ -1,89 +1,35 @@
 {
- "fetched_at": "2026-11-27T23:48:33Z",
+ "fetched_at": "2026-11-27T23:53:33Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 368041480,
-   "name": "SAMANTHA S",
-   "lat": 45.64346,
-   "lon": -122.75278,
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10333,
+   "lon": -122.91025,
+   "sog_kn": 0,
+   "cog": 83.4,
+   "heading": 91,
+   "nav_status": 3,
+   "updated": "2026-11-27 23:53:44.831628779 +0000 UTC"
+  },
+  {
+   "mmsi": 367006570,
+   "name": "JEFFREY S",
+   "lat": 45.7217,
+   "lon": -122.7599,
    "type_code": 52,
-   "destination": "COLUMBIA RIVER OPS",
-   "updated": "2026-11-27 23:48:49.745347453 +0000 UTC"
+   "destination": "PORTLAND, OR",
+   "updated": "2026-11-27 23:53:59.425459344 +0000 UTC"
   },
   {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19996,
-   "lon": -123.38552,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-27 23:48:51.608222522 +0000 UTC"
-  },
-  {
-   "mmsi": 367513220,
-   "name": "VANCOUVER",
-   "lat": 46.09062,
-   "lon": -122.93211,
-   "sog_kn": 0,
-   "cog": 290.2,
-   "heading": 511,
-   "nav_status": 5,
-   "updated": "2026-11-27 23:48:52.846607927 +0000 UTC"
-  },
-  {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.09093,
-   "lon": -122.92591,
-   "sog_kn": 8.5,
-   "cog": 281,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-27 23:48:54.449361988 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61292,
-   "sog_kn": 0,
-   "cog": 120.3,
-   "heading": 120,
-   "nav_status": 15,
-   "updated": "2026-11-27 23:49:01.523353473 +0000 UTC"
-  },
-  {
-   "mmsi": 368470580,
-   "name": "ASSIST",
-   "lat": 45.64631,
-   "lon": -122.75517,
-   "sog_kn": 1.2,
-   "cog": 143.3,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-27 23:49:03.912230738 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.9101,
-   "type_code": 52,
-   "destination": "US^0UDW>0T9B",
-   "updated": "2026-11-27 23:49:04.435863685 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.0934,
-   "lon": -122.92374,
-   "sog_kn": 0,
-   "cog": 123,
-   "heading": 120,
-   "nav_status": 0,
-   "updated": "2026-11-27 23:49:08.094973899 +0000 UTC"
+   "mmsi": 368257130,
+   "name": "TRIUMPH VII",
+   "lat": 46.15196,
+   "lon": -123.0499,
+   "type_code": 50,
+   "updated": "2026-11-27 23:54:07.616894905 +0000 UTC"
   }
  ]
 }
