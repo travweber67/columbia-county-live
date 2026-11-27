@@ -1,6 +1,65 @@
 {
- "fetched_at": "2026-11-27T15:02:49Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T15:07:49Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 538011145,
+   "name": "FORTUNE BREEZE",
+   "lat": 45.62534,
+   "lon": -122.78822,
+   "type_code": 70,
+   "destination": "PORTLAND,USA",
+   "updated": "2026-11-27 15:08:13.683233605 +0000 UTC"
+  },
+  {
+   "mmsi": 636013613,
+   "name": "LONDON 2012",
+   "lat": 46.0444,
+   "lon": -122.88273,
+   "type_code": 70,
+   "destination": "KR INC>US KAM",
+   "updated": "2026-11-27 15:08:14.255746761 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15705,
+   "lon": -123.40232,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 138,
+   "nav_status": 0,
+   "updated": "2026-11-27 15:08:18.416345596 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.0934,
+   "lon": -122.92375,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-27 15:08:24.380581336 +0000 UTC"
+  },
+  {
+   "mmsi": 368126190,
+   "name": "GERONIMO",
+   "lat": 46.14635,
+   "lon": -123.03789,
+   "sog_kn": 10.7,
+   "cog": 304.5,
+   "heading": 304,
+   "nav_status": 11,
+   "updated": "2026-11-27 15:08:25.576974279 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 46.08985,
+   "lon": -122.92896,
+   "type_code": 31,
+   "destination": "PORTLAND",
+   "updated": "2026-11-27 15:08:33.339582402 +0000 UTC"
+  }
+ ]
 }
