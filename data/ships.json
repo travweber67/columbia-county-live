@@ -1,47 +1,6 @@
 {
- "fetched_at": "2026-11-27T06:47:10Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 440189000,
-   "name": "SM YANTIAN",
-   "lat": 46.2714,
-   "lon": -123.50183,
-   "sog_kn": 10.4,
-   "cog": 70,
-   "heading": 80,
-   "nav_status": 0,
-   "updated": "2026-11-27 06:47:36.044726982 +0000 UTC"
-  },
-  {
-   "mmsi": 355322000,
-   "name": "AMIS ACE",
-   "lat": 45.66694,
-   "lon": -122.76695,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-27 06:47:37.205803657 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15706,
-   "lon": -123.40234,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 131,
-   "nav_status": 0,
-   "updated": "2026-11-27 06:47:38.761922135 +0000 UTC"
-  },
-  {
-   "mmsi": 538012272,
-   "name": "PERSEUS I",
-   "lat": 46.026,
-   "lon": -122.868,
-   "type_code": 70,
-   "destination": "US KAM",
-   "updated": "2026-11-27 06:47:51.999333363 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-27T06:52:10Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
