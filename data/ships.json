@@ -1,55 +1,6 @@
 {
- "fetched_at": "2026-11-27T16:17:55Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 538090732,
-   "name": "NORDIC MERCHANTS",
-   "lat": 46.10345,
-   "lon": -122.94995,
-   "type_code": 70,
-   "destination": "USLOG",
-   "updated": "2026-11-27 16:18:15.959637503 +0000 UTC"
-  },
-  {
-   "mmsi": 256001000,
-   "name": "DOVER",
-   "lat": 45.6325,
-   "lon": -122.70677,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-27 16:18:20.310680178 +0000 UTC"
-  },
-  {
-   "mmsi": 538010248,
-   "name": "SAFEEN AL AMAL",
-   "lat": 46.12464,
-   "lon": -122.98891,
-   "sog_kn": 0,
-   "cog": 246.6,
-   "heading": 133,
-   "nav_status": 1,
-   "updated": "2026-11-27 16:18:23.126560802 +0000 UTC"
-  },
-  {
-   "mmsi": 368286340,
-   "name": "SHAVER",
-   "lat": 45.64615,
-   "lon": -122.75052,
-   "type_code": 52,
-   "updated": "2026-11-27 16:18:30.810730522 +0000 UTC"
-  },
-  {
-   "mmsi": 368171270,
-   "name": "DR. RAY",
-   "lat": 45.58131,
-   "lon": -122.76065,
-   "sog_kn": 0,
-   "cog": 210.7,
-   "heading": 122,
-   "nav_status": 12,
-   "updated": "2026-11-27 16:18:35.255305556 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-27T16:22:56Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
