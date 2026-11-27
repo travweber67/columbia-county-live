@@ -1,6 +1,97 @@
 {
- "fetched_at": "2026-11-27T11:17:31Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T11:22:31Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15344,
+   "lon": -123.37711,
+   "type_code": 99,
+   "updated": "2026-11-27 11:22:26.25501074 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.612,
+   "lon": -122.64533,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-27 11:22:31.82634847 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.09319,
+   "lon": -122.92382,
+   "sog_kn": 0,
+   "cog": 240.6,
+   "heading": 124,
+   "nav_status": 5,
+   "updated": "2026-11-27 11:22:43.998808937 +0000 UTC"
+  },
+  {
+   "mmsi": 636025785,
+   "name": "PAN SKY",
+   "lat": 45.63812,
+   "lon": -122.71074,
+   "type_code": 70,
+   "destination": "VANCOUVER BERTH",
+   "updated": "2026-11-27 11:22:46.414398909 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59405,
+   "lon": -122.77213,
+   "sog_kn": 0,
+   "cog": 346.3,
+   "heading": 149,
+   "nav_status": 5,
+   "updated": "2026-11-27 11:22:47.186326973 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19948,
+   "lon": -123.38507,
+   "sog_kn": 0,
+   "cog": 4,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-27 11:22:50.258201704 +0000 UTC"
+  },
+  {
+   "mmsi": 311001710,
+   "name": "HON HENRY NR JACKMAN",
+   "lat": 46.10873,
+   "lon": -122.97412,
+   "sog_kn": 0,
+   "cog": 189,
+   "heading": 128,
+   "nav_status": 5,
+   "updated": "2026-11-27 11:22:55.889830131 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.6673,
+   "lon": -122.76674,
+   "sog_kn": 0,
+   "cog": 81.3,
+   "heading": 156,
+   "nav_status": 0,
+   "updated": "2026-11-27 11:22:58.014315406 +0000 UTC"
+  },
+  {
+   "mmsi": 636013613,
+   "name": "LONDON 2012",
+   "lat": 46.04437,
+   "lon": -122.88273,
+   "type_code": 70,
+   "destination": "KR INC>US KAM",
+   "updated": "2026-11-27 11:23:01.003674265 +0000 UTC"
+  }
+ ]
 }
