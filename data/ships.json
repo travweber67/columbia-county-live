@@ -1,6 +1,104 @@
 {
- "fetched_at": "2026-11-27T00:01:38Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T00:06:38Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.0935,
+   "lon": -122.92421,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 303,
+   "nav_status": 3,
+   "updated": "2026-11-27 00:07:07.764440581 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 45.64761,
+   "lon": -122.75707,
+   "sog_kn": 0,
+   "cog": 316,
+   "heading": 224,
+   "nav_status": 0,
+   "updated": "2026-11-27 00:07:10.002801525 +0000 UTC"
+  },
+  {
+   "mmsi": 205706000,
+   "name": "BOCHEM BAYARD",
+   "lat": 45.84787,
+   "lon": -122.78556,
+   "sog_kn": 12.9,
+   "cog": 190.7,
+   "heading": 193,
+   "nav_status": 0,
+   "updated": "2026-11-27 00:07:11.353796568 +0000 UTC"
+  },
+  {
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 45.63035,
+   "lon": -122.69582,
+   "sog_kn": 0,
+   "cog": 320.1,
+   "heading": 127,
+   "nav_status": 5,
+   "updated": "2026-11-27 00:07:12.290466625 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58732,
+   "lon": -122.77045,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 138,
+   "nav_status": 5,
+   "updated": "2026-11-27 00:07:13.99183803 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 46.01446,
+   "lon": -122.85766,
+   "sog_kn": 8,
+   "cog": 147.9,
+   "heading": 153,
+   "nav_status": 5,
+   "updated": "2026-11-27 00:07:14.071381989 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 45.64585,
+   "lon": -122.75574,
+   "type_code": 50,
+   "destination": "--",
+   "updated": "2026-11-27 00:07:14.16092099 +0000 UTC"
+  },
+  {
+   "mmsi": 369037000,
+   "name": "TEXAS",
+   "lat": 45.70705,
+   "lon": -122.76976,
+   "sog_kn": 13.4,
+   "cog": 193.8,
+   "heading": 194,
+   "nav_status": 0,
+   "updated": "2026-11-27 00:07:14.93109136 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10337,
+   "lon": -122.91029,
+   "sog_kn": 0,
+   "cog": 83.4,
+   "heading": 92,
+   "nav_status": 3,
+   "updated": "2026-11-27 00:07:14.931762081 +0000 UTC"
+  }
+ ]
 }
