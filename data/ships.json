@@ -1,6 +1,84 @@
 {
- "fetched_at": "2026-11-27T07:47:15Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T07:52:15Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58132,
+   "lon": -122.76068,
+   "sog_kn": 0,
+   "cog": 161.8,
+   "heading": 123,
+   "nav_status": 12,
+   "updated": "2026-11-27 07:52:30.398772598 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09349,
+   "lon": -122.9242,
+   "sog_kn": 0.1,
+   "cog": 12.7,
+   "heading": 303,
+   "nav_status": 3,
+   "updated": "2026-11-27 07:52:37.560629219 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09341,
+   "lon": -122.92374,
+   "sog_kn": 0,
+   "cog": 269.7,
+   "heading": 120,
+   "nav_status": 0,
+   "updated": "2026-11-27 07:52:58.048163671 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15343,
+   "lon": -123.37711,
+   "sog_kn": 0,
+   "cog": 158.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-27 07:52:58.539502556 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.63319,
+   "lon": -122.70013,
+   "sog_kn": 0,
+   "cog": 2.5,
+   "heading": 123,
+   "nav_status": 0,
+   "updated": "2026-11-27 07:52:59.310197305 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.00881,
+   "lon": -122.84891,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-27 07:53:03.407095196 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20001,
+   "lon": -123.38538,
+   "sog_kn": 0,
+   "cog": 174.6,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-27 07:53:04.346610847 +0000 UTC"
+  }
+ ]
 }
