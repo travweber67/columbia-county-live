@@ -1,6 +1,68 @@
 {
- "fetched_at": "2026-11-27T23:13:30Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T23:18:30Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367646810,
+   "name": "EMERY ZIDELL",
+   "lat": 45.67718,
+   "lon": -122.77066,
+   "type_code": 80,
+   "destination": "SEATTLE, WA",
+   "updated": "2026-11-27 23:18:40.422163615 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08966,
+   "lon": -122.92971,
+   "sog_kn": 0,
+   "cog": 72.7,
+   "heading": 110,
+   "nav_status": 5,
+   "updated": "2026-11-27 23:18:45.283500024 +0000 UTC"
+  },
+  {
+   "mmsi": 367645170,
+   "name": "CROWN POINT",
+   "lat": 45.653,
+   "lon": -122.75536,
+   "sog_kn": 1.9,
+   "cog": 125.2,
+   "heading": 126,
+   "nav_status": 0,
+   "updated": "2026-11-27 23:18:46.319196879 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64568,
+   "lon": -122.73484,
+   "sog_kn": 0.2,
+   "cog": 0,
+   "heading": 113,
+   "nav_status": 5,
+   "updated": "2026-11-27 23:18:47.334796116 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09351,
+   "lon": -122.92419,
+   "type_code": 33,
+   "updated": "2026-11-27 23:18:50.00225693 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.04452,
+   "lon": -122.88246,
+   "sog_kn": 0.1,
+   "cog": 27.6,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-27 23:19:00.936118004 +0000 UTC"
+  }
+ ]
 }
