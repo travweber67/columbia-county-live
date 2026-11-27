@@ -1,6 +1,95 @@
 {
- "fetched_at": "2026-11-27T20:38:19Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T20:43:19Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 45.63038,
+   "lon": -122.69581,
+   "sog_kn": 0,
+   "cog": 320.1,
+   "heading": 126,
+   "nav_status": 5,
+   "updated": "2026-11-27 20:43:17.711225417 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58733,
+   "lon": -122.77043,
+   "sog_kn": 0,
+   "cog": 195.1,
+   "heading": 138,
+   "nav_status": 5,
+   "updated": "2026-11-27 20:43:17.736437067 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.60639,
+   "lon": -122.78476,
+   "sog_kn": 8,
+   "cog": 156.9,
+   "heading": 157,
+   "nav_status": 0,
+   "updated": "2026-11-27 20:43:19.9123445 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19998,
+   "lon": -123.3855,
+   "sog_kn": 0,
+   "cog": 350.8,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-27 20:43:30.380636901 +0000 UTC"
+  },
+  {
+   "mmsi": 440189000,
+   "name": "SM YANTIAN",
+   "lat": 45.63987,
+   "lon": -122.7471,
+   "sog_kn": 0,
+   "cog": 171.1,
+   "heading": 138,
+   "nav_status": 5,
+   "updated": "2026-11-27 20:43:30.466086181 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58417,
+   "lon": -122.76618,
+   "sog_kn": 0,
+   "cog": 209.7,
+   "heading": 145,
+   "nav_status": 0,
+   "updated": "2026-11-27 20:43:51.378364022 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.66368,
+   "lon": -122.7615,
+   "sog_kn": 1.5,
+   "cog": 194.1,
+   "heading": 175,
+   "nav_status": 0,
+   "updated": "2026-11-27 20:43:54.875216645 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.10796,
+   "lon": -122.959,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-27 20:43:56.76375769 +0000 UTC"
+  }
+ ]
 }
