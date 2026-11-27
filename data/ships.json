@@ -1,6 +1,98 @@
 {
- "fetched_at": "2026-11-27T02:53:47Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T02:56:51Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.67449,
+   "lon": -122.77271,
+   "sog_kn": 6.8,
+   "cog": 170.3,
+   "heading": 168,
+   "nav_status": 5,
+   "updated": "2026-11-27 02:57:25.584981423 +0000 UTC"
+  },
+  {
+   "mmsi": 368251260,
+   "name": "MISS GINGER",
+   "lat": 45.6121,
+   "lon": -122.64598,
+   "type_code": 33,
+   "destination": "VANCOUVER WA",
+   "updated": "2026-11-27 02:57:08.145070521 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 46.17718,
+   "lon": -123.11216,
+   "sog_kn": 0,
+   "cog": 61.7,
+   "heading": 128,
+   "nav_status": 0,
+   "updated": "2026-11-27 02:57:09.284343072 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10332,
+   "lon": -122.91027,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-27 02:57:20.501213144 +0000 UTC"
+  },
+  {
+   "mmsi": 367646810,
+   "name": "EMERY ZIDELL",
+   "lat": 45.67758,
+   "lon": -122.7711,
+   "sog_kn": 0.2,
+   "cog": 257.9,
+   "heading": 174,
+   "nav_status": 1,
+   "updated": "2026-11-27 02:57:20.802354948 +0000 UTC"
+  },
+  {
+   "mmsi": 538090732,
+   "name": "NORDIC MERCHANTS",
+   "lat": 46.10346,
+   "lon": -122.94998,
+   "sog_kn": 0,
+   "cog": 282.6,
+   "heading": 118,
+   "nav_status": 5,
+   "updated": "2026-11-27 02:57:24.302139456 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17717,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 265,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-27 02:57:26.254733883 +0000 UTC"
+  },
+  {
+   "mmsi": 311001710,
+   "name": "HON HENRY NR JACKMAN",
+   "lat": 46.10875,
+   "lon": -122.97413,
+   "type_code": 70,
+   "destination": "MXSMI>USRAI",
+   "updated": "2026-11-27 02:57:27.346785203 +0000 UTC"
+  },
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64349,
+   "lon": -122.75242,
+   "type_code": 52,
+   "destination": "US^02AK>0T67",
+   "updated": "2026-11-27 02:57:33.430838339 +0000 UTC"
+  }
+ ]
 }
