@@ -1,51 +1,6 @@
 {
- "fetched_at": "2026-11-27T03:11:52Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.63411,
-   "lon": -122.71482,
-   "sog_kn": 0.3,
-   "cog": 135.4,
-   "heading": 117,
-   "nav_status": 0,
-   "updated": "2026-11-27 03:12:31.735687031 +0000 UTC",
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.19998,
-   "lon": -123.38549,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-27 03:12:19.270141249 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19999,
-   "lon": -123.3854,
-   "sog_kn": 0,
-   "cog": 203.7,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-27 03:12:24.322302292 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 45.91057,
-   "lon": -122.80678,
-   "sog_kn": 10.1,
-   "cog": 175,
-   "heading": 172,
-   "nav_status": 0,
-   "updated": "2026-11-27 03:12:30.545484453 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-27T03:16:52Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
