@@ -1,6 +1,89 @@
 {
- "fetched_at": "2026-11-27T04:41:59Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T04:47:00Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 538012272,
+   "name": "PERSEUS I",
+   "lat": 46.02597,
+   "lon": -122.86801,
+   "type_code": 70,
+   "destination": "US KAM",
+   "updated": "2026-11-27 04:47:09.993271872 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10329,
+   "lon": -122.91021,
+   "sog_kn": 0,
+   "cog": 83.4,
+   "heading": 92,
+   "nav_status": 3,
+   "updated": "2026-11-27 04:47:16.845039461 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09349,
+   "lon": -122.92418,
+   "sog_kn": 0.2,
+   "cog": 219.9,
+   "heading": 303,
+   "nav_status": 3,
+   "updated": "2026-11-27 04:47:17.499061525 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37712,
+   "sog_kn": 0,
+   "cog": 183.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-27 04:47:17.675318671 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19999,
+   "lon": -123.3855,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-27 04:47:21.342057592 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00893,
+   "lon": -122.84831,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-27 04:47:22.320315995 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08974,
+   "lon": -122.92901,
+   "sog_kn": 0,
+   "cog": 286.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-27 04:47:22.507721794 +0000 UTC"
+  },
+  {
+   "mmsi": 368126190,
+   "name": "GERONIMO",
+   "lat": 46.09897,
+   "lon": -122.95734,
+   "type_code": 32,
+   "destination": "SFO RCH24",
+   "updated": "2026-11-27 04:47:35.252049814 +0000 UTC"
+  }
+ ]
 }
