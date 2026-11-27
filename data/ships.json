@@ -1,6 +1,91 @@
 {
- "fetched_at": "2026-11-27T20:48:20Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T20:53:21Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.58789,
+   "lon": -122.77045,
+   "sog_kn": 2.3,
+   "cog": 228.1,
+   "heading": 214,
+   "nav_status": 0,
+   "updated": "2026-11-27 20:53:36.589981415 +0000 UTC"
+  },
+  {
+   "mmsi": 368010320,
+   "name": "RICHARD O",
+   "lat": 45.62272,
+   "lon": -122.78829,
+   "sog_kn": 0,
+   "cog": 56.6,
+   "heading": 5,
+   "nav_status": 0,
+   "updated": "2026-11-27 20:53:37.521588126 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 45.6433,
+   "lon": -122.75279,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-27 20:53:39.149088368 +0000 UTC"
+  },
+  {
+   "mmsi": 368442390,
+   "name": "COWLITZ",
+   "lat": 46.09317,
+   "lon": -122.92381,
+   "type_code": 52,
+   "destination": "PORTLAND",
+   "updated": "2026-11-27 20:53:39.705034221 +0000 UTC"
+  },
+  {
+   "mmsi": 636020172,
+   "name": "VITA OLYMPIC",
+   "lat": 46.1772,
+   "lon": -123.112,
+   "type_code": 70,
+   "destination": "US VAN",
+   "updated": "2026-11-27 20:53:59.116125558 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 44.4,
+   "heading": 126,
+   "nav_status": 1
+  },
+  {
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 45.69094,
+   "lon": -122.77192,
+   "type_code": 70,
+   "destination": "MX ZLO >> US VAN",
+   "updated": "2026-11-27 20:53:46.914673083 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19997,
+   "lon": -123.38548,
+   "sog_kn": 0,
+   "cog": 190.8,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-27 20:53:55.217716497 +0000 UTC"
+  },
+  {
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 45.63036,
+   "lon": -122.69579,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-27 20:54:01.246254235 +0000 UTC"
+  }
+ ]
 }
