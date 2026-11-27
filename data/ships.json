@@ -1,35 +1,6 @@
 {
- "fetched_at": "2026-11-27T23:53:33Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10333,
-   "lon": -122.91025,
-   "sog_kn": 0,
-   "cog": 83.4,
-   "heading": 91,
-   "nav_status": 3,
-   "updated": "2026-11-27 23:53:44.831628779 +0000 UTC"
-  },
-  {
-   "mmsi": 367006570,
-   "name": "JEFFREY S",
-   "lat": 45.7217,
-   "lon": -122.7599,
-   "type_code": 52,
-   "destination": "PORTLAND, OR",
-   "updated": "2026-11-27 23:53:59.425459344 +0000 UTC"
-  },
-  {
-   "mmsi": 368257130,
-   "name": "TRIUMPH VII",
-   "lat": 46.15196,
-   "lon": -123.0499,
-   "type_code": 50,
-   "updated": "2026-11-27 23:54:07.616894905 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-27T23:54:17Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
