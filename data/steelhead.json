@@ -1,57 +1,57 @@
 {
- "fetched_at": "2026-11-27T07:53:49Z",
+ "fetched_at": "2026-11-27T08:23:50Z",
  "status": "ok",
- "note": "MRMS grids still fresh \u2014 reusing the last good pull",
+ "note": "MRMS basin rainfall current",
  "source": "NOAA MRMS radar-gauge rainfall (QPE), archived grids served by Iowa State University's IEM, averaged over each creek's basin",
- "valid_time": "2026-11-27T06:00:00Z",
+ "valid_time": "2026-11-27T07:00:00Z",
  "basins": {
   "wilson": {
    "p24_in": 1.47,
-   "p72_in": 2.1,
-   "days_since_flush": 13,
-   "first_flush": true
+   "p72_in": 2.09,
+   "days_since_flush": 1,
+   "first_flush": false
   },
   "nehalem": {
-   "p24_in": 1.39,
-   "p72_in": 1.88,
-   "days_since_flush": null,
-   "first_flush": true
+   "p24_in": 1.38,
+   "p72_in": 1.87,
+   "days_since_flush": 1,
+   "first_flush": false
   },
   "nf_nehalem": {
-   "p24_in": 1.1,
-   "p72_in": 1.67,
-   "days_since_flush": 13,
-   "first_flush": true
+   "p24_in": 1.06,
+   "p72_in": 1.66,
+   "days_since_flush": 1,
+   "first_flush": false
   },
   "big_creek": {
-   "p24_in": 0.92,
-   "p72_in": 1.39,
-   "days_since_flush": null,
-   "first_flush": true
+   "p24_in": 0.86,
+   "p72_in": 1.38,
+   "days_since_flush": 1,
+   "first_flush": false
   },
   "gnat_creek": {
-   "p24_in": 1.02,
-   "p72_in": 1.47,
-   "days_since_flush": null,
-   "first_flush": true
+   "p24_in": 0.98,
+   "p72_in": 1.46,
+   "days_since_flush": 1,
+   "first_flush": false
   },
   "klaskanine": {
-   "p24_in": 0.95,
-   "p72_in": 1.52,
-   "days_since_flush": null,
-   "first_flush": true
+   "p24_in": 0.9,
+   "p72_in": 1.51,
+   "days_since_flush": 1,
+   "first_flush": false
   },
   "clatskanie": {
-   "p24_in": 1.45,
-   "p72_in": 1.81,
-   "days_since_flush": null,
-   "first_flush": true
+   "p24_in": 1.43,
+   "p72_in": 1.8,
+   "days_since_flush": 1,
+   "first_flush": false
   },
   "scappoose": {
    "p24_in": 1.3,
-   "p72_in": 1.92,
-   "days_since_flush": null,
-   "first_flush": true
+   "p72_in": 1.9,
+   "days_since_flush": 1,
+   "first_flush": false
   }
  }
 }
