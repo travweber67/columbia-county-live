@@ -1,6 +1,38 @@
 {
- "fetched_at": "2026-11-27T05:07:02Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T05:12:02Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367646810,
+   "name": "EMERY ZIDELL",
+   "lat": 45.67758,
+   "lon": -122.7712,
+   "sog_kn": 0.1,
+   "cog": 10.1,
+   "heading": 165,
+   "nav_status": 1,
+   "updated": "2026-11-27 05:12:22.53111866 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.00927,
+   "lon": -122.84863,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-27 05:12:34.044550728 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58747,
+   "lon": -122.77051,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-27 05:12:35.578292892 +0000 UTC"
+  }
+ ]
 }
