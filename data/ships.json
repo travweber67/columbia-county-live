@@ -1,6 +1,115 @@
 {
- "fetched_at": "2026-11-27T14:32:46Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T14:37:47Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 205706000,
+   "name": "BOCHEM BAYARD",
+   "lat": 45.63491,
+   "lon": -122.70366,
+   "sog_kn": 0,
+   "cog": 134.8,
+   "heading": 126,
+   "nav_status": 5,
+   "updated": "2026-11-27 14:38:01.401309378 +0000 UTC"
+  },
+  {
+   "mmsi": 367513190,
+   "name": "PORTLAND",
+   "lat": 46.09061,
+   "lon": -122.93208,
+   "sog_kn": 0,
+   "cog": 344.1,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-27 14:38:02.767793859 +0000 UTC"
+  },
+  {
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 45.66693,
+   "lon": -122.76691,
+   "sog_kn": 0,
+   "cog": 9.1,
+   "heading": 163,
+   "nav_status": 1,
+   "updated": "2026-11-27 14:38:02.938076449 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.58131,
+   "lon": -122.76065,
+   "sog_kn": 0,
+   "cog": 210.7,
+   "heading": 122,
+   "nav_status": 12,
+   "updated": "2026-11-27 14:38:10.019087787 +0000 UTC"
+  },
+  {
+   "mmsi": 636025785,
+   "name": "PAN SKY",
+   "lat": 45.63814,
+   "lon": -122.71075,
+   "sog_kn": 0,
+   "cog": 303,
+   "heading": 122,
+   "nav_status": 5,
+   "updated": "2026-11-27 14:38:11.058482797 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60748,
+   "lon": -122.67762,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-27 14:38:14.129672101 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 46.09998,
+   "lon": -122.95066,
+   "sog_kn": 2.2,
+   "cog": 349,
+   "heading": 322,
+   "nav_status": 0,
+   "updated": "2026-11-27 14:38:14.254435536 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.66728,
+   "lon": -122.76673,
+   "type_code": 31,
+   "destination": "VANCOUVER ANCHORAGE",
+   "updated": "2026-11-27 14:38:17.745632435 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61201,
+   "lon": -122.64536,
+   "sog_kn": 0,
+   "cog": 229.5,
+   "heading": 296,
+   "nav_status": 5,
+   "updated": "2026-11-27 14:38:20.52940995 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10355,
+   "lon": -122.9101,
+   "sog_kn": 0,
+   "cog": 11.2,
+   "heading": 74,
+   "nav_status": 0,
+   "updated": "2026-11-27 14:38:24.535196767 +0000 UTC"
+  }
+ ]
 }
