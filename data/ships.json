@@ -1,6 +1,29 @@
 {
- "fetched_at": "2026-11-27T12:32:36Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T12:37:37Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.66727,
+   "lon": -122.76675,
+   "sog_kn": 0,
+   "cog": 180.4,
+   "heading": 161,
+   "nav_status": 0,
+   "updated": "2026-11-27 12:37:48.599703893 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09349,
+   "lon": -122.92419,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 303,
+   "nav_status": 3,
+   "updated": "2026-11-27 12:38:06.966754504 +0000 UTC"
+  }
+ ]
 }
