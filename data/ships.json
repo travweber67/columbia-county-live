@@ -1,6 +1,65 @@
 {
- "fetched_at": "2026-11-27T13:22:40Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T13:23:51Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.19997,
+   "lon": -123.38551,
+   "type_code": 30,
+   "destination": "FISHMN TMNL",
+   "updated": "2026-11-27 13:24:42.554050583 +0000 UTC"
+  },
+  {
+   "mmsi": 538012072,
+   "name": "DEVBULK ASLAN",
+   "lat": 45.9839,
+   "lon": -122.83526,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-27 13:24:56.144643609 +0000 UTC"
+  },
+  {
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.22067,
+   "lon": -123.42464,
+   "sog_kn": 11.6,
+   "cog": 355.1,
+   "heading": 354,
+   "nav_status": 0,
+   "updated": "2026-11-27 13:24:46.047972908 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.64029,
+   "lon": -122.74705,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-27 13:24:52.647777022 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.66732,
+   "lon": -122.76669,
+   "sog_kn": 0,
+   "cog": 326.7,
+   "heading": 162,
+   "nav_status": 0,
+   "updated": "2026-11-27 13:24:59.274399989 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.9101,
+   "type_code": 52,
+   "destination": "US^0UDW>0T9B",
+   "updated": "2026-11-27 13:25:02.009917237 +0000 UTC"
+  }
+ ]
 }
