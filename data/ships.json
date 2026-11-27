@@ -1,53 +1,6 @@
 {
- "fetched_at": "2026-11-27T14:07:44Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367719170,
-   "name": "RYAN POINT",
-   "lat": 45.57223,
-   "lon": -122.7413,
-   "sog_kn": 6.4,
-   "cog": 138.6,
-   "heading": 140,
-   "nav_status": 5,
-   "updated": "2026-11-27 14:08:01.31841764 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 118.9,
-   "heading": 118,
-   "nav_status": 15,
-   "updated": "2026-11-27 14:08:01.465886737 +0000 UTC"
-  },
-  {
-   "mmsi": 538012272,
-   "name": "PERSEUS I",
-   "lat": 46.02598,
-   "lon": -122.868,
-   "sog_kn": 0,
-   "cog": 11.8,
-   "heading": 317,
-   "nav_status": 5,
-   "updated": "2026-11-27 14:08:16.545273366 +0000 UTC"
-  },
-  {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.0934,
-   "lon": -122.92374,
-   "sog_kn": 0,
-   "cog": 310.2,
-   "heading": 121,
-   "nav_status": 0,
-   "updated": "2026-11-27 14:08:25.60275832 +0000 UTC",
-   "type_code": 52,
-   "destination": "COLUMBIA RIVER"
-  }
- ]
+ "fetched_at": "2026-11-27T14:12:45Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
