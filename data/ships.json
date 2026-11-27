@@ -1,64 +1,6 @@
 {
- "fetched_at": "2026-11-27T00:16:39Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 46.0926,
-   "lon": -122.93445,
-   "sog_kn": 11.1,
-   "cog": 120.5,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-27 00:16:50.928099435 +0000 UTC"
-  },
-  {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.61203,
-   "lon": -122.64536,
-   "type_code": 52,
-   "destination": "US^0UUT>0T9D",
-   "updated": "2026-11-27 00:17:13.114975884 +0000 UTC",
-   "sog_kn": 0,
-   "cog": 227.7,
-   "heading": 297,
-   "nav_status": 5
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.0961,
-   "lon": -122.94369,
-   "sog_kn": 9.6,
-   "cog": 124.2,
-   "heading": 121,
-   "nav_status": 0,
-   "updated": "2026-11-27 00:17:00.82524799 +0000 UTC"
-  },
-  {
-   "mmsi": 367764250,
-   "name": "PJ BRIX",
-   "lat": 45.58767,
-   "lon": -122.77029,
-   "sog_kn": 0,
-   "cog": 57.1,
-   "heading": 145,
-   "nav_status": 0,
-   "updated": "2026-11-27 00:17:05.313252704 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.10353,
-   "lon": -122.9101,
-   "sog_kn": 0,
-   "cog": 14.2,
-   "heading": 73,
-   "nav_status": 0,
-   "updated": "2026-11-27 00:17:15.161166527 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-27T00:21:39Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
