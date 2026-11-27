@@ -1,49 +1,6 @@
 {
- "fetched_at": "2026-11-27T00:56:42Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.15705,
-   "lon": -123.40233,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 137,
-   "nav_status": 0,
-   "updated": "2026-11-27 00:57:19.601566386 +0000 UTC"
-  },
-  {
-   "mmsi": 256001000,
-   "name": "DOVER",
-   "lat": 45.63247,
-   "lon": -122.70676,
-   "type_code": 70,
-   "destination": "US PDX",
-   "updated": "2026-11-27 00:57:20.73968456 +0000 UTC"
-  },
-  {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 45.91118,
-   "lon": -122.81201,
-   "sog_kn": 7.4,
-   "cog": 179.6,
-   "heading": 176,
-   "nav_status": 5,
-   "updated": "2026-11-27 00:57:24.295685121 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10334,
-   "lon": -122.91025,
-   "sog_kn": 0,
-   "cog": 83.4,
-   "heading": 93,
-   "nav_status": 3,
-   "updated": "2026-11-27 00:57:24.804488574 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-27T01:01:42Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
