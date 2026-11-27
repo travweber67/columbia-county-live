@@ -1,6 +1,53 @@
 {
- "fetched_at": "2026-11-27T21:23:22Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T21:23:54Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.09026,
+   "lon": -122.93164,
+   "type_code": 50,
+   "destination": "CR HARBOR OPS",
+   "updated": "2026-11-27 21:24:49.176318931 +0000 UTC"
+  },
+  {
+   "mmsi": 338815000,
+   "name": "TRAVIS E WATKINS",
+   "lat": 45.64568,
+   "lon": -122.73485,
+   "type_code": 79,
+   "updated": "2026-11-27 21:24:52.870401731 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58755,
+   "lon": -122.77049,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-27 21:25:02.964484135 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19996,
+   "lon": -123.38544,
+   "sog_kn": 0,
+   "cog": 191.7,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-27 21:25:04.657651672 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.64334,
+   "lon": -122.74584,
+   "type_code": 57,
+   "destination": "US^01TK>0T67",
+   "updated": "2026-11-27 21:25:07.663186882 +0000 UTC"
+  }
+ ]
 }
