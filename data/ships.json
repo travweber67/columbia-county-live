@@ -1,76 +1,124 @@
 {
- "fetched_at": "2026-11-27T01:46:45Z",
+ "fetched_at": "2026-11-27T01:51:45Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 45.63037,
+   "lon": -122.69582,
+   "sog_kn": 0,
+   "cog": 320.1,
+   "heading": 127,
+   "nav_status": 5,
+   "updated": "2026-11-27 01:52:08.435935843 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58733,
+   "lon": -122.77047,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 138,
+   "nav_status": 5,
+   "updated": "2026-11-27 01:52:12.535615578 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.79753,
+   "lon": -122.78715,
+   "sog_kn": 7.6,
+   "cog": 151,
+   "heading": 149,
+   "nav_status": 5,
+   "updated": "2026-11-27 01:52:15.349867645 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00905,
+   "lon": -122.8483,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-27 01:52:17.736510704 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40231,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 136,
+   "nav_status": 0,
+   "updated": "2026-11-27 01:52:19.617354092 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08979,
+   "lon": -122.92899,
+   "sog_kn": 0,
+   "cog": 297.1,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-27 01:52:19.956049752 +0000 UTC"
+  },
   {
    "mmsi": 368070380,
    "name": "TOKITAE",
-   "lat": 45.63313,
-   "lon": -122.70264,
-   "sog_kn": 1.2,
-   "cog": 317.9,
+   "lat": 45.6331,
+   "lon": -122.70316,
+   "sog_kn": 0.2,
+   "cog": 360,
    "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-27 01:47:00.490817503 +0000 UTC"
+   "updated": "2026-11-27 01:52:20.7370264 +0000 UTC"
   },
   {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.6435,
-   "lon": -122.75243,
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 45.63498,
+   "lon": -122.70423,
    "sog_kn": 0,
-   "cog": 340.6,
-   "heading": 138,
-   "nav_status": 5,
-   "updated": "2026-11-27 01:47:14.049867875 +0000 UTC"
+   "cog": 8.8,
+   "heading": 40,
+   "nav_status": 0,
+   "updated": "2026-11-27 01:52:21.325946685 +0000 UTC"
   },
   {
-   "mmsi": 367047080,
-   "name": "THE CHIEF",
-   "lat": 45.62083,
-   "lon": -122.6793,
-   "sog_kn": 6.3,
-   "cog": 323.5,
-   "heading": 305,
-   "nav_status": 12,
-   "updated": "2026-11-27 01:47:19.498294698 +0000 UTC"
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.9101,
+   "sog_kn": 0,
+   "cog": 265.8,
+   "heading": 73,
+   "nav_status": 0,
+   "updated": "2026-11-27 01:52:24.572609284 +0000 UTC"
   },
   {
-   "mmsi": 538090732,
-   "name": "NORDIC MERCHANTS",
-   "lat": 46.10344,
-   "lon": -122.95001,
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.1995,
+   "lon": -123.38503,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-27 01:52:25.773876845 +0000 UTC"
+  },
+  {
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 45.66693,
+   "lon": -122.76694,
    "type_code": 70,
-   "destination": "USLOG",
-   "updated": "2026-11-27 01:47:23.354436123 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 46.17801,
-   "lon": -123.11053,
-   "type_code": 31,
-   "destination": "LONGVIEW ANCHORAGE",
-   "updated": "2026-11-27 01:47:25.235462395 +0000 UTC"
-  },
-  {
-   "mmsi": 636024866,
-   "name": "CHAMPION TRADER",
-   "lat": 45.60569,
-   "lon": -122.7805,
-   "type_code": 80,
-   "destination": "CHERRY POINT",
-   "updated": "2026-11-27 01:47:27.180635084 +0000 UTC"
-  },
-  {
-   "mmsi": 368331640,
-   "name": "SCHWEIGER",
-   "lat": 45.58422,
-   "lon": -122.76607,
-   "type_code": 52,
-   "destination": "US^00D5>0UHN",
-   "updated": "2026-11-27 01:47:28.545968101 +0000 UTC"
+   "destination": "US PDX",
+   "updated": "2026-11-27 01:52:35.294175566 +0000 UTC"
   }
  ]
 }
