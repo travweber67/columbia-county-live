@@ -1,6 +1,71 @@
 {
- "fetched_at": "2026-11-27T03:16:52Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T03:21:53Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 45.63037,
+   "lon": -122.69587,
+   "sog_kn": 0,
+   "cog": 320.1,
+   "heading": 127,
+   "nav_status": 5,
+   "updated": "2026-11-27 03:22:08.335297742 +0000 UTC"
+  },
+  {
+   "mmsi": 368126190,
+   "name": "GERONIMO",
+   "lat": 46.09903,
+   "lon": -122.95734,
+   "sog_kn": 0,
+   "cog": 11.2,
+   "heading": 294,
+   "nav_status": 5,
+   "updated": "2026-11-27 03:22:25.99889223 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.38542,
+   "sog_kn": 0,
+   "cog": 197.4,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-27 03:22:26.156732354 +0000 UTC"
+  },
+  {
+   "mmsi": 367061930,
+   "name": "TEBENKOF",
+   "lat": 46.20002,
+   "lon": -123.38548,
+   "sog_kn": 0,
+   "cog": 9,
+   "heading": 511,
+   "nav_status": 15,
+   "updated": "2026-11-27 03:22:30.359629902 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61201,
+   "lon": -122.64533,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-27 03:22:31.551553526 +0000 UTC"
+  },
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.63302,
+   "lon": -122.78562,
+   "sog_kn": 6.8,
+   "cog": 211.8,
+   "heading": 211,
+   "nav_status": 5,
+   "updated": "2026-11-27 03:22:34.191923469 +0000 UTC"
+  }
+ ]
 }
