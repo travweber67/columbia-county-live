@@ -1,95 +1,53 @@
 {
- "fetched_at": "2026-11-27T00:11:39Z",
+ "fetched_at": "2026-11-27T00:16:39Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 636020172,
-   "name": "VITA OLYMPIC",
-   "lat": 46.17518,
-   "lon": -123.10726,
-   "sog_kn": 0,
-   "cog": 239.4,
-   "heading": 303,
-   "nav_status": 1,
-   "updated": "2026-11-27 00:11:59.089030075 +0000 UTC"
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.0926,
+   "lon": -122.93445,
+   "sog_kn": 11.1,
+   "cog": 120.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-27 00:16:50.928099435 +0000 UTC"
   },
   {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.20003,
-   "lon": -123.38539,
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61203,
+   "lon": -122.64536,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-27 00:17:13.114975884 +0000 UTC",
    "sog_kn": 0,
-   "cog": 13.1,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-27 00:12:03.458817779 +0000 UTC"
+   "cog": 227.7,
+   "heading": 297,
+   "nav_status": 5
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.0961,
+   "lon": -122.94369,
+   "sog_kn": 9.6,
+   "cog": 124.2,
+   "heading": 121,
+   "nav_status": 0,
+   "updated": "2026-11-27 00:17:00.82524799 +0000 UTC"
   },
   {
    "mmsi": 367764250,
    "name": "PJ BRIX",
-   "lat": 45.58765,
-   "lon": -122.77025,
-   "sog_kn": 0.2,
-   "cog": 147.5,
-   "heading": 156,
+   "lat": 45.58767,
+   "lon": -122.77029,
+   "sog_kn": 0,
+   "cog": 57.1,
+   "heading": 145,
    "nav_status": 0,
-   "updated": "2026-11-27 00:12:05.827178418 +0000 UTC"
-  },
-  {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.17719,
-   "lon": -123.35743,
-   "sog_kn": 0,
-   "cog": 284.1,
-   "heading": 136,
-   "nav_status": 15,
-   "updated": "2026-11-27 00:12:07.058413289 +0000 UTC"
-  },
-  {
-   "mmsi": 256001000,
-   "name": "DOVER",
-   "lat": 45.63251,
-   "lon": -122.70671,
-   "sog_kn": 0,
-   "cog": 11.1,
-   "heading": 117,
-   "nav_status": 1,
-   "updated": "2026-11-27 00:12:07.108315486 +0000 UTC"
-  },
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09351,
-   "lon": -122.9242,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 303,
-   "nav_status": 3,
-   "updated": "2026-11-27 00:12:08.161048966 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10332,
-   "lon": -122.91026,
-   "sog_kn": 0,
-   "cog": 83.4,
-   "heading": 93,
-   "nav_status": 3,
-   "updated": "2026-11-27 00:12:14.19942334 +0000 UTC"
-  },
-  {
-   "mmsi": 367047120,
-   "name": "REBEL",
-   "lat": 46.00421,
-   "lon": -122.85134,
-   "sog_kn": 8.2,
-   "cog": 161.5,
-   "heading": 163,
-   "nav_status": 5,
-   "updated": "2026-11-27 00:12:14.206315008 +0000 UTC"
+   "updated": "2026-11-27 00:17:05.313252704 +0000 UTC"
   },
   {
    "mmsi": 368410780,
@@ -97,30 +55,10 @@
    "lat": 46.10353,
    "lon": -122.9101,
    "sog_kn": 0,
-   "cog": 269.5,
-   "heading": 74,
+   "cog": 14.2,
+   "heading": 73,
    "nav_status": 0,
-   "updated": "2026-11-27 00:12:15.140184029 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 46.17518,
-   "lon": -123.10672,
-   "sog_kn": 0,
-   "cog": 117,
-   "heading": 304,
-   "nav_status": 0,
-   "updated": "2026-11-27 00:12:18.457133429 +0000 UTC"
-  },
-  {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58732,
-   "lon": -122.77045,
-   "type_code": 31,
-   "destination": "US^02SY>0UJ9",
-   "updated": "2026-11-27 00:12:21.732924069 +0000 UTC"
+   "updated": "2026-11-27 00:17:15.161166527 +0000 UTC"
   }
  ]
 }
