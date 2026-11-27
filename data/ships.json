@@ -1,65 +1,6 @@
 {
- "fetched_at": "2026-11-27T08:47:19Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367006570,
-   "name": "JEFFREY S",
-   "lat": 45.72364,
-   "lon": -122.76132,
-   "type_code": 52,
-   "destination": "PORTLAND, OR",
-   "updated": "2026-11-27 08:47:21.369842599 +0000 UTC"
-  },
-  {
-   "mmsi": 367667060,
-   "name": "GRANITE POINT",
-   "lat": 45.64715,
-   "lon": -122.73953,
-   "type_code": 52,
-   "destination": "SRT PASCO",
-   "updated": "2026-11-27 08:47:21.370705966 +0000 UTC"
-  },
-  {
-   "mmsi": 636024866,
-   "name": "CHAMPION TRADER",
-   "lat": 46.14241,
-   "lon": -123.32929,
-   "sog_kn": 12.6,
-   "cog": 270.9,
-   "heading": 270,
-   "nav_status": 0,
-   "updated": "2026-11-27 08:47:21.671412253 +0000 UTC"
-  },
-  {
-   "mmsi": 367061930,
-   "name": "TEBENKOF",
-   "lat": 46.2,
-   "lon": -123.38555,
-   "type_code": 30,
-   "destination": "FISHMN TMNL",
-   "updated": "2026-11-27 08:47:22.738956221 +0000 UTC"
-  },
-  {
-   "mmsi": 477113700,
-   "name": "SHANDONG XIN XING",
-   "lat": 46.17752,
-   "lon": -123.4252,
-   "sog_kn": 10.4,
-   "cog": 318.1,
-   "heading": 320,
-   "nav_status": 0,
-   "updated": "2026-11-27 08:47:37.58086645 +0000 UTC"
-  },
-  {
-   "mmsi": 636013613,
-   "name": "LONDON 2012",
-   "lat": 46.04435,
-   "lon": -122.88279,
-   "type_code": 70,
-   "destination": "KR INC>US KAM",
-   "updated": "2026-11-27 08:47:54.726412887 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-27T08:52:20Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
