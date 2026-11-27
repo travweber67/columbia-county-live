@@ -1,6 +1,86 @@
 {
- "fetched_at": "2026-11-27T17:53:04Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T17:53:53Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368286340,
+   "name": "SHAVER",
+   "lat": 45.64406,
+   "lon": -122.74587,
+   "type_code": 52,
+   "updated": "2026-11-27 17:54:30.403805848 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.63495,
+   "lon": -122.78475,
+   "sog_kn": 8.7,
+   "cog": 33.3,
+   "heading": 34,
+   "nav_status": 0,
+   "updated": "2026-11-27 17:54:44.720631004 +0000 UTC"
+  },
+  {
+   "mmsi": 366892350,
+   "name": "NAT GEO SEA BIRD",
+   "lat": 46.08967,
+   "lon": -122.92972,
+   "sog_kn": 0,
+   "cog": 72.7,
+   "heading": 108,
+   "nav_status": 5,
+   "updated": "2026-11-27 17:54:47.366125337 +0000 UTC"
+  },
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 45.64345,
+   "lon": -122.75278,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-27 17:54:48.38778702 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10331,
+   "lon": -122.91026,
+   "sog_kn": 0,
+   "cog": 83.4,
+   "heading": 89,
+   "nav_status": 3,
+   "updated": "2026-11-27 17:54:53.34371197 +0000 UTC"
+  },
+  {
+   "mmsi": 538010248,
+   "name": "SAFEEN AL AMAL",
+   "lat": 46.12467,
+   "lon": -122.9889,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-27 17:55:00.334473799 +0000 UTC"
+  },
+  {
+   "mmsi": 636013613,
+   "name": "LONDON 2012",
+   "lat": 46.04439,
+   "lon": -122.88274,
+   "sog_kn": 0,
+   "cog": 308.9,
+   "heading": 174,
+   "nav_status": 1,
+   "updated": "2026-11-27 17:55:03.607698512 +0000 UTC"
+  },
+  {
+   "mmsi": 366396000,
+   "name": "NAT GEO SEA LION",
+   "lat": 46.08958,
+   "lon": -122.92972,
+   "type_code": 68,
+   "destination": "RAINIER",
+   "updated": "2026-11-27 17:55:09.420374801 +0000 UTC"
+  }
+ ]
 }
