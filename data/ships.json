@@ -1,6 +1,93 @@
 {
- "fetched_at": "2026-11-27T05:52:04Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T05:53:48Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 636013613,
+   "name": "LONDON 2012",
+   "lat": 46.04439,
+   "lon": -122.88275,
+   "sog_kn": 0,
+   "cog": 308.9,
+   "heading": 175,
+   "nav_status": 1,
+   "updated": "2026-11-27 05:54:45.891227191 +0000 UTC"
+  },
+  {
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 45.63035,
+   "lon": -122.69579,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-27 05:54:47.891997922 +0000 UTC"
+  },
+  {
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.1101,
+   "lon": -122.96335,
+   "sog_kn": 0,
+   "cog": 211.7,
+   "heading": 131,
+   "nav_status": 5,
+   "updated": "2026-11-27 05:54:50.153799397 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.08972,
+   "lon": -122.92899,
+   "sog_kn": 0,
+   "cog": 45.3,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-27 05:54:51.347154363 +0000 UTC"
+  },
+  {
+   "mmsi": 368070380,
+   "name": "TOKITAE",
+   "lat": 45.60759,
+   "lon": -122.67761,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-27 05:54:53.739734343 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 46.04023,
+   "lon": -122.88079,
+   "sog_kn": 5.2,
+   "cog": 176.6,
+   "heading": 175,
+   "nav_status": 0,
+   "updated": "2026-11-27 05:55:08.078948929 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58731,
+   "lon": -122.77046,
+   "sog_kn": 0,
+   "cog": 342,
+   "heading": 138,
+   "nav_status": 5,
+   "updated": "2026-11-27 05:55:12.428812325 +0000 UTC"
+  },
+  {
+   "mmsi": 368470580,
+   "name": "ASSIST",
+   "lat": 45.64331,
+   "lon": -122.75281,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-27 05:55:13.966286891 +0000 UTC"
+  }
+ ]
 }
