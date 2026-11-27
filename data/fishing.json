@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-27T06:24:58Z",
+ "fetched_at": "2026-11-27T06:55:42Z",
  "source": "National Weather Service gridpoint forecasts \u00b7 Open-Meteo 10-day wind outlook \u00b7 NOAA National Data Buoy Center buoy observations \u00b7 NOAA Tides & Currents predictions \u00b7 USGS gauges",
  "places": [
   {
@@ -9,8 +9,8 @@
    "status": "ok",
    "wind_now": {
     "mph": 0,
-    "gust_mph": 3,
-    "dir_deg": 170,
+    "gust_mph": 2,
+    "dir_deg": 0,
     "src": "forecast",
     "t": 1795759200000
    },
@@ -18,8 +18,8 @@
     {
      "t": 1795759200000,
      "mph": 0,
-     "gust_mph": 3,
-     "dir_deg": 170
+     "gust_mph": 2,
+     "dir_deg": 0
     },
     {
      "t": 1795762800000,
@@ -30,19 +30,19 @@
     {
      "t": 1795766400000,
      "mph": 0,
-     "gust_mph": 2,
+     "gust_mph": 1,
      "dir_deg": 0
     },
     {
      "t": 1795770000000,
      "mph": 0,
-     "gust_mph": 2,
+     "gust_mph": 1,
      "dir_deg": 0
     },
     {
      "t": 1795773600000,
      "mph": 0,
-     "gust_mph": 2,
+     "gust_mph": 1,
      "dir_deg": 0
     },
     {
@@ -54,26 +54,26 @@
     {
      "t": 1795780800000,
      "mph": 0,
-     "gust_mph": 2,
+     "gust_mph": 1,
      "dir_deg": 0
     },
     {
      "t": 1795784400000,
      "mph": 0,
-     "gust_mph": 2,
+     "gust_mph": 1,
      "dir_deg": 0
     },
     {
      "t": 1795788000000,
      "mph": 0,
      "gust_mph": 2,
-     "dir_deg": 90
+     "dir_deg": 0
     },
     {
      "t": 1795791600000,
      "mph": 0,
      "gust_mph": 2,
-     "dir_deg": 60
+     "dir_deg": 0
     },
     {
      "t": 1795795200000,
@@ -85,7 +85,7 @@
      "t": 1795798800000,
      "mph": 0,
      "gust_mph": 2,
-     "dir_deg": 70
+     "dir_deg": 20
     },
     {
      "t": 1795802400000,
@@ -97,37 +97,37 @@
      "t": 1795806000000,
      "mph": 1,
      "gust_mph": 3,
-     "dir_deg": 60
+     "dir_deg": 50
     },
     {
      "t": 1795809600000,
      "mph": 2,
      "gust_mph": 5,
-     "dir_deg": 30
+     "dir_deg": 0
     },
     {
      "t": 1795813200000,
      "mph": 2,
-     "gust_mph": 6,
-     "dir_deg": 30
+     "gust_mph": 5,
+     "dir_deg": 320
     },
     {
      "t": 1795816800000,
      "mph": 2,
      "gust_mph": 6,
-     "dir_deg": 0
-    },
-    {
-     "t": 1795820400000,
-     "mph": 2,
-     "gust_mph": 7,
      "dir_deg": 340
     },
     {
-     "t": 1795824000000,
-     "mph": 2,
+     "t": 1795820400000,
+     "mph": 3,
      "gust_mph": 7,
-     "dir_deg": 330
+     "dir_deg": 350
+    },
+    {
+     "t": 1795824000000,
+     "mph": 3,
+     "gust_mph": 8,
+     "dir_deg": 340
     },
     {
      "t": 1795827600000,
@@ -137,32 +137,32 @@
     },
     {
      "t": 1795831200000,
-     "mph": 2,
-     "gust_mph": 7,
+     "mph": 1,
+     "gust_mph": 6,
      "dir_deg": 330
     },
     {
      "t": 1795834800000,
      "mph": 1,
-     "gust_mph": 7,
-     "dir_deg": 330
+     "gust_mph": 5,
+     "dir_deg": 300
     },
     {
      "t": 1795838400000,
      "mph": 1,
-     "gust_mph": 7,
-     "dir_deg": 330
+     "gust_mph": 5,
+     "dir_deg": 310
     },
     {
      "t": 1795842000000,
      "mph": 1,
-     "gust_mph": 7,
-     "dir_deg": 330
+     "gust_mph": 5,
+     "dir_deg": 270
     },
     {
      "t": 1795845600000,
      "mph": 1,
-     "gust_mph": 5,
+     "gust_mph": 3,
      "dir_deg": 330
     },
     {
@@ -1468,7 +1468,7 @@
     {
      "label": "St. Helens",
      "state": "falling",
-     "cur_ft": 1.8,
+     "cur_ft": 1.6,
      "next": {
       "type": "L",
       "v": 0.376,
@@ -1478,7 +1478,7 @@
     {
      "label": "Wauna",
      "state": "falling",
-     "cur_ft": -0.5,
+     "cur_ft": -0.8,
      "next": {
       "type": "L",
       "v": -0.814,
@@ -1499,162 +1499,162 @@
    "sub": "Buoy 10 and the river mouth \u2014 out here, the bar decides",
    "status": "ok",
    "wind_now": {
-    "mph": 11,
+    "mph": 9,
     "gust_mph": 13,
-    "dir_deg": 210,
+    "dir_deg": 220,
     "src": "buoy",
-    "t": 1795759200000
+    "t": 1795761000000
    },
    "wind_series": [
     {
      "t": 1795759200000,
-     "mph": 13,
-     "gust_mph": 17,
-     "dir_deg": 240
-    },
-    {
-     "t": 1795762800000,
-     "mph": 12,
-     "gust_mph": 17,
-     "dir_deg": 230
-    },
-    {
-     "t": 1795766400000,
      "mph": 12,
      "gust_mph": 16,
      "dir_deg": 230
     },
     {
-     "t": 1795770000000,
+     "t": 1795762800000,
      "mph": 12,
+     "gust_mph": 16,
+     "dir_deg": 240
+    },
+    {
+     "t": 1795766400000,
+     "mph": 10,
      "gust_mph": 15,
      "dir_deg": 240
     },
     {
-     "t": 1795773600000,
+     "t": 1795770000000,
      "mph": 10,
-     "gust_mph": 15,
-     "dir_deg": 230
+     "gust_mph": 14,
+     "dir_deg": 240
+    },
+    {
+     "t": 1795773600000,
+     "mph": 9,
+     "gust_mph": 14,
+     "dir_deg": 240
     },
     {
      "t": 1795777200000,
-     "mph": 10,
-     "gust_mph": 15,
+     "mph": 9,
+     "gust_mph": 13,
      "dir_deg": 230
     },
     {
      "t": 1795780800000,
-     "mph": 10,
-     "gust_mph": 15,
+     "mph": 8,
+     "gust_mph": 12,
      "dir_deg": 230
     },
     {
      "t": 1795784400000,
-     "mph": 10,
-     "gust_mph": 14,
+     "mph": 8,
+     "gust_mph": 12,
      "dir_deg": 230
     },
     {
      "t": 1795788000000,
-     "mph": 9,
-     "gust_mph": 13,
+     "mph": 7,
+     "gust_mph": 12,
      "dir_deg": 230
     },
     {
      "t": 1795791600000,
-     "mph": 8,
-     "gust_mph": 12,
-     "dir_deg": 210
+     "mph": 7,
+     "gust_mph": 9,
+     "dir_deg": 230
     },
     {
      "t": 1795795200000,
-     "mph": 7,
-     "gust_mph": 10,
-     "dir_deg": 190
+     "mph": 6,
+     "gust_mph": 9,
+     "dir_deg": 240
     },
     {
      "t": 1795798800000,
-     "mph": 7,
-     "gust_mph": 9,
-     "dir_deg": 160
+     "mph": 6,
+     "gust_mph": 8,
+     "dir_deg": 240
     },
     {
      "t": 1795802400000,
-     "mph": 7,
-     "gust_mph": 10,
-     "dir_deg": 120
+     "mph": 6,
+     "gust_mph": 8,
+     "dir_deg": 220
     },
     {
      "t": 1795806000000,
-     "mph": 7,
-     "gust_mph": 9,
-     "dir_deg": 120
+     "mph": 6,
+     "gust_mph": 8,
+     "dir_deg": 240
     },
     {
      "t": 1795809600000,
-     "mph": 7,
-     "gust_mph": 9,
-     "dir_deg": 80
+     "mph": 6,
+     "gust_mph": 7,
+     "dir_deg": 270
     },
     {
      "t": 1795813200000,
-     "mph": 8,
-     "gust_mph": 10,
-     "dir_deg": 30
+     "mph": 7,
+     "gust_mph": 9,
+     "dir_deg": 310
     },
     {
      "t": 1795816800000,
-     "mph": 9,
-     "gust_mph": 12,
-     "dir_deg": 0
+     "mph": 8,
+     "gust_mph": 10,
+     "dir_deg": 320
     },
     {
      "t": 1795820400000,
-     "mph": 9,
-     "gust_mph": 13,
-     "dir_deg": 10
+     "mph": 8,
+     "gust_mph": 10,
+     "dir_deg": 330
     },
     {
      "t": 1795824000000,
      "mph": 8,
-     "gust_mph": 13,
-     "dir_deg": 10
+     "gust_mph": 10,
+     "dir_deg": 350
     },
     {
      "t": 1795827600000,
-     "mph": 8,
-     "gust_mph": 13,
-     "dir_deg": 10
+     "mph": 7,
+     "gust_mph": 9,
+     "dir_deg": 0
     },
     {
      "t": 1795831200000,
-     "mph": 8,
-     "gust_mph": 13,
-     "dir_deg": 10
+     "mph": 6,
+     "gust_mph": 8,
+     "dir_deg": 30
     },
     {
      "t": 1795834800000,
-     "mph": 7,
-     "gust_mph": 10,
-     "dir_deg": 20
+     "mph": 5,
+     "gust_mph": 8,
+     "dir_deg": 60
     },
     {
      "t": 1795838400000,
-     "mph": 7,
-     "gust_mph": 10,
-     "dir_deg": 20
+     "mph": 5,
+     "gust_mph": 7,
+     "dir_deg": 70
     },
     {
      "t": 1795842000000,
-     "mph": 7,
-     "gust_mph": 10,
-     "dir_deg": 20
+     "mph": 5,
+     "gust_mph": 7,
+     "dir_deg": 90
     },
     {
      "t": 1795845600000,
      "mph": 6,
-     "gust_mph": 9,
-     "dir_deg": 30
+     "gust_mph": 8,
+     "dir_deg": 50
     },
     {
      "t": 1795849200000,
@@ -2954,11 +2954,11 @@
     }
    ],
    "wave_now": {
-    "ft": 11.5,
-    "dir_deg": 252,
-    "period_s": 12.0,
+    "ft": 12.5,
+    "dir_deg": 242,
+    "period_s": 11.0,
     "src": "buoy",
-    "t": 1795758600000
+    "t": 1795760400000
    },
    "wave_series": [],
    "tides": [],
