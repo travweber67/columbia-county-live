@@ -1,6 +1,85 @@
 {
- "fetched_at": "2026-11-27T15:12:50Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T15:17:50Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 45.63037,
+   "lon": -122.6958,
+   "type_code": 70,
+   "destination": "USVAN",
+   "updated": "2026-11-27 15:18:01.290346626 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 274.7,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-27 15:18:06.356672738 +0000 UTC"
+  },
+  {
+   "mmsi": 538010248,
+   "name": "SAFEEN AL AMAL",
+   "lat": 46.12476,
+   "lon": -122.98845,
+   "type_code": 70,
+   "destination": "US LOG",
+   "updated": "2026-11-27 15:18:06.781785695 +0000 UTC"
+  },
+  {
+   "mmsi": 367047170,
+   "name": "MAVERICK",
+   "lat": 45.8451,
+   "lon": -122.78599,
+   "sog_kn": 4.9,
+   "cog": 8.9,
+   "heading": 7,
+   "nav_status": 12,
+   "updated": "2026-11-27 15:18:18.745421466 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.00908,
+   "lon": -122.84835,
+   "type_code": 31,
+   "destination": "HARBOROPPS-",
+   "updated": "2026-11-27 15:18:18.806739147 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.5873,
+   "lon": -122.77044,
+   "type_code": 31,
+   "destination": "US^02SY>0UJ9",
+   "updated": "2026-11-27 15:18:19.597288113 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61108,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 119.2,
+   "heading": 119,
+   "nav_status": 15,
+   "updated": "2026-11-27 15:18:22.481765967 +0000 UTC"
+  },
+  {
+   "mmsi": 368440320,
+   "name": "HEATHER S",
+   "lat": 45.64356,
+   "lon": -122.7529,
+   "type_code": 52,
+   "destination": "US^0UU4>02MR",
+   "updated": "2026-11-27 15:18:28.659462189 +0000 UTC"
+  }
+ ]
 }
