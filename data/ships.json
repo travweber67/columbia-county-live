@@ -1,60 +1,6 @@
 {
- "fetched_at": "2026-11-27T20:08:16Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.0935,
-   "lon": -122.92418,
-   "sog_kn": 0.2,
-   "cog": 26.3,
-   "heading": 303,
-   "nav_status": 3,
-   "updated": "2026-11-27 20:08:28.972386457 +0000 UTC"
-  },
-  {
-   "mmsi": 432666000,
-   "name": "AEGEAN HIGHWAY",
-   "lat": 45.59762,
-   "lon": -122.77481,
-   "sog_kn": 0,
-   "cog": 239,
-   "heading": 330,
-   "nav_status": 5,
-   "updated": "2026-11-27 20:08:29.387733172 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61291,
-   "sog_kn": 0,
-   "cog": 299.6,
-   "heading": 119,
-   "nav_status": 15,
-   "updated": "2026-11-27 20:08:33.143467788 +0000 UTC"
-  },
-  {
-   "mmsi": 368121540,
-   "name": "RANDY S",
-   "lat": 45.65763,
-   "lon": -122.75908,
-   "sog_kn": 7.3,
-   "cog": 336.2,
-   "heading": 335,
-   "nav_status": 0,
-   "updated": "2026-11-27 20:08:42.864926192 +0000 UTC"
-  },
-  {
-   "mmsi": 367310520,
-   "name": "JAMES T",
-   "lat": 46.10334,
-   "lon": -122.91022,
-   "type_code": 52,
-   "destination": "LONGVIEW",
-   "updated": "2026-11-27 20:08:44.394886571 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-27T20:13:17Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
