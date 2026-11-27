@@ -1,6 +1,64 @@
 {
- "fetched_at": "2026-11-27T15:22:50Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T15:23:52Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61107,
+   "lon": -122.61291,
+   "sog_kn": 0,
+   "cog": 120.3,
+   "heading": 120,
+   "nav_status": 15,
+   "updated": "2026-11-27 15:24:53.32019647 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.20003,
+   "lon": -123.38537,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-27 15:25:05.219348722 +0000 UTC"
+  },
+  {
+   "mmsi": 314085000,
+   "name": "SOLENT",
+   "lat": 45.60097,
+   "lon": -122.77419,
+   "sog_kn": 0,
+   "cog": 54.8,
+   "heading": 278,
+   "nav_status": 5,
+   "updated": "2026-11-27 15:25:05.354835194 +0000 UTC"
+  },
+  {
+   "mmsi": 368126190,
+   "name": "GERONIMO",
+   "lat": 46.17366,
+   "lon": -123.0981,
+   "sog_kn": 10.9,
+   "cog": 309.2,
+   "heading": 309,
+   "nav_status": 11,
+   "updated": "2026-11-27 15:25:05.704234365 +0000 UTC"
+  },
+  {
+   "mmsi": 432666000,
+   "name": "AEGEAN HIGHWAY",
+   "lat": 45.59762,
+   "lon": -122.77481,
+   "sog_kn": 0,
+   "cog": 41.3,
+   "heading": 330,
+   "nav_status": 5,
+   "updated": "2026-11-27 15:25:12.766294362 +0000 UTC",
+   "type_code": 70,
+   "destination": "US PDX"
+  }
+ ]
 }
