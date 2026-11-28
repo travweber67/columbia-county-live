@@ -1,6 +1,102 @@
 {
- "fetched_at": "2026-11-28T00:24:25Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-28T00:28:35Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.19948,
+   "lon": -123.38502,
+   "sog_kn": 0,
+   "cog": 200,
+   "heading": 511,
+   "nav_status": 5,
+   "updated": "2026-11-28 00:28:31.912620361 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61199,
+   "lon": -122.64535,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-28 00:28:32.265402888 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.5842,
+   "lon": -122.76617,
+   "sog_kn": 0,
+   "cog": 240.7,
+   "heading": 145,
+   "nav_status": 0,
+   "updated": "2026-11-28 00:28:41.777865399 +0000 UTC"
+  },
+  {
+   "mmsi": 432666000,
+   "name": "AEGEAN HIGHWAY",
+   "lat": 45.59761,
+   "lon": -122.77482,
+   "sog_kn": 0,
+   "cog": 54.4,
+   "heading": 330,
+   "nav_status": 5,
+   "updated": "2026-11-28 00:28:41.811260701 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17718,
+   "lon": -123.35742,
+   "sog_kn": 0,
+   "cog": 216.7,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-28 00:28:46.656282856 +0000 UTC"
+  },
+  {
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59407,
+   "lon": -122.77212,
+   "sog_kn": 0,
+   "cog": 346.3,
+   "heading": 148,
+   "nav_status": 5,
+   "updated": "2026-11-28 00:28:48.381882775 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15345,
+   "lon": -123.37712,
+   "sog_kn": 0,
+   "cog": 9.4,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-28 00:29:06.476049064 +0000 UTC"
+  },
+  {
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.02306,
+   "lon": -122.86692,
+   "type_code": 50,
+   "destination": "CR HARBOR OPS",
+   "updated": "2026-11-28 00:29:08.293546772 +0000 UTC"
+  },
+  {
+   "mmsi": 636025785,
+   "name": "PAN SKY",
+   "lat": 45.63812,
+   "lon": -122.71076,
+   "sog_kn": 0,
+   "cog": 303,
+   "heading": 122,
+   "nav_status": 5,
+   "updated": "2026-11-28 00:29:08.438044996 +0000 UTC"
+  }
+ ]
 }
