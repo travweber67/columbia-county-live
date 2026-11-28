@@ -1,6 +1,69 @@
 {
- "fetched_at": "2026-11-28T06:34:01Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-28T06:39:01Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.63912,
+   "lon": -122.77781,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-28 06:38:59.570666029 +0000 UTC"
+  },
+  {
+   "mmsi": 636020172,
+   "name": "VITA OLYMPIC",
+   "lat": 46.17716,
+   "lon": -123.11218,
+   "sog_kn": 0.1,
+   "cog": 182.7,
+   "heading": 133,
+   "nav_status": 1,
+   "updated": "2026-11-28 06:38:59.302329864 +0000 UTC"
+  },
+  {
+   "mmsi": 367513230,
+   "name": "WILLAMETTE",
+   "lat": 45.64369,
+   "lon": -122.74563,
+   "sog_kn": 0,
+   "cog": 287.8,
+   "heading": 110,
+   "nav_status": 0,
+   "updated": "2026-11-28 06:39:06.043270676 +0000 UTC"
+  },
+  {
+   "mmsi": 563309300,
+   "name": "LIGNUM GRID",
+   "lat": 45.68527,
+   "lon": -122.77239,
+   "type_code": 70,
+   "destination": "USPDX",
+   "updated": "2026-11-28 06:39:12.003178598 +0000 UTC"
+  },
+  {
+   "mmsi": 538010248,
+   "name": "SAFEEN AL AMAL",
+   "lat": 46.12475,
+   "lon": -122.98884,
+   "sog_kn": 0,
+   "cog": 49.2,
+   "heading": 138,
+   "nav_status": 1,
+   "updated": "2026-11-28 06:39:26.959764679 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35742,
+   "sog_kn": 0,
+   "cog": 142.9,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-28 06:39:35.738920699 +0000 UTC"
+  }
+ ]
 }
