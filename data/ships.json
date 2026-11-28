@@ -1,60 +1,6 @@
 {
- "fetched_at": "2026-11-28T06:23:57Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 366986380,
-   "name": "DREDGE OREGON",
-   "lat": 46.09349,
-   "lon": -122.9242,
-   "sog_kn": 0.1,
-   "cog": 211.5,
-   "heading": 302,
-   "nav_status": 3,
-   "updated": "2026-11-28 06:24:56.731814966 +0000 UTC"
-  },
-  {
-   "mmsi": 367702780,
-   "name": "SARAH",
-   "lat": 45.58747,
-   "lon": -122.77073,
-   "type_code": 52,
-   "destination": "PORTLAND,OR",
-   "updated": "2026-11-28 06:25:03.43624652 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 45.58739,
-   "lon": -122.76831,
-   "sog_kn": 6.9,
-   "cog": 306.3,
-   "heading": 296,
-   "nav_status": 0,
-   "updated": "2026-11-28 06:25:07.651570303 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58079,
-   "lon": -122.76008,
-   "sog_kn": 0,
-   "cog": 252.5,
-   "heading": 122,
-   "nav_status": 0,
-   "updated": "2026-11-28 06:25:08.159482663 +0000 UTC"
-  },
-  {
-   "mmsi": 352002600,
-   "name": "SHARDANA",
-   "lat": 45.63023,
-   "lon": -122.69554,
-   "sog_kn": 0,
-   "cog": 320.1,
-   "heading": 126,
-   "nav_status": 5,
-   "updated": "2026-11-28 06:25:16.604768203 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-28T06:29:00Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
