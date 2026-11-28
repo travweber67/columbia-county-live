@@ -1,6 +1,82 @@
 {
- "fetched_at": "2026-11-28T04:18:52Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-28T04:23:51Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 636017488,
+   "name": "KM VANCOUVER",
+   "lat": 46.17052,
+   "lon": -123.21168,
+   "sog_kn": 1.1,
+   "cog": 235.8,
+   "heading": 85,
+   "nav_status": 0,
+   "updated": "2026-11-28 04:24:15.157343603 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.57749,
+   "lon": -122.74889,
+   "sog_kn": 8.2,
+   "cog": 130.1,
+   "heading": 125,
+   "nav_status": 0,
+   "updated": "2026-11-28 04:24:19.897895911 +0000 UTC"
+  },
+  {
+   "mmsi": 374590000,
+   "name": "BORACAY ISLAND",
+   "lat": 45.6911,
+   "lon": -122.77183,
+   "type_code": 70,
+   "destination": "MX ZLO >> US VAN",
+   "updated": "2026-11-28 04:24:20.964480494 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58415,
+   "lon": -122.76617,
+   "sog_kn": 0,
+   "cog": 103,
+   "heading": 145,
+   "nav_status": 0,
+   "updated": "2026-11-28 04:24:20.711782052 +0000 UTC"
+  },
+  {
+   "mmsi": 367602150,
+   "name": "LUNA",
+   "lat": 45.61109,
+   "lon": -122.6129,
+   "sog_kn": 0,
+   "cog": 120.5,
+   "heading": 120,
+   "nav_status": 15,
+   "updated": "2026-11-28 04:24:21.729277227 +0000 UTC"
+  },
+  {
+   "mmsi": 367531220,
+   "name": "WATCHMAN",
+   "lat": 46.19999,
+   "lon": -123.3854,
+   "sog_kn": 0,
+   "cog": 188.7,
+   "heading": 511,
+   "nav_status": 8,
+   "updated": "2026-11-28 04:24:23.18111419 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58743,
+   "lon": -122.77078,
+   "sog_kn": 0,
+   "cog": 12.3,
+   "heading": 141,
+   "nav_status": 0,
+   "updated": "2026-11-28 04:24:24.798984973 +0000 UTC"
+  }
+ ]
 }
