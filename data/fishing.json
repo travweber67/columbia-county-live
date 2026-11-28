@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-28T02:26:12Z",
+ "fetched_at": "2026-11-28T02:55:34Z",
  "source": "National Weather Service gridpoint forecasts \u00b7 Open-Meteo 10-day wind outlook \u00b7 NOAA National Data Buoy Center buoy observations \u00b7 NOAA Tides & Currents predictions \u00b7 USGS gauges",
  "places": [
   {
@@ -1468,7 +1468,7 @@
     {
      "label": "St. Helens",
      "state": "falling",
-     "cur_ft": 3.5,
+     "cur_ft": 3.4,
      "next": {
       "type": "L",
       "v": 0.418,
@@ -1478,7 +1478,7 @@
     {
      "label": "Wauna",
      "state": "falling",
-     "cur_ft": 4.8,
+     "cur_ft": 4.0,
      "next": {
       "type": "L",
       "v": -0.644,
@@ -1486,11 +1486,7 @@
      }
     }
    ],
-   "river": {
-    "label": "Columbia River at Port Westward",
-    "ft": 7.59,
-    "t": 1795830600000
-   },
+   "river": null,
    "zones": []
   },
   {
@@ -1500,10 +1496,10 @@
    "status": "ok",
    "wind_now": {
     "mph": 11,
-    "gust_mph": 18,
-    "dir_deg": 20,
+    "gust_mph": 13,
+    "dir_deg": 30,
     "src": "buoy",
-    "t": 1795830000000
+    "t": 1795833000000
    },
    "wind_series": [
     {
@@ -2955,10 +2951,10 @@
    ],
    "wave_now": {
     "ft": 9.8,
-    "dir_deg": 255,
-    "period_s": null,
+    "dir_deg": 262,
+    "period_s": 14.0,
     "src": "buoy",
-    "t": 1795830000000
+    "t": 1795832400000
    },
    "wave_series": [],
    "tides": [],
