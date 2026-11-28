@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-28T03:55:49Z",
+ "fetched_at": "2026-11-28T04:26:28Z",
  "source": "National Weather Service gridpoint forecasts \u00b7 Open-Meteo 10-day wind outlook \u00b7 NOAA National Data Buoy Center buoy observations \u00b7 NOAA Tides & Currents predictions \u00b7 USGS gauges",
  "places": [
   {
@@ -9,18 +9,12 @@
    "status": "ok",
    "wind_now": {
     "mph": 1,
-    "gust_mph": 6,
-    "dir_deg": 330,
+    "gust_mph": 5,
+    "dir_deg": 320,
     "src": "forecast",
-    "t": 1795834800000
+    "t": 1795838400000
    },
    "wind_series": [
-    {
-     "t": 1795834800000,
-     "mph": 1,
-     "gust_mph": 6,
-     "dir_deg": 330
-    },
     {
      "t": 1795838400000,
      "mph": 1,
@@ -167,9 +161,9 @@
     },
     {
      "t": 1795924800000,
-     "mph": 6,
-     "gust_mph": 6,
-     "dir_deg": 262
+     "mph": 1,
+     "gust_mph": 5,
+     "dir_deg": 80
     },
     {
      "t": 1795928400000,
@@ -1460,6 +1454,12 @@
      "mph": 6,
      "gust_mph": 19,
      "dir_deg": 136
+    },
+    {
+     "t": 1796702400000,
+     "mph": 8,
+     "gust_mph": 21,
+     "dir_deg": 141
     }
    ],
    "wave_now": null,
@@ -1468,7 +1468,7 @@
     {
      "label": "St. Helens",
      "state": "falling",
-     "cur_ft": 3.0,
+     "cur_ft": 2.7,
      "next": {
       "type": "L",
       "v": 0.418,
@@ -1478,7 +1478,7 @@
     {
      "label": "Wauna",
      "state": "falling",
-     "cur_ft": 2.8,
+     "cur_ft": 2.2,
      "next": {
       "type": "L",
       "v": -0.644,
@@ -1488,8 +1488,8 @@
    ],
    "river": {
     "label": "Columbia River at Port Westward",
-    "ft": 6.26,
-    "t": 1795834200000
+    "ft": 5.29,
+    "t": 1795837800000
    },
    "zones": []
   },
@@ -1499,19 +1499,13 @@
    "sub": "Buoy 10 and the river mouth \u2014 out here, the bar decides",
    "status": "ok",
    "wind_now": {
-    "mph": 9,
-    "gust_mph": 13,
-    "dir_deg": 20,
+    "mph": 7,
+    "gust_mph": 11,
+    "dir_deg": 30,
     "src": "buoy",
-    "t": 1795836600000
+    "t": 1795838400000
    },
    "wind_series": [
-    {
-     "t": 1795834800000,
-     "mph": 3,
-     "gust_mph": 6,
-     "dir_deg": 10
-    },
     {
      "t": 1795838400000,
      "mph": 3,
@@ -1658,9 +1652,9 @@
     },
     {
      "t": 1795924800000,
-     "mph": 17,
-     "gust_mph": 27,
-     "dir_deg": 101
+     "mph": 14,
+     "gust_mph": 17,
+     "dir_deg": 80
     },
     {
      "t": 1795928400000,
@@ -2951,14 +2945,20 @@
      "mph": 14,
      "gust_mph": 25,
      "dir_deg": 151
+    },
+    {
+     "t": 1796702400000,
+     "mph": 18,
+     "gust_mph": 30,
+     "dir_deg": 160
     }
    ],
    "wave_now": {
-    "ft": 9.8,
-    "dir_deg": 264,
-    "period_s": 14.0,
+    "ft": 10.2,
+    "dir_deg": 265,
+    "period_s": 13.0,
     "src": "buoy",
-    "t": 1795836000000
+    "t": 1795837800000
    },
    "wave_series": [],
    "tides": [],
