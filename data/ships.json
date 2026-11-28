@@ -1,6 +1,65 @@
 {
- "fetched_at": "2026-11-28T13:14:29Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-28T13:19:30Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368041480,
+   "name": "SAMANTHA S",
+   "lat": 45.64345,
+   "lon": -122.7528,
+   "type_code": 52,
+   "destination": "COLUMBIA RIVER OPS",
+   "updated": "2026-11-28 13:19:47.113984001 +0000 UTC"
+  },
+  {
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.63909,
+   "lon": -122.77779,
+   "type_code": 70,
+   "destination": "US PDX>CA VAN",
+   "updated": "2026-11-28 13:19:51.383596703 +0000 UTC"
+  },
+  {
+   "mmsi": 367310520,
+   "name": "JAMES T",
+   "lat": 46.10337,
+   "lon": -122.91029,
+   "type_code": 52,
+   "destination": "LONGVIEW",
+   "updated": "2026-11-28 13:19:52.776417063 +0000 UTC"
+  },
+  {
+   "mmsi": 367702780,
+   "name": "SARAH",
+   "lat": 45.58757,
+   "lon": -122.77041,
+   "type_code": 52,
+   "destination": "PORTLAND,OR",
+   "updated": "2026-11-28 13:19:53.74707047 +0000 UTC"
+  },
+  {
+   "mmsi": 367764250,
+   "name": "PJ BRIX",
+   "lat": 46.15599,
+   "lon": -123.05546,
+   "sog_kn": 9.8,
+   "cog": 305.1,
+   "heading": 302,
+   "nav_status": 0,
+   "updated": "2026-11-28 13:19:54.405158172 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.11581,
+   "lon": -122.97258,
+   "sog_kn": 0,
+   "cog": 121,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-28 13:20:11.348123765 +0000 UTC"
+  }
+ ]
 }
