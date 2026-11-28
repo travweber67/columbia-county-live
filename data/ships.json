@@ -1,47 +1,75 @@
 {
- "fetched_at": "2026-11-28T03:13:46Z",
+ "fetched_at": "2026-11-28T03:18:46Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 367309480,
-   "name": "W E IVANOFF",
-   "lat": 46.0934,
-   "lon": -122.92374,
+   "mmsi": 367767410,
+   "name": "MULE",
+   "lat": 46.00883,
+   "lon": -122.84891,
    "sog_kn": 0,
-   "cog": 81.7,
-   "heading": 121,
+   "cog": 360,
+   "heading": 511,
    "nav_status": 0,
-   "updated": "2026-11-28 03:13:59.93609671 +0000 UTC"
+   "updated": "2026-11-28 03:19:05.354848772 +0000 UTC"
   },
   {
-   "mmsi": 367513190,
-   "name": "PORTLAND",
-   "lat": 46.0907,
-   "lon": -122.93202,
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 45.63037,
+   "lon": -122.69581,
+   "sog_kn": 0,
+   "cog": 320.1,
+   "heading": 126,
+   "nav_status": 5,
+   "updated": "2026-11-28 03:19:14.819570864 +0000 UTC"
+  },
+  {
+   "mmsi": 367006570,
+   "name": "JEFFREY S",
+   "lat": 45.72269,
+   "lon": -122.75994,
+   "sog_kn": 0.2,
+   "cog": 337.6,
+   "heading": 252,
+   "nav_status": 1,
+   "updated": "2026-11-28 03:19:24.999103776 +0000 UTC",
    "type_code": 52,
-   "destination": "COL RIVER OPS",
-   "updated": "2026-11-28 03:14:02.17192677 +0000 UTC"
+   "destination": "PORTLAND, OR"
   },
   {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 45.64753,
-   "lon": -122.76954,
-   "sog_kn": 2.9,
-   "cog": 202.8,
-   "heading": 203,
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58417,
+   "lon": -122.76615,
+   "sog_kn": 0,
+   "cog": 28,
+   "heading": 145,
    "nav_status": 0,
-   "updated": "2026-11-28 03:14:10.104497919 +0000 UTC"
+   "updated": "2026-11-28 03:19:20.713457793 +0000 UTC"
   },
   {
-   "mmsi": 563309300,
-   "name": "LIGNUM GRID",
-   "lat": 45.68326,
-   "lon": -122.77016,
-   "type_code": 70,
-   "destination": "USPDX",
-   "updated": "2026-11-28 03:14:21.243121513 +0000 UTC"
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.1772,
+   "lon": -123.35742,
+   "sog_kn": 0,
+   "cog": 215.8,
+   "heading": 134,
+   "nav_status": 15,
+   "updated": "2026-11-28 03:19:25.592299171 +0000 UTC"
+  },
+  {
+   "mmsi": 367645170,
+   "name": "CROWN POINT",
+   "lat": 45.64891,
+   "lon": -122.74752,
+   "sog_kn": 0.8,
+   "cog": 279.9,
+   "heading": 111,
+   "nav_status": 0,
+   "updated": "2026-11-28 03:19:27.365871289 +0000 UTC"
   }
  ]
 }
