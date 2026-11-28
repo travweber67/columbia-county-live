@@ -1,47 +1,99 @@
 {
- "fetched_at": "2026-11-28T03:58:50Z",
+ "fetched_at": "2026-11-28T04:03:50Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
+  {
+   "mmsi": 311001605,
+   "name": "SAGA DISCOVERY",
+   "lat": 46.17468,
+   "lon": -123.10662,
+   "type_code": 79,
+   "destination": "US LOG",
+   "updated": "2026-11-28 04:04:04.693965695 +0000 UTC"
+  },
+  {
+   "mmsi": 367047150,
+   "name": "CAPTAIN BOB",
+   "lat": 45.64725,
+   "lon": -122.73951,
+   "sog_kn": 0,
+   "cog": 352.3,
+   "heading": 287,
+   "nav_status": 5,
+   "updated": "2026-11-28 04:04:07.882160095 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.1772,
+   "lon": -123.35743,
+   "type_code": 30,
+   "updated": "2026-11-28 04:04:16.543628414 +0000 UTC"
+  },
+  {
+   "mmsi": 367645170,
+   "name": "CROWN POINT",
+   "lat": 45.65822,
+   "lon": -122.75776,
+   "sog_kn": 0,
+   "cog": 332.8,
+   "heading": 147,
+   "nav_status": 0,
+   "updated": "2026-11-28 04:04:18.351497964 +0000 UTC"
+  },
+  {
+   "mmsi": 367608420,
+   "name": "PETER J BRIX",
+   "lat": 46.0897,
+   "lon": -122.92904,
+   "sog_kn": 0,
+   "cog": 237.5,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-28 04:04:20.84964705 +0000 UTC",
+   "type_code": 52,
+   "destination": "US^0R88>0UJB"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58729,
+   "lon": -122.77045,
+   "sog_kn": 0,
+   "cog": 195.1,
+   "heading": 137,
+   "nav_status": 5,
+   "updated": "2026-11-28 04:04:21.342410719 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.61361,
+   "lon": -122.78782,
+   "type_code": 52,
+   "destination": "CSR OPS",
+   "updated": "2026-11-28 04:04:28.64790599 +0000 UTC"
+  },
+  {
+   "mmsi": 368329050,
+   "name": "TOIVO T",
+   "lat": 45.61202,
+   "lon": -122.64536,
+   "type_code": 52,
+   "destination": "US^0UUT>0T9D",
+   "updated": "2026-11-28 04:04:32.699880536 +0000 UTC"
+  },
   {
    "mmsi": 636017488,
    "name": "KM VANCOUVER",
-   "lat": 46.16014,
-   "lon": -123.244,
-   "type_code": 70,
-   "destination": "KALAMA USA",
-   "updated": "2026-11-28 03:59:08.848718596 +0000 UTC"
-  },
-  {
-   "mmsi": 367653630,
-   "name": "OSCAR B",
-   "lat": 46.15341,
-   "lon": -123.37713,
-   "sog_kn": 0,
-   "cog": 193.9,
-   "heading": 511,
+   "lat": 46.16553,
+   "lon": -123.23232,
+   "sog_kn": 5.3,
+   "cog": 58.7,
+   "heading": 59,
    "nav_status": 0,
-   "updated": "2026-11-28 03:59:17.243725784 +0000 UTC"
-  },
-  {
-   "mmsi": 636025785,
-   "name": "PAN SKY",
-   "lat": 45.63813,
-   "lon": -122.71075,
-   "type_code": 70,
-   "destination": "VANCOUVER BERTH",
-   "updated": "2026-11-28 03:59:21.347655755 +0000 UTC"
-  },
-  {
-   "mmsi": 366888830,
-   "name": "KAHU",
-   "lat": 45.61163,
-   "lon": -122.6438,
-   "sog_kn": 0,
-   "cog": 256.6,
-   "heading": 120,
-   "nav_status": 5,
-   "updated": "2026-11-28 03:59:32.406999753 +0000 UTC"
+   "updated": "2026-11-28 04:04:33.899903197 +0000 UTC"
   }
  ]
 }
