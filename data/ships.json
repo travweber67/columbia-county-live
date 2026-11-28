@@ -1,6 +1,80 @@
 {
- "fetched_at": "2026-11-28T12:09:25Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-28T12:14:25Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 46.16266,
+   "lon": -123.07897,
+   "sog_kn": 7,
+   "cog": 304,
+   "heading": 304,
+   "nav_status": 5,
+   "updated": "2026-11-28 12:14:43.614604302 +0000 UTC"
+  },
+  {
+   "mmsi": 538011145,
+   "name": "FORTUNE BREEZE",
+   "lat": 45.62537,
+   "lon": -122.78821,
+   "type_code": 70,
+   "destination": "PORTLAND,USA",
+   "updated": "2026-11-28 12:14:48.05318454 +0000 UTC"
+  },
+  {
+   "mmsi": 311001710,
+   "name": "HON HENRY NR JACKMAN",
+   "lat": 46.14261,
+   "lon": -123.33344,
+   "type_code": 70,
+   "destination": "USRAI>CAPMA",
+   "updated": "2026-11-28 12:14:54.641853915 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.10796,
+   "lon": -122.95894,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-28 12:14:56.841074599 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15706,
+   "lon": -123.40234,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 131,
+   "nav_status": 0,
+   "updated": "2026-11-28 12:14:59.504608281 +0000 UTC"
+  },
+  {
+   "mmsi": 432666000,
+   "name": "AEGEAN HIGHWAY",
+   "lat": 45.59761,
+   "lon": -122.77481,
+   "sog_kn": 0,
+   "cog": 54.4,
+   "heading": 330,
+   "nav_status": 5,
+   "updated": "2026-11-28 12:14:59.750234479 +0000 UTC"
+  },
+  {
+   "mmsi": 440189000,
+   "name": "SM YANTIAN",
+   "lat": 45.78962,
+   "lon": -122.77776,
+   "sog_kn": 13.1,
+   "cog": 327.5,
+   "heading": 326,
+   "nav_status": 0,
+   "updated": "2026-11-28 12:15:06.407418349 +0000 UTC"
+  }
+ ]
 }
