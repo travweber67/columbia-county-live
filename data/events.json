@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-28T05:24:20Z",
+ "fetched_at": "2026-11-28T05:53:57Z",
  "sources": [
   {
    "name": "City of St. Helens calendar (CivicPlus)",
@@ -13,8 +13,8 @@
   },
   {
    "name": "Columbia County calendar (EvoGov)",
-   "status": "ok",
-   "note": "9 upcoming events extracted from the rendered November 2026 county calendar (headless Chromium); each event's time comes from its own event page."
+   "status": "blocked_needs_browser",
+   "note": "The county calendar is an EvoGov cloud widget that renders only in a real browser \u2014 the raw page has no event data and no public JSON endpoint was found. This branch renders it with headless Chromium when one is available (it is, on Travis's computer); this machine has none, so the county source waits for the omarchy run. The rest of the snapshot is unaffected."
   },
   {
    "name": "Scappoose Public Library events (Plone)",
@@ -29,13 +29,6 @@
    "title": "Closed for Thanksgiving",
    "source": "Scappoose Public Library",
    "url": "https://www.scappooselibrary.org/news-events/closed-for-thanksgiving-10"
-  },
-  {
-   "date": "2026-11-27",
-   "time": "",
-   "title": "County Offices Closed in Observation of Thanksgiving",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/102916/"
   },
   {
    "date": "2026-11-27",
@@ -88,13 +81,6 @@
   },
   {
    "date": "2026-12-01",
-   "time": "12:00 PM",
-   "title": "Columbia County Local Alcohol and Drug Planning Committee",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/98768/"
-  },
-  {
-   "date": "2026-12-01",
    "time": "6:00 PM",
    "title": "Fiber Friends",
    "source": "Scappoose Public Library",
@@ -130,20 +116,6 @@
   },
   {
    "date": "2026-12-02",
-   "time": "10:00 AM",
-   "title": "Board of Commissioners Meeting",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/102886/"
-  },
-  {
-   "date": "2026-12-02",
-   "time": "1:00 PM",
-   "title": "Board of County Commissioners Work Session",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/102894/"
-  },
-  {
-   "date": "2026-12-02",
    "time": "7:00 PM",
    "title": "CANCELLED City Council Regular Session",
    "source": "City of St. Helens",
@@ -169,13 +141,6 @@
    "title": "Produce Distribution",
    "source": "Scappoose Public Library",
    "url": "https://www.scappooselibrary.org/news-events/produce-distribution-6/2026-12-02"
-  },
-  {
-   "date": "2026-12-02",
-   "time": "7:30 AM",
-   "title": "Traffic Safety Commission",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/102958/"
   },
   {
    "date": "2026-12-03",
@@ -218,13 +183,6 @@
    "title": "Grinch BINGO",
    "source": "Scappoose Public Library",
    "url": "https://www.scappooselibrary.org/news-events/grinch-bingo"
-  },
-  {
-   "date": "2026-12-04",
-   "time": "12:00 PM",
-   "title": "LOCAL PUBLIC SAFETY COORDINATING COUNCIL (LPSCC)",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/102369/"
   },
   {
    "date": "2026-12-04",
@@ -276,13 +234,6 @@
    "url": "https://www.sthelensoregon.gov/Calendar.aspx?EID=720"
   },
   {
-   "date": "2026-12-07",
-   "time": "6:30 PM",
-   "title": "Planning Commission Meeting",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/102917/"
-  },
-  {
    "date": "2026-12-08",
    "time": "5:15 PM",
    "title": "Adults and Crafts",
@@ -330,20 +281,6 @@
    "title": "Wee Wigglers Storytime",
    "source": "City of St. Helens",
    "url": "https://www.sthelensoregon.gov/Calendar.aspx?EID=663"
-  },
-  {
-   "date": "2026-12-09",
-   "time": "10:00 AM",
-   "title": "Board of Commissioners Meeting",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/102887/"
-  },
-  {
-   "date": "2026-12-09",
-   "time": "1:00 PM",
-   "title": "Board of County Commissioners Work Session",
-   "source": "Columbia County",
-   "url": "https://www.columbiacountyor.gov/events/102895/"
   },
   {
    "date": "2026-12-09",
