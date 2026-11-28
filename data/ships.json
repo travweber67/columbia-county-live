@@ -1,49 +1,97 @@
 {
- "fetched_at": "2026-11-28T01:28:38Z",
+ "fetched_at": "2026-11-28T01:33:39Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 205706000,
-   "name": "BOCHEM BAYARD",
-   "lat": 45.63491,
-   "lon": -122.70366,
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64349,
+   "lon": -122.75242,
+   "type_code": 52,
+   "destination": "US^02AK>0T67",
+   "updated": "2026-11-28 01:33:50.764035917 +0000 UTC"
+  },
+  {
+   "mmsi": 368331640,
+   "name": "SCHWEIGER",
+   "lat": 45.58422,
+   "lon": -122.76613,
    "sog_kn": 0,
-   "cog": 169.7,
-   "heading": 126,
+   "cog": 92.1,
+   "heading": 145,
+   "nav_status": 0,
+   "updated": "2026-11-28 01:34:01.816384072 +0000 UTC"
+  },
+  {
+   "mmsi": 367466760,
+   "name": "MARINA",
+   "lat": 46.1995,
+   "lon": -123.38498,
+   "type_code": 30,
+   "destination": "CATHLAMET WA",
+   "updated": "2026-11-28 01:34:02.970322147 +0000 UTC"
+  },
+  {
+   "mmsi": 338931000,
+   "name": "US GOV VESSEL",
+   "lat": 45.64541,
+   "lon": -122.73503,
+   "type_code": 70,
+   "destination": "PER ORDERS",
+   "updated": "2026-11-28 01:34:03.637686577 +0000 UTC"
+  },
+  {
+   "mmsi": 352006955,
+   "name": "CENTURY COSMOS",
+   "lat": 45.9552,
+   "lon": -122.80971,
+   "sog_kn": 13,
+   "cog": 157.7,
+   "heading": 163,
+   "nav_status": 0,
+   "updated": "2026-11-28 01:34:10.170619284 +0000 UTC"
+  },
+  {
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.58754,
+   "lon": -122.77073,
+   "sog_kn": 0,
+   "cog": 189.3,
+   "heading": 132,
+   "nav_status": 0,
+   "updated": "2026-11-28 01:34:10.474598456 +0000 UTC"
+  },
+  {
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 45.63037,
+   "lon": -122.69586,
+   "sog_kn": 0,
+   "cog": 320.1,
+   "heading": 127,
    "nav_status": 5,
-   "updated": "2026-11-28 01:29:01.824320433 +0000 UTC"
+   "updated": "2026-11-28 01:34:13.890826595 +0000 UTC"
   },
   {
-   "mmsi": 367767410,
-   "name": "MULE",
-   "lat": 46.0089,
-   "lon": -122.84877,
-   "type_code": 50,
-   "destination": "CR HARBOR OPS",
-   "updated": "2026-11-28 01:29:03.347235342 +0000 UTC"
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15348,
+   "lon": -123.3771,
+   "type_code": 99,
+   "updated": "2026-11-28 01:34:14.826707015 +0000 UTC"
   },
   {
-   "mmsi": 636025785,
-   "name": "PAN SKY",
-   "lat": 45.63814,
-   "lon": -122.71075,
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58729,
+   "lon": -122.77044,
    "sog_kn": 0,
-   "cog": 303,
-   "heading": 122,
+   "cog": 195.1,
+   "heading": 137,
    "nav_status": 5,
-   "updated": "2026-11-28 01:29:08.345011084 +0000 UTC"
-  },
-  {
-   "mmsi": 368257130,
-   "name": "TRIUMPH VII",
-   "lat": 46.00986,
-   "lon": -122.84836,
-   "sog_kn": 0,
-   "cog": 358.5,
-   "heading": 511,
-   "nav_status": 15,
-   "updated": "2026-11-28 01:29:17.613583115 +0000 UTC"
+   "updated": "2026-11-28 01:34:15.346233577 +0000 UTC"
   }
  ]
 }
