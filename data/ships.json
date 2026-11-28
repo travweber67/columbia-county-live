@@ -1,6 +1,31 @@
 {
- "fetched_at": "2026-11-28T03:44:08Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-28T03:48:49Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 2 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.9101,
+   "type_code": 52,
+   "destination": "US^0UDW>0T9B",
+   "updated": "2026-11-28 03:49:34.307071677 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 154.3,
+   "heading": 73,
+   "nav_status": 0
+  },
+  {
+   "mmsi": 356334000,
+   "name": "LAUREL ISLAND",
+   "lat": 45.6391,
+   "lon": -122.77782,
+   "sog_kn": 0,
+   "cog": 55,
+   "heading": 230,
+   "nav_status": 5,
+   "updated": "2026-11-28 03:49:37.671956298 +0000 UTC"
+  }
+ ]
 }
