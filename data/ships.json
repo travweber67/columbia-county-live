@@ -1,6 +1,47 @@
 {
- "fetched_at": "2026-11-28T03:54:36Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-28T03:58:50Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 636017488,
+   "name": "KM VANCOUVER",
+   "lat": 46.16014,
+   "lon": -123.244,
+   "type_code": 70,
+   "destination": "KALAMA USA",
+   "updated": "2026-11-28 03:59:08.848718596 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15341,
+   "lon": -123.37713,
+   "sog_kn": 0,
+   "cog": 193.9,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-28 03:59:17.243725784 +0000 UTC"
+  },
+  {
+   "mmsi": 636025785,
+   "name": "PAN SKY",
+   "lat": 45.63813,
+   "lon": -122.71075,
+   "type_code": 70,
+   "destination": "VANCOUVER BERTH",
+   "updated": "2026-11-28 03:59:21.347655755 +0000 UTC"
+  },
+  {
+   "mmsi": 366888830,
+   "name": "KAHU",
+   "lat": 45.61163,
+   "lon": -122.6438,
+   "sog_kn": 0,
+   "cog": 256.6,
+   "heading": 120,
+   "nav_status": 5,
+   "updated": "2026-11-28 03:59:32.406999753 +0000 UTC"
+  }
+ ]
 }
