@@ -1,6 +1,62 @@
 {
- "fetched_at": "2026-11-28T02:54:32Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-28T02:58:44Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09339,
+   "lon": -122.92374,
+   "sog_kn": 0,
+   "cog": 114.6,
+   "heading": 122,
+   "nav_status": 0,
+   "updated": "2026-11-28 02:58:58.040489862 +0000 UTC"
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.72143,
+   "lon": -122.76017,
+   "sog_kn": 0.1,
+   "cog": 338.3,
+   "heading": 308,
+   "nav_status": 12,
+   "updated": "2026-11-28 02:59:04.220362689 +0000 UTC"
+  },
+  {
+   "mmsi": 367669550,
+   "name": "ALASKA CHALLENGER",
+   "lat": 46.17719,
+   "lon": -123.35743,
+   "sog_kn": 0,
+   "cog": 221.6,
+   "heading": 135,
+   "nav_status": 15,
+   "updated": "2026-11-28 02:59:07.835339494 +0000 UTC"
+  },
+  {
+   "mmsi": 367719170,
+   "name": "RYAN POINT",
+   "lat": 45.64823,
+   "lon": -122.74375,
+   "sog_kn": 0,
+   "cog": 283.9,
+   "heading": 16,
+   "nav_status": 12,
+   "updated": "2026-11-28 02:59:07.836712506 +0000 UTC"
+  },
+  {
+   "mmsi": 355322000,
+   "name": "AMIS ACE",
+   "lat": 45.66695,
+   "lon": -122.76689,
+   "sog_kn": 0,
+   "cog": 9.1,
+   "heading": 164,
+   "nav_status": 1,
+   "updated": "2026-11-28 02:59:08.745907699 +0000 UTC"
+  }
+ ]
 }
