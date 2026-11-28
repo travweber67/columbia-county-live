@@ -1,36 +1,6 @@
 {
- "fetched_at": "2026-11-28T08:59:12Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 367047170,
-   "name": "MAVERICK",
-   "lat": 45.99106,
-   "lon": -122.84129,
-   "type_code": 90,
-   "destination": "VANCOUVER,WA,USA",
-   "updated": "2026-11-28 08:59:50.231018265 +0000 UTC"
-  },
-  {
-   "mmsi": 563338800,
-   "name": "ISHIZUCHI STAR",
-   "lat": 45.64378,
-   "lon": -122.74086,
-   "type_code": 70,
-   "destination": "YOS KR",
-   "updated": "2026-11-28 08:59:52.664322546 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.2,
-   "lon": -123.38541,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-28 08:59:54.056401333 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-28T09:04:12Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
