@@ -1,99 +1,111 @@
 {
- "fetched_at": "2026-11-28T04:03:50Z",
+ "fetched_at": "2026-11-28T04:08:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 10 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 311001605,
-   "name": "SAGA DISCOVERY",
-   "lat": 46.17468,
-   "lon": -123.10662,
-   "type_code": 79,
-   "destination": "US LOG",
-   "updated": "2026-11-28 04:04:04.693965695 +0000 UTC"
+   "mmsi": 432666000,
+   "name": "AEGEAN HIGHWAY",
+   "lat": 45.59762,
+   "lon": -122.77481,
+   "type_code": 70,
+   "destination": "US PDX",
+   "updated": "2026-11-28 04:09:35.554421822 +0000 UTC"
+  },
+  {
+   "mmsi": 256001000,
+   "name": "DOVER",
+   "lat": 45.6325,
+   "lon": -122.70674,
+   "sog_kn": 0,
+   "cog": 11.1,
+   "heading": 118,
+   "nav_status": 1,
+   "updated": "2026-11-28 04:09:14.982238698 +0000 UTC"
+  },
+  {
+   "mmsi": 636017488,
+   "name": "KM VANCOUVER",
+   "lat": 46.1682,
+   "lon": -123.2247,
+   "sog_kn": 4.1,
+   "cog": 67.2,
+   "heading": 66,
+   "nav_status": 0,
+   "updated": "2026-11-28 04:09:15.232093996 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58078,
+   "lon": -122.76008,
+   "sog_kn": 0,
+   "cog": 252.5,
+   "heading": 124,
+   "nav_status": 0,
+   "updated": "2026-11-28 04:09:18.384811835 +0000 UTC"
+  },
+  {
+   "mmsi": 367380280,
+   "name": "WESTERN STAR",
+   "lat": 46.15705,
+   "lon": -123.40233,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 133,
+   "nav_status": 0,
+   "updated": "2026-11-28 04:09:19.501476777 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.1079,
+   "lon": -122.95902,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-28 04:09:28.926365694 +0000 UTC"
+  },
+  {
+   "mmsi": 538010248,
+   "name": "SAFEEN AL AMAL",
+   "lat": 46.12463,
+   "lon": -122.98892,
+   "sog_kn": 0,
+   "cog": 49.2,
+   "heading": 134,
+   "nav_status": 1,
+   "updated": "2026-11-28 04:09:28.935246384 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09349,
+   "lon": -122.92417,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 304,
+   "nav_status": 3,
+   "updated": "2026-11-28 04:09:36.7346127 +0000 UTC"
   },
   {
    "mmsi": 367047150,
    "name": "CAPTAIN BOB",
    "lat": 45.64725,
    "lon": -122.73951,
-   "sog_kn": 0,
-   "cog": 352.3,
-   "heading": 287,
-   "nav_status": 5,
-   "updated": "2026-11-28 04:04:07.882160095 +0000 UTC"
+   "type_code": 0,
+   "destination": "PASCO",
+   "updated": "2026-11-28 04:09:38.784457788 +0000 UTC"
   },
   {
-   "mmsi": 367669550,
-   "name": "ALASKA CHALLENGER",
-   "lat": 46.1772,
-   "lon": -123.35743,
-   "type_code": 30,
-   "updated": "2026-11-28 04:04:16.543628414 +0000 UTC"
-  },
-  {
-   "mmsi": 367645170,
-   "name": "CROWN POINT",
-   "lat": 45.65822,
-   "lon": -122.75776,
-   "sog_kn": 0,
-   "cog": 332.8,
-   "heading": 147,
-   "nav_status": 0,
-   "updated": "2026-11-28 04:04:18.351497964 +0000 UTC"
-  },
-  {
-   "mmsi": 367608420,
-   "name": "PETER J BRIX",
-   "lat": 46.0897,
-   "lon": -122.92904,
-   "sog_kn": 0,
-   "cog": 237.5,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-28 04:04:20.84964705 +0000 UTC",
-   "type_code": 52,
-   "destination": "US^0R88>0UJB"
-  },
-  {
-   "mmsi": 368312940,
-   "name": "REBEKAH",
-   "lat": 45.58729,
-   "lon": -122.77045,
-   "sog_kn": 0,
-   "cog": 195.1,
-   "heading": 137,
-   "nav_status": 5,
-   "updated": "2026-11-28 04:04:21.342410719 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 45.61361,
-   "lon": -122.78782,
-   "type_code": 52,
-   "destination": "CSR OPS",
-   "updated": "2026-11-28 04:04:28.64790599 +0000 UTC"
-  },
-  {
-   "mmsi": 368329050,
-   "name": "TOIVO T",
-   "lat": 45.61202,
-   "lon": -122.64536,
-   "type_code": 52,
-   "destination": "US^0UUT>0T9D",
-   "updated": "2026-11-28 04:04:32.699880536 +0000 UTC"
-  },
-  {
-   "mmsi": 636017488,
-   "name": "KM VANCOUVER",
-   "lat": 46.16553,
-   "lon": -123.23232,
-   "sog_kn": 5.3,
-   "cog": 58.7,
-   "heading": 59,
-   "nav_status": 0,
-   "updated": "2026-11-28 04:04:33.899903197 +0000 UTC"
+   "mmsi": 303890000,
+   "name": "NELSON V. BRITTIN",
+   "lat": 45.59407,
+   "lon": -122.77213,
+   "type_code": 70,
+   "destination": "NOT AVAILABLE",
+   "updated": "2026-11-28 04:09:39.039017275 +0000 UTC"
   }
  ]
 }
