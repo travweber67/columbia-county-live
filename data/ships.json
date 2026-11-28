@@ -1,60 +1,68 @@
 {
- "fetched_at": "2026-11-28T02:28:43Z",
+ "fetched_at": "2026-11-28T02:33:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions inside the county box.",
  "ships": [
   {
-   "mmsi": 311001710,
-   "name": "HON HENRY NR JACKMAN",
-   "lat": 46.10875,
-   "lon": -122.97409,
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 45.64671,
+   "lon": -122.76975,
+   "type_code": 52,
+   "destination": "CSR OPS",
+   "updated": "2026-11-28 02:33:59.437223818 +0000 UTC"
+  },
+  {
+   "mmsi": 366998830,
+   "name": "ROYAL MELBOURNE",
+   "lat": 45.58081,
+   "lon": -122.76009,
    "sog_kn": 0,
-   "cog": 266.7,
-   "heading": 128,
-   "nav_status": 5,
-   "updated": "2026-11-28 02:28:55.981171706 +0000 UTC"
+   "cog": 252.5,
+   "heading": 123,
+   "nav_status": 0,
+   "updated": "2026-11-28 02:33:59.572219106 +0000 UTC"
+  },
+  {
+   "mmsi": 366986380,
+   "name": "DREDGE OREGON",
+   "lat": 46.09349,
+   "lon": -122.9242,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 304,
+   "nav_status": 3,
+   "updated": "2026-11-28 02:34:06.94679025 +0000 UTC"
+  },
+  {
+   "mmsi": 367719170,
+   "name": "RYAN POINT",
+   "lat": 45.64833,
+   "lon": -122.74342,
+   "sog_kn": 0.1,
+   "cog": 205.1,
+   "heading": 291,
+   "nav_status": 12,
+   "updated": "2026-11-28 02:34:07.365210444 +0000 UTC"
   },
   {
    "mmsi": 367653630,
    "name": "OSCAR B",
    "lat": 46.1534,
-   "lon": -123.37712,
-   "sog_kn": 0,
-   "cog": 235.4,
-   "heading": 511,
-   "nav_status": 0,
-   "updated": "2026-11-28 02:28:58.283366277 +0000 UTC"
+   "lon": -123.37713,
+   "type_code": 99,
+   "updated": "2026-11-28 02:34:14.144958078 +0000 UTC"
   },
   {
-   "mmsi": 338931000,
-   "name": "US GOV VESSEL",
-   "lat": 45.64539,
-   "lon": -122.73504,
-   "type_code": 70,
-   "destination": "PER ORDERS",
-   "updated": "2026-11-28 02:29:04.007154743 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.6437,
-   "lon": -122.74564,
-   "sog_kn": 0,
-   "cog": 17,
-   "heading": 110,
-   "nav_status": 0,
-   "updated": "2026-11-28 02:29:16.718719795 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61109,
-   "lon": -122.61292,
-   "sog_kn": 0,
-   "cog": 32,
-   "heading": 122,
-   "nav_status": 15,
-   "updated": "2026-11-28 02:29:22.195606476 +0000 UTC"
+   "mmsi": 367047120,
+   "name": "REBEL",
+   "lat": 45.6213,
+   "lon": -122.78844,
+   "sog_kn": 0.8,
+   "cog": 310,
+   "heading": 159,
+   "nav_status": 12,
+   "updated": "2026-11-28 02:34:25.882660008 +0000 UTC"
   }
  ]
 }
