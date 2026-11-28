@@ -1,6 +1,123 @@
 {
- "fetched_at": "2026-11-28T00:58:37Z",
- "status": "error",
- "note": "AISStream error: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-28T01:03:37Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions inside the county box.",
+ "ships": [
+  {
+   "mmsi": 368121540,
+   "name": "RANDY S",
+   "lat": 45.64348,
+   "lon": -122.75241,
+   "type_code": 52,
+   "destination": "US^02AK>0T67",
+   "updated": "2026-11-28 01:03:51.342369192 +0000 UTC"
+  },
+  {
+   "mmsi": 367653630,
+   "name": "OSCAR B",
+   "lat": 46.15063,
+   "lon": -123.3786,
+   "type_code": 99,
+   "updated": "2026-11-28 01:03:53.299484505 +0000 UTC"
+  },
+  {
+   "mmsi": 636013613,
+   "name": "LONDON 2012",
+   "lat": 46.0444,
+   "lon": -122.88264,
+   "type_code": 70,
+   "destination": "KR INC>US KAM",
+   "updated": "2026-11-28 01:03:53.84119254 +0000 UTC"
+  },
+  {
+   "mmsi": 368083770,
+   "name": "SUPPORT",
+   "lat": 46.10792,
+   "lon": -122.95899,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "nav_status": 0,
+   "updated": "2026-11-28 01:03:57.76881545 +0000 UTC"
+  },
+  {
+   "mmsi": 538011145,
+   "name": "FORTUNE BREEZE",
+   "lat": 45.62535,
+   "lon": -122.78824,
+   "sog_kn": 0,
+   "cog": 213,
+   "heading": 5,
+   "nav_status": 5,
+   "updated": "2026-11-28 01:03:59.52977811 +0000 UTC"
+  },
+  {
+   "mmsi": 314085000,
+   "name": "SOLENT",
+   "lat": 45.60102,
+   "lon": -122.7749,
+   "type_code": 72,
+   "destination": "USLGB",
+   "updated": "2026-11-28 01:04:07.639774103 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 280.7,
+   "heading": 278,
+   "nav_status": 5
+  },
+  {
+   "mmsi": 368171270,
+   "name": "DR. RAY",
+   "lat": 45.67731,
+   "lon": -122.7718,
+   "sog_kn": 6,
+   "cog": 355.9,
+   "heading": 355,
+   "nav_status": 12,
+   "updated": "2026-11-28 01:04:05.358037776 +0000 UTC"
+  },
+  {
+   "mmsi": 367309480,
+   "name": "W E IVANOFF",
+   "lat": 46.09339,
+   "lon": -122.92374,
+   "sog_kn": 0.1,
+   "cog": 116.8,
+   "heading": 121,
+   "nav_status": 0,
+   "updated": "2026-11-28 01:04:08.978839892 +0000 UTC"
+  },
+  {
+   "mmsi": 367047150,
+   "name": "CAPTAIN BOB",
+   "lat": 45.64729,
+   "lon": -122.73951,
+   "sog_kn": 0,
+   "cog": 352.3,
+   "heading": 288,
+   "nav_status": 5,
+   "updated": "2026-11-28 01:04:10.031230656 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.10353,
+   "lon": -122.9101,
+   "sog_kn": 0.1,
+   "cog": 31.7,
+   "heading": 74,
+   "nav_status": 0,
+   "updated": "2026-11-28 01:04:15.365680802 +0000 UTC"
+  },
+  {
+   "mmsi": 368312940,
+   "name": "REBEKAH",
+   "lat": 45.58731,
+   "lon": -122.77042,
+   "sog_kn": 0,
+   "cog": 195.1,
+   "heading": 137,
+   "nav_status": 5,
+   "updated": "2026-11-28 01:04:16.191031193 +0000 UTC"
+  }
+ ]
 }
