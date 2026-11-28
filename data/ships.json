@@ -1,49 +1,6 @@
 {
- "fetched_at": "2026-11-28T06:53:58Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 366396000,
-   "name": "NAT GEO SEA LION",
-   "lat": 46.08949,
-   "lon": -122.92978,
-   "type_code": 68,
-   "destination": "RAINIER",
-   "updated": "2026-11-28 06:55:02.226723258 +0000 UTC"
-  },
-  {
-   "mmsi": 367380280,
-   "name": "WESTERN STAR",
-   "lat": 46.16232,
-   "lon": -123.4086,
-   "sog_kn": 2.7,
-   "cog": 311.5,
-   "heading": 297,
-   "nav_status": 0,
-   "updated": "2026-11-28 06:55:12.771341483 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.64368,
-   "lon": -122.74563,
-   "sog_kn": 0,
-   "cog": 203.7,
-   "heading": 110,
-   "nav_status": 0,
-   "updated": "2026-11-28 06:55:15.601373887 +0000 UTC"
-  },
-  {
-   "mmsi": 367602150,
-   "name": "LUNA",
-   "lat": 45.61108,
-   "lon": -122.6129,
-   "sog_kn": 0,
-   "cog": 121.8,
-   "heading": 121,
-   "nav_status": 15,
-   "updated": "2026-11-28 06:55:23.249930663 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-28T06:59:02Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
