@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-28T05:13:55Z",
+ "fetched_at": "2026-11-28T05:18:56Z",
  "sources": [
   {
    "name": "ODOT TripCheck API",
@@ -134,16 +134,29 @@
    "source": "ODOT TripCheck"
   },
   {
-   "title": "A vehicle fire has occurred. Prepare to slow or move over for worker safety.",
+   "title": "An unconfirmed report of a crash has been received. Use caution.",
    "desc": "",
-   "impact": "Estimated delay under 20 minutes",
+   "impact": "Unconfirmed",
+   "place": "I-5, Oregon Washington Border",
+   "route": "I5",
+   "milepost": 308.38,
+   "lat": 45.61801,
+   "lon": -122.67516,
+   "start": "2026-11-27T21:13:12.21-08:00",
+   "updated": "2026-11-27T21:14:42-08:00",
+   "source": "ODOT TripCheck"
+  },
+  {
+   "title": "A vehicle fire has closed the road. Use an alternate route.",
+   "desc": "",
+   "impact": "Closure",
    "place": "US30, Columbia - Clatsop County Line",
    "route": "US30",
    "milepost": 70.0,
    "lat": 46.12561,
    "lon": -123.36534,
    "start": "2026-11-27T21:07:58.643-08:00",
-   "updated": "2026-11-27T21:09:07-08:00",
+   "updated": "2026-11-27T21:16:04-08:00",
    "source": "ODOT TripCheck"
   }
  ],
