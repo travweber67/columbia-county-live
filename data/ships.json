@@ -1,58 +1,6 @@
 {
- "fetched_at": "2026-11-28T02:43:44Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions inside the county box.",
- "ships": [
-  {
-   "mmsi": 366888830,
-   "name": "KAHU",
-   "lat": 45.61167,
-   "lon": -122.64377,
-   "type_code": 52,
-   "destination": "PDX",
-   "updated": "2026-11-28 02:43:57.108810334 +0000 UTC"
-  },
-  {
-   "mmsi": 366998830,
-   "name": "ROYAL MELBOURNE",
-   "lat": 45.58079,
-   "lon": -122.76011,
-   "sog_kn": 0,
-   "cog": 252.5,
-   "heading": 124,
-   "nav_status": 0,
-   "updated": "2026-11-28 02:43:59.49768527 +0000 UTC"
-  },
-  {
-   "mmsi": 367531220,
-   "name": "WATCHMAN",
-   "lat": 46.19999,
-   "lon": -123.3854,
-   "sog_kn": 0,
-   "cog": 187.7,
-   "heading": 511,
-   "nav_status": 8,
-   "updated": "2026-11-28 02:44:04.540679456 +0000 UTC"
-  },
-  {
-   "mmsi": 368251260,
-   "name": "MISS GINGER",
-   "lat": 45.61207,
-   "lon": -122.64605,
-   "type_code": 33,
-   "destination": "VANCOUVER WA",
-   "updated": "2026-11-28 02:44:09.736875132 +0000 UTC"
-  },
-  {
-   "mmsi": 367513230,
-   "name": "WILLAMETTE",
-   "lat": 45.64369,
-   "lon": -122.74563,
-   "sog_kn": 0,
-   "cog": 266.9,
-   "heading": 111,
-   "nav_status": 0,
-   "updated": "2026-11-28 02:44:26.032313155 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-28T02:48:44Z",
+ "status": "error",
+ "note": "AISStream error: The read operation timed out",
+ "ships": []
 }
